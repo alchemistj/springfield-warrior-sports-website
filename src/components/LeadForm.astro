@@ -4,9 +4,22 @@ import { site } from "../data/site";
 
 interface Props {
   event: EventForm;
+  tone?: "panel" | "card";
 }
 const { event } = Astro.props;
+const tone = Astro.props.tone ?? (event.id === "contact" ? "card" : "panel");
 const phone = site.phone;
+const hideLabels = tone === "card";
+
+function fieldPlaceholder(label: string, kind: string): string | undefined {
+  const text = label.toLowerCase();
+  if (hideLabels) return label;
+  if (kind === "email" || text === "email" || text.startsWith("email address")) return "Email";
+  if (kind === "phone" || text === "phone" || text.startsWith("phone")) return "Phone Number";
+  if (text.startsWith("please let us know the dates")) return "Date and Time Preference";
+  if (text.startsWith("anything else")) return "Tell us more about your party, needs, desires, approximate number of kids, etc. [short and sweet :p]";
+  return undefined;
+}
 let messageUsed = false;
 
 function childKey(field: FormField): string {
@@ -24,88 +37,12 @@ function isMessage(field: FormField): boolean {
 }
 ---
 
-<form class="form-card" id={event.anchor} data-lead-form data-event-id={event.id} data-form-key={event.formKey} data-event-name={event.event} data-success-type={event.success.type} data-success-value={event.success.type === "redirect" ? event.success.path : event.success.message} data-button-label={event.button} novalidate>
-  {
-    event.fields.map((field) => {
-      const id = `${event.id}-${field.name || field.kind}`;
-      const part = field.namePart || (field.label === "First Name" ? "first" : field.label === "Last Name" ? "last" : undefined);
-      if (field.kind === "name" || part === "first" || part === "last") {
-        if (part === "last") return null;
-        if (part === "first") {
-          return (
-            <div class="name-row">
-              <div>
-                <label for={`${event.id}-first`}>{field.label}</label>
-                <input id={`${event.id}-first`} name="first" type="text" autocomplete="given-name" maxlength="100" required={field.required} data-role="first" />
-              </div>
-              <div>
-                <label for={`${event.id}-last`}>Last Name</label>
-                <input id={`${event.id}-last`} name="last" type="text" autocomplete="family-name" maxlength="100" required data-role="last" />
-              </div>
-            </div>
-          );
-        }
-        return (
-          <div>
-            <span class="label">{field.label}{field.required ? " *" : ""}</span>
-            <div class="name-row">
-              <div>
-                <label for={`${event.id}-first`}>First</label>
-                <input id={`${event.id}-first`} name="first" type="text" autocomplete="given-name" maxlength="100" required={field.required} data-role="first" />
-              </div>
-              <div>
-                <label for={`${event.id}-last`}>Last</label>
-                <input id={`${event.id}-last`} name="last" type="text" autocomplete="family-name" maxlength="100" required={field.required} data-role="last" />
-              </div>
-            </div>
-          </div>
-        );
-      }
-      if (field.kind === "checkbox" || field.kind === "radio") {
-        return (
-          <fieldset data-extra-key={field.name} data-extra-label={field.label} data-extra-kind={field.kind} data-required={field.required ? "true" : "false"}>
-            <legend class="label">{field.label}{field.required ? " *" : ""}</legend>
-            <div class="check-grid">
-              {(field.choices || []).map((choice) => (
-                <label>
-                  <input type={field.kind === "radio" ? "radio" : "checkbox"} name={`${event.id}-${field.name}`} value={choice} />
-                  <span>{choice}</span>
-                </label>
-              ))}
-            </div>
-          </fieldset>
-        );
-      }
-      if (field.kind === "select") {
-        return (
-          <div>
-            <label for={id}>{field.label}{field.required ? " *" : ""}</label>
-            <select id={id} name={field.name} required={field.required} data-role="extra" data-extra-key={field.name} data-extra-label={field.label}>
-              <option value="">Select</option>
-              {(field.choices || []).map((choice) => <option value={choice}>{choice}</option>)}
-            </select>
-          </div>
-        );
-      }
-      const role = field.kind === "email" ? "email" : field.kind === "phone" ? "phone" : isMessage(field) ? "message" : "extra";
-      const type = field.kind === "email" ? "email" : field.kind === "phone" ? "tel" : field.kind === "date" ? "date" : "text";
-      return (
-        <div>
-          <label for={id}>{field.label}{field.required ? " *" : ""}</label>
-          {field.kind === "textarea" ? (
-            <textarea id={id} name={field.name} maxlength="5000" required={field.required} data-role={role} data-extra-key={field.name} data-extra-label={field.label} />
-          ) : (
-            <input id={id} name={field.name} type={type} maxlength={field.kind === "email" ? 320 : 500} required={field.required} autocomplete={field.kind === "email" ? "email" : field.kind === "phone" ? "tel" : "on"} data-role={role} data-extra-key={field.name} data-extra-label={field.label} />
-          )}
-        </div>
-      );
-    })
-  }
+<form class:list={["lead-form", tone]} id={event.anchor} data-lead-form data-event-id={event.id} data-form-key={event.formKey} data-event-name={event.event} data-success-type={event.success.type} data-success-value={event.success.type === "redirect" ? event.success.path : event.success.message} data-button-label={event.button} novalidate>
   {
     event.repeater && (
       <div data-repeater data-max={event.repeater.max}>
         <div class="child-card" data-child>
-          <p class="label">Competitor 1</p>
+          <p class="participant-bar">Participant 1</p>
           {event.repeater.fields.map((field) => {
             const key = childKey(field);
             const id = `${event.id}-child-${key}`;
@@ -139,11 +76,88 @@ function isMessage(field: FormField): boolean {
               </div>
             );
           })}
-          <button class="btn" type="button" data-remove hidden>{event.repeater.removeLabel}</button>
+          <button class="btn-line" type="button" data-remove hidden>{event.repeater.removeLabel}</button>
         </div>
-        <p><button class="btn" type="button" data-add>{event.repeater.addLabel}</button></p>
+        <p><button class="btn-line" type="button" data-add>Add More Participant</button></p>
       </div>
     )
+  }
+  {
+    event.fields.map((field) => {
+      const id = `${event.id}-${field.name || field.kind}`;
+      const part = field.namePart || (field.label === "First Name" ? "first" : field.label === "Last Name" ? "last" : undefined);
+      if (field.kind === "name" || part === "first" || part === "last") {
+        if (part === "last") return null;
+        if (part === "first") {
+          return (
+            <div class="name-row">
+              <div>
+                <label class:list={{ "sr-only": hideLabels }} for={`${event.id}-first`}>{field.label}</label>
+                <input id={`${event.id}-first`} name="first" type="text" autocomplete="given-name" maxlength="100" required={field.required} placeholder={field.label} data-role="first" />
+              </div>
+              <div>
+                <label class:list={{ "sr-only": hideLabels }} for={`${event.id}-last`}>Last Name</label>
+                <input id={`${event.id}-last`} name="last" type="text" autocomplete="family-name" maxlength="100" required placeholder="Last Name" data-role="last" />
+              </div>
+            </div>
+          );
+        }
+        return (
+          <div>
+            <span class="label">{field.label}{field.required ? <span class="req"> *</span> : ""}</span>
+            <div class="name-row">
+              <div>
+                <input id={`${event.id}-first`} name="first" type="text" autocomplete="given-name" maxlength="100" required={field.required} placeholder="First Name" aria-label="First Name" data-role="first" />
+                <span class="sub">First</span>
+              </div>
+              <div>
+                <input id={`${event.id}-last`} name="last" type="text" autocomplete="family-name" maxlength="100" required={field.required} placeholder="Last Name" aria-label="Last Name" data-role="last" />
+                <span class="sub">Last</span>
+              </div>
+            </div>
+          </div>
+        );
+      }
+      if (field.kind === "checkbox" || field.kind === "radio") {
+        return (
+          <fieldset data-extra-key={field.name} data-extra-label={field.label} data-extra-kind={field.kind} data-required={field.required ? "true" : "false"}>
+            <legend class="label">{field.label}{field.required ? <span class="req"> *</span> : ""}</legend>
+            <div class="check-grid">
+              {(field.choices || []).map((choice) => (
+                <label>
+                  <input type={field.kind === "radio" ? "radio" : "checkbox"} name={`${event.id}-${field.name}`} value={choice} />
+                  <span>{choice}</span>
+                </label>
+              ))}
+            </div>
+          </fieldset>
+        );
+      }
+      if (field.kind === "select") {
+        return (
+          <div>
+            <label class:list={{ "sr-only": hideLabels }} for={id}>{field.label}{field.required ? <span class="req"> *</span> : ""}</label>
+            <select id={id} name={field.name} required={field.required} data-role="extra" data-extra-key={field.name} data-extra-label={field.label}>
+              <option value="">Select</option>
+              {(field.choices || []).map((choice) => <option value={choice}>{choice}</option>)}
+            </select>
+          </div>
+        );
+      }
+      const role = field.kind === "email" ? "email" : field.kind === "phone" ? "phone" : isMessage(field) ? "message" : "extra";
+      const type = field.kind === "email" ? "email" : field.kind === "phone" ? "tel" : field.kind === "date" ? "date" : "text";
+      const placeholder = fieldPlaceholder(field.label, field.kind);
+      return (
+        <div>
+          <label class:list={{ "sr-only": hideLabels }} for={id}>{field.label}{field.required ? <span class="req"> *</span> : ""}</label>
+          {field.kind === "textarea" ? (
+            <textarea id={id} name={field.name} maxlength="5000" required={field.required} placeholder={placeholder} data-role={role} data-extra-key={field.name} data-extra-label={field.label} />
+          ) : (
+            <input id={id} name={field.name} type={type} maxlength={field.kind === "email" ? 320 : 500} required={field.required} placeholder={placeholder} autocomplete={field.kind === "email" ? "email" : field.kind === "phone" ? "tel" : "on"} data-role={role} data-extra-key={field.name} data-extra-label={field.label} />
+          )}
+        </div>
+      );
+    })
   }
   <div class="hp" aria-hidden="true">
     <label for={`${event.id}-hp`}>Website</label>
@@ -226,7 +240,7 @@ function isMessage(field: FormField): boolean {
         if (input.name) input.name = `${input.name}-${rows.length}`;
       });
       const label = clone.querySelector("p");
-      if (label) label.textContent = `Competitor ${rows.length + 1}`;
+      if (label) label.textContent = `Participant ${rows.length + 1}`;
       const remove = clone.querySelector<HTMLButtonElement>("[data-remove]");
       if (remove) remove.hidden = false;
       repeater.insertBefore(clone, add.parentElement);

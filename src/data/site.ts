@@ -38,10 +38,13 @@ export const site = {
   ga4: "G-DLZRG9QF8J",
 } as const;
 
-export const headerNav = [
+export const utilityNav = [
   { label: "Contact", path: "/contact/" },
   { label: "About", path: "/about/" },
   { label: "Sign Our Waiver", path: site.waiver, external: true },
+] as const;
+
+export const mainNav = [
   { label: "Adult Classes", path: "/fitness-classes/" },
   { label: "Kid Classes", path: "/kids-classes/" },
   { label: "Competitions", path: "/competitions/" },
@@ -49,6 +52,8 @@ export const headerNav = [
   { label: "Personal Training", path: "/personal-training/" },
   { label: "Summer Camps", path: "/summer-camps-in-springfield-mo/" },
 ] as const;
+
+export const headerNav = [...utilityNav, ...mainNav] as const;
 
 export const footerLinks = [
   { label: "Home", path: "/" },

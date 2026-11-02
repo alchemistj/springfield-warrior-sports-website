@@ -32,6 +32,11 @@ describe("built site", () => {
       const text = visibleText(html);
       const missing = sentences(mainContent(source)).filter((sentence) => !text.includes(sentence));
       expect(missing, page.slug).toEqual([]);
+      const outsideForm = visibleText(html.replace(/<form\b[\s\S]*?<\/form>/gi, " "));
+      expect(outsideForm, page.slug).not.toMatch(/\(Required\)/i);
+      expect(outsideForm, page.slug).not.toMatch(/indicates required fields/i);
+      expect(outsideForm, page.slug).not.toMatch(/First and Last Name\s*\*/i);
+      expect(outsideForm, page.slug).not.toMatch(/Participant 1 Name/i);
     }
   });
 

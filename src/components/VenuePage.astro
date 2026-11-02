@@ -7,6 +7,8 @@ import { site } from "../data/site";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import LeadForm from "./LeadForm.astro";
 import MapFacade from "./MapFacade.astro";
+import RichText from "./RichText.astro";
+import SplitTitle from "./SplitTitle.astro";
 
 interface Props {
   page: PageContent;
@@ -15,11 +17,17 @@ const { page } = Astro.props;
 const route = routeByPath(page.path);
 if (!route) throw new Error(`Missing route ${page.path}`);
 const event = page.formId ? eventById(page.formId) : undefined;
-const hero = page.photoHero && page.heroFile ? await heroImage(page.heroFile, { width: 1280, quality: 38, cropAspect: 2 }) : null;
-const heroSub = page.blocks[0]?.type === "p" && page.blocks[0].text.length < 90 ? page.blocks[0] : undefined;
-const blocks = heroSub ? page.blocks.slice(1) : page.blocks;
 
-const images = import.meta.glob("../assets/media/*.webp", { eager: true, import: "default" }) as Record<
+const HERO_FILE: Record<string, string> = {
+  home: "media/2025-12-IMG_2341-scaled.jpeg",
+};
+const heroFile = HERO_FILE[page.slug] ?? page.heroFile;
+const hero =
+  page.photoHero && heroFile
+    ? await heroImage(heroFile, { width: page.slug === "home" ? 960 : 1100, quality: page.slug === "home" ? 28 : 36, cropAspect: page.slug === "home" ? 2.15 : 2.05, cropY: 0.38 })
+    : null;
+
+const images = import.meta.glob("../assets/media/*.{webp,jpeg,jpg,png}", { eager: true, import: "default" }) as Record<
   string,
   { src: string; width: number; height: number } | string
 >;
@@ -31,72 +39,292 @@ function media(file: string): { src: string; width: number; height: number } {
   return found;
 }
 
+function norm(value: string): string {
+  return value.replace(/\s+/g, " ").trim().toLowerCase();
+}
+
+function isDump(text: string): boolean {
+  const t = text.replace(/\s+/g, " ").trim();
+  if (/indicates required fields/i.test(t)) return true;
+  if (/\(required\)/i.test(t)) return true;
+  if (/first and last name\s*\*/i.test(t)) return true;
+  if (/^name first last email\s*\*$/i.test(t)) return true;
+  if (/^add more participant$/i.test(t)) return true;
+  if (/^submit and continue to payment$/i.test(t)) return true;
+  if (/\b(csna|wnl)\b/i.test(t) && /form$/i.test(t) && t.length < 90) return true;
+  if (/\*\s*$/.test(t)) return true;
+  if (/^would you like to discuss any of these\??$/i.test(t)) return true;
+  if (/^anything else\??$/i.test(t)) return true;
+  if (/^(nerf battle party|laser tag party|private party|pizza party)$/i.test(t)) return true;
+  if (/^(first|last|name|email|phone)$/i.test(t)) return true;
+  return false;
+}
+
+function isSentence(text: string): boolean {
+  const t = text.trim();
+  return t.length >= 24 && /[.!?]$/.test(t);
+}
+
+function stripDump(blocks: Block[]): Block[] {
+  const out: Block[] = [];
+  let skipping = false;
+  let last = "";
+  for (const block of blocks) {
+    const key = block.text.replace(/\s+/g, " ").trim();
+    if (key === last) continue;
+    if (isDump(block.text)) {
+      skipping = true;
+      last = key;
+      continue;
+    }
+    if (skipping) {
+      if (isSentence(block.text) || /testimonial/i.test(block.text)) skipping = false;
+      else continue;
+    }
+    last = key;
+    out.push(block);
+  }
+  return out;
+}
+
+const RED_HERO = new Set([
+  "home",
+  "contact",
+  "kids-classes",
+  "birthday-parties",
+  "fitness-classes",
+  "personal-training",
+  "about",
+  "parkour",
+  "summer-camps-in-springfield-mo",
+  "nerf-wars",
+  "laser-tag",
+  "homeschool-sports-and-classes-springfield-mo",
+]);
+const CENTER_HERO = new Set(["contact", "competitions", "wnl-competitions"]);
+const RIGHT_HERO = new Set(["kids-classes"]);
+
+let body = stripDump(page.blocks);
+const heroExtra: Block[] = [];
+if (page.slug === "home") {
+  while (body[0]?.type === "p" && !body[0].text.includes("●")) heroExtra.push(body.shift()!);
+}
+const bullet = body[0]?.text.includes("●") ? body.shift()! : undefined;
+const showHeroText = Boolean(hero) && page.h1FromSource;
+const heroAlign = CENTER_HERO.has(page.slug) ? "center" : RIGHT_HERO.has(page.slug) ? "right" : "left";
+const heroTone = RED_HERO.has(page.slug) ? "red" : "white";
+
 interface Section {
   titles: string[];
   body: Block[];
-  image?: ContentImage;
   quotes: boolean;
 }
-
 const sections: Section[] = [];
-let current: Section = { titles: [], body: [], quotes: false };
-const flush = () => {
-  if (current.titles.length || current.body.length) sections.push(current);
-  current = { titles: [], body: [], quotes: false };
-};
-for (const block of blocks) {
-  if (block.type === "h2" && !block.text.includes("●")) {
-    if (current.titles.length && current.body.length === 0) current.titles.push(block.text);
-    else {
-      flush();
-      current = { titles: [block.text], body: [], quotes: /testimonial/i.test(block.text) };
-    }
-  } else current.body.push(block);
+{
+  let current: Section = { titles: [], body: [], quotes: false };
+  const flush = () => {
+    if (current.titles.length || current.body.length) sections.push(current);
+    current = { titles: [], body: [], quotes: false };
+  };
+  const staysWithSection = (text: string) =>
+    /^(class times|practice times)$/i.test(text) || /^\d{1,2}(:\d{2})?\s*(am|pm)\b/i.test(text);
+  const quoteHeading = (text: string) => /testimonial|what our clients say/i.test(text);
+  for (const block of body) {
+    if (block.type === "h2") {
+      if (current.quotes && /^[-–—]/.test(block.text.trim())) current.body.push(block);
+      else if (current.titles.length && current.body.length === 0 && current.titles.length < 4) {
+        current.titles.push(block.text);
+        if (quoteHeading(block.text)) current.quotes = true;
+      } else if (current.titles.length && staysWithSection(block.text)) current.body.push(block);
+      else {
+        flush();
+        current = { titles: [block.text], body: [], quotes: quoteHeading(block.text) };
+      }
+    } else current.body.push(block);
+  }
+  flush();
 }
-flush();
 
-let photo = 0;
-for (const section of sections) {
-  if (section.quotes) continue;
-  const image = page.images[photo];
-  if (image) {
-    section.image = image;
-    photo += 1;
+interface Card {
+  title: string;
+  titleHref?: string;
+  body: Block[];
+  button?: Block;
+}
+
+function parseCards(blocks: Block[]): Card[] {
+  const cards: Card[] = [];
+  let card: Card | null = null;
+  const flush = () => {
+    if (card) cards.push(card);
+  };
+  for (const block of blocks) {
+    if (block.type === "h2" || (block.type === "a" && card?.button)) {
+      flush();
+      card = { title: block.text, titleHref: block.type === "a" ? block.href : undefined, body: [] };
+      continue;
+    }
+    if (!card) continue;
+    if (block.type === "a" && !card.button) {
+      card.button = block;
+      continue;
+    }
+    card.body.push(block);
+  }
+  flush();
+  return cards.filter((item) => item.title);
+}
+
+const bestAt = page.slug === "home" ? body.findIndex((block) => block.text.startsWith("SPRINGFIELD'S BEST")) : -1;
+const beAt = page.slug === "home" ? body.findIndex((block) => block.text === "BE AN") : -1;
+const quoteAt = body.findIndex((block) => /client testimonials/i.test(block.text));
+const homeReady = bestAt > 0 ? body.slice(0, bestAt) : [];
+const bandTitles: string[] = [];
+let cardStart = bestAt;
+if (bestAt >= 0) {
+  cardStart = bestAt;
+  while (cardStart < body.length && body[cardStart]?.type === "h2" && cardStart < (beAt < 0 ? body.length : beAt)) {
+    const heading = body[cardStart];
+    if (!heading || /classes and activities/i.test(heading.text)) break;
+    bandTitles.push(heading.text);
+    cardStart += 1;
   }
 }
+const homeCards = page.slug === "home" && beAt > cardStart ? parseCards(body.slice(cardStart, beAt)) : [];
+const homeEveryday = page.slug === "home" && beAt >= 0 ? body.slice(beAt, quoteAt < 0 ? undefined : quoteAt) : [];
+const quoteBlocks = quoteAt >= 0 ? body.slice(quoteAt) : [];
 
-function groupQuotes(items: Block[]): Array<{ lines: string[]; by?: string }> {
-  const quotes: Array<{ lines: string[]; by?: string }> = [];
+const CARD_FILES = [
+  "media/2023-03-classes.webp",
+  "media/2023-03-train.webp",
+  "media/2023-03-birthday.webp",
+  "media/2023-12-Day-Camps.webp",
+  "media/2023-04-Parkour-Gym-Parkour-Classes-Banner.webp",
+  "media/2024-02-kids-classes.webp",
+  "media/2025-06-the-Best-Gyms-in-Springfield-MO.webp",
+];
+const FUN_FILES = [1, 2, 3, 4, 5, 6].map((n) => `media/2023-03-kid-classes-img0${n}.webp`);
+const KIDS_PHOTO: Record<string, string> = {
+  "pre-school": "media/2023-03-pre-shool-warriors.webp",
+  junior: "media/2023-03-junior-warriors.webp",
+  csna: "media/2023-03-csna-comp.webp",
+  parkour: "media/2023-04-parkour-7-yrs-old.webp",
+  homeschool: "media/2025-02-homeschool-kids-sports.webp",
+};
+const quoteIcon = media("media/2023-03-qoute-icon.webp");
+
+function hrefOf(block: Block): string {
+  const href = block.href || "#";
+  if (/^tel:/i.test(href) || /\(417\)\s*894-7319|\(417\)894-7319/.test(block.text)) return site.phone.tel;
+  if (/^mailto:/i.test(href) || block.text.includes("@")) return href.startsWith("mailto:") ? href : `mailto:${block.text}`;
+  return href;
+}
+
+function isForget(text: string): boolean {
+  return /don.t forget/i.test(text);
+}
+
+function isSchedule(text: string): boolean {
+  return /^(Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday|Preschool hours)\b/.test(text);
+}
+
+function factParts(text: string): string[] | null {
+  if (!/Date:/.test(text) || !/Price/.test(text)) return null;
+  const parts = text.split(/(?=Date:|Start time:|Price per registration:)/).map((part) => part.trim()).filter(Boolean);
+  return parts.length > 1 ? parts : null;
+}
+
+function stepParts(text: string): string[] | null {
+  if (!/^1\.\s/.test(text)) return null;
+  const parts = text.split(/(?=\d+\.\s)/).map((part) => part.trim()).filter(Boolean);
+  return parts.length > 1 ? parts : null;
+}
+
+interface Quote {
+  lines: string[];
+  by?: string;
+}
+function groupQuotes(items: Block[]): Quote[] {
+  const quotes: Quote[] = [];
   let lines: string[] = [];
   for (const block of items) {
-    if (block.text.startsWith("-")) {
+    if (/^[-–—]\s*\S/.test(block.text.trim())) {
       quotes.push({ lines, by: block.text });
       lines = [];
-    } else lines.push(block.text);
+    } else if (block.type !== "h2") lines.push(block.text);
   }
   if (lines.length) quotes.push({ lines });
   return quotes.filter((quote) => quote.lines.length || quote.by);
 }
 
-const tokenRe = /(\(417\)\s*894-7319|https?:\/\/[^\s]+|[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,})/gi;
-function pieces(text: string): Array<{ kind: "text" | "phone" | "mail" | "url"; value: string }> {
-  const out: Array<{ kind: "text" | "phone" | "mail" | "url"; value: string }> = [];
-  let last = 0;
-  for (const match of text.matchAll(tokenRe)) {
-    const value = match[0];
-    const index = match.index ?? 0;
-    if (index > last) out.push({ kind: "text", value: text.slice(last, index) });
-    if (/^\(417\)/.test(value)) out.push({ kind: "phone", value });
-    else if (value.includes("@") && !value.startsWith("http")) out.push({ kind: "mail", value });
-    else out.push({ kind: "url", value: value.replace(/[),.;]+$/, "") });
-    last = index + value.length;
+const h1key = norm(page.h1);
+function matchesH1(lines: string[]): boolean {
+  return lines.some((line) => norm(line) === h1key) || norm(lines.join(" ")) === h1key;
+}
+const h1InHero = showHeroText;
+const h1InSection = !h1InHero && (page.slug === "home" ? matchesH1(["CLIENT TESTIMONIALS"]) : sections.some((section) => matchesH1(section.titles)) || matchesH1(quoteBlocks.filter((block) => block.type === "h2").map((block) => block.text)));
+
+const story = page.slug === "home" ? [] : sections.filter((section) => !section.quotes);
+
+interface MiniCard {
+  title: string;
+  body: Block[];
+  button?: Block;
+  image?: string;
+}
+function cardsFrom(section: Section): MiniCard[] {
+  const cards: MiniCard[] = [];
+  let card: MiniCard = { title: section.titles[0] || "", body: [] };
+  for (const block of section.body) {
+    if (block.type === "h2") continue;
+    if (block.type === "a" && card.button && block.text.split(/\s+/).length <= 4) {
+      cards.push(card);
+      card = { title: block.text, body: [] };
+      continue;
+    }
+    if (block.type === "a" && !card.button) {
+      card.button = block;
+      continue;
+    }
+    card.body.push(block);
   }
-  if (last < text.length) out.push({ kind: "text", value: text.slice(last) });
-  return out;
+  if (card.title || card.body.length) cards.push(card);
+  return cards.filter((item) => item.title);
+}
+const campSections = story.filter((section) => /youth summer camp|no-school day camp/i.test(section.titles[0] || ""));
+const campCards: MiniCard[] =
+  page.slug === "kids-classes"
+    ? campSections.flatMap(cardsFrom).map((card, index) => ({
+        ...card,
+        image: ["media/2023-04-Summer-Camp-banner.webp", "", "media/2023-12-Day-Camps.webp"][index],
+      }))
+    : [];
+const pageStory = story.filter((section) => !campSections.includes(section));
+const quotes = page.slug === "home" ? groupQuotes(quoteBlocks) : sections.filter((section) => section.quotes).flatMap((section) => groupQuotes(section.body));
+const quoteTitles = page.slug === "home"
+  ? quoteBlocks.filter((block) => block.type === "h2").map((block) => block.text)
+  : sections.find((section) => section.quotes)?.titles ?? [];
+
+let photoCursor = 0;
+const pool: ContentImage[] =
+  page.slug === "meet-the-team" && page.heroFile
+    ? [{ file: page.heroFile, alt: page.heroAlt, kind: "photo" }, ...page.images]
+    : page.images.filter((image) => !FUN_FILES.includes(image.file));
+
+function nextPhoto(): ContentImage | undefined {
+  const image = pool[photoCursor];
+  if (image) photoCursor += 1;
+  return image;
 }
 
-const story = sections.filter((section) => !section.quotes);
-const quotes = sections.filter((section) => section.quotes);
+const readyTitles = homeReady.filter((block) => block.type === "h2").map((block) => block.text);
+const readyBody = homeReady.filter((block) => block.type !== "h2");
+const hours = readyBody.filter((block) => isSchedule(block.text));
+const readyCopy = readyBody.filter((block) => !isSchedule(block.text) && !/^\(see below/.test(block.text) && block.text !== "Open Gym Hours");
+const hoursNote = readyBody.find((block) => /^\(see below/.test(block.text));
+const everydayTitles = homeEveryday.filter((block) => block.type === "h2").map((block) => block.text);
+const everydayBody = homeEveryday.filter((block) => block.type !== "h2");
+const everydayKicker = everydayBody[0]?.text === "EVERYDAY WARRIOR!" ? everydayBody[0] : undefined;
 ---
 
 <BaseLayout route={route}>
@@ -116,133 +344,311 @@ const quotes = sections.filter((section) => section.quotes);
       />
     )
   }
-  <div slot="hero" class:list={["hero-copy", { "hero-plain": !hero }]}>
-    {hero && <div class="hero-scrim" aria-hidden="true"></div>}
+  <div slot="hero" class:list={["hero-copy", hero ? `align-${heroAlign}` : "hero-plain", hero ? `tone-${heroTone}` : "", { bare: !showHeroText }]}>
+    {hero && showHeroText && <div class="hero-scrim" aria-hidden="true"></div>}
     <div class="hero-text">
-      <h1>{page.h1}</h1>
-      {heroSub && <p class="hero-sub">{heroSub.text}</p>}
+      {showHeroText && <h1>{page.h1}</h1>}
+      {page.slug === "home" && heroExtra[0] && <p class="hero-kicker">{heroExtra[0].text}</p>}
+      {page.slug === "home" && heroExtra[1] && <p class="hero-sub">{heroExtra[1].text}</p>}
+      {page.slug !== "home" && showHeroText && heroExtra[0] && <p class="hero-sub">{heroExtra[0].text}</p>}
     </div>
   </div>
+
+  {
+    bullet && (
+      <section class="bullet-bar" aria-label="Programs">
+        <div class="wrap bullet-row">
+          <a href="/kids-classes/">KIDS</a>
+          <span class="bullet-dot" aria-hidden="true">●</span>
+          <a href="/fitness-classes/">ADULTS</a>
+          <span class="bullet-dot" aria-hidden="true">●</span>
+          <a href="/summer-camps-in-springfield-mo/">SUMMER CAMPS</a>
+          <span class="bullet-dot" aria-hidden="true">●</span>
+          <a href="/about/">COMMUNITY</a>
+          <span class="bullet-dot" aria-hidden="true">●</span>
+          <a href="/birthday-parties/">BIRTHDAY PARTIES</a>
+        </div>
+      </section>
+    )
+  }
 
   <section class="trust" aria-label="Springfield Warrior Sports">
     <div class="wrap trust-row">
       <span>{site.name}</span>
       <span>{site.tagline}</span>
-      <span>Kids</span>
-      <span>Adults</span>
-      <span>Summer Camps</span>
+      {bullet ? null : (
+        <>
+          <span>Kids</span>
+          <span>Adults</span>
+          <span>Summer Camps</span>
+        </>
+      )}
       <a href={site.phone.tel}>{site.phone.display}</a>
     </div>
   </section>
 
   {
-    story.map((section, index) => (
-      <section class:list={["section", { band: index % 2 === 1 }]}>
-        <div class="wrap">
-          <div class:list={["split", { flip: index % 2 === 1 }]}>
-            {section.image && (
-              <img
-                src={media(section.image.file).src}
-                alt={section.image.alt}
-                width={media(section.image.file).width}
-                height={media(section.image.file).height}
-                loading="lazy"
-                decoding="async"
-              />
-            )}
-            <div class="copy">
-              {section.titles.length > 0 && (
-                <h2>
-                  {section.titles.map((title) => (
-                    <span class="title-line">{title}</span>
-                  ))}
-                </h2>
-              )}
-              {section.body.map((block) =>
-                block.type === "a" ? (
-                  <p><a class="btn" href={block.href}>{block.text}</a></p>
-                ) : block.text.includes("●") ? (
-                  <p class="chip-row">{block.text}</p>
-                ) : (
-                  <p>
-                    {pieces(block.text).map((part) =>
-                      part.kind === "phone" ? (
-                        <a href={site.phone.tel}>{part.value}</a>
-                      ) : part.kind === "mail" ? (
-                        <a href={`mailto:${part.value}`}>{part.value}</a>
-                      ) : part.kind === "url" ? (
-                        <a href={part.value}>{part.value}</a>
-                      ) : (
-                        part.value
-                      ),
-                    )}
-                  </p>
-                ),
-              )}
-            </div>
+    !h1InHero && !h1InSection && (
+      <h1 class="sr-only">{page.h1}</h1>
+    )
+  }
+
+  {
+    page.slug === "home" && (
+      <section class="section">
+        <div class="wrap split photos-left">
+          <img class="tall-pair" src={media("media/2025-12-SpringField-indoor-obstacle.webp").src} alt="SpringField-indoor-obstacle" width="648" height="1116" loading="lazy" decoding="async" />
+          <div class="copy">
+            <SplitTitle lines={readyTitles} />
+            {readyCopy.map((block) => <RichText text={block.text} />)}
+            <p><strong>Open Gym Hours</strong></p>
+            <ul class="icon-list">
+              {hours.map((line) => (
+                <li>
+                  <span class="ico" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 11H7V11h4V6h2z" /></svg>
+                  </span>
+                  <span>{line.text}</span>
+                </li>
+              ))}
+            </ul>
+            {hoursNote && <RichText text={hoursNote.text} />}
           </div>
         </div>
       </section>
-    ))
+    )
   }
-
-  {event && (
-    <section class="section">
-      <div class="wrap">
-        <LeadForm event={event} />
-      </div>
-    </section>
-  )}
 
   {
-    quotes.map((section) => (
-      <section class="section quotes">
+    page.slug === "home" && bandTitles.length > 0 && (
+      <section class="section blue-band">
         <div class="wrap">
-          {section.titles.length > 0 && <h2>{section.titles.join(" ")}</h2>}
-          {groupQuotes(section.body).map((quote) => (
-            <blockquote class="quote">
-              {quote.lines.map((line) => <p>{line}</p>)}
-              {quote.by && <p class="by">{quote.by}</p>}
-            </blockquote>
-          ))}
+          <SplitTitle lines={bandTitles} align="center" tone="light" />
+          <div class="card-stack">
+            {homeCards.map((card, index) => {
+              const file = CARD_FILES[index];
+              const shot = file ? media(file) : undefined;
+              return (
+                <article class="program-card">
+                  {shot?.src && <img src={shot.src} alt="" width={shot.width} height={shot.height} loading="lazy" decoding="async" />}
+                  <div>
+                    <h3>{card.titleHref ? <a href={card.titleHref}>{card.title}</a> : card.title}</h3>
+                    {card.body.map((block) => <RichText text={block.text} />)}
+                    {card.button?.href && <p><a class="btn" href={hrefOf(card.button)}>{card.button.text}</a></p>}
+                  </div>
+                </article>
+              );
+            })}
+          </div>
         </div>
       </section>
-    ))
+    )
   }
 
-  {page.slug === "contact" && (
-    <section class="section">
-      <div class="wrap">
-        <MapFacade />
+  {
+    page.slug === "home" && everydayTitles.length > 0 && (
+      <section class="section">
+        <div class="wrap split">
+          <div class="copy">
+            <SplitTitle lines={[...everydayTitles, everydayKicker?.text || ""].filter(Boolean)} />
+            {everydayBody.slice(everydayKicker ? 1 : 0).map((block) =>
+              block.type === "a" ? (
+                <p><a class="btn" href={hrefOf(block)}>{block.text}</a></p>
+              ) : (
+                <RichText text={block.text} />
+              ),
+            )}
+          </div>
+          <img src={media("media/2023-03-everyday-warrior.webp").src} alt="" width="800" height="600" loading="lazy" decoding="async" />
+        </div>
+      </section>
+    )
+  }
+
+  {
+    page.slug === "contact" && (
+      <section class="section">
+        <div class="wrap contact-grid">
+          <div>
+            {story[0] && (
+              <>
+                <SplitTitle lines={["CONTACT US"]} as="h2" />
+                {story[0].body.map((block) => {
+                  if (block.type === "a" && /contact us/i.test(block.text)) return null;
+                  if (block.type === "a" || /plainview|894-7319|8947319|@/i.test(block.text)) return null;
+                  const steps = stepParts(block.text);
+                  if (steps) return <ol class="steps">{steps.map((step) => <li>{step.replace(/^\d+\.\s*/, "")}</li>)}</ol>;
+                  return <RichText text={block.text} />;
+                })}
+                <ul class="icon-list">
+                  {story[0].body.filter((block) => /plainview|894-7319|@/i.test(block.text)).map((block) => (
+                    <li>
+                      <span class="ico" aria-hidden="true">
+                        <svg viewBox="0 0 24 24">
+                          {/@/.test(block.text) ? (
+                            <path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm9 7L4 7v.2l8 5.2 8-5.2V7z" />
+                          ) : /894/.test(block.text) ? (
+                            <path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11 11 0 0 0 3.6.6 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 7a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11 11 0 0 0 .6 3.6 1 1 0 0 1-.25 1z" />
+                          ) : (
+                            <path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 14.5 9 2.5 2.5 0 0 1 12 11.5z" />
+                          )}
+                        </svg>
+                      </span>
+                      {block.type === "a" ? <a href={hrefOf(block)}>{block.text}</a> : <span>{block.text}</span>}
+                    </li>
+                  ))}
+                </ul>
+              </>
+            )}
+            {event && <LeadForm event={event} tone="card" />}
+          </div>
+          <MapFacade />
+        </div>
+      </section>
+      <section class="section contact-photos">
+        <div class="wrap pair-photos" style="margin-top:28px">
+          <img src={media("media/2025-12-IMG_2342-768x576.jpeg.webp").src} alt="" width="768" height="576" loading="lazy" decoding="async" />
+          <img src={media("media/2025-12-IMG_2347-scaled.webp").src} alt="" width="1200" height="800" loading="lazy" decoding="async" />
+        </div>
+      </section>
+    )
+  }
+
+  {
+    page.slug !== "home" && page.slug !== "contact" &&
+      pageStory.map((section, index) => {
+        const title = section.titles.join(" ");
+        const kidsKey = Object.keys(KIDS_PHOTO).find((key) => title.toLowerCase().includes(key));
+        const kidsFile = page.slug === "kids-classes" && kidsKey ? KIDS_PHOTO[kidsKey] : undefined;
+        const fun = /see how much fun/i.test(title);
+        const intro = page.slug === "kids-classes" && /kids fitness classes|ninja warrior classes for kids/i.test(title);
+        const photo = kidsFile
+          ? { file: kidsFile, alt: "", kind: "photo" as const }
+          : fun || intro || page.slug === "kids-classes"
+            ? undefined
+            : nextPhoto();
+        const shot = photo ? media(photo.file) : undefined;
+        const hoursLines = section.body.filter((block) => isSchedule(block.text));
+        const showHours = hoursLines.length >= 3;
+        const as = !h1InHero && matchesH1(section.titles) ? "h1" : "h2";
+        const flip = Boolean(shot) && (page.slug === "kids-classes" ? index % 2 === 0 : index % 2 === 1);
+        return (
+          <section class:list={["section", { band: index % 2 === 1 && !fun && !intro, ink: fun, "kids-intro": intro }]}>
+            <div class="wrap">
+              <div class:list={["split", { flip, "intro-copy": intro }]}>
+                {shot?.src && <img class="frame-img" src={shot.src} alt={photo?.alt || ""} width={shot.width} height={shot.height} loading="lazy" decoding="async" />}
+                <div class="copy">
+                  {section.titles.length > 0 && <SplitTitle lines={section.titles} as={as} />}
+                  {section.body.map((block) => {
+                    if (fun && isForget(block.text)) return null;
+                    if (showHours && isSchedule(block.text)) return null;
+                    if (block.type === "h2") return <p class="subhead">{block.text}</p>;
+                    if (block.type === "a") return <p><a class="btn" href={hrefOf(block)}>{block.text}</a></p>;
+                    const facts = factParts(block.text);
+                    if (facts) {
+                      return (
+                        <ul class="icon-list">
+                          {facts.map((fact) => (
+                            <li>
+                              <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 2h2v2h6V2h2v2h3v18H4V4h3zm12 8H5v10h14z" /></svg></span>
+                              <span>{fact}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      );
+                    }
+                    const steps = stepParts(block.text);
+                    if (steps) return <ol class="steps">{steps.map((step) => <li>{step}</li>)}</ol>;
+                    return <RichText text={block.text} />;
+                  })}
+                  {showHours && (
+                    <ul class="icon-list">
+                      {hoursLines.map((line) => (
+                        <li>
+                          <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 11H7V11h4V6h2z" /></svg></span>
+                          <span>{line.text}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </div>
+              </div>
+              {fun && (
+                <div class="photo-grid">
+                  {FUN_FILES.map((file) => {
+                    const img = media(file);
+                    return img.src ? <img src={img.src} alt="" width={img.width} height={img.height} loading="lazy" decoding="async" /> : null;
+                  })}
+                </div>
+              )}
+              {fun && section.body.filter((block) => isForget(block.text)).map((block) => <p class="fun-note">{block.text}</p>)}
+            </div>
+          </section>
+        );
+      })
+  }
+
+  {
+    campCards.length > 0 && (
+      <section class="section">
+        <div class="wrap trio">
+          {campCards.map((card) => {
+            const shot = card.image ? media(card.image) : undefined;
+            return (
+              <article>
+                {shot?.src && <img src={shot.src} alt="" width={shot.width} height={shot.height} loading="lazy" decoding="async" />}
+                <div class="pad">
+                  <h3>{card.title}</h3>
+                  {card.body.map((block) => <RichText text={block.text} />)}
+                  {card.button?.href && <p><a class="btn" href={hrefOf(card.button)}>{card.button.text}</a></p>}
+                </div>
+              </article>
+            );
+          })}
+        </div>
+      </section>
+    )
+  }
+
+  {
+    event && page.slug !== "contact" && (
+      <section class="form-band">
+        <div class="wrap">
+          <LeadForm event={event} />
+        </div>
+      </section>
+    )
+  }
+
+  {
+    quotes.length > 0 && (
+      <section class="section band">
+        <div class="wrap">
+          {quoteTitles.length > 0 && (
+            <SplitTitle lines={quoteTitles} align="center" as={!h1InHero && matchesH1(quoteTitles) ? "h1" : "h2"} />
+          )}
+          <div class="quote-grid">
+            {quotes.map((quote) => (
+              <blockquote class="quote">
+                {quoteIcon.src && <img src={quoteIcon.src} alt="" width="42" height="42" />}
+                {quote.lines.map((line) => <p>{line}</p>)}
+                {quote.by && <p class="q-by">{quote.by}</p>}
+              </blockquote>
+            ))}
+          </div>
+        </div>
+      </section>
+    )
+  }
+
+  {
+    page.logos.length > 0 && (
+      <div class="wrap logos">
+        {page.logos.filter((logo) => !/qoute-icon|SWS-logo-footer/i.test(logo.file)).map((logo) => {
+          const img = media(logo.file);
+          return img.src ? <img src={img.src} alt={logo.alt} width="140" height="64" loading="lazy" decoding="async" /> : null;
+        })}
       </div>
-    </section>
-  )}
-
-  {page.logos.length > 0 && (
-    <div class="wrap logos">
-      {page.logos.map((logo) => (
-        <img src={media(logo.file).src} alt={logo.alt} width="140" height="64" loading="lazy" decoding="async" />
-      ))}
-    </div>
-  )}
+    )
+  }
 </BaseLayout>
-
-<style>
-  .hero-scrim {
-    position: absolute;
-    inset: 0;
-    z-index: 0;
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.25) 70%);
-  }
-  .hero-plain {
-    background: var(--color-ws-blue-dark);
-    min-height: 280px;
-  }
-  .hero-text {
-    position: relative;
-    z-index: 1;
-  }
-  .title-line {
-    display: block;
-  }
-</style>

@@ -35,10 +35,32 @@ export function mainContent(raw) {
   return out.join("\n").trim();
 }
 
+/**
+ * Gravity Forms chrome that text.txt glued into the page. These lines are not page copy.
+ * The copy-parity test ignores them, and the page must not print them outside the form.
+ */
+export function isFormDumpLine(line) {
+  const t = collapse(line);
+  if (!t) return false;
+  if (/indicates required fields/i.test(t)) return true;
+  if (/\(required\)/i.test(t)) return true;
+  if (/first and last name\s*\*/i.test(t)) return true;
+  if (/^name first last email\s*\*$/i.test(t)) return true;
+  if (/^add more participant$/i.test(t)) return true;
+  if (/^(submit and continue to payment)$/i.test(t)) return true;
+  if (/\b(csna|wnl)\b/i.test(t) && /form$/i.test(t) && t.length < 80) return true;
+  if (/\*\s*$/.test(t)) return true;
+  if (/^would you like to discuss any of these\??$/i.test(t)) return true;
+  if (/^anything else\??$/i.test(t)) return true;
+  if (/^(nerf battle party|laser tag party|private party|pizza party)$/i.test(t)) return true;
+  if (/^(first|last|name|email|phone)$/i.test(t)) return true;
+  return false;
+}
+
 function isBoundary(line) {
   const letters = line.replace(/[^A-Za-z]/g, "");
   const heading = letters.length > 3 && letters === letters.toUpperCase() && line.length <= 120 && !/[.!?]$/.test(line);
-  return heading || /^(submit|notify me)$/i.test(line) || /^\*+\s*indicates required fields$/i.test(line);
+  return heading || /^(submit|notify me)$/i.test(line) || isFormDumpLine(line);
 }
 
 function splitSentences(flat) {

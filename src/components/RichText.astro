@@ -1,0 +1,43 @@
+---
+import { site } from "../data/site";
+
+interface Props {
+  text: string;
+  class?: string;
+}
+const { text } = Astro.props;
+const tokenRe = /(\(417\)\s*894-7319|\(417\)894-7319|https?:\/\/[^\s]+|[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,})/gi;
+
+function pieces(value: string): Array<{ kind: "text" | "phone" | "mail" | "url"; value: string }> {
+  const out: Array<{ kind: "text" | "phone" | "mail" | "url"; value: string }> = [];
+  let last = 0;
+  for (const match of value.matchAll(tokenRe)) {
+    const token = match[0];
+    const index = match.index ?? 0;
+    if (index > last) out.push({ kind: "text", value: value.slice(last, index) });
+    if (/^\(417\)/.test(token)) out.push({ kind: "phone", value: token });
+    else if (token.includes("@") && !token.startsWith("http")) out.push({ kind: "mail", value: token });
+    else out.push({ kind: "url", value: token.replace(/[),.;]+$/, "") });
+    last = index + token.length;
+  }
+  if (last < value.length) out.push({ kind: "text", value: value.slice(last) });
+  return out;
+}
+const parts = pieces(text);
+---
+
+<p class={Astro.props.class}>
+  {
+    parts.map((part) =>
+      part.kind === "phone" ? (
+        <a href={site.phone.tel}>{part.value}</a>
+      ) : part.kind === "mail" ? (
+        <a href={`mailto:${part.value}`}>{part.value}</a>
+      ) : part.kind === "url" ? (
+        <a href={part.value}>{part.value}</a>
+      ) : (
+        part.value
+      ),
+    )
+  }
+</p>

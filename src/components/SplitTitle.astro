@@ -1,0 +1,21 @@
+---
+interface Props {
+  lines: string[];
+  as?: "h1" | "h2" | "h3";
+  align?: "left" | "center";
+  tone?: "split" | "light";
+}
+const { lines, as = "h2", align = "left", tone = "split" } = Astro.props;
+const Tag = as;
+const firstLine = lines[0] ?? "";
+const kicker = tone === "split" && lines.length > 1 && firstLine.replace(/\s/g, "").length <= 8;
+---
+
+<Tag class:list={["split-title", align, tone === "split" ? "tone-split" : tone]}>
+  {
+    lines.map((line, index) => {
+      const role = tone === "light" ? "t-light" : kicker ? (index === 0 ? "t-kicker" : "t-red") : index === 0 ? "t-red" : "t-thin";
+      return <span class={role}>{line}</span>;
+    })
+  }
+</Tag>

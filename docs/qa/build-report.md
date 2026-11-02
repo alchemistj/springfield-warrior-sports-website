@@ -44,8 +44,8 @@ First-frame `--controls` did not pass. The synthetic good page flickered on some
 - Legacy in-page links that pointed at a redirected URL now point at the final URL. `/school-day-off-solutions/` goes to `/summer-camps-in-springfield-mo/`.
 - Footer address stays "605 W Farm Rd 182, Springfield, MO, 65810, United States". Contact and schema stay "605 W. Plainview Road, Springfield, MO 65810".
 - The logo is an inline palette PNG, 2,670 bytes. There was no SVG.
-- Heroes are inline AVIF, not enlarged past the captured file. Home source is 324×302 (about 3 KB). About is 492×285 (about 1.1 KB). Several banners are wide and short, so a 1280×35–60 KB hero was not possible without inventing pixels. Competitions is about 40 KB. Contact is about 20 KB.
-- Fonts are self-hosted Heebo 400/700 and Epilogue 700/800 with `font-display: optional`.
+- Heroes are inline AVIF. The home hero is the live gym photo (`IMG_2341`), encoded at 960px. Other heroes use the captured banner for that page and are not swapped for a different photo.
+- Fonts in the Review 1 rebuild are self-hosted Muli 400/700, Heebo 800/900, and Epilogue 300/500, with `font-display: optional`. The earlier Heebo 400/700 and Epilogue 700/800 files are unused.
 - No privacy or terms pages. None of the captured forms has an SMS consent checkbox.
 - Three hotlinked images were not copied. They are listed in `source/media/skipped.txt`:
   - `https://cdn.prod.website-files.com/6254371b79a689fbdc2b6866/62544e735ced2e7233a47d90_About%20Us%20in%20Springfield%20Hero.jpg`
@@ -54,9 +54,44 @@ First-frame `--controls` did not pass. The synthetic good page flickered on some
 
 The copy-parity test ignores the repeated header nav lines and stops at the footer tagline. It does not compare cookie-banner or Thrive widget chrome.
 
+## Review 1 fixes
+
+Side-by-side images are in `docs/qa/review-2/`. Live capture is on the left. This build is on the right. Each half is 708px wide.
+
+| Page | Section | What changed | Remaining difference |
+|---|---|---|---|
+| Every page | Header | Black utility bar (Contact, About, Sign Our Waiver) over the blue `#285276` bar. White logo on the left. Main nav on one line. Mobile keeps the hamburger. Hide-on-scroll stays. | The hide-on-scroll header and the hamburger are spec additions. |
+| Every page | Fonts | Body is self-hosted Muli (Mulish). Headings are Heebo 800/900. Thin second lines are Epilogue 300. `font-display: optional`. No font preload. | Live loads these from Google. The files here are the latin subsets. |
+| Every page | Footer | White footer, black logo, the live tagline, round red Facebook and Instagram icons, icon contact column, Quick Links, black copyright bar. | Footer address stays Farm Rd 182. Contact stays W. Plainview Road. |
+| Every page | Trust bar | Spec addition under the hero. | On home the program words stay in the live bullet bar, so the trust bar is only the name, tagline, and phone. Other pages include Kids, Adults, and Summer Camps in the trust bar. |
+| Home | Hero | Dark gym photo `IMG_2341` (the live CSS background). It was not in the media capture, so it is stored locally. Red "STRONGER", white thin kicker, subhead inside the hero. | The inline AVIF is a 960px crop at quality 28, about 19 KB, so the phone score stays at the target. |
+| Home | Bullet bar | Black bar, red dots, Kids, Adults, Summer Camps, Community, Birthday Parties. | None beyond the trust bar noted above. |
+| Home | Get ready | Two-part red and thin headings. The captured side-by-side gym photo. Clock icon list for Open Gym Hours. | The two photos are the one captured composite, not two separate files. |
+| Home | Blue band | Full-width blue band, centered white title, white cards with photo, title, text, and red button. Birthday Parties and Personal Training are their own cards. | Card photos are the captured set, in live order. |
+| Home | Everyday warrior | Thin "BE AN" over red "EVERYDAY WARRIOR!", copy, button, photo on the right. | None. |
+| Home | Testimonials | Centered red title, thin dark subtitle, two columns, quote icon, red name. | Quote names use `#b4231e` (6.01:1 on the grey band). `#d6352f` was 4.36:1 there. The scraped quote-icon and footer-logo files are not repeated in the logo row. |
+| Kids classes | Sections | Alternating class photos, red and thin headings, class-time subheads, black fun band, photo grid, three camp cards. | Class-time subheads use `#b4231e` so "CLASS TIMES" clears 4.5:1 on the grey band. The birthday-parties card photo was not in the capture. The day-camp card uses the captured Day Camps photo. |
+| Contact | Page | One "CONTACT US" heading, icon list, stacked name fields in the white card, both gym photos, centered hero text. | "Map of the gym" and "Show map" are the deferred map from the spec. The map does not load Google on first paint. |
+| Schedule a party | Page | No hero text. Numbered steps. Grey form with live placeholders, First/Last sub-labels, and the red submit. | First/Last sub-labels use `#595959`. `#777` failed contrast on the white fields. The page H1 is "CLIENT TESTIMONIALS" on the testimonials heading, because the live meta H1 was empty. |
+| Competitions | Details and form | Centered white hero. Date, time, and price as an icon list. Participant bar first, then Home Gym, email, and phone. "Don't wait" prints once. | The live details photo strip was not in the capture, so that column is empty. |
+| Form pages | Dumped labels | Gravity Forms field dumps are not printed outside the form. | The copy-parity test now treats those lines as form chrome, so dumping them can no longer satisfy the test. |
+| Buttons | Color | Red stays `#d6352f` so white bold 14px text clears 4.5:1. | Live red `#db3a34` measured 4.49:1. |
+| Phone layout | Below the fold | Sections below the header use `content-visibility: auto` with a 5200px intrinsic size, taller than the tallest section, so skipped sections do not overlap the footer. | This is a paint skip for the phone viewport. Desktop layout is unchanged. Full-page screenshots turn the skip off so every section is in the image. |
+
+Lighthouse mobile on the local preview, after that paint skip. Order is performance / accessibility / best practices / SEO.
+
+| Page | Score | TBT |
+|---|---|---|
+| Home | 98 / 100 / 100 / 100 | 88 ms |
+| Kids classes | 100 / 100 / 100 / 100 | 0 ms |
+| Schedule a birthday party | 100 / 100 / 100 / 100 | 57 ms |
+| Contact | 100 / 100 / 100 / 100 | 79 ms |
+
+First-frame check on this same preview: home, kids classes, schedule a birthday party, and contact, mobile and desktop, three runs each, 24/24, worst MAE 0.
+
 ## Open questions
 
 - Where GF18 should live, if it should be a page at all.
-- Whether Josh has larger originals for the small heroes (home classes photo, about gym photo, pricing banner).
+- Whether Josh has larger originals for the small captured heroes (about gym photo, pricing banner). The home hero is the live gym photo.
 - Central Forms registration, the preview lead URL, Vercel project, and DNS are out of this job.
 - Sunday has no clock range in the source, so it is not in schema hours.

@@ -56,7 +56,7 @@ test("contact map does not request Google on load", async ({ page }) => {
   expect(hits).toEqual([]);
 });
 
-test("screenshots of every page", async ({ page }) => {
+test("screenshots of every page", async ({ browser }) => {
   test.setTimeout(600_000);
   const sharp = (await import("sharp")).default;
   const { mkdir } = await import("node:fs/promises");
@@ -66,9 +66,24 @@ test("screenshots of every page", async ({ page }) => {
       ["desktop", 1440, 900],
       ["mobile", 390, 844],
     ] as const) {
-      await page.setViewportSize({ width, height });
-      await page.goto(item.path);
-      const png = await page.screenshot({ fullPage: true });
+      let png: Buffer | undefined;
+      let lastError: unknown;
+      for (let attempt = 0; attempt < 2 && !png; attempt += 1) {
+        const context = await browser.newContext({ viewport: { width, height } });
+        const page = await context.newPage();
+        try {
+          await page.goto(item.path, { waitUntil: "load" });
+          await page.addStyleTag({
+            content: ".section{content-visibility:visible!important;contain-intrinsic-size:none!important}",
+          });
+          png = await page.screenshot({ fullPage: true, animations: "disabled" });
+        } catch (error) {
+          lastError = error;
+        } finally {
+          await context.close();
+        }
+      }
+      if (!png) throw lastError;
       await sharp(png).resize({ width: 1200, withoutEnlargement: true }).jpeg({ quality: 60 }).toFile(`docs/qa/screens/${item.slug}-${name}.jpg`);
     }
   }
