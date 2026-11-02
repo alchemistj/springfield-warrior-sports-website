@@ -1,5 +1,6 @@
 // One business record. The NAP phone is the only phone number on the site.
-// Footer address and contact-page address are both on the live site (Farm Road 182 is Plainview Road).
+// Address: Josh, 2 Nov 2026. NAP (JSON-LD, llms.txt, map) is exactly the Google Business Profile.
+// Visitors see the same address with "(Plainview Road at Campbell)", the name locals know.
 
 export const SITE_URL = "https://www.springfieldwarriorsports.com";
 
@@ -14,13 +15,13 @@ export const site = {
   },
   email: "office@swarriorsports.com",
   address: {
-    street: "605 W. Plainview Road",
-    footer: "605 W Farm Rd 182, Springfield, MO, 65810, United States",
+    street: "605 W Farm Rd 182",
+    display: "605 W Farm Rd 182 (Plainview Road at Campbell), Springfield, MO 65810",
     city: "Springfield",
     region: "MO",
     postalCode: "65810",
     country: "US",
-    oneLine: "605 W. Plainview Road, Springfield, MO 65810",
+    oneLine: "605 W Farm Rd 182, Springfield, MO 65810",
   },
   hours: [
     { days: "Monday", opens: "12:00", closes: "18:00", text: "Monday: 12pm-6pm" },

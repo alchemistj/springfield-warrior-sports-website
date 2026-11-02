@@ -28,7 +28,9 @@ describe("built site", () => {
       expect(html.match(/<h1[\s>]/g)?.length).toBe(1);
       expect(html).toContain(page.h1.split(" ").slice(0, 2).join(" "));
       if (!page.index) expect(html).toContain("noindex");
-      const source = readFileSync(`source/pages/${page.slug}/text.txt`, "utf8");
+      // Josh's address decision (2 Nov 2026) replaces the old contact-page address line.
+      const source = readFileSync(`source/pages/${page.slug}/text.txt`, "utf8")
+        .replace("605 W. Plainview Road Springfield, MO 65810", site.address.display);
       const text = visibleText(html);
       const missing = sentences(mainContent(source)).filter((sentence) => !text.includes(sentence));
       expect(missing, page.slug).toEqual([]);
@@ -37,6 +39,15 @@ describe("built site", () => {
       expect(outsideForm, page.slug).not.toMatch(/indicates required fields/i);
       expect(outsideForm, page.slug).not.toMatch(/First and Last Name\s*\*/i);
       expect(outsideForm, page.slug).not.toMatch(/Participant 1 Name/i);
+    }
+  });
+
+  it("shows the agreed address and keeps the NAP exact in JSON-LD", () => {
+    for (const urlPath of ["/", "/contact/"]) {
+      const html = decodeHtml(distHtml(urlPath));
+      expect(html, urlPath).toContain(site.address.display);
+      expect(html, urlPath).not.toContain("605 W. Plainview Road");
+      expect(html, urlPath).toContain('"streetAddress":"605 W Farm Rd 182"');
     }
   });
 
