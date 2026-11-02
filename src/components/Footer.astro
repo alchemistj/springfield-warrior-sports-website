@@ -1,0 +1,71 @@
+---
+import { footerLinks, site } from "../data/site";
+---
+
+<footer class="site-footer">
+  <div class="wrap foot">
+    <div>
+      <p class="foot-name">{site.name}</p>
+      <p>{site.address.footer}</p>
+      <p><a href={site.phone.tel}>{site.phone.display}</a></p>
+      <p><a href={`mailto:${site.email}`}>{site.email}</a></p>
+    </div>
+    <div>
+      <p class="foot-label">Quick Links</p>
+      <ul>
+        {footerLinks.map((item) => (
+          <li><a href={item.path}>{item.label}</a></li>
+        ))}
+      </ul>
+    </div>
+    <div>
+      <p class="foot-label">Social</p>
+      <p><a href={site.facebook}>Facebook</a></p>
+      <p><a href={site.instagram}>Instagram</a></p>
+    </div>
+  </div>
+  <p class="copy">© Copyright 2026 Springfield Warrior Sports All Rights Reserved.</p>
+</footer>
+
+<style>
+  .site-footer {
+    background: var(--color-ws-ink);
+    color: #fff;
+    padding: 36px 0 20px;
+  }
+  .foot {
+    display: grid;
+    gap: 24px;
+  }
+  @media (min-width: 800px) {
+    .foot {
+      grid-template-columns: 1.4fr 1fr 1fr;
+    }
+  }
+  .foot-name,
+  .foot-label {
+    margin: 0 0 8px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+  .foot p,
+  .foot li {
+    margin: 0 0 6px;
+  }
+  .foot ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .foot a {
+    color: #fff;
+  }
+  .copy {
+    width: min(var(--content), calc(100% - var(--gutter) * 2));
+    margin: 22px auto 0;
+    padding-top: 16px;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    font-size: 14px;
+  }
+</style>

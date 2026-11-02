@@ -1,0 +1,179 @@
+---
+import { headerNav } from "../data/site";
+import { logoImage } from "../lib/inline-image";
+
+interface Props {
+  current: string;
+}
+const { current } = Astro.props;
+const logo = await logoImage("logo.png", 210);
+const links = headerNav.map((item) => ({
+  ...item,
+  external: "external" in item && item.external,
+}));
+---
+
+<header class="site-header" data-header style={`--logo-w:${logo.width}px`}>
+  <div class="header-inner">
+    <a class="logo-link" href="/" aria-label="Springfield Warrior Sports, home">
+      <img src={logo.uri} alt="" width={logo.width} height={logo.height} />
+    </a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-menu" data-menu>
+      <span class="sr-only">Menu</span>
+      <span aria-hidden="true"></span>
+    </button>
+    <nav id="site-menu" class="nav-links" data-nav>
+      {
+        links.map((item) => (
+          <a
+            href={item.path}
+            aria-current={item.path === current ? "page" : undefined}
+            {...(item.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+          >
+            {item.label}
+          </a>
+        ))
+      }
+    </nav>
+  </div>
+</header>
+
+<script>
+  const header = document.querySelector<HTMLElement>("[data-header]");
+  const button = header?.querySelector<HTMLButtonElement>("[data-menu]");
+  if (header && button) {
+    button.addEventListener("click", () => {
+      const open = header.classList.toggle("is-open");
+      button.setAttribute("aria-expanded", open ? "true" : "false");
+    });
+    header.querySelectorAll("nav a").forEach((link) => {
+      link.addEventListener("click", () => {
+        header.classList.remove("is-open");
+        button.setAttribute("aria-expanded", "false");
+      });
+    });
+    let last = window.scrollY;
+    window.addEventListener(
+      "scroll",
+      () => {
+        const y = window.scrollY;
+        if (!header.classList.contains("is-open") && y > last && y > 80) header.classList.add("is-hidden");
+        else header.classList.remove("is-hidden");
+        last = y;
+      },
+      { passive: true },
+    );
+  }
+</script>
+
+<style>
+  .site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    background: #fff;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.08);
+    transform: translateY(0);
+    transition: transform 0.2s ease;
+  }
+  .site-header.is-hidden {
+    transform: translateY(-100%);
+  }
+  .header-inner {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: space-between;
+    width: min(1180px, calc(100% - 32px));
+    min-height: var(--header-h);
+    margin: 0 auto;
+  }
+  .logo-link {
+    display: flex;
+    align-items: center;
+    flex: 0 0 auto;
+  }
+  .logo-link img {
+    width: min(180px, 46vw);
+    height: auto;
+  }
+  .menu-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border: 0;
+    background: transparent;
+  }
+  .menu-btn span[aria-hidden="true"] {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: var(--color-ws-ink);
+    box-shadow: 0 -7px 0 var(--color-ws-ink), 0 7px 0 var(--color-ws-ink);
+  }
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    gap: 4px;
+    padding: 8px 16px 16px;
+    background: #fff;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+  }
+  .site-header.is-open .nav-links {
+    display: flex;
+  }
+  .nav-links a {
+    display: flex;
+    align-items: center;
+    min-height: 48px;
+    padding: 0 8px;
+    color: var(--color-ws-ink);
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .nav-links a[aria-current="page"] {
+    color: var(--color-ws-red);
+  }
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+  @media (min-width: 1024px) {
+    .menu-btn {
+      display: none;
+    }
+    .nav-links {
+      display: flex;
+      position: static;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 4px 14px;
+      padding: 0;
+      background: transparent;
+      box-shadow: none;
+    }
+    .nav-links a {
+      min-height: 36px;
+      font-size: 13px;
+    }
+  }
+</style>

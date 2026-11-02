@@ -1,0 +1,248 @@
+---
+import { eventById } from "../data/events";
+import type { Block, ContentImage, PageContent } from "../data/content";
+import { routeByPath } from "../lib/routes";
+import { heroImage } from "../lib/inline-image";
+import { site } from "../data/site";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import LeadForm from "./LeadForm.astro";
+import MapFacade from "./MapFacade.astro";
+
+interface Props {
+  page: PageContent;
+}
+const { page } = Astro.props;
+const route = routeByPath(page.path);
+if (!route) throw new Error(`Missing route ${page.path}`);
+const event = page.formId ? eventById(page.formId) : undefined;
+const hero = page.photoHero && page.heroFile ? await heroImage(page.heroFile, { width: 1280, quality: 38, cropAspect: 2 }) : null;
+const heroSub = page.blocks[0]?.type === "p" && page.blocks[0].text.length < 90 ? page.blocks[0] : undefined;
+const blocks = heroSub ? page.blocks.slice(1) : page.blocks;
+
+const images = import.meta.glob("../assets/media/*.webp", { eager: true, import: "default" }) as Record<
+  string,
+  { src: string; width: number; height: number } | string
+>;
+
+function media(file: string): { src: string; width: number; height: number } {
+  const found = images[`../assets/${file}`];
+  if (!found) return { src: "", width: 1200, height: 800 };
+  if (typeof found === "string") return { src: found, width: 1200, height: 800 };
+  return found;
+}
+
+interface Section {
+  titles: string[];
+  body: Block[];
+  image?: ContentImage;
+  quotes: boolean;
+}
+
+const sections: Section[] = [];
+let current: Section = { titles: [], body: [], quotes: false };
+const flush = () => {
+  if (current.titles.length || current.body.length) sections.push(current);
+  current = { titles: [], body: [], quotes: false };
+};
+for (const block of blocks) {
+  if (block.type === "h2" && !block.text.includes("●")) {
+    if (current.titles.length && current.body.length === 0) current.titles.push(block.text);
+    else {
+      flush();
+      current = { titles: [block.text], body: [], quotes: /testimonial/i.test(block.text) };
+    }
+  } else current.body.push(block);
+}
+flush();
+
+let photo = 0;
+for (const section of sections) {
+  if (section.quotes) continue;
+  const image = page.images[photo];
+  if (image) {
+    section.image = image;
+    photo += 1;
+  }
+}
+
+function groupQuotes(items: Block[]): Array<{ lines: string[]; by?: string }> {
+  const quotes: Array<{ lines: string[]; by?: string }> = [];
+  let lines: string[] = [];
+  for (const block of items) {
+    if (block.text.startsWith("-")) {
+      quotes.push({ lines, by: block.text });
+      lines = [];
+    } else lines.push(block.text);
+  }
+  if (lines.length) quotes.push({ lines });
+  return quotes.filter((quote) => quote.lines.length || quote.by);
+}
+
+const tokenRe = /(\(417\)\s*894-7319|https?:\/\/[^\s]+|[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,})/gi;
+function pieces(text: string): Array<{ kind: "text" | "phone" | "mail" | "url"; value: string }> {
+  const out: Array<{ kind: "text" | "phone" | "mail" | "url"; value: string }> = [];
+  let last = 0;
+  for (const match of text.matchAll(tokenRe)) {
+    const value = match[0];
+    const index = match.index ?? 0;
+    if (index > last) out.push({ kind: "text", value: text.slice(last, index) });
+    if (/^\(417\)/.test(value)) out.push({ kind: "phone", value });
+    else if (value.includes("@") && !value.startsWith("http")) out.push({ kind: "mail", value });
+    else out.push({ kind: "url", value: value.replace(/[),.;]+$/, "") });
+    last = index + value.length;
+  }
+  if (last < text.length) out.push({ kind: "text", value: text.slice(last) });
+  return out;
+}
+
+const story = sections.filter((section) => !section.quotes);
+const quotes = sections.filter((section) => section.quotes);
+---
+
+<BaseLayout route={route}>
+  {
+    hero && (
+      <img
+        slot="hero-photo"
+        class="atf-photo"
+        src={hero.uri}
+        alt={page.heroAlt}
+        width={hero.width}
+        height={hero.height}
+        loading="eager"
+        decoding="sync"
+        fetchpriority="high"
+        data-ff-lcp-hero
+      />
+    )
+  }
+  <div slot="hero" class:list={["hero-copy", { "hero-plain": !hero }]}>
+    {hero && <div class="hero-scrim" aria-hidden="true"></div>}
+    <div class="hero-text">
+      <h1>{page.h1}</h1>
+      {heroSub && <p class="hero-sub">{heroSub.text}</p>}
+    </div>
+  </div>
+
+  <section class="trust" aria-label="Springfield Warrior Sports">
+    <div class="wrap trust-row">
+      <span>{site.name}</span>
+      <span>{site.tagline}</span>
+      <span>Kids</span>
+      <span>Adults</span>
+      <span>Summer Camps</span>
+      <a href={site.phone.tel}>{site.phone.display}</a>
+    </div>
+  </section>
+
+  {
+    story.map((section, index) => (
+      <section class:list={["section", { band: index % 2 === 1 }]}>
+        <div class="wrap">
+          <div class:list={["split", { flip: index % 2 === 1 }]}>
+            {section.image && (
+              <img
+                src={media(section.image.file).src}
+                alt={section.image.alt}
+                width={media(section.image.file).width}
+                height={media(section.image.file).height}
+                loading="lazy"
+                decoding="async"
+              />
+            )}
+            <div class="copy">
+              {section.titles.length > 0 && (
+                <h2>
+                  {section.titles.map((title) => (
+                    <span class="title-line">{title}</span>
+                  ))}
+                </h2>
+              )}
+              {section.body.map((block) =>
+                block.type === "a" ? (
+                  <p><a class="btn" href={block.href}>{block.text}</a></p>
+                ) : block.text.includes("●") ? (
+                  <p class="chip-row">{block.text}</p>
+                ) : (
+                  <p>
+                    {pieces(block.text).map((part) =>
+                      part.kind === "phone" ? (
+                        <a href={site.phone.tel}>{part.value}</a>
+                      ) : part.kind === "mail" ? (
+                        <a href={`mailto:${part.value}`}>{part.value}</a>
+                      ) : part.kind === "url" ? (
+                        <a href={part.value}>{part.value}</a>
+                      ) : (
+                        part.value
+                      ),
+                    )}
+                  </p>
+                ),
+              )}
+            </div>
+          </div>
+        </div>
+      </section>
+    ))
+  }
+
+  {event && (
+    <section class="section">
+      <div class="wrap">
+        <LeadForm event={event} />
+      </div>
+    </section>
+  )}
+
+  {
+    quotes.map((section) => (
+      <section class="section quotes">
+        <div class="wrap">
+          {section.titles.length > 0 && <h2>{section.titles.join(" ")}</h2>}
+          {groupQuotes(section.body).map((quote) => (
+            <blockquote class="quote">
+              {quote.lines.map((line) => <p>{line}</p>)}
+              {quote.by && <p class="by">{quote.by}</p>}
+            </blockquote>
+          ))}
+        </div>
+      </section>
+    ))
+  }
+
+  {page.slug === "contact" && (
+    <section class="section">
+      <div class="wrap">
+        <MapFacade />
+      </div>
+    </section>
+  )}
+
+  {page.logos.length > 0 && (
+    <div class="wrap logos">
+      {page.logos.map((logo) => (
+        <img src={media(logo.file).src} alt={logo.alt} width="140" height="64" loading="lazy" decoding="async" />
+      ))}
+    </div>
+  )}
+</BaseLayout>
+
+<style>
+  .hero-scrim {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.25) 70%);
+  }
+  .hero-plain {
+    background: var(--color-ws-blue-dark);
+    min-height: 280px;
+  }
+  .hero-text {
+    position: relative;
+    z-index: 1;
+  }
+  .title-line {
+    display: block;
+  }
+</style>

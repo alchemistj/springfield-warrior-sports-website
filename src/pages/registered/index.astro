@@ -1,0 +1,8 @@
+---
+import VenuePage from "../../components/VenuePage.astro";
+import { pageBySlug } from "../../data/content";
+
+const page = pageBySlug("registered");
+---
+
+<VenuePage page={page} />
