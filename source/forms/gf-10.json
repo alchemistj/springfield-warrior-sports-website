@@ -1,0 +1,210 @@
+{
+  "gf_id": 10,
+  "title": "10-26-2024 WNL Competition Registration Form",
+  "description": "",
+  "button": "",
+  "fields": [
+    {
+      "id": 1,
+      "type": "name",
+      "label": "Name",
+      "isRequired": true,
+      "inputs": [
+        {
+          "id": "1.2",
+          "label": "Prefix",
+          "name": "",
+          "autocompleteAttribute": "honorific-prefix",
+          "choices": [
+            {
+              "text": "Dr.",
+              "value": "Dr."
+            },
+            {
+              "text": "Miss",
+              "value": "Miss"
+            },
+            {
+              "text": "Mr.",
+              "value": "Mr."
+            },
+            {
+              "text": "Mrs.",
+              "value": "Mrs."
+            },
+            {
+              "text": "Ms.",
+              "value": "Ms."
+            },
+            {
+              "text": "Mx.",
+              "value": "Mx."
+            },
+            {
+              "text": "Prof.",
+              "value": "Prof."
+            },
+            {
+              "text": "Rev.",
+              "value": "Rev."
+            }
+          ],
+          "isHidden": true,
+          "inputType": "radio"
+        },
+        {
+          "id": "1.3",
+          "label": "First",
+          "name": "",
+          "autocompleteAttribute": "given-name"
+        },
+        {
+          "id": "1.4",
+          "label": "Middle",
+          "name": "",
+          "autocompleteAttribute": "additional-name",
+          "isHidden": true
+        },
+        {
+          "id": "1.6",
+          "label": "Last",
+          "name": "",
+          "autocompleteAttribute": "family-name"
+        },
+        {
+          "id": "1.8",
+          "label": "Suffix",
+          "name": "",
+          "autocompleteAttribute": "honorific-suffix",
+          "isHidden": true
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "type": "radio",
+      "label": "Gender",
+      "isRequired": true,
+      "choices": [
+        {
+          "text": "Male",
+          "value": "Male",
+          "isSelected": false,
+          "price": ""
+        },
+        {
+          "text": "Female",
+          "value": "Female",
+          "isSelected": false,
+          "price": ""
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "type": "text",
+      "label": "Birthday",
+      "isRequired": true
+    },
+    {
+      "id": 6,
+      "type": "text",
+      "label": "Age",
+      "isRequired": true
+    },
+    {
+      "id": 9,
+      "type": "select",
+      "label": "Division Competing in",
+      "isRequired": true,
+      "choices": [
+        {
+          "text": "Kids- 6-8 years old",
+          "value": "Kids- 6-8 years old",
+          "isSelected": false,
+          "price": ""
+        },
+        {
+          "text": "Mature Kids- 9-10 years old",
+          "value": "Mature Kids- 9-10 years old",
+          "isSelected": false,
+          "price": ""
+        },
+        {
+          "text": "Preteen- 11-12 years old",
+          "value": "Preteen- 11-12 years old",
+          "isSelected": false,
+          "price": ""
+        },
+        {
+          "text": "Teen- 13-14 years old",
+          "value": "Teen- 13-14 years old",
+          "isSelected": false,
+          "price": ""
+        },
+        {
+          "text": "Young adult- 15-17 years old",
+          "value": "Young adult- 15-17 years old",
+          "isSelected": false,
+          "price": ""
+        },
+        {
+          "text": "Adult- 18+ years old",
+          "value": "Adult- 18+ years old",
+          "isSelected": false,
+          "price": ""
+        },
+        {
+          "text": "Masters- 40+ years old",
+          "value": "Masters- 40+ years old",
+          "isSelected": false,
+          "price": ""
+        },
+        {
+          "text": "Elite- 15+ years old",
+          "value": "Elite- 15+ years old",
+          "isSelected": false,
+          "price": ""
+        }
+      ],
+      "placeholder": "-- Select --"
+    },
+    {
+      "id": 8,
+      "type": "text",
+      "label": "Ninjaworks number",
+      "isRequired": true
+    },
+    {
+      "id": 10,
+      "type": "text",
+      "label": "Email Address",
+      "isRequired": true
+    },
+    {
+      "id": 12,
+      "type": "phone",
+      "label": "Phone",
+      "isRequired": true
+    }
+  ],
+  "notifications": [
+    {
+      "name": "Admin Notification",
+      "isActive": true,
+      "to": "office@swarriorsports.com",
+      "subject": "New registration for {form_title}",
+      "replyTo": "",
+      "message": "{all_fields}"
+    }
+  ],
+  "confirmations": [
+    {
+      "name": "Default Confirmation",
+      "type": "redirect",
+      "message": "Thanks for contacting us! We will get in touch with you shortly.",
+      "pageId": "",
+      "url": "https:\\/\\/www.springfieldwarriorsports.com\\/registered-for-wnl-competition\\/"
+    }
+  ]
+}

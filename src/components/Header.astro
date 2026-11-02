@@ -1,0 +1,210 @@
+---
+import { mainNav, utilityNav } from "../data/site";
+import { logoImage } from "../lib/inline-image";
+
+interface Props {
+  current: string;
+}
+const { current } = Astro.props;
+const logo = await logoImage("logo.png", 220);
+
+const linkProps = (item: { path: string; external?: boolean }) =>
+  item.external ? { target: "_blank", rel: "noopener noreferrer" } : {};
+---
+
+<header class="site-header" data-header>
+  <div class="util-bar">
+    <nav class="util-links" aria-label="Utility">
+      {
+        utilityNav.map((item) => (
+          <a href={item.path} aria-current={item.path === current ? "page" : undefined} {...linkProps(item)}>
+            {item.label}
+          </a>
+        ))
+      }
+    </nav>
+  </div>
+  <div class="main-bar">
+    <a class="logo-link" href="/" aria-label="Springfield Warrior Sports, home">
+      <img src={logo.uri} alt="" width={logo.width} height={logo.height} />
+    </a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-menu" data-menu>
+      <span class="sr-only">Menu</span>
+      <span aria-hidden="true"></span>
+    </button>
+    <nav id="site-menu" class="nav-links" data-nav aria-label="Primary">
+      {
+        mainNav.map((item) => (
+          <a href={item.path} aria-current={item.path === current ? "page" : undefined}>
+            {item.label}
+          </a>
+        ))
+      }
+    </nav>
+  </div>
+</header>
+
+<script>
+  const header = document.querySelector<HTMLElement>("[data-header]");
+  const button = header?.querySelector<HTMLButtonElement>("[data-menu]");
+  if (header && button) {
+    button.addEventListener("click", () => {
+      const open = header.classList.toggle("is-open");
+      button.setAttribute("aria-expanded", open ? "true" : "false");
+    });
+    header.querySelectorAll("nav a").forEach((link) => {
+      link.addEventListener("click", () => {
+        header.classList.remove("is-open");
+        button.setAttribute("aria-expanded", "false");
+      });
+    });
+    let last = window.scrollY;
+    window.addEventListener(
+      "scroll",
+      () => {
+        const y = window.scrollY;
+        if (!header.classList.contains("is-open") && y > last && y > 80) header.classList.add("is-hidden");
+        else header.classList.remove("is-hidden");
+        last = y;
+      },
+      { passive: true },
+    );
+  }
+</script>
+
+<style>
+  .site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    background: var(--color-ws-blue-dark);
+    transform: translateY(0);
+    transition: transform 0.2s ease;
+  }
+  .site-header.is-hidden {
+    transform: translateY(-100%);
+  }
+  .util-bar {
+    background: #000;
+    color: #fff;
+  }
+  .util-links {
+    display: flex;
+    justify-content: flex-end;
+    gap: 4px;
+    width: min(1280px, calc(100% - 16px));
+    margin: 0 auto;
+  }
+  .util-links a {
+    display: flex;
+    align-items: center;
+    min-height: 34px;
+    padding: 0 10px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .main-bar {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: space-between;
+    width: min(1280px, calc(100% - 20px));
+    height: 62px;
+    margin: 0 auto;
+  }
+  .logo-link {
+    display: flex;
+    align-items: center;
+    flex: 0 0 auto;
+  }
+  .logo-link img {
+    width: min(168px, 52vw);
+    height: auto;
+  }
+  .menu-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border: 0;
+    background: transparent;
+  }
+  .menu-btn span[aria-hidden="true"] {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: #fff;
+    box-shadow: 0 -7px 0 #fff, 0 7px 0 #fff;
+  }
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    gap: 2px;
+    padding: 8px 12px 16px;
+    background: var(--color-ws-blue-dark);
+  }
+  .site-header.is-open .nav-links {
+    display: flex;
+  }
+  .nav-links a {
+    display: flex;
+    align-items: center;
+    min-height: 48px;
+    padding: 0 8px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .nav-links a[aria-current="page"],
+  .util-links a[aria-current="page"] {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+  @media (min-width: 1024px) {
+    .util-links a {
+      min-height: 36px;
+      font-size: 12px;
+    }
+    .main-bar {
+      height: 76px;
+    }
+    .logo-link img {
+      width: 190px;
+    }
+    .menu-btn {
+      display: none;
+    }
+    .nav-links {
+      display: flex;
+      position: static;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 2px 4px;
+      padding: 0;
+      background: transparent;
+    }
+    .nav-links a {
+      min-height: 36px;
+      padding: 0 7px;
+      font-size: 12px;
+      letter-spacing: 0.03em;
+      white-space: nowrap;
+    }
+  }
+</style>

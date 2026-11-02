@@ -1,0 +1,3530 @@
+{
+  "pages": [
+    {
+      "slug": "home",
+      "path": "/",
+      "title": "Springfield Warrior Sports: Ninja Warrior Gym in Springfield MO",
+      "description": "Springfield Missouri's best indoor obstacle course and training center, including many of the obstacles you see on the popular NBC show American Ninja Warrior.",
+      "h1": "STRONGER",
+      "h1FromSource": true,
+      "index": true,
+      "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+      "photoHero": true,
+      "heroFile": "media/2023-03-classes.webp",
+      "heroAlt": "STRONGER",
+      "images": [
+        {
+          "file": "media/2023-03-train.webp",
+          "alt": "",
+          "kind": "photo"
+        },
+        {
+          "file": "media/2023-03-birthday.webp",
+          "alt": "",
+          "kind": "photo"
+        },
+        {
+          "file": "media/2023-12-Day-Camps.webp",
+          "alt": "",
+          "kind": "photo"
+        },
+        {
+          "file": "media/2023-04-Parkour-Gym-Parkour-Classes-Banner.webp",
+          "alt": "",
+          "kind": "photo"
+        },
+        {
+          "file": "media/2024-02-kids-classes.webp",
+          "alt": "",
+          "kind": "photo"
+        },
+        {
+          "file": "media/2025-06-the-Best-Gyms-in-Springfield-MO.webp",
+          "alt": "",
+          "kind": "photo"
+        },
+        {
+          "file": "media/2023-03-everyday-warrior.webp",
+          "alt": "",
+          "kind": "photo"
+        },
+        {
+          "file": "media/2025-12-SpringField-indoor-obstacle.webp",
+          "alt": "SpringField-indoor-obstacle",
+          "kind": "photo"
+        }
+      ],
+      "logos": [
+        {
+          "file": "media/2023-03-SpringField-Warrior-Logo.webp",
+          "alt": "",
+          "kind": "logo"
+        },
+        {
+          "file": "media/2023-03-qoute-icon.webp",
+          "alt": "",
+          "kind": "logo"
+        },
+        {
+          "file": "media/2023-03-csna-logo.webp",
+          "alt": "",
+          "kind": "logo"
+        },
+        {
+          "file": "media/2023-03-hulafrog-mustloved.webp",
+          "alt": "",
+          "kind": "logo"
+        },
+        {
+          "file": "media/2023-03-national-ninja-league_03.webp",
+          "alt": "",
+          "kind": "logo"
+        },
+        {
+          "file": "media/2023-03-godfatherpizaa.webp",
+          "alt": "",
+          "kind": "logo"
+        },
+        {
+          "file": "media/2023-03-417local.webp",
+          "alt": "",
+          "kind": "logo"
+        },
+        {
+          "file": "media/2023-03-frictionLabs.webp",
+          "alt": "",
+          "kind": "logo"
+        },
+        {
+          "file": "media/2023-03-SWS-logo-footer.webp",
+          "alt": "",
+          "kind": "logo"
+        }
+      ],
+      "formId": null,
+      "blocks": [
+        {
+          "type": "p",
+          "text": "ONE OBSTACLE AT A TIME!"
+        },
+        {
+          "type": "p",
+          "text": "Springfield Missouri's best indoor obstacle course and training center, including many of the obstacles you see on the popular NBC show American Ninja Warrior."
+        },
+        {
+          "type": "h2",
+          "text": "KIDS ● ADULTS ● SUMMER CAMPS ● COMMUNITY ● BIRTHDAY PARTIES"
+        },
+        {
+          "type": "h2",
+          "text": "GET READY TO"
+        },
+        {
+          "type": "h2",
+          "text": "REACH YOUR FUN AND FITNESS"
+        },
+        {
+          "type": "h2",
+          "text": "GOALS WITH SPRINGFIELD"
+        },
+        {
+          "type": "h2",
+          "text": "WARRIOR SPORTS"
+        },
+        {
+          "type": "p",
+          "text": "We believe in results and that a life of health and fitness shouldn’t be boring. Our indoor obstacle training facility is like a fitness playground for all ages."
+        },
+        {
+          "type": "p",
+          "text": "The best part?"
+        },
+        {
+          "type": "p",
+          "text": "You don’t need any previous experience or knowledge — all you need is the determination to reach your fitness goals!"
+        },
+        {
+          "type": "p",
+          "text": "Open Gym Hours"
+        },
+        {
+          "type": "p",
+          "text": "Monday: 12pm-6pm"
+        },
+        {
+          "type": "p",
+          "text": "Tuesday: 3pm-5:30pm"
+        },
+        {
+          "type": "p",
+          "text": "Wednesday: 12pm-5:30pm"
+        },
+        {
+          "type": "p",
+          "text": "Thursday: 3pm-6pm"
+        },
+        {
+          "type": "p",
+          "text": "Friday: 12pm-6pm"
+        },
+        {
+          "type": "p",
+          "text": "Saturday: 2pm-6pm"
+        },
+        {
+          "type": "p",
+          "text": "Sunday: Private Parties and Group Events by Appointment"
+        },
+        {
+          "type": "p",
+          "text": "Preschool hours: Tuesday mornings from 9:30am-11:30am"
+        },
+        {
+          "type": "p",
+          "text": "(see below for our class hours and times, which vary slightly from the open gym hours above.)"
+        },
+        {
+          "type": "h2",
+          "text": "SPRINGFIELD'S BEST OBSTACLE"
+        },
+        {
+          "type": "h2",
+          "text": "TRAINING GYM"
+        },
+        {
+          "type": "h2",
+          "text": "CLASSES AND ACTIVITIES FOR KIDS"
+        },
+        {
+          "type": "p",
+          "text": "Springfield Warrior Sports offers kids classes that help build strength, balance, and coordination. With a variety of obstacles and challenges, your child will never get bored. Plus, they can have a lot of fun while working up a sweat!"
+        },
+        {
+          "type": "p",
+          "text": "Sign up for a trial class today, your young warrior will thank you!"
+        },
+        {
+          "type": "a",
+          "text": "VIEW OUR KIDS CLASSES AND ACTIVITIES HERE",
+          "href": "/kids-classes/"
+        },
+        {
+          "type": "h2",
+          "text": "TRAIN LIKE A NINJA WARRIOR"
+        },
+        {
+          "type": "p",
+          "text": "Our adult classes are designed for all fitness levels, so whether you are a beginner or an experienced athlete, there is something for you. The obstacles and challenges are constantly changing, so you never get bored. And because the focus is on having fun, you will be encouraged to push yourself further than you ever thought possible."
+        },
+        {
+          "type": "a",
+          "text": "CHECK OUT OUR NINJA FITNESS CLASSES HERE",
+          "href": "/fitness-classes/"
+        },
+        {
+          "type": "a",
+          "text": "BIRTHDAY PARTIES",
+          "href": "/birthday-parties/"
+        },
+        {
+          "type": "p",
+          "text": "Warrior Sports offers the best party experience in Springfield MO! Whether it’s for your child’s birthday or for a special group event, we take care of all the planning and clean up, so you can relax and enjoy your special day. Parties are 1.5 hours long, and include an hour of gym and party room time and an obstacle course or another chosen activity facilitated by our Crew."
+        },
+        {
+          "type": "a",
+          "text": "BIRTHDAY PARTIES IN SPRINGFIELD MO DETAILS",
+          "href": "/birthday-parties/"
+        },
+        {
+          "type": "h2",
+          "text": "DAY CAMPS FOR SCHOOL BREAKS"
+        },
+        {
+          "type": "p",
+          "text": "Elevate your children's school break with dynamic and thrilling experiences at our engaging day camps! Choose from our flexible half-day or full-day camp options, where kids can enjoy a blend of recreation, games, sports, and the opportunity to forge lasting friendships."
+        },
+        {
+          "type": "a",
+          "text": "VIEW OUR SCHOOLS OUT DAY CAMPS HERE",
+          "href": "/summer-camps-in-springfield-mo/"
+        },
+        {
+          "type": "h2",
+          "text": "PARKOUR"
+        },
+        {
+          "type": "p",
+          "text": "Springfield Warrior Sports is the premier destination for parkour training! Our expert instructors will guide you through every obstacle course, helping you to improve your physical skills and also boosting your confidence. With a focus on strength, agility, speed, balance, and self-confidence, our open gym time and classes can help you reach your potential both inside and out of the gym."
+        },
+        {
+          "type": "p",
+          "text": "Parkour classes are currently unavailable, but Open Gym sessions are available now — your first visit is just $10."
+        },
+        {
+          "type": "a",
+          "text": "CHECK OUT OUR PARKOUR OFFERINGS HERE",
+          "href": "/parkour/"
+        },
+        {
+          "type": "h2",
+          "text": "HOMESCHOOL NINJA WARRIOR CLASSES"
+        },
+        {
+          "type": "p",
+          "text": "Keep your homeschooler active, strong, and having a blast! Our homeschool classes are a high-energy way for kids to build strength and confidence while tackling fun obstacle course challenges. With plenty of movement, excitement, and opportunities to connect with other homeschoolers, this is PE like never before!"
+        },
+        {
+          "type": "a",
+          "text": "HOMESCHOOL CLASSES BY SWS",
+          "href": "/homeschool-sports-and-classes-springfield-mo/"
+        },
+        {
+          "type": "a",
+          "text": "PERSONAL TRAINING",
+          "href": "/personal-training/"
+        },
+        {
+          "type": "p",
+          "text": "Personal training for kids, teens, and adults. Find a coach who gets your goals and your lifestyle. Build strength and confidence while progressing in your sport—or just moving better in everyday life. Schedule your free consultation today!"
+        },
+        {
+          "type": "a",
+          "text": "PERSONAL TRAINING AT WARRIOR SPORTS",
+          "href": "/personal-training/"
+        },
+        {
+          "type": "h2",
+          "text": "BE AN"
+        },
+        {
+          "type": "p",
+          "text": "EVERYDAY WARRIOR!"
+        },
+        {
+          "type": "p",
+          "text": "At Springfield Warrior Sports, we know that you want to be fit, healthy, and STRONGER to take on every obstacle. Our accomplished and award-winning crew is here to help you find your strength and enjoy your workouts again. If you’re looking for a unique and fun way to get active, you can come in at any time during our open hours and have a great time getting fit!"
+        },
+        {
+          "type": "p",
+          "text": "$15 per person ages 5+ during open gym hours. Stay as long as you would like."
+        },
+        {
+          "type": "a",
+          "text": "TRY OPEN GYM FOR $10",
+          "href": "https://square.link/u/GmmQ7iuL"
+        },
+        {
+          "type": "h2",
+          "text": "CLIENT TESTIMONIALS"
+        },
+        {
+          "type": "h2",
+          "text": "WHAT OUR CLIENTS SAY"
+        },
+        {
+          "type": "p",
+          "text": "We had our son’s 10th birthday here. All of the kids had a great time. They set up an obstacle course for the kids. They loved the whole experience. The favorite was the curved wall to run up. That was everyone’s challenge for the night. We will be visiting again for sure."
+        },
+        {
+          "type": "p",
+          "text": "- JENNIFER L."
+        },
+        {
+          "type": "p",
+          "text": "My daughter started training here 3 years ago at 8, and she still loves it!! Owner and coaching staff are all super encouraging. We live an hour away but make the drive twice a week as often as possible. Training here has not only helped her get stronger physically but increased her confidence in general. Anything that makes kids want to challenge themselves to get better and better is worth it!"
+        },
+        {
+          "type": "p",
+          "text": "- LEE C."
+        },
+        {
+          "type": "p",
+          "text": "100% recommend Springfield Warrior Sports! We had my sons 5th birthday here and it was painless and SO fun! The staff answered all questions I had, gave reminders for upcoming party, and interacted with the kids during the party. It has been weeks since the party and my son is still talking about it. We will absolutely be back!"
+        },
+        {
+          "type": "p",
+          "text": "- CHEYENNE M."
+        },
+        {
+          "type": "p",
+          "text": "We have had several birthday parties here and each time has been wonderful. It’s affordable and does not require a lot of effort on my part. The best part is how much fun the kids have! They never want to leave! The staff were all engaged with the kids and joined in on the nerf battle. I think they were having as much fun as the kids! They made sure we had everything we needed. We also enjoy coming to open gym. It’s the perfect place for kids to burn some energy. We love it here and we highly recommend it!"
+        },
+        {
+          "type": "p",
+          "text": "- ADRIENNE E."
+        },
+        {
+          "type": "p",
+          "text": "Great place to have a birthday party. The laser tag option was really cool. My boys had a blast. Plus my son loves their summer camp program & he looks forward to it every summer!"
+        },
+        {
+          "type": "p",
+          "text": "- SUSAN K."
+        },
+        {
+          "type": "p",
+          "text": "Staff was friendly, knowledgeable, and quick to help out. They were great with assisting my son(who can be a bit difficult at times). We signed up for the Beginner classes today and my son LOVED his first day!"
+        },
+        {
+          "type": "p",
+          "text": "- KEVIN P."
+        },
+        {
+          "type": "p",
+          "text": "We have been going to the gym for classes for a while and my kids really enjoy it. I see huge improvements in their strength and flexibility. We recently did a birthday party for my 8 year old and it was amazing! They had staff members engaged with the kids the entire time ensuring safety and that everyone was having fun. Definitely recommend for parties, and their flexible schedule for classes and open gym make it easy to fit in."
+        },
+        {
+          "type": "p",
+          "text": "- LIZ S."
+        },
+        {
+          "type": "p",
+          "text": "It was too hot for my bf and I to let the kids play outside. We had already been to the overcrowded pool. So we took the kids here to run around and burn off energy inside while we got a second workout in ourselves. Amazing staff, great atmosphere, 10/5 would recommend!"
+        },
+        {
+          "type": "p",
+          "text": "- COURTNEY C."
+        },
+        {
+          "type": "p",
+          "text": "My kids love the classes here! The instructors are all very kind and fun. It is such a great way for our kids to get exercise and learn new body skills."
+        },
+        {
+          "type": "p",
+          "text": "- NICK P."
+        }
+      ]
+    },
+    {
+      "slug": "birthday-parties",
+      "path": "/birthday-parties/",
+      "title": "Birthday Parties for Kids | Springfield Warrior Sports",
+      "description": "From Ninja Warrior, Laser Tag parties, and more — Springfield Warrior Sports has a variety of birthday party options in Springfield MO.",
+      "h1": "KIDS WILL HAVE A BLAST, AND YOU CAN RELAX",
+      "h1FromSource": true,
+      "index": true,
+      "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+      "photoHero": true,
+      "heroFile": "media/2023-03-amazing-memories.webp",
+      "heroAlt": "KIDS WILL HAVE A BLAST, AND YOU CAN RELAX",
+      "images": [
+        {
+          "file": "media/2023-03-downloadable-party-invitation.webp",
+          "alt": "",
+          "kind": "photo"
+        },
+        {
+          "file": "media/2023-03-pizza-birthday-party.webp",
+          "alt": "",
+          "kind": "photo"
+        },
+        {
+          "file": "media/2023-03-laser-tag-party.webp",
+          "alt": "",
+          "kind": "photo"
+        }
+      ],
+      "logos": [
+        {
+          "file": "media/2023-03-SpringField-Warrior-Logo.webp",
+          "alt": "",
+          "kind": "logo"
+        },
+        {
+          "file": "media/2023-03-SWS-logo-footer.webp",
+          "alt": "",
+          "kind": "logo"
+        }
+      ],
+      "formId": null,
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "HIGH-ENERGY"
+        },
+        {
+          "type": "h2",
+          "text": "KIDS' BIRTHDAY PARTIES"
+        },
+        {
+          "type": "h2",
+          "text": "IN SPRINGFIELD, MO"
+        },
+        {
+          "type": "p",
+          "text": "NINJA WARRIOR COURSES, LASER TAG, NERF BATTLES, AND MORE!"
+        },
+        {
+          "type": "h2",
+          "text": "KIDS WILL HAVE A BLAST, AND YOU CAN RELAX"
+        },
+        {
+          "type": "p",
+          "text": "Springfield Warrior Sports is the ideal venue for a birthday party in Springfield, MO. With a variety of party options facilitated by our crew and a full hour of gym time, adults can relax knowing everything is taken care of while the kids have fun!"
+        },
+        {
+          "type": "p",
+          "text": "Parties here are extraordinary - not only do we promise that kids will love it, but we also make sure the birthday boy or girl has something special too; the week after their party, the birthday kid gets to come to a ninja class for free and their very own Ninja t-shirt!"
+        },
+        {
+          "type": "p",
+          "text": "This means more than just one day of fun - there can be lasting memories of their best birthday, making this party extra memorable."
+        },
+        {
+          "type": "h2",
+          "text": "WARRIOR SPORTS TAKES THE STRESS OUT OF YOUR"
+        },
+        {
+          "type": "h2",
+          "text": "BIRTHDAY PARTY PLANNING"
+        },
+        {
+          "type": "p",
+          "text": "At Springfield Warrior Sports, we want to take the stress out of your party planning - schedule your birthday party with us, and let us do the rest — including cleanup!"
+        },
+        {
+          "type": "p",
+          "text": "Each party lasts for a total of 1.5 hours. Included in the party is one hour of gym time, featuring open play and an obstacle course set up and facilitated by our Crew. Approximately 30 minutes can be used for cake, presents, and pizza! (optional)."
+        },
+        {
+          "type": "p",
+          "text": "The birthday child will receive a Springfield Warrior Sports T-shirt, and the week after their party, they get to try a ninja class for free."
+        },
+        {
+          "type": "p",
+          "text": "Note: free customized party invitations are available upon request."
+        },
+        {
+          "type": "p",
+          "text": "Cost: $179 for the first 11 kids and $10 for each additional participant (plus $40 if you prefer to rent the gym for a private party). The parents of the birthday child are free if they would like to try the obstacles as well! A $40 deposit is required at the time of booking and will be taken off the full amount on the day of the party. All other guests (siblings, other parents, etc.) who wish to play in the gym can simply pay the discounted group rate for open gym during the party time."
+        },
+        {
+          "type": "p",
+          "text": "* All participants will need to sign a waiver before playing in the gym. This can be done by a parent in the gym upon arrival, or it may be filled out online prior to the party."
+        },
+        {
+          "type": "p",
+          "text": "** To reserve your birthday party time slot, a $40 deposit is required at booking and covers the first 11 kids. The rest of the $179, additional participants or optional add-ons will be settled on the day of the party. BOOK NOW! You can begin the birthday party scheduling process on our website by clicking here, or call us today at (417) 894-7319 to reserve your birthday party spot at Warrior Sports! Cancellation & Rescheduling Policy: To help us staff and prepare properly, any cancellations or reschedules made starting the weekend immediately before your party date and at any point thereafter will incur a $60 fee."
+        },
+        {
+          "type": "h2",
+          "text": "MORE BIRTHDAY PARTY OPTIONS AT SPRINGFIELD WARRIOR SPORTS"
+        },
+        {
+          "type": "p",
+          "text": "Want to feed the birthday party or have birthday battles instead of an obstacle course race?"
+        },
+        {
+          "type": "p",
+          "text": "We can help you with that!"
+        },
+        {
+          "type": "p",
+          "text": "PIZZA BIRTHDAY PARTY WITH NO CLEAN UP!"
+        },
+        {
+          "type": "p",
+          "text": "Our birthday party pizza package includes plates, napkins, utensils, and pizza from Godfather's Pizza. Two pizzas will be ordered for a party of 10 kids, but we will adjust and order more if there are more kids attending. The pizza party add-on is $50, and extra pizzas can be requested for family members or adults for $12 each."
+        },
+        {
+          "type": "h2",
+          "text": "HAVE BATTLES IN OUR OBSTACLE COURSE GYM"
+        },
+        {
+          "type": "h2",
+          "text": "NERF BATTLE PARTIES"
+        },
+        {
+          "type": "p",
+          "text": "Our crew will set up and facilitate a Nerf Battle for your party rather than an obstacle course. Nerf parties must be scheduled during a private party time slot. Nerf Battle Parties are an additional $70, and the price includes a private party fee of ($40) and a staff/equipment fee of ($30)."
+        },
+        {
+          "type": "a",
+          "text": "LASER TAG PARTIES",
+          "href": "/laser-tag/"
+        },
+        {
+          "type": "p",
+          "text": "The Springfield Warrior Sports team will set your birthday party up for a super fun laser tag battle with our high-end laser tag guns. Laser tag parties must be scheduled during a private party time slot. Laser Tag Parties are an additional $90, and the investment includes a private party fee of ($40) and a staff/equipment fee of ($50)."
+        },
+        {
+          "type": "h2",
+          "text": "CREATE AMAZING"
+        },
+        {
+          "type": "h2",
+          "text": "MEMORIES"
+        },
+        {
+          "type": "p",
+          "text": "Create unforgettable memories with your kids and their friends in an uber-kid-friendly atmosphere. Your child will have the time of their life playing in our obstacle course gym while you sit back and relax without having to stress out about setting up or cleaning up afterward."
+        },
+        {
+          "type": "p",
+          "text": "Plus, our cooler of Gatorade keeps everyone well-hydrated during all that physical activity!"
+        },
+        {
+          "type": "p",
+          "text": "Shoot us a message here with your desired birthday party dates, or call (417) 894-7319 to book your birthday experience at Springfield Warrior Sports!"
+        }
+      ]
+    },
+    {
+      "slug": "schedule-birthday-party",
+      "path": "/schedule-birthday-party/",
+      "title": "Schedule Birthday Parties at Warrior Sports",
+      "description": "Our incredible Summer Camps in Springfield, MO are packed with fun and educational activities for 6-14-year-old kids.",
+      "h1": "CLIENT TESTIMONIALS",
+      "h1FromSource": false,
+      "index": true,
+      "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+      "photoHero": true,
+      "heroFile": "media/2023-04-WSbirthdayparty-banner.webp",
+      "heroAlt": "CLIENT TESTIMONIALS",
+      "images": [],
+      "logos": [
+        {
+          "file": "media/2023-03-SpringField-Warrior-Logo.webp",
+          "alt": "",
+          "kind": "logo"
+        },
+        {
+          "file": "media/2023-03-qoute-icon.webp",
+          "alt": "",
+          "kind": "logo"
+        },
+        {
+          "file": "media/2023-03-SWS-logo-footer.webp",
+          "alt": "",
+          "kind": "logo"
+        }
+      ],
+      "formId": "birthday-party",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "1. Fill out the form to begin the scheduling process and check availability 2. We will secure a date and then follow up with a phone call to confirm details and collect the $179 fee 3. Look forward to the best birthday ever!"
+        },
+        {
+          "type": "p",
+          "text": "\"*\" indicates required fields"
+        },
+        {
+          "type": "p",
+          "text": "First and Last Name* First Last Birthday Kids Name* Email* Phone* Please let us know the dates and times you would like to schedule your party and we will check the calendar and confirm availability* Would you like to discuss any of these? Nerf Battle Party Laser Tag Party Private Party Pizza Party Anything else?"
+        },
+        {
+          "type": "h2",
+          "text": "CLIENT TESTIMONIALS"
+        },
+        {
+          "type": "h2",
+          "text": "WHAT OUR CLIENTS SAY"
+        },
+        {
+          "type": "p",
+          "text": "We had our son’s 10th birthday here. All of the kids had a great time. They set up an obstacle course for the kids. They loved the whole experience. The favorite was the curved wall to run up. That was everyone’s challenge for the night. We will be visiting again for sure."
+        },
+        {
+          "type": "p",
+          "text": "- JENNIFER L."
+        },
+        {
+          "type": "p",
+          "text": "My daughter started training here 3 years ago at 8, and she still loves it!! Owner and coaching staff are all super encouraging. We live an hour away but make the drive twice a week as often as possible. Training here has not only helped her get stronger physically but increased her confidence in general. Anything that makes kids want to challenge themselves to get better and better is worth it!"
+        },
+        {
+          "type": "p",
+          "text": "- LEE C."
+        }
+      ]
+    },
+    {
+      "slug": "kids-classes",
+      "path": "/kids-classes/",
+      "title": "Kids Fitness Classes and Activities at Springfield Warrior Sports",
+      "description": "Looking for ways to keep your kids engaged, active, and healthy? Our classes and indoor kid activities in Springfield, MO include obstacle courses & more.",
+      "h1": "FUN AND CHALLENGING",
+      "h1FromSource": true,
+      "index": true,
+      "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+      "photoHero": true,
+      "heroFile": "media/2023-03-Kids-Classes-Banner.webp",
+      "heroAlt": "FUN AND CHALLENGING",
+      "images": [
+        {
+          "file": "media/2023-04-Summer-Camp-banner.webp",
+          "alt": "",
+          "kind": "photo"
+        },
+        {
+          "file": "media/2023-03-pre-shool-warriors.webp",
+          "alt": "",
+          "kind": "photo"
+        },
+        {
+          "file": "media/2023-03-junior-warriors.webp",
+          "alt": "",
+          "kind": "photo"
+        },
+        {
+          "file": "media/2023-03-csna-comp.webp",
+          "alt": "",
+          "kind": "photo"
+        },
+        {
+          "file": "media/2023-04-parkour-7-yrs-old.webp",
+          "alt": "",
+          "kind": "photo"
+        },
+        {
+          "file": "media/2025-02-homeschool-kids-sports.webp",
+          "alt": "homeschool kids sports",
+          "kind": "photo"
+        },
+        {
+          "file": "media/2023-03-kid-classes-img01.webp",
+          "alt": "",
+          "kind": "photo"
+        },
+        {
+          "file": "media/2023-03-kid-classes-img02.webp",
+          "alt": "",
+          "kind": "photo"
+        },
+        {
+          "file": "media/2023-03-kid-classes-img03.webp",
+          "alt": "",
+          "kind": "photo"
+        },
+        {
+          "file": "media/2023-03-kid-classes-img04.webp",
+          "alt": "",
+          "kind": "photo"
+        },
+        {
+          "file": "media/2023-03-kid-classes-img05.webp",
+          "alt": "",
+          "kind": "photo"
+        },
+        {
+          "file": "media/2023-03-kid-classes-img06.webp",
+          "alt": "",
+          "kind": "photo"
+        }
+      ],
+      "logos": [
+        {
+          "file": "media/2023-03-SpringField-Warrior-Logo.webp",
+          "alt": "",
+          "kind": "logo"
+        },
+        {
+          "file": "media/2023-03-SWS-logo-footer.webp",
+          "alt": "",
+          "kind": "logo"
+        }
+      ],
+      "formId": null,
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "NINJA WARRIOR CLASSES FOR KIDS AND TEENS"
+        },
+        {
+          "type": "h2",
+          "text": "KIDS FITNESS CLASSES AT SPRINGFIELD WARRIOR SPORTS"
+        },
+        {
+          "type": "p",
+          "text": "ARE YOU LOOKING FOR WAYS TO KEEP YOUR KIDS ENGAGED, ACTIVE AND HEALTHY?"
+        },
+        {
+          "type": "p",
+          "text": "Springfield Warrior Sports has the perfect solution! Our innovative ninja warrior classes are specifically designed to keep kids of all ages interested in exercising and fostering relationships while having fun at the same time. Our experienced coaches lead weekly classes full of obstacle courses, strength-building exercises, and more that will help boost physical fitness and encourage an active lifestyle. Plus, our competitive youth team offers an opportunity for young athletes who want to take their game up a notch!"
+        },
+        {
+          "type": "p",
+          "text": "Sign up now and let your kids experience the best of what Springfield Warrior Sports has to offer –and try out their very first class today for just $5!"
+        },
+        {
+          "type": "a",
+          "text": "RESERVE YOUR KID’S SPOT",
+          "href": "https://checkout.square.site/merchant/MLXTPBS97BGYV/checkout/B2M6XBNLKD4ZKFEUAPK4HWCQ"
+        },
+        {
+          "type": "p",
+          "text": "Note: The last week of the month (Sunday–Saturday) is our 'Test Week,' where kids challenge themselves using a checklist of obstacles to advance to the next level! Trial classes are still available during this time, but the structure will be less guided and more focused on the checklists. For the best experience, we recommend scheduling a trial class one of the other weeks!"
+        },
+        {
+          "type": "h2",
+          "text": "PRE-SCHOOL WARRIORS"
+        },
+        {
+          "type": "h2",
+          "text": "(3-6 YEAR-OLDS)"
+        },
+        {
+          "type": "p",
+          "text": "Our preschool class is geared for your 3-6 year olds. This interactive class will include a warm-up, balance and agility work, and a mini course, along with learning to take turns and follow instructions - all in a FUN and safe environment! Bring your little ninjas by to climb up our walls (and wear them out before rest time). See you soon!"
+        },
+        {
+          "type": "p",
+          "text": "Ages: 3-6 years old Cost: $10 per class. $40 monthly. Preschool Open Gym Times"
+        },
+        {
+          "type": "p",
+          "text": "Tuesday mornings 9:30am-11:30am"
+        },
+        {
+          "type": "h2",
+          "text": "CLASS TIMES"
+        },
+        {
+          "type": "p",
+          "text": "3&4 Years Old"
+        },
+        {
+          "type": "p",
+          "text": "Tuesday and Wednesday 5:30-6:00pm"
+        },
+        {
+          "type": "p",
+          "text": "5&6 Years Old"
+        },
+        {
+          "type": "p",
+          "text": "Tuesday and Wednesday 6:00pm-6:45pm"
+        },
+        {
+          "type": "h2",
+          "text": "JUNIOR WARRIORS"
+        },
+        {
+          "type": "h2",
+          "text": "(AGES 7-18)"
+        },
+        {
+          "type": "p",
+          "text": "The Springfield Warrior Sports Junior Warrior Classes are the perfect way to get your 7-18 year olds active and teach them the importance of a healthy lifestyle. These classes incorporate cardio, strength, balance, and agility training while teaching safe and productive ways to conquer the different obstacles in the gym. For kids who need a little extra one-on-one coaching, we also offer personal training tailored to their goals."
+        },
+        {
+          "type": "p",
+          "text": "Your kids will progress through Levels 1-9 (like white, blue, black, etc., belts) as they accomplish the skills required in each level. This is a great way to challenge your kids and encourage your children to stay active!"
+        },
+        {
+          "type": "p",
+          "text": "Cost: Intermediate classes: One class per week $85 monthly. Two classes per week $110 monthly. Up to three classes per week, $135 monthly. Beginner Warrior Membership $70."
+        },
+        {
+          "type": "a",
+          "text": "TRY YOUR FIRST JUNIOR WARRIOR CLASS FOR $5",
+          "href": "https://checkout.square.site/merchant/MLXTPBS97BGYV/checkout/B2M6XBNLKD4ZKFEUAPK4HWCQ"
+        },
+        {
+          "type": "h2",
+          "text": "CLASS TIMES"
+        },
+        {
+          "type": "p",
+          "text": "Beginner Level and Trial Class Drop Ins"
+        },
+        {
+          "type": "p",
+          "text": "Mon-Fri 4-4:30pm or 4:30-5pm Mon, Thur, & Fri 5-5:30pm or 5:30-6pm Level 3+ Junior Warriors"
+        },
+        {
+          "type": "p",
+          "text": "Monday-Friday 5-6pm"
+        },
+        {
+          "type": "p",
+          "text": "Level 3+ Homeschool Junior Warrior Class"
+        },
+        {
+          "type": "p",
+          "text": "Tuesdays and Thursdays 3-4pm"
+        },
+        {
+          "type": "h2",
+          "text": "CSNA COMPETITIVE NINJA TEAM"
+        },
+        {
+          "type": "h2",
+          "text": "(7-18 YEARS OLD)"
+        },
+        {
+          "type": "p",
+          "text": "The Central States Ninja Association is a competitive youth team for Junior Warriors who are ready to take it to the next level and put their skills to the test! Junior Warriors are eligible to apply for the CSNA team upon completing Level 4. The team works with Coach Adam Arnold who holds 90-minute practices 2 days a week. The season runs September - May with competitions scheduled throughout the region hosted by other participating CSNA gyms |MO, KS, NE, AR|."
+        },
+        {
+          "type": "p",
+          "text": "Cost: $145 for two practices a week. Includes an open gym membership."
+        },
+        {
+          "type": "h2",
+          "text": "PRACTICE TIMES"
+        },
+        {
+          "type": "p",
+          "text": "Monday and Thursday: 6-7:30pm"
+        },
+        {
+          "type": "h2",
+          "text": "PARKOUR"
+        },
+        {
+          "type": "h2",
+          "text": "(7+ YEARS OLD)"
+        },
+        {
+          "type": "p",
+          "text": "⚠️ Parkour Classes are currently unavailable.⚠️"
+        },
+        {
+          "type": "p",
+          "text": "Open Gym is still available for Parkour training."
+        },
+        {
+          "type": "p",
+          "text": "Learn the basics of Parkour |free running| in this group class. Students will gain the ability to move freely with and without obstacles using the abilities of their bodies. This will be accomplished primarily through running, jumping, climbing, and quadrupedal movements. Classes will focus on physical conditioning and Parkour skills and will ultimately blend the two together. Experience the non-competitive mental and physical challenge while building strength, speed, stamina, and balance in a controlled environment."
+        },
+        {
+          "type": "p",
+          "text": "Cost: $20 class drop in, $10 class drop in for current members $35/monthly discounted Parkour membership is available to current members who want to attend one class per week $60/monthly for Parkour membership, unlimited classes and also includes an Open Gym membership"
+        },
+        {
+          "type": "a",
+          "text": "TRY OPEN GYM FOR $10",
+          "href": "/parkour/"
+        },
+        {
+          "type": "h2",
+          "text": "HOMESCHOOL WARRIORS"
+        },
+        {
+          "type": "h2",
+          "text": "(7-15 YEARS OLD)"
+        },
+        {
+          "type": "p",
+          "text": "Looking for a fun and engaging way to keep your homeschoolers active? Springfield Warrior Sports has just what you need! Our homeschool program offers structured classes designed to help kids build strength, agility, and confidence—all while making friends and having a blast. Whether your child wants to challenge themselves on obstacles, improve their coordination, or just burn off some energy, we provide a safe and supportive environment to do it all. Sign up for our exciting classes—we can’t wait to see your homeschool warriors in action!"
+        },
+        {
+          "type": "p",
+          "text": "HOMESCHOOL CLASSES (Ages 7–15) Tuesdays & Thursdays : 3–4pm $85/month for one class per week $110/month for two classes per week"
+        },
+        {
+          "type": "a",
+          "text": "GET STARTED HERE",
+          "href": "/homeschool-sports-and-classes-springfield-mo/"
+        },
+        {
+          "type": "h2",
+          "text": "SEE HOW MUCH FUN YOUR KID WILL HAVE"
+        },
+        {
+          "type": "a",
+          "text": "SCHEDULE A $5 TRIAL CLASS",
+          "href": "https://checkout.square.site/merchant/MLXTPBS97BGYV/checkout/B2M6XBNLKD4ZKFEUAPK4HWCQ"
+        },
+        {
+          "type": "p",
+          "text": "AND …. DON’T FORGET ABOUT SUMMER CAMPS, OPEN GYM, AND BIRTHDAY PARTIES!"
+        },
+        {
+          "type": "h2",
+          "text": "YOUTH SUMMER CAMP"
+        },
+        {
+          "type": "p",
+          "text": "Kids will have fun and make new friends during our"
+        },
+        {
+          "type": "p",
+          "text": "week long day camp. Campers will work with a"
+        },
+        {
+          "type": "p",
+          "text": "Warrior Sports trainer focusing on overall strength,"
+        },
+        {
+          "type": "p",
+          "text": "balance, and core exercises along with obstacle"
+        },
+        {
+          "type": "p",
+          "text": "training."
+        },
+        {
+          "type": "a",
+          "text": "SUMMER CAMP",
+          "href": "/summer-camps-in-springfield-mo/"
+        },
+        {
+          "type": "a",
+          "text": "BIRTHDAY PARTIES",
+          "href": "/birthday-parties/"
+        },
+        {
+          "type": "p",
+          "text": "At Springfield Warrior Sports we want to take the stress out of your party planning - schedule your party with us, and let us do the rest! Parties are an hour and a half long and include open play and an obstacle course set up and facilitated by our Crew."
+        },
+        {
+          "type": "a",
+          "text": "BIRTHDAY PARTY",
+          "href": "/birthday-parties/"
+        },
+        {
+          "type": "h2",
+          "text": "NO-SCHOOL DAY CAMP"
+        },
+        {
+          "type": "p",
+          "text": "Give your kids active, exciting days during school break at our fun day camps! We provide both half-day and full-days camp options for kids to hang out, play games, do sports, and make friends."
+        },
+        {
+          "type": "a",
+          "text": "DAY CAMP",
+          "href": "/summer-camps-in-springfield-mo/"
+        }
+      ]
+    },
+    {
+      "slug": "parkour",
+      "path": "/parkour/",
+      "title": "Parkour Gym and Classes in Springfield MO | Springfield Warrior Sports",
+      "description": "If you're looking for a fun and challenging way to get in shape, look no further than open gym time and our parkour classes at Springfield Warrior Sports!",
+      "h1": "PARKOUR GYM IN SPRINGFIELD MO | SPRINGFIELD WARRIOR SPORTS",
+      "h1FromSource": true,
+      "index": true,
+      "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+      "photoHero": true,
+      "heroFile": "media/2025-12-IMG_2343-scaled.webp",
+      "heroAlt": "PARKOUR GYM IN SPRINGFIELD MO | SPRINGFIELD WARRIOR SPORTS",
+      "images": [
+        {
+          "file": "media/2023-04-Day1-029.webp",
+          "alt": "",
+          "kind": "photo"
+        },
+        {
+          "file": "media/2023-04--E2-80-8BStress-Relief.webp",
+          "alt": "",
+          "kind": "photo"
+        },
+        {
+          "file": "media/2023-04-wsre-shoots.webp",
+          "alt": "",
+          "kind": "photo"
+        },
+        {
+          "file": "media/2023-04--E2-80-8BMore-Than-Just-Physical.webp",
+          "alt": "",
+          "kind": "photo"
+        }
+      ],
+      "logos": [
+        {
+          "file": "media/2023-03-SpringField-Warrior-Logo.webp",
+          "alt": "",
+          "kind": "logo"
+        },
+        {
+          "file": "media/2023-03-SWS-logo-footer.webp",
+          "alt": "",
+          "kind": "logo"
+        }
+      ],
+      "formId": null,
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "⚠️ TEMPORARY UPDATE:"
+        },
+        {
+          "type": "p",
+          "text": "Parkour classes are currently paused for a short time."
+        },
+        {
+          "type": "p",
+          "text": "Open Gym sessions remain available, and Parkour classes will be returning soon. Thank you for your understanding!"
+        },
+        {
+          "type": "p",
+          "text": "Want to challenge yourself and become stronger, faster, and more agile?"
+        },
+        {
+          "type": "p",
+          "text": "Come try out parkour at Springfield Warrior Sports! Our Parkour gym in Springfield is the perfect place for people of all ages looking to build strength, agility, speed, balance, and self-confidence with a complete body workout. With our expert instructors guiding you through each obstacle course challenge – you're sure to improve your physical skills as well as boost your confidence in taking on new situations"
+        },
+        {
+          "type": "p",
+          "text": "Plus, your first class is only $5 Dollars – so you can see if this is right for you at an affordable price point."
+        },
+        {
+          "type": "p",
+          "text": "When: Beginner: Wednesdays 6-7pm Intermediate: Wednesdays 7-8pm"
+        },
+        {
+          "type": "a",
+          "text": "TRY A CLASS FOR $5",
+          "href": "https://checkout.square.site/merchant/MLXTPBS97BGYV/checkout/B2M6XBNLKD4ZKFEUAPK4HWCQ"
+        },
+        {
+          "type": "h2",
+          "text": "PARKOUR BENEFITS"
+        },
+        {
+          "type": "h2",
+          "text": "IMPROVE PHYSICAL FITNESS:"
+        },
+        {
+          "type": "p",
+          "text": "Parkour can help to improve overall physical fitness and develop a greater strength, speed, stamina and balance. The movements involve a variety of exercises that work out several muscles at once, allowing for a complete body workout."
+        },
+        {
+          "type": "h2",
+          "text": "BUILDS SELF-CONFIDENCE:"
+        },
+        {
+          "type": "p",
+          "text": "By learning how to overcome obstacles and accomplish difficult tasks such as running, jumping and climbing, Parkour can help build self-confidence as students become more competent in their abilities. As they learn to move freely with the environment around them, they become more confident in their own abilities to adapt and succeed in new situations."
+        },
+        {
+          "type": "h2",
+          "text": "MENTAL STIMULATION:"
+        },
+        {
+          "type": "p",
+          "text": "Parkour offers an enjoyable and mentally stimulating activity that allows students to practice coordination skills while having fun at the same time. It also encourages problem solving skills as students have to find creative ways of navigating through different obstacle courses and scenarios."
+        },
+        {
+          "type": "h2",
+          "text": "STRESS RELIEF:"
+        },
+        {
+          "type": "p",
+          "text": "Parkour is a great way to reduce stress levels by letting off some steam while using physical activity as an outlet for negative emotions. The mental clarity that comes from focusing on the task at hand helps clear the mind of any distractions or worries that may be plaguing it, allowing for renewed focus and energy afterwards."
+        },
+        {
+          "type": "h2",
+          "text": "COMMUNITY:"
+        },
+        {
+          "type": "p",
+          "text": "Participants in Parkour can gain access to a strong supportive community of like-minded individuals who are all striving for personal growth through physical activity with each other's support and encouragement."
+        },
+        {
+          "type": "h2",
+          "text": "PARKOUR CLASSES"
+        },
+        {
+          "type": "h2",
+          "text": "TEMPORARILY UNAVAILABLE"
+        },
+        {
+          "type": "h2",
+          "text": "OPEN GYM IS OPEN — YOUR FIRST VISIT IS JUST $10"
+        },
+        {
+          "type": "p",
+          "text": "$20 class drop in, $10 class drop in for current members $35/monthly discounted Parkour add on for current members who want to attend one class per week $60/monthly for Parkour gym membership, unlimited classes, and also includes unlimited Open Gym access Sign up now for our introductory open gym session (Your first visit is just $10) at Springfield Warrior Sports' Parkour Gym today!"
+        },
+        {
+          "type": "a",
+          "text": "TRY OPEN GYM FOR $10",
+          "href": "https://square.link/u/GmmQ7iuL"
+        },
+        {
+          "type": "h2",
+          "text": "MORE THAN JUST PHYSICAL"
+        },
+        {
+          "type": "p",
+          "text": "With Parkour classes at Springfield Warrior Sports, you don't just get a physical workout; you also get a mental challenge as well. Working in a non-competitive environment helps create an atmosphere that encourages growth for everyone involved – no matter their skill level. So come on down and give Parkour a try today – we promise it won't disappoint!"
+        }
+      ]
+    },
+    {
+      "slug": "fitness-classes",
+      "path": "/fitness-classes/",
+      "title": "The Most Diverse — Evening Fitness Classes in Springfield, MO",
+      "description": "Want to challenge yourself in creative ways? Participate in unique fitness and workout routines in Springfield each week at Springfield Warrior Sports.",
+      "h1": "THE MOST DIVERSE (LEAST BORING) FITNESS CLASSES IN SPRINGFIELD, MO",
+      "h1FromSource": true,
+      "index": true,
+      "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+      "photoHero": true,
+      "heroFile": "media/2023-03-Pricing-and-Schedule.webp",
+      "heroAlt": "THE MOST DIVERSE (LEAST BORING) FITNESS CLASSES IN SPRINGFIELD, MO",
+      "images": [
+        {
+          "file": "media/2025-12-IMG_2344-scaled.webp",
+          "alt": "",
+          "kind": "photo"
+        },
+        {
+          "file": "media/2025-12-IMG_2347-scaled.webp",
+          "alt": "",
+          "kind": "photo"
+        },
+        {
+          "file": "media/2023-03-improve-confidence.webp",
+          "alt": "",
+          "kind": "photo"
+        }
+      ],
+      "logos": [
+        {
+          "file": "media/2023-03-SpringField-Warrior-Logo.webp",
+          "alt": "",
+          "kind": "logo"
+        },
+        {
+          "file": "media/2023-03-SWS-logo-footer.webp",
+          "alt": "",
+          "kind": "logo"
+        }
+      ],
+      "formId": null,
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "THE MOST DIVERSE (LEAST BORING)"
+        },
+        {
+          "type": "h2",
+          "text": "FITNESS CLASSES IN SPRINGFIELD, MO"
+        },
+        {
+          "type": "p",
+          "text": "ARE YOU LOOKING FOR A FUN AND UNIQUE WAY TO STAY FIT?"
+        },
+        {
+          "type": "p",
+          "text": "Look no further! Springfield Warrior Sports offers amazing adult Obstacle Course Race (OCR) fitness classes that combine traditional circuit-style exercises with obstacle courses. You'll have the chance to challenge yourself in new and creative ways, using your own personal goals as motivation."
+        },
+        {
+          "type": "p",
+          "text": "Our experienced instructors will be there every step of the way to help guide you through your fitness journey! If you're looking for more one-on-one support, personal training is also available."
+        },
+        {
+          "type": "p",
+          "text": "Our OCR classes in Springfield give you an unforgettable workout experience like no other. You’ll push your body beyond what it thought possible — all while having a blast. Every time you come back for another session, you can count on even more challenging obstacles and exercises designed just for you!"
+        },
+        {
+          "type": "p",
+          "text": "Sign up now for ADULT O.C.R workout classes from Springfield Warrior Sports today and start reaching those fitness goals faster than ever before!"
+        },
+        {
+          "type": "h2",
+          "text": "PRICING AND SCHEDULE"
+        },
+        {
+          "type": "p",
+          "text": "We now offer two OCR classes each week — Tuesday and Thursday from 6-7 pm — giving you more flexibility and more opportunities to train."
+        },
+        {
+          "type": "p",
+          "text": "Choose the membership option that fits your goals:"
+        },
+        {
+          "type": "p",
+          "text": "$20 Drop-In $60 Monthly Membership (once per week) $100 Monthly Membership (twice per week) $40 Weight Lifting Membership (18+, access to weight-lifting area only)"
+        },
+        {
+          "type": "a",
+          "text": "TRY YOUR FIRST CLASS FOR JUST $5 BUCKS",
+          "href": "https://checkout.square.site/merchant/MLXTPBS97BGYV/checkout/B2M6XBNLKD4ZKFEUAPK4HWCQ"
+        },
+        {
+          "type": "h2",
+          "text": "OBSTACLE COURSE RACING CLASSES:"
+        },
+        {
+          "type": "h2",
+          "text": "A UNIQUE WORKOUT EXPERIENCE"
+        },
+        {
+          "type": "p",
+          "text": "OCR workouts and fitness classes are designed to help you conquer obstacles both mentally and physically, while having fun at the same time! Let’s explore further why obstacle course racing is such an effective form of exercise."
+        },
+        {
+          "type": "p",
+          "text": "WHAT IS OCR FITNESS?"
+        },
+        {
+          "type": "p",
+          "text": "OCR fitness classes take the best of the traditional gym experience and add an extra layer of excitement. By incorporating a variety of obstacles into each class, participants are able to get creative with their workouts and challenge themselves in ways they wouldn’t be able to in a regular gym setting. This helps keep motivation levels high and provides an outlet for those looking for something different than the typical exercise bike or treadmill routine."
+        },
+        {
+          "type": "h2",
+          "text": "OCR FITNESS CLASS"
+        },
+        {
+          "type": "h2",
+          "text": "BENEFITS"
+        },
+        {
+          "type": "p",
+          "text": "The benefits of OCR fitness classes extend far beyond just physical exercise; it also provides many mental health benefits as well. The unique challenges presented by each obstacle help boost confidence levels by teaching participants how to problem-solve on their feet and push their limits further than they thought possible."
+        },
+        {
+          "type": "p",
+          "text": "Additionally, the group atmosphere also encourages camaraderie among participants, which can help build strong connections between members who may not have otherwise interacted with one another in a regular gym setting."
+        },
+        {
+          "type": "h2",
+          "text": "SHORT-TERM GOALS AND"
+        },
+        {
+          "type": "h2",
+          "text": "LONG-TERM GAINS"
+        },
+        {
+          "type": "p",
+          "text": "OCR training has been proven to improve overall physical health as well as strength, agility, balance, coordination, endurance, and speed - all essential components needed for any type of longevity goal, athletic activity, or sport."
+        },
+        {
+          "type": "p",
+          "text": "The combination of low-impact exercises along with more intense activities helps train the body in ways that cannot be replicated in other forms of exercise, making it an excellent choice for anyone looking to switch up their workout routine or take their athletic performance up a notch."
+        },
+        {
+          "type": "h2",
+          "text": "IMPROVED CONFIDENCE LEVELS"
+        },
+        {
+          "type": "h2",
+          "text": "AND MENTAL HEALTH"
+        },
+        {
+          "type": "p",
+          "text": "Our Obstacle Course Racing (OCR) workouts and fitness classes in Springfield, MO provide a unique way to get fit while also having fun! Not only do you get the physical benefits from this type of workout, but you also receive numerous mental health benefits such as improved confidence levels and connection building with other members within the group atmosphere that these classes offer."
+        },
+        {
+          "type": "p",
+          "text": "Additionally, many enjoy pairing these fitness classes with our Parkour class options adding even more unique workout sessions each week."
+        },
+        {
+          "type": "p",
+          "text": "So if you’re ready for a new challenge, sign up for our OCR Fitness Classes today! You won't regret it!"
+        },
+        {
+          "type": "a",
+          "text": "SIGN-UP HERE!",
+          "href": "https://checkout.square.site/merchant/MLXTPBS97BGYV/checkout/B2M6XBNLKD4ZKFEUAPK4HWCQ"
+        }
+      ]
+    },
+    {
+      "slug": "personal-training",
+      "path": "/personal-training/",
+      "title": "Personal Training in Southwest Springfield | Ninja Warrior Training",
+      "description": "Build strength and confidence with personal training in Southwest Springfield. Book your free consultation today to see what’s possible.",
+      "h1": "PERSONAL TRAINING AT WARRIOR SPORTS",
+      "h1FromSource": true,
+      "index": true,
+      "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+      "photoHero": true,
+      "heroFile": "media/2023-03-Pricing-and-Schedule.webp",
+      "heroAlt": "PERSONAL TRAINING AT WARRIOR SPORTS",
+      "images": [
+        {
+          "file": "media/2025-08-Warrior-Sports-Personal-Training.webp",
+          "alt": "",
+          "kind": "photo"
+        },
+        {
+          "file": "media/2025-08-Unconventional-by-Design.webp",
+          "alt": "",
+          "kind": "photo"
+        },
+        {
+          "file": "media/2025-08-Stronger-and-Smarter-training.webp",
+          "alt": "",
+          "kind": "photo"
+        },
+        {
+          "file": "media/2025-08-Emotionally-Intelligent-Coaching.webp",
+          "alt": "",
+          "kind": "photo"
+        },
+        {
+          "file": "media/2025-08-sarah-wilder-img.webp",
+          "alt": "",
+          "kind": "photo"
+        },
+        {
+          "file": "media/2025-08-Jacob-Winter-img.webp",
+          "alt": "",
+          "kind": "photo"
+        },
+        {
+          "file": "media/2025-08-jonny-wilder-img.webp",
+          "alt": "",
+          "kind": "photo"
+        }
+      ],
+      "logos": [
+        {
+          "file": "media/2023-03-SpringField-Warrior-Logo.webp",
+          "alt": "",
+          "kind": "logo"
+        },
+        {
+          "file": "media/2023-03-qoute-icon.webp",
+          "alt": "",
+          "kind": "logo"
+        },
+        {
+          "file": "media/2023-03-SWS-logo-footer.webp",
+          "alt": "",
+          "kind": "logo"
+        }
+      ],
+      "formId": "personal-training",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "NOT YOUR TYPICAL GYM. NOT YOUR TYPICAL TRAINER."
+        },
+        {
+          "type": "p",
+          "text": "If you’ve ever felt like fitness wasn’t made for you, you’re in the right place."
+        },
+        {
+          "type": "p",
+          "text": "We don’t (necessarily) do treadmills or machine circuits. We do movement that makes you stronger, sharper, and more confident…your way."
+        },
+        {
+          "type": "p",
+          "text": "Because when training is rooted in curiosity and connection, not comparison, you show up differently. We work with clients from across Springfield. Battlefield to Sunshine and everywhere in between, because personalized training should feel close to home."
+        },
+        {
+          "type": "a",
+          "text": "CONTACT OUR PERSONAL TRAINERS",
+          "href": "/personal-training/"
+        },
+        {
+          "type": "h2",
+          "text": "WHY WARRIOR SPORTS PERSONAL TRAINING WORKS"
+        },
+        {
+          "type": "p",
+          "text": "At Warrior Sports, personal training is based on partnerships."
+        },
+        {
+          "type": "p",
+          "text": "It’s a conversation and a challenge all rolled into one."
+        },
+        {
+          "type": "p",
+          "text": "Here’s how we’re different:"
+        },
+        {
+          "type": "h2",
+          "text": "UNCONVENTIONAL BY DESIGN"
+        },
+        {
+          "type": "p",
+          "text": "We use obstacle training, resistance bands, parkour-inspired drills, and reactive movement. These methods naturally demand personalization. Every session is a custom experience."
+        },
+        {
+          "type": "h2",
+          "text": "STRONGER AND SMARTER"
+        },
+        {
+          "type": "p",
+          "text": "This isn’t just about muscles. It’s about moving with confidence. Our training boosts body awareness, mind-muscle connection, and coordination, helping you move better in daily life."
+        },
+        {
+          "type": "h2",
+          "text": "EMOTIONALLY INTELLIGENT COACHING"
+        },
+        {
+          "type": "p",
+          "text": "We meet you where you are, without shame or performance pressure. Whether you’re just starting or getting unstuck, we help you rediscover joy in movement."
+        },
+        {
+          "type": "h2",
+          "text": "MEET YOUR TRAINERS"
+        },
+        {
+          "type": "h2",
+          "text": "SARAH WILDER"
+        },
+        {
+          "type": "p",
+          "text": "– Women’s Confidence Coach"
+        },
+        {
+          "type": "p",
+          "text": "Helps women, especially moms, feel strong again in bodies that have carried so much."
+        },
+        {
+          "type": "p",
+          "text": "“I focus on helping you feel powerful before you even pick up a weight.”"
+        },
+        {
+          "type": "h2",
+          "text": "JACOB WINTER"
+        },
+        {
+          "type": "p",
+          "text": "– Strength, Weight Loss and Conditioning"
+        },
+        {
+          "type": "p",
+          "text": "Great for weight loss, functional strength, and rebuilding consistency."
+        },
+        {
+          "type": "p",
+          "text": "“We build wins you can feel without judgment or pressure.”"
+        },
+        {
+          "type": "h2",
+          "text": "JONNY WILDER"
+        },
+        {
+          "type": "p",
+          "text": "– Ninja and Competitive Obstacle Training"
+        },
+        {
+          "type": "p",
+          "text": "Perfect for teens, adventurous adults, or athletes seeking confidence and agility."
+        },
+        {
+          "type": "p",
+          "text": "“Training should be fun. That’s where confidence begins.”"
+        },
+        {
+          "type": "h2",
+          "text": "HOW IT WORKS"
+        },
+        {
+          "type": "p",
+          "text": "Contact us and share your story—goals, concerns, struggles We’ll reach out and get you locked in Try a session personalized to your pace and strength Decide from there if you want to continue"
+        },
+        {
+          "type": "a",
+          "text": "CONTACT OUR PERSONAL TRAINERS",
+          "href": "/personal-training/"
+        },
+        {
+          "type": "h2",
+          "text": "WHAT OUR CLIENTS SAY"
+        },
+        {
+          "type": "p",
+          "text": "After losing some weight on my own, I hit a wall. Warrior Sports changed the game for me. My coach built a program just for me and held me accountable in a way that made me stronger, leaner, and more confident—not just physically, but mentally."
+        },
+        {
+          "type": "h2",
+          "text": "- CLIENT"
+        },
+        {
+          "type": "p",
+          "text": "Over a year, I lost over 50 pounds, gained mobility and confidence, and competed in multiple obstacle races. Warrior Sports is family-friendly, fun, and motivating. My trainer, Jacob, made workouts fast, personal, and sustainable."
+        },
+        {
+          "type": "p",
+          "text": "— MICHAEL B."
+        },
+        {
+          "type": "p",
+          "text": "Jonny has coached our son for over three years. He’s a mentor, a role model, and a true confidence builder. His dedication helped our son compete at the WNL World Championships two years in a row."
+        },
+        {
+          "type": "h2",
+          "text": "— WILL AND KOREN WILSON"
+        },
+        {
+          "type": "p",
+          "text": "My son’s personal training at Warrior Sports has helped him with body image, goal setting, and self-confidence. It’s been so rewarding to watch him grow."
+        },
+        {
+          "type": "p",
+          "text": "— SUSIE K."
+        },
+        {
+          "type": "h2",
+          "text": "LET’S TALK STRENGTH…YOUR VERSION"
+        },
+        {
+          "type": "p",
+          "text": "This isn’t about getting shredded or setting records. It’s about moving, healing, and growing in a way that actually fits your life."
+        },
+        {
+          "type": "p",
+          "text": "Full Name(Required) First Last Phone(Required) Email Address(Required) Age(Required) Gender(Required) Male Female What Are Your Fitness Goals?(Required) What Are You Looking for in a Trainer?(Required)"
+        }
+      ]
+    },
+    {
+      "slug": "homeschool-sports-and-classes-springfield-mo",
+      "path": "/homeschool-sports-and-classes-springfield-mo/",
+      "title": "Homeschool Sports and Classes Springfield MO | Springfield Warrior Sports",
+      "description": "Calling all homeschoolers! Come join the fun and experience homeschool sports right here in Springfield, MO. Classes and open gym available.",
+      "h1": "HOMESCHOOL KIDS SPORTS",
+      "h1FromSource": false,
+      "index": true,
+      "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+      "photoHero": true,
+      "heroFile": "media/2024-02-rock-climbing.webp",
+      "heroAlt": "HOMESCHOOL KIDS SPORTS",
+      "images": [],
+      "logos": [
+        {
+          "file": "media/2023-03-SpringField-Warrior-Logo.webp",
+          "alt": "",
+          "kind": "logo"
+        },
+        {
+          "file": "media/2023-03-SWS-logo-footer.webp",
+          "alt": "",
+          "kind": "logo"
+        }
+      ],
+      "formId": null,
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Looking for fun ways to help your homeschooled kids nab their PE credit? Or, to just have some fitness and play time with other like-minded families?!"
+        },
+        {
+          "type": "p",
+          "text": "Springfield Warrior Sports has you covered!"
+        },
+        {
+          "type": "p",
+          "text": "We offer opportunities for homeschoolers to stay active, fulfill their PE credit requirements, and most of all, have fun. Kids get to connect with peers, challenge themselves to improve their athletic performance, and gain new experiences."
+        },
+        {
+          "type": "p",
+          "text": "Our homeschool programs in Springfield, MO provide sports opportunities your homeschooler will love. Keep reading for all the details!"
+        },
+        {
+          "type": "h2",
+          "text": "FUN HOMESCHOOL SPORTS FOR KIDS IN SPRINGFIELD, MO"
+        },
+        {
+          "type": "h2",
+          "text": "HOMESCHOOL CLASSES SPRINGFIELD, MO"
+        },
+        {
+          "type": "h2",
+          "text": "(AGES 7–15)"
+        },
+        {
+          "type": "p",
+          "text": "The Springfield Warrior Sports Junior Warrior Classes are the perfect way to get your homeschoolers active and embracing a healthy lifestyle."
+        },
+        {
+          "type": "p",
+          "text": "Classes incorporate cardio, strength, balance, and agility training while teaching safe and productive ways to conquer the different obstacles in the gym."
+        },
+        {
+          "type": "p",
+          "text": "Kids progress through program Levels 1-9 as they accomplish the skills required in each level. This is a great way to challenge your kids and encourage your children to stay active!"
+        },
+        {
+          "type": "p",
+          "text": "Availability: Tuesdays and Thursdays"
+        },
+        {
+          "type": "p",
+          "text": "Availability: Tuesdays and Thursdays Hours: 3–4pm Cost: One class per week, $85 monthly. Two classes per week, $110 monthly."
+        },
+        {
+          "type": "a",
+          "text": "TRY YOUR FIRST CLASS FOR JUST $5!",
+          "href": "https://checkout.square.site/merchant/MLXTPBS97BGYV/checkout/B2M6XBNLKD4ZKFEUAPK4HWCQ"
+        },
+        {
+          "type": "p",
+          "text": "COME JOIN THE FUN! Homeschoolers have the unique opportunity to enjoy exciting activities at Springfield Warrior Sports."
+        },
+        {
+          "type": "p",
+          "text": "With time specifically dedicated to helping homeschoolers excel in their athletic goals, embrace an active lifestyle, and connect with other kids their age, this is a chance for homeschool kids to experience the most fun school year ever."
+        },
+        {
+          "type": "p",
+          "text": "Call (417) 894-7319 for more information, or click here to book a trial class for only $ 5."
+        }
+      ]
+    },
+    {
+      "slug": "summer-camps-in-springfield-mo",
+      "path": "/summer-camps-in-springfield-mo/",
+      "title": "2026 Summer Camps in Springfield MO: Springfield Warrior Sports",
+      "description": "Our incredible Summer Camps in Springfield, MO are packed with fun and educational activities for 6-14-year-old kids.",
+      "h1": "KIDS STAY FIT AND HEALTHY AT OUR INCREDIBLE SUMMER CAMPS",
+      "h1FromSource": true,
+      "index": true,
+      "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+      "photoHero": true,
+      "heroFile": "media/2023-03-spring-break.webp",
+      "heroAlt": "KIDS STAY FIT AND HEALTHY AT OUR INCREDIBLE SUMMER CAMPS",
+      "images": [],
+      "logos": [
+        {
+          "file": "media/2023-03-SpringField-Warrior-Logo.webp",
+          "alt": "",
+          "kind": "logo"
+        },
+        {
+          "file": "media/2023-03-qoute-icon.webp",
+          "alt": "",
+          "kind": "logo"
+        },
+        {
+          "file": "media/2023-03-SWS-logo-footer.webp",
+          "alt": "",
+          "kind": "logo"
+        }
+      ],
+      "formId": "camp-registration",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "KIDS STAY FIT AND HEALTHY"
+        },
+        {
+          "type": "h2",
+          "text": "AT OUR INCREDIBLE SUMMER CAMPS"
+        },
+        {
+          "type": "p",
+          "text": "Looking for a worthwhile activity for your kid this summer?"
+        },
+        {
+          "type": "p",
+          "text": "Look no further! Our incredible Summer Camps in Springfield, MO are packed with fun and educational activities."
+        },
+        {
+          "type": "p",
+          "text": "Kids will get the chance to work with our Ninja Warrior trainers, and participate in physical activities designed to enhance their balance, core, and overall strength. We provide healthy snacks each day as we educate children on making good nutritional choices that lead to improved health and wellness."
+        },
+        {
+          "type": "p",
+          "text": "Plus, there’s a competition at every camp that awards the top place-getters a spot in the final championship at the end of summer – how cool is that?!"
+        },
+        {
+          "type": "p",
+          "text": "Come join us at our camps, which are perfect for children approximately aged 6 to 15."
+        },
+        {
+          "type": "h2",
+          "text": "SUMMER CAMPS IN SPRINGFIELD — 2026 DATES"
+        },
+        {
+          "type": "p",
+          "text": "May 25th - May 29th"
+        },
+        {
+          "type": "h2",
+          "text": "8:30 AM - 11:30 AM"
+        },
+        {
+          "type": "p",
+          "text": "June 8th - June 12th"
+        },
+        {
+          "type": "h2",
+          "text": "8:30 AM - 11:30 AM"
+        },
+        {
+          "type": "p",
+          "text": "June 22nd - June 26th"
+        },
+        {
+          "type": "h2",
+          "text": "8:30 AM - 11:30 AM"
+        },
+        {
+          "type": "p",
+          "text": "July 6th - July 10th"
+        },
+        {
+          "type": "h2",
+          "text": "8:30 AM - 11:30 AM"
+        },
+        {
+          "type": "h2",
+          "text": "12 PM - 3 PM"
+        },
+        {
+          "type": "p",
+          "text": "July 20th - July 24th"
+        },
+        {
+          "type": "h2",
+          "text": "8:30 AM - 11:30 AM"
+        },
+        {
+          "type": "h2",
+          "text": "12 PM - 3 PM"
+        },
+        {
+          "type": "p",
+          "text": "August 3rd - August 7th"
+        },
+        {
+          "type": "h2",
+          "text": "8:30 AM - 11:30 AM"
+        },
+        {
+          "type": "h2",
+          "text": "12 PM - 3 PM"
+        },
+        {
+          "type": "p",
+          "text": "August 17th - August 21st"
+        },
+        {
+          "type": "h2",
+          "text": "8:30 AM - 11:30 AM"
+        },
+        {
+          "type": "h2",
+          "text": "12 PM - 3 PM"
+        },
+        {
+          "type": "h2",
+          "text": "SUMMER CAMP PRICING"
+        },
+        {
+          "type": "p",
+          "text": "A week of activities and snacks at Springfield Warrior Sports camps are $179, and we have discounts available for members and siblings. (You’ll need to call (417) 894-7319 and register over the phone in order to qualify for those discounts)."
+        },
+        {
+          "type": "p",
+          "text": "Note:"
+        },
+        {
+          "type": "p",
+          "text": "Summer camp investment monies can be pro-rated if your child can not attend the entire week."
+        },
+        {
+          "type": "h2",
+          "text": "SPRINGFIELD WARRIOR REGISTRATION"
+        },
+        {
+          "type": "p",
+          "text": "At our Springfield Warrior Sports camps, your kids won’t just have fun; they'll become physically stronger, learn life-long nutrition habits, and improve their coordination skills — all while making new friends!"
+        },
+        {
+          "type": "p",
+          "text": "Sign up by filling out the registration form below to save your kid's spot at our fun-filled summer camps at Springfield Warriors Sports today!"
+        },
+        {
+          "type": "h2",
+          "text": "REGISTRATION FORM"
+        },
+        {
+          "type": "p",
+          "text": "Cost: $179 per child; member and sibling discounts available (may not be combined). For ages 6-15 years old."
+        },
+        {
+          "type": "p",
+          "text": "** call with questions or to register by phone (417) 894-7319. Please call to take advantage of the member or sibling discounts and get registered."
+        },
+        {
+          "type": "p",
+          "text": "First Name(Required) Last Name(Required) Email(Required) Best contact phone number to reach you if needed during camp(Required) Kids Name(Required) Age of child attending camp(Required) 6 7 8 9 10 11 12 13 14 15 Child's T-shirt size(Required) Youth Small Youth Medium Youth Large Which camp(s) do you plan to attend(Required) May 25th - May 29th"
+        },
+        {
+          "type": "h2",
+          "text": "8:30 AM - 11:30 AM"
+        },
+        {
+          "type": "p",
+          "text": "June 8th - June 12th"
+        },
+        {
+          "type": "h2",
+          "text": "8:30 AM - 11:30 AM"
+        },
+        {
+          "type": "p",
+          "text": "June 22nd - June 26th"
+        },
+        {
+          "type": "h2",
+          "text": "8:30 AM - 11:30 AM"
+        },
+        {
+          "type": "p",
+          "text": "July 6th - July 10th"
+        },
+        {
+          "type": "h2",
+          "text": "8:30 AM - 11:30 AM"
+        },
+        {
+          "type": "p",
+          "text": "July 6th - July 10th"
+        },
+        {
+          "type": "h2",
+          "text": "12 PM - 3 PM"
+        },
+        {
+          "type": "p",
+          "text": "July 20th - July 24th"
+        },
+        {
+          "type": "h2",
+          "text": "8:30 AM - 11:30 AM"
+        },
+        {
+          "type": "p",
+          "text": "July 20th - July 24th"
+        },
+        {
+          "type": "h2",
+          "text": "12 PM - 3 PM"
+        },
+        {
+          "type": "p",
+          "text": "August 3rd - August 7th"
+        },
+        {
+          "type": "h2",
+          "text": "8:30 AM - 11:30 AM"
+        },
+        {
+          "type": "p",
+          "text": "August 3rd - August 7th"
+        },
+        {
+          "type": "h2",
+          "text": "12 PM - 3 PM"
+        },
+        {
+          "type": "p",
+          "text": "August 17th - August 21st"
+        },
+        {
+          "type": "h2",
+          "text": "8:30 AM - 11:30 AM"
+        },
+        {
+          "type": "p",
+          "text": "August 17th - August 21st"
+        },
+        {
+          "type": "h2",
+          "text": "12 PM - 3 PM"
+        },
+        {
+          "type": "p",
+          "text": "Please list any food allergies (if none, please write none)(Required) List any additional siblings attending and their ages"
+        },
+        {
+          "type": "h2",
+          "text": "SUBMIT AND CONTINUE TO PAYMENT"
+        },
+        {
+          "type": "h2",
+          "text": "CLIENT TESTIMONIALS"
+        },
+        {
+          "type": "h2",
+          "text": "WHAT OUR CLIENTS SAY"
+        },
+        {
+          "type": "p",
+          "text": "We had our son’s 10th birthday here. All of the kids had a great time. They set up an obstacle course for the kids. They loved the whole experience. The favorite was the curved wall to run up. That was everyone’s challenge for the night. We will be visiting again for sure."
+        },
+        {
+          "type": "p",
+          "text": "- JENNIFER L."
+        },
+        {
+          "type": "p",
+          "text": "My daughter started training here 3 years ago at 8, and she still loves it!! Owner and coaching staff are all super encouraging. We live an hour away but make the drive twice a week as often as possible. Training here has not only helped her get stronger physically but increased her confidence in general. Anything that makes kids want to challenge themselves to get better and better is worth it!"
+        },
+        {
+          "type": "p",
+          "text": "- LEE C."
+        }
+      ]
+    },
+    {
+      "slug": "competitions",
+      "path": "/competitions/",
+      "title": "Ninja Competitions at Springfield Warrior Sports",
+      "description": "Whether you are looking for regional qualifiers or just hoping to join in a friendly competition, Springfield Warrior Sports is where you want to be!",
+      "h1": "TEST YOUR SKILLS ON OUR FUN AND COMPETITIVE COURSES",
+      "h1FromSource": true,
+      "index": true,
+      "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+      "photoHero": true,
+      "heroFile": "media/2023-03-SWS-Competitions-Banner.webp",
+      "heroAlt": "TEST YOUR SKILLS ON OUR FUN AND COMPETITIVE COURSES",
+      "images": [],
+      "logos": [
+        {
+          "file": "media/2023-03-SpringField-Warrior-Logo.webp",
+          "alt": "",
+          "kind": "logo"
+        },
+        {
+          "file": "media/2023-03-SWS-logo-footer.webp",
+          "alt": "",
+          "kind": "logo"
+        }
+      ],
+      "formId": "csna",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Whether you are looking for regional qualifiers or just hoping to join in friendly competition, Springfield Warrior Sports is where you want to be!"
+        },
+        {
+          "type": "p",
+          "text": "We host regional qualifiers for the WNL (World Ninja League) and are a CSNA (Central States Ninja Association) youth competitive league member. Check the links below for scheduled competitions and information!"
+        },
+        {
+          "type": "h2",
+          "text": "SEPTEMBER 2026 CSNA TEAM COMPETITION"
+        },
+        {
+          "type": "p",
+          "text": "Date: Saturday, September 19th Start time: TBA Price per registration: $60"
+        },
+        {
+          "type": "a",
+          "text": "REGISTER NOW BY FILLING OUT THE FORM BELOW ▼",
+          "href": "/competitions/"
+        },
+        {
+          "type": "p",
+          "text": "2026-9 CSNA September 19th Form"
+        },
+        {
+          "type": "p",
+          "text": "Participant 1 Name(Required) First Last Gender(Required) Male Female Birthday(Required) Age Division (age cutoff date is January 1st, 2027)(Required) 6-7 year old boys 6-7 year old girls 8-9 year old boys 8-9 year old girls 10-11 year old boys 10-11 year old girls 12-13 year old boys 12-13 year old girls 14-15 year old boys 14-15 year old girls 16-18 year old boys 16-18 year old girls"
+        },
+        {
+          "type": "a",
+          "text": "Add More Participant",
+          "href": "/competitions/"
+        },
+        {
+          "type": "p",
+          "text": "Home Gym/Team Gym(Required) Email Address(Required) Phone(Required)"
+        },
+        {
+          "type": "p",
+          "text": "Don't wait to register - The early bird price for the January 13th competitions will go up after December 30th!"
+        },
+        {
+          "type": "p",
+          "text": "Don't wait to register - The early bird price for the January 13th competitions will go up after December 30th!"
+        }
+      ]
+    },
+    {
+      "slug": "wnl-competitions",
+      "path": "/wnl-competitions/",
+      "title": "WNL Competitions in Missouri | Springfield Warrior Sports",
+      "description": "Springfield Warrior Sports is proud to announce its regional qualifying competitions for the WNL (World Ninja League) Competition.",
+      "h1": "WNL COMPETITIONS IN SPRINGFIELD MISSOURI",
+      "h1FromSource": true,
+      "index": true,
+      "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+      "photoHero": true,
+      "heroFile": "media/2023-03-everyday-warrior.webp",
+      "heroAlt": "WNL COMPETITIONS IN SPRINGFIELD MISSOURI",
+      "images": [],
+      "logos": [
+        {
+          "file": "media/2023-03-SpringField-Warrior-Logo.webp",
+          "alt": "",
+          "kind": "logo"
+        },
+        {
+          "file": "media/2023-03-SWS-logo-footer.webp",
+          "alt": "",
+          "kind": "logo"
+        }
+      ],
+      "formId": "wnl",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Calling all Ninjas!"
+        },
+        {
+          "type": "p",
+          "text": "Warrior Sports in Springfield Missouri is proud to announce its regional qualifiers for the WNL (World Ninja League) Competition, and we’re excited for you to join us! Whether you’re looking to qualify or just want to face some friendly competition – these events have it all!"
+        },
+        {
+          "type": "h2",
+          "text": "WNL REGIONAL QUALIFIERS"
+        },
+        {
+          "type": "p",
+          "text": "October 26, 2024"
+        },
+        {
+          "type": "p",
+          "text": "Early bird pricing for these competitions is $55, and increases to $65 two weeks before the competitions."
+        },
+        {
+          "type": "p",
+          "text": "Registration is easy and happens in two steps:"
+        },
+        {
+          "type": "p",
+          "text": "Fill out your information using the form below then, Pay your registration fee using the pay link on the next screen"
+        },
+        {
+          "type": "p",
+          "text": "Don't wait to register - The early bird price for the October 26th competition will go up after October 12th!"
+        },
+        {
+          "type": "p",
+          "text": "10-26-2024 WNL Competition Registration Form"
+        },
+        {
+          "type": "p",
+          "text": "Name(Required) First Last Gender(Required) Male Female Birthday(Required) Age(Required) Division Competing in(Required) -- Select -- Kids- 6-8 years old Mature Kids- 9-10 years old Preteen- 11-12 years old Teen- 13-14 years old Young adult- 15-17 years old Adult- 18+ years old Masters- 40+ years old Elite- 15+ years old Ninjaworks number(Required) Email Address(Required) Phone(Required)"
+        }
+      ]
+    },
+    {
+      "slug": "nerf-wars",
+      "path": "/nerf-wars/",
+      "title": "Nerf War Springfield, MO: The Ultimate Party Experience",
+      "description": "Warrior Sports is the ultimate place in Springfield, Mo. for Nerf Wars! Find out all about it and book your spot here.",
+      "h1": "NERF WAR SPRINGFIELD, MO: THE ULTIMATE PARTY EXPERIENCE!",
+      "h1FromSource": true,
+      "index": true,
+      "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+      "photoHero": true,
+      "heroFile": "media/2023-11-Nerf-war-party.webp",
+      "heroAlt": "NERF WAR SPRINGFIELD, MO: THE ULTIMATE PARTY EXPERIENCE!",
+      "images": [
+        {
+          "file": "media/2023-11-Nerf-War-Nights.webp",
+          "alt": "",
+          "kind": "photo"
+        }
+      ],
+      "logos": [
+        {
+          "file": "media/2023-03-SpringField-Warrior-Logo.webp",
+          "alt": "",
+          "kind": "logo"
+        },
+        {
+          "file": "media/2023-03-SWS-logo-footer.webp",
+          "alt": "",
+          "kind": "logo"
+        }
+      ],
+      "formId": "nerf",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "NERF WAR SPRINGFIELD, MO:"
+        },
+        {
+          "type": "p",
+          "text": "THE ULTIMATE PARTY EXPERIENCE!"
+        },
+        {
+          "type": "p",
+          "text": "Welcome to Warrior Sports, where Nerf battles are one of our most popular birthday party options! We handle everything from setup to gameplay so you can relax, celebrate, and enjoy time with your kids."
+        },
+        {
+          "type": "h2",
+          "text": "NERF WAR PARTY BREAKDOWN"
+        },
+        {
+          "type": "h2",
+          "text": "HERE’S WHAT’S INCLUDED"
+        },
+        {
+          "type": "p",
+          "text": "Nerf Guns Nerf Bullets Bring any of your favorite guns! Exclusive play in our entire obstacle course gym. (Yes, the entire place is yours!)"
+        },
+        {
+          "type": "p",
+          "text": "Book a Nerf war party at Warrior Sports in Springfield, Mo. and we'll arrange a cooler filled with Gatorade for all your guests, ensuring everyone remains refreshed during the action-packed Nerf battle. Plus, the birthday celebrant gets a special Springfield Warrior Sports t-shirt and a complimentary Junior Warrior class voucher from us."
+        },
+        {
+          "type": "p",
+          "text": "Need party invitations? We've got you covered! We offer free customized party invitations to ease your planning process."
+        },
+        {
+          "type": "h2",
+          "text": "PRICING"
+        },
+        {
+          "type": "p",
+          "text": "Our Nerf parties start at $220 for the first 11 kids, and it's just an additional $10 for each extra participant. And guess what? The birthday child's parents can join the fun for free!"
+        },
+        {
+          "type": "p",
+          "text": "BOOK NOW!"
+        },
+        {
+          "type": "p",
+          "text": "Let our experienced and kid-friendly team set up and orchestrate the Nerf battle, ensuring an unforgettable experience for everyone. Please note that our Nerf parties need to be booked during a private party slot. So, don't delay – spots fill up quickly!"
+        },
+        {
+          "type": "p",
+          "text": "READY TO LOCK IN THE DATE FOR YOUR CHILD'S EPIC NERF PARTY AT WARRIOR SPORTS?"
+        },
+        {
+          "type": "a",
+          "text": "START THE BOOKING PROCESS ON OUR WEBSITE HERE",
+          "href": "/schedule-birthday-party/"
+        },
+        {
+          "type": "p",
+          "text": "Or, dial (417) 894-7319 to reserve today. Let's make your child's birthday party one to remember with a thrilling Nerf gun battle at Warrior Sports!"
+        },
+        {
+          "type": "h2",
+          "text": "NERF WAR NIGHTS IN SPRINGFIELD MO"
+        },
+        {
+          "type": "p",
+          "text": "Dive into action-packed fun every other month with our exclusive Nerf War Nights! When: Typically on Fridays, from 6-8 PM. Pricing: It's only $15 per participant. Good news for members – you get 50% off! Want to be in the loop for our next Nerf War Night? Simply enter your email below and never miss out on the action!"
+        },
+        {
+          "type": "p",
+          "text": "\"*\" indicates required fields"
+        },
+        {
+          "type": "p",
+          "text": "Name First Last Email*"
+        }
+      ]
+    },
+    {
+      "slug": "laser-tag",
+      "path": "/laser-tag/",
+      "title": "The Best Laser Tag Parties in Springfield MO",
+      "description": "Book a laser tag party for a birthday, youth group, or team-building event at Springfield Warrior Sports! Enjoy family fun with great service & prices.",
+      "h1": "WELCOME TO THE PREMIER LASER TAG GYM IN SPRINGFIELD, MO",
+      "h1FromSource": true,
+      "index": true,
+      "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+      "photoHero": true,
+      "heroFile": "media/2023-03-laser-tag-party.webp",
+      "heroAlt": "WELCOME TO THE PREMIER LASER TAG GYM IN SPRINGFIELD, MO",
+      "images": [
+        {
+          "file": "media/2023-11-laser-tag-fun-fest.webp",
+          "alt": "",
+          "kind": "photo"
+        }
+      ],
+      "logos": [
+        {
+          "file": "media/2023-03-SpringField-Warrior-Logo.webp",
+          "alt": "",
+          "kind": "logo"
+        },
+        {
+          "file": "media/2023-03-SWS-logo-footer.webp",
+          "alt": "",
+          "kind": "logo"
+        }
+      ],
+      "formId": "laser",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "WELCOME TO THE PREMIER"
+        },
+        {
+          "type": "h2",
+          "text": "LASER TAG GYM IN SPRINGFIELD, MO"
+        },
+        {
+          "type": "p",
+          "text": "Great for all ages!"
+        },
+        {
+          "type": "p",
+          "text": "Whether you are planning a birthday party in Springfield, a fun youth group outing, or a team-building event, the Warrior Ninja Sports gym is the perfect place to host a full-blown laser tag fun-fest."
+        },
+        {
+          "type": "a",
+          "text": "REGISTER FOR LASER TAG WAR NIGHTS",
+          "href": "/laser-tag/"
+        },
+        {
+          "type": "p",
+          "text": "WANT TO BOOK A PRIVATE LASER TAG PARTY?"
+        },
+        {
+          "type": "p",
+          "text": "Whether you are planning a birthday party, a fun youth group outing, or a team-building event, the Warrior Ninja Sports gym is the perfect place to host a full-blown laser tag fun-fest."
+        },
+        {
+          "type": "p",
+          "text": "The best part?"
+        },
+        {
+          "type": "p",
+          "text": "Our staff will do all the setup and be on standby to offer help and assistance if needed. Our goal is to make every laser tag party the most fun, stress-free, and enjoyable experience ever."
+        },
+        {
+          "type": "p",
+          "text": "Call us today and book our entire obstacle course gym for your very own private laser tag party. We do the rest!"
+        },
+        {
+          "type": "h2",
+          "text": "HERE ARE THE DETAILS:"
+        },
+        {
+          "type": "p",
+          "text": "Cost: For a group of 10, the cost is $240. Each additional participant costs $10. We are available for booking on weekends and most weekdays"
+        },
+        {
+          "type": "p",
+          "text": "We provide a cooler full of Gatorade for all parties. We even customize party invitations for your event, free of charge!"
+        },
+        {
+          "type": "p",
+          "text": "Plus, if you have a birthday kiddo in the group, they will receive a Springfield Warrior Sports t-shirt and a free Junior Warrior class voucher!"
+        },
+        {
+          "type": "p",
+          "text": "We want kids to have a blast, making memories that last a lifetime."
+        },
+        {
+          "type": "p",
+          "text": "READY TO BOOK?"
+        },
+        {
+          "type": "p",
+          "text": "You can begin the booking process on our website by clicking here or calling us today at (417) 894-7319 to request a time to reserve the gym for your private party."
+        },
+        {
+          "type": "p",
+          "text": "WE LOOK FORWARD TO HOSTING YOU."
+        },
+        {
+          "type": "h2",
+          "text": "COME JOIN THE FUN! DON’T MISS LASER TAG NIGHT"
+        },
+        {
+          "type": "p",
+          "text": "You’re invited! We are hosting Laser Tag Nights right here in Springfield, MO, at Warrior Sports Ninja Gym. This fun, family-friendly night happens once a month. And you can now sign up to get notified of all future events. We are open to all ages and our staff is ready and available to keep the experience fun, enjoyable, and stress-free. So, don’t miss it! Come make memories that will last a lifetime. Cost: $15 per person (Members of the Warrior Sports gym pay half-price) Note: Laser Tag Nights typically happen on Friday evenings."
+        },
+        {
+          "type": "p",
+          "text": "Sign up now to get notified of all future laser tag events!"
+        },
+        {
+          "type": "p",
+          "text": "\"*\" indicates required fields"
+        },
+        {
+          "type": "p",
+          "text": "Name First Last Email*"
+        }
+      ]
+    },
+    {
+      "slug": "about",
+      "path": "/about/",
+      "title": "About Springfield Warrior Sport's Community and Vision",
+      "description": "Springfield Warrior Sports was founded with a desire to serve our community. Here's our story about our efforts to improve Springfield, MO.",
+      "h1": "SPRINGFIELD WARRIOR SPORTS COMMUNITY",
+      "h1FromSource": true,
+      "index": true,
+      "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+      "photoHero": true,
+      "heroFile": "media/2023-03-about-our-gym.webp",
+      "heroAlt": "SPRINGFIELD WARRIOR SPORTS COMMUNITY",
+      "images": [
+        {
+          "file": "media/2023-03-Clean-up-days.webp",
+          "alt": "",
+          "kind": "photo"
+        },
+        {
+          "file": "media/2023-03-Big-Brothers.webp",
+          "alt": "",
+          "kind": "photo"
+        },
+        {
+          "file": "media/2023-03-perseverance-img01.webp",
+          "alt": "",
+          "kind": "photo"
+        },
+        {
+          "file": "media/2023-03-perseverance-img02.webp",
+          "alt": "",
+          "kind": "photo"
+        },
+        {
+          "file": "media/2023-03-perseverance-img03.webp",
+          "alt": "",
+          "kind": "photo"
+        },
+        {
+          "file": "media/2023-03-perseverance-img04.webp",
+          "alt": "",
+          "kind": "photo"
+        },
+        {
+          "file": "media/2023-03-stronger-men01.webp",
+          "alt": "",
+          "kind": "photo"
+        },
+        {
+          "file": "media/2023-03-stronger-men02.webp",
+          "alt": "",
+          "kind": "photo"
+        },
+        {
+          "file": "media/2023-03-Community-Murph.webp",
+          "alt": "",
+          "kind": "photo"
+        }
+      ],
+      "logos": [
+        {
+          "file": "media/2023-03-SpringField-Warrior-Logo.webp",
+          "alt": "",
+          "kind": "logo"
+        },
+        {
+          "file": "media/2023-03-Supplement-Superstore.webp",
+          "alt": "",
+          "kind": "logo"
+        },
+        {
+          "file": "media/2023-03-qoute-icon.webp",
+          "alt": "",
+          "kind": "logo"
+        },
+        {
+          "file": "media/2023-03-SWS-logo-footer.webp",
+          "alt": "",
+          "kind": "logo"
+        }
+      ],
+      "formId": null,
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Springfield Warrior Sports was founded with a love for, and desire to serve our community. Community unites us, and allows us to be a part of something greater than ourselves. It provides an opportunity to connect with people and other local businesses, who when we all work together, make this the awesome community so many of us call home. We strive to provide a safe place and outlet - for youth, and adults, who are looking for a fun and different workout and the freedom to MOVE as they set and achieve their goals on their quest for a healthy lifestyle. We also love going out into the community to serve outside of our walls, through adopt-a-highway, partnering with local events and speaking at school assemblies. We are most certainly, Stronger Together!"
+        },
+        {
+          "type": "p",
+          "text": "CURIOUS ABOUT THE COLORS OF OUR GYM?"
+        },
+        {
+          "type": "p",
+          "text": "Our inspiration is the new Springfield flag which has nods to our culture and history |we’ll let you look that up| but the main goal of the developers was to “come up with an authentic icon that people connected with and could use to express their pride living in Springfield” - John McQueary"
+        },
+        {
+          "type": "h2",
+          "text": "COMMUNITY ADOPT-A-HIGHWAY CLEAN UP DAYS"
+        },
+        {
+          "type": "p",
+          "text": "Springfield Warrior Sports is proud to help keep a little piece of our community, cleaner! We have adopted the highway on South Campbell, between Weaver and Plainview, near the gym. We love doing our part, and think it’s awesome that the Warrior Sports Crew, members, and friends can come together and be involved. It’s also a good time!! Thanks to Thrivent Financial for sponsoring the event and to Mid-Missouri Bank for allowing us to meet in your community room. We are truly, Stronger Together!"
+        },
+        {
+          "type": "h2",
+          "text": "COMMUNITY PARTNERSHIPS"
+        },
+        {
+          "type": "a",
+          "text": "BIG BROTHERS BIG SISTERS OF THE OZARKS",
+          "href": "https://bigbro.com/"
+        },
+        {
+          "type": "p",
+          "text": "\"A mentor empowers a person to see a possible future and believe it can be obtained” Big Brothers Big Sisters of the Ozarks makes impactful, monitored matches between adult volunteers (“Bigs”) and children (“Littles”), ages 6 through 14. Through this program, positive relationships are developed that have a direct and lasting effect on the lives of young people in our community! At Springfield Warrior Sports we applaud and want to support their mission. \"Bigs\" when you drop in for open gym, your \"Little\" gets in free! Come have fun, or maybe challenge each other to something new! Together, we are STRONGER..... one Obstacle at at Time!"
+        },
+        {
+          "type": "a",
+          "text": "SUPPLEMENT SUPERSTORE",
+          "href": "https://supplementsuperstores.com/pages/springfield-mo-south"
+        },
+        {
+          "type": "p",
+          "text": "We want to give a huge shout out to Supplement Superstore! S2 has been a huge supporter of Springfield Warrior Sports and our athletes over the years, and these guys... are doing it right! They have solid fitness nutrition products and considerately share expert advice after listening to your specific goals. They can offer personal training, nutrition coaching and meal plans - and they won't leave you hanging... you can expect that they will check in on your progress, as they truly want you to succeed! Go check them out now, all ages and athletic backgrounds."
+        },
+        {
+          "type": "h2",
+          "text": "PERSEVERANCE:"
+        },
+        {
+          "type": "p",
+          "text": "PERSISTENCE IN DOING SOMETHING DESPITE DIFFICULTY OR DELAY IN ACHIEVING SUCCESS."
+        },
+        {
+          "type": "p",
+          "text": "The very nature of this sport involves setting goals for yourself, hard work and determination (perseverance), and supportive friends (community)! At Springfield Warrior Sports we love the opportunity to share our experiences, failures and successes, through the sport and training on and off the course with the youngest of athletes and individuals. We are available to speak, demonstrate, and provide interactive team building for your next school assembly, field day, or youth activity. Each of us are stronger, one Obstacle at a time!"
+        },
+        {
+          "type": "p",
+          "text": "In 2016 we had the unique opportunity to work with James River Church planning their Ninja Warrior course that was a part of their Stronger Men’s Conference. Under Jason Huewe’s direction, Springfield Warrior Sports assisted with design and build of the course, running the West Campus competition, and securing athletes from across the country. We also held a local competition at the gym where the top 5 athletes secured their spot to compete on the course alongside the American Ninja Warriors who attended for their chance to win $5000! What a night, so much fun being a part of this collaboration and display of camaraderie with such inspiring individuals… each modeling that we are Stronger, one Obstacle at a time!"
+        },
+        {
+          "type": "a",
+          "text": "COMMUNITY MURPH",
+          "href": "https://www.facebook.com/communitymurph/"
+        },
+        {
+          "type": "p",
+          "text": "Springfield Warrior Sports looks forward each year to bringing a team and participating in the local annual Community Murph!"
+        },
+        {
+          "type": "p",
+          "text": "Every year on Memorial Day, the Southwest Missouri community comes together to honor our fallen heroes. Funds are raised for local charities so that they can continue to provide support for these families. We are so encouraged to be a part of this event and have watched it continue to grow with this communities engagement - Nationwide, this event has raised millions of dollars for charities including the LT. Michael P. Murphy Memorial Scholarship Foundation (SEAL). It’s a grueling challenge, that brings people together to pay tribute and the tradition helps push us, humble us both mentally and physically and dedicate a bit of pain and sweat to honor a man who gave everything he had. We are… Stronger, together."
+        },
+        {
+          "type": "h2",
+          "text": "CLIENT TESTIMONIALS"
+        },
+        {
+          "type": "h2",
+          "text": "WHAT OUR CLIENTS SAY"
+        },
+        {
+          "type": "p",
+          "text": "We had our son’s 10th birthday here. All of the kids had a great time. They set up an obstacle course for the kids. They loved the whole experience. The favorite was the curved wall to run up. That was everyone’s challenge for the night. We will be visiting again for sure."
+        },
+        {
+          "type": "p",
+          "text": "- JENNIFER L."
+        },
+        {
+          "type": "p",
+          "text": "My daughter started training here 3 years ago at 8, and she still loves it!! Owner and coaching staff are all super encouraging. We live an hour away but make the drive twice a week as often as possible. Training here has not only helped her get stronger physically but increased her confidence in general. Anything that makes kids want to challenge themselves to get better and better is worth it!"
+        },
+        {
+          "type": "p",
+          "text": "- LEE C."
+        }
+      ]
+    },
+    {
+      "slug": "meet-the-team",
+      "path": "/meet-the-team/",
+      "title": "Springfield Warrior Sports Coaches | Meet Our Training Team",
+      "description": "Meet the experienced coaches at Springfield Warrior Sports. Our team of mentors and competitors helps athletes grow in confidence, strength, and skill.",
+      "h1": "MEET THE SPRINGFIELD WARRIOR SPORTS TEAM",
+      "h1FromSource": true,
+      "index": true,
+      "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+      "photoHero": true,
+      "heroFile": "media/2026-02-Johnny-photo.webp",
+      "heroAlt": "MEET THE SPRINGFIELD WARRIOR SPORTS TEAM",
+      "images": [
+        {
+          "file": "media/2026-02-Sarah-photo.webp",
+          "alt": "",
+          "kind": "photo"
+        },
+        {
+          "file": "media/2026-02-Lincoln-photo.webp",
+          "alt": "",
+          "kind": "photo"
+        },
+        {
+          "file": "media/2026-02-Ellroy-photo.webp",
+          "alt": "",
+          "kind": "photo"
+        },
+        {
+          "file": "media/2026-02-Elle-photo.webp",
+          "alt": "",
+          "kind": "photo"
+        },
+        {
+          "file": "media/2026-02-Connor-photo.webp",
+          "alt": "",
+          "kind": "photo"
+        },
+        {
+          "file": "media/2026-02-Caleb-team-01.webp",
+          "alt": "",
+          "kind": "photo"
+        },
+        {
+          "file": "media/2026-02-Ruby-photo.webp",
+          "alt": "",
+          "kind": "photo"
+        },
+        {
+          "file": "media/2026-02-Josiah-photo.webp",
+          "alt": "",
+          "kind": "photo"
+        },
+        {
+          "file": "media/2026-02-Jacob-photo.webp",
+          "alt": "",
+          "kind": "photo"
+        },
+        {
+          "file": "media/2026-02-Grace-photo.webp",
+          "alt": "",
+          "kind": "photo"
+        }
+      ],
+      "logos": [
+        {
+          "file": "media/2023-03-SpringField-Warrior-Logo.webp",
+          "alt": "",
+          "kind": "logo"
+        },
+        {
+          "file": "media/2023-03-SWS-logo-footer.webp",
+          "alt": "",
+          "kind": "logo"
+        }
+      ],
+      "formId": null,
+      "blocks": [
+        {
+          "type": "p",
+          "text": "At Springfield Warrior Sports, our coaches are more than instructors."
+        },
+        {
+          "type": "p",
+          "text": "They’re mentors, competitors, and people who genuinely care about helping others grow on the course and in life."
+        },
+        {
+          "type": "p",
+          "text": "Get to know the coaches who make this community what it is."
+        },
+        {
+          "type": "h2",
+          "text": "JONNY"
+        },
+        {
+          "type": "h2",
+          "text": "CO-OWNER | ADULT OCR COACH | INTERMEDIATE COACH"
+        },
+        {
+          "type": "p",
+          "text": "Hey there! I’m Jonny."
+        },
+        {
+          "type": "p",
+          "text": "I’ve been part of Springfield Warrior Sports since the very beginning back in 2015, and today I’m a co-owner alongside my beautiful wife, Sarah."
+        },
+        {
+          "type": "p",
+          "text": "Almost nothing in the whole world brings me more joy than living vicariously through the achievements and joy of the kids at the gym. Some of my best friends are the kids we teach in our classes."
+        },
+        {
+          "type": "p",
+          "text": "My ninja journey includes winning the 2017 UNAA National Championship, placing 3rd at the 2018 NNL World Championships, competing on Season 11 of American Ninja Warrior, and earning 6th place at the 2024 WNL World Championships."
+        },
+        {
+          "type": "p",
+          "text": "At the gym, I primarily teach the Intermediate classes, and the Adult O.C.R. class on Thursdays."
+        },
+        {
+          "type": "p",
+          "text": "Outside the gym, I love my wife, Nintendo, weight-lifting, ninja, of course, Star Wars, Lord of the Rings, BeyBlade, Bakugan, Dragon Ball, Naruto, reading (when I have time), basically anything that reminds me of my childhood, but above all, I love God. I definitely have the heart and soul of my 8-year old self, and I pray I’m always able to keep that alive in me."
+        },
+        {
+          "type": "p",
+          "text": "I love meeting new people and growing our community. I’d love to meet you and welcome you into the Warrior Sports family."
+        },
+        {
+          "type": "h2",
+          "text": "SARAH"
+        },
+        {
+          "type": "h2",
+          "text": "CO-OWNER | ADULT OCR COACH | PRESCHOOL COACH | WOMEN’S FITNESS TRAINER"
+        },
+        {
+          "type": "p",
+          "text": "Hey guys! I’m Sarah."
+        },
+        {
+          "type": "p",
+          "text": "I’m a co-owner of Springfield Warrior Sports alongside my amazing husband, Jonny. I first entered the Warrior Sports world when we started dating in 2019, and I had no idea at that time that this sport and the people who come with it would mean so much to me."
+        },
+        {
+          "type": "p",
+          "text": "I teach preschool classes and the Adult O.C.R. Class on Thursdays, and love every minute of connecting with our members. I am also a personal trainer for women and dedicate a few days each week to designing workouts and helping women feel confident in the bodies God has given them."
+        },
+        {
+          "type": "p",
+          "text": "Outside the gym, I enjoy reading, crafts, being outdoors, hammocking/hiking/running, working out, and hanging out with my family. I am the second oldest (oldest girl) of 6 kids, and have always had a motherly, take-charge personality."
+        },
+        {
+          "type": "p",
+          "text": "I’m excited to meet you. Come hang out with the fam!"
+        },
+        {
+          "type": "h2",
+          "text": "LINCOLN"
+        },
+        {
+          "type": "h2",
+          "text": "BEGINNER NINJA COACH | BIRTHDAY PARTY HOST"
+        },
+        {
+          "type": "p",
+          "text": "Hello! I'm Lincoln."
+        },
+        {
+          "type": "p",
+          "text": "I’ve been working at Springfield Warrior Sports for three years and have been training in ninja since 2018. I teach our beginner classes and help out with birthday parties. I joined the team about a year and a half after starting at Ninja and have been competing since then."
+        },
+        {
+          "type": "p",
+          "text": "I'm an active and sporty person, and I enjoy playing recreational volleyball in my free time. I enjoy video games, solving Rubik's cubes, and other random activities as well. I am a very relationally based person, always wanting to make friends and hang out, which is why I love my job so much."
+        },
+        {
+          "type": "p",
+          "text": "As a coach, I strive to be the best teacher I can be, creating a fun and engaging learning experience in our classes while also challenging my students to grow and improve."
+        },
+        {
+          "type": "h2",
+          "text": "ELLORY"
+        },
+        {
+          "type": "h2",
+          "text": "ADVANCED TEAM HEAD COACH | PRESCHOOL COACH | BIRTHDAY PARTY HOST"
+        },
+        {
+          "type": "p",
+          "text": "I first got into ninja by watching American Ninja Warrior and building homemade obstacle courses with my siblings using pull-up bars, couch cushions, hallway walls…whatever we could find."
+        },
+        {
+          "type": "p",
+          "text": "When my parents surprised us by signing us up at Springfield Warrior Sports, I quickly took to it and have loved it ever since. After lots of classes and open gyms, I started improving more and more, and I’ve now competed as an elite in the World Ninja League for two years, making it to Stage 3 at the World Championships both times and finishing in the top 11 my second year."
+        },
+        {
+          "type": "p",
+          "text": "I joined the staff here in May 2023, and since then, I’ve been teaching the Tuesday preschool class. Recently, I became the head coach for the CSNA Team Class, which is our most advanced class for kids up to 18 years old. I also work birthday parties, which are always a lot of fun! I love working with the kids and helping them grow, and it really is such a joy for me to see them learning new things and watch their hard work pay off."
+        },
+        {
+          "type": "p",
+          "text": "Outside of ninja, I like to try out all different kinds of sports, of which I love pickleball, football, and bowling, especially. I also love playing instruments, learning about Christianity and growing in discipleship, and reading. I really enjoy spending quality time with people I know and meeting new people I don't, but I also love just spending time with myself, doing my own thing, for which I am very grateful."
+        },
+        {
+          "type": "h2",
+          "text": "ELLE"
+        },
+        {
+          "type": "h2",
+          "text": "PRESCHOOL COACH | BIRTHDAY PARTY HOST"
+        },
+        {
+          "type": "p",
+          "text": "Hi! My name is Elle, and I’ve been working at Warrior Sports for the past four months."
+        },
+        {
+          "type": "p",
+          "text": "I teach preschool classes and assist with running birthday parties. I was introduced to the gym by family members who have competed here, and I have since become involved myself, attending adult workout classes, which have helped improve my volleyball game."
+        },
+        {
+          "type": "p",
+          "text": "I truly love my job. It's so rewarding to see the kids grow in their skills and overcome new challenges. The work environment is welcoming, supportive, and a lot of fun!"
+        },
+        {
+          "type": "h2",
+          "text": "CONNOR"
+        },
+        {
+          "type": "h2",
+          "text": "ADVANCED TEAM ASSISTANT | BEGINNER NINJA COACH | BIRTHDAY PARTY HOST"
+        },
+        {
+          "type": "p",
+          "text": "Hello, I’m Connor!"
+        },
+        {
+          "type": "p",
+          "text": "I’ve been part of the Springfield Warrior Sports team since early 2018 and started working at Warrior Sports in 2022. I was drawn to ninja for its creativity, problem-solving, strength, agility, and precision. After starting in parkour classes, I was invited to join the CSNA team early on."
+        },
+        {
+          "type": "p",
+          "text": "Over time, I’ve competed in small and large ninja competitions and pushed myself to grow both physically and mentally. I’m a 2-time WNL Worlds finalist and a 1-time UNAA world finalist. I placed top 100 in the 2024 WNL Worlds competition. In the 2024 UNAA worlds competition, I fractured my nose on the second-to-last obstacle and ended my run early. Some of my greatest accomplishments outside of competing are being the shortest person to conquer the 18’ warped wall at 5’ 2”, and doing 40 pull-ups without dropping."
+        },
+        {
+          "type": "p",
+          "text": "I also run Birthday Parties and currently teach the beginner Warrior classes and am a secondary coach to the advanced team classes. What I love most is helping kids build confidence and helping them push themselves mentally and physically."
+        },
+        {
+          "type": "p",
+          "text": "Outside of ninja, I like to weight lift and train flips, and when I’m not training, you’ll probably find me playing chess, solving Rudbik’s cubes, and playing Minecraft. I also like cheese burgers."
+        },
+        {
+          "type": "h2",
+          "text": "CALEB"
+        },
+        {
+          "type": "h2",
+          "text": "BEGINNER NINJA COACH | PRESCHOOL COACH | BIRTHDAY PARTY HOST"
+        },
+        {
+          "type": "p",
+          "text": "Hey everyone! I’m Coach Caleb."
+        },
+        {
+          "type": "p",
+          "text": "I’ve been part of the Warrior Sports team since May 31, 2025. I’ve always loved working out and staying active, and I wanted to try something a little different—ninja training was the perfect fit. It’s challenging, fun, and pushes you to move in new ways."
+        },
+        {
+          "type": "p",
+          "text": "Here at W.S., I teach our Beginner Ninja classes and Preschool Ninja classes, and I also help run birthday parties (they’re some of my favorite days on the job!). Whether it’s someone’s first class or their tenth, I love seeing kids get stronger, more confident, and more excited every time they walk through the door."
+        },
+        {
+          "type": "p",
+          "text": "Outside the gym, I’m into rock climbing, caving, and weight lifting—basically anything that keeps me moving and gets the adrenaline going. When it’s time to eat, you’ll catch me loading up on shrimp and fried rice, steak, or sushi—top-tier meals in my book!"
+        },
+        {
+          "type": "p",
+          "text": "I’m all about helping kids have fun, get fit, and feel like ninjas. Can’t wait to train with you!"
+        },
+        {
+          "type": "h2",
+          "text": "RUBY"
+        },
+        {
+          "type": "h2",
+          "text": "ALL-LEVELS NINJA COACH | PRIVATE TRAINING | BIRTHDAY PARTY HOST"
+        },
+        {
+          "type": "p",
+          "text": "I’m Ruby Wilder, and I’ve been involved in Warrior Sports since I was five years old."
+        },
+        {
+          "type": "p",
+          "text": "I competed from ages 8 to 11 and officially started working at Warriors Sports in 2022. I coach all classes from the preschool class up to the advanced team class, along with one-on-one training."
+        },
+        {
+          "type": "p",
+          "text": "I also work birthday parties, logins, laser/nerf nights, and parents' night out."
+        },
+        {
+          "type": "p",
+          "text": "Outside the gym, I’m an artist in all categories. I am a musician, play the harp and bass, and I sing professionally as well. I am also a babysitter, as well as an animal caretaker. I love Chinese and Mexican food, and my favorite color is purple!!!"
+        },
+        {
+          "type": "h2",
+          "text": "JOSIAH"
+        },
+        {
+          "type": "h2",
+          "text": "BIRTHDAY PARTY HOST"
+        },
+        {
+          "type": "p",
+          "text": "My name is Josiah, and I’ve trained and competed in ninja for about eight years and have loved every second of it."
+        },
+        {
+          "type": "p",
+          "text": "After placing top 100 in the world in the World Ninja League in 2024, I sadly had to take a big break from the sport and leave for College of the Ozarks, where I am now studying graphic design. On top of ninja, I have many interests and hobbies I pursue, including parkour, baseball, street art, and drawing, to name a few."
+        },
+        {
+          "type": "p",
+          "text": "Here at Springfield Warrior Sports, I was the head coach of the beginner classes and worked all the summer camps before I left for college, but now you will most commonly find me here on the weekends working birthday parties and training whenever I can."
+        },
+        {
+          "type": "h2",
+          "text": "JACOB"
+        },
+        {
+          "type": "h2",
+          "text": "LEAD PERSONAL TRAINER"
+        },
+        {
+          "type": "p",
+          "text": "Hi! I’m Jacob Winter."
+        },
+        {
+          "type": "p",
+          "text": "I’ve been an employee of Springfield Warrior Sports since 2017, initially being drawn to the sport of NinjaWarrior. I’ve competed in several regional and national-level competitions, and that nourished my passion for fitness and community. I’ve worked in every capacity at Springfield Warrior Sports, including hosting birthdays, running Jr Ninja Warrior classes, and ensuring everyone is having fun!"
+        },
+        {
+          "type": "p",
+          "text": "My main job is to head up the personal training side of the gym, working with age ranges from 10-100, helping people achieve their fitness goals and engage with the community. Nothing brings me more joy!"
+        },
+        {
+          "type": "p",
+          "text": "Outside of the gym, I can be found performing at our local community theatre, watching cartoons and playing video games, and hanging out with my friends!"
+        },
+        {
+          "type": "h2",
+          "text": "GRACE"
+        },
+        {
+          "type": "h2",
+          "text": "BEGINNER NINJA COACH | BIRTHDAY PARTY HOST"
+        },
+        {
+          "type": "p",
+          "text": "Hi, I’m Grace."
+        },
+        {
+          "type": "p",
+          "text": "I’ve been training at Warrior Sports since I was 8 years old and began working there at 15. On weekends, I host birthday parties and occasionally teach beginner classes."
+        },
+        {
+          "type": "p",
+          "text": "I’ve been competing since 2018, traveling across the country for UNAA and WNL events. I’ve also competed at Worlds, earning multiple top-10 finishes in my division."
+        },
+        {
+          "type": "p",
+          "text": "Outside of ninja, I play softball and run track for Reeds Spring High School."
+        },
+        {
+          "type": "p",
+          "text": "YOU'VE MET THE TEAM. NOW TRAIN WITH THEM. You’ve met the coaches who make Springfield Warrior Sports what it is. Now, come be a part of it and experience it for yourself."
+        },
+        {
+          "type": "a",
+          "text": "TRY OPEN GYM FOR $10",
+          "href": "/"
+        },
+        {
+          "type": "p",
+          "text": "No experience required."
+        }
+      ]
+    },
+    {
+      "slug": "best-gyms-in-springfield",
+      "path": "/best-gyms-in-springfield/",
+      "title": "The Best Gyms in South Springfield: Where Local Ninjas Work Out",
+      "description": "Offering everything from classes and recovery to coaching and community, these are the real-deal gyms in South Springfield, MO (ranked by 417 locals).",
+      "h1": "LOOKING FOR THE BEST GYMS IN SPRINGFIELD, MO?",
+      "h1FromSource": true,
+      "index": true,
+      "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+      "photoHero": true,
+      "heroFile": "media/2023-03-Pricing-and-Schedule.webp",
+      "heroAlt": "LOOKING FOR THE BEST GYMS IN SPRINGFIELD, MO?",
+      "images": [
+        {
+          "file": "media/2025-12-IMG_2344-1536x1152.jpeg.webp",
+          "alt": "",
+          "kind": "photo"
+        }
+      ],
+      "logos": [
+        {
+          "file": "media/2023-03-SpringField-Warrior-Logo.webp",
+          "alt": "",
+          "kind": "logo"
+        },
+        {
+          "file": "media/2023-03-SWS-logo-footer.webp",
+          "alt": "",
+          "kind": "logo"
+        }
+      ],
+      "formId": null,
+      "blocks": [
+        {
+          "type": "p",
+          "text": "LOOKING FOR THE BEST GYMS IN SPRINGFIELD, MO?"
+        },
+        {
+          "type": "p",
+          "text": "Whether you’re hunting down your next PR, chasing your first unassisted pull-up, or just want to sweat with the best community around, this guide has got you covered. Many of these spots are right around central Springfield, stretching from Downtown to the Battlefield corridor."
+        },
+        {
+          "type": "p",
+          "text": "Offering everything from workout classes and recovery tools to elite coaching and a strong community, these are the real-deal gyms in Springfield, MO. From 24-hour access to fitness centers with pools, childcare, personal training, and more, it’s all here."
+        },
+        {
+          "type": "p",
+          "text": "Before we get started on our list—can we talk about a gym where you won’t find rows of treadmills or the same old machines?"
+        },
+        {
+          "type": "p",
+          "text": "Instead, think obstacle courses, warped walls, rock holds, and Ninja Warrior-style challenges. If you're ready to swing, climb,"
+        },
+        {
+          "type": "p",
+          "text": "and train like never before, check out our Adult Fitness Classes and see what makes Springfield Warrior Sports"
+        },
+        {
+          "type": "p",
+          "text": "one of the most unique gyms around. We’re located just south of Sunshine and a quick drive from Republic and southwest Springfield."
+        },
+        {
+          "type": "h2",
+          "text": "RAGE FITNESS"
+        },
+        {
+          "type": "p",
+          "text": "2321 S Campbell Ave, Springfield, MO"
+        },
+        {
+          "type": "p",
+          "text": "If you want gyms in Springfield that don’t mess around—this is it. Rage Fitness is raw, real, and ridiculously well-equipped. Four locations, 24/7 access, and a no-excuses culture that hits different. The Rage Army doesn’t skip days, make excuses, or settle for mediocrity."
+        },
+        {
+          "type": "p",
+          "text": "This is where grit meets grind. You’ll find private locker rooms, cold plunges, elite gear, and a staff that trains like they mean it, because at Rage, it’s NO. DAYS. OFF."
+        },
+        {
+          "type": "p",
+          "text": "Highlights:"
+        },
+        {
+          "type": "p",
+          "text": "24/7 access — because results don’t clock out"
+        },
+        {
+          "type": "p",
+          "text": "Cold plunges, saunas, compression sleeves, tanning Locally owned, hardcore ethos Group classes and personal training"
+        },
+        {
+          "type": "a",
+          "text": "VISIT WEBSITE",
+          "href": "https://www.genesishealthclubs.com/locations/springfield-south.html"
+        },
+        {
+          "type": "h2",
+          "text": "GP ATHLETICS"
+        },
+        {
+          "type": "p",
+          "text": "3119 S Scenic Ave Ste B, Springfield, MO"
+        },
+        {
+          "type": "p",
+          "text": "Built for lifters, athletes, and real humans who want to move better and get stronger—GP Athletics is a strength-first gym with zero ego and tons of community. Located near Scenic Ave, it’s a convenient stop for anyone coming from South Springfield or the Battlefield neighborhoods."
+        },
+        {
+          "type": "p",
+          "text": "From elite coaching to personal training, group classes, and online programs, this place shows up for its people. Clean, welcoming, and serious about progress, it’s where 70-year-olds deadlift next to teens hitting their first squat cycle. You’ll be pushed when you need it, and lifted up if you fall."
+        },
+        {
+          "type": "p",
+          "text": "Highlights:"
+        },
+        {
+          "type": "p",
+          "text": "Expert-led barbell and strength classes One-on-one coaching and online programs Open gym for lifters who know their way around Welcoming community for all ages"
+        },
+        {
+          "type": "a",
+          "text": "VISIT WEBSITE",
+          "href": "https://www.genesishealthclubs.com/locations/springfield-south.html"
+        },
+        {
+          "type": "h2",
+          "text": "SPRINGFIELD WARRIOR SPORTS"
+        },
+        {
+          "type": "p",
+          "text": "605 W Farm Rd 182, Springfield, MO"
+        },
+        {
+          "type": "p",
+          "text": "Ready to ditch the treadmill for something way more exciting? At Springfield Warrior Sports, our indoor obstacle course is packed with Ninja Warrior-style fun for kids, teens, and adults—no experience needed. Whether you're scaling walls or racing your friends through a course, you'll be getting stronger without even realizing it."
+        },
+        {
+          "type": "p",
+          "text": "If you're interested in parkour sessions, open gym time, and challenges that’ll push you in the best way possible, check out our Adult Ninja Fitness class. At Springfield’s go-to obstacle training center, climb, leap, laugh, and crush your goals—one obstacle at a time."
+        },
+        {
+          "type": "a",
+          "text": "VISIT WEBSITE",
+          "href": "https://www.genesishealthclubs.com/locations/springfield-south.html"
+        },
+        {
+          "type": "h2",
+          "text": "SPRINGFIELD STRENGTH & CONDITIONING"
+        },
+        {
+          "type": "p",
+          "text": "2026 W Vista St Suite H, Springfield, MO"
+        },
+        {
+          "type": "p",
+          "text": "Voted Springfield’s #1 Gym two years running, SSC is the go-to spot for athletes, everyday lifters, and anyone chasing better health. Their staff is certified, committed, and focused on proper technique and programming tailored to you."
+        },
+        {
+          "type": "p",
+          "text": "They offer 24-hour access, individualized coaching, online training, and a wide variety of programs to meet you where you are—and help you move forward with confidence."
+        },
+        {
+          "type": "p",
+          "text": "Highlights:"
+        },
+        {
+          "type": "p",
+          "text": "Customized training & nutrition (online or in-person) Strength, performance, and Olympic lifting classes 24/7 gym access for grinders"
+        },
+        {
+          "type": "p",
+          "text": "Coaches who correct your form, not just count reps"
+        },
+        {
+          "type": "a",
+          "text": "VISIT WEBSITE",
+          "href": "https://www.genesishealthclubs.com/locations/springfield-south.html"
+        },
+        {
+          "type": "h2",
+          "text": "PROXIMAL STRENGTH"
+        },
+        {
+          "type": "p",
+          "text": "1900 W Sunset St #B100, Springfield, MO"
+        },
+        {
+          "type": "p",
+          "text": "Proximal isn’t just about fitness—it’s about never quitting, even when life hits hard. From functional fitness to endurance work, this gym runs deep on faith, hustle, and community."
+        },
+        {
+          "type": "p",
+          "text": "You’ll find a welcoming crew, killer programming, and trainers who actually care if you show up tomorrow. Bonus: their onboarding session for new members sets you up for success from day one."
+        },
+        {
+          "type": "p",
+          "text": "Highlights:"
+        },
+        {
+          "type": "p",
+          "text": "Endurance, rowing, sports performance classes Personal training & private onboarding 5-star rated staff with a focus on mindset Built for connection, not comparison"
+        },
+        {
+          "type": "a",
+          "text": "VISIT WEBSITE",
+          "href": "https://www.genesishealthclubs.com/locations/springfield-south.html"
+        },
+        {
+          "type": "h2",
+          "text": "10 FITNESS SPRINGFIELD"
+        },
+        {
+          "type": "p",
+          "text": "1444 S Glenstone Ave, Springfield, MO"
+        },
+        {
+          "type": "p",
+          "text": "Want fitness on your terms? 10 Fitness brings you 24/7 access, guest privileges, recovery perks, and a setup that lets you train how you want—no over-complications, just solid value."
+        },
+        {
+          "type": "p",
+          "text": "Their Level 10 group classes are perfect for accountability and structure, but you can also train solo with great equipment and no fluff."
+        },
+        {
+          "type": "p",
+          "text": "Highlights:"
+        },
+        {
+          "type": "p",
+          "text": "24/7 gym access, massage chairs, & tanning"
+        },
+        {
+          "type": "p",
+          "text": "Premium training zones & cardio deck Group fitness with knowledgeable coaches Affordable, flexible, and great for every schedule"
+        },
+        {
+          "type": "a",
+          "text": "VISIT WEBSITE",
+          "href": "https://www.genesishealthclubs.com/locations/springfield-south.html"
+        },
+        {
+          "type": "h2",
+          "text": "GENESIS HEALTH CLUBS – SPRINGFIELD SOUTH"
+        },
+        {
+          "type": "p",
+          "text": "1249 E Battlefield Rd, Springfield, MO"
+        },
+        {
+          "type": "p",
+          "text": "If you're after a fitness center in Springfield, MO with everything under one roof, Genesis is your spot. Lap pool? Check. Steam room? Check. Zumba, yoga, barre, and childcare? Double check."
+        },
+        {
+          "type": "p",
+          "text": "Great for families or anyone who wants spa-day extras without sacrificing training options. Genesis blends upscale with usable—and keeps it accessible for every level."
+        },
+        {
+          "type": "p",
+          "text": "Highlights:"
+        },
+        {
+          "type": "p",
+          "text": "Indoor pool, hot tub, steam room, smoothie bar Unlimited daily group classes (HIIT, cycle, yoga, barre) CPR-certified childcare Full-service locker rooms & recovery spaces"
+        },
+        {
+          "type": "a",
+          "text": "VISIT WEBSITE",
+          "href": "https://www.genesishealthclubs.com/locations/springfield-south.html"
+        },
+        {
+          "type": "p",
+          "text": "SO… WHICH GYM’S RIGHT FOR YOU?"
+        },
+        {
+          "type": "p",
+          "text": "Southwest Springfield doesn’t mess around when it comes to fitness. Whether you want to lift heavy, join a class, recover in a cold plunge, or chase your first chin-up—you’ve got options. So, no matter where you are in your fitness journey, take the leap. Pick your place, show up like you mean it, and get after it."
+        }
+      ]
+    },
+    {
+      "slug": "contact",
+      "path": "/contact/",
+      "title": "Springfield Warrior Sports — Contact Information and Directions",
+      "description": "Springfield Warrior Sports is located in Springfield Missouri. Here's our contact information and how to find our gym.",
+      "h1": "OUR ACCOMPLISHED, AWARD WINNING CREW IS READY TO HELP YOU REACH YOUR GOALS",
+      "h1FromSource": true,
+      "index": true,
+      "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+      "photoHero": true,
+      "heroFile": "media/2025-12-IMG_2339-768x576.jpeg.webp",
+      "heroAlt": "OUR ACCOMPLISHED, AWARD WINNING CREW IS READY TO HELP YOU REACH YOUR GOALS",
+      "images": [
+        {
+          "file": "media/2025-12-IMG_2342-768x576.jpeg.webp",
+          "alt": "",
+          "kind": "photo"
+        }
+      ],
+      "logos": [
+        {
+          "file": "media/2023-03-SpringField-Warrior-Logo.webp",
+          "alt": "",
+          "kind": "logo"
+        },
+        {
+          "file": "media/2023-03-qoute-icon.webp",
+          "alt": "",
+          "kind": "logo"
+        },
+        {
+          "file": "media/2023-03-SWS-logo-footer.webp",
+          "alt": "",
+          "kind": "logo"
+        }
+      ],
+      "formId": "contact",
+      "blocks": [
+        {
+          "type": "a",
+          "text": "CONTACT US",
+          "href": "/contact/"
+        },
+        {
+          "type": "p",
+          "text": "We look forward to hearing from you! We are located one block west of Campbell off Plainview Road (Farm Road 182), directly behind the Eagles Lodge next to Marco Automotive. Look for the grey building!"
+        },
+        {
+          "type": "p",
+          "text": "605 W Farm Rd 182 (Plainview Road at Campbell), Springfield, MO 65810"
+        },
+        {
+          "type": "a",
+          "text": "(417)894-7319",
+          "href": "tel:4178947319"
+        },
+        {
+          "type": "a",
+          "text": "office@swarriorsports.com",
+          "href": "mailto:office@swarriorsports.com"
+        },
+        {
+          "type": "h2",
+          "text": "CLIENT TESTIMONIALS"
+        },
+        {
+          "type": "h2",
+          "text": "WHAT OUR CLIENTS SAY"
+        },
+        {
+          "type": "p",
+          "text": "We had our son’s 10th birthday here. All of the kids had a great time. They set up an obstacle course for the kids. They loved the whole experience. The favorite was the curved wall to run up. That was everyone’s challenge for the night. We will be visiting again for sure."
+        },
+        {
+          "type": "p",
+          "text": "- JENNIFER L."
+        },
+        {
+          "type": "p",
+          "text": "My daughter started training here 3 years ago at 8, and she still loves it!! Owner and coaching staff are all super encouraging. We live an hour away but make the drive twice a week as often as possible. Training here has not only helped her get stronger physically but increased her confidence in general. Anything that makes kids want to challenge themselves to get better and better is worth it!"
+        },
+        {
+          "type": "p",
+          "text": "- LEE C."
+        }
+      ]
+    },
+    {
+      "slug": "registered",
+      "path": "/registered/",
+      "title": "Registered for the Competition - Springfield Warrior Sports",
+      "description": "WE RECEIVED THOSE DETAILS, THANK YOU!",
+      "h1": "Registered for the Competition - Springfield Warrior Sports",
+      "h1FromSource": false,
+      "index": false,
+      "robots": "noindex, nofollow",
+      "photoHero": true,
+      "heroFile": "media/2023-03-everyday-warrior.webp",
+      "heroAlt": "Registered for the Competition - Springfield Warrior Sports",
+      "images": [],
+      "logos": [
+        {
+          "file": "media/2023-03-SpringField-Warrior-Logo.webp",
+          "alt": "",
+          "kind": "logo"
+        },
+        {
+          "file": "media/2023-03-SWS-logo-footer.webp",
+          "alt": "",
+          "kind": "logo"
+        }
+      ],
+      "formId": null,
+      "blocks": [
+        {
+          "type": "p",
+          "text": "WE RECEIVED THOSE DETAILS, THANK YOU!"
+        },
+        {
+          "type": "p",
+          "text": "Click here to finalize the registration with your payment, https://springfield-warrior-sports.square.site/"
+        },
+        {
+          "type": "p",
+          "text": "If you encounter any problems or have any questions, please call or text us at (417) 894-7319."
+        }
+      ]
+    },
+    {
+      "slug": "registered-for-wnl-competition",
+      "path": "/registered-for-wnl-competition/",
+      "title": "Registered for WNL competition - Springfield Warrior Sports",
+      "description": "WE RECEIVED THOSE DETAILS, THANK YOU!",
+      "h1": "Registered for WNL competition - Springfield Warrior Sports",
+      "h1FromSource": false,
+      "index": false,
+      "robots": "noindex, nofollow",
+      "photoHero": true,
+      "heroFile": "media/2023-03-everyday-warrior.webp",
+      "heroAlt": "Registered for WNL competition - Springfield Warrior Sports",
+      "images": [],
+      "logos": [
+        {
+          "file": "media/2023-03-SpringField-Warrior-Logo.webp",
+          "alt": "",
+          "kind": "logo"
+        },
+        {
+          "file": "media/2023-03-SWS-logo-footer.webp",
+          "alt": "",
+          "kind": "logo"
+        }
+      ],
+      "formId": null,
+      "blocks": [
+        {
+          "type": "p",
+          "text": "WE RECEIVED THOSE DETAILS, THANK YOU!"
+        },
+        {
+          "type": "p",
+          "text": "Click here to finalize the registration with your payment, https://springfield-warrior-sports.square.site/"
+        },
+        {
+          "type": "p",
+          "text": "If you encounter any problems or have any questions, please call or text us at (417) 894-7319."
+        }
+      ]
+    },
+    {
+      "slug": "registered-for-csna-competition",
+      "path": "/registered-for-csna-competition/",
+      "title": "Registered for CSNA competition - Springfield Warrior Sports",
+      "description": "WE RECEIVED THOSE DETAILS, THANK YOU!",
+      "h1": "Registered for CSNA competition - Springfield Warrior Sports",
+      "h1FromSource": false,
+      "index": false,
+      "robots": "noindex, nofollow",
+      "photoHero": false,
+      "heroFile": null,
+      "heroAlt": "Registered for CSNA competition - Springfield Warrior Sports",
+      "images": [],
+      "logos": [
+        {
+          "file": "media/2023-03-SpringField-Warrior-Logo.webp",
+          "alt": "",
+          "kind": "logo"
+        },
+        {
+          "file": "media/2023-03-SWS-logo-footer.webp",
+          "alt": "",
+          "kind": "logo"
+        }
+      ],
+      "formId": null,
+      "blocks": [
+        {
+          "type": "p",
+          "text": "WE RECEIVED THOSE DETAILS, THANK YOU!"
+        },
+        {
+          "type": "p",
+          "text": "Click here to finalize the registration with your payment, https://checkout.square.site/merchant/MLXTPBS97BGYV/checkout/4AIX4JFZMCKCVNT35N7AHFV7"
+        },
+        {
+          "type": "p",
+          "text": "If you encounter any problems or have any questions, please call or text us at (417) 894-7319."
+        }
+      ]
+    },
+    {
+      "slug": "registered-for-day-camps",
+      "path": "/registered-for-day-camps/",
+      "title": "Registered for Day Camps - Springfield Warrior Sports",
+      "description": "WE RECEIVED THOSE DETAILS, THANK YOU!",
+      "h1": "Registered for Day Camps - Springfield Warrior Sports",
+      "h1FromSource": false,
+      "index": false,
+      "robots": "noindex, nofollow",
+      "photoHero": true,
+      "heroFile": "media/2023-03-everyday-warrior.webp",
+      "heroAlt": "Registered for Day Camps - Springfield Warrior Sports",
+      "images": [],
+      "logos": [
+        {
+          "file": "media/2023-03-SpringField-Warrior-Logo.webp",
+          "alt": "",
+          "kind": "logo"
+        },
+        {
+          "file": "media/2023-03-SWS-logo-footer.webp",
+          "alt": "",
+          "kind": "logo"
+        }
+      ],
+      "formId": null,
+      "blocks": [
+        {
+          "type": "p",
+          "text": "WE RECEIVED THOSE DETAILS, THANK YOU!"
+        },
+        {
+          "type": "a",
+          "text": "Click here to finalize the registration with your payment.",
+          "href": "https://springfield-warrior-sports-102788.square.site/"
+        },
+        {
+          "type": "p",
+          "text": "The link above has a few \"product\" options, simply select the appropriate camp you are attending, enter your payment information, and done!"
+        },
+        {
+          "type": "p",
+          "text": "If you encounter any problems or have any questions, please call or text us at (417) 894-7319."
+        }
+      ]
+    },
+    {
+      "slug": "registered-for-summer-fun-competition",
+      "path": "/registered-for-summer-fun-competition/",
+      "title": "Registered for Summer Fun Competition - Springfield Warrior Sports",
+      "description": "WE RECEIVED THOSE DETAILS, THANK YOU!",
+      "h1": "Registered for Summer Fun Competition - Springfield Warrior Sports",
+      "h1FromSource": false,
+      "index": false,
+      "robots": "noindex, nofollow",
+      "photoHero": true,
+      "heroFile": "media/2023-03-everyday-warrior.webp",
+      "heroAlt": "Registered for Summer Fun Competition - Springfield Warrior Sports",
+      "images": [],
+      "logos": [
+        {
+          "file": "media/2023-03-SpringField-Warrior-Logo.webp",
+          "alt": "",
+          "kind": "logo"
+        },
+        {
+          "file": "media/2023-03-SWS-logo-footer.webp",
+          "alt": "",
+          "kind": "logo"
+        }
+      ],
+      "formId": null,
+      "blocks": [
+        {
+          "type": "p",
+          "text": "WE RECEIVED THOSE DETAILS, THANK YOU!"
+        },
+        {
+          "type": "p",
+          "text": "Click here to finalize the registration with your payment, https://springfield-warrior-sports.square.site/product/summer-fun-competition-fundraiser-/217"
+        },
+        {
+          "type": "p",
+          "text": "If you encounter any problems or have any questions, please call or text us at (417) 894-7319."
+        }
+      ]
+    },
+    {
+      "slug": "thank-you-for-your-feedback",
+      "path": "/thank-you-for-your-feedback/",
+      "title": "Thank you for your feedback - Springfield Warrior Sports",
+      "description": "THANK YOU FOR YOUR FEEDBACK!",
+      "h1": "Thank you for your feedback - Springfield Warrior Sports",
+      "h1FromSource": false,
+      "index": false,
+      "robots": "noindex, nofollow",
+      "photoHero": true,
+      "heroFile": "media/2023-03-everyday-warrior.webp",
+      "heroAlt": "Thank you for your feedback - Springfield Warrior Sports",
+      "images": [],
+      "logos": [
+        {
+          "file": "media/2023-03-SpringField-Warrior-Logo.webp",
+          "alt": "",
+          "kind": "logo"
+        },
+        {
+          "file": "media/2023-03-SWS-logo-footer.webp",
+          "alt": "",
+          "kind": "logo"
+        }
+      ],
+      "formId": null,
+      "blocks": [
+        {
+          "type": "p",
+          "text": "THANK YOU FOR YOUR FEEDBACK!"
+        },
+        {
+          "type": "p",
+          "text": "Thank you for your feedback! We read and respond to each message and will be in touch typically within the same business day."
+        },
+        {
+          "type": "p",
+          "text": "If you need to contact us immediately, call us at (417)894-7319."
+        },
+        {
+          "type": "p",
+          "text": "Thanks,"
+        },
+        {
+          "type": "p",
+          "text": "Andy and the Warrior Sports Team"
+        }
+      ]
+    }
+  ]
+}
