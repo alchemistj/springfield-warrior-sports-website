@@ -241,6 +241,14 @@ function isSchedule(text: string): boolean {
   return /^(Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday|Preschool hours)\b/.test(text);
 }
 
+function hourParts(text: string): { label: string; rest: string } | null {
+  const match = text.match(/^([^:]+:)\s*(.*)$/);
+  const label = match?.[1];
+  const rest = match?.[2];
+  if (!label || rest === undefined) return null;
+  return { label, rest };
+}
+
 function factParts(text: string): string[] | null {
   if (!/Date:/.test(text) || !/Price/.test(text)) return null;
   const parts = text.split(/(?=Date:|Start time:|Price per registration:)/).map((part) => part.trim()).filter(Boolean);
@@ -416,14 +424,19 @@ const everydayKicker = everydayBody[0]?.text === "EVERYDAY WARRIOR!" ? everydayB
             {readyCopy.map((block) => <RichText text={block.text} />)}
             <p class="hours-title"><strong>Open Gym Hours</strong></p>
             <ul class="icon-list">
-              {hours.map((line) => (
-                <li>
-                  <span class="ico" aria-hidden="true">
-                    <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 11H7V11h4V6h2z" /></svg>
-                  </span>
-                  <span>{line.text}</span>
-                </li>
-              ))}
+              {hours.map((line) => {
+                const parts = hourParts(line.text);
+                return (
+                  <li>
+                    <span class="ico" aria-hidden="true">
+                      <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 11H7V11h4V6h2z" /></svg>
+                    </span>
+                    <span>
+                      {parts ? <><strong>{parts.label}</strong> {parts.rest}</> : line.text}
+                    </span>
+                  </li>
+                );
+              })}
             </ul>
             {hoursNote && <RichText text={hoursNote.text} />}
           </div>
@@ -525,8 +538,8 @@ const everydayKicker = everydayBody[0]?.text === "EVERYDAY WARRIOR!" ? everydayB
       </section>
       <section class="section contact-photos">
         <div class="wrap pair-photos" style="margin-top:28px">
+          <img src={media("media/2025-12-IMG_2339-768x576.jpeg.webp").src} alt="" width="768" height="576" loading="lazy" decoding="async" />
           <img src={media("media/2025-12-IMG_2342-768x576.jpeg.webp").src} alt="" width="768" height="576" loading="lazy" decoding="async" />
-          <img src={media("media/2025-12-IMG_2347-scaled.webp").src} alt="" width="1200" height="800" loading="lazy" decoding="async" />
         </div>
       </section>
     )

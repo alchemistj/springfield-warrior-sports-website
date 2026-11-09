@@ -1,11 +1,16 @@
 ---
+import mapArt from "../assets/map/contact-map.webp";
 import { MAP_QUERY } from "../lib/map";
 const fallback = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(MAP_QUERY)}`;
 ---
 
 <div class="map-frame" data-map>
-  <p>Map of the gym at {MAP_QUERY}.</p>
-  <button class="btn" type="button" data-map-open>Show map</button>
+  <img class="map-art" src={mapArt.src} alt="" width={mapArt.width} height={mapArt.height} decoding="async" />
+  <p class="map-credit">© OpenStreetMap contributors</p>
+  <div class="map-fallback">
+    <p>Map of the gym at {MAP_QUERY}.</p>
+    <button class="btn" type="button" data-map-open>Show map</button>
+  </div>
   <noscript>
     <p><a href={fallback}>Open the map</a></p>
   </noscript>
@@ -22,12 +27,15 @@ const fallback = `https://www.google.com/maps/search/?api=1&query=${encodeURICom
       loaded = true;
       const frame = document.createElement("iframe");
       frame.title = "Map to Springfield Warrior Sports";
-      frame.width = "600";
-      frame.height = "320";
+      frame.className = "map-pending";
       frame.loading = "lazy";
       frame.referrerPolicy = "no-referrer-when-downgrade";
       frame.src = mapEmbedUrl();
-      root.replaceChildren(frame);
+      frame.addEventListener("load", () => {
+        frame.className = "";
+        root.replaceChildren(frame);
+      });
+      root.appendChild(frame);
     };
     root.querySelector("[data-map-open]")?.addEventListener("click", load);
     const arm = () => {
