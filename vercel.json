@@ -308,17 +308,7 @@
       "statusCode": 301
     },
     {
-      "source": "/birthday-parties/",
-      "destination": "/birthday-parties/",
-      "statusCode": 301
-    },
-    {
       "source": "/schedule-birthday-party",
-      "destination": "/schedule-birthday-party/",
-      "statusCode": 301
-    },
-    {
-      "source": "/schedule-birthday-party/",
       "destination": "/schedule-birthday-party/",
       "statusCode": 301
     },
@@ -328,17 +318,7 @@
       "statusCode": 301
     },
     {
-      "source": "/kids-classes/",
-      "destination": "/kids-classes/",
-      "statusCode": 301
-    },
-    {
       "source": "/parkour",
-      "destination": "/parkour/",
-      "statusCode": 301
-    },
-    {
-      "source": "/parkour/",
       "destination": "/parkour/",
       "statusCode": 301
     },
@@ -348,17 +328,7 @@
       "statusCode": 301
     },
     {
-      "source": "/fitness-classes/",
-      "destination": "/fitness-classes/",
-      "statusCode": 301
-    },
-    {
       "source": "/personal-training",
-      "destination": "/personal-training/",
-      "statusCode": 301
-    },
-    {
-      "source": "/personal-training/",
       "destination": "/personal-training/",
       "statusCode": 301
     },
@@ -368,17 +338,7 @@
       "statusCode": 301
     },
     {
-      "source": "/homeschool-sports-and-classes-springfield-mo/",
-      "destination": "/homeschool-sports-and-classes-springfield-mo/",
-      "statusCode": 301
-    },
-    {
       "source": "/summer-camps-in-springfield-mo",
-      "destination": "/summer-camps-in-springfield-mo/",
-      "statusCode": 301
-    },
-    {
-      "source": "/summer-camps-in-springfield-mo/",
       "destination": "/summer-camps-in-springfield-mo/",
       "statusCode": 301
     },
@@ -388,17 +348,7 @@
       "statusCode": 301
     },
     {
-      "source": "/competitions/",
-      "destination": "/competitions/",
-      "statusCode": 301
-    },
-    {
       "source": "/wnl-competitions",
-      "destination": "/wnl-competitions/",
-      "statusCode": 301
-    },
-    {
-      "source": "/wnl-competitions/",
       "destination": "/wnl-competitions/",
       "statusCode": 301
     },
@@ -408,17 +358,7 @@
       "statusCode": 301
     },
     {
-      "source": "/nerf-wars/",
-      "destination": "/nerf-wars/",
-      "statusCode": 301
-    },
-    {
       "source": "/laser-tag",
-      "destination": "/laser-tag/",
-      "statusCode": 301
-    },
-    {
-      "source": "/laser-tag/",
       "destination": "/laser-tag/",
       "statusCode": 301
     },
@@ -428,17 +368,7 @@
       "statusCode": 301
     },
     {
-      "source": "/about/",
-      "destination": "/about/",
-      "statusCode": 301
-    },
-    {
       "source": "/meet-the-team",
-      "destination": "/meet-the-team/",
-      "statusCode": 301
-    },
-    {
-      "source": "/meet-the-team/",
       "destination": "/meet-the-team/",
       "statusCode": 301
     },
@@ -448,17 +378,7 @@
       "statusCode": 301
     },
     {
-      "source": "/best-gyms-in-springfield/",
-      "destination": "/best-gyms-in-springfield/",
-      "statusCode": 301
-    },
-    {
       "source": "/contact",
-      "destination": "/contact/",
-      "statusCode": 301
-    },
-    {
-      "source": "/contact/",
       "destination": "/contact/",
       "statusCode": 301
     },
@@ -468,17 +388,7 @@
       "statusCode": 301
     },
     {
-      "source": "/registered/",
-      "destination": "/registered/",
-      "statusCode": 301
-    },
-    {
       "source": "/registered-for-wnl-competition",
-      "destination": "/registered-for-wnl-competition/",
-      "statusCode": 301
-    },
-    {
-      "source": "/registered-for-wnl-competition/",
       "destination": "/registered-for-wnl-competition/",
       "statusCode": 301
     },
@@ -488,17 +398,7 @@
       "statusCode": 301
     },
     {
-      "source": "/registered-for-csna-competition/",
-      "destination": "/registered-for-csna-competition/",
-      "statusCode": 301
-    },
-    {
       "source": "/registered-for-day-camps",
-      "destination": "/registered-for-day-camps/",
-      "statusCode": 301
-    },
-    {
-      "source": "/registered-for-day-camps/",
       "destination": "/registered-for-day-camps/",
       "statusCode": 301
     },
@@ -508,17 +408,7 @@
       "statusCode": 301
     },
     {
-      "source": "/registered-for-summer-fun-competition/",
-      "destination": "/registered-for-summer-fun-competition/",
-      "statusCode": 301
-    },
-    {
       "source": "/thank-you-for-your-feedback",
-      "destination": "/thank-you-for-your-feedback/",
-      "statusCode": 301
-    },
-    {
-      "source": "/thank-you-for-your-feedback/",
       "destination": "/thank-you-for-your-feedback/",
       "statusCode": 301
     }

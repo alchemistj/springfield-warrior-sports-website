@@ -12,6 +12,11 @@ interface VercelRedirect {
 describe("vercel redirects", () => {
   const vercel = JSON.parse(readFileSync("vercel.json", "utf8")) as { redirects: VercelRedirect[] };
 
+  it("never redirects a URL to itself (Vercel would loop)", () => {
+    const loops = vercel.redirects.filter((rule) => !rule.has && rule.source === rule.destination);
+    expect(loops).toEqual([]);
+  });
+
   it("sends the apex host to www in one hop", () => {
     const apex = vercel.redirects.find((rule) => rule.has?.some((item) => item.value === "springfieldwarriorsports.com"));
     expect(apex?.destination).toBe("https://www.springfieldwarriorsports.com/:path*");
@@ -23,7 +28,7 @@ describe("vercel redirects", () => {
     for (const rule of redirects) {
       expect(sources.has(rule.source)).toBe(true);
       const twin = rule.source.endsWith("/") && rule.source !== "/" ? rule.source.replace(/\/$/, "") : `${rule.source}/`;
-      expect(sources.has(twin)).toBe(true);
+      if (twin !== rule.destination) expect(sources.has(twin)).toBe(true);
       const row = vercel.redirects.find((item) => item.source === rule.source && !item.has);
       expect(row?.destination).toBe(rule.destination);
       expect(row?.statusCode).toBe(301);
