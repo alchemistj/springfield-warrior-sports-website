@@ -363,6 +363,12 @@ export const redirects: readonly RedirectRule[] = ${JSON.stringify(rules, null, 
           { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
         ],
       },
+      {
+        // Any host but the real site (vercel.app previews and aliases) stays out of search.
+        source: "/(.*)",
+        missing: [{ type: "host", value: "www.springfieldwarriorsports.com" }],
+        headers: [{ key: "X-Robots-Tag", value: "noindex" }],
+      },
     ],
   };
   await writeFile(path.join(root, "vercel.json"), JSON.stringify(vercel, null, 2) + "\n");

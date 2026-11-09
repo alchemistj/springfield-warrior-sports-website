@@ -10,7 +10,16 @@ interface VercelRedirect {
 }
 
 describe("vercel redirects", () => {
-  const vercel = JSON.parse(readFileSync("vercel.json", "utf8")) as { redirects: VercelRedirect[] };
+  const vercel = JSON.parse(readFileSync("vercel.json", "utf8")) as {
+    redirects: VercelRedirect[];
+    headers: Array<{ source: string; missing?: Array<{ type: string; value: string }>; headers: Array<{ key: string; value: string }> }>;
+  };
+
+  it("sends noindex on every host except www.springfieldwarriorsports.com", () => {
+    const rule = vercel.headers.find((item) => item.missing?.some((m) => m.type === "host" && m.value === "www.springfieldwarriorsports.com"));
+    expect(rule?.source).toBe("/(.*)");
+    expect(rule?.headers).toContainEqual({ key: "X-Robots-Tag", value: "noindex" });
+  });
 
   it("never redirects a URL to itself (Vercel would loop)", () => {
     const loops = vercel.redirects.filter((rule) => !rule.has && rule.source === rule.destination);
