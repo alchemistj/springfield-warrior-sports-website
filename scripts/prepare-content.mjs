@@ -341,11 +341,11 @@ export const redirects: readonly RedirectRule[] = ${JSON.stringify(rules, null, 
   for (const rule of rules) {
     const dest = rule.destination === "/" ? "/" : rule.destination;
     vercelRedirects.push({ source: rule.source, destination: dest, statusCode: 301 });
-    if (rule.source !== "/" && rule.source.endsWith("/")) {
-      vercelRedirects.push({ source: rule.source.replace(/\/$/, ""), destination: dest, statusCode: 301 });
-    } else if (!rule.source.endsWith("/")) {
-      vercelRedirects.push({ source: `${rule.source}/`, destination: dest, statusCode: 301 });
-    }
+    // The other slash form, unless it is the destination itself (that would loop).
+    let twin = null;
+    if (rule.source !== "/" && rule.source.endsWith("/")) twin = rule.source.replace(/\/$/, "");
+    else if (!rule.source.endsWith("/")) twin = `${rule.source}/`;
+    if (twin && twin !== dest) vercelRedirects.push({ source: twin, destination: dest, statusCode: 301 });
   }
   const vercel = {
     $schema: "https://openapi.vercel.sh/vercel.json",
@@ -362,6 +362,12 @@ export const redirects: readonly RedirectRule[] = ${JSON.stringify(rules, null, 
           { key: "X-Content-Type-Options", value: "nosniff" },
           { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
         ],
+      },
+      {
+        // Any host but the real site (vercel.app previews and aliases) stays out of search.
+        source: "/(.*)",
+        missing: [{ type: "host", value: "www.springfieldwarriorsports.com" }],
+        headers: [{ key: "X-Robots-Tag", value: "noindex" }],
       },
     ],
   };
