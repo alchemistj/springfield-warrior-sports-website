@@ -89,6 +89,27 @@ Lighthouse mobile on the local preview, after that paint skip. Order is performa
 
 First-frame check on this same preview: home, kids classes, schedule a birthday party, and contact, mobile and desktop, three runs each, 24/24, worst MAE 0.
 
+## Review 2 fixes
+
+Side-by-side images are in `docs/qa/review-3/`. Live capture is on the left. This build is on the right. Each half is 708px wide. Each page was scrolled to the bottom before the screenshot so lazy images loaded. Sizes below are the desktop rules in `source/pages/*/rendered.html`, at a 1440px-wide window.
+
+| Page | Section | What changed | Remaining difference |
+|---|---|---|---|
+| Home | Hero | Height is `calc(80vh + 40px)` (760px when the window is 900px tall). "STRONGER" is Heebo 900 at 70px. "ONE OBSTACLE AT A TIME!" is Heebo 400 at 45px. The subhead is Epilogue 20px. The scrim is `linear-gradient(270deg, rgba(0,0,0,.4) 0, rgba(0,0,0,.85) 61%)`. Mobile is 466px tall, with the H1 at 45px and the kicker at 25px. | The review note said about 520px. The captured rule is 80vh plus 40px of section padding, and the live screenshot measures about 760px. The trust bar under the bullet bar is still the spec addition. |
+| Other heroes | Height and H1 | Desktop height is 590px where the capture uses a 550px inner min-height plus 40px of padding. Best Gyms, Personal Training, and Meet the Team are 490px. Laser Tag is 540px. H1 is 70px on the large heroes, 60px on birthday parties, and 50px on the rest. Mobile uses the captured min-heights and sizes (45px, 32px, or 26px). | Thank-you and registered pages stay at the previous 520px banner. Live puts the team photo beside the text, not in a banner. No new words were added. |
+| Home | Blue cards | The photo column is 32.6% of the card and the image covers its full height. Parkour uses `object-position: 15% 100%` so the vault over the green box is in frame. Homeschool is `15% 87%`. Personal Training is `20% 87%`. The files are the live card backgrounds, in order. On a phone the photo sits above the text at the full card width. | None in the photo crop. Card copy is the same words. |
+| Desktop | Type | Red section headings are Heebo 900 at 50px. The thin second line is Heebo 400 at 30px with 1px letter-spacing. Body paragraphs are Epilogue 300 at 16px, line-height 1.6. Card titles are 30px. "Open Gym Hours" is 30px. | The lightest self-hosted Heebo file is 400. Live thin lines are Heebo 300. |
+| Forms | Spacing | Birthday and the other panel forms use Epilogue 18px labels, 16px fields, 25px 14px padding, a 15px grid gap, and 50px selects. Contact fields use 18px 14px padding, 14px Arial, and 10px of vertical margin. Mobile contact padding is 14px 12px. | Field backgrounds are the captured `#f1f1f1` and `#f8f8f8`. Submit buttons stay `#d6352f`. |
+
+Lighthouse mobile on the local preview, after these fixes. Order is performance / accessibility / best practices / SEO.
+
+| Page | Score | TBT |
+|---|---|---|
+| Home | 98 / 100 / 100 / 100 | 0 ms |
+| Kids classes | 99 / 100 / 100 / 100 | 0 ms |
+| Schedule a birthday party | 100 / 100 / 100 / 100 | 0 ms |
+| Contact | 99 / 100 / 100 / 100 | 0 ms |
+
 ## Open questions
 
 - Where GF18 should live, if it should be a page at all.

@@ -60,7 +60,7 @@ const gaId = site.ga4;
       })();
     </script>
   </head>
-  <body>
+  <body class={`page-${route.key}`}>
     <a class="skip-link" href="#main">Skip to content</a>
     <div class="atf">
       <slot name="hero-photo" />
