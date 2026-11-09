@@ -24,7 +24,7 @@ const HERO_FILE: Record<string, string> = {
 const heroFile = HERO_FILE[page.slug] ?? page.heroFile;
 const hero =
   page.photoHero && heroFile
-    ? await heroImage(heroFile, { width: page.slug === "home" ? 960 : 1100, quality: page.slug === "home" ? 28 : 36, cropAspect: page.slug === "home" ? 2.15 : 2.05, cropY: 0.38 })
+    ? await heroImage(heroFile, { width: page.slug === "home" ? 960 : 1100, quality: page.slug === "home" ? 28 : 36, cropAspect: page.slug === "home" ? 1.9 : 2.05, cropY: 0.42 })
     : null;
 
 const images = import.meta.glob("../assets/media/*.{webp,jpeg,jpg,png}", { eager: true, import: "default" }) as Record<
@@ -113,6 +113,18 @@ const bullet = body[0]?.text.includes("●") ? body.shift()! : undefined;
 const showHeroText = Boolean(hero) && page.h1FromSource;
 const heroAlign = CENTER_HERO.has(page.slug) ? "center" : RIGHT_HERO.has(page.slug) ? "right" : "left";
 const heroTone = RED_HERO.has(page.slug) ? "red" : "white";
+const HERO_SIZE: Record<string, string> = {
+  home: "xl",
+  "best-gyms-in-springfield": "xl",
+  "fitness-classes": "xl",
+  "kids-classes": "xl",
+  "meet-the-team": "xl",
+  "personal-training": "xl",
+  "summer-camps-in-springfield-mo": "xl",
+  "birthday-parties": "lg",
+  competitions: "sm",
+};
+const heroSize = HERO_SIZE[page.slug] ?? "md";
 
 interface Section {
   titles: string[];
@@ -203,6 +215,7 @@ const CARD_FILES = [
   "media/2024-02-kids-classes.webp",
   "media/2025-06-the-Best-Gyms-in-Springfield-MO.webp",
 ];
+const CARD_POSITION = ["50% 50%", "50% 50%", "50% 50%", "50% 50%", "15% 100%", "15% 87%", "20% 87%"];
 const FUN_FILES = [1, 2, 3, 4, 5, 6].map((n) => `media/2023-03-kid-classes-img0${n}.webp`);
 const KIDS_PHOTO: Record<string, string> = {
   "pre-school": "media/2023-03-pre-shool-warriors.webp",
@@ -344,7 +357,7 @@ const everydayKicker = everydayBody[0]?.text === "EVERYDAY WARRIOR!" ? everydayB
       />
     )
   }
-  <div slot="hero" class:list={["hero-copy", hero ? `align-${heroAlign}` : "hero-plain", hero ? `tone-${heroTone}` : "", { bare: !showHeroText }]}>
+  <div slot="hero" class:list={["hero-copy", hero ? `align-${heroAlign}` : "hero-plain", hero ? `tone-${heroTone}` : "", hero ? `hero-size-${heroSize}` : "", { bare: !showHeroText }]}>
     {hero && showHeroText && <div class="hero-scrim" aria-hidden="true"></div>}
     <div class="hero-text">
       {showHeroText && <h1>{page.h1}</h1>}
@@ -401,7 +414,7 @@ const everydayKicker = everydayBody[0]?.text === "EVERYDAY WARRIOR!" ? everydayB
           <div class="copy">
             <SplitTitle lines={readyTitles} />
             {readyCopy.map((block) => <RichText text={block.text} />)}
-            <p><strong>Open Gym Hours</strong></p>
+            <p class="hours-title"><strong>Open Gym Hours</strong></p>
             <ul class="icon-list">
               {hours.map((line) => (
                 <li>
@@ -428,10 +441,15 @@ const everydayKicker = everydayBody[0]?.text === "EVERYDAY WARRIOR!" ? everydayB
             {homeCards.map((card, index) => {
               const file = CARD_FILES[index];
               const shot = file ? media(file) : undefined;
+              const position = CARD_POSITION[index] ?? "50% 50%";
               return (
                 <article class="program-card">
-                  {shot?.src && <img src={shot.src} alt="" width={shot.width} height={shot.height} loading="lazy" decoding="async" />}
-                  <div>
+                  {shot?.src && (
+                    <div class="card-photo">
+                      <img src={shot.src} alt="" width={shot.width} height={shot.height} loading="lazy" decoding="async" style={`object-position: ${position}`} />
+                    </div>
+                  )}
+                  <div class="card-copy">
                     <h3>{card.titleHref ? <a href={card.titleHref}>{card.title}</a> : card.title}</h3>
                     {card.body.map((block) => <RichText text={block.text} />)}
                     {card.button?.href && <p><a class="btn" href={hrefOf(card.button)}>{card.button.text}</a></p>}
