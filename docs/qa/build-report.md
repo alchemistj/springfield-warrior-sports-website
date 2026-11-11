@@ -535,15 +535,17 @@ Lighthouse mobile on the local preview, after this batch. Order is performance /
 | About | 98 / 92 / 100 / 100 |
 | Kids classes | 98 / 92 / 100 / 100 |
 
-## Layout parity gate v2.11, round 11
+## Layout parity gate v2.12, round 11
 
-Model: Grok 4.7. Gate v2.11 allows 24 for background color over a hero photo and skips band runs inside the hero. The live map, the scripts, the tolerances, and `PIXEL_TOL` were not edited. The report is `docs/qa/layout-report.md`. No allow entries were added.
+Model: Grok 4.7. Gate v2.11 allows 24 for background color over a hero photo and skips band runs inside the hero. Gate v2.12 (`66f6850`) also flags a flat band that exists only in the build. It landed on the branch before this round could be pushed, so the totals below are v2.12. The live map, the scripts, the tolerances, and `PIXEL_TOL` were not edited. The report is `docs/qa/layout-report.md`. No allow entries were added.
 
-Before is this machine's measurement of `666f552` (round 10 source) on gate v2.11: 7,906 differences. Home 4/4/0, about 2/2/1, kids-classes 0/0/3 (1920/1280/390). After is 7,904. Home is 3/3/0, about is 2/2/1, and kids-classes is 0/0/3. No page outside home changed, and home went down. The line that dropped is the white right-margin run beside the "BE AN EVERYDAY WARRIOR!" photo.
+Before is this machine's measurement of `666f552` (round 10 source) on gate v2.12: 8,038 differences. Home 4/4/0, about 4/4/2, kids-classes 0/0/3 (1920/1280/390). After is 8,031. Home is 3/3/0, about is 2/2/1, and kids-classes is 0/0/3. No page went up. On gate v2.11 that same round 10 source was 7,906, and the everyday-photo change alone left home at 3/3/0 (7,904).
 
-That photo uses live's CSS. At 800px and up the section background is `no-repeat`, `background-position: 100% 0`, `background-size: contain`, and `min-height: 632px`, on the live 750 by 669 image. Contain fills the section height and right-aligns the photo, so the right coach's arm is fully visible and the white at the page edge is the empty lower-right of the file. Between 800px and 1023px the position is `102% 100%` and the size is `50% 50%`, which is live's tablet rule. At 390 the full photo is visible, arm included, at 310 by 277 inside the column. Live's phone image is 350 by 312 because it is `width: 100%` with `margin-top: 40px` inside 20px section padding. Matching that box here made the white band at y=8160 1,035px against live's 905px, so the smaller photo stays. The 390 gate matches.
+The "BE AN EVERYDAY WARRIOR!" photo uses live's CSS. At 800px and up the section background is `no-repeat`, `background-position: 100% 0`, `background-size: contain`, and `min-height: 632px`, on the live 750 by 669 image. Contain fills the section height and right-aligns the photo, so the right coach's arm is fully visible and the white at the page edge is the empty lower-right of the file. Between 800px and 1023px the position is `102% 100%` and the size is `50% 50%`, which is live's tablet rule. At 390 the full photo is visible, arm included, at 310 by 277 inside the column. Live's phone image is 350 by 312 because it is `width: 100%` with `margin-top: 40px` inside 20px section padding. Matching that box here made the white band at y=8160 1,035px against live's 905px, so the smaller photo stays. The 390 gate matches.
 
 `.partner-band` no longer paints `box-shadow: 0 -4px 0 rgb(40, 82, 118)`. It is `background: rgb(40, 82, 118)` with its padding. Live's partner section is `#285276` and padding, with no shadow.
+
+The About partnerships grey now meets the Perseverance band. The white strip v2.12 flags was the last row's 28px margin, the section's 42px bottom padding, and, from 800px up, the 68px margin above Perseverance. That space is padding on the grey block. The heading does not move.
 
 The lines still open are the same wraps as round 8, at live's size, width, and letter-spacing. Kids Classes at 390 also reads background behind "FUN AND CHALLENGING" as rgb(20, 20, 24) against live rgb(23, 40, 50). That sample is on the hero photo, and the page has no overlay, which is live's CSS. It was not painted over. The Memorial Day sentence stays in the Community Murph paragraph. Paragraph links stay the live red, `rgb(219, 58, 52)`, with no underline.
 
