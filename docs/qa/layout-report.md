@@ -8050,7 +8050,7 @@ Total differences: 7907
 
 Gate v2.8, round 8. Model: Grok 4.7. The live map, the scripts, the tolerances, and PIXEL_TOL were not edited. No allow entries were added. No other page's count went up.
 
-Before, on this machine, commit e8050b0 measured 7,913 differences: home 3/3/0, about 2/2/2, kids-classes 2/2/3 (1920/1280/390). The dispatch measured that commit on the Vercel preview as home 0/0/0, about 0/0/1, kids-classes 2/2/1. After, this build measures 7,907. Home is 3/3/0, about is 2/2/1, and kids-classes is 0/0/2.
+Before, on this machine, commit e8050b0 measured 7,913 differences: home 3/3/0, about 2/2/2, kids-classes 2/2/3 (1920/1280/390). The dispatch measured that commit on the Vercel preview as home 0/0/0, about 0/0/1, kids-classes 2/2/1. After, this build measures 7,907. Home is 3/3/0, about is 2/2/1, and kids-classes is 0/0/2. The Vercel preview of this commit, measured from this machine, is the same three pages: home 3/3/0, about 2/2/1, kids-classes 0/0/2.
 
 The live line breaks are restored. Kids Classes intro has one break before "Our experienced coaches". The Note paragraph has one break before "of the other weeks!". The Community Murph paragraph has two breaks after the Community Murph link and one trailing break after "Stronger, together." The Memorial Day sentence stays in that paragraph.
 
