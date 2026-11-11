@@ -1,0 +1,1765 @@
+{
+ "url": "https://www.springfieldwarriorsports.com/about/",
+ "width": 1920,
+ "vw": 1920,
+ "hiddenText": [],
+ "docWidth": 1920,
+ "docHeight": 8525,
+ "items": [
+  {
+   "kind": "text",
+   "tag": "a",
+   "text": "CONTACT",
+   "family": "Heebo",
+   "size": 14,
+   "weight": 600,
+   "color": "rgb(255, 255, 255)",
+   "align": "center",
+   "transform": "uppercase",
+   "spacing": 1,
+   "lh": 28,
+   "behind": "image",
+   "runs": [
+    {
+     "t": "Contact",
+     "c": "rgb(255, 255, 255)",
+     "w": 600,
+     "u": false
+    }
+   ],
+   "lines": 2,
+   "region": "header",
+   "x": 1202,
+   "y": 6,
+   "w": 70,
+   "h": 28
+  },
+  {
+   "kind": "text",
+   "tag": "a",
+   "text": "ABOUT",
+   "family": "Heebo",
+   "size": 14,
+   "weight": 600,
+   "color": "rgb(255, 255, 255)",
+   "align": "center",
+   "transform": "uppercase",
+   "spacing": 1,
+   "lh": 28,
+   "behind": "image",
+   "runs": [
+    {
+     "t": "About",
+     "c": "rgb(255, 255, 255)",
+     "w": 600,
+     "u": false
+    }
+   ],
+   "lines": 2,
+   "region": "header",
+   "x": 1297,
+   "y": 6,
+   "w": 51,
+   "h": 28
+  },
+  {
+   "kind": "text",
+   "tag": "a",
+   "text": "SIGN OUR WAIVER",
+   "family": "Heebo",
+   "size": 14,
+   "weight": 600,
+   "color": "rgb(255, 255, 255)",
+   "align": "center",
+   "transform": "uppercase",
+   "spacing": 1,
+   "lh": 28,
+   "behind": "image",
+   "runs": [
+    {
+     "t": "Sign Our Waiver",
+     "c": "rgb(255, 255, 255)",
+     "w": 600,
+     "u": false
+    }
+   ],
+   "lines": 2,
+   "region": "header",
+   "x": 1372,
+   "y": 6,
+   "w": 133,
+   "h": 28
+  },
+  {
+   "kind": "image",
+   "src": "https://www.springfieldwarriorsports.com/wp-content/uploads/2023/03/SpringField-Warrior-Logo.png",
+   "region": "header",
+   "x": 405,
+   "y": 60,
+   "w": 203,
+   "h": 59
+  },
+  {
+   "kind": "text",
+   "tag": "a",
+   "text": "ADULT CLASSES",
+   "family": "Heebo",
+   "size": 16,
+   "weight": 600,
+   "color": "rgb(255, 255, 255)",
+   "align": "left",
+   "transform": "uppercase",
+   "spacing": 0,
+   "lh": 32,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Adult Classes",
+     "c": "rgb(255, 255, 255)",
+     "w": 600,
+     "u": false
+    }
+   ],
+   "lines": 2,
+   "region": "header",
+   "x": 688,
+   "y": 73,
+   "w": 120,
+   "h": 32
+  },
+  {
+   "kind": "text",
+   "tag": "a",
+   "text": "KID CLASSES",
+   "family": "Heebo",
+   "size": 16,
+   "weight": 600,
+   "color": "rgb(255, 255, 255)",
+   "align": "left",
+   "transform": "uppercase",
+   "spacing": 0,
+   "lh": 32,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Kid Classes",
+     "c": "rgb(255, 255, 255)",
+     "w": 600,
+     "u": false
+    }
+   ],
+   "lines": 2,
+   "region": "header",
+   "x": 820,
+   "y": 73,
+   "w": 97,
+   "h": 32
+  },
+  {
+   "kind": "text",
+   "tag": "a",
+   "text": "COMPETITIONS",
+   "family": "Heebo",
+   "size": 16,
+   "weight": 600,
+   "color": "rgb(255, 255, 255)",
+   "align": "left",
+   "transform": "uppercase",
+   "spacing": 0,
+   "lh": 32,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Competitions",
+     "c": "rgb(255, 255, 255)",
+     "w": 600,
+     "u": false
+    }
+   ],
+   "lines": 2,
+   "region": "header",
+   "x": 930,
+   "y": 73,
+   "w": 116,
+   "h": 32
+  },
+  {
+   "kind": "text",
+   "tag": "a",
+   "text": "BIRTHDAY PARTIES",
+   "family": "Heebo",
+   "size": 16,
+   "weight": 600,
+   "color": "rgb(255, 255, 255)",
+   "align": "left",
+   "transform": "uppercase",
+   "spacing": 0,
+   "lh": 32,
+   "behind": "image",
+   "runs": [
+    {
+     "t": "Birthday Parties",
+     "c": "rgb(255, 255, 255)",
+     "w": 600,
+     "u": false
+    }
+   ],
+   "lines": 2,
+   "region": "header",
+   "x": 1058,
+   "y": 73,
+   "w": 142,
+   "h": 32
+  },
+  {
+   "kind": "text",
+   "tag": "a",
+   "text": "PERSONAL TRAINING",
+   "family": "Heebo",
+   "size": 16,
+   "weight": 600,
+   "color": "rgb(255, 255, 255)",
+   "align": "left",
+   "transform": "uppercase",
+   "spacing": 0,
+   "lh": 32,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Personal Training",
+     "c": "rgb(255, 255, 255)",
+     "w": 600,
+     "u": false
+    }
+   ],
+   "lines": 2,
+   "region": "header",
+   "x": 1213,
+   "y": 73,
+   "w": 158,
+   "h": 32
+  },
+  {
+   "kind": "text",
+   "tag": "a",
+   "text": "SUMMER CAMPS",
+   "family": "Heebo",
+   "size": 16,
+   "weight": 600,
+   "color": "rgb(255, 255, 255)",
+   "align": "left",
+   "transform": "uppercase",
+   "spacing": 0,
+   "lh": 32,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Summer Camps",
+     "c": "rgb(255, 255, 255)",
+     "w": 600,
+     "u": false
+    }
+   ],
+   "lines": 2,
+   "region": "header",
+   "x": 1383,
+   "y": 73,
+   "w": 126,
+   "h": 32
+  },
+  {
+   "kind": "bgimage",
+   "src": "hero",
+   "region": "main",
+   "x": 0,
+   "y": 139,
+   "w": 1920,
+   "h": 590
+  },
+  {
+   "kind": "heading",
+   "tag": "h1",
+   "text": "SPRINGFIELD WARRIOR SPORTS COMMUNITY",
+   "family": "Heebo",
+   "size": 50,
+   "weight": 900,
+   "color": "rgb(219, 58, 52)",
+   "align": "center",
+   "transform": "uppercase",
+   "spacing": 0,
+   "lh": 50,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Springfield Warrior Sports Community",
+     "c": "rgb(219, 58, 52)",
+     "w": 900,
+     "u": false
+    }
+   ],
+   "lines": 2,
+   "region": "main",
+   "x": 500,
+   "y": 374,
+   "w": 920,
+   "h": 100
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "Springfield Warrior Sports was founded with a love for, and desire to serve our ",
+   "full": "Springfield Warrior Sports was founded with a love for, and desire to serve our community. Community unites us, and allows us to be a part of something greater than ourselves. It provides an opportunity to connect with people and other local businesses, who when we all work together, make this the awesome community so many of us call home. We strive to provide a safe place and outlet - for youth, and adults, who are looking for a fun and different workout and the freedom to MOVE as they set and achieve their goals on their quest for a healthy lifestyle. We also love going out into the community to serve outside of our walls, through adopt-a-highway, partnering with local events and speaking at school assemblies. We are most certainly, Stronger Together!",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 400,
+   "color": "rgba(0, 0, 0, 0.7)",
+   "align": "center",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 28,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Springfield Warrior Sports was founded with a love for, and desire to serve our community. Community unites us, and allows us to be a part of something greater than ourselves. It provides an opportunity to connect with people and other local businesses, who when we all work together, make this the awesome community so many of us call home. We strive to provide a safe place and outlet - for youth, and adults, who are looking for a fun and different workout and the freedom to MOVE as they set and achieve their goals on their quest for a healthy lifestyle. We also love going out into the community to serve outside of our walls, through adopt-a-highway, partnering with local events and speaking at school assemblies. We are most certainly, Stronger Together! ",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 8,
+   "region": "main",
+   "x": 523,
+   "y": 820,
+   "w": 874,
+   "h": 224
+  },
+  {
+   "kind": "image",
+   "src": "https://www.springfieldwarriorsports.com/wp-content/uploads/2023/03/about-our-gym.jpg",
+   "region": "main",
+   "x": 385,
+   "y": 1225,
+   "w": 520,
+   "h": 301
+  },
+  {
+   "kind": "heading",
+   "tag": "h3",
+   "text": "CURIOUS ABOUT THE COLORS OF OUR GYM?",
+   "family": "Heebo",
+   "size": 40,
+   "weight": 900,
+   "color": "rgb(219, 58, 52)",
+   "align": "left",
+   "transform": "uppercase",
+   "spacing": 0,
+   "lh": 40,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Curious about the colors of our gym?",
+     "c": "rgb(219, 58, 52)",
+     "w": 900,
+     "u": false
+    }
+   ],
+   "lines": 2,
+   "region": "main",
+   "x": 973,
+   "y": 1262,
+   "w": 438,
+   "h": 80
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "Our inspiration is the new Springfield flag which has nods to our culture and hi",
+   "full": "Our inspiration is the new Springfield flag which has nods to our culture and history |we’ll let you look that up| but the main goal of the developers was to “come up with an authentic icon that people connected with and could use to express their pride living in Springfield” - John McQueary",
+   "family": "Epilogue",
+   "size": 18,
+   "weight": 400,
+   "color": "rgba(0, 0, 0, 0.7)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 27,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Our inspiration is the new Springfield flag which has nods to our culture and history ",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400,
+     "u": false
+    },
+    {
+     "t": "|we’ll let you look that up|",
+     "c": "rgb(219, 58, 52)",
+     "w": 400,
+     "u": false
+    },
+    {
+     "t": " but the main goal of the developers was to “come up with an authentic icon that people connected with and could use to express their pride living in Springfield” - John McQueary ",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 5,
+   "region": "main",
+   "x": 974,
+   "y": 1353,
+   "w": 561,
+   "h": 135
+  },
+  {
+   "kind": "heading",
+   "tag": "h2",
+   "text": "COMMUNITY ADOPT-A-HIGHWAY CLEAN UP DAYS",
+   "family": "Heebo",
+   "size": 50,
+   "weight": 900,
+   "color": "rgb(219, 58, 52)",
+   "align": "left",
+   "transform": "uppercase",
+   "spacing": 0,
+   "lh": 50,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Community Adopt-a-highway Clean up days",
+     "c": "rgb(219, 58, 52)",
+     "w": 900,
+     "u": false
+    }
+   ],
+   "lines": 3,
+   "region": "main",
+   "x": 385,
+   "y": 1761,
+   "w": 489,
+   "h": 150
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "Springfield Warrior Sports is proud to help keep a little piece of our community",
+   "full": "Springfield Warrior Sports is proud to help keep a little piece of our community, cleaner! We have adopted the highway on South Campbell, between Weaver and Plainview, near the gym. We love doing our part, and think it’s awesome that the Warrior Sports Crew, members, and friends can come together and be involved. It’s also a good time!! Thanks to Thrivent Financial for sponsoring the event and to Mid-Missouri Bank for allowing us to meet in your community room. We are truly, Stronger Together!",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 400,
+   "color": "rgba(0, 0, 0, 0.7)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 28,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Springfield Warrior Sports is proud to help keep a little piece of our community, cleaner! We have adopted the highway on South Campbell, between Weaver and Plainview, near the gym. We love doing our part, and think it’s awesome that the Warrior Sports Crew, members, and friends can come together and be involved. It’s also a good time!! Thanks to ",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400,
+     "u": false
+    },
+    {
+     "t": "Thrivent Financial",
+     "c": "rgb(219, 58, 52)",
+     "w": 400,
+     "u": false
+    },
+    {
+     "t": " for sponsoring the event and to ",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400,
+     "u": false
+    },
+    {
+     "t": "Mid-Missouri Bank",
+     "c": "rgb(219, 58, 52)",
+     "w": 400,
+     "u": false
+    },
+    {
+     "t": " for allowing us to meet in your community room. We are truly, Stronger Together! ",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 8,
+   "region": "main",
+   "x": 386,
+   "y": 1932,
+   "w": 561,
+   "h": 224
+  },
+  {
+   "kind": "image",
+   "src": "https://www.springfieldwarriorsports.com/wp-content/uploads/2023/03/Clean-up-days.png",
+   "region": "main",
+   "x": 1034,
+   "y": 1706,
+   "w": 501,
+   "h": 521
+  },
+  {
+   "kind": "heading",
+   "tag": "h2",
+   "text": "COMMUNITY PARTNERSHIPS",
+   "family": "Heebo",
+   "size": 50,
+   "weight": 900,
+   "color": "rgb(219, 58, 52)",
+   "align": "center",
+   "transform": "uppercase",
+   "spacing": 0,
+   "lh": 50,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Community Partnerships",
+     "c": "rgb(219, 58, 52)",
+     "w": 900,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "main",
+   "x": 618,
+   "y": 2427,
+   "w": 684,
+   "h": 50
+  },
+  {
+   "kind": "image",
+   "src": "https://www.springfieldwarriorsports.com/wp-content/uploads/2023/03/Big-Brothers.png",
+   "region": "main",
+   "x": 385,
+   "y": 2527,
+   "w": 520,
+   "h": 541
+  },
+  {
+   "kind": "heading",
+   "tag": "h4",
+   "text": "BIG BROTHERS BIG SISTERS OF THE OZARKS",
+   "family": "Heebo",
+   "size": 30,
+   "weight": 900,
+   "color": "rgb(40, 82, 118)",
+   "align": "left",
+   "transform": "uppercase",
+   "spacing": 0,
+   "lh": 30,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Big Brothers Big Sisters of the Ozarks",
+     "c": "rgb(40, 82, 118)",
+     "w": 900,
+     "u": false
+    }
+   ],
+   "lines": 2,
+   "region": "main",
+   "x": 973,
+   "y": 2622,
+   "w": 411,
+   "h": 60
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "\"A mentor empowers a person to see a possible future and believe it can be obtai",
+   "full": "\"A mentor empowers a person to see a possible future and believe it can be obtained” Big Brothers Big Sisters of the Ozarks makes impactful, monitored matches between adult volunteers (“Bigs”) and children (“Littles”), ages 6 through 14. Through this program, positive relationships are developed that have a direct and lasting effect on the lives of young people in our community! At Springfield Warrior Sports we applaud and want to support their mission. \"Bigs\" when you drop in for open gym, your \"Little\" gets in free! Come have fun, or maybe challenge each other to something new! Together, we are STRONGER..... one Obstacle at at Time!",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 400,
+   "color": "rgba(0, 0, 0, 0.7)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 28,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "\"A mentor empowers a person to see a possible future and believe it can be obtained” ",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400,
+     "u": false
+    },
+    {
+     "t": "Big Brothers Big Sisters of the Ozarks",
+     "c": "rgb(219, 58, 52)",
+     "w": 400,
+     "u": false
+    },
+    {
+     "t": " makes impactful, monitored matches between adult volunteers (“Bigs”) and children (“Littles”), ages 6 through 14. Through this program, positive relationships are developed that have a direct and lasting effect on the lives of young people in our community! At Springfield Warrior Sports we applaud and want to support their mission. \"Bigs\" when you drop in for open gym, your \"Little\" gets in free! Come have fun, or maybe challenge each other to something new! Together, we are STRONGER..... one Obstacle at at Time!",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 10,
+   "region": "main",
+   "x": 974,
+   "y": 2693,
+   "w": 561,
+   "h": 280
+  },
+  {
+   "kind": "heading",
+   "tag": "h4",
+   "text": "SUPPLEMENT SUPERSTORE",
+   "family": "Heebo",
+   "size": 30,
+   "weight": 900,
+   "color": "rgb(40, 82, 118)",
+   "align": "left",
+   "transform": "uppercase",
+   "spacing": 0,
+   "lh": 30,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Supplement Superstore",
+     "c": "rgb(40, 82, 118)",
+     "w": 900,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "main",
+   "x": 385,
+   "y": 3274,
+   "w": 391,
+   "h": 30
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "We want to give a huge shout out to Supplement Superstore! S2 has been a huge su",
+   "full": "We want to give a huge shout out to Supplement Superstore! S2 has been a huge supporter of Springfield Warrior Sports and our athletes over the years, and these guys... are doing it right! They have solid fitness nutrition products and considerately share expert advice after listening to your specific goals. They can offer personal training, nutrition coaching and meal plans - and they won't leave you hanging... you can expect that they will check in on your progress, as they truly want you to succeed! Go check them out now, all ages and athletic backgrounds.",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 400,
+   "color": "rgba(0, 0, 0, 0.7)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 28,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "We want to give a huge shout out to ",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400,
+     "u": false
+    },
+    {
+     "t": "Supplement Superstore",
+     "c": "rgb(219, 58, 52)",
+     "w": 400,
+     "u": false
+    },
+    {
+     "t": "! S2 has been a huge supporter of Springfield Warrior Sports and our athletes over the years, and these guys... are doing it right! They have solid fitness nutrition products and considerately share expert advice after listening to your specific goals. They can offer personal training, nutrition coaching and meal plans - and they won't leave you hanging... you can expect that they will check in on your progress, as they truly want you to succeed! Go check them out now, all ages and athletic backgrounds. ",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 9,
+   "region": "main",
+   "x": 386,
+   "y": 3315,
+   "w": 561,
+   "h": 252
+  },
+  {
+   "kind": "image",
+   "src": "https://www.springfieldwarriorsports.com/wp-content/uploads/2023/03/Supplement-Superstore.png",
+   "region": "main",
+   "x": 1034,
+   "y": 3168,
+   "w": 501,
+   "h": 521
+  },
+  {
+   "kind": "heading",
+   "tag": "h2",
+   "text": "PERSEVERANCE:",
+   "family": "Heebo",
+   "size": 50,
+   "weight": 900,
+   "color": "rgb(255, 255, 255)",
+   "align": "center",
+   "transform": "uppercase",
+   "spacing": 0,
+   "lh": 50,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Perseverance:",
+     "c": "rgb(255, 255, 255)",
+     "w": 900,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "main",
+   "x": 500,
+   "y": 3869,
+   "w": 920,
+   "h": 50
+  },
+  {
+   "kind": "heading",
+   "tag": "h2",
+   "text": "PERSISTENCE IN DOING SOMETHING DESPITE DIFFICULTY OR DELAY IN ACHIEVING SUCCESS.",
+   "family": "Heebo",
+   "size": 30,
+   "weight": 300,
+   "color": "rgb(255, 255, 255)",
+   "align": "center",
+   "transform": "uppercase",
+   "spacing": 0,
+   "lh": 36,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "persistence in doing something despite difficulty or delay in achieving success.",
+     "c": "rgb(255, 255, 255)",
+     "w": 300,
+     "u": false
+    }
+   ],
+   "lines": 2,
+   "region": "main",
+   "x": 564,
+   "y": 3920,
+   "w": 791,
+   "h": 72
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "The very nature of this sport involves setting goals for yourself, hard work and",
+   "full": "The very nature of this sport involves setting goals for yourself, hard work and determination (perseverance), and supportive friends (community)! At Springfield Warrior Sports we love the opportunity to share our experiences, failures and successes, through the sport and training on and off the course with the youngest of athletes and individuals. We are available to speak, demonstrate, and provide interactive team building for your next school assembly, field day, or youth activity. Each of us are stronger, one Obstacle at a time!",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(255, 255, 255)",
+   "align": "center",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 28,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "The very nature of this sport involves setting goals for yourself, hard work and determination (perseverance), and supportive friends (community)! At Springfield Warrior Sports we love the opportunity to share our experiences, failures and successes, through the sport and training on and off the course with the youngest of athletes and individuals. We are available to speak, demonstrate, and provide interactive team building for your next school assembly, field day, or youth activity. Each of us are stronger, one Obstacle at a time!",
+     "c": "rgb(255, 255, 255)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 4,
+   "region": "main",
+   "x": 414,
+   "y": 4014,
+   "w": 1093,
+   "h": 112
+  },
+  {
+   "kind": "image",
+   "src": "https://www.springfieldwarriorsports.com/wp-content/uploads/2023/03/perseverance-img01.jpg",
+   "region": "main",
+   "x": 414,
+   "y": 4148,
+   "w": 534,
+   "h": 455
+  },
+  {
+   "kind": "image",
+   "src": "https://www.springfieldwarriorsports.com/wp-content/uploads/2023/03/perseverance-img02.jpg",
+   "region": "main",
+   "x": 973,
+   "y": 4148,
+   "w": 534,
+   "h": 455
+  },
+  {
+   "kind": "image",
+   "src": "https://www.springfieldwarriorsports.com/wp-content/uploads/2023/03/perseverance-img03.jpg",
+   "region": "main",
+   "x": 414,
+   "y": 4629,
+   "w": 534,
+   "h": 454
+  },
+  {
+   "kind": "image",
+   "src": "https://www.springfieldwarriorsports.com/wp-content/uploads/2023/03/perseverance-img04.jpg",
+   "region": "main",
+   "x": 973,
+   "y": 4629,
+   "w": 534,
+   "h": 454
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "In 2016 we had the unique opportunity to work with James River Church planning t",
+   "full": "In 2016 we had the unique opportunity to work with James River Church planning their Ninja Warrior course that was a part of their Stronger Men’s Conference. Under Jason Huewe’s direction, Springfield Warrior Sports assisted with design and build of the course, running the West Campus competition, and securing athletes from across the country. We also held a local competition at the gym where the top 5 athletes secured their spot to compete on the course alongside the American Ninja Warriors who attended for their chance to win $5000! What a night, so much fun being a part of this collaboration and display of camaraderie with such inspiring individuals… each modeling that we are Stronger, one Obstacle at a time!",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 400,
+   "color": "rgba(0, 0, 0, 0.7)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 28,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "In 2016 we had the unique opportunity to work with ",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400,
+     "u": false
+    },
+    {
+     "t": "James River Church",
+     "c": "rgb(219, 58, 52)",
+     "w": 400,
+     "u": false
+    },
+    {
+     "t": " planning their Ninja Warrior course that was a part of their Stronger Men’s Conference. Under Jason Huewe’s direction, Springfield Warrior Sports assisted with design and build of the course, running the West Campus competition, and securing athletes from across the country. We also held a local competition at the gym where the top 5 athletes secured their spot to compete on the course alongside the American Ninja Warriors who attended for their chance to win $5000! What a night, so much fun being a part of this collaboration and display of camaraderie with such inspiring individuals… each modeling that we are Stronger, one Obstacle at a time! ",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 6,
+   "region": "main",
+   "x": 386,
+   "y": 5933,
+   "w": 1148,
+   "h": 168
+  },
+  {
+   "kind": "image",
+   "src": "https://www.springfieldwarriorsports.com/wp-content/uploads/2023/03/stronger-men01.jpg",
+   "region": "main",
+   "x": 385,
+   "y": 6122,
+   "w": 560,
+   "h": 429
+  },
+  {
+   "kind": "image",
+   "src": "https://www.springfieldwarriorsports.com/wp-content/uploads/2023/03/stronger-men02.jpg",
+   "region": "main",
+   "x": 975,
+   "y": 6122,
+   "w": 560,
+   "h": 430
+  },
+  {
+   "kind": "image",
+   "src": "https://www.springfieldwarriorsports.com/wp-content/uploads/2023/03/Community-Murph.png",
+   "region": "main",
+   "x": 385,
+   "y": 6732,
+   "w": 520,
+   "h": 616
+  },
+  {
+   "kind": "heading",
+   "tag": "h4",
+   "text": "COMMUNITY MURPH",
+   "family": "Heebo",
+   "size": 30,
+   "weight": 900,
+   "color": "rgb(40, 82, 118)",
+   "align": "left",
+   "transform": "uppercase",
+   "spacing": 0,
+   "lh": 30,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Community Murph",
+     "c": "rgb(40, 82, 118)",
+     "w": 900,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "main",
+   "x": 973,
+   "y": 6823,
+   "w": 296,
+   "h": 30
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "Springfield Warrior Sports looks forward each year to bringing a team and partic",
+   "full": "Springfield Warrior Sports looks forward each year to bringing a team and participating in the local annual Community Murph! Every year on Memorial Day, the Southwest Missouri community comes together to honor our fallen heroes. Funds are raised for local charities so that they can continue to provide support for these families. We are so encouraged to be a part of this event and have watched it continue to grow with this communities engagement - Nationwide, this event has raised millions of dollars for charities including the LT. Michael P. Murphy Memorial Scholarship Foundation (SEAL). It’s a grueling challenge, that brings people together to pay tribute and the tradition helps push us, humble us both mentally and physically and dedicate a bit of pain and sweat to honor a man who gave everything he had. We are… Stronger, together.",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 400,
+   "color": "rgba(0, 0, 0, 0.7)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 28,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Springfield Warrior Sports looks forward each year to bringing a team and participating in the local annual ",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400,
+     "u": false
+    },
+    {
+     "t": "Community Murph",
+     "c": "rgb(219, 58, 52)",
+     "w": 400,
+     "u": false
+    },
+    {
+     "t": "! Every year on Memorial Day, the Southwest Missouri community comes together to honor our fallen heroes. Funds are raised for local charities so that they can continue to provide support for these families. We are so encouraged to be a part of this event and have watched it continue to grow with this communities engagement - Nationwide, this event has raised millions of dollars for charities including the LT. Michael P. Murphy Memorial Scholarship Foundation (SEAL). It’s a grueling challenge, that brings people together to pay tribute and the tradition helps push us, humble us both mentally and physically and dedicate a bit of pain and sweat to honor a man who gave everything he had. We are… Stronger, together. ",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 13,
+   "region": "main",
+   "x": 974,
+   "y": 6864,
+   "w": 561,
+   "h": 392
+  },
+  {
+   "kind": "heading",
+   "tag": "h2",
+   "text": "CLIENT TESTIMONIALS",
+   "family": "Heebo",
+   "size": 50,
+   "weight": 900,
+   "color": "rgb(219, 58, 52)",
+   "align": "center",
+   "transform": "uppercase",
+   "spacing": 0,
+   "lh": 70,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Client Testimonials",
+     "c": "rgb(219, 58, 52)",
+     "w": 900,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "main",
+   "x": 385,
+   "y": 7528,
+   "w": 1150,
+   "h": 70,
+   "covered": true
+  },
+  {
+   "kind": "heading",
+   "tag": "h4",
+   "text": "WHAT OUR CLIENTS SAY",
+   "family": "Heebo",
+   "size": 30,
+   "weight": 300,
+   "color": "rgb(0, 0, 0)",
+   "align": "center",
+   "transform": "uppercase",
+   "spacing": 1,
+   "lh": 42,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "What our clients say",
+     "c": "rgb(0, 0, 0)",
+     "w": 300,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "main",
+   "x": 386,
+   "y": 7589,
+   "w": 1148,
+   "h": 42
+  },
+  {
+   "kind": "image",
+   "src": "https://www.springfieldwarriorsports.com/wp-content/uploads/2023/03/qoute-icon.png",
+   "region": "main",
+   "x": 425,
+   "y": 7682,
+   "w": 65,
+   "h": 65
+  },
+  {
+   "kind": "text",
+   "tag": "div",
+   "text": "We had our son’s 10th birthday here. All of the kids had a great time. They set ",
+   "full": "We had our son’s 10th birthday here. All of the kids had a great time. They set up an obstacle course for the kids. They loved the whole experience. The favorite was the curved wall to run up. That was everyone’s challenge for the night. We will be visiting again for sure. - JENNIFER L.",
+   "family": "Muli",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(0, 0, 0)",
+   "align": "start",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 26,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "We had our son’s 10th birthday here. All of the kids had a great time. They set up an obstacle course for the kids. They loved the whole experience. The favorite was the curved wall to run up. That was everyone’s challenge for the night. We will be visiting again for sure.",
+     "c": "rgb(0, 0, 0)",
+     "w": 400,
+     "u": false
+    },
+    {
+     "t": "- Jennifer L.",
+     "c": "rgb(219, 58, 52)",
+     "w": 700,
+     "u": false
+    }
+   ],
+   "lines": 6,
+   "region": "main",
+   "x": 416,
+   "y": 7763,
+   "w": 513,
+   "h": 176
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "We had our son’s 10th birthday here. All of the kids had a great time. They set ",
+   "full": "We had our son’s 10th birthday here. All of the kids had a great time. They set up an obstacle course for the kids. They loved the whole experience. The favorite was the curved wall to run up. That was everyone’s challenge for the night. We will be visiting again for sure.",
+   "family": "Muli",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(0, 0, 0)",
+   "align": "start",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 26,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "We had our son’s 10th birthday here. All of the kids had a great time. They set up an obstacle course for the kids. They loved the whole experience. The favorite was the curved wall to run up. That was everyone’s challenge for the night. We will be visiting again for sure.",
+     "c": "rgb(0, 0, 0)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 4,
+   "region": "main",
+   "x": 416,
+   "y": 7763,
+   "w": 513,
+   "h": 126
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "- JENNIFER L.",
+   "full": "- JENNIFER L.",
+   "family": "Muli",
+   "size": 16,
+   "weight": 700,
+   "color": "rgb(219, 58, 52)",
+   "align": "start",
+   "transform": "uppercase",
+   "spacing": 0,
+   "lh": 26,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "- Jennifer L.",
+     "c": "rgb(219, 58, 52)",
+     "w": 700,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "main",
+   "x": 416,
+   "y": 7889,
+   "w": 513,
+   "h": 50
+  },
+  {
+   "kind": "image",
+   "src": "https://www.springfieldwarriorsports.com/wp-content/uploads/2023/03/qoute-icon.png",
+   "region": "main",
+   "x": 990,
+   "y": 7682,
+   "w": 65,
+   "h": 65
+  },
+  {
+   "kind": "text",
+   "tag": "div",
+   "text": "My daughter started training here 3 years ago at 8, and she still loves it!! Own",
+   "full": "My daughter started training here 3 years ago at 8, and she still loves it!! Owner and coaching staff are all super encouraging. We live an hour away but make the drive twice a week as often as possible. Training here has not only helped her get stronger physically but increased her confidence in general. Anything that makes kids want to challenge themselves to get better and better is worth it! - LEE C.",
+   "family": "Muli",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(0, 0, 0)",
+   "align": "start",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 26,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "My daughter started training here 3 years ago at 8, and she still loves it!! Owner and coaching staff are all super encouraging. We live an hour away but make the drive twice a week as often as possible. Training here has not only helped her get stronger physically but increased her confidence in general. Anything that makes kids want to challenge themselves to get better and better is worth it!",
+     "c": "rgb(0, 0, 0)",
+     "w": 400,
+     "u": false
+    },
+    {
+     "t": "- Lee C.",
+     "c": "rgb(219, 58, 52)",
+     "w": 700,
+     "u": false
+    }
+   ],
+   "lines": 8,
+   "region": "main",
+   "x": 981,
+   "y": 7763,
+   "w": 513,
+   "h": 227
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "My daughter started training here 3 years ago at 8, and she still loves it!! Own",
+   "full": "My daughter started training here 3 years ago at 8, and she still loves it!! Owner and coaching staff are all super encouraging. We live an hour away but make the drive twice a week as often as possible. Training here has not only helped her get stronger physically but increased her confidence in general. Anything that makes kids want to challenge themselves to get better and better is worth it!",
+   "family": "Muli",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(0, 0, 0)",
+   "align": "start",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 26,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "My daughter started training here 3 years ago at 8, and she still loves it!! Owner and coaching staff are all super encouraging. We live an hour away but make the drive twice a week as often as possible. Training here has not only helped her get stronger physically but increased her confidence in general. Anything that makes kids want to challenge themselves to get better and better is worth it!",
+     "c": "rgb(0, 0, 0)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 6,
+   "region": "main",
+   "x": 981,
+   "y": 7763,
+   "w": 513,
+   "h": 178
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "- LEE C.",
+   "full": "- LEE C.",
+   "family": "Muli",
+   "size": 16,
+   "weight": 700,
+   "color": "rgb(219, 58, 52)",
+   "align": "start",
+   "transform": "uppercase",
+   "spacing": 0,
+   "lh": 26,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "- Lee C.",
+     "c": "rgb(219, 58, 52)",
+     "w": 700,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "main",
+   "x": 981,
+   "y": 7940,
+   "w": 513,
+   "h": 50
+  },
+  {
+   "kind": "image",
+   "src": "https://www.springfieldwarriorsports.com/wp-content/uploads/2023/03/SWS-logo-footer.png",
+   "region": "footer",
+   "x": 405,
+   "y": 8189,
+   "w": 266,
+   "h": 76
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "Our accomplished and award winning Crew are here to help you find your strength ",
+   "full": "Our accomplished and award winning Crew are here to help you find your strength and enjoy your workouts.",
+   "family": "Muli",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(51, 51, 51)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 24,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Our accomplished and award winning Crew are here to help you find your strength and enjoy your workouts.",
+     "c": "rgb(51, 51, 51)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 3,
+   "region": "footer",
+   "x": 406,
+   "y": 8286,
+   "w": 354,
+   "h": 72
+  },
+  {
+   "kind": "icon",
+   "color": "rgb(255, 255, 255)",
+   "region": "footer",
+   "x": 414,
+   "y": 8391,
+   "w": 17,
+   "h": 17
+  },
+  {
+   "kind": "icon",
+   "color": "rgb(255, 255, 255)",
+   "region": "footer",
+   "x": 451,
+   "y": 8391,
+   "w": 17,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "CONTACT",
+   "full": "CONTACT",
+   "family": "Heebo",
+   "size": 16,
+   "weight": 900,
+   "color": "rgb(40, 82, 118)",
+   "align": "left",
+   "transform": "uppercase",
+   "spacing": 2,
+   "lh": 28,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Contact",
+     "c": "rgb(40, 82, 118)",
+     "w": 900,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "footer",
+   "x": 811,
+   "y": 8169,
+   "w": 353,
+   "h": 28
+  },
+  {
+   "kind": "icon",
+   "color": "rgb(219, 58, 52)",
+   "region": "footer",
+   "x": 822,
+   "y": 8227,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "tag": "span",
+   "text": "605 W Farm Rd 182, Springfield, MO, 65810, United States",
+   "full": "605 W Farm Rd 182, Springfield, MO, 65810, United States",
+   "family": "Muli",
+   "size": 14,
+   "weight": 400,
+   "color": "rgb(51, 51, 51)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 22,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "605 W Farm Rd 182, Springfield,MO, 65810, United States",
+     "c": "rgb(51, 51, 51)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 2,
+   "region": "footer",
+   "x": 848,
+   "y": 8222,
+   "w": 212,
+   "h": 45
+  },
+  {
+   "kind": "icon",
+   "color": "rgb(219, 58, 52)",
+   "region": "footer",
+   "x": 822,
+   "y": 8288,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "tag": "span",
+   "text": "(417) 894-7319",
+   "full": "(417) 894-7319",
+   "family": "Muli",
+   "size": 14,
+   "weight": 400,
+   "color": "rgb(51, 51, 51)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 22,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "(417) 894-7319",
+     "c": "rgb(51, 51, 51)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "footer",
+   "x": 848,
+   "y": 8283,
+   "w": 103,
+   "h": 22
+  },
+  {
+   "kind": "text",
+   "tag": "a",
+   "text": "(417) 894-7319",
+   "family": "Muli",
+   "size": 14,
+   "weight": 400,
+   "color": "rgb(51, 51, 51)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 22,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "(417) 894-7319",
+     "c": "rgb(51, 51, 51)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "footer",
+   "x": 848,
+   "y": 8285,
+   "w": 103,
+   "h": 18
+  },
+  {
+   "kind": "icon",
+   "color": "rgb(219, 58, 52)",
+   "region": "footer",
+   "x": 822,
+   "y": 8335,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "tag": "span",
+   "text": "office@swarriorsports.com",
+   "full": "office@swarriorsports.com",
+   "family": "Muli",
+   "size": 14,
+   "weight": 400,
+   "color": "rgb(51, 51, 51)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 22,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "office@swarriorsports.com",
+     "c": "rgb(51, 51, 51)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "footer",
+   "x": 848,
+   "y": 8330,
+   "w": 173,
+   "h": 22
+  },
+  {
+   "kind": "text",
+   "tag": "a",
+   "text": "office@swarriorsports.com",
+   "family": "Muli",
+   "size": 14,
+   "weight": 400,
+   "color": "rgb(51, 51, 51)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 22,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "office@swarriorsports.com",
+     "c": "rgb(51, 51, 51)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "footer",
+   "x": 848,
+   "y": 8332,
+   "w": 173,
+   "h": 18
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "QUICK LINKS",
+   "full": "QUICK LINKS",
+   "family": "Heebo",
+   "size": 16,
+   "weight": 900,
+   "color": "rgb(40, 82, 118)",
+   "align": "left",
+   "transform": "uppercase",
+   "spacing": 2,
+   "lh": 28,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "QUICK LInks",
+     "c": "rgb(40, 82, 118)",
+     "w": 900,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "footer",
+   "x": 1214,
+   "y": 8169,
+   "w": 301,
+   "h": 28
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "Home",
+   "full": "Home",
+   "family": "Muli",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(51, 51, 51)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 24,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Home",
+     "c": "rgb(51, 51, 51)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "footer",
+   "x": 1215,
+   "y": 8218,
+   "w": 299,
+   "h": 24
+  },
+  {
+   "kind": "text",
+   "tag": "a",
+   "text": "Home",
+   "family": "Muli",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(51, 51, 51)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 24,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Home",
+     "c": "rgb(51, 51, 51)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "footer",
+   "x": 1215,
+   "y": 8220,
+   "w": 44,
+   "h": 20
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "About Us",
+   "full": "About Us",
+   "family": "Muli",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(51, 51, 51)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 24,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "About Us",
+     "c": "rgb(51, 51, 51)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "footer",
+   "x": 1215,
+   "y": 8244,
+   "w": 299,
+   "h": 24
+  },
+  {
+   "kind": "text",
+   "tag": "a",
+   "text": "About Us",
+   "family": "Muli",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(51, 51, 51)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 24,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "About Us",
+     "c": "rgb(51, 51, 51)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "footer",
+   "x": 1215,
+   "y": 8246,
+   "w": 69,
+   "h": 20
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "Contact Us",
+   "full": "Contact Us",
+   "family": "Muli",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(51, 51, 51)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 24,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Contact Us",
+     "c": "rgb(51, 51, 51)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "footer",
+   "x": 1215,
+   "y": 8270,
+   "w": 299,
+   "h": 24
+  },
+  {
+   "kind": "text",
+   "tag": "a",
+   "text": "Contact Us",
+   "family": "Muli",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(51, 51, 51)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 24,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Contact Us",
+     "c": "rgb(51, 51, 51)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "footer",
+   "x": 1215,
+   "y": 8272,
+   "w": 82,
+   "h": 20
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "Meet the Team",
+   "full": "Meet the Team",
+   "family": "Muli",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(51, 51, 51)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 24,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Meet the Team",
+     "c": "rgb(51, 51, 51)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "footer",
+   "x": 1215,
+   "y": 8296,
+   "w": 299,
+   "h": 24
+  },
+  {
+   "kind": "text",
+   "tag": "a",
+   "text": "Meet the Team",
+   "family": "Muli",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(51, 51, 51)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 24,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Meet the Team",
+     "c": "rgb(51, 51, 51)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "footer",
+   "x": 1215,
+   "y": 8298,
+   "w": 109,
+   "h": 20
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "© Copyright 2026 Springfield Warrior Sports All Rights Reserved.",
+   "full": "© Copyright 2026 Springfield Warrior Sports All Rights Reserved.",
+   "family": "Epilogue",
+   "size": 14,
+   "weight": 600,
+   "color": "rgb(255, 255, 255)",
+   "align": "center",
+   "transform": "none",
+   "spacing": 2,
+   "lh": 24,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "© Copyright 2026 Springfield Warrior Sports All Rights Reserved.",
+     "c": "rgb(255, 255, 255)",
+     "w": 600,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "footer",
+   "x": 405,
+   "y": 8482,
+   "w": 1110,
+   "h": 24
+  }
+ ],
+ "bands": [
+  {
+   "bg": "rgb(255, 255, 255)",
+   "x": 0,
+   "y": 0,
+   "w": 1920,
+   "h": 139
+  },
+  {
+   "bg": "rgb(255, 255, 255)",
+   "x": 0,
+   "y": 8129,
+   "w": 1920,
+   "h": 396
+  }
+ ]
+}

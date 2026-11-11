@@ -1,12 +1,12 @@
 ---
 import { mainNav, utilityNav } from "../data/site";
-import { logoImage } from "../lib/inline-image";
+import { media } from "../lib/media";
 
 interface Props {
   current: string;
 }
 const { current } = Astro.props;
-const logo = await logoImage("logo.png", 220);
+const logo = media("media/2023-03-SpringField-Warrior-Logo.webp");
 
 const linkProps = (item: { path: string; external?: boolean }) =>
   item.external ? { target: "_blank", rel: "noopener noreferrer" } : {};
@@ -14,7 +14,7 @@ const linkProps = (item: { path: string; external?: boolean }) =>
 
 <header class="site-header" data-header>
   <div class="util-bar">
-    <nav class="util-links" aria-label="Utility">
+    <nav class="bar util-links" aria-label="Utility">
       {
         utilityNav.map((item) => (
           <a href={item.path} aria-current={item.path === current ? "page" : undefined} {...linkProps(item)}>
@@ -25,22 +25,24 @@ const linkProps = (item: { path: string; external?: boolean }) =>
     </nav>
   </div>
   <div class="main-bar">
-    <a class="logo-link" href="/" aria-label="Springfield Warrior Sports, home">
-      <img src={logo.uri} alt="" width={logo.width} height={logo.height} />
-    </a>
-    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-menu" data-menu>
-      <span class="sr-only">Menu</span>
-      <span aria-hidden="true"></span>
-    </button>
-    <nav id="site-menu" class="nav-links" data-nav aria-label="Primary">
-      {
-        mainNav.map((item) => (
-          <a href={item.path} aria-current={item.path === current ? "page" : undefined}>
-            {item.label}
-          </a>
-        ))
-      }
-    </nav>
+    <div class="bar main-inner">
+      <a class="logo-link" href="/" aria-label="Springfield Warrior Sports, home">
+        <img src={logo.src} alt="" width="203" height="59" />
+      </a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-menu" data-menu>
+        <span class="sr-only">Menu</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z" /></svg>
+      </button>
+      <nav id="site-menu" class="nav-links" data-nav aria-label="Primary">
+        {
+          mainNav.map((item) => (
+            <a href={item.path} aria-current={item.path === current ? "page" : undefined}>
+              {item.label}
+            </a>
+          ))
+        }
+      </nav>
+    </div>
   </div>
 </header>
 
@@ -79,69 +81,96 @@ const linkProps = (item: { path: string; external?: boolean }) =>
     left: 0;
     right: 0;
     z-index: 50;
-    background: var(--color-ws-blue-dark);
+    background: #fff;
     transform: translateY(0);
     transition: transform 0.2s ease;
   }
   .site-header.is-hidden {
     transform: translateY(-100%);
   }
-  .util-bar {
-    background: #000;
-    color: #fff;
+  .util-bar,
+  .main-bar {
+    position: relative;
+    background: transparent;
+  }
+  .util-bar::before,
+  .main-bar::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+  }
+  .util-bar::before { background: #000; }
+  .main-bar::before { background: #285276; }
+  .util-links { box-sizing: border-box; }
+  .bar {
+    position: relative;
+    z-index: 1;
+    width: min(1150px, 100%);
+    margin: 0 auto;
   }
   .util-links {
     display: flex;
-    justify-content: flex-end;
-    gap: 4px;
-    width: min(1280px, calc(100% - 16px));
-    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    padding: 11px 0;
   }
   .util-links a {
     display: flex;
     align-items: center;
-    min-height: 34px;
-    padding: 0 10px;
+    justify-content: center;
+    box-sizing: border-box;
+    height: 28px;
     color: #fff;
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 0.06em;
+    font-family: Heebo, "Arial Narrow", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 1px;
+    text-align: center;
     text-decoration: none;
     text-transform: uppercase;
   }
-  .main-bar {
+  .util-links a:nth-child(1) { width: 70px; margin-right: 20px; }
+  .util-links a:nth-child(2) { width: 51px; margin-right: 20px; }
+  .util-links a:nth-child(3) { width: 133px; }
+  @media (max-width: 799px) {
+    .util-links { transform: translateX(5px); }
+  }
+  .main-inner {
     display: flex;
-    gap: 12px;
     align-items: center;
     justify-content: space-between;
-    width: min(1280px, calc(100% - 20px));
-    height: 62px;
-    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 20px 16px 20px 20px;
   }
   .logo-link {
     display: flex;
-    align-items: center;
     flex: 0 0 auto;
+    line-height: 0;
   }
   .logo-link img {
-    width: min(168px, 52vw);
-    height: auto;
+    width: 203px;
+    height: 59px;
+    max-width: none;
+    object-fit: contain;
   }
   .menu-btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 48px;
-    height: 48px;
+    width: 20px;
+    height: 20px;
+    padding: 0;
     border: 0;
     background: transparent;
+    color: #fff;
   }
-  .menu-btn span[aria-hidden="true"] {
-    display: block;
-    width: 22px;
-    height: 2px;
-    background: #fff;
-    box-shadow: 0 -7px 0 #fff, 0 7px 0 #fff;
+  .menu-btn svg {
+    width: 20px;
+    height: 20px;
+    fill: #fff;
   }
   .nav-links {
     display: none;
@@ -149,23 +178,22 @@ const linkProps = (item: { path: string; external?: boolean }) =>
     top: 100%;
     left: 0;
     right: 0;
+    z-index: 2;
     flex-direction: column;
     gap: 2px;
     padding: 8px 12px 16px;
-    background: var(--color-ws-blue-dark);
+    background: #285276;
   }
-  .site-header.is-open .nav-links {
-    display: flex;
-  }
+  .site-header.is-open .nav-links { display: flex; }
   .nav-links a {
     display: flex;
     align-items: center;
     min-height: 48px;
-    padding: 0 8px;
     color: #fff;
-    font-size: 14px;
-    font-weight: 700;
-    letter-spacing: 0.04em;
+    font-family: Heebo, "Arial Narrow", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0;
     text-decoration: none;
     text-transform: uppercase;
   }
@@ -174,37 +202,45 @@ const linkProps = (item: { path: string; external?: boolean }) =>
     text-decoration: underline;
     text-underline-offset: 4px;
   }
+
   @media (min-width: 1024px) {
-    .util-links a {
-      min-height: 36px;
-      font-size: 12px;
+    .util-links {
+      justify-content: flex-end;
+      align-items: center;
+      height: 46px;
+      padding: 0 30px;
     }
-    .main-bar {
-      height: 76px;
+    .util-links a:nth-child(1) { margin-right: 25px; }
+    .util-links a:nth-child(2) { margin-right: 24px; }
+    .main-inner {
+      height: 93px;
+      padding: 0 26px 0 20px;
     }
-    .logo-link img {
-      width: 190px;
-    }
-    .menu-btn {
-      display: none;
-    }
+    .menu-btn { display: none; }
     .nav-links {
       display: flex;
       position: static;
       flex-direction: row;
-      flex-wrap: nowrap;
       align-items: center;
-      justify-content: flex-end;
-      gap: 2px 4px;
+      gap: 12px;
+      margin-left: auto;
       padding: 0;
       background: transparent;
     }
     .nav-links a {
-      min-height: 36px;
-      padding: 0 7px;
-      font-size: 12px;
-      letter-spacing: 0.03em;
+      box-sizing: border-box;
+      height: 32px;
+      min-height: 0;
+      padding: 0;
+      font-size: 16px;
+      line-height: 32px;
       white-space: nowrap;
     }
+    .nav-links a:nth-child(1) { width: 120px; }
+    .nav-links a:nth-child(2) { width: 97px; }
+    .nav-links a:nth-child(3) { width: 116px; }
+    .nav-links a:nth-child(4) { width: 142px; }
+    .nav-links a:nth-child(5) { width: 158px; }
+    .nav-links a:nth-child(6) { width: 126px; }
   }
 </style>

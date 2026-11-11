@@ -1,0 +1,2169 @@
+{
+ "url": "https://www.springfieldwarriorsports.com/summer-camps-in-springfield-mo/",
+ "width": 1920,
+ "vw": 1920,
+ "hiddenText": [],
+ "docWidth": 1920,
+ "docHeight": 6281,
+ "items": [
+  {
+   "kind": "text",
+   "tag": "a",
+   "text": "CONTACT",
+   "family": "Heebo",
+   "size": 14,
+   "weight": 600,
+   "color": "rgb(255, 255, 255)",
+   "align": "center",
+   "transform": "uppercase",
+   "spacing": 1,
+   "lh": 28,
+   "behind": "image",
+   "runs": [
+    {
+     "t": "Contact",
+     "c": "rgb(255, 255, 255)",
+     "w": 600,
+     "u": false
+    }
+   ],
+   "lines": 2,
+   "region": "header",
+   "x": 1202,
+   "y": 6,
+   "w": 70,
+   "h": 28
+  },
+  {
+   "kind": "text",
+   "tag": "a",
+   "text": "ABOUT",
+   "family": "Heebo",
+   "size": 14,
+   "weight": 600,
+   "color": "rgb(255, 255, 255)",
+   "align": "center",
+   "transform": "uppercase",
+   "spacing": 1,
+   "lh": 28,
+   "behind": "image",
+   "runs": [
+    {
+     "t": "About",
+     "c": "rgb(255, 255, 255)",
+     "w": 600,
+     "u": false
+    }
+   ],
+   "lines": 2,
+   "region": "header",
+   "x": 1297,
+   "y": 6,
+   "w": 51,
+   "h": 28
+  },
+  {
+   "kind": "text",
+   "tag": "a",
+   "text": "SIGN OUR WAIVER",
+   "family": "Heebo",
+   "size": 14,
+   "weight": 600,
+   "color": "rgb(255, 255, 255)",
+   "align": "center",
+   "transform": "uppercase",
+   "spacing": 1,
+   "lh": 28,
+   "behind": "image",
+   "runs": [
+    {
+     "t": "Sign Our Waiver",
+     "c": "rgb(255, 255, 255)",
+     "w": 600,
+     "u": false
+    }
+   ],
+   "lines": 2,
+   "region": "header",
+   "x": 1372,
+   "y": 6,
+   "w": 133,
+   "h": 28
+  },
+  {
+   "kind": "image",
+   "src": "https://www.springfieldwarriorsports.com/wp-content/uploads/2023/03/SpringField-Warrior-Logo.png",
+   "region": "header",
+   "x": 405,
+   "y": 60,
+   "w": 203,
+   "h": 59
+  },
+  {
+   "kind": "text",
+   "tag": "a",
+   "text": "ADULT CLASSES",
+   "family": "Heebo",
+   "size": 16,
+   "weight": 600,
+   "color": "rgb(255, 255, 255)",
+   "align": "left",
+   "transform": "uppercase",
+   "spacing": 0,
+   "lh": 32,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Adult Classes",
+     "c": "rgb(255, 255, 255)",
+     "w": 600,
+     "u": false
+    }
+   ],
+   "lines": 2,
+   "region": "header",
+   "x": 688,
+   "y": 73,
+   "w": 120,
+   "h": 32
+  },
+  {
+   "kind": "text",
+   "tag": "a",
+   "text": "KID CLASSES",
+   "family": "Heebo",
+   "size": 16,
+   "weight": 600,
+   "color": "rgb(255, 255, 255)",
+   "align": "left",
+   "transform": "uppercase",
+   "spacing": 0,
+   "lh": 32,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Kid Classes",
+     "c": "rgb(255, 255, 255)",
+     "w": 600,
+     "u": false
+    }
+   ],
+   "lines": 2,
+   "region": "header",
+   "x": 820,
+   "y": 73,
+   "w": 97,
+   "h": 32
+  },
+  {
+   "kind": "text",
+   "tag": "a",
+   "text": "COMPETITIONS",
+   "family": "Heebo",
+   "size": 16,
+   "weight": 600,
+   "color": "rgb(255, 255, 255)",
+   "align": "left",
+   "transform": "uppercase",
+   "spacing": 0,
+   "lh": 32,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Competitions",
+     "c": "rgb(255, 255, 255)",
+     "w": 600,
+     "u": false
+    }
+   ],
+   "lines": 2,
+   "region": "header",
+   "x": 930,
+   "y": 73,
+   "w": 116,
+   "h": 32
+  },
+  {
+   "kind": "text",
+   "tag": "a",
+   "text": "BIRTHDAY PARTIES",
+   "family": "Heebo",
+   "size": 16,
+   "weight": 600,
+   "color": "rgb(255, 255, 255)",
+   "align": "left",
+   "transform": "uppercase",
+   "spacing": 0,
+   "lh": 32,
+   "behind": "image",
+   "runs": [
+    {
+     "t": "Birthday Parties",
+     "c": "rgb(255, 255, 255)",
+     "w": 600,
+     "u": false
+    }
+   ],
+   "lines": 2,
+   "region": "header",
+   "x": 1058,
+   "y": 73,
+   "w": 142,
+   "h": 32
+  },
+  {
+   "kind": "text",
+   "tag": "a",
+   "text": "PERSONAL TRAINING",
+   "family": "Heebo",
+   "size": 16,
+   "weight": 600,
+   "color": "rgb(255, 255, 255)",
+   "align": "left",
+   "transform": "uppercase",
+   "spacing": 0,
+   "lh": 32,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Personal Training",
+     "c": "rgb(255, 255, 255)",
+     "w": 600,
+     "u": false
+    }
+   ],
+   "lines": 2,
+   "region": "header",
+   "x": 1213,
+   "y": 73,
+   "w": 158,
+   "h": 32
+  },
+  {
+   "kind": "text",
+   "tag": "a",
+   "text": "SUMMER CAMPS",
+   "family": "Heebo",
+   "size": 16,
+   "weight": 600,
+   "color": "rgb(255, 255, 255)",
+   "align": "left",
+   "transform": "uppercase",
+   "spacing": 0,
+   "lh": 32,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Summer Camps",
+     "c": "rgb(255, 255, 255)",
+     "w": 600,
+     "u": false
+    }
+   ],
+   "lines": 2,
+   "region": "header",
+   "x": 1383,
+   "y": 73,
+   "w": 126,
+   "h": 32
+  },
+  {
+   "kind": "bgimage",
+   "src": "hero",
+   "region": "main",
+   "x": 0,
+   "y": 139,
+   "w": 1920,
+   "h": 590
+  },
+  {
+   "kind": "heading",
+   "tag": "h1",
+   "text": "KIDS STAY FIT AND HEALTHY",
+   "family": "Heebo",
+   "size": 70,
+   "weight": 900,
+   "color": "rgb(219, 58, 52)",
+   "align": "center",
+   "transform": "uppercase",
+   "spacing": 0,
+   "lh": 70,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Kids Stay fit and healthy",
+     "c": "rgb(219, 58, 52)",
+     "w": 900,
+     "u": false
+    }
+   ],
+   "lines": 2,
+   "region": "main",
+   "x": 500,
+   "y": 329,
+   "w": 920,
+   "h": 140,
+   "covered": true
+  },
+  {
+   "kind": "heading",
+   "tag": "h1",
+   "text": "AT OUR INCREDIBLE SUMMER CAMPS",
+   "family": "Heebo",
+   "size": 50,
+   "weight": 900,
+   "color": "rgb(255, 255, 255)",
+   "align": "center",
+   "transform": "uppercase",
+   "spacing": 0,
+   "lh": 50,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "at our incredible summer camps",
+     "c": "rgb(255, 255, 255)",
+     "w": 900,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "main",
+   "x": 500,
+   "y": 469,
+   "w": 920,
+   "h": 50
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "Looking for a worthwhile activity for your kid this summer?",
+   "full": "Looking for a worthwhile activity for your kid this summer?",
+   "family": "Muli",
+   "size": 18,
+   "weight": 400,
+   "color": "rgba(0, 0, 0, 0.7)",
+   "align": "center",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 32,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Looking for a worthwhile activity for your kid this summer?",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "main",
+   "x": 523,
+   "y": 820,
+   "w": 874,
+   "h": 56
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "Look no further! Our incredible Summer Camps in Springfield, MO are packed with ",
+   "full": "Look no further! Our incredible Summer Camps in Springfield, MO are packed with fun and educational activities.",
+   "family": "Muli",
+   "size": 18,
+   "weight": 400,
+   "color": "rgba(0, 0, 0, 0.7)",
+   "align": "center",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 32,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Look no further! Our incredible Summer Camps in Springfield, MO are packed with fun and educational activities.",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 2,
+   "region": "main",
+   "x": 523,
+   "y": 875,
+   "w": 874,
+   "h": 87
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "Kids will get the chance to work with our Ninja Warrior trainers, and participat",
+   "full": "Kids will get the chance to work with our Ninja Warrior trainers, and participate in physical activities designed to enhance their balance, core, and overall strength. We provide healthy snacks each day as we educate children on making good nutritional choices that lead to improved health and wellness.",
+   "family": "Muli",
+   "size": 18,
+   "weight": 400,
+   "color": "rgba(0, 0, 0, 0.7)",
+   "align": "center",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 32,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Kids will get the chance to work with our Ninja Warrior trainers, and participate in physical activities designed to enhance their balance, core, and overall strength. We provide healthy snacks each day as we educate children on ",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400,
+     "u": false
+    },
+    {
+     "t": "making good nutritional choices",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 700,
+     "u": false
+    },
+    {
+     "t": " that lead to improved health and wellness.",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 3,
+   "region": "main",
+   "x": 523,
+   "y": 962,
+   "w": 874,
+   "h": 119
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "Plus, there’s a competition at every camp that awards the top place-getters a sp",
+   "full": "Plus, there’s a competition at every camp that awards the top place-getters a spot in the final championship at the end of summer – how cool is that?!",
+   "family": "Muli",
+   "size": 18,
+   "weight": 400,
+   "color": "rgba(0, 0, 0, 0.7)",
+   "align": "center",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 32,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Plus, there’s a ",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400,
+     "u": false
+    },
+    {
+     "t": "competition at every camp",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 800,
+     "u": false
+    },
+    {
+     "t": " that awards the top place-getters a spot in the final championship at the end of summer – how cool is that?!",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 2,
+   "region": "main",
+   "x": 523,
+   "y": 1081,
+   "w": 874,
+   "h": 87
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "Come join us at our camps, which are perfect for children approximately aged 6 t",
+   "full": "Come join us at our camps, which are perfect for children approximately aged 6 to 15.",
+   "family": "Muli",
+   "size": 18,
+   "weight": 400,
+   "color": "rgba(0, 0, 0, 0.7)",
+   "align": "center",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 32,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Come join us at our camps, which are perfect for children approximately aged 6 to 15.",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "main",
+   "x": 523,
+   "y": 1168,
+   "w": 874,
+   "h": 56
+  },
+  {
+   "kind": "heading",
+   "tag": "h2",
+   "text": "SUMMER CAMPS IN SPRINGFIELD — 2026 DATES",
+   "family": "Heebo",
+   "size": 40,
+   "weight": 900,
+   "color": "rgb(219, 58, 52)",
+   "align": "left",
+   "transform": "uppercase",
+   "spacing": 0,
+   "lh": 40,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "summer camps in Springfield — 2026 Dates",
+     "c": "rgb(219, 58, 52)",
+     "w": 900,
+     "u": false
+    }
+   ],
+   "lines": 3,
+   "region": "main",
+   "x": 385,
+   "y": 1404,
+   "w": 438,
+   "h": 120
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "May 25th - May 29th",
+   "full": "May 25th - May 29th",
+   "family": "Muli",
+   "size": 18,
+   "weight": 800,
+   "color": "rgba(0, 0, 0, 0.7)",
+   "align": "start",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 32,
+   "behind": "image",
+   "runs": [
+    {
+     "t": "May 25th - May 29th",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 800,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "main",
+   "x": 400,
+   "y": 1566,
+   "w": 187,
+   "h": 56
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "8:30 AM - 11:30 AM",
+   "full": "8:30 AM - 11:30 AM",
+   "family": "Muli",
+   "size": 18,
+   "weight": 400,
+   "color": "rgba(0, 0, 0, 0.7)",
+   "align": "start",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 32,
+   "behind": "image",
+   "runs": [
+    {
+     "t": "8:30 AM - 11:30 AM",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "main",
+   "x": 604,
+   "y": 1566,
+   "w": 221,
+   "h": 56
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "June 8th - June 12th",
+   "full": "June 8th - June 12th",
+   "family": "Muli",
+   "size": 18,
+   "weight": 800,
+   "color": "rgba(0, 0, 0, 0.7)",
+   "align": "start",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 32,
+   "behind": "image",
+   "runs": [
+    {
+     "t": "June 8th - June 12th",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 800,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "main",
+   "x": 400,
+   "y": 1634,
+   "w": 186,
+   "h": 56
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "8:30 AM - 11:30 AM",
+   "full": "8:30 AM - 11:30 AM",
+   "family": "Muli",
+   "size": 18,
+   "weight": 400,
+   "color": "rgba(0, 0, 0, 0.7)",
+   "align": "start",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 32,
+   "behind": "image",
+   "runs": [
+    {
+     "t": "8:30 AM - 11:30 AM",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "main",
+   "x": 604,
+   "y": 1634,
+   "w": 221,
+   "h": 56
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "June 22nd - June 26th",
+   "full": "June 22nd - June 26th",
+   "family": "Muli",
+   "size": 18,
+   "weight": 800,
+   "color": "rgba(0, 0, 0, 0.7)",
+   "align": "start",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 32,
+   "behind": "image",
+   "runs": [
+    {
+     "t": "June 22nd - June 26th",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 800,
+     "u": false
+    }
+   ],
+   "lines": 2,
+   "region": "main",
+   "x": 400,
+   "y": 1701,
+   "w": 187,
+   "h": 87
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "8:30 AM - 11:30 AM",
+   "full": "8:30 AM - 11:30 AM",
+   "family": "Muli",
+   "size": 18,
+   "weight": 400,
+   "color": "rgba(0, 0, 0, 0.7)",
+   "align": "start",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 32,
+   "behind": "image",
+   "runs": [
+    {
+     "t": "8:30 AM - 11:30 AM",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "main",
+   "x": 604,
+   "y": 1701,
+   "w": 221,
+   "h": 56
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "July 6th - July 10th",
+   "full": "July 6th - July 10th",
+   "family": "Muli",
+   "size": 18,
+   "weight": 800,
+   "color": "rgba(0, 0, 0, 0.7)",
+   "align": "start",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 32,
+   "behind": "image",
+   "runs": [
+    {
+     "t": "July 6th - July 10th",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 800,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "main",
+   "x": 400,
+   "y": 1800,
+   "w": 187,
+   "h": 56
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "8:30 AM - 11:30 AM",
+   "full": "8:30 AM - 11:30 AM",
+   "family": "Muli",
+   "size": 18,
+   "weight": 400,
+   "color": "rgba(0, 0, 0, 0.7)",
+   "align": "start",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 32,
+   "behind": "image",
+   "runs": [
+    {
+     "t": "8:30 AM - 11:30 AM",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "main",
+   "x": 604,
+   "y": 1800,
+   "w": 221,
+   "h": 56,
+   "covered": true
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "12 PM - 3 PM",
+   "full": "12 PM - 3 PM",
+   "family": "Muli",
+   "size": 18,
+   "weight": 400,
+   "color": "rgba(0, 0, 0, 0.7)",
+   "align": "start",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 32,
+   "behind": "image",
+   "runs": [
+    {
+     "t": "12 PM - 3 PM",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "main",
+   "x": 604,
+   "y": 1832,
+   "w": 221,
+   "h": 56
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "July 20th - July 24th",
+   "full": "July 20th - July 24th",
+   "family": "Muli",
+   "size": 18,
+   "weight": 800,
+   "color": "rgba(0, 0, 0, 0.7)",
+   "align": "start",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 32,
+   "behind": "image",
+   "runs": [
+    {
+     "t": "July 20th - July 24th",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 800,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "main",
+   "x": 400,
+   "y": 1899,
+   "w": 187,
+   "h": 56
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "8:30 AM - 11:30 AM",
+   "full": "8:30 AM - 11:30 AM",
+   "family": "Muli",
+   "size": 18,
+   "weight": 400,
+   "color": "rgba(0, 0, 0, 0.7)",
+   "align": "start",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 32,
+   "behind": "image",
+   "runs": [
+    {
+     "t": "8:30 AM - 11:30 AM",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "main",
+   "x": 604,
+   "y": 1899,
+   "w": 221,
+   "h": 56,
+   "covered": true
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "12 PM - 3 PM",
+   "full": "12 PM - 3 PM",
+   "family": "Muli",
+   "size": 18,
+   "weight": 400,
+   "color": "rgba(0, 0, 0, 0.7)",
+   "align": "start",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 32,
+   "behind": "image",
+   "runs": [
+    {
+     "t": "12 PM - 3 PM",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "main",
+   "x": 604,
+   "y": 1931,
+   "w": 221,
+   "h": 56
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "August 3rd - August 7th",
+   "full": "August 3rd - August 7th",
+   "family": "Muli",
+   "size": 18,
+   "weight": 800,
+   "color": "rgba(0, 0, 0, 0.7)",
+   "align": "start",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 32,
+   "behind": "image",
+   "runs": [
+    {
+     "t": "August 3rd - August 7th",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 800,
+     "u": false
+    }
+   ],
+   "lines": 2,
+   "region": "main",
+   "x": 400,
+   "y": 1998,
+   "w": 187,
+   "h": 87
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "8:30 AM - 11:30 AM",
+   "full": "8:30 AM - 11:30 AM",
+   "family": "Muli",
+   "size": 18,
+   "weight": 400,
+   "color": "rgba(0, 0, 0, 0.7)",
+   "align": "start",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 32,
+   "behind": "image",
+   "runs": [
+    {
+     "t": "8:30 AM - 11:30 AM",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "main",
+   "x": 604,
+   "y": 1998,
+   "w": 221,
+   "h": 56,
+   "covered": true
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "12 PM - 3 PM",
+   "full": "12 PM - 3 PM",
+   "family": "Muli",
+   "size": 18,
+   "weight": 400,
+   "color": "rgba(0, 0, 0, 0.7)",
+   "align": "start",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 32,
+   "behind": "image",
+   "runs": [
+    {
+     "t": "12 PM - 3 PM",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "main",
+   "x": 604,
+   "y": 2030,
+   "w": 221,
+   "h": 56
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "August 17th - August 21st",
+   "full": "August 17th - August 21st",
+   "family": "Muli",
+   "size": 18,
+   "weight": 800,
+   "color": "rgba(0, 0, 0, 0.7)",
+   "align": "start",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 32,
+   "behind": "image",
+   "runs": [
+    {
+     "t": "August 17th - August 21st",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 800,
+     "u": false
+    }
+   ],
+   "lines": 2,
+   "region": "main",
+   "x": 400,
+   "y": 2097,
+   "w": 187,
+   "h": 87
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "8:30 AM - 11:30 AM",
+   "full": "8:30 AM - 11:30 AM",
+   "family": "Muli",
+   "size": 18,
+   "weight": 400,
+   "color": "rgba(0, 0, 0, 0.7)",
+   "align": "start",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 32,
+   "behind": "image",
+   "runs": [
+    {
+     "t": "8:30 AM - 11:30 AM",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "main",
+   "x": 604,
+   "y": 2097,
+   "w": 221,
+   "h": 56,
+   "covered": true
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "12 PM - 3 PM",
+   "full": "12 PM - 3 PM",
+   "family": "Muli",
+   "size": 18,
+   "weight": 400,
+   "color": "rgba(0, 0, 0, 0.7)",
+   "align": "start",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 32,
+   "behind": "image",
+   "runs": [
+    {
+     "t": "12 PM - 3 PM",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "main",
+   "x": 604,
+   "y": 2129,
+   "w": 221,
+   "h": 56
+  },
+  {
+   "kind": "heading",
+   "tag": "h2",
+   "text": "SUMMER CAMP PRICING",
+   "family": "Heebo",
+   "size": 40,
+   "weight": 900,
+   "color": "rgb(219, 58, 52)",
+   "align": "left",
+   "transform": "uppercase",
+   "spacing": 0,
+   "lh": 40,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Summer Camp Pricing",
+     "c": "rgb(219, 58, 52)",
+     "w": 900,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "main",
+   "x": 385,
+   "y": 2208,
+   "w": 464,
+   "h": 40
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "A week of activities and snacks at Springfield Warrior Sports camps are $179, an",
+   "full": "A week of activities and snacks at Springfield Warrior Sports camps are $179, and we have discounts available for members and siblings. (You’ll need to call (417) 894-7319 and register over the phone in order to qualify for those discounts).",
+   "family": "Muli",
+   "size": 18,
+   "weight": 400,
+   "color": "rgb(106, 107, 108)",
+   "align": "start",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 32,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "A week of activities and snacks at Springfield Warrior Sports camps are $179, and we have discounts available for members and siblings. (You’ll need to call ",
+     "c": "rgb(106, 107, 108)",
+     "w": 400,
+     "u": false
+    },
+    {
+     "t": "(417) 894-7319",
+     "c": "rgb(219, 58, 52)",
+     "w": 600,
+     "u": true
+    },
+    {
+     "t": " and register over the phone in order to qualify for those discounts).",
+     "c": "rgb(106, 107, 108)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 4,
+   "region": "main",
+   "x": 386,
+   "y": 2259,
+   "w": 561,
+   "h": 150
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "Note:",
+   "full": "Note:",
+   "family": "Muli",
+   "size": 18,
+   "weight": 400,
+   "color": "rgb(106, 107, 108)",
+   "align": "start",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 32,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Note:",
+     "c": "rgb(106, 107, 108)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "main",
+   "x": 386,
+   "y": 2409,
+   "w": 561,
+   "h": 56
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "Summer camp investment monies can be pro-rated if your child can not attend the ",
+   "full": "Summer camp investment monies can be pro-rated if your child can not attend the entire week.",
+   "family": "Muli",
+   "size": 18,
+   "weight": 400,
+   "color": "rgb(106, 107, 108)",
+   "align": "start",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 32,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Summer camp investment monies can be pro-rated if your child can not attend the entire week.",
+     "c": "rgb(106, 107, 108)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 2,
+   "region": "main",
+   "x": 386,
+   "y": 2465,
+   "w": 561,
+   "h": 87
+  },
+  {
+   "kind": "image",
+   "src": "https://www.springfieldwarriorsports.com/wp-content/uploads/2023/03/spring-break.png",
+   "region": "main",
+   "x": 973,
+   "y": 1632,
+   "w": 563,
+   "h": 707
+  },
+  {
+   "kind": "heading",
+   "tag": "h2",
+   "text": "SPRINGFIELD WARRIOR REGISTRATION",
+   "family": "Heebo",
+   "size": 34,
+   "weight": 900,
+   "color": "rgb(219, 58, 52)",
+   "align": "left",
+   "transform": "uppercase",
+   "spacing": 0,
+   "lh": 34,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Springfield Warrior Registration",
+     "c": "rgb(219, 58, 52)",
+     "w": 900,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "main",
+   "x": 385,
+   "y": 2568,
+   "w": 621,
+   "h": 34
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "At our Springfield Warrior Sports camps, your kids won’t just have fun; they'll ",
+   "full": "At our Springfield Warrior Sports camps, your kids won’t just have fun; they'll become physically stronger, learn life-long nutrition habits, and improve their coordination skills — all while making new friends! Sign up by filling out the registration form below to save your kid's spot at our fun-filled summer camps at Springfield Warriors Sports today!",
+   "family": "Epilogue",
+   "size": 18,
+   "weight": 400,
+   "color": "rgba(0, 0, 0, 0.7)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 32,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "At our Springfield Warrior Sports camps, your kids won’t just have fun; they'll become physically stronger, learn life-long nutrition habits, and improve their coordination skills — all while making new friends!Sign up by filling out the registration form below to save your kid's spot at our fun-filled summer camps at Springfield Warriors Sports today! ",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 4,
+   "region": "main",
+   "x": 386,
+   "y": 2613,
+   "w": 1148,
+   "h": 189
+  },
+  {
+   "kind": "heading",
+   "tag": "h2",
+   "text": "REGISTRATION FORM",
+   "family": "Heebo",
+   "size": 50,
+   "weight": 900,
+   "color": "rgb(219, 58, 52)",
+   "align": "start",
+   "transform": "uppercase",
+   "spacing": 0,
+   "lh": 70,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Registration Form",
+     "c": "rgb(219, 58, 52)",
+     "w": 900,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "main",
+   "x": 510,
+   "y": 2978,
+   "w": 900,
+   "h": 70
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "Cost: $179 per child; member and sibling discounts available (may not be combine",
+   "full": "Cost: $179 per child; member and sibling discounts available (may not be combined). For ages 6-15 years old.",
+   "family": "Epilogue",
+   "size": 18,
+   "weight": 400,
+   "color": "rgba(0, 0, 0, 0.7)",
+   "align": "start",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 32,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Cost: $179 per child; member and sibling discounts available (may not be combined). For ages 6-15 years old.",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 2,
+   "region": "main",
+   "x": 511,
+   "y": 3049,
+   "w": 898,
+   "h": 63
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "** call with questions or to register by phone (417) 894-7319. Please call to ta",
+   "full": "** call with questions or to register by phone (417) 894-7319. Please call to take advantage of the member or sibling discounts and get registered.",
+   "family": "Epilogue",
+   "size": 18,
+   "weight": 400,
+   "color": "rgba(0, 0, 0, 0.7)",
+   "align": "start",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 32,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "** call with questions or to register by phone ",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400,
+     "u": false
+    },
+    {
+     "t": "(417) 894-7319",
+     "c": "rgb(219, 58, 52)",
+     "w": 400,
+     "u": false
+    },
+    {
+     "t": ". Please call to take advantage of the member or sibling discounts and get registered.",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 2,
+   "region": "main",
+   "x": 511,
+   "y": 3143,
+   "w": 898,
+   "h": 126
+  },
+  {
+   "kind": "heading",
+   "tag": "h2",
+   "text": "CLIENT TESTIMONIALS",
+   "family": "Heebo",
+   "size": 50,
+   "weight": 900,
+   "color": "rgb(219, 58, 52)",
+   "align": "center",
+   "transform": "uppercase",
+   "spacing": 0,
+   "lh": 70,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Client Testimonials",
+     "c": "rgb(219, 58, 52)",
+     "w": 900,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "main",
+   "x": 385,
+   "y": 5302,
+   "w": 1150,
+   "h": 70,
+   "covered": true
+  },
+  {
+   "kind": "heading",
+   "tag": "h4",
+   "text": "WHAT OUR CLIENTS SAY",
+   "family": "Heebo",
+   "size": 30,
+   "weight": 300,
+   "color": "rgb(0, 0, 0)",
+   "align": "center",
+   "transform": "uppercase",
+   "spacing": 1,
+   "lh": 42,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "What our clients say",
+     "c": "rgb(0, 0, 0)",
+     "w": 300,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "main",
+   "x": 386,
+   "y": 5363,
+   "w": 1148,
+   "h": 42
+  },
+  {
+   "kind": "image",
+   "src": "https://www.springfieldwarriorsports.com/wp-content/uploads/2023/03/qoute-icon.png",
+   "region": "main",
+   "x": 405,
+   "y": 5436,
+   "w": 65,
+   "h": 65
+  },
+  {
+   "kind": "text",
+   "tag": "div",
+   "text": "We had our son’s 10th birthday here. All of the kids had a great time. They set ",
+   "full": "We had our son’s 10th birthday here. All of the kids had a great time. They set up an obstacle course for the kids. They loved the whole experience. The favorite was the curved wall to run up. That was everyone’s challenge for the night. We will be visiting again for sure. - JENNIFER L.",
+   "family": "Muli",
+   "size": 18,
+   "weight": 400,
+   "color": "rgb(106, 107, 108)",
+   "align": "start",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 32,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "We had our son’s 10th birthday here. All of the kids had a great time. They set up an obstacle course for the kids. They loved the whole experience. The favorite was the curved wall to run up. That was everyone’s challenge for the night. We will be visiting again for sure.",
+     "c": "rgb(106, 107, 108)",
+     "w": 400,
+     "u": false
+    },
+    {
+     "t": "- Jennifer L.",
+     "c": "rgb(219, 58, 52)",
+     "w": 700,
+     "u": false
+    }
+   ],
+   "lines": 7,
+   "region": "main",
+   "x": 396,
+   "y": 5517,
+   "w": 553,
+   "h": 237
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "We had our son’s 10th birthday here. All of the kids had a great time. They set ",
+   "full": "We had our son’s 10th birthday here. All of the kids had a great time. They set up an obstacle course for the kids. They loved the whole experience. The favorite was the curved wall to run up. That was everyone’s challenge for the night. We will be visiting again for sure.",
+   "family": "Muli",
+   "size": 18,
+   "weight": 400,
+   "color": "rgb(106, 107, 108)",
+   "align": "start",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 32,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "We had our son’s 10th birthday here. All of the kids had a great time. They set up an obstacle course for the kids. They loved the whole experience. The favorite was the curved wall to run up. That was everyone’s challenge for the night. We will be visiting again for sure.",
+     "c": "rgb(106, 107, 108)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 5,
+   "region": "main",
+   "x": 396,
+   "y": 5517,
+   "w": 553,
+   "h": 182
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "- JENNIFER L.",
+   "full": "- JENNIFER L.",
+   "family": "Muli",
+   "size": 18,
+   "weight": 700,
+   "color": "rgb(219, 58, 52)",
+   "align": "start",
+   "transform": "uppercase",
+   "spacing": 0,
+   "lh": 32,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "- Jennifer L.",
+     "c": "rgb(219, 58, 52)",
+     "w": 700,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "main",
+   "x": 396,
+   "y": 5698,
+   "w": 553,
+   "h": 56
+  },
+  {
+   "kind": "image",
+   "src": "https://www.springfieldwarriorsports.com/wp-content/uploads/2023/03/qoute-icon.png",
+   "region": "main",
+   "x": 970,
+   "y": 5436,
+   "w": 65,
+   "h": 65
+  },
+  {
+   "kind": "text",
+   "tag": "div",
+   "text": "My daughter started training here 3 years ago at 8, and she still loves it!! Own",
+   "full": "My daughter started training here 3 years ago at 8, and she still loves it!! Owner and coaching staff are all super encouraging. We live an hour away but make the drive twice a week as often as possible. Training here has not only helped her get stronger physically but increased her confidence in general. Anything that makes kids want to challenge themselves to get better and better is worth it! - LEE C.",
+   "family": "Muli",
+   "size": 18,
+   "weight": 400,
+   "color": "rgb(106, 107, 108)",
+   "align": "start",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 32,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "My daughter started training here 3 years ago at 8, and she still loves it!! Owner and coaching staff are all super encouraging. We live an hour away but make the drive twice a week as often as possible. Training here has not only helped her get stronger physically but increased her confidence in general. Anything that makes kids want to challenge themselves to get better and better is worth it!",
+     "c": "rgb(106, 107, 108)",
+     "w": 400,
+     "u": false
+    },
+    {
+     "t": "- Lee C.",
+     "c": "rgb(219, 58, 52)",
+     "w": 700,
+     "u": false
+    }
+   ],
+   "lines": 9,
+   "region": "main",
+   "x": 961,
+   "y": 5517,
+   "w": 553,
+   "h": 300
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "My daughter started training here 3 years ago at 8, and she still loves it!! Own",
+   "full": "My daughter started training here 3 years ago at 8, and she still loves it!! Owner and coaching staff are all super encouraging. We live an hour away but make the drive twice a week as often as possible. Training here has not only helped her get stronger physically but increased her confidence in general. Anything that makes kids want to challenge themselves to get better and better is worth it!",
+   "family": "Muli",
+   "size": 18,
+   "weight": 400,
+   "color": "rgb(106, 107, 108)",
+   "align": "start",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 32,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "My daughter started training here 3 years ago at 8, and she still loves it!! Owner and coaching staff are all super encouraging. We live an hour away but make the drive twice a week as often as possible. Training here has not only helped her get stronger physically but increased her confidence in general. Anything that makes kids want to challenge themselves to get better and better is worth it!",
+     "c": "rgb(106, 107, 108)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 7,
+   "region": "main",
+   "x": 961,
+   "y": 5517,
+   "w": 553,
+   "h": 245
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "- LEE C.",
+   "full": "- LEE C.",
+   "family": "Muli",
+   "size": 18,
+   "weight": 700,
+   "color": "rgb(219, 58, 52)",
+   "align": "start",
+   "transform": "uppercase",
+   "spacing": 0,
+   "lh": 32,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "- Lee C.",
+     "c": "rgb(219, 58, 52)",
+     "w": 700,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "main",
+   "x": 961,
+   "y": 5761,
+   "w": 553,
+   "h": 56
+  },
+  {
+   "kind": "image",
+   "src": "https://www.springfieldwarriorsports.com/wp-content/uploads/2023/03/SWS-logo-footer.png",
+   "region": "footer",
+   "x": 405,
+   "y": 5945,
+   "w": 266,
+   "h": 76
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "Our accomplished and award winning Crew are here to help you find your strength ",
+   "full": "Our accomplished and award winning Crew are here to help you find your strength and enjoy your workouts.",
+   "family": "Muli",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(51, 51, 51)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 24,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Our accomplished and award winning Crew are here to help you find your strength and enjoy your workouts.",
+     "c": "rgb(51, 51, 51)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 3,
+   "region": "footer",
+   "x": 406,
+   "y": 6042,
+   "w": 354,
+   "h": 72
+  },
+  {
+   "kind": "icon",
+   "color": "rgb(255, 255, 255)",
+   "region": "footer",
+   "x": 414,
+   "y": 6147,
+   "w": 17,
+   "h": 17
+  },
+  {
+   "kind": "icon",
+   "color": "rgb(255, 255, 255)",
+   "region": "footer",
+   "x": 451,
+   "y": 6147,
+   "w": 17,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "CONTACT",
+   "full": "CONTACT",
+   "family": "Heebo",
+   "size": 16,
+   "weight": 900,
+   "color": "rgb(40, 82, 118)",
+   "align": "left",
+   "transform": "uppercase",
+   "spacing": 2,
+   "lh": 28,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Contact",
+     "c": "rgb(40, 82, 118)",
+     "w": 900,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "footer",
+   "x": 811,
+   "y": 5925,
+   "w": 353,
+   "h": 28
+  },
+  {
+   "kind": "icon",
+   "color": "rgb(219, 58, 52)",
+   "region": "footer",
+   "x": 822,
+   "y": 5983,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "tag": "span",
+   "text": "605 W Farm Rd 182, Springfield, MO, 65810, United States",
+   "full": "605 W Farm Rd 182, Springfield, MO, 65810, United States",
+   "family": "Muli",
+   "size": 14,
+   "weight": 400,
+   "color": "rgb(51, 51, 51)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 22,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "605 W Farm Rd 182, Springfield,MO, 65810, United States",
+     "c": "rgb(51, 51, 51)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 2,
+   "region": "footer",
+   "x": 848,
+   "y": 5978,
+   "w": 212,
+   "h": 45
+  },
+  {
+   "kind": "icon",
+   "color": "rgb(219, 58, 52)",
+   "region": "footer",
+   "x": 822,
+   "y": 6044,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "tag": "span",
+   "text": "(417) 894-7319",
+   "full": "(417) 894-7319",
+   "family": "Muli",
+   "size": 14,
+   "weight": 400,
+   "color": "rgb(51, 51, 51)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 22,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "(417) 894-7319",
+     "c": "rgb(51, 51, 51)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "footer",
+   "x": 848,
+   "y": 6039,
+   "w": 103,
+   "h": 22
+  },
+  {
+   "kind": "text",
+   "tag": "a",
+   "text": "(417) 894-7319",
+   "family": "Muli",
+   "size": 14,
+   "weight": 400,
+   "color": "rgb(51, 51, 51)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 22,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "(417) 894-7319",
+     "c": "rgb(51, 51, 51)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "footer",
+   "x": 848,
+   "y": 6041,
+   "w": 103,
+   "h": 18
+  },
+  {
+   "kind": "icon",
+   "color": "rgb(219, 58, 52)",
+   "region": "footer",
+   "x": 822,
+   "y": 6091,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "tag": "span",
+   "text": "office@swarriorsports.com",
+   "full": "office@swarriorsports.com",
+   "family": "Muli",
+   "size": 14,
+   "weight": 400,
+   "color": "rgb(51, 51, 51)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 22,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "office@swarriorsports.com",
+     "c": "rgb(51, 51, 51)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "footer",
+   "x": 848,
+   "y": 6086,
+   "w": 173,
+   "h": 22
+  },
+  {
+   "kind": "text",
+   "tag": "a",
+   "text": "office@swarriorsports.com",
+   "family": "Muli",
+   "size": 14,
+   "weight": 400,
+   "color": "rgb(51, 51, 51)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 22,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "office@swarriorsports.com",
+     "c": "rgb(51, 51, 51)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "footer",
+   "x": 848,
+   "y": 6088,
+   "w": 173,
+   "h": 18
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "QUICK LINKS",
+   "full": "QUICK LINKS",
+   "family": "Heebo",
+   "size": 16,
+   "weight": 900,
+   "color": "rgb(40, 82, 118)",
+   "align": "left",
+   "transform": "uppercase",
+   "spacing": 2,
+   "lh": 28,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "QUICK LInks",
+     "c": "rgb(40, 82, 118)",
+     "w": 900,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "footer",
+   "x": 1214,
+   "y": 5925,
+   "w": 301,
+   "h": 28
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "Home",
+   "full": "Home",
+   "family": "Muli",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(51, 51, 51)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 24,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Home",
+     "c": "rgb(51, 51, 51)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "footer",
+   "x": 1215,
+   "y": 5974,
+   "w": 299,
+   "h": 24
+  },
+  {
+   "kind": "text",
+   "tag": "a",
+   "text": "Home",
+   "family": "Muli",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(51, 51, 51)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 24,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Home",
+     "c": "rgb(51, 51, 51)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "footer",
+   "x": 1215,
+   "y": 5976,
+   "w": 44,
+   "h": 20
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "About Us",
+   "full": "About Us",
+   "family": "Muli",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(51, 51, 51)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 24,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "About Us",
+     "c": "rgb(51, 51, 51)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "footer",
+   "x": 1215,
+   "y": 6000,
+   "w": 299,
+   "h": 24
+  },
+  {
+   "kind": "text",
+   "tag": "a",
+   "text": "About Us",
+   "family": "Muli",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(51, 51, 51)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 24,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "About Us",
+     "c": "rgb(51, 51, 51)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "footer",
+   "x": 1215,
+   "y": 6002,
+   "w": 69,
+   "h": 20
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "Contact Us",
+   "full": "Contact Us",
+   "family": "Muli",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(51, 51, 51)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 24,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Contact Us",
+     "c": "rgb(51, 51, 51)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "footer",
+   "x": 1215,
+   "y": 6026,
+   "w": 299,
+   "h": 24
+  },
+  {
+   "kind": "text",
+   "tag": "a",
+   "text": "Contact Us",
+   "family": "Muli",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(51, 51, 51)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 24,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Contact Us",
+     "c": "rgb(51, 51, 51)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "footer",
+   "x": 1215,
+   "y": 6028,
+   "w": 82,
+   "h": 20
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "Meet the Team",
+   "full": "Meet the Team",
+   "family": "Muli",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(51, 51, 51)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 24,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Meet the Team",
+     "c": "rgb(51, 51, 51)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "footer",
+   "x": 1215,
+   "y": 6052,
+   "w": 299,
+   "h": 24
+  },
+  {
+   "kind": "text",
+   "tag": "a",
+   "text": "Meet the Team",
+   "family": "Muli",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(51, 51, 51)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 24,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Meet the Team",
+     "c": "rgb(51, 51, 51)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "footer",
+   "x": 1215,
+   "y": 6054,
+   "w": 109,
+   "h": 20
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "© Copyright 2026 Springfield Warrior Sports All Rights Reserved.",
+   "full": "© Copyright 2026 Springfield Warrior Sports All Rights Reserved.",
+   "family": "Epilogue",
+   "size": 14,
+   "weight": 600,
+   "color": "rgb(255, 255, 255)",
+   "align": "center",
+   "transform": "none",
+   "spacing": 2,
+   "lh": 24,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "© Copyright 2026 Springfield Warrior Sports All Rights Reserved.",
+     "c": "rgb(255, 255, 255)",
+     "w": 600,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "footer",
+   "x": 405,
+   "y": 6237,
+   "w": 1110,
+   "h": 24
+  }
+ ],
+ "bands": [
+  {
+   "bg": "rgb(255, 255, 255)",
+   "x": 0,
+   "y": 0,
+   "w": 1920,
+   "h": 139
+  },
+  {
+   "bg": "rgb(255, 255, 255)",
+   "x": 0,
+   "y": 5885,
+   "w": 1920,
+   "h": 396
+  }
+ ]
+}

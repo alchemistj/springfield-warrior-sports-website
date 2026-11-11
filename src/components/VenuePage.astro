@@ -5,6 +5,9 @@ import { routeByPath } from "../lib/routes";
 import { heroImage } from "../lib/inline-image";
 import { site } from "../data/site";
 import BaseLayout from "../layouts/BaseLayout.astro";
+import AboutBody from "./AboutBody.astro";
+import HomeBody from "./HomeBody.astro";
+import KidsBody from "./KidsBody.astro";
 import LeadForm from "./LeadForm.astro";
 import MapFacade from "./MapFacade.astro";
 import RichText from "./RichText.astro";
@@ -20,11 +23,17 @@ const event = page.formId ? eventById(page.formId) : undefined;
 
 const HERO_FILE: Record<string, string> = {
   home: "media/2025-12-IMG_2341-scaled.jpeg",
+  about: "media/2023-03-About-Banner.jpg",
 };
 const heroFile = HERO_FILE[page.slug] ?? page.heroFile;
 const hero =
   page.photoHero && heroFile
-    ? await heroImage(heroFile, { width: page.slug === "home" ? 960 : 1100, quality: page.slug === "home" ? 28 : 36, cropAspect: page.slug === "home" ? 1.9 : 2.05, cropY: 0.42 })
+    ? await heroImage(
+        heroFile,
+        page.slug === "about"
+          ? { width: 1920, quality: 55 }
+          : { width: page.slug === "home" ? 960 : 1100, quality: page.slug === "home" ? 28 : 36, cropAspect: page.slug === "home" ? 1.9 : 2.05, cropY: 0.42 },
+      )
     : null;
 
 const images = import.meta.glob("../assets/media/*.{webp,jpeg,jpg,png}", { eager: true, import: "default" }) as Record<
@@ -101,8 +110,8 @@ const RED_HERO = new Set([
   "laser-tag",
   "homeschool-sports-and-classes-springfield-mo",
 ]);
-const CENTER_HERO = new Set(["contact", "competitions", "wnl-competitions"]);
-const RIGHT_HERO = new Set(["kids-classes"]);
+const CENTER_HERO = new Set(["contact", "competitions", "wnl-competitions", "kids-classes", "about"]);
+const RIGHT_HERO = new Set<string>();
 
 let body = stripDump(page.blocks);
 const heroExtra: Block[] = [];
@@ -110,7 +119,8 @@ if (page.slug === "home") {
   while (body[0]?.type === "p" && !body[0].text.includes("●")) heroExtra.push(body.shift()!);
 }
 const bullet = body[0]?.text.includes("●") ? body.shift()! : undefined;
-const showHeroText = Boolean(hero) && page.h1FromSource;
+const aboutHero = page.slug === "about";
+const showHeroText = Boolean(hero) && page.h1FromSource && !aboutHero;
 const heroAlign = CENTER_HERO.has(page.slug) ? "center" : RIGHT_HERO.has(page.slug) ? "right" : "left";
 const heroTone = RED_HERO.has(page.slug) ? "red" : "white";
 const HERO_SIZE: Record<string, string> = {
@@ -157,65 +167,9 @@ const sections: Section[] = [];
   flush();
 }
 
-interface Card {
-  title: string;
-  titleHref?: string;
-  body: Block[];
-  button?: Block;
-}
-
-function parseCards(blocks: Block[]): Card[] {
-  const cards: Card[] = [];
-  let card: Card | null = null;
-  const flush = () => {
-    if (card) cards.push(card);
-  };
-  for (const block of blocks) {
-    if (block.type === "h2" || (block.type === "a" && card?.button)) {
-      flush();
-      card = { title: block.text, titleHref: block.type === "a" ? block.href : undefined, body: [] };
-      continue;
-    }
-    if (!card) continue;
-    if (block.type === "a" && !card.button) {
-      card.button = block;
-      continue;
-    }
-    card.body.push(block);
-  }
-  flush();
-  return cards.filter((item) => item.title);
-}
-
-const bestAt = page.slug === "home" ? body.findIndex((block) => block.text.startsWith("SPRINGFIELD'S BEST")) : -1;
-const beAt = page.slug === "home" ? body.findIndex((block) => block.text === "BE AN") : -1;
 const quoteAt = body.findIndex((block) => /client testimonials/i.test(block.text));
-const homeReady = bestAt > 0 ? body.slice(0, bestAt) : [];
-const bandTitles: string[] = [];
-let cardStart = bestAt;
-if (bestAt >= 0) {
-  cardStart = bestAt;
-  while (cardStart < body.length && body[cardStart]?.type === "h2" && cardStart < (beAt < 0 ? body.length : beAt)) {
-    const heading = body[cardStart];
-    if (!heading || /classes and activities/i.test(heading.text)) break;
-    bandTitles.push(heading.text);
-    cardStart += 1;
-  }
-}
-const homeCards = page.slug === "home" && beAt > cardStart ? parseCards(body.slice(cardStart, beAt)) : [];
-const homeEveryday = page.slug === "home" && beAt >= 0 ? body.slice(beAt, quoteAt < 0 ? undefined : quoteAt) : [];
 const quoteBlocks = quoteAt >= 0 ? body.slice(quoteAt) : [];
 
-const CARD_FILES = [
-  "media/2023-03-classes.webp",
-  "media/2023-03-train.webp",
-  "media/2023-03-birthday.webp",
-  "media/2023-12-Day-Camps.webp",
-  "media/2023-04-Parkour-Gym-Parkour-Classes-Banner.webp",
-  "media/2024-02-kids-classes.webp",
-  "media/2025-06-the-Best-Gyms-in-Springfield-MO.webp",
-];
-const CARD_POSITION = ["50% 50%", "50% 50%", "50% 50%", "50% 50%", "15% 100%", "15% 87%", "20% 87%"];
 const FUN_FILES = [1, 2, 3, 4, 5, 6].map((n) => `media/2023-03-kid-classes-img0${n}.webp`);
 const KIDS_PHOTO: Record<string, string> = {
   "pre-school": "media/2023-03-pre-shool-warriors.webp",
@@ -239,14 +193,6 @@ function isForget(text: string): boolean {
 
 function isSchedule(text: string): boolean {
   return /^(Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday|Preschool hours)\b/.test(text);
-}
-
-function hourParts(text: string): { label: string; rest: string } | null {
-  const match = text.match(/^([^:]+:)\s*(.*)$/);
-  const label = match?.[1];
-  const rest = match?.[2];
-  if (!label || rest === undefined) return null;
-  return { label, rest };
 }
 
 function factParts(text: string): string[] | null {
@@ -282,45 +228,13 @@ const h1key = norm(page.h1);
 function matchesH1(lines: string[]): boolean {
   return lines.some((line) => norm(line) === h1key) || norm(lines.join(" ")) === h1key;
 }
-const h1InHero = showHeroText;
+const h1InHero = showHeroText || aboutHero;
+const h1InBody = false;
 const h1InSection = !h1InHero && (page.slug === "home" ? matchesH1(["CLIENT TESTIMONIALS"]) : sections.some((section) => matchesH1(section.titles)) || matchesH1(quoteBlocks.filter((block) => block.type === "h2").map((block) => block.text)));
 
 const story = page.slug === "home" ? [] : sections.filter((section) => !section.quotes);
 
-interface MiniCard {
-  title: string;
-  body: Block[];
-  button?: Block;
-  image?: string;
-}
-function cardsFrom(section: Section): MiniCard[] {
-  const cards: MiniCard[] = [];
-  let card: MiniCard = { title: section.titles[0] || "", body: [] };
-  for (const block of section.body) {
-    if (block.type === "h2") continue;
-    if (block.type === "a" && card.button && block.text.split(/\s+/).length <= 4) {
-      cards.push(card);
-      card = { title: block.text, body: [] };
-      continue;
-    }
-    if (block.type === "a" && !card.button) {
-      card.button = block;
-      continue;
-    }
-    card.body.push(block);
-  }
-  if (card.title || card.body.length) cards.push(card);
-  return cards.filter((item) => item.title);
-}
-const campSections = story.filter((section) => /youth summer camp|no-school day camp/i.test(section.titles[0] || ""));
-const campCards: MiniCard[] =
-  page.slug === "kids-classes"
-    ? campSections.flatMap(cardsFrom).map((card, index) => ({
-        ...card,
-        image: ["media/2023-04-Summer-Camp-banner.webp", "", "media/2023-12-Day-Camps.webp"][index],
-      }))
-    : [];
-const pageStory = story.filter((section) => !campSections.includes(section));
+const pageStory = story;
 const quotes = page.slug === "home" ? groupQuotes(quoteBlocks) : sections.filter((section) => section.quotes).flatMap((section) => groupQuotes(section.body));
 const quoteTitles = page.slug === "home"
   ? quoteBlocks.filter((block) => block.type === "h2").map((block) => block.text)
@@ -338,14 +252,6 @@ function nextPhoto(): ContentImage | undefined {
   return image;
 }
 
-const readyTitles = homeReady.filter((block) => block.type === "h2").map((block) => block.text);
-const readyBody = homeReady.filter((block) => block.type !== "h2");
-const hours = readyBody.filter((block) => isSchedule(block.text));
-const readyCopy = readyBody.filter((block) => !isSchedule(block.text) && !/^\(see below/.test(block.text) && block.text !== "Open Gym Hours");
-const hoursNote = readyBody.find((block) => /^\(see below/.test(block.text));
-const everydayTitles = homeEveryday.filter((block) => block.type === "h2").map((block) => block.text);
-const everydayBody = homeEveryday.filter((block) => block.type !== "h2");
-const everydayKicker = everydayBody[0]?.text === "EVERYDAY WARRIOR!" ? everydayBody[0] : undefined;
 ---
 
 <BaseLayout route={route}>
@@ -353,7 +259,7 @@ const everydayKicker = everydayBody[0]?.text === "EVERYDAY WARRIOR!" ? everydayB
     hero && (
       <img
         slot="hero-photo"
-        class="atf-photo"
+        class:list={["atf-photo", { "about-hero": page.slug === "about" }]}
         src={hero.uri}
         alt={page.heroAlt}
         width={hero.width}
@@ -366,134 +272,56 @@ const everydayKicker = everydayBody[0]?.text === "EVERYDAY WARRIOR!" ? everydayB
     )
   }
   <div slot="hero" class:list={["hero-copy", hero ? `align-${heroAlign}` : "hero-plain", hero ? `tone-${heroTone}` : "", hero ? `hero-size-${heroSize}` : "", { bare: !showHeroText }]}>
-    {hero && showHeroText && <div class="hero-scrim" aria-hidden="true"></div>}
+    {hero && (showHeroText || aboutHero) && <div class:list={["hero-scrim", { "about-scrim": aboutHero }]} aria-hidden="true"></div>}
     <div class="hero-text">
-      {showHeroText && <h1>{page.h1}</h1>}
-      {page.slug === "home" && heroExtra[0] && <p class="hero-kicker">{heroExtra[0].text}</p>}
+      {aboutHero && <h1>SPRINGFIELD WARRIOR SPORTS<br />COMMUNITY</h1>}
+      {!aboutHero && (showHeroText || aboutHero) && <h1>{page.h1}</h1>}
+      {page.slug === "home" && heroExtra[0] && <h2 class="hero-kicker">{heroExtra[0].text}</h2>}
       {page.slug === "home" && heroExtra[1] && <p class="hero-sub">{heroExtra[1].text}</p>}
-      {page.slug !== "home" && showHeroText && heroExtra[0] && <p class="hero-sub">{heroExtra[0].text}</p>}
+      {page.slug === "kids-classes" && <h2 class="hero-kicker light-300">NINJA WARRIOR CLASSES FOR KIDS AND TEENS</h2>}
+      {page.slug !== "home" && page.slug !== "kids-classes" && showHeroText && heroExtra[0] && <p class="hero-sub">{heroExtra[0].text}</p>}
     </div>
   </div>
 
   {
     bullet && (
       <section class="bullet-bar" aria-label="Programs">
-        <div class="wrap bullet-row">
-          <a href="/kids-classes/">KIDS</a>
-          <span class="bullet-dot" aria-hidden="true">●</span>
-          <a href="/fitness-classes/">ADULTS</a>
-          <span class="bullet-dot" aria-hidden="true">●</span>
-          <a href="/summer-camps-in-springfield-mo/">SUMMER CAMPS</a>
-          <span class="bullet-dot" aria-hidden="true">●</span>
-          <a href="/about/">COMMUNITY</a>
-          <span class="bullet-dot" aria-hidden="true">●</span>
-          <a href="/birthday-parties/">BIRTHDAY PARTIES</a>
+        <div class="bullet-line">
+          <a href="/kids-classes/">KIDS</a><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong><em><strong><span class="dot">●</span></strong></em><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong><a href="/fitness-classes/">ADULTS</a><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong><em><strong><span class="dot">●</span></strong></em><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong><a href="/summer-camps-in-springfield-mo/">SUMMER CAMPS</a><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong><em><strong><span class="dot">●</span></strong></em><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong><a href="/about/">COMMUNITY</a><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong><em><strong><span class="dot">●</span></strong></em><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong><a href="/birthday-parties/">BIRTHDAY PARTIES</a>
+        </div>
+        <div class="bullet-stack">
+          <p><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" /></svg><span><a href="/kids-classes/">KIDS</a></span></p>
+          <p><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" /></svg><span><a href="/fitness-classes/">ADULTS</a></span></p>
+          <p><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" /></svg><span><a href="/summer-camps-in-springfield-mo/">SUMMER CAMPS</a></span></p>
+          <p><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" /></svg><span><a href="/about/">COMMUNITY</a></span></p>
+          <p><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" /></svg><span><a href="/birthday-parties/">BIRTHDAY PARTIES</a></span></p>
         </div>
       </section>
     )
   }
 
   <section class="trust" aria-label="Springfield Warrior Sports">
-    <div class="wrap trust-row">
-      <span>{site.name}</span>
-      <span>{site.tagline}</span>
-      {bullet ? null : (
-        <>
-          <span>Kids</span>
-          <span>Adults</span>
-          <span>Summer Camps</span>
-        </>
-      )}
-      <a href={site.phone.tel}>{site.phone.display}</a>
-    </div>
+    <p class="wrap trust-row">
+      <span>{site.name} {site.tagline}{bullet ? "" : " Kids Adults Summer Camps"} </span><a href={site.phone.tel}>{site.phone.display}</a>
+    </p>
   </section>
 
   {
-    !h1InHero && !h1InSection && (
+    !h1InHero && !h1InSection && !h1InBody && (
       <h1 class="sr-only">{page.h1}</h1>
     )
   }
 
   {
-    page.slug === "home" && (
-      <section class="section">
-        <div class="wrap split photos-left">
-          <img class="tall-pair" src={media("media/2025-12-SpringField-indoor-obstacle.webp").src} alt="SpringField-indoor-obstacle" width="648" height="1116" loading="lazy" decoding="async" />
-          <div class="copy">
-            <SplitTitle lines={readyTitles} />
-            {readyCopy.map((block) => <RichText text={block.text} />)}
-            <p class="hours-title"><strong>Open Gym Hours</strong></p>
-            <ul class="icon-list">
-              {hours.map((line) => {
-                const parts = hourParts(line.text);
-                return (
-                  <li>
-                    <span class="ico" aria-hidden="true">
-                      <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 11H7V11h4V6h2z" /></svg>
-                    </span>
-                    <span>
-                      {parts ? <><strong>{parts.label}</strong> {parts.rest}</> : line.text}
-                    </span>
-                  </li>
-                );
-              })}
-            </ul>
-            {hoursNote && <RichText text={hoursNote.text} />}
-          </div>
-        </div>
-      </section>
-    )
+    page.slug === "home" && <HomeBody />
   }
 
   {
-    page.slug === "home" && bandTitles.length > 0 && (
-      <section class="section blue-band">
-        <div class="wrap">
-          <SplitTitle lines={bandTitles} align="center" tone="light" />
-          <div class="card-stack">
-            {homeCards.map((card, index) => {
-              const file = CARD_FILES[index];
-              const shot = file ? media(file) : undefined;
-              const position = CARD_POSITION[index] ?? "50% 50%";
-              return (
-                <article class="program-card">
-                  {shot?.src && (
-                    <div class="card-photo">
-                      <img src={shot.src} alt="" width={shot.width} height={shot.height} loading="lazy" decoding="async" style={`object-position: ${position}`} />
-                    </div>
-                  )}
-                  <div class="card-copy">
-                    <h3>{card.titleHref ? <a href={card.titleHref}>{card.title}</a> : card.title}</h3>
-                    {card.body.map((block) => <RichText text={block.text} />)}
-                    {card.button?.href && <p><a class="btn" href={hrefOf(card.button)}>{card.button.text}</a></p>}
-                  </div>
-                </article>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-    )
+    page.slug === "about" && <AboutBody />
   }
 
   {
-    page.slug === "home" && everydayTitles.length > 0 && (
-      <section class="section">
-        <div class="wrap split">
-          <div class="copy">
-            <SplitTitle lines={[...everydayTitles, everydayKicker?.text || ""].filter(Boolean)} />
-            {everydayBody.slice(everydayKicker ? 1 : 0).map((block) =>
-              block.type === "a" ? (
-                <p><a class="btn" href={hrefOf(block)}>{block.text}</a></p>
-              ) : (
-                <RichText text={block.text} />
-              ),
-            )}
-          </div>
-          <img src={media("media/2023-03-everyday-warrior.webp").src} alt="" width="800" height="600" loading="lazy" decoding="async" />
-        </div>
-      </section>
-    )
+    page.slug === "kids-classes" && <KidsBody />
   }
 
   {
@@ -546,7 +374,7 @@ const everydayKicker = everydayBody[0]?.text === "EVERYDAY WARRIOR!" ? everydayB
   }
 
   {
-    page.slug !== "home" && page.slug !== "contact" &&
+    page.slug !== "home" && page.slug !== "about" && page.slug !== "kids-classes" && page.slug !== "contact" &&
       pageStory.map((section, index) => {
         const title = section.titles.join(" ");
         const kidsKey = Object.keys(KIDS_PHOTO).find((key) => title.toLowerCase().includes(key));
@@ -620,28 +448,6 @@ const everydayKicker = everydayBody[0]?.text === "EVERYDAY WARRIOR!" ? everydayB
   }
 
   {
-    campCards.length > 0 && (
-      <section class="section">
-        <div class="wrap trio">
-          {campCards.map((card) => {
-            const shot = card.image ? media(card.image) : undefined;
-            return (
-              <article>
-                {shot?.src && <img src={shot.src} alt="" width={shot.width} height={shot.height} loading="lazy" decoding="async" />}
-                <div class="pad">
-                  <h3>{card.title}</h3>
-                  {card.body.map((block) => <RichText text={block.text} />)}
-                  {card.button?.href && <p><a class="btn" href={hrefOf(card.button)}>{card.button.text}</a></p>}
-                </div>
-              </article>
-            );
-          })}
-        </div>
-      </section>
-    )
-  }
-
-  {
     event && page.slug !== "contact" && (
       <section class="form-band">
         <div class="wrap">
@@ -652,7 +458,7 @@ const everydayKicker = everydayBody[0]?.text === "EVERYDAY WARRIOR!" ? everydayB
   }
 
   {
-    quotes.length > 0 && (
+    quotes.length > 0 && page.slug !== "home" && page.slug !== "about" && (
       <section class="section band">
         <div class="wrap">
           {quoteTitles.length > 0 && (
@@ -673,9 +479,9 @@ const everydayKicker = everydayBody[0]?.text === "EVERYDAY WARRIOR!" ? everydayB
   }
 
   {
-    page.logos.length > 0 && (
+    page.logos.length > 0 && page.slug !== "home" && page.slug !== "about" && (
       <div class="wrap logos">
-        {page.logos.filter((logo) => !/qoute-icon|SWS-logo-footer/i.test(logo.file)).map((logo) => {
+        {page.logos.filter((logo) => !/qoute-icon|SWS-logo-footer|SpringField-Warrior-Logo/i.test(logo.file)).map((logo) => {
           const img = media(logo.file);
           return img.src ? <img src={img.src} alt={logo.alt} width="140" height="64" loading="lazy" decoding="async" /> : null;
         })}

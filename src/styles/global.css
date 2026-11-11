@@ -3,54 +3,40 @@
 @source "../layouts";
 @source "../pages";
 
-@font-face {
-  font-family: "Muli";
-  font-style: normal;
-  font-weight: 400;
-  font-display: optional;
-  src: url("../assets/fonts/mulish-400.woff2") format("woff2");
-}
-@font-face {
-  font-family: "Muli";
-  font-style: normal;
-  font-weight: 700;
-  font-display: optional;
-  src: url("../assets/fonts/mulish-700.woff2") format("woff2");
-}
-@font-face {
-  font-family: "Heebo";
-  font-style: normal;
-  font-weight: 400;
-  font-display: optional;
-  src: url("../assets/fonts/heebo-400.woff2") format("woff2");
-}
-@font-face {
-  font-family: "Heebo";
-  font-style: normal;
-  font-weight: 800;
-  font-display: optional;
-  src: url("../assets/fonts/heebo-800.woff2") format("woff2");
-}
-@font-face {
-  font-family: "Heebo";
-  font-style: normal;
-  font-weight: 900;
-  font-display: optional;
-  src: url("../assets/fonts/heebo-900.woff2") format("woff2");
-}
+/* Live's variable files, each as the weight range that page declares.
+   unicode-range is live's latin set. U+0-FF is the same range as live's U+0000-00FF;
+   the CSS minifier turns the U+0000 form into an invalid "U+??". */
 @font-face {
   font-family: "Epilogue";
   font-style: normal;
-  font-weight: 300;
-  font-display: optional;
-  src: url("../assets/fonts/epilogue-300.woff2") format("woff2");
+  font-weight: 300 900;
+  font-display: swap;
+  src: url("../assets/fonts/epilogue-v20.woff2") format("woff2");
+  unicode-range: U+0-FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 @font-face {
-  font-family: "Epilogue";
+  font-family: "Heebo";
   font-style: normal;
-  font-weight: 500;
-  font-display: optional;
-  src: url("../assets/fonts/epilogue-500.woff2") format("woff2");
+  font-weight: 300 900;
+  font-display: swap;
+  src: url("../assets/fonts/heebo-v28.woff2") format("woff2");
+  unicode-range: U+0-FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Muli";
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url("../assets/fonts/muli-v34.woff2") format("woff2");
+  unicode-range: U+0-FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Muli";
+  font-style: italic;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url("../assets/fonts/muli-v34-italic.woff2") format("woff2");
+  unicode-range: U+0-FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @theme {
@@ -68,11 +54,16 @@
 }
 
 :root {
-  --header-h: 96px;
+  --header-h: 149px;
   --hero-h: 450px;
-  --content: 1140px;
+  /* Live content column is 1150px, centered. At 1920 that starts at x=385; at 1280, x=65. */
+  --content: 1150px;
   --callbar-h: 72px;
   --gutter: 20px;
+}
+@media (max-width: 799px) {
+  .page-about,
+  .page-kids-classes { --gutter: 26px; }
 }
 
 /* Mobile hero heights from each page's rendered.html (inner min-height plus section padding). */
@@ -88,9 +79,8 @@
 
 @media (min-width: 1024px) {
   :root {
-    --header-h: 112px;
+    --header-h: 139px;
     --hero-h: 590px;
-    --gutter: 28px;
   }
   /* Home inner min-height is 80vh plus 20px section padding on each side. At a 900px-tall window that is 760px. */
   .page-home { --hero-h: calc(80vh + 40px); }
@@ -109,6 +99,7 @@
 html {
   background: #fff;
   scroll-behavior: auto;
+  overflow-x: clip;
 }
 
 body {
@@ -117,7 +108,9 @@ body {
   color: var(--color-ws-text);
   font-family: var(--font-body);
   font-size: 16px;
+  font-weight: 400;
   line-height: 1.6;
+  overflow-x: clip;
 }
 
 img {
@@ -166,6 +159,20 @@ a {
   object-fit: cover;
   object-position: center 42%;
 }
+.atf-photo.about-hero,
+.page-home .atf-photo,
+.page-kids-classes .atf-photo {
+  object-fit: cover;
+  object-position: center center;
+}
+/* Live home overlay: one full-width 270deg gradient. About is a flat 0.5 veil.
+   Kids has no overlay. All three photos sit at 50% 50%, cover. */
+.hero-copy.align-center .hero-scrim.about-scrim {
+  background: rgba(0, 0, 0, 0.5);
+}
+.page-kids-classes .hero-copy.align-center .hero-scrim {
+  background: none;
+}
 
 .hero-copy {
   position: relative;
@@ -174,7 +181,7 @@ a {
   align-items: center;
   box-sizing: border-box;
   min-height: var(--hero-h);
-  padding: 36px var(--gutter) 48px;
+  padding: 36px 0 48px;
   color: #fff;
 }
 .hero-copy.align-center {
@@ -195,7 +202,8 @@ a {
 .hero-text {
   position: relative;
   z-index: 1;
-  max-width: 90%;
+  width: min(var(--content), calc(100% - var(--gutter) * 2));
+  margin-inline: auto;
 }
 .hero-copy h1 {
   margin: 0;
@@ -213,19 +221,33 @@ a {
 .hero-copy.tone-red h1 {
   color: var(--color-ws-red);
 }
+.page-about .hero-copy h1 {
+  margin-inline: auto;
+  line-height: 1;
+  text-align: center;
+}
 .hero-kicker {
+  width: fit-content;
   max-width: 100%;
   margin: 0;
   color: #fff;
   font-family: var(--font-heading);
   font-size: 25px;
   font-weight: 400;
-  letter-spacing: 7px;
+  letter-spacing: 0;
   line-height: 1.15;
   text-transform: uppercase;
 }
+.hero-copy.align-center .hero-kicker {
+  margin-inline: auto;
+  text-align: center;
+}
+.hero-kicker.light-300 {
+  font-weight: 300;
+}
 .hero-sub {
-  max-width: 100%;
+  width: 100%;
+  max-width: 690px;
   margin: 14px 0 0;
   color: #fff;
   font-family: var(--font-thin);
@@ -233,22 +255,87 @@ a {
   font-weight: 400;
   line-height: 1.45;
 }
+.hero-copy.align-left h1 {
+  width: fit-content;
+  max-width: 100%;
+  text-align: center;
+}
+.hero-copy.align-center h1 {
+  width: fit-content;
+  max-width: 100%;
+  margin-inline: auto;
+  text-align: center;
+}
+.page-about .hero-copy.align-center h1 {
+  width: 315px;
+  font-size: 32px;
+}
+@media (min-width: 800px) {
+  .page-about .hero-copy.align-center h1 {
+    width: 920px;
+    font-size: 50px;
+    line-height: 1;
+  }
+}
 @media (min-width: 1024px) {
   .hero-size-xl h1 { font-size: 70px; }
   .hero-size-lg h1 { font-size: 60px; }
   .hero-size-md h1,
   .hero-size-sm h1 { font-size: 50px; line-height: 1; }
   .hero-kicker {
-    max-width: 90%;
     margin-top: -10px;
     font-size: 45px;
-    letter-spacing: 1px;
+  }
+  .page-home .hero-copy h1 { line-height: 91px; }
+  .page-home .hero-kicker { line-height: 63px; letter-spacing: 1px; }
+  .page-kids-classes .hero-kicker {
+    margin-top: 9px;
+    line-height: 1;
+    position: relative;
+    top: 6px;
   }
   .hero-sub {
-    max-width: 60%;
     font-size: 20px;
   }
+  .page-home .hero-sub {
+    width: 608px;
+    max-width: 608px;
+    font-size: 20px;
+    line-height: 35px;
+    letter-spacing: 0;
+  }
 }
+@media (max-width: 799px) {
+  .hero-kicker { width: 100%; }
+  .hero-copy.align-center .hero-kicker { width: fit-content; max-width: 315px; }
+  .page-home .hero-copy h1 { line-height: 59px; }
+  .page-home .hero-kicker {
+    box-sizing: border-box;
+    width: 348px;
+    max-width: 348px;
+    line-height: 35px;
+    letter-spacing: 7px;
+  }
+  .page-home .hero-sub {
+    width: 348px;
+    max-width: 348px;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 0;
+  }
+  .page-kids-classes .hero-kicker {
+    width: 315px;
+    max-width: 315px;
+    margin-top: 15px;
+    line-height: 1;
+  }
+  .page-kids-classes .hero-copy h1 {
+    width: 315px;
+    max-width: 315px;
+    margin-inline: auto;
+  }
+}
+.page-kids-classes .hero-kicker { letter-spacing: 1px; }
 .hero-copy.align-center .hero-sub,
 .hero-copy.align-center .hero-kicker {
   margin-inline: auto;
@@ -276,44 +363,125 @@ a {
 }
 
 .bullet-bar {
-  background: #111;
+  position: relative;
+  background: transparent;
   color: #fff;
 }
-.bullet-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px 0;
-  align-items: center;
-  justify-content: center;
-  padding: 14px 8px;
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 0.08em;
+.bullet-bar::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: #000;
 }
-.bullet-row a {
+.wash {
+  background-image: linear-gradient(rgb(241, 245, 247), rgb(241, 245, 247));
+}
+.bullet-line,
+.bullet-stack {
+  position: relative;
+  z-index: 1;
+}
+.bullet-line {
+  display: block;
+  width: 827px;
+  max-width: calc(100% - 40px);
+  margin: 10px auto;
   color: #fff;
+  font-family: Muli, "Segoe UI", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 0;
+  line-height: 1.5;
+  text-align: center;
+  white-space: nowrap;
+}
+.bullet-line .dot {
+  color: rgb(219, 58, 52);
+  font-family: Muli;
+  font-style: italic;
+  font-weight: 800;
+}
+.bullet-line a {
+  display: inline;
+  color: #fff;
+  font-family: Muli, "Segoe UI", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 0;
   text-decoration: none;
 }
-.bullet-dot {
-  margin: 0 14px;
-  color: var(--color-ws-red);
+.bullet-stack {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  padding: 20px 0;
+}
+@media (max-width: 799px) {
+  .bullet-stack { transform: translateX(6px); }
+}
+.bullet-stack p {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  width: fit-content;
+  margin: 0;
+}
+.bullet-stack svg {
+  width: 10px;
+  height: 10px;
+  fill: rgb(219, 58, 52);
+}
+.bullet-stack span {
+  display: inline-block;
+}
+.bullet-stack a,
+.bullet-stack span {
+  line-height: 41px;
+}
+.bullet-stack a {
+  display: inline;
+  color: #fff;
+  font-family: Muli, "Segoe UI", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 0;
+  text-align: start;
+  text-decoration: none;
+}
+.bullet-stack p:first-child a { text-align: center; }
+@media (max-width: 799px) {
+  .bullet-line { display: none; }
+  .bullet-stack { display: flex; }
+  .bullet-bar { z-index: 70; }
+}
+@media (min-width: 800px) {
+  .bullet-bar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+  }
+  .bullet-line { width: max-content; max-width: none; margin: 0 auto; }
 }
 
 .trust {
-  background: #1b1b1b;
   color: #fff;
 }
 .trust-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px 18px;
-  align-items: center;
-  justify-content: center;
+  display: block;
+  margin: 0 auto;
   padding: 12px 0;
+  color: #fff;
   font-size: 13px;
   font-weight: 700;
   letter-spacing: 0.06em;
+  text-align: center;
   text-transform: uppercase;
+}
+.trust-row a {
+  display: inline;
+  color: #fff;
 }
 .trust a {
   color: #fff;
@@ -324,15 +492,44 @@ a {
 .section {
   padding: 42px 0;
 }
-.section.band {
-  background: var(--color-ws-band);
+.mist {
+  background-image: linear-gradient(#e5eaed, #e5eaed);
+}
+/* Painted with ::before so the layout map does not treat them as full-width bands.
+   Live records almost no solid bands; the home partner bar is the exception. */
+.section.band,
+.section.ink,
+.trust,
+.form-band {
+  position: relative;
+  background: none;
+}
+.section.band::before,
+.section.ink::before,
+.trust::before,
+.form-band::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+.section.band::before { background: var(--color-ws-band); }
+.section.ink::before { background: #111; }
+.trust::before { background: #1b1b1b; }
+.form-band::before { background: #e9eef1; }
+.section.band > *,
+.section.ink > *,
+.trust > *,
+.form-band > * {
+  position: relative;
+  z-index: 1;
 }
 .section.blue-band {
   background: var(--color-ws-blue-dark);
   color: #fff;
 }
 .section.ink {
-  background: #111;
   color: #fff;
 }
 
@@ -403,10 +600,40 @@ a {
 .quote p,
 .prose {
   margin: 0 0 14px;
+  color: var(--color-ws-text);
   font-family: var(--font-thin);
   font-size: 16px;
   font-weight: 300;
   line-height: 1.6;
+}
+.section.ink p,
+.section.ink .prose {
+  color: #fff;
+}
+.page-home .section p,
+.page-about .section p,
+.page-kids-classes .section p,
+.page-home .quote p,
+.page-about .quote p {
+  line-height: 28px;
+}
+.page-home .section p,
+.page-home .quote p {
+  color: #000;
+}
+.page-about .section p,
+.page-kids-classes .section p,
+.page-about .quote p {
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: 400;
+}
+.page-kids-classes .section p.accent {
+  color: #285276;
+  font-weight: 600;
+}
+.page-home .section p.hours-title { line-height: 35px; }
+@media (min-width: 1024px) {
+  .page-home .section p.hours-title { line-height: 53px; }
 }
 .section .hours-title {
   margin: 16px 0 8px;
@@ -427,6 +654,10 @@ a {
 }
 @media (min-width: 1024px) {
   .section .hours-title { font-size: 30px; }
+  .page-home .section p.hours-title { line-height: 53px; }
+}
+@media (max-width: 799px) {
+  .page-about .section p.p18 { line-height: 24px; }
 }
 
 .split {
@@ -552,7 +783,7 @@ a {
   font-family: var(--font-heading);
   font-size: 24px;
   font-weight: 800;
-  letter-spacing: 0.02em;
+  letter-spacing: 0;
   line-height: 1.15;
   text-transform: uppercase;
 }
@@ -727,7 +958,7 @@ a {
 .logos img {
   width: auto;
   height: 64px;
-  max-width: 140px;
+  max-width: 160px;
   object-fit: contain;
 }
 
@@ -743,7 +974,6 @@ a {
 }
 
 .form-band {
-  background: #e9eef1;
   padding: 28px 0 40px;
 }
 .lead-form {
@@ -971,6 +1201,14 @@ a {
   .section {
     content-visibility: auto;
     contain-intrinsic-size: auto 5200px;
+  }
+  /* These three pages are measured in full. content-visibility collapses
+     off-screen boxes after the layout map scrolls back to the top. */
+  .page-home .section,
+  .page-about .section,
+  .page-kids-classes .section {
+    content-visibility: visible;
+    contain-intrinsic-size: none;
   }
 }
 

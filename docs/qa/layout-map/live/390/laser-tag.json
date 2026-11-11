@@ -1,0 +1,1680 @@
+{
+ "url": "https://www.springfieldwarriorsports.com/laser-tag/",
+ "width": 390,
+ "vw": 390,
+ "hiddenText": [],
+ "docWidth": 395,
+ "docHeight": 5746,
+ "items": [
+  {
+   "kind": "text",
+   "tag": "a",
+   "text": "CONTACT",
+   "family": "Heebo",
+   "size": 14,
+   "weight": 600,
+   "color": "rgb(255, 255, 255)",
+   "align": "center",
+   "transform": "uppercase",
+   "spacing": 1,
+   "lh": 28,
+   "behind": "image",
+   "runs": [
+    {
+     "t": "Contact",
+     "c": "rgb(255, 255, 255)",
+     "w": 600,
+     "u": false
+    }
+   ],
+   "lines": 2,
+   "region": "header",
+   "x": 53,
+   "y": 11,
+   "w": 70,
+   "h": 28
+  },
+  {
+   "kind": "text",
+   "tag": "a",
+   "text": "ABOUT",
+   "family": "Heebo",
+   "size": 14,
+   "weight": 600,
+   "color": "rgb(255, 255, 255)",
+   "align": "center",
+   "transform": "uppercase",
+   "spacing": 1,
+   "lh": 28,
+   "behind": "image",
+   "runs": [
+    {
+     "t": "About",
+     "c": "rgb(255, 255, 255)",
+     "w": 600,
+     "u": false
+    }
+   ],
+   "lines": 2,
+   "region": "header",
+   "x": 144,
+   "y": 11,
+   "w": 51,
+   "h": 28
+  },
+  {
+   "kind": "text",
+   "tag": "a",
+   "text": "SIGN OUR WAIVER",
+   "family": "Heebo",
+   "size": 14,
+   "weight": 600,
+   "color": "rgb(255, 255, 255)",
+   "align": "center",
+   "transform": "uppercase",
+   "spacing": 1,
+   "lh": 28,
+   "behind": "image",
+   "runs": [
+    {
+     "t": "Sign Our Waiver",
+     "c": "rgb(255, 255, 255)",
+     "w": 600,
+     "u": false
+    }
+   ],
+   "lines": 2,
+   "region": "header",
+   "x": 214,
+   "y": 11,
+   "w": 133,
+   "h": 28
+  },
+  {
+   "kind": "image",
+   "src": "https://www.springfieldwarriorsports.com/wp-content/uploads/2023/03/SpringField-Warrior-Logo.png",
+   "region": "header",
+   "x": 20,
+   "y": 70,
+   "w": 203,
+   "h": 59
+  },
+  {
+   "kind": "icon",
+   "color": "rgb(255, 255, 255)",
+   "region": "header",
+   "x": 354,
+   "y": 89,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "kind": "bgimage",
+   "src": "hero",
+   "region": "main",
+   "x": 0,
+   "y": 149,
+   "w": 390,
+   "h": 450
+  },
+  {
+   "kind": "heading",
+   "tag": "h1",
+   "text": "WELCOME TO THE PREMIER",
+   "family": "Heebo",
+   "size": 32,
+   "weight": 900,
+   "color": "rgb(219, 58, 52)",
+   "align": "center",
+   "transform": "uppercase",
+   "spacing": 0,
+   "lh": 32,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Welcome to the Premier",
+     "c": "rgb(219, 58, 52)",
+     "w": 900,
+     "u": false
+    }
+   ],
+   "lines": 2,
+   "region": "main",
+   "x": 38,
+   "y": 288,
+   "w": 315,
+   "h": 64,
+   "covered": true
+  },
+  {
+   "kind": "heading",
+   "tag": "h1",
+   "text": "LASER TAG GYM IN SPRINGFIELD, MO",
+   "family": "Heebo",
+   "size": 32,
+   "weight": 900,
+   "color": "rgb(248, 248, 248)",
+   "align": "center",
+   "transform": "uppercase",
+   "spacing": 0,
+   "lh": 32,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Laser Tag Gym in Springfield, MO",
+     "c": "rgb(248, 248, 248)",
+     "w": 900,
+     "u": false
+    }
+   ],
+   "lines": 2,
+   "region": "main",
+   "x": 38,
+   "y": 352,
+   "w": 315,
+   "h": 64
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "Great for all ages!",
+   "full": "Great for all ages!",
+   "family": "Epilogue",
+   "size": 24,
+   "weight": 400,
+   "color": "rgb(255, 255, 255)",
+   "align": "center",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 42,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Great for all ages!",
+     "c": "rgb(255, 255, 255)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "main",
+   "x": 90,
+   "y": 427,
+   "w": 210,
+   "h": 42
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "Whether you are planning a birthday party in Springfield, a fun youth group outi",
+   "full": "Whether you are planning a birthday party in Springfield, a fun youth group outing, or a team-building event, the Warrior Ninja Sports gym is the perfect place to host a full-blown laser tag fun-fest.",
+   "family": "Epilogue",
+   "size": 20,
+   "weight": 400,
+   "color": "rgba(0, 0, 0, 0.7)",
+   "align": "center",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 35,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Whether you are planning a ",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400,
+     "u": false
+    },
+    {
+     "t": "birthday party in Springfield",
+     "c": "rgb(47, 138, 228)",
+     "w": 400,
+     "u": false
+    },
+    {
+     "t": ", a fun youth group outing, or a team-building event, the Warrior Ninja Sports gym is the perfect place to host a full-blown laser tag fun-fest.",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 7,
+   "region": "main",
+   "x": 26,
+   "y": 680,
+   "w": 338,
+   "h": 245
+  },
+  {
+   "kind": "button",
+   "text": "REGISTER FOR LASER TAG WAR NIGHTS",
+   "bg": "rgb(219, 58, 52)",
+   "radius": "100px",
+   "family": "Heebo",
+   "size": 12,
+   "weight": 700,
+   "color": "rgb(255, 255, 255)",
+   "align": "center",
+   "transform": "uppercase",
+   "spacing": 2,
+   "lh": 19,
+   "region": "main",
+   "x": 31,
+   "y": 946,
+   "w": 327,
+   "h": 39
+  },
+  {
+   "kind": "heading",
+   "tag": "h2",
+   "text": "WANT TO BOOK A PRIVATE LASER TAG PARTY?",
+   "family": "Heebo",
+   "size": 32,
+   "weight": 900,
+   "color": "rgb(219, 58, 52)",
+   "align": "start",
+   "transform": "uppercase",
+   "spacing": 0,
+   "lh": 45,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Want to Book a Private Laser Tag Party?",
+     "c": "rgb(219, 58, 52)",
+     "w": 900,
+     "u": false
+    }
+   ],
+   "lines": 3,
+   "region": "main",
+   "x": 25,
+   "y": 1155,
+   "w": 340,
+   "h": 134
+  },
+  {
+   "kind": "image",
+   "src": "https://www.springfieldwarriorsports.com/wp-content/uploads/2023/03/laser-tag-party.png",
+   "region": "main",
+   "x": 25,
+   "y": 1309,
+   "w": 300,
+   "h": 441
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "Whether you are planning a birthday party, a fun youth group outing, or a team-b",
+   "full": "Whether you are planning a birthday party, a fun youth group outing, or a team-building event, the Warrior Ninja Sports gym is the perfect place to host a full-blown laser tag fun-fest.",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 400,
+   "color": "rgba(0, 0, 0, 0.7)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 28,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Whether you are planning a birthday party, a fun youth group outing, or a team-building event, the Warrior Ninja Sports gym is the perfect place to host a full-blown laser tag fun-fest. ",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 5,
+   "region": "main",
+   "x": 26,
+   "y": 1781,
+   "w": 338,
+   "h": 140
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "The best part?",
+   "full": "The best part?",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 400,
+   "color": "rgba(0, 0, 0, 0.7)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 28,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "The best part? ",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "main",
+   "x": 26,
+   "y": 1933,
+   "w": 115,
+   "h": 28
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "Our staff will do all the setup and be on standby to offer help and assistance i",
+   "full": "Our staff will do all the setup and be on standby to offer help and assistance if needed. Our goal is to make every laser tag party the most fun, stress-free, and enjoyable experience ever.",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 400,
+   "color": "rgba(0, 0, 0, 0.7)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 28,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Our staff will do all the setup and be on standby to offer help and assistance if needed. Our goal is to make every laser tag party the most fun, stress-free, and enjoyable experience ever.",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 5,
+   "region": "main",
+   "x": 26,
+   "y": 1973,
+   "w": 338,
+   "h": 140
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "Call us today and book our entire obstacle course gym for your very own private ",
+   "full": "Call us today and book our entire obstacle course gym for your very own private laser tag party. We do the rest!",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 400,
+   "color": "rgba(0, 0, 0, 0.7)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 28,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Call us today and book our ",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400,
+     "u": false
+    },
+    {
+     "t": "entire obstacle course gym",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 600,
+     "u": false
+    },
+    {
+     "t": " for your very own private laser tag party. We do the rest!",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 3,
+   "region": "main",
+   "x": 26,
+   "y": 2125,
+   "w": 338,
+   "h": 84
+  },
+  {
+   "kind": "heading",
+   "tag": "h4",
+   "text": "HERE ARE THE DETAILS:",
+   "family": "Heebo",
+   "size": 30,
+   "weight": 900,
+   "color": "rgb(40, 82, 118)",
+   "align": "left",
+   "transform": "uppercase",
+   "spacing": 0,
+   "lh": 30,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Here are the details:",
+     "c": "rgb(40, 82, 118)",
+     "w": 900,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "main",
+   "x": 25,
+   "y": 2225,
+   "w": 338,
+   "h": 30
+  },
+  {
+   "kind": "icon",
+   "color": "rgb(219, 58, 52)",
+   "region": "main",
+   "x": 26,
+   "y": 2280,
+   "w": 15,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "tag": "span",
+   "text": "Cost: For a group of 10, the cost is $240. Each additional participant costs $10",
+   "full": "Cost: For a group of 10, the cost is $240. Each additional participant costs $10.",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 600,
+   "color": "rgb(0, 0, 0)",
+   "align": "start",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 26,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Cost:",
+     "c": "rgb(0, 0, 0)",
+     "w": 600,
+     "u": false
+    },
+    {
+     "t": " For a group of 10, the cost is $240. Each additional participant costs $10.",
+     "c": "rgb(0, 0, 0)",
+     "w": 300,
+     "u": false
+    }
+   ],
+   "lines": 2,
+   "region": "main",
+   "x": 51,
+   "y": 2275,
+   "w": 313,
+   "h": 51
+  },
+  {
+   "kind": "icon",
+   "color": "rgb(219, 58, 52)",
+   "region": "main",
+   "x": 26,
+   "y": 2336,
+   "w": 15,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "tag": "span",
+   "text": "We are available for booking on weekends and most weekdays",
+   "full": "We are available for booking on weekends and most weekdays",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 300,
+   "color": "rgb(0, 0, 0)",
+   "align": "start",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 26,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "We are available for booking on weekends and most weekdays",
+     "c": "rgb(0, 0, 0)",
+     "w": 300,
+     "u": false
+    }
+   ],
+   "lines": 2,
+   "region": "main",
+   "x": 51,
+   "y": 2331,
+   "w": 313,
+   "h": 51
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "We provide a cooler full of Gatorade for all parties. We even customize party in",
+   "full": "We provide a cooler full of Gatorade for all parties. We even customize party invitations for your event, free of charge!",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 400,
+   "color": "rgba(0, 0, 0, 0.7)",
+   "align": "start",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 28,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "We provide a cooler full of Gatorade for all parties. We even customize party invitations for your event, free of charge!",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 3,
+   "region": "main",
+   "x": 26,
+   "y": 2394,
+   "w": 338,
+   "h": 84
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "Plus, if you have a birthday kiddo in the group, they will receive a Springfield",
+   "full": "Plus, if you have a birthday kiddo in the group, they will receive a Springfield Warrior Sports t-shirt and a free Junior Warrior class voucher!",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 400,
+   "color": "rgba(0, 0, 0, 0.7)",
+   "align": "start",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 28,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Plus, if you have a birthday kiddo in the group, they will receive a Springfield Warrior Sports t-shirt and a free Junior Warrior class voucher!",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 4,
+   "region": "main",
+   "x": 26,
+   "y": 2490,
+   "w": 338,
+   "h": 112
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "We want kids to have a blast, making memories that last a lifetime.",
+   "full": "We want kids to have a blast, making memories that last a lifetime.",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 400,
+   "color": "rgba(0, 0, 0, 0.7)",
+   "align": "start",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 28,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "We want kids to have a blast, making memories that last a lifetime.",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 2,
+   "region": "main",
+   "x": 26,
+   "y": 2614,
+   "w": 338,
+   "h": 56
+  },
+  {
+   "kind": "bgimage",
+   "src": "https://www.springfieldwarriorsports.com/wp-content/uploads/2023/11/laser-tag-war-nights.jpg",
+   "region": "main",
+   "x": 0,
+   "y": 2741,
+   "w": 390,
+   "h": 381
+  },
+  {
+   "kind": "heading",
+   "tag": "h2",
+   "text": "READY TO BOOK?",
+   "family": "Heebo",
+   "size": 32,
+   "weight": 900,
+   "color": "rgb(255, 255, 255)",
+   "align": "center",
+   "transform": "uppercase",
+   "spacing": 0,
+   "lh": 32,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "READY TO BOOK?",
+     "c": "rgb(255, 255, 255)",
+     "w": 900,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "main",
+   "x": 42,
+   "y": 2811,
+   "w": 306,
+   "h": 32
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "You can begin the booking process on our website by clicking here or calling us ",
+   "full": "You can begin the booking process on our website by clicking here or calling us today at (417) 894-7319 to request a time to reserve the gym for your private party.",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(255, 255, 255)",
+   "align": "center",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 28,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "You can begin the booking process on our website by ",
+     "c": "rgb(255, 255, 255)",
+     "w": 400,
+     "u": false
+    },
+    {
+     "t": "clicking here",
+     "c": "rgb(219, 58, 52)",
+     "w": 400,
+     "u": false
+    },
+    {
+     "t": " or calling us today at ",
+     "c": "rgb(255, 255, 255)",
+     "w": 400,
+     "u": false
+    },
+    {
+     "t": "(417) 894-7319",
+     "c": "rgb(219, 58, 52)",
+     "w": 400,
+     "u": false
+    },
+    {
+     "t": " to request a time to reserve the gym for your private party.",
+     "c": "rgb(255, 255, 255)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 4,
+   "region": "main",
+   "x": 26,
+   "y": 2854,
+   "w": 338,
+   "h": 112
+  },
+  {
+   "kind": "heading",
+   "tag": "h3",
+   "text": "WE LOOK FORWARD TO HOSTING YOU.",
+   "family": "Heebo",
+   "size": 20,
+   "weight": 300,
+   "color": "rgb(255, 255, 255)",
+   "align": "center",
+   "transform": "uppercase",
+   "spacing": 0,
+   "lh": 24,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "We look forward to hosting you.",
+     "c": "rgb(255, 255, 255)",
+     "w": 300,
+     "u": false
+    }
+   ],
+   "lines": 2,
+   "region": "main",
+   "x": 42,
+   "y": 2983,
+   "w": 306,
+   "h": 48
+  },
+  {
+   "kind": "heading",
+   "tag": "h2",
+   "text": "COME JOIN THE FUN! DON’T MISS LASER TAG NIGHT",
+   "family": "Heebo",
+   "size": 32,
+   "weight": 900,
+   "color": "rgb(219, 58, 52)",
+   "align": "left",
+   "transform": "uppercase",
+   "spacing": 0,
+   "lh": 32,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Come Join the Fun! Don’t Miss Laser Tag Night",
+     "c": "rgb(219, 58, 52)",
+     "w": 900,
+     "u": false
+    }
+   ],
+   "lines": 3,
+   "region": "main",
+   "x": 25,
+   "y": 3684,
+   "w": 340,
+   "h": 96
+  },
+  {
+   "kind": "heading",
+   "tag": "h4",
+   "text": "You’re invited!",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 400,
+   "color": "rgba(0, 0, 0, 0.7)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 26,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "You’re invited!",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "main",
+   "x": 26,
+   "y": 3791,
+   "w": 110,
+   "h": 26
+  },
+  {
+   "kind": "heading",
+   "tag": "h4",
+   "text": "We are hosting Laser Tag Nights right here in Springfield, MO, at Warrior Sports Ninja Gym.",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 400,
+   "color": "rgba(0, 0, 0, 0.7)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 26,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "We are hosting Laser Tag Nights right here in Springfield, MO, at Warrior Sports Ninja Gym.",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 3,
+   "region": "main",
+   "x": 26,
+   "y": 3829,
+   "w": 338,
+   "h": 77
+  },
+  {
+   "kind": "heading",
+   "tag": "h4",
+   "text": "This fun, family-friendly night happens once a month. And you can now sign up to get notified of all future events.",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 400,
+   "color": "rgba(0, 0, 0, 0.7)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 26,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "This fun, family-friendly night happens once a month. And you can now sign up to get notified of all future events.",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 3,
+   "region": "main",
+   "x": 26,
+   "y": 3918,
+   "w": 338,
+   "h": 77
+  },
+  {
+   "kind": "heading",
+   "tag": "h4",
+   "text": "We are open to all ages and our staff is ready and available to keep the experience fun, enjoyable, and stress-free.",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 400,
+   "color": "rgba(0, 0, 0, 0.7)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 26,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "We are open to all ages and our staff is ready and available to keep the experience fun, enjoyable, and stress-free.",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 4,
+   "region": "main",
+   "x": 26,
+   "y": 4007,
+   "w": 338,
+   "h": 102
+  },
+  {
+   "kind": "heading",
+   "tag": "h4",
+   "text": "So, don’t miss it! Come make memories that will last a lifetime.",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 400,
+   "color": "rgba(0, 0, 0, 0.7)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 26,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "So, don’t miss it! Come make memories that will last a lifetime.",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 2,
+   "region": "main",
+   "x": 26,
+   "y": 4121,
+   "w": 338,
+   "h": 51
+  },
+  {
+   "kind": "icon",
+   "color": "rgb(219, 58, 52)",
+   "region": "main",
+   "x": 26,
+   "y": 4203,
+   "w": 15,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "tag": "span",
+   "text": "Cost: $15 per person (Members of the Warrior Sports gym pay half-price)",
+   "full": "Cost: $15 per person (Members of the Warrior Sports gym pay half-price)",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 600,
+   "color": "rgb(0, 0, 0)",
+   "align": "start",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 26,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Cost: ",
+     "c": "rgb(0, 0, 0)",
+     "w": 600,
+     "u": false
+    },
+    {
+     "t": "$15 per person (Members of the Warrior Sports gym pay half-price)",
+     "c": "rgb(0, 0, 0)",
+     "w": 300,
+     "u": false
+    }
+   ],
+   "lines": 2,
+   "region": "main",
+   "x": 51,
+   "y": 4198,
+   "w": 313,
+   "h": 51
+  },
+  {
+   "kind": "heading",
+   "tag": "h4",
+   "text": "Note: Laser Tag Nights typically happen on Friday evenings.",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(40, 82, 118)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 26,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Note: Laser Tag Nights typically happen on Friday evenings. ",
+     "c": "rgb(40, 82, 118)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 2,
+   "region": "main",
+   "x": 26,
+   "y": 4265,
+   "w": 338,
+   "h": 51
+  },
+  {
+   "kind": "heading",
+   "tag": "h4",
+   "text": "Sign up now to get notified of all future laser tag events!",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 400,
+   "color": "rgba(0, 0, 0, 0.7)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 26,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Sign up now to get notified of all future laser tag events! ",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 2,
+   "region": "main",
+   "x": 26,
+   "y": 4329,
+   "w": 338,
+   "h": 51
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "\"*\" indicates required fields",
+   "full": "\"*\" indicates required fields",
+   "family": "Muli",
+   "size": 18,
+   "weight": 400,
+   "color": "rgb(106, 107, 108)",
+   "align": "start",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 32,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "\"",
+     "c": "rgb(106, 107, 108)",
+     "w": 400,
+     "u": false
+    },
+    {
+     "t": "*",
+     "c": "rgb(192, 43, 10)",
+     "w": 400,
+     "u": false
+    },
+    {
+     "t": "\" indicates required fields",
+     "c": "rgb(106, 107, 108)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "main",
+   "x": 26,
+   "y": 4417,
+   "w": 338,
+   "h": 52
+  },
+  {
+   "kind": "image",
+   "src": "https://www.springfieldwarriorsports.com/wp-content/uploads/2023/11/laser-tag-fun-fest.jpg",
+   "region": "main",
+   "x": 25,
+   "y": 3242,
+   "w": 300,
+   "h": 412
+  },
+  {
+   "kind": "image",
+   "src": "https://www.springfieldwarriorsports.com/wp-content/uploads/2023/03/SWS-logo-footer.png",
+   "region": "footer",
+   "x": 20,
+   "y": 5010,
+   "w": 266,
+   "h": 76
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "Our accomplished and award winning Crew are here to help you find your strength ",
+   "full": "Our accomplished and award winning Crew are here to help you find your strength and enjoy your workouts.",
+   "family": "Muli",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(51, 51, 51)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 24,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Our accomplished and award winning Crew are here to help you find your strength and enjoy your workouts.",
+     "c": "rgb(51, 51, 51)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 3,
+   "region": "footer",
+   "x": 21,
+   "y": 5107,
+   "w": 348,
+   "h": 72
+  },
+  {
+   "kind": "icon",
+   "color": "rgb(255, 255, 255)",
+   "region": "footer",
+   "x": 29,
+   "y": 5213,
+   "w": 17,
+   "h": 17
+  },
+  {
+   "kind": "icon",
+   "color": "rgb(255, 255, 255)",
+   "region": "footer",
+   "x": 66,
+   "y": 5213,
+   "w": 17,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "CONTACT",
+   "full": "CONTACT",
+   "family": "Heebo",
+   "size": 16,
+   "weight": 900,
+   "color": "rgb(40, 82, 118)",
+   "align": "left",
+   "transform": "uppercase",
+   "spacing": 2,
+   "lh": 28,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Contact",
+     "c": "rgb(40, 82, 118)",
+     "w": 900,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "footer",
+   "x": 20,
+   "y": 5272,
+   "w": 350,
+   "h": 28
+  },
+  {
+   "kind": "icon",
+   "color": "rgb(219, 58, 52)",
+   "region": "footer",
+   "x": 31,
+   "y": 5315,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "tag": "span",
+   "text": "605 W Farm Rd 182, Springfield, MO, 65810, United States",
+   "full": "605 W Farm Rd 182, Springfield, MO, 65810, United States",
+   "family": "Muli",
+   "size": 14,
+   "weight": 400,
+   "color": "rgb(51, 51, 51)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 22,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "605 W Farm Rd 182, Springfield,MO, 65810, United States",
+     "c": "rgb(51, 51, 51)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 2,
+   "region": "footer",
+   "x": 57,
+   "y": 5310,
+   "w": 212,
+   "h": 45
+  },
+  {
+   "kind": "icon",
+   "color": "rgb(219, 58, 52)",
+   "region": "footer",
+   "x": 31,
+   "y": 5370,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "tag": "span",
+   "text": "(417) 894-7319",
+   "full": "(417) 894-7319",
+   "family": "Muli",
+   "size": 14,
+   "weight": 400,
+   "color": "rgb(51, 51, 51)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 22,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "(417) 894-7319",
+     "c": "rgb(51, 51, 51)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "footer",
+   "x": 57,
+   "y": 5365,
+   "w": 103,
+   "h": 22
+  },
+  {
+   "kind": "text",
+   "tag": "a",
+   "text": "(417) 894-7319",
+   "family": "Muli",
+   "size": 14,
+   "weight": 400,
+   "color": "rgb(51, 51, 51)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 22,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "(417) 894-7319",
+     "c": "rgb(51, 51, 51)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "footer",
+   "x": 57,
+   "y": 5367,
+   "w": 103,
+   "h": 18
+  },
+  {
+   "kind": "icon",
+   "color": "rgb(219, 58, 52)",
+   "region": "footer",
+   "x": 31,
+   "y": 5411,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "tag": "span",
+   "text": "office@swarriorsports.com",
+   "full": "office@swarriorsports.com",
+   "family": "Muli",
+   "size": 14,
+   "weight": 400,
+   "color": "rgb(51, 51, 51)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 22,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "office@swarriorsports.com",
+     "c": "rgb(51, 51, 51)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "footer",
+   "x": 57,
+   "y": 5406,
+   "w": 173,
+   "h": 22
+  },
+  {
+   "kind": "text",
+   "tag": "a",
+   "text": "office@swarriorsports.com",
+   "family": "Muli",
+   "size": 14,
+   "weight": 400,
+   "color": "rgb(51, 51, 51)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 22,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "office@swarriorsports.com",
+     "c": "rgb(51, 51, 51)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "footer",
+   "x": 57,
+   "y": 5408,
+   "w": 173,
+   "h": 18
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "QUICK LINKS",
+   "full": "QUICK LINKS",
+   "family": "Heebo",
+   "size": 16,
+   "weight": 900,
+   "color": "rgb(40, 82, 118)",
+   "align": "left",
+   "transform": "uppercase",
+   "spacing": 2,
+   "lh": 28,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "QUICK LInks",
+     "c": "rgb(40, 82, 118)",
+     "w": 900,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "footer",
+   "x": 20,
+   "y": 5467,
+   "w": 350,
+   "h": 28
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "Home",
+   "full": "Home",
+   "family": "Muli",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(51, 51, 51)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 24,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Home",
+     "c": "rgb(51, 51, 51)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "footer",
+   "x": 21,
+   "y": 5506,
+   "w": 348,
+   "h": 24
+  },
+  {
+   "kind": "text",
+   "tag": "a",
+   "text": "Home",
+   "family": "Muli",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(51, 51, 51)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 24,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Home",
+     "c": "rgb(51, 51, 51)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "footer",
+   "x": 21,
+   "y": 5508,
+   "w": 44,
+   "h": 20
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "About Us",
+   "full": "About Us",
+   "family": "Muli",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(51, 51, 51)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 24,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "About Us",
+     "c": "rgb(51, 51, 51)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "footer",
+   "x": 21,
+   "y": 5532,
+   "w": 348,
+   "h": 24
+  },
+  {
+   "kind": "text",
+   "tag": "a",
+   "text": "About Us",
+   "family": "Muli",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(51, 51, 51)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 24,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "About Us",
+     "c": "rgb(51, 51, 51)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "footer",
+   "x": 21,
+   "y": 5534,
+   "w": 69,
+   "h": 20
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "Contact Us",
+   "full": "Contact Us",
+   "family": "Muli",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(51, 51, 51)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 24,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Contact Us",
+     "c": "rgb(51, 51, 51)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "footer",
+   "x": 21,
+   "y": 5558,
+   "w": 348,
+   "h": 24
+  },
+  {
+   "kind": "text",
+   "tag": "a",
+   "text": "Contact Us",
+   "family": "Muli",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(51, 51, 51)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 24,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Contact Us",
+     "c": "rgb(51, 51, 51)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "footer",
+   "x": 21,
+   "y": 5560,
+   "w": 82,
+   "h": 20
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "Meet the Team",
+   "full": "Meet the Team",
+   "family": "Muli",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(51, 51, 51)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 24,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Meet the Team",
+     "c": "rgb(51, 51, 51)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "footer",
+   "x": 21,
+   "y": 5584,
+   "w": 348,
+   "h": 24
+  },
+  {
+   "kind": "text",
+   "tag": "a",
+   "text": "Meet the Team",
+   "family": "Muli",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(51, 51, 51)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 24,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Meet the Team",
+     "c": "rgb(51, 51, 51)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "footer",
+   "x": 21,
+   "y": 5586,
+   "w": 109,
+   "h": 20
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "© Copyright 2026",
+   "full": "© Copyright 2026",
+   "family": "Epilogue",
+   "size": 12,
+   "weight": 600,
+   "color": "rgb(255, 255, 255)",
+   "align": "center",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 20,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "© Copyright 2026",
+     "c": "rgb(255, 255, 255)",
+     "w": 600,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "footer",
+   "x": 20,
+   "y": 5665,
+   "w": 350,
+   "h": 20
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "Springfield Warrior Sports",
+   "full": "Springfield Warrior Sports",
+   "family": "Epilogue",
+   "size": 12,
+   "weight": 600,
+   "color": "rgb(255, 255, 255)",
+   "align": "center",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 20,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": " Springfield Warrior Sports",
+     "c": "rgb(255, 255, 255)",
+     "w": 600,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "footer",
+   "x": 20,
+   "y": 5685,
+   "w": 350,
+   "h": 20
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "All Rights Reserved.",
+   "full": "All Rights Reserved.",
+   "family": "Epilogue",
+   "size": 12,
+   "weight": 600,
+   "color": "rgb(255, 255, 255)",
+   "align": "center",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 20,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "All Rights Reserved.",
+     "c": "rgb(255, 255, 255)",
+     "w": 600,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "footer",
+   "x": 20,
+   "y": 5706,
+   "w": 350,
+   "h": 20
+  }
+ ],
+ "bands": [
+  {
+   "bg": "rgb(255, 255, 255)",
+   "x": 0,
+   "y": 0,
+   "w": 390,
+   "h": 149
+  },
+  {
+   "bg": "rgb(255, 255, 255)",
+   "x": 0,
+   "y": 4960,
+   "w": 390,
+   "h": 786
+  }
+ ]
+}

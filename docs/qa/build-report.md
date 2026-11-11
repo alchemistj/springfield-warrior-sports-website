@@ -110,6 +110,537 @@ Lighthouse mobile on the local preview, after these fixes. Order is performance 
 | Schedule a birthday party | 100 / 100 / 100 / 100 | 0 ms |
 | Contact | 99 / 100 / 100 / 100 | 0 ms |
 
+## Layout parity batch 1
+
+Model: Grok 4.7. Gate: `scripts/qa/compare-layout.mjs` against `docs/qa/layout-map/live` with `scripts/qa/layout-allow.json`. Tolerances and the live map were not edited. No new allow entries. The report is `docs/qa/layout-report.md`.
+
+Shared content column is 1150px, centered (`--gutter: 20px`). Self-hosted faces: Epilogue 300/400/500/600/800, Heebo 300/400/600/800/900, Muli 400/700/800, all `font-display: swap`. Home, about, and kids-classes use the live column, the live heading and body weights and colors, and a two-up CSS scroll-snap testimonial track.
+
+Differences per page, before (baseline) and after, at 1920 / 1280 / 390, then the three-width total.
+
+| Page | Before 1920 | 1280 | 390 | Total | After 1920 | 1280 | 390 | Total |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| about | 64 | 64 | 45 | 173 | 0 | 0 | 0 | 0 |
+| best-gyms-in-springfield | 129 | 128 | 90 | 347 | 126 | 126 | 89 | 341 |
+| birthday-parties | 69 | 69 | 40 | 178 | 66 | 66 | 38 | 170 |
+| competitions | 20 | 20 | 12 | 52 | 18 | 18 | 10 | 46 |
+| contact | 18 | 16 | 21 | 55 | 13 | 13 | 18 | 44 |
+| fitness-classes | 98 | 98 | 40 | 236 | 93 | 93 | 36 | 222 |
+| home | 86 | 85 | 65 | 236 | 0 | 0 | 0 | 0 |
+| homeschool-sports-and-classes-springfield-mo | 40 | 40 | 32 | 112 | 38 | 38 | 30 | 106 |
+| kids-classes | 131 | 131 | 85 | 347 | 0 | 0 | 0 | 0 |
+| laser-tag | 53 | 53 | 42 | 148 | 50 | 50 | 38 | 138 |
+| meet-the-team | 250 | 250 | 127 | 627 | 247 | 247 | 125 | 619 |
+| nerf-wars | 46 | 46 | 34 | 126 | 45 | 45 | 31 | 121 |
+| parkour | 77 | 77 | 49 | 203 | 73 | 73 | 46 | 192 |
+| personal-training | 167 | 166 | 69 | 402 | 164 | 164 | 66 | 394 |
+| registered | 3 | 3 | 6 | 12 | 2 | 2 | 4 | 8 |
+| registered-for-csna-competition | 5 | 5 | 5 | 15 | 4 | 4 | 4 | 12 |
+| registered-for-day-camps | 9 | 9 | 12 | 30 | 8 | 8 | 10 | 26 |
+| registered-for-summer-fun-competition | 4 | 4 | 7 | 15 | 3 | 3 | 5 | 11 |
+| registered-for-wnl-competition | 3 | 3 | 6 | 12 | 2 | 2 | 4 | 8 |
+| schedule-birthday-party | 14 | 14 | 10 | 38 | 12 | 12 | 8 | 32 |
+| summer-camps-in-springfield-mo | 91 | 91 | 65 | 247 | 87 | 87 | 61 | 235 |
+| thank-you-for-your-feedback | 3 | 3 | 6 | 12 | 2 | 2 | 4 | 8 |
+| wnl-competitions | 26 | 26 | 18 | 70 | 24 | 24 | 16 | 64 |
+| All pages | | | | 3693 | | | | 2797 |
+
+Home, about, and kids-classes are 0 at all three widths. No other page's count went up.
+
+Lighthouse mobile on the local preview, after this batch. Order is performance / accessibility / best practices / SEO.
+
+| Page | Score |
+|---|---|
+| Home | 98 / 100 / 100 / 100 |
+| About | 100 / 100 / 100 / 100 |
+| Kids classes | 100 / 100 / 100 / 100 |
+
+## Layout parity gate v2
+
+Model: Grok 4.7. Same compare command as batch 1, against the recaptured live map, with `scripts/qa/layout-allow.json`. The live map, the scripts, the tolerances, and `PIXEL_TOL` were not edited. The report is `docs/qa/layout-report.md`.
+
+Before is `docs/qa/layout-report-gate-v2.md` (8,239). After is 3,944. Home, about, and kids-classes are 0 at 1920, 1280, and 390. No other page's count went up.
+
+| Page | Before 1920 | 1280 | 390 | Total | After 1920 | 1280 | 390 | Total |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| about | 76 | 76 | 51 | 203 | 0 | 0 | 0 | 0 |
+| best-gyms-in-springfield | 266 | 267 | 151 | 684 | 201 | 202 | 114 | 517 |
+| birthday-parties | 156 | 156 | 87 | 399 | 92 | 92 | 51 | 235 |
+| competitions | 90 | 90 | 58 | 238 | 22 | 22 | 15 | 59 |
+| contact | 99 | 103 | 67 | 269 | 36 | 36 | 29 | 101 |
+| fitness-classes | 192 | 192 | 100 | 484 | 128 | 128 | 64 | 320 |
+| home | 125 | 125 | 96 | 346 | 0 | 0 | 0 | 0 |
+| homeschool-sports-and-classes-springfield-mo | 124 | 124 | 89 | 337 | 59 | 59 | 53 | 171 |
+| kids-classes | 120 | 120 | 83 | 323 | 0 | 0 | 0 | 0 |
+| laser-tag | 142 | 142 | 97 | 381 | 78 | 78 | 62 | 218 |
+| meet-the-team | 339 | 339 | 177 | 855 | 274 | 274 | 139 | 687 |
+| nerf-wars | 135 | 135 | 85 | 355 | 71 | 71 | 48 | 190 |
+| parkour | 153 | 153 | 94 | 400 | 86 | 86 | 52 | 224 |
+| personal-training | 267 | 267 | 120 | 654 | 203 | 203 | 77 | 483 |
+| registered | 72 | 72 | 48 | 192 | 5 | 5 | 7 | 17 |
+| registered-for-csna-competition | 72 | 72 | 47 | 191 | 6 | 6 | 6 | 18 |
+| registered-for-day-camps | 74 | 74 | 51 | 199 | 7 | 7 | 9 | 23 |
+| registered-for-summer-fun-competition | 72 | 72 | 49 | 193 | 5 | 5 | 7 | 17 |
+| registered-for-wnl-competition | 72 | 72 | 48 | 192 | 5 | 5 | 7 | 17 |
+| schedule-birthday-party | 90 | 90 | 57 | 237 | 23 | 23 | 15 | 61 |
+| summer-camps-in-springfield-mo | 229 | 229 | 171 | 629 | 162 | 162 | 128 | 452 |
+| thank-you-for-your-feedback | 74 | 74 | 50 | 198 | 7 | 7 | 9 | 23 |
+| wnl-competitions | 105 | 105 | 70 | 280 | 40 | 40 | 31 | 111 |
+| All pages | | | | 8239 | | | | 3944 |
+
+Header and footer are measured on every page. Menu and utility links are Heebo 600 at the live sizes. The content column stays 1150px. The footer column is 1110px. Home "Be an Everyday Warrior" is a full-width background with the photo on the right. Testimonials show two at a time. Open Gym Hours uses the red heading and red clocks. "The best part?" is navy at weight 500. Parkour, Personal Training, and Best Gyms use the live crops.
+
+Allow entries are the trust bar, the Call and Book a Party buttons, Josh's Plainview Road wording, and the live United States address line this footer does not show. The Memorial Day sentence is visible, in the same paragraph as the Community Murph sentence.
+
+Lighthouse mobile on the local preview, after this batch. Order is performance / accessibility / best practices / SEO.
+
+| Page | Score |
+|---|---|
+| Home | 98 / 100 / 100 / 100 |
+| About | 98 / 100 / 100 / 100 |
+| Kids classes | 99 / 100 / 100 / 100 |
+
+## Layout parity gate v2.2
+
+Model: Grok 4.7. Same compare command, against the recaptured v2.2 live map, with `scripts/qa/layout-allow.json`. The live map, the scripts, the tolerances, and `PIXEL_TOL` were not edited. The report is `docs/qa/layout-report.md`.
+
+Before is the v2.2 baseline in `docs/qa/layout-report-gate-v2.md` (4,314). After is 3,905. Home, about, and kids-classes are 0 at 1920, 1280, and 390. No other page's count went up. No allow entries were added.
+
+| Page | Before 1920 | 1280 | 390 | Total | After 1920 | 1280 | 390 | Total |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| about | 20 | 20 | 14 | 54 | 0 | 0 | 0 | 0 |
+| best-gyms-in-springfield | 189 | 190 | 108 | 487 | 182 | 183 | 106 | 471 |
+| birthday-parties | 98 | 98 | 49 | 245 | 92 | 92 | 47 | 231 |
+| competitions | 30 | 30 | 17 | 77 | 23 | 23 | 15 | 61 |
+| contact | 40 | 40 | 30 | 110 | 34 | 34 | 28 | 96 |
+| fitness-classes | 135 | 135 | 67 | 337 | 129 | 129 | 65 | 323 |
+| home | 16 | 16 | 13 | 45 | 0 | 0 | 0 | 0 |
+| homeschool-sports-and-classes-springfield-mo | 61 | 61 | 51 | 173 | 55 | 55 | 49 | 159 |
+| kids-classes | 9 | 9 | 8 | 26 | 0 | 0 | 0 | 0 |
+| laser-tag | 88 | 88 | 69 | 245 | 82 | 82 | 67 | 231 |
+| meet-the-team | 290 | 290 | 140 | 720 | 284 | 284 | 138 | 706 |
+| nerf-wars | 77 | 77 | 52 | 206 | 71 | 71 | 50 | 192 |
+| parkour | 107 | 106 | 54 | 267 | 101 | 100 | 52 | 253 |
+| personal-training | 208 | 208 | 78 | 494 | 202 | 202 | 76 | 480 |
+| registered | 9 | 9 | 7 | 25 | 3 | 3 | 5 | 11 |
+| registered-for-csna-competition | 10 | 10 | 6 | 26 | 4 | 4 | 4 | 12 |
+| registered-for-day-camps | 12 | 12 | 10 | 34 | 6 | 6 | 8 | 20 |
+| registered-for-summer-fun-competition | 10 | 10 | 8 | 28 | 4 | 4 | 6 | 14 |
+| registered-for-wnl-competition | 9 | 9 | 7 | 25 | 3 | 3 | 5 | 11 |
+| schedule-birthday-party | 27 | 27 | 15 | 69 | 21 | 21 | 13 | 55 |
+| summer-camps-in-springfield-mo | 172 | 172 | 133 | 477 | 166 | 166 | 131 | 463 |
+| thank-you-for-your-feedback | 9 | 9 | 7 | 25 | 3 | 3 | 5 | 11 |
+| wnl-competitions | 44 | 44 | 31 | 119 | 38 | 38 | 29 | 105 |
+| All pages | | | | 4314 | | | | 3905 |
+
+The shared black utility bar is 46px on desktop so the Contact, About, and Sign Our Waiver links sit on black. Footer CONTACT, QUICK LINKS, and the desktop copyright line are letter-spacing 2px. The home bullet bar is letter-spacing 0, justified to 827px. The mobile home kicker is letter-spacing 7px. Testimonials, the about colors section, and the kids summer-camps heading use the live band `#e5eaed` (rgb(229, 234, 237) from the rendered HTML). Section gaps on about and kids-classes follow the live heading spacing. The Memorial Day sentence is visible in the Community Murph paragraph.
+
+Lighthouse mobile on the local preview, after this batch. Order is performance / accessibility / best practices / SEO.
+
+| Page | Score |
+|---|---|
+| Home | 98 / 100 / 100 / 100 |
+| About | 98 / 100 / 100 / 100 |
+| Kids classes | 99 / 100 / 100 / 100 |
+
+## Layout parity gate v2.3
+
+Model: Grok 4.7. Same compare command, against the recaptured v2.3 live map, with `scripts/qa/layout-allow.json`. The live map, the scripts, the tolerances, and `PIXEL_TOL` were not edited. The report is `docs/qa/layout-report.md`.
+
+Before is the v2.3 baseline in `docs/qa/layout-report-gate-v2.md` (4,097). After is 4,059. Home and kids-classes are 0 at 1920, 1280, and 390. About is 1 at each width, and that line is the checker's JPEG-versus-PNG dominant color on the hero title, described in the layout report. No other page's count went up. No allow entries were added.
+
+| Page | Before 1920 | 1280 | 390 | Total | After 1920 | 1280 | 390 | Total |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| about | 4 | 4 | 4 | 12 | 1 | 1 | 1 | 3 |
+| best-gyms-in-springfield | 186 | 186 | 107 | 479 | 185 | 185 | 107 | 477 |
+| birthday-parties | 100 | 100 | 49 | 249 | 100 | 100 | 49 | 249 |
+| competitions | 25 | 25 | 15 | 65 | 24 | 24 | 15 | 63 |
+| contact | 35 | 35 | 33 | 103 | 35 | 35 | 33 | 103 |
+| fitness-classes | 135 | 135 | 71 | 341 | 135 | 135 | 71 | 341 |
+| home | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| homeschool-sports-and-classes-springfield-mo | 61 | 61 | 55 | 177 | 61 | 61 | 55 | 177 |
+| kids-classes | 8 | 8 | 9 | 25 | 0 | 0 | 0 | 0 |
+| laser-tag | 88 | 88 | 74 | 250 | 88 | 88 | 74 | 250 |
+| meet-the-team | 286 | 286 | 141 | 713 | 286 | 286 | 141 | 713 |
+| nerf-wars | 77 | 76 | 56 | 209 | 77 | 76 | 56 | 209 |
+| parkour | 110 | 109 | 53 | 272 | 110 | 109 | 53 | 272 |
+| personal-training | 200 | 200 | 74 | 474 | 200 | 200 | 74 | 474 |
+| registered-for-csna-competition | 4 | 4 | 4 | 12 | 4 | 4 | 4 | 12 |
+| registered-for-day-camps | 7 | 7 | 8 | 22 | 7 | 7 | 8 | 22 |
+| registered-for-summer-fun-competition | 5 | 5 | 6 | 16 | 5 | 5 | 6 | 16 |
+| registered-for-wnl-competition | 4 | 4 | 5 | 13 | 4 | 4 | 5 | 13 |
+| registered | 4 | 4 | 5 | 13 | 4 | 4 | 5 | 13 |
+| schedule-birthday-party | 22 | 22 | 11 | 55 | 22 | 22 | 11 | 55 |
+| summer-camps-in-springfield-mo | 173 | 171 | 130 | 474 | 173 | 171 | 130 | 474 |
+| thank-you-for-your-feedback | 4 | 4 | 5 | 13 | 4 | 4 | 5 | 13 |
+| wnl-competitions | 40 | 40 | 30 | 110 | 40 | 40 | 30 | 110 |
+| All pages | | | | 4097 | | | | 4059 |
+
+The about "Curious about the colors of our gym?" band and the kids summer-camps heading plus its three cards are full-width `#e5eaed` (rgb(229, 234, 237)). The about hero is a 50% black overlay on the crowd photo, so the photo stays visible behind the red title. The kids hero has no darkening overlay. The desktop kids kicker sits on the same line as live. The Memorial Day sentence is visible in the Community Murph paragraph.
+
+Lighthouse mobile on the local preview, after this batch. Order is performance / accessibility / best practices / SEO.
+
+| Page | Score |
+|---|---|
+| Home | 98 / 100 / 100 / 100 |
+| About | 98 / 100 / 100 / 100 |
+| Kids classes | 99 / 100 / 100 / 100 |
+
+## Layout parity gate v2.5
+
+Model: Grok 4.7. Same compare command, against the recaptured v2.5 live map, with `scripts/qa/layout-allow.json`. The live map, the scripts, the tolerances, and `PIXEL_TOL` were not edited. The report is `docs/qa/layout-report.md`.
+
+Before is this machine's measurement of `5748de8` (9,087). After is 7,471. Home, about, and kids-classes are 0 at 1920, 1280, and 390. No other page's count went up. No allow entries were added. The dispatch listed home 51/52/56, about 65/64/56, and kids-classes 182/182/174 on that same commit. This machine measured 50/51/56, 63/62/57, and 182/182/173. After is 0/0/0 either way.
+
+| Page | Before 1920 | 1280 | 390 | Total | After 1920 | 1280 | 390 | Total |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| about | 63 | 62 | 57 | 182 | 0 | 0 | 0 | 0 |
+| best-gyms-in-springfield | 371 | 372 | 188 | 931 | 358 | 359 | 177 | 894 |
+| birthday-parties | 214 | 215 | 84 | 513 | 201 | 202 | 73 | 476 |
+| competitions | 68 | 68 | 52 | 188 | 55 | 55 | 41 | 151 |
+| contact | 86 | 86 | 48 | 220 | 73 | 73 | 37 | 183 |
+| fitness-classes | 253 | 252 | 128 | 633 | 240 | 239 | 117 | 596 |
+| home | 50 | 51 | 56 | 157 | 0 | 0 | 0 | 0 |
+| homeschool-sports-and-classes-springfield-mo | 115 | 115 | 105 | 335 | 102 | 102 | 94 | 298 |
+| kids-classes | 182 | 182 | 173 | 537 | 0 | 0 | 0 | 0 |
+| laser-tag | 182 | 184 | 150 | 516 | 169 | 171 | 139 | 479 |
+| meet-the-team | 560 | 560 | 195 | 1315 | 547 | 547 | 184 | 1278 |
+| nerf-wars | 152 | 152 | 119 | 423 | 139 | 139 | 108 | 386 |
+| parkour | 196 | 196 | 98 | 490 | 183 | 183 | 87 | 453 |
+| personal-training | 339 | 340 | 114 | 793 | 326 | 327 | 103 | 756 |
+| registered-for-csna-competition | 25 | 25 | 23 | 73 | 12 | 12 | 12 | 36 |
+| registered-for-day-camps | 26 | 26 | 25 | 77 | 13 | 13 | 14 | 40 |
+| registered-for-summer-fun-competition | 27 | 27 | 26 | 80 | 14 | 14 | 15 | 43 |
+| registered-for-wnl-competition | 25 | 25 | 24 | 74 | 12 | 12 | 13 | 37 |
+| registered | 25 | 25 | 24 | 74 | 12 | 12 | 13 | 37 |
+| schedule-birthday-party | 68 | 68 | 22 | 158 | 55 | 55 | 11 | 121 |
+| summer-camps-in-springfield-mo | 375 | 375 | 245 | 995 | 362 | 362 | 234 | 958 |
+| thank-you-for-your-feedback | 23 | 23 | 22 | 68 | 10 | 10 | 11 | 31 |
+| wnl-competitions | 89 | 89 | 77 | 255 | 76 | 76 | 66 | 218 |
+| All pages | | | | 9087 | | | | 7471 |
+
+About and kids body copy is `rgba(0, 0, 0, 0.7)` at a 28px line height. Accent links use the live color, weight, and target. Only "Note:" is navy 600. Open gym times are weight 400. The about partnership sections and the kids program sections sit on full-width `rgb(241, 245, 247)`. The home bullet strip is `#000`. The Memorial Day sentence is visible in the Community Murph paragraph.
+
+Lighthouse mobile on the local preview, after this batch. Order is performance / accessibility / best practices / SEO.
+
+| Page | Score |
+|---|---|
+| Home | 98 / 100 / 100 / 100 |
+| About | 98 / 100 / 100 / 100 |
+| Kids classes | 100 / 100 / 100 / 100 |
+
+## Layout parity gate v2.6
+
+Model: Grok 4.7. Same compare command, against the recaptured v2.6 live map, with `scripts/qa/layout-allow.json`. The live map, the scripts, the tolerances, and `PIXEL_TOL` were not edited. The report is `docs/qa/layout-report.md`.
+
+Before is this machine's measurement of `863fb44` (8,361). The dispatch measured that commit on the Vercel preview as home 22/22/39, about 17/17/41, and kids-classes 14/14/79. This machine measured home 24/24/38, about 19/19/40, and kids-classes 14/14/77. After is 7,704. Home and about are 0 at 1920, 1280, and 390. Kids-classes is 0/0/2. The Vercel preview of this commit measured the same three pages, including the same two kids-classes lines at 390. No other page's count went up. No allow entries were added.
+
+| Page | Before 1920 | 1280 | 390 | Total | After 1920 | 1280 | 390 | Total |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| about | 19 | 19 | 40 | 78 | 0 | 0 | 0 | 0 |
+| best-gyms-in-springfield | 368 | 369 | 203 | 940 | 365 | 366 | 189 | 920 |
+| birthday-parties | 210 | 211 | 91 | 512 | 207 | 208 | 77 | 492 |
+| competitions | 58 | 58 | 60 | 176 | 55 | 55 | 51 | 161 |
+| contact | 77 | 77 | 53 | 207 | 74 | 74 | 44 | 192 |
+| fitness-classes | 243 | 242 | 142 | 627 | 240 | 239 | 128 | 607 |
+| home | 24 | 24 | 38 | 86 | 0 | 0 | 0 | 0 |
+| homeschool-sports-and-classes-springfield-mo | 108 | 108 | 115 | 331 | 105 | 105 | 101 | 311 |
+| kids-classes | 14 | 14 | 77 | 105 | 0 | 0 | 2 | 2 |
+| laser-tag | 173 | 175 | 165 | 513 | 170 | 172 | 151 | 493 |
+| meet-the-team | 584 | 584 | 202 | 1370 | 581 | 581 | 188 | 1350 |
+| nerf-wars | 148 | 148 | 139 | 435 | 145 | 145 | 125 | 415 |
+| parkour | 186 | 186 | 108 | 480 | 183 | 183 | 94 | 460 |
+| personal-training | 327 | 328 | 127 | 782 | 324 | 325 | 113 | 762 |
+| registered-for-csna-competition | 16 | 16 | 27 | 59 | 13 | 13 | 13 | 39 |
+| registered-for-day-camps | 17 | 17 | 28 | 62 | 14 | 14 | 14 | 42 |
+| registered-for-summer-fun-competition | 17 | 17 | 29 | 63 | 14 | 14 | 15 | 43 |
+| registered-for-wnl-competition | 16 | 16 | 28 | 60 | 13 | 13 | 14 | 40 |
+| registered | 16 | 16 | 28 | 60 | 13 | 13 | 14 | 40 |
+| schedule-birthday-party | 58 | 58 | 27 | 143 | 55 | 55 | 13 | 123 |
+| summer-camps-in-springfield-mo | 361 | 361 | 253 | 975 | 358 | 358 | 239 | 955 |
+| thank-you-for-your-feedback | 14 | 14 | 25 | 53 | 11 | 11 | 11 | 33 |
+| wnl-competitions | 79 | 79 | 86 | 244 | 76 | 76 | 72 | 224 |
+| All pages | | | | 8361 | | | | 7704 |
+
+Letter spacing is live's value: body 0, home card headings 0, the top bar and "WHAT OUR CLIENTS SAY" 1px. Paragraph links are `rgb(219, 58, 52)` with no underline. At 390, about and kids-classes use a 26px gutter. Section gaps on the three pages match the live map. The Memorial Day sentence is visible in the Community Murph paragraph.
+
+The two remaining kids-classes lines at 390 are the phone screenshot painting the spec's Call / Book a Party bar over "ARE YOU LOOKING…", which sits at y=800 in an 844px viewport. Live has no bar. The heading box itself matches. The words and the bar stay visible.
+
+Lighthouse mobile on the local preview, after this batch. Order is performance / accessibility / best practices / SEO. About and kids accessibility are 92 because the live red measures 4.49:1 on white.
+
+| Page | Score |
+|---|---|
+| Home | 98 / 100 / 100 / 100 |
+| About | 98 / 92 / 100 / 100 |
+| Kids classes | 98 / 92 / 100 / 100 |
+
+## Layout parity gate v2.8
+
+Model: Grok 4.7. Same compare command, against the recaptured v2.8 live map, with `scripts/qa/layout-allow.json`. The live map, the scripts, the tolerances, and `PIXEL_TOL` were not edited. The report is `docs/qa/layout-report.md`.
+
+Before is this machine's measurement of `a006990` (7,947). The dispatch measured that commit on the Vercel preview as home 10/10/5, about 7/7/4, and kids-classes 3/3/5. This machine measured home 10/10/4, about 7/7/4, and kids-classes 3/3/5. After is 7,913. Home is 3/3/0, about is 2/2/2, and kids-classes is 2/2/3. The Vercel preview of this commit measured the same three pages, with the same 19 lines. No other page's count went up. No allow entries were added.
+
+| Page | Before 1920 | 1280 | 390 | Total | After 1920 | 1280 | 390 | Total |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| about | 7 | 7 | 4 | 18 | 2 | 2 | 2 | 6 |
+| best-gyms-in-springfield | 367 | 368 | 192 | 927 | 367 | 368 | 192 | 927 |
+| birthday-parties | 209 | 210 | 79 | 498 | 209 | 210 | 79 | 498 |
+| competitions | 61 | 61 | 56 | 178 | 61 | 61 | 56 | 178 |
+| contact | 77 | 77 | 47 | 201 | 77 | 77 | 47 | 201 |
+| fitness-classes | 243 | 242 | 132 | 617 | 243 | 242 | 132 | 617 |
+| home | 10 | 10 | 4 | 24 | 3 | 3 | 0 | 6 |
+| homeschool-sports-and-classes-springfield-mo | 106 | 106 | 102 | 314 | 106 | 106 | 102 | 314 |
+| kids-classes | 3 | 3 | 5 | 11 | 2 | 2 | 3 | 7 |
+| laser-tag | 172 | 174 | 152 | 498 | 172 | 174 | 152 | 498 |
+| meet-the-team | 584 | 584 | 193 | 1361 | 584 | 584 | 193 | 1361 |
+| nerf-wars | 146 | 146 | 127 | 419 | 146 | 146 | 127 | 419 |
+| parkour | 185 | 185 | 97 | 467 | 185 | 185 | 97 | 467 |
+| personal-training | 326 | 327 | 116 | 769 | 326 | 327 | 116 | 769 |
+| registered-for-csna-competition | 14 | 14 | 14 | 42 | 14 | 14 | 14 | 42 |
+| registered-for-day-camps | 15 | 15 | 14 | 44 | 15 | 15 | 14 | 44 |
+| registered-for-summer-fun-competition | 15 | 15 | 15 | 45 | 15 | 15 | 15 | 45 |
+| registered-for-wnl-competition | 14 | 14 | 14 | 42 | 14 | 14 | 14 | 42 |
+| registered | 14 | 14 | 14 | 42 | 14 | 14 | 14 | 42 |
+| schedule-birthday-party | 57 | 57 | 14 | 128 | 57 | 57 | 14 | 128 |
+| summer-camps-in-springfield-mo | 392 | 392 | 247 | 1031 | 392 | 392 | 247 | 1031 |
+| thank-you-for-your-feedback | 12 | 12 | 11 | 35 | 12 | 12 | 11 | 35 |
+| wnl-competitions | 80 | 80 | 76 | 236 | 80 | 80 | 76 | 236 |
+| All pages | | | | 7947 | | | | 7913 |
+
+Font sizes match live exactly. The About flag band is full-width grey past the photo. The home navy partner band is found, and the white band under it matches live. At 390 the Kids Classes heading no longer covers the trust-bar phone. The Memorial Day sentence is visible in the Community Murph paragraph. Paragraph links stay the live red, `rgb(219, 58, 52)`, with no underline.
+
+The lines still open are wraps at live's size, width, and letter-spacing. The self-hosted font breaks one line off the live capture. Size and letter-spacing were not changed to force those wraps.
+
+Lighthouse mobile on the local preview, after this batch. Order is performance / accessibility / best practices / SEO. About and kids accessibility stay at 92 because the live red measures 4.49:1 on white. That question is with Josh. The red stays.
+
+| Page | Score |
+|---|---|
+| Home | 98 / 100 / 100 / 100 |
+| About | 98 / 92 / 100 / 100 |
+| Kids classes | 100 / 92 / 100 / 100 |
+
+## Layout parity gate v2.8, round 8
+
+Model: Grok 4.7. Same compare command, against the v2.8 live map, with `scripts/qa/layout-allow.json`. The live map, the scripts, the tolerances, and `PIXEL_TOL` were not edited. The report is `docs/qa/layout-report.md`.
+
+Before is this machine's measurement of `e8050b0` (7,913). The dispatch measured that commit on the Vercel preview as home 0/0/0, about 0/0/1, and kids-classes 2/2/1. After is 7,907. Home is 3/3/0, about is 2/2/1, and kids-classes is 0/0/2. The Vercel preview of this commit, measured from this machine, is the same: home 3/3/0, about 2/2/1, kids-classes 0/0/2. No other page's count went up. No allow entries were added.
+
+| Page | Before 1920 | 1280 | 390 | Total | After 1920 | 1280 | 390 | Total |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| about | 2 | 2 | 2 | 6 | 2 | 2 | 1 | 5 |
+| best-gyms-in-springfield | 367 | 368 | 192 | 927 | 367 | 368 | 192 | 927 |
+| birthday-parties | 209 | 210 | 79 | 498 | 209 | 210 | 79 | 498 |
+| competitions | 61 | 61 | 56 | 178 | 61 | 61 | 56 | 178 |
+| contact | 77 | 77 | 47 | 201 | 77 | 77 | 47 | 201 |
+| fitness-classes | 243 | 242 | 132 | 617 | 243 | 242 | 132 | 617 |
+| home | 3 | 3 | 0 | 6 | 3 | 3 | 0 | 6 |
+| homeschool-sports-and-classes-springfield-mo | 106 | 106 | 102 | 314 | 106 | 106 | 102 | 314 |
+| kids-classes | 2 | 2 | 3 | 7 | 0 | 0 | 2 | 2 |
+| laser-tag | 172 | 174 | 152 | 498 | 172 | 174 | 152 | 498 |
+| meet-the-team | 584 | 584 | 193 | 1361 | 584 | 584 | 193 | 1361 |
+| nerf-wars | 146 | 146 | 127 | 419 | 146 | 146 | 127 | 419 |
+| parkour | 185 | 185 | 97 | 467 | 185 | 185 | 97 | 467 |
+| personal-training | 326 | 327 | 116 | 769 | 326 | 327 | 116 | 769 |
+| registered-for-csna-competition | 14 | 14 | 14 | 42 | 14 | 14 | 14 | 42 |
+| registered-for-day-camps | 15 | 15 | 14 | 44 | 15 | 15 | 14 | 44 |
+| registered-for-summer-fun-competition | 15 | 15 | 15 | 45 | 15 | 15 | 15 | 45 |
+| registered-for-wnl-competition | 14 | 14 | 14 | 42 | 14 | 14 | 14 | 42 |
+| registered | 14 | 14 | 14 | 42 | 14 | 14 | 14 | 42 |
+| schedule-birthday-party | 57 | 57 | 14 | 128 | 57 | 57 | 14 | 128 |
+| summer-camps-in-springfield-mo | 392 | 392 | 247 | 1031 | 392 | 392 | 247 | 1031 |
+| thank-you-for-your-feedback | 12 | 12 | 11 | 35 | 12 | 12 | 11 | 35 |
+| wnl-competitions | 80 | 80 | 76 | 236 | 80 | 80 | 76 | 236 |
+| All pages | | | | 7913 | | | | 7907 |
+
+The three live line breaks are back. The Kids Classes intro breaks before "Our experienced coaches". The Note paragraph breaks before "of the other weeks!". The Community Murph paragraph breaks twice after the link and once after "Stronger, together." The Memorial Day sentence stays in that paragraph.
+
+The self-hosted faces are live's variable files: Epilogue v20, Heebo v28, Muli v34, and Muli v34 italic. Each is a weight range with the latin unicode-range. `font-display` is swap. Nothing preloads a font.
+
+The lines still open on this machine are wraps at live's size, width, and letter-spacing. Round 7's preview measurement did not count them. Size and letter-spacing were not changed to force the wrap. Paragraph links stay the live red, `rgb(219, 58, 52)`, with no underline.
+
+Lighthouse mobile on the local preview, after this batch. Order is performance / accessibility / best practices / SEO. About and kids accessibility stay at 92 because the live red measures 4.49:1 on white. That question is with Josh. The red stays.
+
+| Page | Score |
+|---|---|
+| Home | 99 / 100 / 100 / 100 |
+| About | 98 / 92 / 100 / 100 |
+| Kids classes | 99 / 92 / 100 / 100 |
+
+## Layout parity gate v2.9, round 9
+
+Model: Grok 4.7. Gate v2.9 counts pure black and white as bands. The live map, the scripts, the tolerances, and `PIXEL_TOL` were not edited. The report is `docs/qa/layout-report.md`. No allow entries were added.
+
+Before is this machine's measurement of `b24932b` (round 8 source on gate v2.9): 8,000 differences. The dispatch measured that commit on the Vercel preview as home 3/2/2, about 1/1/1, and kids-classes 2/2/2. After is 7,932. Home is 3/3/0, about is 2/2/1, and kids-classes is 0/0/2. The Vercel preview of this commit, measured from this machine, is the same: home 3/3/0, about 2/2/1, kids-classes 0/0/2. No other page's count went up.
+
+| Page | Before 1920 | 1280 | 390 | Total | After 1920 | 1280 | 390 | Total |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| about | 3 | 3 | 2 | 8 | 2 | 2 | 1 | 5 |
+| best-gyms-in-springfield | 369 | 369 | 194 | 932 | 368 | 368 | 193 | 929 |
+| birthday-parties | 210 | 211 | 80 | 501 | 210 | 211 | 79 | 500 |
+| competitions | 62 | 62 | 57 | 181 | 61 | 61 | 56 | 178 |
+| contact | 78 | 78 | 48 | 204 | 78 | 78 | 47 | 203 |
+| fitness-classes | 245 | 244 | 134 | 623 | 244 | 243 | 133 | 620 |
+| home | 6 | 5 | 2 | 13 | 3 | 3 | 0 | 6 |
+| homeschool-sports-and-classes-springfield-mo | 108 | 107 | 103 | 318 | 107 | 106 | 102 | 315 |
+| kids-classes | 2 | 2 | 4 | 8 | 0 | 0 | 2 | 2 |
+| laser-tag | 174 | 176 | 154 | 504 | 173 | 175 | 153 | 501 |
+| meet-the-team | 585 | 585 | 195 | 1365 | 584 | 584 | 194 | 1362 |
+| nerf-wars | 148 | 147 | 128 | 423 | 147 | 146 | 127 | 420 |
+| parkour | 187 | 186 | 98 | 471 | 186 | 185 | 97 | 468 |
+| personal-training | 327 | 331 | 118 | 776 | 326 | 330 | 117 | 773 |
+| registered-for-csna-competition | 15 | 15 | 15 | 45 | 14 | 14 | 14 | 42 |
+| registered-for-day-camps | 16 | 16 | 15 | 47 | 15 | 15 | 15 | 45 |
+| registered-for-summer-fun-competition | 16 | 16 | 16 | 48 | 15 | 15 | 15 | 45 |
+| registered-for-wnl-competition | 15 | 15 | 15 | 45 | 14 | 14 | 14 | 42 |
+| registered | 15 | 15 | 15 | 45 | 14 | 14 | 14 | 42 |
+| schedule-birthday-party | 58 | 58 | 15 | 131 | 57 | 57 | 14 | 128 |
+| summer-camps-in-springfield-mo | 393 | 394 | 248 | 1035 | 393 | 394 | 247 | 1034 |
+| thank-you-for-your-feedback | 13 | 13 | 12 | 38 | 12 | 12 | 12 | 36 |
+| wnl-competitions | 81 | 81 | 77 | 239 | 80 | 80 | 76 | 236 |
+| All pages | | | | 8000 | | | | 7932 |
+
+The copyright bar matches the live CSS. Desktop text is Epilogue 14px, weight 600, letter-spacing 2px, line-height 1.7em, one centered line. The three phone lines are 12px with letter-spacing 0. The bar is 65px tall at 1920 and 1280 and 100px at 390. The desktop sentence uses the same six non-breaking spaces live uses between the three parts.
+
+Footer padding-top is the live 40px, so the gap under the navy band is no longer the old 110px. Home and about grow the white under the columns so the white band matches. Contact icons stay 16px, the live icon size. The Facebook and Instagram circles are 30px. The home bullet strip is 80px on desktop. The kids fun band is 1,059px at 1920 and 1280 and 819px at 390.
+
+Home at 390, the `rgb(0, 2, 8)` run at y=527, is the dark bottom-left of the hero photo. Live is black there for 71px, then the bullet list. The build's left edge was lighter, so the checker paired the 298px bullet list with that 71px edge. A black strip on the photo's left edge, stopped short of the list, splits them, and home at 390 matches. The same edge at 1920 was 71px against live's 41px, and that matches now too.
+
+The lines still open on this machine are the same wraps as round 8, at live's size, width, and letter-spacing. Round 8's preview measurement scored them 0. Size and letter-spacing were not changed to force the wrap. The Memorial Day sentence stays in the Community Murph paragraph. Paragraph links stay the live red, `rgb(219, 58, 52)`, with no underline.
+
+Lighthouse mobile on the local preview, after this batch. Order is performance / accessibility / best practices / SEO. About and kids accessibility stay at 92 because the live red measures 4.49:1 on white. That question is with Josh. The red stays.
+
+| Page | Score |
+|---|---|
+| Home | 99 / 100 / 100 / 100 |
+| About | 98 / 92 / 100 / 100 |
+| Kids classes | 98 / 92 / 100 / 100 |
+
+## Layout parity gate v2.10, round 10
+
+Model: Grok 4.7. Gate v2.10 reads band runs at both page margins on desktop. The live map, the scripts, the tolerances, and `PIXEL_TOL` were not edited. The report is `docs/qa/layout-report.md`. No allow entries were added.
+
+Before is this machine's measurement of `5025925` (round 9 source on gate v2.10): 8,000 differences. After is 8,009. Home is 7/9/3, about is 4/2/1, and kids-classes is 0/0/3 (1920/1280/390). The Vercel preview of this commit, measured from this machine, is the same: home 7/9/3, about 4/2/1, kids-classes 0/0/3. No page outside those three went up. Contact at 390 reads 47 instead of 51 because the map image did not load in this capture. Those four lines are the map facade, and a second capture missed them the same way.
+
+The home, about, and kids hero overlays are live's own CSS: one full-width layer each, photos at cover and 50% 50%. Home is `linear-gradient(270deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.85) 61%)`. About is a flat `rgba(0, 0, 0, 0.5)`. Kids Classes has no overlay. The edge strips, partial overlays, and the fun-band box-shadow are gone. The lines that remain are listed in `docs/qa/layout-report.md`. They are the hero pixels the live gradient and photo produce, and the same wraps as round 8. I did not paint over them.
+
+The home bullet strip takes its height from the live 20px section padding. The kids fun band takes its height from the live padding, 80px above 1024px and 70px below, on a black gradient with margin 0. The phone homeschool section's bottom padding is the live 70px. Footer contact icons are the live paths at 16px with `padding-top: 5px`. Quick Links has no left padding, so "Home" is at x=1214 against live's x=1215.
+
+The Memorial Day sentence stays in the Community Murph paragraph. Paragraph links stay the live red, `rgb(219, 58, 52)`, with no underline.
+
+Lighthouse mobile on the local preview, after this batch. Order is performance / accessibility / best practices / SEO. About and kids accessibility stay at 92 because the live red measures 4.49:1 on white. That question is with Josh. The red stays.
+
+| Page | Score |
+|---|---|
+| Home | 99 / 100 / 100 / 100 |
+| About | 98 / 92 / 100 / 100 |
+| Kids classes | 98 / 92 / 100 / 100 |
+
+## Layout parity gate v2.12, round 11
+
+Model: Grok 4.7. Gate v2.11 allows 24 for background color over a hero photo and skips band runs inside the hero. Gate v2.12 (`66f6850`) also flags a flat band that exists only in the build. It landed on the branch before this round could be pushed, so the totals below are v2.12. The live map, the scripts, the tolerances, and `PIXEL_TOL` were not edited. The report is `docs/qa/layout-report.md`. No allow entries were added.
+
+Before is this machine's measurement of `666f552` (round 10 source) on gate v2.12: 8,038 differences. Home 4/4/0, about 4/4/2, kids-classes 0/0/3 (1920/1280/390). That about count included the strips v2.12 added on the round 10 preview: `band rgb(250, 254, 255) at y=3677 (138px tall)` at 1920 and 1280, and `band rgb(250, 254, 255) at y=4926 (66px tall)` at 390. On gate v2.11 that same round 10 source was 7,906, and the everyday-photo change alone left home at 3/3/0 (7,904). After the coaches photo, the partner-band spacing, the partnerships join, the phone bullet list, the About intro padding, and the live partnerships gradient, those screenshots on v2.12 are 8,031. Home is 3/3/0, about is 2/2/1, and kids-classes is 0/0/3. No other page rose. Those three strip lines are gone.
+
+Gate v2.13 checks the gap between every consecutive heading and text block, and it does not count the build-only trust bar when that bar sits between the two blocks. `fc34a0e` then takes a band's color from the median pixel and merges runs only when those medians are within 4. Both landed before this could be pushed, so `docs/qa/layout-report.md` is that gate. The total is 8,227. Home is 5/5/2, about is 2/2/4, and kids-classes is 3/3/5. About at 1920 and 1280 is the two testimonial wraps. Home's bullet text to "GET READY TO" is 107px against live's 112px; the trust-bar text is 45px of that span, so the check reports 62px. About at 390, the intro paragraph to "CURIOUS ABOUT THE COLORS" is 276px against live's 370px because the paragraph starts at y=765 against live's 680, while the heading is already at y=1601 against live's 1610. The white before the grey flag band is 80px against live's 81px. Those headings were not moved. The y=3677 and y=4926 strips are gone, and so is the white band the median read between Perseverance and James River. The Vercel preview of `b8ef5ef` measures the same on the three pages: home 5/5/2, about 2/2/4, kids-classes 3/3/5.
+
+The "BE AN EVERYDAY WARRIOR!" photo uses live's CSS. At 800px and up the section background is `no-repeat`, `background-position: 100% 0`, `background-size: contain`, and `min-height: 632px`, on the live 750 by 669 image. Contain fills the section height and right-aligns the photo, so the right coach's arm is fully visible and the white at the page edge is the empty lower-right of the file. Between 800px and 1023px the position is `102% 100%` and the size is `50% 50%`, which is live's tablet rule. At 390 the full photo is visible, arm included, at 310 by 277 inside the column. Live's phone image is 350 by 312 because it is `width: 100%` with `margin-top: 40px` inside 20px section padding. Matching that box here made the white band at y=8160 1,035px against live's 905px, so the smaller photo stays. The 390 gate matches.
+
+`.partner-band` no longer paints `box-shadow: 0 -4px 0 rgb(40, 82, 118)`. It is `background: rgb(40, 82, 118)` with its padding. Live's partner section is `#285276` and padding, with no shadow.
+
+The About partnerships grey now meets the Perseverance band. The white strip v2.12 flags was the last row's 28px margin, the section's 42px bottom padding, and, from 800px up, the 68px margin above Perseverance. That space is padding on the grey block: 138px from 800px up and 70px below. The heading does not move. The band's background is live's `linear-gradient(rgba(229, 234, 237, 0.5), rgba(229, 234, 237, 0.5))`, which is rgb(242, 245, 246) over white. A solid rgb(241, 245, 247) looked the same, and the gate's quality-55 JPEG pulled that solid into the white above it, reporting one 2,118px band and lifting about from 2/2/1 to 4/4/1. The live gradient keeps the 700px white (live 701px) and the grey as separate runs, so on v2.12 about is back to 2/2/1. The grey was not darkened, and the phone-width space under the footer for the sticky Call bar is unchanged. The James River wash uses that same gradient. Its top space was a 939px margin from 800px up and a 412px margin below that, which left the page white after Perseverance. Live's section margin is 0, and that area is the grey, so the space is padding on the wash. The section's own 42px padding stays above it.
+
+The phone bullet list uses live's 41px line height, no gap between items, and the section's 20px padding. The items step by 42px (live 41px). The black strip is 250px against live's 277px, and home at 390 still matches.
+
+The About intro uses live's padding: 90px above the paragraph and 90px of white before the grey flag band from 800px up, and 80px and 80px below that. The paragraph's margin-bottom is 0, which is live's. The "CURIOUS ABOUT THE COLORS" heading is at y=1261 against live's 1262. The paragraph stays 44px lower than live because the hero ends later. The partnerships grey still meets the Perseverance band at 1920, 1280, and 390.
+
+The other lines still open are the same wraps as round 8, at live's size, width, and letter-spacing. Kids Classes at 390 also reads background behind "FUN AND CHALLENGING" as rgb(20, 20, 24) against live rgb(23, 40, 50). That sample is on the hero photo, and the page has no overlay, which is live's CSS. It was not painted over. The Memorial Day sentence stays in the Community Murph paragraph. Paragraph links stay the live red, `rgb(219, 58, 52)`, with no underline.
+
+Lighthouse mobile on the local preview, after this batch. Order is performance / accessibility / best practices / SEO. About and kids accessibility stay at 92 because the live red measures 4.49:1 on white. That question is with Josh. The red stays.
+
+| Page | Score |
+|---|---|
+| Home | 99 / 100 / 100 / 100 |
+| About | 97 / 92 / 100 / 100 |
+| Kids classes | 98 / 92 / 100 / 100 |
+
+## Layout parity gate v2.13, round 12
+
+Model: Grok 4.7. Gate v2.13 checks the gap between every consecutive heading and text block, and it does not count the build-only trust bar when that bar sits between the two blocks. A band's color is the median pixel, and two runs merge only when those medians are within 4. The live map, the scripts, the tolerances, and `PIXEL_TOL` were not edited. The report is `docs/qa/layout-report.md`. No allow entries were added.
+
+Before is the previous v2.13 measurement, 8,227 differences. Home was 5/5/2, about was 2/2/4, and kids-classes was 3/3/5. After is 8,211. Home is 3/3/0, about is 2/2/1, and kids-classes is 0/0/4 (1920/1280/390). No other page rose. The Vercel preview of `f93bcc8` measures the same: home 3/3/0, about 2/2/1, kids-classes 0/0/4.
+
+Adopt-a-Highway is white. At 1920 the left margin is white from y=1659 for 701px, then the partnerships grey. The section after Perseverance is that grey for 1,465px, then white for 789px. Live is 1,464px of grey and 796px of white. The wash is live's `linear-gradient(rgba(229, 234, 237, 0.5), rgba(229, 234, 237, 0.5))`, with padding-top 849px from 800px up and 412px below that.
+
+The phone Everyday Warrior photo is 350 by 312 at x=20, `width: 100%`, `margin-top: 40px`. The white run under the navy band is 897px against live's 906px. From 800px up the photo stays `contain` at `100% 0`, with `min-height: 605px`.
+
+The phone hours rows are 38px, live's clock icon with 10px of padding on each side. Program cards use a 10px gap and 50px of bottom padding, so a button sits 60px above the next photo and the navy continues 100px past the last button. Buttons use live's 2px letter-spacing, 19px line height, and 10px padding. Home at 390 matches.
+
+The phone quote name sits against the quote. Kids Classes at 800px and up uses margin-top 39px on the note, margin-bottom 93px on the intro, and margin-top 62px on CLASS TIMES. Below 800px, CLASS TIMES has margin-top 81px. The About phone testimonials section has margin-top 35px.
+
+The lines still open are wraps, at live's size, width, and letter-spacing. Kids Classes at 390 also reports the hero subtitle to "KIDS FITNESS CLASSES" as 148px against live's 213px. The visible span is 234px against live's 213px. The trust bar is 86px of that span, and the gap check subtracts it. Live has no trust bar there. Adding the 65px the check asks for would put the heading spacing at 374px against live's 288px, so the heading stays. The background behind "FUN AND CHALLENGING" is rgb(20, 20, 24) against live rgb(23, 40, 50), on the hero photo, which has no overlay. The Memorial Day sentence stays in the Community Murph paragraph. Paragraph links stay the live red, `rgb(219, 58, 52)`, with no underline.
+
+Lighthouse mobile on the local preview, after this batch. Order is performance / accessibility / best practices / SEO. About and kids accessibility stay at 92 because the live red measures 4.49:1 on white. That question is with Josh. The red stays.
+
+| Page | Score |
+|---|---|
+| Home | 99 / 100 / 100 / 100 |
+| About | 98 / 92 / 100 / 100 |
+| Kids classes | 98 / 92 / 100 / 100 |
+
+## Layout parity gate v2.15, round 13
+
+Model: Grok 4.7. Gate v2.14 accepts a gap across the trust bar with or without the bar counted. Gate v2.15 counts any flat run of 120px or more, including a band painted with a background gradient. The live map, the scripts, the tolerances, and `PIXEL_TOL` were not edited. The report is `docs/qa/layout-report.md`. No allow entries were added.
+
+On v2.13 the round 12 pages were home 3/3/0, about 2/2/1, kids-classes 0/0/4, and the site total was 8,211. On v2.15, after this round, home is 3/3/0, about is 2/2/1, and kids-classes is 0/0/3 (1920/1280/390). The site total is 8,357. The other pages are higher than that v2.13 report because v2.15 counts gradient bands on screenshots this round did not change. Home, about, and kids-classes did not gain a line. The Vercel preview of `a19d102` measures the same: home 3/3/0, about 2/2/1, kids-classes 0/0/3.
+
+The testimonials section uses live's padding, 90px on top and 80px on the bottom. Live also sets 20px on the sides, which is already the content column's gutter. The background stays `linear-gradient(#e5eaed, #e5eaed)`. The slider min-height is live's carousel box, from `--tcb-cwv-height-d` and `--tcb-cwv-height-m`: home 401px and 382px, about 375px and 331px.
+
+On the PNG the grey is 713px against live's 715px at home 1920 and 1280, 642px against 654px at home 390, 699px against 689px at about 1920 and 1280, and 595px against 603px at about 390. Home's section margin is 0. About keeps 27px of margin above the grey from 800px up. Live's margin is 0. Dropping that 27px makes the white run above the grey 714px against live's 795px, past the band limit, so the 27px stays. At 390 that margin is 0.
+
+The lines still open are wraps, at live's size, width, and letter-spacing. Kids Classes at 390 still reads the background behind "FUN AND CHALLENGING" as rgb(20, 20, 24) against live rgb(23, 40, 50), on the hero photo, which has no overlay. v2.14 accepts the phone gap across the trust bar. The Memorial Day sentence stays in the Community Murph paragraph. Paragraph links stay the live red, `rgb(219, 58, 52)`, with no underline.
+
+Lighthouse mobile on the local preview, after this batch. Order is performance / accessibility / best practices / SEO. About and kids accessibility stay at 92 because the live red measures 4.49:1 on white. That question is with Josh. The red stays.
+
+| Page | Score |
+|---|---|
+| Home | 99 / 100 / 100 / 100 |
+| About | 98 / 92 / 100 / 100 |
+| Kids classes | 98 / 92 / 100 / 100 |
+
+## Layout parity gate v2.15, round 14
+
+Model: Grok 4.7. The live map, the scripts, the tolerances, and `PIXEL_TOL` were not edited. The report is `docs/qa/layout-report.md`. No allow entries were added.
+
+On v2.15, home is 3/3/0, about is 2/2/1, and kids-classes is 0/0/3. The site total stays 8,357. No other page rose. The open lines are the same wraps as round 13. The Vercel preview of `242fc87` measures the same.
+
+The desktop bullet under the home hero uses live's markup. `--tcb-color-0` is rgb(219, 58, 52), and each ● is that color. Six `&nbsp;` sit on each side of every ●, inside `<strong>`. `text-align-last: justify` is gone, so the spaces inside "SUMMER CAMPS" and "BIRTHDAY PARTIES" are normal spaces. The line is 835px wide against live's 827px. The phone list, with its red dots, is unchanged.
+
+About's testimonials section now has margin-top 0, which is live's. From 800px up, the section above it (Community Murph) has padding-bottom 90px, which is live's section padding, so that white space is padding on the white section. The white run is 762px against live's 795px, inside the band limit. Below 800px the margin was already 0. Live's phone padding-bottom is 70px. The build's is 42px. Adding the extra 28px would move the gap from the Murph paragraph to "CLIENT TESTIMONIALS" from 174px to 202px against live's 161px, past the 40px limit, so the phone padding stays.
+
+Lighthouse mobile on the local preview, after this batch. Order is performance / accessibility / best practices / SEO.
+
+| Page | Score |
+|---|---|
+| Home | 99 / 100 / 100 / 100 |
+| About | 98 / 92 / 100 / 100 |
+| Kids classes | 98 / 92 / 100 / 100 |
+
+## Layout parity gate v2.15, round 15
+
+Model: Grok 4.7. The live map, the scripts, the tolerances, and `PIXEL_TOL` were not edited. The report is `docs/qa/layout-report.md`. No allow entries were added.
+
+On v2.15, home is 3/3/0, about is 2/2/1, and kids-classes is 0/0/3. The site total stays 8,357. No other page rose. The open lines are the same wraps as round 13.
+
+`.bullet-line .dot` is `font-family: Muli`, weight 800, and italic. The nested `strong` had been resolving to weight 900, and the family's Segoe UI / sans-serif fallback drew a 16.5px dot. Muli has no ● glyph, so with no fallback list Chromium uses its own fallback. In Chromium at 1920 and 1280 each dot's box is 10.9px wide. The phone list is unchanged. The Vercel preview of `2dc5d0a` measures the same, and the dots there are 10.9px wide too.
+
+Lighthouse mobile on the local preview, after this batch. Order is performance / accessibility / best practices / SEO.
+
+| Page | Score |
+|---|---|
+| Home | 99 / 100 / 100 / 100 |
+| About | 97 / 92 / 100 / 100 |
+| Kids classes | 98 / 92 / 100 / 100 |
+
 ## Open questions
 
 - Where GF18 should live, if it should be a page at all.

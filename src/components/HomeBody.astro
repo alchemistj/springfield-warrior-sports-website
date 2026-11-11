@@ -1,0 +1,491 @@
+---
+import { media } from "../lib/media";
+import QuoteSlider from "./QuoteSlider.astro";
+
+const obstacle = media("media/2025-12-SpringField-indoor-obstacle.webp");
+const everyday = media("media/2023-03-everyday-warrior.webp");
+const cards = [
+  {
+    file: "media/2023-03-classes.webp",
+    title: "CLASSES AND ACTIVITIES FOR KIDS",
+    body: "Springfield Warrior Sports offers kids classes that help build strength, balance, and coordination. With a variety of obstacles and challenges, your child will never get bored. Plus, they can have a lot of fun while working up a sweat!",
+    extra: "Sign up for a trial class today, your young warrior will thank you!",
+    href: "/kids-classes/",
+    label: "VIEW OUR KIDS CLASSES AND ACTIVITIES HERE",
+    wide: false,
+  },
+  {
+    file: "media/2023-03-train.webp",
+    title: "TRAIN LIKE A NINJA WARRIOR",
+    body: "Our adult classes are designed for all fitness levels, so whether you are a beginner or an experienced athlete, there is something for you. The obstacles and challenges are constantly changing, so you never get bored. And because the focus is on having fun, you will be encouraged to push yourself further than you ever thought possible.",
+    href: "/fitness-classes/",
+    label: "CHECK OUT OUR NINJA FITNESS CLASSES HERE",
+    wide: false,
+  },
+  {
+    file: "media/2023-03-birthday.webp",
+    title: "BIRTHDAY PARTIES",
+    body: "Warrior Sports offers the best party experience in Springfield MO! Whether it’s for your child’s birthday or for a special group event, we take care of all the planning and clean up, so you can relax and enjoy your special day. Parties are 1.5 hours long, and include an hour of gym and party room time and an obstacle course or another chosen activity facilitated by our Crew.",
+    href: "/birthday-parties/",
+    label: "BIRTHDAY PARTIES IN SPRINGFIELD MO DETAILS",
+    wide: false,
+  },
+  {
+    file: "media/2023-12-Day-Camps.webp",
+    title: "DAY CAMPS FOR SCHOOL BREAKS",
+    body: "Elevate your children's school break with dynamic and thrilling experiences at our engaging day camps! Choose from our flexible half-day or full-day camp options, where kids can enjoy a blend of recreation, games, sports, and the opportunity to forge lasting friendships.",
+    href: "/summer-camps-in-springfield-mo/",
+    label: "VIEW OUR SCHOOLS OUT DAY CAMPS HERE",
+    wide: false,
+  },
+  {
+    file: "media/2023-04-Parkour-Gym-Parkour-Classes-Banner.webp",
+    title: "PARKOUR",
+    body: "Springfield Warrior Sports is the premier destination for parkour training! Our expert instructors will guide you through every obstacle course, helping you to improve your physical skills and also boosting your confidence. With a focus on strength, agility, speed, balance, and self-confidence, our open gym time and classes can help you reach your potential both inside and out of the gym.",
+    extra: "Parkour classes are currently unavailable, but Open Gym sessions are available now — your first visit is just $10.",
+    href: "/parkour/",
+    label: "CHECK OUT OUR PARKOUR OFFERINGS HERE",
+    wide: true,
+    shift: "parkour",
+  },
+  {
+    file: "media/2024-02-kids-classes.webp",
+    title: "HOMESCHOOL NINJA WARRIOR CLASSES",
+    body: "Keep your homeschooler active, strong, and having a blast! Our homeschool classes are a high-energy way for kids to build strength and confidence while tackling fun obstacle course challenges. With plenty of movement, excitement, and opportunities to connect with other homeschoolers, this is PE like never before!",
+    href: "/homeschool-sports-and-classes-springfield-mo/",
+    label: "HOMESCHOOL CLASSES BY SWS",
+    wide: false,
+  },
+  {
+    file: "media/2025-06-the-Best-Gyms-in-Springfield-MO.webp",
+    title: "PERSONAL TRAINING",
+    body: "Personal training for kids, teens, and adults. Find a coach who gets your goals and your lifestyle. Build strength and confidence while progressing in your sport—or just moving better in everyday life. Schedule your free consultation today!",
+    href: "/personal-training/",
+    label: "PERSONAL TRAINING AT WARRIOR SPORTS",
+    wide: true,
+    shift: "gyms",
+  },
+];
+const shots = Object.fromEntries(cards.map((card) => [card.file, media(card.file)]));
+const hours = [
+  "Monday: 12pm-6pm",
+  "Tuesday: 3pm-5:30pm",
+  "Wednesday: 12pm-5:30pm",
+  "Thursday: 3pm-6pm",
+  "Friday: 12pm-6pm",
+  "Saturday: 2pm-6pm",
+  "Sunday: Private Parties and Group Events by Appointment",
+  "Preschool hours: Tuesday mornings from 9:30am-11:30am",
+];
+const logos = [
+  ["media/2023-03-csna-logo.webp", "csna"],
+  ["media/2023-03-hulafrog-mustloved.webp", "hula"],
+  ["media/2023-03-national-ninja-league_03.webp", "ninja"],
+  ["media/2023-03-godfatherpizaa.webp", "pizza"],
+  ["media/2023-03-417local.webp", "local"],
+  ["media/2023-03-frictionLabs.webp", "friction"],
+] as const;
+const quotes = [
+  ["We had our son’s 10th birthday here. All of the kids had a great time. They set up an obstacle course for the kids. They loved the whole experience. The favorite was the curved wall to run up. That was everyone’s challenge for the night. We will be visiting again for sure.", "- JENNIFER L."],
+  ["My daughter started training here 3 years ago at 8, and she still loves it!! Owner and coaching staff are all super encouraging. We live an hour away but make the drive twice a week as often as possible. Training here has not only helped her get stronger physically but increased her confidence in general. Anything that makes kids want to challenge themselves to get better and better is worth it!", "- LEE C."],
+  ["100% recommend Springfield Warrior Sports! We had my sons 5th birthday here and it was painless and SO fun! The staff answered all questions I had, gave reminders for upcoming party, and interacted with the kids during the party. It has been weeks since the party and my son is still talking about it. We will absolutely be back!", "- CHEYENNE M."],
+  ["We have had several birthday parties here and each time has been wonderful. It’s affordable and does not require a lot of effort on my part. The best part is how much fun the kids have! They never want to leave! The staff were all engaged with the kids and joined in on the nerf battle. I think they were having as much fun as the kids! They made sure we had everything we needed. We also enjoy coming to open gym. It’s the perfect place for kids to burn some energy. We love it here and we highly recommend it!", "- ADRIENNE E."],
+  ["Great place to have a birthday party. The laser tag option was really cool. My boys had a blast. Plus my son loves their summer camp program & he looks forward to it every summer!", "- SUSAN K."],
+  ["Staff was friendly, knowledgeable, and quick to help out. They were great with assisting my son(who can be a bit difficult at times). We signed up for the Beginner classes today and my son LOVED his first day!", "- KEVIN P."],
+  ["We have been going to the gym for classes for a while and my kids really enjoy it. I see huge improvements in their strength and flexibility. We recently did a birthday party for my 8 year old and it was amazing! They had staff members engaged with the kids the entire time ensuring safety and that everyone was having fun. Definitely recommend for parties, and their flexible schedule for classes and open gym make it easy to fit in.", "- LIZ S."],
+  ["It was too hot for my bf and I to let the kids play outside. We had already been to the overcrowded pool. So we took the kids here to run around and burn off energy inside while we got a second workout in ourselves. Amazing staff, great atmosphere, 10/5 would recommend!", "- COURTNEY C."],
+  ["My kids love the classes here! The instructors are all very kind and fun. It is such a great way for our kids to get exercise and learn new body skills.", "- NICK P."],
+].map(([text, by]) => ({ text: text ?? "", by: by ?? "" }));
+---
+
+<section class="section ready-section">
+  <div class="wrap ready">
+    <img loading="lazy" decoding="async" src={obstacle.src} alt="Springfield indoor obstacle gym" width={obstacle.width} height={obstacle.height} />
+    <div class="ready-copy">
+      <h2>GET READY TO</h2>
+      <h3 class="reach">REACH YOUR FUN AND FITNESS GOALS WITH SPRINGFIELD WARRIOR SPORTS</h3>
+      <p class="believe">We believe in results and that a life of health and fitness shouldn’t be boring. Our indoor obstacle training facility is like a fitness playground for all ages.</p>
+      <p class="aside">The best part?</p>
+      <p>You don’t need any previous experience or knowledge — all you need is the determination to reach your fitness goals!</p>
+      <p class="hours-title">Open Gym Hours</p>
+      <ul class="hours">
+        {hours.map((line) => {
+          const split = line.indexOf(": ");
+          const label = split === -1 ? line : line.slice(0, split + 1);
+          const when = split === -1 ? "" : line.slice(split + 1);
+          return (
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 5h-2v6l5 3 1-1.7-4-2.3z" /></svg>
+              <span class="slot"><span class="label">{label}</span>{when && <span class="when"> {when}</span>}</span>
+            </li>
+          );
+        })}
+      </ul>
+      <p>(see below for our class hours and times, which vary slightly from the open gym hours above.)</p>
+    </div>
+  </div>
+</section>
+
+<section class="section blue-band">
+  <div class="wrap">
+    <h2 class="band-title">SPRINGFIELD'S BEST OBSTACLE<br />TRAINING GYM</h2>
+    <div class="card-stack">
+      {
+        cards.map((card) => {
+          const shot = shots[card.file];
+          return (
+            <article class:list={["program-card", card.shift, { hs: card.file.includes("kids-classes"), "tight-title": card.title.startsWith("CLASSES") }]}>
+              {shot && <img loading="lazy" decoding="async" src={shot.src} alt="" width={shot.width} height={shot.height} />}
+              <div>
+                <h3>{card.title}</h3>
+                <p class:list={{ offer: card.body.startsWith("Springfield Warrior Sports offers") }}>{card.shift === "parkour" ? card.body : card.extra ? `${card.body} ${card.extra}` : card.body}</p>
+                {card.shift === "parkour" && (
+                  <p>Parkour classes are <span class="mid">currently unavailable</span>, but Open Gym sessions are available now — your first visit is just $10.</p>
+                )}
+                <p class="btn-row"><a class="btn" href={card.href}>{card.label}</a></p>
+              </div>
+            </article>
+          );
+        })
+      }
+    </div>
+  </div>
+</section>
+
+<section class="section everyday" style={`--day:url(${everyday.src})`}>
+  <div class="wrap">
+    <div class="day-copy">
+      <h4>BE AN</h4>
+      <h2>EVERYDAY WARRIOR!</h2>
+      <p>At Springfield Warrior Sports, we know that you want to be fit, healthy, and STRONGER to take on every obstacle. Our accomplished and award-winning crew is here to help you find your strength and enjoy your workouts again. If you’re looking for a unique and fun way to get active, you can come in at any time during our open hours and have a great time getting fit!<br /><br />$15 per person ages 5+ during open gym hours. Stay as long as you would like.</p>
+      <p class="btn-row"><a class="btn day-btn" href="https://square.link/u/GmmQ7iuL">TRY OPEN GYM FOR $10</a></p>
+    </div>
+    <img loading="lazy" decoding="async" class="day-photo" src={everyday.src} alt="" width={everyday.width} height={everyday.height} />
+  </div>
+</section>
+
+<section class="section mist">
+  <div class="wrap">
+    <h2 class="t-title">CLIENT TESTIMONIALS</h2>
+    <h3 class="t-sub">WHAT OUR CLIENTS SAY</h3>
+    <QuoteSlider quotes={quotes} minHeight="401px" minHeightPhone="382px" />
+  </div>
+</section>
+
+<section class="partner-band" aria-label="Partners">
+  <div class="partner-row">
+    {
+      logos.map(([file, name]) => {
+        const img = media(file);
+        return <img loading="lazy" decoding="async" class={name} src={img.src} alt="" width={img.width} height={img.height} />;
+      })
+    }
+  </div>
+</section>
+
+<style>
+  .ready {
+    display: grid;
+    gap: 28px;
+  }
+  .ready img {
+    width: 100%;
+    height: auto;
+  }
+  .ready-copy h2,
+  .day-copy h2 {
+    margin: 0;
+    color: var(--color-ws-red);
+    font-family: Heebo, "Arial Narrow", sans-serif;
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+  .ready-copy h3,
+  .day-copy h4 {
+    width: fit-content;
+    margin: 4px 0 14px;
+    color: #000;
+    font-family: Heebo, "Arial Narrow", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 28px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  .ready-copy p,
+  .day-copy p {
+    font-weight: 300;
+  }
+  .ready-copy p.aside {
+    margin-bottom: 4px;
+    color: rgb(40, 82, 118);
+    font-weight: 500;
+  }
+  @media (max-width: 799px) {
+    .ready-copy p.aside,
+    .ready-copy p.hours-title { width: 280px; }
+  }
+  .ready-copy p.hours-title {
+    color: rgb(219, 58, 52);
+    font-weight: 800;
+  }
+  .hours {
+    margin: 0 0 14px 11px;
+    padding: 0;
+    list-style: none;
+  }
+  .hours li {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    margin: 0 0 4px;
+  }
+  .hours svg {
+    flex: 0 0 18px;
+    width: 18px;
+    height: 18px;
+    margin-top: 2px;
+    fill: rgb(219, 58, 52);
+  }
+  .hours li > span {
+    display: inline-block;
+    color: #6a6b6c;
+    font-family: Muli, "Segoe UI", sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 1.3;
+  }
+  .hours .label,
+  .hours .when { display: inline; }
+  .hours .when { font-weight: 400; }
+  .program-card span.mid { font-weight: 500; }
+  .band-title {
+    margin: 0 0 28px;
+    color: #fff;
+    font-family: Heebo, "Arial Narrow", sans-serif;
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 60px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .card-stack { display: grid; gap: 22px; }
+  .blue-band { margin-top: 118px; }
+  .section.mist { margin-top: 0; padding: 90px 0 80px; }
+  .program-card {
+    display: grid;
+    gap: 16px;
+    background: #fff;
+    color: #000;
+  }
+  .program-card > div { padding: 0 25px; }
+  .program-card img {
+    position: static;
+    width: 330px;
+    max-width: none;
+    height: auto;
+    margin: 0 0 12px 10px;
+    object-fit: cover;
+  }
+  .program-card h3 {
+    margin: 0 0 8px;
+    color: #285276;
+    font-family: Heebo, "Arial Narrow", sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 1.15;
+    text-transform: uppercase;
+  }
+  .program-card p { font-weight: 300; color: #000; }
+  .btn-row { margin: 0; }
+  .program-card .btn,
+  .day-btn {
+    width: 300px;
+    max-width: none;
+    font-size: 12px;
+    font-weight: 800;
+  }
+  .day-btn { width: 100%; }
+  .everyday { background-color: transparent; }
+  .day-photo {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 40px 0 0;
+  }
+  .ready-section { padding: 70px 20px; }
+  .blue-band { margin-top: 0; padding: 80px 20px; }
+  .t-title {
+    margin: 0;
+    color: var(--color-ws-red);
+    font-family: Heebo, "Arial Narrow", sans-serif;
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 1.1;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .t-sub {
+    width: 315px;
+    max-width: 100%;
+    margin: 8px auto 22px;
+    color: #000;
+    font-family: Heebo, "Arial Narrow", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .partner-band {
+    background: rgb(40, 82, 118);
+    min-height: 200px;
+  }
+  .partner-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    padding: 55px 0 80px;
+  }
+  .partner-row img { height: auto; object-fit: contain; }
+  .csna { width: 156px; }
+  .hula, .ninja { width: 121px; }
+  .pizza { width: 148px; }
+  .local { width: 184px; }
+  .friction { width: 156px; }
+
+  @media (min-width: 800px) {
+    .ready {
+      grid-template-columns: 501px 597px;
+      column-gap: 32px;
+      justify-content: start;
+      padding-left: 18px;
+    }
+    .ready img { width: 501px; height: auto; }
+    .ready-copy h2 { font-size: 50px; line-height: 70px; }
+    .day-copy h2 { line-height: 1; }
+    .ready-copy h3 { font-size: 30px; line-height: 42px; }
+    .ready-copy h3.reach { width: 540px; max-width: 100%; font-size: 30px; letter-spacing: 1px; }
+    .ready-copy p.believe { width: 597px; max-width: 100%; }
+    .program-card p.offer { width: 640px; max-width: 640px; }
+    .hours span { font-size: 18px; }
+    .band-title { font-size: 50px; line-height: 62.5px; margin-bottom: 70px; }
+    .day-copy h2 { font-size: 50px; line-height: 70px; }
+    .day-copy h4 { font-size: 30px; line-height: 42px; }
+    .t-title { line-height: 70px; }
+    .t-sub { line-height: 42px; }
+    .card-stack { padding: 0 42px 0 10px; gap: 28px; }
+    .program-card {
+      grid-template-columns: 368px minmax(0, 1fr);
+      gap: 30px;
+      align-items: stretch;
+    }
+    .program-card > div { padding: 0; }
+    .program-card img {
+      position: static;
+      width: 368px;
+      height: auto;
+      min-height: 0;
+      margin: 0;
+    }
+    .program-card.parkour img,
+    .program-card.gyms img,
+    .program-card.hs img { object-fit: cover; }
+    .program-card.parkour img { height: 384px; object-position: 15% 100%; }
+    .program-card.gyms img { height: 272px; object-position: 20% 100%; }
+    .program-card.hs img { height: 300px; object-position: center 88%; }
+    .program-card h3 { font-size: 30px; line-height: 42px; }
+    .program-card .btn { width: 491px; font-size: 16px; }
+    .everyday {
+      background-image: var(--day);
+      background-repeat: no-repeat;
+      background-position: 100% 0;
+      background-size: contain;
+      min-height: 605px;
+    }
+    .day-copy { width: 533px; margin-left: 1px; padding: 48px 0; }
+    .day-copy h4 { width: 100%; font-size: 30px; }
+    .day-copy h2 { font-size: 50px; }
+    .day-btn { width: 374px; font-size: 16px; }
+    .day-photo { display: none; }
+    .t-title { font-size: 50px; }
+    .t-sub { width: 100%; font-size: 30px; }
+    .partner-band { min-height: 278px; }
+    .partner-row {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: min(1285px, calc(100% - 40px));
+      min-height: 180px;
+      margin: 0 auto;
+      padding: 40px 0;
+    }
+    .csna, .local { width: 170px; }
+    .hula { width: 148px; }
+    .ninja, .pizza { width: 142px; }
+    .friction { width: 135px; }
+  }
+  @media (min-width: 800px) and (max-width: 1023px) {
+    .everyday {
+      background-position: 102% 100%;
+      background-size: 50% 50%;
+    }
+  }
+  @media (max-width: 1023px) {
+    .ready-section { padding-top: 60px; padding-bottom: 40px; }
+    .blue-band { padding-top: 60px; padding-bottom: 50px; }
+    .everyday { padding: 60px 20px 130px; min-height: 0; }
+  }
+  @media (max-width: 799px) {
+    .ready-section { padding-left: 0; padding-right: 0; }
+    .blue-band { margin-top: 0; padding-left: 0; padding-right: 0; }
+    .everyday { margin-top: 0; padding: 60px 0 0; }
+    .everyday .wrap { width: calc(100% - 40px); }
+    .hours li { min-height: 38px; margin-bottom: 0; }
+    .card-stack { gap: 10px; }
+    .program-card { padding-bottom: 50px; }
+    .program-card .btn {
+      min-height: 0;
+      padding: 10px;
+      font-size: 12px;
+      line-height: 19px;
+      letter-spacing: 2px;
+    }
+    .program-card .btn-row { margin-top: 24px; }
+    .day-btn {
+      min-height: 0;
+      padding: 10px;
+      line-height: 19px;
+      letter-spacing: 2px;
+    }
+    .section.mist { margin-top: 0; }
+    .band-title { line-height: 40px; }
+    .t-title { line-height: 32px; }
+    .t-sub { line-height: 28px; }
+    .program-card { display: block; width: 100%; min-width: 0; }
+    .program-card > div {
+      width: 300px;
+      max-width: 300px;
+      margin-left: 25px;
+      padding: 0;
+    }
+    .program-card h3,
+    .program-card > div > p { width: 300px; max-width: 100%; }
+    .program-card h3 { line-height: 28px; }
+    .program-card.tight-title h3 { line-height: 20px; }
+    .program-card p.offer { width: 298px; max-width: 298px; }
+    .program-card.hs > div {
+      position: relative;
+      z-index: 1;
+      margin-top: -140px;
+      background: #fff;
+    }
+    .program-card.hs h3 { line-height: 28px; }
+    .program-card.parkour img { width: 845px; max-width: none; height: auto; margin-left: 7px; object-fit: cover; object-position: 15% 100%; }
+    .program-card.gyms img { width: 759px; max-width: none; height: auto; margin-left: -68px; object-fit: cover; object-position: 20% 100%; }
+  }
+</style>

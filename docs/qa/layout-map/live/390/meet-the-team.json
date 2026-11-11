@@ -1,0 +1,3136 @@
+{
+ "url": "https://www.springfieldwarriorsports.com/meet-the-team/",
+ "width": 390,
+ "vw": 390,
+ "hiddenText": [],
+ "docWidth": 395,
+ "docHeight": 17511,
+ "items": [
+  {
+   "kind": "text",
+   "tag": "a",
+   "text": "CONTACT",
+   "family": "Heebo",
+   "size": 14,
+   "weight": 600,
+   "color": "rgb(255, 255, 255)",
+   "align": "center",
+   "transform": "uppercase",
+   "spacing": 1,
+   "lh": 28,
+   "behind": "image",
+   "runs": [
+    {
+     "t": "Contact",
+     "c": "rgb(255, 255, 255)",
+     "w": 600,
+     "u": false
+    }
+   ],
+   "lines": 2,
+   "region": "header",
+   "x": 53,
+   "y": 11,
+   "w": 70,
+   "h": 28
+  },
+  {
+   "kind": "text",
+   "tag": "a",
+   "text": "ABOUT",
+   "family": "Heebo",
+   "size": 14,
+   "weight": 600,
+   "color": "rgb(255, 255, 255)",
+   "align": "center",
+   "transform": "uppercase",
+   "spacing": 1,
+   "lh": 28,
+   "behind": "image",
+   "runs": [
+    {
+     "t": "About",
+     "c": "rgb(255, 255, 255)",
+     "w": 600,
+     "u": false
+    }
+   ],
+   "lines": 2,
+   "region": "header",
+   "x": 144,
+   "y": 11,
+   "w": 51,
+   "h": 28
+  },
+  {
+   "kind": "text",
+   "tag": "a",
+   "text": "SIGN OUR WAIVER",
+   "family": "Heebo",
+   "size": 14,
+   "weight": 600,
+   "color": "rgb(255, 255, 255)",
+   "align": "center",
+   "transform": "uppercase",
+   "spacing": 1,
+   "lh": 28,
+   "behind": "image",
+   "runs": [
+    {
+     "t": "Sign Our Waiver",
+     "c": "rgb(255, 255, 255)",
+     "w": 600,
+     "u": false
+    }
+   ],
+   "lines": 2,
+   "region": "header",
+   "x": 214,
+   "y": 11,
+   "w": 133,
+   "h": 28
+  },
+  {
+   "kind": "image",
+   "src": "https://www.springfieldwarriorsports.com/wp-content/uploads/2023/03/SpringField-Warrior-Logo.png",
+   "region": "header",
+   "x": 20,
+   "y": 70,
+   "w": 203,
+   "h": 59
+  },
+  {
+   "kind": "icon",
+   "color": "rgb(255, 255, 255)",
+   "region": "header",
+   "x": 354,
+   "y": 89,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "MEET THE SPRINGFIELD WARRIOR SPORTS TEAM",
+   "full": "MEET THE SPRINGFIELD WARRIOR SPORTS TEAM",
+   "family": "Heebo",
+   "size": 45,
+   "weight": 900,
+   "color": "rgb(255, 255, 255)",
+   "align": "center",
+   "transform": "uppercase",
+   "spacing": 0,
+   "lh": 45,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Meet The Springfield Warrior Sports Team",
+     "c": "rgb(255, 255, 255)",
+     "w": 900,
+     "u": false
+    }
+   ],
+   "lines": 4,
+   "region": "main",
+   "x": 0,
+   "y": 199,
+   "w": 390,
+   "h": 180
+  },
+  {
+   "kind": "image",
+   "src": "hero",
+   "region": "main",
+   "x": 0,
+   "y": 409,
+   "w": 390,
+   "h": 211
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "At Springfield Warrior Sports, our coaches are more than instructors.",
+   "full": "At Springfield Warrior Sports, our coaches are more than instructors.",
+   "family": "Epilogue",
+   "size": 18,
+   "weight": 300,
+   "color": "rgb(0, 0, 0)",
+   "align": "center",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 32,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "At Springfield Warrior Sports, our coaches are more than instructors.",
+     "c": "rgb(0, 0, 0)",
+     "w": 300,
+     "u": false
+    }
+   ],
+   "lines": 2,
+   "region": "main",
+   "x": 21,
+   "y": 651,
+   "w": 348,
+   "h": 63
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "They’re mentors, competitors, and people who genuinely care about helping others",
+   "full": "They’re mentors, competitors, and people who genuinely care about helping others grow on the course and in life.",
+   "family": "Epilogue",
+   "size": 18,
+   "weight": 300,
+   "color": "rgb(0, 0, 0)",
+   "align": "center",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 32,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "They’re mentors, competitors, and people who genuinely care about helping others grow on the course and in life.",
+     "c": "rgb(0, 0, 0)",
+     "w": 300,
+     "u": false
+    }
+   ],
+   "lines": 4,
+   "region": "main",
+   "x": 21,
+   "y": 736,
+   "w": 348,
+   "h": 126
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "Get to know the coaches who make this community what it is.",
+   "full": "Get to know the coaches who make this community what it is.",
+   "family": "Epilogue",
+   "size": 18,
+   "weight": 500,
+   "color": "rgb(0, 0, 0)",
+   "align": "center",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 32,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Get to know the coaches who make this community what it is.",
+     "c": "rgb(0, 0, 0)",
+     "w": 500,
+     "u": false
+    }
+   ],
+   "lines": 2,
+   "region": "main",
+   "x": 21,
+   "y": 884,
+   "w": 348,
+   "h": 63
+  },
+  {
+   "kind": "bgimage",
+   "src": "https://www.springfieldwarriorsports.com/wp-content/uploads/2026/01/Johnny-team-photo.jpg",
+   "region": "main",
+   "x": 60,
+   "y": 1053,
+   "w": 270,
+   "h": 260
+  },
+  {
+   "kind": "heading",
+   "tag": "h2",
+   "text": "JONNY",
+   "family": "Heebo",
+   "size": 30,
+   "weight": 900,
+   "color": "rgb(40, 82, 118)",
+   "align": "left",
+   "transform": "uppercase",
+   "spacing": 0,
+   "lh": 30,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Jonny",
+     "c": "rgb(40, 82, 118)",
+     "w": 900,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "main",
+   "x": 61,
+   "y": 1329,
+   "w": 268,
+   "h": 30
+  },
+  {
+   "kind": "heading",
+   "tag": "h3",
+   "text": "CO-OWNER | ADULT OCR COACH | INTERMEDIATE COACH",
+   "family": "Heebo",
+   "size": 18,
+   "weight": 400,
+   "color": "rgb(219, 58, 52)",
+   "align": "left",
+   "transform": "uppercase",
+   "spacing": 0,
+   "lh": 27,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Co-Owner | ADult ocr coach | intermediate Coach",
+     "c": "rgb(219, 58, 52)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 2,
+   "region": "main",
+   "x": 61,
+   "y": 1371,
+   "w": 268,
+   "h": 54
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "Hey there! I’m Jonny.",
+   "full": "Hey there! I’m Jonny.",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(0, 0, 0)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 28,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Hey there! I’m Jonny.",
+     "c": "rgb(0, 0, 0)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "main",
+   "x": 60,
+   "y": 1456,
+   "w": 270,
+   "h": 28
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "I’ve been part of Springfield Warrior Sports since the very beginning back in 20",
+   "full": "I’ve been part of Springfield Warrior Sports since the very beginning back in 2015, and today I’m a co-owner alongside my beautiful wife, Sarah.",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(0, 0, 0)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 28,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "I’ve been part of Springfield Warrior Sports since the very beginning back in 2015, and today I’m a co-owner alongside my beautiful wife, Sarah. ",
+     "c": "rgb(0, 0, 0)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 5,
+   "region": "main",
+   "x": 60,
+   "y": 1504,
+   "w": 270,
+   "h": 140
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "Almost nothing in the whole world brings me more joy than living vicariously thr",
+   "full": "Almost nothing in the whole world brings me more joy than living vicariously through the achievements and joy of the kids at the gym. Some of my best friends are the kids we teach in our classes.",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(0, 0, 0)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 28,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Almost nothing in the whole world brings me more joy than living vicariously through the achievements and joy of the kids at the gym. Some of my best friends are the kids we teach in our classes.",
+     "c": "rgb(0, 0, 0)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 7,
+   "region": "main",
+   "x": 60,
+   "y": 1664,
+   "w": 270,
+   "h": 196
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "My ninja journey includes winning the 2017 UNAA National Championship, placing 3",
+   "full": "My ninja journey includes winning the 2017 UNAA National Championship, placing 3rd at the 2018 NNL World Championships, competing on Season 11 of American Ninja Warrior, and earning 6th place at the 2024 WNL World Championships.",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(0, 0, 0)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 28,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "My ninja journey includes winning the 2017 UNAA National Championship, placing 3rd at the 2018 NNL World Championships, competing on Season 11 of American Ninja Warrior, and earning 6th place at the 2024 WNL World Championships.",
+     "c": "rgb(0, 0, 0)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 8,
+   "region": "main",
+   "x": 60,
+   "y": 1880,
+   "w": 270,
+   "h": 224
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "At the gym, I primarily teach the Intermediate classes, and the Adult O.C.R. cla",
+   "full": "At the gym, I primarily teach the Intermediate classes, and the Adult O.C.R. class on Thursdays.",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(0, 0, 0)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 28,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "At the gym, I primarily teach the Intermediate classes, and the Adult O.C.R. class on Thursdays.",
+     "c": "rgb(0, 0, 0)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 3,
+   "region": "main",
+   "x": 60,
+   "y": 2119,
+   "w": 270,
+   "h": 84
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "Outside the gym, I love my wife, Nintendo, weight-lifting, ninja, of course, Sta",
+   "full": "Outside the gym, I love my wife, Nintendo, weight-lifting, ninja, of course, Star Wars, Lord of the Rings, BeyBlade, Bakugan, Dragon Ball, Naruto, reading (when I have time), basically anything that reminds me of my childhood, but above all, I love God. I definitely have the heart and soul of my 8-year old self, and I pray I’m always able to keep that alive in me.",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(0, 0, 0)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 28,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Outside the gym, I love my wife, Nintendo, weight-lifting, ninja, of course, Star Wars, Lord of the Rings, BeyBlade, Bakugan, Dragon Ball, Naruto, reading (when I have time), basically anything that reminds me of my childhood, but above all, I love God. I definitely have the heart and soul of my 8-year old self, and I pray I’m always able to keep that alive in me.",
+     "c": "rgb(0, 0, 0)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 11,
+   "region": "main",
+   "x": 60,
+   "y": 2223,
+   "w": 270,
+   "h": 308
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "I love meeting new people and growing our community. I’d love to meet you and we",
+   "full": "I love meeting new people and growing our community. I’d love to meet you and welcome you into the Warrior Sports family.",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(0, 0, 0)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 28,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "I love meeting new people and growing our community. I’d love to meet you and welcome you into the Warrior Sports family.",
+     "c": "rgb(0, 0, 0)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 4,
+   "region": "main",
+   "x": 60,
+   "y": 2551,
+   "w": 270,
+   "h": 112
+  },
+  {
+   "kind": "bgimage",
+   "src": "https://www.springfieldwarriorsports.com/wp-content/uploads/2026/01/Sarah-team-photo.jpg",
+   "region": "main",
+   "x": 60,
+   "y": 2733,
+   "w": 270,
+   "h": 260
+  },
+  {
+   "kind": "heading",
+   "tag": "h2",
+   "text": "SARAH",
+   "family": "Heebo",
+   "size": 30,
+   "weight": 900,
+   "color": "rgb(40, 82, 118)",
+   "align": "left",
+   "transform": "uppercase",
+   "spacing": 0,
+   "lh": 30,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Sarah",
+     "c": "rgb(40, 82, 118)",
+     "w": 900,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "main",
+   "x": 61,
+   "y": 3009,
+   "w": 268,
+   "h": 30
+  },
+  {
+   "kind": "heading",
+   "tag": "h3",
+   "text": "CO-OWNER | ADULT OCR COACH | PRESCHOOL COACH | WOMEN’S FITNESS TRAINER",
+   "family": "Heebo",
+   "size": 18,
+   "weight": 400,
+   "color": "rgb(219, 58, 52)",
+   "align": "left",
+   "transform": "uppercase",
+   "spacing": 0,
+   "lh": 27,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Co-Owner | Adult OCR Coach | Preschool coach | Women’s Fitness Trainer",
+     "c": "rgb(219, 58, 52)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 3,
+   "region": "main",
+   "x": 61,
+   "y": 3051,
+   "w": 268,
+   "h": 81
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "Hey guys! I’m Sarah.",
+   "full": "Hey guys! I’m Sarah.",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(0, 0, 0)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 28,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Hey guys! I’m Sarah.",
+     "c": "rgb(0, 0, 0)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "main",
+   "x": 60,
+   "y": 3163,
+   "w": 270,
+   "h": 28
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "I’m a co-owner of Springfield Warrior Sports alongside my amazing husband, Jonny",
+   "full": "I’m a co-owner of Springfield Warrior Sports alongside my amazing husband, Jonny. I first entered the Warrior Sports world when we started dating in 2019, and I had no idea at that time that this sport and the people who come with it would mean so much to me.",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(0, 0, 0)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 28,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "I’m a co-owner of Springfield Warrior Sports alongside my amazing husband, Jonny. I first entered the Warrior Sports world when we started dating in 2019, and I had no idea at that time that this sport and the people who come with it would mean so much to me.",
+     "c": "rgb(0, 0, 0)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 9,
+   "region": "main",
+   "x": 60,
+   "y": 3211,
+   "w": 270,
+   "h": 252
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "I teach preschool classes and the Adult O.C.R. Class on Thursdays, and love ever",
+   "full": "I teach preschool classes and the Adult O.C.R. Class on Thursdays, and love every minute of connecting with our members. I am also a personal trainer for women and dedicate a few days each week to designing workouts and helping women feel confident in the bodies God has given them.",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(0, 0, 0)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 28,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "I teach preschool classes and the Adult O.C.R. Class on Thursdays, and love every minute of connecting with our members. I am also a personal trainer for women and dedicate a few days each week to designing workouts and helping women feel confident in the bodies God has given them.",
+     "c": "rgb(0, 0, 0)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 9,
+   "region": "main",
+   "x": 60,
+   "y": 3483,
+   "w": 270,
+   "h": 252
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "Outside the gym, I enjoy reading, crafts, being outdoors, hammocking/hiking/runn",
+   "full": "Outside the gym, I enjoy reading, crafts, being outdoors, hammocking/hiking/running, working out, and hanging out with my family. I am the second oldest (oldest girl) of 6 kids, and have always had a motherly, take-charge personality.",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(0, 0, 0)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 28,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Outside the gym, I enjoy reading, crafts, being outdoors, hammocking/hiking/running, working out, and hanging out with my family. I am the second oldest (oldest girl) of 6 kids, and have always had a motherly, take-charge personality.",
+     "c": "rgb(0, 0, 0)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 8,
+   "region": "main",
+   "x": 60,
+   "y": 3770,
+   "w": 270,
+   "h": 224
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "I’m excited to meet you. Come hang out with the fam!",
+   "full": "I’m excited to meet you. Come hang out with the fam!",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(0, 0, 0)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 28,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "I’m excited to meet you. Come hang out with the fam!",
+     "c": "rgb(0, 0, 0)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 2,
+   "region": "main",
+   "x": 60,
+   "y": 4014,
+   "w": 270,
+   "h": 56
+  },
+  {
+   "kind": "bgimage",
+   "src": "https://www.springfieldwarriorsports.com/wp-content/uploads/2026/01/Lincoln-team-photo.jpg",
+   "region": "main",
+   "x": 60,
+   "y": 4160,
+   "w": 270,
+   "h": 260
+  },
+  {
+   "kind": "heading",
+   "tag": "h2",
+   "text": "LINCOLN",
+   "family": "Heebo",
+   "size": 30,
+   "weight": 900,
+   "color": "rgb(40, 82, 118)",
+   "align": "left",
+   "transform": "uppercase",
+   "spacing": 0,
+   "lh": 30,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Lincoln",
+     "c": "rgb(40, 82, 118)",
+     "w": 900,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "main",
+   "x": 61,
+   "y": 4436,
+   "w": 268,
+   "h": 30
+  },
+  {
+   "kind": "heading",
+   "tag": "h3",
+   "text": "BEGINNER NINJA COACH | BIRTHDAY PARTY HOST",
+   "family": "Heebo",
+   "size": 18,
+   "weight": 400,
+   "color": "rgb(219, 58, 52)",
+   "align": "left",
+   "transform": "uppercase",
+   "spacing": 0,
+   "lh": 27,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Beginner Ninja Coach | Birthday party host",
+     "c": "rgb(219, 58, 52)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 2,
+   "region": "main",
+   "x": 61,
+   "y": 4478,
+   "w": 268,
+   "h": 54
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "Hello! I'm Lincoln.",
+   "full": "Hello! I'm Lincoln.",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(0, 0, 0)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 28,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Hello! I'm Lincoln.",
+     "c": "rgb(0, 0, 0)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "main",
+   "x": 60,
+   "y": 4563,
+   "w": 270,
+   "h": 28
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "I’ve been working at Springfield Warrior Sports for three years and have been tr",
+   "full": "I’ve been working at Springfield Warrior Sports for three years and have been training in ninja since 2018. I teach our beginner classes and help out with birthday parties. I joined the team about a year and a half after starting at Ninja and have been competing since then.",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(0, 0, 0)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 28,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "I’ve been working at Springfield Warrior Sports for three years and have been training in ninja since 2018. I teach our beginner classes and help out with birthday parties. I joined the team about a year and a half after starting at Ninja and have been competing since then.",
+     "c": "rgb(0, 0, 0)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 8,
+   "region": "main",
+   "x": 60,
+   "y": 4611,
+   "w": 270,
+   "h": 224
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "I'm an active and sporty person, and I enjoy playing recreational volleyball in ",
+   "full": "I'm an active and sporty person, and I enjoy playing recreational volleyball in my free time. I enjoy video games, solving Rubik's cubes, and other random activities as well. I am a very relationally based person, always wanting to make friends and hang out, which is why I love my job so much.",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(0, 0, 0)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 28,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "I'm an active and sporty person, and I enjoy playing recreational volleyball in my free time. I enjoy video games, solving Rubik's cubes, and other random activities as well. I am a very relationally based person, always wanting to make friends and hang out, which is why I love my job so much.",
+     "c": "rgb(0, 0, 0)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 10,
+   "region": "main",
+   "x": 60,
+   "y": 4855,
+   "w": 270,
+   "h": 280
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "As a coach, I strive to be the best teacher I can be, creating a fun and engagin",
+   "full": "As a coach, I strive to be the best teacher I can be, creating a fun and engaging learning experience in our classes while also challenging my students to grow and improve.",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(0, 0, 0)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 28,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "As a coach, I strive to be the best teacher I can be, creating a fun and engaging learning experience in our classes while also challenging my students to grow and improve.",
+     "c": "rgb(0, 0, 0)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 6,
+   "region": "main",
+   "x": 60,
+   "y": 5170,
+   "w": 270,
+   "h": 168
+  },
+  {
+   "kind": "bgimage",
+   "src": "https://www.springfieldwarriorsports.com/wp-content/uploads/2026/01/Ellroy-team-photo.jpg",
+   "region": "main",
+   "x": 60,
+   "y": 5428,
+   "w": 270,
+   "h": 260
+  },
+  {
+   "kind": "heading",
+   "tag": "h2",
+   "text": "ELLORY",
+   "family": "Heebo",
+   "size": 30,
+   "weight": 900,
+   "color": "rgb(40, 82, 118)",
+   "align": "left",
+   "transform": "uppercase",
+   "spacing": 0,
+   "lh": 30,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Ellory",
+     "c": "rgb(40, 82, 118)",
+     "w": 900,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "main",
+   "x": 61,
+   "y": 5704,
+   "w": 268,
+   "h": 30
+  },
+  {
+   "kind": "heading",
+   "tag": "h3",
+   "text": "ADVANCED TEAM HEAD COACH | PRESCHOOL COACH | BIRTHDAY PARTY HOST",
+   "family": "Heebo",
+   "size": 18,
+   "weight": 400,
+   "color": "rgb(219, 58, 52)",
+   "align": "start",
+   "transform": "uppercase",
+   "spacing": 0,
+   "lh": 25,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Advanced Team Head Coach | Preschool Coach | Birthday Party Host",
+     "c": "rgb(219, 58, 52)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 3,
+   "region": "main",
+   "x": 61,
+   "y": 5746,
+   "w": 268,
+   "h": 76
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "I first got into ninja by watching American Ninja Warrior and building homemade ",
+   "full": "I first got into ninja by watching American Ninja Warrior and building homemade obstacle courses with my siblings using pull-up bars, couch cushions, hallway walls…whatever we could find.",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(0, 0, 0)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 28,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "I first got into ninja by watching American Ninja Warrior and building homemade obstacle courses with my siblings using pull-up bars, couch cushions, hallway walls…whatever we could find.",
+     "c": "rgb(0, 0, 0)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 7,
+   "region": "main",
+   "x": 60,
+   "y": 5852,
+   "w": 270,
+   "h": 196
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "When my parents surprised us by signing us up at Springfield Warrior Sports, I q",
+   "full": "When my parents surprised us by signing us up at Springfield Warrior Sports, I quickly took to it and have loved it ever since. After lots of classes and open gyms, I started improving more and more, and I’ve now competed as an elite in the World Ninja League for two years, making it to Stage 3 at the World Championships both times and finishing in the top 11 my second year.",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(0, 0, 0)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 28,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "When my parents surprised us by signing us up at Springfield Warrior Sports, I quickly took to it and have loved it ever since. After lots of classes and open gyms, I started improving more and more, and I’ve now competed as an elite in the World Ninja League for two years, making it to Stage 3 at the World Championships both times and finishing in the top 11 my second year.",
+     "c": "rgb(0, 0, 0)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 12,
+   "region": "main",
+   "x": 60,
+   "y": 6068,
+   "w": 270,
+   "h": 336
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "I joined the staff here in May 2023, and since then, I’ve been teaching the Tues",
+   "full": "I joined the staff here in May 2023, and since then, I’ve been teaching the Tuesday preschool class. Recently, I became the head coach for the CSNA Team Class, which is our most advanced class for kids up to 18 years old. I also work birthday parties, which are always a lot of fun! I love working with the kids and helping them grow, and it really is such a joy for me to see them learning new things and watch their hard work pay off.",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(0, 0, 0)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 28,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "I joined the staff here in May 2023, and since then, I’ve been teaching the Tuesday preschool class. Recently, I became the head coach for the CSNA Team Class, which is our most advanced class for kids up to 18 years old. I also work birthday parties, which are always a lot of fun! I love working with the kids and helping them grow, and it really is such a joy for me to see them learning new things and watch their hard work pay off.",
+     "c": "rgb(0, 0, 0)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 14,
+   "region": "main",
+   "x": 60,
+   "y": 6424,
+   "w": 270,
+   "h": 392
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "Outside of ninja, I like to try out all different kinds of sports, of which I lo",
+   "full": "Outside of ninja, I like to try out all different kinds of sports, of which I love pickleball, football, and bowling, especially. I also love playing instruments, learning about Christianity and growing in discipleship, and reading. I really enjoy spending quality time with people I know and meeting new people I don't, but I also love just spending time with myself, doing my own thing, for which I am very grateful.",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(0, 0, 0)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 28,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Outside of ninja, I like to try out all different kinds of sports, of which I love pickleball, football, and bowling, especially. I also love playing instruments, learning about Christianity and growing in discipleship, and reading. I really enjoy spending quality time with people I know and meeting new people I don't, but I also love just spending time with myself, doing my own thing, for which I am very grateful.",
+     "c": "rgb(0, 0, 0)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 13,
+   "region": "main",
+   "x": 60,
+   "y": 6851,
+   "w": 270,
+   "h": 364
+  },
+  {
+   "kind": "bgimage",
+   "src": "https://www.springfieldwarriorsports.com/wp-content/uploads/2026/01/Elle-team-photo.jpg",
+   "region": "main",
+   "x": 60,
+   "y": 7305,
+   "w": 270,
+   "h": 260
+  },
+  {
+   "kind": "heading",
+   "tag": "h2",
+   "text": "ELLE",
+   "family": "Heebo",
+   "size": 30,
+   "weight": 900,
+   "color": "rgb(40, 82, 118)",
+   "align": "left",
+   "transform": "uppercase",
+   "spacing": 0,
+   "lh": 30,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Elle",
+     "c": "rgb(40, 82, 118)",
+     "w": 900,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "main",
+   "x": 61,
+   "y": 7581,
+   "w": 268,
+   "h": 30
+  },
+  {
+   "kind": "heading",
+   "tag": "h3",
+   "text": "PRESCHOOL COACH | BIRTHDAY PARTY HOST",
+   "family": "Heebo",
+   "size": 18,
+   "weight": 400,
+   "color": "rgb(219, 58, 52)",
+   "align": "left",
+   "transform": "uppercase",
+   "spacing": 0,
+   "lh": 27,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Preschool Coach | Birthday Party Host",
+     "c": "rgb(219, 58, 52)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 2,
+   "region": "main",
+   "x": 61,
+   "y": 7623,
+   "w": 268,
+   "h": 54
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "Hi! My name is Elle, and I’ve been working at Warrior Sports for the past four m",
+   "full": "Hi! My name is Elle, and I’ve been working at Warrior Sports for the past four months.",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(0, 0, 0)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 28,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Hi! My name is Elle, and I’ve been working at Warrior Sports for the past four months.",
+     "c": "rgb(0, 0, 0)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 3,
+   "region": "main",
+   "x": 60,
+   "y": 7708,
+   "w": 270,
+   "h": 84
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "I teach preschool classes and assist with running birthday parties. I was introd",
+   "full": "I teach preschool classes and assist with running birthday parties. I was introduced to the gym by family members who have competed here, and I have since become involved myself, attending adult workout classes, which have helped improve my volleyball game.",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(0, 0, 0)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 28,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "I teach preschool classes and assist with running birthday parties. I was introduced to the gym by family members who have competed here, and I have since become involved myself, attending adult workout classes, which have helped improve my volleyball game.",
+     "c": "rgb(0, 0, 0)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 9,
+   "region": "main",
+   "x": 60,
+   "y": 7812,
+   "w": 270,
+   "h": 252
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "I truly love my job. It's so rewarding to see the kids grow in their skills and ",
+   "full": "I truly love my job. It's so rewarding to see the kids grow in their skills and overcome new challenges. The work environment is welcoming, supportive, and a lot of fun!",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(0, 0, 0)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 28,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "I truly love my job. It's so rewarding to see the kids grow in their skills and overcome new challenges. The work environment is welcoming, supportive, and a lot of fun!",
+     "c": "rgb(0, 0, 0)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 6,
+   "region": "main",
+   "x": 60,
+   "y": 8084,
+   "w": 270,
+   "h": 168
+  },
+  {
+   "kind": "bgimage",
+   "src": "https://www.springfieldwarriorsports.com/wp-content/uploads/2026/01/Connor-team-photo.jpg",
+   "region": "main",
+   "x": 60,
+   "y": 8342,
+   "w": 270,
+   "h": 260
+  },
+  {
+   "kind": "heading",
+   "tag": "h2",
+   "text": "CONNOR",
+   "family": "Heebo",
+   "size": 30,
+   "weight": 900,
+   "color": "rgb(40, 82, 118)",
+   "align": "left",
+   "transform": "uppercase",
+   "spacing": 0,
+   "lh": 30,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Connor",
+     "c": "rgb(40, 82, 118)",
+     "w": 900,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "main",
+   "x": 61,
+   "y": 8618,
+   "w": 268,
+   "h": 30
+  },
+  {
+   "kind": "heading",
+   "tag": "h3",
+   "text": "ADVANCED TEAM ASSISTANT | BEGINNER NINJA COACH | BIRTHDAY PARTY HOST",
+   "family": "Heebo",
+   "size": 18,
+   "weight": 400,
+   "color": "rgb(219, 58, 52)",
+   "align": "left",
+   "transform": "uppercase",
+   "spacing": 0,
+   "lh": 27,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Advanced Team Assistant | Beginner NINJA Coach | birthday party host",
+     "c": "rgb(219, 58, 52)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 3,
+   "region": "main",
+   "x": 61,
+   "y": 8660,
+   "w": 268,
+   "h": 81
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "Hello, I’m Connor!",
+   "full": "Hello, I’m Connor!",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(0, 0, 0)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 28,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Hello, I’m Connor!",
+     "c": "rgb(0, 0, 0)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "main",
+   "x": 60,
+   "y": 8772,
+   "w": 270,
+   "h": 28
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "I’ve been part of the Springfield Warrior Sports team since early 2018 and start",
+   "full": "I’ve been part of the Springfield Warrior Sports team since early 2018 and started working at Warrior Sports in 2022. I was drawn to ninja for its creativity, problem-solving, strength, agility, and precision. After starting in parkour classes, I was invited to join the CSNA team early on.",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(0, 0, 0)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 28,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "I’ve been part of the Springfield Warrior Sports team since early 2018 and started working at Warrior Sports in 2022. I was drawn to ninja for its creativity, problem-solving, strength, agility, and precision. After starting in parkour classes, I was invited to join the CSNA team early on.",
+     "c": "rgb(0, 0, 0)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 9,
+   "region": "main",
+   "x": 60,
+   "y": 8820,
+   "w": 270,
+   "h": 252
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "Over time, I’ve competed in small and large ninja competitions and pushed myself",
+   "full": "Over time, I’ve competed in small and large ninja competitions and pushed myself to grow both physically and mentally. I’m a 2-time WNL Worlds finalist and a 1-time UNAA world finalist. I placed top 100 in the 2024 WNL Worlds competition. In the 2024 UNAA worlds competition, I fractured my nose on the second-to-last obstacle and ended my run early. Some of my greatest accomplishments outside of competing are being the shortest person to conquer the 18’ warped wall at 5’ 2”, and doing 40 pull-ups without dropping.",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(0, 0, 0)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 28,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Over time, I’ve competed in small and large ninja competitions and pushed myself to grow both physically and mentally. I’m a 2-time WNL Worlds finalist and a 1-time UNAA world finalist. I placed top 100 in the 2024 WNL Worlds competition. In the 2024 UNAA worlds competition, I fractured my nose on the second-to-last obstacle and ended my run early. Some of my greatest accomplishments outside of competing are being the shortest person to conquer the 18’ warped wall at 5’ 2”, and doing 40 pull-ups without dropping. ",
+     "c": "rgb(0, 0, 0)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 17,
+   "region": "main",
+   "x": 60,
+   "y": 9092,
+   "w": 270,
+   "h": 476
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "I also run Birthday Parties and currently teach the beginner Warrior classes and",
+   "full": "I also run Birthday Parties and currently teach the beginner Warrior classes and am a secondary coach to the advanced team classes. What I love most is helping kids build confidence and helping them push themselves mentally and physically.",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(0, 0, 0)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 28,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "I also run Birthday Parties and currently teach the beginner Warrior classes and am a secondary coach to the advanced team classes. What I love most is helping kids build confidence and helping them push themselves mentally and physically. ",
+     "c": "rgb(0, 0, 0)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 9,
+   "region": "main",
+   "x": 60,
+   "y": 9603,
+   "w": 270,
+   "h": 252
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "Outside of ninja, I like to weight lift and train flips, and when I’m not traini",
+   "full": "Outside of ninja, I like to weight lift and train flips, and when I’m not training, you’ll probably find me playing chess, solving Rudbik’s cubes, and playing Minecraft. I also like cheese burgers.",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(0, 0, 0)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 28,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Outside of ninja, I like to weight lift and train flips, and when I’m not training, you’ll probably find me playing chess, solving Rudbik’s cubes, and playing Minecraft. I also like cheese burgers.",
+     "c": "rgb(0, 0, 0)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 6,
+   "region": "main",
+   "x": 60,
+   "y": 9875,
+   "w": 270,
+   "h": 168
+  },
+  {
+   "kind": "bgimage",
+   "src": "https://www.springfieldwarriorsports.com/wp-content/uploads/2026/01/Caleb-team-photo.jpg",
+   "region": "main",
+   "x": 60,
+   "y": 10133,
+   "w": 270,
+   "h": 260
+  },
+  {
+   "kind": "heading",
+   "tag": "h2",
+   "text": "CALEB",
+   "family": "Heebo",
+   "size": 30,
+   "weight": 900,
+   "color": "rgb(40, 82, 118)",
+   "align": "left",
+   "transform": "uppercase",
+   "spacing": 0,
+   "lh": 30,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Caleb",
+     "c": "rgb(40, 82, 118)",
+     "w": 900,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "main",
+   "x": 61,
+   "y": 10409,
+   "w": 268,
+   "h": 30
+  },
+  {
+   "kind": "heading",
+   "tag": "h3",
+   "text": "BEGINNER NINJA COACH | PRESCHOOL COACH | BIRTHDAY PARTY HOST",
+   "family": "Heebo",
+   "size": 18,
+   "weight": 400,
+   "color": "rgb(219, 58, 52)",
+   "align": "left",
+   "transform": "uppercase",
+   "spacing": 0,
+   "lh": 27,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Beginner Ninja COACH | Preschool Coach | Birthday party host",
+     "c": "rgb(219, 58, 52)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 3,
+   "region": "main",
+   "x": 61,
+   "y": 10451,
+   "w": 268,
+   "h": 81
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "Hey everyone! I’m Coach Caleb.",
+   "full": "Hey everyone! I’m Coach Caleb.",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(0, 0, 0)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 28,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Hey everyone! I’m Coach Caleb.",
+     "c": "rgb(0, 0, 0)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "main",
+   "x": 60,
+   "y": 10563,
+   "w": 270,
+   "h": 28
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "I’ve been part of the Warrior Sports team since May 31, 2025. I’ve always loved ",
+   "full": "I’ve been part of the Warrior Sports team since May 31, 2025. I’ve always loved working out and staying active, and I wanted to try something a little different—ninja training was the perfect fit. It’s challenging, fun, and pushes you to move in new ways.",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(0, 0, 0)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 28,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "I’ve been part of the Warrior Sports team since May 31, 2025. I’ve always loved working out and staying active, and I wanted to try something a little different—ninja training was the perfect fit. It’s challenging, fun, and pushes you to move in new ways.",
+     "c": "rgb(0, 0, 0)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 8,
+   "region": "main",
+   "x": 60,
+   "y": 10611,
+   "w": 270,
+   "h": 224
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "Here at W.S., I teach our Beginner Ninja classes and Preschool Ninja classes, an",
+   "full": "Here at W.S., I teach our Beginner Ninja classes and Preschool Ninja classes, and I also help run birthday parties (they’re some of my favorite days on the job!). Whether it’s someone’s first class or their tenth, I love seeing kids get stronger, more confident, and more excited every time they walk through the door.",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(0, 0, 0)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 28,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Here at W.S., I teach our Beginner Ninja classes and Preschool Ninja classes, and I also help run birthday parties (they’re some of my favorite days on the job!). Whether it’s someone’s first class or their tenth, I love seeing kids get stronger, more confident, and more excited every time they walk through the door.",
+     "c": "rgb(0, 0, 0)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 10,
+   "region": "main",
+   "x": 60,
+   "y": 10855,
+   "w": 270,
+   "h": 280
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "Outside the gym, I’m into rock climbing, caving, and weight lifting—basically an",
+   "full": "Outside the gym, I’m into rock climbing, caving, and weight lifting—basically anything that keeps me moving and gets the adrenaline going. When it’s time to eat, you’ll catch me loading up on shrimp and fried rice, steak, or sushi—top-tier meals in my book!",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(0, 0, 0)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 28,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Outside the gym, I’m into rock climbing, caving, and weight lifting—basically anything that keeps me moving and gets the adrenaline going. When it’s time to eat, you’ll catch me loading up on shrimp and fried rice, steak, or sushi—top-tier meals in my book!",
+     "c": "rgb(0, 0, 0)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 8,
+   "region": "main",
+   "x": 60,
+   "y": 11170,
+   "w": 270,
+   "h": 224
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "I’m all about helping kids have fun, get fit, and feel like ninjas. Can’t wait t",
+   "full": "I’m all about helping kids have fun, get fit, and feel like ninjas. Can’t wait to train with you!",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(0, 0, 0)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 28,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "I’m all about helping kids have fun, get fit, and feel like ninjas. Can’t wait to train with you!",
+     "c": "rgb(0, 0, 0)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 3,
+   "region": "main",
+   "x": 60,
+   "y": 11414,
+   "w": 270,
+   "h": 84
+  },
+  {
+   "kind": "bgimage",
+   "src": "https://www.springfieldwarriorsports.com/wp-content/uploads/2026/01/Ruby-team-photo.jpg",
+   "region": "main",
+   "x": 60,
+   "y": 11588,
+   "w": 270,
+   "h": 260
+  },
+  {
+   "kind": "heading",
+   "tag": "h2",
+   "text": "RUBY",
+   "family": "Heebo",
+   "size": 30,
+   "weight": 900,
+   "color": "rgb(40, 82, 118)",
+   "align": "left",
+   "transform": "uppercase",
+   "spacing": 0,
+   "lh": 30,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Ruby",
+     "c": "rgb(40, 82, 118)",
+     "w": 900,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "main",
+   "x": 61,
+   "y": 11864,
+   "w": 268,
+   "h": 30
+  },
+  {
+   "kind": "heading",
+   "tag": "h3",
+   "text": "ALL-LEVELS NINJA COACH | PRIVATE TRAINING | BIRTHDAY PARTY HOST",
+   "family": "Heebo",
+   "size": 18,
+   "weight": 400,
+   "color": "rgb(219, 58, 52)",
+   "align": "left",
+   "transform": "uppercase",
+   "spacing": 0,
+   "lh": 27,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "All-Levels ninja Coach | private Training | Birthday party host",
+     "c": "rgb(219, 58, 52)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 3,
+   "region": "main",
+   "x": 61,
+   "y": 11906,
+   "w": 268,
+   "h": 81
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "I’m Ruby Wilder, and I’ve been involved in Warrior Sports since I was five years",
+   "full": "I’m Ruby Wilder, and I’ve been involved in Warrior Sports since I was five years old.",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(0, 0, 0)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 28,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "I’m Ruby Wilder, and I’ve been involved in Warrior Sports since I was five years old.",
+     "c": "rgb(0, 0, 0)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 3,
+   "region": "main",
+   "x": 60,
+   "y": 12018,
+   "w": 270,
+   "h": 84
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "I competed from ages 8 to 11 and officially started working at Warriors Sports i",
+   "full": "I competed from ages 8 to 11 and officially started working at Warriors Sports in 2022. I coach all classes from the preschool class up to the advanced team class, along with one-on-one training.",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(0, 0, 0)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 28,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "I competed from ages 8 to 11 and officially started working at Warriors Sports in 2022. I coach all classes from the preschool class up to the advanced team class, along with one-on-one training. ",
+     "c": "rgb(0, 0, 0)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 6,
+   "region": "main",
+   "x": 60,
+   "y": 12122,
+   "w": 270,
+   "h": 168
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "I also work birthday parties, logins, laser/nerf nights, and parents' night out.",
+   "full": "I also work birthday parties, logins, laser/nerf nights, and parents' night out.",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(0, 0, 0)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 28,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "I also work birthday parties, logins, laser/nerf nights, and parents' night out.",
+     "c": "rgb(0, 0, 0)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 3,
+   "region": "main",
+   "x": 60,
+   "y": 12310,
+   "w": 270,
+   "h": 84
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "Outside the gym, I’m an artist in all categories. I am a musician, play the harp",
+   "full": "Outside the gym, I’m an artist in all categories. I am a musician, play the harp and bass, and I sing professionally as well. I am also a babysitter, as well as an animal caretaker. I love Chinese and Mexican food, and my favorite color is purple!!!",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(0, 0, 0)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 28,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Outside the gym, I’m an artist in all categories. I am a musician, play the harp and bass, and I sing professionally as well. I am also a babysitter, as well as an animal caretaker. I love Chinese and Mexican food, and my favorite color is purple!!!",
+     "c": "rgb(0, 0, 0)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 8,
+   "region": "main",
+   "x": 60,
+   "y": 12414,
+   "w": 270,
+   "h": 224
+  },
+  {
+   "kind": "bgimage",
+   "src": "https://www.springfieldwarriorsports.com/wp-content/uploads/2026/01/Josiah-team-photo.jpg",
+   "region": "main",
+   "x": 60,
+   "y": 12728,
+   "w": 270,
+   "h": 260
+  },
+  {
+   "kind": "heading",
+   "tag": "h2",
+   "text": "JOSIAH",
+   "family": "Heebo",
+   "size": 30,
+   "weight": 900,
+   "color": "rgb(40, 82, 118)",
+   "align": "left",
+   "transform": "uppercase",
+   "spacing": 0,
+   "lh": 30,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Josiah",
+     "c": "rgb(40, 82, 118)",
+     "w": 900,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "main",
+   "x": 61,
+   "y": 13004,
+   "w": 268,
+   "h": 30
+  },
+  {
+   "kind": "heading",
+   "tag": "h3",
+   "text": "BIRTHDAY PARTY HOST",
+   "family": "Heebo",
+   "size": 18,
+   "weight": 400,
+   "color": "rgb(219, 58, 52)",
+   "align": "left",
+   "transform": "uppercase",
+   "spacing": 0,
+   "lh": 27,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "birthday Party Host",
+     "c": "rgb(219, 58, 52)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "main",
+   "x": 61,
+   "y": 13046,
+   "w": 268,
+   "h": 27
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "My name is Josiah, and I’ve trained and competed in ninja for about eight years ",
+   "full": "My name is Josiah, and I’ve trained and competed in ninja for about eight years and have loved every second of it.",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(0, 0, 0)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 28,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "My name is Josiah, and I’ve trained and competed in ninja for about eight years and have loved every second of it.",
+     "c": "rgb(0, 0, 0)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 4,
+   "region": "main",
+   "x": 60,
+   "y": 13104,
+   "w": 270,
+   "h": 112
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "After placing top 100 in the world in the World Ninja League in 2024, I sadly ha",
+   "full": "After placing top 100 in the world in the World Ninja League in 2024, I sadly had to take a big break from the sport and leave for College of the Ozarks, where I am now studying graphic design. On top of ninja, I have many interests and hobbies I pursue, including parkour, baseball, street art, and drawing, to name a few.",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(0, 0, 0)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 28,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "After placing top 100 in the world in the World Ninja League in 2024, I sadly had to take a big break from the sport and leave for College of the Ozarks, where I am now studying graphic design. On top of ninja, I have many interests and hobbies I pursue, including parkour, baseball, street art, and drawing, to name a few.",
+     "c": "rgb(0, 0, 0)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 10,
+   "region": "main",
+   "x": 60,
+   "y": 13236,
+   "w": 270,
+   "h": 280
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "Here at Springfield Warrior Sports, I was the head coach of the beginner classes",
+   "full": "Here at Springfield Warrior Sports, I was the head coach of the beginner classes and worked all the summer camps before I left for college, but now you will most commonly find me here on the weekends working birthday parties and training whenever I can.",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(0, 0, 0)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 28,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Here at Springfield Warrior Sports, I was the head coach of the beginner classes and worked all the summer camps before I left for college, but now you will most commonly find me here on the weekends working birthday parties and training whenever I can.",
+     "c": "rgb(0, 0, 0)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 9,
+   "region": "main",
+   "x": 60,
+   "y": 13536,
+   "w": 270,
+   "h": 252
+  },
+  {
+   "kind": "bgimage",
+   "src": "https://www.springfieldwarriorsports.com/wp-content/uploads/2026/02/Jacob-photo.jpg",
+   "region": "main",
+   "x": 60,
+   "y": 13878,
+   "w": 270,
+   "h": 260
+  },
+  {
+   "kind": "heading",
+   "tag": "h2",
+   "text": "JACOB",
+   "family": "Heebo",
+   "size": 30,
+   "weight": 900,
+   "color": "rgb(40, 82, 118)",
+   "align": "left",
+   "transform": "uppercase",
+   "spacing": 0,
+   "lh": 30,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Jacob",
+     "c": "rgb(40, 82, 118)",
+     "w": 900,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "main",
+   "x": 61,
+   "y": 14154,
+   "w": 268,
+   "h": 30
+  },
+  {
+   "kind": "heading",
+   "tag": "h3",
+   "text": "LEAD PERSONAL TRAINER",
+   "family": "Heebo",
+   "size": 18,
+   "weight": 400,
+   "color": "rgb(219, 58, 52)",
+   "align": "left",
+   "transform": "uppercase",
+   "spacing": 0,
+   "lh": 27,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "lead Personal trainer",
+     "c": "rgb(219, 58, 52)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "main",
+   "x": 61,
+   "y": 14196,
+   "w": 268,
+   "h": 27
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "Hi! I’m Jacob Winter.",
+   "full": "Hi! I’m Jacob Winter.",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(0, 0, 0)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 28,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Hi! I’m Jacob Winter.",
+     "c": "rgb(0, 0, 0)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "main",
+   "x": 60,
+   "y": 14254,
+   "w": 270,
+   "h": 28
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "I’ve been an employee of Springfield Warrior Sports since 2017, initially being ",
+   "full": "I’ve been an employee of Springfield Warrior Sports since 2017, initially being drawn to the sport of NinjaWarrior. I’ve competed in several regional and national-level competitions, and that nourished my passion for fitness and community. I’ve worked in every capacity at Springfield Warrior Sports, including hosting birthdays, running Jr Ninja Warrior classes, and ensuring everyone is having fun!",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(0, 0, 0)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 28,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "I’ve been an employee of Springfield Warrior Sports since 2017, initially being drawn to the sport of NinjaWarrior. I’ve competed in several regional and national-level competitions, and that nourished my passion for fitness and community. I’ve worked in every capacity at Springfield Warrior Sports, including hosting birthdays, running Jr Ninja Warrior classes, and ensuring everyone is having fun!",
+     "c": "rgb(0, 0, 0)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 14,
+   "region": "main",
+   "x": 60,
+   "y": 14302,
+   "w": 270,
+   "h": 392
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "My main job is to head up the personal training side of the gym, working with ag",
+   "full": "My main job is to head up the personal training side of the gym, working with age ranges from 10-100, helping people achieve their fitness goals and engage with the community. Nothing brings me more joy!",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(0, 0, 0)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 28,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "My main job is to head up the personal training side of the gym, working with age ranges from 10-100, helping people achieve their fitness goals and engage with the community. Nothing brings me more joy!",
+     "c": "rgb(0, 0, 0)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 7,
+   "region": "main",
+   "x": 60,
+   "y": 14714,
+   "w": 270,
+   "h": 196
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "Outside of the gym, I can be found performing at our local community theatre, wa",
+   "full": "Outside of the gym, I can be found performing at our local community theatre, watching cartoons and playing video games, and hanging out with my friends!",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(0, 0, 0)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 28,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Outside of the gym, I can be found performing at our local community theatre, watching cartoons and playing video games, and hanging out with my friends!",
+     "c": "rgb(0, 0, 0)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 6,
+   "region": "main",
+   "x": 60,
+   "y": 14930,
+   "w": 270,
+   "h": 168
+  },
+  {
+   "kind": "bgimage",
+   "src": "https://www.springfieldwarriorsports.com/wp-content/uploads/2026/02/Grace-photo.jpg",
+   "region": "main",
+   "x": 60,
+   "y": 15188,
+   "w": 270,
+   "h": 260
+  },
+  {
+   "kind": "heading",
+   "tag": "h2",
+   "text": "GRACE",
+   "family": "Heebo",
+   "size": 30,
+   "weight": 900,
+   "color": "rgb(40, 82, 118)",
+   "align": "left",
+   "transform": "uppercase",
+   "spacing": 0,
+   "lh": 30,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Grace",
+     "c": "rgb(40, 82, 118)",
+     "w": 900,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "main",
+   "x": 61,
+   "y": 15464,
+   "w": 268,
+   "h": 30
+  },
+  {
+   "kind": "heading",
+   "tag": "h3",
+   "text": "BEGINNER NINJA COACH | BIRTHDAY PARTY HOST",
+   "family": "Heebo",
+   "size": 18,
+   "weight": 400,
+   "color": "rgb(219, 58, 52)",
+   "align": "left",
+   "transform": "uppercase",
+   "spacing": 0,
+   "lh": 27,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Beginner Ninja Coach | birthday Party Host",
+     "c": "rgb(219, 58, 52)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 2,
+   "region": "main",
+   "x": 61,
+   "y": 15506,
+   "w": 268,
+   "h": 54
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "Hi, I’m Grace.",
+   "full": "Hi, I’m Grace.",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(0, 0, 0)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 28,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Hi, I’m Grace.",
+     "c": "rgb(0, 0, 0)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "main",
+   "x": 60,
+   "y": 15591,
+   "w": 270,
+   "h": 28
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "I’ve been training at Warrior Sports since I was 8 years old and began working t",
+   "full": "I’ve been training at Warrior Sports since I was 8 years old and began working there at 15. On weekends, I host birthday parties and occasionally teach beginner classes.",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(0, 0, 0)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 28,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "I’ve been training at Warrior Sports since I was 8 years old and began working there at 15. On weekends, I host birthday parties and occasionally teach beginner classes.",
+     "c": "rgb(0, 0, 0)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 6,
+   "region": "main",
+   "x": 60,
+   "y": 15639,
+   "w": 270,
+   "h": 168
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "I’ve been competing since 2018, traveling across the country for UNAA and WNL ev",
+   "full": "I’ve been competing since 2018, traveling across the country for UNAA and WNL events. I’ve also competed at Worlds, earning multiple top-10 finishes in my division.",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(0, 0, 0)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 28,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "I’ve been competing since 2018, traveling across the country for UNAA and WNL events. I’ve also competed at Worlds, earning multiple top-10 finishes in my division. ",
+     "c": "rgb(0, 0, 0)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 6,
+   "region": "main",
+   "x": 60,
+   "y": 15827,
+   "w": 270,
+   "h": 168
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "Outside of ninja, I play softball and run track for Reeds Spring High School.",
+   "full": "Outside of ninja, I play softball and run track for Reeds Spring High School.",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(0, 0, 0)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 28,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Outside of ninja, I play softball and run track for Reeds Spring High School.",
+     "c": "rgb(0, 0, 0)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 3,
+   "region": "main",
+   "x": 60,
+   "y": 16015,
+   "w": 270,
+   "h": 84
+  },
+  {
+   "kind": "bgimage",
+   "src": "https://www.springfieldwarriorsports.com/wp-content/uploads/2025/12/IMG_2336-scaled.jpeg",
+   "region": "main",
+   "x": 0,
+   "y": 16214,
+   "w": 390,
+   "h": 509
+  },
+  {
+   "kind": "heading",
+   "tag": "h2",
+   "text": "YOU'VE MET THE TEAM.",
+   "family": "Heebo",
+   "size": 32,
+   "weight": 900,
+   "color": "rgb(219, 58, 52)",
+   "align": "center",
+   "transform": "uppercase",
+   "spacing": 0,
+   "lh": 32,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "you've met the Team.",
+     "c": "rgb(219, 58, 52)",
+     "w": 900,
+     "u": false
+    }
+   ],
+   "lines": 2,
+   "region": "main",
+   "x": 20,
+   "y": 16284,
+   "w": 350,
+   "h": 64
+  },
+  {
+   "kind": "heading",
+   "tag": "h2",
+   "text": "NOW TRAIN WITH THEM.",
+   "family": "Heebo",
+   "size": 32,
+   "weight": 900,
+   "color": "rgb(219, 58, 52)",
+   "align": "center",
+   "transform": "uppercase",
+   "spacing": 0,
+   "lh": 32,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Now Train With Them.",
+     "c": "rgb(219, 58, 52)",
+     "w": 900,
+     "u": false
+    }
+   ],
+   "lines": 2,
+   "region": "main",
+   "x": 20,
+   "y": 16358,
+   "w": 350,
+   "h": 64
+  },
+  {
+   "kind": "heading",
+   "tag": "h4",
+   "text": "You’ve met the coaches who make Springfield Warrior Sports what it is.",
+   "family": "Epilogue",
+   "size": 18,
+   "weight": 400,
+   "color": "rgb(255, 255, 255)",
+   "align": "center",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 29,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "You’ve met the coaches who make Springfield Warrior Sports what it is.",
+     "c": "rgb(255, 255, 255)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 2,
+   "region": "main",
+   "x": 21,
+   "y": 16433,
+   "w": 348,
+   "h": 68
+  },
+  {
+   "kind": "heading",
+   "tag": "h4",
+   "text": "Now, come be a part of it and experience it for yourself.",
+   "family": "Epilogue",
+   "size": 18,
+   "weight": 400,
+   "color": "rgb(255, 255, 255)",
+   "align": "center",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 29,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Now, come be a part of it and experience it for yourself.",
+     "c": "rgb(255, 255, 255)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 2,
+   "region": "main",
+   "x": 21,
+   "y": 16503,
+   "w": 348,
+   "h": 58
+  },
+  {
+   "kind": "button",
+   "text": "TRY OPEN GYM FOR $10",
+   "bg": "rgb(219, 58, 52)",
+   "radius": "100px",
+   "family": "Heebo",
+   "size": 12,
+   "weight": 700,
+   "color": "rgb(255, 255, 255)",
+   "align": "center",
+   "transform": "uppercase",
+   "spacing": 2,
+   "lh": 19,
+   "region": "main",
+   "x": 72,
+   "y": 16581,
+   "w": 246,
+   "h": 39
+  },
+  {
+   "kind": "icon",
+   "color": "rgb(255, 255, 255)",
+   "region": "main",
+   "x": 282,
+   "y": 16593,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "kind": "heading",
+   "tag": "h4",
+   "text": "No experience required.",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(135, 204, 237)",
+   "align": "center",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 26,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "No experience required.",
+     "c": "rgb(135, 204, 237)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "main",
+   "x": 100,
+   "y": 16627,
+   "w": 190,
+   "h": 26
+  },
+  {
+   "kind": "image",
+   "src": "https://www.springfieldwarriorsports.com/wp-content/uploads/2023/03/SWS-logo-footer.png",
+   "region": "footer",
+   "x": 20,
+   "y": 16775,
+   "w": 266,
+   "h": 76
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "Our accomplished and award winning Crew are here to help you find your strength ",
+   "full": "Our accomplished and award winning Crew are here to help you find your strength and enjoy your workouts.",
+   "family": "Muli",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(51, 51, 51)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 24,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Our accomplished and award winning Crew are here to help you find your strength and enjoy your workouts.",
+     "c": "rgb(51, 51, 51)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 3,
+   "region": "footer",
+   "x": 21,
+   "y": 16872,
+   "w": 348,
+   "h": 72
+  },
+  {
+   "kind": "icon",
+   "color": "rgb(255, 255, 255)",
+   "region": "footer",
+   "x": 29,
+   "y": 16978,
+   "w": 17,
+   "h": 17
+  },
+  {
+   "kind": "icon",
+   "color": "rgb(255, 255, 255)",
+   "region": "footer",
+   "x": 66,
+   "y": 16978,
+   "w": 17,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "CONTACT",
+   "full": "CONTACT",
+   "family": "Heebo",
+   "size": 16,
+   "weight": 900,
+   "color": "rgb(40, 82, 118)",
+   "align": "left",
+   "transform": "uppercase",
+   "spacing": 2,
+   "lh": 28,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Contact",
+     "c": "rgb(40, 82, 118)",
+     "w": 900,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "footer",
+   "x": 20,
+   "y": 17037,
+   "w": 350,
+   "h": 28
+  },
+  {
+   "kind": "icon",
+   "color": "rgb(219, 58, 52)",
+   "region": "footer",
+   "x": 31,
+   "y": 17080,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "tag": "span",
+   "text": "605 W Farm Rd 182, Springfield, MO, 65810, United States",
+   "full": "605 W Farm Rd 182, Springfield, MO, 65810, United States",
+   "family": "Muli",
+   "size": 14,
+   "weight": 400,
+   "color": "rgb(51, 51, 51)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 22,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "605 W Farm Rd 182, Springfield,MO, 65810, United States",
+     "c": "rgb(51, 51, 51)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 2,
+   "region": "footer",
+   "x": 57,
+   "y": 17075,
+   "w": 212,
+   "h": 45
+  },
+  {
+   "kind": "icon",
+   "color": "rgb(219, 58, 52)",
+   "region": "footer",
+   "x": 31,
+   "y": 17135,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "tag": "span",
+   "text": "(417) 894-7319",
+   "full": "(417) 894-7319",
+   "family": "Muli",
+   "size": 14,
+   "weight": 400,
+   "color": "rgb(51, 51, 51)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 22,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "(417) 894-7319",
+     "c": "rgb(51, 51, 51)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "footer",
+   "x": 57,
+   "y": 17130,
+   "w": 103,
+   "h": 22
+  },
+  {
+   "kind": "text",
+   "tag": "a",
+   "text": "(417) 894-7319",
+   "family": "Muli",
+   "size": 14,
+   "weight": 400,
+   "color": "rgb(51, 51, 51)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 22,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "(417) 894-7319",
+     "c": "rgb(51, 51, 51)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "footer",
+   "x": 57,
+   "y": 17132,
+   "w": 103,
+   "h": 18
+  },
+  {
+   "kind": "icon",
+   "color": "rgb(219, 58, 52)",
+   "region": "footer",
+   "x": 31,
+   "y": 17176,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "tag": "span",
+   "text": "office@swarriorsports.com",
+   "full": "office@swarriorsports.com",
+   "family": "Muli",
+   "size": 14,
+   "weight": 400,
+   "color": "rgb(51, 51, 51)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 22,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "office@swarriorsports.com",
+     "c": "rgb(51, 51, 51)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "footer",
+   "x": 57,
+   "y": 17171,
+   "w": 173,
+   "h": 22
+  },
+  {
+   "kind": "text",
+   "tag": "a",
+   "text": "office@swarriorsports.com",
+   "family": "Muli",
+   "size": 14,
+   "weight": 400,
+   "color": "rgb(51, 51, 51)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 22,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "office@swarriorsports.com",
+     "c": "rgb(51, 51, 51)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "footer",
+   "x": 57,
+   "y": 17173,
+   "w": 173,
+   "h": 18
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "QUICK LINKS",
+   "full": "QUICK LINKS",
+   "family": "Heebo",
+   "size": 16,
+   "weight": 900,
+   "color": "rgb(40, 82, 118)",
+   "align": "left",
+   "transform": "uppercase",
+   "spacing": 2,
+   "lh": 28,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "QUICK LInks",
+     "c": "rgb(40, 82, 118)",
+     "w": 900,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "footer",
+   "x": 20,
+   "y": 17232,
+   "w": 350,
+   "h": 28
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "Home",
+   "full": "Home",
+   "family": "Muli",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(51, 51, 51)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 24,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Home",
+     "c": "rgb(51, 51, 51)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "footer",
+   "x": 21,
+   "y": 17271,
+   "w": 348,
+   "h": 24
+  },
+  {
+   "kind": "text",
+   "tag": "a",
+   "text": "Home",
+   "family": "Muli",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(51, 51, 51)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 24,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Home",
+     "c": "rgb(51, 51, 51)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "footer",
+   "x": 21,
+   "y": 17273,
+   "w": 44,
+   "h": 20
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "About Us",
+   "full": "About Us",
+   "family": "Muli",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(51, 51, 51)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 24,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "About Us",
+     "c": "rgb(51, 51, 51)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "footer",
+   "x": 21,
+   "y": 17297,
+   "w": 348,
+   "h": 24
+  },
+  {
+   "kind": "text",
+   "tag": "a",
+   "text": "About Us",
+   "family": "Muli",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(51, 51, 51)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 24,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "About Us",
+     "c": "rgb(51, 51, 51)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "footer",
+   "x": 21,
+   "y": 17299,
+   "w": 69,
+   "h": 20
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "Contact Us",
+   "full": "Contact Us",
+   "family": "Muli",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(51, 51, 51)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 24,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Contact Us",
+     "c": "rgb(51, 51, 51)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "footer",
+   "x": 21,
+   "y": 17323,
+   "w": 348,
+   "h": 24
+  },
+  {
+   "kind": "text",
+   "tag": "a",
+   "text": "Contact Us",
+   "family": "Muli",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(51, 51, 51)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 24,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Contact Us",
+     "c": "rgb(51, 51, 51)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "footer",
+   "x": 21,
+   "y": 17325,
+   "w": 82,
+   "h": 20
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "Meet the Team",
+   "full": "Meet the Team",
+   "family": "Muli",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(51, 51, 51)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 24,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Meet the Team",
+     "c": "rgb(51, 51, 51)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "footer",
+   "x": 21,
+   "y": 17349,
+   "w": 348,
+   "h": 24
+  },
+  {
+   "kind": "text",
+   "tag": "a",
+   "text": "Meet the Team",
+   "family": "Muli",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(51, 51, 51)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 24,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Meet the Team",
+     "c": "rgb(51, 51, 51)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "footer",
+   "x": 21,
+   "y": 17351,
+   "w": 109,
+   "h": 20
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "© Copyright 2026",
+   "full": "© Copyright 2026",
+   "family": "Epilogue",
+   "size": 12,
+   "weight": 600,
+   "color": "rgb(255, 255, 255)",
+   "align": "center",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 20,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "© Copyright 2026",
+     "c": "rgb(255, 255, 255)",
+     "w": 600,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "footer",
+   "x": 20,
+   "y": 17430,
+   "w": 350,
+   "h": 20
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "Springfield Warrior Sports",
+   "full": "Springfield Warrior Sports",
+   "family": "Epilogue",
+   "size": 12,
+   "weight": 600,
+   "color": "rgb(255, 255, 255)",
+   "align": "center",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 20,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": " Springfield Warrior Sports",
+     "c": "rgb(255, 255, 255)",
+     "w": 600,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "footer",
+   "x": 20,
+   "y": 17450,
+   "w": 350,
+   "h": 20
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "All Rights Reserved.",
+   "full": "All Rights Reserved.",
+   "family": "Epilogue",
+   "size": 12,
+   "weight": 600,
+   "color": "rgb(255, 255, 255)",
+   "align": "center",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 20,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "All Rights Reserved.",
+     "c": "rgb(255, 255, 255)",
+     "w": 600,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "footer",
+   "x": 20,
+   "y": 17470,
+   "w": 350,
+   "h": 20
+  }
+ ],
+ "bands": [
+  {
+   "bg": "rgb(255, 255, 255)",
+   "x": 0,
+   "y": 0,
+   "w": 390,
+   "h": 149
+  },
+  {
+   "bg": "rgb(255, 255, 255)",
+   "x": 0,
+   "y": 16725,
+   "w": 390,
+   "h": 786
+  }
+ ]
+}
