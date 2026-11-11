@@ -370,7 +370,7 @@ for (const width of readdirSync(liveDir).sort((a, b) => Number(b) - Number(a))) 
         // Only runs whose color is a real background color on the page (not a photo that
         // happens to be flat for a stretch) count as bands.
         const bgColors = (live.bands || []).map((b) => parseColor(b.bg));
-        const isBg = (c) => bgColors.some((d) => Math.max(...c.map((v, i) => Math.abs(v - d[i]))) <= BG_TOL);
+        const isBg = (c) => [[0, 0, 0], [255, 255, 255], ...bgColors].some((d) => Math.max(...c.map((v, i) => Math.abs(v - d[i]))) <= BG_TOL); // v2.9: pure black/white too (footer copyright bar)
         const [lr0, br] = await Promise.all([marginRuns(livePng), marginRuns(buildPng)]);
         const lr = lr0.filter((r) => isBg(r.c));
         // Match each live band to the build band of the same color (within 12, JPEG chroma) whose
