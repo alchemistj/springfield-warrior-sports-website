@@ -216,12 +216,10 @@ a {
   object-position: center;
 }
 .hero-copy.align-center .hero-scrim.about-scrim {
-  background: rgba(96, 96, 72, 0.86);
+  background: rgba(0, 0, 0, 0.5);
 }
-@media (min-width: 800px) {
-  .hero-copy.align-center .hero-scrim.about-scrim {
-    background: rgba(24, 24, 48, 0.92);
-  }
+.page-kids-classes .hero-copy.align-center .hero-scrim {
+  background: none;
 }
 
 .hero-copy {
@@ -335,6 +333,12 @@ a {
   .hero-kicker {
     margin-top: -10px;
     font-size: 45px;
+  }
+  .page-kids-classes .hero-kicker {
+    margin-top: 9px;
+    line-height: 1;
+    position: relative;
+    top: 6px;
   }
   .hero-sub {
     font-size: 20px;
