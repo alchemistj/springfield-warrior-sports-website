@@ -27,7 +27,7 @@
      "u": false
     }
    ],
-   "lines": 2,
+   "lines": 1,
    "region": "header",
    "x": 1202,
    "y": 6,
@@ -55,7 +55,7 @@
      "u": false
     }
    ],
-   "lines": 2,
+   "lines": 1,
    "region": "header",
    "x": 1297,
    "y": 6,
@@ -83,7 +83,7 @@
      "u": false
     }
    ],
-   "lines": 2,
+   "lines": 1,
    "region": "header",
    "x": 1372,
    "y": 6,
@@ -120,7 +120,7 @@
      "u": false
     }
    ],
-   "lines": 2,
+   "lines": 1,
    "region": "header",
    "x": 688,
    "y": 73,
@@ -148,7 +148,7 @@
      "u": false
     }
    ],
-   "lines": 2,
+   "lines": 1,
    "region": "header",
    "x": 820,
    "y": 73,
@@ -176,7 +176,7 @@
      "u": false
     }
    ],
-   "lines": 2,
+   "lines": 1,
    "region": "header",
    "x": 930,
    "y": 73,
@@ -204,7 +204,7 @@
      "u": false
     }
    ],
-   "lines": 2,
+   "lines": 1,
    "region": "header",
    "x": 1058,
    "y": 73,
@@ -232,7 +232,7 @@
      "u": false
     }
    ],
-   "lines": 2,
+   "lines": 1,
    "region": "header",
    "x": 1213,
    "y": 73,
@@ -260,7 +260,7 @@
      "u": false
     }
    ],
-   "lines": 2,
+   "lines": 1,
    "region": "header",
    "x": 1383,
    "y": 73,
@@ -531,6 +531,16 @@
    "h": 120
   },
   {
+   "kind": "box",
+   "bg": "rgb(240, 243, 245)",
+   "text": "May 25th - May 29th\n\n8:30 AM - 11:30 AM",
+   "region": "main",
+   "x": 385,
+   "y": 1554,
+   "w": 441,
+   "h": 58
+  },
+  {
    "kind": "text",
    "tag": "p",
    "text": "May 25th - May 29th",
@@ -587,6 +597,16 @@
    "y": 1566,
    "w": 221,
    "h": 56
+  },
+  {
+   "kind": "box",
+   "bg": "rgb(240, 243, 245)",
+   "text": "June 8th - June 12th\n\n8:30 AM - 11:30 AM",
+   "region": "main",
+   "x": 385,
+   "y": 1622,
+   "w": 441,
+   "h": 58
   },
   {
    "kind": "text",
@@ -647,6 +667,16 @@
    "h": 56
   },
   {
+   "kind": "box",
+   "bg": "rgb(240, 243, 245)",
+   "text": "June 22nd - June 26th\n\n8:30 AM - 11:30 A",
+   "region": "main",
+   "x": 385,
+   "y": 1689,
+   "w": 441,
+   "h": 89
+  },
+  {
    "kind": "text",
    "tag": "p",
    "text": "June 22nd - June 26th",
@@ -703,6 +733,16 @@
    "y": 1701,
    "w": 221,
    "h": 56
+  },
+  {
+   "kind": "box",
+   "bg": "rgb(240, 243, 245)",
+   "text": "July 6th - July 10th\n\n8:30 AM - 11:30 AM",
+   "region": "main",
+   "x": 385,
+   "y": 1788,
+   "w": 441,
+   "h": 89
   },
   {
    "kind": "text",
@@ -793,6 +833,16 @@
    "h": 56
   },
   {
+   "kind": "box",
+   "bg": "rgb(240, 243, 245)",
+   "text": "July 20th - July 24th\n\n8:30 AM - 11:30 A",
+   "region": "main",
+   "x": 385,
+   "y": 1887,
+   "w": 441,
+   "h": 89
+  },
+  {
    "kind": "text",
    "tag": "p",
    "text": "July 20th - July 24th",
@@ -881,6 +931,16 @@
    "h": 56
   },
   {
+   "kind": "box",
+   "bg": "rgb(240, 243, 245)",
+   "text": "August 3rd - August 7th\n\n8:30 AM - 11:30",
+   "region": "main",
+   "x": 385,
+   "y": 1986,
+   "w": 441,
+   "h": 89
+  },
+  {
    "kind": "text",
    "tag": "p",
    "text": "August 3rd - August 7th",
@@ -967,6 +1027,16 @@
    "y": 2030,
    "w": 221,
    "h": 56
+  },
+  {
+   "kind": "box",
+   "bg": "rgb(240, 243, 245)",
+   "text": "August 17th - August 21st\n\n8:30 AM - 11:",
+   "region": "main",
+   "x": 385,
+   "y": 2085,
+   "w": 441,
+   "h": 89
   },
   {
    "kind": "text",
@@ -1348,6 +1418,286 @@
    "h": 126
   },
   {
+   "kind": "field",
+   "type": "text",
+   "placeholder": "First Name",
+   "bg": "rgb(241, 241, 241)",
+   "border": "1px solid rgb(104, 110, 119)",
+   "radius": "3px",
+   "size": 14,
+   "region": "main",
+   "x": 511,
+   "y": 3306,
+   "w": 898,
+   "h": 52
+  },
+  {
+   "kind": "field",
+   "type": "text",
+   "placeholder": "Last Name",
+   "bg": "rgb(241, 241, 241)",
+   "border": "1px solid rgb(104, 110, 119)",
+   "radius": "3px",
+   "size": 14,
+   "region": "main",
+   "x": 511,
+   "y": 3398,
+   "w": 898,
+   "h": 52
+  },
+  {
+   "kind": "field",
+   "type": "email",
+   "placeholder": "Email",
+   "bg": "rgb(241, 241, 241)",
+   "border": "1px solid rgb(104, 110, 119)",
+   "radius": "3px",
+   "size": 14,
+   "region": "main",
+   "x": 511,
+   "y": 3490,
+   "w": 898,
+   "h": 52
+  },
+  {
+   "kind": "field",
+   "type": "tel",
+   "placeholder": "(999) 999-9999",
+   "bg": "rgb(241, 241, 241)",
+   "border": "1px solid rgb(104, 110, 119)",
+   "radius": "3px",
+   "size": 14,
+   "region": "main",
+   "x": 511,
+   "y": 3620,
+   "w": 898,
+   "h": 52
+  },
+  {
+   "kind": "field",
+   "type": "text",
+   "placeholder": "Kids Name",
+   "bg": "rgb(241, 241, 241)",
+   "border": "1px solid rgb(104, 110, 119)",
+   "radius": "3px",
+   "size": 14,
+   "region": "main",
+   "x": 511,
+   "y": 3750,
+   "w": 898,
+   "h": 52
+  },
+  {
+   "kind": "field",
+   "type": "select",
+   "placeholder": "",
+   "bg": "rgb(241, 241, 241)",
+   "border": "1px solid rgb(212, 212, 212)",
+   "radius": "3px",
+   "size": 16,
+   "region": "main",
+   "x": 511,
+   "y": 3880,
+   "w": 898,
+   "h": 50
+  },
+  {
+   "kind": "field",
+   "type": "select",
+   "placeholder": "",
+   "bg": "rgb(241, 241, 241)",
+   "border": "1px solid rgb(212, 212, 212)",
+   "radius": "3px",
+   "size": 16,
+   "region": "main",
+   "x": 511,
+   "y": 4008,
+   "w": 898,
+   "h": 50
+  },
+  {
+   "kind": "field",
+   "type": "checkbox",
+   "placeholder": "",
+   "bg": "rgb(241, 241, 241)",
+   "border": "1px solid rgb(104, 110, 119)",
+   "radius": "2px",
+   "size": 14,
+   "region": "main",
+   "x": 511,
+   "y": 4130,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "kind": "field",
+   "type": "checkbox",
+   "placeholder": "",
+   "bg": "rgb(241, 241, 241)",
+   "border": "1px solid rgb(104, 110, 119)",
+   "radius": "2px",
+   "size": 14,
+   "region": "main",
+   "x": 511,
+   "y": 4182,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "kind": "field",
+   "type": "checkbox",
+   "placeholder": "",
+   "bg": "rgb(241, 241, 241)",
+   "border": "1px solid rgb(104, 110, 119)",
+   "radius": "2px",
+   "size": 14,
+   "region": "main",
+   "x": 511,
+   "y": 4234,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "kind": "field",
+   "type": "checkbox",
+   "placeholder": "",
+   "bg": "rgb(241, 241, 241)",
+   "border": "1px solid rgb(104, 110, 119)",
+   "radius": "2px",
+   "size": 14,
+   "region": "main",
+   "x": 511,
+   "y": 4286,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "kind": "field",
+   "type": "checkbox",
+   "placeholder": "",
+   "bg": "rgb(241, 241, 241)",
+   "border": "1px solid rgb(104, 110, 119)",
+   "radius": "2px",
+   "size": 14,
+   "region": "main",
+   "x": 511,
+   "y": 4338,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "kind": "field",
+   "type": "checkbox",
+   "placeholder": "",
+   "bg": "rgb(241, 241, 241)",
+   "border": "1px solid rgb(104, 110, 119)",
+   "radius": "2px",
+   "size": 14,
+   "region": "main",
+   "x": 511,
+   "y": 4391,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "kind": "field",
+   "type": "checkbox",
+   "placeholder": "",
+   "bg": "rgb(241, 241, 241)",
+   "border": "1px solid rgb(104, 110, 119)",
+   "radius": "2px",
+   "size": 14,
+   "region": "main",
+   "x": 511,
+   "y": 4443,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "kind": "field",
+   "type": "checkbox",
+   "placeholder": "",
+   "bg": "rgb(241, 241, 241)",
+   "border": "1px solid rgb(104, 110, 119)",
+   "radius": "2px",
+   "size": 14,
+   "region": "main",
+   "x": 511,
+   "y": 4495,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "kind": "field",
+   "type": "checkbox",
+   "placeholder": "",
+   "bg": "rgb(241, 241, 241)",
+   "border": "1px solid rgb(104, 110, 119)",
+   "radius": "2px",
+   "size": 14,
+   "region": "main",
+   "x": 511,
+   "y": 4547,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "kind": "field",
+   "type": "checkbox",
+   "placeholder": "",
+   "bg": "rgb(241, 241, 241)",
+   "border": "1px solid rgb(104, 110, 119)",
+   "radius": "2px",
+   "size": 14,
+   "region": "main",
+   "x": 511,
+   "y": 4599,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "kind": "field",
+   "type": "checkbox",
+   "placeholder": "",
+   "bg": "rgb(241, 241, 241)",
+   "border": "1px solid rgb(104, 110, 119)",
+   "radius": "2px",
+   "size": 14,
+   "region": "main",
+   "x": 511,
+   "y": 4651,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "kind": "field",
+   "type": "text",
+   "placeholder": "",
+   "bg": "rgb(241, 241, 241)",
+   "border": "1px solid rgb(104, 110, 119)",
+   "radius": "3px",
+   "size": 14,
+   "region": "main",
+   "x": 511,
+   "y": 4769,
+   "w": 898,
+   "h": 52
+  },
+  {
+   "kind": "field",
+   "type": "textarea",
+   "placeholder": "",
+   "bg": "rgb(241, 241, 241)",
+   "border": "1px solid rgb(212, 212, 212)",
+   "radius": "3px",
+   "size": 16,
+   "region": "main",
+   "x": 511,
+   "y": 4899,
+   "w": 898,
+   "h": 130
+  },
+  {
    "kind": "heading",
    "tag": "h2",
    "text": "CLIENT TESTIMONIALS",
@@ -1441,7 +1791,7 @@
      "u": false
     }
    ],
-   "lines": 7,
+   "lines": 1,
    "region": "main",
    "x": 396,
    "y": 5517,
@@ -1543,7 +1893,7 @@
      "u": false
     }
    ],
-   "lines": 9,
+   "lines": 1,
    "region": "main",
    "x": 961,
    "y": 5517,

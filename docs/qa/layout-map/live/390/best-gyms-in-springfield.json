@@ -106,7 +106,7 @@
      "u": false
     }
    ],
-   "lines": 2,
+   "lines": 1,
    "region": "header",
    "x": 53,
    "y": 11,
@@ -134,7 +134,7 @@
      "u": false
     }
    ],
-   "lines": 2,
+   "lines": 1,
    "region": "header",
    "x": 144,
    "y": 11,
@@ -162,7 +162,7 @@
      "u": false
     }
    ],
-   "lines": 2,
+   "lines": 1,
    "region": "header",
    "x": 214,
    "y": 11,
@@ -1075,7 +1075,7 @@
   },
   {
    "kind": "image",
-   "src": "https://gpathletics.net/wp-content/uploads/2025/04/gp12-20-45_websize.jpg",
+   "src": "data-uri",
    "region": "main",
    "x": 25,
    "y": 2794,

@@ -30,7 +30,7 @@
      "u": false
     }
    ],
-   "lines": 2,
+   "lines": 1,
    "region": "header",
    "x": 53,
    "y": 11,
@@ -58,7 +58,7 @@
      "u": false
     }
    ],
-   "lines": 2,
+   "lines": 1,
    "region": "header",
    "x": 144,
    "y": 11,
@@ -86,7 +86,7 @@
      "u": false
     }
    ],
-   "lines": 2,
+   "lines": 1,
    "region": "header",
    "x": 214,
    "y": 11,
@@ -1827,7 +1827,7 @@
      "u": false
     }
    ],
-   "lines": 10,
+   "lines": 1,
    "region": "main",
    "x": 49,
    "y": 9335,

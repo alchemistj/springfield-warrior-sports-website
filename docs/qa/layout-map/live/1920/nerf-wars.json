@@ -27,7 +27,7 @@
      "u": false
     }
    ],
-   "lines": 2,
+   "lines": 1,
    "region": "header",
    "x": 1202,
    "y": 6,
@@ -55,7 +55,7 @@
      "u": false
     }
    ],
-   "lines": 2,
+   "lines": 1,
    "region": "header",
    "x": 1297,
    "y": 6,
@@ -83,7 +83,7 @@
      "u": false
     }
    ],
-   "lines": 2,
+   "lines": 1,
    "region": "header",
    "x": 1372,
    "y": 6,
@@ -120,7 +120,7 @@
      "u": false
     }
    ],
-   "lines": 2,
+   "lines": 1,
    "region": "header",
    "x": 688,
    "y": 73,
@@ -148,7 +148,7 @@
      "u": false
     }
    ],
-   "lines": 2,
+   "lines": 1,
    "region": "header",
    "x": 820,
    "y": 73,
@@ -176,7 +176,7 @@
      "u": false
     }
    ],
-   "lines": 2,
+   "lines": 1,
    "region": "header",
    "x": 930,
    "y": 73,
@@ -204,7 +204,7 @@
      "u": false
     }
    ],
-   "lines": 2,
+   "lines": 1,
    "region": "header",
    "x": 1058,
    "y": 73,
@@ -232,7 +232,7 @@
      "u": false
     }
    ],
-   "lines": 2,
+   "lines": 1,
    "region": "header",
    "x": 1213,
    "y": 73,
@@ -260,7 +260,7 @@
      "u": false
     }
    ],
-   "lines": 2,
+   "lines": 1,
    "region": "header",
    "x": 1383,
    "y": 73,
@@ -1085,6 +1085,48 @@
    "y": 3118,
    "w": 561,
    "h": 56
+  },
+  {
+   "kind": "field",
+   "type": "text",
+   "placeholder": "",
+   "bg": "rgb(241, 241, 241)",
+   "border": "1px solid rgb(104, 110, 119)",
+   "radius": "3px",
+   "size": 14,
+   "region": "main",
+   "x": 386,
+   "y": 3202,
+   "w": 274,
+   "h": 52
+  },
+  {
+   "kind": "field",
+   "type": "text",
+   "placeholder": "",
+   "bg": "rgb(241, 241, 241)",
+   "border": "1px solid rgb(104, 110, 119)",
+   "radius": "3px",
+   "size": 14,
+   "region": "main",
+   "x": 672,
+   "y": 3202,
+   "w": 274,
+   "h": 52
+  },
+  {
+   "kind": "field",
+   "type": "email",
+   "placeholder": "",
+   "bg": "rgb(241, 241, 241)",
+   "border": "1px solid rgb(104, 110, 119)",
+   "radius": "3px",
+   "size": 14,
+   "region": "main",
+   "x": 386,
+   "y": 3358,
+   "w": 561,
+   "h": 52
   },
   {
    "kind": "image",

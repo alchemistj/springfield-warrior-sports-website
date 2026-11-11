@@ -27,7 +27,7 @@
      "u": false
     }
    ],
-   "lines": 2,
+   "lines": 1,
    "region": "header",
    "x": 882,
    "y": 6,
@@ -55,7 +55,7 @@
      "u": false
     }
    ],
-   "lines": 2,
+   "lines": 1,
    "region": "header",
    "x": 977,
    "y": 6,
@@ -83,7 +83,7 @@
      "u": false
     }
    ],
-   "lines": 2,
+   "lines": 1,
    "region": "header",
    "x": 1052,
    "y": 6,
@@ -120,7 +120,7 @@
      "u": false
     }
    ],
-   "lines": 2,
+   "lines": 1,
    "region": "header",
    "x": 368,
    "y": 73,
@@ -148,7 +148,7 @@
      "u": false
     }
    ],
-   "lines": 2,
+   "lines": 1,
    "region": "header",
    "x": 500,
    "y": 73,
@@ -176,7 +176,7 @@
      "u": false
     }
    ],
-   "lines": 2,
+   "lines": 1,
    "region": "header",
    "x": 610,
    "y": 73,
@@ -204,7 +204,7 @@
      "u": false
     }
    ],
-   "lines": 2,
+   "lines": 1,
    "region": "header",
    "x": 738,
    "y": 73,
@@ -232,7 +232,7 @@
      "u": false
     }
    ],
-   "lines": 2,
+   "lines": 1,
    "region": "header",
    "x": 893,
    "y": 73,
@@ -260,7 +260,7 @@
      "u": false
     }
    ],
-   "lines": 2,
+   "lines": 1,
    "region": "header",
    "x": 1063,
    "y": 73,
@@ -345,6 +345,160 @@
    "y": 986,
    "w": 898,
    "h": 56
+  },
+  {
+   "kind": "field",
+   "type": "text",
+   "placeholder": "First Name",
+   "bg": "rgb(241, 241, 241)",
+   "border": "1px solid rgb(104, 110, 119)",
+   "radius": "3px",
+   "size": 14,
+   "region": "main",
+   "x": 191,
+   "y": 1070,
+   "w": 443,
+   "h": 52
+  },
+  {
+   "kind": "field",
+   "type": "text",
+   "placeholder": "Last Name",
+   "bg": "rgb(241, 241, 241)",
+   "border": "1px solid rgb(104, 110, 119)",
+   "radius": "3px",
+   "size": 14,
+   "region": "main",
+   "x": 646,
+   "y": 1070,
+   "w": 443,
+   "h": 52
+  },
+  {
+   "kind": "field",
+   "type": "text",
+   "placeholder": "",
+   "bg": "rgb(241, 241, 241)",
+   "border": "1px solid rgb(104, 110, 119)",
+   "radius": "3px",
+   "size": 14,
+   "region": "main",
+   "x": 191,
+   "y": 1226,
+   "w": 898,
+   "h": 52
+  },
+  {
+   "kind": "field",
+   "type": "email",
+   "placeholder": "Email",
+   "bg": "rgb(241, 241, 241)",
+   "border": "1px solid rgb(104, 110, 119)",
+   "radius": "3px",
+   "size": 14,
+   "region": "main",
+   "x": 191,
+   "y": 1356,
+   "w": 898,
+   "h": 52
+  },
+  {
+   "kind": "field",
+   "type": "tel",
+   "placeholder": "Phone Number",
+   "bg": "rgb(241, 241, 241)",
+   "border": "1px solid rgb(104, 110, 119)",
+   "radius": "3px",
+   "size": 14,
+   "region": "main",
+   "x": 191,
+   "y": 1486,
+   "w": 898,
+   "h": 52
+  },
+  {
+   "kind": "field",
+   "type": "textarea",
+   "placeholder": "Date and Time Preference",
+   "bg": "rgb(241, 241, 241)",
+   "border": "1px solid rgb(212, 212, 212)",
+   "radius": "3px",
+   "size": 16,
+   "region": "main",
+   "x": 191,
+   "y": 1616,
+   "w": 898,
+   "h": 130
+  },
+  {
+   "kind": "field",
+   "type": "checkbox",
+   "placeholder": "",
+   "bg": "rgb(241, 241, 241)",
+   "border": "1px solid rgb(104, 110, 119)",
+   "radius": "2px",
+   "size": 14,
+   "region": "main",
+   "x": 191,
+   "y": 1818,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "kind": "field",
+   "type": "checkbox",
+   "placeholder": "",
+   "bg": "rgb(241, 241, 241)",
+   "border": "1px solid rgb(104, 110, 119)",
+   "radius": "2px",
+   "size": 14,
+   "region": "main",
+   "x": 191,
+   "y": 1850,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "kind": "field",
+   "type": "checkbox",
+   "placeholder": "",
+   "bg": "rgb(241, 241, 241)",
+   "border": "1px solid rgb(104, 110, 119)",
+   "radius": "2px",
+   "size": 14,
+   "region": "main",
+   "x": 191,
+   "y": 1882,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "kind": "field",
+   "type": "checkbox",
+   "placeholder": "",
+   "bg": "rgb(241, 241, 241)",
+   "border": "1px solid rgb(104, 110, 119)",
+   "radius": "2px",
+   "size": 14,
+   "region": "main",
+   "x": 191,
+   "y": 1915,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "kind": "field",
+   "type": "text",
+   "placeholder": "Tell us more about your party, needs, desires, approximate number of kids, etc. [short and sweet :p]",
+   "bg": "rgb(241, 241, 241)",
+   "border": "1px solid rgb(104, 110, 119)",
+   "radius": "3px",
+   "size": 14,
+   "region": "main",
+   "x": 191,
+   "y": 2013,
+   "w": 898,
+   "h": 52
   },
   {
    "kind": "heading",
@@ -440,7 +594,7 @@
      "u": false
     }
    ],
-   "lines": 6,
+   "lines": 1,
    "region": "main",
    "x": 96,
    "y": 2583,
@@ -542,7 +696,7 @@
      "u": false
     }
    ],
-   "lines": 8,
+   "lines": 1,
    "region": "main",
    "x": 661,
    "y": 2583,

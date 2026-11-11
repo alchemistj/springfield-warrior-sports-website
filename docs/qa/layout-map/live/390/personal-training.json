@@ -27,7 +27,7 @@
      "u": false
     }
    ],
-   "lines": 2,
+   "lines": 1,
    "region": "header",
    "x": 53,
    "y": 11,
@@ -55,7 +55,7 @@
      "u": false
     }
    ],
-   "lines": 2,
+   "lines": 1,
    "region": "header",
    "x": 144,
    "y": 11,
@@ -83,7 +83,7 @@
      "u": false
     }
    ],
-   "lines": 2,
+   "lines": 1,
    "region": "header",
    "x": 214,
    "y": 11,
@@ -1274,7 +1274,7 @@
      "u": false
     }
    ],
-   "lines": 9,
+   "lines": 1,
    "region": "main",
    "x": 49,
    "y": 6474,
@@ -1433,6 +1433,132 @@
    "y": 6982,
    "w": 338,
    "h": 86
+  },
+  {
+   "kind": "field",
+   "type": "text",
+   "placeholder": "",
+   "bg": "rgb(241, 241, 241)",
+   "border": "1px solid rgb(104, 110, 119)",
+   "radius": "3px",
+   "size": 14,
+   "region": "main",
+   "x": 56,
+   "y": 7163,
+   "w": 278,
+   "h": 52
+  },
+  {
+   "kind": "field",
+   "type": "text",
+   "placeholder": "",
+   "bg": "rgb(241, 241, 241)",
+   "border": "1px solid rgb(104, 110, 119)",
+   "radius": "3px",
+   "size": 14,
+   "region": "main",
+   "x": 56,
+   "y": 7254,
+   "w": 278,
+   "h": 52
+  },
+  {
+   "kind": "field",
+   "type": "tel",
+   "placeholder": "(999) 999-9999",
+   "bg": "rgb(241, 241, 241)",
+   "border": "1px solid rgb(104, 110, 119)",
+   "radius": "3px",
+   "size": 14,
+   "region": "main",
+   "x": 56,
+   "y": 7410,
+   "w": 278,
+   "h": 52
+  },
+  {
+   "kind": "field",
+   "type": "email",
+   "placeholder": "",
+   "bg": "rgb(241, 241, 241)",
+   "border": "1px solid rgb(104, 110, 119)",
+   "radius": "3px",
+   "size": 14,
+   "region": "main",
+   "x": 56,
+   "y": 7540,
+   "w": 278,
+   "h": 52
+  },
+  {
+   "kind": "field",
+   "type": "text",
+   "placeholder": "",
+   "bg": "rgb(241, 241, 241)",
+   "border": "1px solid rgb(104, 110, 119)",
+   "radius": "3px",
+   "size": 14,
+   "region": "main",
+   "x": 56,
+   "y": 7670,
+   "w": 278,
+   "h": 52
+  },
+  {
+   "kind": "field",
+   "type": "radio",
+   "placeholder": "",
+   "bg": "rgb(241, 241, 241)",
+   "border": "1px solid rgb(104, 110, 119)",
+   "radius": "50%",
+   "size": 14,
+   "region": "main",
+   "x": 56,
+   "y": 7794,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "kind": "field",
+   "type": "radio",
+   "placeholder": "",
+   "bg": "rgb(241, 241, 241)",
+   "border": "1px solid rgb(104, 110, 119)",
+   "radius": "50%",
+   "size": 14,
+   "region": "main",
+   "x": 56,
+   "y": 7826,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "kind": "field",
+   "type": "textarea",
+   "placeholder": "",
+   "bg": "rgb(241, 241, 241)",
+   "border": "1px solid rgb(212, 212, 212)",
+   "radius": "3px",
+   "size": 16,
+   "region": "main",
+   "x": 56,
+   "y": 7925,
+   "w": 278,
+   "h": 130
+  },
+  {
+   "kind": "field",
+   "type": "textarea",
+   "placeholder": "",
+   "bg": "rgb(241, 241, 241)",
+   "border": "1px solid rgb(212, 212, 212)",
+   "radius": "3px",
+   "size": 16,
+   "region": "main",
+   "x": 56,
+   "y": 8153,
+   "w": 278,
+   "h": 130
   },
   {
    "kind": "image",
