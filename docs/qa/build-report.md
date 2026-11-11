@@ -625,6 +625,22 @@ Lighthouse mobile on the local preview, after this batch. Order is performance /
 | About | 98 / 92 / 100 / 100 |
 | Kids classes | 98 / 92 / 100 / 100 |
 
+## Layout parity gate v2.15, round 15
+
+Model: Grok 4.7. The live map, the scripts, the tolerances, and `PIXEL_TOL` were not edited. The report is `docs/qa/layout-report.md`. No allow entries were added.
+
+On v2.15, home is 3/3/0, about is 2/2/1, and kids-classes is 0/0/3. The site total stays 8,357. No other page rose. The open lines are the same wraps as round 13.
+
+`.bullet-line .dot` is `font-family: Muli`, weight 800, and italic. The nested `strong` had been resolving to weight 900, and the family's Segoe UI / sans-serif fallback drew a 16.5px dot. Muli has no ● glyph, so with no fallback list Chromium uses its own fallback. In Chromium at 1920 and 1280 each dot's box is 10.9px wide. The phone list is unchanged.
+
+Lighthouse mobile on the local preview, after this batch. Order is performance / accessibility / best practices / SEO.
+
+| Page | Score |
+|---|---|
+| Home | 99 / 100 / 100 / 100 |
+| About | 97 / 92 / 100 / 100 |
+| Kids classes | 98 / 92 / 100 / 100 |
+
 ## Open questions
 
 - Where GF18 should live, if it should be a page at all.

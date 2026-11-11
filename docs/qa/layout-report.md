@@ -8498,9 +8498,11 @@ Total differences: 8357
 
 ## Notes
 
-Gate v2.15, round 14. Model: Grok 4.7. The live map, the scripts, the tolerances, and PIXEL_TOL were not edited. No allow entries were added. v2.15 counts any flat run of 120px or more.
+Gate v2.15, round 15. Model: Grok 4.7. The live map, the scripts, the tolerances, and PIXEL_TOL were not edited. No allow entries were added. v2.15 counts any flat run of 120px or more.
 
-On v2.15, home is 3/3/0, about is 2/2/1, and kids-classes is 0/0/3 (1920/1280/390). The site total stays 8,357. No other page rose. The lines still open are the same wraps as round 13. The Vercel preview of `242fc87` measures the same.
+On v2.15, home is 3/3/0, about is 2/2/1, and kids-classes is 0/0/3 (1920/1280/390). The site total stays 8,357. No other page rose. The lines still open are the same wraps as round 13.
+
+The desktop ● is `font-family: Muli` (no fallback list), weight 800, italic, 18px. Muli has no ● glyph, so Chromium uses its own fallback, the same as live. Each dot's box is 10.9px wide at 1920 and 1280. The bullet line stays 835px wide against live's 827px.
 
 The desktop home bullet line uses live's separators. `--tcb-color-0` computes to rgb(219, 58, 52), and each ● is that color. Six non-breaking spaces sit on each side of every ●, inside strong. The line is not justified. It measures 835px wide against live's 827px, one line, at x=543 against live's 546 at 1920 and x=223 against 226 at 1280. The phone list is unchanged, and home at 390 matches.
 

@@ -398,6 +398,9 @@ a {
 }
 .bullet-line .dot {
   color: rgb(219, 58, 52);
+  font-family: Muli;
+  font-style: italic;
+  font-weight: 800;
 }
 .bullet-line a {
   display: inline;
