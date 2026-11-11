@@ -18,23 +18,35 @@ const pages = JSON.parse(readFileSync(new URL("../../source/pages.json", import.
 const UA =
   "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36";
 
-// Runs in the page. Returns visible content items in document order.
+// Runs in the page. Returns what a visitor can actually see, in document order.
+// Header and footer are included. Items scrolled off to the side (hidden slides), invisible,
+// or covered by another element are marked, so hidden content can't count as "present".
 function collect() {
-  const SKIP = "header, nav, footer, [data-skip-map], .grecaptcha-badge, script, style, noscript, form *";
+  const SKIP = "[data-skip-map], .grecaptcha-badge, script, style, noscript, form *";
   const vw = window.innerWidth;
-  const visible = (el) => {
+  const vh = window.innerHeight;
+  const skipped = (el) => !!el.closest(SKIP);
+  const shown = (el) => {
     const r = el.getBoundingClientRect();
-    const cs = getComputedStyle(el);
-    return r.width > 8 && r.height > 8 && cs.visibility !== "hidden" && cs.display !== "none" && Number(cs.opacity) > 0.05;
+    if (r.width <= 4 || r.height <= 4 || r.right <= 0 || r.left >= vw || r.bottom + window.scrollY <= 0) return false;
+    for (let n = el; n && n !== document.body; n = n.parentElement) {
+      const cs = getComputedStyle(n);
+      if (cs.display === "none" || cs.visibility === "hidden" || Number(cs.opacity) < 0.05) return false;
+      // Clipped inside a scroller or overflow-hidden box (e.g. slider slides out of view).
+      if (n !== el && /(hidden|clip|auto|scroll)/.test(cs.overflowX + cs.overflow)) {
+        const pr = n.getBoundingClientRect();
+        if (r.right <= pr.left + 2 || r.left >= pr.right - 2) return false;
+      }
+    }
+    return true;
   };
-  const inChrome = (el) => !!el.closest(SKIP);
   const box = (el) => {
     const r = el.getBoundingClientRect();
     return { x: Math.round(r.left), y: Math.round(r.top + window.scrollY), w: Math.round(r.width), h: Math.round(r.height) };
   };
   const text = (el) => (el.innerText || "").replace(/\s+/g, " ").trim();
+  const ownText = (el) => [...el.childNodes].filter((n) => n.nodeType === 3).map((n) => n.textContent).join(" ").replace(/\s+/g, " ").trim();
   const font = (el) => {
-    // Style of the first visible text inside the element (spans can override the tag's font).
     const walker = document.createTreeWalker(el, 4 /* NodeFilter.SHOW_TEXT */, { acceptNode: (n) => (n.textContent.trim() ? 1 : 3) });
     const first = walker.nextNode();
     const cs = getComputedStyle(first && first.parentElement ? first.parentElement : el);
@@ -47,51 +59,89 @@ function collect() {
       transform: cs.textTransform,
     };
   };
+  const region = (el) => (el.closest("header, [data-region=header], #tve_header_wrapper, .thrv_header") ? "header" : el.closest("footer, [data-region=footer], .thrv_footer, #tve_footer_wrapper") ? "footer" : "main");
+  const INLINE = new Set(["inline", "contents"]);
   const items = [];
-  const all = document.body.querySelectorAll("h1,h2,h3,h4,p,li,img,a,button,[style*='background-image'],section,div");
-  for (const el of all) {
-    if (inChrome(el) || !visible(el)) continue;
+  const els = [];
+  for (const el of document.body.querySelectorAll("*")) {
+    if (skipped(el)) continue;
     const tag = el.tagName.toLowerCase();
-    if (/^h[1-4]$/.test(tag)) {
+    let item = null;
+    if (/^h[1-6]$/.test(tag)) {
       const t = text(el);
-      if (t) items.push({ kind: "heading", tag, text: t, ...box(el), ...font(el) });
-    } else if (tag === "p" || tag === "li") {
-      const t = text(el);
-      if (t.length >= 20) items.push({ kind: "text", tag, text: t.slice(0, 80), ...box(el), ...font(el) });
+      if (t) item = { kind: "heading", tag, text: t, ...font(el) };
     } else if (tag === "img") {
       const src = el.currentSrc || el.src || "";
-      const b = box(el);
-      // The top full-width photo is the hero, whether it is an <img>, an inline data URI or a background.
-      const hero = b.y < 450 && b.w > vw * 0.6;
-      if (!src.startsWith("data:") || el.width > 200) items.push({ kind: "image", src: hero ? "hero" : src.startsWith("data:") ? "data-uri" : src, ...b });
-    } else if (tag === "a" || tag === "button") {
-      const cs = getComputedStyle(el);
-      const bg = cs.backgroundColor;
-      const t = text(el);
-      if (t && bg && bg !== "rgba(0, 0, 0, 0)" && bg !== "transparent") {
-        items.push({ kind: "button", text: t.slice(0, 60), bg, radius: cs.borderRadius, ...box(el), ...font(el) });
+      const r = el.getBoundingClientRect();
+      const hero = r.top + window.scrollY < 450 && r.width > vw * 0.6;
+      if (!src.startsWith("data:") || r.width > 200) item = { kind: "image", src: hero ? "hero" : src.startsWith("data:") ? "data-uri" : src };
+    } else if (tag === "svg") {
+      const r = el.getBoundingClientRect();
+      if (r.width >= 8 && r.width <= 72 && r.height >= 8 && r.height <= 72) {
+        const cs = getComputedStyle(el);
+        item = { kind: "icon", color: cs.fill && cs.fill !== "none" ? cs.fill : cs.color };
       }
-    } else {
-      const bgi = getComputedStyle(el).backgroundImage;
-      const m = bgi && bgi.match(/url\(["']?([^"')]+)["']?\)/);
-      if (m && !m[1].startsWith("data:") && el.getBoundingClientRect().width > 120 && el.getBoundingClientRect().height > 80) {
-        const b = box(el);
-        items.push({ kind: "bgimage", src: b.y < 450 && b.w > vw * 0.6 ? "hero" : m[1], ...b });
+    } else if ((tag === "a" || tag === "button") && text(el)) {
+      const cs = getComputedStyle(el);
+      const alpha = cs.backgroundColor.startsWith("rgba") ? Number(cs.backgroundColor.split(",")[3]) : 1;
+      if (alpha > 0.1) item = { kind: "button", text: text(el).slice(0, 60), bg: cs.backgroundColor, radius: cs.borderRadius, ...font(el) };
+      else if (region(el) !== "main" && !el.querySelector("img,svg")) item = { kind: "text", tag: "a", text: text(el).slice(0, 80), ...font(el) };
+    }
+    if (!item && !/^h[1-6]$/.test(tag) && !el.closest("h1,h2,h3,h4,h5,h6,a,button")) {
+      // A text block: a block-level element with text and no block-level child that has text.
+      const disp = getComputedStyle(el).display;
+      const t = text(el);
+      if (t.length >= 3 && !INLINE.has(disp) && !["svg", "img", "path"].includes(tag)) {
+        const hasBlockChildWithText = [...el.children].some(
+          (c) => !INLINE.has(getComputedStyle(c).display) && (c.innerText || "").trim().length > 0,
+        );
+        if (!hasBlockChildWithText && (ownText(el).length > 0 || el.querySelector("strong,b,em,i,span,a"))) {
+          item = { kind: "text", tag, text: t.slice(0, 80), ...font(el) };
+        }
       }
     }
+    if (!item) {
+      const bgi = getComputedStyle(el).backgroundImage;
+      const m = bgi && bgi.match(/url\(["']?([^"')]+)["']?\)/);
+      const r = el.getBoundingClientRect();
+      if (m && !m[1].startsWith("data:") && r.width > 120 && r.height > 80) {
+        const hero = r.top + window.scrollY < 450 && r.width > vw * 0.6;
+        item = { kind: "bgimage", src: hero ? "hero" : m[1] };
+      }
+    }
+    if (item && shown(el)) {
+      items.push({ ...item, region: region(el), ...box(el) });
+      els.push(el);
+    }
   }
-  // Section bands: full-width blocks with their own background color.
-  const bands = [];
-  for (const el of document.body.querySelectorAll("section, div, main > *")) {
-    if (inChrome(el)) continue;
+  // Covered check: scroll each text/heading/button into the middle of the screen and ask the
+  // browser what is on top at its centre.
+  items.forEach((it, i) => {
+    if (!["heading", "text", "button"].includes(it.kind)) return;
+    const el = els[i];
+    window.scrollTo(0, Math.max(0, it.y + it.h / 2 - vh / 2));
     const r = el.getBoundingClientRect();
-    if (r.width < vw - 4 || r.height < 80) continue;
+    const cx = Math.min(vw - 1, Math.max(0, r.left + Math.min(r.width / 2, 40)));
+    const cy = Math.min(vh - 1, Math.max(0, r.top + r.height / 2));
+    const hit = document.elementFromPoint(cx, cy);
+    if (hit && !el.contains(hit) && !hit.contains(el)) {
+      const hr = hit.getBoundingClientRect();
+      // Ignore the sticky header and mobile bar sitting over content at the screen edges.
+      const fixedAncestor = (() => { for (let n = hit; n; n = n.parentElement) if (["fixed", "sticky"].includes(getComputedStyle(n).position)) return true; return false; })();
+      if (!fixedAncestor && hr.width > 20) it.covered = true;
+    }
+  });
+  window.scrollTo(0, 0);
+  const bands = [];
+  for (const el of document.body.querySelectorAll("section, div, main > *, header, footer")) {
+    if (skipped(el)) continue;
+    const r = el.getBoundingClientRect();
+    if (r.width < vw - 4 || r.height < 30) continue;
     const bg = getComputedStyle(el).backgroundColor;
     const alpha = bg.startsWith("rgba") ? Number(bg.split(",")[3]) : 1;
     if (bg && alpha > 0.1) bands.push({ bg, ...box(el) });
   }
-  const allText = (document.body.innerText || "").toLowerCase().replace(/[\u2018\u2019\u201c\u201d'"]/g, "").replace(/[^a-z0-9$]+/g, " ");
-  return { vw, allText, docWidth: document.documentElement.scrollWidth, docHeight: document.documentElement.scrollHeight, items, bands };
+  return { vw, docWidth: document.documentElement.scrollWidth, docHeight: document.documentElement.scrollHeight, items, bands };
 }
 
 const browser = await chromium.launch();
@@ -113,6 +163,7 @@ for (const width of widths) {
       const map = await page.evaluate(collect);
       const dir = path.join(outDir, String(width));
       mkdirSync(dir, { recursive: true });
+      await page.screenshot({ path: path.join(dir, `${slug}.png`), fullPage: true });
       writeFileSync(path.join(dir, `${slug}.json`), JSON.stringify({ url, width, ...map }, null, 1));
       console.log(`${width} ${slug} items=${map.items.length}`);
     } catch (err) {

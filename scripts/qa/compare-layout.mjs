@@ -7,6 +7,7 @@
 // Exit code 1 when any difference remains.
 import { readFileSync, readdirSync, writeFileSync, existsSync } from "node:fs";
 import path from "node:path";
+import sharp from "sharp";
 
 const args = process.argv.slice(2);
 const [liveDir, buildDir, reportFile] = args;
@@ -92,13 +93,36 @@ function styleDiffs(l, b, label) {
   return out;
 }
 
+const PIXEL_TOL = 38; // mean absolute difference (0-255) over a 48x16 grayscale thumbnail of the region
+const pngMeta = new Map();
+async function meta(file) {
+  if (!pngMeta.has(file)) pngMeta.set(file, await sharp(file).metadata());
+  return pngMeta.get(file);
+}
+async function thumb(file, r) {
+  const m = await meta(file);
+  const left = Math.max(0, Math.min(m.width - 2, r.x));
+  const top = Math.max(0, Math.min(m.height - 2, r.y));
+  const width = Math.max(1, Math.min(m.width - left, r.w));
+  const height = Math.max(1, Math.min(m.height - top, r.h));
+  if (width < 8 || height < 8) return null;
+  return sharp(file).extract({ left, top, width, height }).resize(48, 16, { fit: "fill" }).grayscale().raw().toBuffer();
+}
+async function regionDiff(liveFile, l, buildFile, b) {
+  const [a, c] = await Promise.all([thumb(liveFile, l), thumb(buildFile, b)]);
+  if (!a || !c) return null;
+  let sum = 0;
+  for (let i = 0; i < a.length; i++) sum += Math.abs(a[i] - c[i]);
+  return sum / a.length;
+}
+
 const allowed = (slug, width, line) =>
   allow.some((a) => (a.page === "*" || a.page === slug) && (!a.width || a.width === width) && line.includes(a.contains));
 
 const lines = ["# Layout comparison: live vs build", ""];
 let total = 0;
 for (const width of readdirSync(liveDir).sort((a, b) => Number(b) - Number(a))) {
-  for (const file of readdirSync(path.join(liveDir, width)).sort()) {
+  for (const file of readdirSync(path.join(liveDir, width)).filter((f) => f.endsWith(".json")).sort()) {
     const slug = file.replace(/\.json$/, "");
     const live = JSON.parse(readFileSync(path.join(liveDir, width, file), "utf8"));
     const bPath = path.join(buildDir, width, file);
@@ -132,13 +156,39 @@ for (const width of readdirSync(liveDir).sort((a, b) => Number(b) - Number(a))) 
       });
       // Body text (by first 40 normalized chars)
       const tx = matchSeq(by(live.items, "text"), by(build.items, "text"), (i) => norm(i.text).slice(0, 40));
-      tx.missing
-        .filter((i) => !(build.allText || "").includes(norm(i.text).slice(0, 40)))
-        .forEach((i) => issues.push(`text missing: "${i.text.slice(0, 60)}"`));
-      tx.extra
-        .filter((i) => !(live.allText || "").includes(norm(i.text).slice(0, 40)))
-        .forEach((i) => issues.push(`text not on live: "${i.text.slice(0, 60)}"`));
+      tx.missing.forEach((i) => issues.push(`text missing: "${i.text.slice(0, 60)}"`));
+      tx.extra.forEach((i) => issues.push(`text not on live: "${i.text.slice(0, 60)}"`));
       tx.pairs.forEach(([l, b]) => issues.push(...styleDiffs(l, b, `text "${l.text.slice(0, 30)}"`)));
+      // Covered: visible on live, but something sits on top of it in the build.
+      [...h.pairs, ...tx.pairs, ...bt.pairs].forEach(([l, b]) => {
+        if (b.covered && !l.covered) issues.push(`covered by another element: "${(l.text || "").slice(0, 50)}"`);
+      });
+      bt.extra.forEach((i) => issues.push(`button not on live: "${i.text}"`));
+      // Icons (inline SVG, 8-72px): same count, in order, same color and size.
+      const li = by(live.items, "icon"), bi = by(build.items, "icon");
+      if (li.length !== bi.length) issues.push(`icons: ${bi.length} in build, ${li.length} on live`);
+      li.slice(0, Math.min(li.length, bi.length)).forEach((l, i) => {
+        const b = bi[i];
+        if (colorDiff(l.color, b.color) > TOL.color) issues.push(`icon ${i + 1}: color ${b.color}, live ${l.color}`);
+        if (Math.abs(l.w - b.w) > 6) issues.push(`icon ${i + 1}: size ${b.w}px, live ${l.w}px`);
+        if (Math.abs(l.x - b.x) > TOL.x) issues.push(`icon ${i + 1}: left edge ${b.x}px, live ${l.x}px`);
+      });
+      // Pixels: the area behind each matched heading, text block and photo must look like live
+      // (catches a wrong photo crop, a dark photo behind dark text, missing overlays).
+      const shot = (dir) => [".png", ".jpg"].map((ext) => path.join(dir, width, `${slug}${ext}`)).find((f) => existsSync(f)) || "";
+      const livePng = shot(liveDir);
+      const buildPng = shot(buildDir);
+      if (existsSync(livePng) && existsSync(buildPng)) {
+        const pairsForPixels = [
+          ...h.pairs.map(([l, b]) => [l, b, `heading "${l.text.slice(0, 40)}"`]),
+          ...tx.pairs.filter(([l]) => l.text.length >= 20).map(([l, b]) => [l, b, `text "${l.text.slice(0, 30)}"`]),
+          ...im.pairs.map(([l, b]) => [l, b, `photo ${imageKey(l.src)}`]),
+        ];
+        for (const [l, b, label] of pairsForPixels) {
+          const d = await regionDiff(livePng, l, buildPng, b);
+          if (d !== null && d > PIXEL_TOL) issues.push(`${label}: looks different from live (pixel difference ${d.toFixed(0)})`);
+        }
+      }
       // Section band colors (consecutive duplicates removed)
       const seq = (bands) => bands.map((b) => b.bg).filter((c, i, a) => i === 0 || colorDiff(c, a[i - 1]) > TOL.color);
       const lb = seq(live.bands), bb = seq(build.bands);

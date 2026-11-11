@@ -23,6 +23,19 @@ Then stop the preview server.
 
 Baseline on the current preview (40d1953): **3,693 differences**. The full list is in `docs/qa/layout-report-baseline.md`.
 
+## Gate v2 (11 Nov, after batch 1)
+
+Batch 1 passed gate v1 at 0 differences on home, about and kids-classes. Claude then looked at those pages at full size and found problems v1 could not see. The gate now also checks these. Everything below is measured, not eyeballed:
+
+- **Header and footer** are measured: menu links, top-bar links and footer text, with font, weight, size and position. Live uses Heebo 600 for the menu; the build uses Muli 700.
+- **Text inside bold or other inline tags** counts. Example: "The best part?" is weight 500 in navy on live.
+- **Hidden content doesn't count as present.** Slides scrolled out of view, opacity 0 and display:none are skipped on both sides.
+- **Icons** (inline SVG, 8–72 px) must match in count, order, color and size. Home has 13 on live (red clocks on Open Gym Hours, and others) and 5 in the build.
+- **Pixels behind each matched heading, text block and photo** must look like live. This catches a wrong photo crop and dark text on a dark photo. Example: home "Be an Everyday Warrior" has the photo zoomed over the text, at pixel difference 117–176 against a limit of 38. The Parkour and Personal Training card crops also differ.
+- **Covered text** (another element on top of it) is flagged.
+
+The live map was recaptured with v2 (JSON plus a JPEG screenshot per page and width). Gate v2 on the batch 1 preview: home 125 / 125 / 96, about 76 / 76 / 51, kids-classes 120 / 120 / 83 (at 1920 / 1280 / 390). Total 8,239, because v2 measures far more items than v1. Batch 1 isn't done until those three pages are at 0 on v2.
+
 ## What the numbers say is wrong (all pages)
 
 1. **No shared content column.** Live content sits in a centered column. At 1920 px, home text starts at x≈385 and inner pages at x≈425–510. The build pins text to x=28, or to the right edge, or stretches headings to 1,100–1,700 px. Hero text is included. This is one layout fix: a wrapper with the live max width and centering, used by every section and every hero. Take the width from the live map, not by eye.
