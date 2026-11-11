@@ -167,16 +167,23 @@ async function marginRuns(file, side = "left") {
   let cur = null;
   for (let y = 0; y < info.height; y++) {
     const px = [data[y * 3], data[y * 3 + 1], data[y * 3 + 2]];
-    if (cur && Math.max(...px.map((v, i) => Math.abs(v - cur.c[i]))) <= BG_TOL) { cur.h++; continue; }
-    cur = { y, h: 1, c: px };
+    if (cur && Math.max(...px.map((v, i) => Math.abs(v - cur.c[i]))) <= BG_TOL) { cur.h++; cur.px.push(px); continue; }
+    cur = { y, h: 1, c: px, px: [px] };
     runs.push(cur);
+  }
+  // v2.13: a run's color is its median pixel, not its first one. A run seeded on a JPEG edge
+  // pixel between white and grey otherwise sits within the limit of both, and the merge below
+  // joined a grey section onto the white above it.
+  for (const r of runs) {
+    r.c = [0, 1, 2].map((k) => r.px.map((p) => p[k]).sort((a, b) => a - b)[Math.floor(r.px.length / 2)]);
+    delete r.px;
   }
   // Merge runs of the same color split by a gap of under 6px of noise; anything else ends a band.
   const out = [];
   for (const r of runs) {
     if (r.h < 6) continue;
     const last = out[out.length - 1];
-    if (last && r.y - (last.y + last.h) < 6 && Math.max(...r.c.map((v, i) => Math.abs(v - last.c[i]))) <= BG_TOL) {
+    if (last && r.y - (last.y + last.h) < 6 && Math.max(...r.c.map((v, i) => Math.abs(v - last.c[i]))) <= 4) {
       last.h = r.y + r.h - last.y;
       continue;
     }
