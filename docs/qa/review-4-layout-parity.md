@@ -113,3 +113,7 @@ Not pixel-for-pixel exactness, and far from sloppy. A page is done when someone 
 - **Must match:** anything a visitor would see. That covers form layout and field styling, list markers and icons, numbered lists, shaded boxes, column alignment, section spacing, missing bands or cards, and text that wraps differently in a way that changes the shape.
 - **Not worth another round:** offsets of a few pixels, or a one-line wrap difference inside a block of the same height. Claude rules on these at full size; Cursor reports them rather than chasing them.
 - The gate is a tool for finding differences; it is not the target. A 0 with a visible difference is not done. A few measurement-only lines with no visible difference can be.
+
+### Merging (Josh, 11 Nov)
+
+While this repo isn't serving the live site, Claude merges each PR once it's ready, without asking. That covers the batch PRs and, at the end, #1 into `main`. DNS, the live-site cutover and anything touching the live WordPress site still need Josh. Batch 1 (#3) was merged into `cursor/astro-rebuild` on 11 Nov.
