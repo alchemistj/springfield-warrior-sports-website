@@ -1,9 +1,11 @@
 # Layout comparison: live vs build
-Total differences: 8031
+Total differences: 8035
 
-## about @ 1920px: 2 difference(s)
+## about @ 1920px: 4 difference(s)
 - text "We had our son’s 10th birthday": 5 line(s), live 4
 - text "My daughter started training h": 7 line(s), live 6
+- band rgb(254, 255, 255) at y=1616 (left margin): 2118px tall, live 701px
+- band rgb(254, 255, 255) at y=1616 (right margin): 2118px tall, live 701px
 
 ## best-gyms-in-springfield @ 1920px: 376 difference(s)
 - page height 6261px, live 7180px
@@ -3198,9 +3200,11 @@ Total differences: 8031
 - band rgb(251, 255, 254) at y=1671 (1868px tall on live, right margin) not found in build
 - band rgb(252, 252, 252) at y=2563 (328px tall, right margin) is in the build but not on live
 
-## about @ 1280px: 2 difference(s)
+## about @ 1280px: 4 difference(s)
 - text "We had our son’s 10th birthday": 5 line(s), live 4
 - text "My daughter started training h": 7 line(s), live 6
+- band rgb(254, 255, 255) at y=1616 (left margin): 2118px tall, live 701px
+- band rgb(254, 255, 255) at y=1616 (right margin): 2118px tall, live 701px
 
 ## best-gyms-in-springfield @ 1280px: 375 difference(s)
 - page height 6261px, live 7180px
@@ -8172,14 +8176,16 @@ Total differences: 8031
 
 ## Notes
 
-Gate v2.12, round 11. Model: Grok 4.7. The live map, the scripts, the tolerances, and PIXEL_TOL were not edited. No allow entries were added. No page went up.
+Gate v2.12, round 11. Model: Grok 4.7. The live map, the scripts, the tolerances, and PIXEL_TOL were not edited. No allow entries were added.
 
-Before is this machine's measurement of commit 666f552 (round 10 source) on gate v2.12: 8,038 differences. Home 4/4/0, about 4/4/2, kids-classes 0/0/3 (1920/1280/390). After is 8,031. Home is 3/3/0, about is 2/2/1, and kids-classes is 0/0/3. On gate v2.11 the same round 10 source was 7,906, and the everyday-photo change alone left home at 3/3/0 (7,904). Gate v2.12 (66f6850) landed on the branch before this could be pushed, and it is the gate measured above. The Vercel preview of cbb09cf, measured from this machine, matches: home 3/3/0, about 2/2/1, kids-classes 0/0/3.
+Before, on gate v2.12, commit 666f552 was 8,038 differences. Home 4/4/0, about 4/4/2, kids-classes 0/0/3. After the coaches photo, the partner-band shadow, and the partnerships join, the total was 8,031. Home 3/3/0, about 2/2/1, kids-classes 0/0/3. This addendum changes the phone bullet list and the About intro padding. The total is now 8,035. Home stays 3/3/0, about is 4/4/1, and kids-classes stays 0/0/3. No page outside about changed. The four new about lines are the JPEG reading below.
 
-The "BE AN EVERYDAY WARRIOR!" photo uses live's CSS. At min-width 800px the section background is `background-repeat: no-repeat`, `background-position: 100% 0`, `background-size: contain`, `min-height: 632px`. The image is the live 750 by 669 file. Contain fills the 632px section height and right-aligns it, so the right coach's arm is fully visible and the empty lower-right of the file is the white at the page edge. Between 800px and 1023px the position is live's `102% 100%` and the size is live's `50% 50%`. At 390 the full photo is visible, arm included, at 310 by 277 inside the column. Live's phone image is `width: 100%` with `margin-top: 40px` inside 20px section padding, which measures 350 by 312 at x=20. Stretching this build's image to that box made the white band at y=8160 1,035px against live's 905px, past the band limit. The 390 gate matches with the smaller photo, so the size stays.
+The "BE AN EVERYDAY WARRIOR!" photo uses live's CSS: `background-size: contain`, `background-position: 100% 0`, `min-height: 632px`, on the 750 by 669 image. The right coach's arm is fully visible at 1920 and 1280. At 390 the full photo is visible, arm included, at 310 by 277. Live's phone image is 350 by 312. Matching that box made the white band at y=8160 1,035px against live's 905px, so the smaller photo stays. `.partner-band` has no box-shadow. It is `background: rgb(40, 82, 118)` with its padding.
 
-`.partner-band` no longer has `box-shadow: 0 -4px 0 rgb(40, 82, 118)`. The band is `background: rgb(40, 82, 118)` with its padding. Live's partner section is background `#285276` and padding, with no shadow.
+The phone bullet list uses live's 41px line height and no gap between items. Live's section padding is 20px. The items step by 42px (live 41px). The black strip is 250px against live's 277px, inside the band limit, and home at 390 matches.
 
-The About partnerships grey now runs into the Perseverance band. The white strip was the last row's 28px margin, the section's 42px bottom padding, and, at 800px and up, the 68px margin above Perseverance. That space is padding on the grey block now. The Perseverance heading stays where it was.
+The About intro section uses live's padding. At 800px and up that is 90px above the paragraph and 90px of white before the grey flag band. Below 800px it is 80px and 80px. Live's paragraph margin-bottom is 0. The "CURIOUS ABOUT THE COLORS" heading is at y=1261 against live's 1262. The paragraph itself stays 44px lower than live because the hero ends later. The partnerships grey still runs into the Perseverance band at 1920, 1280, and 390.
 
-The lines still open are wraps, at live's size, width, and letter-spacing. Size and letter-spacing were not changed to force the wrap. Kids Classes at 390 also has background behind "FUN AND CHALLENGING" at rgb(20, 20, 24) against live rgb(23, 40, 50). That sample sits on the hero photo. The overlay is none, which is live's CSS, so it was not painted over. The Memorial Day sentence stays in the Community Murph paragraph. Paragraph links stay rgb(219, 58, 52) with no underline.
+On the PNG, the white between the flag grey and the partnerships grey is 700px against live's 701px, and the partnerships grey is rgb(241, 245, 247) through to the navy. The gate compresses the screenshot to quality 55 before it reads bands. That JPEG pulls rgb(241, 245, 247) within 8 of the white run, so it reports one 2,118px white band at 1920 and 1280. The grey was not darkened to split the run.
+
+The other open lines are wraps, at live's size, width, and letter-spacing. Kids Classes at 390 also reads the background behind "FUN AND CHALLENGING" as rgb(20, 20, 24) against live rgb(23, 40, 50), on the hero photo, which has no overlay. The Memorial Day sentence stays in the Community Murph paragraph. Paragraph links stay rgb(219, 58, 52) with no underline.

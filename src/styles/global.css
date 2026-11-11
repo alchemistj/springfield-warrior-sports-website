@@ -409,8 +409,8 @@ a {
   display: none;
   flex-direction: column;
   align-items: center;
-  gap: 14px;
-  padding: 16px 0;
+  gap: 0;
+  padding: 20px 0;
 }
 @media (max-width: 799px) {
   .bullet-stack { transform: translateX(6px); }
