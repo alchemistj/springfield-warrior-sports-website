@@ -105,3 +105,11 @@ What batch 1 taught (do these from the start):
 - **Never hide words.** Keep live's `<br>` line breaks and inline links (color, weight, no underline unless live has one).
 - **Fonts:** the self-hosted live variable files are already in place; keep live's exact `font-family` stacks, including where live has no fallback.
 - **Forms** on these pages keep the Central Forms wiring (siteKey, formKeys, clientSubmissionId retry, thank-you redirects, host gate). Match the form's look to live; don't change its behavior.
+
+### Quality bar (Josh, 11 Nov)
+
+Not pixel-for-pixel exactness, and far from sloppy. A page is done when someone comparing it with live at full size, at 1920, 1280 and 390, would not notice a difference. Every value still comes from live's computed CSS.
+
+- **Must match:** anything a visitor would see. That covers form layout and field styling, list markers and icons, numbered lists, shaded boxes, column alignment, section spacing, missing bands or cards, and text that wraps differently in a way that changes the shape.
+- **Not worth another round:** offsets of a few pixels, or a one-line wrap difference inside a block of the same height. Claude rules on these at full size; Cursor reports them rather than chasing them.
+- The gate is a tool for finding differences; it is not the target. A 0 with a visible difference is not done. A few measurement-only lines with no visible difference can be.

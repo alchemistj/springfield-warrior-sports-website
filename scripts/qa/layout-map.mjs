@@ -173,7 +173,7 @@ function collect() {
         radius: cs.borderTopLeftRadius,
         size: Math.round(parseFloat(cs.fontSize)),
       };
-    } else if (["td", "th", "li", "div", "p"].includes(tag)) {
+    } else if (["td", "th", "li", "div", "p", "article", "aside", "section", "figure"].includes(tag)) {
       // v2.16: shaded boxes smaller than a band (table cells, cards): background color and size.
       // v2.17: the shade a visitor sees, including a flat translucent gradient (live camp dates
       // use linear-gradient(rgba(255,255,255,.42) ...) over the grey band), blended over what is
