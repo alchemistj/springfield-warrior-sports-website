@@ -103,18 +103,23 @@ const quotes = [
     <img loading="lazy" decoding="async" src={obstacle.src} alt="Springfield indoor obstacle gym" width={obstacle.width} height={obstacle.height} />
     <div class="ready-copy">
       <h2>GET READY TO</h2>
-      <h3>REACH YOUR FUN AND FITNESS GOALS WITH SPRINGFIELD WARRIOR SPORTS</h3>
-      <p>We believe in results and that a life of health and fitness shouldn’t be boring. Our indoor obstacle training facility is like a fitness playground for all ages.</p>
+      <h3 class="reach">REACH YOUR FUN AND FITNESS GOALS WITH SPRINGFIELD WARRIOR SPORTS</h3>
+      <p class="believe">We believe in results and that a life of health and fitness shouldn’t be boring. Our indoor obstacle training facility is like a fitness playground for all ages.</p>
       <p class="aside">The best part?</p>
       <p>You don’t need any previous experience or knowledge — all you need is the determination to reach your fitness goals!</p>
       <p class="hours-title">Open Gym Hours</p>
       <ul class="hours">
-        {hours.map((line) => (
-          <li>
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 5h-2v6l5 3 1-1.7-4-2.3z" /></svg>
-            <span>{line}</span>
-          </li>
-        ))}
+        {hours.map((line) => {
+          const split = line.indexOf(": ");
+          const label = split === -1 ? line : line.slice(0, split + 1);
+          const when = split === -1 ? "" : line.slice(split + 1);
+          return (
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 5h-2v6l5 3 1-1.7-4-2.3z" /></svg>
+              <span class="slot"><span class="label">{label}</span>{when && <span class="when"> {when}</span>}</span>
+            </li>
+          );
+        })}
       </ul>
       <p>(see below for our class hours and times, which vary slightly from the open gym hours above.)</p>
     </div>
@@ -129,12 +134,14 @@ const quotes = [
         cards.map((card) => {
           const shot = shots[card.file];
           return (
-            <article class:list={["program-card", card.shift, { hs: card.file.includes("kids-classes") }]}>
+            <article class:list={["program-card", card.shift, { hs: card.file.includes("kids-classes"), "tight-title": card.title.startsWith("CLASSES") }]}>
               {shot && <img loading="lazy" decoding="async" src={shot.src} alt="" width={shot.width} height={shot.height} />}
               <div>
                 <h3>{card.title}</h3>
-                <p>{card.shift === "parkour" ? card.body : card.extra ? `${card.body} ${card.extra}` : card.body}</p>
-                {card.shift === "parkour" && card.extra && <p>{card.extra}</p>}
+                <p class:list={{ offer: card.body.startsWith("Springfield Warrior Sports offers") }}>{card.shift === "parkour" ? card.body : card.extra ? `${card.body} ${card.extra}` : card.body}</p>
+                {card.shift === "parkour" && (
+                  <p>Parkour classes are <span class="mid">currently unavailable</span>, but Open Gym sessions are available now — your first visit is just $10.</p>
+                )}
                 <p class="btn-row"><a class="btn" href={card.href}>{card.label}</a></p>
               </div>
             </article>
@@ -203,7 +210,7 @@ const quotes = [
     font-family: Heebo, "Arial Narrow", sans-serif;
     font-size: 20px;
     font-weight: 300;
-    line-height: 1.2;
+    line-height: 28px;
     text-transform: uppercase;
   }
   .ready-copy p,
@@ -241,7 +248,7 @@ const quotes = [
     margin-top: 2px;
     fill: rgb(219, 58, 52);
   }
-  .hours span {
+  .hours li > span {
     display: inline-block;
     color: #6a6b6c;
     font-family: Muli, "Segoe UI", sans-serif;
@@ -249,6 +256,10 @@ const quotes = [
     font-weight: 800;
     line-height: 1.3;
   }
+  .hours .label,
+  .hours .when { display: inline; }
+  .hours .when { font-weight: 400; }
+  .program-card span.mid { font-weight: 500; }
   .band-title {
     margin: 0 0 28px;
     color: #fff;
@@ -349,10 +360,18 @@ const quotes = [
       padding-left: 18px;
     }
     .ready img { width: 501px; height: auto; }
-    .ready-copy h2 { font-size: 50px; }
-    .ready-copy h3 { font-size: 30px; }
+    .ready-copy h2 { font-size: 50px; line-height: 70px; }
+    .day-copy h2 { line-height: 1; }
+    .ready-copy h3 { font-size: 30px; line-height: 42px; }
+    .ready-copy h3.reach { width: 540px; max-width: 100%; font-size: 32px; letter-spacing: 1px; }
+    .ready-copy p.believe { width: 597px; max-width: 100%; letter-spacing: -0.4px; }
+    .program-card p.offer { width: 640px; max-width: 640px; font-size: 17px; letter-spacing: 1px; }
     .hours span { font-size: 18px; }
     .band-title { font-size: 50px; line-height: 62.5px; }
+    .day-copy h2 { font-size: 50px; line-height: 70px; }
+    .day-copy h4 { font-size: 30px; line-height: 42px; }
+    .t-title { line-height: 70px; }
+    .t-sub { line-height: 42px; }
     .card-stack { padding: 0 42px 0 10px; gap: 28px; }
     .program-card {
       grid-template-columns: 368px minmax(0, 1fr);
@@ -373,7 +392,7 @@ const quotes = [
     .program-card.parkour img { height: 384px; object-position: 15% 100%; }
     .program-card.gyms img { height: 272px; object-position: 20% 100%; }
     .program-card.hs img { height: 300px; object-position: center 88%; }
-    .program-card h3 { font-size: 30px; }
+    .program-card h3 { font-size: 30px; line-height: 42px; }
     .program-card .btn { width: 491px; font-size: 16px; }
     .everyday {
       background-image: var(--day);
@@ -406,6 +425,9 @@ const quotes = [
   }
   @media (max-width: 799px) {
     .everyday { margin-top: 137px; }
+    .band-title { line-height: 40px; }
+    .t-title { line-height: 32px; }
+    .t-sub { line-height: 28px; }
     .program-card { display: block; width: 100%; min-width: 0; }
     .program-card > div {
       width: 300px;
@@ -415,6 +437,9 @@ const quotes = [
     }
     .program-card h3,
     .program-card > div > p { width: 300px; max-width: 100%; }
+    .program-card h3 { line-height: 28px; }
+    .program-card.tight-title h3 { line-height: 20px; }
+    .program-card p.offer { width: 298px; max-width: 298px; font-size: 17px; letter-spacing: 0.4px; }
     .program-card.hs > div {
       position: relative;
       z-index: 1;

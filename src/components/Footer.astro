@@ -114,7 +114,7 @@ const logoSrc = typeof logo === "string" ? logo : logo?.src;
     font-size: 16px;
     font-weight: 900;
     letter-spacing: 2px;
-    line-height: 1.2;
+    line-height: 28px;
     text-transform: uppercase;
   }
   .foot-list,
@@ -181,12 +181,12 @@ const logoSrc = typeof logo === "string" ? logo : logo?.src;
     z-index: 1;
     width: min(1110px, calc(100% - 40px));
     margin: 0 auto;
-    padding: 8px 0;
+    padding: 0;
     color: #fff;
     font-family: Epilogue, Arial, sans-serif;
     font-size: 12px;
     font-weight: 600;
-    line-height: 1.4;
+    line-height: 20px;
     text-align: center;
   }
   .copy-wide { display: none; }
@@ -196,11 +196,12 @@ const logoSrc = typeof logo === "string" ? logo : logo?.src;
       column-gap: 51px;
       align-items: start;
     }
-    .copy-wide {
+    .copy-bar p.copy-wide {
       display: block;
       font-size: 14px;
-      padding: 10px 0;
+      padding: 0;
       letter-spacing: 2px;
+      line-height: 24px;
     }
     .copy-line { display: none; }
   }

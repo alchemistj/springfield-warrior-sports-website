@@ -286,6 +286,49 @@ Lighthouse mobile on the local preview, after this batch. Order is performance /
 | About | 98 / 100 / 100 / 100 |
 | Kids classes | 99 / 100 / 100 / 100 |
 
+## Layout parity gate v2.5
+
+Model: Grok 4.7. Same compare command, against the recaptured v2.5 live map, with `scripts/qa/layout-allow.json`. The live map, the scripts, the tolerances, and `PIXEL_TOL` were not edited. The report is `docs/qa/layout-report.md`.
+
+Before is this machine's measurement of `5748de8` (9,087). After is 7,471. Home, about, and kids-classes are 0 at 1920, 1280, and 390. No other page's count went up. No allow entries were added. The dispatch listed home 51/52/56, about 65/64/56, and kids-classes 182/182/174 on that same commit. This machine measured 50/51/56, 63/62/57, and 182/182/173. After is 0/0/0 either way.
+
+| Page | Before 1920 | 1280 | 390 | Total | After 1920 | 1280 | 390 | Total |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| about | 63 | 62 | 57 | 182 | 0 | 0 | 0 | 0 |
+| best-gyms-in-springfield | 371 | 372 | 188 | 931 | 358 | 359 | 177 | 894 |
+| birthday-parties | 214 | 215 | 84 | 513 | 201 | 202 | 73 | 476 |
+| competitions | 68 | 68 | 52 | 188 | 55 | 55 | 41 | 151 |
+| contact | 86 | 86 | 48 | 220 | 73 | 73 | 37 | 183 |
+| fitness-classes | 253 | 252 | 128 | 633 | 240 | 239 | 117 | 596 |
+| home | 50 | 51 | 56 | 157 | 0 | 0 | 0 | 0 |
+| homeschool-sports-and-classes-springfield-mo | 115 | 115 | 105 | 335 | 102 | 102 | 94 | 298 |
+| kids-classes | 182 | 182 | 173 | 537 | 0 | 0 | 0 | 0 |
+| laser-tag | 182 | 184 | 150 | 516 | 169 | 171 | 139 | 479 |
+| meet-the-team | 560 | 560 | 195 | 1315 | 547 | 547 | 184 | 1278 |
+| nerf-wars | 152 | 152 | 119 | 423 | 139 | 139 | 108 | 386 |
+| parkour | 196 | 196 | 98 | 490 | 183 | 183 | 87 | 453 |
+| personal-training | 339 | 340 | 114 | 793 | 326 | 327 | 103 | 756 |
+| registered-for-csna-competition | 25 | 25 | 23 | 73 | 12 | 12 | 12 | 36 |
+| registered-for-day-camps | 26 | 26 | 25 | 77 | 13 | 13 | 14 | 40 |
+| registered-for-summer-fun-competition | 27 | 27 | 26 | 80 | 14 | 14 | 15 | 43 |
+| registered-for-wnl-competition | 25 | 25 | 24 | 74 | 12 | 12 | 13 | 37 |
+| registered | 25 | 25 | 24 | 74 | 12 | 12 | 13 | 37 |
+| schedule-birthday-party | 68 | 68 | 22 | 158 | 55 | 55 | 11 | 121 |
+| summer-camps-in-springfield-mo | 375 | 375 | 245 | 995 | 362 | 362 | 234 | 958 |
+| thank-you-for-your-feedback | 23 | 23 | 22 | 68 | 10 | 10 | 11 | 31 |
+| wnl-competitions | 89 | 89 | 77 | 255 | 76 | 76 | 66 | 218 |
+| All pages | | | | 9087 | | | | 7471 |
+
+About and kids body copy is `rgba(0, 0, 0, 0.7)` at a 28px line height. Accent links use the live color, weight, and target. Only "Note:" is navy 600. Open gym times are weight 400. The about partnership sections and the kids program sections sit on full-width `rgb(241, 245, 247)`. The home bullet strip is `#000`. The Memorial Day sentence is visible in the Community Murph paragraph.
+
+Lighthouse mobile on the local preview, after this batch. Order is performance / accessibility / best practices / SEO.
+
+| Page | Score |
+|---|---|
+| Home | 98 / 100 / 100 / 100 |
+| About | 98 / 100 / 100 / 100 |
+| Kids classes | 100 / 100 / 100 / 100 |
+
 ## Open questions
 
 - Where GF18 should live, if it should be a page at all.

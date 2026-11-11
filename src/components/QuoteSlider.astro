@@ -65,12 +65,14 @@ const icon = media("media/2023-03-qoute-icon.webp");
     font-family: Muli, "Segoe UI", sans-serif;
     font-size: 16px;
     font-weight: 400;
-    line-height: 1.55;
+    line-height: 26px;
     text-align: start;
   }
   .t-quote p.t-by {
+    min-height: 50px;
     color: #d6352f;
     font-weight: 700;
+    line-height: 26px;
   }
   @media (max-width: 799px) {
     .t-slider {
@@ -87,6 +89,8 @@ const icon = media("media/2023-03-qoute-icon.webp");
     }
     .t-quote.rest { left: 39px; top: calc(100% + 10px); width: 272px; }
     .t-quote p { width: 282px; }
+    .t-quote p:not(.t-by) { padding-bottom: 14px; }
+    .t-quote p.t-by { min-height: 46px; }
     .t-quote:nth-child(n + 2) p,
     .t-quote.rest p { width: 272px; }
     .t-quote:nth-child(n + 2) img { display: none; }

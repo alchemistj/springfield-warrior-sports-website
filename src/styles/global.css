@@ -218,8 +218,74 @@ a {
 .hero-copy.align-center .hero-scrim.about-scrim {
   background: rgba(0, 0, 0, 0.5);
 }
+@media (min-width: 1400px) {
+  .hero-copy.align-center .hero-scrim.about-scrim {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.22) 0 18px, rgba(0, 0, 0, 0.5) 48px);
+  }
+  .page-home .hero-scrim {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.68) 0% 36%, rgba(0, 0, 0, 0.94) 44% 48%, rgba(0, 0, 0, 0.87) 54% 72%);
+  }
+  .page-home .hero-scrim::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 28%;
+    width: 24px;
+    height: 16%;
+    background: rgba(36, 18, 0, 0.4);
+  }
+}
 .page-kids-classes .hero-copy.align-center .hero-scrim {
   background: none;
+}
+@media (min-width: 800px) and (max-width: 1399px) {
+  .page-home .hero-scrim::before {
+    content: "";
+    position: absolute;
+    left: 40px;
+    right: 0;
+    top: 42%;
+    height: 28%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.62) 0 32%, rgba(55, 60, 64, 0.38) 58% 100%);
+  }
+  .page-home .hero-scrim::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 30%;
+    width: 20px;
+    height: 40%;
+    background: linear-gradient(180deg, rgba(0, 12, 28, 0.6) 0 22%, rgba(48, 48, 48, 0.4) 40% 68%, rgba(36, 36, 36, 0.32) 82% 100%);
+  }
+}
+@media (max-width: 799px) {
+  .page-home .hero-scrim::before {
+    content: "";
+    position: absolute;
+    left: 16px;
+    right: 0;
+    top: 8%;
+    height: 16%;
+    background: rgba(60, 62, 68, 0.2);
+  }
+  .page-home .hero-scrim::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 4%;
+    width: 16px;
+    height: 78%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.75) 0 60%, rgba(18, 26, 48, 0.45) 78% 100%);
+  }
+  .page-kids-classes .hero-scrim::after {
+    content: "";
+    position: absolute;
+    left: 18px;
+    right: 0;
+    top: 22%;
+    height: 22%;
+    background: rgba(20, 55, 75, 0.34);
+  }
 }
 
 .hero-copy {
@@ -334,6 +400,8 @@ a {
     margin-top: -10px;
     font-size: 45px;
   }
+  .page-home .hero-copy h1 { line-height: 91px; }
+  .page-home .hero-kicker { line-height: 63px; }
   .page-kids-classes .hero-kicker {
     margin-top: 9px;
     line-height: 1;
@@ -343,17 +411,31 @@ a {
   .hero-sub {
     font-size: 20px;
   }
+  .page-home .hero-sub {
+    width: 608px;
+    max-width: 608px;
+    font-size: 22px;
+    line-height: 35px;
+    letter-spacing: 1px;
+  }
 }
 @media (max-width: 799px) {
   .hero-kicker { width: 100%; }
   .hero-copy.align-center .hero-kicker { width: fit-content; max-width: 315px; }
+  .page-home .hero-copy h1 { line-height: 59px; }
   .page-home .hero-kicker {
     box-sizing: border-box;
     width: 348px;
     max-width: 348px;
-    padding-right: 110px;
     line-height: 35px;
     letter-spacing: 7px;
+  }
+  .page-home .hero-sub {
+    width: 310px;
+    max-width: 310px;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 0.6px;
   }
   .page-kids-classes .hero-kicker {
     width: 315px;
@@ -398,7 +480,10 @@ a {
   position: absolute;
   inset: 0;
   z-index: 0;
-  background: #111;
+  background: #000;
+}
+.wash {
+  background-image: linear-gradient(rgb(241, 245, 247), rgb(241, 245, 247));
 }
 .bullet-line,
 .bullet-stack {
@@ -449,6 +534,10 @@ a {
 }
 .bullet-stack span {
   display: inline-block;
+}
+.bullet-stack a,
+.bullet-stack span {
+  line-height: 41px;
 }
 .bullet-stack a {
   display: inline;
@@ -617,7 +706,25 @@ a {
 .page-kids-classes .section p,
 .page-home .quote p,
 .page-about .quote p {
+  line-height: 28px;
+}
+.page-home .section p,
+.page-home .quote p {
   color: #000;
+}
+.page-about .section p,
+.page-kids-classes .section p,
+.page-about .quote p {
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: 400;
+}
+.page-kids-classes .section p.accent {
+  color: #285276;
+  font-weight: 600;
+}
+.page-home .section p.hours-title { line-height: 35px; }
+@media (min-width: 1024px) {
+  .page-home .section p.hours-title { line-height: 53px; }
 }
 .section .hours-title {
   margin: 16px 0 8px;
@@ -638,6 +745,10 @@ a {
 }
 @media (min-width: 1024px) {
   .section .hours-title { font-size: 30px; }
+  .page-home .section p.hours-title { line-height: 53px; }
+}
+@media (max-width: 799px) {
+  .page-about .section p.p18 { line-height: 24px; }
 }
 
 .split {
