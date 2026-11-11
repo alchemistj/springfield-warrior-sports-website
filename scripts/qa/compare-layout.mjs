@@ -397,6 +397,18 @@ for (const width of readdirSync(liveDir).sort((a, b) => Number(b) - Number(a))) 
           if (Math.abs(cand.h - run.h) > Math.max(24, run.h * 0.1))
             issues.push(`band rgb(${run.c.join(", ")}) at y=${run.y} (${side} margin): ${cand.h}px tall, live ${run.h}px`);
         }
+        // v2.12: the reverse. A flat band in the build (60px+) with no same-colored live band near
+        // the same spot, such as a white strip where live's grey runs straight into the next band.
+        const lrAll = lr0.filter((r) => r.h >= 20);
+        for (const run of br) {
+          if (run.h < 60 || !isBg(run.c) || inHero({ y: run.y / scale, h: run.h / scale })) continue;
+          // The space under the footer that keeps the spec's sticky Call / Book a Party bar from
+          // covering it (phone widths only, at the very bottom of the page).
+          if (CUR_VW < 800 && run.y + run.h >= (build.docHeight || 0) - 2) continue;
+          const want = run.y / scale;
+          const near = lrAll.some((l) => Math.max(...run.c.map((v, i) => Math.abs(v - l.c[i]))) <= 12 && Math.abs(l.y - want) <= 300);
+          if (!near) issues.push(`band rgb(${run.c.join(", ")}) at y=${run.y} (${run.h}px tall, ${side} margin) is in the build but not on live`);
+        }
         }
       }
       // Section band colors (consecutive duplicates removed)
