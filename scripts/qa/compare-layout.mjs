@@ -218,7 +218,14 @@ for (const width of readdirSync(liveDir).sort((a, b) => Number(b) - Number(a))) 
       // (catches a wrong photo crop, a dark photo behind dark text, missing overlays).
       const shot = (dir) => [".png", ".jpg"].map((ext) => path.join(dir, width, `${slug}${ext}`)).find((f) => existsSync(f)) || "";
       const livePng = shot(liveDir);
-      const buildPng = shot(buildDir);
+      let buildPng = shot(buildDir);
+      // Live screenshots are stored as JPEG (quality 55). Compress the build screenshot the same way
+      // before comparing, so JPEG colour bleed affects both sides equally.
+      if (livePng.endsWith(".jpg") && buildPng.endsWith(".png")) {
+        const jpg = buildPng.replace(/\.png$/, ".cmp.jpg");
+        if (!existsSync(jpg)) await sharp(buildPng).jpeg({ quality: 55 }).toFile(jpg);
+        buildPng = jpg;
+      }
       if (existsSync(livePng) && existsSync(buildPng)) {
         const pairsForPixels = [
           ...h.pairs.map(([l, b]) => [l, b, `heading "${l.text.slice(0, 40)}"`]),
