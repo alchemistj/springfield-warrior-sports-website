@@ -32,7 +32,10 @@ describe("built site", () => {
       const source = readFileSync(`source/pages/${page.slug}/text.txt`, "utf8")
         .replace("605 W. Plainview Road Springfield, MO 65810", site.address.display);
       const text = visibleText(html);
-      const missing = sentences(mainContent(source)).filter((sentence) => !text.includes(sentence));
+      // Live renders this competitions sentence at font-size 0. It is removed, not hidden.
+      const missing = sentences(mainContent(source))
+        .filter((sentence) => !sentence.includes("January 13th competitions will go up"))
+        .filter((sentence) => !text.includes(sentence));
       expect(missing, page.slug).toEqual([]);
       const outsideForm = visibleText(html.replace(/<form\b[\s\S]*?<\/form>/gi, " "));
       expect(outsideForm, page.slug).not.toMatch(/\(Required\)/i);
