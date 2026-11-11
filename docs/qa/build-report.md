@@ -690,6 +690,35 @@ Lines left, with live's values:
 - The competitions ice run at y=410 (2646px) is still missing at 390 because the intro is white. The early-bird sentence is in the HTML at live's computed font-size of 0px, so it is not on the page.
 - Birthday at 390 still has the hero-to-intro spacing of 317px against 253px, and the grey memories band is 876px against 989px.
 
+## Layout parity batch 2, round 4, gate v2.18
+
+Model: Grok 4.7. Measured on the Vercel preview of `19cfe38`. The live map, the scripts, the tolerances, and `PIXEL_TOL` were not edited. No allow entries were added. Forms still use the Central Forms wiring. Lighthouse was not re-run. Home, about, and kids-classes were not restyled. On this preview they measure the same as the last recorded batch 1 result: home 3/3/0, about 2/2/1, kids-classes 0/0/3.
+
+Round 3 on the preview of `dfd5989` is the "before" column.
+
+| Page | Before 1920 / 1280 / 390 | Preview 1920 / 1280 / 390 |
+|---|---|---|
+| birthday-parties | 2 / 1 / 13 | 2 / 1 / 13 |
+| schedule-birthday-party | 5 / 5 / 0 | 5 / 5 / 0 |
+| summer-camps-in-springfield-mo | 0 / 1 / 1 | 0 / 1 / 1 |
+| competitions | 0 / 0 / 8 | 0 / 0 / 8 |
+| wnl-competitions | 4 / 4 / 1 | 0 / 0 / 0 |
+| contact | 0 / 0 / 2 | 0 / 0 / 2 |
+
+The competitions early-bird sentence is deleted. It is not hidden. Live paints that sentence at font-size 0, and the copy check skips that one sentence for that reason.
+
+Schedule and WNL fields use live's row gap of 40px, label margin 10px 0 8px, and a 24px gap before the submit button (live's `.gform_footer` margin-top). Field span at 1280: schedule 1004px against 995px, WNL 985px against 980px. At 390 the WNL span is 1071px on both. Competitions repeater pitches match live (name-to-radio 113, radios 32, birthday 74, divisions 86, then 146 / 91 / 91). Its field span is 1027px against 1023px at 1280 and 1122px against 1119px at 390.
+
+WNL's intro section padding-bottom is 90px, the grey section is 90px and 90px, and the form block padding-top is 90px. An empty line sits between the early-bird sentence and "Registration is easy" (28px against live's 30px). At 390 the form title is 346px wide, Literata 24px, line-height 33.6px, padding-bottom 20px, and wraps to 2 lines. The schedule form section padding is 100px and 90px, which is the live section. At 390 the competitions section under the form is the live trailing box, 110px (padding 50px, inner min-height 40px, padding 20px).
+
+Lines left, with live's values. The ruled items from this round are unchanged:
+
+- Birthday cost-to-"All other guests" is 232px against 130px. Book-now sample is rgb(23, 21, 19) against rgb(46, 30, 23).
+- Schedule quotes still wrap one extra line at Muli 16px, line-height 26, width 513. The second numbered step wraps "fee" at 862px, so the gate counts 4 lines against 3. The white run at y=2258 is 899px against 1022px.
+- Camps at 1280, beside "KIDS STAY FIT AND HEALTHY": rgb(65, 77, 74) against rgb(27, 46, 47). At 390 that sentence is 9 lines against 8.
+- Header CONTACT is 53px against 48px, and SIGN OUR WAIVER is 214px against 209px, at 390.
+- Competitions at 390: the ice run at y=410 is not in the build. The white run at y=3058 is 713px against 798px, and a 550px white run at y=544 is in the build only. The hero-to-September spacing is 909px against 813px.
+
 ## Open questions
 
 - Where GF18 should live, if it should be a page at all.
