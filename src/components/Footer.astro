@@ -192,8 +192,12 @@ const logoSrc = typeof logo === "string" ? logo : logo?.src;
   .copy-wide { display: none; }
   @media (max-width: 799px) {
     .foot-links { padding-left: 0; }
+    :global(.page-home) .site-footer,
+    :global(.page-about) .site-footer { padding-top: 123px; }
   }
   @media (min-width: 800px) {
+    :global(.page-home) .site-footer { padding-top: 111px; }
+    :global(.page-about) .site-footer { padding-top: 115px; }
     .foot {
       grid-template-columns: 354px 353px 301px;
       column-gap: 51px;

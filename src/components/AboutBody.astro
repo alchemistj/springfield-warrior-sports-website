@@ -215,7 +215,16 @@ const quotes = [
     .copy h2.w296 { width: 296px; }
     .p18 { font-size: 18px; }
     .row.photo-left { grid-template-columns: 520px 561px; column-gap: 68px; align-items: center; }
-    .row.photo-left.mist { margin-bottom: 155px; }
+    .intro-block > .mist {
+      margin-top: -28px;
+      margin-bottom: 56px;
+      padding: 28px 0 124px;
+    }
+    .intro-block > .wash {
+      margin-top: -87px;
+      padding-top: 87px;
+    }
+    .row.photo-left.mist { margin-bottom: 0; }
     .row.text-left { grid-template-columns: 561px 501px; column-gap: 88px; align-items: center; }
     .row.cleanup { margin-bottom: 211px; }
     .about-page.story { margin-top: 939px; }
@@ -241,13 +250,18 @@ const quotes = [
     .copy h2.h30 { font-size: 30px; }
     .copy h2.w296 { width: 296px; }
     .lead, .copy p, .full, .wide { width: min(338px, 100%); }
-    .story-lead { letter-spacing: 0; font-size: 15.5px; }
-    .murph-copy { letter-spacing: 0; font-size: 16.5px; }
+    .story-lead { letter-spacing: 0; }
+    .murph-copy { letter-spacing: 0; }
     .row.photo-left.mist { margin-bottom: 134px; }
     .row.cleanup { margin-bottom: 133px; }
     .about-page.story { margin-top: 412px; }
     .about-page.mist { margin-top: 90px; }
     .about-page.mist > .wrap { width: min(1150px, calc(100% - 40px)); }
+    .intro-block { padding-top: 134px; }
+    .intro-block > .wash {
+      margin-top: -118px;
+      padding-top: 118px;
+    }
     .about-page.mist h2.h50 { margin-bottom: 0; }
     .about-page.mist h3.thin { margin-top: 0; }
     .lead { margin-inline: auto; }

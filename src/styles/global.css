@@ -429,7 +429,7 @@ a {
   .page-home .hero-sub {
     width: 608px;
     max-width: 608px;
-    font-size: 22px;
+    font-size: 20px;
     line-height: 35px;
     letter-spacing: 0;
   }
@@ -455,6 +455,7 @@ a {
   .page-kids-classes .hero-kicker {
     width: 315px;
     max-width: 315px;
+    margin-top: 15px;
     line-height: 1;
   }
   .page-kids-classes .hero-copy h1 {
