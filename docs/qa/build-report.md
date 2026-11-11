@@ -110,6 +110,51 @@ Lighthouse mobile on the local preview, after these fixes. Order is performance 
 | Schedule a birthday party | 100 / 100 / 100 / 100 | 0 ms |
 | Contact | 99 / 100 / 100 / 100 | 0 ms |
 
+## Layout parity batch 1
+
+Model: Grok 4.7. Gate: `scripts/qa/compare-layout.mjs` against `docs/qa/layout-map/live` with `scripts/qa/layout-allow.json`. Tolerances and the live map were not edited. No new allow entries. The report is `docs/qa/layout-report.md`.
+
+Shared content column is 1150px, centered (`--gutter: 20px`). Self-hosted faces: Epilogue 300/400/500/600/800, Heebo 300/400/600/800/900, Muli 400/700/800, all `font-display: swap`. Home, about, and kids-classes use the live column, the live heading and body weights and colors, and a two-up CSS scroll-snap testimonial track.
+
+Differences per page, before (baseline) and after, at 1920 / 1280 / 390, then the three-width total.
+
+| Page | Before 1920 | 1280 | 390 | Total | After 1920 | 1280 | 390 | Total |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| about | 64 | 64 | 45 | 173 | 0 | 0 | 0 | 0 |
+| best-gyms-in-springfield | 129 | 128 | 90 | 347 | 126 | 126 | 89 | 341 |
+| birthday-parties | 69 | 69 | 40 | 178 | 66 | 66 | 38 | 170 |
+| competitions | 20 | 20 | 12 | 52 | 18 | 18 | 10 | 46 |
+| contact | 18 | 16 | 21 | 55 | 13 | 13 | 18 | 44 |
+| fitness-classes | 98 | 98 | 40 | 236 | 93 | 93 | 36 | 222 |
+| home | 86 | 85 | 65 | 236 | 0 | 0 | 0 | 0 |
+| homeschool-sports-and-classes-springfield-mo | 40 | 40 | 32 | 112 | 38 | 38 | 30 | 106 |
+| kids-classes | 131 | 131 | 85 | 347 | 0 | 0 | 0 | 0 |
+| laser-tag | 53 | 53 | 42 | 148 | 50 | 50 | 38 | 138 |
+| meet-the-team | 250 | 250 | 127 | 627 | 247 | 247 | 125 | 619 |
+| nerf-wars | 46 | 46 | 34 | 126 | 45 | 45 | 31 | 121 |
+| parkour | 77 | 77 | 49 | 203 | 73 | 73 | 46 | 192 |
+| personal-training | 167 | 166 | 69 | 402 | 164 | 164 | 66 | 394 |
+| registered | 3 | 3 | 6 | 12 | 2 | 2 | 4 | 8 |
+| registered-for-csna-competition | 5 | 5 | 5 | 15 | 4 | 4 | 4 | 12 |
+| registered-for-day-camps | 9 | 9 | 12 | 30 | 8 | 8 | 10 | 26 |
+| registered-for-summer-fun-competition | 4 | 4 | 7 | 15 | 3 | 3 | 5 | 11 |
+| registered-for-wnl-competition | 3 | 3 | 6 | 12 | 2 | 2 | 4 | 8 |
+| schedule-birthday-party | 14 | 14 | 10 | 38 | 12 | 12 | 8 | 32 |
+| summer-camps-in-springfield-mo | 91 | 91 | 65 | 247 | 87 | 87 | 61 | 235 |
+| thank-you-for-your-feedback | 3 | 3 | 6 | 12 | 2 | 2 | 4 | 8 |
+| wnl-competitions | 26 | 26 | 18 | 70 | 24 | 24 | 16 | 64 |
+| All pages | | | | 3693 | | | | 2797 |
+
+Home, about, and kids-classes are 0 at all three widths. No other page's count went up.
+
+Lighthouse mobile on the local preview, after this batch. Order is performance / accessibility / best practices / SEO.
+
+| Page | Score |
+|---|---|
+| Home | 98 / 100 / 100 / 100 |
+| About | 100 / 100 / 100 / 100 |
+| Kids classes | 100 / 100 / 100 / 100 |
+
 ## Open questions
 
 - Where GF18 should live, if it should be a page at all.

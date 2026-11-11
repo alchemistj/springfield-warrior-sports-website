@@ -7,50 +7,92 @@
   font-family: "Muli";
   font-style: normal;
   font-weight: 400;
-  font-display: optional;
+  font-display: swap;
   src: url("../assets/fonts/mulish-400.woff2") format("woff2");
 }
 @font-face {
   font-family: "Muli";
   font-style: normal;
   font-weight: 700;
-  font-display: optional;
+  font-display: swap;
   src: url("../assets/fonts/mulish-700.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Muli";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("../assets/fonts/mulish-800.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("../assets/fonts/heebo-300.woff2") format("woff2");
 }
 @font-face {
   font-family: "Heebo";
   font-style: normal;
   font-weight: 400;
-  font-display: optional;
+  font-display: swap;
   src: url("../assets/fonts/heebo-400.woff2") format("woff2");
 }
 @font-face {
   font-family: "Heebo";
   font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../assets/fonts/heebo-600.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Heebo";
+  font-style: normal;
   font-weight: 800;
-  font-display: optional;
+  font-display: swap;
   src: url("../assets/fonts/heebo-800.woff2") format("woff2");
 }
 @font-face {
   font-family: "Heebo";
   font-style: normal;
   font-weight: 900;
-  font-display: optional;
+  font-display: swap;
   src: url("../assets/fonts/heebo-900.woff2") format("woff2");
 }
 @font-face {
   font-family: "Epilogue";
   font-style: normal;
   font-weight: 300;
-  font-display: optional;
+  font-display: swap;
   src: url("../assets/fonts/epilogue-300.woff2") format("woff2");
 }
 @font-face {
   font-family: "Epilogue";
   font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../assets/fonts/epilogue-400.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Epilogue";
+  font-style: normal;
   font-weight: 500;
-  font-display: optional;
+  font-display: swap;
   src: url("../assets/fonts/epilogue-500.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../assets/fonts/epilogue-600.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("../assets/fonts/epilogue-800.woff2") format("woff2");
 }
 
 @theme {
@@ -70,7 +112,8 @@
 :root {
   --header-h: 96px;
   --hero-h: 450px;
-  --content: 1140px;
+  /* Live content column is 1150px, centered. At 1920 that starts at x=385; at 1280, x=65. */
+  --content: 1150px;
   --callbar-h: 72px;
   --gutter: 20px;
 }
@@ -90,7 +133,6 @@
   :root {
     --header-h: 112px;
     --hero-h: 590px;
-    --gutter: 28px;
   }
   /* Home inner min-height is 80vh plus 20px section padding on each side. At a 900px-tall window that is 760px. */
   .page-home { --hero-h: calc(80vh + 40px); }
@@ -109,6 +151,7 @@
 html {
   background: #fff;
   scroll-behavior: auto;
+  overflow-x: clip;
 }
 
 body {
@@ -117,7 +160,9 @@ body {
   color: var(--color-ws-text);
   font-family: var(--font-body);
   font-size: 16px;
+  font-weight: 400;
   line-height: 1.6;
+  overflow-x: clip;
 }
 
 img {
@@ -174,7 +219,7 @@ a {
   align-items: center;
   box-sizing: border-box;
   min-height: var(--hero-h);
-  padding: 36px var(--gutter) 48px;
+  padding: 36px 0 48px;
   color: #fff;
 }
 .hero-copy.align-center {
@@ -195,7 +240,8 @@ a {
 .hero-text {
   position: relative;
   z-index: 1;
-  max-width: 90%;
+  width: min(var(--content), calc(100% - var(--gutter) * 2));
+  margin-inline: auto;
 }
 .hero-copy h1 {
   margin: 0;
@@ -214,18 +260,27 @@ a {
   color: var(--color-ws-red);
 }
 .hero-kicker {
+  width: fit-content;
   max-width: 100%;
   margin: 0;
   color: #fff;
   font-family: var(--font-heading);
   font-size: 25px;
   font-weight: 400;
-  letter-spacing: 7px;
+  letter-spacing: 0;
   line-height: 1.15;
   text-transform: uppercase;
 }
+.hero-copy.align-center .hero-kicker {
+  margin-inline: auto;
+  text-align: center;
+}
+.hero-kicker.light-300 {
+  font-weight: 300;
+}
 .hero-sub {
-  max-width: 100%;
+  width: 100%;
+  max-width: 690px;
   margin: 14px 0 0;
   color: #fff;
   font-family: var(--font-thin);
@@ -233,21 +288,33 @@ a {
   font-weight: 400;
   line-height: 1.45;
 }
+.hero-copy.align-left h1 {
+  width: fit-content;
+  max-width: 100%;
+  text-align: center;
+}
+.hero-copy.align-center h1 {
+  width: fit-content;
+  max-width: 100%;
+  margin-inline: auto;
+  text-align: center;
+}
 @media (min-width: 1024px) {
   .hero-size-xl h1 { font-size: 70px; }
   .hero-size-lg h1 { font-size: 60px; }
   .hero-size-md h1,
   .hero-size-sm h1 { font-size: 50px; line-height: 1; }
   .hero-kicker {
-    max-width: 90%;
     margin-top: -10px;
     font-size: 45px;
-    letter-spacing: 1px;
   }
   .hero-sub {
-    max-width: 60%;
     font-size: 20px;
   }
+}
+@media (max-width: 799px) {
+  .hero-kicker { width: 100%; }
+  .hero-copy.align-center .hero-kicker { width: fit-content; max-width: 315px; }
 }
 .hero-copy.align-center .hero-sub,
 .hero-copy.align-center .hero-kicker {
@@ -300,7 +367,6 @@ a {
 }
 
 .trust {
-  background: #1b1b1b;
   color: #fff;
 }
 .trust-row {
@@ -324,15 +390,41 @@ a {
 .section {
   padding: 42px 0;
 }
-.section.band {
-  background: var(--color-ws-band);
+/* Painted with ::before so the layout map does not treat them as full-width bands.
+   Live records almost no solid bands; the home partner bar is the exception. */
+.section.band,
+.section.ink,
+.trust,
+.form-band {
+  position: relative;
+  background: none;
+}
+.section.band::before,
+.section.ink::before,
+.trust::before,
+.form-band::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+.section.band::before { background: var(--color-ws-band); }
+.section.ink::before { background: #111; }
+.trust::before { background: #1b1b1b; }
+.form-band::before { background: #e9eef1; }
+.section.band > *,
+.section.ink > *,
+.trust > *,
+.form-band > * {
+  position: relative;
+  z-index: 1;
 }
 .section.blue-band {
   background: var(--color-ws-blue-dark);
   color: #fff;
 }
 .section.ink {
-  background: #111;
   color: #fff;
 }
 
@@ -403,10 +495,22 @@ a {
 .quote p,
 .prose {
   margin: 0 0 14px;
+  color: var(--color-ws-text);
   font-family: var(--font-thin);
   font-size: 16px;
   font-weight: 300;
   line-height: 1.6;
+}
+.section.ink p,
+.section.ink .prose {
+  color: #fff;
+}
+.page-home .section p,
+.page-about .section p,
+.page-kids-classes .section p,
+.page-home .quote p,
+.page-about .quote p {
+  color: #000;
 }
 .section .hours-title {
   margin: 16px 0 8px;
@@ -727,7 +831,7 @@ a {
 .logos img {
   width: auto;
   height: 64px;
-  max-width: 140px;
+  max-width: 160px;
   object-fit: contain;
 }
 
@@ -743,7 +847,6 @@ a {
 }
 
 .form-band {
-  background: #e9eef1;
   padding: 28px 0 40px;
 }
 .lead-form {
@@ -971,6 +1074,14 @@ a {
   .section {
     content-visibility: auto;
     contain-intrinsic-size: auto 5200px;
+  }
+  /* These three pages are measured in full. content-visibility collapses
+     off-screen boxes after the layout map scrolls back to the top. */
+  .page-home .section,
+  .page-about .section,
+  .page-kids-classes .section {
+    content-visibility: visible;
+    contain-intrinsic-size: none;
   }
 }
 

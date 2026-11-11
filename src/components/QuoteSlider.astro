@@ -1,0 +1,90 @@
+---
+import { media } from "../lib/media";
+
+interface Quote {
+  text: string;
+  by: string;
+}
+interface Props {
+  quotes: Quote[];
+}
+const { quotes } = Astro.props;
+const icon = media("media/2023-03-qoute-icon.webp");
+---
+
+<div class="t-slider">
+  {
+    quotes.map((quote, index) => (
+      <blockquote class:list={["t-quote", { "has-icon": index < 2 }]}>
+        {index < 2 && <img loading="lazy" decoding="async" src={icon.src} alt="" width="65" height="65" />}
+        <p>{quote.text}</p>
+        <p class="t-by">{quote.by}</p>
+      </blockquote>
+    ))
+  }
+</div>
+
+<style>
+  .t-slider {
+    display: grid;
+    grid-template-columns: 513px 513px;
+    column-gap: 52px;
+    justify-content: start;
+    padding-left: 31px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+  }
+  .t-quote {
+    margin: 0 0 28px;
+    scroll-snap-align: start;
+  }
+  .t-quote:nth-child(2) {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .t-quote:nth-child(n + 3) {
+    grid-column: 1;
+  }
+  .t-quote img {
+    display: block;
+    width: 65px;
+    height: 65px;
+    margin: 0 0 16px 9px;
+  }
+  .t-quote p {
+    width: 513px;
+    max-width: 100%;
+    margin: 0 0 12px;
+    color: #000;
+    font-family: Muli, "Segoe UI", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.55;
+    text-align: start;
+  }
+  .t-by {
+    color: #b4231e;
+    font-weight: 700;
+  }
+  @media (max-width: 799px) {
+    .t-slider {
+      grid-template-columns: 1fr;
+      padding-left: 29px;
+      column-gap: 0;
+    }
+    .t-quote:nth-child(2) {
+      grid-column: 1;
+      grid-row: auto;
+    }
+    .t-quote p {
+      width: 282px;
+    }
+    .t-quote:nth-child(n + 2) p {
+      width: 272px;
+    }
+    .t-quote:nth-child(n + 2) img {
+      display: none;
+    }
+  }
+</style>
