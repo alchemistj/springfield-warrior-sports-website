@@ -7,12 +7,15 @@ interface Quote {
 }
 interface Props {
   quotes: Quote[];
+  /** Live carousel box: --tcb-cwv-height-d and --tcb-cwv-height-m. */
+  minHeight?: string;
+  minHeightPhone?: string;
 }
-const { quotes } = Astro.props;
+const { quotes, minHeight = "auto", minHeightPhone = "auto" } = Astro.props;
 const icon = media("media/2023-03-qoute-icon.webp");
 ---
 
-<div class="t-slider">
+<div class="t-slider" style={`--slider-min:${minHeight};--slider-min-phone:${minHeightPhone}`}>
   {
     quotes.map((quote, index) => (
       <blockquote class:list={["t-quote", { "has-icon": index < 2, rest: index >= 2 }]}>
@@ -34,6 +37,7 @@ const icon = media("media/2023-03-qoute-icon.webp");
     display: grid;
     grid-template-columns: 513px 52px 513px;
     justify-content: start;
+    min-height: var(--slider-min);
     padding-left: 31px;
     overflow: hidden;
   }
@@ -77,6 +81,7 @@ const icon = media("media/2023-03-qoute-icon.webp");
   @media (max-width: 799px) {
     .t-slider {
       grid-template-columns: 1fr;
+      min-height: var(--slider-min-phone);
       padding-left: 29px;
     }
     .t-quote:nth-child(2) {

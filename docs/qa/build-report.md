@@ -587,6 +587,26 @@ Lighthouse mobile on the local preview, after this batch. Order is performance /
 | About | 98 / 92 / 100 / 100 |
 | Kids classes | 98 / 92 / 100 / 100 |
 
+## Layout parity gate v2.15, round 13
+
+Model: Grok 4.7. Gate v2.14 accepts a gap across the trust bar with or without the bar counted. Gate v2.15 counts any flat run of 120px or more, including a band painted with a background gradient. The live map, the scripts, the tolerances, and `PIXEL_TOL` were not edited. The report is `docs/qa/layout-report.md`. No allow entries were added.
+
+On v2.13 the round 12 pages were home 3/3/0, about 2/2/1, kids-classes 0/0/4, and the site total was 8,211. On v2.15, after this round, home is 3/3/0, about is 2/2/1, and kids-classes is 0/0/3 (1920/1280/390). The site total is 8,357. The other pages are higher than that v2.13 report because v2.15 counts gradient bands on screenshots this round did not change. Home, about, and kids-classes did not gain a line. The Vercel preview is recorded after this commit is deployed.
+
+The testimonials section uses live's padding, 90px on top and 80px on the bottom. Live also sets 20px on the sides, which is already the content column's gutter. The background stays `linear-gradient(#e5eaed, #e5eaed)`. The slider min-height is live's carousel box, from `--tcb-cwv-height-d` and `--tcb-cwv-height-m`: home 401px and 382px, about 375px and 331px.
+
+On the PNG the grey is 713px against live's 715px at home 1920 and 1280, 642px against 654px at home 390, 699px against 689px at about 1920 and 1280, and 595px against 603px at about 390. Home's section margin is 0. About keeps 27px of margin above the grey from 800px up. Live's margin is 0. Dropping that 27px makes the white run above the grey 714px against live's 795px, past the band limit, so the 27px stays. At 390 that margin is 0.
+
+The lines still open are wraps, at live's size, width, and letter-spacing. Kids Classes at 390 still reads the background behind "FUN AND CHALLENGING" as rgb(20, 20, 24) against live rgb(23, 40, 50), on the hero photo, which has no overlay. v2.14 accepts the phone gap across the trust bar. The Memorial Day sentence stays in the Community Murph paragraph. Paragraph links stay the live red, `rgb(219, 58, 52)`, with no underline.
+
+Lighthouse mobile on the local preview, after this batch. Order is performance / accessibility / best practices / SEO. About and kids accessibility stay at 92 because the live red measures 4.49:1 on white. That question is with Josh. The red stays.
+
+| Page | Score |
+|---|---|
+| Home | 99 / 100 / 100 / 100 |
+| About | 98 / 92 / 100 / 100 |
+| Kids classes | 98 / 92 / 100 / 100 |
+
 ## Open questions
 
 - Where GF18 should live, if it should be a page at all.

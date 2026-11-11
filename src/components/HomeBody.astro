@@ -168,7 +168,7 @@ const quotes = [
   <div class="wrap">
     <h2 class="t-title">CLIENT TESTIMONIALS</h2>
     <h3 class="t-sub">WHAT OUR CLIENTS SAY</h3>
-    <QuoteSlider quotes={quotes} />
+    <QuoteSlider quotes={quotes} minHeight="401px" minHeightPhone="382px" />
   </div>
 </section>
 
@@ -273,7 +273,7 @@ const quotes = [
   }
   .card-stack { display: grid; gap: 22px; }
   .blue-band { margin-top: 118px; }
-  .section.mist { margin-top: 24px; }
+  .section.mist { margin-top: 0; padding: 90px 0 80px; }
   .program-card {
     display: grid;
     gap: 16px;
@@ -462,7 +462,7 @@ const quotes = [
       line-height: 19px;
       letter-spacing: 2px;
     }
-    .section.mist { margin-top: 17px; }
+    .section.mist { margin-top: 0; }
     .band-title { line-height: 40px; }
     .t-title { line-height: 32px; }
     .t-sub { line-height: 28px; }
