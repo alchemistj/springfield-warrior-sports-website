@@ -611,7 +611,7 @@ Lighthouse mobile on the local preview, after this batch. Order is performance /
 
 Model: Grok 4.7. The live map, the scripts, the tolerances, and `PIXEL_TOL` were not edited. The report is `docs/qa/layout-report.md`. No allow entries were added.
 
-On v2.15, home is 3/3/0, about is 2/2/1, and kids-classes is 0/0/3. The site total stays 8,357. No other page rose. The open lines are the same wraps as round 13.
+On v2.15, home is 3/3/0, about is 2/2/1, and kids-classes is 0/0/3. The site total stays 8,357. No other page rose. The open lines are the same wraps as round 13. The Vercel preview of `242fc87` measures the same.
 
 The desktop bullet under the home hero uses live's markup. `--tcb-color-0` is rgb(219, 58, 52), and each ● is that color. Six `&nbsp;` sit on each side of every ●, inside `<strong>`. `text-align-last: justify` is gone, so the spaces inside "SUMMER CAMPS" and "BIRTHDAY PARTIES" are normal spaces. The line is 835px wide against live's 827px. The phone list, with its red dots, is unchanged.
 
