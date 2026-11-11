@@ -515,6 +515,26 @@ Lighthouse mobile on the local preview, after this batch. Order is performance /
 | About | 98 / 92 / 100 / 100 |
 | Kids classes | 98 / 92 / 100 / 100 |
 
+## Layout parity gate v2.10, round 10
+
+Model: Grok 4.7. Gate v2.10 reads band runs at both page margins on desktop. The live map, the scripts, the tolerances, and `PIXEL_TOL` were not edited. The report is `docs/qa/layout-report.md`. No allow entries were added.
+
+Before is this machine's measurement of `5025925` (round 9 source on gate v2.10): 8,000 differences. After is 8,009. Home is 7/9/3, about is 4/2/1, and kids-classes is 0/0/3 (1920/1280/390). No page outside those three went up. Contact at 390 reads 47 instead of 51 because the map image did not load in this capture. Those four lines are the map facade, and a second capture missed them the same way.
+
+The home, about, and kids hero overlays are live's own CSS: one full-width layer each, photos at cover and 50% 50%. Home is `linear-gradient(270deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.85) 61%)`. About is a flat `rgba(0, 0, 0, 0.5)`. Kids Classes has no overlay. The edge strips, partial overlays, and the fun-band box-shadow are gone. The lines that remain are listed in `docs/qa/layout-report.md`. They are the hero pixels the live gradient and photo produce, and the same wraps as round 8. I did not paint over them.
+
+The home bullet strip takes its height from the live 20px section padding. The kids fun band takes its height from the live padding, 80px above 1024px and 70px below, on a black gradient with margin 0. The phone homeschool section's bottom padding is the live 70px. Footer contact icons are the live paths at 16px with `padding-top: 5px`. Quick Links has no left padding, so "Home" is at x=1214 against live's x=1215.
+
+The Memorial Day sentence stays in the Community Murph paragraph. Paragraph links stay the live red, `rgb(219, 58, 52)`, with no underline.
+
+Lighthouse mobile on the local preview, after this batch. Order is performance / accessibility / best practices / SEO. About and kids accessibility stay at 92 because the live red measures 4.49:1 on white. That question is with Josh. The red stays.
+
+| Page | Score |
+|---|---|
+| Home | 99 / 100 / 100 / 100 |
+| About | 98 / 92 / 100 / 100 |
+| Kids classes | 98 / 92 / 100 / 100 |
+
 ## Open questions
 
 - Where GF18 should live, if it should be a page at all.

@@ -1,11 +1,13 @@
 # Layout comparison: live vs build
-Total differences: 7932
+Total differences: 8009
 
-## about @ 1920px: 2 difference(s)
+## about @ 1920px: 4 difference(s)
 - text "We had our son’s 10th birthday": 5 line(s), live 4
 - text "My daughter started training h": 7 line(s), live 6
+- band color beside "SPRINGFIELD WARRIOR SPORTS COMMUNITY": rgb(16, 9, 4), live rgb(26, 16, 7)
+- band rgb(5, 5, 5) at y=312 (right margin): 30px tall, live 71px
 
-## best-gyms-in-springfield @ 1920px: 368 difference(s)
+## best-gyms-in-springfield @ 1920px: 370 difference(s)
 - page height 6261px, live 7180px
 - heading missing: "SO… WHICH GYM’S RIGHT FOR YOU?"
 - heading missing: "Southwest Springfield doesn’t mess around when it comes to fitness. Whether you want to lift heavy, join a class, recover in a cold plunge, or chase your first chin-up—you’ve got options."
@@ -371,11 +373,13 @@ Total differences: 7932
 - photo hero: brightness 21, live 37 (overlay or exposure differs)
 - photo img_2344: brightness 96, live 139 (overlay or exposure differs)
 - photo img_2344: looks different from live (pixel difference 45)
-- band rgb(255, 255, 255) at y=629: 643px tall, live 284px
-- band rgb(249, 253, 254) at y=1164 (5056px tall on live) not found in build
-- band rgb(0, 0, 0) at y=6220 (97px tall on live) not found in build
+- band rgb(255, 255, 255) at y=629 (left margin): 643px tall, live 284px
+- band rgb(249, 253, 254) at y=1164 (5056px tall on live, left margin) not found in build
+- band rgb(0, 0, 0) at y=6220 (97px tall on live, left margin) not found in build
+- band rgb(254, 255, 249) at y=629 (right margin): 643px tall, live 284px
+- band rgb(249, 253, 254) at y=1164 (5056px tall on live, right margin) not found in build
 
-## birthday-parties @ 1920px: 210 difference(s)
+## birthday-parties @ 1920px: 213 difference(s)
 - page height 5443px, live 5742px
 - heading missing: "NINJA WARRIOR COURSES, LASER TAG, NERF BATTLES, AND MORE!"
 - heading missing: "BOOK NOW!"
@@ -583,11 +587,14 @@ Total differences: 7932
 - heading "NERF BATTLE PARTIES": looks different from live (pixel difference 67)
 - photo hero: brightness 61, live 38 (overlay or exposure differs)
 - photo hero: looks different from live (pixel difference 40)
-- band rgb(254, 254, 255) at y=729: 828px tall, live 431px
-- band rgb(254, 253, 249) at y=2895 (1716px tall on live) not found in build
-- band rgb(254, 255, 255) at y=5384: 327px tall, live 293px
+- band rgb(254, 254, 255) at y=729 (left margin): 828px tall, live 431px
+- band rgb(254, 253, 249) at y=2895 (1716px tall on live, left margin) not found in build
+- band rgb(254, 255, 255) at y=5384 (left margin): 327px tall, live 293px
+- band rgb(255, 252, 250) at y=729 (right margin): 828px tall, live 431px
+- band rgb(255, 255, 250) at y=2895 (1716px tall on live, right margin) not found in build
+- band rgb(254, 255, 255) at y=5384 (right margin): 327px tall, live 293px
 
-## competitions @ 1920px: 61 difference(s)
+## competitions @ 1920px: 62 difference(s)
 - heading missing: "2026-9 CSNA September 19th Form"
 - heading "TEST YOUR SKILLS ON OUR FUN AND COMPETIT": left edge 385px, live 500px
 - heading "TEST YOUR SKILLS ON OUR FUN AND COMPETIT": width 1150px, live 920px
@@ -648,9 +655,10 @@ Total differences: 7932
 - heading "TEST YOUR SKILLS ON OUR FUN AND COMPETIT": looks different from live (pixel difference 42)
 - heading "SEPTEMBER 2026 CSNA TEAM COMPETITION": looks different from live (pixel difference 46)
 - photo hero: brightness 62, live 41 (overlay or exposure differs)
-- band rgb(255, 255, 255) at y=2808: 328px tall, live 461px
+- band rgb(255, 255, 255) at y=2808 (left margin): 328px tall, live 461px
+- band rgb(255, 255, 255) at y=2808 (right margin): 328px tall, live 461px
 
-## contact @ 1920px: 78 difference(s)
+## contact @ 1920px: 80 difference(s)
 - page height 3004px, live 3340px
 - heading "CONTACT US": line height 50px, live 60px
 - heading "CLIENT TESTIMONIALS": line height 50px, live 70px
@@ -727,10 +735,12 @@ Total differences: 7932
 - band color beside "- JENNIFER L.": rgb(242, 246, 249), live rgb(227, 235, 237)
 - band color beside "- LEE C.": rgb(242, 246, 249), live rgb(227, 235, 237)
 - photo hero: brightness 54, live 36 (overlay or exposure differs)
-- band rgb(255, 255, 255) at y=729: 1403px tall, live 1564px
-- band rgb(249, 253, 252) at y=2982: 328px tall, live 293px
+- band rgb(255, 255, 255) at y=729 (left margin): 1403px tall, live 1564px
+- band rgb(249, 253, 252) at y=2982 (left margin): 328px tall, live 293px
+- band rgb(254, 254, 254) at y=729 (right margin): 1403px tall, live 1564px
+- band rgb(249, 253, 252) at y=2982 (right margin): 328px tall, live 293px
 
-## fitness-classes @ 1920px: 244 difference(s)
+## fitness-classes @ 1920px: 246 difference(s)
 - heading missing: "WHAT IS OCR FITNESS?"
 - heading "FITNESS CLASSES IN SPRINGFIELD, MO": left edge 385px, live 541px
 - heading "FITNESS CLASSES IN SPRINGFIELD, MO": line height 70px, live 59px
@@ -972,14 +982,20 @@ Total differences: 7932
 - photo img_2344: looks different from live (pixel difference 44)
 - photo img_2347: brightness 76, live 124 (overlay or exposure differs)
 - photo img_2347: looks different from live (pixel difference 50)
-- band rgb(255, 254, 255) at y=729: 772px tall, live 604px
-- band rgb(0, 0, 0) at y=1333 (81px tall on live) not found in build
-- band rgb(254, 254, 254) at y=3377: 588px tall, live 1110px
+- band rgb(255, 254, 255) at y=729 (left margin): 772px tall, live 604px
+- band rgb(0, 0, 0) at y=1333 (81px tall on live, left margin) not found in build
+- band rgb(254, 254, 254) at y=3377 (left margin): 588px tall, live 1110px
+- band rgb(251, 255, 255) at y=729 (right margin): 772px tall, live 604px
+- band rgb(254, 254, 254) at y=3377 (right margin): 588px tall, live 1110px
 
-## home @ 1920px: 3 difference(s)
+## home @ 1920px: 7 difference(s)
 - text "We believe in results and that": 3 line(s), live 2
 - text "We had our son’s 10th birthday": 5 line(s), live 4
 - text "My daughter started training h": 7 line(s), live 6
+- background behind "ONE OBSTACLE AT A TIME!": rgb(21, 22, 24), live rgb(5, 6, 6)
+- band color beside "STRONGER": rgb(10, 13, 23), live rgb(16, 17, 13)
+- band color beside "ONE OBSTACLE AT A TIME!": rgb(16, 16, 16), live rgb(3, 3, 3)
+- band rgb(255, 253, 253) at y=5265 (right margin): 231px tall, live 205px
 
 ## homeschool-sports-and-classes-springfield-mo @ 1920px: 107 difference(s)
 - page height 2622px, live 3027px
@@ -1088,11 +1104,11 @@ Total differences: 7932
 - heading "FUN HOMESCHOOL SPORTS FOR KIDS IN SPRING": looks different from live (pixel difference 121)
 - photo hero: brightness 100, live 32 (overlay or exposure differs)
 - photo hero: looks different from live (pixel difference 71)
-- band rgb(2, 2, 2) at y=663 (66px tall on live) not found in build
+- band rgb(2, 2, 2) at y=663 (66px tall on live, left margin) not found in build
 
 ## kids-classes @ 1920px: matches
 
-## laser-tag @ 1920px: 173 difference(s)
+## laser-tag @ 1920px: 177 difference(s)
 - page height 3551px, live 4056px
 - heading missing: "WANT TO BOOK A PRIVATE LASER TAG PARTY?"
 - heading missing: "READY TO BOOK?"
@@ -1263,9 +1279,13 @@ Total differences: 7932
 - heading "LASER TAG GYM IN SPRINGFIELD, MO": looks different from live (pixel difference 76)
 - heading "HERE ARE THE DETAILS:": looks different from live (pixel difference 59)
 - text "You can begin the booking proc": looks different from live (pixel difference 203)
-- band rgb(254, 253, 255) at y=679: 846px tall, live 376px
-- band rgb(0, 0, 0) at y=2144 (356px tall on live) not found in build
-- band rgb(247, 251, 250) at y=2500: 507px tall, live 1491px
+- band rgb(254, 253, 255) at y=679 (left margin): 846px tall, live 376px
+- band rgb(0, 0, 0) at y=2144 (356px tall on live, left margin) not found in build
+- band rgb(247, 251, 250) at y=2500 (left margin): 507px tall, live 1491px
+- band rgb(1, 7, 5) at y=621 (58px tall on live, right margin) not found in build
+- band rgb(254, 253, 255) at y=679 (right margin): 846px tall, live 376px
+- band rgb(0, 0, 0) at y=2145 (355px tall on live, right margin) not found in build
+- band rgb(247, 251, 250) at y=2500 (right margin): 507px tall, live 1491px
 
 ## meet-the-team @ 1920px: 584 difference(s)
 - page height 10925px, live 7871px
@@ -1853,7 +1873,7 @@ Total differences: 7932
 - photo hero: brightness 28, live 49 (overlay or exposure differs)
 - photo hero: looks different from live (pixel difference 42)
 
-## nerf-wars @ 1920px: 147 difference(s)
+## nerf-wars @ 1920px: 149 difference(s)
 - page height 3632px, live 3982px
 - heading missing: "BOOK NOW!"
 - heading missing: "READY TO LOCK IN THE DATE FOR YOUR CHILD'S EPIC NERF PARTY AT WARRIOR SPORTS?"
@@ -1999,10 +2019,12 @@ Total differences: 7932
 - heading "PRICING": looks different from live (pixel difference 75)
 - text "Let our experienced and kid-fr": looks different from live (pixel difference 189)
 - text "Or, dial (417) 894-7319 to res": looks different from live (pixel difference 188)
-- band rgb(255, 253, 252) at y=729: 610px tall, live 322px
-- band rgb(5, 6, 1) at y=2157 (395px tall on live) not found in build
+- band rgb(255, 253, 252) at y=729 (left margin): 610px tall, live 322px
+- band rgb(5, 6, 1) at y=2157 (395px tall on live, left margin) not found in build
+- band rgb(4, 4, 4) at y=408 (321px tall on live, right margin) not found in build
+- band rgb(255, 255, 255) at y=729 (right margin): 610px tall, live 322px
 
-## parkour @ 1920px: 186 difference(s)
+## parkour @ 1920px: 188 difference(s)
 - page height 5248px, live 5540px
 - heading "PARKOUR GYM IN SPRINGFIELD MO | SPRINGFI": left edge 385px, live 500px
 - heading "PARKOUR GYM IN SPRINGFIELD MO | SPRINGFI": width 1150px, live 920px
@@ -2186,11 +2208,13 @@ Total differences: 7932
 - heading "TEMPORARILY UNAVAILABLE": looks different from live (pixel difference 106)
 - heading "OPEN GYM IS OPEN — YOUR FIRST VISIT IS J": looks different from live (pixel difference 125)
 - text "$20 class drop in, $10 class d": looks different from live (pixel difference 138)
-- band rgb(0, 5, 8) at y=447: 96px tall, live 185px
-- band rgb(251, 255, 255) at y=729: 698px tall, live 1026px
-- band rgb(251, 254, 255) at y=4422: 476px tall, live 1053px
+- band rgb(0, 5, 8) at y=447 (left margin): 96px tall, live 185px
+- band rgb(251, 255, 255) at y=729 (left margin): 698px tall, live 1026px
+- band rgb(251, 254, 255) at y=4422 (left margin): 476px tall, live 1053px
+- band rgb(255, 254, 255) at y=736 (right margin): 698px tall, live 1019px
+- band rgb(247, 255, 255) at y=4420 (right margin): 476px tall, live 1055px
 
-## personal-training @ 1920px: 326 difference(s)
+## personal-training @ 1920px: 328 difference(s)
 - page height 7446px, live 6053px
 - heading missing: "NOT YOUR TYPICAL GYM. NOT YOUR TYPICAL TRAINER."
 - heading missing: "This isn’t about getting shredded or setting records."
@@ -2516,9 +2540,11 @@ Total differences: 7932
 - heading "HOW IT WORKS": looks different from live (pixel difference 48)
 - heading "LET’S TALK STRENGTH…YOUR VERSION": looks different from live (pixel difference 154)
 - photo hero: brightness 13, live 38 (overlay or exposure differs)
-- band rgb(254, 254, 254) at y=629: 597px tall, live 685px
+- band rgb(254, 254, 254) at y=629 (left margin): 597px tall, live 685px
+- band rgb(251, 251, 251) at y=629 (right margin): 597px tall, live 685px
+- band rgb(0, 3, 2) at y=5377 (54px tall on live, right margin) not found in build
 
-## registered-for-csna-competition @ 1920px: 14 difference(s)
+## registered-for-csna-competition @ 1920px: 15 difference(s)
 - page height 1325px, live 1000px
 - heading missing: "WE RECEIVED THOSE DETAILS, THANK YOU!"
 - text "Click here to finalize the reg": width 746px, live 1148px
@@ -2531,10 +2557,11 @@ Total differences: 7932
 - words "If you encounter any problems or have an": color rgb(51, 51, 51), live rgb(0, 0, 0)
 - words "(417) 894-7319": color rgb(51, 51, 51), live rgb(219, 58, 52)
 - words "(417) 894-7319": weight 300, live 400
-- band rgb(255, 255, 250) at y=142 (793px tall on live) not found in build
+- band rgb(255, 255, 250) at y=142 (793px tall on live, left margin) not found in build
+- band rgb(252, 252, 252) at y=145 (790px tall on live, right margin) not found in build
 - section colors differ: build [rgb(255, 255, 255) | rgb(40, 82, 118) | rgb(255, 255, 255)], live [rgb(255, 255, 255)]
 
-## registered-for-day-camps @ 1920px: 15 difference(s)
+## registered-for-day-camps @ 1920px: 16 difference(s)
 - page height 1434px, live 1082px
 - heading missing: "WE RECEIVED THOSE DETAILS, THANK YOU!"
 - text missing: "Click here to finalize the registration with your payment."
@@ -2549,9 +2576,10 @@ Total differences: 7932
 - button not on live: "CLICK HERE TO FINALIZE THE REGISTRATION WITH YOUR PAYMENT."
 - photo hero: brightness 110, live 208 (overlay or exposure differs)
 - photo hero: looks different from live (pixel difference 113)
-- band rgb(255, 255, 250) at y=142: 518px tall, live 875px
+- band rgb(255, 255, 250) at y=142 (left margin): 518px tall, live 875px
+- band rgb(252, 252, 252) at y=145 (right margin): 478px tall, live 872px
 
-## registered-for-summer-fun-competition @ 1920px: 15 difference(s)
+## registered-for-summer-fun-competition @ 1920px: 16 difference(s)
 - page height 1376px, live 1042px
 - heading missing: "WE RECEIVED THOSE DETAILS, THANK YOU!"
 - text "Click here to finalize the reg": color rgb(51, 51, 51), live rgb(0, 0, 0)
@@ -2566,9 +2594,10 @@ Total differences: 7932
 - words "(417) 894-7319": weight 300, live 400
 - photo hero: brightness 110, live 211 (overlay or exposure differs)
 - photo hero: looks different from live (pixel difference 115)
-- band rgb(255, 255, 250) at y=142: 518px tall, live 835px
+- band rgb(255, 255, 250) at y=142 (left margin): 518px tall, live 835px
+- band rgb(252, 252, 252) at y=145 (right margin): 478px tall, live 832px
 
-## registered-for-wnl-competition @ 1920px: 14 difference(s)
+## registered-for-wnl-competition @ 1920px: 15 difference(s)
 - page height 1351px, live 1014px
 - heading missing: "WE RECEIVED THOSE DETAILS, THANK YOU!"
 - text "Click here to finalize the reg": color rgb(51, 51, 51), live rgb(0, 0, 0)
@@ -2582,9 +2611,10 @@ Total differences: 7932
 - words "(417) 894-7319": weight 300, live 400
 - photo hero: brightness 110, live 213 (overlay or exposure differs)
 - photo hero: looks different from live (pixel difference 116)
-- band rgb(255, 255, 250) at y=142: 518px tall, live 807px
+- band rgb(255, 255, 250) at y=142 (left margin): 518px tall, live 807px
+- band rgb(252, 252, 252) at y=145 (right margin): 478px tall, live 804px
 
-## registered @ 1920px: 14 difference(s)
+## registered @ 1920px: 15 difference(s)
 - page height 1351px, live 1014px
 - heading missing: "WE RECEIVED THOSE DETAILS, THANK YOU!"
 - text "Click here to finalize the reg": color rgb(51, 51, 51), live rgb(0, 0, 0)
@@ -2598,9 +2628,10 @@ Total differences: 7932
 - words "(417) 894-7319": weight 300, live 400
 - photo hero: brightness 110, live 213 (overlay or exposure differs)
 - photo hero: looks different from live (pixel difference 116)
-- band rgb(255, 255, 250) at y=142: 518px tall, live 807px
+- band rgb(255, 255, 250) at y=142 (left margin): 518px tall, live 807px
+- band rgb(252, 252, 252) at y=145 (right margin): 478px tall, live 804px
 
-## schedule-birthday-party @ 1920px: 57 difference(s)
+## schedule-birthday-party @ 1920px: 58 difference(s)
 - page height 2995px, live 3345px
 - heading "CLIENT TESTIMONIALS": line height 50px, live 70px
 - heading "WHAT OUR CLIENTS SAY": line height 50px, live 42px
@@ -2657,9 +2688,10 @@ Total differences: 7932
 - band color beside "We had our son’s 10th birthday here. All": rgb(242, 246, 249), live rgb(255, 255, 255)
 - band color beside "- JENNIFER L.": rgb(242, 246, 249), live rgb(255, 255, 255)
 - band color beside "- LEE C.": rgb(242, 246, 249), live rgb(255, 255, 255)
-- band rgb(252, 252, 252) at y=2258 (1022px tall on live) not found in build
+- band rgb(252, 252, 252) at y=2258 (1022px tall on live, left margin) not found in build
+- band rgb(252, 252, 252) at y=2258 (1022px tall on live, right margin) not found in build
 
-## summer-camps-in-springfield-mo @ 1920px: 393 difference(s)
+## summer-camps-in-springfield-mo @ 1920px: 395 difference(s)
 - page height 5794px, live 6281px
 - heading "KIDS STAY FIT AND HEALTHY": left edge 385px, live 500px
 - heading "AT OUR INCREDIBLE SUMMER CAMPS": left edge 385px, live 500px
@@ -3051,10 +3083,12 @@ Total differences: 7932
 - heading "SPRINGFIELD WARRIOR REGISTRATION": looks different from live (pixel difference 44)
 - heading "REGISTRATION FORM": looks different from live (pixel difference 43)
 - photo hero: brightness 41, live 55 (overlay or exposure differs)
-- band rgb(251, 255, 255) at y=2878: 353px tall, live 2334px
-- band rgb(249, 249, 249) at y=5923: 328px tall, live 293px
+- band rgb(251, 255, 255) at y=2878 (left margin): 353px tall, live 2334px
+- band rgb(249, 249, 249) at y=5923 (left margin): 328px tall, live 293px
+- band rgb(251, 255, 255) at y=2878 (right margin): 353px tall, live 2334px
+- band rgb(249, 249, 249) at y=5923 (right margin): 328px tall, live 293px
 
-## thank-you-for-your-feedback @ 1920px: 12 difference(s)
+## thank-you-for-your-feedback @ 1920px: 13 difference(s)
 - page height 1404px, live 1098px
 - heading missing: "THANK YOU FOR YOUR FEEDBACK!"
 - text "Thank you for your feedback! W": color rgb(51, 51, 51), live rgb(0, 0, 0)
@@ -3066,9 +3100,10 @@ Total differences: 7932
 - words ".Thanks,Andy and the Warrior Sports Team": color rgb(51, 51, 51), live rgb(0, 0, 0)
 - photo hero: brightness 110, live 207 (overlay or exposure differs)
 - photo hero: looks different from live (pixel difference 113)
-- band rgb(255, 255, 250) at y=142: 518px tall, live 891px
+- band rgb(255, 255, 250) at y=142 (left margin): 518px tall, live 891px
+- band rgb(252, 252, 252) at y=145 (right margin): 478px tall, live 888px
 
-## wnl-competitions @ 1920px: 80 difference(s)
+## wnl-competitions @ 1920px: 82 difference(s)
 - page height 2956px, live 3604px
 - heading missing: "10-26-2024 WNL Competition Registration Form"
 - heading "WNL COMPETITIONS IN SPRINGFIELD MISSOURI": left edge 400px, live 500px
@@ -3147,14 +3182,16 @@ Total differences: 7932
 - heading "WNL REGIONAL QUALIFIERS": looks different from live (pixel difference 60)
 - photo hero: brightness 75, live 41 (overlay or exposure differs)
 - photo hero: looks different from live (pixel difference 51)
-- band rgb(255, 254, 255) at y=729: 241px tall, live 322px
-- band rgb(251, 255, 254) at y=1671 (1868px tall on live) not found in build
+- band rgb(255, 254, 255) at y=729 (left margin): 241px tall, live 322px
+- band rgb(251, 255, 254) at y=1671 (1868px tall on live, left margin) not found in build
+- band rgb(254, 254, 254) at y=729 (right margin): 241px tall, live 322px
+- band rgb(251, 255, 254) at y=1671 (1868px tall on live, right margin) not found in build
 
 ## about @ 1280px: 2 difference(s)
 - text "We had our son’s 10th birthday": 5 line(s), live 4
 - text "My daughter started training h": 7 line(s), live 6
 
-## best-gyms-in-springfield @ 1280px: 368 difference(s)
+## best-gyms-in-springfield @ 1280px: 370 difference(s)
 - page height 6261px, live 7180px
 - heading missing: "SO… WHICH GYM’S RIGHT FOR YOU?"
 - heading missing: "Southwest Springfield doesn’t mess around when it comes to fitness. Whether you want to lift heavy, join a class, recover in a cold plunge, or chase your first chin-up—you’ve got options."
@@ -3521,10 +3558,12 @@ Total differences: 7932
 - photo hero: looks different from live (pixel difference 39)
 - photo img_2344: brightness 96, live 139 (overlay or exposure differs)
 - photo img_2344: looks different from live (pixel difference 45)
-- band rgb(255, 254, 255) at y=629: 643px tall, live 284px
-- band rgb(249, 253, 254) at y=1164 (5056px tall on live) not found in build
+- band rgb(255, 254, 255) at y=629 (left margin): 643px tall, live 284px
+- band rgb(249, 253, 254) at y=1164 (5056px tall on live, left margin) not found in build
+- band rgb(247, 247, 247) at y=629 (right margin): 643px tall, live 285px
+- band rgb(249, 253, 254) at y=1164 (5056px tall on live, right margin) not found in build
 
-## birthday-parties @ 1280px: 211 difference(s)
+## birthday-parties @ 1280px: 214 difference(s)
 - page height 5443px, live 5742px
 - heading missing: "NINJA WARRIOR COURSES, LASER TAG, NERF BATTLES, AND MORE!"
 - heading missing: "BOOK NOW!"
@@ -3733,11 +3772,14 @@ Total differences: 7932
 - heading "CREATE AMAZING MEMORIES": looks different from live (pixel difference 39)
 - photo hero: brightness 62, live 42 (overlay or exposure differs)
 - photo hero: looks different from live (pixel difference 38)
-- band rgb(252, 255, 255) at y=729: 828px tall, live 431px
-- band rgb(255, 255, 250) at y=2896 (1715px tall on live) not found in build
-- band rgb(254, 255, 255) at y=5384: 327px tall, live 293px
+- band rgb(252, 255, 255) at y=729 (left margin): 828px tall, live 431px
+- band rgb(255, 255, 250) at y=2896 (1715px tall on live, left margin) not found in build
+- band rgb(254, 255, 255) at y=5384 (left margin): 327px tall, live 293px
+- band rgb(255, 254, 250) at y=729 (right margin): 828px tall, live 431px
+- band rgb(255, 254, 253) at y=2895 (1716px tall on live, right margin) not found in build
+- band rgb(254, 255, 255) at y=5384 (right margin): 327px tall, live 293px
 
-## competitions @ 1280px: 61 difference(s)
+## competitions @ 1280px: 62 difference(s)
 - heading missing: "2026-9 CSNA September 19th Form"
 - heading "TEST YOUR SKILLS ON OUR FUN AND COMPETIT": left edge 65px, live 180px
 - heading "TEST YOUR SKILLS ON OUR FUN AND COMPETIT": width 1150px, live 920px
@@ -3798,9 +3840,10 @@ Total differences: 7932
 - heading "TEST YOUR SKILLS ON OUR FUN AND COMPETIT": looks different from live (pixel difference 43)
 - heading "SEPTEMBER 2026 CSNA TEAM COMPETITION": looks different from live (pixel difference 46)
 - photo hero: brightness 70, live 48 (overlay or exposure differs)
-- band rgb(254, 254, 254) at y=2833: 328px tall, live 461px
+- band rgb(254, 254, 254) at y=2833 (left margin): 328px tall, live 461px
+- band rgb(254, 254, 254) at y=2833 (right margin): 328px tall, live 461px
 
-## contact @ 1280px: 78 difference(s)
+## contact @ 1280px: 80 difference(s)
 - page height 3004px, live 3340px
 - heading "CONTACT US": line height 50px, live 60px
 - heading "CLIENT TESTIMONIALS": line height 50px, live 70px
@@ -3877,10 +3920,12 @@ Total differences: 7932
 - band color beside "- JENNIFER L.": rgb(242, 246, 249), live rgb(227, 235, 237)
 - band color beside "- LEE C.": rgb(242, 246, 249), live rgb(227, 235, 237)
 - photo hero: brightness 54, live 37 (overlay or exposure differs)
-- band rgb(255, 255, 255) at y=729: 1403px tall, live 1564px
-- band rgb(249, 253, 252) at y=2982: 328px tall, live 293px
+- band rgb(255, 255, 255) at y=729 (left margin): 1403px tall, live 1564px
+- band rgb(249, 253, 252) at y=2982 (left margin): 328px tall, live 293px
+- band rgb(255, 255, 255) at y=729 (right margin): 1403px tall, live 1564px
+- band rgb(249, 253, 252) at y=2982 (right margin): 328px tall, live 293px
 
-## fitness-classes @ 1280px: 243 difference(s)
+## fitness-classes @ 1280px: 245 difference(s)
 - heading missing: "WHAT IS OCR FITNESS?"
 - heading "FITNESS CLASSES IN SPRINGFIELD, MO": left edge 65px, live 221px
 - heading "FITNESS CLASSES IN SPRINGFIELD, MO": line height 70px, live 59px
@@ -4121,14 +4166,22 @@ Total differences: 7932
 - photo img_2344: looks different from live (pixel difference 44)
 - photo img_2347: brightness 76, live 124 (overlay or exposure differs)
 - photo img_2347: looks different from live (pixel difference 50)
-- band rgb(254, 255, 255) at y=729: 772px tall, live 604px
-- band rgb(7, 7, 7) at y=1966 (43px tall on live) not found in build
-- band rgb(254, 254, 254) at y=3377: 588px tall, live 1110px
+- band rgb(254, 255, 255) at y=729 (left margin): 772px tall, live 604px
+- band rgb(7, 7, 7) at y=1966 (43px tall on live, left margin) not found in build
+- band rgb(254, 254, 254) at y=3377 (left margin): 588px tall, live 1110px
+- band rgb(250, 255, 255) at y=729 (right margin): 772px tall, live 604px
+- band rgb(254, 254, 254) at y=3377 (right margin): 588px tall, live 1110px
 
-## home @ 1280px: 3 difference(s)
+## home @ 1280px: 9 difference(s)
 - text "We believe in results and that": 3 line(s), live 2
 - text "We had our son’s 10th birthday": 5 line(s), live 4
 - text "My daughter started training h": 7 line(s), live 6
+- background behind "ONE OBSTACLE AT A TIME!": rgb(20, 22, 23), live rgb(6, 6, 7)
+- background behind "Springfield Missouri's best indoor obsta": rgb(5, 5, 6), live rgb(19, 22, 25)
+- band color beside "STRONGER": rgb(15, 19, 28), live rgb(3, 10, 20)
+- band color beside "ONE OBSTACLE AT A TIME!": rgb(4, 5, 1), live rgb(15, 15, 15)
+- band color beside "Springfield Missouri's best indoor obsta": rgb(5, 5, 5), live rgb(24, 24, 24)
+- band rgb(255, 253, 253) at y=5265 (right margin): 231px tall, live 205px
 
 ## homeschool-sports-and-classes-springfield-mo @ 1280px: 106 difference(s)
 - page height 2622px, live 3027px
@@ -4240,7 +4293,7 @@ Total differences: 7932
 
 ## kids-classes @ 1280px: matches
 
-## laser-tag @ 1280px: 175 difference(s)
+## laser-tag @ 1280px: 178 difference(s)
 - page height 3551px, live 4056px
 - heading missing: "WANT TO BOOK A PRIVATE LASER TAG PARTY?"
 - heading missing: "READY TO BOOK?"
@@ -4413,11 +4466,14 @@ Total differences: 7932
 - heading "LASER TAG GYM IN SPRINGFIELD, MO": looks different from live (pixel difference 75)
 - heading "HERE ARE THE DETAILS:": looks different from live (pixel difference 59)
 - text "You can begin the booking proc": looks different from live (pixel difference 201)
-- band rgb(252, 255, 255) at y=679: 846px tall, live 376px
-- band rgb(0, 0, 0) at y=2144 (356px tall on live) not found in build
-- band rgb(247, 251, 250) at y=2500: 507px tall, live 1491px
+- band rgb(252, 255, 255) at y=679 (left margin): 846px tall, live 376px
+- band rgb(0, 0, 0) at y=2144 (356px tall on live, left margin) not found in build
+- band rgb(247, 251, 250) at y=2500 (left margin): 507px tall, live 1491px
+- band rgb(251, 255, 255) at y=679 (right margin): 846px tall, live 376px
+- band rgb(0, 0, 0) at y=2145 (355px tall on live, right margin) not found in build
+- band rgb(247, 251, 250) at y=2500 (right margin): 507px tall, live 1491px
 
-## meet-the-team @ 1280px: 584 difference(s)
+## meet-the-team @ 1280px: 585 difference(s)
 - page height 10925px, live 7871px
 - heading missing: "YOU'VE MET THE TEAM."
 - heading missing: "NOW TRAIN WITH THEM."
@@ -5002,8 +5058,9 @@ Total differences: 7932
 - heading "BEGINNER NINJA COACH | PRESCHOOL COACH |": looks different from live (pixel difference 48)
 - photo hero: brightness 34, live 54 (overlay or exposure differs)
 - photo hero: looks different from live (pixel difference 41)
+- band rgb(6, 6, 6) at y=7267 (73px tall on live, right margin) not found in build
 
-## nerf-wars @ 1280px: 146 difference(s)
+## nerf-wars @ 1280px: 147 difference(s)
 - page height 3632px, live 3982px
 - heading missing: "BOOK NOW!"
 - heading missing: "READY TO LOCK IN THE DATE FOR YOUR CHILD'S EPIC NERF PARTY AT WARRIOR SPORTS?"
@@ -5149,9 +5206,10 @@ Total differences: 7932
 - heading "PRICING": looks different from live (pixel difference 75)
 - text "Let our experienced and kid-fr": looks different from live (pixel difference 189)
 - text "Or, dial (417) 894-7319 to res": looks different from live (pixel difference 188)
-- band rgb(255, 252, 250) at y=729: 610px tall, live 322px
+- band rgb(255, 252, 250) at y=729 (left margin): 610px tall, live 322px
+- band rgb(252, 255, 255) at y=729 (right margin): 610px tall, live 322px
 
-## parkour @ 1280px: 185 difference(s)
+## parkour @ 1280px: 187 difference(s)
 - page height 5248px, live 5540px
 - heading "PARKOUR GYM IN SPRINGFIELD MO | SPRINGFI": left edge 65px, live 180px
 - heading "PARKOUR GYM IN SPRINGFIELD MO | SPRINGFI": width 1150px, live 920px
@@ -5335,10 +5393,12 @@ Total differences: 7932
 - heading "TEMPORARILY UNAVAILABLE": looks different from live (pixel difference 106)
 - heading "OPEN GYM IS OPEN — YOUR FIRST VISIT IS J": looks different from live (pixel difference 125)
 - text "$20 class drop in, $10 class d": looks different from live (pixel difference 138)
-- band rgb(251, 255, 248) at y=729: 698px tall, live 1026px
-- band rgb(252, 255, 255) at y=4422: 476px tall, live 1053px
+- band rgb(251, 255, 248) at y=729 (left margin): 698px tall, live 1026px
+- band rgb(252, 255, 255) at y=4422 (left margin): 476px tall, live 1053px
+- band rgb(255, 254, 255) at y=729 (right margin): 698px tall, live 1026px
+- band rgb(254, 253, 255) at y=4422 (right margin): 476px tall, live 1053px
 
-## personal-training @ 1280px: 330 difference(s)
+## personal-training @ 1280px: 332 difference(s)
 - page height 7446px, live 6053px
 - heading missing: "NOT YOUR TYPICAL GYM. NOT YOUR TYPICAL TRAINER."
 - heading missing: "This isn’t about getting shredded or setting records."
@@ -5665,12 +5725,14 @@ Total differences: 7932
 - heading "HOW IT WORKS": looks different from live (pixel difference 48)
 - heading "LET’S TALK STRENGTH…YOUR VERSION": looks different from live (pixel difference 154)
 - photo hero: brightness 15, live 42 (overlay or exposure differs)
-- band rgb(3, 2, 0) at y=352: 349px tall, live 61px
-- band rgb(252, 252, 252) at y=629: 597px tall, live 685px
-- band rgb(8, 8, 8) at y=4915 (403px tall on live) not found in build
-- band rgb(0, 3, 8) at y=5419 (235px tall on live) not found in build
+- band rgb(3, 2, 0) at y=352 (left margin): 349px tall, live 61px
+- band rgb(252, 252, 252) at y=629 (left margin): 597px tall, live 685px
+- band rgb(8, 8, 8) at y=4915 (403px tall on live, left margin) not found in build
+- band rgb(0, 3, 8) at y=5419 (235px tall on live, left margin) not found in build
+- band rgb(255, 254, 255) at y=633 (right margin): 597px tall, live 681px
+- band rgb(4, 2, 3) at y=5352 (302px tall on live, right margin) not found in build
 
-## registered-for-csna-competition @ 1280px: 14 difference(s)
+## registered-for-csna-competition @ 1280px: 15 difference(s)
 - page height 1325px, live 1000px
 - heading missing: "WE RECEIVED THOSE DETAILS, THANK YOU!"
 - text "Click here to finalize the reg": width 746px, live 1148px
@@ -5683,10 +5745,11 @@ Total differences: 7932
 - words "If you encounter any problems or have an": color rgb(51, 51, 51), live rgb(0, 0, 0)
 - words "(417) 894-7319": color rgb(51, 51, 51), live rgb(219, 58, 52)
 - words "(417) 894-7319": weight 300, live 400
-- band rgb(255, 255, 250) at y=142 (793px tall on live) not found in build
+- band rgb(255, 255, 250) at y=142 (793px tall on live, left margin) not found in build
+- band rgb(252, 252, 252) at y=145 (790px tall on live, right margin) not found in build
 - section colors differ: build [rgb(255, 255, 255) | rgb(40, 82, 118) | rgb(255, 255, 255)], live [rgb(255, 255, 255)]
 
-## registered-for-day-camps @ 1280px: 15 difference(s)
+## registered-for-day-camps @ 1280px: 16 difference(s)
 - page height 1434px, live 1082px
 - heading missing: "WE RECEIVED THOSE DETAILS, THANK YOU!"
 - text missing: "Click here to finalize the registration with your payment."
@@ -5701,9 +5764,10 @@ Total differences: 7932
 - button not on live: "CLICK HERE TO FINALIZE THE REGISTRATION WITH YOUR PAYMENT."
 - photo hero: brightness 114, live 184 (overlay or exposure differs)
 - photo hero: looks different from live (pixel difference 93)
-- band rgb(255, 255, 250) at y=142: 518px tall, live 875px
+- band rgb(255, 255, 250) at y=142 (left margin): 518px tall, live 875px
+- band rgb(252, 252, 252) at y=145 (right margin): 388px tall, live 872px
 
-## registered-for-summer-fun-competition @ 1280px: 15 difference(s)
+## registered-for-summer-fun-competition @ 1280px: 16 difference(s)
 - page height 1376px, live 1042px
 - heading missing: "WE RECEIVED THOSE DETAILS, THANK YOU!"
 - text "Click here to finalize the reg": color rgb(51, 51, 51), live rgb(0, 0, 0)
@@ -5718,9 +5782,10 @@ Total differences: 7932
 - words "(417) 894-7319": weight 300, live 400
 - photo hero: brightness 114, live 189 (overlay or exposure differs)
 - photo hero: looks different from live (pixel difference 97)
-- band rgb(255, 255, 250) at y=142: 518px tall, live 835px
+- band rgb(255, 255, 250) at y=142 (left margin): 518px tall, live 835px
+- band rgb(252, 252, 252) at y=145 (right margin): 388px tall, live 832px
 
-## registered-for-wnl-competition @ 1280px: 14 difference(s)
+## registered-for-wnl-competition @ 1280px: 15 difference(s)
 - page height 1351px, live 1014px
 - heading missing: "WE RECEIVED THOSE DETAILS, THANK YOU!"
 - text "Click here to finalize the reg": color rgb(51, 51, 51), live rgb(0, 0, 0)
@@ -5734,9 +5799,10 @@ Total differences: 7932
 - words "(417) 894-7319": weight 300, live 400
 - photo hero: brightness 114, live 192 (overlay or exposure differs)
 - photo hero: looks different from live (pixel difference 99)
-- band rgb(255, 255, 250) at y=142: 518px tall, live 807px
+- band rgb(255, 255, 250) at y=142 (left margin): 518px tall, live 807px
+- band rgb(252, 252, 252) at y=145 (right margin): 388px tall, live 804px
 
-## registered @ 1280px: 14 difference(s)
+## registered @ 1280px: 15 difference(s)
 - page height 1351px, live 1014px
 - heading missing: "WE RECEIVED THOSE DETAILS, THANK YOU!"
 - text "Click here to finalize the reg": color rgb(51, 51, 51), live rgb(0, 0, 0)
@@ -5750,9 +5816,10 @@ Total differences: 7932
 - words "(417) 894-7319": weight 300, live 400
 - photo hero: brightness 114, live 192 (overlay or exposure differs)
 - photo hero: looks different from live (pixel difference 99)
-- band rgb(255, 255, 250) at y=142: 518px tall, live 807px
+- band rgb(255, 255, 250) at y=142 (left margin): 518px tall, live 807px
+- band rgb(252, 252, 252) at y=145 (right margin): 388px tall, live 804px
 
-## schedule-birthday-party @ 1280px: 57 difference(s)
+## schedule-birthday-party @ 1280px: 58 difference(s)
 - page height 2995px, live 3345px
 - heading "CLIENT TESTIMONIALS": line height 50px, live 70px
 - heading "WHAT OUR CLIENTS SAY": line height 50px, live 42px
@@ -5809,9 +5876,10 @@ Total differences: 7932
 - band color beside "We had our son’s 10th birthday here. All": rgb(242, 246, 249), live rgb(255, 255, 255)
 - band color beside "- JENNIFER L.": rgb(242, 246, 249), live rgb(255, 255, 255)
 - band color beside "- LEE C.": rgb(242, 246, 249), live rgb(255, 255, 255)
-- band rgb(252, 252, 252) at y=2258 (1022px tall on live) not found in build
+- band rgb(252, 252, 252) at y=2258 (1022px tall on live, left margin) not found in build
+- band rgb(252, 252, 252) at y=2258 (1022px tall on live, right margin) not found in build
 
-## summer-camps-in-springfield-mo @ 1280px: 394 difference(s)
+## summer-camps-in-springfield-mo @ 1280px: 396 difference(s)
 - page height 5794px, live 6281px
 - heading "KIDS STAY FIT AND HEALTHY": left edge 65px, live 180px
 - heading "AT OUR INCREDIBLE SUMMER CAMPS": left edge 65px, live 180px
@@ -6203,11 +6271,13 @@ Total differences: 7932
 - heading "SPRINGFIELD WARRIOR REGISTRATION": looks different from live (pixel difference 44)
 - heading "REGISTRATION FORM": looks different from live (pixel difference 43)
 - photo hero: brightness 43, live 57 (overlay or exposure differs)
-- band rgb(0, 4, 7) at y=493: 114px tall, live 145px
-- band rgb(251, 255, 255) at y=2878: 353px tall, live 2334px
-- band rgb(249, 249, 249) at y=5923: 328px tall, live 293px
+- band rgb(0, 4, 7) at y=493 (left margin): 114px tall, live 145px
+- band rgb(251, 255, 255) at y=2878 (left margin): 353px tall, live 2334px
+- band rgb(249, 249, 249) at y=5923 (left margin): 328px tall, live 293px
+- band rgb(251, 255, 255) at y=2878 (right margin): 353px tall, live 2334px
+- band rgb(249, 249, 249) at y=5923 (right margin): 328px tall, live 293px
 
-## thank-you-for-your-feedback @ 1280px: 12 difference(s)
+## thank-you-for-your-feedback @ 1280px: 13 difference(s)
 - page height 1404px, live 1098px
 - heading missing: "THANK YOU FOR YOUR FEEDBACK!"
 - text "Thank you for your feedback! W": color rgb(51, 51, 51), live rgb(0, 0, 0)
@@ -6219,9 +6289,10 @@ Total differences: 7932
 - words ".Thanks,Andy and the Warrior Sports Team": color rgb(51, 51, 51), live rgb(0, 0, 0)
 - photo hero: brightness 114, live 184 (overlay or exposure differs)
 - photo hero: looks different from live (pixel difference 92)
-- band rgb(255, 255, 250) at y=142: 518px tall, live 891px
+- band rgb(255, 255, 250) at y=142 (left margin): 518px tall, live 891px
+- band rgb(252, 252, 252) at y=145 (right margin): 388px tall, live 888px
 
-## wnl-competitions @ 1280px: 80 difference(s)
+## wnl-competitions @ 1280px: 82 difference(s)
 - page height 2956px, live 3604px
 - heading missing: "10-26-2024 WNL Competition Registration Form"
 - heading "WNL COMPETITIONS IN SPRINGFIELD MISSOURI": left edge 80px, live 180px
@@ -6300,14 +6371,16 @@ Total differences: 7932
 - heading "WNL REGIONAL QUALIFIERS": looks different from live (pixel difference 60)
 - photo hero: brightness 81, live 47 (overlay or exposure differs)
 - photo hero: looks different from live (pixel difference 53)
-- band rgb(254, 253, 255) at y=729: 241px tall, live 322px
-- band rgb(251, 255, 254) at y=1671 (1868px tall on live) not found in build
+- band rgb(254, 253, 255) at y=729 (left margin): 241px tall, live 322px
+- band rgb(251, 255, 254) at y=1671 (1868px tall on live, left margin) not found in build
+- band rgb(253, 254, 255) at y=729 (right margin): 241px tall, live 322px
+- band rgb(251, 255, 254) at y=1671 (1868px tall on live, right margin) not found in build
 
 ## about @ 390px: 1 difference(s)
 - text "In 2016 we had the unique oppo": 19 line(s), live 18
 
 ## best-gyms-in-springfield @ 390px: 193 difference(s)
-- page height 8078px, live 11526px
+- page height 8081px, live 11526px
 - heading missing: "GP ATHLETICS"
 - heading missing: "SPRINGFIELD WARRIOR SPORTS"
 - heading missing: "SPRINGFIELD STRENGTH & CONDITIONING"
@@ -6496,13 +6569,13 @@ Total differences: 7932
 - heading "LOOKING FOR THE BEST GYMS IN SPRINGFIELD": looks different from live (pixel difference 55)
 - heading "RAGE FITNESS": looks different from live (pixel difference 48)
 - photo img_2344: looks different from live (pixel difference 43)
-- band rgb(255, 254, 255) at y=599: 1219px tall, live 491px
-- band rgb(253, 254, 255) at y=1561 (8624px tall on live) not found in build
-- band rgb(2, 2, 2) at y=10558 (55px tall on live) not found in build
-- band rgb(253, 253, 253) at y=10738 (688px tall on live) not found in build
+- band rgb(255, 254, 255) at y=599 (left margin): 1219px tall, live 491px
+- band rgb(253, 254, 255) at y=1561 (8624px tall on live, left margin) not found in build
+- band rgb(2, 2, 2) at y=10558 (55px tall on live, left margin) not found in build
+- band rgb(253, 253, 253) at y=10738 (688px tall on live, left margin) not found in build
 
 ## birthday-parties @ 390px: 79 difference(s)
-- page height 7213px, live 8154px
+- page height 7216px, live 8154px
 - heading missing: "NINJA WARRIOR COURSES, LASER TAG, NERF BATTLES, AND MORE!"
 - heading missing: "WARRIOR SPORTS TAKES THE STRESS OUT OF YOUR BIRTHDAY PARTY PLANNING"
 - heading missing: "BOOK NOW!"
@@ -6579,11 +6652,11 @@ Total differences: 7932
 - photo hero: looks different from live (pixel difference 41)
 - photo laser-tag-party: brightness 255, live 85 (overlay or exposure differs)
 - photo laser-tag-party: looks different from live (pixel difference 170)
-- band rgb(255, 254, 251) at y=3981 (2436px tall on live) not found in build
-- band rgb(249, 253, 255) at y=7406 (648px tall on live) not found in build
+- band rgb(255, 254, 251) at y=3981 (2436px tall on live, left margin) not found in build
+- band rgb(249, 253, 255) at y=7406 (648px tall on live, left margin) not found in build
 
 ## competitions @ 390px: 56 difference(s)
-- page height 3707px, live 4004px
+- page height 3710px, live 4004px
 - heading missing: "2026-9 CSNA September 19th Form"
 - heading "TEST YOUR SKILLS ON OUR FUN AND COMPETIT": left edge 20px, live 29px
 - heading "TEST YOUR SKILLS ON OUR FUN AND COMPETIT": color rgb(255, 255, 255), live rgb(248, 248, 248)
@@ -6638,7 +6711,7 @@ Total differences: 7932
 - words "$60": weight 400, live 900
 - heading "TEST YOUR SKILLS ON OUR FUN AND COMPETIT": looks different from live (pixel difference 54)
 - heading "SEPTEMBER 2026 CSNA TEAM COMPETITION": looks different from live (pixel difference 41)
-- band rgb(249, 249, 249) at y=458: 354px tall, live 3446px
+- band rgb(249, 249, 249) at y=458 (left margin): 354px tall, live 3446px
 
 ## contact @ 390px: 47 difference(s)
 - heading missing: "CLIENT TESTIMONIALS"
@@ -6686,11 +6759,11 @@ Total differences: 7932
 - photo img_2342: looks different from live (pixel difference 146)
 - photo qoute-icon: brightness 255, live 156 (overlay or exposure differs)
 - photo qoute-icon: looks different from live (pixel difference 99)
-- band rgb(255, 255, 255) at y=599: 3615px tall, live 2279px
-- band rgb(252, 252, 252) at y=3633 (648px tall on live) not found in build
+- band rgb(255, 255, 255) at y=599 (left margin): 3618px tall, live 2279px
+- band rgb(252, 252, 252) at y=3633 (648px tall on live, left margin) not found in build
 
 ## fitness-classes @ 390px: 133 difference(s)
-- page height 6443px, live 7377px
+- page height 6446px, live 7377px
 - heading missing: "OBSTACLE COURSE RACING CLASSES:"
 - heading missing: "A UNIQUE WORKOUT EXPERIENCE"
 - heading missing: "WHAT IS OCR FITNESS?"
@@ -6820,14 +6893,17 @@ Total differences: 7932
 - photo hero: brightness 25, live 51 (overlay or exposure differs)
 - photo improve-confidence: brightness 255, live 116 (overlay or exposure differs)
 - photo improve-confidence: looks different from live (pixel difference 139)
-- band rgb(248, 255, 255) at y=734: 1261px tall, live 1135px
-- band rgb(0, 0, 5) at y=2680 (208px tall on live) not found in build
-- band rgb(250, 254, 253) at y=5341 (1936px tall on live) not found in build
+- band rgb(248, 255, 255) at y=734 (left margin): 1261px tall, live 1135px
+- band rgb(0, 0, 5) at y=2680 (208px tall on live, left margin) not found in build
+- band rgb(250, 254, 253) at y=5341 (1936px tall on live, left margin) not found in build
 
-## home @ 390px: matches
+## home @ 390px: 3 difference(s)
+- background behind "STRONGER": rgb(5, 5, 4), live rgb(20, 20, 23)
+- band color beside "Springfield Missouri's best indoor obsta": rgb(13, 14, 18), live rgb(17, 20, 32)
+- band rgb(0, 2, 8) at y=527 (left margin): 298px tall, live 71px
 
 ## homeschool-sports-and-classes-springfield-mo @ 390px: 102 difference(s)
-- page height 3195px, live 4193px
+- page height 3198px, live 4193px
 - heading missing: "COME JOIN THE FUN!"
 - heading missing: "Homeschoolers have the unique opportunity to enjoy exciting activities at Springfield Warrior Sports."
 - heading missing: "With time specifically dedicated to helping homeschoolers excel in their athletic goals, embrace an active lifestyle, and connect with other kids their age, this is a chance for homeschool kids to experience the most fun school year ever."
@@ -6928,14 +7004,15 @@ Total differences: 7932
 - heading "(AGES 7–15)": looks different from live (pixel difference 45)
 - photo hero: brightness 89, live 33 (overlay or exposure differs)
 - photo hero: looks different from live (pixel difference 57)
-- band rgb(254, 254, 254) at y=599: 525px tall, live 675px
+- band rgb(254, 254, 254) at y=599 (left margin): 525px tall, live 675px
 
-## kids-classes @ 390px: 2 difference(s)
+## kids-classes @ 390px: 3 difference(s)
 - text "Our preschool class is geared ": 9 line(s), live 8
 - text "Learn the basics of Parkour |f": 14 line(s), live 13
+- background behind "FUN AND CHALLENGING": rgb(20, 20, 24), live rgb(23, 40, 50)
 
 ## laser-tag @ 390px: 153 difference(s)
-- page height 4816px, live 5746px
+- page height 4819px, live 5746px
 - heading missing: "WANT TO BOOK A PRIVATE LASER TAG PARTY?"
 - heading missing: "READY TO BOOK?"
 - heading missing: "WE LOOK FORWARD TO HOSTING YOU."
@@ -7086,11 +7163,11 @@ Total differences: 7932
 - heading "LASER TAG GYM IN SPRINGFIELD, MO": looks different from live (pixel difference 70)
 - heading "HERE ARE THE DETAILS:": looks different from live (pixel difference 59)
 - text "You can begin the booking proc": looks different from live (pixel difference 185)
-- band rgb(251, 253, 255) at y=599: 1411px tall, live 486px
-- band rgb(3, 3, 3) at y=2978 (48px tall on live) not found in build
+- band rgb(251, 253, 255) at y=599 (left margin): 1411px tall, live 486px
+- band rgb(3, 3, 3) at y=2978 (48px tall on live, left margin) not found in build
 
 ## meet-the-team @ 390px: 194 difference(s)
-- page height 16373px, live 17511px
+- page height 16376px, live 17511px
 - heading missing: "SARAH"
 - heading missing: "CO-OWNER | ADULT OCR COACH | PRESCHOOL COACH | WOMEN’S FITNESS TRAINER"
 - heading missing: "LINCOLN"
@@ -7281,12 +7358,12 @@ Total differences: 7932
 - photo jacob-photo: looks different from live (pixel difference 155)
 - photo grace-photo: brightness 255, live 96 (overlay or exposure differs)
 - photo grace-photo: looks different from live (pixel difference 159)
-- band rgb(255, 255, 255) at y=625: 766px tall, live 353px
-- band rgb(7, 5, 6) at y=16335 (44px tall on live) not found in build
-- band rgb(255, 255, 255) at y=16723 (688px tall on live) not found in build
+- band rgb(255, 255, 255) at y=625 (left margin): 766px tall, live 353px
+- band rgb(7, 5, 6) at y=16335 (44px tall on live, left margin) not found in build
+- band rgb(255, 255, 255) at y=16723 (688px tall on live, left margin) not found in build
 
 ## nerf-wars @ 390px: 127 difference(s)
-- page height 4474px, live 5430px
+- page height 4477px, live 5430px
 - heading missing: "BOOK NOW!"
 - heading missing: "READY TO LOCK IN THE DATE FOR YOUR CHILD'S EPIC NERF PARTY AT WARRIOR SPORTS?"
 - heading missing: "NERF WAR NIGHTS IN SPRINGFIELD MO"
@@ -7412,10 +7489,10 @@ Total differences: 7932
 - text "Let our experienced and kid-fr": looks different from live (pixel difference 189)
 - text "Or, dial (417) 894-7319 to res": looks different from live (pixel difference 184)
 - photo hero: brightness 35, live 50 (overlay or exposure differs)
-- band rgb(250, 254, 253) at y=599: 705px tall, live 442px
+- band rgb(250, 254, 253) at y=599 (left margin): 705px tall, live 442px
 
 ## parkour @ 390px: 97 difference(s)
-- page height 6595px, live 7353px
+- page height 6597px, live 7353px
 - heading missing: "BUILDS SELF-CONFIDENCE:"
 - heading missing: "MENTAL STIMULATION:"
 - heading missing: "STRESS RELIEF:"
@@ -7510,8 +7587,8 @@ Total differences: 7932
 - heading "IMPROVE PHYSICAL FITNESS:": looks different from live (pixel difference 41)
 - photo wsre-shoots: brightness 255, live 104 (overlay or exposure differs)
 - photo wsre-shoots: looks different from live (pixel difference 151)
-- band rgb(255, 255, 255) at y=604: 1261px tall, live 1710px
-- band rgb(251, 255, 255) at y=5741 (1512px tall on live) not found in build
+- band rgb(255, 255, 255) at y=604 (left margin): 1261px tall, live 1710px
+- band rgb(251, 255, 255) at y=5741 (1512px tall on live, left margin) not found in build
 
 ## personal-training @ 390px: 117 difference(s)
 - heading missing: "NOT YOUR TYPICAL GYM. NOT YOUR TYPICAL TRAINER."
@@ -7628,12 +7705,12 @@ Total differences: 7932
 - photo jonny-wilder-img: looks different from live (pixel difference 211)
 - photo qoute-icon: brightness 255, live 156 (overlay or exposure differs)
 - photo qoute-icon: looks different from live (pixel difference 99)
-- band rgb(253, 253, 253) at y=469: 935px tall, live 1132px
-- band rgb(0, 0, 5) at y=8200 (185px tall on live) not found in build
-- band rgb(251, 254, 255) at y=8446 (687px tall on live) not found in build
+- band rgb(253, 253, 253) at y=469 (left margin): 935px tall, live 1132px
+- band rgb(0, 0, 5) at y=8200 (185px tall on live, left margin) not found in build
+- band rgb(251, 254, 255) at y=8446 (687px tall on live, left margin) not found in build
 
 ## registered-for-csna-competition @ 390px: 14 difference(s)
-- page height 1720px, live 1365px
+- page height 1723px, live 1365px
 - heading missing: "WE RECEIVED THOSE DETAILS, THANK YOU!"
 - text "Click here to finalize the reg": width 746px, live 348px
 - text "Click here to finalize the reg": color rgb(51, 51, 51), live rgb(0, 0, 0)
@@ -7645,11 +7722,11 @@ Total differences: 7932
 - words "If you encounter any problems or have an": color rgb(51, 51, 51), live rgb(0, 0, 0)
 - words "(417) 894-7319": color rgb(51, 51, 51), live rgb(219, 58, 52)
 - words "(417) 894-7319": weight 300, live 400
-- band rgb(248, 254, 254) at y=159 (1106px tall on live) not found in build
+- band rgb(248, 254, 254) at y=159 (1106px tall on live, left margin) not found in build
 - section colors differ: build [rgb(255, 255, 255) | rgb(40, 82, 118) | rgb(255, 255, 255)], live [rgb(255, 255, 255)]
 
 ## registered-for-day-camps @ 390px: 15 difference(s)
-- page height 1888px, live 1767px
+- page height 1891px, live 1767px
 - heading missing: "WE RECEIVED THOSE DETAILS, THANK YOU!"
 - photo missing: everyday-warrior
 - photo not on live: hero
@@ -7663,10 +7740,10 @@ Total differences: 7932
 - words "(417) 894-7319": color rgb(51, 51, 51), live rgb(219, 58, 52)
 - words "(417) 894-7319": weight 300, live 400
 - button not on live: "CLICK HERE TO FINALIZE THE REGISTRATION WITH YOUR PAYMENT."
-- band rgb(248, 254, 254) at y=159: 65px tall, live 1508px
+- band rgb(248, 254, 254) at y=159 (left margin): 65px tall, live 1508px
 
 ## registered-for-summer-fun-competition @ 390px: 15 difference(s)
-- page height 1823px, live 1689px
+- page height 1825px, live 1689px
 - heading missing: "WE RECEIVED THOSE DETAILS, THANK YOU!"
 - photo missing: everyday-warrior
 - photo not on live: hero
@@ -7680,10 +7757,10 @@ Total differences: 7932
 - words "If you encounter any problems or have an": color rgb(51, 51, 51), live rgb(0, 0, 0)
 - words "(417) 894-7319": color rgb(51, 51, 51), live rgb(219, 58, 52)
 - words "(417) 894-7319": weight 300, live 400
-- band rgb(248, 254, 254) at y=159: 65px tall, live 1430px
+- band rgb(248, 254, 254) at y=159 (left margin): 65px tall, live 1430px
 
 ## registered-for-wnl-competition @ 390px: 14 difference(s)
-- page height 1797px, live 1661px
+- page height 1800px, live 1661px
 - heading missing: "WE RECEIVED THOSE DETAILS, THANK YOU!"
 - photo missing: everyday-warrior
 - photo not on live: hero
@@ -7696,10 +7773,10 @@ Total differences: 7932
 - words "If you encounter any problems or have an": color rgb(51, 51, 51), live rgb(0, 0, 0)
 - words "(417) 894-7319": color rgb(51, 51, 51), live rgb(219, 58, 52)
 - words "(417) 894-7319": weight 300, live 400
-- band rgb(248, 254, 254) at y=159: 65px tall, live 1402px
+- band rgb(248, 254, 254) at y=159 (left margin): 65px tall, live 1402px
 
 ## registered @ 390px: 14 difference(s)
-- page height 1797px, live 1661px
+- page height 1800px, live 1661px
 - heading missing: "WE RECEIVED THOSE DETAILS, THANK YOU!"
 - photo missing: everyday-warrior
 - photo not on live: hero
@@ -7712,10 +7789,10 @@ Total differences: 7932
 - words "If you encounter any problems or have an": color rgb(51, 51, 51), live rgb(0, 0, 0)
 - words "(417) 894-7319": color rgb(51, 51, 51), live rgb(219, 58, 52)
 - words "(417) 894-7319": weight 300, live 400
-- band rgb(248, 254, 254) at y=159: 65px tall, live 1402px
+- band rgb(248, 254, 254) at y=159 (left margin): 65px tall, live 1402px
 
 ## schedule-birthday-party @ 390px: 14 difference(s)
-- page height 3912px, live 3628px
+- page height 3915px, live 3628px
 - heading missing: "CLIENT TESTIMONIALS"
 - heading missing: "WHAT OUR CLIENTS SAY"
 - photo not on live: qoute-icon
@@ -7728,10 +7805,10 @@ Total differences: 7932
 - text "1. Fill out the form to begin ": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
 - photo qoute-icon: brightness 255, live 160 (overlay or exposure differs)
 - photo qoute-icon: looks different from live (pixel difference 95)
-- band rgb(255, 255, 253) at y=603: 262px tall, live 2925px
+- band rgb(255, 255, 253) at y=603 (left margin): 262px tall, live 2925px
 
 ## summer-camps-in-springfield-mo @ 390px: 247 difference(s)
-- page height 7035px, live 7568px
+- page height 7038px, live 7568px
 - heading missing: "SUMMER CAMP PRICING"
 - heading missing: "SPRINGFIELD WARRIOR REGISTRATION"
 - heading missing: "REGISTRATION FORM"
@@ -7975,12 +8052,12 @@ Total differences: 7932
 - heading "SUMMER CAMPS IN SPRINGFIELD — 2026 DATES": looks different from live (pixel difference 43)
 - photo qoute-icon: brightness 255, live 156 (overlay or exposure differs)
 - photo qoute-icon: looks different from live (pixel difference 99)
-- band rgb(248, 248, 248) at y=599: 791px tall, live 892px
-- band rgb(251, 255, 254) at y=3847 (2312px tall on live) not found in build
-- band rgb(252, 252, 252) at y=6820 (648px tall on live) not found in build
+- band rgb(248, 248, 248) at y=599 (left margin): 791px tall, live 892px
+- band rgb(251, 255, 254) at y=3847 (2312px tall on live, left margin) not found in build
+- band rgb(252, 252, 252) at y=6820 (648px tall on live, left margin) not found in build
 
 ## thank-you-for-your-feedback @ 390px: 12 difference(s)
-- page height 1876px, live 1773px
+- page height 1879px, live 1773px
 - heading missing: "THANK YOU FOR YOUR FEEDBACK!"
 - photo missing: everyday-warrior
 - photo not on live: hero
@@ -7991,10 +8068,10 @@ Total differences: 7932
 - words "(417)894-7319": color rgb(51, 51, 51), live rgb(219, 58, 52)
 - words "(417)894-7319": weight 300, live 400
 - words ".Thanks,Andy and the Warrior Sports Team": color rgb(51, 51, 51), live rgb(0, 0, 0)
-- band rgb(248, 254, 254) at y=159: 65px tall, live 1514px
+- band rgb(248, 254, 254) at y=159 (left margin): 65px tall, live 1514px
 
 ## wnl-competitions @ 390px: 76 difference(s)
-- page height 3558px, live 4245px
+- page height 3561px, live 4245px
 - heading missing: "10-26-2024 WNL Competition Registration Form"
 - heading "WNL COMPETITIONS IN SPRINGFIELD MISSOURI": left edge 20px, live 29px
 - heading "WNL COMPETITIONS IN SPRINGFIELD MISSOURI": size 32px, live 44px
@@ -8068,24 +8145,32 @@ Total differences: 7932
 - heading "WNL COMPETITIONS IN SPRINGFIELD MISSOURI": looks different from live (pixel difference 79)
 - photo hero: brightness 83, live 60 (overlay or exposure differs)
 - photo hero: looks different from live (pixel difference 60)
-- band rgb(255, 254, 255) at y=600: 318px tall, live 413px
-- band rgb(249, 248, 253) at y=1579 (2566px tall on live) not found in build
+- band rgb(255, 254, 255) at y=600 (left margin): 318px tall, live 413px
+- band rgb(249, 248, 253) at y=1579 (2566px tall on live, left margin) not found in build
+
 ## Notes
 
-Gate v2.9, round 9. Model: Grok 4.7. The live map, the scripts, the tolerances, and PIXEL_TOL were not edited. No allow entries were added. No other page's count went up.
+Gate v2.10, round 10. Model: Grok 4.7. The live map, the scripts, the tolerances, and PIXEL_TOL were not edited. No allow entries were added. No page outside home, about, and kids-classes went up. Contact at 390 reads 47 instead of 51 because the map image did not load in this capture (Show map, the map photo, and the OpenStreetMap line). Those four lines are the map facade. A second capture missed them the same way. The footer change does not touch the map.
 
-Before is this machine's measurement of commit b24932b (round 8 source on gate v2.9): 8,000 differences. Home 6/5/2, about 3/3/2, kids-classes 2/2/4 (1920/1280/390). The dispatch measured that commit on the Vercel preview as home 3/2/2, about 1/1/1, kids-classes 2/2/2. After is 7,932. Home is 3/3/0, about is 2/2/1, and kids-classes is 0/0/2. The Vercel preview of this commit, measured from this machine, is the same: home 3/3/0, about 2/2/1, kids-classes 0/0/2.
+Before is this machine's measurement of commit 5025925 (round 9 source on gate v2.10): 8,000 differences. Home 4/4/0, about 3/2/1, kids-classes 0/0/2 (1920/1280/390). After is 8,009. Home is 7/9/3, about is 4/2/1, and kids-classes is 0/0/3.
 
-Live copyright CSS, confirmed in the captured page: the desktop paragraph is Epilogue, 14px, weight 600, letter-spacing 2px, line-height 1.7em. The three phone paragraphs are 12px, letter-spacing 0, line-height 1.7em. The bar is 65px tall at 1920 and 1280 and 100px at 390. The desktop sentence is one line, with the same six non-breaking spaces live uses between the three parts.
+The checker strips are gone. Each hero uses one full-width overlay and the live photo placement.
 
-The white gap under the navy partner band is the live 40px footer padding. The extra white the band needed sits under the columns, on home and about only. Contact icons stay 16px, which is the live icon size. The Facebook and Instagram circles are 30px, from live's 11px social size. The home bullet strip is 80px at 1920 and 1280. The kids "SEE HOW MUCH FUN" band is 1,059px at 1920 and 1280 and 819px at 390.
+- Home: `linear-gradient(270deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.85) 61%)`, photo `background-size: cover`, `background-position: 50% 50%`.
+- About: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))`, photo cover at 50% 50%.
+- Kids Classes: no overlay. Photo cover at 50% 50%.
 
-Home at 390, `band rgb(0, 2, 8) at y=527`, was the dark bottom-left of the hero photo. Live's left edge is black there for 71px, then the bullet list. The build's left edge was lighter, so the checker paired the 298px bullet list with that 71px photo edge. A black strip on the left edge of the photo, stopped short of the list, splits them. Home at 390 now matches. The same edge at 1920 was 71px against live's 41px; it now matches too.
+These lines stay because that CSS is what live uses. I did not paint over them.
 
-The lines still open on this machine are the same wraps as round 8, at live's size, width, and letter-spacing. Round 8's preview measurement scored them 0. Size and letter-spacing were not changed to force the wrap.
+- Home 1920: background behind "ONE OBSTACLE AT A TIME!" is rgb(21, 22, 24), live rgb(5, 6, 6). Band beside "STRONGER" is rgb(10, 13, 23), live rgb(16, 17, 13). Band beside "ONE OBSTACLE AT A TIME!" is rgb(16, 16, 16), live rgb(3, 3, 3).
+- Home 1280: background behind "ONE OBSTACLE AT A TIME!" is rgb(20, 22, 23), live rgb(6, 6, 7). Background behind "Springfield Missouri's best indoor obstacle" is rgb(5, 5, 6), live rgb(19, 22, 25). Band beside "STRONGER" is rgb(15, 19, 28), live rgb(3, 10, 20). Band beside "ONE OBSTACLE AT A TIME!" is rgb(4, 5, 1), live rgb(15, 15, 15). Band beside the subhead is rgb(5, 5, 5), live rgb(24, 24, 24).
+- Home 390: background behind "STRONGER" is rgb(5, 5, 4), live rgb(20, 20, 23). Band beside the subhead is rgb(13, 14, 18), live rgb(17, 20, 32). `band rgb(0, 2, 8) at y=527 (left margin): 298px tall, live 71px` is the bullet list paired with the dark left edge of the hero photo. Under the live gradient the left edge is not a separate 71px black run, so the list and that edge read as one run.
+- About 1920: band beside "SPRINGFIELD WARRIOR SPORTS COMMUNITY" is rgb(16, 9, 4), live rgb(26, 16, 7). The right-margin band at y=312 (30px, live 71px) was already in the v2.10 before measurement.
+- Home 1920 and 1280 also still have the white right-margin band at y=5265, 231px against live 205px. That line was in the before measurement.
+- Kids Classes 390: background behind "FUN AND CHALLENGING" is rgb(20, 20, 24), live rgb(23, 40, 50).
 
-- Home, 1920 and 1280: "We believe in results" is 3 lines, live 2. The two testimonials are 5 lines, live 4, and 7 lines, live 6. Home at 390 matches.
-- About, 1920 and 1280: the same two testimonials. About at 390: the 2016 James River paragraph is 19 lines, live 18.
-- Kids Classes at 1920 and 1280 matches. At 390 the preschool paragraph is 9 lines, live 8, and the parkour paragraph is 14 lines, live 13.
+The home bullet strip uses the live section padding of 20px. The kids fun band uses the live padding, 80px 0 above 1024px and 70px 0 below it, and a black `linear-gradient(#000, #000)` with margin 0. The phone homeschool section's bottom padding is the live 70px. Kids Classes at 1920 and 1280 matches.
 
-The Memorial Day sentence stays in the Community Murph paragraph. Paragraph links stay rgb(219, 58, 52) with no underline.
+Footer contact icons are the live map, phone, and envelope paths, 16px by 16px, with the live `padding-top: 5px`. Quick Links has no left padding. "Home" sits at x=1214; live is x=1215.
+
+The wraps still open are the same ones as round 8, at live's size, width, and letter-spacing. Size and letter-spacing were not changed to force the wrap. The Memorial Day sentence stays in the Community Murph paragraph. Paragraph links stay rgb(219, 58, 52) with no underline.

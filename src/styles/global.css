@@ -159,95 +159,19 @@ a {
   object-fit: cover;
   object-position: center 42%;
 }
-.atf-photo.about-hero {
+.atf-photo.about-hero,
+.page-home .atf-photo,
+.page-kids-classes .atf-photo {
   object-fit: cover;
-  object-position: center;
+  object-position: center center;
 }
+/* Live home overlay: one full-width 270deg gradient. About is a flat 0.5 veil.
+   Kids has no overlay. All three photos sit at 50% 50%, cover. */
 .hero-copy.align-center .hero-scrim.about-scrim {
   background: rgba(0, 0, 0, 0.5);
 }
-@media (min-width: 1400px) {
-  .hero-copy.align-center .hero-scrim.about-scrim {
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.22) 0 18px, rgba(0, 0, 0, 0.5) 48px);
-  }
-  .page-home .hero-scrim {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.45) 0% 40%, rgba(0, 0, 0, 0.55) 50% 70%);
-  }
-  .page-home .hero-scrim::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 780px;
-    height: 100%;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.76) 0% 33%, rgba(0, 0, 0, 0.8) 37% 43%, rgba(0, 0, 0, 0.94) 45% 48%, rgba(0, 0, 0, 0.87) 54% 72%);
-  }
-  .page-home .hero-scrim::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 24px;
-    height: 100%;
-    background:
-      linear-gradient(rgba(36, 18, 0, 0.4), rgba(36, 18, 0, 0.4)) 0 28% / 100% 16% no-repeat,
-      linear-gradient(rgba(255, 255, 255, 0.22), rgba(255, 255, 255, 0.22)) 0 49.5% / 100% 5% no-repeat,
-      linear-gradient(rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.07)) 0 58% / 100% 8% no-repeat;
-  }
-}
 .page-kids-classes .hero-copy.align-center .hero-scrim {
   background: none;
-}
-@media (min-width: 800px) and (max-width: 1399px) {
-  .page-home .hero-scrim::before {
-    content: "";
-    position: absolute;
-    left: 40px;
-    right: 0;
-    top: 44%;
-    height: 28%;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.62) 0 32%, rgba(55, 60, 64, 0.38) 58% 100%);
-  }
-  .page-home .hero-scrim::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 30%;
-    width: 20px;
-    height: 40%;
-    background: linear-gradient(180deg, rgba(0, 4, 12, 0.78) 0 26%, rgba(20, 20, 20, 0.5) 38% 46%, rgba(70, 70, 70, 0.16) 60% 100%);
-  }
-}
-@media (max-width: 799px) {
-  .page-home .hero-scrim::before {
-    content: "";
-    position: absolute;
-    left: 16px;
-    right: 0;
-    top: 8%;
-    height: 16%;
-    background: rgba(60, 62, 68, 0.2);
-  }
-  .page-home .hero-scrim::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 4%;
-    width: 16px;
-    height: 91%;
-    background:
-      linear-gradient(180deg, rgba(0, 0, 0, 0.75) 0 60%, rgba(18, 26, 48, 0.45) 78% 100%) 0 0 / 100% 85.7% no-repeat,
-      linear-gradient(#000, #000) 0 100% / 100% 16% no-repeat;
-  }
-  .page-kids-classes .hero-scrim::after {
-    content: "";
-    position: absolute;
-    left: 18px;
-    right: 0;
-    top: 22%;
-    height: 22%;
-    background: rgba(20, 55, 75, 0.34);
-  }
 }
 
 .hero-copy {
@@ -530,7 +454,7 @@ a {
   .bullet-bar {
     display: flex;
     align-items: center;
-    min-height: 80px;
+    padding: 20px;
   }
   .bullet-line { margin: 0 auto; }
 }

@@ -99,7 +99,7 @@ const trial = "https://checkout.square.site/merchant/MLXTPBS97BGYV/checkout/B2M6
   </div></div>
 </section>
 
-<section class="section kids wash">
+<section class="section kids wash before-fun">
   <div class="wrap"><div class="row img-first">
     <img loading="lazy" decoding="async" src={homeSchool.src} alt="Homeschool warriors" width={homeSchool.width} height={homeSchool.height} />
     <div class="copy">
@@ -225,16 +225,19 @@ const trial = "https://checkout.square.site/merchant/MLXTPBS97BGYV/checkout/B2M6
   .day { width: 115px; }
   .row { display: grid; gap: 18px; }
   .row img, .fun-grid img, .camps img { width: 300px; max-width: 100%; height: auto; }
-  .fun { position: relative; color: #fff; background: none; }
-  .fun::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    z-index: 0;
-    background: #000;
-    box-shadow: 0 -79px 0 #000, 0 30px 0 #000;
+  .fun {
+    position: relative;
+    color: #fff;
+    /* Live paints this band with a black gradient image, so the section's
+       background-color stays transparent. Padding is the band's height. */
+    background-color: transparent;
+    background-image: linear-gradient(#000, #000);
+    margin: 0;
+    padding: 80px 0;
   }
-  .fun > * { position: relative; z-index: 1; }
+  @media (max-width: 1023px) {
+    .fun { padding: 70px 0; }
+  }
   .fun-grid { display: grid; grid-template-columns: 159px 159px; gap: 20px; width: fit-content; margin: 12px auto 8px; }
   .fun-grid img { width: 159px; height: 148px; object-fit: cover; }
   .camps { display: grid; gap: 28px; }
@@ -277,9 +280,8 @@ const trial = "https://checkout.square.site/merchant/MLXTPBS97BGYV/checkout/B2M6
     .note-line { width: 1070px; letter-spacing: 0; }
     .kids h2.junior-times { margin-top: 100px; }
     .kids h2.csna-times { margin-top: 52px; }
-    .section.fun { margin-top: 70px; }
-    .fun::before { box-shadow: 0 -70px 0 #000, 0 68px 0 #000; }
-    .forget-block { margin-top: 148px; }
+    .section.fun { margin-top: 0; }
+    .forget-block { margin-top: 0; padding-top: 90px; }
     .csna-block { margin-top: -36px; }
     .camp-block { margin-top: -45px; }
     .levels { width: 530px; letter-spacing: 0; }
@@ -327,8 +329,9 @@ const trial = "https://checkout.square.site/merchant/MLXTPBS97BGYV/checkout/B2M6
     .kids h2.junior-times { margin-top: 119px; }
     .kids h2.csna-times { margin-top: 52px; }
     .camp-block { margin-top: -45px; }
-    .section.fun { margin-top: 79px; }
-    .forget-block { margin-top: 110px; }
+    .section.fun { margin-top: 0; padding: 70px 0; }
+    .before-fun { padding-bottom: 70px; }
+    .forget-block { margin-top: 0; padding-top: 70px; }
     .levels { width: 320px; max-width: 100%; font-size: 16px; letter-spacing: 0; }
     .row.text-first { display: flex; flex-direction: column-reverse; }
     .camp-card.day {
