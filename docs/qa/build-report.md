@@ -333,7 +333,7 @@ Lighthouse mobile on the local preview, after this batch. Order is performance /
 
 Model: Grok 4.7. Same compare command, against the recaptured v2.6 live map, with `scripts/qa/layout-allow.json`. The live map, the scripts, the tolerances, and `PIXEL_TOL` were not edited. The report is `docs/qa/layout-report.md`.
 
-Before is this machine's measurement of `863fb44` (8,361). The dispatch measured that commit on the Vercel preview as home 22/22/39, about 17/17/41, and kids-classes 14/14/79. This machine measured home 24/24/38, about 19/19/40, and kids-classes 14/14/77. After is 7,704. Home and about are 0 at 1920, 1280, and 390. Kids-classes is 0/0/2. No other page's count went up. No allow entries were added.
+Before is this machine's measurement of `863fb44` (8,361). The dispatch measured that commit on the Vercel preview as home 22/22/39, about 17/17/41, and kids-classes 14/14/79. This machine measured home 24/24/38, about 19/19/40, and kids-classes 14/14/77. After is 7,704. Home and about are 0 at 1920, 1280, and 390. Kids-classes is 0/0/2. The Vercel preview of this commit measured the same three pages, including the same two kids-classes lines at 390. No other page's count went up. No allow entries were added.
 
 | Page | Before 1920 | 1280 | 390 | Total | After 1920 | 1280 | 390 | Total |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|

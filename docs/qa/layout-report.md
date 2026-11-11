@@ -7846,7 +7846,7 @@ Total differences: 7704
 
 Gate v2.6. Model: Grok 4.7. The live map, the scripts, the tolerances, and PIXEL_TOL were not edited. No allow entries were added. No other page's count went up.
 
-Before, on this machine, commit 863fb44 measured 8,361 differences: home 24/24/38, about 19/19/40, kids-classes 14/14/77 (1920/1280/390). The dispatch measured that commit on the Vercel preview as home 22/22/39, about 17/17/41, kids-classes 14/14/79. After, this local build measures 7,704. Home and about are 0 at 1920, 1280, and 390. Kids-classes is 0/0/2.
+Before, on this machine, commit 863fb44 measured 8,361 differences: home 24/24/38, about 19/19/40, kids-classes 14/14/77 (1920/1280/390). The dispatch measured that commit on the Vercel preview as home 22/22/39, about 17/17/41, kids-classes 14/14/79. After, this build measures 7,704. Home and about are 0 at 1920, 1280, and 390. Kids-classes is 0/0/2. The Vercel preview of this commit measured the same three pages: home 0/0/0, about 0/0/0, kids-classes 0/0/2, with the same two lines.
 
 Letter spacing matches live: body paragraphs 0, home card headings 0, the top bar and "WHAT OUR CLIENTS SAY" 1px, and the footer CONTACT, QUICK LINKS, and desktop copyright line 2px. Paragraph links are rgb(219, 58, 52) with no underline. At 390 the content gutter is 26px on about and kids-classes. Home stays 20px, which is where live home content starts.
 
