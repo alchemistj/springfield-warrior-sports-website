@@ -373,15 +373,18 @@ for (const width of readdirSync(liveDir).sort((a, b) => Number(b) - Number(a))) 
         const isBg = (c) => bgColors.some((d) => Math.max(...c.map((v, i) => Math.abs(v - d[i]))) <= BG_TOL);
         const [lr0, br] = await Promise.all([marginRuns(livePng), marginRuns(buildPng)]);
         const lr = lr0.filter((r) => isBg(r.c));
-        let k = 0;
+        // Match each live band to the build band of the same color (within 12, JPEG chroma) whose
+        // top is nearest where live puts it, scaled by page height, and no more than 300px away.
+        const scale = (build.docHeight || 1) / (live.docHeight || 1);
         for (const run of lr) {
           if (run.h < 40) continue;
-          let j = k;
-          while (j < br.length && !(br[j].h >= 40 && Math.max(...run.c.map((v, i) => Math.abs(v - br[j].c[i]))) <= BG_TOL)) j++;
-          if (j >= br.length) { issues.push(`band rgb(${run.c.join(", ")}) at y=${run.y} (${run.h}px tall on live) not found in build`); continue; }
-          if (Math.abs(br[j].h - run.h) > Math.max(24, run.h * 0.1))
-            issues.push(`band rgb(${run.c.join(", ")}) at y=${run.y}: ${br[j].h}px tall, live ${run.h}px`);
-          k = j + 1;
+          const want = run.y * scale;
+          const cand = br
+            .filter((b) => b.h >= 20 && Math.max(...run.c.map((v, i) => Math.abs(v - b.c[i]))) <= 12)
+            .sort((a, b) => Math.abs(a.y - want) - Math.abs(b.y - want))[0];
+          if (!cand || Math.abs(cand.y - want) > 300) { issues.push(`band rgb(${run.c.join(", ")}) at y=${run.y} (${run.h}px tall on live) not found in build`); continue; }
+          if (Math.abs(cand.h - run.h) > Math.max(24, run.h * 0.1))
+            issues.push(`band rgb(${run.c.join(", ")}) at y=${run.y}: ${cand.h}px tall, live ${run.h}px`);
         }
       }
       // Section band colors (consecutive duplicates removed)
