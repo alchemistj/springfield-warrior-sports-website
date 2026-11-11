@@ -341,7 +341,6 @@ const quotes = [
   .partner-band {
     background: rgb(40, 82, 118);
     min-height: 200px;
-    box-shadow: 0 -4px 0 rgb(40, 82, 118);
   }
   .partner-row {
     display: flex;
@@ -402,8 +401,8 @@ const quotes = [
     .everyday {
       background-image: var(--day);
       background-repeat: no-repeat;
-      background-position: right center;
-      background-size: 700px 632px;
+      background-position: 100% 0;
+      background-size: contain;
       min-height: 632px;
     }
     .day-copy { width: 533px; margin-left: 1px; padding: 48px 0; }
@@ -427,6 +426,12 @@ const quotes = [
     .hula { width: 148px; }
     .ninja, .pizza { width: 142px; }
     .friction { width: 135px; }
+  }
+  @media (min-width: 800px) and (max-width: 1023px) {
+    .everyday {
+      background-position: 102% 100%;
+      background-size: 50% 50%;
+    }
   }
   @media (max-width: 799px) {
     .everyday { margin-top: 110px; }
