@@ -158,9 +158,10 @@ async function dominant(file, r, padding = 12) {
   return best.sum.map((v) => Math.round(v / best.n));
 }
 // Runs of one flat color down the left page margin (x = 3px), noise-tolerant.
-async function marginRuns(file) {
+async function marginRuns(file, side = "left") {
   const m = await meta(file);
-  const { data, info } = await sharp(file).extract({ left: 3, top: 0, width: 1, height: m.height }).removeAlpha().raw().toBuffer({ resolveWithObject: true });
+  const x = side === "left" ? 3 : m.width - 4;
+  const { data, info } = await sharp(file).extract({ left: x, top: 0, width: 1, height: m.height }).removeAlpha().raw().toBuffer({ resolveWithObject: true });
   const runs = [];
   let cur = null;
   for (let y = 0; y < info.height; y++) {
@@ -371,7 +372,9 @@ for (const width of readdirSync(liveDir).sort((a, b) => Number(b) - Number(a))) 
         // happens to be flat for a stretch) count as bands.
         const bgColors = (live.bands || []).map((b) => parseColor(b.bg));
         const isBg = (c) => [[0, 0, 0], [255, 255, 255], ...bgColors].some((d) => Math.max(...c.map((v, i) => Math.abs(v - d[i]))) <= BG_TOL); // v2.9: pure black/white too (footer copyright bar)
-        const [lr0, br] = await Promise.all([marginRuns(livePng), marginRuns(buildPng)]);
+        // v2.10: read both page margins, so paint added only along one edge can't pass.
+        for (const side of CUR_VW >= 1280 ? ["left", "right"] : ["left"]) { // at phone widths the right column runs through content
+        const [lr0, br] = await Promise.all([marginRuns(livePng, side), marginRuns(buildPng, side)]);
         const lr = lr0.filter((r) => isBg(r.c));
         // Match each live band to the build band of the same color (within 12, JPEG chroma) whose
         // top is nearest where live puts it, scaled by page height, and no more than 300px away.
@@ -382,9 +385,10 @@ for (const width of readdirSync(liveDir).sort((a, b) => Number(b) - Number(a))) 
           const cand = br
             .filter((b) => b.h >= 20 && Math.max(...run.c.map((v, i) => Math.abs(v - b.c[i]))) <= 12)
             .sort((a, b) => Math.abs(a.y - want) - Math.abs(b.y - want))[0];
-          if (!cand || Math.abs(cand.y - want) > 300) { issues.push(`band rgb(${run.c.join(", ")}) at y=${run.y} (${run.h}px tall on live) not found in build`); continue; }
+          if (!cand || Math.abs(cand.y - want) > 300) { issues.push(`band rgb(${run.c.join(", ")}) at y=${run.y} (${run.h}px tall on live, ${side} margin) not found in build`); continue; }
           if (Math.abs(cand.h - run.h) > Math.max(24, run.h * 0.1))
-            issues.push(`band rgb(${run.c.join(", ")}) at y=${run.y}: ${cand.h}px tall, live ${run.h}px`);
+            issues.push(`band rgb(${run.c.join(", ")}) at y=${run.y} (${side} margin): ${cand.h}px tall, live ${run.h}px`);
+        }
         }
       }
       // Section band colors (consecutive duplicates removed)
