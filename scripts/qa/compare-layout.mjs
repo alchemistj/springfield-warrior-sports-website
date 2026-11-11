@@ -298,6 +298,20 @@ for (const width of readdirSync(liveDir).sort((a, b) => Number(b) - Number(a))) 
         if (lg > 0 && Math.abs(lg - bg) > Math.max(24, lg * 0.1)) // v2.6: was max(48, 25%)
           issues.push(`spacing from "${hp[i - 1][0].text.slice(0, 30)}" to "${hp[i][0].text.slice(0, 30)}": ${bg}px, live ${lg}px`);
       }
+      // v2.13: vertical rhythm between every consecutive heading or text block (not only heading
+      // to heading), so padding moved from below a paragraph to above it still shows.
+      const flow = [...h.pairs, ...tx.pairs].filter(([l, b]) => l.region === "main" && b && b.y !== undefined).sort((a, b) => a[0].y - b[0].y);
+      for (let i = 1; i < flow.length; i++) {
+        const [pl, pb] = flow[i - 1], [cl, cb] = flow[i];
+        const lg = cl.y - (pl.y + pl.h);
+        // The trust bar is a spec addition in the build only; don't count its height.
+        const trust = build.items.filter((t) => /NINJA AND PARKOUR GYM/i.test(t.text || "") && t.y >= pb.y + pb.h && t.y + t.h <= cb.y);
+        const trustH = trust.length ? Math.max(...trust.map((t) => t.y + t.h)) - Math.min(...trust.map((t) => t.y)) : 0;
+        const bg = cb.y - (pb.y + pb.h) - trustH;
+        if (lg < 0 || bg < -4) continue;
+        if (Math.abs(lg - bg) > Math.max(32, lg * 0.25))
+          issues.push(`gap between "${(pl.text || "").slice(0, 30)}" and "${(cl.text || "").slice(0, 30)}": ${Math.round(bg)}px, live ${Math.round(lg)}px`);
+      }
       // Covered: visible on live, but something sits on top of it in the build.
       [...h.pairs, ...tx.pairs, ...bt.pairs].forEach(([l, b]) => {
         if (b.covered && !l.covered) issues.push(`covered by another element: "${(l.text || "").slice(0, 50)}"`);
