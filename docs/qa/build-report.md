@@ -419,6 +419,53 @@ Lighthouse mobile on the local preview, after this batch. Order is performance /
 | About | 98 / 92 / 100 / 100 |
 | Kids classes | 100 / 92 / 100 / 100 |
 
+## Layout parity gate v2.8, round 8
+
+Model: Grok 4.7. Same compare command, against the v2.8 live map, with `scripts/qa/layout-allow.json`. The live map, the scripts, the tolerances, and `PIXEL_TOL` were not edited. The report is `docs/qa/layout-report.md`.
+
+Before is this machine's measurement of `e8050b0` (7,913). The dispatch measured that commit on the Vercel preview as home 0/0/0, about 0/0/1, and kids-classes 2/2/1. After is 7,907. Home is 3/3/0, about is 2/2/1, and kids-classes is 0/0/2. No other page's count went up. No allow entries were added.
+
+| Page | Before 1920 | 1280 | 390 | Total | After 1920 | 1280 | 390 | Total |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| about | 2 | 2 | 2 | 6 | 2 | 2 | 1 | 5 |
+| best-gyms-in-springfield | 367 | 368 | 192 | 927 | 367 | 368 | 192 | 927 |
+| birthday-parties | 209 | 210 | 79 | 498 | 209 | 210 | 79 | 498 |
+| competitions | 61 | 61 | 56 | 178 | 61 | 61 | 56 | 178 |
+| contact | 77 | 77 | 47 | 201 | 77 | 77 | 47 | 201 |
+| fitness-classes | 243 | 242 | 132 | 617 | 243 | 242 | 132 | 617 |
+| home | 3 | 3 | 0 | 6 | 3 | 3 | 0 | 6 |
+| homeschool-sports-and-classes-springfield-mo | 106 | 106 | 102 | 314 | 106 | 106 | 102 | 314 |
+| kids-classes | 2 | 2 | 3 | 7 | 0 | 0 | 2 | 2 |
+| laser-tag | 172 | 174 | 152 | 498 | 172 | 174 | 152 | 498 |
+| meet-the-team | 584 | 584 | 193 | 1361 | 584 | 584 | 193 | 1361 |
+| nerf-wars | 146 | 146 | 127 | 419 | 146 | 146 | 127 | 419 |
+| parkour | 185 | 185 | 97 | 467 | 185 | 185 | 97 | 467 |
+| personal-training | 326 | 327 | 116 | 769 | 326 | 327 | 116 | 769 |
+| registered-for-csna-competition | 14 | 14 | 14 | 42 | 14 | 14 | 14 | 42 |
+| registered-for-day-camps | 15 | 15 | 14 | 44 | 15 | 15 | 14 | 44 |
+| registered-for-summer-fun-competition | 15 | 15 | 15 | 45 | 15 | 15 | 15 | 45 |
+| registered-for-wnl-competition | 14 | 14 | 14 | 42 | 14 | 14 | 14 | 42 |
+| registered | 14 | 14 | 14 | 42 | 14 | 14 | 14 | 42 |
+| schedule-birthday-party | 57 | 57 | 14 | 128 | 57 | 57 | 14 | 128 |
+| summer-camps-in-springfield-mo | 392 | 392 | 247 | 1031 | 392 | 392 | 247 | 1031 |
+| thank-you-for-your-feedback | 12 | 12 | 11 | 35 | 12 | 12 | 11 | 35 |
+| wnl-competitions | 80 | 80 | 76 | 236 | 80 | 80 | 76 | 236 |
+| All pages | | | | 7913 | | | | 7907 |
+
+The three live line breaks are back. The Kids Classes intro breaks before "Our experienced coaches". The Note paragraph breaks before "of the other weeks!". The Community Murph paragraph breaks twice after the link and once after "Stronger, together." The Memorial Day sentence stays in that paragraph.
+
+The self-hosted faces are live's variable files: Epilogue v20, Heebo v28, Muli v34, and Muli v34 italic. Each is a weight range with the latin unicode-range. `font-display` is swap. Nothing preloads a font.
+
+The lines still open on this machine are wraps at live's size, width, and letter-spacing. Round 7's preview measurement did not count them. Size and letter-spacing were not changed to force the wrap. Paragraph links stay the live red, `rgb(219, 58, 52)`, with no underline.
+
+Lighthouse mobile on the local preview, after this batch. Order is performance / accessibility / best practices / SEO. About and kids accessibility stay at 92 because the live red measures 4.49:1 on white. That question is with Josh. The red stays.
+
+| Page | Score |
+|---|---|
+| Home | 99 / 100 / 100 / 100 |
+| About | 98 / 92 / 100 / 100 |
+| Kids classes | 99 / 92 / 100 / 100 |
+
 ## Open questions
 
 - Where GF18 should live, if it should be a page at all.

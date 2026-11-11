@@ -1,5 +1,5 @@
 # Layout comparison: live vs build
-Total differences: 7913
+Total differences: 7907
 
 ## about @ 1920px: 2 difference(s)
 - text "We had our son’s 10th birthday": 5 line(s), live 4
@@ -319,8 +319,8 @@ Total differences: 7913
 - background behind "This is where grit meets grind. You’ll f": rgb(242, 245, 247), live rgb(255, 255, 255)
 - background behind "Highlights:": rgb(242, 246, 249), live rgb(255, 255, 255)
 - background behind "24/7 access — because results don’t cloc": rgb(242, 246, 248), live rgb(255, 255, 255)
-- background behind "Cold plunges, saunas, compression sleeve": rgb(242, 245, 248), live rgb(255, 255, 255)
-- background behind "605 W Farm Rd 182, Springfield, MO": rgb(242, 246, 248), live rgb(255, 255, 255)
+- background behind "Cold plunges, saunas, compression sleeve": rgb(242, 245, 247), live rgb(255, 255, 255)
+- background behind "605 W Farm Rd 182, Springfield, MO": rgb(242, 245, 248), live rgb(255, 255, 255)
 - background behind "Ready to ditch the treadmill for somethi": rgb(242, 245, 247), live rgb(255, 255, 255)
 - background behind "If you're interested in parkour sessions": rgb(242, 244, 246), live rgb(255, 255, 255)
 - background behind "1900 W Sunset St #B100, Springfield, MO": rgb(242, 246, 248), live rgb(255, 255, 255)
@@ -328,7 +328,7 @@ Total differences: 7913
 - background behind "You’ll find a welcoming crew, killer pro": rgb(242, 245, 247), live rgb(255, 255, 255)
 - background behind "Highlights:": rgb(242, 246, 249), live rgb(255, 255, 255)
 - background behind "Endurance, rowing, sports performance cl": rgb(242, 245, 247), live rgb(255, 255, 255)
-- background behind "1249 E Battlefield Rd, Springfield, MO": rgb(242, 245, 248), live rgb(255, 255, 255)
+- background behind "1249 E Battlefield Rd, Springfield, MO": rgb(242, 246, 248), live rgb(255, 255, 255)
 - background behind "If you're after a fitness center in Spri": rgb(242, 244, 247), live rgb(255, 255, 255)
 - background behind "Great for families or anyone who wants s": rgb(242, 245, 248), live rgb(255, 255, 255)
 - background behind "Highlights:": rgb(242, 246, 249), live rgb(255, 255, 255)
@@ -557,7 +557,7 @@ Total differences: 7913
 - background behind "Cost: $179 for the first 11 kids and $10": rgb(255, 255, 255), live rgb(227, 234, 236)
 - background behind "* All participants will need to sign a w": rgb(255, 255, 255), live rgb(227, 235, 237)
 - background behind "** To reserve your birthday party time s": rgb(255, 255, 255), live rgb(227, 235, 237)
-- background behind "Want to feed the birthday party or have ": rgb(242, 245, 248), live rgb(255, 255, 255)
+- background behind "Want to feed the birthday party or have ": rgb(241, 245, 248), live rgb(255, 255, 255)
 - background behind "We can help you with that!": rgb(242, 246, 249), live rgb(255, 255, 255)
 - background behind "Our birthday party pizza package include": rgb(241, 244, 246), live rgb(255, 255, 255)
 - background behind "Create unforgettable memories with your ": rgb(242, 244, 246), live rgb(227, 235, 237)
@@ -941,7 +941,7 @@ Total differences: 7913
 - background behind "Choose the membership option that fits y": rgb(242, 245, 247), live rgb(48, 44, 43)
 - background behind "OCR workouts and fitness classes are des": rgb(255, 255, 255), live rgb(241, 245, 248)
 - background behind "OCR fitness classes take the best of the": rgb(255, 255, 255), live rgb(240, 244, 247)
-- background behind "The benefits of OCR fitness classes exte": rgb(242, 245, 248), live rgb(255, 255, 255)
+- background behind "The benefits of OCR fitness classes exte": rgb(242, 245, 247), live rgb(255, 255, 255)
 - background behind "Additionally, the group atmosphere also ": rgb(242, 245, 247), live rgb(255, 255, 255)
 - background behind "Our Obstacle Course Racing (OCR) workout": rgb(242, 245, 247), live rgb(255, 255, 255)
 - background behind "Additionally, many enjoy pairing these f": rgb(242, 245, 247), live rgb(255, 255, 255)
@@ -1085,9 +1085,7 @@ Total differences: 7913
 - photo hero: brightness 100, live 32 (overlay or exposure differs)
 - photo hero: looks different from live (pixel difference 71)
 
-## kids-classes @ 1920px: 2 difference(s)
-- text "Springfield Warrior Sports has": 4 line(s), live 5
-- text "Note: The last week of the mon": 3 line(s), live 4
+## kids-classes @ 1920px: matches
 
 ## laser-tag @ 1920px: 172 difference(s)
 - page height 3492px, live 4056px
@@ -1781,20 +1779,20 @@ Total differences: 7913
 - background behind "Get to know the coaches who make this co": rgb(255, 255, 255), live rgb(239, 246, 252)
 - background behind "Hey there! I’m Jonny.": rgb(242, 246, 249), live rgb(255, 255, 255)
 - background behind "I’ve been part of Springfield Warrior Sp": rgb(242, 245, 248), live rgb(255, 255, 255)
-- background behind "Almost nothing in the whole world brings": rgb(242, 244, 247), live rgb(255, 255, 255)
+- background behind "Almost nothing in the whole world brings": rgb(242, 245, 247), live rgb(255, 255, 255)
 - background behind "My ninja journey includes winning the 20": rgb(242, 245, 247), live rgb(255, 255, 255)
 - background behind "At the gym, I primarily teach the Interm": rgb(242, 245, 247), live rgb(255, 255, 255)
 - background behind "Outside the gym, I love my wife, Nintend": rgb(242, 245, 247), live rgb(255, 255, 255)
 - background behind "I love meeting new people and growing ou": rgb(242, 245, 248), live rgb(255, 255, 255)
 - background behind "Hello! I'm Lincoln.": rgb(242, 246, 249), live rgb(255, 255, 255)
 - background behind "I’ve been working at Springfield Warrior": rgb(242, 244, 246), live rgb(255, 255, 255)
-- background behind "I'm an active and sporty person, and I e": rgb(241, 245, 247), live rgb(255, 255, 255)
+- background behind "I'm an active and sporty person, and I e": rgb(242, 245, 247), live rgb(255, 255, 255)
 - background behind "As a coach, I strive to be the best teac": rgb(242, 245, 247), live rgb(255, 255, 255)
 - background behind "Hi! My name is Elle, and I’ve been worki": rgb(243, 246, 248), live rgb(255, 255, 255)
 - background behind "I teach preschool classes and assist wit": rgb(242, 244, 247), live rgb(255, 255, 255)
 - background behind "I truly love my job. It's so rewarding t": rgb(242, 245, 247), live rgb(255, 255, 255)
-- background behind "Hey everyone! I’m Coach Caleb.": rgb(242, 246, 248), live rgb(255, 255, 255)
-- background behind "I’ve been part of the Warrior Sports tea": rgb(241, 244, 246), live rgb(255, 255, 255)
+- background behind "Hey everyone! I’m Coach Caleb.": rgb(242, 245, 248), live rgb(255, 255, 255)
+- background behind "I’ve been part of the Warrior Sports tea": rgb(241, 244, 247), live rgb(255, 255, 255)
 - background behind "Here at W.S., I teach our Beginner Ninja": rgb(242, 245, 247), live rgb(255, 255, 255)
 - background behind "Outside the gym, I’m into rock climbing,": rgb(242, 245, 247), live rgb(255, 255, 255)
 - background behind "I’m all about helping kids have fun, get": rgb(242, 245, 248), live rgb(255, 255, 255)
@@ -2145,13 +2143,13 @@ Total differences: 7913
 - background behind "TEMPORARILY UNAVAILABLE": rgb(255, 255, 255), live rgb(42, 77, 111)
 - background behind "OPEN GYM IS OPEN — YOUR FIRST VISIT IS J": rgb(255, 255, 255), live rgb(45, 77, 111)
 - background behind "MORE THAN JUST PHYSICAL": rgb(242, 246, 248), live rgb(255, 255, 255)
-- background behind "Parkour can help to improve overall phys": rgb(242, 245, 247), live rgb(227, 235, 237)
+- background behind "Parkour can help to improve overall phys": rgb(242, 244, 247), live rgb(227, 235, 237)
 - background behind "By learning how to overcome obstacles an": rgb(255, 255, 255), live rgb(227, 235, 237)
 - background behind "Parkour offers an enjoyable and mentally": rgb(242, 245, 247), live rgb(226, 234, 236)
 - background behind "Parkour is a great way to reduce stress ": rgb(255, 255, 255), live rgb(226, 234, 236)
-- background behind "Participants in Parkour can gain access ": rgb(242, 245, 247), live rgb(226, 234, 236)
+- background behind "Participants in Parkour can gain access ": rgb(241, 245, 247), live rgb(226, 234, 236)
 - background behind "$20 class drop in, $10 class drop in for": rgb(255, 255, 255), live rgb(53, 90, 123)
-- background behind "With Parkour classes at Springfield Warr": rgb(242, 245, 247), live rgb(255, 255, 255)
+- background behind "With Parkour classes at Springfield Warr": rgb(242, 244, 247), live rgb(255, 255, 255)
 - band color beside "PARKOUR GYM IN SPRINGFIELD MO | SPRINGFI": rgb(25, 25, 25), live rgb(46, 66, 75)
 - band color beside "PARKOUR BENEFITS": rgb(242, 246, 249), live rgb(227, 235, 237)
 - band color beside "IMPROVE PHYSICAL FITNESS:": rgb(242, 246, 249), live rgb(227, 235, 237)
@@ -3461,8 +3459,8 @@ Total differences: 7913
 - background behind "This is where grit meets grind. You’ll f": rgb(242, 245, 247), live rgb(255, 255, 255)
 - background behind "Highlights:": rgb(242, 246, 249), live rgb(255, 255, 255)
 - background behind "24/7 access — because results don’t cloc": rgb(242, 246, 248), live rgb(255, 255, 255)
-- background behind "Cold plunges, saunas, compression sleeve": rgb(242, 245, 248), live rgb(255, 255, 255)
-- background behind "605 W Farm Rd 182, Springfield, MO": rgb(242, 246, 248), live rgb(255, 255, 255)
+- background behind "Cold plunges, saunas, compression sleeve": rgb(242, 245, 247), live rgb(255, 255, 255)
+- background behind "605 W Farm Rd 182, Springfield, MO": rgb(242, 245, 248), live rgb(255, 255, 255)
 - background behind "Ready to ditch the treadmill for somethi": rgb(242, 245, 247), live rgb(255, 255, 255)
 - background behind "If you're interested in parkour sessions": rgb(242, 244, 246), live rgb(255, 255, 255)
 - background behind "1900 W Sunset St #B100, Springfield, MO": rgb(242, 246, 248), live rgb(255, 255, 255)
@@ -3470,7 +3468,7 @@ Total differences: 7913
 - background behind "You’ll find a welcoming crew, killer pro": rgb(242, 245, 247), live rgb(255, 255, 255)
 - background behind "Highlights:": rgb(242, 246, 249), live rgb(255, 255, 255)
 - background behind "Endurance, rowing, sports performance cl": rgb(242, 245, 247), live rgb(255, 255, 255)
-- background behind "1249 E Battlefield Rd, Springfield, MO": rgb(242, 245, 248), live rgb(255, 255, 255)
+- background behind "1249 E Battlefield Rd, Springfield, MO": rgb(242, 246, 248), live rgb(255, 255, 255)
 - background behind "If you're after a fitness center in Spri": rgb(242, 244, 247), live rgb(255, 255, 255)
 - background behind "Great for families or anyone who wants s": rgb(242, 245, 248), live rgb(255, 255, 255)
 - background behind "Highlights:": rgb(242, 246, 249), live rgb(255, 255, 255)
@@ -3700,7 +3698,7 @@ Total differences: 7913
 - background behind "Cost: $179 for the first 11 kids and $10": rgb(255, 255, 255), live rgb(227, 234, 236)
 - background behind "* All participants will need to sign a w": rgb(255, 255, 255), live rgb(227, 235, 237)
 - background behind "** To reserve your birthday party time s": rgb(255, 255, 255), live rgb(227, 235, 237)
-- background behind "Want to feed the birthday party or have ": rgb(242, 245, 248), live rgb(255, 255, 255)
+- background behind "Want to feed the birthday party or have ": rgb(241, 245, 248), live rgb(255, 255, 255)
 - background behind "We can help you with that!": rgb(242, 246, 249), live rgb(255, 255, 255)
 - background behind "Our birthday party pizza package include": rgb(241, 244, 246), live rgb(255, 255, 255)
 - background behind "Create unforgettable memories with your ": rgb(242, 244, 246), live rgb(226, 235, 236)
@@ -4084,7 +4082,7 @@ Total differences: 7913
 - background behind "Choose the membership option that fits y": rgb(242, 245, 247), live rgb(48, 44, 43)
 - background behind "OCR workouts and fitness classes are des": rgb(255, 255, 255), live rgb(241, 245, 248)
 - background behind "OCR fitness classes take the best of the": rgb(255, 255, 255), live rgb(240, 244, 247)
-- background behind "The benefits of OCR fitness classes exte": rgb(242, 245, 248), live rgb(255, 255, 255)
+- background behind "The benefits of OCR fitness classes exte": rgb(242, 245, 247), live rgb(255, 255, 255)
 - background behind "Additionally, the group atmosphere also ": rgb(242, 245, 247), live rgb(255, 255, 255)
 - background behind "Our Obstacle Course Racing (OCR) workout": rgb(242, 245, 247), live rgb(255, 255, 255)
 - background behind "Additionally, many enjoy pairing these f": rgb(242, 245, 247), live rgb(255, 255, 255)
@@ -4228,9 +4226,7 @@ Total differences: 7913
 - photo hero: brightness 96, live 38 (overlay or exposure differs)
 - photo hero: looks different from live (pixel difference 63)
 
-## kids-classes @ 1280px: 2 difference(s)
-- text "Springfield Warrior Sports has": 4 line(s), live 5
-- text "Note: The last week of the mon": 3 line(s), live 4
+## kids-classes @ 1280px: matches
 
 ## laser-tag @ 1280px: 174 difference(s)
 - page height 3492px, live 4056px
@@ -4926,20 +4922,20 @@ Total differences: 7913
 - background behind "Get to know the coaches who make this co": rgb(255, 255, 255), live rgb(239, 246, 252)
 - background behind "Hey there! I’m Jonny.": rgb(242, 246, 249), live rgb(255, 255, 255)
 - background behind "I’ve been part of Springfield Warrior Sp": rgb(242, 245, 248), live rgb(255, 255, 255)
-- background behind "Almost nothing in the whole world brings": rgb(242, 244, 247), live rgb(255, 255, 255)
+- background behind "Almost nothing in the whole world brings": rgb(242, 245, 247), live rgb(255, 255, 255)
 - background behind "My ninja journey includes winning the 20": rgb(242, 245, 247), live rgb(255, 255, 255)
 - background behind "At the gym, I primarily teach the Interm": rgb(242, 245, 247), live rgb(255, 255, 255)
 - background behind "Outside the gym, I love my wife, Nintend": rgb(242, 245, 247), live rgb(255, 255, 255)
 - background behind "I love meeting new people and growing ou": rgb(242, 245, 248), live rgb(255, 255, 255)
 - background behind "Hello! I'm Lincoln.": rgb(242, 246, 249), live rgb(255, 255, 255)
 - background behind "I’ve been working at Springfield Warrior": rgb(242, 244, 246), live rgb(255, 255, 255)
-- background behind "I'm an active and sporty person, and I e": rgb(241, 245, 247), live rgb(255, 255, 255)
+- background behind "I'm an active and sporty person, and I e": rgb(242, 245, 247), live rgb(255, 255, 255)
 - background behind "As a coach, I strive to be the best teac": rgb(242, 245, 247), live rgb(255, 255, 255)
 - background behind "Hi! My name is Elle, and I’ve been worki": rgb(243, 246, 248), live rgb(255, 255, 255)
 - background behind "I teach preschool classes and assist wit": rgb(242, 244, 247), live rgb(255, 255, 255)
 - background behind "I truly love my job. It's so rewarding t": rgb(242, 245, 247), live rgb(255, 255, 255)
-- background behind "Hey everyone! I’m Coach Caleb.": rgb(242, 246, 248), live rgb(255, 255, 255)
-- background behind "I’ve been part of the Warrior Sports tea": rgb(241, 244, 246), live rgb(255, 255, 255)
+- background behind "Hey everyone! I’m Coach Caleb.": rgb(242, 245, 248), live rgb(255, 255, 255)
+- background behind "I’ve been part of the Warrior Sports tea": rgb(241, 244, 247), live rgb(255, 255, 255)
 - background behind "Here at W.S., I teach our Beginner Ninja": rgb(242, 245, 247), live rgb(255, 255, 255)
 - background behind "Outside the gym, I’m into rock climbing,": rgb(242, 245, 247), live rgb(255, 255, 255)
 - background behind "I’m all about helping kids have fun, get": rgb(242, 245, 248), live rgb(255, 255, 255)
@@ -5290,13 +5286,13 @@ Total differences: 7913
 - background behind "TEMPORARILY UNAVAILABLE": rgb(255, 255, 255), live rgb(42, 77, 111)
 - background behind "OPEN GYM IS OPEN — YOUR FIRST VISIT IS J": rgb(255, 255, 255), live rgb(45, 77, 111)
 - background behind "MORE THAN JUST PHYSICAL": rgb(242, 246, 248), live rgb(255, 255, 255)
-- background behind "Parkour can help to improve overall phys": rgb(242, 245, 247), live rgb(227, 235, 237)
+- background behind "Parkour can help to improve overall phys": rgb(242, 244, 247), live rgb(227, 235, 237)
 - background behind "By learning how to overcome obstacles an": rgb(255, 255, 255), live rgb(227, 235, 237)
 - background behind "Parkour offers an enjoyable and mentally": rgb(242, 245, 247), live rgb(226, 234, 236)
 - background behind "Parkour is a great way to reduce stress ": rgb(255, 255, 255), live rgb(226, 234, 236)
-- background behind "Participants in Parkour can gain access ": rgb(242, 245, 247), live rgb(226, 234, 236)
+- background behind "Participants in Parkour can gain access ": rgb(241, 245, 247), live rgb(226, 234, 236)
 - background behind "$20 class drop in, $10 class drop in for": rgb(255, 255, 255), live rgb(53, 90, 123)
-- background behind "With Parkour classes at Springfield Warr": rgb(242, 245, 247), live rgb(255, 255, 255)
+- background behind "With Parkour classes at Springfield Warr": rgb(242, 244, 247), live rgb(255, 255, 255)
 - band color beside "PARKOUR GYM IN SPRINGFIELD MO | SPRINGFI": rgb(25, 25, 25), live rgb(74, 63, 53)
 - band color beside "PARKOUR BENEFITS": rgb(242, 246, 249), live rgb(227, 235, 237)
 - band color beside "IMPROVE PHYSICAL FITNESS:": rgb(242, 246, 249), live rgb(227, 235, 237)
@@ -6289,9 +6285,8 @@ Total differences: 7913
 - band rgb(254, 253, 255) at y=729: 241px tall, live 322px
 - band rgb(251, 255, 254) at y=1671 (1868px tall on live) not found in build
 
-## about @ 390px: 2 difference(s)
+## about @ 390px: 1 difference(s)
 - text "In 2016 we had the unique oppo": 19 line(s), live 18
-- text "Springfield Warrior Sports loo": 22 line(s), live 23
 
 ## best-gyms-in-springfield @ 390px: 192 difference(s)
 - page height 8030px, live 11526px
@@ -6462,7 +6457,7 @@ Total differences: 7913
 - background behind "Instead, think obstacle courses, warped ": rgb(255, 255, 255), live rgb(237, 243, 250)
 - background behind "and train like never before, check out o": rgb(255, 255, 255), live rgb(238, 244, 250)
 - background behind "one of the most unique gyms around. We’r": rgb(255, 255, 255), live rgb(238, 244, 250)
-- background behind "2321 S Campbell Ave, Springfield, MO": rgb(242, 245, 248), live rgb(255, 255, 255)
+- background behind "2321 S Campbell Ave, Springfield, MO": rgb(243, 245, 248), live rgb(255, 255, 255)
 - background behind "If you want gyms in Springfield that don": rgb(242, 244, 247), live rgb(255, 255, 255)
 - background behind "This is where grit meets grind. You’ll f": rgb(242, 244, 246), live rgb(255, 255, 255)
 - background behind "Highlights:": rgb(242, 246, 249), live rgb(255, 255, 255)
@@ -6915,8 +6910,7 @@ Total differences: 7913
 - photo hero: looks different from live (pixel difference 57)
 - band rgb(254, 254, 254) at y=599: 525px tall, live 675px
 
-## kids-classes @ 390px: 3 difference(s)
-- text "Springfield Warrior Sports has": 13 line(s), live 14
+## kids-classes @ 390px: 2 difference(s)
 - text "Our preschool class is geared ": 9 line(s), live 8
 - text "Learn the basics of Parkour |f": 14 line(s), live 13
 
@@ -7053,7 +7047,7 @@ Total differences: 7913
 - background behind "Call us today and book our entire obstac": rgb(255, 255, 255), live rgb(227, 235, 237)
 - background behind "Cost: For a group of 10, the cost is $24": rgb(242, 245, 247), live rgb(227, 235, 237)
 - background behind "We provide a cooler full of Gatorade for": rgb(242, 245, 247), live rgb(227, 234, 236)
-- background behind "Plus, if you have a birthday kiddo in th": rgb(242, 245, 247), live rgb(227, 235, 237)
+- background behind "Plus, if you have a birthday kiddo in th": rgb(242, 244, 247), live rgb(227, 235, 237)
 - background behind "We want kids to have a blast, making mem": rgb(242, 246, 248), live rgb(227, 235, 237)
 - background behind "You can begin the booking process on our": rgb(242, 245, 247), live rgb(21, 21, 20)
 - band color beside "WELCOME TO THE PREMIER": rgb(7, 6, 11), live rgb(2, 10, 40)
@@ -7257,7 +7251,7 @@ Total differences: 7913
 - background behind "My ninja journey includes winning the 20": rgb(242, 245, 247), live rgb(255, 255, 255)
 - background behind "At the gym, I primarily teach the Interm": rgb(242, 245, 248), live rgb(255, 255, 255)
 - background behind "Outside the gym, I love my wife, Nintend": rgb(242, 245, 247), live rgb(255, 255, 255)
-- background behind "I love meeting new people and growing ou": rgb(242, 245, 247), live rgb(255, 255, 255)
+- background behind "I love meeting new people and growing ou": rgb(242, 244, 247), live rgb(255, 255, 255)
 - heading "JONNY": looks different from live (pixel difference 54)
 - heading "CO-OWNER | ADULT OCR COACH | INTERMEDIAT": looks different from live (pixel difference 43)
 - photo hero: brightness 61, live 93 (overlay or exposure differs)
@@ -7593,7 +7587,7 @@ Total differences: 7913
 - background behind "WHY WARRIOR SPORTS PERSONAL TRAINING WOR": rgb(242, 246, 248), live rgb(226, 236, 237)
 - background behind "At Warrior Sports, personal training is ": rgb(242, 246, 248), live rgb(227, 235, 237)
 - background behind "It’s a conversation and a challenge all ": rgb(242, 245, 248), live rgb(227, 235, 237)
-- background behind "Here’s how we’re different:": rgb(242, 246, 248), live rgb(227, 235, 237)
+- background behind "Here’s how we’re different:": rgb(242, 246, 249), live rgb(227, 235, 237)
 - band color beside "PERSONAL TRAINING AT WARRIOR SPORTS": rgb(6, 6, 6), live rgb(21, 17, 18)
 - band color beside "WHY WARRIOR SPORTS PERSONAL TRAINING WOR": rgb(242, 246, 249), live rgb(227, 235, 237)
 - band color beside "At Warrior Sports, personal training is ": rgb(242, 246, 249), live rgb(227, 235, 237)
@@ -8054,18 +8048,18 @@ Total differences: 7913
 
 ## Notes
 
-Gate v2.8. Model: Grok 4.7. The live map, the scripts, the tolerances, and PIXEL_TOL were not edited. No allow entries were added. No other page's count went up.
+Gate v2.8, round 8. Model: Grok 4.7. The live map, the scripts, the tolerances, and PIXEL_TOL were not edited. No allow entries were added. No other page's count went up.
 
-Before, on this machine, commit a006990 measured 7,947 differences: home 10/10/4, about 7/7/4, kids-classes 3/3/5 (1920/1280/390). The dispatch measured that commit on the Vercel preview as home 10/10/5, about 7/7/4, kids-classes 3/3/5. After, this build measures 7,913. Home is 3/3/0, about is 2/2/2, and kids-classes is 2/2/3. The Vercel preview of this commit measured the same three pages, with the same 19 lines.
+Before, on this machine, commit e8050b0 measured 7,913 differences: home 3/3/0, about 2/2/2, kids-classes 2/2/3 (1920/1280/390). The dispatch measured that commit on the Vercel preview as home 0/0/0, about 0/0/1, kids-classes 2/2/1. After, this build measures 7,907. Home is 3/3/0, about is 2/2/1, and kids-classes is 0/0/2.
 
-Font sizes are live's exact sizes: testimonials 16px, "We believe in results" 16px, the home offers paragraph 16px, the home hero paragraph 20px, "REACH YOUR FUN AND FITNESS GOALS" 30px, Kids Classes body 16px, and the About "looks forward" paragraph 16px. Letter spacing was not changed. The grey flag band on About runs past the photo, edge to edge. The home partner band is the live navy. Footer white on home and about matches the live band height. At 390 the Kids Classes heading starts below the trust bar, and the phone link is not covered.
+The live line breaks are restored. Kids Classes intro has one break before "Our experienced coaches". The Note paragraph has one break before "of the other weeks!". The Community Murph paragraph has two breaks after the Community Murph link and one trailing break after "Stronger, together." The Memorial Day sentence stays in that paragraph.
 
-The Memorial Day sentence is visible in the Community Murph paragraph. Paragraph links stay rgb(219, 58, 52) with no underline.
+The four font files are the live variable faces (Epilogue v20, Heebo v28, Muli v34, Muli v34 italic), each declared as the weight range that page uses, with the latin unicode-range. font-display is swap. Nothing preloads them.
 
-The lines still open are wraps. Each block is already live's size, width, and letter-spacing, and the self-hosted font breaks one line off live. Size and letter-spacing were not changed to force the wrap.
+The lines still open on this machine are wraps at live's size, width, and letter-spacing. Round 7's preview measurement did not count these. Size and letter-spacing were not changed to force the wrap.
 
-- Home and about testimonials, 1920 and 1280: "We had our son's 10th birthday" is 5 lines, live 4. "My daughter started training" is 7 lines, live 6. Both are Muli 16px, width 513, letter-spacing 0.
-- Home, 1920 and 1280: "We believe in results" is 3 lines, live 2. Epilogue 16px, width 597, letter-spacing 0.
-- Kids Classes, 1920 and 1280: "Springfield Warrior Sports has the perfect solution" is 4 lines, live 5. "Note: The last week of the month" is 3 lines, live 4. Both are Epilogue 16px, width 1070, letter-spacing 0.
-- About, 390: the 2016 James River paragraph is 19 lines, live 18. "Springfield Warrior Sports looks forward" is 22 lines, live 23. Both are Epilogue 16px, width 338, letter-spacing 0.
-- Kids Classes, 390: the intro paragraph is 13 lines, live 14. The preschool paragraph is 9 lines, live 8. The parkour paragraph is 14 lines, live 13. All three are Epilogue 16px, width 338, letter-spacing 0.
+- Home, 1920 and 1280: "We believe in results" is 3 lines, live 2. The two testimonials are 5 lines, live 4, and 7 lines, live 6. Home at 390 matches.
+- About, 1920 and 1280: the same two testimonials. About at 390: the 2016 James River paragraph is 19 lines, live 18. The Community Murph paragraph now matches.
+- Kids Classes at 1920 and 1280 matches. At 390 the preschool paragraph is 9 lines, live 8, and the parkour paragraph is 14 lines, live 13. The intro and the Note paragraph now match.
+
+Paragraph links stay rgb(219, 58, 52) with no underline.

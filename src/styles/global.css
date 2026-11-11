@@ -3,96 +3,40 @@
 @source "../layouts";
 @source "../pages";
 
+/* Live's variable files, each as the weight range that page declares.
+   unicode-range is live's latin set. U+0-FF is the same range as live's U+0000-00FF;
+   the CSS minifier turns the U+0000 form into an invalid "U+??". */
+@font-face {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 300 900;
+  font-display: swap;
+  src: url("../assets/fonts/epilogue-v20.woff2") format("woff2");
+  unicode-range: U+0-FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 300 900;
+  font-display: swap;
+  src: url("../assets/fonts/heebo-v28.woff2") format("woff2");
+  unicode-range: U+0-FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
 @font-face {
   font-family: "Muli";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 400 800;
   font-display: swap;
-  src: url("../assets/fonts/mulish-400.woff2") format("woff2");
+  src: url("../assets/fonts/muli-v34.woff2") format("woff2");
+  unicode-range: U+0-FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 @font-face {
   font-family: "Muli";
-  font-style: normal;
-  font-weight: 700;
+  font-style: italic;
+  font-weight: 400 800;
   font-display: swap;
-  src: url("../assets/fonts/mulish-700.woff2") format("woff2");
-}
-@font-face {
-  font-family: "Muli";
-  font-style: normal;
-  font-weight: 800;
-  font-display: swap;
-  src: url("../assets/fonts/mulish-800.woff2") format("woff2");
-}
-@font-face {
-  font-family: "Heebo";
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-  src: url("../assets/fonts/heebo-300.woff2") format("woff2");
-}
-@font-face {
-  font-family: "Heebo";
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("../assets/fonts/heebo-400.woff2") format("woff2");
-}
-@font-face {
-  font-family: "Heebo";
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url("../assets/fonts/heebo-600.woff2") format("woff2");
-}
-@font-face {
-  font-family: "Heebo";
-  font-style: normal;
-  font-weight: 800;
-  font-display: swap;
-  src: url("../assets/fonts/heebo-800.woff2") format("woff2");
-}
-@font-face {
-  font-family: "Heebo";
-  font-style: normal;
-  font-weight: 900;
-  font-display: swap;
-  src: url("../assets/fonts/heebo-900.woff2") format("woff2");
-}
-@font-face {
-  font-family: "Epilogue";
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-  src: url("../assets/fonts/epilogue-300.woff2") format("woff2");
-}
-@font-face {
-  font-family: "Epilogue";
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("../assets/fonts/epilogue-400.woff2") format("woff2");
-}
-@font-face {
-  font-family: "Epilogue";
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url("../assets/fonts/epilogue-500.woff2") format("woff2");
-}
-@font-face {
-  font-family: "Epilogue";
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url("../assets/fonts/epilogue-600.woff2") format("woff2");
-}
-@font-face {
-  font-family: "Epilogue";
-  font-style: normal;
-  font-weight: 800;
-  font-display: swap;
-  src: url("../assets/fonts/epilogue-800.woff2") format("woff2");
+  src: url("../assets/fonts/muli-v34-italic.woff2") format("woff2");
+  unicode-range: U+0-FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @theme {
