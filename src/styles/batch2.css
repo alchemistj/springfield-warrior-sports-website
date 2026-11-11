@@ -368,7 +368,7 @@
 .bd-mem-photo { display: none; }
 
 /* Schedule */
-.bd-steps { padding: 72px 0 220px; }
+.bd-steps { padding: 100px 0 90px; }
 .bd-steps-p,
 .bd-req {
   color: rgba(0, 0, 0, 0.7);
@@ -926,7 +926,7 @@
   .bd-battles h3 + h4 { margin-top: 10px; }
   .wnl-form ol { margin-left: 26px; }
   .page-birthday-parties .b2-block.b2-grey { padding-bottom: 24px; }
-  .bd-steps { padding-bottom: 24px; }
+  .bd-steps { padding: 72px 0 24px; }
   .page-schedule-birthday-party .b2-grey { background-image: none; }
   .contact-grid { padding-top: 24px; padding-bottom: 24px; }
   .page-wnl-competitions .wnl-form { padding-top: 80px; padding-bottom: 24px; }
@@ -1046,6 +1046,7 @@
   .wnl-top { display: flex; flex-direction: column; align-items: stretch; }
   .wnl-intro { width: 100%; }
   .wnl-fact .b2-fact-text { font-size: 16px; line-height: 19px; }
+  .wnl-form li { line-height: 32px; padding-bottom: 0; margin-bottom: 8px; }
 
   .contact-copy h2 { font-size: 32px; line-height: 38px; }
   .contact-photos img { width: 348px; height: auto; margin-bottom: 16px; }
