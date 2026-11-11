@@ -14,7 +14,10 @@ if (!base || !outDir) {
   process.exit(2);
 }
 const widths = (widthArgs.length ? widthArgs : ["1920", "1280", "390"]).map(Number);
-const pages = JSON.parse(readFileSync(new URL("../../source/pages.json", import.meta.url), "utf8"));
+const only = (process.env.PAGES || "").split(",").filter(Boolean);
+const pages = JSON.parse(readFileSync(new URL("../../source/pages.json", import.meta.url), "utf8")).filter(
+  (p) => !only.length || only.includes(p.slug),
+);
 const UA =
   "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36";
 
@@ -57,7 +60,19 @@ function collect() {
       color: cs.color,
       align: cs.textAlign,
       transform: cs.textTransform,
+      spacing: cs.letterSpacing === "normal" ? 0 : Math.round(parseFloat(cs.letterSpacing) * 10) / 10,
     };
+  };
+  // Background a visitor sees behind an element: the nearest ancestor with a solid color or an image.
+  const behind = (el) => {
+    for (let n = el; n && n !== document.documentElement; n = n.parentElement) {
+      const cs = getComputedStyle(n);
+      if (cs.backgroundImage && cs.backgroundImage !== "none" && !cs.backgroundImage.startsWith("linear-gradient(rgba(0, 0, 0, 0)")) return "image";
+      const bg = cs.backgroundColor;
+      const alpha = bg.startsWith("rgba") ? Number(bg.split(",")[3]) : 1;
+      if (alpha > 0.5) return bg;
+    }
+    return "rgb(255, 255, 255)";
   };
   const region = (el) => (el.closest("header, [data-region=header], #tve_header_wrapper, .thrv_header") ? "header" : el.closest("footer, [data-region=footer], .thrv_footer, #tve_footer_wrapper") ? "footer" : "main");
   const INLINE = new Set(["inline", "contents"]);
@@ -109,6 +124,7 @@ function collect() {
         item = { kind: "bgimage", src: hero ? "hero" : m[1] };
       }
     }
+    if (item && (item.kind === "heading" || item.kind === "text")) item.behind = behind(el);
     if (item && shown(el)) {
       items.push({ ...item, region: region(el), ...box(el) });
       els.push(el);

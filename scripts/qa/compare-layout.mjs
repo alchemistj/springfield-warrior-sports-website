@@ -88,6 +88,8 @@ function styleDiffs(l, b, label) {
   if (l.size && Math.abs(l.size - b.size) > TOL.size) out.push(`${label}: size ${b.size}px, live ${l.size}px`);
   if (l.weight && Math.abs(l.weight - b.weight) >= TOL.weight) out.push(`${label}: weight ${b.weight}, live ${l.weight}`);
   if (l.color && colorDiff(l.color, b.color) > TOL.color) out.push(`${label}: color ${b.color}, live ${l.color}`);
+  if (l.spacing !== undefined && b.spacing !== undefined && Math.abs(l.spacing - b.spacing) > 1)
+    out.push(`${label}: letter spacing ${b.spacing}px, live ${l.spacing}px`);
   if (l.align && b.align && l.align !== b.align && !(l.align === "start" && b.align === "left") && !(l.align === "left" && b.align === "start"))
     out.push(`${label}: align ${b.align}, live ${l.align}`);
   return out;
@@ -166,6 +168,20 @@ for (const width of readdirSync(liveDir).sort((a, b) => Number(b) - Number(a))) 
         .filter((t) => norm(t).length > 20 && liveAll.includes(norm(t).slice(0, 60)) && !buildAll.includes(norm(t).slice(0, 60)))
         .forEach((t) => issues.push(`text hidden in build but visible on live: "${t.slice(0, 60)}"`));
       tx.pairs.forEach(([l, b]) => issues.push(...styleDiffs(l, b, `text "${l.text.slice(0, 30)}"`)));
+      // Background behind each heading and text block (catches a missing grey or blue band).
+      [...h.pairs, ...tx.pairs].forEach(([l, b]) => {
+        if (!l.behind || !b.behind) return;
+        const same = l.behind === "image" || b.behind === "image" ? l.behind === b.behind : colorDiff(l.behind, b.behind) <= TOL.color;
+        if (!same) issues.push(`background behind "${(l.text || "").slice(0, 40)}": ${b.behind}, live ${l.behind}`);
+      });
+      // Vertical rhythm: the gap from each heading to the next must be close to live
+      // (catches squeezed or missing section padding).
+      const hp = h.pairs.filter(([l, b]) => b.text && l.text);
+      for (let i = 1; i < hp.length; i++) {
+        const lg = hp[i][0].y - hp[i - 1][0].y, bg = hp[i][1].y - hp[i - 1][1].y;
+        if (lg > 0 && Math.abs(lg - bg) > Math.max(48, lg * 0.25))
+          issues.push(`spacing from "${hp[i - 1][0].text.slice(0, 30)}" to "${hp[i][0].text.slice(0, 30)}": ${bg}px, live ${lg}px`);
+      }
       // Covered: visible on live, but something sits on top of it in the build.
       [...h.pairs, ...tx.pairs, ...bt.pairs].forEach(([l, b]) => {
         if (b.covered && !l.covered) issues.push(`covered by another element: "${(l.text || "").slice(0, 50)}"`);
