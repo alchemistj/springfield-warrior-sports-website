@@ -34,6 +34,12 @@ Batch 1 passed gate v1 at 0 differences on home, about and kids-classes. Claude 
 - **Pixels behind each matched heading, text block and photo** must look like live. This catches a wrong photo crop and dark text on a dark photo. Example: home "Be an Everyday Warrior" has the photo zoomed over the text, at pixel difference 117–176 against a limit of 38. The Parkour and Personal Training card crops also differ.
 - **Covered text** (another element on top of it) is flagged.
 - **Hidden text:** text a visitor can't see anywhere on the build page, but that live shows, is flagged. **Never hide words to pass a check.** If the gate looks wrong, report it instead. (Batch 1 hid the About Memorial Day paragraph. The real cause was the gate: live puts that text in the same paragraph as the one before it, and v2 compared only the first 80 characters. Fixed in v2.1.)
+- **v2.7–v2.8 (11 Nov, after round 6):** round 6 measured 0 on v2.6 at 1920 and 1280, but on the preview the Kids Classes heading box covers the trust bar's phone number at 390, the home "offers" paragraph is 17px (live 16px) and wraps to an extra line, and the About flag band is visibly shorter. Cursor's report that the full-page screenshot paints the Call bar over "ARE YOU LOOKING…" was right. Now:
+  - **Font size must equal live** (was ±2px).
+  - **Fixed bars in the bottom half** (Call bar, reCAPTCHA badge) are hidden before the full-page screenshot.
+  - **Covered check** samples the top, middle and bottom of each block, and flags covered text that exists only in the build.
+  - **Band heights.** The left page margin is read top to bottom. Runs of a real page background color are matched to the build's same-colored band nearest the same spot, and each height must be within max(24px, 10%).
+  - Round 6 on v2.8: home 10 / 10 / 5, about 7 / 7 / 4, kids-classes 3 / 3 / 5 (1920 / 1280 / 390).
 - **v2.6 (11 Nov, after round 5):** round 5 measured 0 on v2.5, but on the preview, at full size, About was visibly shorter, Kids Classes at 390 looked letter-spaced, and paragraph links were underlined. v2.6 adds:
   - **Rendered line count.** Lines are counted from the text itself, not the box height (padding caused false alarms). Only paragraphs of 30+ characters are checked.
   - **Letter spacing within ±0.2px** (was ±1). Round 5 had 0.4–1px added to body text and 0.6px to the home card headings, where live is 0, which rewraps lines.
