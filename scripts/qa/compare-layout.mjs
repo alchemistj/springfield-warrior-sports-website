@@ -169,12 +169,15 @@ async function marginRuns(file) {
     cur = { y, h: 1, c: px };
     runs.push(cur);
   }
-  // Merge runs split by a few noisy pixels inside one band.
+  // Merge runs of the same color split by a gap of under 6px of noise; anything else ends a band.
   const out = [];
   for (const r of runs) {
+    if (r.h < 6) continue;
     const last = out[out.length - 1];
-    if (last && r.h < 6) { last.h += r.h; continue; }
-    if (last && Math.max(...r.c.map((v, i) => Math.abs(v - last.c[i]))) <= BG_TOL) { last.h += r.h; continue; }
+    if (last && r.y - (last.y + last.h) < 6 && Math.max(...r.c.map((v, i) => Math.abs(v - last.c[i]))) <= BG_TOL) {
+      last.h = r.y + r.h - last.y;
+      continue;
+    }
     out.push({ ...r });
   }
   return out;
@@ -364,7 +367,12 @@ for (const width of readdirSync(liveDir).sort((a, b) => Number(b) - Number(a))) 
         // v2.8: full-width band heights. Read the left page margin top to bottom, keep runs of one
         // flat color at least 40px tall, and match live's runs in order (the build may have extra
         // runs, such as the trust bar). Each matched band's height must be within max(24px, 10%).
-        const [lr, br] = await Promise.all([marginRuns(livePng), marginRuns(buildPng)]);
+        // Only runs whose color is a real background color on the page (not a photo that
+        // happens to be flat for a stretch) count as bands.
+        const bgColors = (live.bands || []).map((b) => parseColor(b.bg));
+        const isBg = (c) => bgColors.some((d) => Math.max(...c.map((v, i) => Math.abs(v - d[i]))) <= BG_TOL);
+        const [lr0, br] = await Promise.all([marginRuns(livePng), marginRuns(buildPng)]);
+        const lr = lr0.filter((r) => isBg(r.c));
         let k = 0;
         for (const run of lr) {
           if (run.h < 40) continue;
