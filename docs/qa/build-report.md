@@ -776,6 +776,33 @@ Lines left that disagree with a full-size look, with live’s values:
 - Photo brightness is unchanged: IMG_2344 96 against 138, IMG_2347 76 against 124, IMG_2343 106 against 148. Same files, no overlay added.
 - Parkour at 390: the gap from “Plus, your first class…” to “PARKOUR BENEFITS” is 139px against 255px, and “Parkour offers an enjoyable…” is 8 lines against 7. Desktop row spacing matches the live 100px image gap.
 
+## Layout parity batch 3, round 3, gate v2.18
+
+Model: Grok 4.7. Measured locally against `docs/qa/layout-map/live`. The live map, the scripts, the tolerances, and `layout-allow.json` were not edited. No allow entries were added. The before column is the round 2 count on `efbf429`.
+
+| Page | Before 1920 / 1280 / 390 | After 1920 / 1280 / 390 |
+|---|---|---|
+| fitness-classes | 10 / 11 / 14 | 5 / 6 / 14 |
+| personal-training | 10 / 12 / 35 | 10 / 12 / 35 |
+| parkour | 5 / 6 / 12 | 5 / 5 / 12 |
+| homeschool-sports-and-classes-springfield-mo | 7 / 5 / 19 | 7 / 5 / 19 |
+| laser-tag | 0 / 0 / 15 | 0 / 0 / 15 |
+| nerf-wars | 12 / 10 / 13 | 12 / 10 / 13 |
+
+Total differences: 196 before, 185 after. Birthday-parties is still 2 / 1 / 13, and contact is still 0 / 0 / 2.
+
+The OCR card photos use live’s clipped frame, not the image file’s 413px height. `.tve_image_frame` is `height: 288.855px` with `overflow: hidden` from 1024px up. The first photo is shifted `-54px` and the second `-15px`. Measured frames: 288.8×546 at 1920 and 1280. At 390 the frame is `height: 100%`, so the photo is the aspect-ratio box, 249×332. The paragraph above the cards stays visible (11px gap).
+
+The parkour flags photo uses the same pattern. The frame is `height: 600px` from 768px up, and the image inside is shifted `-32px`. Measured frame: 600×563 at 1920 and 1280. At 390 the frame is not clipped; the photo is 451×338, above the copy. Live’s saved map still records the inner `<img>` at 750px, which is the unclipped element inside that 600px frame.
+
+The OCR heading-spacing line at 1920 and 1280 is gone. The parkour 390 wrap is unchanged (8 lines against 7): that photo was already the unclipped aspect height.
+
+Lines left that disagree with the saved map, with live’s values:
+
+- “- Client”, “$20 Drop-In” alignment, the nerf hero sample, and the homeschool Availability gap stay as previously ruled.
+- IMG_2344 pixel difference is 39. Same file, no overlay. The compared region is now the 288.855px frame.
+- Parkour’s gap from “Plus, your first class…” to “PARKOUR BENEFITS” is 252px against the map’s 341px, and the temporary-update heading to “PARKOUR BENEFITS” is 911px against 1041px. The visible frame is live’s 600px. The map’s 341px gap follows the 750px image element inside the frame.
+
 ## Open questions
 
 - Where GF18 should live, if it should be a page at all.

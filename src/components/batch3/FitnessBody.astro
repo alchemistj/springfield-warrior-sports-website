@@ -52,7 +52,9 @@ const prices = [
     <p class="body16">OCR fitness classes take the <a class="b3-link" href="/best-gyms-in-springfield/">best of the traditional gym</a> experience and add an extra layer of excitement. By incorporating a variety of obstacles into each class, participants are able to get creative with their workouts and challenge themselves in ways they wouldn’t be able to in a regular gym setting. This helps keep motivation levels high and provides an outlet for those looking for something different than the typical exercise bike or treadmill routine.</p>
     <div class="fit-cards">
       <article>
-        {one.src && <img src={one.src} alt="" width={one.width} height={one.height} loading="lazy" decoding="async" />}
+        <div class="fit-shot">
+          {one.src && <img src={one.src} alt="" width={one.width} height={one.height} loading="lazy" decoding="async" />}
+        </div>
         <div class="pad">
           <h3>OCR Fitness Class<br />Benefits</h3>
           <p>The benefits of OCR fitness classes extend far beyond just physical exercise; it also provides many mental health benefits as well. The unique challenges presented by each obstacle help boost confidence levels by teaching participants how to problem-solve on their feet and push their limits further than they thought possible.</p>
@@ -60,7 +62,9 @@ const prices = [
         </div>
       </article>
       <article class="soft">
-        {two.src && <img src={two.src} alt="" width={two.width} height={two.height} loading="lazy" decoding="async" />}
+        <div class="fit-shot">
+          {two.src && <img src={two.src} alt="" width={two.width} height={two.height} loading="lazy" decoding="async" />}
+        </div>
         <div class="pad">
           <h3>Short-Term Goals and<br />Long-Term Gains</h3>
           <p>OCR training has been proven to improve overall physical health as well as strength, agility, balance, coordination, endurance, and speed - all essential components needed for any type of longevity goal, athletic activity, or sport.</p>

@@ -23,7 +23,9 @@ const gym = "https://square.link/u/GmmQ7iuL";
         <p>Plus, your first class is only $5 Dollars – so you can see if this is right for you at an affordable price point.<br /><br /><strong class="b3-redlink">When:</strong><br /><strong>Beginner: </strong>Wednesdays 6-7pm<br /><strong>Intermediate: </strong>Wednesdays 7-8pm</p>
         <a class="b3-btn navy" href={trial}>Try a class for $5</a>
       </div>
-      {intro.src && <img src={intro.src} alt="" width={intro.width} height={intro.height} loading="lazy" decoding="async" />}
+      <div class="pk-shot">
+        {intro.src && <img src={intro.src} alt="" width={intro.width} height={intro.height} loading="lazy" decoding="async" />}
+      </div>
     </div>
   </div>
 </section>
