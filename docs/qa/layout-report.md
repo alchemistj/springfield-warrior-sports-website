@@ -8152,7 +8152,7 @@ Total differences: 8009
 
 Gate v2.10, round 10. Model: Grok 4.7. The live map, the scripts, the tolerances, and PIXEL_TOL were not edited. No allow entries were added. No page outside home, about, and kids-classes went up. Contact at 390 reads 47 instead of 51 because the map image did not load in this capture (Show map, the map photo, and the OpenStreetMap line). Those four lines are the map facade. A second capture missed them the same way. The footer change does not touch the map.
 
-Before is this machine's measurement of commit 5025925 (round 9 source on gate v2.10): 8,000 differences. Home 4/4/0, about 3/2/1, kids-classes 0/0/2 (1920/1280/390). After is 8,009. Home is 7/9/3, about is 4/2/1, and kids-classes is 0/0/3.
+Before is this machine's measurement of commit 5025925 (round 9 source on gate v2.10): 8,000 differences. Home 4/4/0, about 3/2/1, kids-classes 0/0/2 (1920/1280/390). After is 8,009. Home is 7/9/3, about is 4/2/1, and kids-classes is 0/0/3. The Vercel preview of this commit, measured from this machine, is the same: home 7/9/3, about 4/2/1, kids-classes 0/0/3.
 
 The checker strips are gone. Each hero uses one full-width overlay and the live photo placement.
 

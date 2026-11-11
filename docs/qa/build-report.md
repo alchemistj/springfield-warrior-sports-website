@@ -519,7 +519,7 @@ Lighthouse mobile on the local preview, after this batch. Order is performance /
 
 Model: Grok 4.7. Gate v2.10 reads band runs at both page margins on desktop. The live map, the scripts, the tolerances, and `PIXEL_TOL` were not edited. The report is `docs/qa/layout-report.md`. No allow entries were added.
 
-Before is this machine's measurement of `5025925` (round 9 source on gate v2.10): 8,000 differences. After is 8,009. Home is 7/9/3, about is 4/2/1, and kids-classes is 0/0/3 (1920/1280/390). No page outside those three went up. Contact at 390 reads 47 instead of 51 because the map image did not load in this capture. Those four lines are the map facade, and a second capture missed them the same way.
+Before is this machine's measurement of `5025925` (round 9 source on gate v2.10): 8,000 differences. After is 8,009. Home is 7/9/3, about is 4/2/1, and kids-classes is 0/0/3 (1920/1280/390). The Vercel preview of this commit, measured from this machine, is the same: home 7/9/3, about 4/2/1, kids-classes 0/0/3. No page outside those three went up. Contact at 390 reads 47 instead of 51 because the map image did not load in this capture. Those four lines are the map facade, and a second capture missed them the same way.
 
 The home, about, and kids hero overlays are live's own CSS: one full-width layer each, photos at cover and 50% 50%. Home is `linear-gradient(270deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.85) 61%)`. About is a flat `rgba(0, 0, 0, 0.5)`. Kids Classes has no overlay. The edge strips, partial overlays, and the fun-band box-shadow are gone. The lines that remain are listed in `docs/qa/layout-report.md`. They are the hero pixels the live gradient and photo produce, and the same wraps as round 8. I did not paint over them.
 
