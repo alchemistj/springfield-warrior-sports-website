@@ -80,12 +80,12 @@ const icon = media("media/2023-03-qoute-icon.webp");
     .t-quote:nth-child(2) {
       position: absolute;
       left: 39px;
-      top: 900px;
+      top: calc(100% + 10px);
       grid-column: auto;
       grid-row: auto;
       width: 272px;
     }
-    .t-quote.rest { left: 39px; width: 272px; }
+    .t-quote.rest { left: 39px; top: calc(100% + 10px); width: 272px; }
     .t-quote p { width: 282px; }
     .t-quote:nth-child(n + 2) p,
     .t-quote.rest p { width: 272px; }

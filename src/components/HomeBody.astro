@@ -157,7 +157,7 @@ const quotes = [
   </div>
 </section>
 
-<section class="section">
+<section class="section mist">
   <div class="wrap">
     <h2 class="t-title">CLIENT TESTIMONIALS</h2>
     <h3 class="t-sub">WHAT OUR CLIENTS SAY</h3>
@@ -368,9 +368,11 @@ const quotes = [
       margin: 0;
     }
     .program-card.parkour img,
-    .program-card.gyms img { object-fit: cover; }
+    .program-card.gyms img,
+    .program-card.hs img { object-fit: cover; }
     .program-card.parkour img { height: 384px; object-position: 15% 100%; }
     .program-card.gyms img { height: 272px; object-position: 20% 100%; }
+    .program-card.hs img { height: 300px; object-position: center 88%; }
     .program-card h3 { font-size: 30px; }
     .program-card .btn { width: 491px; font-size: 16px; }
     .everyday {
@@ -403,6 +405,7 @@ const quotes = [
     .friction { width: 135px; }
   }
   @media (max-width: 799px) {
+    .everyday { margin-top: 137px; }
     .program-card { display: block; width: 100%; min-width: 0; }
     .program-card > div {
       width: 300px;

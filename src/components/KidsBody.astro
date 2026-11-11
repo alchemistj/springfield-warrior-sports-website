@@ -82,7 +82,7 @@ const trial = "https://checkout.square.site/merchant/MLXTPBS97BGYV/checkout/B2M6
   </div></div>
 </section>
 
-<section class="section kids">
+<section class="section kids parkour-block">
   <div class="wrap"><div class="row text-first">
     <div class="copy">
       <h2 class="red h50 w226">PARKOUR</h2>
@@ -125,7 +125,7 @@ const trial = "https://checkout.square.site/merchant/MLXTPBS97BGYV/checkout/B2M6
   </div>
 </section>
 
-<section class="section kids">
+<section class="section kids mist">
   <div class="wrap">
     <h2 class="red h50 center forget">AND …. DON’T FORGET ABOUT SUMMER CAMPS, OPEN GYM, AND BIRTHDAY PARTIES!</h2>
   </div>
@@ -275,6 +275,8 @@ const trial = "https://checkout.square.site/merchant/MLXTPBS97BGYV/checkout/B2M6
     .summer { width: 179px; }
     .bday { width: 197px; }
     .day { width: 135px; }
+    .intro { margin-bottom: 199px; }
+    .parkour-block { margin-top: -73px; }
     .row { align-items: center; margin: 10px 0; }
     .row.img-first.wide-photo { grid-template-columns: 520px 561px; column-gap: 68px; }
     .row.img-first { grid-template-columns: 501px 561px; column-gap: 87px; }
@@ -301,7 +303,13 @@ const trial = "https://checkout.square.site/merchant/MLXTPBS97BGYV/checkout/B2M6
     .copy h2.thin { width: 100%; }
     .copy h2.w306, .copy h2.hs-times { width: 306px; }
     .copy h2.w446, .copy h2.w226 { width: fit-content; }
-    .intro { margin-top: 120px; }
+    .intro { margin-top: -28px; }
+    .intro > h2:first-child {
+      position: relative;
+      z-index: 70;
+      background: #fff;
+    }
+    .row.text-first { display: flex; flex-direction: column-reverse; }
     .camp-card.day {
       background-size: auto 150%;
       background-position: center 10%;

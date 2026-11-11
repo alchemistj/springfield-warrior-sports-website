@@ -29,7 +29,7 @@ const quotes = [
   <div class="wrap">
     <p class="lead">Springfield Warrior Sports was founded with a love for, and desire to serve our community. Community unites us, and allows us to be a part of something greater than ourselves. It provides an opportunity to connect with people and other local businesses, who when we all work together, make this the awesome community so many of us call home. We strive to provide a safe place and outlet - for youth, and adults, who are looking for a fun and different workout and the freedom to MOVE as they set and achieve their goals on their quest for a healthy lifestyle. We also love going out into the community to serve outside of our walls, through adopt-a-highway, partnering with local events and speaking at school assemblies. We are most certainly, Stronger Together!</p>
 
-    <div class="row photo-left">
+    <div class="row photo-left mist">
       <img loading="lazy" decoding="async" src={gym.src} alt="About our gym" width={gym.width} height={gym.height} />
       <div class="copy">
         <h2 class="red h40 w438">CURIOUS ABOUT THE COLORS OF OUR GYM?</h2>
@@ -37,7 +37,7 @@ const quotes = [
       </div>
     </div>
 
-    <div class="row text-left">
+    <div class="row text-left cleanup">
       <div class="copy">
         <h2 class="red h50 w489">COMMUNITY ADOPT-A-HIGHWAY CLEAN UP DAYS</h2>
         <p>Springfield Warrior Sports is proud to help keep a little piece of our community, cleaner! We have adopted the highway on South Campbell, between Weaver and Plainview, near the gym. We love doing our part, and think it’s awesome that the Warrior Sports Crew, members, and friends can come together and be involved. It’s also a good time!! Thanks to Thrivent Financial for sponsoring the event and to Mid-Missouri Bank for allowing us to meet in your community room. We are truly, Stronger Together!</p>
@@ -79,7 +79,7 @@ const quotes = [
   </div>
 </section>
 
-<section class="section about-page">
+<section class="section about-page story">
   <div class="wrap">
     <p class="full">In 2016 we had the unique opportunity to work with James River Church planning their Ninja Warrior course that was a part of their Stronger Men’s Conference. Under Jason Huewe’s direction, Springfield Warrior Sports assisted with design and build of the course, running the West Campus competition, and securing athletes from across the country. We also held a local competition at the gym where the top 5 athletes secured their spot to compete on the course alongside the American Ninja Warriors who attended for their chance to win $5000! What a night, so much fun being a part of this collaboration and display of camaraderie with such inspiring individuals… each modeling that we are Stronger, one Obstacle at a time!</p>
     <div class="pair">
@@ -90,10 +90,14 @@ const quotes = [
       <img loading="lazy" decoding="async" src={murph.src} alt="Community Murph" width={murph.width} height={murph.height} />
       <div class="copy">
         <h2 class="blue h30 w296"><a href="https://www.facebook.com/communitymurph/">COMMUNITY MURPH</a></h2>
-        <p>Springfield Warrior Sports looks forward each year to bringing a team and participating in the local annual Community Murph!</p>
-        <p>Every year on Memorial Day, the Southwest Missouri community comes together to honor our fallen heroes. Funds are raised for local charities so that they can continue to provide support for these families. We are so encouraged to be a part of this event and have watched it continue to grow with this communities engagement - Nationwide, this event has raised millions of dollars for charities including the LT. Michael P. Murphy Memorial Scholarship Foundation (SEAL). It’s a grueling challenge, that brings people together to pay tribute and the tradition helps push us, humble us both mentally and physically and dedicate a bit of pain and sweat to honor a man who gave everything he had. We are… Stronger, together.</p>
+        <p>Springfield Warrior Sports looks forward each year to bringing a team and participating in the local annual Community Murph! Every year on Memorial Day, the Southwest Missouri community comes together to honor our fallen heroes. Funds are raised for local charities so that they can continue to provide support for these families. We are so encouraged to be a part of this event and have watched it continue to grow with this communities engagement - Nationwide, this event has raised millions of dollars for charities including the LT. Michael P. Murphy Memorial Scholarship Foundation (SEAL). It’s a grueling challenge, that brings people together to pay tribute and the tradition helps push us, humble us both mentally and physically and dedicate a bit of pain and sweat to honor a man who gave everything he had. We are… Stronger, together.</p>
       </div>
     </div>
+  </div>
+</section>
+
+<section class="section about-page mist">
+  <div class="wrap">
     <h2 class="red h50 block">CLIENT TESTIMONIALS</h2>
     <h3 class="thin block">WHAT OUR CLIENTS SAY</h3>
     <QuoteSlider quotes={quotes} />
@@ -194,7 +198,10 @@ const quotes = [
     .copy h2.w296 { width: 296px; }
     .p18 { font-size: 18px; }
     .row.photo-left { grid-template-columns: 520px 561px; column-gap: 68px; align-items: center; }
+    .row.photo-left.mist { margin-bottom: 155px; }
     .row.text-left { grid-template-columns: 561px 501px; column-gap: 88px; align-items: center; }
+    .row.cleanup { margin-bottom: 211px; }
+    .about-page.story { margin-top: 939px; }
     .wide { width: 1093px; margin-inline: auto; }
     .full { width: 100%; }
     .grid-2 { grid-template-columns: 534px 534px; gap: 25px; width: 1093px; margin-inline: auto; }
@@ -216,6 +223,7 @@ const quotes = [
     .lead, .copy p, .full, .wide { width: min(338px, 100%); }
     .lead { margin-inline: auto; }
     .wide { margin-inline: auto; }
+    .row.text-left { display: flex; flex-direction: column-reverse; }
     .row img { width: 300px; margin-left: 5px; }
     .grid-2 { grid-template-columns: 154px 154px; gap: 15px; width: fit-content; margin-inline: auto; }
     .grid-2 img { width: 154px; height: 131px; }

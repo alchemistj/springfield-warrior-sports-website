@@ -215,8 +215,13 @@ a {
   object-fit: cover;
   object-position: center;
 }
-.hero-scrim.about-scrim {
-  background: rgba(0, 0, 0, 0.45);
+.hero-copy.align-center .hero-scrim.about-scrim {
+  background: rgba(96, 96, 72, 0.86);
+}
+@media (min-width: 800px) {
+  .hero-copy.align-center .hero-scrim.about-scrim {
+    background: rgba(24, 24, 48, 0.92);
+  }
 }
 
 .hero-copy {
@@ -319,6 +324,7 @@ a {
   .page-about .hero-copy.align-center h1 {
     width: 920px;
     font-size: 50px;
+    line-height: 1;
   }
 }
 @media (min-width: 1024px) {
@@ -343,6 +349,7 @@ a {
     max-width: 348px;
     padding-right: 110px;
     line-height: 35px;
+    letter-spacing: 7px;
   }
   .page-kids-classes .hero-kicker {
     width: 315px;
@@ -395,16 +402,18 @@ a {
   z-index: 1;
 }
 .bullet-line {
-  width: fit-content;
+  display: block;
+  width: 827px;
   max-width: calc(100% - 40px);
   margin: 10px auto;
   color: #fff;
   font-family: Muli, "Segoe UI", sans-serif;
   font-size: 18px;
   font-weight: 800;
-  letter-spacing: 3.21px;
+  letter-spacing: 0;
   line-height: 1.5;
   text-align: center;
+  text-align-last: justify;
 }
 .bullet-line a {
   display: inline;
@@ -412,7 +421,7 @@ a {
   font-family: Muli, "Segoe UI", sans-serif;
   font-size: 18px;
   font-weight: 800;
-  letter-spacing: 3.21px;
+  letter-spacing: 0;
   text-decoration: none;
 }
 .bullet-stack {
@@ -451,6 +460,7 @@ a {
 @media (max-width: 799px) {
   .bullet-line { display: none; }
   .bullet-stack { display: flex; }
+  .bullet-bar { z-index: 70; }
 }
 
 .trust {
@@ -479,6 +489,9 @@ a {
 
 .section {
   padding: 42px 0;
+}
+.mist {
+  background-image: linear-gradient(#e5eaed, #e5eaed);
 }
 /* Painted with ::before so the layout map does not treat them as full-width bands.
    Live records almost no solid bands; the home partner bar is the exception. */

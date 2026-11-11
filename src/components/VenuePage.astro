@@ -274,7 +274,8 @@ function nextPhoto(): ContentImage | undefined {
   <div slot="hero" class:list={["hero-copy", hero ? `align-${heroAlign}` : "hero-plain", hero ? `tone-${heroTone}` : "", hero ? `hero-size-${heroSize}` : "", { bare: !showHeroText }]}>
     {hero && (showHeroText || aboutHero) && <div class:list={["hero-scrim", { "about-scrim": aboutHero }]} aria-hidden="true"></div>}
     <div class="hero-text">
-      {(showHeroText || aboutHero) && <h1>{page.h1}</h1>}
+      {aboutHero && <h1>SPRINGFIELD WARRIOR SPORTS<br />COMMUNITY</h1>}
+      {!aboutHero && (showHeroText || aboutHero) && <h1>{page.h1}</h1>}
       {page.slug === "home" && heroExtra[0] && <h2 class="hero-kicker">{heroExtra[0].text}</h2>}
       {page.slug === "home" && heroExtra[1] && <p class="hero-sub">{heroExtra[1].text}</p>}
       {page.slug === "kids-classes" && <h2 class="hero-kicker light-300">NINJA WARRIOR CLASSES FOR KIDS AND TEENS</h2>}

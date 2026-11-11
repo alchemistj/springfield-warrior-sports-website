@@ -190,7 +190,50 @@ Before is `docs/qa/layout-report-gate-v2.md` (8,239). After is 3,944. Home, abou
 
 Header and footer are measured on every page. Menu and utility links are Heebo 600 at the live sizes. The content column stays 1150px. The footer column is 1110px. Home "Be an Everyday Warrior" is a full-width background with the photo on the right. Testimonials show two at a time. Open Gym Hours uses the red heading and red clocks. "The best part?" is navy at weight 500. Parkour, Personal Training, and Best Gyms use the live crops.
 
-Allow entries are the trust bar, the Call and Book a Party buttons, Josh's Plainview Road wording, and the live United States address line this footer does not show. The Memorial Day paragraph stays in the about HTML for the copy test and is hidden, because it is not on the live page.
+Allow entries are the trust bar, the Call and Book a Party buttons, Josh's Plainview Road wording, and the live United States address line this footer does not show. The Memorial Day sentence is visible, in the same paragraph as the Community Murph sentence.
+
+Lighthouse mobile on the local preview, after this batch. Order is performance / accessibility / best practices / SEO.
+
+| Page | Score |
+|---|---|
+| Home | 98 / 100 / 100 / 100 |
+| About | 98 / 100 / 100 / 100 |
+| Kids classes | 99 / 100 / 100 / 100 |
+
+## Layout parity gate v2.2
+
+Model: Grok 4.7. Same compare command, against the recaptured v2.2 live map, with `scripts/qa/layout-allow.json`. The live map, the scripts, the tolerances, and `PIXEL_TOL` were not edited. The report is `docs/qa/layout-report.md`.
+
+Before is the v2.2 baseline in `docs/qa/layout-report-gate-v2.md` (4,314). After is 3,905. Home, about, and kids-classes are 0 at 1920, 1280, and 390. No other page's count went up. No allow entries were added.
+
+| Page | Before 1920 | 1280 | 390 | Total | After 1920 | 1280 | 390 | Total |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| about | 20 | 20 | 14 | 54 | 0 | 0 | 0 | 0 |
+| best-gyms-in-springfield | 189 | 190 | 108 | 487 | 182 | 183 | 106 | 471 |
+| birthday-parties | 98 | 98 | 49 | 245 | 92 | 92 | 47 | 231 |
+| competitions | 30 | 30 | 17 | 77 | 23 | 23 | 15 | 61 |
+| contact | 40 | 40 | 30 | 110 | 34 | 34 | 28 | 96 |
+| fitness-classes | 135 | 135 | 67 | 337 | 129 | 129 | 65 | 323 |
+| home | 16 | 16 | 13 | 45 | 0 | 0 | 0 | 0 |
+| homeschool-sports-and-classes-springfield-mo | 61 | 61 | 51 | 173 | 55 | 55 | 49 | 159 |
+| kids-classes | 9 | 9 | 8 | 26 | 0 | 0 | 0 | 0 |
+| laser-tag | 88 | 88 | 69 | 245 | 82 | 82 | 67 | 231 |
+| meet-the-team | 290 | 290 | 140 | 720 | 284 | 284 | 138 | 706 |
+| nerf-wars | 77 | 77 | 52 | 206 | 71 | 71 | 50 | 192 |
+| parkour | 107 | 106 | 54 | 267 | 101 | 100 | 52 | 253 |
+| personal-training | 208 | 208 | 78 | 494 | 202 | 202 | 76 | 480 |
+| registered | 9 | 9 | 7 | 25 | 3 | 3 | 5 | 11 |
+| registered-for-csna-competition | 10 | 10 | 6 | 26 | 4 | 4 | 4 | 12 |
+| registered-for-day-camps | 12 | 12 | 10 | 34 | 6 | 6 | 8 | 20 |
+| registered-for-summer-fun-competition | 10 | 10 | 8 | 28 | 4 | 4 | 6 | 14 |
+| registered-for-wnl-competition | 9 | 9 | 7 | 25 | 3 | 3 | 5 | 11 |
+| schedule-birthday-party | 27 | 27 | 15 | 69 | 21 | 21 | 13 | 55 |
+| summer-camps-in-springfield-mo | 172 | 172 | 133 | 477 | 166 | 166 | 131 | 463 |
+| thank-you-for-your-feedback | 9 | 9 | 7 | 25 | 3 | 3 | 5 | 11 |
+| wnl-competitions | 44 | 44 | 31 | 119 | 38 | 38 | 29 | 105 |
+| All pages | | | | 4314 | | | | 3905 |
+
+The shared black utility bar is 46px on desktop so the Contact, About, and Sign Our Waiver links sit on black. Footer CONTACT, QUICK LINKS, and the desktop copyright line are letter-spacing 2px. The home bullet bar is letter-spacing 0, justified to 827px. The mobile home kicker is letter-spacing 7px. Testimonials, the about colors section, and the kids summer-camps heading use the live band `#e5eaed` (rgb(229, 234, 237) from the rendered HTML). Section gaps on about and kids-classes follow the live heading spacing. The Memorial Day sentence is visible in the Community Murph paragraph.
 
 Lighthouse mobile on the local preview, after this batch. Order is performance / accessibility / best practices / SEO.
 
