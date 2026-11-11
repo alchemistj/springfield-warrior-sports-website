@@ -8500,7 +8500,7 @@ Total differences: 8357
 
 Gate v2.15, round 13. Model: Grok 4.7. The live map, the scripts, the tolerances, and PIXEL_TOL were not edited. No allow entries were added. v2.14 accepts a gap across the trust bar with or without the bar counted. v2.15 counts any flat run of 120px or more, so a gradient band is included.
 
-On v2.13 the round 12 pages were home 3/3/0, about 2/2/1, kids-classes 0/0/4, and the site total was 8,211. On v2.15, after this round, home is 3/3/0, about is 2/2/1, and kids-classes is 0/0/3. The site total is 8,357. The extra lines on the other pages are the new flat-run check on screenshots this round did not change. Home, about, and kids-classes did not gain a line. The Vercel preview is recorded after this commit is deployed.
+On v2.13 the round 12 pages were home 3/3/0, about 2/2/1, kids-classes 0/0/4, and the site total was 8,211. On v2.15, after this round, home is 3/3/0, about is 2/2/1, and kids-classes is 0/0/3. The site total is 8,357. The extra lines on the other pages are the new flat-run check on screenshots this round did not change. Home, about, and kids-classes did not gain a line. The Vercel preview of `a19d102` measures the same: home 3/3/0, about 2/2/1, kids-classes 0/0/3.
 
 The testimonials section uses live's padding, 90px on top and 80px on the bottom. Live's horizontal padding is 20px, which is already the content column's gutter. The background stays live's `linear-gradient(#e5eaed, #e5eaed)`. The slider's min-height is live's carousel box: home 401px from 800px up and 382px below, about 375px and 331px. Those are `--tcb-cwv-height-d` and `--tcb-cwv-height-m`.
 
