@@ -88,3 +88,20 @@ Routes, redirects, the `vercel.json` noindex header, forms logic (Central Forms,
 ## Report
 
 At the end of each batch, add to `docs/qa/build-report.md` the before and after totals per page at each width, the allow entries you added with reasons, and the Lighthouse mobile scores for home, about and kids-classes.
+
+
+## Batch 2 (from 11 Nov, after batch 1 passed)
+
+Batch 1 (home, about, kids-classes) passed gate v2.15 at 0 on the preview at 1920, 1280 and 390, and passed Claude's full-size review. Batch 2 pages: **birthday-parties, schedule-birthday-party, summer-camps-in-springfield-mo, competitions, wnl-competitions, contact.**
+
+Done means:
+- `compare-layout` shows 0 for each batch 2 page at 1920, 1280 and 390, **measured on the Vercel preview**, not only on localhost.
+- Batch 1 pages stay at 0, and no other page's total goes up.
+- Claude's full-size review at all three widths passes.
+
+What batch 1 taught (do these from the start):
+- **Use live's real CSS values** (computed styles): font family, size, weight, letter spacing, line height, colors including alpha, padding, margins, background position and size, overlay gradients, and carousel heights. Read them from live; don't tune them to the gate.
+- **Never paint to the checker:** no edge strips, odd-percentage stripes, partial overlays or box-shadow fills. If the gate still disagrees with real live CSS, report the line with live's values.
+- **Never hide words.** Keep live's `<br>` line breaks and inline links (color, weight, no underline unless live has one).
+- **Fonts:** the self-hosted live variable files are already in place; keep live's exact `font-family` stacks, including where live has no fallback.
+- **Forms** on these pages keep the Central Forms wiring (siteKey, formKeys, clientSubmissionId retry, thank-you redirects, host gate). Match the form's look to live; don't change its behavior.
