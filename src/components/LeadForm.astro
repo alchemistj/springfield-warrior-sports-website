@@ -57,9 +57,15 @@ function isMessage(field: FormField): boolean {
             const id = `${event.id}-child-${key}`;
             if (field.kind === "name") {
               return (
-                <div>
-                  <label for={id}>{field.label}</label>
-                  <input id={id} type="text" maxlength="200" data-child-field="name" required={field.required} />
+                <div class="name-row">
+                  <div>
+                    <label class="sr-only" for={id}>First Name</label>
+                    <input id={id} type="text" maxlength="100" data-child-field="name" required={field.required} autocomplete="given-name" />
+                  </div>
+                  <div>
+                    <label class="sr-only" for={`${id}-last`}>Last Name</label>
+                    <input id={`${id}-last`} type="text" maxlength="100" data-child-field="name" required={field.required} autocomplete="family-name" />
+                  </div>
                 </div>
               );
             }
@@ -81,7 +87,7 @@ function isMessage(field: FormField): boolean {
             return (
               <div>
                 <label for={id}>{field.label}</label>
-                <input id={id} type={field.kind === "date" ? "date" : "text"} data-child-field={key} required={field.required} />
+                <input id={id} type="text" placeholder={field.kind === "date" ? "mm/dd/yyyy" : undefined} data-child-field={key} required={field.required} />
               </div>
             );
           })}
@@ -116,11 +122,11 @@ function isMessage(field: FormField): boolean {
             <span class="label">{field.label}{field.required ? <span class="req"> *</span> : ""}</span>
             <div class="name-row">
               <div>
-                <input id={`${event.id}-first`} name="first" type="text" autocomplete="given-name" maxlength="100" required={field.required} placeholder="First Name" aria-label="First Name" data-role="first" />
+                <input id={`${event.id}-first`} name="first" type="text" autocomplete="given-name" maxlength="100" required={field.required} placeholder={event.id === "wnl" ? undefined : "First Name"} aria-label="First Name" data-role="first" />
                 <span class="sub">First</span>
               </div>
               <div>
-                <input id={`${event.id}-last`} name="last" type="text" autocomplete="family-name" maxlength="100" required={field.required} placeholder="Last Name" aria-label="Last Name" data-role="last" />
+                <input id={`${event.id}-last`} name="last" type="text" autocomplete="family-name" maxlength="100" required={field.required} placeholder={event.id === "wnl" ? undefined : "Last Name"} aria-label="Last Name" data-role="last" />
                 <span class="sub">Last</span>
               </div>
             </div>
@@ -162,13 +168,18 @@ function isMessage(field: FormField): boolean {
       }
       const role = field.label === "First Name" ? "first" : field.label === "Last Name" ? "last" : field.kind === "email" ? "email" : field.kind === "phone" ? "phone" : isMessage(field) ? "message" : "extra";
       const type = field.kind === "email" ? "email" : field.kind === "phone" ? "tel" : field.kind === "date" ? "date" : "text";
+      const campLabeled = new Set(["First Name", "Last Name", "Email", "Kids Name"]);
       const placeholder = camp
         ? field.kind === "phone"
           ? "(999) 999-9999"
-          : field.kind === "textarea" || field.kind === "select"
-            ? undefined
-            : field.label
-        : fieldPlaceholder(field.label, field.kind);
+          : campLabeled.has(field.label)
+            ? field.label
+            : undefined
+        : event.id === "wnl" || event.id === "csna"
+          ? field.kind === "phone"
+            ? "(999) 999-9999"
+            : undefined
+          : fieldPlaceholder(field.label, field.kind);
       const hide = hideLabels || (camp && (field.label === "First Name" || field.label === "Last Name" || field.label === "Email"));
       return (
         <div>
@@ -242,6 +253,7 @@ function isMessage(field: FormField): boolean {
       [...form.querySelectorAll<HTMLElement>("[data-child]")].map((row) => {
         const val = (key: string) => {
           const fields = [...row.querySelectorAll<HTMLInputElement>(`[data-child-field="${key}"]`)];
+          if (key === "name") return fields.map((field) => field.value.trim()).filter(Boolean).join(" ");
           const picked = fields.find((field) => field.type !== "radio" || field.checked);
           return picked?.value ?? "";
         };

@@ -641,24 +641,24 @@ Lighthouse mobile on the local preview, after this batch. Order is performance /
 | About | 97 / 92 / 100 / 100 |
 | Kids classes | 98 / 92 / 100 / 100 |
 
-## Layout parity batch 2, local gate v2.15
+## Layout parity batch 2, gate v2.17
 
-Model: Grok 4.7. The live map, the scripts, the tolerances, and `PIXEL_TOL` were not edited. No allow entries were added. Forms still use the Central Forms wiring (siteKey, formKeys, field names, retry id, thank-you redirects, host gate). The camp registration form is stacked to match the live Gravity Form: placeholders sit in the fields, and the date choices are two lines. The submitted choice value is unchanged.
+Model: Grok 4.7. The live map, the scripts, the tolerances, and `PIXEL_TOL` were not edited. No allow entries were added. Forms still use the Central Forms wiring (siteKey, formKeys, field names, retry id, thank-you redirects, host gate). Field chrome, placeholders, and the camp date boxes were matched to the v2.17 recapture. Lighthouse mobile was not re-run.
 
-Round 1 on the Vercel preview of `554a79e` used gate v2.15. Round 2 below is the local gate v2.17, which also counts form fields. The live maps in the repo do not contain fields yet, so every form page has one "form fields: N in build, live 0" line until those maps are recaptured.
+Round 1 on the Vercel preview of `554a79e` used gate v2.15. The addendum below is the local build against the v2.17 live maps (`c974818`).
 
-| Page | Round 1 preview 1920 / 1280 / 390 | Round 2 local v2.17 1920 / 1280 / 390 |
+| Page | v2.17 before this pass 1920 / 1280 / 390 | After 1920 / 1280 / 390 |
 |---|---|---|
-| birthday-parties | 3 / 2 / 26 | 3 / 2 / 18 |
-| schedule-birthday-party | 4 / 4 / 6 | 5 / 5 / 3 |
-| summer-camps-in-springfield-mo | 3 / 4 / 21 | 3 / 4 / 5 |
-| competitions | 0 / 0 / 11 | 1 / 1 / 8 |
-| wnl-competitions | 2 / 2 / 9 | 1 / 1 / 4 |
-| contact | 1 / 1 / 19 | 3 / 3 / 9 |
+| birthday-parties | 2 / 1 / 18 | 2 / 1 / 18 |
+| schedule-birthday-party | 33 / 33 / 32 | 2 / 2 / 1 |
+| summer-camps-in-springfield-mo | 53 / 54 / 83 | 0 / 1 / 1 |
+| competitions | 70 / 70 / 73 | 0 / 0 / 8 |
+| wnl-competitions | 40 / 40 / 34 | 0 / 0 / 1 |
+| contact | 6 / 6 / 13 | 0 / 0 / 2 |
 
-Home, about, and kids-classes were not restyled. Lighthouse mobile was not re-run.
+Home, about, and kids-classes were not restyled.
 
-At 1920 and 1280 the camps grey band matches, and "WNL REGIONAL QUALIFIERS" is one line. The contact address line is covered by the allow entry added in v2.16. Desktop lines left for a decision: the cancellation heading (3 lines against the pre-v2.16 live count of 5; the box is 105px against 106px), the birthday cost-to-guests gap (222px against 154px; the columns are live's 520 / 69 / 561), the book-now photo sample, and the quote line counts the new overlap grouping reads as 1 line against the older live maps. The 1280 camps hero sample beside "KIDS STAY FIT AND HEALTHY" is rgb(65, 77, 74) against live rgb(27, 46, 47).
+Lines left, with live's values: birthday cost-to-guests gap 222px against 154px (columns stay top-aligned; the image is 520×698 and the copy is 561px with a 69px gap); book-now sample rgb(23, 21, 19) against rgb(46, 30, 23); schedule quotes wrap one extra line at Muli 16px / line-height 26 / width 513; camps 1280 hero sample beside "KIDS STAY FIT AND HEALTHY" is rgb(65, 77, 74) against rgb(27, 46, 47); camps phone "Kids will get the chance" is 9 lines against 8; the WNL form title is 3 lines against 2 at Literata 24px, line-height 34, width 346; the shared header CONTACT and SIGN OUR WAIVER sit 5px to the right at 390. The competitions ice band at y=458 is still missing because the intro above it is white, which is live's margin color beside those paragraphs.
 
 ## Open questions
 
