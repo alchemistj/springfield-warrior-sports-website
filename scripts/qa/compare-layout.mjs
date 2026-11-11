@@ -113,6 +113,7 @@ function styleDiffs(l, b, label) {
 
 // Background and band colors from the screenshot (v2.5: was 40, missed a 14-off light grey band).
 const BG_TOL = 8;
+const PHOTO_BG_TOL = 24; // v2.11: background over a photo (re-encoded images shift dark tones)
 const PIXEL_TOL = 38; // mean absolute difference (0-255) over a 48x16 grayscale thumbnail of the region
 const pngMeta = new Map();
 async function meta(file) {
@@ -319,6 +320,9 @@ for (const width of readdirSync(liveDir).sort((a, b) => Number(b) - Number(a))) 
       // Pixels: the area behind each matched heading, text block and photo must look like live
       // (catches a wrong photo crop, a dark photo behind dark text, missing overlays).
       const shot = (dir) => [".png", ".jpg"].map((ext) => path.join(dir, width, `${slug}${ext}`)).find((f) => existsSync(f)) || "";
+      // Live hero photo area (first full-width photo near the top), used to relax color checks over it.
+      const heroItems = live.items.filter((i) => (i.kind === "image" || i.kind === "bgimage") && i.src === "hero");
+      const inHero = (r) => heroItems.some((hh) => r.y < hh.y + hh.h && r.y + (r.h || 0) > hh.y);
       const livePng = shot(liveDir);
       let buildPng = shot(buildDir);
       // Live screenshots are stored as JPEG (quality 55). Compress the build screenshot the same way
@@ -338,7 +342,11 @@ for (const width of readdirSync(liveDir).sort((a, b) => Number(b) - Number(a))) 
         // common color around it (catches a missing grey or blue band, or a missing white card).
         for (const [l, b] of [...h.pairs, ...tx.pairs]) {
           const [lc, bc] = await Promise.all([dominant(livePng, l), dominant(buildPng, b)]);
-          if (lc && bc && Math.max(...lc.map((v, i) => Math.abs(v - bc[i]))) > BG_TOL)
+          // v2.11: over a photo, allow PHOTO_BG_TOL. Same photo, crop and overlay still read a few
+          // levels apart once the build re-encodes the image; crop and overlay are checked by the
+          // pixel and brightness checks.
+          const tol = l.behind === "image" || inHero(l) ? PHOTO_BG_TOL : BG_TOL;
+          if (lc && bc && Math.max(...lc.map((v, i) => Math.abs(v - bc[i]))) > tol)
             issues.push(`background behind "${(l.text || "").slice(0, 40)}": rgb(${bc.join(", ")}), live rgb(${lc.join(", ")})`);
         }
         // Full-width band color: sample the left margin, outside the content column, beside each
@@ -353,7 +361,7 @@ for (const width of readdirSync(liveDir).sort((a, b) => Number(b) - Number(a))) 
             dominant(livePng, { x: 0, y: l.y + l.h / 2 - 4, w: marginW, h: 8 }, 0),
             dominant(buildPng, { x: 0, y: b.y + b.h / 2 - 4, w: marginW, h: 8 }, 0),
           ]);
-          if (lc && bc && Math.max(...lc.map((v, i) => Math.abs(v - bc[i]))) > BG_TOL)
+          if (lc && bc && Math.max(...lc.map((v, i) => Math.abs(v - bc[i]))) > (inHero(l) ? PHOTO_BG_TOL : BG_TOL))
             issues.push(`band color beside "${(l.text || "").slice(0, 40)}": rgb(${bc.join(", ")}), live rgb(${lc.join(", ")})`);
         }
         for (const [l, b, label] of pairsForPixels) {
@@ -375,7 +383,7 @@ for (const width of readdirSync(liveDir).sort((a, b) => Number(b) - Number(a))) 
         // v2.10: read both page margins, so paint added only along one edge can't pass.
         for (const side of CUR_VW >= 1280 ? ["left", "right"] : ["left"]) { // at phone widths the right column runs through content
         const [lr0, br] = await Promise.all([marginRuns(livePng, side), marginRuns(buildPng, side)]);
-        const lr = lr0.filter((r) => isBg(r.c));
+        const lr = lr0.filter((r) => isBg(r.c) && !inHero({ y: r.y, h: r.h })); // v2.11: not inside the hero photo
         // Match each live band to the build band of the same color (within 12, JPEG chroma) whose
         // top is nearest where live puts it, scaled by page height, and no more than 300px away.
         const scale = (build.docHeight || 1) / (live.docHeight || 1);
