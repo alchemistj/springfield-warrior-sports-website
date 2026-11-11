@@ -110,6 +110,23 @@ async function thumb(file, r) {
   if (width < 8 || height < 8) return null;
   return sharp(file).extract({ left, top, width, height }).resize(48, 16, { fit: "fill" }).grayscale().raw().toBuffer();
 }
+async function dominant(file, r) {
+  const m = await meta(file);
+  const pad = 12;
+  const left = Math.max(0, Math.min(m.width - 2, r.x - pad));
+  const top = Math.max(0, Math.min(m.height - 2, r.y - pad));
+  const width = Math.max(1, Math.min(m.width - left, r.w + pad * 2));
+  const height = Math.max(1, Math.min(m.height - top, r.h + pad * 2));
+  if (width < 8 || height < 8) return null;
+  const buf = await sharp(file).extract({ left, top, width, height }).resize(40, 12, { fit: "fill", kernel: "nearest" }).removeAlpha().raw().toBuffer();
+  const counts = new Map();
+  for (let i = 0; i < buf.length; i += 3) {
+    const key = [buf[i], buf[i + 1], buf[i + 2]].map((v) => Math.round(v / 24) * 24).join(",");
+    counts.set(key, (counts.get(key) || 0) + 1);
+  }
+  const [best] = [...counts.entries()].sort((a, b) => b[1] - a[1]);
+  return best[0].split(",").map(Number);
+}
 async function regionDiff(liveFile, l, buildFile, b) {
   const [a, c] = await Promise.all([thumb(liveFile, l), thumb(buildFile, b)]);
   if (!a || !c) return null;
@@ -168,12 +185,6 @@ for (const width of readdirSync(liveDir).sort((a, b) => Number(b) - Number(a))) 
         .filter((t) => norm(t).length > 20 && liveAll.includes(norm(t).slice(0, 60)) && !buildAll.includes(norm(t).slice(0, 60)))
         .forEach((t) => issues.push(`text hidden in build but visible on live: "${t.slice(0, 60)}"`));
       tx.pairs.forEach(([l, b]) => issues.push(...styleDiffs(l, b, `text "${l.text.slice(0, 30)}"`)));
-      // Background behind each heading and text block (catches a missing grey or blue band).
-      [...h.pairs, ...tx.pairs].forEach(([l, b]) => {
-        if (!l.behind || !b.behind) return;
-        const same = l.behind === "image" || b.behind === "image" ? l.behind === b.behind : colorDiff(l.behind, b.behind) <= TOL.color;
-        if (!same) issues.push(`background behind "${(l.text || "").slice(0, 40)}": ${b.behind}, live ${l.behind}`);
-      });
       // Vertical rhythm: the gap from each heading to the next must be close to live
       // (catches squeezed or missing section padding).
       const hp = h.pairs.filter(([l, b]) => b.text && l.text);
@@ -207,6 +218,13 @@ for (const width of readdirSync(liveDir).sort((a, b) => Number(b) - Number(a))) 
           ...tx.pairs.filter(([l]) => l.text.length >= 20).map(([l, b]) => [l, b, `text "${l.text.slice(0, 30)}"`]),
           ...im.pairs.map(([l, b]) => [l, b, `photo ${imageKey(l.src)}`]),
         ];
+        // Background behind each heading and text block, read from the screenshot: the most
+        // common color around it (catches a missing grey or blue band, or a missing white card).
+        for (const [l, b] of [...h.pairs, ...tx.pairs]) {
+          const [lc, bc] = await Promise.all([dominant(livePng, l), dominant(buildPng, b)]);
+          if (lc && bc && Math.max(...lc.map((v, i) => Math.abs(v - bc[i]))) > 40)
+            issues.push(`background behind "${(l.text || "").slice(0, 40)}": rgb(${bc.join(", ")}), live rgb(${lc.join(", ")})`);
+        }
         for (const [l, b, label] of pairsForPixels) {
           const d = await regionDiff(livePng, l, buildPng, b);
           if (d !== null && d > PIXEL_TOL) issues.push(`${label}: looks different from live (pixel difference ${d.toFixed(0)})`);
