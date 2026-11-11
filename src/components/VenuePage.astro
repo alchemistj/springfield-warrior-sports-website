@@ -23,11 +23,17 @@ const event = page.formId ? eventById(page.formId) : undefined;
 
 const HERO_FILE: Record<string, string> = {
   home: "media/2025-12-IMG_2341-scaled.jpeg",
+  about: "media/2023-03-About-Banner.jpg",
 };
 const heroFile = HERO_FILE[page.slug] ?? page.heroFile;
 const hero =
   page.photoHero && heroFile
-    ? await heroImage(heroFile, { width: page.slug === "home" ? 960 : 1100, quality: page.slug === "home" ? 28 : 36, cropAspect: page.slug === "home" ? 1.9 : 2.05, cropY: 0.42 })
+    ? await heroImage(
+        heroFile,
+        page.slug === "about"
+          ? { width: 1920, quality: 55 }
+          : { width: page.slug === "home" ? 960 : 1100, quality: page.slug === "home" ? 28 : 36, cropAspect: page.slug === "home" ? 1.9 : 2.05, cropY: 0.42 },
+      )
     : null;
 
 const images = import.meta.glob("../assets/media/*.{webp,jpeg,jpg,png}", { eager: true, import: "default" }) as Record<
@@ -104,7 +110,7 @@ const RED_HERO = new Set([
   "laser-tag",
   "homeschool-sports-and-classes-springfield-mo",
 ]);
-const CENTER_HERO = new Set(["contact", "competitions", "wnl-competitions", "kids-classes"]);
+const CENTER_HERO = new Set(["contact", "competitions", "wnl-competitions", "kids-classes", "about"]);
 const RIGHT_HERO = new Set<string>();
 
 let body = stripDump(page.blocks);
@@ -113,7 +119,8 @@ if (page.slug === "home") {
   while (body[0]?.type === "p" && !body[0].text.includes("●")) heroExtra.push(body.shift()!);
 }
 const bullet = body[0]?.text.includes("●") ? body.shift()! : undefined;
-const showHeroText = Boolean(hero) && page.h1FromSource && page.slug !== "about";
+const aboutHero = page.slug === "about";
+const showHeroText = Boolean(hero) && page.h1FromSource && !aboutHero;
 const heroAlign = CENTER_HERO.has(page.slug) ? "center" : RIGHT_HERO.has(page.slug) ? "right" : "left";
 const heroTone = RED_HERO.has(page.slug) ? "red" : "white";
 const HERO_SIZE: Record<string, string> = {
@@ -221,8 +228,8 @@ const h1key = norm(page.h1);
 function matchesH1(lines: string[]): boolean {
   return lines.some((line) => norm(line) === h1key) || norm(lines.join(" ")) === h1key;
 }
-const h1InHero = showHeroText;
-const h1InBody = page.slug === "about";
+const h1InHero = showHeroText || aboutHero;
+const h1InBody = false;
 const h1InSection = !h1InHero && (page.slug === "home" ? matchesH1(["CLIENT TESTIMONIALS"]) : sections.some((section) => matchesH1(section.titles)) || matchesH1(quoteBlocks.filter((block) => block.type === "h2").map((block) => block.text)));
 
 const story = page.slug === "home" ? [] : sections.filter((section) => !section.quotes);
@@ -252,7 +259,7 @@ function nextPhoto(): ContentImage | undefined {
     hero && (
       <img
         slot="hero-photo"
-        class="atf-photo"
+        class:list={["atf-photo", { "about-hero": page.slug === "about" }]}
         src={hero.uri}
         alt={page.heroAlt}
         width={hero.width}
@@ -265,9 +272,9 @@ function nextPhoto(): ContentImage | undefined {
     )
   }
   <div slot="hero" class:list={["hero-copy", hero ? `align-${heroAlign}` : "hero-plain", hero ? `tone-${heroTone}` : "", hero ? `hero-size-${heroSize}` : "", { bare: !showHeroText }]}>
-    {hero && showHeroText && <div class="hero-scrim" aria-hidden="true"></div>}
+    {hero && (showHeroText || aboutHero) && <div class:list={["hero-scrim", { "about-scrim": aboutHero }]} aria-hidden="true"></div>}
     <div class="hero-text">
-      {showHeroText && <h1>{page.h1}</h1>}
+      {(showHeroText || aboutHero) && <h1>{page.h1}</h1>}
       {page.slug === "home" && heroExtra[0] && <h2 class="hero-kicker">{heroExtra[0].text}</h2>}
       {page.slug === "home" && heroExtra[1] && <p class="hero-sub">{heroExtra[1].text}</p>}
       {page.slug === "kids-classes" && <h2 class="hero-kicker light-300">NINJA WARRIOR CLASSES FOR KIDS AND TEENS</h2>}
@@ -278,34 +285,32 @@ function nextPhoto(): ContentImage | undefined {
   {
     bullet && (
       <section class="bullet-bar" aria-label="Programs">
-        <div class="wrap bullet-row">
+        <div class="bullet-line">
           <a href="/kids-classes/">KIDS</a>
-          <span class="bullet-dot" aria-hidden="true">●</span>
+          {" ● "}
           <a href="/fitness-classes/">ADULTS</a>
-          <span class="bullet-dot" aria-hidden="true">●</span>
+          {" ● "}
           <a href="/summer-camps-in-springfield-mo/">SUMMER CAMPS</a>
-          <span class="bullet-dot" aria-hidden="true">●</span>
+          {" ● "}
           <a href="/about/">COMMUNITY</a>
-          <span class="bullet-dot" aria-hidden="true">●</span>
+          {" ● "}
           <a href="/birthday-parties/">BIRTHDAY PARTIES</a>
+        </div>
+        <div class="bullet-stack">
+          <p><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" /></svg><span><a href="/kids-classes/">KIDS</a></span></p>
+          <p><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" /></svg><span><a href="/fitness-classes/">ADULTS</a></span></p>
+          <p><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" /></svg><span><a href="/summer-camps-in-springfield-mo/">SUMMER CAMPS</a></span></p>
+          <p><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" /></svg><span><a href="/about/">COMMUNITY</a></span></p>
+          <p><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" /></svg><span><a href="/birthday-parties/">BIRTHDAY PARTIES</a></span></p>
         </div>
       </section>
     )
   }
 
   <section class="trust" aria-label="Springfield Warrior Sports">
-    <div class="wrap trust-row">
-      <span>{site.name}</span>
-      <span>{site.tagline}</span>
-      {bullet ? null : (
-        <>
-          <span>Kids</span>
-          <span>Adults</span>
-          <span>Summer Camps</span>
-        </>
-      )}
-      <a href={site.phone.tel}>{site.phone.display}</a>
-    </div>
+    <p class="wrap trust-row">
+      <span>{site.name} {site.tagline}{bullet ? "" : " Kids Adults Summer Camps"} </span><a href={site.phone.tel}>{site.phone.display}</a>
+    </p>
   </section>
 
   {

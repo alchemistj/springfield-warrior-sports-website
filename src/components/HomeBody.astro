@@ -107,9 +107,14 @@ const quotes = [
       <p>We believe in results and that a life of health and fitness shouldn’t be boring. Our indoor obstacle training facility is like a fitness playground for all ages.</p>
       <p class="aside">The best part?</p>
       <p>You don’t need any previous experience or knowledge — all you need is the determination to reach your fitness goals!</p>
-      <p class="hours-title"><strong>Open Gym Hours</strong></p>
-      <ul>
-        {hours.map((line) => <li><span>{line}</span></li>)}
+      <p class="hours-title">Open Gym Hours</p>
+      <ul class="hours">
+        {hours.map((line) => (
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 5h-2v6l5 3 1-1.7-4-2.3z" /></svg>
+            <span>{line}</span>
+          </li>
+        ))}
       </ul>
       <p>(see below for our class hours and times, which vary slightly from the open gym hours above.)</p>
     </div>
@@ -118,18 +123,18 @@ const quotes = [
 
 <section class="section blue-band">
   <div class="wrap">
-    <h2 class="band-title">SPRINGFIELD'S BEST OBSTACLE TRAINING GYM</h2>
+    <h2 class="band-title">SPRINGFIELD'S BEST OBSTACLE<br />TRAINING GYM</h2>
     <div class="card-stack">
       {
         cards.map((card) => {
           const shot = shots[card.file];
           return (
-            <article class:list={["program-card", card.shift]}>
+            <article class:list={["program-card", card.shift, { hs: card.file.includes("kids-classes") }]}>
               {shot && <img loading="lazy" decoding="async" src={shot.src} alt="" width={shot.width} height={shot.height} />}
               <div>
                 <h3>{card.title}</h3>
-                <p>{card.body}</p>
-                {card.extra && <p>{card.extra}</p>}
+                <p>{card.shift === "parkour" ? card.body : card.extra ? `${card.body} ${card.extra}` : card.body}</p>
+                {card.shift === "parkour" && card.extra && <p>{card.extra}</p>}
                 <p class="btn-row"><a class="btn" href={card.href}>{card.label}</a></p>
               </div>
             </article>
@@ -145,8 +150,7 @@ const quotes = [
     <div class="day-copy">
       <h4>BE AN</h4>
       <h2>EVERYDAY WARRIOR!</h2>
-      <p>At Springfield Warrior Sports, we know that you want to be fit, healthy, and STRONGER to take on every obstacle. Our accomplished and award-winning crew is here to help you find your strength and enjoy your workouts again. If you’re looking for a unique and fun way to get active, you can come in at any time during our open hours and have a great time getting fit!</p>
-      <p>$15 per person ages 5+ during open gym hours. Stay as long as you would like.</p>
+      <p>At Springfield Warrior Sports, we know that you want to be fit, healthy, and STRONGER to take on every obstacle. Our accomplished and award-winning crew is here to help you find your strength and enjoy your workouts again. If you’re looking for a unique and fun way to get active, you can come in at any time during our open hours and have a great time getting fit!<br /><br />$15 per person ages 5+ during open gym hours. Stay as long as you would like.</p>
       <p class="btn-row"><a class="btn day-btn" href="https://square.link/u/GmmQ7iuL">TRY OPEN GYM FOR $10</a></p>
     </div>
     <img loading="lazy" decoding="async" class="day-photo" src={everyday.src} alt="" width={everyday.width} height={everyday.height} />
@@ -206,26 +210,52 @@ const quotes = [
   .day-copy p {
     font-weight: 300;
   }
-  .ready-copy ul {
-    margin: 0 0 14px;
+  .ready-copy p.aside {
+    margin-bottom: 4px;
+    color: rgb(40, 82, 118);
+    font-weight: 500;
+  }
+  @media (max-width: 799px) {
+    .ready-copy p.aside,
+    .ready-copy p.hours-title { width: 280px; }
+  }
+  .ready-copy p.hours-title {
+    color: rgb(219, 58, 52);
+    font-weight: 800;
+  }
+  .hours {
+    margin: 0 0 14px 11px;
     padding: 0;
     list-style: none;
   }
-  .ready-copy li {
-    margin: 0 0 6px;
+  .hours li {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    margin: 0 0 4px;
+  }
+  .hours svg {
+    flex: 0 0 18px;
+    width: 18px;
+    height: 18px;
+    margin-top: 2px;
+    fill: rgb(219, 58, 52);
+  }
+  .hours span {
+    display: inline-block;
     color: #6a6b6c;
     font-family: Muli, "Segoe UI", sans-serif;
     font-size: 16px;
     font-weight: 800;
+    line-height: 1.3;
   }
-  .aside { margin-bottom: 4px; }
   .band-title {
     margin: 0 0 28px;
     color: #fff;
     font-family: Heebo, "Arial Narrow", sans-serif;
     font-size: 32px;
     font-weight: 900;
-    line-height: 1.15;
+    line-height: 60px;
     text-align: center;
     text-transform: uppercase;
   }
@@ -321,8 +351,8 @@ const quotes = [
     .ready img { width: 501px; height: auto; }
     .ready-copy h2 { font-size: 50px; }
     .ready-copy h3 { font-size: 30px; }
-    .ready-copy li { font-size: 18px; }
-    .band-title { font-size: 50px; }
+    .hours span { font-size: 18px; }
+    .band-title { font-size: 50px; line-height: 62.5px; }
     .card-stack { padding: 0 42px 0 10px; gap: 28px; }
     .program-card {
       grid-template-columns: 368px minmax(0, 1fr);
@@ -337,12 +367,17 @@ const quotes = [
       min-height: 0;
       margin: 0;
     }
+    .program-card.parkour img,
+    .program-card.gyms img { object-fit: cover; }
+    .program-card.parkour img { height: 384px; object-position: 15% 100%; }
+    .program-card.gyms img { height: 272px; object-position: 20% 100%; }
     .program-card h3 { font-size: 30px; }
     .program-card .btn { width: 491px; font-size: 16px; }
     .everyday {
       background-image: var(--day);
-      background-size: cover;
-      background-position: center;
+      background-repeat: no-repeat;
+      background-position: right center;
+      background-size: 700px 632px;
       min-height: 632px;
     }
     .day-copy { width: 533px; margin-left: 1px; padding: 48px 0; }
@@ -377,7 +412,14 @@ const quotes = [
     }
     .program-card h3,
     .program-card > div > p { width: 300px; max-width: 100%; }
-    .program-card.parkour img { width: 845px; max-width: none; margin-left: 7px; }
-    .program-card.gyms img { width: 759px; max-width: none; margin-left: -68px; }
+    .program-card.hs > div {
+      position: relative;
+      z-index: 1;
+      margin-top: -140px;
+      background: #fff;
+    }
+    .program-card.hs h3 { line-height: 28px; }
+    .program-card.parkour img { width: 845px; max-width: none; height: auto; margin-left: 7px; object-fit: cover; object-position: 15% 100%; }
+    .program-card.gyms img { width: 759px; max-width: none; height: auto; margin-left: -68px; object-fit: cover; object-position: 20% 100%; }
   }
 </style>

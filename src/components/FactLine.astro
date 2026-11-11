@@ -1,0 +1,44 @@
+---
+interface Props {
+  text: string;
+  tall?: boolean;
+}
+const { text, tall = false } = Astro.props;
+---
+
+<p class="fact">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" /></svg>
+  <span class:list={[{ tall }]}>{text}</span>
+</p>
+
+<style>
+  .fact {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    width: fit-content;
+    max-width: 100%;
+    margin: 0 0 8px;
+  }
+  .fact svg {
+    flex: 0 0 15px;
+    width: 15px;
+    height: 15px;
+    margin-top: 3px;
+    fill: rgb(219, 58, 52);
+  }
+  .fact span {
+    display: inline-block;
+    max-width: 536px;
+    color: #000;
+    font-family: Epilogue, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.45;
+    text-align: start;
+  }
+  @media (max-width: 799px) {
+    .fact span { max-width: 320px; }
+    .fact span.tall { max-width: 313px; line-height: 1.6; }
+  }
+</style>

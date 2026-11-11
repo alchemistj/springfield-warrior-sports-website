@@ -110,7 +110,7 @@
 }
 
 :root {
-  --header-h: 96px;
+  --header-h: 149px;
   --hero-h: 450px;
   /* Live content column is 1150px, centered. At 1920 that starts at x=385; at 1280, x=65. */
   --content: 1150px;
@@ -131,7 +131,7 @@
 
 @media (min-width: 1024px) {
   :root {
-    --header-h: 112px;
+    --header-h: 139px;
     --hero-h: 590px;
   }
   /* Home inner min-height is 80vh plus 20px section padding on each side. At a 900px-tall window that is 760px. */
@@ -211,6 +211,13 @@ a {
   object-fit: cover;
   object-position: center 42%;
 }
+.atf-photo.about-hero {
+  object-fit: cover;
+  object-position: center;
+}
+.hero-scrim.about-scrim {
+  background: rgba(0, 0, 0, 0.45);
+}
 
 .hero-copy {
   position: relative;
@@ -259,6 +266,11 @@ a {
 .hero-copy.tone-red h1 {
   color: var(--color-ws-red);
 }
+.page-about .hero-copy h1 {
+  margin-inline: auto;
+  line-height: 1;
+  text-align: center;
+}
 .hero-kicker {
   width: fit-content;
   max-width: 100%;
@@ -299,6 +311,16 @@ a {
   margin-inline: auto;
   text-align: center;
 }
+.page-about .hero-copy.align-center h1 {
+  width: 315px;
+  font-size: 32px;
+}
+@media (min-width: 800px) {
+  .page-about .hero-copy.align-center h1 {
+    width: 920px;
+    font-size: 50px;
+  }
+}
 @media (min-width: 1024px) {
   .hero-size-xl h1 { font-size: 70px; }
   .hero-size-lg h1 { font-size: 60px; }
@@ -315,7 +337,20 @@ a {
 @media (max-width: 799px) {
   .hero-kicker { width: 100%; }
   .hero-copy.align-center .hero-kicker { width: fit-content; max-width: 315px; }
+  .page-home .hero-kicker {
+    box-sizing: border-box;
+    width: 348px;
+    max-width: 348px;
+    padding-right: 110px;
+    line-height: 35px;
+  }
+  .page-kids-classes .hero-kicker {
+    width: 315px;
+    max-width: 315px;
+    line-height: 1;
+  }
 }
+.page-kids-classes .hero-kicker { letter-spacing: 1px; }
 .hero-copy.align-center .hero-sub,
 .hero-copy.align-center .hero-kicker {
   margin-inline: auto;
@@ -343,43 +378,98 @@ a {
 }
 
 .bullet-bar {
+  position: relative;
+  background: transparent;
+  color: #fff;
+}
+.bullet-bar::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
   background: #111;
-  color: #fff;
 }
-.bullet-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px 0;
-  align-items: center;
-  justify-content: center;
-  padding: 14px 8px;
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 0.08em;
+.bullet-line,
+.bullet-stack {
+  position: relative;
+  z-index: 1;
 }
-.bullet-row a {
+.bullet-line {
+  width: fit-content;
+  max-width: calc(100% - 40px);
+  margin: 10px auto;
   color: #fff;
+  font-family: Muli, "Segoe UI", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 3.21px;
+  line-height: 1.5;
+  text-align: center;
+}
+.bullet-line a {
+  display: inline;
+  color: #fff;
+  font-family: Muli, "Segoe UI", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 3.21px;
   text-decoration: none;
 }
-.bullet-dot {
-  margin: 0 14px;
-  color: var(--color-ws-red);
+.bullet-stack {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 0;
+}
+.bullet-stack p {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  width: fit-content;
+  margin: 0;
+}
+.bullet-stack svg {
+  width: 10px;
+  height: 10px;
+  fill: rgb(219, 58, 52);
+}
+.bullet-stack span {
+  display: inline-block;
+}
+.bullet-stack a {
+  display: inline;
+  color: #fff;
+  font-family: Muli, "Segoe UI", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 0;
+  text-align: start;
+  text-decoration: none;
+}
+.bullet-stack p:first-child a { text-align: center; }
+@media (max-width: 799px) {
+  .bullet-line { display: none; }
+  .bullet-stack { display: flex; }
 }
 
 .trust {
   color: #fff;
 }
 .trust-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px 18px;
-  align-items: center;
-  justify-content: center;
+  display: block;
+  margin: 0 auto;
   padding: 12px 0;
+  color: #fff;
   font-size: 13px;
   font-weight: 700;
   letter-spacing: 0.06em;
+  text-align: center;
   text-transform: uppercase;
+}
+.trust-row a {
+  display: inline;
+  color: #fff;
 }
 .trust a {
   color: #fff;

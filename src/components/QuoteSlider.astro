@@ -15,10 +15,14 @@ const icon = media("media/2023-03-qoute-icon.webp");
 <div class="t-slider">
   {
     quotes.map((quote, index) => (
-      <blockquote class:list={["t-quote", { "has-icon": index < 2 }]}>
+      <blockquote class:list={["t-quote", { "has-icon": index < 2, rest: index >= 2 }]}>
         {index < 2 && <img loading="lazy" decoding="async" src={icon.src} alt="" width="65" height="65" />}
-        <p>{quote.text}</p>
-        <p class="t-by">{quote.by}</p>
+        <div class="q-shell">
+          <div class="q-pass">
+            <p><span>{quote.text}</span></p>
+          </div>
+        </div>
+        <p class="t-by"><span>{quote.by}</span></p>
       </blockquote>
     ))
   }
@@ -26,26 +30,27 @@ const icon = media("media/2023-03-qoute-icon.webp");
 
 <style>
   .t-slider {
+    position: relative;
     display: grid;
-    grid-template-columns: 513px 513px;
-    column-gap: 52px;
+    grid-template-columns: 513px 52px 513px;
     justify-content: start;
     padding-left: 31px;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scrollbar-width: none;
+    overflow: hidden;
   }
   .t-quote {
-    margin: 0 0 28px;
+    margin: 0;
     scroll-snap-align: start;
   }
-  .t-quote:nth-child(2) {
-    grid-column: 2;
-    grid-row: 1;
+  .t-quote:nth-child(1) { grid-column: 1; grid-row: 1; }
+  .t-quote:nth-child(2) { grid-column: 3; grid-row: 1; }
+  .t-quote.rest {
+    position: absolute;
+    left: 41px;
+    top: 900px;
+    width: 513px;
   }
-  .t-quote:nth-child(n + 3) {
-    grid-column: 1;
-  }
+  .q-pass { display: contents; }
+  .q-shell { padding-bottom: 50px; }
   .t-quote img {
     display: block;
     width: 65px;
@@ -63,28 +68,34 @@ const icon = media("media/2023-03-qoute-icon.webp");
     line-height: 1.55;
     text-align: start;
   }
-  .t-by {
-    color: #b4231e;
+  .t-quote p.t-by {
+    color: #d6352f;
     font-weight: 700;
   }
   @media (max-width: 799px) {
     .t-slider {
       grid-template-columns: 1fr;
       padding-left: 29px;
-      column-gap: 0;
     }
     .t-quote:nth-child(2) {
-      grid-column: 1;
+      position: absolute;
+      left: 39px;
+      top: 900px;
+      grid-column: auto;
       grid-row: auto;
-    }
-    .t-quote p {
-      width: 282px;
-    }
-    .t-quote:nth-child(n + 2) p {
       width: 272px;
     }
-    .t-quote:nth-child(n + 2) img {
-      display: none;
+    .t-quote.rest { left: 39px; width: 272px; }
+    .t-quote p { width: 282px; }
+    .t-quote:nth-child(n + 2) p,
+    .t-quote.rest p { width: 272px; }
+    .t-quote:nth-child(n + 2) img { display: none; }
+    .t-quote:nth-child(n + 2) .q-shell,
+    .t-quote:nth-child(n + 2) p {
+      height: 6px;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
     }
   }
 </style>

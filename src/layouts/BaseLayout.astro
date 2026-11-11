@@ -63,8 +63,8 @@ const gaId = site.ga4;
   <body class={`page-${route.key}`}>
     <a class="skip-link" href="#main">Skip to content</a>
     <div class="atf">
-      <slot name="hero-photo" />
       <Header current={route.path} />
+      <slot name="hero-photo" />
       <div class="header-spacer"></div>
       <slot name="hero" />
       <span class="atf-ready" hidden></span>

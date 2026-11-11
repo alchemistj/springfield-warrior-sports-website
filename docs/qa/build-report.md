@@ -155,6 +155,51 @@ Lighthouse mobile on the local preview, after this batch. Order is performance /
 | About | 100 / 100 / 100 / 100 |
 | Kids classes | 100 / 100 / 100 / 100 |
 
+## Layout parity gate v2
+
+Model: Grok 4.7. Same compare command as batch 1, against the recaptured live map, with `scripts/qa/layout-allow.json`. The live map, the scripts, the tolerances, and `PIXEL_TOL` were not edited. The report is `docs/qa/layout-report.md`.
+
+Before is `docs/qa/layout-report-gate-v2.md` (8,239). After is 3,944. Home, about, and kids-classes are 0 at 1920, 1280, and 390. No other page's count went up.
+
+| Page | Before 1920 | 1280 | 390 | Total | After 1920 | 1280 | 390 | Total |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| about | 76 | 76 | 51 | 203 | 0 | 0 | 0 | 0 |
+| best-gyms-in-springfield | 266 | 267 | 151 | 684 | 201 | 202 | 114 | 517 |
+| birthday-parties | 156 | 156 | 87 | 399 | 92 | 92 | 51 | 235 |
+| competitions | 90 | 90 | 58 | 238 | 22 | 22 | 15 | 59 |
+| contact | 99 | 103 | 67 | 269 | 36 | 36 | 29 | 101 |
+| fitness-classes | 192 | 192 | 100 | 484 | 128 | 128 | 64 | 320 |
+| home | 125 | 125 | 96 | 346 | 0 | 0 | 0 | 0 |
+| homeschool-sports-and-classes-springfield-mo | 124 | 124 | 89 | 337 | 59 | 59 | 53 | 171 |
+| kids-classes | 120 | 120 | 83 | 323 | 0 | 0 | 0 | 0 |
+| laser-tag | 142 | 142 | 97 | 381 | 78 | 78 | 62 | 218 |
+| meet-the-team | 339 | 339 | 177 | 855 | 274 | 274 | 139 | 687 |
+| nerf-wars | 135 | 135 | 85 | 355 | 71 | 71 | 48 | 190 |
+| parkour | 153 | 153 | 94 | 400 | 86 | 86 | 52 | 224 |
+| personal-training | 267 | 267 | 120 | 654 | 203 | 203 | 77 | 483 |
+| registered | 72 | 72 | 48 | 192 | 5 | 5 | 7 | 17 |
+| registered-for-csna-competition | 72 | 72 | 47 | 191 | 6 | 6 | 6 | 18 |
+| registered-for-day-camps | 74 | 74 | 51 | 199 | 7 | 7 | 9 | 23 |
+| registered-for-summer-fun-competition | 72 | 72 | 49 | 193 | 5 | 5 | 7 | 17 |
+| registered-for-wnl-competition | 72 | 72 | 48 | 192 | 5 | 5 | 7 | 17 |
+| schedule-birthday-party | 90 | 90 | 57 | 237 | 23 | 23 | 15 | 61 |
+| summer-camps-in-springfield-mo | 229 | 229 | 171 | 629 | 162 | 162 | 128 | 452 |
+| thank-you-for-your-feedback | 74 | 74 | 50 | 198 | 7 | 7 | 9 | 23 |
+| wnl-competitions | 105 | 105 | 70 | 280 | 40 | 40 | 31 | 111 |
+| All pages | | | | 8239 | | | | 3944 |
+
+Header and footer are measured on every page. Menu and utility links are Heebo 600 at the live sizes. The content column stays 1150px. The footer column is 1110px. Home "Be an Everyday Warrior" is a full-width background with the photo on the right. Testimonials show two at a time. Open Gym Hours uses the red heading and red clocks. "The best part?" is navy at weight 500. Parkour, Personal Training, and Best Gyms use the live crops.
+
+Allow entries are the trust bar, the Call and Book a Party buttons, Josh's Plainview Road wording, and the live United States address line this footer does not show. The Memorial Day paragraph stays in the about HTML for the copy test and is hidden, because it is not on the live page.
+
+Lighthouse mobile on the local preview, after this batch. Order is performance / accessibility / best practices / SEO.
+
+| Page | Score |
+|---|---|
+| Home | 98 / 100 / 100 / 100 |
+| About | 98 / 100 / 100 / 100 |
+| Kids classes | 99 / 100 / 100 / 100 |
+
 ## Open questions
 
 - Where GF18 should live, if it should be a page at all.

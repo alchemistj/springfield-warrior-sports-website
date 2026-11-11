@@ -7,14 +7,12 @@ const images = import.meta.glob("../assets/media/2023-03-SWS-logo-footer.webp", 
 }) as Record<string, { src: string; width: number; height: number } | string>;
 const logo = images["../assets/media/2023-03-SWS-logo-footer.webp"];
 const logoSrc = typeof logo === "string" ? logo : logo?.src;
-const logoW = typeof logo === "string" ? 266 : (logo?.width ?? 266);
-const logoH = typeof logo === "string" ? 76 : (logo?.height ?? 76);
 ---
 
 <footer class="site-footer">
-  <div class="wrap foot">
+  <div class="foot">
     <div class="brand">
-      {logoSrc && <img src={logoSrc} alt="" width={logoW} height={logoH} />}
+      {logoSrc && <img src={logoSrc} alt="" width="266" height="76" />}
       <p>Our accomplished and award winning Crew are here to help you find your strength and enjoy your workouts.</p>
       <div class="socials">
         <a class="soc" href={site.facebook} aria-label="Facebook" target="_blank" rel="noopener noreferrer">
@@ -30,15 +28,15 @@ const logoH = typeof logo === "string" ? 76 : (logo?.height ?? 76);
       <ul class="foot-list">
         <li>
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 14.5 9 2.5 2.5 0 0 1 12 11.5z" /></svg>
-          <span>{site.address.display}</span>
+          <span class="line">{site.address.display}</span>
         </li>
         <li>
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11 11 0 0 0 3.6.6 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 7a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11 11 0 0 0 .6 3.6 1 1 0 0 1-.25 1z" /></svg>
-          <a href={site.phone.tel}>{site.phone.display}</a>
+          <span class="line"><a href={site.phone.tel}>{site.phone.display}</a></span>
         </li>
         <li>
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm9 7L4 7v.2l8 5.2 8-5.2V7z" /></svg>
-          <a href={`mailto:${site.email}`}>{site.email}</a>
+          <span class="line"><a href={`mailto:${site.email}`}>{site.email}</a></span>
         </li>
       </ul>
     </div>
@@ -52,7 +50,10 @@ const logoH = typeof logo === "string" ? 76 : (logo?.height ?? 76);
     </div>
   </div>
   <div class="copy-bar">
-    <p>© Copyright 2026 &nbsp;&nbsp; Springfield Warrior Sports &nbsp;&nbsp; All Rights Reserved.</p>
+    <p class="copy-wide">© Copyright 2026 &nbsp;&nbsp; Springfield Warrior Sports &nbsp;&nbsp; All Rights Reserved.</p>
+    <p class="copy-line">© Copyright 2026</p>
+    <p class="copy-line">Springfield Warrior Sports</p>
+    <p class="copy-line">All Rights Reserved.</p>
   </div>
 </footer>
 
@@ -60,94 +61,146 @@ const logoH = typeof logo === "string" ? 76 : (logo?.height ?? 76);
   .site-footer {
     background: #fff;
     color: #333;
-    padding-top: 36px;
+    padding-top: 28px;
   }
   .foot {
     display: grid;
-    gap: 28px;
-    padding-bottom: 28px;
-  }
-  @media (min-width: 800px) {
-    .foot {
-      grid-template-columns: 1.3fr 1.1fr 0.8fr;
-      gap: 32px;
-    }
+    gap: 22px;
+    width: min(1110px, calc(100% - 40px));
+    margin: 0 auto;
+    padding-bottom: 18px;
   }
   .brand img {
-    width: 210px;
-    height: auto;
+    width: 266px;
+    height: 76px;
+    max-width: none;
     margin-bottom: 12px;
+    object-fit: contain;
   }
   .brand p {
-    margin: 0 0 14px;
-    max-width: 34ch;
-    font-size: 15px;
+    width: 100%;
+    max-width: 354px;
+    margin: 0 0 16px;
+    color: #333;
+    font-family: Muli, "Segoe UI", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
   }
   .socials {
     display: flex;
-    gap: 10px;
+    gap: 13px;
+    margin-left: 6px;
   }
   .soc {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 34px;
-    height: 34px;
+    width: 24px;
+    height: 24px;
     border-radius: 50%;
-    background: var(--color-ws-red);
+    background: #db3a34;
     color: #fff;
   }
   .soc svg {
-    width: 16px;
-    height: 16px;
+    width: 17px;
+    height: 17px;
     fill: #fff;
   }
   .foot-label {
-    margin: 0 0 12px;
-    color: var(--color-ws-blue-dark);
-    font-family: var(--font-heading);
-    font-size: 18px;
-    font-weight: 800;
-    letter-spacing: 0.08em;
+    margin: 0 0 14px;
+    color: #285276;
+    font-family: Heebo, "Arial Narrow", sans-serif;
+    font-size: 16px;
+    font-weight: 900;
+    letter-spacing: 0;
+    line-height: 1.2;
     text-transform: uppercase;
   }
   .foot-list,
   .foot-links {
     margin: 0;
-    padding: 0;
+    padding: 0 0 0 11px;
     list-style: none;
   }
   .foot-list li {
     display: flex;
     gap: 10px;
     align-items: flex-start;
-    margin: 0 0 10px;
-    font-size: 15px;
+    margin: 0 0 12px;
+    color: #333;
+    font-family: Muli, "Segoe UI", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.4;
   }
   .foot-list svg {
     flex: 0 0 auto;
     width: 16px;
     height: 16px;
-    margin-top: 3px;
-    fill: var(--color-ws-red);
+    margin-top: 2px;
+    fill: rgb(219, 58, 52);
+  }
+  .line {
+    display: inline-block;
   }
   .foot-list a,
   .foot-links a {
     color: #333;
+    font-weight: 400;
     text-decoration: none;
+    background: transparent;
   }
   .foot-links li {
-    margin: 0 0 8px;
+    display: block;
+    margin: 0 0 2px;
+    color: #333;
+    font-family: Muli, "Segoe UI", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+  .foot-links a {
+    display: inline;
+    font-size: 16px;
   }
   .copy-bar {
-    background: #000;
+    position: relative;
+    background: transparent;
     color: #fff;
   }
+  .copy-bar::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background: #000;
+  }
   .copy-bar p {
-    width: min(var(--content), calc(100% - var(--gutter) * 2));
+    position: relative;
+    z-index: 1;
+    width: min(1110px, calc(100% - 40px));
     margin: 0 auto;
-    padding: 14px 0;
-    font-size: 14px;
+    padding: 8px 0;
+    color: #fff;
+    font-family: Epilogue, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.4;
     text-align: center;
+  }
+  .copy-wide { display: none; }
+  @media (min-width: 800px) {
+    .foot {
+      grid-template-columns: 354px 353px 301px;
+      column-gap: 51px;
+      align-items: start;
+    }
+    .copy-wide {
+      display: block;
+      font-size: 14px;
+      padding: 10px 0;
+    }
+    .copy-line { display: none; }
   }
 </style>

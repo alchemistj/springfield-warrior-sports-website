@@ -1,5 +1,6 @@
 ---
 import { media } from "../lib/media";
+import FactLine from "./FactLine.astro";
 
 const pre = media("media/2023-03-pre-shool-warriors.webp");
 const junior = media("media/2023-03-junior-warriors.webp");
@@ -31,14 +32,14 @@ const trial = "https://checkout.square.site/merchant/MLXTPBS97BGYV/checkout/B2M6
       <h2 class="red h50 w306">PRE-SCHOOL WARRIORS</h2>
       <h2 class="thin left">(3-6 YEAR-OLDS)</h2>
       <p>Our preschool class is geared for your 3-6 year olds. This interactive class will include a warm-up, balance and agility work, and a mini course, along with learning to take turns and follow instructions - all in a FUN and safe environment! Bring your little ninjas by to climb up our walls (and wear them out before rest time). See you soon!</p>
-      <p class="short">Ages: 3-6 years old</p>
-      <p class="accent left-accent">Cost: $10 per class. $40 monthly.</p>
+      <FactLine text="Ages: 3-6 years old" />
+      <FactLine text="Cost: $10 per class. $40 monthly." />
       <h2 class="red h20">Preschool Open Gym Times</h2>
-      <p class="accent left-accent">Tuesday mornings 9:30am-11:30am</p>
+      <FactLine text="Tuesday mornings 9:30am-11:30am" />
       <h2 class="red h20">CLASS TIMES</h2>
-      <p class="short">3&amp;4 Years Old</p>
+      <FactLine text="3&4 Years Old" />
       <h3 class="as-text">Tuesday and Wednesday 5:30-6:00pm</h3>
-      <p class="short">5&amp;6 Years Old</p>
+      <FactLine text="5&6 Years Old" />
       <h3 class="as-text">Tuesday and Wednesday 6:00pm-6:45pm</h3>
     </div>
   </div></div>
@@ -51,15 +52,16 @@ const trial = "https://checkout.square.site/merchant/MLXTPBS97BGYV/checkout/B2M6
       <h2 class="thin left">(AGES 7-18)</h2>
       <p>The Springfield Warrior Sports Junior Warrior Classes are the perfect way to get your 7-18 year olds active and teach them the importance of a healthy lifestyle. These classes incorporate cardio, strength, balance, and agility training while teaching safe and productive ways to conquer the different obstacles in the gym. For kids who need a little extra one-on-one coaching, we also offer personal training tailored to their goals.</p>
       <p>Your kids will progress through Levels 1-9 (like white, blue, black, etc., belts) as they accomplish the skills required in each level. This is a great way to challenge your kids and encourage your children to stay active!</p>
-      <p class="accent left-accent">Cost: Intermediate classes: One class per week $85 monthly. Two classes per week $110 monthly. Up to three classes per week, $135 monthly.</p>
-      <p class="accent left-accent">Beginner Warrior Membership $70.</p>
+      <FactLine text="Cost:" />
+      <FactLine text="Intermediate classes: One class per week $85 monthly. Two classes per week $110 monthly. Up to three classes per week, $135 monthly." />
+      <FactLine text="Beginner Warrior Membership $70." />
       <p class="btn-left"><a class="btn navy junior" href={trial}>TRY YOUR FIRST JUNIOR WARRIOR CLASS FOR $5</a></p>
       <h2 class="red h20">CLASS TIMES</h2>
-      <p class="accent left-accent">Beginner Level and Trial Class Drop Ins</p>
+      <FactLine text="Beginner Level and Trial Class Drop Ins" />
       <h3 class="as-text">Mon-Fri 4-4:30pm or 4:30-5pm Mon, Thur, &amp; Fri 5-5:30pm or 5:30-6pm</h3>
-      <p class="accent left-accent">Level 3+ Junior Warriors</p>
+      <FactLine text="Level 3+ Junior Warriors" />
       <h3 class="as-text">Monday-Friday 5-6pm</h3>
-      <p class="accent left-accent">Level 3+ Homeschool Junior Warrior Class</p>
+      <FactLine text="Level 3+ Homeschool Junior Warrior Class" />
       <h3 class="as-text">Tuesdays and Thursdays 3-4pm</h3>
     </div>
     <img loading="lazy" decoding="async" src={junior.src} alt="Junior warriors" width={junior.width} height={junior.height} />
@@ -73,9 +75,9 @@ const trial = "https://checkout.square.site/merchant/MLXTPBS97BGYV/checkout/B2M6
       <h2 class="red h50">CSNA COMPETITIVE NINJA TEAM</h2>
       <h2 class="thin left">(7-18 YEARS OLD)</h2>
       <p>The Central States Ninja Association is a competitive youth team for Junior Warriors who are ready to take it to the next level and put their skills to the test! Junior Warriors are eligible to apply for the CSNA team upon completing Level 4. The team works with Coach Adam Arnold who holds 90-minute practices 2 days a week. The season runs September - May with competitions scheduled throughout the region hosted by other participating CSNA gyms |MO, KS, NE, AR|.</p>
-      <p class="accent left-accent">Cost: $145 for two practices a week. Includes an open gym membership.</p>
+      <FactLine text="Cost: $145 for two practices a week. Includes an open gym membership." />
       <h2 class="red h20">PRACTICE TIMES</h2>
-      <p class="accent left-accent">Monday and Thursday: 6-7:30pm</p>
+      <FactLine text="Monday and Thursday: 6-7:30pm" />
     </div>
   </div></div>
 </section>
@@ -88,9 +90,9 @@ const trial = "https://checkout.square.site/merchant/MLXTPBS97BGYV/checkout/B2M6
       <p>⚠️ Parkour Classes are currently unavailable.⚠️</p>
       <p>Open Gym is still available for Parkour training.</p>
       <p>Learn the basics of Parkour |free running| in this group class. Students will gain the ability to move freely with and without obstacles using the abilities of their bodies. This will be accomplished primarily through running, jumping, climbing, and quadrupedal movements. Classes will focus on physical conditioning and Parkour skills and will ultimately blend the two together. Experience the non-competitive mental and physical challenge while building strength, speed, stamina, and balance in a controlled environment.</p>
-      <p class="accent left-accent">Cost: $20 class drop in, $10 class drop in for current members</p>
-      <p class="accent left-accent">$35/monthly discounted Parkour membership is available to current members who want to attend one class per week</p>
-      <p class="accent left-accent">$60/monthly for Parkour membership, unlimited classes and also includes an Open Gym membership</p>
+      <FactLine text="Cost: $20 class drop in, $10 class drop in for current members" />
+      <FactLine text="$35/monthly discounted Parkour membership is available to current members who want to attend one class per week" />
+      <FactLine tall text="$60/monthly for Parkour membership, unlimited classes and also includes an Open Gym membership" />
       <p class="btn-left"><a class="btn navy gym" href="/parkour/">TRY OPEN GYM FOR $10</a></p>
     </div>
     <img loading="lazy" decoding="async" src={parkour.src} alt="Parkour class" width={parkour.width} height={parkour.height} />
@@ -105,9 +107,9 @@ const trial = "https://checkout.square.site/merchant/MLXTPBS97BGYV/checkout/B2M6
       <h2 class="thin left">(7-15 YEARS OLD)</h2>
       <p>Looking for a fun and engaging way to keep your homeschoolers active? Springfield Warrior Sports has just what you need! Our homeschool program offers structured classes designed to help kids build strength, agility, and confidence—all while making friends and having a blast. Whether your child wants to challenge themselves on obstacles, improve their coordination, or just burn off some energy, we provide a safe and supportive environment to do it all. Sign up for our exciting classes—we can’t wait to see your homeschool warriors in action!</p>
       <h2 class="red h20 hs-times">HOMESCHOOL CLASSES (Ages 7–15)</h2>
-      <p class="accent left-accent">Tuesdays &amp; Thursdays : 3–4pm</p>
-      <p class="accent left-accent">$85/month for one class per week</p>
-      <p class="accent left-accent">$110/month for two classes per week</p>
+      <FactLine text="Tuesdays & Thursdays : 3–4pm" />
+      <FactLine text="$85/month for one class per week" />
+      <FactLine text="$110/month for two classes per week" />
       <p class="btn-left"><a class="btn navy start" href="/homeschool-sports-and-classes-springfield-mo/">GET STARTED HERE</a></p>
     </div>
   </div></div>
@@ -120,33 +122,41 @@ const trial = "https://checkout.square.site/merchant/MLXTPBS97BGYV/checkout/B2M6
       {fun.map((img) => <img loading="lazy" decoding="async" src={img.src} alt="" width={img.width} height={img.height} />)}
     </div>
     <p class="btn-center"><a class="btn navy schedule" href={trial}>SCHEDULE A $5 TRIAL CLASS</a></p>
+  </div>
+</section>
+
+<section class="section kids">
+  <div class="wrap">
     <h2 class="red h50 center forget">AND …. DON’T FORGET ABOUT SUMMER CAMPS, OPEN GYM, AND BIRTHDAY PARTIES!</h2>
   </div>
 </section>
 
 <section class="section kids">
   <div class="wrap camps">
-    <article>
-      <img loading="lazy" decoding="async" src={youth.src} alt="" width={youth.width} height={youth.height} />
-      <h2>YOUTH SUMMER CAMP</h2>
-      <p>Kids will have fun and make new friends during our</p>
-      <p>week long day camp. Campers will work with a</p>
-      <p>Warrior Sports trainer focusing on overall strength,</p>
-      <p>balance, and core exercises along with obstacle</p>
-      <p>training.</p>
-      <p class="btn-center"><a class="btn camp summer" href="/summer-camps-in-springfield-mo/">SUMMER CAMP</a></p>
+    <article class="camp-card youth" style={`background-image:url(${youth.src})`}>
+      <div class="camp-panel">
+        <h2>YOUTH SUMMER CAMP</h2>
+        <p>Kids will have fun and make new friends during our</p>
+        <p>week long day camp. Campers will work with a</p>
+        <p>Warrior Sports trainer focusing on overall strength,</p>
+        <p>balance, and core exercises along with obstacle</p>
+        <p>training.</p>
+        <p class="btn-center"><a class="btn camp summer" href="/summer-camps-in-springfield-mo/">SUMMER CAMP</a></p>
+      </div>
     </article>
-    <article>
-      <img loading="lazy" decoding="async" src={party.src} alt="" width={party.width} height={party.height} />
-      <h2>BIRTHDAY PARTIES</h2>
-      <p>At Springfield Warrior Sports we want to take the stress out of your party planning - schedule your party with us, and let us do the rest! Parties are an hour and a half long and include open play and an obstacle course set up and facilitated by our Crew.</p>
-      <p class="btn-center"><a class="btn camp bday" href="/birthday-parties/">BIRTHDAY PARTY</a></p>
+    <article class="camp-card bday" style={`background-image:url(${party.src})`}>
+      <div class="camp-panel">
+        <h2>BIRTHDAY PARTIES</h2>
+        <p>At Springfield Warrior Sports we want to take the stress out of your party planning - schedule your party with us, and let us do the rest! Parties are an hour and a half long and include open play and an obstacle course set up and facilitated by our Crew.</p>
+        <p class="btn-center"><a class="btn camp bday" href="/birthday-parties/">BIRTHDAY PARTY</a></p>
+      </div>
     </article>
-    <article>
-      <img loading="lazy" decoding="async" src={day.src} alt="" width={day.width} height={day.height} />
-      <h2>NO-SCHOOL DAY CAMP</h2>
-      <p>Give your kids active, exciting days during school break at our fun day camps! We provide both half-day and full-days camp options for kids to hang out, play games, do sports, and make friends.</p>
-      <p class="btn-center"><a class="btn camp day" href="/summer-camps-in-springfield-mo/">DAY CAMP</a></p>
+    <article class="camp-card day" style={`background-image:url(${day.src})`}>
+      <div class="camp-panel">
+        <h2>NO-SCHOOL DAY CAMP</h2>
+        <p>Give your kids active, exciting days during school break at our fun day camps! We provide both half-day and full-days camp options for kids to hang out, play games, do sports, and make friends.</p>
+        <p class="btn-center"><a class="btn camp day" href="/summer-camps-in-springfield-mo/">DAY CAMP</a></p>
+      </div>
     </article>
   </div>
 </section>
@@ -221,10 +231,30 @@ const trial = "https://checkout.square.site/merchant/MLXTPBS97BGYV/checkout/B2M6
   .fun-grid { display: grid; grid-template-columns: 159px 159px; gap: 20px; width: fit-content; margin: 12px auto 8px; }
   .fun-grid img { width: 159px; height: 148px; object-fit: cover; }
   .camps { display: grid; gap: 28px; }
-  .camps article { text-align: center; }
+  .camp-card {
+    position: relative;
+    width: min(340px, 100%);
+    height: 489px;
+    margin-inline: auto;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .camp-card.bday { height: 556px; }
+  .camp-card.day { height: 451px; }
+  .camp-panel {
+    position: absolute;
+    left: 12px;
+    right: 12px;
+    top: 83px;
+    bottom: 12px;
+    padding: 8px 10px 12px;
+    background: #fff;
+    text-align: center;
+  }
+  .camp-card.bday .camp-panel { top: 103px; }
   .camps h2 { color: #285276; font-size: 20px; text-align: center; }
-  .camps p { width: 272px; margin-inline: auto; text-align: center; }
-  .camps img { width: 340px; margin-inline: auto; }
+  .camps p { width: 275px; max-width: 100%; margin-inline: auto; text-align: center; }
   .forget { width: min(340px, 100%); margin-left: auto; margin-right: auto; text-align: center; }
 
   @media (min-width: 800px) {
@@ -233,7 +263,7 @@ const trial = "https://checkout.square.site/merchant/MLXTPBS97BGYV/checkout/B2M6
     .kids h2.w920 { width: 920px; }
     .kids h2.w872 { width: 872px; font-size: 30px; }
     .copy h2.thin, .copy h2.h20 { width: fit-content; }
-    .copy h2.w446 { width: 446px; }
+    .copy h2.w446 { width: max-content; }
     .copy h2.w226 { width: 226px; }
     .center-copy { width: 1070px; margin-inline: auto; }
     .btn.navy { font-size: 16px; }
@@ -255,19 +285,29 @@ const trial = "https://checkout.square.site/merchant/MLXTPBS97BGYV/checkout/B2M6
     .fun-title { width: fit-content; text-align: left; }
     .fun-grid { grid-template-columns: repeat(3, 369px); gap: 21px; margin-left: 1px; }
     .fun-grid img { width: 369px; height: 344px; }
-    .fun h2.forget { width: 759px; margin-left: auto; margin-right: auto; }
+    h2.forget { width: 759px; margin-left: auto; margin-right: auto; }
     .camps { grid-template-columns: repeat(3, 363px); gap: 30px; }
-    .camps img { width: 363px; height: 420px; object-fit: cover; }
+    .camp-card,
+    .camp-card.bday,
+    .camp-card.day { width: 363px; height: 596px; }
+    .camp-panel,
+    .camp-card.bday .camp-panel { top: 143px; right: 16px; bottom: 18px; left: 16px; }
     .camps h2 { width: 277px; margin-inline: auto; font-size: 30px; }
     .camps p { width: 275px; }
   }
   @media (max-width: 799px) {
-    .kids h2.w920 { width: 306px; font-size: 32px; }
+    .kids h2.w920 { width: 306px; font-size: 32px; line-height: 1; }
     .kids h2.w872 { width: 338px; font-size: 20px; }
     .copy h2.thin { width: 100%; }
     .copy h2.w306, .copy h2.hs-times { width: 306px; }
     .copy h2.w446, .copy h2.w226 { width: fit-content; }
-    .as-text { width: fit-content; max-width: 291px; }
+    .intro { margin-top: 120px; }
+    .camp-card.day {
+      background-size: auto 150%;
+      background-position: center 10%;
+    }
+    .as-text { width: fit-content; max-width: 320px; }
+    .fun h2.fun-title { width: 340px; line-height: 1; }
     .camps h2 { width: 274px; margin-left: auto; margin-right: auto; }
   }
 </style>
