@@ -1,6 +1,7 @@
 ---
 import type { EventForm } from "../../data/events";
 import LeadForm from "../LeadForm.astro";
+import FactIcon from "./FactIcon.astro";
 import { media } from "./media";
 
 interface Props {
@@ -22,15 +23,15 @@ const banner = media("media/2023-03-SWS-Competitions-Banner.webp");
     <div class="comp-head">
       <div>
         <p class="b2-fact comp-fact">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="12" /></svg>
+          <FactIcon name="calendar" />
           <span class="b2-fact-text">Date: Saturday, September 19th</span>
         </p>
         <p class="b2-fact comp-fact">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="12" /></svg>
+          <FactIcon name="clock" />
           <span class="b2-fact-text">Start time: TBA</span>
         </p>
         <p class="b2-fact comp-fact">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="12" /></svg>
+          <FactIcon name="dollar" />
           <span class="b2-fact-text">Price per registration: <strong>$60</strong></span>
         </p>
       </div>
@@ -38,6 +39,7 @@ const banner = media("media/2023-03-SWS-Competitions-Banner.webp");
     </div>
     <a class="comp-btn" href={`#${event.anchor}`}>REGISTER NOW BY FILLING OUT THE FORM BELOW ▼</a>
     <h2 class="b2-literata">2026-9 CSNA September 19th Form</h2>
-    <LeadForm event={event} note="Don't wait to register - The early bird price for the January 13th competitions will go up after December 30th!" />
+    <LeadForm event={event} />
+    <p class="comp-wait">Don't wait to register - The <em>early bird price</em> for <strong>the January 13th competitions</strong> will go up after December 30th!</p>
   </div>
 </section>

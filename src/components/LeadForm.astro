@@ -13,6 +13,7 @@ const tone = Astro.props.tone ?? (event.id === "contact" ? "card" : "panel");
 const phone = site.phone;
 const camp = event.id === "camp-registration";
 const hideLabels = tone === "card";
+const requiredMark = event.id === "birthday-party" ? " *" : " (Required)";
 
 function campChoice(choice: string): { date: string; time: string } | null {
   const match = choice.match(/^(.+?) (\d{1,2}(?::\d{2})? [AP]M - .+)$/);
@@ -51,20 +52,33 @@ function isMessage(field: FormField): boolean {
     event.repeater && (
       <div data-repeater data-max={event.repeater.max}>
         <div class="child-card" data-child>
-          <p class="participant-bar">Participant 1</p>
+          <div class="participant-bar">
+            <span class="participant-title">Participant 1</span>
+            <span class="participant-actions">
+              <button class="participant-tool" type="button" data-collapse aria-label="Collapse participant">
+                <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 7l6 6 6-6" /></svg>
+              </button>
+              <button class="participant-tool" type="button" data-remove aria-label="Remove participant">✕</button>
+            </span>
+          </div>
           {event.repeater.fields.map((field) => {
             const key = childKey(field);
             const id = `${event.id}-child-${key}`;
             if (field.kind === "name") {
               return (
-                <div class="name-row">
-                  <div>
-                    <label class="sr-only" for={id}>First Name</label>
-                    <input id={id} type="text" maxlength="100" data-child-field="name" required={field.required} autocomplete="given-name" />
-                  </div>
-                  <div>
-                    <label class="sr-only" for={`${id}-last`}>Last Name</label>
-                    <input id={`${id}-last`} type="text" maxlength="100" data-child-field="name" required={field.required} autocomplete="family-name" />
+                <div>
+                  <span class="label">{field.label}{field.required ? <span class="req">{requiredMark}</span> : ""}</span>
+                  <div class="name-row">
+                    <div>
+                      <label class="sr-only" for={id}>First Name</label>
+                      <input id={id} type="text" maxlength="100" data-child-field="name" required={field.required} autocomplete="given-name" />
+                      <span class="sub">First</span>
+                    </div>
+                    <div>
+                      <label class="sr-only" for={`${id}-last`}>Last Name</label>
+                      <input id={`${id}-last`} type="text" maxlength="100" data-child-field="name" required={field.required} autocomplete="family-name" />
+                      <span class="sub">Last</span>
+                    </div>
                   </div>
                 </div>
               );
@@ -72,7 +86,7 @@ function isMessage(field: FormField): boolean {
             if (field.kind === "radio") {
               return (
                 <fieldset>
-                  <legend class="label">{field.label}</legend>
+                  <legend class="label">{field.label}{field.required ? <span class="req">{requiredMark}</span> : ""}</legend>
                   <div class="check-grid">
                     {(field.choices || []).map((choice) => (
                       <label>
@@ -86,12 +100,11 @@ function isMessage(field: FormField): boolean {
             }
             return (
               <div>
-                <label for={id}>{field.label}</label>
+                <label for={id}>{field.label}{field.required ? <span class="req">{requiredMark}</span> : ""}</label>
                 <input id={id} type="text" placeholder={field.kind === "date" ? "mm/dd/yyyy" : undefined} data-child-field={key} required={field.required} />
               </div>
             );
           })}
-          <button class="btn-line" type="button" data-remove hidden>{event.repeater.removeLabel}</button>
         </div>
         <p><button class="btn-line" type="button" data-add>Add More Participant</button></p>
       </div>
@@ -119,7 +132,7 @@ function isMessage(field: FormField): boolean {
         }
         return (
           <div>
-            <span class="label">{field.label}{field.required ? <span class="req"> *</span> : ""}</span>
+            <span class="label">{field.label}{field.required ? <span class="req">{requiredMark}</span> : ""}</span>
             <div class="name-row">
               <div>
                 <input id={`${event.id}-first`} name="first" type="text" autocomplete="given-name" maxlength="100" required={field.required} placeholder={event.id === "wnl" ? undefined : "First Name"} aria-label="First Name" data-role="first" />
@@ -136,7 +149,7 @@ function isMessage(field: FormField): boolean {
       if (field.kind === "checkbox" || field.kind === "radio") {
         return (
           <fieldset data-extra-key={field.name} data-extra-label={field.label} data-extra-kind={field.kind} data-required={field.required ? "true" : "false"}>
-            <legend class="label">{field.label}{field.required ? <span class="req"> *</span> : ""}</legend>
+            <legend class="label">{field.label}{field.required ? <span class="req">{requiredMark}</span> : ""}</legend>
             <div class={camp ? "check-stack" : "check-grid"}>
               {(field.choices || []).map((choice) => {
                 const lines = camp ? campChoice(choice) : null;
@@ -158,7 +171,7 @@ function isMessage(field: FormField): boolean {
       if (field.kind === "select") {
         return (
           <div>
-            <label class:list={{ "sr-only": hideLabels }} for={id}>{field.label}{field.required ? <span class="req"> *</span> : ""}</label>
+            <label class:list={{ "sr-only": hideLabels }} for={id}>{field.label}{field.required && !hideLabels ? <span class="req">{requiredMark}</span> : ""}</label>
             <select id={id} name={field.name} required={field.required} data-role="extra" data-extra-key={field.name} data-extra-label={field.label}>
               <option value="">Select</option>
               {(field.choices || []).map((choice) => <option value={choice}>{choice}</option>)}
@@ -183,7 +196,7 @@ function isMessage(field: FormField): boolean {
       const hide = hideLabels || (camp && (field.label === "First Name" || field.label === "Last Name" || field.label === "Email"));
       return (
         <div>
-          <label class:list={{ "sr-only": hide }} for={id}>{field.label}{field.required ? <span class="req"> *</span> : ""}</label>
+          <label class:list={{ "sr-only": hide }} for={id}>{field.label}{field.required && !hide ? <span class="req">{requiredMark}</span> : ""}</label>
           {field.kind === "textarea" ? (
             <textarea id={id} name={field.name} maxlength="5000" required={field.required} placeholder={placeholder} data-role={role} data-extra-key={role === "extra" ? field.name : undefined} data-extra-label={role === "extra" ? field.label : undefined} />
           ) : (
@@ -269,20 +282,25 @@ function isMessage(field: FormField): boolean {
       const source = rows[0];
       if (rows.length >= max || !source) return;
       const clone = source.cloneNode(true) as HTMLElement;
+      clone.classList.remove("is-collapsed");
       clone.querySelectorAll("input").forEach((input) => {
         if (input.type === "radio" || input.type === "checkbox") input.checked = false;
         else input.value = "";
         if (input.name) input.name = `${input.name}-${rows.length}`;
       });
-      const label = clone.querySelector("p");
+      const label = clone.querySelector(".participant-title");
       if (label) label.textContent = `Participant ${rows.length + 1}`;
-      const remove = clone.querySelector<HTMLButtonElement>("[data-remove]");
-      if (remove) remove.hidden = false;
       repeater.insertBefore(clone, add.parentElement);
     });
     repeater?.addEventListener("click", (event) => {
       const target = event.target;
-      if (!(target instanceof HTMLButtonElement) || !target.matches("[data-remove]")) return;
+      if (!(target instanceof Element)) return;
+      const collapse = target.closest("[data-collapse]");
+      if (collapse) {
+        collapse.closest("[data-child]")?.classList.toggle("is-collapsed");
+        return;
+      }
+      if (!target.closest("[data-remove]")) return;
       const rows = repeater.querySelectorAll("[data-child]");
       if (rows.length < 2) return;
       target.closest("[data-child]")?.remove();

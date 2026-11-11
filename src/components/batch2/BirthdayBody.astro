@@ -2,6 +2,7 @@
 import bookBg from "../../assets/media/2023-03-book-now-bg.jpg";
 import memoriesBg from "../../assets/media/2023-03-amazing-memories.webp";
 import { site } from "../../data/site";
+import FactIcon from "./FactIcon.astro";
 import { media } from "./media";
 
 const invitation = media("media/2023-03-downloadable-party-invitation.webp");
@@ -28,21 +29,21 @@ const memories = typeof memoriesBg === "string" ? memoriesBg : memoriesBg.src;
         <p>At Springfield Warrior Sports, we want to take the stress out of your party planning - schedule your birthday party with us, and let us do the rest — including cleanup! <br /><br />Each party lasts for a total of 1.5 hours. Included in the party is one hour of gym time, featuring open play and an obstacle course set up and facilitated by our Crew. Approximately 30 minutes can be used for cake, presents, and pizza! (optional). <br /><br />The birthday child will receive a Springfield Warrior Sports T-shirt, and the week after their party, they get to try a ninja class for free.</p>
         <p class="bd-note">Note: free customized party invitations are available upon request.</p>
         <p class="b2-fact">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="12" /></svg>
+          <FactIcon name="arrow" />
           <span class="b2-fact-text"><strong class="bd-lab">Cost: </strong><span class="bd-rest">$179 for the first 11 kids and $10 for each additional participant (plus $40 if you prefer to rent the gym for a private party). The parents of the birthday child are free if they would like to try the obstacles as well! A $40 deposit is required at the time of booking and will be taken off the full amount on the day of the party.</span></span>
         </p>
       </div>
     </div>
     <p class="b2-fact b2-fact-wide">
-      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="12" /></svg>
+      <FactIcon name="arrow" />
       <span class="b2-fact-text bd-rest">All other guests (siblings, other parents, etc.) who wish to play in the gym can simply pay the discounted group rate for open gym during the party time.</span>
     </p>
     <p class="b2-fact b2-fact-wide">
-      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="12" /></svg>
+      <FactIcon name="arrow" />
       <span class="b2-fact-text"><strong class="bd-star">*</strong><span class="bd-rest"> All participants will need to sign a waiver before playing in the gym. This can be done by a parent in the gym upon arrival, or it may be filled out online prior to the party.</span></span>
     </p>
     <p class="b2-fact b2-fact-wide">
-      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="12" /></svg>
+      <FactIcon name="arrow" />
       <span class="b2-fact-text"><strong class="bd-star">**</strong><span class="bd-rest"> To reserve your birthday party time slot, a $40 deposit is required at booking and covers the first 11 kids. The rest of the $179, additional participants or optional add-ons will be settled on the day of the party.</span></span>
     </p>
   </div>

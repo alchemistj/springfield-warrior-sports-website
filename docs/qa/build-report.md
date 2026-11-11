@@ -660,6 +660,36 @@ Home, about, and kids-classes were not restyled.
 
 Lines left, with live's values: birthday cost-to-guests gap 222px against 154px (columns stay top-aligned; the image is 520×698 and the copy is 561px with a 69px gap); book-now sample rgb(23, 21, 19) against rgb(46, 30, 23); schedule quotes wrap one extra line at Muli 16px / line-height 26 / width 513; camps 1280 hero sample beside "KIDS STAY FIT AND HEALTHY" is rgb(65, 77, 74) against rgb(27, 46, 47); camps phone "Kids will get the chance" is 9 lines against 8; the WNL form title is 3 lines against 2 at Literata 24px, line-height 34, width 346; the shared header CONTACT and SIGN OUR WAIVER sit 5px to the right at 390. The competitions ice band at y=458 is still missing because the intro above it is white, which is live's margin color beside those paragraphs.
 
+## Layout parity batch 2, round 3, gate v2.18
+
+Model: Grok 4.7. Measured locally against the v2.17 live maps with the v2.18 compare. The live map, the scripts, the tolerances, and `PIXEL_TOL` were not edited. No allow entries were added. Forms still use the Central Forms wiring. Lighthouse was not re-run. Home, about, and kids-classes were not restyled.
+
+Round 2 on the preview of `a66d6d0` is the "before" column.
+
+| Page | Before 1920 / 1280 / 390 | Local 1920 / 1280 / 390 |
+|---|---|---|
+| birthday-parties | 2 / 1 / 18 | 2 / 1 / 13 |
+| schedule-birthday-party | 2 / 2 / 1 | 5 / 5 / 0 |
+| summer-camps-in-springfield-mo | 0 / 1 / 1 | 0 / 1 / 1 |
+| competitions | 0 / 0 / 8 | 0 / 0 / 8 |
+| wnl-competitions | 0 / 0 / 1 | 4 / 4 / 1 |
+| contact | 0 / 0 / 2 | 0 / 0 / 2 |
+
+Visible changes matched to live's computed CSS: form labels are Muli 14px weight 500, rgb(17, 35, 55), left aligned, with the red marker (12px, weight 500, rgb(192, 43, 10)) — "(Required)" on camps, WNL, and competitions, and an asterisk on the schedule form. Camp First Name, Last Name, and Email stay visually hidden, with the placeholders in the fields. The competitions form is full content width and left aligned. Name is First and Last side by side (553px, 12px gap, 16px inset) with First/Last under the inputs. The participant bar is #275276 with a chevron and an ✕, and Add More Participant is a rgb(115, 115, 121) pill. The contact form is a white card, radius 15px, shadow `rgba(0,0,0,.22) 0 0 12px`, padding 20px, fields 469px wide. Birthday facts use the red arrow, competitions uses the calendar, clock, and dollar icons, and contact uses the pin, phone, and envelope. WNL's two steps are a numbered list and "happens in two steps" is italic. The schedule steps are three numbered lines. The birthday copy column beside the invitation is `justify-content: center`. Calling all Ninjas has the live 80px section padding. The space from the last field to the footer matches live on WNL (454px) and schedule (1236px).
+
+Lines left, with live's values:
+
+- Birthday cost-to-"All other guests" is 232px against 130px after centering the column. The image is 520×698, the copy column is 561px, and the column gap is 69px. Left for you to rule.
+- Book-now sample rgb(23, 21, 19) against rgb(46, 30, 23).
+- Schedule quotes still wrap one extra line at Muli 16px, line-height 26, width 513. The numbered steps are three lines in the page, and the second line wraps "fee" at the live width of 862px (Muli 18px, line-height 32), so the gate counts 4 against 3.
+- The schedule white run at y=2258 is 899px against 1022px. The gap from the last field to the footer is 1236px on both.
+- WNL's white run under the hero is 402px against 322px, which is the 80px section padding. The lower white run is 1583px against 1868px. The gap from the last phone field to the footer is 454px on both.
+- Camps 1280 hero sample beside "KIDS STAY FIT AND HEALTHY" is rgb(65, 77, 74) against rgb(27, 46, 47). The camps phone sentence is 9 lines against 8.
+- The WNL form title is 3 lines against 2 at Literata 24px, line-height 34, width 346.
+- Shared header CONTACT and SIGN OUR WAIVER sit 5px to the right at 390.
+- The competitions ice run at y=410 (2646px) is still missing at 390 because the intro is white. The early-bird sentence is in the HTML at live's computed font-size of 0px, so it is not on the page.
+- Birthday at 390 still has the hero-to-intro spacing of 317px against 253px, and the grey memories band is 876px against 989px.
+
 ## Open questions
 
 - Where GF18 should live, if it should be a page at all.

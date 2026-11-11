@@ -234,6 +234,12 @@
   column-gap: 69px;
   align-items: start;
 }
+.page-birthday-parties .b2-grey .bd-split { align-items: stretch; }
+.page-birthday-parties .b2-grey .bd-split > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .bd-split img { width: 520px; height: auto; }
 .bd-note { margin-top: 16px; }
 .bd-split .b2-fact-text,
@@ -387,7 +393,7 @@
 .page-summer-camps-in-springfield-mo .b2-block.b2-grey { padding-top: 48px; padding-bottom: 48px; }
 .camp-reg-title { margin-top: -8px; }
 .page-wnl-competitions .b2-block.b2-grey { padding: 24px 0 104px; }
-.page-wnl-competitions .b2-block:has(.wnl-intro) { padding-bottom: 182px; }
+.page-wnl-competitions .b2-block:has(.wnl-intro) { padding-top: 80px; padding-bottom: 182px; }
 .camp-intro p,
 .camp-date,
 .camp-time {
@@ -420,7 +426,7 @@
 .camp-copy > h2.camp-dates-title { width: 438px; max-width: 100%; font-size: 40px; line-height: 40px; }
 .camp-copy > h2,
 .camp-reg-title { width: fit-content; max-width: 100%; }
-.camp-copy > h2:not(.camp-dates-title) { font-size: 40px; line-height: 40px; margin-top: 8px; }
+.camp-copy > h2:not(.camp-dates-title) { font-size: 40px; line-height: 40px; margin-top: 34px; }
 .camp-dates { margin-top: 30px; }
 .camp-row {
   display: grid;
@@ -470,12 +476,38 @@
   color: #333;
   opacity: 0.8;
 }
-.lead-form.camp label,
-.lead-form.camp legend {
-  color: rgb(106, 107, 108);
-  font-family: Epilogue, Arial, sans-serif;
-  font-size: 18px;
-  font-weight: 400;
+.page-summer-camps-in-springfield-mo .lead-form .label,
+.page-summer-camps-in-springfield-mo .lead-form label,
+.page-summer-camps-in-springfield-mo .lead-form legend,
+.page-schedule-birthday-party .lead-form .label,
+.page-schedule-birthday-party .lead-form label,
+.page-schedule-birthday-party .lead-form legend,
+.page-wnl-competitions .lead-form .label,
+.page-wnl-competitions .lead-form label,
+.page-wnl-competitions .lead-form legend,
+.page-competitions .lead-form .label,
+.page-competitions .lead-form label,
+.page-competitions .lead-form legend {
+  color: rgb(17, 35, 55);
+  font-family: Muli, "Segoe UI", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: left;
+}
+.page-summer-camps-in-springfield-mo .lead-form .req,
+.page-schedule-birthday-party .lead-form .req,
+.page-wnl-competitions .lead-form .req,
+.page-competitions .lead-form .req {
+  color: rgb(192, 43, 10);
+  font-size: 12px;
+  font-weight: 500;
+}
+.page-schedule-birthday-party .lead-form .sub,
+.page-wnl-competitions .lead-form .sub,
+.page-competitions .lead-form .sub {
+  color: rgb(88, 94, 106);
+  font-family: Muli, "Segoe UI", sans-serif;
+  font-size: 13px;
 }
 .lead-form.camp .check-stack {
   display: flex;
@@ -523,7 +555,51 @@
   background: rgb(40, 82, 118);
 }
 .page-wnl-competitions .lead-form { max-width: 898px; }
-.page-competitions .lead-form { max-width: none; width: 100%; margin: 0; }
+.page-competitions .lead-form { max-width: none; width: 100%; margin: 0; text-align: left; }
+.page-competitions [data-repeater] { padding-left: 16px; }
+.page-competitions .participant-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 42px;
+  margin: 18px 0 8px;
+  padding: 0;
+  background: #275276;
+  color: #fff;
+  font-weight: 700;
+}
+.page-competitions .participant-title { padding-left: 20px; }
+.page-competitions .participant-actions { display: flex; align-items: center; margin-right: 8px; }
+.page-competitions .participant-tool {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #fff;
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+}
+.page-competitions .participant-tool svg { width: 14px; height: 14px; fill: none; stroke: currentColor; stroke-width: 2; }
+.page-competitions .child-card.is-collapsed > :not(.participant-bar) { display: none; }
+.page-competitions .child-card.is-collapsed [data-collapse] svg { transform: rotate(-90deg); }
+.page-competitions [data-add] {
+  min-height: 0;
+  margin-top: 8px;
+  padding: 10px 22px;
+  border: 0;
+  border-radius: 999px;
+  background: rgb(115, 115, 121);
+  color: #fff;
+  font-family: Muli, "Segoe UI", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: none;
+}
 .page-competitions .lead-form input:not([type="checkbox"]):not([type="radio"]) {
   box-sizing: border-box;
   height: 38px;
@@ -532,7 +608,7 @@
   font-size: 16px;
 }
 @media (min-width: 700px) {
-  .page-competitions .name-row { grid-template-columns: 553px 553px; column-gap: 42px; }
+  .page-competitions .name-row { grid-template-columns: 553px 553px; column-gap: 12px; }
 }
 .page-competitions input[data-child-field="birthday"] { display: block; width: 195px; margin-left: 0; margin-right: auto; }
 .page-competitions .lead-form input[type="radio"] {
@@ -621,6 +697,13 @@
 .comp-fact, .comp-fact .b2-fact-text { text-align: left; }
 .comp-banner { display: block; width: 568px; height: 165px; margin: 20px 0 0; object-fit: cover; }
 .page-competitions .b2-ice { margin-bottom: 200px; }
+.comp-intro > p.comp-wait {
+  width: auto;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  line-height: 0;
+}
 .comp-btn {
   display: flex;
   align-items: center;
@@ -694,7 +777,7 @@
   line-height: 29px;
 }
 .wnl-photo { width: 493px; height: auto; }
-.wnl-form { width: min(900px, calc(100% - var(--gutter) * 2)); padding-top: 130px; padding-bottom: 360px; }
+.wnl-form { width: min(900px, calc(100% - var(--gutter) * 2)); padding-top: 130px; padding-bottom: 72px; }
 .wnl-form > p,
 .wnl-form li {
   color: rgba(0, 0, 0, 0.7);
@@ -703,15 +786,16 @@
   font-weight: 400;
   line-height: 28px;
 }
-.wnl-form ul { margin: 8px 0 8px 48px; padding: 0; }
+.wnl-form ol { margin: 8px 0 8px 48px; padding: 0 0 0 1.2em; list-style: decimal; }
 .wnl-form li {
-  display: block;
+  display: list-item;
   margin: 0 0 8px;
   color: rgb(106, 107, 108);
   font-family: Muli, "Segoe UI", sans-serif;
   font-size: 18px;
   line-height: 25px;
 }
+.wnl-form em { font-style: italic; }
 .wnl-wait strong { font-weight: 600; }
 .wnl-form .b2-literata { width: min(898px, 100%); }
 
@@ -748,13 +832,16 @@
 .contact-fact a { color: inherit; text-decoration: none; }
 .page-contact .lead-form textarea { min-height: 99px; height: 99px; }
 .page-contact .lead-form.card {
-  max-width: 469px;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 509px;
   margin-top: 18px;
+  padding: 20px;
   border: 0;
-  border-radius: 0;
-  box-shadow: none;
-  padding-left: 0;
-  padding-right: 0;
+  border-radius: 15px;
+  background-color: transparent;
+  background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
+  box-shadow: rgba(0, 0, 0, 0.22) 0 0 12px 0;
 }
 .contact-map { width: min(568px, 100%); height: 632px; margin-top: 20px; }
 .contact-map iframe { display: block; width: 100%; height: 630px; border: 0; }
@@ -769,7 +856,7 @@
 /* Testimonials */
 .b2-quotes { position: relative; background: #fff; padding: 28px 0 48px; }
 .b2-quotes.b2-grey { background-color: transparent; background-image: linear-gradient(#e5eaed, #e5eaed); }
-.b2-quotes.schedule { padding-bottom: 280px; }
+.b2-quotes.schedule { padding-bottom: 158px; }
 .b2-quotes.contact { padding-bottom: 210px; }
 .b2-quotes.camps { padding-bottom: 194px; }
 .b2-quote-title {
@@ -819,7 +906,11 @@
 .b2-arrows { display: none; }
 
 @media (max-width: 799px) {
-  .bd-intro { padding: 48px 0 24px; }
+  .bd-intro { padding: 48px 0 80px; }
+  .bd-more { margin-top: 44px; }
+  .bd-pizza { margin-top: 62px; }
+  .bd-battles h3 + h4 { margin-top: 10px; }
+  .wnl-form ol { margin-left: 26px; }
   .page-birthday-parties .b2-block.b2-grey { padding-bottom: 24px; }
   .bd-steps { padding-bottom: 24px; }
   .page-schedule-birthday-party .b2-grey { background-image: none; }
@@ -853,7 +944,7 @@
   .page-wnl-competitions .lead-form { margin-left: -4px; max-width: none; width: calc(100% + 8px); }
   .page-competitions [data-repeater] { padding: 0 15px; }
   .camp-row > div .camp-time:not(:last-child) { margin-bottom: -9px; }
-  .page-contact .lead-form { width: calc(100% - 40px); max-width: none; margin-left: 20px; }
+  .page-contact .lead-form { width: 100%; max-width: none; margin-left: 0; }
   .page-contact .lead-form input,
   .page-contact .lead-form textarea { box-sizing: border-box; height: 44px; min-height: 0; }
   .page-contact .lead-form textarea { height: 91px; min-height: 91px; }
