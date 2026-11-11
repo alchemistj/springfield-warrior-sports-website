@@ -78,10 +78,20 @@ function collect() {
       const cs = getComputedStyle(n.parentElement);
       const t = n.textContent.replace(/\s+/g, " ");
       const last = out[out.length - 1];
-      if (last && last.c === cs.color && last.w === Number(cs.fontWeight)) last.t += t;
-      else out.push({ t, c: cs.color, w: Number(cs.fontWeight) });
+      // Underline comes from the nearest ancestor that sets it (text-decoration isn't inherited).
+      let u = false;
+      for (let a = n.parentElement; a && a !== el.parentElement; a = a.parentElement)
+        if (getComputedStyle(a).textDecorationLine.includes("underline")) { u = true; break; }
+      if (last && last.c === cs.color && last.w === Number(cs.fontWeight) && last.u === u) last.t += t;
+      else out.push({ t, c: cs.color, w: Number(cs.fontWeight), u });
     }
     return out;
+  };
+  // Rendered line count (v2.6): distinct line tops of the text, so padding doesn't count.
+  const lines = (el) => {
+    const r = document.createRange();
+    r.selectNodeContents(el);
+    return new Set([...r.getClientRects()].filter((x) => x.width > 1 && x.height > 1).map((x) => Math.round(x.top))).size;
   };
   // Background a visitor sees behind an element: the nearest ancestor with a solid color or an image.
   const behind = (el) => {
@@ -144,7 +154,7 @@ function collect() {
         item = { kind: "bgimage", src: hero ? "hero" : m[1] };
       }
     }
-    if (item && (item.kind === "heading" || item.kind === "text")) { item.behind = behind(el); item.runs = runs(el); }
+    if (item && (item.kind === "heading" || item.kind === "text")) { item.behind = behind(el); item.runs = runs(el); item.lines = lines(el); }
     if (item && shown(el)) {
       items.push({ ...item, region: region(el), ...box(el) });
       els.push(el);

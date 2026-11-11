@@ -85,9 +85,12 @@ function matchHeadings(live, build) {
   return { pairs, missing, extra, outOfOrder };
 }
 
+let CUR_VW = 9999; // set per page
 function styleDiffs(l, b, label) {
   const out = [];
-  if (Math.abs(l.x - b.x) > TOL.x) out.push(`${label}: left edge ${b.x}px, live ${l.x}px`);
+  // v2.6: phone widths get a tighter left-edge limit (a 6px gutter change rewraps text at 390).
+  const xTol = CUR_VW <= 480 ? 4 : TOL.x;
+  if (Math.abs(l.x - b.x) > xTol) out.push(`${label}: left edge ${b.x}px, live ${l.x}px`);
   if (widthOff(l.w, b.w)) out.push(`${label}: width ${b.w}px, live ${l.w}px`);
   if (l.family && b.family && l.family.toLowerCase() !== b.family.toLowerCase()) out.push(`${label}: font ${b.family}, live ${l.family}`);
   if (l.size && Math.abs(l.size - b.size) > TOL.size) out.push(`${label}: size ${b.size}px, live ${l.size}px`);
@@ -96,11 +99,12 @@ function styleDiffs(l, b, label) {
   // Line count (v2.5): same words wrapping onto a different number of lines (only when the
   // text is identical, so a paragraph split differently isn't flagged).
   if (l.lh && b.lh && l.h && b.h && norm(l.full || l.text) === norm(b.full || b.text)) {
-    const ln = Math.round(l.h / l.lh), bn = Math.round(b.h / b.lh);
+    // v2.6: rendered line count when both sides have it (box height includes padding).
+    const ln = l.lines ?? Math.round(l.h / l.lh), bn = b.lines ?? Math.round(b.h / b.lh);
     if (ln !== bn) out.push(`${label}: ${bn} line(s), live ${ln}`);
   }
   if (l.lh && b.lh && Math.abs(l.lh - b.lh) > 2) out.push(`${label}: line height ${b.lh}px, live ${l.lh}px`);
-  if (l.spacing !== undefined && b.spacing !== undefined && Math.abs(l.spacing - b.spacing) > 1)
+  if (l.spacing !== undefined && b.spacing !== undefined && Math.abs(l.spacing - b.spacing) > 0.2)
     out.push(`${label}: letter spacing ${b.spacing}px, live ${l.spacing}px`);
   if (l.align && b.align && l.align !== b.align && !(l.align === "start" && b.align === "left") && !(l.align === "left" && b.align === "start"))
     out.push(`${label}: align ${b.align}, live ${l.align}`);
@@ -175,6 +179,10 @@ for (const width of readdirSync(liveDir).sort((a, b) => Number(b) - Number(a))) 
     if (!existsSync(bPath)) issues.push("page missing from build map");
     else {
       const build = JSON.parse(readFileSync(bPath, "utf8"));
+      CUR_VW = Number(width) || build.vw || 9999;
+      // v2.6: total page height within 5% of live (catches section padding squeezed everywhere).
+      if (live.docHeight && build.docHeight && Math.abs(build.docHeight - live.docHeight) > live.docHeight * 0.05)
+        issues.push(`page height ${build.docHeight}px, live ${live.docHeight}px`);
       if (build.docWidth > build.vw + 1) issues.push(`horizontal scroll: page is ${build.docWidth}px wide at ${build.vw}px`);
       const by = (items, kind) => items.filter((i) => i.kind === kind || (kind === "image" && i.kind === "bgimage"));
       // Headings
@@ -243,15 +251,16 @@ for (const width of readdirSync(liveDir).sort((a, b) => Number(b) - Number(a))) 
           for (let k = at + 1; k <= at + t.length; k++) {
             const s = bc.st[k];
             if (!s) continue;
-            const key = `${s.c}|${s.w}`;
+            const key = `${s.c}|${s.w}|${s.u}`;
             counts.set(key, (counts.get(key) || 0) + 1);
           }
           const [top] = [...counts.entries()].sort((x, y) => y[1] - x[1]);
           if (!top) continue;
-          const [bcol, bw] = top[0].split("|");
+          const [bcol, bw, bu] = top[0].split("|");
           const label = `words "${r.t.trim().slice(0, 40)}"`;
           if (colorDiff(r.c, bcol) > TOL.color) issues.push(`${label}: color ${bcol}, live ${r.c}`);
           if (Math.abs(r.w - Number(bw)) >= TOL.weight) issues.push(`${label}: weight ${bw}, live ${r.w}`);
+          if (r.u !== undefined && bu !== "undefined" && String(r.u) !== bu) issues.push(`${label}: underline ${bu}, live ${r.u}`);
         }
       }
       // Vertical rhythm: the gap from each heading to the next must be close to live
@@ -259,7 +268,7 @@ for (const width of readdirSync(liveDir).sort((a, b) => Number(b) - Number(a))) 
       const hp = h.pairs.filter(([l, b]) => b.text && l.text);
       for (let i = 1; i < hp.length; i++) {
         const lg = hp[i][0].y - hp[i - 1][0].y, bg = hp[i][1].y - hp[i - 1][1].y;
-        if (lg > 0 && Math.abs(lg - bg) > Math.max(48, lg * 0.25))
+        if (lg > 0 && Math.abs(lg - bg) > Math.max(24, lg * 0.1)) // v2.6: was max(48, 25%)
           issues.push(`spacing from "${hp[i - 1][0].text.slice(0, 30)}" to "${hp[i][0].text.slice(0, 30)}": ${bg}px, live ${lg}px`);
       }
       // Covered: visible on live, but something sits on top of it in the build.
