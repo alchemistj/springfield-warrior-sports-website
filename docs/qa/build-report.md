@@ -607,6 +607,24 @@ Lighthouse mobile on the local preview, after this batch. Order is performance /
 | About | 98 / 92 / 100 / 100 |
 | Kids classes | 98 / 92 / 100 / 100 |
 
+## Layout parity gate v2.15, round 14
+
+Model: Grok 4.7. The live map, the scripts, the tolerances, and `PIXEL_TOL` were not edited. The report is `docs/qa/layout-report.md`. No allow entries were added.
+
+On v2.15, home is 3/3/0, about is 2/2/1, and kids-classes is 0/0/3. The site total stays 8,357. No other page rose. The open lines are the same wraps as round 13.
+
+The desktop bullet under the home hero uses live's markup. `--tcb-color-0` is rgb(219, 58, 52), and each ● is that color. Six `&nbsp;` sit on each side of every ●, inside `<strong>`. `text-align-last: justify` is gone, so the spaces inside "SUMMER CAMPS" and "BIRTHDAY PARTIES" are normal spaces. The line is 835px wide against live's 827px. The phone list, with its red dots, is unchanged.
+
+About's testimonials section now has margin-top 0, which is live's. From 800px up, the section above it (Community Murph) has padding-bottom 90px, which is live's section padding, so that white space is padding on the white section. The white run is 762px against live's 795px, inside the band limit. Below 800px the margin was already 0. Live's phone padding-bottom is 70px. The build's is 42px. Adding the extra 28px would move the gap from the Murph paragraph to "CLIENT TESTIMONIALS" from 174px to 202px against live's 161px, past the 40px limit, so the phone padding stays.
+
+Lighthouse mobile on the local preview, after this batch. Order is performance / accessibility / best practices / SEO.
+
+| Page | Score |
+|---|---|
+| Home | 99 / 100 / 100 / 100 |
+| About | 98 / 92 / 100 / 100 |
+| Kids classes | 98 / 92 / 100 / 100 |
+
 ## Open questions
 
 - Where GF18 should live, if it should be a page at all.

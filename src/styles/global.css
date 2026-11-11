@@ -394,7 +394,10 @@ a {
   letter-spacing: 0;
   line-height: 1.5;
   text-align: center;
-  text-align-last: justify;
+  white-space: nowrap;
+}
+.bullet-line .dot {
+  color: rgb(219, 58, 52);
 }
 .bullet-line a {
   display: inline;
@@ -456,7 +459,7 @@ a {
     align-items: center;
     padding: 20px;
   }
-  .bullet-line { margin: 0 auto; }
+  .bullet-line { width: max-content; max-width: none; margin: 0 auto; }
 }
 
 .trust {
