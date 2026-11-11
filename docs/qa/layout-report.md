@@ -8371,7 +8371,7 @@ Gate v2.13, round 11. Model: Grok 4.7. The live map, the scripts, the tolerances
 
 On gate v2.12, commit 666f552 was 8,038 differences. Home 4/4/0, about 4/4/2, kids-classes 0/0/3. That about count included `band rgb(250, 254, 255) at y=3677 (138px tall)` at 1920 and 1280, and `band rgb(250, 254, 255) at y=4926 (66px tall)` at 390. After the coaches photo, the partner-band spacing, the partnerships join, the phone bullet list, the About intro padding, and the live partnerships gradient, those screenshots on v2.12 are 8,031. Home 3/3/0, about 2/2/1, kids-classes 0/0/3. Those three strip lines are gone.
 
-On this gate the same pages are home 5/5/2, about 2/2/4, kids-classes 3/3/5, and the site total is 8,227. About at 1920 and 1280 is the two testimonial wraps. The partnerships grey is rgb(242, 245, 246) and runs into the Perseverance navy. The James River wash is the same grey from the end of that navy to the Community Murph row.
+On this gate the same pages are home 5/5/2, about 2/2/4, kids-classes 3/3/5, and the site total is 8,227. The Vercel preview of `b8ef5ef` measures the same on the three pages. About at 1920 and 1280 is the two testimonial wraps. The partnerships grey is rgb(242, 245, 246) and runs into the Perseverance navy. The James River wash is the same grey from the end of that navy to the Community Murph row.
 
 The "BE AN EVERYDAY WARRIOR!" photo uses live's CSS: `background-size: contain`, `background-position: 100% 0`, `min-height: 632px`. The right coach's arm is fully visible at 1920 and 1280. At 390 the photo is 310 by 277. Live's phone image is 350 by 312. Matching that box made the white band at y=8160 1,035px against live's 905px, so the smaller photo stays. `.partner-band` has no box-shadow.
 
