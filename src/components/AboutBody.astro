@@ -233,7 +233,12 @@ const quotes = [
     .row.photo-left.mist { margin-bottom: 0; }
     .row.text-left { grid-template-columns: 561px 501px; column-gap: 88px; align-items: center; }
     .row.cleanup { margin-bottom: 211px; }
-    .about-page.story { margin-top: 939px; }
+    .about-page.story { margin-top: 0; }
+    .about-page.story > .wash {
+      margin-top: 0;
+      padding-top: 939px;
+      background-image: linear-gradient(rgba(229, 234, 237, 0.5), rgba(229, 234, 237, 0.5));
+    }
     .persevere { margin-top: 0; }
     .row.brothers { margin-top: 57px; }
     .wide { width: 1093px; margin-inline: auto; }
@@ -260,7 +265,11 @@ const quotes = [
     .murph-copy { letter-spacing: 0; }
     .row.photo-left.mist { margin-bottom: 134px; }
     .row.cleanup { margin-bottom: 133px; }
-    .about-page.story { margin-top: 412px; }
+    .about-page.story { margin-top: 0; }
+    .about-page.story > .wash {
+      padding-top: 412px;
+      background-image: linear-gradient(rgba(229, 234, 237, 0.5), rgba(229, 234, 237, 0.5));
+    }
     .about-page.mist { margin-top: 90px; }
     .about-page.mist > .wrap { width: min(1150px, calc(100% - 40px)); }
     .intro-block { padding-top: 80px; }

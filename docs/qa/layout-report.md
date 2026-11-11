@@ -1,5 +1,5 @@
 # Layout comparison: live vs build
-Total differences: 8222
+Total differences: 8227
 
 ## about @ 1920px: 2 difference(s)
 - text "We had our son’s 10th birthday": 5 line(s), live 4
@@ -380,13 +380,13 @@ Total differences: 8222
 - photo img_2344: brightness 96, live 139 (overlay or exposure differs)
 - photo img_2344: looks different from live (pixel difference 45)
 - band rgb(255, 255, 255) at y=629 (left margin): 643px tall, live 284px
-- band rgb(249, 253, 254) at y=1164 (5056px tall on live, left margin) not found in build
+- band rgb(255, 255, 255) at y=1164 (5056px tall on live, left margin) not found in build
 - band rgb(0, 0, 0) at y=6220 (97px tall on live, left margin) not found in build
 - band rgb(255, 255, 255) at y=1915 (660px tall, left margin) is in the build but not on live
 - band rgb(255, 255, 255) at y=3127 (698px tall, left margin) is in the build but not on live
 - band rgb(255, 255, 255) at y=4383 (646px tall, left margin) is in the build but not on live
-- band rgb(254, 255, 249) at y=629 (right margin): 643px tall, live 284px
-- band rgb(249, 253, 254) at y=1164 (5056px tall on live, right margin) not found in build
+- band rgb(255, 255, 255) at y=629 (right margin): 643px tall, live 284px
+- band rgb(255, 255, 255) at y=1164 (5056px tall on live, right margin) not found in build
 - band rgb(255, 255, 255) at y=1915 (660px tall, right margin) is in the build but not on live
 - band rgb(255, 255, 255) at y=3127 (698px tall, right margin) is in the build but not on live
 - band rgb(255, 255, 255) at y=4383 (646px tall, right margin) is in the build but not on live
@@ -608,14 +608,14 @@ Total differences: 8222
 - heading "NERF BATTLE PARTIES": looks different from live (pixel difference 67)
 - photo hero: brightness 61, live 38 (overlay or exposure differs)
 - photo hero: looks different from live (pixel difference 40)
-- band rgb(254, 254, 255) at y=729 (left margin): 828px tall, live 431px
-- band rgb(254, 253, 249) at y=2895 (1716px tall on live, left margin) not found in build
-- band rgb(254, 255, 255) at y=5384 (left margin): 327px tall, live 293px
+- band rgb(255, 255, 255) at y=729 (left margin): 828px tall, live 431px
+- band rgb(255, 255, 255) at y=2895 (1716px tall on live, left margin) not found in build
+- band rgb(255, 255, 255) at y=5384 (left margin): 327px tall, live 293px
 - band rgb(255, 255, 255) at y=2264 (1122px tall, left margin) is in the build but not on live
 - band rgb(255, 255, 255) at y=3972 (623px tall, left margin) is in the build but not on live
-- band rgb(255, 252, 250) at y=729 (right margin): 828px tall, live 431px
-- band rgb(255, 255, 250) at y=2895 (1716px tall on live, right margin) not found in build
-- band rgb(254, 255, 255) at y=5384 (right margin): 327px tall, live 293px
+- band rgb(255, 255, 255) at y=729 (right margin): 828px tall, live 431px
+- band rgb(255, 255, 255) at y=2895 (1716px tall on live, right margin) not found in build
+- band rgb(255, 255, 255) at y=5384 (right margin): 327px tall, live 293px
 - band rgb(255, 255, 255) at y=2264 (1122px tall, right margin) is in the build but not on live
 - band rgb(255, 255, 255) at y=3972 (623px tall, right margin) is in the build but not on live
 
@@ -763,11 +763,11 @@ Total differences: 8222
 - band color beside "- LEE C.": rgb(242, 246, 249), live rgb(227, 235, 237)
 - photo hero: brightness 54, live 36 (overlay or exposure differs)
 - band rgb(255, 255, 255) at y=729 (left margin): 1403px tall, live 1564px
-- band rgb(249, 253, 252) at y=2982 (left margin): 328px tall, live 293px
-- band rgb(254, 254, 254) at y=729 (right margin): 1403px tall, live 1564px
-- band rgb(249, 253, 252) at y=2982 (right margin): 328px tall, live 293px
+- band rgb(255, 255, 255) at y=2982 (left margin): 328px tall, live 293px
+- band rgb(255, 255, 255) at y=729 (right margin): 1403px tall, live 1564px
+- band rgb(255, 255, 255) at y=2982 (right margin): 328px tall, live 293px
 
-## fitness-classes @ 1920px: 251 difference(s)
+## fitness-classes @ 1920px: 252 difference(s)
 - heading missing: "WHAT IS OCR FITNESS?"
 - heading "FITNESS CLASSES IN SPRINGFIELD, MO": left edge 385px, live 541px
 - heading "FITNESS CLASSES IN SPRINGFIELD, MO": line height 70px, live 59px
@@ -1011,14 +1011,15 @@ Total differences: 8222
 - photo img_2344: looks different from live (pixel difference 44)
 - photo img_2347: brightness 76, live 124 (overlay or exposure differs)
 - photo img_2347: looks different from live (pixel difference 50)
-- band rgb(255, 254, 255) at y=729 (left margin): 772px tall, live 604px
+- band rgb(255, 255, 255) at y=729 (left margin): 772px tall, live 604px
 - band rgb(0, 0, 0) at y=1333 (81px tall on live, left margin) not found in build
-- band rgb(254, 254, 254) at y=3377 (left margin): 588px tall, live 1110px
+- band rgb(255, 255, 255) at y=3377 (left margin): 492px tall, live 1110px
 - band rgb(255, 255, 255) at y=2047 (610px tall, left margin) is in the build but not on live
-- band rgb(253, 253, 253) at y=4178 (328px tall, left margin) is in the build but not on live
-- band rgb(251, 255, 255) at y=729 (right margin): 772px tall, live 604px
-- band rgb(254, 254, 254) at y=3377 (right margin): 588px tall, live 1110px
-- band rgb(253, 253, 253) at y=4178 (328px tall, right margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=4178 (328px tall, left margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=729 (right margin): 772px tall, live 604px
+- band rgb(255, 255, 255) at y=3377 (right margin): 492px tall, live 1110px
+- band rgb(255, 255, 255) at y=2047 (610px tall, right margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=4178 (328px tall, right margin) is in the build but not on live
 
 ## home @ 1920px: 5 difference(s)
 - text "We believe in results and that": 3 line(s), live 2
@@ -1315,16 +1316,16 @@ Total differences: 8222
 - heading "LASER TAG GYM IN SPRINGFIELD, MO": looks different from live (pixel difference 76)
 - heading "HERE ARE THE DETAILS:": looks different from live (pixel difference 59)
 - text "You can begin the booking proc": looks different from live (pixel difference 203)
-- band rgb(254, 253, 255) at y=679 (left margin): 846px tall, live 376px
+- band rgb(255, 255, 255) at y=679 (left margin): 846px tall, live 376px
 - band rgb(0, 0, 0) at y=2144 (356px tall on live, left margin) not found in build
-- band rgb(247, 251, 250) at y=2500 (left margin): 507px tall, live 1491px
-- band rgb(247, 251, 250) at y=3158 (328px tall, left margin) is in the build but not on live
-- band rgb(254, 253, 255) at y=679 (right margin): 846px tall, live 376px
-- band rgb(0, 0, 0) at y=2145 (355px tall on live, right margin) not found in build
-- band rgb(247, 251, 250) at y=2500 (right margin): 507px tall, live 1491px
-- band rgb(247, 251, 250) at y=3158 (328px tall, right margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=2224 (507px tall, left margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=3158 (328px tall, left margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=679 (right margin): 846px tall, live 376px
+- band rgb(1, 0, 4) at y=2139 (361px tall on live, right margin) not found in build
+- band rgb(255, 255, 255) at y=2224 (507px tall, right margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=3158 (328px tall, right margin) is in the build but not on live
 
-## meet-the-team @ 1920px: 603 difference(s)
+## meet-the-team @ 1920px: 604 difference(s)
 - page height 10925px, live 7871px
 - heading missing: "YOU'VE MET THE TEAM."
 - heading missing: "NOW TRAIN WITH THEM."
@@ -1919,17 +1920,18 @@ Total differences: 8222
 - photo hero: brightness 28, live 49 (overlay or exposure differs)
 - photo hero: looks different from live (pixel difference 42)
 - band rgb(255, 255, 255) at y=2363 (836px tall, left margin) is in the build but not on live
-- band rgb(254, 255, 255) at y=3968 (951px tall, left margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=3968 (951px tall, left margin) is in the build but not on live
 - band rgb(255, 255, 255) at y=5690 (965px tall, left margin) is in the build but not on live
-- band rgb(253, 253, 253) at y=7466 (770px tall, left margin) is in the build but not on live
-- band rgb(253, 253, 253) at y=9005 (771px tall, left margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=7466 (770px tall, left margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=9005 (771px tall, left margin) is in the build but not on live
+- band rgb(6, 6, 6) at y=7235 (110px tall on live, right margin) not found in build
 - band rgb(255, 255, 255) at y=2363 (836px tall, right margin) is in the build but not on live
 - band rgb(255, 255, 255) at y=3968 (951px tall, right margin) is in the build but not on live
 - band rgb(255, 255, 255) at y=5690 (965px tall, right margin) is in the build but not on live
-- band rgb(253, 253, 253) at y=7466 (770px tall, right margin) is in the build but not on live
-- band rgb(253, 253, 253) at y=9005 (771px tall, right margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=7466 (770px tall, right margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=9005 (771px tall, right margin) is in the build but not on live
 
-## nerf-wars @ 1920px: 154 difference(s)
+## nerf-wars @ 1920px: 155 difference(s)
 - page height 3632px, live 3982px
 - heading missing: "BOOK NOW!"
 - heading missing: "READY TO LOCK IN THE DATE FOR YOUR CHILD'S EPIC NERF PARTY AT WARRIOR SPORTS?"
@@ -2079,11 +2081,12 @@ Total differences: 8222
 - heading "PRICING": looks different from live (pixel difference 75)
 - text "Let our experienced and kid-fr": looks different from live (pixel difference 189)
 - text "Or, dial (417) 894-7319 to res": looks different from live (pixel difference 188)
-- band rgb(255, 253, 252) at y=729 (left margin): 610px tall, live 322px
-- band rgb(5, 6, 1) at y=2157 (395px tall on live, left margin) not found in build
-- band rgb(254, 254, 254) at y=1889 (583px tall, left margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=729 (left margin): 610px tall, live 322px
+- band rgb(6, 6, 5) at y=2608 (66px tall on live, left margin) not found in build
+- band rgb(255, 255, 255) at y=1889 (583px tall, left margin) is in the build but not on live
 - band rgb(255, 255, 255) at y=729 (right margin): 610px tall, live 322px
-- band rgb(254, 254, 254) at y=1889 (583px tall, right margin) is in the build but not on live
+- band rgb(7, 6, 6) at y=2552 (70px tall on live, right margin) not found in build
+- band rgb(255, 255, 255) at y=1889 (583px tall, right margin) is in the build but not on live
 
 ## parkour @ 1920px: 200 difference(s)
 - page height 5248px, live 5540px
@@ -2276,18 +2279,18 @@ Total differences: 8222
 - heading "TEMPORARILY UNAVAILABLE": looks different from live (pixel difference 106)
 - heading "OPEN GYM IS OPEN — YOUR FIRST VISIT IS J": looks different from live (pixel difference 125)
 - text "$20 class drop in, $10 class d": looks different from live (pixel difference 138)
-- band rgb(251, 255, 255) at y=729 (left margin): 698px tall, live 1026px
-- band rgb(251, 254, 255) at y=4422 (left margin): 476px tall, live 1053px
+- band rgb(255, 255, 255) at y=729 (left margin): 698px tall, live 1026px
+- band rgb(255, 255, 255) at y=4422 (left margin): 476px tall, live 1053px
 - band rgb(255, 255, 255) at y=2135 (662px tall, left margin) is in the build but not on live
 - band rgb(255, 255, 255) at y=3459 (290px tall, left margin) is in the build but not on live
 - band rgb(255, 255, 255) at y=4855 (328px tall, left margin) is in the build but not on live
-- band rgb(255, 254, 255) at y=736 (right margin): 698px tall, live 1019px
-- band rgb(247, 255, 255) at y=4420 (right margin): 476px tall, live 1055px
+- band rgb(255, 253, 251) at y=729 (right margin): 698px tall, live 1026px
+- band rgb(255, 255, 255) at y=4420 (right margin): 476px tall, live 1055px
 - band rgb(255, 255, 255) at y=2135 (662px tall, right margin) is in the build but not on live
 - band rgb(255, 255, 255) at y=3459 (290px tall, right margin) is in the build but not on live
 - band rgb(255, 255, 255) at y=4855 (328px tall, right margin) is in the build but not on live
 
-## personal-training @ 1920px: 331 difference(s)
+## personal-training @ 1920px: 330 difference(s)
 - page height 7446px, live 6053px
 - heading missing: "NOT YOUR TYPICAL GYM. NOT YOUR TYPICAL TRAINER."
 - heading missing: "This isn’t about getting shredded or setting records."
@@ -2608,17 +2611,16 @@ Total differences: 8222
 - heading "HOW IT WORKS": looks different from live (pixel difference 48)
 - heading "LET’S TALK STRENGTH…YOUR VERSION": looks different from live (pixel difference 154)
 - photo hero: brightness 13, live 38 (overlay or exposure differs)
-- band rgb(254, 254, 254) at y=629 (left margin): 597px tall, live 685px
+- band rgb(255, 255, 255) at y=629 (left margin): 597px tall, live 685px
 - band rgb(255, 255, 255) at y=1774 (500px tall, left margin) is in the build but not on live
 - band rgb(255, 255, 255) at y=2776 (559px tall, left margin) is in the build but not on live
 - band rgb(255, 255, 255) at y=3895 (560px tall, left margin) is in the build but not on live
-- band rgb(254, 254, 254) at y=4747 (297px tall, left margin) is in the build but not on live
-- band rgb(251, 251, 251) at y=629 (right margin): 597px tall, live 685px
-- band rgb(0, 3, 2) at y=5377 (54px tall on live, right margin) not found in build
+- band rgb(255, 255, 255) at y=4747 (297px tall, left margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=629 (right margin): 597px tall, live 685px
 - band rgb(255, 255, 255) at y=1774 (500px tall, right margin) is in the build but not on live
 - band rgb(255, 255, 255) at y=2776 (559px tall, right margin) is in the build but not on live
 - band rgb(255, 255, 255) at y=3895 (560px tall, right margin) is in the build but not on live
-- band rgb(254, 254, 254) at y=4747 (297px tall, right margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=4747 (297px tall, right margin) is in the build but not on live
 
 ## registered-for-csna-competition @ 1920px: 17 difference(s)
 - page height 1325px, live 1000px
@@ -2633,9 +2635,9 @@ Total differences: 8222
 - words "If you encounter any problems or have an": color rgb(51, 51, 51), live rgb(0, 0, 0)
 - words "(417) 894-7319": color rgb(51, 51, 51), live rgb(219, 58, 52)
 - words "(417) 894-7319": weight 300, live 400
-- band rgb(255, 255, 250) at y=142 (793px tall on live, left margin) not found in build
+- band rgb(255, 255, 255) at y=142 (793px tall on live, left margin) not found in build
 - band rgb(255, 255, 255) at y=704 (556px tall, left margin) is in the build but not on live
-- band rgb(252, 252, 252) at y=145 (790px tall on live, right margin) not found in build
+- band rgb(255, 255, 255) at y=145 (790px tall on live, right margin) not found in build
 - band rgb(255, 255, 255) at y=704 (556px tall, right margin) is in the build but not on live
 - section colors differ: build [rgb(255, 255, 255) | rgb(40, 82, 118) | rgb(255, 255, 255)], live [rgb(255, 255, 255)]
 
@@ -2759,12 +2761,12 @@ Total differences: 8222
 - band color beside "We had our son’s 10th birthday here. All": rgb(242, 246, 249), live rgb(255, 255, 255)
 - band color beside "- JENNIFER L.": rgb(242, 246, 249), live rgb(255, 255, 255)
 - band color beside "- LEE C.": rgb(242, 246, 249), live rgb(255, 255, 255)
-- band rgb(252, 252, 252) at y=2258 (1022px tall on live, left margin) not found in build
+- band rgb(255, 255, 255) at y=2258 (1022px tall on live, left margin) not found in build
 - band rgb(255, 255, 255) at y=774 (236px tall, left margin) is in the build but not on live
-- band rgb(249, 249, 249) at y=2601 (329px tall, left margin) is in the build but not on live
-- band rgb(252, 252, 252) at y=2258 (1022px tall on live, right margin) not found in build
+- band rgb(255, 255, 255) at y=2601 (329px tall, left margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=2258 (1022px tall on live, right margin) not found in build
 - band rgb(255, 255, 255) at y=774 (236px tall, right margin) is in the build but not on live
-- band rgb(249, 249, 249) at y=2601 (329px tall, right margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=2601 (329px tall, right margin) is in the build but not on live
 
 ## summer-camps-in-springfield-mo @ 1920px: 404 difference(s)
 - page height 5794px, live 6281px
@@ -3163,13 +3165,13 @@ Total differences: 8222
 - heading "SPRINGFIELD WARRIOR REGISTRATION": looks different from live (pixel difference 44)
 - heading "REGISTRATION FORM": looks different from live (pixel difference 43)
 - photo hero: brightness 41, live 55 (overlay or exposure differs)
-- band rgb(251, 255, 255) at y=2878 (left margin): 353px tall, live 2334px
-- band rgb(249, 249, 249) at y=5923 (left margin): 328px tall, live 293px
-- band rgb(253, 253, 253) at y=2370 (420px tall, left margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=2878 (left margin): 420px tall, live 2334px
+- band rgb(255, 255, 255) at y=5923 (left margin): 328px tall, live 293px
+- band rgb(255, 255, 255) at y=2370 (420px tall, left margin) is in the build but not on live
 - band rgb(255, 255, 255) at y=3143 (304px tall, left margin) is in the build but not on live
-- band rgb(251, 255, 255) at y=2878 (right margin): 353px tall, live 2334px
-- band rgb(249, 249, 249) at y=5923 (right margin): 328px tall, live 293px
-- band rgb(253, 253, 253) at y=2370 (420px tall, right margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=2878 (right margin): 420px tall, live 2334px
+- band rgb(255, 255, 255) at y=5923 (right margin): 328px tall, live 293px
+- band rgb(255, 255, 255) at y=2370 (420px tall, right margin) is in the build but not on live
 - band rgb(255, 255, 255) at y=3143 (304px tall, right margin) is in the build but not on live
 
 ## thank-you-for-your-feedback @ 1920px: 11 difference(s)
@@ -3267,12 +3269,12 @@ Total differences: 8222
 - heading "WNL REGIONAL QUALIFIERS": looks different from live (pixel difference 60)
 - photo hero: brightness 75, live 41 (overlay or exposure differs)
 - photo hero: looks different from live (pixel difference 51)
-- band rgb(255, 254, 255) at y=729 (left margin): 241px tall, live 322px
-- band rgb(251, 255, 254) at y=1671 (1868px tall on live, left margin) not found in build
-- band rgb(252, 252, 252) at y=2563 (328px tall, left margin) is in the build but not on live
-- band rgb(254, 254, 254) at y=729 (right margin): 241px tall, live 322px
-- band rgb(251, 255, 254) at y=1671 (1868px tall on live, right margin) not found in build
-- band rgb(252, 252, 252) at y=2563 (328px tall, right margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=729 (left margin): 241px tall, live 322px
+- band rgb(255, 255, 255) at y=1671 (1868px tall on live, left margin) not found in build
+- band rgb(255, 255, 255) at y=2563 (328px tall, left margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=729 (right margin): 241px tall, live 322px
+- band rgb(255, 255, 255) at y=1671 (1868px tall on live, right margin) not found in build
+- band rgb(255, 255, 255) at y=2563 (328px tall, right margin) is in the build but not on live
 
 ## about @ 1280px: 2 difference(s)
 - text "We had our son’s 10th birthday": 5 line(s), live 4
@@ -3652,13 +3654,13 @@ Total differences: 8222
 - photo hero: looks different from live (pixel difference 39)
 - photo img_2344: brightness 96, live 139 (overlay or exposure differs)
 - photo img_2344: looks different from live (pixel difference 45)
-- band rgb(255, 254, 255) at y=629 (left margin): 643px tall, live 284px
-- band rgb(249, 253, 254) at y=1164 (5056px tall on live, left margin) not found in build
+- band rgb(255, 255, 255) at y=629 (left margin): 643px tall, live 284px
+- band rgb(255, 255, 255) at y=1164 (5056px tall on live, left margin) not found in build
 - band rgb(255, 255, 255) at y=1915 (660px tall, left margin) is in the build but not on live
 - band rgb(255, 255, 255) at y=3127 (698px tall, left margin) is in the build but not on live
 - band rgb(255, 255, 255) at y=4383 (646px tall, left margin) is in the build but not on live
-- band rgb(247, 247, 247) at y=629 (right margin): 643px tall, live 285px
-- band rgb(249, 253, 254) at y=1164 (5056px tall on live, right margin) not found in build
+- band rgb(255, 255, 255) at y=629 (right margin): 643px tall, live 285px
+- band rgb(255, 255, 255) at y=1164 (5056px tall on live, right margin) not found in build
 - band rgb(255, 255, 255) at y=1915 (660px tall, right margin) is in the build but not on live
 - band rgb(255, 255, 255) at y=3127 (698px tall, right margin) is in the build but not on live
 - band rgb(255, 255, 255) at y=4383 (646px tall, right margin) is in the build but not on live
@@ -3881,14 +3883,14 @@ Total differences: 8222
 - heading "CREATE AMAZING MEMORIES": looks different from live (pixel difference 39)
 - photo hero: brightness 62, live 42 (overlay or exposure differs)
 - photo hero: looks different from live (pixel difference 38)
-- band rgb(252, 255, 255) at y=729 (left margin): 828px tall, live 431px
-- band rgb(255, 255, 250) at y=2896 (1715px tall on live, left margin) not found in build
-- band rgb(254, 255, 255) at y=5384 (left margin): 327px tall, live 293px
+- band rgb(255, 255, 255) at y=729 (left margin): 828px tall, live 431px
+- band rgb(255, 255, 255) at y=2896 (1715px tall on live, left margin) not found in build
+- band rgb(255, 255, 255) at y=5384 (left margin): 327px tall, live 293px
 - band rgb(255, 255, 255) at y=2264 (1122px tall, left margin) is in the build but not on live
 - band rgb(255, 255, 255) at y=3972 (623px tall, left margin) is in the build but not on live
-- band rgb(255, 254, 250) at y=729 (right margin): 828px tall, live 431px
-- band rgb(255, 254, 253) at y=2895 (1716px tall on live, right margin) not found in build
-- band rgb(254, 255, 255) at y=5384 (right margin): 327px tall, live 293px
+- band rgb(255, 255, 255) at y=729 (right margin): 828px tall, live 431px
+- band rgb(255, 255, 255) at y=2895 (1716px tall on live, right margin) not found in build
+- band rgb(255, 255, 255) at y=5384 (right margin): 327px tall, live 293px
 - band rgb(255, 255, 255) at y=2264 (1122px tall, right margin) is in the build but not on live
 - band rgb(255, 255, 255) at y=3972 (623px tall, right margin) is in the build but not on live
 
@@ -3952,8 +3954,8 @@ Total differences: 8222
 - heading "TEST YOUR SKILLS ON OUR FUN AND COMPETIT": looks different from live (pixel difference 43)
 - heading "SEPTEMBER 2026 CSNA TEAM COMPETITION": looks different from live (pixel difference 46)
 - photo hero: brightness 70, live 48 (overlay or exposure differs)
-- band rgb(254, 254, 254) at y=2833 (left margin): 328px tall, live 461px
-- band rgb(254, 254, 254) at y=2833 (right margin): 328px tall, live 461px
+- band rgb(255, 255, 255) at y=2833 (left margin): 328px tall, live 461px
+- band rgb(255, 255, 255) at y=2833 (right margin): 328px tall, live 461px
 
 ## contact @ 1280px: 81 difference(s)
 - page height 3004px, live 3340px
@@ -4034,9 +4036,9 @@ Total differences: 8222
 - band color beside "- LEE C.": rgb(242, 246, 249), live rgb(227, 235, 237)
 - photo hero: brightness 54, live 37 (overlay or exposure differs)
 - band rgb(255, 255, 255) at y=729 (left margin): 1403px tall, live 1564px
-- band rgb(249, 253, 252) at y=2982 (left margin): 328px tall, live 293px
+- band rgb(255, 255, 255) at y=2982 (left margin): 328px tall, live 293px
 - band rgb(255, 255, 255) at y=729 (right margin): 1403px tall, live 1564px
-- band rgb(249, 253, 252) at y=2982 (right margin): 328px tall, live 293px
+- band rgb(255, 255, 255) at y=2982 (right margin): 328px tall, live 293px
 
 ## fitness-classes @ 1280px: 251 difference(s)
 - heading missing: "WHAT IS OCR FITNESS?"
@@ -4282,14 +4284,14 @@ Total differences: 8222
 - photo img_2344: looks different from live (pixel difference 44)
 - photo img_2347: brightness 76, live 124 (overlay or exposure differs)
 - photo img_2347: looks different from live (pixel difference 50)
-- band rgb(254, 255, 255) at y=729 (left margin): 772px tall, live 604px
-- band rgb(7, 7, 7) at y=1966 (43px tall on live, left margin) not found in build
-- band rgb(254, 254, 254) at y=3377 (left margin): 588px tall, live 1110px
+- band rgb(255, 255, 255) at y=729 (left margin): 772px tall, live 604px
+- band rgb(255, 255, 255) at y=3377 (left margin): 492px tall, live 1110px
 - band rgb(255, 255, 255) at y=2047 (610px tall, left margin) is in the build but not on live
-- band rgb(253, 253, 253) at y=4178 (328px tall, left margin) is in the build but not on live
-- band rgb(250, 255, 255) at y=729 (right margin): 772px tall, live 604px
-- band rgb(254, 254, 254) at y=3377 (right margin): 588px tall, live 1110px
-- band rgb(253, 253, 253) at y=4178 (328px tall, right margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=4178 (328px tall, left margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=729 (right margin): 772px tall, live 604px
+- band rgb(255, 255, 255) at y=3377 (right margin): 492px tall, live 1110px
+- band rgb(255, 255, 255) at y=2047 (610px tall, right margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=4178 (328px tall, right margin) is in the build but not on live
 
 ## home @ 1280px: 5 difference(s)
 - text "We believe in results and that": 3 line(s), live 2
@@ -4586,14 +4588,14 @@ Total differences: 8222
 - heading "LASER TAG GYM IN SPRINGFIELD, MO": looks different from live (pixel difference 75)
 - heading "HERE ARE THE DETAILS:": looks different from live (pixel difference 59)
 - text "You can begin the booking proc": looks different from live (pixel difference 201)
-- band rgb(252, 255, 255) at y=679 (left margin): 846px tall, live 376px
+- band rgb(255, 255, 255) at y=679 (left margin): 846px tall, live 376px
 - band rgb(0, 0, 0) at y=2144 (356px tall on live, left margin) not found in build
-- band rgb(247, 251, 250) at y=2500 (left margin): 507px tall, live 1491px
-- band rgb(247, 251, 250) at y=3158 (328px tall, left margin) is in the build but not on live
-- band rgb(251, 255, 255) at y=679 (right margin): 846px tall, live 376px
-- band rgb(0, 0, 0) at y=2145 (355px tall on live, right margin) not found in build
-- band rgb(247, 251, 250) at y=2500 (right margin): 507px tall, live 1491px
-- band rgb(247, 251, 250) at y=3158 (328px tall, right margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=2224 (507px tall, left margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=3158 (328px tall, left margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=679 (right margin): 846px tall, live 376px
+- band rgb(1, 0, 4) at y=2139 (361px tall on live, right margin) not found in build
+- band rgb(255, 255, 255) at y=2224 (507px tall, right margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=3158 (328px tall, right margin) is in the build but not on live
 
 ## meet-the-team @ 1280px: 604 difference(s)
 - page height 10925px, live 7871px
@@ -5190,16 +5192,16 @@ Total differences: 8222
 - photo hero: brightness 34, live 54 (overlay or exposure differs)
 - photo hero: looks different from live (pixel difference 41)
 - band rgb(255, 255, 255) at y=2363 (836px tall, left margin) is in the build but not on live
-- band rgb(254, 255, 255) at y=3968 (951px tall, left margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=3968 (951px tall, left margin) is in the build but not on live
 - band rgb(255, 255, 255) at y=5690 (965px tall, left margin) is in the build but not on live
-- band rgb(253, 253, 253) at y=7466 (770px tall, left margin) is in the build but not on live
-- band rgb(253, 253, 253) at y=9005 (771px tall, left margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=7466 (770px tall, left margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=9005 (771px tall, left margin) is in the build but not on live
 - band rgb(6, 6, 6) at y=7267 (73px tall on live, right margin) not found in build
 - band rgb(255, 255, 255) at y=2363 (836px tall, right margin) is in the build but not on live
 - band rgb(255, 255, 255) at y=3968 (951px tall, right margin) is in the build but not on live
 - band rgb(255, 255, 255) at y=5690 (965px tall, right margin) is in the build but not on live
-- band rgb(253, 253, 253) at y=7466 (770px tall, right margin) is in the build but not on live
-- band rgb(253, 253, 253) at y=9005 (771px tall, right margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=7466 (770px tall, right margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=9005 (771px tall, right margin) is in the build but not on live
 
 ## nerf-wars @ 1280px: 152 difference(s)
 - page height 3632px, live 3982px
@@ -5350,10 +5352,10 @@ Total differences: 8222
 - heading "PRICING": looks different from live (pixel difference 75)
 - text "Let our experienced and kid-fr": looks different from live (pixel difference 189)
 - text "Or, dial (417) 894-7319 to res": looks different from live (pixel difference 188)
-- band rgb(255, 252, 250) at y=729 (left margin): 610px tall, live 322px
-- band rgb(254, 254, 254) at y=1889 (583px tall, left margin) is in the build but not on live
-- band rgb(252, 255, 255) at y=729 (right margin): 610px tall, live 322px
-- band rgb(254, 254, 254) at y=1889 (583px tall, right margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=729 (left margin): 610px tall, live 322px
+- band rgb(255, 255, 255) at y=1889 (583px tall, left margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=729 (right margin): 610px tall, live 322px
+- band rgb(255, 255, 255) at y=1889 (583px tall, right margin) is in the build but not on live
 
 ## parkour @ 1280px: 200 difference(s)
 - page height 5248px, live 5540px
@@ -5546,13 +5548,13 @@ Total differences: 8222
 - heading "TEMPORARILY UNAVAILABLE": looks different from live (pixel difference 106)
 - heading "OPEN GYM IS OPEN — YOUR FIRST VISIT IS J": looks different from live (pixel difference 125)
 - text "$20 class drop in, $10 class d": looks different from live (pixel difference 138)
-- band rgb(251, 255, 248) at y=729 (left margin): 698px tall, live 1026px
-- band rgb(252, 255, 255) at y=4422 (left margin): 476px tall, live 1053px
+- band rgb(255, 255, 255) at y=729 (left margin): 698px tall, live 1026px
+- band rgb(255, 255, 255) at y=4422 (left margin): 476px tall, live 1053px
 - band rgb(255, 255, 255) at y=2135 (662px tall, left margin) is in the build but not on live
 - band rgb(255, 255, 255) at y=3459 (290px tall, left margin) is in the build but not on live
 - band rgb(255, 255, 255) at y=4855 (328px tall, left margin) is in the build but not on live
-- band rgb(255, 254, 255) at y=729 (right margin): 698px tall, live 1026px
-- band rgb(254, 253, 255) at y=4422 (right margin): 476px tall, live 1053px
+- band rgb(255, 255, 255) at y=729 (right margin): 698px tall, live 1026px
+- band rgb(255, 255, 255) at y=4422 (right margin): 476px tall, live 1053px
 - band rgb(255, 255, 255) at y=2135 (662px tall, right margin) is in the build but not on live
 - band rgb(255, 255, 255) at y=3459 (290px tall, right margin) is in the build but not on live
 - band rgb(255, 255, 255) at y=4855 (328px tall, right margin) is in the build but not on live
@@ -5878,19 +5880,19 @@ Total differences: 8222
 - heading "HOW IT WORKS": looks different from live (pixel difference 48)
 - heading "LET’S TALK STRENGTH…YOUR VERSION": looks different from live (pixel difference 154)
 - photo hero: brightness 15, live 42 (overlay or exposure differs)
-- band rgb(252, 252, 252) at y=629 (left margin): 597px tall, live 685px
-- band rgb(8, 8, 8) at y=4915 (403px tall on live, left margin) not found in build
-- band rgb(0, 3, 8) at y=5419 (235px tall on live, left margin) not found in build
+- band rgb(255, 255, 255) at y=629 (left margin): 597px tall, live 685px
+- band rgb(3, 3, 6) at y=4915 (403px tall on live, left margin) not found in build
+- band rgb(0, 3, 6) at y=5419 (235px tall on live, left margin) not found in build
 - band rgb(255, 255, 255) at y=1774 (500px tall, left margin) is in the build but not on live
 - band rgb(255, 255, 255) at y=2776 (559px tall, left margin) is in the build but not on live
 - band rgb(255, 255, 255) at y=3895 (560px tall, left margin) is in the build but not on live
-- band rgb(254, 254, 254) at y=4747 (297px tall, left margin) is in the build but not on live
-- band rgb(255, 254, 255) at y=633 (right margin): 597px tall, live 681px
-- band rgb(4, 2, 3) at y=5352 (302px tall on live, right margin) not found in build
+- band rgb(255, 255, 255) at y=4747 (297px tall, left margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=633 (right margin): 597px tall, live 681px
+- band rgb(0, 2, 6) at y=5352 (302px tall on live, right margin) not found in build
 - band rgb(255, 255, 255) at y=1774 (500px tall, right margin) is in the build but not on live
 - band rgb(255, 255, 255) at y=2776 (559px tall, right margin) is in the build but not on live
 - band rgb(255, 255, 255) at y=3895 (560px tall, right margin) is in the build but not on live
-- band rgb(254, 254, 254) at y=4747 (297px tall, right margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=4747 (297px tall, right margin) is in the build but not on live
 
 ## registered-for-csna-competition @ 1280px: 17 difference(s)
 - page height 1325px, live 1000px
@@ -5905,9 +5907,9 @@ Total differences: 8222
 - words "If you encounter any problems or have an": color rgb(51, 51, 51), live rgb(0, 0, 0)
 - words "(417) 894-7319": color rgb(51, 51, 51), live rgb(219, 58, 52)
 - words "(417) 894-7319": weight 300, live 400
-- band rgb(255, 255, 250) at y=142 (793px tall on live, left margin) not found in build
+- band rgb(255, 255, 255) at y=142 (793px tall on live, left margin) not found in build
 - band rgb(255, 255, 255) at y=704 (556px tall, left margin) is in the build but not on live
-- band rgb(252, 252, 252) at y=145 (790px tall on live, right margin) not found in build
+- band rgb(255, 255, 255) at y=145 (790px tall on live, right margin) not found in build
 - band rgb(255, 255, 255) at y=704 (556px tall, right margin) is in the build but not on live
 - section colors differ: build [rgb(255, 255, 255) | rgb(40, 82, 118) | rgb(255, 255, 255)], live [rgb(255, 255, 255)]
 
@@ -6031,12 +6033,12 @@ Total differences: 8222
 - band color beside "We had our son’s 10th birthday here. All": rgb(242, 246, 249), live rgb(255, 255, 255)
 - band color beside "- JENNIFER L.": rgb(242, 246, 249), live rgb(255, 255, 255)
 - band color beside "- LEE C.": rgb(242, 246, 249), live rgb(255, 255, 255)
-- band rgb(252, 252, 252) at y=2258 (1022px tall on live, left margin) not found in build
+- band rgb(255, 255, 255) at y=2258 (1022px tall on live, left margin) not found in build
 - band rgb(255, 255, 255) at y=774 (236px tall, left margin) is in the build but not on live
-- band rgb(249, 249, 249) at y=2601 (329px tall, left margin) is in the build but not on live
-- band rgb(252, 252, 252) at y=2258 (1022px tall on live, right margin) not found in build
+- band rgb(255, 255, 255) at y=2601 (329px tall, left margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=2258 (1022px tall on live, right margin) not found in build
 - band rgb(255, 255, 255) at y=774 (236px tall, right margin) is in the build but not on live
-- band rgb(249, 249, 249) at y=2601 (329px tall, right margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=2601 (329px tall, right margin) is in the build but not on live
 
 ## summer-camps-in-springfield-mo @ 1280px: 403 difference(s)
 - page height 5794px, live 6281px
@@ -6434,13 +6436,13 @@ Total differences: 8222
 - heading "SPRINGFIELD WARRIOR REGISTRATION": looks different from live (pixel difference 44)
 - heading "REGISTRATION FORM": looks different from live (pixel difference 43)
 - photo hero: brightness 43, live 57 (overlay or exposure differs)
-- band rgb(251, 255, 255) at y=2878 (left margin): 353px tall, live 2334px
-- band rgb(249, 249, 249) at y=5923 (left margin): 328px tall, live 293px
-- band rgb(253, 253, 253) at y=2370 (420px tall, left margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=2878 (left margin): 420px tall, live 2334px
+- band rgb(255, 255, 255) at y=5923 (left margin): 328px tall, live 293px
+- band rgb(255, 255, 255) at y=2370 (420px tall, left margin) is in the build but not on live
 - band rgb(255, 255, 255) at y=3143 (304px tall, left margin) is in the build but not on live
-- band rgb(251, 255, 255) at y=2878 (right margin): 353px tall, live 2334px
-- band rgb(249, 249, 249) at y=5923 (right margin): 328px tall, live 293px
-- band rgb(253, 253, 253) at y=2370 (420px tall, right margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=2878 (right margin): 420px tall, live 2334px
+- band rgb(255, 255, 255) at y=5923 (right margin): 328px tall, live 293px
+- band rgb(255, 255, 255) at y=2370 (420px tall, right margin) is in the build but not on live
 - band rgb(255, 255, 255) at y=3143 (304px tall, right margin) is in the build but not on live
 
 ## thank-you-for-your-feedback @ 1280px: 11 difference(s)
@@ -6538,12 +6540,12 @@ Total differences: 8222
 - heading "WNL REGIONAL QUALIFIERS": looks different from live (pixel difference 60)
 - photo hero: brightness 81, live 47 (overlay or exposure differs)
 - photo hero: looks different from live (pixel difference 53)
-- band rgb(254, 253, 255) at y=729 (left margin): 241px tall, live 322px
-- band rgb(251, 255, 254) at y=1671 (1868px tall on live, left margin) not found in build
-- band rgb(252, 252, 252) at y=2563 (328px tall, left margin) is in the build but not on live
-- band rgb(253, 254, 255) at y=729 (right margin): 241px tall, live 322px
-- band rgb(251, 255, 254) at y=1671 (1868px tall on live, right margin) not found in build
-- band rgb(252, 252, 252) at y=2563 (328px tall, right margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=729 (left margin): 241px tall, live 322px
+- band rgb(255, 255, 255) at y=1671 (1868px tall on live, left margin) not found in build
+- band rgb(255, 255, 255) at y=2563 (328px tall, left margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=729 (right margin): 241px tall, live 322px
+- band rgb(255, 255, 255) at y=1671 (1868px tall on live, right margin) not found in build
+- band rgb(255, 255, 255) at y=2563 (328px tall, right margin) is in the build but not on live
 
 ## about @ 390px: 4 difference(s)
 - text "In 2016 we had the unique oppo": 19 line(s), live 18
@@ -6551,7 +6553,7 @@ Total differences: 8222
 - gap between "Springfield Warrior Sports loo" and "CLIENT TESTIMONIALS": 216px, live 161px
 - gap between "We had our son’s 10th birthday" and "- JENNIFER L.": 62px, live 0px
 
-## best-gyms-in-springfield @ 390px: 197 difference(s)
+## best-gyms-in-springfield @ 390px: 199 difference(s)
 - page height 8081px, live 11526px
 - heading missing: "GP ATHLETICS"
 - heading missing: "SPRINGFIELD WARRIOR SPORTS"
@@ -6744,11 +6746,13 @@ Total differences: 8222
 - heading "LOOKING FOR THE BEST GYMS IN SPRINGFIELD": looks different from live (pixel difference 55)
 - heading "RAGE FITNESS": looks different from live (pixel difference 48)
 - photo img_2344: looks different from live (pixel difference 43)
-- band rgb(255, 254, 255) at y=599 (left margin): 1219px tall, live 491px
-- band rgb(253, 254, 255) at y=1561 (8624px tall on live, left margin) not found in build
-- band rgb(2, 2, 2) at y=10558 (55px tall on live, left margin) not found in build
-- band rgb(253, 253, 253) at y=10738 (688px tall on live, left margin) not found in build
-- band rgb(254, 254, 254) at y=2633 (5276px tall, left margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=599 (left margin): 1219px tall, live 491px
+- band rgb(255, 255, 255) at y=1561 (8624px tall on live, left margin) not found in build
+- band rgb(0, 0, 0) at y=10558 (55px tall on live, left margin) not found in build
+- band rgb(0, 1, 4) at y=10643 (92px tall on live, left margin) not found in build
+- band rgb(255, 255, 255) at y=10738 (688px tall on live, left margin) not found in build
+- band rgb(255, 255, 255) at y=685 (1219px tall, left margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=2633 (5276px tall, left margin) is in the build but not on live
 
 ## birthday-parties @ 390px: 82 difference(s)
 - page height 7216px, live 8154px
@@ -6830,9 +6834,9 @@ Total differences: 8222
 - photo hero: looks different from live (pixel difference 41)
 - photo laser-tag-party: brightness 255, live 85 (overlay or exposure differs)
 - photo laser-tag-party: looks different from live (pixel difference 170)
-- band rgb(255, 254, 251) at y=3981 (2436px tall on live, left margin) not found in build
-- band rgb(249, 253, 255) at y=7406 (648px tall on live, left margin) not found in build
-- band rgb(251, 251, 251) at y=2462 (4582px tall, left margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=3981 (2436px tall on live, left margin) not found in build
+- band rgb(255, 255, 255) at y=7406 (648px tall on live, left margin) not found in build
+- band rgb(255, 255, 255) at y=2462 (4582px tall, left margin) is in the build but not on live
 
 ## competitions @ 390px: 58 difference(s)
 - page height 3710px, live 4004px
@@ -6891,8 +6895,8 @@ Total differences: 8222
 - gap between "TEST YOUR SKILLS ON OUR FUN AN" and "Whether you are looking for re": 223px, live 141px
 - heading "TEST YOUR SKILLS ON OUR FUN AND COMPETIT": looks different from live (pixel difference 54)
 - heading "SEPTEMBER 2026 CSNA TEAM COMPETITION": looks different from live (pixel difference 41)
-- band rgb(249, 249, 249) at y=458 (left margin): 354px tall, live 3446px
-- band rgb(252, 255, 255) at y=2871 (667px tall, left margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=3106 (left margin): 667px tall, live 798px
+- band rgb(255, 255, 255) at y=685 (354px tall, left margin) is in the build but not on live
 
 ## contact @ 390px: 48 difference(s)
 - heading missing: "CLIENT TESTIMONIALS"
@@ -6942,7 +6946,7 @@ Total differences: 8222
 - photo qoute-icon: brightness 255, live 156 (overlay or exposure differs)
 - photo qoute-icon: looks different from live (pixel difference 99)
 - band rgb(255, 255, 255) at y=599 (left margin): 3618px tall, live 2279px
-- band rgb(252, 252, 252) at y=3633 (648px tall on live, left margin) not found in build
+- band rgb(255, 255, 255) at y=3633 (648px tall on live, left margin) not found in build
 
 ## fitness-classes @ 390px: 133 difference(s)
 - page height 6446px, live 7377px
@@ -7075,9 +7079,9 @@ Total differences: 8222
 - photo hero: brightness 25, live 51 (overlay or exposure differs)
 - photo improve-confidence: brightness 255, live 116 (overlay or exposure differs)
 - photo improve-confidence: looks different from live (pixel difference 139)
-- band rgb(0, 0, 5) at y=2680 (208px tall on live, left margin) not found in build
-- band rgb(250, 254, 253) at y=5341 (1936px tall on live, left margin) not found in build
-- band rgb(254, 254, 254) at y=2753 (3521px tall, left margin) is in the build but not on live
+- band rgb(0, 2, 6) at y=2680 (208px tall on live, left margin) not found in build
+- band rgb(255, 255, 255) at y=5341 (1936px tall on live, left margin) not found in build
+- band rgb(255, 255, 255) at y=2753 (3521px tall, left margin) is in the build but not on live
 
 ## home @ 390px: 2 difference(s)
 - gap between "(see below for our class hours" and "SPRINGFIELD'S BEST OBSTACLE TR": 238px, live 136px
@@ -7183,7 +7187,7 @@ Total differences: 8222
 - heading "(AGES 7–15)": looks different from live (pixel difference 45)
 - photo hero: brightness 89, live 33 (overlay or exposure differs)
 - photo hero: looks different from live (pixel difference 57)
-- band rgb(254, 254, 254) at y=599 (left margin): 525px tall, live 675px
+- band rgb(255, 255, 255) at y=599 (left margin): 525px tall, live 675px
 - band rgb(255, 255, 255) at y=2359 (667px tall, left margin) is in the build but not on live
 
 ## kids-classes @ 390px: 5 difference(s)
@@ -7193,7 +7197,7 @@ Total differences: 8222
 - gap between "Beginner Warrior Membership $7" and "CLASS TIMES": 171px, live 133px
 - background behind "FUN AND CHALLENGING": rgb(20, 20, 24), live rgb(23, 40, 50)
 
-## laser-tag @ 390px: 159 difference(s)
+## laser-tag @ 390px: 160 difference(s)
 - page height 4819px, live 5746px
 - heading missing: "WANT TO BOOK A PRIVATE LASER TAG PARTY?"
 - heading missing: "READY TO BOOK?"
@@ -7351,8 +7355,9 @@ Total differences: 8222
 - heading "LASER TAG GYM IN SPRINGFIELD, MO": looks different from live (pixel difference 70)
 - heading "HERE ARE THE DETAILS:": looks different from live (pixel difference 59)
 - text "You can begin the booking proc": looks different from live (pixel difference 185)
-- band rgb(251, 253, 255) at y=599 (left margin): 1411px tall, live 486px
+- band rgb(255, 255, 255) at y=599 (left margin): 1411px tall, live 486px
 - band rgb(3, 3, 3) at y=2978 (48px tall on live, left margin) not found in build
+- band rgb(255, 255, 255) at y=2841 (607px tall, left margin) is in the build but not on live
 
 ## meet-the-team @ 390px: 197 difference(s)
 - page height 16376px, live 17511px
@@ -7548,9 +7553,9 @@ Total differences: 8222
 - photo grace-photo: brightness 255, live 96 (overlay or exposure differs)
 - photo grace-photo: looks different from live (pixel difference 159)
 - band rgb(255, 255, 255) at y=625 (left margin): 766px tall, live 353px
-- band rgb(7, 5, 6) at y=16335 (44px tall on live, left margin) not found in build
+- band rgb(5, 5, 5) at y=16335 (44px tall on live, left margin) not found in build
 - band rgb(255, 255, 255) at y=16723 (688px tall on live, left margin) not found in build
-- band rgb(1, 1, 1) at y=210 (62px tall, left margin) is in the build but not on live
+- band rgb(6, 6, 6) at y=154 (164px tall, left margin) is in the build but not on live
 - band rgb(255, 255, 255) at y=2840 (13364px tall, left margin) is in the build but not on live
 
 ## nerf-wars @ 390px: 132 difference(s)
@@ -7684,8 +7689,8 @@ Total differences: 8222
 - text "Let our experienced and kid-fr": looks different from live (pixel difference 189)
 - text "Or, dial (417) 894-7319 to res": looks different from live (pixel difference 184)
 - photo hero: brightness 35, live 50 (overlay or exposure differs)
-- band rgb(250, 254, 253) at y=599 (left margin): 705px tall, live 442px
-- band rgb(254, 255, 255) at y=2000 (1106px tall, left margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=599 (left margin): 705px tall, live 442px
+- band rgb(255, 255, 255) at y=2000 (1106px tall, left margin) is in the build but not on live
 
 ## parkour @ 390px: 100 difference(s)
 - page height 6597px, live 7353px
@@ -7786,8 +7791,8 @@ Total differences: 8222
 - photo wsre-shoots: brightness 255, live 104 (overlay or exposure differs)
 - photo wsre-shoots: looks different from live (pixel difference 151)
 - band rgb(255, 255, 255) at y=604 (left margin): 1261px tall, live 1710px
-- band rgb(251, 255, 255) at y=5741 (1512px tall on live, left margin) not found in build
-- band rgb(253, 253, 253) at y=2658 (3767px tall, left margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=5741 (1512px tall on live, left margin) not found in build
+- band rgb(255, 255, 255) at y=2658 (3767px tall, left margin) is in the build but not on live
 
 ## personal-training @ 390px: 119 difference(s)
 - heading missing: "NOT YOUR TYPICAL GYM. NOT YOUR TYPICAL TRAINER."
@@ -7904,11 +7909,11 @@ Total differences: 8222
 - photo jonny-wilder-img: looks different from live (pixel difference 211)
 - photo qoute-icon: brightness 255, live 156 (overlay or exposure differs)
 - photo qoute-icon: looks different from live (pixel difference 99)
-- band rgb(253, 253, 253) at y=469 (left margin): 935px tall, live 1132px
-- band rgb(0, 0, 5) at y=8200 (185px tall on live, left margin) not found in build
-- band rgb(251, 254, 255) at y=8446 (687px tall on live, left margin) not found in build
-- band rgb(254, 255, 255) at y=2144 (4023px tall, left margin) is in the build but not on live
-- band rgb(254, 254, 254) at y=7409 (1841px tall, left margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=469 (left margin): 935px tall, live 1132px
+- band rgb(0, 1, 4) at y=8200 (185px tall on live, left margin) not found in build
+- band rgb(255, 255, 255) at y=8446 (687px tall on live, left margin) not found in build
+- band rgb(255, 255, 255) at y=2144 (4023px tall, left margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=7409 (1841px tall, left margin) is in the build but not on live
 
 ## registered-for-csna-competition @ 390px: 15 difference(s)
 - page height 1723px, live 1365px
@@ -7923,7 +7928,7 @@ Total differences: 8222
 - words "If you encounter any problems or have an": color rgb(51, 51, 51), live rgb(0, 0, 0)
 - words "(417) 894-7319": color rgb(51, 51, 51), live rgb(219, 58, 52)
 - words "(417) 894-7319": weight 300, live 400
-- band rgb(248, 254, 254) at y=159 (1106px tall on live, left margin) not found in build
+- band rgb(255, 255, 255) at y=159 (1106px tall on live, left margin) not found in build
 - band rgb(255, 255, 255) at y=655 (896px tall, left margin) is in the build but not on live
 - section colors differ: build [rgb(255, 255, 255) | rgb(40, 82, 118) | rgb(255, 255, 255)], live [rgb(255, 255, 255)]
 
@@ -7942,7 +7947,7 @@ Total differences: 8222
 - words "(417) 894-7319": color rgb(51, 51, 51), live rgb(219, 58, 52)
 - words "(417) 894-7319": weight 300, live 400
 - button not on live: "CLICK HERE TO FINALIZE THE REGISTRATION WITH YOUR PAYMENT."
-- band rgb(248, 254, 254) at y=159 (left margin): 65px tall, live 1508px
+- band rgb(255, 255, 255) at y=159 (left margin): 65px tall, live 1508px
 - band rgb(255, 255, 255) at y=655 (1064px tall, left margin) is in the build but not on live
 
 ## registered-for-summer-fun-competition @ 390px: 16 difference(s)
@@ -7960,7 +7965,7 @@ Total differences: 8222
 - words "If you encounter any problems or have an": color rgb(51, 51, 51), live rgb(0, 0, 0)
 - words "(417) 894-7319": color rgb(51, 51, 51), live rgb(219, 58, 52)
 - words "(417) 894-7319": weight 300, live 400
-- band rgb(248, 254, 254) at y=159 (left margin): 65px tall, live 1430px
+- band rgb(255, 255, 255) at y=159 (left margin): 65px tall, live 1430px
 - band rgb(255, 255, 255) at y=655 (998px tall, left margin) is in the build but not on live
 
 ## registered-for-wnl-competition @ 390px: 15 difference(s)
@@ -7977,7 +7982,7 @@ Total differences: 8222
 - words "If you encounter any problems or have an": color rgb(51, 51, 51), live rgb(0, 0, 0)
 - words "(417) 894-7319": color rgb(51, 51, 51), live rgb(219, 58, 52)
 - words "(417) 894-7319": weight 300, live 400
-- band rgb(248, 254, 254) at y=159 (left margin): 65px tall, live 1402px
+- band rgb(255, 255, 255) at y=159 (left margin): 65px tall, live 1402px
 - band rgb(255, 255, 255) at y=655 (973px tall, left margin) is in the build but not on live
 
 ## registered @ 390px: 15 difference(s)
@@ -7994,7 +7999,7 @@ Total differences: 8222
 - words "If you encounter any problems or have an": color rgb(51, 51, 51), live rgb(0, 0, 0)
 - words "(417) 894-7319": color rgb(51, 51, 51), live rgb(219, 58, 52)
 - words "(417) 894-7319": weight 300, live 400
-- band rgb(248, 254, 254) at y=159 (left margin): 65px tall, live 1402px
+- band rgb(255, 255, 255) at y=159 (left margin): 65px tall, live 1402px
 - band rgb(255, 255, 255) at y=655 (973px tall, left margin) is in the build but not on live
 
 ## schedule-birthday-party @ 390px: 15 difference(s)
@@ -8011,8 +8016,8 @@ Total differences: 8222
 - text "1. Fill out the form to begin ": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
 - photo qoute-icon: brightness 255, live 160 (overlay or exposure differs)
 - photo qoute-icon: looks different from live (pixel difference 95)
-- band rgb(255, 255, 253) at y=603 (left margin): 262px tall, live 2925px
-- band rgb(254, 255, 255) at y=2264 (1479px tall, left margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=603 (left margin): 262px tall, live 2925px
+- band rgb(255, 255, 255) at y=2264 (1479px tall, left margin) is in the build but not on live
 
 ## summer-camps-in-springfield-mo @ 390px: 249 difference(s)
 - page height 7038px, live 7568px
@@ -8259,11 +8264,11 @@ Total differences: 8222
 - heading "SUMMER CAMPS IN SPRINGFIELD — 2026 DATES": looks different from live (pixel difference 43)
 - photo qoute-icon: brightness 255, live 156 (overlay or exposure differs)
 - photo qoute-icon: looks different from live (pixel difference 99)
-- band rgb(248, 248, 248) at y=599 (left margin): 791px tall, live 892px
-- band rgb(251, 255, 254) at y=3847 (2312px tall on live, left margin) not found in build
-- band rgb(252, 252, 252) at y=6820 (648px tall on live, left margin) not found in build
+- band rgb(255, 255, 255) at y=599 (left margin): 791px tall, live 892px
+- band rgb(255, 255, 255) at y=3847 (2312px tall on live, left margin) not found in build
+- band rgb(255, 255, 255) at y=6820 (648px tall on live, left margin) not found in build
 - band rgb(255, 255, 255) at y=2383 (1248px tall, left margin) is in the build but not on live
-- band rgb(252, 251, 255) at y=5387 (1479px tall, left margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=5387 (1479px tall, left margin) is in the build but not on live
 
 ## thank-you-for-your-feedback @ 390px: 13 difference(s)
 - page height 1879px, live 1773px
@@ -8277,7 +8282,7 @@ Total differences: 8222
 - words "(417)894-7319": color rgb(51, 51, 51), live rgb(219, 58, 52)
 - words "(417)894-7319": weight 300, live 400
 - words ".Thanks,Andy and the Warrior Sports Team": color rgb(51, 51, 51), live rgb(0, 0, 0)
-- band rgb(248, 254, 254) at y=159 (left margin): 65px tall, live 1514px
+- band rgb(255, 255, 255) at y=159 (left margin): 65px tall, live 1514px
 - band rgb(255, 255, 255) at y=655 (1052px tall, left margin) is in the build but not on live
 
 ## wnl-competitions @ 390px: 79 difference(s)
@@ -8357,25 +8362,23 @@ Total differences: 8222
 - heading "WNL COMPETITIONS IN SPRINGFIELD MISSOURI": looks different from live (pixel difference 79)
 - photo hero: brightness 83, live 60 (overlay or exposure differs)
 - photo hero: looks different from live (pixel difference 60)
-- band rgb(255, 254, 255) at y=600 (left margin): 318px tall, live 413px
-- band rgb(249, 248, 253) at y=1579 (2566px tall on live, left margin) not found in build
-- band rgb(251, 251, 251) at y=2722 (667px tall, left margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=600 (left margin): 318px tall, live 413px
+- band rgb(255, 255, 255) at y=1579 (2566px tall on live, left margin) not found in build
+- band rgb(255, 255, 255) at y=2722 (667px tall, left margin) is in the build but not on live
 ## Notes
 
-Gate v2.12, then v2.13, round 11. Model: Grok 4.7. The live map, the scripts, the tolerances, and PIXEL_TOL were not edited. No allow entries were added. Gate v2.13 (`5a5b4e4`) landed on the branch before this could be pushed, so the list above is v2.13.
+Gate v2.13, round 11. Model: Grok 4.7. The live map, the scripts, the tolerances, and PIXEL_TOL were not edited. No allow entries were added. `fc34a0e` landed before this could be pushed. A band's color is the median pixel, and two runs merge only when their medians are within 4.
 
-On gate v2.12, commit 666f552 was 8,038 differences. Home 4/4/0, about 4/4/2, kids-classes 0/0/3. That about count included the strips v2.12 added on the round 10 preview: `band rgb(250, 254, 255) at y=3677 (138px tall)` at 1920 and 1280, and `band rgb(250, 254, 255) at y=4926 (66px tall)` at 390. After the coaches photo, the partner-band spacing, the partnerships join, the phone bullet list, the About intro padding, and the live partnerships gradient, the same screenshots on v2.12 are 8,031. Home 3/3/0, about 2/2/1, kids-classes 0/0/3. Those three strip lines are gone. No other page rose on v2.12.
+On gate v2.12, commit 666f552 was 8,038 differences. Home 4/4/0, about 4/4/2, kids-classes 0/0/3. That about count included `band rgb(250, 254, 255) at y=3677 (138px tall)` at 1920 and 1280, and `band rgb(250, 254, 255) at y=4926 (66px tall)` at 390. After the coaches photo, the partner-band spacing, the partnerships join, the phone bullet list, the About intro padding, and the live partnerships gradient, those screenshots on v2.12 are 8,031. Home 3/3/0, about 2/2/1, kids-classes 0/0/3. Those three strip lines are gone.
 
-The same screenshots on v2.13 are 8,222. Home 5/5/2, about 2/2/4, kids-classes 3/3/5. The added lines are the new gap check. About at 1920 and 1280 stays at the two testimonial wraps. The partnerships grey is rgb(242, 245, 246) and runs into the Perseverance navy at all three widths. The Vercel preview of `b2bac1e` measures the same on the three pages: home 5/5/2, about 2/2/4, kids-classes 3/3/5. The y=3677 and y=4926 white strips are not in that list.
+On this gate the same pages are home 5/5/2, about 2/2/4, kids-classes 3/3/5, and the site total is 8,227. About at 1920 and 1280 is the two testimonial wraps. The partnerships grey is rgb(242, 245, 246) and runs into the Perseverance navy. The James River wash is the same grey from the end of that navy to the Community Murph row.
 
-The "BE AN EVERYDAY WARRIOR!" photo uses live's CSS: `background-size: contain`, `background-position: 100% 0`, `min-height: 632px`, on the 750 by 669 image. The right coach's arm is fully visible at 1920 and 1280. At 390 the full photo is visible, arm included, at 310 by 277. Live's phone image is 350 by 312. Matching that box made the white band at y=8160 1,035px against live's 905px, so the smaller photo stays. `.partner-band` has no box-shadow. It is `background: rgb(40, 82, 118)` with its padding.
+The "BE AN EVERYDAY WARRIOR!" photo uses live's CSS: `background-size: contain`, `background-position: 100% 0`, `min-height: 632px`. The right coach's arm is fully visible at 1920 and 1280. At 390 the photo is 310 by 277. Live's phone image is 350 by 312. Matching that box made the white band at y=8160 1,035px against live's 905px, so the smaller photo stays. `.partner-band` has no box-shadow.
 
-The phone bullet list uses live's 41px line height and no gap between items. Live's section padding is 20px. The items step by 42px (live 41px). The black strip is 250px against live's 277px, and home at 390 has no band line.
+The phone bullet list uses a 41px line height, no gap, and 20px of section padding. The items step by 42px (live 41px). Home at 390 has no band line.
 
-The About intro uses live's padding: 90px above the paragraph and 90px of white before the grey flag band from 800px up, and 80px and 80px below that. The paragraph's margin-bottom is 0. The "CURIOUS ABOUT THE COLORS" heading is at y=1261 against live's 1262 on desktop, and at y=1601 against live's 1610 at 390. The paragraph stays lower than live because the trust bar is in the flow under the hero.
+The About intro uses live's padding: 90px above the paragraph and 90px of white before the grey flag band from 800px up, and 80px and 80px below that. The "CURIOUS ABOUT THE COLORS" heading is at y=1261 against live's 1262 on desktop, and at y=1601 against live's 1610 at 390.
 
-The partnerships band uses live's background, `linear-gradient(rgba(229, 234, 237, 0.5), rgba(229, 234, 237, 0.5))`, which is rgb(242, 245, 246) over white. The white between the flag grey and this band is 700px against live's 701px. The join into the navy is padding on the grey block, 138px from 800px up and 70px below. A solid rgb(241, 245, 247) was the same grey by eye, and v2.12's quality-55 JPEG pulled it into the white run above, reporting one 2,118px band. The live gradient keeps the runs separate. The grey was not darkened. The phone-width space under the footer for the sticky Call bar is unchanged.
+The partnerships band and the James River wash use live's background, `linear-gradient(rgba(229, 234, 237, 0.5), rgba(229, 234, 237, 0.5))`. The partnerships join is padding on the grey, 138px from 800px up and 70px below. The James River space above the paragraph was a 939px margin on desktop and a 412px margin on the phone, so it was white. Live's section margin is 0 and that area is the grey. The space is now padding on the wash. A 42px white line from the section's own padding sits above it, under the gate's 60px minimum. The phone-width space under the footer for the sticky Call bar is unchanged.
 
-v2.13's new lines, with the CSS left as live has it. Home at 1920 and 1280, the bullet text to "GET READY TO" is 107px against live's 112px. The trust-bar text sits in that span and is 45px tall, so the check reports 62px. About at 390, the intro paragraph to "CURIOUS ABOUT THE COLORS" is 276px against live's 370px because the paragraph starts at y=765 against live's 680, while the heading is already at live's y. The white before the grey flag band is 80px against live's 81px. Kids Classes and the other gap lines are the same kind of section spacing. None of these were closed by moving type or painting a band.
-
-The other open lines are wraps, at live's size, width, and letter-spacing. Kids Classes at 390 also reads the background behind "FUN AND CHALLENGING" as rgb(20, 20, 24) against live rgb(23, 40, 50), on the hero photo, which has no overlay. The Memorial Day sentence stays in the Community Murph paragraph. Paragraph links stay rgb(219, 58, 52) with no underline.
+The gap lines are the new v2.13 check. Home's bullet text to "GET READY TO" is 107px against live's 112px. The trust-bar text is 45px of that span, so the check reports 62px. About at 390, the intro paragraph to the colors heading is 276px against live's 370px because the paragraph starts at y=765 against live's 680, while the heading is already at live's y. The white before the flag band is 80px against live's 81px. Those headings were not moved. Kids Classes at 390 still reads the background behind "FUN AND CHALLENGING" as rgb(20, 20, 24) against live rgb(23, 40, 50), on the hero photo, which has no overlay. The Memorial Day sentence stays in the Community Murph paragraph. Paragraph links stay rgb(219, 58, 52) with no underline.
