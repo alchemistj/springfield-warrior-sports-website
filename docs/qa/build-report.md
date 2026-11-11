@@ -645,7 +645,7 @@ Lighthouse mobile on the local preview, after this batch. Order is performance /
 
 Model: Grok 4.7. The live map, the scripts, the tolerances, and `PIXEL_TOL` were not edited. No allow entries were added. Forms still use the Central Forms wiring (siteKey, formKeys, field names, retry id, thank-you redirects, host gate). Field chrome, placeholders, and the camp date boxes were matched to the v2.17 recapture. Lighthouse mobile was not re-run.
 
-Round 1 on the Vercel preview of `554a79e` used gate v2.15. The addendum below is the local build against the v2.17 live maps (`c974818`).
+Round 1 on the Vercel preview of `554a79e` used gate v2.15. The addendum below is `a66d6d0`, measured on this PR's Vercel preview against the v2.17 live maps. The same totals came back from the local build.
 
 | Page | v2.17 before this pass 1920 / 1280 / 390 | After 1920 / 1280 / 390 |
 |---|---|---|
