@@ -66,7 +66,22 @@ function collect() {
       align: cs.textAlign,
       transform: cs.textTransform,
       spacing: cs.letterSpacing === "normal" ? 0 : Math.round(parseFloat(cs.letterSpacing) * 10) / 10,
+      lh: cs.lineHeight === "normal" ? Math.round(parseFloat(cs.fontSize) * 1.2) : Math.round(parseFloat(cs.lineHeight)),
     };
+  };
+  // Style runs: every text node in the block with its own color and weight, consecutive equal
+  // styles merged. Catches a missing colored link or a whole paragraph in the accent color.
+  const runs = (el) => {
+    const out = [];
+    const walker = document.createTreeWalker(el, 4, { acceptNode: (n) => (n.textContent.trim() ? 1 : 3) });
+    for (let n = walker.nextNode(); n; n = walker.nextNode()) {
+      const cs = getComputedStyle(n.parentElement);
+      const t = n.textContent.replace(/\s+/g, " ");
+      const last = out[out.length - 1];
+      if (last && last.c === cs.color && last.w === Number(cs.fontWeight)) last.t += t;
+      else out.push({ t, c: cs.color, w: Number(cs.fontWeight) });
+    }
+    return out;
   };
   // Background a visitor sees behind an element: the nearest ancestor with a solid color or an image.
   const behind = (el) => {
@@ -129,7 +144,7 @@ function collect() {
         item = { kind: "bgimage", src: hero ? "hero" : m[1] };
       }
     }
-    if (item && (item.kind === "heading" || item.kind === "text")) item.behind = behind(el);
+    if (item && (item.kind === "heading" || item.kind === "text")) { item.behind = behind(el); item.runs = runs(el); }
     if (item && shown(el)) {
       items.push({ ...item, region: region(el), ...box(el) });
       els.push(el);

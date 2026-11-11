@@ -26,7 +26,12 @@ export function imageKey(src) {
   b = b.replace(/^\d{4}-\d{2}-/, "").replace(/-\d+x\d+$/, "").replace(/-scaled$/, "").replace(/-\d+x\d+$/, "");
   return b;
 }
-const parseColor = (c) => (c?.match(/[\d.]+/g) || []).slice(0, 3).map(Number);
+// rgb values with any alpha blended over white, so rgba(0, 0, 0, 0.7) reads as grey, not black.
+const parseColor = (c) => {
+  const v = (c?.match(/[\d.]+/g) || []).map(Number);
+  const a = v.length >= 4 ? v[3] : 1;
+  return v.slice(0, 3).map((x) => Math.round(x * a + 255 * (1 - a)));
+};
 const colorDiff = (a, b) => {
   const [x, y] = [parseColor(a), parseColor(b)];
   if (x.length < 3 || y.length < 3) return a === b ? 0 : 999;
@@ -88,6 +93,13 @@ function styleDiffs(l, b, label) {
   if (l.size && Math.abs(l.size - b.size) > TOL.size) out.push(`${label}: size ${b.size}px, live ${l.size}px`);
   if (l.weight && Math.abs(l.weight - b.weight) >= TOL.weight) out.push(`${label}: weight ${b.weight}, live ${l.weight}`);
   if (l.color && colorDiff(l.color, b.color) > TOL.color) out.push(`${label}: color ${b.color}, live ${l.color}`);
+  // Line count (v2.5): same words wrapping onto a different number of lines (only when the
+  // text is identical, so a paragraph split differently isn't flagged).
+  if (l.lh && b.lh && l.h && b.h && norm(l.full || l.text) === norm(b.full || b.text)) {
+    const ln = Math.round(l.h / l.lh), bn = Math.round(b.h / b.lh);
+    if (ln !== bn) out.push(`${label}: ${bn} line(s), live ${ln}`);
+  }
+  if (l.lh && b.lh && Math.abs(l.lh - b.lh) > 2) out.push(`${label}: line height ${b.lh}px, live ${l.lh}px`);
   if (l.spacing !== undefined && b.spacing !== undefined && Math.abs(l.spacing - b.spacing) > 1)
     out.push(`${label}: letter spacing ${b.spacing}px, live ${l.spacing}px`);
   if (l.align && b.align && l.align !== b.align && !(l.align === "start" && b.align === "left") && !(l.align === "left" && b.align === "start"))
@@ -192,6 +204,45 @@ for (const width of readdirSync(liveDir).sort((a, b) => Number(b) - Number(a))) 
         .filter((t) => norm(t).length > 20 && liveAll.includes(norm(t).slice(0, 60)) && !buildAll.includes(norm(t).slice(0, 60)))
         .forEach((t) => issues.push(`text hidden in build but visible on live: "${t.slice(0, 60)}"`));
       tx.pairs.forEach(([l, b]) => issues.push(...styleDiffs(l, b, `text "${l.text.slice(0, 30)}"`)));
+      // Style runs (v2.5): each run of words on live must have the same color and weight in the
+      // build, wherever the build puts those words (works across differently split paragraphs).
+      const charStyles = (items) => {
+        let str = "";
+        const st = [];
+        for (const i of items) {
+          if ((i.kind !== "text" && i.kind !== "heading") || i.region !== "main") continue;
+          for (const r of i.runs || [{ t: i.full || i.text, c: i.color, w: i.weight }]) {
+            const t = norm(r.t);
+            if (!t) continue;
+            str += " " + t;
+            st.push(...Array(t.length + 1).fill(r));
+          }
+        }
+        return { str, st };
+      };
+      const bc = charStyles(build.items);
+      for (const i of live.items) {
+        if ((i.kind !== "text" && i.kind !== "heading") || i.region !== "main" || !i.runs) continue;
+        for (const r of i.runs) {
+          const t = norm(r.t);
+          if (t.length < 3) continue;
+          const at = bc.str.indexOf(" " + t);
+          if (at === -1) continue; // missing words are reported above
+          const counts = new Map();
+          for (let k = at + 1; k <= at + t.length; k++) {
+            const s = bc.st[k];
+            if (!s) continue;
+            const key = `${s.c}|${s.w}`;
+            counts.set(key, (counts.get(key) || 0) + 1);
+          }
+          const [top] = [...counts.entries()].sort((x, y) => y[1] - x[1]);
+          if (!top) continue;
+          const [bcol, bw] = top[0].split("|");
+          const label = `words "${r.t.trim().slice(0, 40)}"`;
+          if (colorDiff(r.c, bcol) > TOL.color) issues.push(`${label}: color ${bcol}, live ${r.c}`);
+          if (Math.abs(r.w - Number(bw)) >= TOL.weight) issues.push(`${label}: weight ${bw}, live ${r.w}`);
+        }
+      }
       // Vertical rhythm: the gap from each heading to the next must be close to live
       // (catches squeezed or missing section padding).
       const hp = h.pairs.filter(([l, b]) => b.text && l.text);
