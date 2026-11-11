@@ -110,14 +110,21 @@ async function thumb(file, r) {
   if (width < 8 || height < 8) return null;
   return sharp(file).extract({ left, top, width, height }).resize(48, 16, { fit: "fill" }).grayscale().raw().toBuffer();
 }
-async function dominant(file, r) {
+async function brightness(file, r) {
+  const t = await thumb(file, r);
+  if (!t) return null;
+  let sum = 0;
+  for (const v of t) sum += v;
+  return sum / t.length;
+}
+async function dominant(file, r, padding = 12) {
   const m = await meta(file);
-  const pad = 12;
-  const left = Math.max(0, Math.min(m.width - 2, r.x - pad));
-  const top = Math.max(0, Math.min(m.height - 2, r.y - pad));
-  const width = Math.max(1, Math.min(m.width - left, r.w + pad * 2));
-  const height = Math.max(1, Math.min(m.height - top, r.h + pad * 2));
-  if (width < 8 || height < 8) return null;
+  const pad = padding;
+  const left = Math.round(Math.max(0, Math.min(m.width - 2, r.x - pad)));
+  const top = Math.round(Math.max(0, Math.min(m.height - 2, r.y - pad)));
+  const width = Math.round(Math.max(1, Math.min(m.width - left, r.w + pad * 2)));
+  const height = Math.round(Math.max(1, Math.min(m.height - top, r.h + pad * 2)));
+  if (width < 2 || height < 2) return null;
   const buf = await sharp(file).extract({ left, top, width, height }).resize(40, 12, { fit: "fill", kernel: "nearest" }).removeAlpha().raw().toBuffer();
   const counts = new Map();
   for (let i = 0; i < buf.length; i += 3) {
@@ -225,7 +232,27 @@ for (const width of readdirSync(liveDir).sort((a, b) => Number(b) - Number(a))) 
           if (lc && bc && Math.max(...lc.map((v, i) => Math.abs(v - bc[i]))) > 40)
             issues.push(`background behind "${(l.text || "").slice(0, 40)}": rgb(${bc.join(", ")}), live rgb(${lc.join(", ")})`);
         }
+        // Full-width band color: sample the left margin, outside the content column, beside each
+        // heading and text block.
+        const seenBand = new Set();
+        for (const [l, b] of [...h.pairs, ...tx.pairs]) {
+          const key = Math.round(l.y / 40);
+          if (seenBand.has(key)) continue;
+          seenBand.add(key);
+          const marginW = Math.max(2, Math.min(16, Math.min(l.x, b.x) - 4));
+          const [lc, bc] = await Promise.all([
+            dominant(livePng, { x: 0, y: l.y + l.h / 2 - 4, w: marginW, h: 8 }, 0),
+            dominant(buildPng, { x: 0, y: b.y + b.h / 2 - 4, w: marginW, h: 8 }, 0),
+          ]);
+          if (lc && bc && Math.max(...lc.map((v, i) => Math.abs(v - bc[i]))) > 40)
+            issues.push(`band color beside "${(l.text || "").slice(0, 40)}": rgb(${bc.join(", ")}), live rgb(${lc.join(", ")})`);
+        }
         for (const [l, b, label] of pairsForPixels) {
+          if (label.startsWith("photo")) {
+            const [la, ba] = await Promise.all([brightness(livePng, l), brightness(buildPng, b)]);
+            if (la !== null && ba !== null && Math.abs(la - ba) > Math.max(12, la * 0.25))
+              issues.push(`${label}: brightness ${ba.toFixed(0)}, live ${la.toFixed(0)} (overlay or exposure differs)`);
+          }
           const d = await regionDiff(livePng, l, buildPng, b);
           if (d !== null && d > PIXEL_TOL) issues.push(`${label}: looks different from live (pixel difference ${d.toFixed(0)})`);
         }

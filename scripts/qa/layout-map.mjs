@@ -32,6 +32,7 @@ function collect() {
   const shown = (el) => {
     const r = el.getBoundingClientRect();
     if (r.width <= 4 || r.height <= 4 || r.right <= 0 || r.left >= vw || r.bottom + window.scrollY <= 0) return false;
+    if (r.top + window.scrollY >= document.documentElement.scrollHeight - 2) return false;
     for (let n = el; n && n !== document.body; n = n.parentElement) {
       const cs = getComputedStyle(n);
       if (cs.display === "none" || cs.visibility === "hidden" || Number(cs.opacity) < 0.05) return false;
@@ -39,6 +40,10 @@ function collect() {
       if (n !== el && /(hidden|clip|auto|scroll)/.test(cs.overflowX + cs.overflow)) {
         const pr = n.getBoundingClientRect();
         if (r.right <= pr.left + 2 || r.left >= pr.right - 2) return false;
+      }
+      if (n !== el && /(hidden|clip|auto|scroll)/.test(cs.overflowY + cs.overflow)) {
+        const pr = n.getBoundingClientRect();
+        if (r.bottom <= pr.top + 2 || r.top >= pr.bottom - 2) return false;
       }
     }
     return true;
