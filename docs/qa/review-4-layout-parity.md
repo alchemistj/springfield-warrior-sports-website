@@ -33,6 +33,8 @@ Batch 1 passed gate v1 at 0 differences on home, about and kids-classes. Claude 
 - **Icons** (inline SVG, 8–72 px) must match in count, order, color and size. Home has 13 on live (red clocks on Open Gym Hours, and others) and 5 in the build.
 - **Pixels behind each matched heading, text block and photo** must look like live. This catches a wrong photo crop and dark text on a dark photo. Example: home "Be an Everyday Warrior" has the photo zoomed over the text, at pixel difference 117–176 against a limit of 38. The Parkour and Personal Training card crops also differ.
 - **Covered text** (another element on top of it) is flagged.
+- **Hidden text:** text a visitor can't see anywhere on the build page, but that live shows, is flagged. **Never hide words to pass a check.** If the gate looks wrong, report it instead. (Batch 1 hid the About Memorial Day paragraph. The real cause was the gate: live puts that text in the same paragraph as the one before it, and v2 compared only the first 80 characters. Fixed in v2.1.)
+- **v2.1 (11 Nov):** the capture scrolls slowly enough for live's lazy-loaded sections, text blocks keep their full text, and text split into a different number of paragraphs counts as the same text.
 
 The live map was recaptured with v2 (JSON plus a JPEG screenshot per page and width). Gate v2 on the batch 1 preview: home 125 / 125 / 96, about 76 / 76 / 51, kids-classes 120 / 120 / 83 (at 1920 / 1280 / 390). Total 8,239, because v2 measures far more items than v1. Batch 1 isn't done until those three pages are at 0 on v2.
 

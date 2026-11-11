@@ -96,7 +96,7 @@ function collect() {
           (c) => !INLINE.has(getComputedStyle(c).display) && (c.innerText || "").trim().length > 0,
         );
         if (!hasBlockChildWithText && (ownText(el).length > 0 || el.querySelector("strong,b,em,i,span,a"))) {
-          item = { kind: "text", tag, text: t.slice(0, 80), ...font(el) };
+          item = { kind: "text", tag, text: t.slice(0, 80), full: t.slice(0, 3000), ...font(el) };
         }
       }
     }
@@ -141,7 +141,16 @@ function collect() {
     const alpha = bg.startsWith("rgba") ? Number(bg.split(",")[3]) : 1;
     if (bg && alpha > 0.1) bands.push({ bg, ...box(el) });
   }
-  return { vw, docWidth: document.documentElement.scrollWidth, docHeight: document.documentElement.scrollHeight, items, bands };
+  // Text in the page that a visitor can't see (hidden attribute, display:none, visibility:hidden).
+  const hiddenText = [];
+  for (const el of document.body.querySelectorAll("p, li, h1, h2, h3, h4, h5, h6, div")) {
+    if (skipped(el)) continue;
+    const t = (el.textContent || "").replace(/\s+/g, " ").trim();
+    if (t.length < 20 || el.querySelector("p, li, h1, h2, h3, h4, h5, h6")) continue;
+    const cs = getComputedStyle(el);
+    if (el.hidden || cs.display === "none" || cs.visibility === "hidden") hiddenText.push(t.slice(0, 200));
+  }
+  return { vw, hiddenText, docWidth: document.documentElement.scrollWidth, docHeight: document.documentElement.scrollHeight, items, bands };
 }
 
 const browser = await chromium.launch();
@@ -153,13 +162,14 @@ for (const width of widths) {
     try {
       await page.goto(url, { waitUntil: "networkidle", timeout: 90000 });
       await page.evaluate(async () => {
-        for (let y = 0; y < document.body.scrollHeight; y += 500) {
+        // Slow enough for lazy-loaded sections on the live site to render (300px steps, 150ms).
+        for (let y = 0; y < document.body.scrollHeight; y += 300) {
           window.scrollTo(0, y);
-          await new Promise((r) => setTimeout(r, 60));
+          await new Promise((r) => setTimeout(r, 150));
         }
         window.scrollTo(0, 0);
       });
-      await page.waitForTimeout(600);
+      await page.waitForTimeout(1500);
       const map = await page.evaluate(collect);
       const dir = path.join(outDir, String(width));
       mkdirSync(dir, { recursive: true });

@@ -156,8 +156,15 @@ for (const width of readdirSync(liveDir).sort((a, b) => Number(b) - Number(a))) 
       });
       // Body text (by first 40 normalized chars)
       const tx = matchSeq(by(live.items, "text"), by(build.items, "text"), (i) => norm(i.text).slice(0, 40));
-      tx.missing.forEach((i) => issues.push(`text missing: "${i.text.slice(0, 60)}"`));
-      tx.extra.forEach((i) => issues.push(`text not on live: "${i.text.slice(0, 60)}"`));
+      // Text split differently (one live paragraph with line breaks vs two build paragraphs) is the
+      // same text: only flag what isn't inside any visible text block on the other side.
+      const fullText = (items) => items.filter((i) => i.kind === "text" || i.kind === "heading").map((i) => norm(i.full || i.text)).join(" | ");
+      const liveAll = fullText(live.items), buildAll = fullText(build.items);
+      tx.missing.filter((i) => !buildAll.includes(norm(i.full || i.text).slice(0, 60))).forEach((i) => issues.push(`text missing: "${i.text.slice(0, 60)}"`));
+      tx.extra.filter((i) => !liveAll.includes(norm(i.full || i.text).slice(0, 60))).forEach((i) => issues.push(`text not on live: "${i.text.slice(0, 60)}"`));
+      (build.hiddenText || [])
+        .filter((t) => norm(t).length > 20 && liveAll.includes(norm(t).slice(0, 60)) && !buildAll.includes(norm(t).slice(0, 60)))
+        .forEach((t) => issues.push(`text hidden in build but visible on live: "${t.slice(0, 60)}"`));
       tx.pairs.forEach(([l, b]) => issues.push(...styleDiffs(l, b, `text "${l.text.slice(0, 30)}"`)));
       // Covered: visible on live, but something sits on top of it in the build.
       [...h.pairs, ...tx.pairs, ...bt.pairs].forEach(([l, b]) => {

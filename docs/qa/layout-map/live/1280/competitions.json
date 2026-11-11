@@ -3,7 +3,7 @@
  "width": 1280,
  "vw": 1280,
  "docWidth": 1280,
- "docHeight": 3334,
+ "docHeight": 3359,
  "items": [
   {
    "kind": "text",
@@ -163,7 +163,7 @@
    "src": "hero",
    "region": "main",
    "x": 0,
-   "y": 139,
+   "y": 164,
    "w": 1280,
    "h": 590
   },
@@ -179,7 +179,7 @@
    "transform": "uppercase",
    "region": "main",
    "x": 180,
-   "y": 364,
+   "y": 389,
    "w": 920,
    "h": 120
   },
@@ -187,6 +187,7 @@
    "kind": "text",
    "tag": "p",
    "text": "Whether you are looking for regional qualifiers or just hoping to join in friend",
+   "full": "Whether you are looking for regional qualifiers or just hoping to join in friendly competition, Springfield Warrior Sports is where you want to be!",
    "family": "Epilogue",
    "size": 18,
    "weight": 400,
@@ -195,7 +196,7 @@
    "transform": "none",
    "region": "main",
    "x": 190,
-   "y": 785,
+   "y": 810,
    "w": 900,
    "h": 74
   },
@@ -203,6 +204,7 @@
    "kind": "text",
    "tag": "p",
    "text": "We host regional qualifiers for the WNL (World Ninja League) and are a CSNA (Cen",
+   "full": "We host regional qualifiers for the WNL (World Ninja League) and are a CSNA (Central States Ninja Association) youth competitive league member. Check the links below for scheduled competitions and information!",
    "family": "Epilogue",
    "size": 18,
    "weight": 400,
@@ -211,7 +213,7 @@
    "transform": "none",
    "region": "main",
    "x": 190,
-   "y": 881,
+   "y": 906,
    "w": 900,
    "h": 111
   },
@@ -227,7 +229,7 @@
    "transform": "uppercase",
    "region": "main",
    "x": 65,
-   "y": 1114,
+   "y": 1140,
    "w": 1150,
    "h": 74
   },
@@ -236,7 +238,7 @@
    "color": "rgb(219, 58, 52)",
    "region": "main",
    "x": 75,
-   "y": 1235,
+   "y": 1260,
    "w": 18,
    "h": 18
   },
@@ -244,6 +246,7 @@
    "kind": "text",
    "tag": "span",
    "text": "Date: Saturday, September 19th",
+   "full": "Date: Saturday, September 19th",
    "family": "Epilogue",
    "size": 18,
    "weight": 400,
@@ -252,7 +255,7 @@
    "transform": "none",
    "region": "main",
    "x": 108,
-   "y": 1228,
+   "y": 1253,
    "w": 277,
    "h": 29
   },
@@ -261,7 +264,7 @@
    "color": "rgb(219, 58, 52)",
    "region": "main",
    "x": 75,
-   "y": 1280,
+   "y": 1305,
    "w": 18,
    "h": 18
   },
@@ -269,6 +272,7 @@
    "kind": "text",
    "tag": "span",
    "text": "Start time: TBA",
+   "full": "Start time: TBA",
    "family": "Epilogue",
    "size": 18,
    "weight": 400,
@@ -277,7 +281,7 @@
    "transform": "none",
    "region": "main",
    "x": 108,
-   "y": 1273,
+   "y": 1298,
    "w": 129,
    "h": 29
   },
@@ -286,7 +290,7 @@
    "color": "rgb(219, 58, 52)",
    "region": "main",
    "x": 75,
-   "y": 1325,
+   "y": 1350,
    "w": 18,
    "h": 18
   },
@@ -294,6 +298,7 @@
    "kind": "text",
    "tag": "span",
    "text": "Price per registration: $60",
+   "full": "Price per registration: $60",
    "family": "Epilogue",
    "size": 18,
    "weight": 400,
@@ -302,7 +307,7 @@
    "transform": "none",
    "region": "main",
    "x": 108,
-   "y": 1318,
+   "y": 1343,
    "w": 232,
    "h": 29
   },
@@ -311,7 +316,7 @@
    "src": "https://www.springfieldwarriorsports.com/wp-content/uploads/2023/03/SWS-Competitions-Banner-768x223.jpg",
    "region": "main",
    "x": 648,
-   "y": 1213,
+   "y": 1239,
    "w": 568,
    "h": 165
   },
@@ -328,7 +333,7 @@
    "transform": "uppercase",
    "region": "main",
    "x": 380,
-   "y": 1403,
+   "y": 1428,
    "w": 520,
    "h": 49
   },
@@ -344,7 +349,7 @@
    "transform": "none",
    "region": "main",
    "x": 66,
-   "y": 1473,
+   "y": 1499,
    "w": 1148,
    "h": 72
   },
@@ -353,7 +358,7 @@
    "src": "https://www.springfieldwarriorsports.com/wp-content/uploads/2023/03/SWS-logo-footer.png",
    "region": "footer",
    "x": 85,
-   "y": 2997,
+   "y": 3022,
    "w": 266,
    "h": 76
   },
@@ -361,6 +366,7 @@
    "kind": "text",
    "tag": "p",
    "text": "Our accomplished and award winning Crew are here to help you find your strength ",
+   "full": "Our accomplished and award winning Crew are here to help you find your strength and enjoy your workouts.",
    "family": "Muli",
    "size": 16,
    "weight": 400,
@@ -369,7 +375,7 @@
    "transform": "none",
    "region": "footer",
    "x": 86,
-   "y": 3094,
+   "y": 3119,
    "w": 354,
    "h": 72
   },
@@ -378,7 +384,7 @@
    "color": "rgb(255, 255, 255)",
    "region": "footer",
    "x": 94,
-   "y": 3200,
+   "y": 3225,
    "w": 17,
    "h": 17
   },
@@ -387,7 +393,7 @@
    "color": "rgb(255, 255, 255)",
    "region": "footer",
    "x": 131,
-   "y": 3200,
+   "y": 3225,
    "w": 17,
    "h": 17
   },
@@ -395,6 +401,7 @@
    "kind": "text",
    "tag": "p",
    "text": "CONTACT",
+   "full": "CONTACT",
    "family": "Heebo",
    "size": 16,
    "weight": 900,
@@ -403,7 +410,7 @@
    "transform": "uppercase",
    "region": "footer",
    "x": 491,
-   "y": 2977,
+   "y": 3002,
    "w": 353,
    "h": 28
   },
@@ -412,7 +419,7 @@
    "color": "rgb(219, 58, 52)",
    "region": "footer",
    "x": 502,
-   "y": 3035,
+   "y": 3060,
    "w": 16,
    "h": 16
   },
@@ -420,6 +427,7 @@
    "kind": "text",
    "tag": "span",
    "text": "605 W Farm Rd 182, Springfield, MO, 65810, United States",
+   "full": "605 W Farm Rd 182, Springfield, MO, 65810, United States",
    "family": "Muli",
    "size": 14,
    "weight": 400,
@@ -428,7 +436,7 @@
    "transform": "none",
    "region": "footer",
    "x": 528,
-   "y": 3030,
+   "y": 3055,
    "w": 212,
    "h": 45
   },
@@ -437,7 +445,7 @@
    "color": "rgb(219, 58, 52)",
    "region": "footer",
    "x": 502,
-   "y": 3096,
+   "y": 3121,
    "w": 16,
    "h": 16
   },
@@ -445,6 +453,7 @@
    "kind": "text",
    "tag": "span",
    "text": "(417) 894-7319",
+   "full": "(417) 894-7319",
    "family": "Muli",
    "size": 14,
    "weight": 400,
@@ -453,7 +462,7 @@
    "transform": "none",
    "region": "footer",
    "x": 528,
-   "y": 3091,
+   "y": 3116,
    "w": 103,
    "h": 22
   },
@@ -469,7 +478,7 @@
    "transform": "none",
    "region": "footer",
    "x": 528,
-   "y": 3093,
+   "y": 3118,
    "w": 103,
    "h": 18
   },
@@ -478,7 +487,7 @@
    "color": "rgb(219, 58, 52)",
    "region": "footer",
    "x": 502,
-   "y": 3143,
+   "y": 3168,
    "w": 16,
    "h": 16
   },
@@ -486,6 +495,7 @@
    "kind": "text",
    "tag": "span",
    "text": "office@swarriorsports.com",
+   "full": "office@swarriorsports.com",
    "family": "Muli",
    "size": 14,
    "weight": 400,
@@ -494,7 +504,7 @@
    "transform": "none",
    "region": "footer",
    "x": 528,
-   "y": 3138,
+   "y": 3163,
    "w": 173,
    "h": 22
   },
@@ -510,7 +520,7 @@
    "transform": "none",
    "region": "footer",
    "x": 528,
-   "y": 3140,
+   "y": 3165,
    "w": 173,
    "h": 18
   },
@@ -518,6 +528,7 @@
    "kind": "text",
    "tag": "p",
    "text": "QUICK LINKS",
+   "full": "QUICK LINKS",
    "family": "Heebo",
    "size": 16,
    "weight": 900,
@@ -526,7 +537,7 @@
    "transform": "uppercase",
    "region": "footer",
    "x": 894,
-   "y": 2977,
+   "y": 3002,
    "w": 301,
    "h": 28
   },
@@ -534,6 +545,7 @@
    "kind": "text",
    "tag": "p",
    "text": "Home",
+   "full": "Home",
    "family": "Muli",
    "size": 16,
    "weight": 400,
@@ -542,7 +554,7 @@
    "transform": "none",
    "region": "footer",
    "x": 895,
-   "y": 3026,
+   "y": 3051,
    "w": 299,
    "h": 24
   },
@@ -558,7 +570,7 @@
    "transform": "none",
    "region": "footer",
    "x": 895,
-   "y": 3028,
+   "y": 3053,
    "w": 44,
    "h": 20
   },
@@ -566,6 +578,7 @@
    "kind": "text",
    "tag": "p",
    "text": "About Us",
+   "full": "About Us",
    "family": "Muli",
    "size": 16,
    "weight": 400,
@@ -574,7 +587,7 @@
    "transform": "none",
    "region": "footer",
    "x": 895,
-   "y": 3052,
+   "y": 3077,
    "w": 299,
    "h": 24
   },
@@ -590,7 +603,7 @@
    "transform": "none",
    "region": "footer",
    "x": 895,
-   "y": 3054,
+   "y": 3079,
    "w": 69,
    "h": 20
   },
@@ -598,6 +611,7 @@
    "kind": "text",
    "tag": "p",
    "text": "Contact Us",
+   "full": "Contact Us",
    "family": "Muli",
    "size": 16,
    "weight": 400,
@@ -606,7 +620,7 @@
    "transform": "none",
    "region": "footer",
    "x": 895,
-   "y": 3078,
+   "y": 3103,
    "w": 299,
    "h": 24
   },
@@ -622,7 +636,7 @@
    "transform": "none",
    "region": "footer",
    "x": 895,
-   "y": 3080,
+   "y": 3105,
    "w": 82,
    "h": 20
   },
@@ -630,6 +644,7 @@
    "kind": "text",
    "tag": "p",
    "text": "Meet the Team",
+   "full": "Meet the Team",
    "family": "Muli",
    "size": 16,
    "weight": 400,
@@ -638,7 +653,7 @@
    "transform": "none",
    "region": "footer",
    "x": 895,
-   "y": 3104,
+   "y": 3129,
    "w": 299,
    "h": 24
   },
@@ -654,7 +669,7 @@
    "transform": "none",
    "region": "footer",
    "x": 895,
-   "y": 3106,
+   "y": 3131,
    "w": 109,
    "h": 20
   },
@@ -662,6 +677,7 @@
    "kind": "text",
    "tag": "p",
    "text": "© Copyright 2026 Springfield Warrior Sports All Rights Reserved.",
+   "full": "© Copyright 2026 Springfield Warrior Sports All Rights Reserved.",
    "family": "Epilogue",
    "size": 14,
    "weight": 600,
@@ -670,7 +686,7 @@
    "transform": "none",
    "region": "footer",
    "x": 85,
-   "y": 3290,
+   "y": 3315,
    "w": 1110,
    "h": 24
   }
@@ -686,7 +702,7 @@
   {
    "bg": "rgb(255, 255, 255)",
    "x": 0,
-   "y": 2937,
+   "y": 2962,
    "w": 1280,
    "h": 396
   }
