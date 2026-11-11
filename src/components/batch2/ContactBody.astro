@@ -1,0 +1,45 @@
+---
+import type { EventForm } from "../../data/events";
+import { site } from "../../data/site";
+import LeadForm from "../LeadForm.astro";
+import Quotes from "./Quotes.astro";
+import { media } from "./media";
+
+interface Props {
+  event: EventForm;
+}
+const { event } = Astro.props;
+const left = media("media/2025-12-IMG_2339-768x576.jpeg.webp");
+const right = media("media/2025-12-IMG_2342-768x576.jpeg.webp");
+---
+
+<section class="b2-block">
+  <div class="b2-wrap contact-grid">
+    <div class="contact-copy">
+      <h2>CONTACT US</h2>
+      <p>We look forward to hearing from you! <br />We are located one block west of Campbell off Plainview Road (Farm Road 182), directly behind the Eagles Lodge next to Marco Automotive. Look for the grey building!</p>
+      <p class="b2-fact contact-fact">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="12" /></svg>
+        <span class="b2-fact-text">{site.address.display}</span>
+      </p>
+      <p class="b2-fact contact-fact">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="12" /></svg>
+        <span class="b2-fact-text"><a href={site.phone.tel}>(417)894-7319</a></span>
+      </p>
+      <p class="b2-fact contact-fact">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="12" /></svg>
+        <span class="b2-fact-text"><a href={`mailto:${site.email}`}>{site.email}</a></span>
+      </p>
+      <LeadForm event={event} tone="card" />
+    </div>
+  </div>
+</section>
+
+<section class="b2-block">
+  <div class="b2-wrap contact-photos">
+    {left.src && <img src={left.src} alt="" width="547" height="410" />}
+    {right.src && <img src={right.src} alt="" width="547" height="410" />}
+  </div>
+</section>
+
+<Quotes variant="contact" band />

@@ -1,0 +1,789 @@
+/* Batch 2 pages. Values are the live computed styles: fonts, sizes, colors, overlays. */
+
+.page-birthday-parties { --hero-h: 471px; }
+.page-competitions { --hero-h: 261px; }
+
+@media (min-width: 1024px) {
+  .page-birthday-parties,
+  .page-competitions { --hero-h: 590px; }
+}
+
+.page-birthday-parties .atf-photo,
+.page-schedule-birthday-party .atf-photo,
+.page-summer-camps-in-springfield-mo .atf-photo,
+.page-competitions .atf-photo,
+.page-wnl-competitions .atf-photo,
+.page-contact .atf-photo {
+  object-fit: cover;
+  object-position: center center;
+}
+
+.page-birthday-parties .hero-copy .hero-scrim {
+  background: none;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
+}
+.page-summer-camps-in-springfield-mo .hero-copy .hero-scrim {
+  background: none;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+.page-competitions .hero-copy .hero-scrim,
+.page-wnl-competitions .hero-copy .hero-scrim,
+.page-contact .hero-copy .hero-scrim {
+  background: none;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+}
+
+.b2-hero {
+  padding: 0;
+  justify-content: center;
+  text-align: center;
+}
+.b2-hero .hero-text { width: min(920px, calc(100% - 40px)); }
+
+.page-birthday-parties .hero-text { width: min(819px, calc(100% - 20px)); }
+.page-birthday-parties .bd-kicker,
+.page-birthday-parties .bd-title,
+.page-birthday-parties .bd-place,
+.page-birthday-parties .bd-sub {
+  margin: 0 auto;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+.page-birthday-parties .bd-kicker,
+.page-birthday-parties .bd-title {
+  font-family: Heebo, "Arial Narrow", sans-serif;
+  font-size: 70px;
+  font-weight: 900;
+  line-height: 70px;
+}
+.page-birthday-parties .bd-kicker { color: #fff; }
+.page-birthday-parties .bd-title { color: rgb(219, 58, 52); padding-bottom: 8px; }
+.page-birthday-parties .bd-place {
+  color: #fff;
+  font-family: Heebo, "Arial Narrow", sans-serif;
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 36px;
+}
+.page-birthday-parties .bd-sub {
+  margin-top: 18px;
+  width: min(766px, 100%);
+  color: #fff;
+  font-family: Epilogue, Arial, sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 36px;
+}
+
+.page-summer-camps-in-springfield-mo .hero-copy h1,
+.page-summer-camps-in-springfield-mo .camp-h1b {
+  width: min(920px, 100%);
+  margin: 0 auto;
+  color: rgb(219, 58, 52);
+  font-family: Heebo, "Arial Narrow", sans-serif;
+  font-size: 70px;
+  font-weight: 900;
+  line-height: 70px;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+.page-summer-camps-in-springfield-mo .camp-h1b {
+  color: #fff;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.page-competitions .hero-copy h1,
+.page-wnl-competitions .hero-copy h1 {
+  width: min(920px, 100%);
+  margin: 0 auto;
+  color: rgb(248, 248, 248);
+  font-family: Heebo, "Arial Narrow", sans-serif;
+  font-size: 50px;
+  font-weight: 900;
+  line-height: 60px;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+.page-wnl-competitions .hero-copy h1 {
+  color: #fff;
+  line-height: 50px;
+}
+.page-contact .b2-hero .hero-text { width: min(1150px, calc(100% - 40px)); }
+.page-contact .hero-copy h1 {
+  width: 100%;
+  margin: 0 auto;
+  color: rgb(219, 58, 52);
+  font-family: Heebo, "Arial Narrow", sans-serif;
+  font-size: 50px;
+  font-weight: 900;
+  line-height: 50px;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+@media (max-width: 799px) {
+  .page-competitions .atf-photo { top: calc(var(--header-h) + 48px); }
+  .page-competitions .hero-copy { margin-top: 48px; }
+
+  .page-birthday-parties .bd-kicker,
+  .page-birthday-parties .bd-title { font-size: 45px; line-height: 45px; }
+  .page-birthday-parties .bd-place { font-size: 35px; line-height: 36px; }
+  .page-birthday-parties .bd-sub { line-height: 31px; }
+  .page-birthday-parties .hero-text,
+  .page-birthday-parties .bd-sub { width: min(370px, calc(100% - 20px)); }
+
+  .page-summer-camps-in-springfield-mo .hero-text,
+  .page-summer-camps-in-springfield-mo .hero-copy h1,
+  .page-summer-camps-in-springfield-mo .camp-h1b { width: 315px; }
+  .page-summer-camps-in-springfield-mo .hero-copy h1 { font-size: 45px; line-height: 45px; }
+  .page-summer-camps-in-springfield-mo .camp-h1b { font-size: 25px; line-height: 25px; }
+
+  .page-competitions .hero-text,
+  .page-competitions .hero-copy h1,
+  .page-wnl-competitions .hero-text,
+  .page-wnl-competitions .hero-copy h1 { width: 333px; }
+  .page-competitions .hero-copy h1 { font-size: 26px; line-height: 34px; }
+  .page-wnl-competitions .hero-copy h1 { font-size: 44px; line-height: 44px; }
+
+  .page-contact .hero-text,
+  .page-contact .hero-copy h1 { width: 350px; font-size: 32px; line-height: 32px; }
+}
+
+.b2-wrap {
+  width: min(1150px, calc(100% - var(--gutter) * 2));
+  margin-inline: auto;
+}
+@media (max-width: 799px) {
+  .page-birthday-parties .b2-wrap,
+  .page-summer-camps-in-springfield-mo .b2-wrap,
+  .page-competitions .b2-wrap,
+  .page-wnl-competitions .b2-wrap,
+  .page-contact .b2-wrap {
+    width: min(1150px, calc(100% - 52px));
+  }
+}
+
+.b2-block { background: #fff; }
+.b2-block :where(h1, h2, h3, h4, p, li) { margin: 0; letter-spacing: 0; }
+.b2-grey { background-color: transparent; background-image: linear-gradient(#e5eaed, #e5eaed); }
+.b2-ice { background-color: transparent; background-image: linear-gradient(rgb(241, 245, 248), rgb(241, 245, 248)); }
+
+.b2-fact {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 16px 0 0;
+}
+.b2-fact svg {
+  display: block;
+  flex: 0 0 auto;
+  width: 15px;
+  height: 15px;
+  margin-top: 6px;
+  fill: rgb(219, 58, 52);
+}
+.b2-fact-text { display: block; min-width: 0; }
+
+/* Birthday */
+.bd-intro { padding: 40px 0 115px; text-align: center; }
+.bd-intro h1 {
+  width: min(920px, 100%);
+  margin-inline: auto;
+  color: #000;
+  font-family: Heebo, "Arial Narrow", sans-serif;
+  font-size: 26px;
+  font-weight: 900;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+.bd-intro p,
+.bd-split p,
+.bd-battles p,
+.bd-mem p,
+.bd-more + p {
+  color: rgba(0, 0, 0, 0.7);
+  font-family: Epilogue, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+.bd-intro p { width: min(1070px, 100%); margin: 18px auto 0; }
+.bd-navy {
+  color: rgb(40, 82, 118) !important;
+  font-weight: 600 !important;
+}
+.bd-intro .bd-navy { width: min(943px, 100%); }
+.page-birthday-parties .b2-block.b2-grey { padding-bottom: 120px; }
+.bd-stress-title {
+  width: min(1110px, 100%);
+  margin: 80px auto 130px;
+  color: rgb(12, 17, 21);
+  font-family: Heebo, "Arial Narrow", sans-serif;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.bd-split {
+  display: grid;
+  grid-template-columns: 520px minmax(0, 561px);
+  column-gap: 69px;
+  align-items: start;
+}
+.bd-split img { width: 520px; height: auto; }
+.bd-note { margin-top: 16px; }
+.bd-split .b2-fact-text,
+.b2-fact-wide .b2-fact-text { flex: 1; }
+.bd-lab { font-weight: 600; color: #000; }
+.bd-rest { font-weight: 300; color: #000; }
+.bd-star { font-weight: 600; color: rgb(219, 58, 52); }
+.b2-fact-text,
+.bd-split .b2-fact-text,
+.b2-fact-wide .b2-fact-text {
+  font-family: Epilogue, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+}
+.b2-fact-wide { margin-top: 18px; }
+
+.bd-split .b2-fact { margin-top: 11px; }
+.bd-book {
+  min-height: 420px;
+  margin-top: 0;
+  padding: 80px 0 48px;
+  background-size: auto, cover;
+  background-position: 50% 50%, 35% 50%;
+  background-repeat: no-repeat;
+  color: #fff;
+  text-align: center;
+}
+.bd-book h2 {
+  width: fit-content;
+  margin: 0 auto 16px;
+  color: rgb(219, 58, 52);
+  font-family: Heebo, "Arial Narrow", sans-serif;
+  font-size: 50px;
+  font-weight: 900;
+  line-height: 50px;
+  text-transform: uppercase;
+}
+.bd-book h4 {
+  width: min(952px, 100%);
+  margin: 16px auto 0;
+  color: #fff;
+  font-family: Epilogue, Arial, sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 35px;
+  text-transform: none;
+}
+.bd-book h4 a {
+  color: rgb(135, 204, 237);
+  font-weight: 600;
+  text-decoration: underline;
+}
+.bd-book h4.bd-policy { font-weight: 600; }
+.bd-book h4.bd-policy strong { font-weight: 900; }
+.bd-policy-rest { font-size: 20px; font-weight: 600; }
+
+.bd-more {
+  margin: 100px 0 7px;
+  color: #000;
+  font-family: Heebo, "Arial Narrow", sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 42px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.bd-center { text-align: center; }
+.bd-center { font-family: Epilogue, Arial, sans-serif; }
+.bd-battles h3 { width: 438px; max-width: 100%; }
+.bd-battles h4 { width: fit-content; }
+.bd-split h3,
+.bd-battles h3 {
+  margin: 24px 0 12px;
+  color: rgb(219, 58, 52);
+  font-family: Heebo, "Arial Narrow", sans-serif;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 40px;
+  text-align: left;
+  text-transform: uppercase;
+}
+.bd-pizza { margin-top: 167px; }
+.bd-battles h3 + h4 { margin-top: 54px; }
+.bd-battles h4 {
+  margin: 18px 0 8px;
+  color: rgb(40, 82, 118);
+  font-family: Heebo, "Arial Narrow", sans-serif;
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+.bd-battles {
+  display: grid;
+  grid-template-columns: minmax(0, 561px) 501px;
+  column-gap: 88px;
+  align-items: start;
+  margin-top: 36px;
+}
+.bd-laser { width: 501px; height: auto; grid-column: 2; grid-row: 1; }
+.bd-battles > div { grid-column: 1; grid-row: 1; }
+.bd-battles a { color: rgb(47, 138, 228); font-weight: 400; text-decoration: none; }
+
+.bd-mem p { width: min(533px, 100%); }
+.bd-mem {
+  min-height: 752px;
+  margin-top: 122px;
+  padding: 100px 0 48px;
+  background-size: contain, auto;
+  background-position: 100% 0, 50% 50%;
+  background-repeat: no-repeat;
+}
+.bd-mem-copy { width: min(535px, calc(100% - 40px)); margin-left: max(20px, calc((100% - 1150px) / 2)); }
+.bd-mem h2 {
+  width: min(535px, 100%);
+  color: rgb(219, 58, 52);
+  font-family: Heebo, "Arial Narrow", sans-serif;
+  font-size: 50px;
+  font-weight: 900;
+  line-height: 55px;
+  text-align: left;
+  text-transform: uppercase;
+}
+.bd-mem p { width: min(533px, 100%); margin-top: 16px; text-align: left; }
+.bd-mem a { color: rgb(219, 58, 52); font-weight: 600; text-decoration: underline; }
+.bd-mem-photo { display: none; }
+
+/* Schedule */
+.bd-steps { padding: 72px 0 220px; }
+.bd-steps-p,
+.bd-req {
+  color: rgba(0, 0, 0, 0.7);
+  font-family: Muli, "Segoe UI", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+}
+.bd-steps-p { width: min(862px, 100%); margin-left: max(0px, calc((100% - 1150px) / 2 + 126px)); }
+.bd-req {
+  width: min(898px, 100%);
+  margin: 61px 0 16px;
+  margin-left: max(0px, calc((100% - 1150px) / 2 + 126px));
+  color: rgb(106, 107, 108);
+}
+.bd-req .bd-star { color: rgb(192, 43, 10); font-weight: 400; }
+.bd-steps .lead-form { max-width: 898px; }
+
+/* Camps */
+.camp-intro { padding: 48px 0 160px; text-align: center; }
+.page-summer-camps-in-springfield-mo .b2-block.b2-grey { padding-top: 48px; padding-bottom: 48px; }
+.camp-reg-title { margin-top: -8px; }
+.page-wnl-competitions .b2-block.b2-grey { padding: 24px 0 104px; }
+.page-wnl-competitions .b2-block:has(.wnl-intro) { padding-bottom: 182px; }
+.camp-intro p,
+.camp-date,
+.camp-time {
+  color: rgba(0, 0, 0, 0.7);
+  font-family: Muli, "Segoe UI", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+}
+.camp-intro p { width: min(874px, 100%); margin: 12px auto 0; }
+.camp-intro strong { font-weight: 700; }
+.camp-intro strong.camp-heavy { font-weight: 800; }
+.camp-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 588px) 563px;
+  justify-content: space-between;
+  align-items: start;
+  padding-bottom: 24px;
+}
+.camp-dates-title,
+.camp-copy > h2,
+.camp-reg-title,
+.b2-form-title {
+  color: rgb(219, 58, 52);
+  font-family: Heebo, "Arial Narrow", sans-serif;
+  font-weight: 900;
+  text-align: left;
+  text-transform: uppercase;
+}
+.camp-copy > h2.camp-dates-title { width: 438px; max-width: 100%; font-size: 40px; line-height: 40px; }
+.camp-copy > h2,
+.camp-reg-title { width: fit-content; max-width: 100%; }
+.camp-copy > h2:not(.camp-dates-title) { font-size: 40px; line-height: 40px; margin-top: -13px; }
+.camp-dates { margin-top: 16px; }
+.camp-row { display: grid; grid-template-columns: 204px 221px; margin-bottom: 36px; }
+.camp-date { width: 187px; font-weight: 800; }
+.camp-price {
+  width: min(561px, 100%);
+  margin-top: 8px;
+  color: rgb(106, 107, 108);
+  font-family: Muli, "Segoe UI", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+}
+.camp-price a { color: rgb(219, 58, 52); font-weight: 600; text-decoration: underline; }
+.camp-photo { width: 563px; height: auto; margin-top: 148px; }
+.camp-reg-title { font-size: 34px; line-height: 34px; }
+.camp-reg,
+.camp-cost,
+.camp-call {
+  color: rgba(0, 0, 0, 0.7);
+  font-family: Epilogue, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+}
+.camp-reg { margin-top: 12px; }
+.camp-form { width: min(900px, calc(100% - var(--gutter) * 2)); padding-top: 128px; padding-bottom: 730px; }
+.b2-form-title { font-size: 50px; line-height: 70px; }
+.camp-cost,
+.camp-call { margin-top: 8px; }
+.camp-call a { color: rgb(219, 58, 52); font-weight: 400; text-decoration: none; }
+
+/* Competitions */
+.comp-intro { padding: 56px 0 24px; text-align: center; }
+.comp-intro > p {
+  width: min(900px, 100%);
+  margin: 18px auto 0;
+  color: rgba(41, 41, 41, 0.99);
+  font-family: Epilogue, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 37px;
+}
+.comp-intro a { color: rgb(47, 138, 228); text-decoration: none; }
+.comp-intro a.comp-btn { color: #fff; border-radius: 100px; }
+.comp-intro h3 {
+  width: min(1150px, 100%);
+  margin: 36px auto 16px;
+  color: rgb(219, 58, 52);
+  font-family: Heebo, "Arial Narrow", sans-serif;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 44px;
+  text-transform: uppercase;
+}
+.comp-intro > p.comp-fact { width: fit-content; margin: 8px 0 0 10px; text-align: left; }
+.comp-fact svg { width: 18px; height: 18px; }
+.comp-fact .b2-fact-text {
+  width: fit-content;
+  color: rgba(41, 41, 41, 0.99);
+  font-family: Epilogue, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 29px;
+}
+.comp-fact strong { font-weight: 900; }
+.comp-head { display: grid; grid-template-columns: minmax(0, 1fr) 568px; align-items: start; text-align: left; }
+.comp-fact, .comp-fact .b2-fact-text { text-align: left; }
+.comp-banner { display: block; width: 568px; height: 165px; margin: 20px 0 0; object-fit: cover; }
+.page-competitions .b2-ice { margin-bottom: 200px; }
+.comp-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 520px;
+  max-width: 100%;
+  min-height: 49px;
+  margin: 18px auto;
+  padding: 12px 16px;
+  background: rgb(219, 58, 52);
+  color: #fff;
+  font-family: Heebo, "Arial Narrow", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 19px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.b2-literata {
+  width: min(1148px, 100%);
+  margin: 12px auto;
+  padding: 12px 0;
+  color: rgb(12, 17, 21);
+  font-family: Literata, serif;
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 48px;
+  text-align: left;
+  text-transform: none;
+}
+
+/* WNL */
+.wnl-top {
+  display: grid;
+  grid-template-columns: 560px 493px;
+  column-gap: 29px;
+  padding-top: 48px;
+  align-items: start;
+}
+.wnl-intro {
+  width: min(874px, 100%);
+  margin-inline: auto;
+  color: rgba(0, 0, 0, 0.7);
+  font-family: Epilogue, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+}
+.wnl-top h4 {
+  width: min(389px, 100%);
+  margin: 59px 0 12px;
+  color: rgb(40, 82, 118);
+  font-family: Heebo, "Arial Narrow", sans-serif;
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+.wnl-fact svg { width: 12px; height: 12px; }
+.wnl-fact .b2-fact-text {
+  width: fit-content;
+  color: rgba(0, 0, 0, 0.7);
+  font-family: Epilogue, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 29px;
+}
+.wnl-photo { width: 493px; height: auto; }
+.wnl-form { width: min(900px, calc(100% - var(--gutter) * 2)); padding-top: 36px; padding-bottom: 360px; }
+.wnl-form > p,
+.wnl-form li {
+  color: rgba(0, 0, 0, 0.7);
+  font-family: Epilogue, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+.wnl-form ul { margin: 8px 0 8px 48px; padding: 0; }
+.wnl-form li {
+  display: block;
+  margin: 0 0 8px;
+  color: rgb(106, 107, 108);
+  font-family: Muli, "Segoe UI", sans-serif;
+  font-size: 18px;
+  line-height: 25px;
+}
+.wnl-wait strong { font-weight: 600; }
+.wnl-form .b2-literata { width: min(898px, 100%); }
+
+/* Contact */
+.contact-grid { padding-top: 56px; padding-bottom: 180px; }
+.contact-copy { width: min(568px, 100%); }
+.contact-copy h2 {
+  color: rgb(219, 58, 52);
+  font-family: Heebo, "Arial Narrow", sans-serif;
+  font-size: 50px;
+  font-weight: 900;
+  line-height: 60px;
+  text-transform: uppercase;
+}
+.contact-copy > p {
+  margin-top: 12px;
+  color: rgba(0, 0, 0, 0.7);
+  font-family: Epilogue, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+.contact-fact { margin-top: 14px; }
+.contact-fact svg { width: 12px; height: 12px; margin-top: 4px; }
+.contact-fact .b2-fact-text {
+  width: fit-content;
+  max-width: 100%;
+  color: rgba(0, 0, 0, 0.7);
+  font-family: Epilogue, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+}
+.contact-fact a { color: inherit; text-decoration: none; }
+.page-contact .lead-form.card {
+  max-width: 566px;
+  margin-top: 18px;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+.contact-photos {
+  display: grid;
+  grid-template-columns: 547px 547px;
+  justify-content: space-between;
+  padding: 36px 0;
+}
+.contact-photos img { width: 547px; height: auto; }
+
+/* Testimonials */
+.b2-quotes { position: relative; background: #fff; padding: 28px 0 48px; }
+.b2-quotes.b2-grey { background-color: transparent; background-image: linear-gradient(#e5eaed, #e5eaed); }
+.b2-quotes.schedule { padding-bottom: 280px; }
+.b2-quotes.contact { padding-bottom: 210px; }
+.b2-quotes.camps { padding-bottom: 194px; }
+.b2-quote-title {
+  margin: 0;
+  color: rgb(219, 58, 52);
+  font-family: Heebo, "Arial Narrow", sans-serif;
+  font-size: 50px;
+  font-weight: 900;
+  line-height: 70px;
+  letter-spacing: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+.b2-quote-sub {
+  margin: 0 0 24px;
+  color: #000;
+  font-family: Heebo, "Arial Narrow", sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 42px;
+  letter-spacing: 1px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.b2-qrow { display: grid; justify-content: space-between; }
+.b2-quotes.schedule .b2-qrow { grid-template-columns: 513px 513px; padding-inline: 31px; }
+.b2-quotes.contact .b2-qrow { grid-template-columns: 506px 506px; padding-inline: 41px; }
+.b2-quotes.camps .b2-qrow { grid-template-columns: 553px 553px; padding-inline: 11px; }
+.b2-qico { display: block; width: 65px; height: 65px; margin: 0 0 16px 9px; }
+.b2-quotes.contact .b2-qico { margin-left: 0; }
+.b2-qblock,
+.b2-qt,
+.b2-qn { margin: 0; }
+.b2-qt,
+.b2-qn {
+  font-family: Muli, "Segoe UI", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #000;
+  text-align: left;
+}
+.b2-quotes.camps .b2-qt,
+.b2-quotes.camps .b2-qn { font-size: 18px; line-height: 32px; color: rgb(106, 107, 108); }
+.b2-qn { min-height: 50px; text-transform: uppercase; }
+.b2-qn strong { color: rgb(219, 58, 52); font-weight: 700; }
+.b2-arrows { display: none; }
+
+@media (max-width: 799px) {
+  .bd-intro { padding: 48px 0 24px; }
+  .page-birthday-parties .b2-block.b2-grey { padding-bottom: 24px; }
+  .bd-steps { padding-bottom: 24px; }
+  .page-schedule-birthday-party .b2-grey { background-image: none; }
+  .camp-form, .wnl-form, .contact-grid { padding-bottom: 24px; }
+  .b2-quotes.schedule, .b2-quotes.contact, .b2-quotes.camps { padding-bottom: 48px; }
+  .page-wnl-competitions .b2-block:has(.wnl-intro) { padding-bottom: 24px; }
+  .page-wnl-competitions .b2-block.b2-grey { padding-bottom: 24px; }
+  .page-competitions .b2-ice { margin-bottom: 0; }
+  .camp-copy > h2:not(.camp-dates-title) { margin-top: 16px; }
+  .camp-row { margin-bottom: 0; }
+  .bd-split > div { margin-top: 0; }
+  .camp-reg-title { margin-top: 16px; }
+  .wnl-top h4 { margin-top: 28px; }
+  .bd-intro h1 { width: 306px; }
+  .bd-intro p,
+  .bd-intro .bd-navy { width: 100%; }
+  .bd-stress-title { font-size: 40px; line-height: 40px; }
+  .bd-split,
+  .bd-battles,
+  .camp-layout,
+  .wnl-top,
+  .contact-photos,
+  .b2-qrow { display: block; }
+  .bd-split img,
+  .bd-laser,
+  .camp-photo { width: 300px; height: auto; }
+  .bd-laser { margin: 16px 0; }
+  .bd-book { min-height: 447px; }
+  .bd-book h2 { font-size: 32px; line-height: 32px; }
+  .bd-book h4 { font-size: 18px; line-height: 29px; }
+  .bd-more { font-size: 20px; line-height: 24px; }
+  .bd-mem {
+    min-height: 0;
+    margin-top: 196px;
+    padding: 40px 0;
+    background-image: linear-gradient(#e5eaed, #e5eaed) !important;
+  }
+  .bd-mem-copy { width: min(1150px, calc(100% - 40px)); margin-inline: auto; }
+  .bd-mem h2 { width: 350px; max-width: 100%; font-size: 32px; line-height: 32px; }
+  .bd-mem-photo { display: block; width: 350px; height: auto; margin-top: 16px; }
+
+  .bd-steps-p { font-size: 16px; line-height: 28px; }
+  .bd-req { font-size: 18px; }
+
+  .camp-copy { min-width: 0; max-width: 100%; }
+  .camp-dates-title,
+  .camp-copy > h2 { width: 306px; max-width: 100%; font-size: 40px; }
+  .camp-date,
+  .camp-time { width: fit-content; font-size: 16px; line-height: 28px; }
+  .camp-intro p,
+  .camp-price { width: min(338px, 100%); font-size: 18px; line-height: 32px; }
+  .camp-photo { order: -1; margin: 0 0 16px; }
+  .camp-layout { display: flex; flex-direction: column; }
+  .camp-reg,
+  .camp-cost,
+  .camp-call { font-size: 16px; line-height: 24px; }
+  .b2-form-title { font-size: 32px; line-height: 32px; }
+  .camp-dates { padding-left: 14px; }
+  .camp-row { grid-template-columns: 188px max-content; }
+
+  .comp-head { display: block; }
+  .comp-btn { width: 340px; min-height: 58px; margin-left: 0; }
+  .comp-banner { width: 340px; height: auto; margin: 16px 0; }
+  .comp-fact svg { width: 18px; }
+  .comp-fact .b2-fact-text { font-size: 17px; line-height: 26px; }
+  .b2-literata { font-size: 24px; line-height: 34px; }
+
+  .wnl-photo { width: 300px; height: auto; order: -1; }
+  .wnl-top { display: flex; flex-direction: column; }
+  .wnl-intro { width: 100%; }
+  .wnl-fact .b2-fact-text { font-size: 16px; line-height: 19px; }
+  .wnl-form li { line-height: 32px; }
+
+  .contact-copy h2 { font-size: 32px; line-height: 38px; }
+  .contact-photos img { width: 348px; height: auto; margin-bottom: 16px; }
+
+  .b2-quote-title { font-size: 32px; line-height: 32px; }
+  .b2-quote-sub { font-size: 20px; line-height: 28px; letter-spacing: 1px; }
+  .b2-quotes .b2-qrow { display: flex; overflow: hidden; width: 100%; padding-inline: 0; }
+  .b2-quotes .b2-q { flex: 0 0 100%; margin: 0; }
+  .b2-quotes.schedule .b2-qblock,
+  .b2-quotes.schedule .b2-qt,
+  .b2-quotes.schedule .b2-qn { width: 282px; margin-left: 29px; }
+  .b2-quotes.schedule .b2-qico { margin-left: 38px; }
+  .b2-quotes.contact .b2-qblock,
+  .b2-quotes.contact .b2-qt,
+  .b2-quotes.contact .b2-qn { width: 272px; margin-left: 33px; }
+  .b2-quotes.contact .b2-qico { margin-left: 32px; }
+  .b2-quotes.camps .b2-qblock,
+  .b2-quotes.camps .b2-qt,
+  .b2-quotes.camps .b2-qn { width: 306px; margin-left: 11px; font-size: 18px; }
+  .b2-quotes.camps .b2-qico { margin-left: 20px; }
+  .b2-arrows {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 36px;
+    padding: 0 23px 0 24px;
+    pointer-events: none;
+  }
+  .b2-arrows svg { display: block; width: 20px; height: 20px; fill: rgb(148, 163, 176); }
+}

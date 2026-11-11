@@ -641,6 +641,25 @@ Lighthouse mobile on the local preview, after this batch. Order is performance /
 | About | 97 / 92 / 100 / 100 |
 | Kids classes | 98 / 92 / 100 / 100 |
 
+## Layout parity batch 2, local gate v2.15
+
+Model: Grok 4.7. The live map, the scripts, the tolerances, and `PIXEL_TOL` were not edited. No allow entries were added. Forms still use the Central Forms wiring (siteKey, formKeys, retry id, thank-you redirects, host gate).
+
+Starting point on the batch 1 preview, then this branch measured locally:
+
+| Page | Before 1920 / 1280 / 390 | Local after 1920 / 1280 / 390 |
+|---|---|---|
+| birthday-parties | 232 / 231 / 84 | 3 / 2 / 26 |
+| schedule-birthday-party | 65 / 65 / 15 | 4 / 4 / 6 |
+| summer-camps-in-springfield-mo | 408 / 407 / 251 | 3 / 4 / 21 |
+| competitions | 65 / 64 / 59 | 0 / 0 / 11 |
+| wnl-competitions | 89 / 89 / 79 | 2 / 2 / 9 |
+| contact | 84 / 83 / 49 | 1 / 1 / 19 |
+
+Home, about, and kids-classes measure the same as the last recorded batch 1 result on this branch: home 3 / 3 / 0, about 2 / 2 / 1, kids-classes 0 / 0 / 3. Lighthouse mobile was not re-run. Those three pages were not restyled.
+
+The lines still open on desktop are listed in the batch 2 reply for a decision. They are a line-count on the cancellation heading whose box is already 105px against live's 106px, one extra Muli wrap on the testimonials at width 513, the contact address the spec requires instead of live's "605 W. Plainview Road" line, the birthday cost-to-guests gap, the book-now photo sample, the WNL qualifier heading wrapping at 389px, and the camps grey band (1364px against 1564px).
+
 ## Open questions
 
 - Where GF18 should live, if it should be a page at all.

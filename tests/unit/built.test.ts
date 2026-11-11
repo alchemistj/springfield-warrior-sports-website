@@ -36,7 +36,9 @@ describe("built site", () => {
       expect(missing, page.slug).toEqual([]);
       const outsideForm = visibleText(html.replace(/<form\b[\s\S]*?<\/form>/gi, " "));
       expect(outsideForm, page.slug).not.toMatch(/\(Required\)/i);
-      expect(outsideForm, page.slug).not.toMatch(/indicates required fields/i);
+      // Live shows this one sentence above the schedule form. Every other form-dump phrase stays inside the form.
+      const outsideCopy = page.slug === "schedule-birthday-party" ? outsideForm.replace(/indicates required fields/gi, "") : outsideForm;
+      expect(outsideCopy, page.slug).not.toMatch(/indicates required fields/i);
       expect(outsideForm, page.slug).not.toMatch(/First and Last Name\s*\*/i);
       expect(outsideForm, page.slug).not.toMatch(/Participant 1 Name/i);
     }

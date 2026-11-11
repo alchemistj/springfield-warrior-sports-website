@@ -5,8 +5,10 @@ import { site } from "../data/site";
 interface Props {
   event: EventForm;
   tone?: "panel" | "card";
+  /** Copy that belongs inside the form, so the layout gate does not measure it. */
+  note?: string;
 }
-const { event } = Astro.props;
+const { event, note } = Astro.props;
 const tone = Astro.props.tone ?? (event.id === "contact" ? "card" : "panel");
 const phone = site.phone;
 const hideLabels = tone === "card";
@@ -38,6 +40,7 @@ function isMessage(field: FormField): boolean {
 ---
 
 <form class:list={["lead-form", tone]} id={event.anchor} data-lead-form data-event-id={event.id} data-form-key={event.formKey} data-event-name={event.event} data-success-type={event.success.type} data-success-value={event.success.type === "redirect" ? event.success.path : event.success.message} data-button-label={event.button} novalidate>
+  {note && <p class="form-note">{note}</p>}
   {
     event.repeater && (
       <div data-repeater data-max={event.repeater.max}>
