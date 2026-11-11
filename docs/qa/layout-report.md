@@ -1,5 +1,5 @@
 # Layout comparison: live vs build
-Total differences: 8227
+Total differences: 8211
 
 ## about @ 1920px: 2 difference(s)
 - text "We had our son’s 10th birthday": 5 line(s), live 4
@@ -1021,12 +1021,10 @@ Total differences: 8227
 - band rgb(255, 255, 255) at y=2047 (610px tall, right margin) is in the build but not on live
 - band rgb(255, 255, 255) at y=4178 (328px tall, right margin) is in the build but not on live
 
-## home @ 1920px: 5 difference(s)
+## home @ 1920px: 3 difference(s)
 - text "We believe in results and that": 3 line(s), live 2
 - text "We had our son’s 10th birthday": 5 line(s), live 4
 - text "My daughter started training h": 7 line(s), live 6
-- gap between "KIDS ● ADULTS ● SUMMER CAMPS ●" and "GET READY TO": 62px, live 112px
-- gap between "(see below for our class hours" and "SPRINGFIELD'S BEST OBSTACLE TR": 216px, live 166px
 
 ## homeschool-sports-and-classes-springfield-mo @ 1920px: 104 difference(s)
 - page height 2622px, live 3027px
@@ -1134,10 +1132,7 @@ Total differences: 8227
 - photo hero: brightness 100, live 32 (overlay or exposure differs)
 - photo hero: looks different from live (pixel difference 71)
 
-## kids-classes @ 1920px: 3 difference(s)
-- gap between "Sign up now and let your kids " and "Note: The last week of the mon": 72px, live 111px
-- gap between "Note: The last week of the mon" and "PRE-SCHOOL WARRIORS": 363px, live 257px
-- gap between "Beginner Warrior Membership $7" and "CLASS TIMES": 152px, live 114px
+## kids-classes @ 1920px: matches
 
 ## laser-tag @ 1920px: 184 difference(s)
 - page height 3551px, live 4056px
@@ -4293,12 +4288,10 @@ Total differences: 8227
 - band rgb(255, 255, 255) at y=2047 (610px tall, right margin) is in the build but not on live
 - band rgb(255, 255, 255) at y=4178 (328px tall, right margin) is in the build but not on live
 
-## home @ 1280px: 5 difference(s)
+## home @ 1280px: 3 difference(s)
 - text "We believe in results and that": 3 line(s), live 2
 - text "We had our son’s 10th birthday": 5 line(s), live 4
 - text "My daughter started training h": 7 line(s), live 6
-- gap between "KIDS ● ADULTS ● SUMMER CAMPS ●" and "GET READY TO": 62px, live 112px
-- gap between "(see below for our class hours" and "SPRINGFIELD'S BEST OBSTACLE TR": 216px, live 166px
 
 ## homeschool-sports-and-classes-springfield-mo @ 1280px: 104 difference(s)
 - page height 2622px, live 3027px
@@ -4406,10 +4399,7 @@ Total differences: 8227
 - photo hero: brightness 96, live 38 (overlay or exposure differs)
 - photo hero: looks different from live (pixel difference 63)
 
-## kids-classes @ 1280px: 3 difference(s)
-- gap between "Sign up now and let your kids " and "Note: The last week of the mon": 72px, live 111px
-- gap between "Note: The last week of the mon" and "PRE-SCHOOL WARRIORS": 363px, live 257px
-- gap between "Beginner Warrior Membership $7" and "CLASS TIMES": 152px, live 114px
+## kids-classes @ 1280px: matches
 
 ## laser-tag @ 1280px: 184 difference(s)
 - page height 3551px, live 4056px
@@ -6547,11 +6537,8 @@ Total differences: 8227
 - band rgb(255, 255, 255) at y=1671 (1868px tall on live, right margin) not found in build
 - band rgb(255, 255, 255) at y=2563 (328px tall, right margin) is in the build but not on live
 
-## about @ 390px: 4 difference(s)
+## about @ 390px: 1 difference(s)
 - text "In 2016 we had the unique oppo": 19 line(s), live 18
-- gap between "Springfield Warrior Sports was" and "CURIOUS ABOUT THE COLORS OF OU": 276px, live 370px
-- gap between "Springfield Warrior Sports loo" and "CLIENT TESTIMONIALS": 216px, live 161px
-- gap between "We had our son’s 10th birthday" and "- JENNIFER L.": 62px, live 0px
 
 ## best-gyms-in-springfield @ 390px: 199 difference(s)
 - page height 8081px, live 11526px
@@ -7083,9 +7070,7 @@ Total differences: 8227
 - band rgb(255, 255, 255) at y=5341 (1936px tall on live, left margin) not found in build
 - band rgb(255, 255, 255) at y=2753 (3521px tall, left margin) is in the build but not on live
 
-## home @ 390px: 2 difference(s)
-- gap between "(see below for our class hours" and "SPRINGFIELD'S BEST OBSTACLE TR": 238px, live 136px
-- gap between "We had our son’s 10th birthday" and "- JENNIFER L.": 62px, live 0px
+## home @ 390px: matches
 
 ## homeschool-sports-and-classes-springfield-mo @ 390px: 101 difference(s)
 - page height 3198px, live 4193px
@@ -7190,11 +7175,10 @@ Total differences: 8227
 - band rgb(255, 255, 255) at y=599 (left margin): 525px tall, live 675px
 - band rgb(255, 255, 255) at y=2359 (667px tall, left margin) is in the build but not on live
 
-## kids-classes @ 390px: 5 difference(s)
+## kids-classes @ 390px: 4 difference(s)
 - text "Our preschool class is geared ": 9 line(s), live 8
 - text "Learn the basics of Parkour |f": 14 line(s), live 13
 - gap between "NINJA WARRIOR CLASSES FOR KIDS" and "KIDS FITNESS CLASSES AT SPRING": 148px, live 213px
-- gap between "Beginner Warrior Membership $7" and "CLASS TIMES": 171px, live 133px
 - background behind "FUN AND CHALLENGING": rgb(20, 20, 24), live rgb(23, 40, 50)
 
 ## laser-tag @ 390px: 160 difference(s)
@@ -8365,20 +8349,23 @@ Total differences: 8227
 - band rgb(255, 255, 255) at y=600 (left margin): 318px tall, live 413px
 - band rgb(255, 255, 255) at y=1579 (2566px tall on live, left margin) not found in build
 - band rgb(255, 255, 255) at y=2722 (667px tall, left margin) is in the build but not on live
+
 ## Notes
 
-Gate v2.13, round 11. Model: Grok 4.7. The live map, the scripts, the tolerances, and PIXEL_TOL were not edited. No allow entries were added. `fc34a0e` landed before this could be pushed. A band's color is the median pixel, and two runs merge only when their medians are within 4.
+Gate v2.13, round 12. Model: Grok 4.7. The live map, the scripts, the tolerances, and PIXEL_TOL were not edited. No allow entries were added. A band's color is the median pixel, and two runs merge only when their medians are within 4. The gap check does not count the trust bar when that bar sits between the two blocks.
 
-On gate v2.12, commit 666f552 was 8,038 differences. Home 4/4/0, about 4/4/2, kids-classes 0/0/3. That about count included `band rgb(250, 254, 255) at y=3677 (138px tall)` at 1920 and 1280, and `band rgb(250, 254, 255) at y=4926 (66px tall)` at 390. After the coaches photo, the partner-band spacing, the partnerships join, the phone bullet list, the About intro padding, and the live partnerships gradient, those screenshots on v2.12 are 8,031. Home 3/3/0, about 2/2/1, kids-classes 0/0/3. Those three strip lines are gone.
+Before is the previous v2.13 measurement, 8,227 differences. Home was 5/5/2, about was 2/2/4, and kids-classes was 3/3/5. After is 8,211. Home is 3/3/0, about is 2/2/1, and kids-classes is 0/0/4. No other page rose. The Vercel preview is recorded after this commit is deployed.
 
-On this gate the same pages are home 5/5/2, about 2/2/4, kids-classes 3/3/5, and the site total is 8,227. The Vercel preview of `b8ef5ef` measures the same on the three pages. About at 1920 and 1280 is the two testimonial wraps. The partnerships grey is rgb(242, 245, 246) and runs into the Perseverance navy. The James River wash is the same grey from the end of that navy to the Community Murph row.
+Adopt-a-Highway is white. At 1920 the left margin is white from y=1659 for 701px, then the partnerships grey rgb(242, 245, 246). The grey starts at Community Partnerships. The section after Perseverance is that same grey for 1,465px, then white for 789px. Live's grey there is 1,464px and the white is 796px. The wash uses live's `linear-gradient(rgba(229, 234, 237, 0.5), rgba(229, 234, 237, 0.5))`, with padding-top 849px from 800px up and 412px below that.
 
-The "BE AN EVERYDAY WARRIOR!" photo uses live's CSS: `background-size: contain`, `background-position: 100% 0`, `min-height: 632px`. The right coach's arm is fully visible at 1920 and 1280. At 390 the photo is 310 by 277. Live's phone image is 350 by 312. Matching that box made the white band at y=8160 1,035px against live's 905px, so the smaller photo stays. `.partner-band` has no box-shadow.
+The phone Everyday Warrior photo is the live image at 350 by 312, x=20, `width: 100%`, `margin-top: 40px`. The white run under the navy band is 897px. Live's is 906px. The desktop photo stays `background-size: contain`, `background-position: 100% 0`, `min-height: 605px`.
 
-The phone bullet list uses a 41px line height, no gap, and 20px of section padding. The items step by 42px (live 41px). Home at 390 has no band line.
+The phone hours rows are 38px, which is live's clock icon (18px plus 10px of padding on each side). The program cards use a 10px gap and 50px of bottom padding, so the space from a button to the next photo is 60px and the navy continues 100px past the last button. The buttons use live's 12px type, 2px letter-spacing, 19px line height, and 10px padding. Two-line buttons are 58px and the one-line buttons are 39px. The button sits 36px under its paragraph. Home at 390 matches.
 
-The About intro uses live's padding: 90px above the paragraph and 90px of white before the grey flag band from 800px up, and 80px and 80px below that. The "CURIOUS ABOUT THE COLORS" heading is at y=1261 against live's 1262 on desktop, and at y=1601 against live's 1610 at 390.
+The phone quote name sits against the quote: the shell's bottom padding is 0, and the quote paragraph's margin and padding are 0. Kids Classes at 800px and up uses the live gaps: the note line has margin-top 39px, the intro's margin-bottom is 93px, and CLASS TIMES has margin-top 62px. Below 800px, CLASS TIMES has margin-top 81px. The About phone intro keeps 80px of padding and 80px before the flag band, and the testimonials section's margin-top is 35px.
 
-The partnerships band and the James River wash use live's background, `linear-gradient(rgba(229, 234, 237, 0.5), rgba(229, 234, 237, 0.5))`. The partnerships join is padding on the grey, 138px from 800px up and 70px below. The James River space above the paragraph was a 939px margin on desktop and a 412px margin on the phone, so it was white. Live's section margin is 0 and that area is the grey. The space is now padding on the wash. A 42px white line from the section's own padding sits above it, under the gate's 60px minimum. The phone-width space under the footer for the sticky Call bar is unchanged.
+The lines still open are wraps, at live's size, width, and letter-spacing. Home at 1920 and 1280: "We believe" is 3 lines against live's 2, and the two testimonials are 5 against 4 and 7 against 6. About at 1920 and 1280 is those same two testimonials. About at 390: the James River paragraph is 19 lines against live's 18. Kids Classes at 390: the preschool paragraph is 9 lines against 8, and the parkour paragraph is 14 against 13.
 
-The gap lines are the new v2.13 check. Home's bullet text to "GET READY TO" is 107px against live's 112px. The trust-bar text is 45px of that span, so the check reports 62px. About at 390, the intro paragraph to the colors heading is 276px against live's 370px because the paragraph starts at y=765 against live's 680, while the heading is already at live's y. The white before the flag band is 80px against live's 81px. Those headings were not moved. Kids Classes at 390 still reads the background behind "FUN AND CHALLENGING" as rgb(20, 20, 24) against live rgb(23, 40, 50), on the hero photo, which has no overlay. The Memorial Day sentence stays in the Community Murph paragraph. Paragraph links stay rgb(219, 58, 52) with no underline.
+Kids Classes at 390 also reports `gap between "NINJA WARRIOR CLASSES FOR KIDS" and "KIDS FITNESS CLASSES AT SPRING": 148px, live 213px`. The hero kicker ends at y=458 and the next heading is at y=692, so the visible span is 234px against live's 213px. The trust bar is 86px of that span, and the gap check subtracts it. Live has no trust bar between those headings. Adding the 65px the check asks for would put the heading spacing at 374px against live's 288px. The heading stays where it is. The background behind "FUN AND CHALLENGING" is rgb(20, 20, 24) against live rgb(23, 40, 50). That sample is on the hero photo, and the page has no overlay, which is live's CSS.
+
+The Memorial Day sentence stays in the Community Murph paragraph. Paragraph links stay rgb(219, 58, 52) with no underline.

@@ -311,10 +311,12 @@ const quotes = [
   .everyday { background-color: transparent; }
   .day-photo {
     display: block;
-    width: min(350px, calc(100% - 40px));
+    width: 100%;
     height: auto;
-    margin: 12px auto 0;
+    margin: 40px 0 0;
   }
+  .ready-section { padding: 70px 20px; }
+  .blue-band { margin-top: 0; padding: 80px 20px; }
   .t-title {
     margin: 0;
     color: var(--color-ws-red);
@@ -403,7 +405,7 @@ const quotes = [
       background-repeat: no-repeat;
       background-position: 100% 0;
       background-size: contain;
-      min-height: 632px;
+      min-height: 605px;
     }
     .day-copy { width: 533px; margin-left: 1px; padding: 48px 0; }
     .day-copy h4 { width: 100%; font-size: 30px; }
@@ -433,10 +435,33 @@ const quotes = [
       background-size: 50% 50%;
     }
   }
+  @media (max-width: 1023px) {
+    .ready-section { padding-top: 60px; padding-bottom: 40px; }
+    .blue-band { padding-top: 60px; padding-bottom: 50px; }
+    .everyday { padding: 60px 20px 130px; min-height: 0; }
+  }
   @media (max-width: 799px) {
-    .everyday { margin-top: 110px; }
-    .blue-band { margin-top: 140px; }
-    .card-stack { gap: 109px; }
+    .ready-section { padding-left: 0; padding-right: 0; }
+    .blue-band { margin-top: 0; padding-left: 0; padding-right: 0; }
+    .everyday { margin-top: 0; padding: 60px 0 0; }
+    .everyday .wrap { width: calc(100% - 40px); }
+    .hours li { min-height: 38px; margin-bottom: 0; }
+    .card-stack { gap: 10px; }
+    .program-card { padding-bottom: 50px; }
+    .program-card .btn {
+      min-height: 0;
+      padding: 10px;
+      font-size: 12px;
+      line-height: 19px;
+      letter-spacing: 2px;
+    }
+    .program-card .btn-row { margin-top: 24px; }
+    .day-btn {
+      min-height: 0;
+      padding: 10px;
+      line-height: 19px;
+      letter-spacing: 2px;
+    }
     .section.mist { margin-top: 17px; }
     .band-title { line-height: 40px; }
     .t-title { line-height: 32px; }

@@ -563,6 +563,30 @@ Lighthouse mobile on the local preview, after this batch. Order is performance /
 | About | 97 / 92 / 100 / 100 |
 | Kids classes | 98 / 92 / 100 / 100 |
 
+## Layout parity gate v2.13, round 12
+
+Model: Grok 4.7. Gate v2.13 checks the gap between every consecutive heading and text block, and it does not count the build-only trust bar when that bar sits between the two blocks. A band's color is the median pixel, and two runs merge only when those medians are within 4. The live map, the scripts, the tolerances, and `PIXEL_TOL` were not edited. The report is `docs/qa/layout-report.md`. No allow entries were added.
+
+Before is the previous v2.13 measurement, 8,227 differences. Home was 5/5/2, about was 2/2/4, and kids-classes was 3/3/5. After is 8,211. Home is 3/3/0, about is 2/2/1, and kids-classes is 0/0/4 (1920/1280/390). No other page rose. The Vercel preview is recorded after this commit is deployed.
+
+Adopt-a-Highway is white. At 1920 the left margin is white from y=1659 for 701px, then the partnerships grey. The section after Perseverance is that grey for 1,465px, then white for 789px. Live is 1,464px of grey and 796px of white. The wash is live's `linear-gradient(rgba(229, 234, 237, 0.5), rgba(229, 234, 237, 0.5))`, with padding-top 849px from 800px up and 412px below that.
+
+The phone Everyday Warrior photo is 350 by 312 at x=20, `width: 100%`, `margin-top: 40px`. The white run under the navy band is 897px against live's 906px. From 800px up the photo stays `contain` at `100% 0`, with `min-height: 605px`.
+
+The phone hours rows are 38px, live's clock icon with 10px of padding on each side. Program cards use a 10px gap and 50px of bottom padding, so a button sits 60px above the next photo and the navy continues 100px past the last button. Buttons use live's 2px letter-spacing, 19px line height, and 10px padding. Home at 390 matches.
+
+The phone quote name sits against the quote. Kids Classes at 800px and up uses margin-top 39px on the note, margin-bottom 93px on the intro, and margin-top 62px on CLASS TIMES. Below 800px, CLASS TIMES has margin-top 81px. The About phone testimonials section has margin-top 35px.
+
+The lines still open are wraps, at live's size, width, and letter-spacing. Kids Classes at 390 also reports the hero subtitle to "KIDS FITNESS CLASSES" as 148px against live's 213px. The visible span is 234px against live's 213px. The trust bar is 86px of that span, and the gap check subtracts it. Live has no trust bar there. Adding the 65px the check asks for would put the heading spacing at 374px against live's 288px, so the heading stays. The background behind "FUN AND CHALLENGING" is rgb(20, 20, 24) against live rgb(23, 40, 50), on the hero photo, which has no overlay. The Memorial Day sentence stays in the Community Murph paragraph. Paragraph links stay the live red, `rgb(219, 58, 52)`, with no underline.
+
+Lighthouse mobile on the local preview, after this batch. Order is performance / accessibility / best practices / SEO. About and kids accessibility stay at 92 because the live red measures 4.49:1 on white. That question is with Josh. The red stays.
+
+| Page | Score |
+|---|---|
+| Home | 99 / 100 / 100 / 100 |
+| About | 98 / 92 / 100 / 100 |
+| Kids classes | 98 / 92 / 100 / 100 |
+
 ## Open questions
 
 - Where GF18 should live, if it should be a page at all.
