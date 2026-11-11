@@ -1,7 +1,32 @@
 [
-  { "page": "*", "contains": "SPRINGFIELD WARRIOR SPORTS NINJA AND PARKOUR GYM", "reason": "Trust bar under the hero is a spec addition (Rule 9, Josh 2 Nov 2026)." },
-  { "page": "*", "contains": "not on live: \"Call\"", "reason": "Sticky mobile bar is a spec addition (Rule 6)." },
-  { "page": "*", "contains": "not on live: \"Book a Party\"", "reason": "Sticky mobile bar is a spec addition (Rule 6)." },
-  { "page": "*", "contains": "Plainview Road at Campbell", "reason": "Address wording chosen by Josh, 2 Nov 2026." },
-  { "page": "*", "contains": "605 W Farm Rd 182, Springfield, MO, 65810, United States", "reason": "Footer shows Josh's address wording (Plainview Road at Campbell), 2 Nov 2026, instead of the live United States line." }
+  {
+    "page": "*",
+    "contains": "SPRINGFIELD WARRIOR SPORTS NINJA AND PARKOUR GYM",
+    "reason": "Trust bar under the hero is a spec addition (Rule 9, Josh 2 Nov 2026)."
+  },
+  {
+    "page": "*",
+    "contains": "not on live: \"Call\"",
+    "reason": "Sticky mobile bar is a spec addition (Rule 6)."
+  },
+  {
+    "page": "*",
+    "contains": "not on live: \"Book a Party\"",
+    "reason": "Sticky mobile bar is a spec addition (Rule 6)."
+  },
+  {
+    "page": "*",
+    "contains": "Plainview Road at Campbell",
+    "reason": "Address wording chosen by Josh, 2 Nov 2026."
+  },
+  {
+    "page": "*",
+    "contains": "605 W Farm Rd 182, Springfield, MO, 65810, United States",
+    "reason": "Footer shows Josh's address wording (Plainview Road at Campbell), 2 Nov 2026, instead of the live United States line."
+  },
+  {
+    "page": "contact",
+    "contains": "text missing: \"605 W. Plainview Road Springfield, MO 65810\"",
+    "reason": "Contact page shows Josh's address wording, 605 W Farm Rd 182 (Plainview Road at Campbell), decided 2 Nov 2026."
+  }
 ]

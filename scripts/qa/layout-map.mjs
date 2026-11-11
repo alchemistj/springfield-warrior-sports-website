@@ -91,7 +91,15 @@ function collect() {
   const lines = (el) => {
     const r = document.createRange();
     r.selectNodeContents(el);
-    return new Set([...r.getClientRects()].filter((x) => x.width > 1 && x.height > 1).map((x) => Math.round(x.top))).size;
+    // v2.16: group rects into lines by vertical overlap, so a <br> or a nested span with another
+    // font size on the same line doesn't count as an extra line.
+    const rects = [...r.getClientRects()].filter((x) => x.width > 1 && x.height > 1).sort((a, b) => a.top - b.top);
+    let n = 0, bottom = -Infinity;
+    for (const x of rects) {
+      const mid = x.top + x.height / 2;
+      if (mid > bottom) { n++; bottom = x.bottom; } else bottom = Math.max(bottom, x.bottom);
+    }
+    return n;
   };
   // Background a visitor sees behind an element: the nearest ancestor with a solid color or an image.
   const behind = (el) => {
@@ -115,6 +123,28 @@ function collect() {
     if (/^h[1-6]$/.test(tag)) {
       const t = text(el);
       if (t) item = { kind: "heading", tag, text: t, ...font(el) };
+    } else if (["input", "select", "textarea"].includes(tag) && !["hidden", "submit", "button"].includes((el.type || "").toLowerCase())) {
+      // v2.16: form fields — type, size, background, border, radius, placeholder, font size.
+      const cs = getComputedStyle(el);
+      item = {
+        kind: "field",
+        type: tag === "input" ? (el.type || "text").toLowerCase() : tag,
+        placeholder: el.getAttribute("placeholder") || "",
+        bg: cs.backgroundColor,
+        border: `${cs.borderTopWidth} ${cs.borderTopStyle} ${cs.borderTopColor}`,
+        radius: cs.borderTopLeftRadius,
+        size: Math.round(parseFloat(cs.fontSize)),
+      };
+    } else if (["td", "th", "li", "div", "p"].includes(tag)) {
+      // v2.16: shaded boxes smaller than a band (table cells, cards): background color and size.
+      const cs = getComputedStyle(el);
+      const r = el.getBoundingClientRect();
+      const a = cs.backgroundColor.startsWith("rgba") ? Number(cs.backgroundColor.split(",")[3]) : 1;
+      if (a > 0.5 && cs.backgroundColor !== "rgba(0, 0, 0, 0)" && r.width >= 60 && r.width < vw * 0.9 && r.height >= 20 && r.height <= 400 && (el.innerText || "").trim())
+        items.push({ kind: "box", bg: cs.backgroundColor, text: (el.innerText || "").trim().slice(0, 40), region: region(el), ...box(el) }), els.push(el);
+    }
+    if (item) {
+      // (fall through to the shared push below)
     } else if (tag === "img") {
       const src = el.currentSrc || el.src || "";
       const r = el.getBoundingClientRect();
