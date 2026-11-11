@@ -408,7 +408,9 @@ for (const width of readdirSync(liveDir).sort((a, b) => Number(b) - Number(a))) 
         // v2.10: read both page margins, so paint added only along one edge can't pass.
         for (const side of CUR_VW >= 1280 ? ["left", "right"] : ["left"]) { // at phone widths the right column runs through content
         const [lr0, br] = await Promise.all([marginRuns(livePng, side), marginRuns(buildPng, side)]);
-        const lr = lr0.filter((r) => isBg(r.c) && !inHero({ y: r.y, h: r.h })); // v2.11: not inside the hero photo
+        // v2.15: also any flat run of 120px or more (bands painted with a background gradient
+        // have no background-color, so they weren't in the page's band colors).
+        const lr = lr0.filter((r) => (isBg(r.c) || r.h >= 120) && !inHero({ y: r.y, h: r.h })); // not inside the hero photo
         // Match each live band to the build band of the same color (within 12, JPEG chroma) whose
         // top is nearest where live puts it, scaled by page height, and no more than 300px away.
         const scale = (build.docHeight || 1) / (live.docHeight || 1);
