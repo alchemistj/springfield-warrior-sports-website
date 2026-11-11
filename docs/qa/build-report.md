@@ -645,9 +645,9 @@ Lighthouse mobile on the local preview, after this batch. Order is performance /
 
 Model: Grok 4.7. The live map, the scripts, the tolerances, and `PIXEL_TOL` were not edited. No allow entries were added. Forms still use the Central Forms wiring (siteKey, formKeys, retry id, thank-you redirects, host gate).
 
-Starting point on the batch 1 preview, then this branch measured locally:
+Starting point on the batch 1 preview, then this branch measured on the Vercel preview of `554a79e` (`springfield-warrior-sports-websi-git-3de481-josh-lenzs-projects.vercel.app`):
 
-| Page | Before 1920 / 1280 / 390 | Local after 1920 / 1280 / 390 |
+| Page | Before 1920 / 1280 / 390 | Preview after 1920 / 1280 / 390 |
 |---|---|---|
 | birthday-parties | 232 / 231 / 84 | 3 / 2 / 26 |
 | schedule-birthday-party | 65 / 65 / 15 | 4 / 4 / 6 |
