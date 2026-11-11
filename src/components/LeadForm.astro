@@ -11,7 +11,13 @@ interface Props {
 const { event, note } = Astro.props;
 const tone = Astro.props.tone ?? (event.id === "contact" ? "card" : "panel");
 const phone = site.phone;
+const camp = event.id === "camp-registration";
 const hideLabels = tone === "card";
+
+function campChoice(choice: string): { date: string; time: string } | null {
+  const match = choice.match(/^(.+?) (\d{1,2}(?::\d{2})? [AP]M - .+)$/);
+  return match ? { date: match[1], time: match[2] } : null;
+}
 
 function fieldPlaceholder(label: string, kind: string): string | undefined {
   const text = label.toLowerCase();
@@ -39,7 +45,7 @@ function isMessage(field: FormField): boolean {
 }
 ---
 
-<form class:list={["lead-form", tone]} id={event.anchor} data-lead-form data-event-id={event.id} data-form-key={event.formKey} data-event-name={event.event} data-success-type={event.success.type} data-success-value={event.success.type === "redirect" ? event.success.path : event.success.message} data-button-label={event.button} novalidate>
+<form class:list={["lead-form", tone, { camp }]} id={event.anchor} data-lead-form data-event-id={event.id} data-form-key={event.formKey} data-event-name={event.event} data-success-type={event.success.type} data-success-value={event.success.type === "redirect" ? event.success.path : event.success.message} data-button-label={event.button} novalidate>
   {note && <p class="form-note">{note}</p>}
   {
     event.repeater && (
@@ -88,7 +94,7 @@ function isMessage(field: FormField): boolean {
   {
     event.fields.map((field) => {
       const id = `${event.id}-${field.name || field.kind}`;
-      const part = field.namePart || (field.label === "First Name" ? "first" : field.label === "Last Name" ? "last" : undefined);
+      const part = camp ? undefined : field.namePart || (field.label === "First Name" ? "first" : field.label === "Last Name" ? "last" : undefined);
       if (field.kind === "name" || part === "first" || part === "last") {
         if (part === "last") return null;
         if (part === "first") {
@@ -125,13 +131,20 @@ function isMessage(field: FormField): boolean {
         return (
           <fieldset data-extra-key={field.name} data-extra-label={field.label} data-extra-kind={field.kind} data-required={field.required ? "true" : "false"}>
             <legend class="label">{field.label}{field.required ? <span class="req"> *</span> : ""}</legend>
-            <div class="check-grid">
-              {(field.choices || []).map((choice) => (
-                <label>
-                  <input type={field.kind === "radio" ? "radio" : "checkbox"} name={`${event.id}-${field.name}`} value={choice} />
-                  <span>{choice}</span>
-                </label>
-              ))}
+            <div class={camp ? "check-stack" : "check-grid"}>
+              {(field.choices || []).map((choice) => {
+                const lines = camp ? campChoice(choice) : null;
+                return (
+                  <label>
+                    <input type={field.kind === "radio" ? "radio" : "checkbox"} name={`${event.id}-${field.name}`} value={choice} />
+                    {lines ? (
+                      <span class="choice-lines"><strong>{lines.date}</strong><span>{lines.time}</span></span>
+                    ) : (
+                      <span>{choice}</span>
+                    )}
+                  </label>
+                );
+              })}
             </div>
           </fieldset>
         );
@@ -147,16 +160,23 @@ function isMessage(field: FormField): boolean {
           </div>
         );
       }
-      const role = field.kind === "email" ? "email" : field.kind === "phone" ? "phone" : isMessage(field) ? "message" : "extra";
+      const role = field.label === "First Name" ? "first" : field.label === "Last Name" ? "last" : field.kind === "email" ? "email" : field.kind === "phone" ? "phone" : isMessage(field) ? "message" : "extra";
       const type = field.kind === "email" ? "email" : field.kind === "phone" ? "tel" : field.kind === "date" ? "date" : "text";
-      const placeholder = fieldPlaceholder(field.label, field.kind);
+      const placeholder = camp
+        ? field.kind === "phone"
+          ? "(999) 999-9999"
+          : field.kind === "textarea" || field.kind === "select"
+            ? undefined
+            : field.label
+        : fieldPlaceholder(field.label, field.kind);
+      const hide = hideLabels || (camp && (field.label === "First Name" || field.label === "Last Name" || field.label === "Email"));
       return (
         <div>
-          <label class:list={{ "sr-only": hideLabels }} for={id}>{field.label}{field.required ? <span class="req"> *</span> : ""}</label>
+          <label class:list={{ "sr-only": hide }} for={id}>{field.label}{field.required ? <span class="req"> *</span> : ""}</label>
           {field.kind === "textarea" ? (
-            <textarea id={id} name={field.name} maxlength="5000" required={field.required} placeholder={placeholder} data-role={role} data-extra-key={field.name} data-extra-label={field.label} />
+            <textarea id={id} name={field.name} maxlength="5000" required={field.required} placeholder={placeholder} data-role={role} data-extra-key={role === "extra" ? field.name : undefined} data-extra-label={role === "extra" ? field.label : undefined} />
           ) : (
-            <input id={id} name={field.name} type={type} maxlength={field.kind === "email" ? 320 : 500} required={field.required} placeholder={placeholder} autocomplete={field.kind === "email" ? "email" : field.kind === "phone" ? "tel" : "on"} data-role={role} data-extra-key={field.name} data-extra-label={field.label} />
+            <input id={id} name={field.name} type={type} maxlength={field.kind === "email" ? 320 : 500} required={field.required} placeholder={placeholder} autocomplete={field.kind === "email" ? "email" : field.kind === "phone" ? "tel" : role === "first" ? "given-name" : role === "last" ? "family-name" : "on"} data-role={role} data-extra-key={role === "extra" ? field.name : undefined} data-extra-label={role === "extra" ? field.label : undefined} />
           )}
         </div>
       );

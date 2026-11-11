@@ -57,7 +57,9 @@ describe("built site", () => {
     const files = walk("dist").filter((file) => /\.(html|xml|txt|js)$/.test(file));
     const phone = /(?:\+?1[\s.-]?)?(?:\(?\d{3}\)?[\s.-]*)\d{3}[\s.-]*\d{4}/g;
     for (const file of files) {
-      const text = readFileSync(file, "utf8").replace(/data:image\/[a-z0-9.+-]+;base64,[a-z0-9+/=]+/gi, "");
+      const text = readFileSync(file, "utf8")
+        .replace(/data:image\/[a-z0-9.+-]+;base64,[a-z0-9+/=]+/gi, "")
+        .replace(/placeholder="\(999\) 999-9999"/g, "");
       for (const match of text.match(phone) ?? []) {
         const digits = match.replace(/\D/g, "");
         expect([site.phone.e164.replace(/\D/g, ""), "4178947319"]).toContain(digits.length === 11 ? digits : digits);
