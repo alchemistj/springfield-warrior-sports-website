@@ -1,29 +1,13 @@
 # Layout comparison: live vs build
-Total differences: 4314
+Total differences: 4097
 
-## about @ 1920px: 20 difference(s)
-- text "CONTACT": letter spacing 0px, live 2px
-- text "QUICK LINKS": letter spacing 0px, live 2px
-- text "© Copyright 2026 Springfield W": letter spacing 0px, live 2px
-- spacing from "CURIOUS ABOUT THE COLORS OF OU" to "COMMUNITY ADOPT-A-HIGHWAY CLEA": 372px, live 499px
-- spacing from "COMMUNITY ADOPT-A-HIGHWAY CLEA" to "COMMUNITY PARTNERSHIPS": 483px, live 666px
-- spacing from "PERSISTENCE IN DOING SOMETHING" to "COMMUNITY MURPH": 1957px, live 2903px
-- background behind "SPRINGFIELD WARRIOR SPORTS COMMUNITY": rgb(216, 48, 48), live rgb(24, 24, 48)
-- background behind "CURIOUS ABOUT THE COLORS OF OUR GYM?": rgb(264, 264, 264), live rgb(216, 240, 240)
-- background behind "CLIENT TESTIMONIALS": rgb(264, 264, 264), live rgb(216, 240, 240)
-- background behind "WHAT OUR CLIENTS SAY": rgb(264, 264, 264), live rgb(216, 240, 240)
-- background behind "CONTACT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "ABOUT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "SIGN OUR WAIVER": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "Our inspiration is the new Springfield f": rgb(264, 264, 264), live rgb(216, 240, 240)
-- background behind "We had our son’s 10th birthday here. All": rgb(264, 264, 264), live rgb(216, 240, 240)
-- background behind "We had our son’s 10th birthday here. All": rgb(264, 264, 264), live rgb(216, 240, 240)
-- background behind "- JENNIFER L.": rgb(264, 264, 264), live rgb(216, 240, 240)
-- background behind "My daughter started training here 3 year": rgb(264, 264, 264), live rgb(216, 240, 240)
-- background behind "My daughter started training here 3 year": rgb(264, 264, 264), live rgb(216, 240, 240)
-- background behind "- LEE C.": rgb(264, 264, 264), live rgb(216, 240, 240)
+## about @ 1920px: 4 difference(s)
+- band color beside "SPRINGFIELD WARRIOR SPORTS COMMUNITY": rgb(24, 24, 48), live rgb(24, 24, 0)
+- band color beside "CURIOUS ABOUT THE COLORS OF OUR GYM?": rgb(264, 264, 264), live rgb(216, 240, 240)
+- band color beside "Our inspiration is the new Springfield f": rgb(264, 264, 264), live rgb(216, 240, 240)
+- photo hero: brightness 33, live 54 (overlay or exposure differs)
 
-## best-gyms-in-springfield @ 1920px: 189 difference(s)
+## best-gyms-in-springfield @ 1920px: 186 difference(s)
 - heading missing: "SO… WHICH GYM’S RIGHT FOR YOU?"
 - heading missing: "Southwest Springfield doesn’t mess around when it comes to fitness. Whether you want to lift heavy, join a class, recover in a cold plunge, or chase your first chin-up—you’ve got options."
 - heading missing: "So, no matter where you are in your fitness journey, take the leap."
@@ -187,9 +171,6 @@ Total differences: 4314
 - text "Indoor pool, hot tub, steam ro": left edge 385px, live 1006px
 - text "Indoor pool, hot tub, steam ro": width 555px, live 369px
 - text "Indoor pool, hot tub, steam ro": color rgb(51, 51, 51), live rgb(0, 0, 0)
-- text "CONTACT": letter spacing 0px, live 2px
-- text "QUICK LINKS": letter spacing 0px, live 2px
-- text "© Copyright 2026 Springfield W": letter spacing 0px, live 2px
 - spacing from "LOOKING FOR THE BEST GYMS IN S" to "RAGE FITNESS": 1050px, live 804px
 - icons: 5 in build, 36 on live
 - icon 1: color rgb(255, 255, 255), live rgb(219, 58, 52)
@@ -200,9 +181,7 @@ Total differences: 4314
 - icon 3: left edge 821px, live 974px
 - icon 4: left edge 821px, live 974px
 - icon 5: left edge 821px, live 974px
-- background behind "CONTACT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "ABOUT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "SIGN OUR WAIVER": rgb(48, 72, 120), live rgb(0, 0, 0)
+- band color beside "LOOKING FOR THE BEST GYMS IN SPRINGFIELD": rgb(0, 0, 0), live rgb(0, 24, 48)
 - heading "LOOKING FOR THE BEST GYMS IN SPRINGFIELD": looks different from live (pixel difference 55)
 - heading "RAGE FITNESS": looks different from live (pixel difference 47)
 - heading "GP ATHLETICS": looks different from live (pixel difference 48)
@@ -212,9 +191,11 @@ Total differences: 4314
 - text "1900 W Sunset St #B100, Spring": looks different from live (pixel difference 38)
 - text "1444 S Glenstone Ave, Springfi": looks different from live (pixel difference 38)
 - text "1249 E Battlefield Rd, Springf": looks different from live (pixel difference 39)
+- photo hero: brightness 21, live 37 (overlay or exposure differs)
+- photo img_2344: brightness 96, live 139 (overlay or exposure differs)
 - photo img_2344: looks different from live (pixel difference 45)
 
-## birthday-parties @ 1920px: 98 difference(s)
+## birthday-parties @ 1920px: 100 difference(s)
 - heading missing: "NINJA WARRIOR COURSES, LASER TAG, NERF BATTLES, AND MORE!"
 - heading missing: "BOOK NOW!"
 - heading missing: "You can begin the birthday party scheduling process on our website by clicking here, or call us today at (417) 894-7319 to reserve your birthday party spot at Warrior Sports!"
@@ -281,9 +262,6 @@ Total differences: 4314
 - text "The Springfield Warrior Sports": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
 - text "Create unforgettable memories ": weight 300, live 400
 - text "Create unforgettable memories ": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
-- text "CONTACT": letter spacing 0px, live 2px
-- text "QUICK LINKS": letter spacing 0px, live 2px
-- text "© Copyright 2026 Springfield W": letter spacing 0px, live 2px
 - spacing from "KIDS WILL HAVE A BLAST, AND YO" to "WARRIOR SPORTS TAKES THE STRES": 1938px, live 451px
 - spacing from "WARRIOR SPORTS TAKES THE STRES" to "MORE BIRTHDAY PARTY OPTIONS AT": 1122px, live 1716px
 - spacing from "MORE BIRTHDAY PARTY OPTIONS AT" to "HAVE BATTLES IN OUR OBSTACLE C": 585px, live 875px
@@ -300,21 +278,26 @@ Total differences: 4314
 - icon 5: left edge 821px, live 414px
 - background behind "KIDS WILL HAVE A BLAST, AND YOU CAN RELA": rgb(48, 48, 48), live rgb(264, 264, 264)
 - background behind "WARRIOR SPORTS TAKES THE STRESS OUT OF Y": rgb(264, 264, 264), live rgb(216, 240, 240)
-- background behind "CONTACT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "ABOUT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "SIGN OUR WAIVER": rgb(48, 72, 120), live rgb(0, 0, 0)
 - background behind "At Springfield Warrior Sports, we want t": rgb(264, 264, 264), live rgb(216, 240, 240)
 - background behind "Note: free customized party invitations ": rgb(264, 264, 264), live rgb(216, 240, 240)
 - background behind "Cost: $179 for the first 11 kids and $10": rgb(264, 264, 264), live rgb(216, 240, 240)
 - background behind "* All participants will need to sign a w": rgb(264, 264, 264), live rgb(216, 240, 240)
 - background behind "** To reserve your birthday party time s": rgb(264, 264, 264), live rgb(216, 240, 240)
+- band color beside "KIDS WILL HAVE A BLAST, AND YOU CAN RELA": rgb(48, 48, 48), live rgb(264, 264, 264)
+- band color beside "WARRIOR SPORTS TAKES THE STRESS OUT OF Y": rgb(264, 264, 264), live rgb(216, 240, 240)
+- band color beside "At Springfield Warrior Sports, we want t": rgb(264, 264, 264), live rgb(216, 240, 240)
+- band color beside "Note: free customized party invitations ": rgb(264, 264, 264), live rgb(216, 240, 240)
+- band color beside "Cost: $179 for the first 11 kids and $10": rgb(264, 264, 264), live rgb(216, 240, 240)
+- band color beside "* All participants will need to sign a w": rgb(264, 264, 264), live rgb(216, 240, 240)
+- band color beside "** To reserve your birthday party time s": rgb(264, 264, 264), live rgb(216, 240, 240)
 - heading "KIDS WILL HAVE A BLAST, AND YOU CAN RELA": looks different from live (pixel difference 138)
 - heading "WARRIOR SPORTS TAKES THE STRESS OUT OF Y": looks different from live (pixel difference 55)
 - heading "MORE BIRTHDAY PARTY OPTIONS AT SPRINGFIE": looks different from live (pixel difference 40)
 - heading "NERF BATTLE PARTIES": looks different from live (pixel difference 67)
+- photo hero: brightness 60, live 38 (overlay or exposure differs)
 - photo hero: looks different from live (pixel difference 39)
 
-## competitions @ 1920px: 30 difference(s)
+## competitions @ 1920px: 25 difference(s)
 - heading missing: "2026-9 CSNA September 19th Form"
 - heading "TEST YOUR SKILLS ON OUR FUN AND COMPETIT": left edge 385px, live 500px
 - heading "TEST YOUR SKILLS ON OUR FUN AND COMPETIT": width 1150px, live 920px
@@ -336,17 +319,12 @@ Total differences: 4314
 - text "Start time: TBA": font Muli, live Epilogue
 - text "Price per registration: $60": width 190px, live 232px
 - text "Price per registration: $60": font Muli, live Epilogue
-- text "CONTACT": letter spacing 0px, live 2px
-- text "QUICK LINKS": letter spacing 0px, live 2px
-- text "© Copyright 2026 Springfield W": letter spacing 0px, live 2px
 - background behind "TEST YOUR SKILLS ON OUR FUN AND COMPETIT": rgb(264, 264, 264), live rgb(24, 24, 24)
-- background behind "CONTACT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "ABOUT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "SIGN OUR WAIVER": rgb(48, 72, 120), live rgb(0, 0, 0)
 - heading "TEST YOUR SKILLS ON OUR FUN AND COMPETIT": looks different from live (pixel difference 43)
 - heading "SEPTEMBER 2026 CSNA TEAM COMPETITION": looks different from live (pixel difference 45)
+- photo hero: brightness 62, live 42 (overlay or exposure differs)
 
-## contact @ 1920px: 40 difference(s)
+## contact @ 1920px: 35 difference(s)
 - photo qoute-icon: left edge 385px, live 425px
 - text missing: "605 W. Plainview Road Springfield, MO 65810"
 - text "We look forward to hearing fro": left edge 413px, live 386px
@@ -373,9 +351,6 @@ Total differences: 4314
 - text "- LEE C.": font Epilogue, live Muli
 - text "- LEE C.": weight 300, live 700
 - text "- LEE C.": color rgb(51, 51, 51), live rgb(219, 58, 52)
-- text "CONTACT": letter spacing 0px, live 2px
-- text "QUICK LINKS": letter spacing 0px, live 2px
-- text "© Copyright 2026 Springfield W": letter spacing 0px, live 2px
 - spacing from "CLIENT TESTIMONIALS" to "WHAT OUR CLIENTS SAY": 0px, live 61px
 - icons: 9 in build, 8 on live
 - icon 4: color rgb(214, 53, 47), live rgb(255, 255, 255)
@@ -384,9 +359,7 @@ Total differences: 4314
 - icon 6: color rgb(255, 255, 255), live rgb(219, 58, 52)
 - icon 6: left edge 452px, live 822px
 - background behind "OUR ACCOMPLISHED, AWARD WINNING CREW IS ": rgb(216, 48, 48), live rgb(0, 0, 0)
-- background behind "CONTACT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "ABOUT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "SIGN OUR WAIVER": rgb(48, 72, 120), live rgb(0, 0, 0)
+- photo hero: brightness 54, live 36 (overlay or exposure differs)
 
 ## fitness-classes @ 1920px: 135 difference(s)
 - heading missing: "WHAT IS OCR FITNESS?"
@@ -489,9 +462,6 @@ Total differences: 4314
 - text "So if you’re ready for a new c": font Epilogue, live Muli
 - text "So if you’re ready for a new c": weight 300, live 800
 - text "So if you’re ready for a new c": color rgb(51, 51, 51), live rgb(40, 82, 118)
-- text "CONTACT": letter spacing 0px, live 2px
-- text "QUICK LINKS": letter spacing 0px, live 2px
-- text "© Copyright 2026 Springfield W": letter spacing 0px, live 2px
 - spacing from "THE MOST DIVERSE (LEAST BORING" to "FITNESS CLASSES IN SPRINGFIELD": 0px, live 151px
 - spacing from "FITNESS CLASSES IN SPRINGFIELD" to "PRICING AND SCHEDULE": 1289px, live 941px
 - spacing from "PRICING AND SCHEDULE" to "OBSTACLE COURSE RACING CLASSES": 491px, live 738px
@@ -510,11 +480,11 @@ Total differences: 4314
 - icon 5: color rgb(219, 58, 52), live rgb(255, 255, 255)
 - icon 5: left edge 821px, live 414px
 - background behind "PRICING AND SCHEDULE": rgb(240, 240, 240), live rgb(48, 48, 48)
-- background behind "CONTACT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "ABOUT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "SIGN OUR WAIVER": rgb(48, 72, 120), live rgb(0, 0, 0)
 - background behind "We now offer two OCR classes each week —": rgb(240, 240, 240), live rgb(24, 24, 24)
 - background behind "Choose the membership option that fits y": rgb(240, 240, 240), live rgb(48, 48, 48)
+- band color beside "PRICING AND SCHEDULE": rgb(240, 240, 240), live rgb(0, 24, 24)
+- band color beside "We now offer two OCR classes each week —": rgb(240, 240, 240), live rgb(24, 24, 24)
+- band color beside "Choose the membership option that fits y": rgb(240, 240, 240), live rgb(24, 24, 24)
 - heading "PRICING AND SCHEDULE": looks different from live (pixel difference 151)
 - heading "OBSTACLE COURSE RACING CLASSES:": looks different from live (pixel difference 50)
 - heading "OCR FITNESS CLASS BENEFITS": looks different from live (pixel difference 42)
@@ -522,26 +492,13 @@ Total differences: 4314
 - heading "IMPROVED CONFIDENCE LEVELS AND MENTAL HE": looks different from live (pixel difference 46)
 - text "We now offer two OCR classes e": looks different from live (pixel difference 177)
 - text "Choose the membership option t": looks different from live (pixel difference 178)
+- photo hero: brightness 15, live 34 (overlay or exposure differs)
+- photo img_2344: brightness 96, live 138 (overlay or exposure differs)
 - photo img_2344: looks different from live (pixel difference 44)
+- photo img_2347: brightness 76, live 124 (overlay or exposure differs)
 - photo img_2347: looks different from live (pixel difference 50)
 
-## home @ 1920px: 16 difference(s)
-- text "KIDS ● ADULTS ● SUMMER CAMPS ●": letter spacing 3.2px, live 0px
-- text "CONTACT": letter spacing 0px, live 2px
-- text "QUICK LINKS": letter spacing 0px, live 2px
-- text "© Copyright 2026 Springfield W": letter spacing 0px, live 2px
-- spacing from "HOMESCHOOL NINJA WARRIOR CLASS" to "PERSONAL TRAINING": 488px, live 341px
-- background behind "CLIENT TESTIMONIALS": rgb(264, 264, 264), live rgb(216, 240, 240)
-- background behind "WHAT OUR CLIENTS SAY": rgb(264, 264, 264), live rgb(216, 240, 240)
-- background behind "CONTACT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "ABOUT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "SIGN OUR WAIVER": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "We had our son’s 10th birthday here. All": rgb(264, 264, 264), live rgb(216, 240, 240)
-- background behind "We had our son’s 10th birthday here. All": rgb(264, 264, 264), live rgb(216, 240, 240)
-- background behind "- JENNIFER L.": rgb(264, 264, 264), live rgb(216, 240, 240)
-- background behind "My daughter started training here 3 year": rgb(264, 264, 264), live rgb(216, 240, 240)
-- background behind "My daughter started training here 3 year": rgb(264, 264, 264), live rgb(216, 240, 240)
-- background behind "- LEE C.": rgb(264, 264, 264), live rgb(216, 240, 240)
+## home @ 1920px: matches
 
 ## homeschool-sports-and-classes-springfield-mo @ 1920px: 61 difference(s)
 - heading missing: "COME JOIN THE FUN!"
@@ -585,9 +542,6 @@ Total differences: 4314
 - text "Availability: Tuesdays and Thu": width 555px, live 314px
 - text "Availability: Tuesdays and Thu": weight 300, live 400
 - text "Availability: Tuesdays and Thu": color rgb(51, 51, 51), live rgb(0, 0, 0)
-- text "CONTACT": letter spacing 0px, live 2px
-- text "QUICK LINKS": letter spacing 0px, live 2px
-- text "© Copyright 2026 Springfield W": letter spacing 0px, live 2px
 - spacing from "FUN HOMESCHOOL SPORTS FOR KIDS" to "HOMESCHOOL CLASSES SPRINGFIELD": 0px, live 136px
 - icons: 5 in build, 8 on live
 - icon 1: color rgb(255, 255, 255), live rgb(40, 82, 118)
@@ -600,22 +554,24 @@ Total differences: 4314
 - icon 5: color rgb(219, 58, 52), live rgb(255, 255, 255)
 - icon 5: left edge 821px, live 451px
 - background behind "FUN HOMESCHOOL SPORTS FOR KIDS IN SPRING": rgb(240, 240, 240), live rgb(48, 72, 120)
-- background behind "CONTACT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "ABOUT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "SIGN OUR WAIVER": rgb(48, 72, 120), live rgb(0, 0, 0)
+- band color beside "FUN HOMESCHOOL SPORTS FOR KIDS IN SPRING": rgb(240, 240, 240), live rgb(48, 72, 120)
+- band color beside "HOMESCHOOL CLASSES SPRINGFIELD, MO": rgb(240, 240, 240), live rgb(48, 72, 120)
+- band color beside "(AGES 7–15)": rgb(240, 240, 240), live rgb(48, 72, 120)
+- band color beside "The Springfield Warrior Sports Junior Wa": rgb(240, 240, 240), live rgb(48, 72, 120)
+- band color beside "Availability: Tuesdays and Thursdays": rgb(240, 240, 240), live rgb(48, 72, 120)
 - heading "FUN HOMESCHOOL SPORTS FOR KIDS IN SPRING": looks different from live (pixel difference 120)
+- photo hero: brightness 100, live 32 (overlay or exposure differs)
 - photo hero: looks different from live (pixel difference 71)
 
-## kids-classes @ 1920px: 9 difference(s)
-- text "CONTACT": letter spacing 0px, live 2px
-- text "QUICK LINKS": letter spacing 0px, live 2px
-- text "© Copyright 2026 Springfield W": letter spacing 0px, live 2px
-- spacing from "ARE YOU LOOKING FOR WAYS TO KE" to "PRE-SCHOOL WARRIORS": 576px, live 775px
-- spacing from "PRACTICE TIMES" to "PARKOUR": 339px, live 266px
-- background behind "AND …. DON’T FORGET ABOUT SUMMER CAMPS, ": rgb(264, 264, 264), live rgb(216, 240, 240)
-- background behind "CONTACT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "ABOUT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "SIGN OUR WAIVER": rgb(48, 72, 120), live rgb(0, 0, 0)
+## kids-classes @ 1920px: 8 difference(s)
+- band color beside "YOUTH SUMMER CAMP": rgb(264, 264, 264), live rgb(216, 240, 240)
+- band color beside "Kids will have fun and make new friends ": rgb(264, 264, 264), live rgb(216, 240, 240)
+- band color beside "week long day camp. Campers will work wi": rgb(264, 264, 264), live rgb(216, 240, 240)
+- band color beside "Warrior Sports trainer focusing on overa": rgb(264, 264, 264), live rgb(216, 240, 240)
+- band color beside "balance, and core exercises along with o": rgb(264, 264, 264), live rgb(216, 240, 240)
+- band color beside "training.": rgb(264, 264, 264), live rgb(216, 240, 240)
+- band color beside "At Springfield Warrior Sports we want to": rgb(264, 264, 264), live rgb(216, 240, 240)
+- photo hero: brightness 27, live 43 (overlay or exposure differs)
 
 ## laser-tag @ 1920px: 88 difference(s)
 - heading missing: "WANT TO BOOK A PRIVATE LASER TAG PARTY?"
@@ -677,9 +633,6 @@ Total differences: 4314
 - text "You can begin the booking proc": weight 300, live 400
 - text "You can begin the booking proc": color rgb(51, 51, 51), live rgb(255, 255, 255)
 - text "You can begin the booking proc": align start, live center
-- text "CONTACT": letter spacing 0px, live 2px
-- text "QUICK LINKS": letter spacing 0px, live 2px
-- text "© Copyright 2026 Springfield W": letter spacing 0px, live 2px
 - spacing from "WELCOME TO THE PREMIER" to "LASER TAG GYM IN SPRINGFIELD, ": 0px, live 50px
 - spacing from "HERE ARE THE DETAILS:" to "COME JOIN THE FUN! DON’T MISS ": 654px, live 929px
 - icons: 5 in build, 8 on live
@@ -694,20 +647,23 @@ Total differences: 4314
 - icon 5: left edge 821px, live 451px
 - background behind "WELCOME TO THE PREMIER": rgb(0, 0, 0), live rgb(0, 24, 48)
 - background behind "LASER TAG GYM IN SPRINGFIELD, MO": rgb(0, 0, 0), live rgb(0, 24, 48)
-- background behind "CONTACT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "ABOUT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "SIGN OUR WAIVER": rgb(48, 72, 120), live rgb(0, 0, 0)
 - background behind "Great for all ages!": rgb(264, 264, 264), live rgb(0, 24, 48)
 - background behind "Whether you are planning a birthday part": rgb(264, 264, 264), live rgb(216, 240, 240)
 - background behind "The best part?": rgb(264, 264, 264), live rgb(216, 240, 240)
 - background behind "Our staff will do all the setup and be o": rgb(264, 264, 264), live rgb(216, 240, 240)
 - background behind "Call us today and book our entire obstac": rgb(264, 264, 264), live rgb(216, 240, 240)
 - background behind "You can begin the booking process on our": rgb(240, 240, 240), live rgb(0, 0, 0)
+- band color beside "Great for all ages!": rgb(264, 264, 264), live rgb(0, 0, 24)
+- band color beside "Whether you are planning a birthday part": rgb(264, 264, 264), live rgb(216, 240, 240)
+- band color beside "The best part?": rgb(264, 264, 264), live rgb(216, 240, 240)
+- band color beside "Our staff will do all the setup and be o": rgb(264, 264, 264), live rgb(216, 240, 240)
+- band color beside "Call us today and book our entire obstac": rgb(264, 264, 264), live rgb(216, 240, 240)
+- band color beside "You can begin the booking process on our": rgb(240, 240, 240), live rgb(0, 0, 0)
 - heading "LASER TAG GYM IN SPRINGFIELD, MO": looks different from live (pixel difference 76)
 - heading "HERE ARE THE DETAILS:": looks different from live (pixel difference 59)
 - text "You can begin the booking proc": looks different from live (pixel difference 203)
 
-## meet-the-team @ 1920px: 290 difference(s)
+## meet-the-team @ 1920px: 286 difference(s)
 - heading missing: "YOU'VE MET THE TEAM."
 - heading missing: "NOW TRAIN WITH THEM."
 - heading missing: "You’ve met the coaches who make Springfield Warrior Sports what it is."
@@ -968,9 +924,6 @@ Total differences: 4314
 - text "Outside of ninja, I play softb": width 555px, live 649px
 - text "Outside of ninja, I play softb": weight 300, live 400
 - text "Outside of ninja, I play softb": color rgb(51, 51, 51), live rgb(0, 0, 0)
-- text "CONTACT": letter spacing 0px, live 2px
-- text "QUICK LINKS": letter spacing 0px, live 2px
-- text "© Copyright 2026 Springfield W": letter spacing 0px, live 2px
 - spacing from "MEET THE SPRINGFIELD WARRIOR S" to "JONNY": 1178px, live 676px
 - spacing from "CO-OWNER | ADULT OCR COACH | I" to "SARAH": 918px, live 594px
 - spacing from "CO-OWNER | ADULT OCR COACH | P" to "LINCOLN": 885px, live 548px
@@ -987,9 +940,7 @@ Total differences: 4314
 - icon 2: left edge 452px, live 414px
 - icon 3: color rgb(219, 58, 52), live rgb(255, 255, 255)
 - icon 3: left edge 821px, live 451px
-- background behind "CONTACT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "ABOUT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "SIGN OUR WAIVER": rgb(48, 72, 120), live rgb(0, 0, 0)
+- band color beside "MEET THE SPRINGFIELD WARRIOR SPORTS TEAM": rgb(48, 48, 24), live rgb(0, 24, 24)
 - heading "MEET THE SPRINGFIELD WARRIOR SPORTS TEAM": looks different from live (pixel difference 61)
 - heading "JONNY": looks different from live (pixel difference 45)
 - heading "CO-OWNER | ADULT OCR COACH | INTERMEDIAT": looks different from live (pixel difference 38)
@@ -997,6 +948,7 @@ Total differences: 4314
 - heading "BEGINNER NINJA COACH | BIRTHDAY PARTY HO": looks different from live (pixel difference 45)
 - heading "CALEB": looks different from live (pixel difference 50)
 - heading "BEGINNER NINJA COACH | PRESCHOOL COACH |": looks different from live (pixel difference 47)
+- photo hero: brightness 28, live 49 (overlay or exposure differs)
 - photo hero: looks different from live (pixel difference 42)
 
 ## nerf-wars @ 1920px: 77 difference(s)
@@ -1046,9 +998,6 @@ Total differences: 4314
 - text "Or, dial (417) 894-7319 to res": weight 300, live 400
 - text "Or, dial (417) 894-7319 to res": color rgb(51, 51, 51), live rgb(255, 255, 255)
 - text "Or, dial (417) 894-7319 to res": align start, live center
-- text "CONTACT": letter spacing 0px, live 2px
-- text "QUICK LINKS": letter spacing 0px, live 2px
-- text "© Copyright 2026 Springfield W": letter spacing 0px, live 2px
 - spacing from "NERF WAR SPRINGFIELD, MO:" to "THE ULTIMATE PARTY EXPERIENCE!": -579px, live 50px
 - spacing from "THE ULTIMATE PARTY EXPERIENCE!" to "NERF WAR PARTY BREAKDOWN": 1048px, live 737px
 - spacing from "NERF WAR PARTY BREAKDOWN" to "HERE’S WHAT’S INCLUDED": 0px, live 221px
@@ -1064,12 +1013,15 @@ Total differences: 4314
 - background behind "NERF WAR SPRINGFIELD, MO:": rgb(264, 264, 264), live rgb(72, 72, 72)
 - background behind "THE ULTIMATE PARTY EXPERIENCE!": rgb(216, 48, 48), live rgb(0, 0, 0)
 - background behind "PRICING": rgb(264, 264, 264), live rgb(216, 240, 240)
-- background behind "CONTACT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "ABOUT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "SIGN OUR WAIVER": rgb(48, 72, 120), live rgb(0, 0, 0)
 - background behind "Our Nerf parties start at $220 for the f": rgb(264, 264, 264), live rgb(216, 240, 240)
 - background behind "Let our experienced and kid-friendly tea": rgb(264, 264, 264), live rgb(48, 24, 24)
 - background behind "Or, dial (417) 894-7319 to reserve today": rgb(264, 264, 264), live rgb(48, 24, 24)
+- band color beside "NERF WAR SPRINGFIELD, MO:": rgb(264, 264, 264), live rgb(48, 24, 24)
+- band color beside "THE ULTIMATE PARTY EXPERIENCE!": rgb(0, 0, 0), live rgb(48, 24, 24)
+- band color beside "PRICING": rgb(264, 264, 264), live rgb(216, 240, 240)
+- band color beside "Our Nerf parties start at $220 for the f": rgb(264, 264, 264), live rgb(216, 240, 240)
+- band color beside "Let our experienced and kid-friendly tea": rgb(264, 264, 264), live rgb(0, 0, 0)
+- band color beside "Or, dial (417) 894-7319 to reserve today": rgb(264, 264, 264), live rgb(24, 0, 0)
 - heading "NERF WAR SPRINGFIELD, MO:": looks different from live (pixel difference 155)
 - heading "THE ULTIMATE PARTY EXPERIENCE!": looks different from live (pixel difference 77)
 - heading "NERF WAR PARTY BREAKDOWN": looks different from live (pixel difference 46)
@@ -1078,7 +1030,7 @@ Total differences: 4314
 - text "Let our experienced and kid-fr": looks different from live (pixel difference 191)
 - text "Or, dial (417) 894-7319 to res": looks different from live (pixel difference 190)
 
-## parkour @ 1920px: 107 difference(s)
+## parkour @ 1920px: 110 difference(s)
 - heading "PARKOUR GYM IN SPRINGFIELD MO | SPRINGFI": left edge 385px, live 500px
 - heading "PARKOUR GYM IN SPRINGFIELD MO | SPRINGFI": width 1150px, live 920px
 - heading "⚠️ TEMPORARY UPDATE:": left edge 980px, live 783px
@@ -1152,9 +1104,6 @@ Total differences: 4314
 - text "With Parkour classes at Spring": left edge 385px, live 974px
 - text "With Parkour classes at Spring": weight 300, live 400
 - text "With Parkour classes at Spring": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
-- text "CONTACT": letter spacing 0px, live 2px
-- text "QUICK LINKS": letter spacing 0px, live 2px
-- text "© Copyright 2026 Springfield W": letter spacing 0px, live 2px
 - spacing from "PARKOUR BENEFITS" to "IMPROVE PHYSICAL FITNESS:": 0px, live 163px
 - spacing from "IMPROVE PHYSICAL FITNESS:" to "BUILDS SELF-CONFIDENCE:": 628px, live 204px
 - spacing from "BUILDS SELF-CONFIDENCE:" to "MENTAL STIMULATION:": 675px, live 428px
@@ -1169,12 +1118,18 @@ Total differences: 4314
 - background behind "PARKOUR CLASSES": rgb(264, 264, 264), live rgb(48, 72, 120)
 - background behind "TEMPORARILY UNAVAILABLE": rgb(264, 264, 264), live rgb(48, 72, 120)
 - background behind "OPEN GYM IS OPEN — YOUR FIRST VISIT IS J": rgb(264, 264, 264), live rgb(48, 72, 120)
-- background behind "CONTACT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "ABOUT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "SIGN OUR WAIVER": rgb(48, 72, 120), live rgb(0, 0, 0)
 - background behind "By learning how to overcome obstacles an": rgb(264, 264, 264), live rgb(216, 240, 240)
 - background behind "Parkour is a great way to reduce stress ": rgb(264, 264, 264), live rgb(216, 240, 240)
 - background behind "$20 class drop in, $10 class drop in for": rgb(264, 264, 264), live rgb(48, 96, 120)
+- band color beside "PARKOUR GYM IN SPRINGFIELD MO | SPRINGFI": rgb(24, 24, 24), live rgb(48, 72, 72)
+- band color beside "BUILDS SELF-CONFIDENCE:": rgb(264, 264, 264), live rgb(216, 240, 240)
+- band color beside "STRESS RELIEF:": rgb(264, 264, 264), live rgb(216, 240, 240)
+- band color beside "PARKOUR CLASSES": rgb(264, 264, 264), live rgb(72, 96, 144)
+- band color beside "TEMPORARILY UNAVAILABLE": rgb(264, 264, 264), live rgb(72, 96, 144)
+- band color beside "OPEN GYM IS OPEN — YOUR FIRST VISIT IS J": rgb(264, 264, 264), live rgb(72, 96, 144)
+- band color beside "By learning how to overcome obstacles an": rgb(264, 264, 264), live rgb(216, 240, 240)
+- band color beside "Parkour is a great way to reduce stress ": rgb(264, 264, 264), live rgb(216, 240, 240)
+- band color beside "$20 class drop in, $10 class drop in for": rgb(264, 264, 264), live rgb(48, 72, 120)
 - heading "⚠️ TEMPORARY UPDATE:": looks different from live (pixel difference 57)
 - heading "PARKOUR BENEFITS": looks different from live (pixel difference 39)
 - heading "IMPROVE PHYSICAL FITNESS:": looks different from live (pixel difference 43)
@@ -1187,7 +1142,7 @@ Total differences: 4314
 - heading "OPEN GYM IS OPEN — YOUR FIRST VISIT IS J": looks different from live (pixel difference 127)
 - text "$20 class drop in, $10 class d": looks different from live (pixel difference 140)
 
-## personal-training @ 1920px: 208 difference(s)
+## personal-training @ 1920px: 200 difference(s)
 - heading missing: "NOT YOUR TYPICAL GYM. NOT YOUR TYPICAL TRAINER."
 - heading missing: "This isn’t about getting shredded or setting records."
 - heading missing: "It’s about moving, healing, and growing in a way that actually fits your life."
@@ -1251,6 +1206,10 @@ Total differences: 4314
 - button "CONTACT OUR PERSONAL TRAINERS": width 274px, live 423px
 - button "CONTACT OUR PERSONAL TRAINERS": width 274px, live 394px
 - text not on live: "This isn’t about getting shredded or setting records. It’s a"
+- text not on live: "Jonny has coached our son for over three years. He’s a mento"
+- text not on live: "— WILL AND KOREN WILSON"
+- text not on live: "My son’s personal training at Warrior Sports has helped him "
+- text not on live: "— SUSIE K."
 - text "If you’ve ever felt like fitne": left edge 980px, live 386px
 - text "If you’ve ever felt like fitne": weight 300, live 400
 - text "If you’ve ever felt like fitne": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
@@ -1349,25 +1308,6 @@ Total differences: 4314
 - text "— MICHAEL B.": font Epilogue, live Muli
 - text "— MICHAEL B.": weight 300, live 700
 - text "— MICHAEL B.": color rgb(51, 51, 51), live rgb(219, 58, 52)
-- text "Jonny has coached our son for ": left edge 385px, live 426px
-- text "Jonny has coached our son for ": font Epilogue, live Muli
-- text "Jonny has coached our son for ": weight 300, live 400
-- text "Jonny has coached our son for ": color rgb(51, 51, 51), live rgb(0, 0, 0)
-- text "— WILL AND KOREN WILSON": left edge 385px, live 426px
-- text "— WILL AND KOREN WILSON": font Epilogue, live Muli
-- text "— WILL AND KOREN WILSON": weight 300, live 700
-- text "— WILL AND KOREN WILSON": color rgb(51, 51, 51), live rgb(219, 58, 52)
-- text "My son’s personal training at ": left edge 984px, live 426px
-- text "My son’s personal training at ": font Epilogue, live Muli
-- text "My son’s personal training at ": weight 300, live 400
-- text "My son’s personal training at ": color rgb(51, 51, 51), live rgb(0, 0, 0)
-- text "— SUSIE K.": left edge 984px, live 426px
-- text "— SUSIE K.": font Epilogue, live Muli
-- text "— SUSIE K.": weight 300, live 700
-- text "— SUSIE K.": color rgb(51, 51, 51), live rgb(219, 58, 52)
-- text "CONTACT": letter spacing 0px, live 2px
-- text "QUICK LINKS": letter spacing 0px, live 2px
-- text "© Copyright 2026 Springfield W": letter spacing 0px, live 2px
 - spacing from "EMOTIONALLY INTELLIGENT COACHI" to "MEET YOUR TRAINERS": 566px, live 390px
 - spacing from "MEET YOUR TRAINERS" to "SARAH WILDER": 0px, live 425px
 - spacing from "JONNY WILDER" to "HOW IT WORKS": 293px, live 428px
@@ -1384,9 +1324,15 @@ Total differences: 4314
 - icon 5: left edge 821px, live 414px
 - background behind "MEET YOUR TRAINERS": rgb(240, 240, 240), live rgb(48, 72, 120)
 - background behind "LET’S TALK STRENGTH…YOUR VERSION": rgb(240, 240, 240), live rgb(48, 48, 48)
-- background behind "CONTACT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "ABOUT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "SIGN OUR WAIVER": rgb(48, 72, 120), live rgb(0, 0, 0)
+- band color beside "UNCONVENTIONAL BY DESIGN": rgb(264, 264, 264), live rgb(216, 240, 240)
+- band color beside "MEET YOUR TRAINERS": rgb(240, 240, 240), live rgb(48, 72, 120)
+- band color beside "SARAH WILDER": rgb(240, 240, 240), live rgb(48, 72, 120)
+- band color beside "LET’S TALK STRENGTH…YOUR VERSION": rgb(240, 240, 240), live rgb(24, 24, 24)
+- band color beside "We use obstacle training, resistance ban": rgb(264, 264, 264), live rgb(216, 240, 240)
+- band color beside "– Women’s Confidence Coach": rgb(240, 240, 240), live rgb(48, 72, 120)
+- band color beside "Helps women, especially moms, feel stron": rgb(240, 240, 240), live rgb(48, 72, 120)
+- band color beside "“I focus on helping you feel powerful be": rgb(240, 240, 240), live rgb(48, 72, 120)
+- band color beside "Great for weight loss, functional streng": rgb(264, 264, 264), live rgb(48, 72, 120)
 - heading "WHY WARRIOR SPORTS PERSONAL TRAINING WOR": looks different from live (pixel difference 45)
 - heading "UNCONVENTIONAL BY DESIGN": looks different from live (pixel difference 38)
 - heading "STRONGER AND SMARTER": looks different from live (pixel difference 56)
@@ -1396,68 +1342,43 @@ Total differences: 4314
 - heading "JONNY WILDER": looks different from live (pixel difference 42)
 - heading "HOW IT WORKS": looks different from live (pixel difference 49)
 - heading "LET’S TALK STRENGTH…YOUR VERSION": looks different from live (pixel difference 154)
+- photo hero: brightness 13, live 38 (overlay or exposure differs)
 
-## registered-for-csna-competition @ 1920px: 10 difference(s)
+## registered-for-csna-competition @ 1920px: 4 difference(s)
 - heading missing: "WE RECEIVED THOSE DETAILS, THANK YOU!"
 - text "Click here to finalize the reg": width 741px, live 1148px
 - text "Click here to finalize the reg": color rgb(51, 51, 51), live rgb(0, 0, 0)
-- text "CONTACT": letter spacing 0px, live 2px
-- text "QUICK LINKS": letter spacing 0px, live 2px
-- text "© Copyright 2026 Springfield W": letter spacing 0px, live 2px
-- background behind "CONTACT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "ABOUT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "SIGN OUR WAIVER": rgb(48, 72, 120), live rgb(0, 0, 0)
 - section colors differ: build [rgb(255, 255, 255) | rgb(40, 82, 118) | rgb(255, 255, 255)], live [rgb(255, 255, 255)]
 
-## registered-for-day-camps @ 1920px: 12 difference(s)
+## registered-for-day-camps @ 1920px: 7 difference(s)
 - heading missing: "WE RECEIVED THOSE DETAILS, THANK YOU!"
 - text missing: "Click here to finalize the registration with your payment."
 - text "The link above has a few "prod": color rgb(51, 51, 51), live rgb(0, 0, 0)
 - text "If you encounter any problems ": color rgb(51, 51, 51), live rgb(0, 0, 0)
-- text "CONTACT": letter spacing 0px, live 2px
-- text "QUICK LINKS": letter spacing 0px, live 2px
-- text "© Copyright 2026 Springfield W": letter spacing 0px, live 2px
 - button not on live: "CLICK HERE TO FINALIZE THE REGISTRATION WITH YOUR PAYMENT."
-- background behind "CONTACT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "ABOUT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "SIGN OUR WAIVER": rgb(48, 72, 120), live rgb(0, 0, 0)
+- photo hero: brightness 110, live 208 (overlay or exposure differs)
 - photo hero: looks different from live (pixel difference 113)
 
-## registered-for-summer-fun-competition @ 1920px: 10 difference(s)
+## registered-for-summer-fun-competition @ 1920px: 5 difference(s)
 - heading missing: "WE RECEIVED THOSE DETAILS, THANK YOU!"
 - text "Click here to finalize the reg": color rgb(51, 51, 51), live rgb(0, 0, 0)
 - text "If you encounter any problems ": color rgb(51, 51, 51), live rgb(0, 0, 0)
-- text "CONTACT": letter spacing 0px, live 2px
-- text "QUICK LINKS": letter spacing 0px, live 2px
-- text "© Copyright 2026 Springfield W": letter spacing 0px, live 2px
-- background behind "CONTACT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "ABOUT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "SIGN OUR WAIVER": rgb(48, 72, 120), live rgb(0, 0, 0)
+- photo hero: brightness 110, live 211 (overlay or exposure differs)
 - photo hero: looks different from live (pixel difference 115)
 
-## registered-for-wnl-competition @ 1920px: 9 difference(s)
+## registered-for-wnl-competition @ 1920px: 4 difference(s)
 - heading missing: "WE RECEIVED THOSE DETAILS, THANK YOU!"
 - text "Click here to finalize the reg": color rgb(51, 51, 51), live rgb(0, 0, 0)
-- text "CONTACT": letter spacing 0px, live 2px
-- text "QUICK LINKS": letter spacing 0px, live 2px
-- text "© Copyright 2026 Springfield W": letter spacing 0px, live 2px
-- background behind "CONTACT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "ABOUT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "SIGN OUR WAIVER": rgb(48, 72, 120), live rgb(0, 0, 0)
+- photo hero: brightness 110, live 213 (overlay or exposure differs)
 - photo hero: looks different from live (pixel difference 117)
 
-## registered @ 1920px: 9 difference(s)
+## registered @ 1920px: 4 difference(s)
 - heading missing: "WE RECEIVED THOSE DETAILS, THANK YOU!"
 - text "Click here to finalize the reg": color rgb(51, 51, 51), live rgb(0, 0, 0)
-- text "CONTACT": letter spacing 0px, live 2px
-- text "QUICK LINKS": letter spacing 0px, live 2px
-- text "© Copyright 2026 Springfield W": letter spacing 0px, live 2px
-- background behind "CONTACT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "ABOUT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "SIGN OUR WAIVER": rgb(48, 72, 120), live rgb(0, 0, 0)
+- photo hero: brightness 110, live 213 (overlay or exposure differs)
 - photo hero: looks different from live (pixel difference 117)
 
-## schedule-birthday-party @ 1920px: 27 difference(s)
+## schedule-birthday-party @ 1920px: 22 difference(s)
 - photo qoute-icon: left edge 385px, live 425px
 - text missing: ""*" indicates required fields"
 - text "1. Fill out the form to begin ": left edge 404px, live 511px
@@ -1477,16 +1398,11 @@ Total differences: 4314
 - text "- LEE C.": font Epilogue, live Muli
 - text "- LEE C.": weight 300, live 700
 - text "- LEE C.": color rgb(51, 51, 51), live rgb(219, 58, 52)
-- text "CONTACT": letter spacing 0px, live 2px
-- text "QUICK LINKS": letter spacing 0px, live 2px
-- text "© Copyright 2026 Springfield W": letter spacing 0px, live 2px
 - spacing from "CLIENT TESTIMONIALS" to "WHAT OUR CLIENTS SAY": 0px, live 61px
-- background behind "CONTACT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "ABOUT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "SIGN OUR WAIVER": rgb(48, 72, 120), live rgb(0, 0, 0)
 - background behind "1. Fill out the form to begin the schedu": rgb(264, 264, 264), live rgb(216, 240, 240)
+- band color beside "1. Fill out the form to begin the schedu": rgb(264, 264, 264), live rgb(216, 240, 240)
 
-## summer-camps-in-springfield-mo @ 1920px: 172 difference(s)
+## summer-camps-in-springfield-mo @ 1920px: 173 difference(s)
 - heading "KIDS STAY FIT AND HEALTHY": left edge 385px, live 500px
 - heading "AT OUR INCREDIBLE SUMMER CAMPS": left edge 385px, live 500px
 - heading "SUMMER CAMPS IN SPRINGFIELD — 2026 DATES": width 555px, live 438px
@@ -1642,36 +1558,32 @@ Total differences: 4314
 - text "- LEE C.": font Epilogue, live Muli
 - text "- LEE C.": weight 300, live 700
 - text "- LEE C.": color rgb(51, 51, 51), live rgb(219, 58, 52)
-- text "CONTACT": letter spacing 0px, live 2px
-- text "QUICK LINKS": letter spacing 0px, live 2px
-- text "© Copyright 2026 Springfield W": letter spacing 0px, live 2px
 - spacing from "KIDS STAY FIT AND HEALTHY" to "AT OUR INCREDIBLE SUMMER CAMPS": 0px, live 140px
 - spacing from "CLIENT TESTIMONIALS" to "WHAT OUR CLIENTS SAY": 0px, live 61px
 - background behind "AT OUR INCREDIBLE SUMMER CAMPS": rgb(24, 24, 24), live rgb(264, 264, 264)
 - background behind "SUMMER CAMP PRICING": rgb(264, 264, 264), live rgb(216, 240, 240)
-- background behind "CONTACT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "ABOUT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "SIGN OUR WAIVER": rgb(48, 72, 120), live rgb(0, 0, 0)
 - background behind "A week of activities and snacks at Sprin": rgb(264, 264, 264), live rgb(216, 240, 240)
 - background behind "Note:": rgb(264, 264, 264), live rgb(216, 240, 240)
 - background behind "Summer camp investment monies can be pro": rgb(264, 264, 264), live rgb(216, 240, 240)
+- band color beside "KIDS STAY FIT AND HEALTHY": rgb(24, 24, 24), live rgb(48, 72, 72)
+- band color beside "AT OUR INCREDIBLE SUMMER CAMPS": rgb(24, 24, 24), live rgb(72, 72, 96)
+- band color beside "SUMMER CAMP PRICING": rgb(264, 264, 264), live rgb(216, 240, 240)
+- band color beside "A week of activities and snacks at Sprin": rgb(264, 264, 264), live rgb(216, 240, 240)
+- band color beside "Note:": rgb(264, 264, 264), live rgb(216, 240, 240)
+- band color beside "Summer camp investment monies can be pro": rgb(264, 264, 264), live rgb(216, 240, 240)
 - heading "AT OUR INCREDIBLE SUMMER CAMPS": looks different from live (pixel difference 81)
 - heading "SUMMER CAMP PRICING": looks different from live (pixel difference 54)
 - heading "SPRINGFIELD WARRIOR REGISTRATION": looks different from live (pixel difference 44)
 - heading "REGISTRATION FORM": looks different from live (pixel difference 41)
+- photo hero: brightness 41, live 55 (overlay or exposure differs)
 
-## thank-you-for-your-feedback @ 1920px: 9 difference(s)
+## thank-you-for-your-feedback @ 1920px: 4 difference(s)
 - heading missing: "THANK YOU FOR YOUR FEEDBACK!"
 - text "Thank you for your feedback! W": color rgb(51, 51, 51), live rgb(0, 0, 0)
-- text "CONTACT": letter spacing 0px, live 2px
-- text "QUICK LINKS": letter spacing 0px, live 2px
-- text "© Copyright 2026 Springfield W": letter spacing 0px, live 2px
-- background behind "CONTACT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "ABOUT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "SIGN OUR WAIVER": rgb(48, 72, 120), live rgb(0, 0, 0)
+- photo hero: brightness 110, live 207 (overlay or exposure differs)
 - photo hero: looks different from live (pixel difference 113)
 
-## wnl-competitions @ 1920px: 44 difference(s)
+## wnl-competitions @ 1920px: 40 difference(s)
 - heading missing: "10-26-2024 WNL Competition Registration Form"
 - heading "WNL COMPETITIONS IN SPRINGFIELD MISSOURI": left edge 399px, live 500px
 - heading "WNL COMPETITIONS IN SPRINGFIELD MISSOURI": width 1122px, live 920px
@@ -1701,45 +1613,25 @@ Total differences: 4314
 - text "Don't wait to register - The e": width 555px, live 874px
 - text "Don't wait to register - The e": weight 300, live 400
 - text "Don't wait to register - The e": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
-- text "CONTACT": letter spacing 0px, live 2px
-- text "QUICK LINKS": letter spacing 0px, live 2px
-- text "© Copyright 2026 Springfield W": letter spacing 0px, live 2px
 - spacing from "WNL COMPETITIONS IN SPRINGFIEL" to "WNL REGIONAL QUALIFIERS": 653px, live 937px
 - icons: 5 in build, 6 on live
 - icon 1: color rgb(255, 255, 255), live rgb(219, 58, 52)
 - icon 2: left edge 452px, live 414px
 - icon 3: color rgb(219, 58, 52), live rgb(255, 255, 255)
 - icon 3: left edge 821px, live 451px
-- background behind "CONTACT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "ABOUT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "SIGN OUR WAIVER": rgb(48, 72, 120), live rgb(0, 0, 0)
+- band color beside "WNL COMPETITIONS IN SPRINGFIELD MISSOURI": rgb(144, 144, 144), live rgb(72, 72, 72)
 - heading "WNL COMPETITIONS IN SPRINGFIELD MISSOURI": looks different from live (pixel difference 74)
 - heading "WNL REGIONAL QUALIFIERS": looks different from live (pixel difference 60)
+- photo hero: brightness 75, live 41 (overlay or exposure differs)
 - photo hero: looks different from live (pixel difference 51)
 
-## about @ 1280px: 20 difference(s)
-- text "CONTACT": letter spacing 0px, live 2px
-- text "QUICK LINKS": letter spacing 0px, live 2px
-- text "© Copyright 2026 Springfield W": letter spacing 0px, live 2px
-- spacing from "CURIOUS ABOUT THE COLORS OF OU" to "COMMUNITY ADOPT-A-HIGHWAY CLEA": 372px, live 499px
-- spacing from "COMMUNITY ADOPT-A-HIGHWAY CLEA" to "COMMUNITY PARTNERSHIPS": 483px, live 666px
-- spacing from "PERSISTENCE IN DOING SOMETHING" to "COMMUNITY MURPH": 1957px, live 2903px
-- background behind "SPRINGFIELD WARRIOR SPORTS COMMUNITY": rgb(216, 48, 48), live rgb(24, 24, 48)
-- background behind "CURIOUS ABOUT THE COLORS OF OUR GYM?": rgb(264, 264, 264), live rgb(216, 240, 240)
-- background behind "CLIENT TESTIMONIALS": rgb(264, 264, 264), live rgb(216, 240, 240)
-- background behind "WHAT OUR CLIENTS SAY": rgb(264, 264, 264), live rgb(216, 240, 240)
-- background behind "CONTACT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "ABOUT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "SIGN OUR WAIVER": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "Our inspiration is the new Springfield f": rgb(264, 264, 264), live rgb(216, 240, 240)
-- background behind "We had our son’s 10th birthday here. All": rgb(264, 264, 264), live rgb(216, 240, 240)
-- background behind "We had our son’s 10th birthday here. All": rgb(264, 264, 264), live rgb(216, 240, 240)
-- background behind "- JENNIFER L.": rgb(264, 264, 264), live rgb(216, 240, 240)
-- background behind "My daughter started training here 3 year": rgb(264, 264, 264), live rgb(216, 240, 240)
-- background behind "My daughter started training here 3 year": rgb(264, 264, 264), live rgb(216, 240, 240)
-- background behind "- LEE C.": rgb(264, 264, 264), live rgb(216, 240, 240)
+## about @ 1280px: 4 difference(s)
+- band color beside "SPRINGFIELD WARRIOR SPORTS COMMUNITY": rgb(48, 48, 48), live rgb(96, 96, 72)
+- band color beside "CURIOUS ABOUT THE COLORS OF OUR GYM?": rgb(264, 264, 264), live rgb(216, 240, 240)
+- band color beside "Our inspiration is the new Springfield f": rgb(264, 264, 264), live rgb(216, 240, 240)
+- photo hero: brightness 34, live 56 (overlay or exposure differs)
 
-## best-gyms-in-springfield @ 1280px: 190 difference(s)
+## best-gyms-in-springfield @ 1280px: 186 difference(s)
 - heading missing: "SO… WHICH GYM’S RIGHT FOR YOU?"
 - heading missing: "Southwest Springfield doesn’t mess around when it comes to fitness. Whether you want to lift heavy, join a class, recover in a cold plunge, or chase your first chin-up—you’ve got options."
 - heading missing: "So, no matter where you are in your fitness journey, take the leap."
@@ -1753,7 +1645,7 @@ Total differences: 4314
 - heading "PROXIMAL STRENGTH": left edge 65px, live 653px
 - heading "GENESIS HEALTH CLUBS – SPRINGFIELD SOUTH": left edge 65px, live 653px
 - photo missing: colorrage-sw-sq-2
-- photo missing: data-uri
+- photo missing: gp12-20-45_websize
 - photo missing: 62544e735ced2e7233a47d90_about us in springfield hero
 - photo missing: ourclasses_3-750x500-1200w
 - photo missing: springfield-1
@@ -1903,9 +1795,6 @@ Total differences: 4314
 - text "Indoor pool, hot tub, steam ro": left edge 65px, live 686px
 - text "Indoor pool, hot tub, steam ro": width 555px, live 369px
 - text "Indoor pool, hot tub, steam ro": color rgb(51, 51, 51), live rgb(0, 0, 0)
-- text "CONTACT": letter spacing 0px, live 2px
-- text "QUICK LINKS": letter spacing 0px, live 2px
-- text "© Copyright 2026 Springfield W": letter spacing 0px, live 2px
 - spacing from "LOOKING FOR THE BEST GYMS IN S" to "RAGE FITNESS": 1050px, live 804px
 - icons: 5 in build, 36 on live
 - icon 1: color rgb(255, 255, 255), live rgb(219, 58, 52)
@@ -1916,9 +1805,6 @@ Total differences: 4314
 - icon 3: left edge 501px, live 654px
 - icon 4: left edge 501px, live 654px
 - icon 5: left edge 501px, live 654px
-- background behind "CONTACT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "ABOUT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "SIGN OUR WAIVER": rgb(48, 72, 120), live rgb(0, 0, 0)
 - heading "LOOKING FOR THE BEST GYMS IN SPRINGFIELD": looks different from live (pixel difference 55)
 - heading "RAGE FITNESS": looks different from live (pixel difference 47)
 - heading "GP ATHLETICS": looks different from live (pixel difference 48)
@@ -1928,10 +1814,12 @@ Total differences: 4314
 - text "1900 W Sunset St #B100, Spring": looks different from live (pixel difference 38)
 - text "1444 S Glenstone Ave, Springfi": looks different from live (pixel difference 38)
 - text "1249 E Battlefield Rd, Springf": looks different from live (pixel difference 39)
+- photo hero: brightness 27, live 41 (overlay or exposure differs)
 - photo hero: looks different from live (pixel difference 39)
+- photo img_2344: brightness 96, live 139 (overlay or exposure differs)
 - photo img_2344: looks different from live (pixel difference 45)
 
-## birthday-parties @ 1280px: 98 difference(s)
+## birthday-parties @ 1280px: 100 difference(s)
 - heading missing: "NINJA WARRIOR COURSES, LASER TAG, NERF BATTLES, AND MORE!"
 - heading missing: "BOOK NOW!"
 - heading missing: "You can begin the birthday party scheduling process on our website by clicking here, or call us today at (417) 894-7319 to reserve your birthday party spot at Warrior Sports!"
@@ -1998,9 +1886,6 @@ Total differences: 4314
 - text "The Springfield Warrior Sports": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
 - text "Create unforgettable memories ": weight 300, live 400
 - text "Create unforgettable memories ": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
-- text "CONTACT": letter spacing 0px, live 2px
-- text "QUICK LINKS": letter spacing 0px, live 2px
-- text "© Copyright 2026 Springfield W": letter spacing 0px, live 2px
 - spacing from "KIDS WILL HAVE A BLAST, AND YO" to "WARRIOR SPORTS TAKES THE STRES": 1938px, live 451px
 - spacing from "WARRIOR SPORTS TAKES THE STRES" to "MORE BIRTHDAY PARTY OPTIONS AT": 1122px, live 1716px
 - spacing from "MORE BIRTHDAY PARTY OPTIONS AT" to "HAVE BATTLES IN OUR OBSTACLE C": 585px, live 875px
@@ -2017,21 +1902,26 @@ Total differences: 4314
 - icon 5: left edge 501px, live 94px
 - background behind "KIDS WILL HAVE A BLAST, AND YOU CAN RELA": rgb(48, 48, 48), live rgb(264, 264, 264)
 - background behind "WARRIOR SPORTS TAKES THE STRESS OUT OF Y": rgb(264, 264, 264), live rgb(216, 240, 240)
-- background behind "CONTACT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "ABOUT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "SIGN OUR WAIVER": rgb(48, 72, 120), live rgb(0, 0, 0)
 - background behind "At Springfield Warrior Sports, we want t": rgb(264, 264, 264), live rgb(216, 240, 240)
 - background behind "Note: free customized party invitations ": rgb(264, 264, 264), live rgb(216, 240, 240)
 - background behind "Cost: $179 for the first 11 kids and $10": rgb(264, 264, 264), live rgb(216, 240, 240)
 - background behind "* All participants will need to sign a w": rgb(264, 264, 264), live rgb(216, 240, 240)
 - background behind "** To reserve your birthday party time s": rgb(264, 264, 264), live rgb(216, 240, 240)
+- band color beside "KIDS WILL HAVE A BLAST, AND YOU CAN RELA": rgb(48, 48, 48), live rgb(264, 264, 264)
+- band color beside "WARRIOR SPORTS TAKES THE STRESS OUT OF Y": rgb(264, 264, 264), live rgb(216, 240, 240)
+- band color beside "At Springfield Warrior Sports, we want t": rgb(264, 264, 264), live rgb(216, 240, 240)
+- band color beside "Note: free customized party invitations ": rgb(264, 264, 264), live rgb(216, 240, 240)
+- band color beside "Cost: $179 for the first 11 kids and $10": rgb(264, 264, 264), live rgb(216, 240, 240)
+- band color beside "* All participants will need to sign a w": rgb(264, 264, 264), live rgb(216, 240, 240)
+- band color beside "** To reserve your birthday party time s": rgb(264, 264, 264), live rgb(216, 240, 240)
 - heading "KIDS WILL HAVE A BLAST, AND YOU CAN RELA": looks different from live (pixel difference 130)
 - heading "WARRIOR SPORTS TAKES THE STRESS OUT OF Y": looks different from live (pixel difference 55)
 - heading "MORE BIRTHDAY PARTY OPTIONS AT SPRINGFIE": looks different from live (pixel difference 40)
 - heading "NERF BATTLE PARTIES": looks different from live (pixel difference 67)
 - heading "CREATE AMAZING MEMORIES": looks different from live (pixel difference 39)
+- photo hero: brightness 62, live 42 (overlay or exposure differs)
 
-## competitions @ 1280px: 30 difference(s)
+## competitions @ 1280px: 25 difference(s)
 - heading missing: "2026-9 CSNA September 19th Form"
 - heading "TEST YOUR SKILLS ON OUR FUN AND COMPETIT": left edge 65px, live 180px
 - heading "TEST YOUR SKILLS ON OUR FUN AND COMPETIT": width 1150px, live 920px
@@ -2053,17 +1943,12 @@ Total differences: 4314
 - text "Start time: TBA": font Muli, live Epilogue
 - text "Price per registration: $60": width 190px, live 232px
 - text "Price per registration: $60": font Muli, live Epilogue
-- text "CONTACT": letter spacing 0px, live 2px
-- text "QUICK LINKS": letter spacing 0px, live 2px
-- text "© Copyright 2026 Springfield W": letter spacing 0px, live 2px
 - background behind "TEST YOUR SKILLS ON OUR FUN AND COMPETIT": rgb(264, 264, 264), live rgb(24, 24, 24)
-- background behind "CONTACT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "ABOUT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "SIGN OUR WAIVER": rgb(48, 72, 120), live rgb(0, 0, 0)
 - heading "TEST YOUR SKILLS ON OUR FUN AND COMPETIT": looks different from live (pixel difference 43)
 - heading "SEPTEMBER 2026 CSNA TEAM COMPETITION": looks different from live (pixel difference 45)
+- photo hero: brightness 70, live 48 (overlay or exposure differs)
 
-## contact @ 1280px: 40 difference(s)
+## contact @ 1280px: 35 difference(s)
 - photo qoute-icon: left edge 65px, live 105px
 - text missing: "605 W. Plainview Road Springfield, MO 65810"
 - text "We look forward to hearing fro": left edge 93px, live 66px
@@ -2090,9 +1975,6 @@ Total differences: 4314
 - text "- LEE C.": font Epilogue, live Muli
 - text "- LEE C.": weight 300, live 700
 - text "- LEE C.": color rgb(51, 51, 51), live rgb(219, 58, 52)
-- text "CONTACT": letter spacing 0px, live 2px
-- text "QUICK LINKS": letter spacing 0px, live 2px
-- text "© Copyright 2026 Springfield W": letter spacing 0px, live 2px
 - spacing from "CLIENT TESTIMONIALS" to "WHAT OUR CLIENTS SAY": 0px, live 61px
 - icons: 9 in build, 8 on live
 - icon 4: color rgb(214, 53, 47), live rgb(255, 255, 255)
@@ -2101,9 +1983,7 @@ Total differences: 4314
 - icon 6: color rgb(255, 255, 255), live rgb(219, 58, 52)
 - icon 6: left edge 132px, live 502px
 - background behind "OUR ACCOMPLISHED, AWARD WINNING CREW IS ": rgb(216, 48, 48), live rgb(0, 0, 0)
-- background behind "CONTACT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "ABOUT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "SIGN OUR WAIVER": rgb(48, 72, 120), live rgb(0, 0, 0)
+- photo hero: brightness 53, live 37 (overlay or exposure differs)
 
 ## fitness-classes @ 1280px: 135 difference(s)
 - heading missing: "WHAT IS OCR FITNESS?"
@@ -2206,9 +2086,6 @@ Total differences: 4314
 - text "So if you’re ready for a new c": font Epilogue, live Muli
 - text "So if you’re ready for a new c": weight 300, live 800
 - text "So if you’re ready for a new c": color rgb(51, 51, 51), live rgb(40, 82, 118)
-- text "CONTACT": letter spacing 0px, live 2px
-- text "QUICK LINKS": letter spacing 0px, live 2px
-- text "© Copyright 2026 Springfield W": letter spacing 0px, live 2px
 - spacing from "THE MOST DIVERSE (LEAST BORING" to "FITNESS CLASSES IN SPRINGFIELD": 0px, live 151px
 - spacing from "FITNESS CLASSES IN SPRINGFIELD" to "PRICING AND SCHEDULE": 1289px, live 941px
 - spacing from "PRICING AND SCHEDULE" to "OBSTACLE COURSE RACING CLASSES": 491px, live 738px
@@ -2227,11 +2104,11 @@ Total differences: 4314
 - icon 5: color rgb(219, 58, 52), live rgb(255, 255, 255)
 - icon 5: left edge 501px, live 94px
 - background behind "PRICING AND SCHEDULE": rgb(240, 240, 240), live rgb(48, 48, 48)
-- background behind "CONTACT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "ABOUT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "SIGN OUR WAIVER": rgb(48, 72, 120), live rgb(0, 0, 0)
 - background behind "We now offer two OCR classes each week —": rgb(240, 240, 240), live rgb(24, 24, 24)
 - background behind "Choose the membership option that fits y": rgb(240, 240, 240), live rgb(48, 48, 48)
+- band color beside "PRICING AND SCHEDULE": rgb(240, 240, 240), live rgb(0, 0, 0)
+- band color beside "We now offer two OCR classes each week —": rgb(240, 240, 240), live rgb(24, 24, 24)
+- band color beside "Choose the membership option that fits y": rgb(240, 240, 240), live rgb(24, 24, 24)
 - heading "PRICING AND SCHEDULE": looks different from live (pixel difference 151)
 - heading "OBSTACLE COURSE RACING CLASSES:": looks different from live (pixel difference 47)
 - heading "OCR FITNESS CLASS BENEFITS": looks different from live (pixel difference 42)
@@ -2239,26 +2116,13 @@ Total differences: 4314
 - heading "IMPROVED CONFIDENCE LEVELS AND MENTAL HE": looks different from live (pixel difference 46)
 - text "We now offer two OCR classes e": looks different from live (pixel difference 177)
 - text "Choose the membership option t": looks different from live (pixel difference 178)
+- photo hero: brightness 18, live 38 (overlay or exposure differs)
+- photo img_2344: brightness 96, live 138 (overlay or exposure differs)
 - photo img_2344: looks different from live (pixel difference 44)
+- photo img_2347: brightness 76, live 124 (overlay or exposure differs)
 - photo img_2347: looks different from live (pixel difference 50)
 
-## home @ 1280px: 16 difference(s)
-- text "KIDS ● ADULTS ● SUMMER CAMPS ●": letter spacing 3.2px, live 0px
-- text "CONTACT": letter spacing 0px, live 2px
-- text "QUICK LINKS": letter spacing 0px, live 2px
-- text "© Copyright 2026 Springfield W": letter spacing 0px, live 2px
-- spacing from "HOMESCHOOL NINJA WARRIOR CLASS" to "PERSONAL TRAINING": 488px, live 341px
-- background behind "CLIENT TESTIMONIALS": rgb(264, 264, 264), live rgb(216, 240, 240)
-- background behind "WHAT OUR CLIENTS SAY": rgb(264, 264, 264), live rgb(216, 240, 240)
-- background behind "CONTACT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "ABOUT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "SIGN OUR WAIVER": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "We had our son’s 10th birthday here. All": rgb(264, 264, 264), live rgb(216, 240, 240)
-- background behind "We had our son’s 10th birthday here. All": rgb(264, 264, 264), live rgb(216, 240, 240)
-- background behind "- JENNIFER L.": rgb(264, 264, 264), live rgb(216, 240, 240)
-- background behind "My daughter started training here 3 year": rgb(264, 264, 264), live rgb(216, 240, 240)
-- background behind "My daughter started training here 3 year": rgb(264, 264, 264), live rgb(216, 240, 240)
-- background behind "- LEE C.": rgb(264, 264, 264), live rgb(216, 240, 240)
+## home @ 1280px: matches
 
 ## homeschool-sports-and-classes-springfield-mo @ 1280px: 61 difference(s)
 - heading missing: "COME JOIN THE FUN!"
@@ -2302,9 +2166,6 @@ Total differences: 4314
 - text "Availability: Tuesdays and Thu": width 555px, live 314px
 - text "Availability: Tuesdays and Thu": weight 300, live 400
 - text "Availability: Tuesdays and Thu": color rgb(51, 51, 51), live rgb(0, 0, 0)
-- text "CONTACT": letter spacing 0px, live 2px
-- text "QUICK LINKS": letter spacing 0px, live 2px
-- text "© Copyright 2026 Springfield W": letter spacing 0px, live 2px
 - spacing from "FUN HOMESCHOOL SPORTS FOR KIDS" to "HOMESCHOOL CLASSES SPRINGFIELD": 0px, live 136px
 - icons: 5 in build, 8 on live
 - icon 1: color rgb(255, 255, 255), live rgb(40, 82, 118)
@@ -2317,22 +2178,24 @@ Total differences: 4314
 - icon 5: color rgb(219, 58, 52), live rgb(255, 255, 255)
 - icon 5: left edge 501px, live 131px
 - background behind "FUN HOMESCHOOL SPORTS FOR KIDS IN SPRING": rgb(240, 240, 240), live rgb(48, 72, 120)
-- background behind "CONTACT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "ABOUT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "SIGN OUR WAIVER": rgb(48, 72, 120), live rgb(0, 0, 0)
+- band color beside "FUN HOMESCHOOL SPORTS FOR KIDS IN SPRING": rgb(240, 240, 240), live rgb(48, 72, 120)
+- band color beside "HOMESCHOOL CLASSES SPRINGFIELD, MO": rgb(240, 240, 240), live rgb(48, 72, 120)
+- band color beside "(AGES 7–15)": rgb(240, 240, 240), live rgb(48, 72, 120)
+- band color beside "The Springfield Warrior Sports Junior Wa": rgb(240, 240, 240), live rgb(48, 72, 120)
+- band color beside "Availability: Tuesdays and Thursdays": rgb(240, 240, 240), live rgb(48, 72, 120)
 - heading "FUN HOMESCHOOL SPORTS FOR KIDS IN SPRING": looks different from live (pixel difference 120)
+- photo hero: brightness 96, live 38 (overlay or exposure differs)
 - photo hero: looks different from live (pixel difference 63)
 
-## kids-classes @ 1280px: 9 difference(s)
-- text "CONTACT": letter spacing 0px, live 2px
-- text "QUICK LINKS": letter spacing 0px, live 2px
-- text "© Copyright 2026 Springfield W": letter spacing 0px, live 2px
-- spacing from "ARE YOU LOOKING FOR WAYS TO KE" to "PRE-SCHOOL WARRIORS": 576px, live 775px
-- spacing from "PRACTICE TIMES" to "PARKOUR": 339px, live 266px
-- background behind "AND …. DON’T FORGET ABOUT SUMMER CAMPS, ": rgb(264, 264, 264), live rgb(216, 240, 240)
-- background behind "CONTACT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "ABOUT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "SIGN OUR WAIVER": rgb(48, 72, 120), live rgb(0, 0, 0)
+## kids-classes @ 1280px: 8 difference(s)
+- band color beside "YOUTH SUMMER CAMP": rgb(264, 264, 264), live rgb(216, 240, 240)
+- band color beside "Kids will have fun and make new friends ": rgb(264, 264, 264), live rgb(216, 240, 240)
+- band color beside "week long day camp. Campers will work wi": rgb(264, 264, 264), live rgb(216, 240, 240)
+- band color beside "Warrior Sports trainer focusing on overa": rgb(264, 264, 264), live rgb(216, 240, 240)
+- band color beside "balance, and core exercises along with o": rgb(264, 264, 264), live rgb(216, 240, 240)
+- band color beside "training.": rgb(264, 264, 264), live rgb(216, 240, 240)
+- band color beside "At Springfield Warrior Sports we want to": rgb(264, 264, 264), live rgb(216, 240, 240)
+- photo hero: brightness 28, live 42 (overlay or exposure differs)
 
 ## laser-tag @ 1280px: 88 difference(s)
 - heading missing: "WANT TO BOOK A PRIVATE LASER TAG PARTY?"
@@ -2394,9 +2257,6 @@ Total differences: 4314
 - text "You can begin the booking proc": weight 300, live 400
 - text "You can begin the booking proc": color rgb(51, 51, 51), live rgb(255, 255, 255)
 - text "You can begin the booking proc": align start, live center
-- text "CONTACT": letter spacing 0px, live 2px
-- text "QUICK LINKS": letter spacing 0px, live 2px
-- text "© Copyright 2026 Springfield W": letter spacing 0px, live 2px
 - spacing from "WELCOME TO THE PREMIER" to "LASER TAG GYM IN SPRINGFIELD, ": 0px, live 50px
 - spacing from "HERE ARE THE DETAILS:" to "COME JOIN THE FUN! DON’T MISS ": 654px, live 929px
 - icons: 5 in build, 8 on live
@@ -2411,20 +2271,23 @@ Total differences: 4314
 - icon 5: left edge 501px, live 131px
 - background behind "WELCOME TO THE PREMIER": rgb(0, 0, 0), live rgb(0, 24, 48)
 - background behind "LASER TAG GYM IN SPRINGFIELD, MO": rgb(0, 0, 0), live rgb(0, 24, 48)
-- background behind "CONTACT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "ABOUT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "SIGN OUR WAIVER": rgb(48, 72, 120), live rgb(0, 0, 0)
 - background behind "Great for all ages!": rgb(264, 264, 264), live rgb(0, 24, 48)
 - background behind "Whether you are planning a birthday part": rgb(264, 264, 264), live rgb(216, 240, 240)
 - background behind "The best part?": rgb(264, 264, 264), live rgb(216, 240, 240)
 - background behind "Our staff will do all the setup and be o": rgb(264, 264, 264), live rgb(216, 240, 240)
 - background behind "Call us today and book our entire obstac": rgb(264, 264, 264), live rgb(216, 240, 240)
 - background behind "You can begin the booking process on our": rgb(240, 240, 240), live rgb(0, 0, 0)
+- band color beside "Great for all ages!": rgb(264, 264, 264), live rgb(0, 0, 24)
+- band color beside "Whether you are planning a birthday part": rgb(264, 264, 264), live rgb(216, 240, 240)
+- band color beside "The best part?": rgb(264, 264, 264), live rgb(216, 240, 240)
+- band color beside "Our staff will do all the setup and be o": rgb(264, 264, 264), live rgb(216, 240, 240)
+- band color beside "Call us today and book our entire obstac": rgb(264, 264, 264), live rgb(216, 240, 240)
+- band color beside "You can begin the booking process on our": rgb(240, 240, 240), live rgb(0, 0, 0)
 - heading "LASER TAG GYM IN SPRINGFIELD, MO": looks different from live (pixel difference 75)
 - heading "HERE ARE THE DETAILS:": looks different from live (pixel difference 59)
 - text "You can begin the booking proc": looks different from live (pixel difference 202)
 
-## meet-the-team @ 1280px: 290 difference(s)
+## meet-the-team @ 1280px: 286 difference(s)
 - heading missing: "YOU'VE MET THE TEAM."
 - heading missing: "NOW TRAIN WITH THEM."
 - heading missing: "You’ve met the coaches who make Springfield Warrior Sports what it is."
@@ -2685,9 +2548,6 @@ Total differences: 4314
 - text "Outside of ninja, I play softb": width 555px, live 649px
 - text "Outside of ninja, I play softb": weight 300, live 400
 - text "Outside of ninja, I play softb": color rgb(51, 51, 51), live rgb(0, 0, 0)
-- text "CONTACT": letter spacing 0px, live 2px
-- text "QUICK LINKS": letter spacing 0px, live 2px
-- text "© Copyright 2026 Springfield W": letter spacing 0px, live 2px
 - spacing from "MEET THE SPRINGFIELD WARRIOR S" to "JONNY": 1178px, live 676px
 - spacing from "CO-OWNER | ADULT OCR COACH | I" to "SARAH": 918px, live 594px
 - spacing from "CO-OWNER | ADULT OCR COACH | P" to "LINCOLN": 885px, live 548px
@@ -2704,9 +2564,7 @@ Total differences: 4314
 - icon 2: left edge 132px, live 94px
 - icon 3: color rgb(219, 58, 52), live rgb(255, 255, 255)
 - icon 3: left edge 501px, live 131px
-- background behind "CONTACT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "ABOUT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "SIGN OUR WAIVER": rgb(48, 72, 120), live rgb(0, 0, 0)
+- band color beside "MEET THE SPRINGFIELD WARRIOR SPORTS TEAM": rgb(48, 48, 24), live rgb(0, 24, 24)
 - heading "MEET THE SPRINGFIELD WARRIOR SPORTS TEAM": looks different from live (pixel difference 63)
 - heading "JONNY": looks different from live (pixel difference 45)
 - heading "CO-OWNER | ADULT OCR COACH | INTERMEDIAT": looks different from live (pixel difference 38)
@@ -2714,9 +2572,10 @@ Total differences: 4314
 - heading "BEGINNER NINJA COACH | BIRTHDAY PARTY HO": looks different from live (pixel difference 45)
 - heading "CALEB": looks different from live (pixel difference 50)
 - heading "BEGINNER NINJA COACH | PRESCHOOL COACH |": looks different from live (pixel difference 47)
+- photo hero: brightness 34, live 54 (overlay or exposure differs)
 - photo hero: looks different from live (pixel difference 41)
 
-## nerf-wars @ 1280px: 77 difference(s)
+## nerf-wars @ 1280px: 76 difference(s)
 - heading missing: "BOOK NOW!"
 - heading missing: "READY TO LOCK IN THE DATE FOR YOUR CHILD'S EPIC NERF PARTY AT WARRIOR SPORTS?"
 - heading missing: "Dive into action-packed fun every other month with our exclusive Nerf War Nights!"
@@ -2763,9 +2622,6 @@ Total differences: 4314
 - text "Or, dial (417) 894-7319 to res": weight 300, live 400
 - text "Or, dial (417) 894-7319 to res": color rgb(51, 51, 51), live rgb(255, 255, 255)
 - text "Or, dial (417) 894-7319 to res": align start, live center
-- text "CONTACT": letter spacing 0px, live 2px
-- text "QUICK LINKS": letter spacing 0px, live 2px
-- text "© Copyright 2026 Springfield W": letter spacing 0px, live 2px
 - spacing from "NERF WAR SPRINGFIELD, MO:" to "THE ULTIMATE PARTY EXPERIENCE!": -579px, live 50px
 - spacing from "THE ULTIMATE PARTY EXPERIENCE!" to "NERF WAR PARTY BREAKDOWN": 1048px, live 737px
 - spacing from "NERF WAR PARTY BREAKDOWN" to "HERE’S WHAT’S INCLUDED": 0px, live 221px
@@ -2781,12 +2637,14 @@ Total differences: 4314
 - background behind "NERF WAR SPRINGFIELD, MO:": rgb(264, 264, 264), live rgb(72, 72, 72)
 - background behind "THE ULTIMATE PARTY EXPERIENCE!": rgb(216, 48, 48), live rgb(0, 0, 0)
 - background behind "PRICING": rgb(264, 264, 264), live rgb(216, 240, 240)
-- background behind "CONTACT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "ABOUT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "SIGN OUR WAIVER": rgb(48, 72, 120), live rgb(0, 0, 0)
 - background behind "Our Nerf parties start at $220 for the f": rgb(264, 264, 264), live rgb(216, 240, 240)
 - background behind "Let our experienced and kid-friendly tea": rgb(264, 264, 264), live rgb(48, 24, 24)
 - background behind "Or, dial (417) 894-7319 to reserve today": rgb(264, 264, 264), live rgb(48, 24, 24)
+- band color beside "NERF WAR SPRINGFIELD, MO:": rgb(264, 264, 264), live rgb(48, 24, 24)
+- band color beside "PRICING": rgb(264, 264, 264), live rgb(216, 240, 240)
+- band color beside "Our Nerf parties start at $220 for the f": rgb(264, 264, 264), live rgb(216, 240, 240)
+- band color beside "Let our experienced and kid-friendly tea": rgb(264, 264, 264), live rgb(24, 24, 0)
+- band color beside "Or, dial (417) 894-7319 to reserve today": rgb(264, 264, 264), live rgb(48, 48, 48)
 - heading "NERF WAR SPRINGFIELD, MO:": looks different from live (pixel difference 155)
 - heading "THE ULTIMATE PARTY EXPERIENCE!": looks different from live (pixel difference 78)
 - heading "NERF WAR PARTY BREAKDOWN": looks different from live (pixel difference 46)
@@ -2795,7 +2653,7 @@ Total differences: 4314
 - text "Let our experienced and kid-fr": looks different from live (pixel difference 191)
 - text "Or, dial (417) 894-7319 to res": looks different from live (pixel difference 190)
 
-## parkour @ 1280px: 106 difference(s)
+## parkour @ 1280px: 109 difference(s)
 - heading "PARKOUR GYM IN SPRINGFIELD MO | SPRINGFI": left edge 65px, live 180px
 - heading "PARKOUR GYM IN SPRINGFIELD MO | SPRINGFI": width 1150px, live 920px
 - heading "⚠️ TEMPORARY UPDATE:": left edge 660px, live 463px
@@ -2869,9 +2727,6 @@ Total differences: 4314
 - text "With Parkour classes at Spring": left edge 65px, live 654px
 - text "With Parkour classes at Spring": weight 300, live 400
 - text "With Parkour classes at Spring": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
-- text "CONTACT": letter spacing 0px, live 2px
-- text "QUICK LINKS": letter spacing 0px, live 2px
-- text "© Copyright 2026 Springfield W": letter spacing 0px, live 2px
 - spacing from "PARKOUR BENEFITS" to "IMPROVE PHYSICAL FITNESS:": 0px, live 163px
 - spacing from "IMPROVE PHYSICAL FITNESS:" to "BUILDS SELF-CONFIDENCE:": 628px, live 204px
 - spacing from "BUILDS SELF-CONFIDENCE:" to "MENTAL STIMULATION:": 675px, live 428px
@@ -2885,12 +2740,18 @@ Total differences: 4314
 - background behind "PARKOUR CLASSES": rgb(264, 264, 264), live rgb(48, 72, 120)
 - background behind "TEMPORARILY UNAVAILABLE": rgb(264, 264, 264), live rgb(48, 72, 120)
 - background behind "OPEN GYM IS OPEN — YOUR FIRST VISIT IS J": rgb(264, 264, 264), live rgb(48, 72, 120)
-- background behind "CONTACT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "ABOUT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "SIGN OUR WAIVER": rgb(48, 72, 120), live rgb(0, 0, 0)
 - background behind "By learning how to overcome obstacles an": rgb(264, 264, 264), live rgb(216, 240, 240)
 - background behind "Parkour is a great way to reduce stress ": rgb(264, 264, 264), live rgb(216, 240, 240)
 - background behind "$20 class drop in, $10 class drop in for": rgb(264, 264, 264), live rgb(48, 96, 120)
+- band color beside "PARKOUR GYM IN SPRINGFIELD MO | SPRINGFI": rgb(24, 24, 24), live rgb(72, 72, 48)
+- band color beside "BUILDS SELF-CONFIDENCE:": rgb(264, 264, 264), live rgb(216, 240, 240)
+- band color beside "STRESS RELIEF:": rgb(264, 264, 264), live rgb(216, 240, 240)
+- band color beside "PARKOUR CLASSES": rgb(264, 264, 264), live rgb(48, 96, 120)
+- band color beside "TEMPORARILY UNAVAILABLE": rgb(264, 264, 264), live rgb(48, 96, 120)
+- band color beside "OPEN GYM IS OPEN — YOUR FIRST VISIT IS J": rgb(264, 264, 264), live rgb(48, 96, 120)
+- band color beside "By learning how to overcome obstacles an": rgb(264, 264, 264), live rgb(216, 240, 240)
+- band color beside "Parkour is a great way to reduce stress ": rgb(264, 264, 264), live rgb(216, 240, 240)
+- band color beside "$20 class drop in, $10 class drop in for": rgb(264, 264, 264), live rgb(48, 96, 120)
 - heading "⚠️ TEMPORARY UPDATE:": looks different from live (pixel difference 57)
 - heading "PARKOUR BENEFITS": looks different from live (pixel difference 39)
 - heading "IMPROVE PHYSICAL FITNESS:": looks different from live (pixel difference 43)
@@ -2903,7 +2764,7 @@ Total differences: 4314
 - heading "OPEN GYM IS OPEN — YOUR FIRST VISIT IS J": looks different from live (pixel difference 127)
 - text "$20 class drop in, $10 class d": looks different from live (pixel difference 140)
 
-## personal-training @ 1280px: 208 difference(s)
+## personal-training @ 1280px: 200 difference(s)
 - heading missing: "NOT YOUR TYPICAL GYM. NOT YOUR TYPICAL TRAINER."
 - heading missing: "This isn’t about getting shredded or setting records."
 - heading missing: "It’s about moving, healing, and growing in a way that actually fits your life."
@@ -2967,6 +2828,10 @@ Total differences: 4314
 - button "CONTACT OUR PERSONAL TRAINERS": width 274px, live 423px
 - button "CONTACT OUR PERSONAL TRAINERS": width 274px, live 394px
 - text not on live: "This isn’t about getting shredded or setting records. It’s a"
+- text not on live: "Jonny has coached our son for over three years. He’s a mento"
+- text not on live: "— WILL AND KOREN WILSON"
+- text not on live: "My son’s personal training at Warrior Sports has helped him "
+- text not on live: "— SUSIE K."
 - text "If you’ve ever felt like fitne": left edge 660px, live 66px
 - text "If you’ve ever felt like fitne": weight 300, live 400
 - text "If you’ve ever felt like fitne": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
@@ -3065,25 +2930,6 @@ Total differences: 4314
 - text "— MICHAEL B.": font Epilogue, live Muli
 - text "— MICHAEL B.": weight 300, live 700
 - text "— MICHAEL B.": color rgb(51, 51, 51), live rgb(219, 58, 52)
-- text "Jonny has coached our son for ": left edge 65px, live 106px
-- text "Jonny has coached our son for ": font Epilogue, live Muli
-- text "Jonny has coached our son for ": weight 300, live 400
-- text "Jonny has coached our son for ": color rgb(51, 51, 51), live rgb(0, 0, 0)
-- text "— WILL AND KOREN WILSON": left edge 65px, live 106px
-- text "— WILL AND KOREN WILSON": font Epilogue, live Muli
-- text "— WILL AND KOREN WILSON": weight 300, live 700
-- text "— WILL AND KOREN WILSON": color rgb(51, 51, 51), live rgb(219, 58, 52)
-- text "My son’s personal training at ": left edge 664px, live 106px
-- text "My son’s personal training at ": font Epilogue, live Muli
-- text "My son’s personal training at ": weight 300, live 400
-- text "My son’s personal training at ": color rgb(51, 51, 51), live rgb(0, 0, 0)
-- text "— SUSIE K.": left edge 664px, live 106px
-- text "— SUSIE K.": font Epilogue, live Muli
-- text "— SUSIE K.": weight 300, live 700
-- text "— SUSIE K.": color rgb(51, 51, 51), live rgb(219, 58, 52)
-- text "CONTACT": letter spacing 0px, live 2px
-- text "QUICK LINKS": letter spacing 0px, live 2px
-- text "© Copyright 2026 Springfield W": letter spacing 0px, live 2px
 - spacing from "EMOTIONALLY INTELLIGENT COACHI" to "MEET YOUR TRAINERS": 566px, live 390px
 - spacing from "MEET YOUR TRAINERS" to "SARAH WILDER": 0px, live 425px
 - spacing from "JONNY WILDER" to "HOW IT WORKS": 293px, live 428px
@@ -3100,9 +2946,15 @@ Total differences: 4314
 - icon 5: left edge 501px, live 94px
 - background behind "MEET YOUR TRAINERS": rgb(240, 240, 240), live rgb(48, 72, 120)
 - background behind "LET’S TALK STRENGTH…YOUR VERSION": rgb(240, 240, 240), live rgb(48, 48, 48)
-- background behind "CONTACT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "ABOUT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "SIGN OUR WAIVER": rgb(48, 72, 120), live rgb(0, 0, 0)
+- band color beside "UNCONVENTIONAL BY DESIGN": rgb(264, 264, 264), live rgb(216, 240, 240)
+- band color beside "MEET YOUR TRAINERS": rgb(240, 240, 240), live rgb(48, 72, 120)
+- band color beside "SARAH WILDER": rgb(240, 240, 240), live rgb(48, 72, 120)
+- band color beside "LET’S TALK STRENGTH…YOUR VERSION": rgb(240, 240, 240), live rgb(48, 24, 24)
+- band color beside "We use obstacle training, resistance ban": rgb(264, 264, 264), live rgb(216, 240, 240)
+- band color beside "– Women’s Confidence Coach": rgb(240, 240, 240), live rgb(48, 72, 120)
+- band color beside "Helps women, especially moms, feel stron": rgb(240, 240, 240), live rgb(48, 72, 120)
+- band color beside "“I focus on helping you feel powerful be": rgb(240, 240, 240), live rgb(48, 72, 120)
+- band color beside "Great for weight loss, functional streng": rgb(264, 264, 264), live rgb(48, 72, 120)
 - heading "WHY WARRIOR SPORTS PERSONAL TRAINING WOR": looks different from live (pixel difference 45)
 - heading "UNCONVENTIONAL BY DESIGN": looks different from live (pixel difference 38)
 - heading "STRONGER AND SMARTER": looks different from live (pixel difference 56)
@@ -3112,68 +2964,43 @@ Total differences: 4314
 - heading "JONNY WILDER": looks different from live (pixel difference 42)
 - heading "HOW IT WORKS": looks different from live (pixel difference 49)
 - heading "LET’S TALK STRENGTH…YOUR VERSION": looks different from live (pixel difference 154)
+- photo hero: brightness 15, live 42 (overlay or exposure differs)
 
-## registered-for-csna-competition @ 1280px: 10 difference(s)
+## registered-for-csna-competition @ 1280px: 4 difference(s)
 - heading missing: "WE RECEIVED THOSE DETAILS, THANK YOU!"
 - text "Click here to finalize the reg": width 741px, live 1148px
 - text "Click here to finalize the reg": color rgb(51, 51, 51), live rgb(0, 0, 0)
-- text "CONTACT": letter spacing 0px, live 2px
-- text "QUICK LINKS": letter spacing 0px, live 2px
-- text "© Copyright 2026 Springfield W": letter spacing 0px, live 2px
-- background behind "CONTACT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "ABOUT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "SIGN OUR WAIVER": rgb(48, 72, 120), live rgb(0, 0, 0)
 - section colors differ: build [rgb(255, 255, 255) | rgb(40, 82, 118) | rgb(255, 255, 255)], live [rgb(255, 255, 255)]
 
-## registered-for-day-camps @ 1280px: 12 difference(s)
+## registered-for-day-camps @ 1280px: 7 difference(s)
 - heading missing: "WE RECEIVED THOSE DETAILS, THANK YOU!"
 - text missing: "Click here to finalize the registration with your payment."
 - text "The link above has a few "prod": color rgb(51, 51, 51), live rgb(0, 0, 0)
 - text "If you encounter any problems ": color rgb(51, 51, 51), live rgb(0, 0, 0)
-- text "CONTACT": letter spacing 0px, live 2px
-- text "QUICK LINKS": letter spacing 0px, live 2px
-- text "© Copyright 2026 Springfield W": letter spacing 0px, live 2px
 - button not on live: "CLICK HERE TO FINALIZE THE REGISTRATION WITH YOUR PAYMENT."
-- background behind "CONTACT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "ABOUT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "SIGN OUR WAIVER": rgb(48, 72, 120), live rgb(0, 0, 0)
+- photo hero: brightness 113, live 184 (overlay or exposure differs)
 - photo hero: looks different from live (pixel difference 93)
 
-## registered-for-summer-fun-competition @ 1280px: 10 difference(s)
+## registered-for-summer-fun-competition @ 1280px: 5 difference(s)
 - heading missing: "WE RECEIVED THOSE DETAILS, THANK YOU!"
 - text "Click here to finalize the reg": color rgb(51, 51, 51), live rgb(0, 0, 0)
 - text "If you encounter any problems ": color rgb(51, 51, 51), live rgb(0, 0, 0)
-- text "CONTACT": letter spacing 0px, live 2px
-- text "QUICK LINKS": letter spacing 0px, live 2px
-- text "© Copyright 2026 Springfield W": letter spacing 0px, live 2px
-- background behind "CONTACT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "ABOUT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "SIGN OUR WAIVER": rgb(48, 72, 120), live rgb(0, 0, 0)
+- photo hero: brightness 113, live 189 (overlay or exposure differs)
 - photo hero: looks different from live (pixel difference 97)
 
-## registered-for-wnl-competition @ 1280px: 9 difference(s)
+## registered-for-wnl-competition @ 1280px: 4 difference(s)
 - heading missing: "WE RECEIVED THOSE DETAILS, THANK YOU!"
 - text "Click here to finalize the reg": color rgb(51, 51, 51), live rgb(0, 0, 0)
-- text "CONTACT": letter spacing 0px, live 2px
-- text "QUICK LINKS": letter spacing 0px, live 2px
-- text "© Copyright 2026 Springfield W": letter spacing 0px, live 2px
-- background behind "CONTACT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "ABOUT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "SIGN OUR WAIVER": rgb(48, 72, 120), live rgb(0, 0, 0)
+- photo hero: brightness 113, live 192 (overlay or exposure differs)
 - photo hero: looks different from live (pixel difference 99)
 
-## registered @ 1280px: 9 difference(s)
+## registered @ 1280px: 4 difference(s)
 - heading missing: "WE RECEIVED THOSE DETAILS, THANK YOU!"
 - text "Click here to finalize the reg": color rgb(51, 51, 51), live rgb(0, 0, 0)
-- text "CONTACT": letter spacing 0px, live 2px
-- text "QUICK LINKS": letter spacing 0px, live 2px
-- text "© Copyright 2026 Springfield W": letter spacing 0px, live 2px
-- background behind "CONTACT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "ABOUT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "SIGN OUR WAIVER": rgb(48, 72, 120), live rgb(0, 0, 0)
+- photo hero: brightness 113, live 192 (overlay or exposure differs)
 - photo hero: looks different from live (pixel difference 99)
 
-## schedule-birthday-party @ 1280px: 27 difference(s)
+## schedule-birthday-party @ 1280px: 22 difference(s)
 - photo qoute-icon: left edge 65px, live 105px
 - text missing: ""*" indicates required fields"
 - text "1. Fill out the form to begin ": left edge 84px, live 191px
@@ -3193,16 +3020,11 @@ Total differences: 4314
 - text "- LEE C.": font Epilogue, live Muli
 - text "- LEE C.": weight 300, live 700
 - text "- LEE C.": color rgb(51, 51, 51), live rgb(219, 58, 52)
-- text "CONTACT": letter spacing 0px, live 2px
-- text "QUICK LINKS": letter spacing 0px, live 2px
-- text "© Copyright 2026 Springfield W": letter spacing 0px, live 2px
 - spacing from "CLIENT TESTIMONIALS" to "WHAT OUR CLIENTS SAY": 0px, live 61px
-- background behind "CONTACT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "ABOUT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "SIGN OUR WAIVER": rgb(48, 72, 120), live rgb(0, 0, 0)
 - background behind "1. Fill out the form to begin the schedu": rgb(264, 264, 264), live rgb(216, 240, 240)
+- band color beside "1. Fill out the form to begin the schedu": rgb(264, 264, 264), live rgb(216, 240, 240)
 
-## summer-camps-in-springfield-mo @ 1280px: 172 difference(s)
+## summer-camps-in-springfield-mo @ 1280px: 171 difference(s)
 - heading "KIDS STAY FIT AND HEALTHY": left edge 65px, live 180px
 - heading "AT OUR INCREDIBLE SUMMER CAMPS": left edge 65px, live 180px
 - heading "SUMMER CAMPS IN SPRINGFIELD — 2026 DATES": width 555px, live 438px
@@ -3358,36 +3180,30 @@ Total differences: 4314
 - text "- LEE C.": font Epilogue, live Muli
 - text "- LEE C.": weight 300, live 700
 - text "- LEE C.": color rgb(51, 51, 51), live rgb(219, 58, 52)
-- text "CONTACT": letter spacing 0px, live 2px
-- text "QUICK LINKS": letter spacing 0px, live 2px
-- text "© Copyright 2026 Springfield W": letter spacing 0px, live 2px
 - spacing from "KIDS STAY FIT AND HEALTHY" to "AT OUR INCREDIBLE SUMMER CAMPS": 0px, live 140px
 - spacing from "CLIENT TESTIMONIALS" to "WHAT OUR CLIENTS SAY": 0px, live 61px
 - background behind "AT OUR INCREDIBLE SUMMER CAMPS": rgb(24, 24, 24), live rgb(264, 264, 264)
 - background behind "SUMMER CAMP PRICING": rgb(264, 264, 264), live rgb(216, 240, 240)
-- background behind "CONTACT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "ABOUT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "SIGN OUR WAIVER": rgb(48, 72, 120), live rgb(0, 0, 0)
 - background behind "A week of activities and snacks at Sprin": rgb(264, 264, 264), live rgb(216, 240, 240)
 - background behind "Note:": rgb(264, 264, 264), live rgb(216, 240, 240)
 - background behind "Summer camp investment monies can be pro": rgb(264, 264, 264), live rgb(216, 240, 240)
+- band color beside "SUMMER CAMP PRICING": rgb(264, 264, 264), live rgb(216, 240, 240)
+- band color beside "A week of activities and snacks at Sprin": rgb(264, 264, 264), live rgb(216, 240, 240)
+- band color beside "Note:": rgb(264, 264, 264), live rgb(216, 240, 240)
+- band color beside "Summer camp investment monies can be pro": rgb(264, 264, 264), live rgb(216, 240, 240)
 - heading "AT OUR INCREDIBLE SUMMER CAMPS": looks different from live (pixel difference 82)
 - heading "SUMMER CAMP PRICING": looks different from live (pixel difference 54)
 - heading "SPRINGFIELD WARRIOR REGISTRATION": looks different from live (pixel difference 44)
 - heading "REGISTRATION FORM": looks different from live (pixel difference 41)
+- photo hero: brightness 42, live 57 (overlay or exposure differs)
 
-## thank-you-for-your-feedback @ 1280px: 9 difference(s)
+## thank-you-for-your-feedback @ 1280px: 4 difference(s)
 - heading missing: "THANK YOU FOR YOUR FEEDBACK!"
 - text "Thank you for your feedback! W": color rgb(51, 51, 51), live rgb(0, 0, 0)
-- text "CONTACT": letter spacing 0px, live 2px
-- text "QUICK LINKS": letter spacing 0px, live 2px
-- text "© Copyright 2026 Springfield W": letter spacing 0px, live 2px
-- background behind "CONTACT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "ABOUT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "SIGN OUR WAIVER": rgb(48, 72, 120), live rgb(0, 0, 0)
+- photo hero: brightness 113, live 184 (overlay or exposure differs)
 - photo hero: looks different from live (pixel difference 92)
 
-## wnl-competitions @ 1280px: 44 difference(s)
+## wnl-competitions @ 1280px: 40 difference(s)
 - heading missing: "10-26-2024 WNL Competition Registration Form"
 - heading "WNL COMPETITIONS IN SPRINGFIELD MISSOURI": left edge 79px, live 180px
 - heading "WNL COMPETITIONS IN SPRINGFIELD MISSOURI": width 1122px, live 920px
@@ -3417,39 +3233,25 @@ Total differences: 4314
 - text "Don't wait to register - The e": width 555px, live 874px
 - text "Don't wait to register - The e": weight 300, live 400
 - text "Don't wait to register - The e": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
-- text "CONTACT": letter spacing 0px, live 2px
-- text "QUICK LINKS": letter spacing 0px, live 2px
-- text "© Copyright 2026 Springfield W": letter spacing 0px, live 2px
 - spacing from "WNL COMPETITIONS IN SPRINGFIEL" to "WNL REGIONAL QUALIFIERS": 653px, live 937px
 - icons: 5 in build, 6 on live
 - icon 1: color rgb(255, 255, 255), live rgb(219, 58, 52)
 - icon 2: left edge 132px, live 94px
 - icon 3: color rgb(219, 58, 52), live rgb(255, 255, 255)
 - icon 3: left edge 501px, live 131px
-- background behind "CONTACT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "ABOUT": rgb(48, 72, 120), live rgb(0, 0, 0)
-- background behind "SIGN OUR WAIVER": rgb(48, 72, 120), live rgb(0, 0, 0)
+- band color beside "WNL COMPETITIONS IN SPRINGFIELD MISSOURI": rgb(144, 144, 144), live rgb(24, 24, 24)
 - heading "WNL COMPETITIONS IN SPRINGFIELD MISSOURI": looks different from live (pixel difference 74)
 - heading "WNL REGIONAL QUALIFIERS": looks different from live (pixel difference 60)
+- photo hero: brightness 80, live 47 (overlay or exposure differs)
 - photo hero: looks different from live (pixel difference 53)
 
-## about @ 390px: 14 difference(s)
-- text "CONTACT": letter spacing 0px, live 2px
-- text "QUICK LINKS": letter spacing 0px, live 2px
-- spacing from "CURIOUS ABOUT THE COLORS OF OU" to "COMMUNITY ADOPT-A-HIGHWAY CLEA": 427px, live 846px
-- spacing from "COMMUNITY ADOPT-A-HIGHWAY CLEA" to "COMMUNITY PARTNERSHIPS": 821px, live 647px
-- spacing from "BIG BROTHERS BIG SISTERS OF TH" to "SUPPLEMENT SUPERSTORE": 583px, live 970px
-- spacing from "SUPPLEMENT SUPERSTORE" to "PERSEVERANCE:": 893px, live 619px
-- background behind "SPRINGFIELD WARRIOR SPORTS COMMUNITY": rgb(216, 48, 48), live rgb(96, 96, 72)
-- background behind "CURIOUS ABOUT THE COLORS OF OUR GYM?": rgb(264, 264, 264), live rgb(216, 240, 240)
-- background behind "CLIENT TESTIMONIALS": rgb(264, 264, 264), live rgb(216, 240, 240)
-- background behind "WHAT OUR CLIENTS SAY": rgb(264, 264, 264), live rgb(216, 240, 240)
-- background behind "Our inspiration is the new Springfield f": rgb(264, 264, 264), live rgb(216, 240, 240)
-- background behind "We had our son’s 10th birthday here. All": rgb(264, 264, 264), live rgb(216, 240, 240)
-- background behind "We had our son’s 10th birthday here. All": rgb(264, 264, 264), live rgb(216, 240, 240)
-- background behind "- JENNIFER L.": rgb(264, 264, 264), live rgb(216, 240, 240)
+## about @ 390px: 4 difference(s)
+- band color beside "SPRINGFIELD WARRIOR SPORTS COMMUNITY": rgb(96, 96, 72), live rgb(48, 24, 24)
+- band color beside "CURIOUS ABOUT THE COLORS OF OUR GYM?": rgb(264, 264, 264), live rgb(216, 240, 240)
+- band color beside "Our inspiration is the new Springfield f": rgb(264, 264, 264), live rgb(216, 240, 240)
+- photo hero: brightness 97, live 61 (overlay or exposure differs)
 
-## best-gyms-in-springfield @ 390px: 108 difference(s)
+## best-gyms-in-springfield @ 390px: 107 difference(s)
 - heading missing: "GP ATHLETICS"
 - heading missing: "SPRINGFIELD WARRIOR SPORTS"
 - heading missing: "SPRINGFIELD STRENGTH & CONDITIONING"
@@ -3548,13 +3350,12 @@ Total differences: 4314
 - text "Cold plunges, saunas, compress": left edge 20px, live 58px
 - text "Cold plunges, saunas, compress": width 350px, live 306px
 - text "Cold plunges, saunas, compress": color rgb(51, 51, 51), live rgb(0, 0, 0)
-- text "CONTACT": letter spacing 0px, live 2px
-- text "QUICK LINKS": letter spacing 0px, live 2px
 - icons: 6 in build, 37 on live
 - icon 2: color rgb(255, 255, 255), live rgb(219, 58, 52)
 - icon 2: size 17px, live 24px
 - icon 3: color rgb(255, 255, 255), live rgb(219, 58, 52)
 - icon 3: left edge 67px, live 26px
+- band color beside "LOOKING FOR THE BEST GYMS IN SPRINGFIELD": rgb(0, 0, 0), live rgb(0, 24, 48)
 - heading "LOOKING FOR THE BEST GYMS IN SPRINGFIELD": looks different from live (pixel difference 54)
 - heading "RAGE FITNESS": looks different from live (pixel difference 47)
 - photo img_2344: looks different from live (pixel difference 49)
@@ -3598,19 +3399,19 @@ Total differences: 4314
 - text "This means more than just one ": weight 300, live 600
 - text "This means more than just one ": color rgb(51, 51, 51), live rgb(40, 82, 118)
 - text "This means more than just one ": align start, live center
-- text "CONTACT": letter spacing 0px, live 2px
-- text "QUICK LINKS": letter spacing 0px, live 2px
 - icons: 6 in build, 10 on live
 - icon 2: color rgb(255, 255, 255), live rgb(219, 58, 52)
 - icon 3: color rgb(255, 255, 255), live rgb(219, 58, 52)
 - icon 3: left edge 67px, live 26px
 - icon 6: color rgb(219, 58, 52), live rgb(255, 255, 255)
 - background behind "KIDS WILL HAVE A BLAST, AND YOU CAN RELA": rgb(216, 48, 48), live rgb(264, 264, 264)
+- band color beside "KIDS WILL HAVE A BLAST, AND YOU CAN RELA": rgb(48, 48, 48), live rgb(264, 264, 264)
 - heading "KIDS WILL HAVE A BLAST, AND YOU CAN RELA": looks different from live (pixel difference 132)
 - photo hero: looks different from live (pixel difference 40)
+- photo laser-tag-party: brightness 255, live 85 (overlay or exposure differs)
 - photo laser-tag-party: looks different from live (pixel difference 170)
 
-## competitions @ 390px: 17 difference(s)
+## competitions @ 390px: 15 difference(s)
 - heading missing: "2026-9 CSNA September 19th Form"
 - heading "SEPTEMBER 2026 CSNA TEAM COMPETITION": size 32px, live 40px
 - heading "SEPTEMBER 2026 CSNA TEAM COMPETITION": align start, live center
@@ -3623,13 +3424,11 @@ Total differences: 4314
 - text "Date: Saturday, September 19th": font Muli, live Epilogue
 - text "Start time: TBA": font Muli, live Epilogue
 - text "Price per registration: $60": font Muli, live Epilogue
-- text "CONTACT": letter spacing 0px, live 2px
-- text "QUICK LINKS": letter spacing 0px, live 2px
 - heading "TEST YOUR SKILLS ON OUR FUN AND COMPETIT": looks different from live (pixel difference 54)
 - heading "SEPTEMBER 2026 CSNA TEAM COMPETITION": looks different from live (pixel difference 39)
 - text "Whether you are looking for re": looks different from live (pixel difference 61)
 
-## contact @ 390px: 30 difference(s)
+## contact @ 390px: 33 difference(s)
 - heading missing: "CLIENT TESTIMONIALS"
 - heading missing: "WHAT OUR CLIENTS SAY"
 - heading "CONTACT US": width 350px, live 306px
@@ -3646,8 +3445,6 @@ Total differences: 4314
 - text "office@swarriorsports.com": width 173px, live 218px
 - text "office@swarriorsports.com": font Muli, live Epilogue
 - text "office@swarriorsports.com": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
-- text "CONTACT": letter spacing 0px, live 2px
-- text "QUICK LINKS": letter spacing 0px, live 2px
 - icons: 10 in build, 11 on live
 - icon 5: color rgb(214, 53, 47), live rgb(148, 163, 176)
 - icon 6: color rgb(255, 255, 255), live rgb(148, 163, 176)
@@ -3656,12 +3453,17 @@ Total differences: 4314
 - icon 8: color rgb(219, 58, 52), live rgb(255, 255, 255)
 - icon 8: left edge 31px, live 66px
 - background behind "OUR ACCOMPLISHED, AWARD WINNING CREW IS ": rgb(216, 48, 48), live rgb(24, 24, 24)
+- band color beside "OUR ACCOMPLISHED, AWARD WINNING CREW IS ": rgb(72, 72, 72), live rgb(0, 0, 0)
 - text "We look forward to hearing fro": looks different from live (pixel difference 52)
+- photo hero: brightness 58, live 38 (overlay or exposure differs)
+- photo img_2339: brightness 255, live 107 (overlay or exposure differs)
 - photo img_2339: looks different from live (pixel difference 148)
+- photo img_2342: brightness 255, live 109 (overlay or exposure differs)
 - photo img_2342: looks different from live (pixel difference 146)
+- photo qoute-icon: brightness 255, live 156 (overlay or exposure differs)
 - photo qoute-icon: looks different from live (pixel difference 99)
 
-## fitness-classes @ 390px: 67 difference(s)
+## fitness-classes @ 390px: 71 difference(s)
 - heading missing: "OBSTACLE COURSE RACING CLASSES:"
 - heading missing: "A UNIQUE WORKOUT EXPERIENCE"
 - heading missing: "WHAT IS OCR FITNESS?"
@@ -3704,8 +3506,6 @@ Total differences: 4314
 - text "Choose the membership option t": weight 300, live 400
 - text "Choose the membership option t": color rgb(51, 51, 51), live rgb(255, 255, 255)
 - text "Choose the membership option t": align start, live center
-- text "CONTACT": letter spacing 0px, live 2px
-- text "QUICK LINKS": letter spacing 0px, live 2px
 - spacing from "THE MOST DIVERSE (LEAST BORING" to "FITNESS CLASSES IN SPRINGFIELD": 0px, live 191px
 - spacing from "FITNESS CLASSES IN SPRINGFIELD" to "PRICING AND SCHEDULE": 2041px, live 1535px
 - icons: 6 in build, 10 on live
@@ -3723,29 +3523,22 @@ Total differences: 4314
 - background behind "PRICING AND SCHEDULE": rgb(240, 240, 240), live rgb(24, 24, 24)
 - background behind "We now offer two OCR classes each week —": rgb(240, 240, 240), live rgb(48, 48, 48)
 - background behind "Choose the membership option that fits y": rgb(240, 240, 240), live rgb(48, 48, 48)
+- band color beside "FITNESS CLASSES IN SPRINGFIELD, MO": rgb(0, 0, 0), live rgb(48, 24, 24)
+- band color beside "PRICING AND SCHEDULE": rgb(240, 240, 240), live rgb(0, 0, 24)
+- band color beside "We now offer two OCR classes each week —": rgb(240, 240, 240), live rgb(48, 48, 48)
+- band color beside "Choose the membership option that fits y": rgb(240, 240, 240), live rgb(48, 48, 48)
 - heading "THE MOST DIVERSE (LEAST BORING)": looks different from live (pixel difference 39)
 - heading "FITNESS CLASSES IN SPRINGFIELD, MO": looks different from live (pixel difference 38)
 - heading "PRICING AND SCHEDULE": looks different from live (pixel difference 162)
 - text "We now offer two OCR classes e": looks different from live (pixel difference 173)
 - text "Choose the membership option t": looks different from live (pixel difference 182)
+- photo hero: brightness 25, live 51 (overlay or exposure differs)
+- photo improve-confidence: brightness 255, live 116 (overlay or exposure differs)
 - photo improve-confidence: looks different from live (pixel difference 139)
 
-## home @ 390px: 13 difference(s)
-- heading "ONE OBSTACLE AT A TIME!": letter spacing 0px, live 7px
-- text "CONTACT": letter spacing 0px, live 2px
-- text "QUICK LINKS": letter spacing 0px, live 2px
-- spacing from "PERSONAL TRAINING" to "BE AN": 354px, live 491px
-- background behind "CLIENT TESTIMONIALS": rgb(264, 264, 264), live rgb(216, 240, 240)
-- background behind "WHAT OUR CLIENTS SAY": rgb(264, 264, 264), live rgb(216, 240, 240)
-- background behind "BIRTHDAY PARTIES": rgb(216, 48, 48), live rgb(0, 0, 0)
-- background behind "We had our son’s 10th birthday here. All": rgb(264, 264, 264), live rgb(216, 240, 240)
-- background behind "We had our son’s 10th birthday here. All": rgb(264, 264, 264), live rgb(216, 240, 240)
-- background behind "- JENNIFER L.": rgb(264, 264, 264), live rgb(216, 240, 240)
-- background behind "My daughter started training here 3 year": rgb(48, 72, 120), live rgb(264, 264, 264)
-- background behind "My daughter started training here 3 year": rgb(48, 72, 120), live rgb(264, 264, 264)
-- background behind "- LEE C.": rgb(48, 72, 120), live rgb(264, 264, 264)
+## home @ 390px: matches
 
-## homeschool-sports-and-classes-springfield-mo @ 390px: 51 difference(s)
+## homeschool-sports-and-classes-springfield-mo @ 390px: 55 difference(s)
 - heading missing: "COME JOIN THE FUN!"
 - heading missing: "Homeschoolers have the unique opportunity to enjoy exciting activities at Springfield Warrior Sports."
 - heading missing: "With time specifically dedicated to helping homeschoolers excel in their athletic goals, embrace an active lifestyle, and connect with other kids their age, this is a chance for homeschool kids to experience the most fun school year ever."
@@ -3779,8 +3572,6 @@ Total differences: 4314
 - text "Availability: Tuesdays and Thu": width 350px, live 250px
 - text "Availability: Tuesdays and Thu": weight 300, live 400
 - text "Availability: Tuesdays and Thu": color rgb(51, 51, 51), live rgb(0, 0, 0)
-- text "CONTACT": letter spacing 0px, live 2px
-- text "QUICK LINKS": letter spacing 0px, live 2px
 - spacing from "FUN HOMESCHOOL SPORTS FOR KIDS" to "HOMESCHOOL CLASSES SPRINGFIELD": 0px, live 528px
 - icons: 6 in build, 9 on live
 - icon 2: color rgb(255, 255, 255), live rgb(40, 82, 118)
@@ -3792,23 +3583,30 @@ Total differences: 4314
 - icon 6: color rgb(219, 58, 52), live rgb(255, 255, 255)
 - icon 6: left edge 31px, live 66px
 - background behind "FUN HOMESCHOOL SPORTS FOR KIDS IN SPRING": rgb(240, 240, 240), live rgb(48, 72, 120)
+- band color beside "FUN HOMESCHOOL SPORTS FOR KIDS IN SPRING": rgb(240, 240, 240), live rgb(48, 72, 120)
+- band color beside "HOMESCHOOL CLASSES SPRINGFIELD, MO": rgb(240, 240, 240), live rgb(48, 72, 120)
+- band color beside "(AGES 7–15)": rgb(240, 240, 240), live rgb(48, 72, 120)
+- band color beside "The Springfield Warrior Sports Junior Wa": rgb(240, 240, 240), live rgb(48, 72, 120)
+- band color beside "Availability: Tuesdays and Thursdays": rgb(240, 240, 240), live rgb(48, 72, 120)
 - heading "FUN HOMESCHOOL SPORTS FOR KIDS IN SPRING": looks different from live (pixel difference 93)
 - heading "HOMESCHOOL CLASSES SPRINGFIELD, MO": looks different from live (pixel difference 45)
 - heading "(AGES 7–15)": looks different from live (pixel difference 43)
 - text "Looking for fun ways to help y": looks different from live (pixel difference 48)
+- photo hero: brightness 89, live 33 (overlay or exposure differs)
 - photo hero: looks different from live (pixel difference 57)
 
-## kids-classes @ 390px: 8 difference(s)
-- text "CONTACT": letter spacing 0px, live 2px
-- text "QUICK LINKS": letter spacing 0px, live 2px
-- spacing from "NINJA WARRIOR CLASSES FOR KIDS" to "KIDS FITNESS CLASSES AT SPRING": 471px, live 288px
-- spacing from "Tuesday and Wednesday 6:00pm-6" to "JUNIOR WARRIORS": 116px, live 531px
-- spacing from "Tuesdays and Thursdays 3-4pm" to "CSNA COMPETITIVE NINJA TEAM": 994px, live 525px
-- spacing from "PRACTICE TIMES" to "PARKOUR": 144px, live 579px
-- spacing from "(7+ YEARS OLD)" to "HOMESCHOOL WARRIORS": 1816px, live 1434px
-- background behind "AND …. DON’T FORGET ABOUT SUMMER CAMPS, ": rgb(264, 264, 264), live rgb(216, 240, 240)
+## kids-classes @ 390px: 9 difference(s)
+- band color beside "NINJA WARRIOR CLASSES FOR KIDS AND TEENS": rgb(48, 48, 24), live rgb(96, 72, 72)
+- band color beside "YOUTH SUMMER CAMP": rgb(264, 264, 264), live rgb(216, 240, 240)
+- band color beside "BIRTHDAY PARTIES": rgb(264, 264, 264), live rgb(216, 240, 240)
+- band color beside "NO-SCHOOL DAY CAMP": rgb(264, 264, 264), live rgb(216, 240, 240)
+- band color beside "Kids will have fun and make new friends ": rgb(264, 264, 264), live rgb(216, 240, 240)
+- band color beside "week long day camp. Campers will work wi": rgb(264, 264, 264), live rgb(216, 240, 240)
+- band color beside "Warrior Sports trainer focusing on overa": rgb(264, 264, 264), live rgb(216, 240, 240)
+- band color beside "balance, and core exercises along with o": rgb(264, 264, 264), live rgb(216, 240, 240)
+- band color beside "training.": rgb(264, 264, 264), live rgb(216, 240, 240)
 
-## laser-tag @ 390px: 69 difference(s)
+## laser-tag @ 390px: 74 difference(s)
 - heading missing: "WANT TO BOOK A PRIVATE LASER TAG PARTY?"
 - heading missing: "READY TO BOOK?"
 - heading missing: "WE LOOK FORWARD TO HOSTING YOU."
@@ -3857,8 +3655,6 @@ Total differences: 4314
 - text "You can begin the booking proc": weight 300, live 400
 - text "You can begin the booking proc": color rgb(51, 51, 51), live rgb(255, 255, 255)
 - text "You can begin the booking proc": align start, live center
-- text "CONTACT": letter spacing 0px, live 2px
-- text "QUICK LINKS": letter spacing 0px, live 2px
 - spacing from "WELCOME TO THE PREMIER" to "LASER TAG GYM IN SPRINGFIELD, ": 0px, live 64px
 - icons: 6 in build, 9 on live
 - icon 2: color rgb(255, 255, 255), live rgb(219, 58, 52)
@@ -3875,11 +3671,18 @@ Total differences: 4314
 - background behind "Our staff will do all the setup and be o": rgb(264, 264, 264), live rgb(216, 240, 240)
 - background behind "Call us today and book our entire obstac": rgb(264, 264, 264), live rgb(216, 240, 240)
 - background behind "You can begin the booking process on our": rgb(240, 240, 240), live rgb(24, 24, 24)
+- band color beside "Great for all ages!": rgb(264, 264, 264), live rgb(0, 0, 48)
+- band color beside "Whether you are planning a birthday part": rgb(264, 264, 264), live rgb(216, 240, 240)
+- band color beside "The best part?": rgb(264, 264, 264), live rgb(216, 240, 240)
+- band color beside "Our staff will do all the setup and be o": rgb(264, 264, 264), live rgb(216, 240, 240)
+- band color beside "Call us today and book our entire obstac": rgb(264, 264, 264), live rgb(216, 240, 240)
+- band color beside "You can begin the booking process on our": rgb(240, 240, 240), live rgb(0, 0, 0)
 - heading "LASER TAG GYM IN SPRINGFIELD, MO": looks different from live (pixel difference 70)
 - heading "HERE ARE THE DETAILS:": looks different from live (pixel difference 59)
 - text "You can begin the booking proc": looks different from live (pixel difference 187)
+- photo laser-tag-fun-fest: brightness 53, live 36 (overlay or exposure differs)
 
-## meet-the-team @ 390px: 140 difference(s)
+## meet-the-team @ 390px: 141 difference(s)
 - heading missing: "SARAH"
 - heading missing: "CO-OWNER | ADULT OCR COACH | PRESCHOOL COACH | WOMEN’S FITNESS TRAINER"
 - heading missing: "LINCOLN"
@@ -4008,8 +3811,6 @@ Total differences: 4314
 - text "I love meeting new people and ": width 350px, live 270px
 - text "I love meeting new people and ": weight 300, live 400
 - text "I love meeting new people and ": color rgb(51, 51, 51), live rgb(0, 0, 0)
-- text "CONTACT": letter spacing 0px, live 2px
-- text "QUICK LINKS": letter spacing 0px, live 2px
 - icons: 6 in build, 7 on live
 - icon 2: left edge 30px, live 282px
 - icon 3: left edge 67px, live 29px
@@ -4017,11 +3818,14 @@ Total differences: 4314
 - icon 4: left edge 31px, live 66px
 - heading "JONNY": looks different from live (pixel difference 52)
 - heading "CO-OWNER | ADULT OCR COACH | INTERMEDIAT": looks different from live (pixel difference 41)
+- photo hero: brightness 61, live 93 (overlay or exposure differs)
 - photo hero: looks different from live (pixel difference 61)
+- photo jacob-photo: brightness 255, live 100 (overlay or exposure differs)
 - photo jacob-photo: looks different from live (pixel difference 155)
+- photo grace-photo: brightness 255, live 96 (overlay or exposure differs)
 - photo grace-photo: looks different from live (pixel difference 159)
 
-## nerf-wars @ 390px: 52 difference(s)
+## nerf-wars @ 390px: 56 difference(s)
 - heading missing: "BOOK NOW!"
 - heading missing: "READY TO LOCK IN THE DATE FOR YOUR CHILD'S EPIC NERF PARTY AT WARRIOR SPORTS?"
 - heading missing: "NERF WAR NIGHTS IN SPRINGFIELD MO"
@@ -4054,8 +3858,6 @@ Total differences: 4314
 - text "Or, dial (417) 894-7319 to res": weight 300, live 400
 - text "Or, dial (417) 894-7319 to res": color rgb(51, 51, 51), live rgb(255, 255, 255)
 - text "Or, dial (417) 894-7319 to res": align start, live center
-- text "CONTACT": letter spacing 0px, live 2px
-- text "QUICK LINKS": letter spacing 0px, live 2px
 - spacing from "NERF WAR SPRINGFIELD, MO:" to "THE ULTIMATE PARTY EXPERIENCE!": -783px, live 64px
 - spacing from "THE ULTIMATE PARTY EXPERIENCE!" to "NERF WAR PARTY BREAKDOWN": 1127px, live 737px
 - spacing from "NERF WAR PARTY BREAKDOWN" to "HERE’S WHAT’S INCLUDED": 0px, live 580px
@@ -4069,13 +3871,19 @@ Total differences: 4314
 - background behind "Our Nerf parties start at $220 for the f": rgb(264, 264, 264), live rgb(216, 240, 240)
 - background behind "Let our experienced and kid-friendly tea": rgb(264, 264, 264), live rgb(0, 0, 0)
 - background behind "Or, dial (417) 894-7319 to reserve today": rgb(264, 264, 264), live rgb(48, 24, 24)
+- band color beside "NERF WAR SPRINGFIELD, MO:": rgb(264, 264, 264), live rgb(24, 24, 24)
+- band color beside "PRICING": rgb(264, 264, 264), live rgb(216, 240, 240)
+- band color beside "Our Nerf parties start at $220 for the f": rgb(264, 264, 264), live rgb(216, 240, 240)
+- band color beside "Let our experienced and kid-friendly tea": rgb(264, 264, 264), live rgb(0, 24, 0)
+- band color beside "Or, dial (417) 894-7319 to reserve today": rgb(264, 264, 264), live rgb(48, 48, 48)
 - heading "NERF WAR SPRINGFIELD, MO:": looks different from live (pixel difference 150)
 - heading "THE ULTIMATE PARTY EXPERIENCE!": looks different from live (pixel difference 72)
 - heading "PRICING": looks different from live (pixel difference 76)
 - text "Let our experienced and kid-fr": looks different from live (pixel difference 191)
 - text "Or, dial (417) 894-7319 to res": looks different from live (pixel difference 186)
+- photo hero: brightness 35, live 50 (overlay or exposure differs)
 
-## parkour @ 390px: 54 difference(s)
+## parkour @ 390px: 53 difference(s)
 - heading missing: "BUILDS SELF-CONFIDENCE:"
 - heading missing: "MENTAL STIMULATION:"
 - heading missing: "STRESS RELIEF:"
@@ -4122,16 +3930,15 @@ Total differences: 4314
 - text "Plus, your first class is only": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
 - text "Parkour can help to improve ov": weight 300, live 400
 - text "Parkour can help to improve ov": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
-- text "CONTACT": letter spacing 0px, live 2px
-- text "QUICK LINKS": letter spacing 0px, live 2px
 - spacing from "PARKOUR GYM IN SPRINGFIELD MO " to "⚠️ TEMPORARY UPDATE:": 815px, live 404px
 - spacing from "PARKOUR BENEFITS" to "IMPROVE PHYSICAL FITNESS:": 0px, live 404px
 - heading "⚠️ TEMPORARY UPDATE:": looks different from live (pixel difference 46)
 - heading "PARKOUR BENEFITS": looks different from live (pixel difference 40)
 - heading "IMPROVE PHYSICAL FITNESS:": looks different from live (pixel difference 41)
+- photo wsre-shoots: brightness 255, live 104 (overlay or exposure differs)
 - photo wsre-shoots: looks different from live (pixel difference 151)
 
-## personal-training @ 390px: 78 difference(s)
+## personal-training @ 390px: 74 difference(s)
 - heading missing: "NOT YOUR TYPICAL GYM. NOT YOUR TYPICAL TRAINER."
 - heading missing: "UNCONVENTIONAL BY DESIGN"
 - heading missing: "STRONGER AND SMARTER"
@@ -4172,15 +3979,6 @@ Total differences: 4314
 - text missing: "Decide from there if you want to continue"
 - text missing: "After losing some weight on my own, I hit a wall. Warrior Sp"
 - text missing: "After losing some weight on my own, I hit a wall. Warrior Sp"
-- text missing: "Over a year, I lost over 50 pounds, gained mobility and conf"
-- text missing: "Over a year, I lost over 50 pounds, gained mobility and conf"
-- text missing: "— MICHAEL B."
-- text missing: "Jonny has coached our son for over three years. He’s a mento"
-- text missing: "Jonny has coached our son for over three years. He’s a mento"
-- text missing: "— WILL AND KOREN WILSON"
-- text missing: "My son’s personal training at Warrior Sports has helped him "
-- text missing: "My son’s personal training at Warrior Sports has helped him "
-- text missing: "— SUSIE K."
 - text "If you’ve ever felt like fitne": weight 300, live 400
 - text "If you’ve ever felt like fitne": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
 - text "We don’t (necessarily) do trea": weight 300, live 400
@@ -4196,70 +3994,65 @@ Total differences: 4314
 - text "Here’s how we’re different:": weight 300, live 400
 - text "Here’s how we’re different:": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
 - text "Here’s how we’re different:": align start, live center
-- text "CONTACT": letter spacing 0px, live 2px
-- text "QUICK LINKS": letter spacing 0px, live 2px
 - icons: 6 in build, 10 on live
 - icon 2: color rgb(255, 255, 255), live rgb(219, 58, 52)
 - icon 3: color rgb(255, 255, 255), live rgb(219, 58, 52)
 - icon 3: left edge 67px, live 26px
 - icon 6: color rgb(219, 58, 52), live rgb(255, 255, 255)
 - background behind "PERSONAL TRAINING AT WARRIOR SPORTS": rgb(0, 0, 0), live rgb(72, 72, 72)
+- photo hero: brightness 21, live 51 (overlay or exposure differs)
+- photo stronger-and-smarter-training: brightness 255, live 66 (overlay or exposure differs)
 - photo stronger-and-smarter-training: looks different from live (pixel difference 189)
+- photo emotionally-intelligent-coaching: brightness 255, live 60 (overlay or exposure differs)
 - photo emotionally-intelligent-coaching: looks different from live (pixel difference 195)
+- photo sarah-wilder-img: brightness 255, live 85 (overlay or exposure differs)
 - photo sarah-wilder-img: looks different from live (pixel difference 170)
+- photo jacob-winter-img: brightness 255, live 96 (overlay or exposure differs)
 - photo jacob-winter-img: looks different from live (pixel difference 159)
+- photo jonny-wilder-img: brightness 255, live 44 (overlay or exposure differs)
 - photo jonny-wilder-img: looks different from live (pixel difference 211)
+- photo qoute-icon: brightness 255, live 156 (overlay or exposure differs)
 - photo qoute-icon: looks different from live (pixel difference 99)
 
-## registered-for-csna-competition @ 390px: 6 difference(s)
+## registered-for-csna-competition @ 390px: 4 difference(s)
 - heading missing: "WE RECEIVED THOSE DETAILS, THANK YOU!"
 - text "Click here to finalize the reg": width 741px, live 348px
 - text "Click here to finalize the reg": color rgb(51, 51, 51), live rgb(0, 0, 0)
-- text "CONTACT": letter spacing 0px, live 2px
-- text "QUICK LINKS": letter spacing 0px, live 2px
 - section colors differ: build [rgb(255, 255, 255) | rgb(40, 82, 118) | rgb(255, 255, 255)], live [rgb(255, 255, 255)]
 
-## registered-for-day-camps @ 390px: 10 difference(s)
+## registered-for-day-camps @ 390px: 8 difference(s)
 - heading missing: "WE RECEIVED THOSE DETAILS, THANK YOU!"
 - photo missing: everyday-warrior
 - photo not on live: hero
 - text missing: "Click here to finalize the registration with your payment."
 - text "The link above has a few "prod": color rgb(51, 51, 51), live rgb(0, 0, 0)
 - text "If you encounter any problems ": color rgb(51, 51, 51), live rgb(0, 0, 0)
-- text "CONTACT": letter spacing 0px, live 2px
-- text "QUICK LINKS": letter spacing 0px, live 2px
 - button not on live: "CLICK HERE TO FINALIZE THE REGISTRATION WITH YOUR PAYMENT."
 - text "The link above has a few "prod": looks different from live (pixel difference 40)
 
-## registered-for-summer-fun-competition @ 390px: 8 difference(s)
+## registered-for-summer-fun-competition @ 390px: 6 difference(s)
 - heading missing: "WE RECEIVED THOSE DETAILS, THANK YOU!"
 - photo missing: everyday-warrior
 - photo not on live: hero
 - text "Click here to finalize the reg": color rgb(51, 51, 51), live rgb(0, 0, 0)
 - text "If you encounter any problems ": color rgb(51, 51, 51), live rgb(0, 0, 0)
-- text "CONTACT": letter spacing 0px, live 2px
-- text "QUICK LINKS": letter spacing 0px, live 2px
 - text "Click here to finalize the reg": looks different from live (pixel difference 56)
 
-## registered-for-wnl-competition @ 390px: 7 difference(s)
+## registered-for-wnl-competition @ 390px: 5 difference(s)
 - heading missing: "WE RECEIVED THOSE DETAILS, THANK YOU!"
 - photo missing: everyday-warrior
 - photo not on live: hero
 - text "Click here to finalize the reg": color rgb(51, 51, 51), live rgb(0, 0, 0)
-- text "CONTACT": letter spacing 0px, live 2px
-- text "QUICK LINKS": letter spacing 0px, live 2px
 - text "Click here to finalize the reg": looks different from live (pixel difference 52)
 
-## registered @ 390px: 7 difference(s)
+## registered @ 390px: 5 difference(s)
 - heading missing: "WE RECEIVED THOSE DETAILS, THANK YOU!"
 - photo missing: everyday-warrior
 - photo not on live: hero
 - text "Click here to finalize the reg": color rgb(51, 51, 51), live rgb(0, 0, 0)
-- text "CONTACT": letter spacing 0px, live 2px
-- text "QUICK LINKS": letter spacing 0px, live 2px
 - text "Click here to finalize the reg": looks different from live (pixel difference 52)
 
-## schedule-birthday-party @ 390px: 15 difference(s)
+## schedule-birthday-party @ 390px: 11 difference(s)
 - heading missing: "CLIENT TESTIMONIALS"
 - heading missing: "WHAT OUR CLIENTS SAY"
 - photo not on live: qoute-icon
@@ -4268,15 +4061,11 @@ Total differences: 4314
 - text missing: "We had our son’s 10th birthday here. All of the kids had a g"
 - text missing: "We had our son’s 10th birthday here. All of the kids had a g"
 - text missing: "- JENNIFER L."
-- text missing: "My daughter started training here 3 years ago at 8, and she "
-- text missing: "My daughter started training here 3 years ago at 8, and she "
-- text missing: "- LEE C."
 - text "1. Fill out the form to begin ": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
-- text "CONTACT": letter spacing 0px, live 2px
-- text "QUICK LINKS": letter spacing 0px, live 2px
+- photo qoute-icon: brightness 255, live 160 (overlay or exposure differs)
 - photo qoute-icon: looks different from live (pixel difference 95)
 
-## summer-camps-in-springfield-mo @ 390px: 133 difference(s)
+## summer-camps-in-springfield-mo @ 390px: 130 difference(s)
 - heading missing: "SUMMER CAMP PRICING"
 - heading missing: "SPRINGFIELD WARRIOR REGISTRATION"
 - heading missing: "REGISTRATION FORM"
@@ -4296,9 +4085,6 @@ Total differences: 4314
 - text missing: "We had our son’s 10th birthday here. All of the kids had a g"
 - text missing: "We had our son’s 10th birthday here. All of the kids had a g"
 - text missing: "- JENNIFER L."
-- text missing: "My daughter started training here 3 years ago at 8, and she "
-- text missing: "My daughter started training here 3 years ago at 8, and she "
-- text missing: "- LEE C."
 - text "Looking for a worthwhile activ": font Epilogue, live Muli
 - text "Looking for a worthwhile activ": weight 300, live 400
 - text "Looking for a worthwhile activ": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
@@ -4402,25 +4188,23 @@ Total differences: 4314
 - text "12 PM - 3 PM": font Epilogue, live Muli
 - text "12 PM - 3 PM": weight 300, live 400
 - text "12 PM - 3 PM": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
-- text "CONTACT": letter spacing 0px, live 2px
-- text "QUICK LINKS": letter spacing 0px, live 2px
 - spacing from "KIDS STAY FIT AND HEALTHY" to "AT OUR INCREDIBLE SUMMER CAMPS": 0px, live 90px
 - background behind "KIDS STAY FIT AND HEALTHY": rgb(24, 24, 24), live rgb(216, 48, 48)
 - background behind "AT OUR INCREDIBLE SUMMER CAMPS": rgb(24, 24, 24), live rgb(72, 72, 96)
+- band color beside "AT OUR INCREDIBLE SUMMER CAMPS": rgb(24, 24, 24), live rgb(120, 120, 96)
 - heading "AT OUR INCREDIBLE SUMMER CAMPS": looks different from live (pixel difference 70)
 - heading "SUMMER CAMPS IN SPRINGFIELD — 2026 DATES": looks different from live (pixel difference 42)
+- photo qoute-icon: brightness 255, live 156 (overlay or exposure differs)
 - photo qoute-icon: looks different from live (pixel difference 99)
 
-## thank-you-for-your-feedback @ 390px: 7 difference(s)
+## thank-you-for-your-feedback @ 390px: 5 difference(s)
 - heading missing: "THANK YOU FOR YOUR FEEDBACK!"
 - photo missing: everyday-warrior
 - photo not on live: hero
 - text "Thank you for your feedback! W": color rgb(51, 51, 51), live rgb(0, 0, 0)
-- text "CONTACT": letter spacing 0px, live 2px
-- text "QUICK LINKS": letter spacing 0px, live 2px
 - text "Thank you for your feedback! W": looks different from live (pixel difference 67)
 
-## wnl-competitions @ 390px: 31 difference(s)
+## wnl-competitions @ 390px: 30 difference(s)
 - heading missing: "10-26-2024 WNL Competition Registration Form"
 - heading "WNL COMPETITIONS IN SPRINGFIELD MISSOURI": size 32px, live 44px
 - heading "WNL REGIONAL QUALIFIERS": width 350px, live 306px
@@ -4442,8 +4226,6 @@ Total differences: 4314
 - text "Fill out your information usin": color rgb(51, 51, 51), live rgb(106, 107, 108)
 - text "Don't wait to register - The e": weight 300, live 400
 - text "Don't wait to register - The e": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
-- text "CONTACT": letter spacing 0px, live 2px
-- text "QUICK LINKS": letter spacing 0px, live 2px
 - spacing from "WNL COMPETITIONS IN SPRINGFIEL" to "WNL REGIONAL QUALIFIERS": 724px, live 1114px
 - icons: 6 in build, 7 on live
 - icon 2: color rgb(255, 255, 255), live rgb(219, 58, 52)
@@ -4451,5 +4233,6 @@ Total differences: 4314
 - icon 4: color rgb(219, 58, 52), live rgb(255, 255, 255)
 - icon 4: left edge 31px, live 66px
 - heading "WNL COMPETITIONS IN SPRINGFIELD MISSOURI": looks different from live (pixel difference 77)
+- photo hero: brightness 83, live 60 (overlay or exposure differs)
 - photo hero: looks different from live (pixel difference 60)
 
