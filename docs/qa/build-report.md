@@ -567,7 +567,7 @@ Lighthouse mobile on the local preview, after this batch. Order is performance /
 
 Model: Grok 4.7. Gate v2.13 checks the gap between every consecutive heading and text block, and it does not count the build-only trust bar when that bar sits between the two blocks. A band's color is the median pixel, and two runs merge only when those medians are within 4. The live map, the scripts, the tolerances, and `PIXEL_TOL` were not edited. The report is `docs/qa/layout-report.md`. No allow entries were added.
 
-Before is the previous v2.13 measurement, 8,227 differences. Home was 5/5/2, about was 2/2/4, and kids-classes was 3/3/5. After is 8,211. Home is 3/3/0, about is 2/2/1, and kids-classes is 0/0/4 (1920/1280/390). No other page rose. The Vercel preview is recorded after this commit is deployed.
+Before is the previous v2.13 measurement, 8,227 differences. Home was 5/5/2, about was 2/2/4, and kids-classes was 3/3/5. After is 8,211. Home is 3/3/0, about is 2/2/1, and kids-classes is 0/0/4 (1920/1280/390). No other page rose. The Vercel preview of `f93bcc8` measures the same: home 3/3/0, about 2/2/1, kids-classes 0/0/4.
 
 Adopt-a-Highway is white. At 1920 the left margin is white from y=1659 for 701px, then the partnerships grey. The section after Perseverance is that grey for 1,465px, then white for 789px. Live is 1,464px of grey and 796px of white. The wash is live's `linear-gradient(rgba(229, 234, 237, 0.5), rgba(229, 234, 237, 0.5))`, with padding-top 849px from 800px up and 412px below that.
 

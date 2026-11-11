@@ -8354,7 +8354,7 @@ Total differences: 8211
 
 Gate v2.13, round 12. Model: Grok 4.7. The live map, the scripts, the tolerances, and PIXEL_TOL were not edited. No allow entries were added. A band's color is the median pixel, and two runs merge only when their medians are within 4. The gap check does not count the trust bar when that bar sits between the two blocks.
 
-Before is the previous v2.13 measurement, 8,227 differences. Home was 5/5/2, about was 2/2/4, and kids-classes was 3/3/5. After is 8,211. Home is 3/3/0, about is 2/2/1, and kids-classes is 0/0/4. No other page rose. The Vercel preview is recorded after this commit is deployed.
+Before is the previous v2.13 measurement, 8,227 differences. Home was 5/5/2, about was 2/2/4, and kids-classes was 3/3/5. After is 8,211. Home is 3/3/0, about is 2/2/1, and kids-classes is 0/0/4. No other page rose. The Vercel preview of `f93bcc8` measures the same: home 3/3/0, about 2/2/1, kids-classes 0/0/4.
 
 Adopt-a-Highway is white. At 1920 the left margin is white from y=1659 for 701px, then the partnerships grey rgb(242, 245, 246). The grey starts at Community Partnerships. The section after Perseverance is that same grey for 1,465px, then white for 789px. Live's grey there is 1,464px and the white is 796px. The wash uses live's `linear-gradient(rgba(229, 234, 237, 0.5), rgba(229, 234, 237, 0.5))`, with padding-top 849px from 800px up and 412px below that.
 
