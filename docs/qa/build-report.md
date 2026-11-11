@@ -662,11 +662,11 @@ Lines left, with live's values: birthday cost-to-guests gap 222px against 154px 
 
 ## Layout parity batch 2, round 3, gate v2.18
 
-Model: Grok 4.7. Measured locally against the v2.17 live maps with the v2.18 compare. The live map, the scripts, the tolerances, and `PIXEL_TOL` were not edited. No allow entries were added. Forms still use the Central Forms wiring. Lighthouse was not re-run. Home, about, and kids-classes were not restyled.
+Model: Grok 4.7. Measured on the Vercel preview of `dfd5989` against the v2.17 live maps with the v2.18 compare. The same totals came back from the local build. The live map, the scripts, the tolerances, and `PIXEL_TOL` were not edited. No allow entries were added. Forms still use the Central Forms wiring. Lighthouse was not re-run. Home, about, and kids-classes were not restyled. On this preview they measure the same as the last recorded batch 1 result: home 3/3/0, about 2/2/1, kids-classes 0/0/3.
 
 Round 2 on the preview of `a66d6d0` is the "before" column.
 
-| Page | Before 1920 / 1280 / 390 | Local 1920 / 1280 / 390 |
+| Page | Before 1920 / 1280 / 390 | Preview 1920 / 1280 / 390 |
 |---|---|---|
 | birthday-parties | 2 / 1 / 18 | 2 / 1 / 13 |
 | schedule-birthday-party | 2 / 2 / 1 | 5 / 5 / 0 |
