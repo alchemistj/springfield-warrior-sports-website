@@ -50,7 +50,7 @@ const logoSrc = typeof logo === "string" ? logo : logo?.src;
     </div>
   </div>
   <div class="copy-bar">
-    <p class="copy-wide">© Copyright 2026 &nbsp;&nbsp; Springfield Warrior Sports &nbsp;&nbsp; All Rights Reserved.</p>
+    <p class="copy-wide">© Copyright 2026 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Springfield Warrior Sports &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;All Rights Reserved.</p>
     <p class="copy-line">© Copyright 2026</p>
     <p class="copy-line">Springfield Warrior Sports</p>
     <p class="copy-line">All Rights Reserved.</p>
@@ -61,7 +61,7 @@ const logoSrc = typeof logo === "string" ? logo : logo?.src;
   .site-footer {
     background: #fff;
     color: #333;
-    padding-top: 28px;
+    padding-top: 30px;
   }
   .foot {
     display: grid;
@@ -69,6 +69,10 @@ const logoSrc = typeof logo === "string" ? logo : logo?.src;
     width: min(1110px, calc(100% - 40px));
     margin: 0 auto;
     padding-bottom: 18px;
+  }
+  :global(.page-home) .foot,
+  :global(.page-about) .foot {
+    padding-bottom: 84px;
   }
   .brand img {
     width: 266px;
@@ -89,15 +93,15 @@ const logoSrc = typeof logo === "string" ? logo : logo?.src;
   }
   .socials {
     display: flex;
-    gap: 13px;
+    gap: 7px;
     margin-left: 6px;
   }
   .soc {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 24px;
-    height: 24px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     background: #db3a34;
     color: #fff;
@@ -168,6 +172,7 @@ const logoSrc = typeof logo === "string" ? logo : logo?.src;
     position: relative;
     background: transparent;
     color: #fff;
+    padding: 20px 0;
   }
   .copy-bar::before {
     content: "";
@@ -192,17 +197,15 @@ const logoSrc = typeof logo === "string" ? logo : logo?.src;
   .copy-wide { display: none; }
   @media (max-width: 799px) {
     .foot-links { padding-left: 0; }
-    :global(.page-home) .site-footer,
-    :global(.page-about) .site-footer { padding-top: 123px; }
   }
   @media (min-width: 800px) {
-    :global(.page-home) .site-footer { padding-top: 111px; }
-    :global(.page-about) .site-footer { padding-top: 115px; }
+    .site-footer { padding-top: 40px; }
     .foot {
       grid-template-columns: 354px 353px 301px;
       column-gap: 51px;
       align-items: start;
     }
+    .copy-bar { padding: 21px 0 20px; }
     .copy-bar p.copy-wide {
       display: block;
       font-size: 14px;

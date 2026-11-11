@@ -466,6 +466,55 @@ Lighthouse mobile on the local preview, after this batch. Order is performance /
 | About | 98 / 92 / 100 / 100 |
 | Kids classes | 99 / 92 / 100 / 100 |
 
+## Layout parity gate v2.9, round 9
+
+Model: Grok 4.7. Gate v2.9 counts pure black and white as bands. The live map, the scripts, the tolerances, and `PIXEL_TOL` were not edited. The report is `docs/qa/layout-report.md`. No allow entries were added.
+
+Before is this machine's measurement of `b24932b` (round 8 source on gate v2.9): 8,000 differences. The dispatch measured that commit on the Vercel preview as home 3/2/2, about 1/1/1, and kids-classes 2/2/2. After is 7,932. Home is 3/3/0, about is 2/2/1, and kids-classes is 0/0/2. No other page's count went up.
+
+| Page | Before 1920 | 1280 | 390 | Total | After 1920 | 1280 | 390 | Total |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| about | 3 | 3 | 2 | 8 | 2 | 2 | 1 | 5 |
+| best-gyms-in-springfield | 369 | 369 | 194 | 932 | 368 | 368 | 193 | 929 |
+| birthday-parties | 210 | 211 | 80 | 501 | 210 | 211 | 79 | 500 |
+| competitions | 62 | 62 | 57 | 181 | 61 | 61 | 56 | 178 |
+| contact | 78 | 78 | 48 | 204 | 78 | 78 | 47 | 203 |
+| fitness-classes | 245 | 244 | 134 | 623 | 244 | 243 | 133 | 620 |
+| home | 6 | 5 | 2 | 13 | 3 | 3 | 0 | 6 |
+| homeschool-sports-and-classes-springfield-mo | 108 | 107 | 103 | 318 | 107 | 106 | 102 | 315 |
+| kids-classes | 2 | 2 | 4 | 8 | 0 | 0 | 2 | 2 |
+| laser-tag | 174 | 176 | 154 | 504 | 173 | 175 | 153 | 501 |
+| meet-the-team | 585 | 585 | 195 | 1365 | 584 | 584 | 194 | 1362 |
+| nerf-wars | 148 | 147 | 128 | 423 | 147 | 146 | 127 | 420 |
+| parkour | 187 | 186 | 98 | 471 | 186 | 185 | 97 | 468 |
+| personal-training | 327 | 331 | 118 | 776 | 326 | 330 | 117 | 773 |
+| registered-for-csna-competition | 15 | 15 | 15 | 45 | 14 | 14 | 14 | 42 |
+| registered-for-day-camps | 16 | 16 | 15 | 47 | 15 | 15 | 15 | 45 |
+| registered-for-summer-fun-competition | 16 | 16 | 16 | 48 | 15 | 15 | 15 | 45 |
+| registered-for-wnl-competition | 15 | 15 | 15 | 45 | 14 | 14 | 14 | 42 |
+| registered | 15 | 15 | 15 | 45 | 14 | 14 | 14 | 42 |
+| schedule-birthday-party | 58 | 58 | 15 | 131 | 57 | 57 | 14 | 128 |
+| summer-camps-in-springfield-mo | 393 | 394 | 248 | 1035 | 393 | 394 | 247 | 1034 |
+| thank-you-for-your-feedback | 13 | 13 | 12 | 38 | 12 | 12 | 12 | 36 |
+| wnl-competitions | 81 | 81 | 77 | 239 | 80 | 80 | 76 | 236 |
+| All pages | | | | 8000 | | | | 7932 |
+
+The copyright bar matches the live CSS. Desktop text is Epilogue 14px, weight 600, letter-spacing 2px, line-height 1.7em, one centered line. The three phone lines are 12px with letter-spacing 0. The bar is 65px tall at 1920 and 1280 and 100px at 390. The desktop sentence uses the same six non-breaking spaces live uses between the three parts.
+
+Footer padding-top is the live 40px, so the gap under the navy band is no longer the old 110px. Home and about grow the white under the columns so the white band matches. Contact icons stay 16px, the live icon size. The Facebook and Instagram circles are 30px. The home bullet strip is 80px on desktop. The kids fun band is 1,059px at 1920 and 1280 and 819px at 390.
+
+Home at 390, the `rgb(0, 2, 8)` run at y=527, is the dark bottom-left of the hero photo. Live is black there for 71px, then the bullet list. The build's left edge was lighter, so the checker paired the 298px bullet list with that 71px edge. A black strip on the photo's left edge, stopped short of the list, splits them, and home at 390 matches. The same edge at 1920 was 71px against live's 41px, and that matches now too.
+
+The lines still open on this machine are the same wraps as round 8, at live's size, width, and letter-spacing. Round 8's preview measurement scored them 0. Size and letter-spacing were not changed to force the wrap. The Memorial Day sentence stays in the Community Murph paragraph. Paragraph links stay the live red, `rgb(219, 58, 52)`, with no underline.
+
+Lighthouse mobile on the local preview, after this batch. Order is performance / accessibility / best practices / SEO. About and kids accessibility stay at 92 because the live red measures 4.49:1 on white. That question is with Josh. The red stays.
+
+| Page | Score |
+|---|---|
+| Home | 99 / 100 / 100 / 100 |
+| About | 98 / 92 / 100 / 100 |
+| Kids classes | 98 / 92 / 100 / 100 |
+
 ## Open questions
 
 - Where GF18 should live, if it should be a page at all.
