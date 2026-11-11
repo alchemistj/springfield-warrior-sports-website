@@ -1,0 +1,70 @@
+---
+import type { EventForm } from "../../data/events";
+import { site } from "../../data/site";
+import LeadForm from "../LeadForm.astro";
+import Quotes from "./Quotes.astro";
+import { media } from "./media";
+
+interface Props {
+  event: EventForm;
+}
+const { event } = Astro.props;
+const photo = media("media/2023-03-spring-break.webp");
+
+const weeks: { date: string; times: string[] }[] = [
+  { date: "May 25th - May 29th", times: ["8:30 AM - 11:30 AM"] },
+  { date: "June 8th - June 12th", times: ["8:30 AM - 11:30 AM"] },
+  { date: "June 22nd - June 26th", times: ["8:30 AM - 11:30 AM"] },
+  { date: "July 6th - July 10th", times: ["8:30 AM - 11:30 AM", "12 PM - 3 PM"] },
+  { date: "July 20th - July 24th", times: ["8:30 AM - 11:30 AM", "12 PM - 3 PM"] },
+  { date: "August 3rd - August 7th", times: ["8:30 AM - 11:30 AM", "12 PM - 3 PM"] },
+  { date: "August 17th - August 21st", times: ["8:30 AM - 11:30 AM", "12 PM - 3 PM"] },
+];
+---
+
+<section class="b2-block">
+  <div class="b2-wrap camp-intro">
+    <p>Looking for a worthwhile activity for your kid this summer?</p>
+    <p>Look no further! Our incredible Summer Camps in Springfield, MO are packed with fun and educational activities.</p>
+    <p>Kids will get the chance to work with our Ninja Warrior trainers, and participate in physical activities designed to enhance their balance, core, and overall strength. We provide healthy snacks each day as we educate children on <strong>making good nutritional choices</strong> that lead to improved health and wellness.</p>
+    <p>Plus, there’s a <strong class="camp-heavy">competition at every camp</strong> that awards the top place-getters a spot in the final championship at the end of summer – how cool is that?!</p>
+    <p>Come join us at our camps, which are perfect for children approximately aged 6 to 15.</p>
+  </div>
+</section>
+
+<section class="b2-block b2-grey">
+  <div class="b2-wrap camp-layout">
+    <div class="camp-copy">
+      <h2 class="camp-dates-title">SUMMER CAMPS IN SPRINGFIELD — 2026 DATES</h2>
+      <div class="camp-dates">
+        {weeks.map((week) => (
+          <div class="camp-row">
+            <p class="camp-date">{week.date}</p>
+            <div>
+              {week.times.map((time) => <p class="camp-time">{time}</p>)}
+            </div>
+          </div>
+        ))}
+      </div>
+      <h2>SUMMER CAMP PRICING</h2>
+      <p class="camp-price">A week of activities and snacks at Springfield Warrior Sports camps are $179, and we have discounts available for members and siblings. (You’ll need to call <a href={site.phone.tel}>{site.phone.display}</a> and register over the phone in order to qualify for those discounts).</p>
+      <p class="camp-price">Note:</p>
+      <p class="camp-price">Summer camp investment monies can be pro-rated if your child can not attend the entire week.</p>
+    </div>
+    {photo.src && <img class="camp-photo" src={photo.src} alt="" width={photo.width} height={photo.height} />}
+  </div>
+  <div class="b2-wrap">
+    <h2 class="camp-reg-title">SPRINGFIELD WARRIOR REGISTRATION</h2>
+    <p class="camp-reg">At our Springfield Warrior Sports camps, your kids won’t just have fun; they'll become physically stronger, learn life-long nutrition habits, and improve their coordination skills — all while making new friends!<br /><br />Sign up by filling out the registration form below to save your kid's spot at our fun-filled summer camps at Springfield Warriors Sports today!</p>
+  </div>
+</section>
+
+<section class="b2-block">
+  <div class="b2-wrap camp-form">
+    <h2 class="b2-form-title">REGISTRATION FORM</h2>
+    <p class="camp-cost">Cost: $179 per child; member and sibling discounts available (may not be combined). For ages 6-15 years old.</p>
+    <p class="camp-call">** call with questions or to register by phone <a href={site.phone.tel}>{site.phone.display}</a>. Please call to take advantage of the member or sibling discounts and get registered.</p>
+    <LeadForm event={event} />
+  </div>
+</section>
+<Quotes variant="camps" band />

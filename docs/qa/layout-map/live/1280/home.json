@@ -39,7 +39,7 @@
      "u": false
     }
    ],
-   "lines": 2,
+   "lines": 1,
    "region": "header",
    "x": 882,
    "y": 6,
@@ -67,7 +67,7 @@
      "u": false
     }
    ],
-   "lines": 2,
+   "lines": 1,
    "region": "header",
    "x": 977,
    "y": 6,
@@ -95,7 +95,7 @@
      "u": false
     }
    ],
-   "lines": 2,
+   "lines": 1,
    "region": "header",
    "x": 1052,
    "y": 6,
@@ -132,7 +132,7 @@
      "u": false
     }
    ],
-   "lines": 2,
+   "lines": 1,
    "region": "header",
    "x": 368,
    "y": 73,
@@ -160,7 +160,7 @@
      "u": false
     }
    ],
-   "lines": 2,
+   "lines": 1,
    "region": "header",
    "x": 500,
    "y": 73,
@@ -188,7 +188,7 @@
      "u": false
     }
    ],
-   "lines": 2,
+   "lines": 1,
    "region": "header",
    "x": 610,
    "y": 73,
@@ -216,7 +216,7 @@
      "u": false
     }
    ],
-   "lines": 2,
+   "lines": 1,
    "region": "header",
    "x": 738,
    "y": 73,
@@ -244,7 +244,7 @@
      "u": false
     }
    ],
-   "lines": 2,
+   "lines": 1,
    "region": "header",
    "x": 893,
    "y": 73,
@@ -272,7 +272,7 @@
      "u": false
     }
    ],
-   "lines": 2,
+   "lines": 1,
    "region": "header",
    "x": 1063,
    "y": 73,
@@ -1044,6 +1044,16 @@
    "h": 125
   },
   {
+   "kind": "box",
+   "bg": "rgb(255, 255, 255)",
+   "text": "CLASSES AND ACTIVITIES FOR KIDS\n\nSpringf",
+   "region": "main",
+   "x": 65,
+   "y": 2264,
+   "w": 1150,
+   "h": 348
+  },
+  {
    "kind": "bgimage",
    "src": "https://www.springfieldwarriorsports.com/wp-content/uploads/2023/03/classes.jpg",
    "region": "main",
@@ -1127,6 +1137,16 @@
    "y": 2523,
    "w": 491,
    "h": 49
+  },
+  {
+   "kind": "box",
+   "bg": "rgb(255, 255, 255)",
+   "text": "TRAIN LIKE A NINJA WARRIOR\n\nOur adult cl",
+   "region": "main",
+   "x": 65,
+   "y": 2632,
+   "w": 1150,
+   "h": 320
   },
   {
    "kind": "bgimage",
@@ -1214,6 +1234,16 @@
    "h": 49
   },
   {
+   "kind": "box",
+   "bg": "rgb(255, 255, 255)",
+   "text": "BIRTHDAY PARTIES\n\nWarrior Sports offers ",
+   "region": "main",
+   "x": 65,
+   "y": 2973,
+   "w": 1150,
+   "h": 348
+  },
+  {
    "kind": "bgimage",
    "src": "https://www.springfieldwarriorsports.com/wp-content/uploads/2023/03/birthday.jpg",
    "region": "main",
@@ -1297,6 +1327,16 @@
    "y": 3232,
    "w": 491,
    "h": 49
+  },
+  {
+   "kind": "box",
+   "bg": "rgb(255, 255, 255)",
+   "text": "DAY CAMPS FOR SCHOOL BREAKS\n\nElevate you",
+   "region": "main",
+   "x": 65,
+   "y": 3341,
+   "w": 1150,
+   "h": 320
   },
   {
    "kind": "bgimage",
@@ -1510,6 +1550,16 @@
    "h": 49
   },
   {
+   "kind": "box",
+   "bg": "rgb(255, 255, 255)",
+   "text": "HOMESCHOOL NINJA WARRIOR CLASSES\n\nKeep y",
+   "region": "main",
+   "x": 65,
+   "y": 4105,
+   "w": 1150,
+   "h": 320
+  },
+  {
    "kind": "bgimage",
    "src": "https://www.springfieldwarriorsports.com/wp-content/uploads/2024/02/kids-classes.jpg",
    "region": "main",
@@ -1593,6 +1643,16 @@
    "y": 4336,
    "w": 491,
    "h": 49
+  },
+  {
+   "kind": "box",
+   "bg": "rgb(255, 255, 255)",
+   "text": "PERSONAL TRAINING\n\nPersonal training for",
+   "region": "main",
+   "x": 65,
+   "y": 4446,
+   "w": 1150,
+   "h": 292
   },
   {
    "kind": "bgimage",
@@ -1887,7 +1947,7 @@
      "u": false
     }
    ],
-   "lines": 6,
+   "lines": 1,
    "region": "main",
    "x": 96,
    "y": 5795,
@@ -1989,7 +2049,7 @@
      "u": false
     }
    ],
-   "lines": 8,
+   "lines": 1,
    "region": "main",
    "x": 661,
    "y": 5795,

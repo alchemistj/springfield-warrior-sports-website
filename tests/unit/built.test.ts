@@ -32,11 +32,16 @@ describe("built site", () => {
       const source = readFileSync(`source/pages/${page.slug}/text.txt`, "utf8")
         .replace("605 W. Plainview Road Springfield, MO 65810", site.address.display);
       const text = visibleText(html);
-      const missing = sentences(mainContent(source)).filter((sentence) => !text.includes(sentence));
+      // Live renders this competitions sentence at font-size 0. It is removed, not hidden.
+      const missing = sentences(mainContent(source))
+        .filter((sentence) => !sentence.includes("January 13th competitions will go up"))
+        .filter((sentence) => !text.includes(sentence));
       expect(missing, page.slug).toEqual([]);
       const outsideForm = visibleText(html.replace(/<form\b[\s\S]*?<\/form>/gi, " "));
       expect(outsideForm, page.slug).not.toMatch(/\(Required\)/i);
-      expect(outsideForm, page.slug).not.toMatch(/indicates required fields/i);
+      // Live shows this one sentence above the schedule form. Every other form-dump phrase stays inside the form.
+      const outsideCopy = page.slug === "schedule-birthday-party" ? outsideForm.replace(/indicates required fields/gi, "") : outsideForm;
+      expect(outsideCopy, page.slug).not.toMatch(/indicates required fields/i);
       expect(outsideForm, page.slug).not.toMatch(/First and Last Name\s*\*/i);
       expect(outsideForm, page.slug).not.toMatch(/Participant 1 Name/i);
     }
@@ -55,7 +60,9 @@ describe("built site", () => {
     const files = walk("dist").filter((file) => /\.(html|xml|txt|js)$/.test(file));
     const phone = /(?:\+?1[\s.-]?)?(?:\(?\d{3}\)?[\s.-]*)\d{3}[\s.-]*\d{4}/g;
     for (const file of files) {
-      const text = readFileSync(file, "utf8").replace(/data:image\/[a-z0-9.+-]+;base64,[a-z0-9+/=]+/gi, "");
+      const text = readFileSync(file, "utf8")
+        .replace(/data:image\/[a-z0-9.+-]+;base64,[a-z0-9+/=]+/gi, "")
+        .replace(/placeholder="\(999\) 999-9999"/g, "");
       for (const match of text.match(phone) ?? []) {
         const digits = match.replace(/\D/g, "");
         expect([site.phone.e164.replace(/\D/g, ""), "4178947319"]).toContain(digits.length === 11 ? digits : digits);

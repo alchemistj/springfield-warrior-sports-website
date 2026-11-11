@@ -1,0 +1,47 @@
+---
+import { media } from "./media";
+
+interface Props {
+  variant: "schedule" | "contact" | "camps";
+  as?: "h1" | "h2";
+  band?: boolean;
+}
+const { variant, as = "h2", band = false } = Astro.props;
+const icon = media("media/2023-03-qoute-icon.webp");
+const quotes = [
+  {
+    text: "We had our son’s 10th birthday here. All of the kids had a great time. They set up an obstacle course for the kids. They loved the whole experience. The favorite was the curved wall to run up. That was everyone’s challenge for the night. We will be visiting again for sure.",
+    by: "Jennifer L.",
+  },
+  {
+    text: "My daughter started training here 3 years ago at 8, and she still loves it!! Owner and coaching staff are all super encouraging. We live an hour away but make the drive twice a week as often as possible. Training here has not only helped her get stronger physically but increased her confidence in general. Anything that makes kids want to challenge themselves to get better and better is worth it!",
+    by: "Lee C.",
+  },
+];
+---
+
+<section class:list={["b2-quotes", variant, { "b2-grey": band }]}>
+  <div class="b2-wrap">
+    {as === "h1" ? <h1 class="b2-quote-title">CLIENT TESTIMONIALS</h1> : <h2 class="b2-quote-title">CLIENT TESTIMONIALS</h2>}
+    <h4 class="b2-quote-sub">WHAT OUR CLIENTS SAY</h4>
+    {variant === "contact" && (
+      <div class="b2-arrows" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path d="M15.4 4.6 8 12l7.4 7.4-1.4 1.4L5.2 12 14 3.2z" /></svg>
+        <svg viewBox="0 0 24 24"><path d="m8.6 4.6 7.4 7.4-7.4 7.4 1.4 1.4L18.8 12 10 3.2z" /></svg>
+      </div>
+    )}
+    <div class="b2-qrow">
+      {quotes.map((quote) => (
+        <article class="b2-q">
+          {icon.src && <img class="b2-qico" src={icon.src} alt="" width="65" height="65" />}
+          <div class="b2-qblock">
+            <span>
+              <p class="b2-qt">{quote.text}</p>
+              <p class="b2-qn"><strong>- {quote.by}</strong></p>
+            </span>
+          </div>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>

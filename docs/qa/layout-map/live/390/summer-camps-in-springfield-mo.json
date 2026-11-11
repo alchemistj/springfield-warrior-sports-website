@@ -27,7 +27,7 @@
      "u": false
     }
    ],
-   "lines": 2,
+   "lines": 1,
    "region": "header",
    "x": 53,
    "y": 11,
@@ -55,7 +55,7 @@
      "u": false
     }
    ],
-   "lines": 2,
+   "lines": 1,
    "region": "header",
    "x": 144,
    "y": 11,
@@ -83,7 +83,7 @@
      "u": false
     }
    ],
-   "lines": 2,
+   "lines": 1,
    "region": "header",
    "x": 214,
    "y": 11,
@@ -371,6 +371,16 @@
    "h": 160
   },
   {
+   "kind": "box",
+   "bg": "rgb(240, 243, 245)",
+   "text": "May 25th - May 29th\n\n8:30 AM - 11:30 AM",
+   "region": "main",
+   "x": 25,
+   "y": 2158,
+   "w": 340,
+   "h": 67
+  },
+  {
    "kind": "text",
    "tag": "p",
    "text": "May 25th - May 29th",
@@ -427,6 +437,16 @@
    "y": 2159,
    "w": 136,
    "h": 76
+  },
+  {
+   "kind": "box",
+   "bg": "rgb(240, 243, 245)",
+   "text": "June 8th - June 12th\n\n8:30 AM - 11:30 AM",
+   "region": "main",
+   "x": 25,
+   "y": 2235,
+   "w": 340,
+   "h": 67
   },
   {
    "kind": "text",
@@ -487,6 +507,16 @@
    "h": 76
   },
   {
+   "kind": "box",
+   "bg": "rgb(240, 243, 245)",
+   "text": "June 22nd - June 26th\n\n8:30 AM - 11:30 A",
+   "region": "main",
+   "x": 25,
+   "y": 2312,
+   "w": 340,
+   "h": 67
+  },
+  {
    "kind": "text",
    "tag": "p",
    "text": "June 22nd - June 26th",
@@ -543,6 +573,16 @@
    "y": 2313,
    "w": 136,
    "h": 76
+  },
+  {
+   "kind": "box",
+   "bg": "rgb(240, 243, 245)",
+   "text": "July 6th - July 10th\n\n8:30 AM - 11:30 AM",
+   "region": "main",
+   "x": 25,
+   "y": 2389,
+   "w": 340,
+   "h": 106
   },
   {
    "kind": "text",
@@ -633,6 +673,16 @@
    "h": 48
   },
   {
+   "kind": "box",
+   "bg": "rgb(240, 243, 245)",
+   "text": "July 20th - July 24th\n\n8:30 AM - 11:30 A",
+   "region": "main",
+   "x": 25,
+   "y": 2505,
+   "w": 340,
+   "h": 106
+  },
+  {
    "kind": "text",
    "tag": "p",
    "text": "July 20th - July 24th",
@@ -721,6 +771,16 @@
    "h": 48
   },
   {
+   "kind": "box",
+   "bg": "rgb(240, 243, 245)",
+   "text": "August 3rd - August 7th\n\n8:30 AM - 11:30",
+   "region": "main",
+   "x": 25,
+   "y": 2621,
+   "w": 340,
+   "h": 106
+  },
+  {
    "kind": "text",
    "tag": "p",
    "text": "August 3rd - August 7th",
@@ -807,6 +867,16 @@
    "y": 2689,
    "w": 100,
    "h": 48
+  },
+  {
+   "kind": "box",
+   "bg": "rgb(240, 243, 245)",
+   "text": "August 17th - August 21st\n\n8:30 AM - 11:",
+   "region": "main",
+   "x": 25,
+   "y": 2737,
+   "w": 340,
+   "h": 106
   },
   {
    "kind": "text",
@@ -1188,6 +1258,286 @@
    "h": 144
   },
   {
+   "kind": "field",
+   "type": "text",
+   "placeholder": "First Name",
+   "bg": "rgb(241, 241, 241)",
+   "border": "1px solid rgb(104, 110, 119)",
+   "radius": "3px",
+   "size": 14,
+   "region": "main",
+   "x": 21,
+   "y": 4227,
+   "w": 348,
+   "h": 52
+  },
+  {
+   "kind": "field",
+   "type": "text",
+   "placeholder": "Last Name",
+   "bg": "rgb(241, 241, 241)",
+   "border": "1px solid rgb(104, 110, 119)",
+   "radius": "3px",
+   "size": 14,
+   "region": "main",
+   "x": 21,
+   "y": 4319,
+   "w": 348,
+   "h": 52
+  },
+  {
+   "kind": "field",
+   "type": "email",
+   "placeholder": "Email",
+   "bg": "rgb(241, 241, 241)",
+   "border": "1px solid rgb(104, 110, 119)",
+   "radius": "3px",
+   "size": 14,
+   "region": "main",
+   "x": 21,
+   "y": 4411,
+   "w": 348,
+   "h": 52
+  },
+  {
+   "kind": "field",
+   "type": "tel",
+   "placeholder": "(999) 999-9999",
+   "bg": "rgb(241, 241, 241)",
+   "border": "1px solid rgb(104, 110, 119)",
+   "radius": "3px",
+   "size": 14,
+   "region": "main",
+   "x": 21,
+   "y": 4561,
+   "w": 348,
+   "h": 52
+  },
+  {
+   "kind": "field",
+   "type": "text",
+   "placeholder": "Kids Name",
+   "bg": "rgb(241, 241, 241)",
+   "border": "1px solid rgb(104, 110, 119)",
+   "radius": "3px",
+   "size": 14,
+   "region": "main",
+   "x": 21,
+   "y": 4691,
+   "w": 348,
+   "h": 52
+  },
+  {
+   "kind": "field",
+   "type": "select",
+   "placeholder": "",
+   "bg": "rgb(241, 241, 241)",
+   "border": "1px solid rgb(212, 212, 212)",
+   "radius": "3px",
+   "size": 16,
+   "region": "main",
+   "x": 21,
+   "y": 4821,
+   "w": 348,
+   "h": 50
+  },
+  {
+   "kind": "field",
+   "type": "select",
+   "placeholder": "",
+   "bg": "rgb(241, 241, 241)",
+   "border": "1px solid rgb(212, 212, 212)",
+   "radius": "3px",
+   "size": 16,
+   "region": "main",
+   "x": 21,
+   "y": 4949,
+   "w": 348,
+   "h": 50
+  },
+  {
+   "kind": "field",
+   "type": "checkbox",
+   "placeholder": "",
+   "bg": "rgb(241, 241, 241)",
+   "border": "1px solid rgb(104, 110, 119)",
+   "radius": "2px",
+   "size": 14,
+   "region": "main",
+   "x": 21,
+   "y": 5071,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "kind": "field",
+   "type": "checkbox",
+   "placeholder": "",
+   "bg": "rgb(241, 241, 241)",
+   "border": "1px solid rgb(104, 110, 119)",
+   "radius": "2px",
+   "size": 14,
+   "region": "main",
+   "x": 21,
+   "y": 5124,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "kind": "field",
+   "type": "checkbox",
+   "placeholder": "",
+   "bg": "rgb(241, 241, 241)",
+   "border": "1px solid rgb(104, 110, 119)",
+   "radius": "2px",
+   "size": 14,
+   "region": "main",
+   "x": 21,
+   "y": 5176,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "kind": "field",
+   "type": "checkbox",
+   "placeholder": "",
+   "bg": "rgb(241, 241, 241)",
+   "border": "1px solid rgb(104, 110, 119)",
+   "radius": "2px",
+   "size": 14,
+   "region": "main",
+   "x": 21,
+   "y": 5228,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "kind": "field",
+   "type": "checkbox",
+   "placeholder": "",
+   "bg": "rgb(241, 241, 241)",
+   "border": "1px solid rgb(104, 110, 119)",
+   "radius": "2px",
+   "size": 14,
+   "region": "main",
+   "x": 21,
+   "y": 5280,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "kind": "field",
+   "type": "checkbox",
+   "placeholder": "",
+   "bg": "rgb(241, 241, 241)",
+   "border": "1px solid rgb(104, 110, 119)",
+   "radius": "2px",
+   "size": 14,
+   "region": "main",
+   "x": 21,
+   "y": 5332,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "kind": "field",
+   "type": "checkbox",
+   "placeholder": "",
+   "bg": "rgb(241, 241, 241)",
+   "border": "1px solid rgb(104, 110, 119)",
+   "radius": "2px",
+   "size": 14,
+   "region": "main",
+   "x": 21,
+   "y": 5384,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "kind": "field",
+   "type": "checkbox",
+   "placeholder": "",
+   "bg": "rgb(241, 241, 241)",
+   "border": "1px solid rgb(104, 110, 119)",
+   "radius": "2px",
+   "size": 14,
+   "region": "main",
+   "x": 21,
+   "y": 5436,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "kind": "field",
+   "type": "checkbox",
+   "placeholder": "",
+   "bg": "rgb(241, 241, 241)",
+   "border": "1px solid rgb(104, 110, 119)",
+   "radius": "2px",
+   "size": 14,
+   "region": "main",
+   "x": 21,
+   "y": 5488,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "kind": "field",
+   "type": "checkbox",
+   "placeholder": "",
+   "bg": "rgb(241, 241, 241)",
+   "border": "1px solid rgb(104, 110, 119)",
+   "radius": "2px",
+   "size": 14,
+   "region": "main",
+   "x": 21,
+   "y": 5540,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "kind": "field",
+   "type": "checkbox",
+   "placeholder": "",
+   "bg": "rgb(241, 241, 241)",
+   "border": "1px solid rgb(104, 110, 119)",
+   "radius": "2px",
+   "size": 14,
+   "region": "main",
+   "x": 21,
+   "y": 5592,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "kind": "field",
+   "type": "text",
+   "placeholder": "",
+   "bg": "rgb(241, 241, 241)",
+   "border": "1px solid rgb(104, 110, 119)",
+   "radius": "3px",
+   "size": 14,
+   "region": "main",
+   "x": 21,
+   "y": 5730,
+   "w": 348,
+   "h": 52
+  },
+  {
+   "kind": "field",
+   "type": "textarea",
+   "placeholder": "",
+   "bg": "rgb(241, 241, 241)",
+   "border": "1px solid rgb(212, 212, 212)",
+   "radius": "3px",
+   "size": 16,
+   "region": "main",
+   "x": 21,
+   "y": 5860,
+   "w": 348,
+   "h": 130
+  },
+  {
    "kind": "heading",
    "tag": "h2",
    "text": "CLIENT TESTIMONIALS",
@@ -1280,7 +1630,7 @@
      "u": false
     }
    ],
-   "lines": 10,
+   "lines": 1,
    "region": "main",
    "x": 37,
    "y": 6422,

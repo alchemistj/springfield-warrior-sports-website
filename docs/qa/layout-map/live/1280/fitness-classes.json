@@ -29,7 +29,7 @@
      "u": false
     }
    ],
-   "lines": 2,
+   "lines": 1,
    "region": "header",
    "x": 882,
    "y": 6,
@@ -57,7 +57,7 @@
      "u": false
     }
    ],
-   "lines": 2,
+   "lines": 1,
    "region": "header",
    "x": 977,
    "y": 6,
@@ -85,7 +85,7 @@
      "u": false
     }
    ],
-   "lines": 2,
+   "lines": 1,
    "region": "header",
    "x": 1052,
    "y": 6,
@@ -122,7 +122,7 @@
      "u": false
     }
    ],
-   "lines": 2,
+   "lines": 1,
    "region": "header",
    "x": 368,
    "y": 73,
@@ -150,7 +150,7 @@
      "u": false
     }
    ],
-   "lines": 2,
+   "lines": 1,
    "region": "header",
    "x": 500,
    "y": 73,
@@ -178,7 +178,7 @@
      "u": false
     }
    ],
-   "lines": 2,
+   "lines": 1,
    "region": "header",
    "x": 610,
    "y": 73,
@@ -206,7 +206,7 @@
      "u": false
     }
    ],
-   "lines": 2,
+   "lines": 1,
    "region": "header",
    "x": 738,
    "y": 73,
@@ -234,7 +234,7 @@
      "u": false
     }
    ],
-   "lines": 2,
+   "lines": 1,
    "region": "header",
    "x": 893,
    "y": 73,
@@ -262,7 +262,7 @@
      "u": false
     }
    ],
-   "lines": 2,
+   "lines": 1,
    "region": "header",
    "x": 1063,
    "y": 73,
@@ -597,6 +597,16 @@
    "y": 1587,
    "w": 559,
    "h": 39
+  },
+  {
+   "kind": "box",
+   "bg": "rgb(255, 255, 255)",
+   "text": "$20 Drop-In\n$60 Monthly Membership (once",
+   "region": "main",
+   "x": 200,
+   "y": 1636,
+   "w": 880,
+   "h": 261
   },
   {
    "kind": "icon",

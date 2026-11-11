@@ -1,0 +1,43 @@
+---
+import type { EventForm } from "../../data/events";
+import LeadForm from "../LeadForm.astro";
+import { media } from "./media";
+
+interface Props {
+  event: EventForm;
+}
+const { event } = Astro.props;
+const photo = media("media/2023-03-everyday-warrior.webp");
+---
+
+<section class="b2-block">
+  <div class="b2-wrap">
+    <p class="wnl-intro">Calling all Ninjas! <br /><br />Warrior Sports in Springfield Missouri is proud to announce its regional qualifiers for the WNL (World Ninja League) Competition, and we’re excited for you to join us! Whether you’re looking to qualify or just want to face some friendly competition – these events have it all!</p>
+  </div>
+</section>
+<section class="b2-block b2-grey">
+  <div class="b2-wrap wnl-top">
+    <div>
+      <h4>WNL REGIONAL QUALIFIERS</h4>
+      <p class="b2-fact wnl-fact">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="12" /></svg>
+        <span class="b2-fact-text">October 26, 2024</span>
+      </p>
+    </div>
+    {photo.src && <img class="wnl-photo" src={photo.src} alt="" width={photo.width} height={photo.height} />}
+  </div>
+</section>
+<section class="b2-block">
+  <div class="b2-wrap wnl-form">
+    <p>Early bird pricing for these competitions is $55, and increases to $65 two weeks before the competitions.</p>
+    <p><br /></p>
+    <p>Registration is easy and <em>happens in two steps</em>:</p>
+    <ol>
+      <li>Fill out your information using the form below then,</li>
+      <li>Pay your registration fee using the pay link on the next screen</li>
+    </ol>
+    <p class="wnl-wait">Don't wait to register - The <em>early bird price</em> for <strong>the October 26th competition</strong> will go up after October 12th!</p>
+    <h2 class="b2-literata">10-26-2024 WNL Competition Registration Form</h2>
+    <LeadForm event={event} />
+  </div>
+</section>

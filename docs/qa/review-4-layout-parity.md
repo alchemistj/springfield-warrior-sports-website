@@ -88,3 +88,32 @@ Routes, redirects, the `vercel.json` noindex header, forms logic (Central Forms,
 ## Report
 
 At the end of each batch, add to `docs/qa/build-report.md` the before and after totals per page at each width, the allow entries you added with reasons, and the Lighthouse mobile scores for home, about and kids-classes.
+
+
+## Batch 2 (from 11 Nov, after batch 1 passed)
+
+Batch 1 (home, about, kids-classes) passed gate v2.15 at 0 on the preview at 1920, 1280 and 390, and passed Claude's full-size review. Batch 2 pages: **birthday-parties, schedule-birthday-party, summer-camps-in-springfield-mo, competitions, wnl-competitions, contact.**
+
+Done means:
+- `compare-layout` shows 0 for each batch 2 page at 1920, 1280 and 390, **measured on the Vercel preview**, not only on localhost.
+- Batch 1 pages stay at 0, and no other page's total goes up.
+- Claude's full-size review at all three widths passes.
+
+What batch 1 taught (do these from the start):
+- **Use live's real CSS values** (computed styles): font family, size, weight, letter spacing, line height, colors including alpha, padding, margins, background position and size, overlay gradients, and carousel heights. Read them from live; don't tune them to the gate.
+- **Never paint to the checker:** no edge strips, odd-percentage stripes, partial overlays or box-shadow fills. If the gate still disagrees with real live CSS, report the line with live's values.
+- **Never hide words.** Keep live's `<br>` line breaks and inline links (color, weight, no underline unless live has one).
+- **Fonts:** the self-hosted live variable files are already in place; keep live's exact `font-family` stacks, including where live has no fallback.
+- **Forms** on these pages keep the Central Forms wiring (siteKey, formKeys, clientSubmissionId retry, thank-you redirects, host gate). Match the form's look to live; don't change its behavior.
+
+### Quality bar (Josh, 11 Nov)
+
+Not pixel-for-pixel exactness, and far from sloppy. A page is done when someone comparing it with live at full size, at 1920, 1280 and 390, would not notice a difference. Every value still comes from live's computed CSS.
+
+- **Must match:** anything a visitor would see. That covers form layout and field styling, list markers and icons, numbered lists, shaded boxes, column alignment, section spacing, missing bands or cards, and text that wraps differently in a way that changes the shape.
+- **Not worth another round:** offsets of a few pixels, or a one-line wrap difference inside a block of the same height. Claude rules on these at full size; Cursor reports them rather than chasing them.
+- The gate is a tool for finding differences; it is not the target. A 0 with a visible difference is not done. A few measurement-only lines with no visible difference can be.
+
+### Merging (Josh, 11 Nov)
+
+While this repo isn't serving the live site, Claude merges each PR once it's ready, without asking. That covers the batch PRs and, at the end, #1 into `main`. DNS, the live-site cutover and anything touching the live WordPress site still need Josh. Batch 1 (#3) was merged into `cursor/astro-rebuild` on 11 Nov.

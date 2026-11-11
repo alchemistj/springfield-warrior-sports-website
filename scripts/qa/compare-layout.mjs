@@ -333,6 +333,28 @@ for (const width of readdirSync(liveDir).sort((a, b) => Number(b) - Number(a))) 
         .filter((i) => i.covered && ["heading", "text", "button"].includes(i.kind) && !pairedBuild.has(i))
         .forEach((i) => issues.push(`covered by another element (build only): "${(i.text || "").slice(0, 50)}"`));
       bt.extra.forEach((i) => issues.push(`button not on live: "${i.text}"`));
+      // v2.16: form fields, in order: same count and type, size, background, border, placeholder.
+      const lf = live.items.filter((i) => i.kind === "field"), bf = build.items.filter((i) => i.kind === "field");
+      if (lf.length !== bf.length) issues.push(`form fields: ${bf.length} in build, live ${lf.length}`);
+      for (let i = 0; i < Math.min(lf.length, bf.length); i++) {
+        const l = lf[i], b = bf[i], tag = `field ${i + 1} (${l.type}${l.placeholder ? ` "${l.placeholder.slice(0, 20)}"` : ""})`;
+        if (l.type !== b.type) issues.push(`${tag}: type ${b.type}, live ${l.type}`);
+        if (widthOff(l.w, b.w)) issues.push(`${tag}: width ${b.w}px, live ${l.w}px`);
+        if (Math.abs(l.h - b.h) > 4) issues.push(`${tag}: height ${b.h}px, live ${l.h}px`);
+        if (Math.abs(l.x - b.x) > (CUR_VW <= 480 ? 4 : TOL.x)) issues.push(`${tag}: left edge ${b.x}px, live ${l.x}px`);
+        if (colorDiff(l.bg, b.bg) > TOL.color) issues.push(`${tag}: background ${b.bg}, live ${l.bg}`);
+        if (l.border !== b.border) issues.push(`${tag}: border ${b.border}, live ${l.border}`);
+        if (l.placeholder !== b.placeholder) issues.push(`${tag}: placeholder "${b.placeholder}", live "${l.placeholder}"`);
+        if (l.size && b.size && l.size !== b.size) issues.push(`${tag}: font size ${b.size}px, live ${l.size}px`);
+      }
+      // v2.16: shaded boxes (table cells, cards), in order by text: color and size.
+      const lb2 = live.items.filter((i) => i.kind === "box" && i.region === "main"), bb2 = build.items.filter((i) => i.kind === "box" && i.region === "main");
+      const bx = matchSeq(lb2, bb2, (i) => norm(i.text).slice(0, 30) + "|" + parseColor(i.bg).map((v) => Math.round(v / 16)).join(","));
+      bx.missing.forEach((i) => issues.push(`shaded box missing: rgb(${parseColor(i.bg).join(", ")}) around "${(i.text || "").slice(0, 30)}"`));
+      bx.pairs.forEach(([l, b]) => {
+        if (widthOff(l.w, b.w)) issues.push(`shaded box "${(l.text || "").slice(0, 30)}": width ${b.w}px, live ${l.w}px`);
+        if (Math.abs(l.h - b.h) > Math.max(8, l.h * 0.15)) issues.push(`shaded box "${(l.text || "").slice(0, 30)}": height ${b.h}px, live ${l.h}px`);
+      });
       // Icons (inline SVG, 8-72px): same count, in order, same color and size.
       const li = by(live.items, "icon"), bi = by(build.items, "icon");
       if (li.length !== bi.length) issues.push(`icons: ${bi.length} in build, ${li.length} on live`);

@@ -27,7 +27,7 @@
      "u": false
     }
    ],
-   "lines": 2,
+   "lines": 1,
    "region": "header",
    "x": 48,
    "y": 11,
@@ -55,7 +55,7 @@
      "u": false
     }
    ],
-   "lines": 2,
+   "lines": 1,
    "region": "header",
    "x": 139,
    "y": 11,
@@ -83,7 +83,7 @@
      "u": false
     }
    ],
-   "lines": 2,
+   "lines": 1,
    "region": "header",
    "x": 209,
    "y": 11,
@@ -317,6 +317,76 @@
    "h": 19
   },
   {
+   "kind": "field",
+   "type": "text",
+   "placeholder": "First Name",
+   "bg": "rgb(248, 248, 248)",
+   "border": "0px none rgba(0, 0, 0, 0.75)",
+   "radius": "3px",
+   "size": 14,
+   "region": "main",
+   "x": 46,
+   "y": 1148,
+   "w": 298,
+   "h": 44
+  },
+  {
+   "kind": "field",
+   "type": "text",
+   "placeholder": "Last Name",
+   "bg": "rgb(248, 248, 248)",
+   "border": "0px none rgba(0, 0, 0, 0.75)",
+   "radius": "3px",
+   "size": 14,
+   "region": "main",
+   "x": 46,
+   "y": 1202,
+   "w": 298,
+   "h": 44
+  },
+  {
+   "kind": "field",
+   "type": "email",
+   "placeholder": "Email",
+   "bg": "rgb(248, 248, 248)",
+   "border": "0px none rgba(0, 0, 0, 0.75)",
+   "radius": "3px",
+   "size": 14,
+   "region": "main",
+   "x": 46,
+   "y": 1256,
+   "w": 298,
+   "h": 44
+  },
+  {
+   "kind": "field",
+   "type": "text",
+   "placeholder": "Subject",
+   "bg": "rgb(248, 248, 248)",
+   "border": "0px none rgba(0, 0, 0, 0.75)",
+   "radius": "3px",
+   "size": 14,
+   "region": "main",
+   "x": 46,
+   "y": 1310,
+   "w": 298,
+   "h": 44
+  },
+  {
+   "kind": "field",
+   "type": "textarea",
+   "placeholder": "Message",
+   "bg": "rgb(248, 248, 248)",
+   "border": "0px none rgba(0, 0, 0, 0.75)",
+   "radius": "3px",
+   "size": 14,
+   "region": "main",
+   "x": 46,
+   "y": 1364,
+   "w": 298,
+   "h": 91
+  },
+  {
    "kind": "image",
    "src": "https://www.springfieldwarriorsports.com/wp-content/uploads/2025/12/IMG_2339-768x576.jpeg.webp",
    "region": "main",
@@ -436,7 +506,7 @@
      "u": false
     }
    ],
-   "lines": 10,
+   "lines": 1,
    "region": "main",
    "x": 59,
    "y": 3148,

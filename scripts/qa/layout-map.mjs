@@ -91,7 +91,15 @@ function collect() {
   const lines = (el) => {
     const r = document.createRange();
     r.selectNodeContents(el);
-    return new Set([...r.getClientRects()].filter((x) => x.width > 1 && x.height > 1).map((x) => Math.round(x.top))).size;
+    // v2.16: group rects into lines by vertical overlap, so a <br> or a nested span with another
+    // font size on the same line doesn't count as an extra line.
+    const rects = [...r.getClientRects()].filter((x) => x.width > 1 && x.height > 1).sort((a, b) => a.top - b.top);
+    let n = 0, bottom = -Infinity;
+    for (const x of rects) {
+      const mid = x.top + x.height / 2;
+      if (mid > bottom) { n++; bottom = x.bottom; } else bottom = Math.max(bottom, x.bottom);
+    }
+    return n;
   };
   // Background a visitor sees behind an element: the nearest ancestor with a solid color or an image.
   const behind = (el) => {
@@ -104,17 +112,79 @@ function collect() {
     }
     return "rgb(255, 255, 255)";
   };
+  const rgbaOf = (c) => { const m = c && c.match(/rgba?\(([^)]+)\)/); if (!m) return null; const v = m[1].split(",").map(Number); return [v[0], v[1], v[2], v.length > 3 ? v[3] : 1]; };
+  // Solid fill of an element: its background color, or a one-colour linear-gradient (Thrive paints bands that way).
+  const solidOf = (cs) => {
+    const c = rgbaOf(cs.backgroundColor);
+    if (c && c[3] >= 0.05) return c;
+    const g = (cs.backgroundImage || "").match(/^linear-gradient\((rgba?\([^)]*\)), (rgba?\([^)]*\))\)$/);
+    return g && g[1] === g[2] ? rgbaOf(g[1]) : null;
+  };
+  const paintedUnder = (el) => {
+    const r0 = el.getBoundingClientRect();
+    const y = r0.top + window.scrollY + Math.min(10, r0.height / 2);
+    window.scrollTo(0, Math.max(0, y - vh / 2));
+    const r = el.getBoundingClientRect();
+    const stack = document.elementsFromPoint(r.left + Math.min(10, r.width / 2), r.top + Math.min(10, r.height / 2));
+    const at = stack.indexOf(el);
+    for (const n of stack.slice(at + 1)) {
+      if (el.contains(n)) continue;
+      const cs = getComputedStyle(n);
+      if (cs.backgroundImage && cs.backgroundImage !== "none" && /url\(/.test(cs.backgroundImage)) return "image";
+      const c = solidOf(cs);
+      if (c && c[3] > 0.5) return `rgb(${c.slice(0, 3).join(", ")})`;
+    }
+    return "rgb(255, 255, 255)";
+  };
+  const boxShade = (el) => {
+    const cs = getComputedStyle(el);
+    const c = solidOf(cs);
+    if (!c || c[3] < 0.05) return null;
+    // What is painted under the box (the grey band can be a sibling layer, not a parent).
+    const under = paintedUnder(el);
+    const u = under === "image" ? null : rgbaOf(under);
+    if (c[3] < 1 && !u) return null;
+    const out = u ? [0, 1, 2].map((k) => Math.round(c[k] * c[3] + u[k] * (1 - c[3]))) : c.slice(0, 3);
+    if (u && Math.max(...[0, 1, 2].map((k) => Math.abs(out[k] - u[k]))) < 6) return null;
+    return `rgb(${out.join(", ")})`;
+  };
   const region = (el) => (el.closest("header, [data-region=header], #tve_header_wrapper, .thrv_header") ? "header" : el.closest("footer, [data-region=footer], .thrv_footer, #tve_footer_wrapper") ? "footer" : "main");
   const INLINE = new Set(["inline", "contents"]);
   const items = [];
   const els = [];
   for (const el of document.body.querySelectorAll("*")) {
-    if (skipped(el)) continue;
     const tag = el.tagName.toLowerCase();
+    const isField = ["input", "select", "textarea"].includes(tag);
+    // v2.17: form contents stay out of the text checks, but the fields themselves are measured.
+    if (skipped(el) && !(isField && !el.closest("[data-skip-map], .grecaptcha-badge"))) continue;
     let item = null;
     if (/^h[1-6]$/.test(tag)) {
       const t = text(el);
       if (t) item = { kind: "heading", tag, text: t, ...font(el) };
+    } else if (["input", "select", "textarea"].includes(tag) && !["hidden", "submit", "button"].includes((el.type || "").toLowerCase())) {
+      // v2.16: form fields — type, size, background, border, radius, placeholder, font size.
+      const cs = getComputedStyle(el);
+      item = {
+        kind: "field",
+        type: tag === "input" ? (el.type || "text").toLowerCase() : tag,
+        placeholder: el.getAttribute("placeholder") || "",
+        bg: cs.backgroundColor,
+        border: `${cs.borderTopWidth} ${cs.borderTopStyle} ${cs.borderTopColor}`,
+        radius: cs.borderTopLeftRadius,
+        size: Math.round(parseFloat(cs.fontSize)),
+      };
+    } else if (["td", "th", "li", "div", "p", "article", "aside", "section", "figure"].includes(tag)) {
+      // v2.16: shaded boxes smaller than a band (table cells, cards): background color and size.
+      // v2.17: the shade a visitor sees, including a flat translucent gradient (live camp dates
+      // use linear-gradient(rgba(255,255,255,.42) ...) over the grey band), blended over what is
+      // behind the box. Kept only when it differs from the background around it.
+      const r = el.getBoundingClientRect();
+      const shade = boxShade(el);
+      if (shade && r.width >= 60 && r.width < vw * 0.9 && r.height >= 20 && r.height <= 400 && (el.innerText || "").trim() && shown(el))
+        items.push({ kind: "box", bg: shade, text: (el.innerText || "").trim().slice(0, 40), region: region(el), ...box(el) }), els.push(el);
+    }
+    if (item) {
+      // (fall through to the shared push below)
     } else if (tag === "img") {
       const src = el.currentSrc || el.src || "";
       const r = el.getBoundingClientRect();

@@ -1,0 +1,91 @@
+---
+import bookBg from "../../assets/media/2023-03-book-now-bg.jpg";
+import memoriesBg from "../../assets/media/2023-03-amazing-memories.webp";
+import { site } from "../../data/site";
+import FactIcon from "./FactIcon.astro";
+import { media } from "./media";
+
+const invitation = media("media/2023-03-downloadable-party-invitation.webp");
+const pizza = media("media/2023-03-pizza-birthday-party.webp");
+const laser = media("media/2023-03-laser-tag-party.webp");
+const book = typeof bookBg === "string" ? bookBg : bookBg.src;
+const memories = typeof memoriesBg === "string" ? memoriesBg : memoriesBg.src;
+---
+
+<section class="b2-block">
+  <div class="b2-wrap bd-intro">
+    <h1>KIDS WILL HAVE A BLAST, AND YOU CAN RELAX</h1>
+    <p>Springfield Warrior Sports is the ideal venue for a birthday party in Springfield, MO. With a variety of party options facilitated by our crew and a full hour of gym time, adults can relax knowing everything is taken care of while the kids have fun! Parties here are extraordinary - not only do we promise that kids will love it, but we also make sure the birthday boy or girl has something special too; the week after their party, the birthday kid gets to come to a ninja class for free and their very own Ninja t-shirt!</p>
+    <p class="bd-navy">This means more than just one day of fun - there can be lasting memories of their best birthday, making this party extra memorable.</p>
+  </div>
+</section>
+
+<section class="b2-block b2-grey">
+  <div class="b2-wrap">
+    <h2 class="bd-stress-title">WARRIOR SPORTS TAKES THE STRESS OUT OF YOUR BIRTHDAY PARTY PLANNING</h2>
+    <div class="bd-split">
+      {invitation.src && <img src={invitation.src} alt="" width={invitation.width} height={invitation.height} />}
+      <div>
+        <p>At Springfield Warrior Sports, we want to take the stress out of your party planning - schedule your birthday party with us, and let us do the rest — including cleanup! <br /><br />Each party lasts for a total of 1.5 hours. Included in the party is one hour of gym time, featuring open play and an obstacle course set up and facilitated by our Crew. Approximately 30 minutes can be used for cake, presents, and pizza! (optional). <br /><br />The birthday child will receive a Springfield Warrior Sports T-shirt, and the week after their party, they get to try a ninja class for free.</p>
+        <p class="bd-note">Note: free customized party invitations are available upon request.</p>
+        <p class="b2-fact">
+          <FactIcon name="arrow" />
+          <span class="b2-fact-text"><strong class="bd-lab">Cost: </strong><span class="bd-rest">$179 for the first 11 kids and $10 for each additional participant (plus $40 if you prefer to rent the gym for a private party). The parents of the birthday child are free if they would like to try the obstacles as well! A $40 deposit is required at the time of booking and will be taken off the full amount on the day of the party.</span></span>
+        </p>
+      </div>
+    </div>
+    <p class="b2-fact b2-fact-wide">
+      <FactIcon name="arrow" />
+      <span class="b2-fact-text bd-rest">All other guests (siblings, other parents, etc.) who wish to play in the gym can simply pay the discounted group rate for open gym during the party time.</span>
+    </p>
+    <p class="b2-fact b2-fact-wide">
+      <FactIcon name="arrow" />
+      <span class="b2-fact-text"><strong class="bd-star">*</strong><span class="bd-rest"> All participants will need to sign a waiver before playing in the gym. This can be done by a parent in the gym upon arrival, or it may be filled out online prior to the party.</span></span>
+    </p>
+    <p class="b2-fact b2-fact-wide">
+      <FactIcon name="arrow" />
+      <span class="b2-fact-text"><strong class="bd-star">**</strong><span class="bd-rest"> To reserve your birthday party time slot, a $40 deposit is required at booking and covers the first 11 kids. The rest of the $179, additional participants or optional add-ons will be settled on the day of the party.</span></span>
+    </p>
+  </div>
+</section>
+
+<section class="bd-book" style={`background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url('${book}')`}>
+  <div class="b2-wrap">
+    <h2>BOOK NOW!</h2>
+    <h4>You can begin the birthday party scheduling process on our website by <a href="/schedule-birthday-party/">clicking here</a>, or call us today at <a href={site.phone.tel}>{site.phone.display}</a> to reserve your birthday party spot at Warrior Sports!</h4>
+    <h4 class="bd-policy"><strong>Cancellation &amp; Rescheduling Policy:</strong><br /><span class="bd-policy-rest">To help us staff and prepare properly, any cancellations or reschedules made starting the weekend immediately before your party date and at any point thereafter will incur a $60 fee.</span></h4>
+  </div>
+</section>
+
+<section class="b2-block">
+  <div class="b2-wrap">
+    <h2 class="bd-more">MORE BIRTHDAY PARTY OPTIONS AT SPRINGFIELD WARRIOR SPORTS</h2>
+    <p class="bd-center">Want to feed the birthday party or have birthday battles instead of an obstacle course race?</p>
+    <p class="bd-navy bd-center">We can help you with that!</p>
+    <div class="bd-split bd-pizza">
+      {pizza.src && <img src={pizza.src} alt="" width={pizza.width} height={pizza.height} />}
+      <div>
+        <h3>PIZZA BIRTHDAY PARTY WITH NO CLEAN UP!</h3>
+        <p>Our birthday party pizza package includes plates, napkins, utensils, and pizza from Godfather's Pizza. Two pizzas will be ordered for a party of 10 kids, but we will adjust and order more if there are more kids attending. The pizza party add-on is $50, and extra pizzas can be requested for family members or adults for $12 each.</p>
+      </div>
+    </div>
+    <div class="bd-battles">
+      {laser.src && <img class="bd-laser" src={laser.src} alt="" width={laser.width} height={laser.height} />}
+      <div>
+        <h3>HAVE BATTLES IN OUR OBSTACLE COURSE GYM</h3>
+        <h4>NERF BATTLE PARTIES</h4>
+        <p>Our crew will set up and facilitate a <a href="/nerf-wars/">Nerf Battle</a> for your party rather than an obstacle course. Nerf parties must be scheduled during a private party time slot. Nerf Battle Parties are an additional $70, and the price includes a private party fee of ($40) and a staff/equipment fee of ($30).</p>
+        <h4>LASER TAG PARTIES</h4>
+        <p>The Springfield Warrior Sports team will set your birthday party up for a super fun laser tag battle with our high-end laser tag guns. <a href="/laser-tag/">Laser tag parties</a> must be scheduled during a private party time slot. Laser Tag Parties are an additional $90, and the investment includes a private party fee of ($40) and a staff/equipment fee of ($50).</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bd-mem" style={`background-image: url('${memories}'), linear-gradient(#e5eaed, #e5eaed)`}>
+  <div class="b2-wrap bd-mem-copy">
+    <h2>CREATE AMAZING MEMORIES</h2>
+    <p>Create unforgettable memories with your kids and their friends in an uber-kid-friendly atmosphere. Your child will have the time of their life playing in our obstacle course gym while you sit back and relax without having to stress out about setting up or cleaning up afterward. <br /><br />Plus, our cooler of Gatorade keeps everyone well-hydrated during all that physical activity!<br /><br />Shoot us a <a href="/schedule-birthday-party/">message here with your desired birthday party dates</a>, or call <a href={site.phone.tel}>{site.phone.display}</a> to book your birthday experience at Springfield Warrior Sports!</p>
+    <img class="bd-mem-photo" src={memories} alt="" width="350" height="260" />
+  </div>
+</section>

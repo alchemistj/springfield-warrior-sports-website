@@ -27,7 +27,7 @@
      "u": false
     }
    ],
-   "lines": 2,
+   "lines": 1,
    "region": "header",
    "x": 1202,
    "y": 6,
@@ -55,7 +55,7 @@
      "u": false
     }
    ],
-   "lines": 2,
+   "lines": 1,
    "region": "header",
    "x": 1297,
    "y": 6,
@@ -83,7 +83,7 @@
      "u": false
     }
    ],
-   "lines": 2,
+   "lines": 1,
    "region": "header",
    "x": 1372,
    "y": 6,
@@ -120,7 +120,7 @@
      "u": false
     }
    ],
-   "lines": 2,
+   "lines": 1,
    "region": "header",
    "x": 688,
    "y": 73,
@@ -148,7 +148,7 @@
      "u": false
     }
    ],
-   "lines": 2,
+   "lines": 1,
    "region": "header",
    "x": 820,
    "y": 73,
@@ -176,7 +176,7 @@
      "u": false
     }
    ],
-   "lines": 2,
+   "lines": 1,
    "region": "header",
    "x": 930,
    "y": 73,
@@ -204,7 +204,7 @@
      "u": false
     }
    ],
-   "lines": 2,
+   "lines": 1,
    "region": "header",
    "x": 1058,
    "y": 73,
@@ -232,7 +232,7 @@
      "u": false
     }
    ],
-   "lines": 2,
+   "lines": 1,
    "region": "header",
    "x": 1213,
    "y": 73,
@@ -260,7 +260,7 @@
      "u": false
     }
    ],
-   "lines": 2,
+   "lines": 1,
    "region": "header",
    "x": 1383,
    "y": 73,
@@ -476,6 +476,76 @@
    "h": 19
   },
   {
+   "kind": "field",
+   "type": "text",
+   "placeholder": "First Name",
+   "bg": "rgb(248, 248, 248)",
+   "border": "0px none rgba(0, 0, 0, 0.75)",
+   "radius": "3px",
+   "size": 14,
+   "region": "main",
+   "x": 406,
+   "y": 1223,
+   "w": 469,
+   "h": 52
+  },
+  {
+   "kind": "field",
+   "type": "text",
+   "placeholder": "Last Name",
+   "bg": "rgb(248, 248, 248)",
+   "border": "0px none rgba(0, 0, 0, 0.75)",
+   "radius": "3px",
+   "size": 14,
+   "region": "main",
+   "x": 406,
+   "y": 1285,
+   "w": 469,
+   "h": 52
+  },
+  {
+   "kind": "field",
+   "type": "email",
+   "placeholder": "Email",
+   "bg": "rgb(248, 248, 248)",
+   "border": "0px none rgba(0, 0, 0, 0.75)",
+   "radius": "3px",
+   "size": 14,
+   "region": "main",
+   "x": 406,
+   "y": 1347,
+   "w": 469,
+   "h": 52
+  },
+  {
+   "kind": "field",
+   "type": "text",
+   "placeholder": "Subject",
+   "bg": "rgb(248, 248, 248)",
+   "border": "0px none rgba(0, 0, 0, 0.75)",
+   "radius": "3px",
+   "size": 14,
+   "region": "main",
+   "x": 406,
+   "y": 1409,
+   "w": 469,
+   "h": 52
+  },
+  {
+   "kind": "field",
+   "type": "textarea",
+   "placeholder": "Message",
+   "bg": "rgb(248, 248, 248)",
+   "border": "0px none rgba(0, 0, 0, 0.75)",
+   "radius": "3px",
+   "size": 14,
+   "region": "main",
+   "x": 406,
+   "y": 1471,
+   "w": 469,
+   "h": 99
+  },
+  {
    "kind": "image",
    "src": "https://www.springfieldwarriorsports.com/wp-content/uploads/2025/12/IMG_2339-768x576.jpeg.webp",
    "region": "main",
@@ -587,7 +657,7 @@
      "u": false
     }
    ],
-   "lines": 7,
+   "lines": 1,
    "region": "main",
    "x": 426,
    "y": 2618,
@@ -689,7 +759,7 @@
      "u": false
     }
    ],
-   "lines": 9,
+   "lines": 1,
    "region": "main",
    "x": 984,
    "y": 2618,
