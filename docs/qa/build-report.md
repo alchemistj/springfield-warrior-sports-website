@@ -744,6 +744,38 @@ Lines the gate still reports that disagree with live's CSS or with a full-size l
 - IMG_2344 brightness 96 against 138 (pixel difference 45). IMG_2347 brightness 76 against 124 (pixel difference 51). IMG_2343 brightness 107 against 148 (pixel difference 43). Pricing-and-schedule brightness 65 against 126 at 1920 (pixel difference 64). These are the live photos re-encoded. Pulling the fitness cards up to the live image box covers the paragraph above them.
 - The homeschool gap from the first Junior Warrior sentence to "Availability" is 241px against 17px because live records that copy as one 308px text node. The page shows the three paragraphs, the plain availability line, and the check list.
 
+## Layout parity batch 3, round 2, gate v2.18
+
+Model: Grok 4.7. Measured locally against `docs/qa/layout-map/live`. The live map, the scripts, the tolerances, and `layout-allow.json` were not edited. No allow entries were added. The before column is the round 1 count on `d8386fd`.
+
+| Page | Before 1920 / 1280 / 390 | After 1920 / 1280 / 390 |
+|---|---|---|
+| fitness-classes | 14 / 15 / 19 | 10 / 11 / 14 |
+| personal-training | 16 / 17 / 36 | 10 / 12 / 35 |
+| parkour | 11 / 11 / 10 | 5 / 6 / 12 |
+| homeschool-sports-and-classes-springfield-mo | 7 / 5 / 19 | 7 / 5 / 19 |
+| laser-tag | 0 / 0 / 15 | 0 / 0 / 15 |
+| nerf-wars | 12 / 10 / 13 | 12 / 10 / 13 |
+
+Total differences: 230 before, 196 after. Birthday-parties is still 2 / 1 / 13, and contact is still 0 / 0 / 2.
+
+The personal-training form sits in a white card. Live’s `#gform_wrapper_15` is `background #fff`, padding 50px, and padding 30px under 767px. Border-radius is 0 and there is no box-shadow. Labels are `#000`, Epilogue, 18px, left aligned. Fields stay 52px with the `rgb(104, 110, 119)` border, the phone placeholder `(999) 999-9999`, and `data-form-key="personal-training"`.
+
+The fitness price box is 850px wide with `border: 15px solid #285276` (880px including the frame) and the live check icon, 26px, `rgb(219, 58, 52)`. OCR photos are 413px tall at 1024px and up, 251px below that, `object-fit: cover`. No brightness filter was added. The photos are the same files as round 1.
+
+The parkour flags photo is 563×750 on desktop (`margin-top: -32px`, `object-fit: cover`) and 453px tall on smaller screens. A 28px gap sits between “Come try out parkour…” and “Plus, your first class…”. From 1024px up, the benefit rows are 100px apart and the photos are 541px and 522px tall.
+
+Nerf’s book-now phone line and the birthday sentence are two centered lines. The phone stays underlined. Homeschool’s phone is a tel link with no underline and weight 400. “class for only $ 5.” stays underlined, weight 600.
+
+Lines left that disagree with a full-size look, with live’s values:
+
+- “- Client” is still the matcher hitting “clients”. The attribution is Muli 700, `rgb(219, 58, 52)`.
+- “$20 Drop-In” is left-aligned. Live’s computed align is center on a 126px box at the same left edge as the other prices.
+- The fitness price frame is sampled as the background beside “$20 Drop-In” (`rgb(2, 9, 37)` against `rgb(42, 32, 31)` at 390). The frame is live’s 15px `#285276`.
+- OCR heading spacing is 639px against 523px. The photos are 413px tall, and the paragraph above them stays visible (11px gap).
+- Photo brightness is unchanged: IMG_2344 96 against 138, IMG_2347 76 against 124, IMG_2343 106 against 148. Same files, no overlay added.
+- Parkour at 390: the gap from “Plus, your first class…” to “PARKOUR BENEFITS” is 139px against 255px, and “Parkour offers an enjoyable…” is 8 lines against 7. Desktop row spacing matches the live 100px image gap.
+
 ## Open questions
 
 - Where GF18 should live, if it should be a page at all.

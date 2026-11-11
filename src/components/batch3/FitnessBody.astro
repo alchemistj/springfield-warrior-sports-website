@@ -1,5 +1,4 @@
 ---
-import FactIcon from "../batch2/FactIcon.astro";
 import { media } from "../batch2/media";
 import pricingBg from "../../assets/media/2023-03-Pricing-and-Schedule.webp";
 
@@ -36,7 +35,7 @@ const prices = [
     <div class="fit-card">
       <ul class="b3-facts fit-grid">
         {prices.map(([price, note]) => (
-          <li><FactIcon name="arrow" /><span>{price}{note && <span class="navy">{note}</span>}</span></li>
+          <li><svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z" /></svg><span>{price}{note && <span class="navy">{note}</span>}</span></li>
         ))}
       </ul>
     </div>
