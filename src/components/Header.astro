@@ -127,7 +127,7 @@ const linkProps = (item: { path: string; external?: boolean }) =>
     font-size: 14px;
     font-weight: 600;
     line-height: 28px;
-    letter-spacing: 0;
+    letter-spacing: 1px;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
@@ -135,6 +135,9 @@ const linkProps = (item: { path: string; external?: boolean }) =>
   .util-links a:nth-child(1) { width: 70px; margin-right: 20px; }
   .util-links a:nth-child(2) { width: 51px; margin-right: 20px; }
   .util-links a:nth-child(3) { width: 133px; }
+  @media (max-width: 799px) {
+    .util-links { transform: translateX(5px); }
+  }
   .main-inner {
     display: flex;
     align-items: center;

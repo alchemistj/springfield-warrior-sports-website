@@ -117,6 +117,10 @@
   --callbar-h: 72px;
   --gutter: 20px;
 }
+@media (max-width: 799px) {
+  .page-about,
+  .page-kids-classes { --gutter: 26px; }
+}
 
 /* Mobile hero heights from each page's rendered.html (inner min-height plus section padding). */
 .page-home { --hero-h: 466px; }
@@ -223,16 +227,27 @@ a {
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.22) 0 18px, rgba(0, 0, 0, 0.5) 48px);
   }
   .page-home .hero-scrim {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.68) 0% 36%, rgba(0, 0, 0, 0.94) 44% 48%, rgba(0, 0, 0, 0.87) 54% 72%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.45) 0% 40%, rgba(0, 0, 0, 0.55) 50% 70%);
+  }
+  .page-home .hero-scrim::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 780px;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.76) 0% 33%, rgba(0, 0, 0, 0.8) 37% 43%, rgba(0, 0, 0, 0.94) 45% 48%, rgba(0, 0, 0, 0.87) 54% 72%);
   }
   .page-home .hero-scrim::after {
     content: "";
     position: absolute;
     left: 0;
-    top: 28%;
+    top: 0;
     width: 24px;
-    height: 16%;
-    background: rgba(36, 18, 0, 0.4);
+    height: 100%;
+    background:
+      linear-gradient(rgba(36, 18, 0, 0.4), rgba(36, 18, 0, 0.4)) 0 28% / 100% 16% no-repeat,
+      linear-gradient(rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.07)) 0 58% / 100% 8% no-repeat;
   }
 }
 .page-kids-classes .hero-copy.align-center .hero-scrim {
@@ -244,7 +259,7 @@ a {
     position: absolute;
     left: 40px;
     right: 0;
-    top: 42%;
+    top: 44%;
     height: 28%;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.62) 0 32%, rgba(55, 60, 64, 0.38) 58% 100%);
   }
@@ -255,7 +270,7 @@ a {
     top: 30%;
     width: 20px;
     height: 40%;
-    background: linear-gradient(180deg, rgba(0, 12, 28, 0.6) 0 22%, rgba(48, 48, 48, 0.4) 40% 68%, rgba(36, 36, 36, 0.32) 82% 100%);
+    background: linear-gradient(180deg, rgba(0, 4, 12, 0.78) 0 26%, rgba(20, 20, 20, 0.5) 38% 46%, rgba(70, 70, 70, 0.16) 60% 100%);
   }
 }
 @media (max-width: 799px) {
@@ -401,7 +416,7 @@ a {
     font-size: 45px;
   }
   .page-home .hero-copy h1 { line-height: 91px; }
-  .page-home .hero-kicker { line-height: 63px; }
+  .page-home .hero-kicker { line-height: 63px; letter-spacing: 1px; }
   .page-kids-classes .hero-kicker {
     margin-top: 9px;
     line-height: 1;
@@ -416,7 +431,7 @@ a {
     max-width: 608px;
     font-size: 22px;
     line-height: 35px;
-    letter-spacing: 1px;
+    letter-spacing: 0;
   }
 }
 @media (max-width: 799px) {
@@ -431,16 +446,21 @@ a {
     letter-spacing: 7px;
   }
   .page-home .hero-sub {
-    width: 310px;
-    max-width: 310px;
-    font-size: 20px;
+    width: 348px;
+    max-width: 348px;
+    font-size: 18px;
     line-height: 32px;
-    letter-spacing: 0.6px;
+    letter-spacing: 0;
   }
   .page-kids-classes .hero-kicker {
     width: 315px;
     max-width: 315px;
     line-height: 1;
+  }
+  .page-kids-classes .hero-copy h1 {
+    width: 315px;
+    max-width: 315px;
+    margin-inline: auto;
   }
 }
 .page-kids-classes .hero-kicker { letter-spacing: 1px; }
@@ -519,6 +539,9 @@ a {
   align-items: center;
   gap: 14px;
   padding: 16px 0;
+}
+@media (max-width: 799px) {
+  .bullet-stack { transform: translateX(6px); }
 }
 .bullet-stack p {
   display: flex;
@@ -874,7 +897,7 @@ a {
   font-family: var(--font-heading);
   font-size: 24px;
   font-weight: 800;
-  letter-spacing: 0.02em;
+  letter-spacing: 0;
   line-height: 1.15;
   text-transform: uppercase;
 }

@@ -190,6 +190,9 @@ const logoSrc = typeof logo === "string" ? logo : logo?.src;
     text-align: center;
   }
   .copy-wide { display: none; }
+  @media (max-width: 799px) {
+    .foot-links { padding-left: 0; }
+  }
   @media (min-width: 800px) {
     .foot {
       grid-template-columns: 354px 353px 301px;

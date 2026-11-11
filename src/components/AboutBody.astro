@@ -25,7 +25,7 @@ const quotes = [
 ];
 ---
 
-<section class="section about-page">
+<section class="section about-page intro-block">
   <div class="wrap">
     <p class="lead">Springfield Warrior Sports was founded with a love for, and desire to serve our community. Community unites us, and allows us to be a part of something greater than ourselves. It provides an opportunity to connect with people and other local businesses, who when we all work together, make this the awesome community so many of us call home. We strive to provide a safe place and outlet - for youth, and adults, who are looking for a fun and different workout and the freedom to MOVE as they set and achieve their goals on their quest for a healthy lifestyle. We also love going out into the community to serve outside of our walls, through adopt-a-highway, partnering with local events and speaking at school assemblies. We are most certainly, Stronger Together!</p>
   </div>
@@ -53,7 +53,7 @@ const quotes = [
     <div class="wrap">
     <h2 class="red h50 center">COMMUNITY PARTNERSHIPS</h2>
 
-    <div class="row photo-left">
+    <div class="row photo-left brothers">
       <img loading="lazy" decoding="async" src={brothers.src} alt="Big Brothers Big Sisters" width={brothers.width} height={brothers.height} />
       <div class="copy">
         <h2 class="blue h30 w411"><a href="https://bigbro.com/">BIG BROTHERS BIG SISTERS OF THE OZARKS</a></h2>
@@ -126,8 +126,10 @@ const quotes = [
     text-transform: uppercase;
   }
   .persevere h2.thin { line-height: 1.2; }
-  .about-page h3.thin { line-height: 1.4; }
-  .red-link { color: #d6352f; font-weight: 400; text-decoration: underline; text-underline-offset: 2px; }
+  .about-page h3.thin { line-height: 1.4; letter-spacing: 1px; }
+  .intro-block { padding-top: 213px; }
+  .about-page.mist { margin-top: 75px; }
+  .red-link { color: rgb(219, 58, 52); font-weight: 400; text-decoration: none; }
   h1 {
     width: min(920px, 100%);
     margin-left: auto;
@@ -217,9 +219,11 @@ const quotes = [
     .row.text-left { grid-template-columns: 561px 501px; column-gap: 88px; align-items: center; }
     .row.cleanup { margin-bottom: 211px; }
     .about-page.story { margin-top: 939px; }
+    .persevere { margin-top: 68px; }
+    .row.brothers { margin-top: 57px; }
     .wide { width: 1093px; margin-inline: auto; }
     .full { width: 100%; }
-    .murph-copy { letter-spacing: 0.45px; }
+    .murph-copy { letter-spacing: 0; }
     .grid-2 { grid-template-columns: 534px 534px; gap: 25px; width: 1093px; margin-inline: auto; }
     .grid-2 img { width: 534px; height: 455px; }
     .pair { grid-template-columns: 560px 560px; gap: 30px; }
@@ -237,8 +241,15 @@ const quotes = [
     .copy h2.h30 { font-size: 30px; }
     .copy h2.w296 { width: 296px; }
     .lead, .copy p, .full, .wide { width: min(338px, 100%); }
-    .story-lead { letter-spacing: -0.35px; }
-    .murph-copy { letter-spacing: 0.5px; }
+    .story-lead { letter-spacing: 0; font-size: 15.5px; }
+    .murph-copy { letter-spacing: 0; font-size: 16.5px; }
+    .row.photo-left.mist { margin-bottom: 134px; }
+    .row.cleanup { margin-bottom: 133px; }
+    .about-page.story { margin-top: 412px; }
+    .about-page.mist { margin-top: 90px; }
+    .about-page.mist > .wrap { width: min(1150px, calc(100% - 40px)); }
+    .about-page.mist h2.h50 { margin-bottom: 0; }
+    .about-page.mist h3.thin { margin-top: 0; }
     .lead { margin-inline: auto; }
     .wide { margin-inline: auto; }
     .row.text-left { display: flex; flex-direction: column-reverse; }

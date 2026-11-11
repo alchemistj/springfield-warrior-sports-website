@@ -14,7 +14,7 @@ const day = media("media/2023-04-Summer-Camp-banner.webp");
 const trial = "https://checkout.square.site/merchant/MLXTPBS97BGYV/checkout/B2M6XBNLKD4ZKFEUAPK4HWCQ";
 ---
 
-<section class="section kids">
+<section class="section kids intro-block">
   <div class="wrap intro">
     <h2 class="red h50 center w920">KIDS FITNESS CLASSES AT SPRINGFIELD WARRIOR SPORTS</h2>
     <h2 class="thin center w872">ARE YOU LOOKING FOR WAYS TO KEEP YOUR KIDS ENGAGED, ACTIVE AND HEALTHY?</h2>
@@ -31,7 +31,7 @@ const trial = "https://checkout.square.site/merchant/MLXTPBS97BGYV/checkout/B2M6
     <div class="copy">
       <h2 class="red h50 w306">PRE-SCHOOL WARRIORS</h2>
       <h2 class="thin left">(3-6 YEAR-OLDS)</h2>
-      <p>Our preschool class is geared for your 3-6 year olds. This interactive class will include a warm-up, balance and agility work, and a mini course, along with learning to take turns and follow instructions - all in a FUN and safe environment! Bring your little ninjas by to climb up our walls (and wear them out before rest time). See you soon!</p>
+      <p class="pre-copy">Our preschool class is geared for your 3-6 year olds. This interactive class will include a warm-up, balance and agility work, and a mini course, along with learning to take turns and follow instructions - all in a FUN and safe environment! Bring your little ninjas by to climb up our walls (and wear them out before rest time). See you soon!</p>
       <FactLine text="Ages: 3-6 years old" />
       <FactLine text="Cost: $10 per class. $40 monthly." />
       <h2 class="red h20">Preschool Open Gym Times</h2>
@@ -56,7 +56,7 @@ const trial = "https://checkout.square.site/merchant/MLXTPBS97BGYV/checkout/B2M6
       <FactLine text="Intermediate classes: One class per week $85 monthly. Two classes per week $110 monthly. Up to three classes per week, $135 monthly." />
       <FactLine text="Beginner Warrior Membership $70." />
       <p class="btn-left"><a class="btn navy junior" href={trial}>TRY YOUR FIRST JUNIOR WARRIOR CLASS FOR $5</a></p>
-      <h2 class="red h20">CLASS TIMES</h2>
+      <h2 class="red h20 junior-times">CLASS TIMES</h2>
       <FactLine text="Beginner Level and Trial Class Drop Ins" />
       <h3 class="as-text times">Mon-Fri 4-4:30pm or 4:30-5pm Mon, Thur, &amp; Fri 5-5:30pm or 5:30-6pm</h3>
       <FactLine text="Level 3+ Junior Warriors" />
@@ -68,7 +68,7 @@ const trial = "https://checkout.square.site/merchant/MLXTPBS97BGYV/checkout/B2M6
   </div></div>
 </section>
 
-<section class="section kids wash">
+<section class="section kids wash csna-block">
   <div class="wrap"><div class="row img-first">
     <img loading="lazy" decoding="async" src={csna.src} alt="CSNA competitive team" width={csna.width} height={csna.height} />
     <div class="copy">
@@ -76,7 +76,7 @@ const trial = "https://checkout.square.site/merchant/MLXTPBS97BGYV/checkout/B2M6
       <h2 class="thin left">(7-18 YEARS OLD)</h2>
       <p>The Central States Ninja Association is a competitive youth team for Junior Warriors who are ready to take it to the next level and put their skills to the test! Junior Warriors are eligible to apply for the CSNA team upon completing Level 4. The team works with Coach Adam Arnold who holds 90-minute practices 2 days a week. The season runs September - May with competitions scheduled throughout the region hosted by other participating CSNA gyms |MO, KS, NE, AR|.</p>
       <FactLine text="Cost: $145 for two practices a week. Includes an open gym membership." />
-      <h2 class="red h20">PRACTICE TIMES</h2>
+      <h2 class="red h20 csna-times">PRACTICE TIMES</h2>
       <FactLine text="Monday and Thursday: 6-7:30pm" />
     </div>
   </div></div>
@@ -89,7 +89,7 @@ const trial = "https://checkout.square.site/merchant/MLXTPBS97BGYV/checkout/B2M6
       <h2 class="thin left">(7+ YEARS OLD)</h2>
       <p>⚠️ Parkour Classes are currently unavailable.⚠️</p>
       <p>Open Gym is still available for Parkour training.</p>
-      <p>Learn the basics of Parkour |free running| in this group class. Students will gain the ability to move freely with and without obstacles using the abilities of their bodies. This will be accomplished primarily through running, jumping, climbing, and quadrupedal movements. Classes will focus on physical conditioning and Parkour skills and will ultimately blend the two together. Experience the non-competitive mental and physical challenge while building strength, speed, stamina, and balance in a controlled environment.</p>
+      <p class="pk-copy">Learn the basics of Parkour |free running| in this group class. Students will gain the ability to move freely with and without obstacles using the abilities of their bodies. This will be accomplished primarily through running, jumping, climbing, and quadrupedal movements. Classes will focus on physical conditioning and Parkour skills and will ultimately blend the two together. Experience the non-competitive mental and physical challenge while building strength, speed, stamina, and balance in a controlled environment.</p>
       <FactLine text="Cost: $20 class drop in, $10 class drop in for current members" />
       <FactLine text="$35/monthly discounted Parkour membership is available to current members who want to attend one class per week" />
       <FactLine tall text="$60/monthly for Parkour membership, unlimited classes and also includes an Open Gym membership" />
@@ -125,13 +125,13 @@ const trial = "https://checkout.square.site/merchant/MLXTPBS97BGYV/checkout/B2M6
   </div>
 </section>
 
-<section class="section kids mist">
+<section class="section kids mist forget-block">
   <div class="wrap">
     <h2 class="red h50 center forget">AND …. DON’T FORGET ABOUT SUMMER CAMPS, OPEN GYM, AND BIRTHDAY PARTIES!</h2>
   </div>
 </section>
 
-<section class="section kids mist">
+<section class="section kids mist camp-block">
   <div class="wrap camps">
     <article class="camp-card youth" style={`background-image:url(${youth.src})`}>
       <div class="camp-panel">
@@ -170,6 +170,8 @@ const trial = "https://checkout.square.site/merchant/MLXTPBS97BGYV/checkout/B2M6
     text-transform: uppercase;
   }
   .kids h2.thin { font-weight: 300; }
+  .kids h2.junior-times { margin-top: 100px; }
+  .kids h2.csna-times { margin-top: 52px; }
   .kids h2.h20, .kids h2.thin { width: fit-content; max-width: 100%; }
   .kids h2.center { margin-left: auto; margin-right: auto; }
   .kids p.accent { font-weight: 600; }
@@ -187,7 +189,7 @@ const trial = "https://checkout.square.site/merchant/MLXTPBS97BGYV/checkout/B2M6
   .left { text-align: left; }
   .intro p, .copy p, .camps p { font-weight: 400; }
   .accent, .left-accent { font-weight: 600; }
-  .red-link { color: #d6352f; font-weight: 400; text-decoration: underline; text-underline-offset: 2px; }
+  .red-link { color: rgb(219, 58, 52); font-weight: 400; text-decoration: none; }
   .blue-link { color: rgb(47, 138, 228); font-weight: 400; text-decoration: none; }
   .note { color: #285276; font-weight: 600; }
   .note-rest { color: rgba(41, 41, 41, 0.99); font-weight: 400; }
@@ -270,9 +272,15 @@ const trial = "https://checkout.square.site/merchant/MLXTPBS97BGYV/checkout/B2M6
     .copy h2.w446 { width: max-content; }
     .copy h2.w226 { width: 226px; }
     .center-copy { width: 1070px; margin-inline: auto; }
-    .lead-copy { letter-spacing: 0.5px; }
-    .note-line { width: 1070px; font-size: 17px; letter-spacing: 1px; }
-    .levels { width: 530px; font-size: 18px; letter-spacing: 1px; }
+    .lead-copy { letter-spacing: 0; font-size: 18px; }
+    .note-line { width: 1070px; font-size: 18px; letter-spacing: 0; }
+    .kids h2.junior-times { margin-top: 100px; }
+    .kids h2.csna-times { margin-top: 52px; }
+    .section.fun { margin-top: 70px; }
+    .forget-block { margin-top: 148px; }
+    .csna-block { margin-top: -36px; }
+    .camp-block { margin-top: -45px; }
+    .levels { width: 530px; font-size: 18px; letter-spacing: 0; }
     .as-text.times { max-width: 520px; }
     .btn.navy { font-size: 16px; }
     .reserve { width: 286px; }
@@ -284,7 +292,7 @@ const trial = "https://checkout.square.site/merchant/MLXTPBS97BGYV/checkout/B2M6
     .bday { width: 197px; }
     .day { width: 135px; }
     .intro { margin-bottom: 199px; }
-    .parkour-block { margin-top: -73px; }
+    .parkour-block { margin-top: -27px; }
     .row { align-items: center; margin: 10px 0; }
     .row.img-first.wide-photo { grid-template-columns: 520px 561px; column-gap: 68px; }
     .row.img-first { grid-template-columns: 501px 561px; column-gap: 87px; }
@@ -312,8 +320,16 @@ const trial = "https://checkout.square.site/merchant/MLXTPBS97BGYV/checkout/B2M6
     .copy h2.w306, .copy h2.hs-times { width: 306px; }
     .copy h2.w446, .copy h2.w226 { width: fit-content; }
     .intro { margin-top: -28px; }
-    .lead-copy, .note-line { width: min(338px, 100%); letter-spacing: 0.35px; }
-    .levels { width: 320px; max-width: 100%; font-size: 16px; letter-spacing: 1px; }
+    .lead-copy, .note-line { width: min(338px, 100%); letter-spacing: 0; }
+    .lead-copy { font-size: 16.5px; }
+    .pre-copy, .pk-copy { font-size: 15px; }
+    .intro-block { padding-top: 7px; }
+    .kids h2.junior-times { margin-top: 119px; }
+    .kids h2.csna-times { margin-top: 52px; }
+    .camp-block { margin-top: -45px; }
+    .section.fun { margin-top: 79px; }
+    .forget-block { margin-top: 110px; }
+    .levels { width: 320px; max-width: 100%; font-size: 16px; letter-spacing: 0; }
     .intro > h2:first-child {
       position: relative;
       z-index: 70;
