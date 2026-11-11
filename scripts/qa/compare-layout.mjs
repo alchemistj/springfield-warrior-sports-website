@@ -1,0 +1,158 @@
+// Compares layout maps of the live site and the build (from layout-map.mjs) and lists every
+// difference a visitor would notice: missing or extra headings, photos and buttons, wrong order,
+// wrong position or width (content column), wrong font, size, weight or color, wrong band colors,
+// and horizontal scroll.
+//
+// Usage: node scripts/qa/compare-layout.mjs <liveDir> <buildDir> <reportFile> [--allow allow.json]
+// Exit code 1 when any difference remains.
+import { readFileSync, readdirSync, writeFileSync, existsSync } from "node:fs";
+import path from "node:path";
+
+const args = process.argv.slice(2);
+const [liveDir, buildDir, reportFile] = args;
+const allowIdx = args.indexOf("--allow");
+const allow = allowIdx > -1 ? JSON.parse(readFileSync(args[allowIdx + 1], "utf8")) : [];
+
+const TOL = { x: 24, wPct: 0.12, wAbs: 40, size: 2, weight: 100, color: 14 };
+
+const norm = (s) => (s || "").toLowerCase().replace(/[‘’“”'"]/g, "").replace(/[^a-z0-9$]+/g, " ").trim();
+export function imageKey(src) {
+  if (!src || src === "data-uri") return src;
+  let b = decodeURIComponent(src.split("?")[0].split("/").pop() || "");
+  b = b.toLowerCase();
+  for (let i = 0; i < 3; i++) b = b.replace(/\.(webp|jpe?g|png|gif|avif|svg)$/, "");
+  b = b.split(".")[0]; // astro hash
+  b = b.replace(/^\d{4}-\d{2}-/, "").replace(/-\d+x\d+$/, "").replace(/-scaled$/, "").replace(/-\d+x\d+$/, "");
+  return b;
+}
+const parseColor = (c) => (c?.match(/[\d.]+/g) || []).slice(0, 3).map(Number);
+const colorDiff = (a, b) => {
+  const [x, y] = [parseColor(a), parseColor(b)];
+  if (x.length < 3 || y.length < 3) return a === b ? 0 : 999;
+  return Math.max(...x.map((v, i) => Math.abs(v - y[i])));
+};
+const widthOff = (a, b) => Math.abs(a - b) > Math.max(TOL.wAbs, a * TOL.wPct);
+
+function matchSeq(live, build, keyFn) {
+  // Greedy in-order match by key; returns pairs, missing, extra, outOfOrder.
+  const used = new Set();
+  const pairs = [];
+  const missing = [];
+  let lastIdx = -1;
+  const outOfOrder = [];
+  for (const l of live) {
+    const k = keyFn(l);
+    let idx = build.findIndex((b, i) => !used.has(i) && keyFn(b) === k);
+    if (idx === -1) {
+      missing.push(l);
+      continue;
+    }
+    used.add(idx);
+    if (idx < lastIdx) outOfOrder.push(l);
+    lastIdx = Math.max(lastIdx, idx);
+    pairs.push([l, build[idx]]);
+  }
+  const extra = build.filter((_, i) => !used.has(i));
+  return { pairs, missing, extra, outOfOrder };
+}
+
+function matchHeadings(live, build) {
+  // A live heading matches a build heading with the same text, or one that contains it in order
+  // (a two-tone heading can be two tags on live and one tag with spans in the build).
+  const usedBuild = new Set();
+  const pairs = [], missing = [], outOfOrder = [];
+  let cursor = 0, last = -1;
+  for (const l of live) {
+    const k = norm(l.text);
+    let idx = build.findIndex((b, i) => i >= cursor && norm(b.text) === k);
+    if (idx === -1) idx = build.findIndex((b, i) => i >= cursor && norm(b.text).includes(k));
+    if (idx === -1) idx = build.findIndex((b) => norm(b.text) === k || norm(b.text).includes(k));
+    if (idx === -1) { missing.push(l); continue; }
+    if (idx < last) outOfOrder.push(l);
+    last = Math.max(last, idx);
+    if (norm(build[idx].text) === k) cursor = idx + 1; else cursor = idx;
+    usedBuild.add(idx);
+    if (norm(build[idx].text) === k) pairs.push([l, build[idx]]);
+    else pairs.push([l, { ...build[idx], w: l.w, size: l.size, weight: l.weight, color: l.color }]); // position/font only
+  }
+  const extra = build.filter((b, i) => !usedBuild.has(i) && !live.some((l) => norm(b.text).includes(norm(l.text))));
+  return { pairs, missing, extra, outOfOrder };
+}
+
+function styleDiffs(l, b, label) {
+  const out = [];
+  if (Math.abs(l.x - b.x) > TOL.x) out.push(`${label}: left edge ${b.x}px, live ${l.x}px`);
+  if (widthOff(l.w, b.w)) out.push(`${label}: width ${b.w}px, live ${l.w}px`);
+  if (l.family && b.family && l.family.toLowerCase() !== b.family.toLowerCase()) out.push(`${label}: font ${b.family}, live ${l.family}`);
+  if (l.size && Math.abs(l.size - b.size) > TOL.size) out.push(`${label}: size ${b.size}px, live ${l.size}px`);
+  if (l.weight && Math.abs(l.weight - b.weight) >= TOL.weight) out.push(`${label}: weight ${b.weight}, live ${l.weight}`);
+  if (l.color && colorDiff(l.color, b.color) > TOL.color) out.push(`${label}: color ${b.color}, live ${l.color}`);
+  if (l.align && b.align && l.align !== b.align && !(l.align === "start" && b.align === "left") && !(l.align === "left" && b.align === "start"))
+    out.push(`${label}: align ${b.align}, live ${l.align}`);
+  return out;
+}
+
+const allowed = (slug, width, line) =>
+  allow.some((a) => (a.page === "*" || a.page === slug) && (!a.width || a.width === width) && line.includes(a.contains));
+
+const lines = ["# Layout comparison: live vs build", ""];
+let total = 0;
+for (const width of readdirSync(liveDir).sort((a, b) => Number(b) - Number(a))) {
+  for (const file of readdirSync(path.join(liveDir, width)).sort()) {
+    const slug = file.replace(/\.json$/, "");
+    const live = JSON.parse(readFileSync(path.join(liveDir, width, file), "utf8"));
+    const bPath = path.join(buildDir, width, file);
+    const issues = [];
+    if (!existsSync(bPath)) issues.push("page missing from build map");
+    else {
+      const build = JSON.parse(readFileSync(bPath, "utf8"));
+      if (build.docWidth > build.vw + 1) issues.push(`horizontal scroll: page is ${build.docWidth}px wide at ${build.vw}px`);
+      const by = (items, kind) => items.filter((i) => i.kind === kind || (kind === "image" && i.kind === "bgimage"));
+      // Headings
+      const h = matchHeadings(by(live.items, "heading"), by(build.items, "heading"));
+      h.missing.forEach((i) => issues.push(`heading missing: "${i.text}"`));
+      h.extra.forEach((i) => issues.push(`heading not on live: "${i.text}"`));
+      h.outOfOrder.forEach((i) => issues.push(`heading out of order: "${i.text}"`));
+      h.pairs.forEach(([l, b]) => issues.push(...styleDiffs(l, b, `heading "${l.text.slice(0, 40)}"`)));
+      // Images
+      const im = matchSeq(by(live.items, "image"), by(build.items, "image"), (i) => imageKey(i.src));
+      im.missing.forEach((i) => issues.push(`photo missing: ${imageKey(i.src)}`));
+      im.extra.forEach((i) => issues.push(`photo not on live: ${imageKey(i.src)}`));
+      im.outOfOrder.forEach((i) => issues.push(`photo out of order: ${imageKey(i.src)}`));
+      im.pairs.forEach(([l, b]) => {
+        if (Math.abs(l.x - b.x) > TOL.x) issues.push(`photo ${imageKey(l.src)}: left edge ${b.x}px, live ${l.x}px`);
+        if (widthOff(l.w, b.w)) issues.push(`photo ${imageKey(l.src)}: width ${b.w}px, live ${l.w}px`);
+      });
+      // Buttons
+      const bt = matchSeq(by(live.items, "button"), by(build.items, "button"), (i) => norm(i.text));
+      bt.missing.forEach((i) => issues.push(`button missing: "${i.text}"`));
+      bt.pairs.forEach(([l, b]) => {
+        if (colorDiff(l.bg, b.bg) > TOL.color) issues.push(`button "${l.text}": color ${b.bg}, live ${l.bg}`);
+        if (widthOff(l.w, b.w)) issues.push(`button "${l.text}": width ${b.w}px, live ${l.w}px`);
+      });
+      // Body text (by first 40 normalized chars)
+      const tx = matchSeq(by(live.items, "text"), by(build.items, "text"), (i) => norm(i.text).slice(0, 40));
+      tx.missing
+        .filter((i) => !(build.allText || "").includes(norm(i.text).slice(0, 40)))
+        .forEach((i) => issues.push(`text missing: "${i.text.slice(0, 60)}"`));
+      tx.extra
+        .filter((i) => !(live.allText || "").includes(norm(i.text).slice(0, 40)))
+        .forEach((i) => issues.push(`text not on live: "${i.text.slice(0, 60)}"`));
+      tx.pairs.forEach(([l, b]) => issues.push(...styleDiffs(l, b, `text "${l.text.slice(0, 30)}"`)));
+      // Section band colors (consecutive duplicates removed)
+      const seq = (bands) => bands.map((b) => b.bg).filter((c, i, a) => i === 0 || colorDiff(c, a[i - 1]) > TOL.color);
+      const lb = seq(live.bands), bb = seq(build.bands);
+      if (lb.length !== bb.length || lb.some((c, i) => colorDiff(c, bb[i]) > TOL.color))
+        issues.push(`section colors differ: build [${bb.join(" | ")}], live [${lb.join(" | ")}]`);
+    }
+    const remaining = issues.filter((line) => !allowed(slug, width, line));
+    total += remaining.length;
+    lines.push(`## ${slug} @ ${width}px: ${remaining.length ? `${remaining.length} difference(s)` : "matches"}`);
+    remaining.forEach((l) => lines.push(`- ${l}`));
+    lines.push("");
+  }
+}
+lines.splice(1, 0, `Total differences: ${total}`);
+writeFileSync(reportFile, lines.join("\n") + "\n");
+console.log(`Total differences: ${total}. Report: ${reportFile}`);
+process.exit(total ? 1 : 0);

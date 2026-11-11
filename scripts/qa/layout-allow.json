@@ -1,0 +1,6 @@
+[
+  { "page": "*", "contains": "SPRINGFIELD WARRIOR SPORTS NINJA AND PARKOUR GYM", "reason": "Trust bar under the hero is a spec addition (Rule 9, Josh 2 Nov 2026)." },
+  { "page": "*", "contains": "button \"Call\"", "reason": "Sticky mobile bar is a spec addition (Rule 6)." },
+  { "page": "*", "contains": "button \"Book a Party\"", "reason": "Sticky mobile bar is a spec addition (Rule 6)." },
+  { "page": "*", "contains": "Plainview Road at Campbell", "reason": "Address wording chosen by Josh, 2 Nov 2026." }
+]

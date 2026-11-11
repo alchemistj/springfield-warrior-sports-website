@@ -1,0 +1,79 @@
+{
+ "url": "https://www.springfieldwarriorsports.com/registered-for-day-camps/",
+ "width": 390,
+ "vw": 390,
+ "allText": "contact about sign our waiver we received those details thank you click here to finalize the registration with your payment the link above has a few product options simply select the appropriate camp you are attending enter your payment information and done if you encounter any problems or have any questions please call or text us at 417 894 7319 our accomplished and award winning crew are here to help you find your strength and enjoy your workouts contact 605 w farm rd 182 springfield mo 65810 united states 417 894 7319 office swarriorsports com quick links home about us contact us meet the team copyright 2026 springfield warrior sports all rights reserved ",
+ "docWidth": 395,
+ "docHeight": 1767,
+ "items": [
+  {
+   "kind": "heading",
+   "tag": "h2",
+   "text": "WE RECEIVED THOSE DETAILS, THANK YOU!",
+   "x": 20,
+   "y": 219,
+   "w": 350,
+   "h": 64,
+   "family": "Heebo",
+   "size": 32,
+   "weight": 900,
+   "color": "rgb(219, 58, 52)",
+   "align": "start",
+   "transform": "uppercase"
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "Click here to finalize the registration with your payment.",
+   "x": 21,
+   "y": 304,
+   "w": 348,
+   "h": 56,
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(219, 58, 52)",
+   "align": "left",
+   "transform": "none"
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "The link above has a few \"product\" options, simply select the appropriate camp y",
+   "x": 21,
+   "y": 382,
+   "w": 348,
+   "h": 112,
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 300,
+   "color": "rgb(0, 0, 0)",
+   "align": "left",
+   "transform": "none"
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "If you encounter any problems or have any questions, please call or text us at (",
+   "x": 21,
+   "y": 522,
+   "w": 348,
+   "h": 84,
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 300,
+   "color": "rgb(0, 0, 0)",
+   "align": "left",
+   "transform": "none"
+  },
+  {
+   "kind": "image",
+   "src": "https://www.springfieldwarriorsports.com/wp-content/uploads/2023/03/everyday-warrior.png",
+   "x": 20,
+   "y": 667,
+   "w": 350,
+   "h": 312
+  }
+ ],
+ "bands": []
+}

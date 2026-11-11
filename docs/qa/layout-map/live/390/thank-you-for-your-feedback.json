@@ -1,0 +1,49 @@
+{
+ "url": "https://www.springfieldwarriorsports.com/thank-you-for-your-feedback/",
+ "width": 390,
+ "vw": 390,
+ "allText": "contact about sign our waiver thank you for your feedback thank you for your feedback we read and respond to each message and will be in touch typically within the same business day if you need to contact us immediately call us at 417 894 7319 thanks andy and the warrior sports team our accomplished and award winning crew are here to help you find your strength and enjoy your workouts contact 605 w farm rd 182 springfield mo 65810 united states 417 894 7319 office swarriorsports com quick links home about us contact us meet the team copyright 2026 springfield warrior sports all rights reserved ",
+ "docWidth": 395,
+ "docHeight": 1773,
+ "items": [
+  {
+   "kind": "heading",
+   "tag": "h2",
+   "text": "THANK YOU FOR YOUR FEEDBACK!",
+   "x": 20,
+   "y": 219,
+   "w": 350,
+   "h": 64,
+   "family": "Heebo",
+   "size": 32,
+   "weight": 900,
+   "color": "rgb(219, 58, 52)",
+   "align": "start",
+   "transform": "uppercase"
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "Thank you for your feedback! We read and respond to each message and will be in ",
+   "x": 21,
+   "y": 304,
+   "w": 348,
+   "h": 308,
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 300,
+   "color": "rgb(0, 0, 0)",
+   "align": "left",
+   "transform": "none"
+  },
+  {
+   "kind": "image",
+   "src": "https://www.springfieldwarriorsports.com/wp-content/uploads/2023/03/everyday-warrior.png",
+   "x": 20,
+   "y": 673,
+   "w": 350,
+   "h": 312
+  }
+ ],
+ "bands": []
+}
