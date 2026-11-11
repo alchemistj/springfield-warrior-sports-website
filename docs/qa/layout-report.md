@@ -8056,7 +8056,7 @@ Total differences: 7913
 
 Gate v2.8. Model: Grok 4.7. The live map, the scripts, the tolerances, and PIXEL_TOL were not edited. No allow entries were added. No other page's count went up.
 
-Before, on this machine, commit a006990 measured 7,947 differences: home 10/10/4, about 7/7/4, kids-classes 3/3/5 (1920/1280/390). The dispatch measured that commit on the Vercel preview as home 10/10/5, about 7/7/4, kids-classes 3/3/5. After, this build measures 7,913. Home is 3/3/0, about is 2/2/2, and kids-classes is 2/2/3.
+Before, on this machine, commit a006990 measured 7,947 differences: home 10/10/4, about 7/7/4, kids-classes 3/3/5 (1920/1280/390). The dispatch measured that commit on the Vercel preview as home 10/10/5, about 7/7/4, kids-classes 3/3/5. After, this build measures 7,913. Home is 3/3/0, about is 2/2/2, and kids-classes is 2/2/3. The Vercel preview of this commit measured the same three pages, with the same 19 lines.
 
 Font sizes are live's exact sizes: testimonials 16px, "We believe in results" 16px, the home offers paragraph 16px, the home hero paragraph 20px, "REACH YOUR FUN AND FITNESS GOALS" 30px, Kids Classes body 16px, and the About "looks forward" paragraph 16px. Letter spacing was not changed. The grey flag band on About runs past the photo, edge to edge. The home partner band is the live navy. Footer white on home and about matches the live band height. At 390 the Kids Classes heading starts below the trust bar, and the phone link is not covered.
 
