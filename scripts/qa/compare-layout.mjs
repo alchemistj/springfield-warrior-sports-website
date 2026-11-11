@@ -157,6 +157,28 @@ async function dominant(file, r, padding = 12) {
   const [best] = [...counts.values()].sort((a, b) => b.n - a.n);
   return best.sum.map((v) => Math.round(v / best.n));
 }
+// Runs of one flat color down the left page margin (x = 3px), noise-tolerant.
+async function marginRuns(file) {
+  const m = await meta(file);
+  const { data, info } = await sharp(file).extract({ left: 3, top: 0, width: 1, height: m.height }).removeAlpha().raw().toBuffer({ resolveWithObject: true });
+  const runs = [];
+  let cur = null;
+  for (let y = 0; y < info.height; y++) {
+    const px = [data[y * 3], data[y * 3 + 1], data[y * 3 + 2]];
+    if (cur && Math.max(...px.map((v, i) => Math.abs(v - cur.c[i]))) <= BG_TOL) { cur.h++; continue; }
+    cur = { y, h: 1, c: px };
+    runs.push(cur);
+  }
+  // Merge runs split by a few noisy pixels inside one band.
+  const out = [];
+  for (const r of runs) {
+    const last = out[out.length - 1];
+    if (last && r.h < 6) { last.h += r.h; continue; }
+    if (last && Math.max(...r.c.map((v, i) => Math.abs(v - last.c[i]))) <= BG_TOL) { last.h += r.h; continue; }
+    out.push({ ...r });
+  }
+  return out;
+}
 async function regionDiff(liveFile, l, buildFile, b) {
   const [a, c] = await Promise.all([thumb(liveFile, l), thumb(buildFile, b)]);
   if (!a || !c) return null;
@@ -275,6 +297,11 @@ for (const width of readdirSync(liveDir).sort((a, b) => Number(b) - Number(a))) 
       [...h.pairs, ...tx.pairs, ...bt.pairs].forEach(([l, b]) => {
         if (b.covered && !l.covered) issues.push(`covered by another element: "${(l.text || "").slice(0, 50)}"`);
       });
+      // v2.8: covered text that exists only in the build (the trust bar, for example) counts too.
+      const pairedBuild = new Set([...h.pairs, ...tx.pairs, ...bt.pairs].map(([, b]) => b));
+      build.items
+        .filter((i) => i.covered && ["heading", "text", "button"].includes(i.kind) && !pairedBuild.has(i))
+        .forEach((i) => issues.push(`covered by another element (build only): "${(i.text || "").slice(0, 50)}"`));
       bt.extra.forEach((i) => issues.push(`button not on live: "${i.text}"`));
       // Icons (inline SVG, 8-72px): same count, in order, same color and size.
       const li = by(live.items, "icon"), bi = by(build.items, "icon");
@@ -333,6 +360,20 @@ for (const width of readdirSync(liveDir).sort((a, b) => Number(b) - Number(a))) 
           }
           const d = await regionDiff(livePng, l, buildPng, b);
           if (d !== null && d > PIXEL_TOL) issues.push(`${label}: looks different from live (pixel difference ${d.toFixed(0)})`);
+        }
+        // v2.8: full-width band heights. Read the left page margin top to bottom, keep runs of one
+        // flat color at least 40px tall, and match live's runs in order (the build may have extra
+        // runs, such as the trust bar). Each matched band's height must be within max(24px, 10%).
+        const [lr, br] = await Promise.all([marginRuns(livePng), marginRuns(buildPng)]);
+        let k = 0;
+        for (const run of lr) {
+          if (run.h < 40) continue;
+          let j = k;
+          while (j < br.length && !(br[j].h >= 40 && Math.max(...run.c.map((v, i) => Math.abs(v - br[j].c[i]))) <= BG_TOL)) j++;
+          if (j >= br.length) { issues.push(`band rgb(${run.c.join(", ")}) at y=${run.y} (${run.h}px tall on live) not found in build`); continue; }
+          if (Math.abs(br[j].h - run.h) > Math.max(24, run.h * 0.1))
+            issues.push(`band rgb(${run.c.join(", ")}) at y=${run.y}: ${br[j].h}px tall, live ${run.h}px`);
+          k = j + 1;
         }
       }
       // Section band colors (consecutive duplicates removed)

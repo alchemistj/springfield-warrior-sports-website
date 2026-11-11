@@ -167,14 +167,21 @@ function collect() {
     const el = els[i];
     window.scrollTo(0, Math.max(0, it.y + it.h / 2 - vh / 2));
     const r = el.getBoundingClientRect();
-    const cx = Math.min(vw - 1, Math.max(0, r.left + Math.min(r.width / 2, 40)));
-    const cy = Math.min(vh - 1, Math.max(0, r.top + r.height / 2));
-    const hit = document.elementFromPoint(cx, cy);
-    if (hit && !el.contains(hit) && !hit.contains(el)) {
-      const hr = hit.getBoundingClientRect();
-      // Ignore the sticky header and mobile bar sitting over content at the screen edges.
-      const fixedAncestor = (() => { for (let n = hit; n; n = n.parentElement) if (["fixed", "sticky"].includes(getComputedStyle(n).position)) return true; return false; })();
-      if (!fixedAncestor && hr.width > 20) it.covered = true;
+    // v2.8: sample the top, middle and bottom line, centred and near the left, not only the
+    // middle (a heading box overlapping only the last line of the trust bar was missed).
+    const xs = [r.left + Math.min(r.width / 2, 40), r.left + r.width / 2];
+    const ys = [r.top + Math.min(8, r.height / 2), r.top + r.height / 2, r.bottom - Math.min(8, r.height / 2)];
+    for (const x of xs) for (const y of ys) {
+      if (it.covered) break;
+      const cx = Math.min(vw - 1, Math.max(0, x));
+      const cy = Math.min(vh - 1, Math.max(0, y));
+      const hit = document.elementFromPoint(cx, cy);
+      if (hit && !el.contains(hit) && !hit.contains(el)) {
+        const hr = hit.getBoundingClientRect();
+        // Ignore the sticky header and mobile bar sitting over content at the screen edges.
+        const fixedAncestor = (() => { for (let n = hit; n; n = n.parentElement) if (["fixed", "sticky"].includes(getComputedStyle(n).position)) return true; return false; })();
+        if (!fixedAncestor && hr.width > 20) it.covered = true;
+      }
     }
   });
   window.scrollTo(0, 0);
