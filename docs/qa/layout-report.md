@@ -8074,7 +8074,7 @@ Total differences: 7932
 
 Gate v2.9, round 9. Model: Grok 4.7. The live map, the scripts, the tolerances, and PIXEL_TOL were not edited. No allow entries were added. No other page's count went up.
 
-Before is this machine's measurement of commit b24932b (round 8 source on gate v2.9): 8,000 differences. Home 6/5/2, about 3/3/2, kids-classes 2/2/4 (1920/1280/390). The dispatch measured that commit on the Vercel preview as home 3/2/2, about 1/1/1, kids-classes 2/2/2. After is 7,932. Home is 3/3/0, about is 2/2/1, and kids-classes is 0/0/2.
+Before is this machine's measurement of commit b24932b (round 8 source on gate v2.9): 8,000 differences. Home 6/5/2, about 3/3/2, kids-classes 2/2/4 (1920/1280/390). The dispatch measured that commit on the Vercel preview as home 3/2/2, about 1/1/1, kids-classes 2/2/2. After is 7,932. Home is 3/3/0, about is 2/2/1, and kids-classes is 0/0/2. The Vercel preview of this commit, measured from this machine, is the same: home 3/3/0, about 2/2/1, kids-classes 0/0/2.
 
 Live copyright CSS, confirmed in the captured page: the desktop paragraph is Epilogue, 14px, weight 600, letter-spacing 2px, line-height 1.7em. The three phone paragraphs are 12px, letter-spacing 0, line-height 1.7em. The bar is 65px tall at 1920 and 1280 and 100px at 390. The desktop sentence is one line, with the same six non-breaking spaces live uses between the three parts.
 

@@ -470,7 +470,7 @@ Lighthouse mobile on the local preview, after this batch. Order is performance /
 
 Model: Grok 4.7. Gate v2.9 counts pure black and white as bands. The live map, the scripts, the tolerances, and `PIXEL_TOL` were not edited. The report is `docs/qa/layout-report.md`. No allow entries were added.
 
-Before is this machine's measurement of `b24932b` (round 8 source on gate v2.9): 8,000 differences. The dispatch measured that commit on the Vercel preview as home 3/2/2, about 1/1/1, and kids-classes 2/2/2. After is 7,932. Home is 3/3/0, about is 2/2/1, and kids-classes is 0/0/2. No other page's count went up.
+Before is this machine's measurement of `b24932b` (round 8 source on gate v2.9): 8,000 differences. The dispatch measured that commit on the Vercel preview as home 3/2/2, about 1/1/1, and kids-classes 2/2/2. After is 7,932. Home is 3/3/0, about is 2/2/1, and kids-classes is 0/0/2. The Vercel preview of this commit, measured from this machine, is the same: home 3/3/0, about 2/2/1, kids-classes 0/0/2. No other page's count went up.
 
 | Page | Before 1920 | 1280 | 390 | Total | After 1920 | 1280 | 390 | Total |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
