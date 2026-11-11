@@ -631,7 +631,7 @@ Model: Grok 4.7. The live map, the scripts, the tolerances, and `PIXEL_TOL` were
 
 On v2.15, home is 3/3/0, about is 2/2/1, and kids-classes is 0/0/3. The site total stays 8,357. No other page rose. The open lines are the same wraps as round 13.
 
-`.bullet-line .dot` is `font-family: Muli`, weight 800, and italic. The nested `strong` had been resolving to weight 900, and the family's Segoe UI / sans-serif fallback drew a 16.5px dot. Muli has no ● glyph, so with no fallback list Chromium uses its own fallback. In Chromium at 1920 and 1280 each dot's box is 10.9px wide. The phone list is unchanged.
+`.bullet-line .dot` is `font-family: Muli`, weight 800, and italic. The nested `strong` had been resolving to weight 900, and the family's Segoe UI / sans-serif fallback drew a 16.5px dot. Muli has no ● glyph, so with no fallback list Chromium uses its own fallback. In Chromium at 1920 and 1280 each dot's box is 10.9px wide. The phone list is unchanged. The Vercel preview of `2dc5d0a` measures the same, and the dots there are 10.9px wide too.
 
 Lighthouse mobile on the local preview, after this batch. Order is performance / accessibility / best practices / SEO.
 
