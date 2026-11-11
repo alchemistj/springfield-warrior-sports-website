@@ -17,7 +17,15 @@
    "align": "center",
    "transform": "uppercase",
    "spacing": 1,
+   "lh": 28,
    "behind": "image",
+   "runs": [
+    {
+     "t": "Contact",
+     "c": "rgb(255, 255, 255)",
+     "w": 600
+    }
+   ],
    "region": "header",
    "x": 1202,
    "y": 6,
@@ -35,7 +43,15 @@
    "align": "center",
    "transform": "uppercase",
    "spacing": 1,
+   "lh": 28,
    "behind": "image",
+   "runs": [
+    {
+     "t": "About",
+     "c": "rgb(255, 255, 255)",
+     "w": 600
+    }
+   ],
    "region": "header",
    "x": 1297,
    "y": 6,
@@ -53,7 +69,15 @@
    "align": "center",
    "transform": "uppercase",
    "spacing": 1,
+   "lh": 28,
    "behind": "image",
+   "runs": [
+    {
+     "t": "Sign Our Waiver",
+     "c": "rgb(255, 255, 255)",
+     "w": 600
+    }
+   ],
    "region": "header",
    "x": 1372,
    "y": 6,
@@ -80,7 +104,15 @@
    "align": "left",
    "transform": "uppercase",
    "spacing": 0,
+   "lh": 32,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Adult Classes",
+     "c": "rgb(255, 255, 255)",
+     "w": 600
+    }
+   ],
    "region": "header",
    "x": 688,
    "y": 73,
@@ -98,7 +130,15 @@
    "align": "left",
    "transform": "uppercase",
    "spacing": 0,
+   "lh": 32,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Kid Classes",
+     "c": "rgb(255, 255, 255)",
+     "w": 600
+    }
+   ],
    "region": "header",
    "x": 820,
    "y": 73,
@@ -116,7 +156,15 @@
    "align": "left",
    "transform": "uppercase",
    "spacing": 0,
+   "lh": 32,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Competitions",
+     "c": "rgb(255, 255, 255)",
+     "w": 600
+    }
+   ],
    "region": "header",
    "x": 930,
    "y": 73,
@@ -134,7 +182,15 @@
    "align": "left",
    "transform": "uppercase",
    "spacing": 0,
+   "lh": 32,
    "behind": "image",
+   "runs": [
+    {
+     "t": "Birthday Parties",
+     "c": "rgb(255, 255, 255)",
+     "w": 600
+    }
+   ],
    "region": "header",
    "x": 1058,
    "y": 73,
@@ -152,7 +208,15 @@
    "align": "left",
    "transform": "uppercase",
    "spacing": 0,
+   "lh": 32,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Personal Training",
+     "c": "rgb(255, 255, 255)",
+     "w": 600
+    }
+   ],
    "region": "header",
    "x": 1213,
    "y": 73,
@@ -170,7 +234,15 @@
    "align": "left",
    "transform": "uppercase",
    "spacing": 0,
+   "lh": 32,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Summer Camps",
+     "c": "rgb(255, 255, 255)",
+     "w": 600
+    }
+   ],
    "region": "header",
    "x": 1383,
    "y": 73,
@@ -197,7 +269,15 @@
    "align": "center",
    "transform": "uppercase",
    "spacing": 0,
+   "lh": 50,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Our Accomplished, Award Winning Crew is Ready to Help You Reach Your Goals",
+     "c": "rgb(219, 58, 52)",
+     "w": 900
+    }
+   ],
    "region": "main",
    "x": 385,
    "y": 379,
@@ -215,7 +295,15 @@
    "align": "left",
    "transform": "uppercase",
    "spacing": 0,
+   "lh": 60,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Contact Us",
+     "c": "rgb(219, 58, 52)",
+     "w": 900
+    }
+   ],
    "region": "main",
    "x": 385,
    "y": 834,
@@ -234,7 +322,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 28,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "We look forward to hearing from you! We are located one block west of Campbell off Plainview Road (Farm Road 182), directly behind the Eagles Lodge next to Marco Automotive. Look for the grey building!",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400
+    }
+   ],
    "region": "main",
    "x": 386,
    "y": 895,
@@ -262,7 +358,15 @@
    "align": "start",
    "transform": "none",
    "spacing": 0,
+   "lh": 19,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "605 W. Plainview Road Springfield, MO 65810",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400
+    }
+   ],
    "region": "main",
    "x": 422,
    "y": 1044,
@@ -290,7 +394,15 @@
    "align": "start",
    "transform": "none",
    "spacing": 0,
+   "lh": 19,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "(417)894-7319",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400
+    }
+   ],
    "region": "main",
    "x": 422,
    "y": 1085,
@@ -318,7 +430,15 @@
    "align": "start",
    "transform": "none",
    "spacing": 0,
+   "lh": 19,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "office@swarriorsports.com",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400
+    }
+   ],
    "region": "main",
    "x": 422,
    "y": 1126,
@@ -354,7 +474,15 @@
    "align": "center",
    "transform": "uppercase",
    "spacing": 0,
+   "lh": 70,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Client Testimonials",
+     "c": "rgb(219, 58, 52)",
+     "w": 900
+    }
+   ],
    "region": "main",
    "x": 385,
    "y": 2383,
@@ -372,7 +500,15 @@
    "align": "center",
    "transform": "uppercase",
    "spacing": 1,
+   "lh": 42,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "What our clients say",
+     "c": "rgb(0, 0, 0)",
+     "w": 300
+    }
+   ],
    "region": "main",
    "x": 386,
    "y": 2444,
@@ -400,7 +536,20 @@
    "align": "start",
    "transform": "none",
    "spacing": 0,
+   "lh": 26,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "We had our son’s 10th birthday here. All of the kids had a great time. They set up an obstacle course for the kids. They loved the whole experience. The favorite was the curved wall to run up. That was everyone’s challenge for the night. We will be visiting again for sure.",
+     "c": "rgb(0, 0, 0)",
+     "w": 400
+    },
+    {
+     "t": "- Jennifer L.",
+     "c": "rgb(219, 58, 52)",
+     "w": 700
+    }
+   ],
    "region": "main",
    "x": 426,
    "y": 2618,
@@ -419,7 +568,15 @@
    "align": "start",
    "transform": "none",
    "spacing": 0,
+   "lh": 26,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "We had our son’s 10th birthday here. All of the kids had a great time. They set up an obstacle course for the kids. They loved the whole experience. The favorite was the curved wall to run up. That was everyone’s challenge for the night. We will be visiting again for sure.",
+     "c": "rgb(0, 0, 0)",
+     "w": 400
+    }
+   ],
    "region": "main",
    "x": 426,
    "y": 2618,
@@ -438,7 +595,15 @@
    "align": "start",
    "transform": "uppercase",
    "spacing": 0,
+   "lh": 26,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "- Jennifer L.",
+     "c": "rgb(219, 58, 52)",
+     "w": 700
+    }
+   ],
    "region": "main",
    "x": 426,
    "y": 2770,
@@ -466,7 +631,20 @@
    "align": "start",
    "transform": "none",
    "spacing": 0,
+   "lh": 26,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "My daughter started training here 3 years ago at 8, and she still loves it!! Owner and coaching staff are all super encouraging. We live an hour away but make the drive twice a week as often as possible. Training here has not only helped her get stronger physically but increased her confidence in general. Anything that makes kids want to challenge themselves to get better and better is worth it!",
+     "c": "rgb(0, 0, 0)",
+     "w": 400
+    },
+    {
+     "t": "- Lee C.",
+     "c": "rgb(219, 58, 52)",
+     "w": 700
+    }
+   ],
    "region": "main",
    "x": 984,
    "y": 2618,
@@ -485,7 +663,15 @@
    "align": "start",
    "transform": "none",
    "spacing": 0,
+   "lh": 26,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "My daughter started training here 3 years ago at 8, and she still loves it!! Owner and coaching staff are all super encouraging. We live an hour away but make the drive twice a week as often as possible. Training here has not only helped her get stronger physically but increased her confidence in general. Anything that makes kids want to challenge themselves to get better and better is worth it!",
+     "c": "rgb(0, 0, 0)",
+     "w": 400
+    }
+   ],
    "region": "main",
    "x": 984,
    "y": 2618,
@@ -504,7 +690,15 @@
    "align": "start",
    "transform": "uppercase",
    "spacing": 0,
+   "lh": 26,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "- Lee C.",
+     "c": "rgb(219, 58, 52)",
+     "w": 700
+    }
+   ],
    "region": "main",
    "x": 984,
    "y": 2821,
@@ -532,7 +726,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 24,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Our accomplished and award winning Crew are here to help you find your strength and enjoy your workouts.",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 406,
    "y": 3101,
@@ -569,7 +771,15 @@
    "align": "left",
    "transform": "uppercase",
    "spacing": 2,
+   "lh": 28,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Contact",
+     "c": "rgb(40, 82, 118)",
+     "w": 900
+    }
+   ],
    "region": "footer",
    "x": 811,
    "y": 2984,
@@ -597,7 +807,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 22,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "605 W Farm Rd 182, Springfield,MO, 65810, United States",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 848,
    "y": 3037,
@@ -625,7 +843,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 22,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "(417) 894-7319",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 848,
    "y": 3097,
@@ -643,7 +869,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 22,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "(417) 894-7319",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 848,
    "y": 3099,
@@ -671,7 +905,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 22,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "office@swarriorsports.com",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 848,
    "y": 3144,
@@ -689,7 +931,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 22,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "office@swarriorsports.com",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 848,
    "y": 3146,
@@ -708,7 +958,15 @@
    "align": "left",
    "transform": "uppercase",
    "spacing": 2,
+   "lh": 28,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "QUICK LInks",
+     "c": "rgb(40, 82, 118)",
+     "w": 900
+    }
+   ],
    "region": "footer",
    "x": 1214,
    "y": 2984,
@@ -727,7 +985,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 24,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Home",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 1215,
    "y": 3033,
@@ -745,7 +1011,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 24,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Home",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 1215,
    "y": 3035,
@@ -764,7 +1038,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 24,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "About Us",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 1215,
    "y": 3059,
@@ -782,7 +1064,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 24,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "About Us",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 1215,
    "y": 3061,
@@ -801,7 +1091,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 24,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Contact Us",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 1215,
    "y": 3085,
@@ -819,7 +1117,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 24,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Contact Us",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 1215,
    "y": 3087,
@@ -838,7 +1144,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 24,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Meet the Team",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 1215,
    "y": 3111,
@@ -856,7 +1170,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 24,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Meet the Team",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 1215,
    "y": 3113,
@@ -875,7 +1197,15 @@
    "align": "center",
    "transform": "none",
    "spacing": 2,
+   "lh": 24,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "© Copyright 2026 Springfield Warrior Sports All Rights Reserved.",
+     "c": "rgb(255, 255, 255)",
+     "w": 600
+    }
+   ],
    "region": "footer",
    "x": 405,
    "y": 3296,

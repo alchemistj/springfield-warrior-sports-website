@@ -17,7 +17,15 @@
    "align": "center",
    "transform": "uppercase",
    "spacing": 1,
+   "lh": 28,
    "behind": "image",
+   "runs": [
+    {
+     "t": "Contact",
+     "c": "rgb(255, 255, 255)",
+     "w": 600
+    }
+   ],
    "region": "header",
    "x": 53,
    "y": 11,
@@ -35,7 +43,15 @@
    "align": "center",
    "transform": "uppercase",
    "spacing": 1,
+   "lh": 28,
    "behind": "image",
+   "runs": [
+    {
+     "t": "About",
+     "c": "rgb(255, 255, 255)",
+     "w": 600
+    }
+   ],
    "region": "header",
    "x": 144,
    "y": 11,
@@ -53,7 +69,15 @@
    "align": "center",
    "transform": "uppercase",
    "spacing": 1,
+   "lh": 28,
    "behind": "image",
+   "runs": [
+    {
+     "t": "Sign Our Waiver",
+     "c": "rgb(255, 255, 255)",
+     "w": 600
+    }
+   ],
    "region": "header",
    "x": 214,
    "y": 11,
@@ -99,7 +123,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 28,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "1. Fill out the form to begin the scheduling process and check availability2. We will secure a date and then follow up with a phone call to confirm details and collect the $179 fee3. Look forward to the best birthday ever! ",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400
+    }
+   ],
    "region": "main",
    "x": 21,
    "y": 660,
@@ -118,7 +150,25 @@
    "align": "start",
    "transform": "none",
    "spacing": 0,
+   "lh": 32,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "\"",
+     "c": "rgb(106, 107, 108)",
+     "w": 400
+    },
+    {
+     "t": "*",
+     "c": "rgb(192, 43, 10)",
+     "w": 400
+    },
+    {
+     "t": "\" indicates required fields",
+     "c": "rgb(106, 107, 108)",
+     "w": 400
+    }
+   ],
    "region": "main",
    "x": 21,
    "y": 870,
@@ -136,7 +186,15 @@
    "align": "center",
    "transform": "uppercase",
    "spacing": 0,
+   "lh": 32,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Client Testimonials",
+     "c": "rgb(219, 58, 52)",
+     "w": 900
+    }
+   ],
    "region": "main",
    "x": 20,
    "y": 2328,
@@ -154,7 +212,15 @@
    "align": "center",
    "transform": "uppercase",
    "spacing": 1,
+   "lh": 28,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "What our clients say",
+     "c": "rgb(0, 0, 0)",
+     "w": 300
+    }
+   ],
    "region": "main",
    "x": 38,
    "y": 2361,
@@ -182,7 +248,20 @@
    "align": "start",
    "transform": "none",
    "spacing": 0,
+   "lh": 26,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "We had our son’s 10th birthday here. All of the kids had a great time. They set up an obstacle course for the kids. They loved the whole experience. The favorite was the curved wall to run up. That was everyone’s challenge for the night. We will be visiting again for sure.",
+     "c": "rgb(0, 0, 0)",
+     "w": 400
+    },
+    {
+     "t": "- Jennifer L.",
+     "c": "rgb(219, 58, 52)",
+     "w": 700
+    }
+   ],
    "region": "main",
    "x": 49,
    "y": 2508,
@@ -201,7 +280,15 @@
    "align": "start",
    "transform": "none",
    "spacing": 0,
+   "lh": 26,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "We had our son’s 10th birthday here. All of the kids had a great time. They set up an obstacle course for the kids. They loved the whole experience. The favorite was the curved wall to run up. That was everyone’s challenge for the night. We will be visiting again for sure.",
+     "c": "rgb(0, 0, 0)",
+     "w": 400
+    }
+   ],
    "region": "main",
    "x": 49,
    "y": 2508,
@@ -220,7 +307,15 @@
    "align": "start",
    "transform": "uppercase",
    "spacing": 0,
+   "lh": 26,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "- Jennifer L.",
+     "c": "rgb(219, 58, 52)",
+     "w": 700
+    }
+   ],
    "region": "main",
    "x": 49,
    "y": 2732,
@@ -248,7 +343,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 24,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Our accomplished and award winning Crew are here to help you find your strength and enjoy your workouts.",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 21,
    "y": 2990,
@@ -285,7 +388,15 @@
    "align": "left",
    "transform": "uppercase",
    "spacing": 2,
+   "lh": 28,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Contact",
+     "c": "rgb(40, 82, 118)",
+     "w": 900
+    }
+   ],
    "region": "footer",
    "x": 20,
    "y": 3154,
@@ -313,7 +424,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 22,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "605 W Farm Rd 182, Springfield,MO, 65810, United States",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 57,
    "y": 3192,
@@ -341,7 +460,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 22,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "(417) 894-7319",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 57,
    "y": 3247,
@@ -359,7 +486,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 22,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "(417) 894-7319",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 57,
    "y": 3249,
@@ -387,7 +522,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 22,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "office@swarriorsports.com",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 57,
    "y": 3288,
@@ -405,7 +548,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 22,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "office@swarriorsports.com",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 57,
    "y": 3290,
@@ -424,7 +575,15 @@
    "align": "left",
    "transform": "uppercase",
    "spacing": 2,
+   "lh": 28,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "QUICK LInks",
+     "c": "rgb(40, 82, 118)",
+     "w": 900
+    }
+   ],
    "region": "footer",
    "x": 20,
    "y": 3349,
@@ -443,7 +602,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 24,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Home",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 21,
    "y": 3388,
@@ -461,7 +628,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 24,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Home",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 21,
    "y": 3390,
@@ -480,7 +655,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 24,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "About Us",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 21,
    "y": 3414,
@@ -498,7 +681,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 24,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "About Us",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 21,
    "y": 3416,
@@ -517,7 +708,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 24,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Contact Us",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 21,
    "y": 3440,
@@ -535,7 +734,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 24,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Contact Us",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 21,
    "y": 3442,
@@ -554,7 +761,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 24,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Meet the Team",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 21,
    "y": 3466,
@@ -572,7 +787,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 24,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Meet the Team",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 21,
    "y": 3468,
@@ -591,7 +814,15 @@
    "align": "center",
    "transform": "none",
    "spacing": 0,
+   "lh": 20,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "© Copyright 2026",
+     "c": "rgb(255, 255, 255)",
+     "w": 600
+    }
+   ],
    "region": "footer",
    "x": 20,
    "y": 3547,
@@ -610,7 +841,15 @@
    "align": "center",
    "transform": "none",
    "spacing": 0,
+   "lh": 20,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": " Springfield Warrior Sports",
+     "c": "rgb(255, 255, 255)",
+     "w": 600
+    }
+   ],
    "region": "footer",
    "x": 20,
    "y": 3568,
@@ -629,7 +868,15 @@
    "align": "center",
    "transform": "none",
    "spacing": 0,
+   "lh": 20,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "All Rights Reserved.",
+     "c": "rgb(255, 255, 255)",
+     "w": 600
+    }
+   ],
    "region": "footer",
    "x": 20,
    "y": 3588,

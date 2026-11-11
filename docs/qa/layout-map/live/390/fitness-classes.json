@@ -19,7 +19,15 @@
    "align": "center",
    "transform": "uppercase",
    "spacing": 1,
+   "lh": 28,
    "behind": "image",
+   "runs": [
+    {
+     "t": "Contact",
+     "c": "rgb(255, 255, 255)",
+     "w": 600
+    }
+   ],
    "region": "header",
    "x": 53,
    "y": 11,
@@ -37,7 +45,15 @@
    "align": "center",
    "transform": "uppercase",
    "spacing": 1,
+   "lh": 28,
    "behind": "image",
+   "runs": [
+    {
+     "t": "About",
+     "c": "rgb(255, 255, 255)",
+     "w": 600
+    }
+   ],
    "region": "header",
    "x": 144,
    "y": 11,
@@ -55,7 +71,15 @@
    "align": "center",
    "transform": "uppercase",
    "spacing": 1,
+   "lh": 28,
    "behind": "image",
+   "runs": [
+    {
+     "t": "Sign Our Waiver",
+     "c": "rgb(255, 255, 255)",
+     "w": 600
+    }
+   ],
    "region": "header",
    "x": 214,
    "y": 11,
@@ -100,7 +124,15 @@
    "align": "center",
    "transform": "uppercase",
    "spacing": 0,
+   "lh": 45,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "The Most Diverse (Least Boring)",
+     "c": "rgb(219, 58, 52)",
+     "w": 900
+    }
+   ],
    "region": "main",
    "x": 38,
    "y": 229,
@@ -118,7 +150,15 @@
    "align": "center",
    "transform": "uppercase",
    "spacing": 1,
+   "lh": 56,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Fitness Classes in Springfield, MO",
+     "c": "rgb(255, 255, 255)",
+     "w": 300
+    }
+   ],
    "region": "main",
    "x": 38,
    "y": 420,
@@ -137,7 +177,15 @@
    "align": "center",
    "transform": "uppercase",
    "spacing": 0,
+   "lh": 45,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Are you looking for a fun and unique way to stay fit?",
+     "c": "rgb(0, 0, 0)",
+     "w": 300
+    }
+   ],
    "region": "main",
    "x": 42,
    "y": 815,
@@ -156,7 +204,15 @@
    "align": "center",
    "transform": "none",
    "spacing": 0,
+   "lh": 28,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Look no further! Springfield Warrior Sports offers amazing adult Obstacle Course Race (OCR) fitness classes that combine traditional circuit-style exercises with obstacle courses. You'll have the chance to challenge yourself in new and creative ways, using your own personal goals as motivation.",
+     "c": "rgb(0, 0, 0)",
+     "w": 400
+    }
+   ],
    "region": "main",
    "x": 26,
    "y": 1017,
@@ -175,7 +231,25 @@
    "align": "center",
    "transform": "none",
    "spacing": 0,
+   "lh": 28,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Our experienced instructors will be there every step of the way to help guide you through your fitness journey! If you're looking for more one-on-one support, ",
+     "c": "rgb(0, 0, 0)",
+     "w": 400
+    },
+    {
+     "t": "personal training",
+     "c": "rgb(40, 82, 118)",
+     "w": 400
+    },
+    {
+     "t": " is also available.",
+     "c": "rgb(0, 0, 0)",
+     "w": 400
+    }
+   ],
    "region": "main",
    "x": 26,
    "y": 1278,
@@ -194,7 +268,15 @@
    "align": "center",
    "transform": "none",
    "spacing": 0,
+   "lh": 28,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Our OCR classes in Springfield give you an unforgettable workout experience like no other. You’ll push your body beyond what it thought possible — all while having a blast. Every time you come back for another session, you can count on even more challenging obstacles and exercises designed just for you!",
+     "c": "rgb(0, 0, 0)",
+     "w": 400
+    }
+   ],
    "region": "main",
    "x": 26,
    "y": 1435,
@@ -213,7 +295,15 @@
    "align": "center",
    "transform": "none",
    "spacing": 0,
+   "lh": 28,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Sign up now for ADULT O.C.R workout classes from Springfield Warrior Sports today and start reaching those fitness goals faster than ever before!",
+     "c": "rgb(40, 82, 118)",
+     "w": 600
+    }
+   ],
    "region": "main",
    "x": 26,
    "y": 1676,
@@ -240,7 +330,15 @@
    "align": "center",
    "transform": "uppercase",
    "spacing": 0,
+   "lh": 32,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Pricing and Schedule",
+     "c": "rgb(219, 58, 52)",
+     "w": 900
+    }
+   ],
    "region": "main",
    "x": 42,
    "y": 1955,
@@ -259,7 +357,25 @@
    "align": "center",
    "transform": "none",
    "spacing": 0,
+   "lh": 29,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "We now offer two OCR classes each week — ",
+     "c": "rgb(255, 255, 255)",
+     "w": 400
+    },
+    {
+     "t": "Tuesday and Thursday from 6-7 pm ",
+     "c": "rgb(135, 204, 237)",
+     "w": 600
+    },
+    {
+     "t": "— giving you more flexibility and more opportunities to train.",
+     "c": "rgb(255, 255, 255)",
+     "w": 600
+    }
+   ],
    "region": "main",
    "x": 26,
    "y": 2030,
@@ -278,7 +394,15 @@
    "align": "center",
    "transform": "none",
    "spacing": 0,
+   "lh": 29,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Choose the membership option that fits your goals:",
+     "c": "rgb(255, 255, 255)",
+     "w": 400
+    }
+   ],
    "region": "main",
    "x": 26,
    "y": 2175,
@@ -306,7 +430,15 @@
    "align": "center",
    "transform": "none",
    "spacing": 0,
+   "lh": 26,
    "behind": "image",
+   "runs": [
+    {
+     "t": "$20 Drop-In",
+     "c": "rgba(41, 41, 41, 0.99)",
+     "w": 600
+    }
+   ],
    "region": "main",
    "x": 99,
    "y": 2299,
@@ -334,7 +466,20 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 26,
    "behind": "image",
+   "runs": [
+    {
+     "t": "$60 Monthly Membership ",
+     "c": "rgba(41, 41, 41, 0.99)",
+     "w": 600
+    },
+    {
+     "t": "(once per week)",
+     "c": "rgb(40, 82, 118)",
+     "w": 600
+    }
+   ],
    "region": "main",
    "x": 99,
    "y": 2367,
@@ -362,7 +507,20 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 24,
    "behind": "image",
+   "runs": [
+    {
+     "t": "$100 Monthly Membership ",
+     "c": "rgba(41, 41, 41, 0.99)",
+     "w": 600
+    },
+    {
+     "t": "(twice per week)",
+     "c": "rgb(40, 82, 118)",
+     "w": 600
+    }
+   ],
    "region": "main",
    "x": 99,
    "y": 2455,
@@ -390,7 +548,20 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 24,
    "behind": "image",
+   "runs": [
+    {
+     "t": "$40 Weight Lifting Membership ",
+     "c": "rgba(41, 41, 41, 0.99)",
+     "w": 600
+    },
+    {
+     "t": "(18+, access to weight-lifting area only)",
+     "c": "rgb(40, 82, 118)",
+     "w": 600
+    }
+   ],
    "region": "main",
    "x": 99,
    "y": 2558,
@@ -409,6 +580,7 @@
    "align": "center",
    "transform": "uppercase",
    "spacing": 2,
+   "lh": 19,
    "region": "main",
    "x": 25,
    "y": 2740,
@@ -426,7 +598,15 @@
    "align": "center",
    "transform": "uppercase",
    "spacing": 0,
+   "lh": 32,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Obstacle Course Racing Classes:",
+     "c": "rgb(219, 58, 52)",
+     "w": 900
+    }
+   ],
    "region": "main",
    "x": 42,
    "y": 2958,
@@ -444,7 +624,15 @@
    "align": "center",
    "transform": "uppercase",
    "spacing": 0,
+   "lh": 28,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "A Unique Workout Experience",
+     "c": "rgb(0, 0, 0)",
+     "w": 300
+    }
+   ],
    "region": "main",
    "x": 42,
    "y": 3033,
@@ -463,7 +651,15 @@
    "align": "center",
    "transform": "none",
    "spacing": 0,
+   "lh": 32,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "OCR workouts and fitness classes are designed to help you conquer obstacles both mentally and physically, while having fun at the same time! Let’s explore further why obstacle course racing is such an effective form of exercise.",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400
+    }
+   ],
    "region": "main",
    "x": 26,
    "y": 3111,
@@ -481,7 +677,15 @@
    "align": "center",
    "transform": "uppercase",
    "spacing": 0,
+   "lh": 35,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "What is OCR Fitness?",
+     "c": "rgb(219, 58, 52)",
+     "w": 900
+    }
+   ],
    "region": "main",
    "x": 25,
    "y": 3388,
@@ -500,7 +704,25 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 28,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "OCR fitness classes take the ",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400
+    },
+    {
+     "t": "best of the traditional gym",
+     "c": "rgb(47, 138, 228)",
+     "w": 400
+    },
+    {
+     "t": " experience and add an extra layer of excitement. By incorporating a variety of obstacles into each class, participants are able to get creative with their workouts and challenge themselves in ways they wouldn’t be able to in a regular gym setting. This helps keep motivation levels high and provides an outlet for those looking for something different than the typical exercise bike or treadmill routine.",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400
+    }
+   ],
    "region": "main",
    "x": 26,
    "y": 3434,
@@ -527,7 +749,15 @@
    "align": "center",
    "transform": "uppercase",
    "spacing": 0,
+   "lh": 20,
    "behind": "image",
+   "runs": [
+    {
+     "t": "OCR Fitness ClassBenefits",
+     "c": "rgb(40, 82, 118)",
+     "w": 900
+    }
+   ],
    "region": "main",
    "x": 64,
    "y": 4075,
@@ -546,7 +776,15 @@
    "align": "center",
    "transform": "none",
    "spacing": 0,
+   "lh": 22,
    "behind": "image",
+   "runs": [
+    {
+     "t": "The benefits of OCR fitness classes extend far beyond just physical exercise; it also provides many mental health benefits as well. The unique challenges presented by each obstacle help boost confidence levels by teaching participants how to problem-solve on their feet and push their limits further than they thought possible.",
+     "c": "rgb(106, 107, 108)",
+     "w": 400
+    }
+   ],
    "region": "main",
    "x": 49,
    "y": 4127,
@@ -565,7 +803,15 @@
    "align": "center",
    "transform": "none",
    "spacing": 0,
+   "lh": 22,
    "behind": "image",
+   "runs": [
+    {
+     "t": "Additionally, the group atmosphere also encourages camaraderie among participants, which can help build strong connections between members who may not have otherwise interacted with one another in a regular gym setting.",
+     "c": "rgb(106, 107, 108)",
+     "w": 400
+    }
+   ],
    "region": "main",
    "x": 49,
    "y": 4351,
@@ -592,7 +838,15 @@
    "align": "center",
    "transform": "uppercase",
    "spacing": 0,
+   "lh": 20,
    "behind": "image",
+   "runs": [
+    {
+     "t": "Short-Term Goals andLong-Term Gains",
+     "c": "rgb(40, 82, 118)",
+     "w": 900
+    }
+   ],
    "region": "main",
    "x": 64,
    "y": 4836,
@@ -611,7 +865,15 @@
    "align": "center",
    "transform": "none",
    "spacing": 0,
+   "lh": 22,
    "behind": "image",
+   "runs": [
+    {
+     "t": "OCR training has been proven to improve overall physical health as well as strength, agility, balance, coordination, endurance, and speed - all essential components needed for any type of longevity goal, athletic activity, or sport. The combination of low-impact exercises along with more intense activities helps train the body in ways that cannot be replicated in other forms of exercise, making it an excellent choice for anyone looking to switch up their workout routine or take their athletic performance up a notch.",
+     "c": "rgb(106, 107, 108)",
+     "w": 400
+    }
+   ],
    "region": "main",
    "x": 49,
    "y": 4888,
@@ -629,7 +891,15 @@
    "align": "center",
    "transform": "uppercase",
    "spacing": 0,
+   "lh": 32,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Improved Confidence Levelsand Mental Health",
+     "c": "rgb(219, 58, 52)",
+     "w": 900
+    }
+   ],
    "region": "main",
    "x": 25,
    "y": 5431,
@@ -657,7 +927,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 28,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Our Obstacle Course Racing (OCR) workouts and fitness classes in Springfield, MO provide a unique way to get fit while also having fun! Not only do you get the physical benefits from this type of workout, but you also receive numerous mental health benefits such as improved confidence levels and connection building with other members within the group atmosphere that these classes offer.",
+     "c": "rgb(106, 107, 108)",
+     "w": 400
+    }
+   ],
    "region": "main",
    "x": 26,
    "y": 5896,
@@ -676,7 +954,25 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 28,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Additionally, many enjoy pairing these fitness classes with our ",
+     "c": "rgb(106, 107, 108)",
+     "w": 400
+    },
+    {
+     "t": "Parkour class options",
+     "c": "rgb(47, 138, 228)",
+     "w": 400
+    },
+    {
+     "t": " adding even more unique workout sessions each week. ",
+     "c": "rgb(106, 107, 108)",
+     "w": 400
+    }
+   ],
    "region": "main",
    "x": 26,
    "y": 6204,
@@ -695,7 +991,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 24,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "So if you’re ready for a new challenge, sign up for ourOCR Fitness Classes today! You won't regret it!",
+     "c": "rgb(40, 82, 118)",
+     "w": 800
+    }
+   ],
    "region": "main",
    "x": 26,
    "y": 6333,
@@ -714,6 +1018,7 @@
    "align": "center",
    "transform": "uppercase",
    "spacing": 2,
+   "lh": 19,
    "region": "main",
    "x": 25,
    "y": 6460,
@@ -741,7 +1046,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 24,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Our accomplished and award winning Crew are here to help you find your strength and enjoy your workouts.",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 21,
    "y": 6738,
@@ -778,7 +1091,15 @@
    "align": "left",
    "transform": "uppercase",
    "spacing": 2,
+   "lh": 28,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Contact",
+     "c": "rgb(40, 82, 118)",
+     "w": 900
+    }
+   ],
    "region": "footer",
    "x": 20,
    "y": 6903,
@@ -806,7 +1127,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 22,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "605 W Farm Rd 182, Springfield,MO, 65810, United States",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 57,
    "y": 6941,
@@ -834,7 +1163,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 22,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "(417) 894-7319",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 57,
    "y": 6996,
@@ -852,7 +1189,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 22,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "(417) 894-7319",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 57,
    "y": 6998,
@@ -880,7 +1225,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 22,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "office@swarriorsports.com",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 57,
    "y": 7037,
@@ -898,7 +1251,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 22,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "office@swarriorsports.com",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 57,
    "y": 7039,
@@ -917,7 +1278,15 @@
    "align": "left",
    "transform": "uppercase",
    "spacing": 2,
+   "lh": 28,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "QUICK LInks",
+     "c": "rgb(40, 82, 118)",
+     "w": 900
+    }
+   ],
    "region": "footer",
    "x": 20,
    "y": 7098,
@@ -936,7 +1305,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 24,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Home",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 21,
    "y": 7137,
@@ -954,7 +1331,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 24,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Home",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 21,
    "y": 7139,
@@ -973,7 +1358,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 24,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "About Us",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 21,
    "y": 7163,
@@ -991,7 +1384,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 24,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "About Us",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 21,
    "y": 7165,
@@ -1010,7 +1411,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 24,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Contact Us",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 21,
    "y": 7189,
@@ -1028,7 +1437,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 24,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Contact Us",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 21,
    "y": 7191,
@@ -1047,7 +1464,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 24,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Meet the Team",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 21,
    "y": 7215,
@@ -1065,7 +1490,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 24,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Meet the Team",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 21,
    "y": 7217,
@@ -1084,7 +1517,15 @@
    "align": "center",
    "transform": "none",
    "spacing": 0,
+   "lh": 20,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "© Copyright 2026",
+     "c": "rgb(255, 255, 255)",
+     "w": 600
+    }
+   ],
    "region": "footer",
    "x": 20,
    "y": 7296,
@@ -1103,7 +1544,15 @@
    "align": "center",
    "transform": "none",
    "spacing": 0,
+   "lh": 20,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": " Springfield Warrior Sports",
+     "c": "rgb(255, 255, 255)",
+     "w": 600
+    }
+   ],
    "region": "footer",
    "x": 20,
    "y": 7316,
@@ -1122,7 +1571,15 @@
    "align": "center",
    "transform": "none",
    "spacing": 0,
+   "lh": 20,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "All Rights Reserved.",
+     "c": "rgb(255, 255, 255)",
+     "w": 600
+    }
+   ],
    "region": "footer",
    "x": 20,
    "y": 7336,

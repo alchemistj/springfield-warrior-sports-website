@@ -17,7 +17,15 @@
    "align": "center",
    "transform": "uppercase",
    "spacing": 1,
+   "lh": 28,
    "behind": "image",
+   "runs": [
+    {
+     "t": "Contact",
+     "c": "rgb(255, 255, 255)",
+     "w": 600
+    }
+   ],
    "region": "header",
    "x": 882,
    "y": 6,
@@ -35,7 +43,15 @@
    "align": "center",
    "transform": "uppercase",
    "spacing": 1,
+   "lh": 28,
    "behind": "image",
+   "runs": [
+    {
+     "t": "About",
+     "c": "rgb(255, 255, 255)",
+     "w": 600
+    }
+   ],
    "region": "header",
    "x": 977,
    "y": 6,
@@ -53,7 +69,15 @@
    "align": "center",
    "transform": "uppercase",
    "spacing": 1,
+   "lh": 28,
    "behind": "image",
+   "runs": [
+    {
+     "t": "Sign Our Waiver",
+     "c": "rgb(255, 255, 255)",
+     "w": 600
+    }
+   ],
    "region": "header",
    "x": 1052,
    "y": 6,
@@ -80,7 +104,15 @@
    "align": "left",
    "transform": "uppercase",
    "spacing": 0,
+   "lh": 32,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Adult Classes",
+     "c": "rgb(255, 255, 255)",
+     "w": 600
+    }
+   ],
    "region": "header",
    "x": 368,
    "y": 73,
@@ -98,7 +130,15 @@
    "align": "left",
    "transform": "uppercase",
    "spacing": 0,
+   "lh": 32,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Kid Classes",
+     "c": "rgb(255, 255, 255)",
+     "w": 600
+    }
+   ],
    "region": "header",
    "x": 500,
    "y": 73,
@@ -116,7 +156,15 @@
    "align": "left",
    "transform": "uppercase",
    "spacing": 0,
+   "lh": 32,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Competitions",
+     "c": "rgb(255, 255, 255)",
+     "w": 600
+    }
+   ],
    "region": "header",
    "x": 610,
    "y": 73,
@@ -134,7 +182,15 @@
    "align": "left",
    "transform": "uppercase",
    "spacing": 0,
+   "lh": 32,
    "behind": "image",
+   "runs": [
+    {
+     "t": "Birthday Parties",
+     "c": "rgb(255, 255, 255)",
+     "w": 600
+    }
+   ],
    "region": "header",
    "x": 738,
    "y": 73,
@@ -152,7 +208,15 @@
    "align": "left",
    "transform": "uppercase",
    "spacing": 0,
+   "lh": 32,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Personal Training",
+     "c": "rgb(255, 255, 255)",
+     "w": 600
+    }
+   ],
    "region": "header",
    "x": 893,
    "y": 73,
@@ -170,7 +234,15 @@
    "align": "left",
    "transform": "uppercase",
    "spacing": 0,
+   "lh": 32,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Summer Camps",
+     "c": "rgb(255, 255, 255)",
+     "w": 600
+    }
+   ],
    "region": "header",
    "x": 1063,
    "y": 73,
@@ -197,7 +269,15 @@
    "align": "center",
    "transform": "uppercase",
    "spacing": 0,
+   "lh": 70,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Fun and Challenging",
+     "c": "rgb(219, 58, 52)",
+     "w": 900
+    }
+   ],
    "region": "main",
    "x": 248,
    "y": 370,
@@ -215,7 +295,15 @@
    "align": "center",
    "transform": "uppercase",
    "spacing": 1,
+   "lh": 45,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Ninja Warrior Classes for Kids and Teens",
+     "c": "rgb(255, 255, 255)",
+     "w": 300
+    }
+   ],
    "region": "main",
    "x": 128,
    "y": 451,
@@ -233,7 +321,15 @@
    "align": "center",
    "transform": "uppercase",
    "spacing": 0,
+   "lh": 50,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Kids Fitness Classes at Springfield Warrior Sports",
+     "c": "rgb(219, 58, 52)",
+     "w": 900
+    }
+   ],
    "region": "main",
    "x": 180,
    "y": 819,
@@ -251,7 +347,15 @@
    "align": "center",
    "transform": "uppercase",
    "spacing": 0,
+   "lh": 30,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Are you looking for ways to keep your kids engaged, active and healthy?",
+     "c": "rgb(0, 0, 0)",
+     "w": 300
+    }
+   ],
    "region": "main",
    "x": 204,
    "y": 930,
@@ -270,7 +374,25 @@
    "align": "center",
    "transform": "none",
    "spacing": 0,
+   "lh": 28,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Springfield Warrior Sports has the perfect solution! Our innovative ninja warrior classes are specifically designed to keep kids of all ages interested in exercising and fostering relationships while having fun at the same time. Our ",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400
+    },
+    {
+     "t": "experienced coaches",
+     "c": "rgb(219, 58, 52)",
+     "w": 400
+    },
+    {
+     "t": " lead weekly classes full of obstacle courses, strength-building exercises, and more that will help boost physical fitness and encourage an active lifestyle. Plus, our competitive youth team offers an opportunity for young athletes who want to take their game up a notch!",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400
+    }
+   ],
    "region": "main",
    "x": 105,
    "y": 1012,
@@ -289,7 +411,15 @@
    "align": "center",
    "transform": "none",
    "spacing": 0,
+   "lh": 28,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Sign up now and let your kids experience the best of what Springfield Warrior Sports has to offer –and try out their very first class today for just $5!",
+     "c": "rgb(40, 82, 118)",
+     "w": 600
+    }
+   ],
    "region": "main",
    "x": 105,
    "y": 1169,
@@ -308,6 +438,7 @@
    "align": "center",
    "transform": "uppercase",
    "spacing": 2,
+   "lh": 19,
    "region": "main",
    "x": 497,
    "y": 1256,
@@ -326,7 +457,20 @@
    "align": "center",
    "transform": "none",
    "spacing": 0,
+   "lh": 28,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Note: ",
+     "c": "rgb(40, 82, 118)",
+     "w": 600
+    },
+    {
+     "t": "The last week of the month (Sunday–Saturday) is our 'Test Week,' where kids challenge themselves using a checklist of obstacles to advance to the next level! Trial classes are still available during this time, but the structure will be less guided and more focused on the checklists. For the best experience, we recommend scheduling a trial class oneof the other weeks!",
+     "c": "rgba(41, 41, 41, 0.99)",
+     "w": 400
+    }
+   ],
    "region": "main",
    "x": 105,
    "y": 1336,
@@ -353,7 +497,15 @@
    "align": "left",
    "transform": "uppercase",
    "spacing": 0,
+   "lh": 50,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "PRE-SCHOOL WARRIORS",
+     "c": "rgb(219, 58, 52)",
+     "w": 900
+    }
+   ],
    "region": "main",
    "x": 653,
    "y": 1705,
@@ -371,7 +523,15 @@
    "align": "left",
    "transform": "uppercase",
    "spacing": 0,
+   "lh": 30,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "(3-6 Year-Olds)",
+     "c": "rgb(0, 0, 0)",
+     "w": 300
+    }
+   ],
    "region": "main",
    "x": 654,
    "y": 1806,
@@ -390,7 +550,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 28,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Our preschool class is geared for your 3-6 year olds. This interactive class will include a warm-up, balance and agility work, and a mini course, along with learning to take turns and follow instructions - all in a FUN and safe environment! Bring your little ninjas by to climb up our walls (and wear them out before rest time). See you soon!",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400
+    }
+   ],
    "region": "main",
    "x": 654,
    "y": 1858,
@@ -418,7 +586,15 @@
    "align": "start",
    "transform": "none",
    "spacing": 0,
+   "lh": 26,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Ages: 3-6 years old",
+     "c": "rgb(0, 0, 0)",
+     "w": 600
+    }
+   ],
    "region": "main",
    "x": 679,
    "y": 2009,
@@ -446,7 +622,15 @@
    "align": "start",
    "transform": "none",
    "spacing": 0,
+   "lh": 26,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Cost: $10 per class. $40 monthly.",
+     "c": "rgb(0, 0, 0)",
+     "w": 600
+    }
+   ],
    "region": "main",
    "x": 679,
    "y": 2039,
@@ -464,7 +648,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 20,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Preschool Open Gym Times",
+     "c": "rgb(219, 58, 52)",
+     "w": 900
+    }
+   ],
    "region": "main",
    "x": 653,
    "y": 2076,
@@ -492,7 +684,15 @@
    "align": "start",
    "transform": "none",
    "spacing": 0,
+   "lh": 26,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Tuesday mornings 9:30am-11:30am",
+     "c": "rgb(0, 0, 0)",
+     "w": 600
+    }
+   ],
    "region": "main",
    "x": 679,
    "y": 2106,
@@ -510,7 +710,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 20,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "CLASS TIMES",
+     "c": "rgb(219, 58, 52)",
+     "w": 900
+    }
+   ],
    "region": "main",
    "x": 653,
    "y": 2142,
@@ -538,7 +746,15 @@
    "align": "start",
    "transform": "none",
    "spacing": 0,
+   "lh": 26,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "3&4 Years Old ",
+     "c": "rgb(0, 0, 0)",
+     "w": 600
+    }
+   ],
    "region": "main",
    "x": 679,
    "y": 2172,
@@ -556,7 +772,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 26,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Tuesday and Wednesday 5:30-6:00pm",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400
+    }
+   ],
    "region": "main",
    "x": 654,
    "y": 2198,
@@ -584,7 +808,15 @@
    "align": "start",
    "transform": "none",
    "spacing": 0,
+   "lh": 26,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "5&6 Years Old ",
+     "c": "rgb(0, 0, 0)",
+     "w": 600
+    }
+   ],
    "region": "main",
    "x": 679,
    "y": 2235,
@@ -602,7 +834,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 26,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Tuesday and Wednesday 6:00pm-6:45pm",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400
+    }
+   ],
    "region": "main",
    "x": 654,
    "y": 2261,
@@ -620,7 +860,15 @@
    "align": "left",
    "transform": "uppercase",
    "spacing": 0,
+   "lh": 50,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "JUNIOR WARRIORS",
+     "c": "rgb(219, 58, 52)",
+     "w": 900
+    }
+   ],
    "region": "main",
    "x": 65,
    "y": 2464,
@@ -638,7 +886,15 @@
    "align": "left",
    "transform": "uppercase",
    "spacing": 0,
+   "lh": 30,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "(ages 7-18)",
+     "c": "rgb(0, 0, 0)",
+     "w": 300
+    }
+   ],
    "region": "main",
    "x": 66,
    "y": 2515,
@@ -657,7 +913,25 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 28,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "The Springfield Warrior Sports Junior Warrior Classes are the perfect way to get your 7-18 year olds active and teach them the importance of a healthy lifestyle. These classes incorporate cardio, strength, balance, and agility training while teaching safe and productive ways to conquer the different obstacles in the gym. For kids who need a little extra one-on-one coaching, we also offer ",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400
+    },
+    {
+     "t": "personal training",
+     "c": "rgb(47, 138, 228)",
+     "w": 400
+    },
+    {
+     "t": " tailored to their goals.",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400
+    }
+   ],
    "region": "main",
    "x": 66,
    "y": 2567,
@@ -676,7 +950,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 28,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Your kids will progress through Levels 1-9 (like white, blue, black, etc., belts) as they accomplish the skills required in each level. This is a great way to challenge your kids and encourage your children to stay active!",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400
+    }
+   ],
    "region": "main",
    "x": 66,
    "y": 2763,
@@ -704,7 +986,15 @@
    "align": "start",
    "transform": "none",
    "spacing": 0,
+   "lh": 26,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Cost:",
+     "c": "rgb(0, 0, 0)",
+     "w": 600
+    }
+   ],
    "region": "main",
    "x": 91,
    "y": 2929,
@@ -732,7 +1022,15 @@
    "align": "start",
    "transform": "none",
    "spacing": 0,
+   "lh": 26,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Intermediate classes: One class per week $85 monthly. Two classes per week $110 monthly. Up to three classes per week, $135 monthly.",
+     "c": "rgb(0, 0, 0)",
+     "w": 600
+    }
+   ],
    "region": "main",
    "x": 91,
    "y": 2969,
@@ -760,7 +1058,15 @@
    "align": "start",
    "transform": "none",
    "spacing": 0,
+   "lh": 26,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Beginner Warrior Membership $70.",
+     "c": "rgb(0, 0, 0)",
+     "w": 600
+    }
+   ],
    "region": "main",
    "x": 91,
    "y": 3061,
@@ -779,6 +1085,7 @@
    "align": "center",
    "transform": "uppercase",
    "spacing": 2,
+   "lh": 19,
    "region": "main",
    "x": 65,
    "y": 3122,
@@ -796,7 +1103,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 20,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "CLASS TIMES",
+     "c": "rgb(219, 58, 52)",
+     "w": 900
+    }
+   ],
    "region": "main",
    "x": 65,
    "y": 3201,
@@ -824,7 +1139,15 @@
    "align": "start",
    "transform": "none",
    "spacing": 0,
+   "lh": 26,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Beginner Level and Trial Class Drop Ins ",
+     "c": "rgb(0, 0, 0)",
+     "w": 600
+    }
+   ],
    "region": "main",
    "x": 91,
    "y": 3231,
@@ -842,7 +1165,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 26,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Mon-Fri 4-4:30pm or 4:30-5pmMon, Thur, & Fri 5-5:30pm or 5:30-6pm",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400
+    }
+   ],
    "region": "main",
    "x": 66,
    "y": 3258,
@@ -870,7 +1201,15 @@
    "align": "start",
    "transform": "none",
    "spacing": 0,
+   "lh": 26,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Level 3+ Junior Warriors ",
+     "c": "rgb(0, 0, 0)",
+     "w": 600
+    }
+   ],
    "region": "main",
    "x": 91,
    "y": 3320,
@@ -888,7 +1227,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 26,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Monday-Friday 5-6pm",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400
+    }
+   ],
    "region": "main",
    "x": 66,
    "y": 3346,
@@ -916,7 +1263,15 @@
    "align": "start",
    "transform": "none",
    "spacing": 0,
+   "lh": 26,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Level 3+ Homeschool Junior Warrior Class ",
+     "c": "rgb(0, 0, 0)",
+     "w": 600
+    }
+   ],
    "region": "main",
    "x": 91,
    "y": 3383,
@@ -934,7 +1289,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 26,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Tuesdays and Thursdays 3-4pm",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400
+    }
+   ],
    "region": "main",
    "x": 66,
    "y": 3410,
@@ -970,7 +1333,15 @@
    "align": "left",
    "transform": "uppercase",
    "spacing": 0,
+   "lh": 50,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "CSNA Competitive Ninja Team",
+     "c": "rgb(219, 58, 52)",
+     "w": 900
+    }
+   ],
    "region": "main",
    "x": 653,
    "y": 3622,
@@ -988,7 +1359,15 @@
    "align": "left",
    "transform": "uppercase",
    "spacing": 0,
+   "lh": 30,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "(7-18 years old)",
+     "c": "rgb(0, 0, 0)",
+     "w": 300
+    }
+   ],
    "region": "main",
    "x": 654,
    "y": 3723,
@@ -1007,7 +1386,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 28,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "The Central States Ninja Association is a competitive youth team for Junior Warriors who are ready to take it to the next level and put their skills to the test! Junior Warriors are eligible to apply for the CSNA team upon completing Level 4. The team works with Coach Adam Arnold who holds 90-minute practices 2 days a week. The season runs September - May with competitions scheduled throughout the region hosted by other participating CSNA gyms |MO, KS, NE, AR|.",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400
+    }
+   ],
    "region": "main",
    "x": 654,
    "y": 3775,
@@ -1035,7 +1422,15 @@
    "align": "start",
    "transform": "none",
    "spacing": 0,
+   "lh": 26,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Cost: $145 for two practices a week. Includes an open gym membership.",
+     "c": "rgb(0, 0, 0)",
+     "w": 600
+    }
+   ],
    "region": "main",
    "x": 679,
    "y": 3997,
@@ -1053,7 +1448,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 20,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "PRACTICE TIMES",
+     "c": "rgb(219, 58, 52)",
+     "w": 900
+    }
+   ],
    "region": "main",
    "x": 653,
    "y": 4083,
@@ -1081,7 +1484,15 @@
    "align": "start",
    "transform": "none",
    "spacing": 0,
+   "lh": 26,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Monday and Thursday: 6-7:30pm",
+     "c": "rgb(0, 0, 0)",
+     "w": 600
+    }
+   ],
    "region": "main",
    "x": 679,
    "y": 4113,
@@ -1099,7 +1510,15 @@
    "align": "left",
    "transform": "uppercase",
    "spacing": 0,
+   "lh": 50,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "PARKOUR",
+     "c": "rgb(219, 58, 52)",
+     "w": 900
+    }
+   ],
    "region": "main",
    "x": 65,
    "y": 4349,
@@ -1117,7 +1536,15 @@
    "align": "left",
    "transform": "uppercase",
    "spacing": 0,
+   "lh": 30,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "(7+ YEARS OLD)",
+     "c": "rgb(0, 0, 0)",
+     "w": 300
+    }
+   ],
    "region": "main",
    "x": 66,
    "y": 4400,
@@ -1136,7 +1563,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 28,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "⚠️ Parkour Classes are currently unavailable.⚠️",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400
+    }
+   ],
    "region": "main",
    "x": 66,
    "y": 4452,
@@ -1155,7 +1590,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 28,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Open Gym is still available for Parkour training.",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400
+    }
+   ],
    "region": "main",
    "x": 66,
    "y": 4480,
@@ -1174,7 +1617,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 28,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Learn the basics of Parkour |free running| in this group class. Students will gain the ability to move freely with and without obstacles using the abilities of their bodies. This will be accomplished primarily through running, jumping, climbing, and quadrupedal movements. Classes will focus on physical conditioning and Parkour skills and will ultimately blend the two together. Experience the non-competitive mental and physical challenge while building strength, speed, stamina, and balance in a controlled environment.",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400
+    }
+   ],
    "region": "main",
    "x": 66,
    "y": 4525,
@@ -1202,7 +1653,15 @@
    "align": "start",
    "transform": "none",
    "spacing": 0,
+   "lh": 26,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Cost: $20 class drop in, $10 class drop in for current members",
+     "c": "rgb(0, 0, 0)",
+     "w": 600
+    }
+   ],
    "region": "main",
    "x": 91,
    "y": 4775,
@@ -1230,7 +1689,15 @@
    "align": "start",
    "transform": "none",
    "spacing": 0,
+   "lh": 26,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "$35/monthly discounted Parkour membership is available to current members who want to attend one class per week",
+     "c": "rgb(0, 0, 0)",
+     "w": 600
+    }
+   ],
    "region": "main",
    "x": 91,
    "y": 4806,
@@ -1258,7 +1725,15 @@
    "align": "start",
    "transform": "none",
    "spacing": 0,
+   "lh": 26,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "$60/monthly for Parkour membership, unlimited classes and also includes an Open Gym membership",
+     "c": "rgb(0, 0, 0)",
+     "w": 600
+    }
+   ],
    "region": "main",
    "x": 91,
    "y": 4862,
@@ -1277,6 +1752,7 @@
    "align": "center",
    "transform": "uppercase",
    "spacing": 2,
+   "lh": 19,
    "region": "main",
    "x": 65,
    "y": 4948,
@@ -1312,7 +1788,15 @@
    "align": "left",
    "transform": "uppercase",
    "spacing": 0,
+   "lh": 50,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "HOMESCHOOL WARRIORS",
+     "c": "rgb(219, 58, 52)",
+     "w": 900
+    }
+   ],
    "region": "main",
    "x": 653,
    "y": 5215,
@@ -1330,7 +1814,15 @@
    "align": "left",
    "transform": "uppercase",
    "spacing": 0,
+   "lh": 30,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "(7-15 years old)",
+     "c": "rgb(0, 0, 0)",
+     "w": 300
+    }
+   ],
    "region": "main",
    "x": 654,
    "y": 5316,
@@ -1349,7 +1841,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 28,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Looking for a fun and engaging way to keep your homeschoolers active? Springfield Warrior Sports has just what you need! Our homeschool program offers structured classes designed to help kids build strength, agility, and confidence—all while making friends and having a blast. Whether your child wants to challenge themselves on obstacles, improve their coordination, or just burn off some energy, we provide a safe and supportive environment to do it all. Sign up for our exciting classes—we can’t wait to see your homeschool warriors in action!",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400
+    }
+   ],
    "region": "main",
    "x": 654,
    "y": 5368,
@@ -1367,7 +1867,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 20,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "HOMESCHOOL CLASSES (Ages 7–15)",
+     "c": "rgb(219, 58, 52)",
+     "w": 900
+    }
+   ],
    "region": "main",
    "x": 653,
    "y": 5651,
@@ -1395,7 +1903,15 @@
    "align": "start",
    "transform": "none",
    "spacing": 0,
+   "lh": 26,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Tuesdays & Thursdays : 3–4pm",
+     "c": "rgb(0, 0, 0)",
+     "w": 600
+    }
+   ],
    "region": "main",
    "x": 679,
    "y": 5681,
@@ -1423,7 +1939,15 @@
    "align": "start",
    "transform": "none",
    "spacing": 0,
+   "lh": 26,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "$85/month for one class per week",
+     "c": "rgb(0, 0, 0)",
+     "w": 600
+    }
+   ],
    "region": "main",
    "x": 679,
    "y": 5711,
@@ -1451,7 +1975,15 @@
    "align": "start",
    "transform": "none",
    "spacing": 0,
+   "lh": 26,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "$110/month for two classes per week",
+     "c": "rgb(0, 0, 0)",
+     "w": 600
+    }
+   ],
    "region": "main",
    "x": 679,
    "y": 5742,
@@ -1470,6 +2002,7 @@
    "align": "center",
    "transform": "uppercase",
    "spacing": 2,
+   "lh": 19,
    "region": "main",
    "x": 653,
    "y": 5802,
@@ -1487,7 +2020,15 @@
    "align": "left",
    "transform": "uppercase",
    "spacing": 0,
+   "lh": 50,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "See how much fun your kid will have",
+     "c": "rgb(255, 255, 255)",
+     "w": 900
+    }
+   ],
    "region": "main",
    "x": 65,
    "y": 6094,
@@ -1560,6 +2101,7 @@
    "align": "center",
    "transform": "uppercase",
    "spacing": 2,
+   "lh": 19,
    "region": "main",
    "x": 486,
    "y": 6944,
@@ -1577,7 +2119,15 @@
    "align": "center",
    "transform": "uppercase",
    "spacing": 0,
+   "lh": 50,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "And …. don’t forget about summer camps, open gym, and Birthday Parties!",
+     "c": "rgb(219, 58, 52)",
+     "w": 900
+    }
+   ],
    "region": "main",
    "x": 261,
    "y": 7163,
@@ -1604,7 +2154,15 @@
    "align": "center",
    "transform": "none",
    "spacing": 0,
+   "lh": 30,
    "behind": "image",
+   "runs": [
+    {
+     "t": "YOUTH SUMMER CAMP",
+     "c": "rgb(40, 82, 118)",
+     "w": 900
+    }
+   ],
    "region": "main",
    "x": 108,
    "y": 7511,
@@ -1623,7 +2181,15 @@
    "align": "center",
    "transform": "none",
    "spacing": 0,
+   "lh": 28,
    "behind": "image",
+   "runs": [
+    {
+     "t": "Kids will have fun and make new friends during our",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400
+    }
+   ],
    "region": "main",
    "x": 109,
    "y": 7582,
@@ -1642,7 +2208,15 @@
    "align": "center",
    "transform": "none",
    "spacing": 0,
+   "lh": 28,
    "behind": "image",
+   "runs": [
+    {
+     "t": "week long day camp. Campers will work with a",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400
+    }
+   ],
    "region": "main",
    "x": 109,
    "y": 7638,
@@ -1661,7 +2235,15 @@
    "align": "center",
    "transform": "none",
    "spacing": 0,
+   "lh": 28,
    "behind": "image",
+   "runs": [
+    {
+     "t": "Warrior Sports trainer focusing on overall strength, ",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400
+    }
+   ],
    "region": "main",
    "x": 109,
    "y": 7694,
@@ -1680,7 +2262,15 @@
    "align": "center",
    "transform": "none",
    "spacing": 0,
+   "lh": 28,
    "behind": "image",
+   "runs": [
+    {
+     "t": "balance, and core exercises along with obstacle ",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400
+    }
+   ],
    "region": "main",
    "x": 109,
    "y": 7750,
@@ -1699,7 +2289,15 @@
    "align": "center",
    "transform": "none",
    "spacing": 0,
+   "lh": 28,
    "behind": "image",
+   "runs": [
+    {
+     "t": "training.",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400
+    }
+   ],
    "region": "main",
    "x": 109,
    "y": 7806,
@@ -1718,6 +2316,7 @@
    "align": "center",
    "transform": "uppercase",
    "spacing": 2,
+   "lh": 19,
    "region": "main",
    "x": 157,
    "y": 7845,
@@ -1744,7 +2343,15 @@
    "align": "center",
    "transform": "none",
    "spacing": 0,
+   "lh": 30,
    "behind": "image",
+   "runs": [
+    {
+     "t": "BIRTHDAY PARTIES",
+     "c": "rgb(40, 82, 118)",
+     "w": 900
+    }
+   ],
    "region": "main",
    "x": 501,
    "y": 7511,
@@ -1763,7 +2370,15 @@
    "align": "center",
    "transform": "none",
    "spacing": 0,
+   "lh": 28,
    "behind": "image",
+   "runs": [
+    {
+     "t": "At Springfield Warrior Sports we want to take the stress out of your party planning - schedule your party with us, and let us do the rest! Parties are an hour and a half long and include open play and an obstacle course set up and facilitated by our Crew. ",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400
+    }
+   ],
    "region": "main",
    "x": 502,
    "y": 7552,
@@ -1782,6 +2397,7 @@
    "align": "center",
    "transform": "uppercase",
    "spacing": 2,
+   "lh": 19,
    "region": "main",
    "x": 541,
    "y": 7845,
@@ -1808,7 +2424,15 @@
    "align": "center",
    "transform": "none",
    "spacing": 0,
+   "lh": 30,
    "behind": "image",
+   "runs": [
+    {
+     "t": "NO-SCHOOL DAY CAMP",
+     "c": "rgb(40, 82, 118)",
+     "w": 900
+    }
+   ],
    "region": "main",
    "x": 895,
    "y": 7511,
@@ -1827,7 +2451,15 @@
    "align": "center",
    "transform": "none",
    "spacing": 0,
+   "lh": 28,
    "behind": "image",
+   "runs": [
+    {
+     "t": "Give your kids active, exciting days during school break at our fun day camps! We provide both half-day and full-days camp options for kids to hang out, play games, do sports, and make friends.",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400
+    }
+   ],
    "region": "main",
    "x": 896,
    "y": 7582,
@@ -1846,6 +2478,7 @@
    "align": "center",
    "transform": "uppercase",
    "spacing": 2,
+   "lh": 19,
    "region": "main",
    "x": 966,
    "y": 7845,
@@ -1873,7 +2506,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 24,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Our accomplished and award winning Crew are here to help you find your strength and enjoy your workouts.",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 86,
    "y": 8188,
@@ -1910,7 +2551,15 @@
    "align": "left",
    "transform": "uppercase",
    "spacing": 2,
+   "lh": 28,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Contact",
+     "c": "rgb(40, 82, 118)",
+     "w": 900
+    }
+   ],
    "region": "footer",
    "x": 491,
    "y": 8071,
@@ -1938,7 +2587,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 22,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "605 W Farm Rd 182, Springfield,MO, 65810, United States",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 528,
    "y": 8124,
@@ -1966,7 +2623,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 22,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "(417) 894-7319",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 528,
    "y": 8185,
@@ -1984,7 +2649,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 22,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "(417) 894-7319",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 528,
    "y": 8187,
@@ -2012,7 +2685,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 22,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "office@swarriorsports.com",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 528,
    "y": 8232,
@@ -2030,7 +2711,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 22,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "office@swarriorsports.com",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 528,
    "y": 8234,
@@ -2049,7 +2738,15 @@
    "align": "left",
    "transform": "uppercase",
    "spacing": 2,
+   "lh": 28,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "QUICK LInks",
+     "c": "rgb(40, 82, 118)",
+     "w": 900
+    }
+   ],
    "region": "footer",
    "x": 894,
    "y": 8071,
@@ -2068,7 +2765,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 24,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Home",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 895,
    "y": 8120,
@@ -2086,7 +2791,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 24,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Home",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 895,
    "y": 8122,
@@ -2105,7 +2818,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 24,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "About Us",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 895,
    "y": 8146,
@@ -2123,7 +2844,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 24,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "About Us",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 895,
    "y": 8148,
@@ -2142,7 +2871,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 24,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Contact Us",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 895,
    "y": 8172,
@@ -2160,7 +2897,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 24,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Contact Us",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 895,
    "y": 8174,
@@ -2179,7 +2924,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 24,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Meet the Team",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 895,
    "y": 8198,
@@ -2197,7 +2950,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 24,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Meet the Team",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 895,
    "y": 8200,
@@ -2216,7 +2977,15 @@
    "align": "center",
    "transform": "none",
    "spacing": 2,
+   "lh": 24,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "© Copyright 2026 Springfield Warrior Sports All Rights Reserved.",
+     "c": "rgb(255, 255, 255)",
+     "w": 600
+    }
+   ],
    "region": "footer",
    "x": 85,
    "y": 8384,

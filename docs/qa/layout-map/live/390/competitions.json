@@ -17,7 +17,15 @@
    "align": "center",
    "transform": "uppercase",
    "spacing": 1,
+   "lh": 28,
    "behind": "image",
+   "runs": [
+    {
+     "t": "Contact",
+     "c": "rgb(255, 255, 255)",
+     "w": 600
+    }
+   ],
    "region": "header",
    "x": 48,
    "y": 11,
@@ -35,7 +43,15 @@
    "align": "center",
    "transform": "uppercase",
    "spacing": 1,
+   "lh": 28,
    "behind": "image",
+   "runs": [
+    {
+     "t": "About",
+     "c": "rgb(255, 255, 255)",
+     "w": 600
+    }
+   ],
    "region": "header",
    "x": 139,
    "y": 11,
@@ -53,7 +69,15 @@
    "align": "center",
    "transform": "uppercase",
    "spacing": 1,
+   "lh": 28,
    "behind": "image",
+   "runs": [
+    {
+     "t": "Sign Our Waiver",
+     "c": "rgb(255, 255, 255)",
+     "w": 600
+    }
+   ],
    "region": "header",
    "x": 209,
    "y": 11,
@@ -98,7 +122,15 @@
    "align": "center",
    "transform": "uppercase",
    "spacing": 0,
+   "lh": 34,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Test your skills on our Fun and Competitive courses ",
+     "c": "rgb(248, 248, 248)",
+     "w": 900
+    }
+   ],
    "region": "main",
    "x": 29,
    "y": 277,
@@ -117,7 +149,15 @@
    "align": "center",
    "transform": "none",
    "spacing": 0,
+   "lh": 37,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Whether you are looking for regional qualifiers or just hoping to join in friendly competition, Springfield Warrior Sports is where you want to be!",
+     "c": "rgba(41, 41, 41, 0.99)",
+     "w": 400
+    }
+   ],
    "region": "main",
    "x": 26,
    "y": 519,
@@ -136,7 +176,25 @@
    "align": "center",
    "transform": "none",
    "spacing": 0,
+   "lh": 37,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "We host",
+     "c": "rgba(41, 41, 41, 0.99)",
+     "w": 400
+    },
+    {
+     "t": "regional qualifiers for the WNL",
+     "c": "rgb(47, 138, 228)",
+     "w": 400
+    },
+    {
+     "t": "(World Ninja League) and are a CSNA (Central States Ninja Association) youth competitive league member. Check the links below for scheduled competitions and information! ",
+     "c": "rgba(41, 41, 41, 0.99)",
+     "w": 400
+    }
+   ],
    "region": "main",
    "x": 26,
    "y": 726,
@@ -154,7 +212,15 @@
    "align": "center",
    "transform": "uppercase",
    "spacing": 0,
+   "lh": 44,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "September 2026 CSNA team Competition",
+     "c": "rgb(219, 58, 52)",
+     "w": 900
+    }
+   ],
    "region": "main",
    "x": 25,
    "y": 1090,
@@ -182,7 +248,15 @@
    "align": "start",
    "transform": "none",
    "spacing": 0,
+   "lh": 26,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Date: Saturday, September 19th",
+     "c": "rgba(41, 41, 41, 0.99)",
+     "w": 400
+    }
+   ],
    "region": "main",
    "x": 68,
    "y": 1272,
@@ -210,7 +284,15 @@
    "align": "start",
    "transform": "none",
    "spacing": 0,
+   "lh": 26,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Start time: TBA",
+     "c": "rgba(41, 41, 41, 0.99)",
+     "w": 400
+    }
+   ],
    "region": "main",
    "x": 68,
    "y": 1317,
@@ -238,7 +320,20 @@
    "align": "start",
    "transform": "none",
    "spacing": 0,
+   "lh": 26,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Price per registration: ",
+     "c": "rgba(41, 41, 41, 0.99)",
+     "w": 400
+    },
+    {
+     "t": "$60",
+     "c": "rgba(41, 41, 41, 0.99)",
+     "w": 900
+    }
+   ],
    "region": "main",
    "x": 68,
    "y": 1362,
@@ -266,6 +361,7 @@
    "align": "center",
    "transform": "uppercase",
    "spacing": 2,
+   "lh": 19,
    "region": "main",
    "x": 25,
    "y": 1591,
@@ -283,7 +379,15 @@
    "align": "start",
    "transform": "none",
    "spacing": 0,
+   "lh": 34,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "2026-9 CSNA September 19th Form",
+     "c": "rgb(12, 17, 21)",
+     "w": 600
+    }
+   ],
    "region": "main",
    "x": 26,
    "y": 1670,
@@ -311,7 +415,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 24,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Our accomplished and award winning Crew are here to help you find your strength and enjoy your workouts.",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 21,
    "y": 3365,
@@ -348,7 +460,15 @@
    "align": "left",
    "transform": "uppercase",
    "spacing": 2,
+   "lh": 28,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Contact",
+     "c": "rgb(40, 82, 118)",
+     "w": 900
+    }
+   ],
    "region": "footer",
    "x": 20,
    "y": 3530,
@@ -376,7 +496,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 22,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "605 W Farm Rd 182, Springfield,MO, 65810, United States",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 57,
    "y": 3568,
@@ -404,7 +532,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 22,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "(417) 894-7319",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 57,
    "y": 3623,
@@ -422,7 +558,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 22,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "(417) 894-7319",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 57,
    "y": 3625,
@@ -450,7 +594,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 22,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "office@swarriorsports.com",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 57,
    "y": 3664,
@@ -468,7 +620,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 22,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "office@swarriorsports.com",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 57,
    "y": 3666,
@@ -487,7 +647,15 @@
    "align": "left",
    "transform": "uppercase",
    "spacing": 2,
+   "lh": 28,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "QUICK LInks",
+     "c": "rgb(40, 82, 118)",
+     "w": 900
+    }
+   ],
    "region": "footer",
    "x": 20,
    "y": 3725,
@@ -506,7 +674,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 24,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Home",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 21,
    "y": 3764,
@@ -524,7 +700,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 24,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Home",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 21,
    "y": 3766,
@@ -543,7 +727,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 24,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "About Us",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 21,
    "y": 3790,
@@ -561,7 +753,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 24,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "About Us",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 21,
    "y": 3792,
@@ -580,7 +780,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 24,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Contact Us",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 21,
    "y": 3816,
@@ -598,7 +806,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 24,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Contact Us",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 21,
    "y": 3818,
@@ -617,7 +833,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 24,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Meet the Team",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 21,
    "y": 3842,
@@ -635,7 +859,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 24,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Meet the Team",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 21,
    "y": 3844,
@@ -654,7 +886,15 @@
    "align": "center",
    "transform": "none",
    "spacing": 0,
+   "lh": 20,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "© Copyright 2026",
+     "c": "rgb(255, 255, 255)",
+     "w": 600
+    }
+   ],
    "region": "footer",
    "x": 20,
    "y": 3923,
@@ -673,7 +913,15 @@
    "align": "center",
    "transform": "none",
    "spacing": 0,
+   "lh": 20,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": " Springfield Warrior Sports",
+     "c": "rgb(255, 255, 255)",
+     "w": 600
+    }
+   ],
    "region": "footer",
    "x": 20,
    "y": 3943,
@@ -692,7 +940,15 @@
    "align": "center",
    "transform": "none",
    "spacing": 0,
+   "lh": 20,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "All Rights Reserved.",
+     "c": "rgb(255, 255, 255)",
+     "w": 600
+    }
+   ],
    "region": "footer",
    "x": 20,
    "y": 3964,

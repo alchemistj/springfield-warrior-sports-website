@@ -14,7 +14,7 @@ const [liveDir, buildDir, reportFile] = args;
 const allowIdx = args.indexOf("--allow");
 const allow = allowIdx > -1 ? JSON.parse(readFileSync(args[allowIdx + 1], "utf8")) : [];
 
-const TOL = { x: 24, wPct: 0.12, wAbs: 40, size: 2, weight: 100, color: 14 };
+const TOL = { x: 24, wPct: 0.12, wAbs: 40, size: 2, weight: 100, color: 6 }; // color 6 (v2.5): live's light grey band is 14 off white
 
 const norm = (s) => (s || "").toLowerCase().replace(/[‘’“”'"]/g, "").replace(/[^a-z0-9$]+/g, " ").trim();
 export function imageKey(src) {
@@ -107,6 +107,8 @@ function styleDiffs(l, b, label) {
   return out;
 }
 
+// Background and band colors from the screenshot (v2.5: was 40, missed a 14-off light grey band).
+const BG_TOL = 8;
 const PIXEL_TOL = 38; // mean absolute difference (0-255) over a 48x16 grayscale thumbnail of the region
 const pngMeta = new Map();
 async function meta(file) {
@@ -138,13 +140,18 @@ async function dominant(file, r, padding = 12) {
   const height = Math.round(Math.max(1, Math.min(m.height - top, r.h + pad * 2)));
   if (width < 2 || height < 2) return null;
   const buf = await sharp(file).extract({ left, top, width, height }).resize(40, 12, { fit: "fill", kernel: "nearest" }).removeAlpha().raw().toBuffer();
+  // Most common color bucket, then the true average of the pixels in it (v2.5: returning the
+  // bucket itself rounded white to 264 and flipped near-black between 0 and 24).
   const counts = new Map();
   for (let i = 0; i < buf.length; i += 3) {
-    const key = [buf[i], buf[i + 1], buf[i + 2]].map((v) => Math.round(v / 24) * 24).join(",");
-    counts.set(key, (counts.get(key) || 0) + 1);
+    const key = [buf[i], buf[i + 1], buf[i + 2]].map((v) => Math.round(v / 24)).join(",");
+    const e = counts.get(key) || { n: 0, sum: [0, 0, 0] };
+    e.n++;
+    for (let k = 0; k < 3; k++) e.sum[k] += buf[i + k];
+    counts.set(key, e);
   }
-  const [best] = [...counts.entries()].sort((a, b) => b[1] - a[1]);
-  return best[0].split(",").map(Number);
+  const [best] = [...counts.values()].sort((a, b) => b.n - a.n);
+  return best.sum.map((v) => Math.round(v / best.n));
 }
 async function regionDiff(liveFile, l, buildFile, b) {
   const [a, c] = await Promise.all([thumb(liveFile, l), thumb(buildFile, b)]);
@@ -221,13 +228,17 @@ for (const width of readdirSync(liveDir).sort((a, b) => Number(b) - Number(a))) 
         return { str, st };
       };
       const bc = charStyles(build.items);
+      let runCursor = 0;
       for (const i of live.items) {
         if ((i.kind !== "text" && i.kind !== "heading") || i.region !== "main" || !i.runs) continue;
         for (const r of i.runs) {
           const t = norm(r.t);
           if (t.length < 3) continue;
-          const at = bc.str.indexOf(" " + t);
+          // In page order: the next occurrence after the previous run, else anywhere.
+          let at = bc.str.indexOf(" " + t, runCursor);
+          if (at === -1) at = bc.str.indexOf(" " + t);
           if (at === -1) continue; // missing words are reported above
+          runCursor = Math.max(runCursor, at + t.length);
           const counts = new Map();
           for (let k = at + 1; k <= at + t.length; k++) {
             const s = bc.st[k];
@@ -287,7 +298,7 @@ for (const width of readdirSync(liveDir).sort((a, b) => Number(b) - Number(a))) 
         // common color around it (catches a missing grey or blue band, or a missing white card).
         for (const [l, b] of [...h.pairs, ...tx.pairs]) {
           const [lc, bc] = await Promise.all([dominant(livePng, l), dominant(buildPng, b)]);
-          if (lc && bc && Math.max(...lc.map((v, i) => Math.abs(v - bc[i]))) > 40)
+          if (lc && bc && Math.max(...lc.map((v, i) => Math.abs(v - bc[i]))) > BG_TOL)
             issues.push(`background behind "${(l.text || "").slice(0, 40)}": rgb(${bc.join(", ")}), live rgb(${lc.join(", ")})`);
         }
         // Full-width band color: sample the left margin, outside the content column, beside each
@@ -302,7 +313,7 @@ for (const width of readdirSync(liveDir).sort((a, b) => Number(b) - Number(a))) 
             dominant(livePng, { x: 0, y: l.y + l.h / 2 - 4, w: marginW, h: 8 }, 0),
             dominant(buildPng, { x: 0, y: b.y + b.h / 2 - 4, w: marginW, h: 8 }, 0),
           ]);
-          if (lc && bc && Math.max(...lc.map((v, i) => Math.abs(v - bc[i]))) > 40)
+          if (lc && bc && Math.max(...lc.map((v, i) => Math.abs(v - bc[i]))) > BG_TOL)
             issues.push(`band color beside "${(l.text || "").slice(0, 40)}": rgb(${bc.join(", ")}), live rgb(${lc.join(", ")})`);
         }
         for (const [l, b, label] of pairsForPixels) {

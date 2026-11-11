@@ -19,7 +19,15 @@
    "align": "center",
    "transform": "uppercase",
    "spacing": 1,
+   "lh": 28,
    "behind": "image",
+   "runs": [
+    {
+     "t": "Contact",
+     "c": "rgb(255, 255, 255)",
+     "w": 600
+    }
+   ],
    "region": "header",
    "x": 1202,
    "y": 6,
@@ -37,7 +45,15 @@
    "align": "center",
    "transform": "uppercase",
    "spacing": 1,
+   "lh": 28,
    "behind": "image",
+   "runs": [
+    {
+     "t": "About",
+     "c": "rgb(255, 255, 255)",
+     "w": 600
+    }
+   ],
    "region": "header",
    "x": 1297,
    "y": 6,
@@ -55,7 +71,15 @@
    "align": "center",
    "transform": "uppercase",
    "spacing": 1,
+   "lh": 28,
    "behind": "image",
+   "runs": [
+    {
+     "t": "Sign Our Waiver",
+     "c": "rgb(255, 255, 255)",
+     "w": 600
+    }
+   ],
    "region": "header",
    "x": 1372,
    "y": 6,
@@ -82,7 +106,15 @@
    "align": "left",
    "transform": "uppercase",
    "spacing": 0,
+   "lh": 32,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Adult Classes",
+     "c": "rgb(255, 255, 255)",
+     "w": 600
+    }
+   ],
    "region": "header",
    "x": 688,
    "y": 73,
@@ -100,7 +132,15 @@
    "align": "left",
    "transform": "uppercase",
    "spacing": 0,
+   "lh": 32,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Kid Classes",
+     "c": "rgb(255, 255, 255)",
+     "w": 600
+    }
+   ],
    "region": "header",
    "x": 820,
    "y": 73,
@@ -118,7 +158,15 @@
    "align": "left",
    "transform": "uppercase",
    "spacing": 0,
+   "lh": 32,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Competitions",
+     "c": "rgb(255, 255, 255)",
+     "w": 600
+    }
+   ],
    "region": "header",
    "x": 930,
    "y": 73,
@@ -136,7 +184,15 @@
    "align": "left",
    "transform": "uppercase",
    "spacing": 0,
+   "lh": 32,
    "behind": "image",
+   "runs": [
+    {
+     "t": "Birthday Parties",
+     "c": "rgb(255, 255, 255)",
+     "w": 600
+    }
+   ],
    "region": "header",
    "x": 1058,
    "y": 73,
@@ -154,7 +210,15 @@
    "align": "left",
    "transform": "uppercase",
    "spacing": 0,
+   "lh": 32,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Personal Training",
+     "c": "rgb(255, 255, 255)",
+     "w": 600
+    }
+   ],
    "region": "header",
    "x": 1213,
    "y": 73,
@@ -172,7 +236,15 @@
    "align": "left",
    "transform": "uppercase",
    "spacing": 0,
+   "lh": 32,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Summer Camps",
+     "c": "rgb(255, 255, 255)",
+     "w": 600
+    }
+   ],
    "region": "header",
    "x": 1383,
    "y": 73,
@@ -200,7 +272,15 @@
    "align": "center",
    "transform": "uppercase",
    "spacing": 0,
+   "lh": 70,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "High-Energy",
+     "c": "rgb(255, 255, 255)",
+     "w": 900
+    }
+   ],
    "region": "main",
    "x": 551,
    "y": 304,
@@ -219,7 +299,15 @@
    "align": "center",
    "transform": "uppercase",
    "spacing": 0,
+   "lh": 70,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Kids' birthday parties",
+     "c": "rgb(219, 58, 52)",
+     "w": 900
+    }
+   ],
    "region": "main",
    "x": 551,
    "y": 374,
@@ -238,7 +326,15 @@
    "align": "center",
    "transform": "uppercase",
    "spacing": 0,
+   "lh": 36,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "in Springfield, MO",
+     "c": "rgb(255, 255, 255)",
+     "w": 400
+    }
+   ],
    "region": "main",
    "x": 551,
    "y": 452,
@@ -256,7 +352,15 @@
    "align": "center",
    "transform": "uppercase",
    "spacing": 0,
+   "lh": 36,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Ninja Warrior Courses, Laser Tag, Nerf Battles, and More!",
+     "c": "rgb(255, 255, 255)",
+     "w": 400
+    }
+   ],
    "region": "main",
    "x": 577,
    "y": 518,
@@ -274,7 +378,15 @@
    "align": "center",
    "transform": "uppercase",
    "spacing": 0,
+   "lh": 26,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Kids will have a Blast, and You can Relax",
+     "c": "rgb(0, 0, 0)",
+     "w": 900
+    }
+   ],
    "region": "main",
    "x": 500,
    "y": 819,
@@ -293,7 +405,15 @@
    "align": "center",
    "transform": "none",
    "spacing": 0,
+   "lh": 28,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Springfield Warrior Sports is the ideal venue for a birthday party in Springfield, MO. With a variety of party options facilitated by our crew and a full hour of gym time, adults can relax knowing everything is taken care of while the kids have fun!Parties here are extraordinary - not only do we promise that kids will love it, but we also make sure the birthday boy or girl has something special too; the week after their party, the birthday kid gets to come to a ninja class for free and their very own Ninja t-shirt!",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400
+    }
+   ],
    "region": "main",
    "x": 425,
    "y": 856,
@@ -312,7 +432,15 @@
    "align": "center",
    "transform": "none",
    "spacing": 0,
+   "lh": 28,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "This means more than just one day of fun - there can be lasting memories of their best birthday, making this party extra memorable.",
+     "c": "rgb(40, 82, 118)",
+     "w": 600
+    }
+   ],
    "region": "main",
    "x": 489,
    "y": 1013,
@@ -330,7 +458,15 @@
    "align": "center",
    "transform": "uppercase",
    "spacing": 0,
+   "lh": 40,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Warrior Sports takes the Stress Out of YourBirthday Party Planning",
+     "c": "rgb(12, 17, 21)",
+     "w": 900
+    }
+   ],
    "region": "main",
    "x": 405,
    "y": 1270,
@@ -358,7 +494,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 28,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "At Springfield Warrior Sports, we want to take the stress out of your party planning - schedule your birthday party with us, and let us do the rest — including cleanup! Each party lasts for a total of 1.5 hours. Included in the party is one hour of gym time, featuring open play and an obstacle course set up and facilitated by our Crew. Approximately 30 minutes can be used for cake, presents, and pizza! (optional). The birthday child will receive a Springfield Warrior Sports T-shirt, and the week after their party, they get to try a ninja class for free.",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400
+    }
+   ],
    "region": "main",
    "x": 974,
    "y": 1504,
@@ -377,7 +521,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 28,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Note: free customized party invitations are available upon request. ",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400
+    }
+   ],
    "region": "main",
    "x": 974,
    "y": 1840,
@@ -405,7 +557,20 @@
    "align": "start",
    "transform": "none",
    "spacing": 0,
+   "lh": 26,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Cost: ",
+     "c": "rgb(0, 0, 0)",
+     "w": 600
+    },
+    {
+     "t": "$179 for the first 11 kids and $10 for each additional participant (plus $40 if you prefer to rent the gym for a private party). The parents of the birthday child are free if they would like to try the obstacles as well! A $40 deposit is required at the time of booking and will be taken off the full amount on the day of the party. ",
+     "c": "rgb(0, 0, 0)",
+     "w": 300
+    }
+   ],
    "region": "main",
    "x": 999,
    "y": 1879,
@@ -433,7 +598,15 @@
    "align": "start",
    "transform": "none",
    "spacing": 0,
+   "lh": 26,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "All other guests (siblings, other parents, etc.) who wish to play in the gym can simply pay the discounted group rate for open gym during the party time. ",
+     "c": "rgb(0, 0, 0)",
+     "w": 300
+    }
+   ],
    "region": "main",
    "x": 411,
    "y": 2161,
@@ -461,7 +634,20 @@
    "align": "start",
    "transform": "none",
    "spacing": 0,
+   "lh": 26,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "*",
+     "c": "rgb(219, 58, 52)",
+     "w": 600
+    },
+    {
+     "t": " All participants will need to sign a waiver before playing in the gym. This can be done by a parent in the gym upon arrival, or it may be filled out online prior to the party. ",
+     "c": "rgb(0, 0, 0)",
+     "w": 300
+    }
+   ],
    "region": "main",
    "x": 411,
    "y": 2232,
@@ -489,7 +675,20 @@
    "align": "start",
    "transform": "none",
    "spacing": 0,
+   "lh": 26,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "**",
+     "c": "rgb(219, 58, 52)",
+     "w": 600
+    },
+    {
+     "t": " To reserve your birthday party time slot, a $40 deposit is required at booking and covers the first 11 kids. The rest of the $179, additional participants or optional add-ons will be settled on the day of the party.",
+     "c": "rgb(0, 0, 0)",
+     "w": 300
+    }
+   ],
    "region": "main",
    "x": 411,
    "y": 2304,
@@ -516,7 +715,15 @@
    "align": "center",
    "transform": "uppercase",
    "spacing": 0,
+   "lh": 50,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Book Now!",
+     "c": "rgb(219, 58, 52)",
+     "w": 900
+    }
+   ],
    "region": "main",
    "x": 823,
    "y": 2555,
@@ -534,7 +741,35 @@
    "align": "center",
    "transform": "none",
    "spacing": 0,
+   "lh": 35,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "You can begin the birthday party scheduling process on our website by ",
+     "c": "rgb(255, 255, 255)",
+     "w": 400
+    },
+    {
+     "t": "clicking here",
+     "c": "rgb(135, 204, 237)",
+     "w": 600
+    },
+    {
+     "t": ", or call us today at ",
+     "c": "rgb(255, 255, 255)",
+     "w": 400
+    },
+    {
+     "t": "(417) 894-7319",
+     "c": "rgb(135, 204, 237)",
+     "w": 600
+    },
+    {
+     "t": " to reserve your birthday party spot at Warrior Sports! ",
+     "c": "rgb(255, 255, 255)",
+     "w": 400
+    }
+   ],
    "region": "main",
    "x": 484,
    "y": 2621,
@@ -552,7 +787,20 @@
    "align": "center",
    "transform": "none",
    "spacing": 0,
+   "lh": 35,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Cancellation & Rescheduling Policy:",
+     "c": "rgb(255, 255, 255)",
+     "w": 900
+    },
+    {
+     "t": "To help us staff and prepare properly, any cancellations or reschedules made starting the weekend immediately before your party date and at any point thereafter will incur a $60 fee.",
+     "c": "rgb(255, 255, 255)",
+     "w": 600
+    }
+   ],
    "region": "main",
    "x": 484,
    "y": 2708,
@@ -570,7 +818,15 @@
    "align": "center",
    "transform": "uppercase",
    "spacing": 0,
+   "lh": 42,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "More Birthday Party Options at Springfield Warrior Sports",
+     "c": "rgb(0, 0, 0)",
+     "w": 300
+    }
+   ],
    "region": "main",
    "x": 386,
    "y": 2986,
@@ -589,7 +845,15 @@
    "align": "center",
    "transform": "none",
    "spacing": 0,
+   "lh": 28,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Want to feed the birthday party or have birthday battles instead of an obstacle course race?",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400
+    }
+   ],
    "region": "main",
    "x": 386,
    "y": 3035,
@@ -608,7 +872,15 @@
    "align": "center",
    "transform": "none",
    "spacing": 0,
+   "lh": 28,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "We can help you with that!",
+     "c": "rgb(40, 82, 118)",
+     "w": 600
+    }
+   ],
    "region": "main",
    "x": 386,
    "y": 3065,
@@ -635,7 +907,15 @@
    "align": "left",
    "transform": "uppercase",
    "spacing": 0,
+   "lh": 40,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Pizza Birthday Party with No Clean Up!",
+     "c": "rgb(219, 58, 52)",
+     "w": 900
+    }
+   ],
    "region": "main",
    "x": 973,
    "y": 3284,
@@ -654,7 +934,15 @@
    "align": "start",
    "transform": "none",
    "spacing": 0,
+   "lh": 28,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Our birthday party pizza package includes plates, napkins, utensils, and pizza from Godfather's Pizza. Two pizzas will be ordered for a party of 10 kids, but we will adjust and order more if there are more kids attending. The pizza party add-on is $50, and extra pizzas can be requested for family members or adults for $12 each.",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400
+    }
+   ],
    "region": "main",
    "x": 974,
    "y": 3404,
@@ -672,7 +960,15 @@
    "align": "left",
    "transform": "uppercase",
    "spacing": 0,
+   "lh": 40,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Have Battles in our Obstacle Course Gym",
+     "c": "rgb(219, 58, 52)",
+     "w": 900
+    }
+   ],
    "region": "main",
    "x": 385,
    "y": 3861,
@@ -690,7 +986,15 @@
    "align": "left",
    "transform": "uppercase",
    "spacing": 0,
+   "lh": 30,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Nerf Battle Parties",
+     "c": "rgb(40, 82, 118)",
+     "w": 900
+    }
+   ],
    "region": "main",
    "x": 385,
    "y": 4035,
@@ -709,7 +1013,25 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 28,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Our crew will set up and facilitate a ",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400
+    },
+    {
+     "t": "Nerf Battle",
+     "c": "rgb(47, 138, 228)",
+     "w": 400
+    },
+    {
+     "t": " for your party rather than an obstacle course. Nerf parties must be scheduled during a private party time slot. Nerf Battle Parties are an additional $70, and the price includes a private party fee of ($40) and a staff/equipment fee of ($30). ",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400
+    }
+   ],
    "region": "main",
    "x": 386,
    "y": 4076,
@@ -727,7 +1049,15 @@
    "align": "left",
    "transform": "uppercase",
    "spacing": 0,
+   "lh": 30,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Laser Tag Parties",
+     "c": "rgb(40, 82, 118)",
+     "w": 900
+    }
+   ],
    "region": "main",
    "x": 385,
    "y": 4247,
@@ -746,7 +1076,25 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 28,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "The Springfield Warrior Sports team will set your birthday party up for a super fun laser tag battle with our high-end laser tag guns. ",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400
+    },
+    {
+     "t": "Laser tag parties",
+     "c": "rgb(47, 138, 228)",
+     "w": 400
+    },
+    {
+     "t": " must be scheduled during a private party time slot. Laser Tag Parties are an additional $90, and the investment includes a private party fee of ($40) and a staff/equipment fee of ($50). ",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400
+    }
+   ],
    "region": "main",
    "x": 386,
    "y": 4288,
@@ -782,7 +1130,15 @@
    "align": "start",
    "transform": "uppercase",
    "spacing": 0,
+   "lh": 55,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Create AmazingMemories",
+     "c": "rgb(219, 58, 52)",
+     "w": 900
+    }
+   ],
    "region": "main",
    "x": 385,
    "y": 4811,
@@ -801,7 +1157,35 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 28,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Create unforgettable memories with your kids and their friends in an uber-kid-friendly atmosphere. Your child will have the time of their life playing in our obstacle course gym while you sit back and relax without having to stress out about setting up or cleaning up afterward. Plus, our cooler of Gatorade keeps everyone well-hydrated during all that physical activity!Shoot us a ",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400
+    },
+    {
+     "t": "message here with your desired birthday party dates",
+     "c": "rgb(219, 58, 52)",
+     "w": 600
+    },
+    {
+     "t": ", or call ",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400
+    },
+    {
+     "t": "(417) 894-7319",
+     "c": "rgb(219, 58, 52)",
+     "w": 600
+    },
+    {
+     "t": " to book your birthday experience at Springfield Warrior Sports!",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400
+    }
+   ],
    "region": "main",
    "x": 386,
    "y": 4922,
@@ -829,7 +1213,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 24,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Our accomplished and award winning Crew are here to help you find your strength and enjoy your workouts.",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 406,
    "y": 5503,
@@ -866,7 +1258,15 @@
    "align": "left",
    "transform": "uppercase",
    "spacing": 2,
+   "lh": 28,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Contact",
+     "c": "rgb(40, 82, 118)",
+     "w": 900
+    }
+   ],
    "region": "footer",
    "x": 811,
    "y": 5386,
@@ -894,7 +1294,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 22,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "605 W Farm Rd 182, Springfield,MO, 65810, United States",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 848,
    "y": 5439,
@@ -922,7 +1330,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 22,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "(417) 894-7319",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 848,
    "y": 5500,
@@ -940,7 +1356,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 22,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "(417) 894-7319",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 848,
    "y": 5502,
@@ -968,7 +1392,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 22,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "office@swarriorsports.com",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 848,
    "y": 5547,
@@ -986,7 +1418,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 22,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "office@swarriorsports.com",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 848,
    "y": 5549,
@@ -1005,7 +1445,15 @@
    "align": "left",
    "transform": "uppercase",
    "spacing": 2,
+   "lh": 28,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "QUICK LInks",
+     "c": "rgb(40, 82, 118)",
+     "w": 900
+    }
+   ],
    "region": "footer",
    "x": 1214,
    "y": 5386,
@@ -1024,7 +1472,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 24,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Home",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 1215,
    "y": 5435,
@@ -1042,7 +1498,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 24,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Home",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 1215,
    "y": 5437,
@@ -1061,7 +1525,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 24,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "About Us",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 1215,
    "y": 5461,
@@ -1079,7 +1551,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 24,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "About Us",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 1215,
    "y": 5463,
@@ -1098,7 +1578,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 24,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Contact Us",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 1215,
    "y": 5487,
@@ -1116,7 +1604,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 24,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Contact Us",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 1215,
    "y": 5489,
@@ -1135,7 +1631,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 24,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Meet the Team",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 1215,
    "y": 5513,
@@ -1153,7 +1657,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 24,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Meet the Team",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 1215,
    "y": 5515,
@@ -1172,7 +1684,15 @@
    "align": "center",
    "transform": "none",
    "spacing": 2,
+   "lh": 24,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "© Copyright 2026 Springfield Warrior Sports All Rights Reserved.",
+     "c": "rgb(255, 255, 255)",
+     "w": 600
+    }
+   ],
    "region": "footer",
    "x": 405,
    "y": 5698,

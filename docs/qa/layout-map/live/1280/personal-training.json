@@ -17,7 +17,15 @@
    "align": "center",
    "transform": "uppercase",
    "spacing": 1,
+   "lh": 28,
    "behind": "image",
+   "runs": [
+    {
+     "t": "Contact",
+     "c": "rgb(255, 255, 255)",
+     "w": 600
+    }
+   ],
    "region": "header",
    "x": 882,
    "y": 6,
@@ -35,7 +43,15 @@
    "align": "center",
    "transform": "uppercase",
    "spacing": 1,
+   "lh": 28,
    "behind": "image",
+   "runs": [
+    {
+     "t": "About",
+     "c": "rgb(255, 255, 255)",
+     "w": 600
+    }
+   ],
    "region": "header",
    "x": 977,
    "y": 6,
@@ -53,7 +69,15 @@
    "align": "center",
    "transform": "uppercase",
    "spacing": 1,
+   "lh": 28,
    "behind": "image",
+   "runs": [
+    {
+     "t": "Sign Our Waiver",
+     "c": "rgb(255, 255, 255)",
+     "w": 600
+    }
+   ],
    "region": "header",
    "x": 1052,
    "y": 6,
@@ -80,7 +104,15 @@
    "align": "left",
    "transform": "uppercase",
    "spacing": 0,
+   "lh": 32,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Adult Classes",
+     "c": "rgb(255, 255, 255)",
+     "w": 600
+    }
+   ],
    "region": "header",
    "x": 368,
    "y": 73,
@@ -98,7 +130,15 @@
    "align": "left",
    "transform": "uppercase",
    "spacing": 0,
+   "lh": 32,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Kid Classes",
+     "c": "rgb(255, 255, 255)",
+     "w": 600
+    }
+   ],
    "region": "header",
    "x": 500,
    "y": 73,
@@ -116,7 +156,15 @@
    "align": "left",
    "transform": "uppercase",
    "spacing": 0,
+   "lh": 32,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Competitions",
+     "c": "rgb(255, 255, 255)",
+     "w": 600
+    }
+   ],
    "region": "header",
    "x": 610,
    "y": 73,
@@ -134,7 +182,15 @@
    "align": "left",
    "transform": "uppercase",
    "spacing": 0,
+   "lh": 32,
    "behind": "image",
+   "runs": [
+    {
+     "t": "Birthday Parties",
+     "c": "rgb(255, 255, 255)",
+     "w": 600
+    }
+   ],
    "region": "header",
    "x": 738,
    "y": 73,
@@ -152,7 +208,15 @@
    "align": "left",
    "transform": "uppercase",
    "spacing": 0,
+   "lh": 32,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Personal Training",
+     "c": "rgb(255, 255, 255)",
+     "w": 600
+    }
+   ],
    "region": "header",
    "x": 893,
    "y": 73,
@@ -170,7 +234,15 @@
    "align": "left",
    "transform": "uppercase",
    "spacing": 0,
+   "lh": 32,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Summer Camps",
+     "c": "rgb(255, 255, 255)",
+     "w": 600
+    }
+   ],
    "region": "header",
    "x": 1063,
    "y": 73,
@@ -197,7 +269,15 @@
    "align": "center",
    "transform": "uppercase",
    "spacing": 0,
+   "lh": 70,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Personal Training at Warrior Sports",
+     "c": "rgb(219, 58, 52)",
+     "w": 900
+    }
+   ],
    "region": "main",
    "x": 140,
    "y": 309,
@@ -215,7 +295,15 @@
    "align": "left",
    "transform": "uppercase",
    "spacing": 0,
+   "lh": 50,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Not Your Typical Gym.Not Your Typical Trainer.",
+     "c": "rgb(219, 58, 52)",
+     "w": 900
+    }
+   ],
    "region": "main",
    "x": 65,
    "y": 719,
@@ -234,7 +322,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 28,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "If you’ve ever felt like fitness wasn’t made for you, you’re in the right place.",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400
+    }
+   ],
    "region": "main",
    "x": 66,
    "y": 895,
@@ -253,7 +349,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 28,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "We don’t (necessarily) do treadmills or machine circuits. We do movement that makes you stronger, sharper, and more confident…your way.",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400
+    }
+   ],
    "region": "main",
    "x": 66,
    "y": 940,
@@ -272,7 +376,15 @@
    "align": "start",
    "transform": "none",
    "spacing": 0,
+   "lh": 32,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Because when training is rooted in curiosity and connection, not comparison, you show up differently. We work with clients from across Springfield. Battlefield to Sunshine and everywhere in between, because personalized training should feel close to home.",
+     "c": "rgb(106, 107, 108)",
+     "w": 400
+    }
+   ],
    "region": "main",
    "x": 66,
    "y": 1013,
@@ -291,6 +403,7 @@
    "align": "center",
    "transform": "uppercase",
    "spacing": 2,
+   "lh": 19,
    "region": "main",
    "x": 65,
    "y": 1175,
@@ -317,7 +430,15 @@
    "align": "center",
    "transform": "uppercase",
    "spacing": 0,
+   "lh": 50,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Why Warrior Sports Personal Training Works",
+     "c": "rgb(219, 58, 52)",
+     "w": 900
+    }
+   ],
    "region": "main",
    "x": 180,
    "y": 1404,
@@ -336,7 +457,15 @@
    "align": "center",
    "transform": "none",
    "spacing": 0,
+   "lh": 28,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "At Warrior Sports, personal training is based on partnerships. ",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400
+    }
+   ],
    "region": "main",
    "x": 105,
    "y": 1515,
@@ -355,7 +484,15 @@
    "align": "center",
    "transform": "none",
    "spacing": 0,
+   "lh": 28,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "It’s a conversation and a challenge all rolled into one.",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400
+    }
+   ],
    "region": "main",
    "x": 105,
    "y": 1560,
@@ -374,7 +511,15 @@
    "align": "center",
    "transform": "none",
    "spacing": 0,
+   "lh": 28,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Here’s how we’re different:",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400
+    }
+   ],
    "region": "main",
    "x": 105,
    "y": 1605,
@@ -401,7 +546,15 @@
    "align": "center",
    "transform": "uppercase",
    "spacing": 0,
+   "lh": 24,
    "behind": "image",
+   "runs": [
+    {
+     "t": "Unconventional by Design",
+     "c": "rgb(40, 82, 118)",
+     "w": 900
+    }
+   ],
    "region": "main",
    "x": 85,
    "y": 1955,
@@ -420,7 +573,15 @@
    "align": "center",
    "transform": "none",
    "spacing": 0,
+   "lh": 28,
    "behind": "image",
+   "runs": [
+    {
+     "t": "We use obstacle training, resistance bands, parkour-inspired drills, and reactive movement. These methods naturally demand personalization. Every session is a custom experience.",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400
+    }
+   ],
    "region": "main",
    "x": 86,
    "y": 2014,
@@ -447,7 +608,15 @@
    "align": "center",
    "transform": "uppercase",
    "spacing": 0,
+   "lh": 24,
    "behind": "image",
+   "runs": [
+    {
+     "t": "Stronger and Smarter",
+     "c": "rgb(40, 82, 118)",
+     "w": 900
+    }
+   ],
    "region": "main",
    "x": 473,
    "y": 1955,
@@ -466,7 +635,15 @@
    "align": "center",
    "transform": "none",
    "spacing": 0,
+   "lh": 28,
    "behind": "image",
+   "runs": [
+    {
+     "t": "This isn’t just about muscles. It’s about moving with confidence. Our training boosts body awareness, mind-muscle connection, and coordination, helping you move better in daily life.",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400
+    }
+   ],
    "region": "main",
    "x": 474,
    "y": 1990,
@@ -493,7 +670,15 @@
    "align": "center",
    "transform": "uppercase",
    "spacing": 0,
+   "lh": 24,
    "behind": "image",
+   "runs": [
+    {
+     "t": "Emotionally Intelligent Coaching",
+     "c": "rgb(40, 82, 118)",
+     "w": 900
+    }
+   ],
    "region": "main",
    "x": 882,
    "y": 1955,
@@ -512,7 +697,15 @@
    "align": "center",
    "transform": "none",
    "spacing": 0,
+   "lh": 28,
    "behind": "image",
+   "runs": [
+    {
+     "t": "We meet you where you are, without shame or performance pressure. Whether you’re just starting or getting unstuck, we help you rediscover joy in movement.",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400
+    }
+   ],
    "region": "main",
    "x": 863,
    "y": 2014,
@@ -530,7 +723,15 @@
    "align": "center",
    "transform": "uppercase",
    "spacing": 0,
+   "lh": 63,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Meet Your Trainers",
+     "c": "rgb(255, 255, 255)",
+     "w": 900
+    }
+   ],
    "region": "main",
    "x": 65,
    "y": 2345,
@@ -557,7 +758,15 @@
    "align": "center",
    "transform": "uppercase",
    "spacing": 0,
+   "lh": 24,
    "behind": "image",
+   "runs": [
+    {
+     "t": "Sarah Wilder",
+     "c": "rgb(40, 82, 118)",
+     "w": 900
+    }
+   ],
    "region": "main",
    "x": 95,
    "y": 2770,
@@ -576,7 +785,15 @@
    "align": "center",
    "transform": "none",
    "spacing": 0,
+   "lh": 28,
    "behind": "image",
+   "runs": [
+    {
+     "t": "– Women’s Confidence Coach",
+     "c": "rgb(0, 0, 0)",
+     "w": 400
+    }
+   ],
    "region": "main",
    "x": 80,
    "y": 2805,
@@ -595,7 +812,15 @@
    "align": "center",
    "transform": "none",
    "spacing": 0,
+   "lh": 28,
    "behind": "image",
+   "runs": [
+    {
+     "t": "Helps women, especially moms, feel strong again in bodies that have carried so much.",
+     "c": "rgb(0, 0, 0)",
+     "w": 400
+    }
+   ],
    "region": "main",
    "x": 80,
    "y": 2855,
@@ -614,7 +839,15 @@
    "align": "center",
    "transform": "none",
    "spacing": 0,
+   "lh": 28,
    "behind": "image",
+   "runs": [
+    {
+     "t": "“I focus on helping you feel powerful before you even pick up a weight.”",
+     "c": "rgb(40, 82, 118)",
+     "w": 500
+    }
+   ],
    "region": "main",
    "x": 80,
    "y": 2923,
@@ -641,7 +874,15 @@
    "align": "center",
    "transform": "uppercase",
    "spacing": 0,
+   "lh": 24,
    "behind": "image",
+   "runs": [
+    {
+     "t": "Jacob Winter",
+     "c": "rgb(40, 82, 118)",
+     "w": 900
+    }
+   ],
    "region": "main",
    "x": 483,
    "y": 2770,
@@ -660,7 +901,15 @@
    "align": "center",
    "transform": "none",
    "spacing": 0,
+   "lh": 28,
    "behind": "image",
+   "runs": [
+    {
+     "t": "– Strength, Weight Loss and Conditioning",
+     "c": "rgba(0, 0, 0, 0.99)",
+     "w": 400
+    }
+   ],
    "region": "main",
    "x": 484,
    "y": 2795,
@@ -679,7 +928,15 @@
    "align": "center",
    "transform": "none",
    "spacing": 0,
+   "lh": 28,
    "behind": "image",
+   "runs": [
+    {
+     "t": "Great for weight loss, functional strength, and rebuilding consistency.",
+     "c": "rgb(0, 0, 0)",
+     "w": 400
+    }
+   ],
    "region": "main",
    "x": 468,
    "y": 2863,
@@ -698,7 +955,15 @@
    "align": "center",
    "transform": "none",
    "spacing": 0,
+   "lh": 28,
    "behind": "image",
+   "runs": [
+    {
+     "t": "“We build wins you can feel without judgment or pressure.”",
+     "c": "rgb(40, 82, 118)",
+     "w": 500
+    }
+   ],
    "region": "main",
    "x": 473,
    "y": 2931,
@@ -725,7 +990,15 @@
    "align": "center",
    "transform": "uppercase",
    "spacing": 0,
+   "lh": 24,
    "behind": "image",
+   "runs": [
+    {
+     "t": "Jonny Wilder",
+     "c": "rgb(40, 82, 118)",
+     "w": 900
+    }
+   ],
    "region": "main",
    "x": 872,
    "y": 2770,
@@ -744,7 +1017,15 @@
    "align": "center",
    "transform": "none",
    "spacing": 0,
+   "lh": 28,
    "behind": "image",
+   "runs": [
+    {
+     "t": "– Ninja and Competitive Obstacle Training",
+     "c": "rgba(0, 0, 0, 0.99)",
+     "w": 400
+    }
+   ],
    "region": "main",
    "x": 873,
    "y": 2795,
@@ -763,7 +1044,15 @@
    "align": "center",
    "transform": "none",
    "spacing": 0,
+   "lh": 28,
    "behind": "image",
+   "runs": [
+    {
+     "t": "Perfect for teens, adventurous adults, or athletes seeking confidence and agility.",
+     "c": "rgb(0, 0, 0)",
+     "w": 400
+    }
+   ],
    "region": "main",
    "x": 857,
    "y": 2863,
@@ -782,7 +1071,15 @@
    "align": "center",
    "transform": "none",
    "spacing": 0,
+   "lh": 28,
    "behind": "image",
+   "runs": [
+    {
+     "t": "“Training should be fun. That’s where confidence begins.”",
+     "c": "rgb(40, 82, 118)",
+     "w": 500
+    }
+   ],
    "region": "main",
    "x": 862,
    "y": 2931,
@@ -809,7 +1106,15 @@
    "align": "center",
    "transform": "uppercase",
    "spacing": 0,
+   "lh": 50,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "How It Works",
+     "c": "rgb(219, 58, 52)",
+     "w": 900
+    }
+   ],
    "region": "main",
    "x": 653,
    "y": 3198,
@@ -837,7 +1142,15 @@
    "align": "start",
    "transform": "none",
    "spacing": 0,
+   "lh": 26,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Contact us and share your story—goals, concerns, struggles",
+     "c": "rgb(0, 0, 0)",
+     "w": 300
+    }
+   ],
    "region": "main",
    "x": 679,
    "y": 3268,
@@ -865,7 +1178,15 @@
    "align": "start",
    "transform": "none",
    "spacing": 0,
+   "lh": 26,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "We’ll reach out and get you locked in",
+     "c": "rgb(5, 5, 61)",
+     "w": 300
+    }
+   ],
    "region": "main",
    "x": 679,
    "y": 3309,
@@ -893,7 +1214,15 @@
    "align": "start",
    "transform": "none",
    "spacing": 0,
+   "lh": 26,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Try a session personalized to your pace and strength",
+     "c": "rgb(0, 0, 0)",
+     "w": 300
+    }
+   ],
    "region": "main",
    "x": 679,
    "y": 3349,
@@ -921,7 +1250,15 @@
    "align": "start",
    "transform": "none",
    "spacing": 0,
+   "lh": 26,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Decide from there if you want to continue",
+     "c": "rgb(0, 0, 0)",
+     "w": 300
+    }
+   ],
    "region": "main",
    "x": 679,
    "y": 3390,
@@ -940,6 +1277,7 @@
    "align": "center",
    "transform": "uppercase",
    "spacing": 2,
+   "lh": 19,
    "region": "main",
    "x": 653,
    "y": 3456,
@@ -957,7 +1295,15 @@
    "align": "center",
    "transform": "uppercase",
    "spacing": 0,
+   "lh": 70,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "What Our Clients Say",
+     "c": "rgb(219, 58, 52)",
+     "w": 900
+    }
+   ],
    "region": "main",
    "x": 65,
    "y": 3705,
@@ -985,7 +1331,20 @@
    "align": "start",
    "transform": "none",
    "spacing": 0,
+   "lh": 26,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "After losing some weight on my own, I hit a wall. Warrior Sports changed the game for me. My coach built a program just for me and held me accountable in a way that made me stronger, leaner, and more confident—not just physically, but mentally.",
+     "c": "rgb(0, 0, 0)",
+     "w": 400
+    },
+    {
+     "t": "- Client",
+     "c": "rgb(219, 58, 52)",
+     "w": 700
+    }
+   ],
    "region": "main",
    "x": 96,
    "y": 3906,
@@ -1004,7 +1363,15 @@
    "align": "start",
    "transform": "none",
    "spacing": 0,
+   "lh": 26,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "After losing some weight on my own, I hit a wall. Warrior Sports changed the game for me. My coach built a program just for me and held me accountable in a way that made me stronger, leaner, and more confident—not just physically, but mentally.",
+     "c": "rgb(0, 0, 0)",
+     "w": 400
+    }
+   ],
    "region": "main",
    "x": 96,
    "y": 3906,
@@ -1023,7 +1390,15 @@
    "align": "start",
    "transform": "uppercase",
    "spacing": 0,
+   "lh": 26,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "- Client",
+     "c": "rgb(219, 58, 52)",
+     "w": 700
+    }
+   ],
    "region": "main",
    "x": 96,
    "y": 4032,
@@ -1051,7 +1426,20 @@
    "align": "start",
    "transform": "none",
    "spacing": 0,
+   "lh": 26,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Over a year, I lost over 50 pounds, gained mobility and confidence, and competed in multiple obstacle races. Warrior Sports is family-friendly, fun, and motivating. My trainer, Jacob, made workouts fast, personal, and sustainable.",
+     "c": "rgb(0, 0, 0)",
+     "w": 400
+    },
+    {
+     "t": "— Michael B.",
+     "c": "rgb(219, 58, 52)",
+     "w": 700
+    }
+   ],
    "region": "main",
    "x": 661,
    "y": 3906,
@@ -1070,7 +1458,15 @@
    "align": "start",
    "transform": "none",
    "spacing": 0,
+   "lh": 26,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Over a year, I lost over 50 pounds, gained mobility and confidence, and competed in multiple obstacle races. Warrior Sports is family-friendly, fun, and motivating. My trainer, Jacob, made workouts fast, personal, and sustainable.",
+     "c": "rgb(0, 0, 0)",
+     "w": 400
+    }
+   ],
    "region": "main",
    "x": 661,
    "y": 3906,
@@ -1089,7 +1485,15 @@
    "align": "start",
    "transform": "uppercase",
    "spacing": 0,
+   "lh": 26,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "— Michael B.",
+     "c": "rgb(219, 58, 52)",
+     "w": 700
+    }
+   ],
    "region": "main",
    "x": 661,
    "y": 4032,
@@ -1116,7 +1520,15 @@
    "align": "center",
    "transform": "uppercase",
    "spacing": 0,
+   "lh": 50,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Let’s Talk Strength…Your Version",
+     "c": "rgb(219, 58, 52)",
+     "w": 900
+    }
+   ],
    "region": "main",
    "x": 175,
    "y": 4288,
@@ -1134,7 +1546,15 @@
    "align": "center",
    "transform": "none",
    "spacing": 0,
+   "lh": 35,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "This isn’t about getting shredded or setting records.",
+     "c": "rgb(255, 255, 255)",
+     "w": 400
+    }
+   ],
    "region": "main",
    "x": 357,
    "y": 4364,
@@ -1152,7 +1572,15 @@
    "align": "center",
    "transform": "none",
    "spacing": 0,
+   "lh": 35,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "It’s about moving, healing, and growing in a way that actually fits your life.",
+     "c": "rgb(255, 255, 255)",
+     "w": 400
+    }
+   ],
    "region": "main",
    "x": 245,
    "y": 4416,
@@ -1180,7 +1608,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 24,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Our accomplished and award winning Crew are here to help you find your strength and enjoy your workouts.",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 86,
    "y": 5813,
@@ -1217,7 +1653,15 @@
    "align": "left",
    "transform": "uppercase",
    "spacing": 2,
+   "lh": 28,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Contact",
+     "c": "rgb(40, 82, 118)",
+     "w": 900
+    }
+   ],
    "region": "footer",
    "x": 491,
    "y": 5696,
@@ -1245,7 +1689,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 22,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "605 W Farm Rd 182, Springfield,MO, 65810, United States",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 528,
    "y": 5749,
@@ -1273,7 +1725,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 22,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "(417) 894-7319",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 528,
    "y": 5810,
@@ -1291,7 +1751,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 22,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "(417) 894-7319",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 528,
    "y": 5812,
@@ -1319,7 +1787,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 22,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "office@swarriorsports.com",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 528,
    "y": 5857,
@@ -1337,7 +1813,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 22,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "office@swarriorsports.com",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 528,
    "y": 5859,
@@ -1356,7 +1840,15 @@
    "align": "left",
    "transform": "uppercase",
    "spacing": 2,
+   "lh": 28,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "QUICK LInks",
+     "c": "rgb(40, 82, 118)",
+     "w": 900
+    }
+   ],
    "region": "footer",
    "x": 894,
    "y": 5696,
@@ -1375,7 +1867,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 24,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Home",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 895,
    "y": 5745,
@@ -1393,7 +1893,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 24,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Home",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 895,
    "y": 5747,
@@ -1412,7 +1920,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 24,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "About Us",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 895,
    "y": 5771,
@@ -1430,7 +1946,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 24,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "About Us",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 895,
    "y": 5773,
@@ -1449,7 +1973,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 24,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Contact Us",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 895,
    "y": 5797,
@@ -1467,7 +1999,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 24,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Contact Us",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 895,
    "y": 5799,
@@ -1486,7 +2026,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 24,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Meet the Team",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 895,
    "y": 5823,
@@ -1504,7 +2052,15 @@
    "align": "left",
    "transform": "none",
    "spacing": 0,
+   "lh": 24,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Meet the Team",
+     "c": "rgb(51, 51, 51)",
+     "w": 400
+    }
+   ],
    "region": "footer",
    "x": 895,
    "y": 5825,
@@ -1523,7 +2079,15 @@
    "align": "center",
    "transform": "none",
    "spacing": 2,
+   "lh": 24,
    "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "© Copyright 2026 Springfield Warrior Sports All Rights Reserved.",
+     "c": "rgb(255, 255, 255)",
+     "w": 600
+    }
+   ],
    "region": "footer",
    "x": 85,
    "y": 6009,
