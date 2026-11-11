@@ -314,9 +314,13 @@ for (const width of readdirSync(liveDir).sort((a, b) => Number(b) - Number(a))) 
         // The trust bar is a spec addition in the build only; don't count its height.
         const trust = build.items.filter((t) => /NINJA AND PARKOUR GYM/i.test(t.text || "") && t.y >= pb.y + pb.h && t.y + t.h <= cb.y);
         const trustH = trust.length ? Math.max(...trust.map((t) => t.y + t.h)) - Math.min(...trust.map((t) => t.y)) : 0;
-        const bg = cb.y - (pb.y + pb.h) - trustH;
+        const raw = cb.y - (pb.y + pb.h);
+        const bg = raw - trustH;
         if (lg < 0 || bg < -4) continue;
-        if (Math.abs(lg - bg) > Math.max(32, lg * 0.25))
+        const tolGap = Math.max(32, lg * 0.25);
+        // v2.14: the trust bar may sit inside live's blank gap; accept the gap with or without it.
+        if (trustH && Math.abs(lg - raw) <= tolGap) continue;
+        if (Math.abs(lg - bg) > tolGap)
           issues.push(`gap between "${(pl.text || "").slice(0, 30)}" and "${(cl.text || "").slice(0, 30)}": ${Math.round(bg)}px, live ${Math.round(lg)}px`);
       }
       // Covered: visible on live, but something sits on top of it in the build.
