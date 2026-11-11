@@ -25,9 +25,11 @@
     {
      "t": "Contact",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "header",
    "x": 1202,
    "y": 6,
@@ -51,9 +53,11 @@
     {
      "t": "About",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "header",
    "x": 1297,
    "y": 6,
@@ -77,9 +81,11 @@
     {
      "t": "Sign Our Waiver",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "header",
    "x": 1372,
    "y": 6,
@@ -112,9 +118,11 @@
     {
      "t": "Adult Classes",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "header",
    "x": 688,
    "y": 73,
@@ -138,9 +146,11 @@
     {
      "t": "Kid Classes",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "header",
    "x": 820,
    "y": 73,
@@ -164,9 +174,11 @@
     {
      "t": "Competitions",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "header",
    "x": 930,
    "y": 73,
@@ -190,9 +202,11 @@
     {
      "t": "Birthday Parties",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "header",
    "x": 1058,
    "y": 73,
@@ -216,9 +230,11 @@
     {
      "t": "Personal Training",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "header",
    "x": 1213,
    "y": 73,
@@ -242,9 +258,11 @@
     {
      "t": "Summer Camps",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "header",
    "x": 1383,
    "y": 73,
@@ -277,9 +295,11 @@
     {
      "t": "Thank you for your feedback!",
      "c": "rgb(219, 58, 52)",
-     "w": 900
+     "w": 900,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "main",
    "x": 385,
    "y": 239,
@@ -304,19 +324,23 @@
     {
      "t": "Thank you for your feedback! We read and respond to each message and will be in touch typically within the same business day.If you need to contact us immediately, call us at ",
      "c": "rgb(0, 0, 0)",
-     "w": 300
+     "w": 300,
+     "u": false
     },
     {
      "t": "(417)894-7319",
      "c": "rgb(219, 58, 52)",
-     "w": 400
+     "w": 400,
+     "u": false
     },
     {
      "t": ".Thanks,Andy and the Warrior Sports Team ",
      "c": "rgb(0, 0, 0)",
-     "w": 300
+     "w": 300,
+     "u": false
     }
    ],
+   "lines": 5,
    "region": "main",
    "x": 386,
    "y": 355,
@@ -350,9 +374,11 @@
     {
      "t": "Our accomplished and award winning Crew are here to help you find your strength and enjoy your workouts.",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 3,
    "region": "footer",
    "x": 406,
    "y": 859,
@@ -395,9 +421,11 @@
     {
      "t": "Contact",
      "c": "rgb(40, 82, 118)",
-     "w": 900
+     "w": 900,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 811,
    "y": 742,
@@ -431,9 +459,11 @@
     {
      "t": "605 W Farm Rd 182, Springfield,MO, 65810, United States",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "footer",
    "x": 848,
    "y": 795,
@@ -467,9 +497,11 @@
     {
      "t": "(417) 894-7319",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 848,
    "y": 856,
@@ -493,9 +525,11 @@
     {
      "t": "(417) 894-7319",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 848,
    "y": 858,
@@ -529,9 +563,11 @@
     {
      "t": "office@swarriorsports.com",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 848,
    "y": 903,
@@ -555,9 +591,11 @@
     {
      "t": "office@swarriorsports.com",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 848,
    "y": 905,
@@ -582,9 +620,11 @@
     {
      "t": "QUICK LInks",
      "c": "rgb(40, 82, 118)",
-     "w": 900
+     "w": 900,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 1214,
    "y": 742,
@@ -609,9 +649,11 @@
     {
      "t": "Home",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 1215,
    "y": 791,
@@ -635,9 +677,11 @@
     {
      "t": "Home",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 1215,
    "y": 793,
@@ -662,9 +706,11 @@
     {
      "t": "About Us",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 1215,
    "y": 817,
@@ -688,9 +734,11 @@
     {
      "t": "About Us",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 1215,
    "y": 819,
@@ -715,9 +763,11 @@
     {
      "t": "Contact Us",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 1215,
    "y": 843,
@@ -741,9 +791,11 @@
     {
      "t": "Contact Us",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 1215,
    "y": 845,
@@ -768,9 +820,11 @@
     {
      "t": "Meet the Team",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 1215,
    "y": 869,
@@ -794,9 +848,11 @@
     {
      "t": "Meet the Team",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 1215,
    "y": 871,
@@ -821,9 +877,11 @@
     {
      "t": "© Copyright 2026 Springfield Warrior Sports All Rights Reserved.",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 405,
    "y": 1054,

@@ -23,9 +23,11 @@
     {
      "t": "Contact",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "header",
    "x": 882,
    "y": 6,
@@ -49,9 +51,11 @@
     {
      "t": "About",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "header",
    "x": 977,
    "y": 6,
@@ -75,9 +79,11 @@
     {
      "t": "Sign Our Waiver",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "header",
    "x": 1052,
    "y": 6,
@@ -110,9 +116,11 @@
     {
      "t": "Adult Classes",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "header",
    "x": 368,
    "y": 73,
@@ -136,9 +144,11 @@
     {
      "t": "Kid Classes",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "header",
    "x": 500,
    "y": 73,
@@ -162,9 +172,11 @@
     {
      "t": "Competitions",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "header",
    "x": 610,
    "y": 73,
@@ -188,9 +200,11 @@
     {
      "t": "Birthday Parties",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "header",
    "x": 738,
    "y": 73,
@@ -214,9 +228,11 @@
     {
      "t": "Personal Training",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "header",
    "x": 893,
    "y": 73,
@@ -240,9 +256,11 @@
     {
      "t": "Summer Camps",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "header",
    "x": 1063,
    "y": 73,
@@ -275,9 +293,11 @@
     {
      "t": "Nerf War Springfield, MO:",
      "c": "rgb(219, 58, 52)",
-     "w": 900
+     "w": 900,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 223,
    "y": 374,
@@ -301,9 +321,11 @@
     {
      "t": "The Ultimate Party Experience!",
      "c": "rgb(248, 248, 248)",
-     "w": 900
+     "w": 900,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 223,
    "y": 424,
@@ -328,19 +350,23 @@
     {
      "t": "Welcome to Warrior Sports, where Nerf battles are one of our most ",
      "c": "rgba(0, 0, 0, 0.7)",
-     "w": 400
+     "w": 400,
+     "u": false
     },
     {
      "t": "popular birthday party options",
      "c": "rgb(47, 138, 228)",
-     "w": 400
+     "w": 400,
+     "u": false
     },
     {
      "t": "! We handle everything from setup to gameplay so you can relax, celebrate, and enjoy time with your kids.",
      "c": "rgba(0, 0, 0, 0.7)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 3,
    "region": "main",
    "x": 203,
    "y": 820,
@@ -364,9 +390,11 @@
     {
      "t": "Nerf War Party Breakdown",
      "c": "rgb(219, 58, 52)",
-     "w": 900
+     "w": 900,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 274,
    "y": 1161,
@@ -399,9 +427,11 @@
     {
      "t": "Here’s What’s Included",
      "c": "rgb(40, 82, 118)",
-     "w": 900
+     "w": 900,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 653,
    "y": 1382,
@@ -435,9 +465,11 @@
     {
      "t": "Nerf Guns",
      "c": "rgb(0, 0, 0)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 679,
    "y": 1432,
@@ -471,9 +503,11 @@
     {
      "t": "Nerf Bullets",
      "c": "rgb(0, 0, 0)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 679,
    "y": 1462,
@@ -507,9 +541,11 @@
     {
      "t": "Bring any of your favorite guns!",
      "c": "rgb(0, 0, 0)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 679,
    "y": 1489,
@@ -543,9 +579,11 @@
     {
      "t": "Exclusive play in our entire obstacle course gym. (Yes, the entire place is yours!)",
      "c": "rgb(0, 0, 0)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "main",
    "x": 679,
    "y": 1516,
@@ -570,9 +608,11 @@
     {
      "t": "Book a Nerf war party at Warrior Sports in Springfield, Mo. and we'll arrange a cooler filled with Gatorade for all your guests, ensuring everyone remains refreshed during the action-packed Nerf battle. Plus, the birthday celebrant gets a special Springfield Warrior Sports t-shirt and a complimentary Junior Warrior class voucher from us.",
      "c": "rgba(0, 0, 0, 0.7)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 5,
    "region": "main",
    "x": 654,
    "y": 1579,
@@ -597,9 +637,11 @@
     {
      "t": "Need party invitations? We've got you covered! We offer free customized party invitations to ease your planning process.",
      "c": "rgba(0, 0, 0, 0.7)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "main",
    "x": 654,
    "y": 1741,
@@ -623,9 +665,11 @@
     {
      "t": "Pricing",
      "c": "rgb(40, 82, 118)",
-     "w": 900
+     "w": 900,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 653,
    "y": 1818,
@@ -650,19 +694,23 @@
     {
      "t": "Our Nerf parties start at ",
      "c": "rgba(0, 0, 0, 0.7)",
-     "w": 400
+     "w": 400,
+     "u": false
     },
     {
      "t": "$220",
      "c": "rgb(219, 58, 52)",
-     "w": 900
+     "w": 900,
+     "u": false
     },
     {
      "t": " for the first 11 kids, and it's just an additional $10 for each extra participant. And guess what? The birthday child's parents can join the fun for free!",
      "c": "rgba(0, 0, 0, 0.7)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 3,
    "region": "main",
    "x": 654,
    "y": 1859,
@@ -695,9 +743,11 @@
     {
      "t": "Book Now!",
      "c": "rgb(255, 255, 255)",
-     "w": 900
+     "w": 900,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 180,
    "y": 2225,
@@ -722,9 +772,11 @@
     {
      "t": "Let our experienced and kid-friendly team set up and orchestrate the Nerf battle, ensuring an unforgettable experience for everyone. Please note that our Nerf parties need to be booked during a private party slot. So, don't delay – spots fill up quickly!",
      "c": "rgb(255, 255, 255)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "main",
    "x": 94,
    "y": 2276,
@@ -748,9 +800,11 @@
     {
      "t": "Ready to lock in the date for your child's epic Nerf party at Warrior Sports?",
      "c": "rgb(255, 255, 255)",
-     "w": 300
+     "w": 300,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "main",
    "x": 244,
    "y": 2349,
@@ -792,11 +846,25 @@
    "behind": "rgb(255, 255, 255)",
    "runs": [
     {
-     "t": "Or, dial (417) 894-7319 to reserve today.Let's make your child's birthday party one to remember with a thrilling Nerf gun battle at Warrior Sports!",
+     "t": "Or, dial ",
      "c": "rgb(255, 255, 255)",
-     "w": 400
+     "w": 400,
+     "u": false
+    },
+    {
+     "t": "(417) 894-7319",
+     "c": "rgb(255, 255, 255)",
+     "w": 400,
+     "u": true
+    },
+    {
+     "t": " to reserve today.Let's make your child's birthday party one to remember with a thrilling Nerf gun battle at Warrior Sports!",
+     "c": "rgb(255, 255, 255)",
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "main",
    "x": 94,
    "y": 2512,
@@ -820,9 +888,11 @@
     {
      "t": "Nerf War Nights in Springfield MO",
      "c": "rgb(219, 58, 52)",
-     "w": 900
+     "w": 900,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "main",
    "x": 65,
    "y": 2754,
@@ -846,9 +916,11 @@
     {
      "t": "Dive into action-packed fun every other month with our exclusive Nerf War Nights!",
      "c": "rgba(0, 0, 0, 0.7)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "main",
    "x": 66,
    "y": 2855,
@@ -882,14 +954,17 @@
     {
      "t": "When: ",
      "c": "rgb(0, 0, 0)",
-     "w": 600
+     "w": 600,
+     "u": false
     },
     {
      "t": "Typically on Fridays, from 6-8 PM.",
      "c": "rgb(0, 0, 0)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 91,
    "y": 2932,
@@ -923,14 +998,17 @@
     {
      "t": "Pricing: ",
      "c": "rgb(0, 0, 0)",
-     "w": 600
+     "w": 600,
+     "u": false
     },
     {
      "t": "It's only $15 per participant. Good news for members – you get 50% off!",
      "c": "rgb(0, 0, 0)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "main",
    "x": 91,
    "y": 2963,
@@ -954,9 +1032,11 @@
     {
      "t": "Want to be in the loop for our next Nerf War Night? Simply enter your email below and never miss out on the action!",
      "c": "rgba(0, 0, 0, 0.7)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "main",
    "x": 66,
    "y": 3030,
@@ -981,19 +1061,23 @@
     {
      "t": "\"",
      "c": "rgb(106, 107, 108)",
-     "w": 400
+     "w": 400,
+     "u": false
     },
     {
      "t": "*",
      "c": "rgb(192, 43, 10)",
-     "w": 400
+     "w": 400,
+     "u": false
     },
     {
      "t": "\" indicates required fields",
      "c": "rgb(106, 107, 108)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 66,
    "y": 3118,
@@ -1036,9 +1120,11 @@
     {
      "t": "Our accomplished and award winning Crew are here to help you find your strength and enjoy your workouts.",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 3,
    "region": "footer",
    "x": 86,
    "y": 3742,
@@ -1081,9 +1167,11 @@
     {
      "t": "Contact",
      "c": "rgb(40, 82, 118)",
-     "w": 900
+     "w": 900,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 491,
    "y": 3625,
@@ -1117,9 +1205,11 @@
     {
      "t": "605 W Farm Rd 182, Springfield,MO, 65810, United States",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "footer",
    "x": 528,
    "y": 3678,
@@ -1153,9 +1243,11 @@
     {
      "t": "(417) 894-7319",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 528,
    "y": 3739,
@@ -1179,9 +1271,11 @@
     {
      "t": "(417) 894-7319",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 528,
    "y": 3741,
@@ -1215,9 +1309,11 @@
     {
      "t": "office@swarriorsports.com",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 528,
    "y": 3786,
@@ -1241,9 +1337,11 @@
     {
      "t": "office@swarriorsports.com",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 528,
    "y": 3788,
@@ -1268,9 +1366,11 @@
     {
      "t": "QUICK LInks",
      "c": "rgb(40, 82, 118)",
-     "w": 900
+     "w": 900,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 894,
    "y": 3625,
@@ -1295,9 +1395,11 @@
     {
      "t": "Home",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 895,
    "y": 3674,
@@ -1321,9 +1423,11 @@
     {
      "t": "Home",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 895,
    "y": 3676,
@@ -1348,9 +1452,11 @@
     {
      "t": "About Us",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 895,
    "y": 3700,
@@ -1374,9 +1480,11 @@
     {
      "t": "About Us",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 895,
    "y": 3702,
@@ -1401,9 +1509,11 @@
     {
      "t": "Contact Us",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 895,
    "y": 3726,
@@ -1427,9 +1537,11 @@
     {
      "t": "Contact Us",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 895,
    "y": 3728,
@@ -1454,9 +1566,11 @@
     {
      "t": "Meet the Team",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 895,
    "y": 3752,
@@ -1480,9 +1594,11 @@
     {
      "t": "Meet the Team",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 895,
    "y": 3754,
@@ -1507,9 +1623,11 @@
     {
      "t": "© Copyright 2026 Springfield Warrior Sports All Rights Reserved.",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 85,
    "y": 3938,

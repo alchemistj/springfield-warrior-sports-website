@@ -23,9 +23,11 @@
     {
      "t": "Contact",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "header",
    "x": 882,
    "y": 6,
@@ -49,9 +51,11 @@
     {
      "t": "About",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "header",
    "x": 977,
    "y": 6,
@@ -75,9 +79,11 @@
     {
      "t": "Sign Our Waiver",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "header",
    "x": 1052,
    "y": 6,
@@ -110,9 +116,11 @@
     {
      "t": "Adult Classes",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "header",
    "x": 368,
    "y": 73,
@@ -136,9 +144,11 @@
     {
      "t": "Kid Classes",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "header",
    "x": 500,
    "y": 73,
@@ -162,9 +172,11 @@
     {
      "t": "Competitions",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "header",
    "x": 610,
    "y": 73,
@@ -188,9 +200,11 @@
     {
      "t": "Birthday Parties",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "header",
    "x": 738,
    "y": 73,
@@ -214,9 +228,11 @@
     {
      "t": "Personal Training",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "header",
    "x": 893,
    "y": 73,
@@ -240,9 +256,11 @@
     {
      "t": "Summer Camps",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "header",
    "x": 1063,
    "y": 73,
@@ -275,9 +293,11 @@
     {
      "t": "Kids Stay fit and healthy",
      "c": "rgb(219, 58, 52)",
-     "w": 900
+     "w": 900,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "main",
    "x": 180,
    "y": 329,
@@ -301,9 +321,11 @@
     {
      "t": "at our incredible summer camps",
      "c": "rgb(255, 255, 255)",
-     "w": 900
+     "w": 900,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 180,
    "y": 469,
@@ -328,9 +350,11 @@
     {
      "t": "Looking for a worthwhile activity for your kid this summer?",
      "c": "rgba(0, 0, 0, 0.7)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 203,
    "y": 820,
@@ -355,9 +379,11 @@
     {
      "t": "Look no further! Our incredible Summer Camps in Springfield, MO are packed with fun and educational activities.",
      "c": "rgba(0, 0, 0, 0.7)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "main",
    "x": 203,
    "y": 875,
@@ -382,19 +408,23 @@
     {
      "t": "Kids will get the chance to work with our Ninja Warrior trainers, and participate in physical activities designed to enhance their balance, core, and overall strength. We provide healthy snacks each day as we educate children on ",
      "c": "rgba(0, 0, 0, 0.7)",
-     "w": 400
+     "w": 400,
+     "u": false
     },
     {
      "t": "making good nutritional choices",
      "c": "rgba(0, 0, 0, 0.7)",
-     "w": 700
+     "w": 700,
+     "u": false
     },
     {
      "t": " that lead to improved health and wellness.",
      "c": "rgba(0, 0, 0, 0.7)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 3,
    "region": "main",
    "x": 203,
    "y": 962,
@@ -419,19 +449,23 @@
     {
      "t": "Plus, there’s a ",
      "c": "rgba(0, 0, 0, 0.7)",
-     "w": 400
+     "w": 400,
+     "u": false
     },
     {
      "t": "competition at every camp",
      "c": "rgba(0, 0, 0, 0.7)",
-     "w": 800
+     "w": 800,
+     "u": false
     },
     {
      "t": " that awards the top place-getters a spot in the final championship at the end of summer – how cool is that?!",
      "c": "rgba(0, 0, 0, 0.7)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "main",
    "x": 203,
    "y": 1081,
@@ -456,9 +490,11 @@
     {
      "t": "Come join us at our camps, which are perfect for children approximately aged 6 to 15.",
      "c": "rgba(0, 0, 0, 0.7)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 203,
    "y": 1168,
@@ -482,9 +518,11 @@
     {
      "t": "summer camps in Springfield — 2026 Dates",
      "c": "rgb(219, 58, 52)",
-     "w": 900
+     "w": 900,
+     "u": false
     }
    ],
+   "lines": 3,
    "region": "main",
    "x": 65,
    "y": 1404,
@@ -509,9 +547,11 @@
     {
      "t": "May 25th - May 29th",
      "c": "rgba(0, 0, 0, 0.7)",
-     "w": 800
+     "w": 800,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 80,
    "y": 1566,
@@ -536,9 +576,11 @@
     {
      "t": "8:30 AM - 11:30 AM",
      "c": "rgba(0, 0, 0, 0.7)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 284,
    "y": 1566,
@@ -563,9 +605,11 @@
     {
      "t": "June 8th - June 12th",
      "c": "rgba(0, 0, 0, 0.7)",
-     "w": 800
+     "w": 800,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 80,
    "y": 1634,
@@ -590,9 +634,11 @@
     {
      "t": "8:30 AM - 11:30 AM",
      "c": "rgba(0, 0, 0, 0.7)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 284,
    "y": 1634,
@@ -617,9 +663,11 @@
     {
      "t": "June 22nd - June 26th",
      "c": "rgba(0, 0, 0, 0.7)",
-     "w": 800
+     "w": 800,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "main",
    "x": 80,
    "y": 1701,
@@ -644,9 +692,11 @@
     {
      "t": "8:30 AM - 11:30 AM",
      "c": "rgba(0, 0, 0, 0.7)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 284,
    "y": 1701,
@@ -671,9 +721,11 @@
     {
      "t": "July 6th - July 10th",
      "c": "rgba(0, 0, 0, 0.7)",
-     "w": 800
+     "w": 800,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 80,
    "y": 1800,
@@ -698,9 +750,11 @@
     {
      "t": "8:30 AM - 11:30 AM",
      "c": "rgba(0, 0, 0, 0.7)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 284,
    "y": 1800,
@@ -725,9 +779,11 @@
     {
      "t": "12 PM - 3 PM",
      "c": "rgba(0, 0, 0, 0.7)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 284,
    "y": 1832,
@@ -752,9 +808,11 @@
     {
      "t": "July 20th - July 24th",
      "c": "rgba(0, 0, 0, 0.7)",
-     "w": 800
+     "w": 800,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 80,
    "y": 1899,
@@ -779,9 +837,11 @@
     {
      "t": "8:30 AM - 11:30 AM",
      "c": "rgba(0, 0, 0, 0.7)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 284,
    "y": 1899,
@@ -806,9 +866,11 @@
     {
      "t": "12 PM - 3 PM",
      "c": "rgba(0, 0, 0, 0.7)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 284,
    "y": 1931,
@@ -833,9 +895,11 @@
     {
      "t": "August 3rd - August 7th",
      "c": "rgba(0, 0, 0, 0.7)",
-     "w": 800
+     "w": 800,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "main",
    "x": 80,
    "y": 1998,
@@ -860,9 +924,11 @@
     {
      "t": "8:30 AM - 11:30 AM",
      "c": "rgba(0, 0, 0, 0.7)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 284,
    "y": 1998,
@@ -887,9 +953,11 @@
     {
      "t": "12 PM - 3 PM",
      "c": "rgba(0, 0, 0, 0.7)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 284,
    "y": 2030,
@@ -914,9 +982,11 @@
     {
      "t": "August 17th - August 21st",
      "c": "rgba(0, 0, 0, 0.7)",
-     "w": 800
+     "w": 800,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "main",
    "x": 80,
    "y": 2097,
@@ -941,9 +1011,11 @@
     {
      "t": "8:30 AM - 11:30 AM",
      "c": "rgba(0, 0, 0, 0.7)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 284,
    "y": 2097,
@@ -968,9 +1040,11 @@
     {
      "t": "12 PM - 3 PM",
      "c": "rgba(0, 0, 0, 0.7)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 284,
    "y": 2129,
@@ -994,9 +1068,11 @@
     {
      "t": "Summer Camp Pricing",
      "c": "rgb(219, 58, 52)",
-     "w": 900
+     "w": 900,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 65,
    "y": 2208,
@@ -1021,19 +1097,23 @@
     {
      "t": "A week of activities and snacks at Springfield Warrior Sports camps are $179, and we have discounts available for members and siblings. (You’ll need to call ",
      "c": "rgb(106, 107, 108)",
-     "w": 400
+     "w": 400,
+     "u": false
     },
     {
      "t": "(417) 894-7319",
      "c": "rgb(219, 58, 52)",
-     "w": 600
+     "w": 600,
+     "u": true
     },
     {
      "t": " and register over the phone in order to qualify for those discounts).",
      "c": "rgb(106, 107, 108)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 4,
    "region": "main",
    "x": 66,
    "y": 2259,
@@ -1058,9 +1138,11 @@
     {
      "t": "Note:",
      "c": "rgb(106, 107, 108)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 66,
    "y": 2409,
@@ -1085,9 +1167,11 @@
     {
      "t": "Summer camp investment monies can be pro-rated if your child can not attend the entire week.",
      "c": "rgb(106, 107, 108)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "main",
    "x": 66,
    "y": 2465,
@@ -1120,9 +1204,11 @@
     {
      "t": "Springfield Warrior Registration",
      "c": "rgb(219, 58, 52)",
-     "w": 900
+     "w": 900,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 65,
    "y": 2568,
@@ -1147,9 +1233,11 @@
     {
      "t": "At our Springfield Warrior Sports camps, your kids won’t just have fun; they'll become physically stronger, learn life-long nutrition habits, and improve their coordination skills — all while making new friends!Sign up by filling out the registration form below to save your kid's spot at our fun-filled summer camps at Springfield Warriors Sports today! ",
      "c": "rgba(0, 0, 0, 0.7)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 4,
    "region": "main",
    "x": 66,
    "y": 2613,
@@ -1173,9 +1261,11 @@
     {
      "t": "Registration Form",
      "c": "rgb(219, 58, 52)",
-     "w": 900
+     "w": 900,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 190,
    "y": 2978,
@@ -1200,9 +1290,11 @@
     {
      "t": "Cost: $179 per child; member and sibling discounts available (may not be combined). For ages 6-15 years old.",
      "c": "rgba(0, 0, 0, 0.7)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "main",
    "x": 191,
    "y": 3049,
@@ -1227,19 +1319,23 @@
     {
      "t": "** call with questions or to register by phone ",
      "c": "rgba(0, 0, 0, 0.7)",
-     "w": 400
+     "w": 400,
+     "u": false
     },
     {
      "t": "(417) 894-7319",
      "c": "rgb(219, 58, 52)",
-     "w": 400
+     "w": 400,
+     "u": false
     },
     {
      "t": ". Please call to take advantage of the member or sibling discounts and get registered.",
      "c": "rgba(0, 0, 0, 0.7)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "main",
    "x": 191,
    "y": 3143,
@@ -1263,9 +1359,11 @@
     {
      "t": "Client Testimonials",
      "c": "rgb(219, 58, 52)",
-     "w": 900
+     "w": 900,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 65,
    "y": 5302,
@@ -1289,9 +1387,11 @@
     {
      "t": "What our clients say",
      "c": "rgb(0, 0, 0)",
-     "w": 300
+     "w": 300,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 66,
    "y": 5363,
@@ -1325,14 +1425,17 @@
     {
      "t": "We had our son’s 10th birthday here. All of the kids had a great time. They set up an obstacle course for the kids. They loved the whole experience. The favorite was the curved wall to run up. That was everyone’s challenge for the night. We will be visiting again for sure.",
      "c": "rgb(106, 107, 108)",
-     "w": 400
+     "w": 400,
+     "u": false
     },
     {
      "t": "- Jennifer L.",
      "c": "rgb(219, 58, 52)",
-     "w": 700
+     "w": 700,
+     "u": false
     }
    ],
+   "lines": 7,
    "region": "main",
    "x": 76,
    "y": 5517,
@@ -1357,9 +1460,11 @@
     {
      "t": "We had our son’s 10th birthday here. All of the kids had a great time. They set up an obstacle course for the kids. They loved the whole experience. The favorite was the curved wall to run up. That was everyone’s challenge for the night. We will be visiting again for sure.",
      "c": "rgb(106, 107, 108)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 5,
    "region": "main",
    "x": 76,
    "y": 5517,
@@ -1384,9 +1489,11 @@
     {
      "t": "- Jennifer L.",
      "c": "rgb(219, 58, 52)",
-     "w": 700
+     "w": 700,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 76,
    "y": 5698,
@@ -1420,14 +1527,17 @@
     {
      "t": "My daughter started training here 3 years ago at 8, and she still loves it!! Owner and coaching staff are all super encouraging. We live an hour away but make the drive twice a week as often as possible. Training here has not only helped her get stronger physically but increased her confidence in general. Anything that makes kids want to challenge themselves to get better and better is worth it!",
      "c": "rgb(106, 107, 108)",
-     "w": 400
+     "w": 400,
+     "u": false
     },
     {
      "t": "- Lee C.",
      "c": "rgb(219, 58, 52)",
-     "w": 700
+     "w": 700,
+     "u": false
     }
    ],
+   "lines": 9,
    "region": "main",
    "x": 641,
    "y": 5517,
@@ -1452,9 +1562,11 @@
     {
      "t": "My daughter started training here 3 years ago at 8, and she still loves it!! Owner and coaching staff are all super encouraging. We live an hour away but make the drive twice a week as often as possible. Training here has not only helped her get stronger physically but increased her confidence in general. Anything that makes kids want to challenge themselves to get better and better is worth it!",
      "c": "rgb(106, 107, 108)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 7,
    "region": "main",
    "x": 641,
    "y": 5517,
@@ -1479,9 +1591,11 @@
     {
      "t": "- Lee C.",
      "c": "rgb(219, 58, 52)",
-     "w": 700
+     "w": 700,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 641,
    "y": 5761,
@@ -1515,9 +1629,11 @@
     {
      "t": "Our accomplished and award winning Crew are here to help you find your strength and enjoy your workouts.",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 3,
    "region": "footer",
    "x": 86,
    "y": 6042,
@@ -1560,9 +1676,11 @@
     {
      "t": "Contact",
      "c": "rgb(40, 82, 118)",
-     "w": 900
+     "w": 900,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 491,
    "y": 5925,
@@ -1596,9 +1714,11 @@
     {
      "t": "605 W Farm Rd 182, Springfield,MO, 65810, United States",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "footer",
    "x": 528,
    "y": 5978,
@@ -1632,9 +1752,11 @@
     {
      "t": "(417) 894-7319",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 528,
    "y": 6039,
@@ -1658,9 +1780,11 @@
     {
      "t": "(417) 894-7319",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 528,
    "y": 6041,
@@ -1694,9 +1818,11 @@
     {
      "t": "office@swarriorsports.com",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 528,
    "y": 6086,
@@ -1720,9 +1846,11 @@
     {
      "t": "office@swarriorsports.com",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 528,
    "y": 6088,
@@ -1747,9 +1875,11 @@
     {
      "t": "QUICK LInks",
      "c": "rgb(40, 82, 118)",
-     "w": 900
+     "w": 900,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 894,
    "y": 5925,
@@ -1774,9 +1904,11 @@
     {
      "t": "Home",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 895,
    "y": 5974,
@@ -1800,9 +1932,11 @@
     {
      "t": "Home",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 895,
    "y": 5976,
@@ -1827,9 +1961,11 @@
     {
      "t": "About Us",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 895,
    "y": 6000,
@@ -1853,9 +1989,11 @@
     {
      "t": "About Us",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 895,
    "y": 6002,
@@ -1880,9 +2018,11 @@
     {
      "t": "Contact Us",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 895,
    "y": 6026,
@@ -1906,9 +2046,11 @@
     {
      "t": "Contact Us",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 895,
    "y": 6028,
@@ -1933,9 +2075,11 @@
     {
      "t": "Meet the Team",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 895,
    "y": 6052,
@@ -1959,9 +2103,11 @@
     {
      "t": "Meet the Team",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 895,
    "y": 6054,
@@ -1986,9 +2132,11 @@
     {
      "t": "© Copyright 2026 Springfield Warrior Sports All Rights Reserved.",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 85,
    "y": 6237,

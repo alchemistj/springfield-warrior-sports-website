@@ -4,7 +4,7 @@
  "vw": 1280,
  "hiddenText": [],
  "docWidth": 1280,
- "docHeight": 3359,
+ "docHeight": 3334,
  "items": [
   {
    "kind": "text",
@@ -23,9 +23,11 @@
     {
      "t": "Contact",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "header",
    "x": 882,
    "y": 6,
@@ -49,9 +51,11 @@
     {
      "t": "About",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "header",
    "x": 977,
    "y": 6,
@@ -75,9 +79,11 @@
     {
      "t": "Sign Our Waiver",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "header",
    "x": 1052,
    "y": 6,
@@ -110,9 +116,11 @@
     {
      "t": "Adult Classes",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "header",
    "x": 368,
    "y": 73,
@@ -136,9 +144,11 @@
     {
      "t": "Kid Classes",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "header",
    "x": 500,
    "y": 73,
@@ -162,9 +172,11 @@
     {
      "t": "Competitions",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "header",
    "x": 610,
    "y": 73,
@@ -188,9 +200,11 @@
     {
      "t": "Birthday Parties",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "header",
    "x": 738,
    "y": 73,
@@ -214,9 +228,11 @@
     {
      "t": "Personal Training",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "header",
    "x": 893,
    "y": 73,
@@ -240,9 +256,11 @@
     {
      "t": "Summer Camps",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "header",
    "x": 1063,
    "y": 73,
@@ -254,7 +272,7 @@
    "src": "hero",
    "region": "main",
    "x": 0,
-   "y": 164,
+   "y": 139,
    "w": 1280,
    "h": 590
   },
@@ -275,12 +293,14 @@
     {
      "t": "Test your skills on our Fun and Competitive courses ",
      "c": "rgb(248, 248, 248)",
-     "w": 900
+     "w": 900,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "main",
    "x": 180,
-   "y": 389,
+   "y": 364,
    "w": 920,
    "h": 120
   },
@@ -302,12 +322,14 @@
     {
      "t": "Whether you are looking for regional qualifiers or just hoping to join in friendly competition, Springfield Warrior Sports is where you want to be!",
      "c": "rgba(41, 41, 41, 0.99)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "main",
    "x": 190,
-   "y": 810,
+   "y": 785,
    "w": 900,
    "h": 74
   },
@@ -329,22 +351,26 @@
     {
      "t": "We host",
      "c": "rgba(41, 41, 41, 0.99)",
-     "w": 400
+     "w": 400,
+     "u": false
     },
     {
      "t": "regional qualifiers for the WNL",
      "c": "rgb(47, 138, 228)",
-     "w": 400
+     "w": 400,
+     "u": false
     },
     {
      "t": "(World Ninja League) and are a CSNA (Central States Ninja Association) youth competitive league member. Check the links below for scheduled competitions and information! ",
      "c": "rgba(41, 41, 41, 0.99)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 3,
    "region": "main",
    "x": 190,
-   "y": 906,
+   "y": 881,
    "w": 900,
    "h": 111
   },
@@ -365,12 +391,14 @@
     {
      "t": "September 2026 CSNA team Competition",
      "c": "rgb(219, 58, 52)",
-     "w": 900
+     "w": 900,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 65,
-   "y": 1140,
+   "y": 1114,
    "w": 1150,
    "h": 74
   },
@@ -379,7 +407,7 @@
    "color": "rgb(219, 58, 52)",
    "region": "main",
    "x": 75,
-   "y": 1260,
+   "y": 1235,
    "w": 18,
    "h": 18
   },
@@ -401,12 +429,14 @@
     {
      "t": "Date: Saturday, September 19th",
      "c": "rgba(41, 41, 41, 0.99)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 108,
-   "y": 1253,
+   "y": 1228,
    "w": 277,
    "h": 29
   },
@@ -415,7 +445,7 @@
    "color": "rgb(219, 58, 52)",
    "region": "main",
    "x": 75,
-   "y": 1305,
+   "y": 1280,
    "w": 18,
    "h": 18
   },
@@ -437,12 +467,14 @@
     {
      "t": "Start time: TBA",
      "c": "rgba(41, 41, 41, 0.99)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 108,
-   "y": 1298,
+   "y": 1273,
    "w": 129,
    "h": 29
   },
@@ -451,7 +483,7 @@
    "color": "rgb(219, 58, 52)",
    "region": "main",
    "x": 75,
-   "y": 1350,
+   "y": 1325,
    "w": 18,
    "h": 18
   },
@@ -473,26 +505,29 @@
     {
      "t": "Price per registration: ",
      "c": "rgba(41, 41, 41, 0.99)",
-     "w": 400
+     "w": 400,
+     "u": false
     },
     {
      "t": "$60",
      "c": "rgba(41, 41, 41, 0.99)",
-     "w": 900
+     "w": 900,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 108,
-   "y": 1343,
+   "y": 1318,
    "w": 232,
    "h": 29
   },
   {
    "kind": "image",
-   "src": "https://www.springfieldwarriorsports.com/wp-content/uploads/2023/03/SWS-Competitions-Banner-768x223.jpg",
+   "src": "https://www.springfieldwarriorsports.com/wp-content/uploads/2023/03/SWS-Competitions-Banner.jpg",
    "region": "main",
    "x": 648,
-   "y": 1239,
+   "y": 1213,
    "w": 568,
    "h": 165
   },
@@ -511,7 +546,7 @@
    "lh": 19,
    "region": "main",
    "x": 380,
-   "y": 1428,
+   "y": 1403,
    "w": 520,
    "h": 49
   },
@@ -532,12 +567,14 @@
     {
      "t": "2026-9 CSNA September 19th Form",
      "c": "rgb(12, 17, 21)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 66,
-   "y": 1499,
+   "y": 1473,
    "w": 1148,
    "h": 72
   },
@@ -546,7 +583,7 @@
    "src": "https://www.springfieldwarriorsports.com/wp-content/uploads/2023/03/SWS-logo-footer.png",
    "region": "footer",
    "x": 85,
-   "y": 3022,
+   "y": 2997,
    "w": 266,
    "h": 76
   },
@@ -568,12 +605,14 @@
     {
      "t": "Our accomplished and award winning Crew are here to help you find your strength and enjoy your workouts.",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 3,
    "region": "footer",
    "x": 86,
-   "y": 3119,
+   "y": 3094,
    "w": 354,
    "h": 72
   },
@@ -582,7 +621,7 @@
    "color": "rgb(255, 255, 255)",
    "region": "footer",
    "x": 94,
-   "y": 3225,
+   "y": 3200,
    "w": 17,
    "h": 17
   },
@@ -591,7 +630,7 @@
    "color": "rgb(255, 255, 255)",
    "region": "footer",
    "x": 131,
-   "y": 3225,
+   "y": 3200,
    "w": 17,
    "h": 17
   },
@@ -613,12 +652,14 @@
     {
      "t": "Contact",
      "c": "rgb(40, 82, 118)",
-     "w": 900
+     "w": 900,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 491,
-   "y": 3002,
+   "y": 2977,
    "w": 353,
    "h": 28
   },
@@ -627,7 +668,7 @@
    "color": "rgb(219, 58, 52)",
    "region": "footer",
    "x": 502,
-   "y": 3060,
+   "y": 3035,
    "w": 16,
    "h": 16
   },
@@ -649,12 +690,14 @@
     {
      "t": "605 W Farm Rd 182, Springfield,MO, 65810, United States",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "footer",
    "x": 528,
-   "y": 3055,
+   "y": 3030,
    "w": 212,
    "h": 45
   },
@@ -663,7 +706,7 @@
    "color": "rgb(219, 58, 52)",
    "region": "footer",
    "x": 502,
-   "y": 3121,
+   "y": 3096,
    "w": 16,
    "h": 16
   },
@@ -685,12 +728,14 @@
     {
      "t": "(417) 894-7319",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 528,
-   "y": 3116,
+   "y": 3091,
    "w": 103,
    "h": 22
   },
@@ -711,12 +756,14 @@
     {
      "t": "(417) 894-7319",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 528,
-   "y": 3118,
+   "y": 3093,
    "w": 103,
    "h": 18
   },
@@ -725,7 +772,7 @@
    "color": "rgb(219, 58, 52)",
    "region": "footer",
    "x": 502,
-   "y": 3168,
+   "y": 3143,
    "w": 16,
    "h": 16
   },
@@ -747,12 +794,14 @@
     {
      "t": "office@swarriorsports.com",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 528,
-   "y": 3163,
+   "y": 3138,
    "w": 173,
    "h": 22
   },
@@ -773,12 +822,14 @@
     {
      "t": "office@swarriorsports.com",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 528,
-   "y": 3165,
+   "y": 3140,
    "w": 173,
    "h": 18
   },
@@ -800,12 +851,14 @@
     {
      "t": "QUICK LInks",
      "c": "rgb(40, 82, 118)",
-     "w": 900
+     "w": 900,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 894,
-   "y": 3002,
+   "y": 2977,
    "w": 301,
    "h": 28
   },
@@ -827,12 +880,14 @@
     {
      "t": "Home",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 895,
-   "y": 3051,
+   "y": 3026,
    "w": 299,
    "h": 24
   },
@@ -853,12 +908,14 @@
     {
      "t": "Home",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 895,
-   "y": 3053,
+   "y": 3028,
    "w": 44,
    "h": 20
   },
@@ -880,12 +937,14 @@
     {
      "t": "About Us",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 895,
-   "y": 3077,
+   "y": 3052,
    "w": 299,
    "h": 24
   },
@@ -906,12 +965,14 @@
     {
      "t": "About Us",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 895,
-   "y": 3079,
+   "y": 3054,
    "w": 69,
    "h": 20
   },
@@ -933,12 +994,14 @@
     {
      "t": "Contact Us",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 895,
-   "y": 3103,
+   "y": 3078,
    "w": 299,
    "h": 24
   },
@@ -959,12 +1022,14 @@
     {
      "t": "Contact Us",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 895,
-   "y": 3105,
+   "y": 3080,
    "w": 82,
    "h": 20
   },
@@ -986,12 +1051,14 @@
     {
      "t": "Meet the Team",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 895,
-   "y": 3129,
+   "y": 3104,
    "w": 299,
    "h": 24
   },
@@ -1012,12 +1079,14 @@
     {
      "t": "Meet the Team",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 895,
-   "y": 3131,
+   "y": 3106,
    "w": 109,
    "h": 20
   },
@@ -1039,12 +1108,14 @@
     {
      "t": "© Copyright 2026 Springfield Warrior Sports All Rights Reserved.",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 85,
-   "y": 3315,
+   "y": 3290,
    "w": 1110,
    "h": 24
   }
@@ -1060,7 +1131,7 @@
   {
    "bg": "rgb(255, 255, 255)",
    "x": 0,
-   "y": 2962,
+   "y": 2937,
    "w": 1280,
    "h": 396
   }

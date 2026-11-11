@@ -23,9 +23,11 @@
     {
      "t": "Contact",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "header",
    "x": 53,
    "y": 11,
@@ -49,9 +51,11 @@
     {
      "t": "About",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "header",
    "x": 144,
    "y": 11,
@@ -75,9 +79,11 @@
     {
      "t": "Sign Our Waiver",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "header",
    "x": 214,
    "y": 11,
@@ -128,9 +134,11 @@
     {
      "t": "Parkour Gym in Springfield MO | Springfield Warrior Sports",
      "c": "rgb(219, 58, 52)",
-     "w": 900
+     "w": 900,
+     "u": false
     }
    ],
+   "lines": 4,
    "region": "main",
    "x": 38,
    "y": 310,
@@ -154,9 +162,11 @@
     {
      "t": "⚠️ Temporary Update:",
      "c": "rgb(40, 82, 118)",
-     "w": 900
+     "w": 900,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "main",
    "x": 60,
    "y": 714,
@@ -181,9 +191,11 @@
     {
      "t": "Parkour classes are currently paused for a short time.",
      "c": "rgba(0, 0, 0, 0.7)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "main",
    "x": 61,
    "y": 785,
@@ -208,9 +220,11 @@
     {
      "t": "Open Gym sessions remain available, and Parkour classes will be returning soon. Thank you for your understanding!",
      "c": "rgba(0, 0, 0, 0.7)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 4,
    "region": "main",
    "x": 61,
    "y": 841,
@@ -235,9 +249,11 @@
     {
      "t": "Want to challenge yourself and become stronger, faster, and more agile?Come try out parkour at Springfield Warrior Sports! Our Parkour gym in Springfield is the perfect place for people of all ages looking to build strength, agility, speed, balance, and self-confidence with a complete body workout. With our expert instructors guiding you through each obstacle course challenge – you're sure to improve your physical skills as well as boost your confidence in taking on new situations",
      "c": "rgba(0, 0, 0, 0.7)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 13,
    "region": "main",
    "x": 26,
    "y": 1513,
@@ -262,34 +278,41 @@
     {
      "t": "Plus, your first class is only $5 Dollars – so you can see if this is right for you at an affordable price point. ",
      "c": "rgba(0, 0, 0, 0.7)",
-     "w": 400
+     "w": 400,
+     "u": false
     },
     {
      "t": "When:",
      "c": "rgb(219, 58, 52)",
-     "w": 600
+     "w": 600,
+     "u": false
     },
     {
      "t": "Beginner: ",
      "c": "rgba(0, 0, 0, 0.7)",
-     "w": 600
+     "w": 600,
+     "u": false
     },
     {
      "t": "Wednesdays 6-7pm",
      "c": "rgba(0, 0, 0, 0.7)",
-     "w": 400
+     "w": 400,
+     "u": false
     },
     {
      "t": "Intermediate: ",
      "c": "rgba(0, 0, 0, 0.7)",
-     "w": 600
+     "w": 600,
+     "u": false
     },
     {
      "t": "Wednesdays 7-8pm",
      "c": "rgba(0, 0, 0, 0.7)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 6,
    "region": "main",
    "x": 26,
    "y": 1933,
@@ -341,9 +364,11 @@
     {
      "t": "Parkour Benefits",
      "c": "rgb(219, 58, 52)",
-     "w": 900
+     "w": 900,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 45,
    "y": 2384,
@@ -376,9 +401,11 @@
     {
      "t": "Improve Physical Fitness: ",
      "c": "rgb(40, 82, 118)",
-     "w": 900
+     "w": 900,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "main",
    "x": 25,
    "y": 2788,
@@ -403,9 +430,11 @@
     {
      "t": "Parkour can help to improve overall physical fitness and develop a greater strength, speed, stamina and balance. The movements involve a variety of exercises that work out several muscles at once, allowing for a complete body workout.",
      "c": "rgba(0, 0, 0, 0.7)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 6,
    "region": "main",
    "x": 26,
    "y": 2859,
@@ -429,9 +458,11 @@
     {
      "t": "Builds Self-Confidence: ",
      "c": "rgb(40, 82, 118)",
-     "w": 900
+     "w": 900,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "main",
    "x": 25,
    "y": 3048,
@@ -456,9 +487,11 @@
     {
      "t": "By learning how to overcome obstacles and accomplish difficult tasks such as running, jumping and climbing, Parkour can help build self-confidence as students become more competent in their abilities. As they learn to move freely with the environment around them, they become more confident in their own abilities to adapt and succeed in new situations.",
      "c": "rgba(0, 0, 0, 0.7)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 9,
    "region": "main",
    "x": 26,
    "y": 3119,
@@ -482,9 +515,11 @@
     {
      "t": "Mental Stimulation: ",
      "c": "rgb(40, 82, 118)",
-     "w": 900
+     "w": 900,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "main",
    "x": 25,
    "y": 3765,
@@ -509,9 +544,11 @@
     {
      "t": "Parkour offers an enjoyable and mentally stimulating activity that allows students to practice coordination skills while having fun at the same time. It also encourages problem solving skills as students have to find creative ways of navigating through different obstacle courses and scenarios.",
      "c": "rgba(0, 0, 0, 0.7)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 7,
    "region": "main",
    "x": 26,
    "y": 3836,
@@ -535,9 +572,11 @@
     {
      "t": "Stress Relief: ",
      "c": "rgb(40, 82, 118)",
-     "w": 900
+     "w": 900,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 25,
    "y": 4068,
@@ -562,9 +601,11 @@
     {
      "t": "Parkour is a great way to reduce stress levels by letting off some steam while using physical activity as an outlet for negative emotions. The mental clarity that comes from focusing on the task at hand helps clear the mind of any distractions or worries that may be plaguing it, allowing for renewed focus and energy afterwards.",
      "c": "rgba(0, 0, 0, 0.7)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 8,
    "region": "main",
    "x": 26,
    "y": 4109,
@@ -606,9 +647,11 @@
     {
      "t": "Community: ",
      "c": "rgb(40, 82, 118)",
-     "w": 900
+     "w": 900,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 25,
    "y": 4706,
@@ -633,9 +676,11 @@
     {
      "t": "Participants in Parkour can gain access to a strong supportive community of like-minded individuals who are all striving for personal growth through physical activity with each other's support and encouragement.",
      "c": "rgba(0, 0, 0, 0.7)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 6,
    "region": "main",
    "x": 26,
    "y": 4747,
@@ -668,9 +713,11 @@
     {
      "t": "parkour classes ",
      "c": "rgb(255, 255, 255)",
-     "w": 900
+     "w": 900,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 42,
    "y": 5056,
@@ -694,9 +741,11 @@
     {
      "t": "temporarily unavailable",
      "c": "rgb(255, 255, 255)",
-     "w": 900
+     "w": 900,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "main",
    "x": 42,
    "y": 5088,
@@ -720,9 +769,11 @@
     {
      "t": "Open Gym Is Open — Your First Visit Is Just $10",
      "c": "rgb(255, 255, 255)",
-     "w": 300
+     "w": 300,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "main",
    "x": 42,
    "y": 5163,
@@ -747,9 +798,11 @@
     {
      "t": "$20 class drop in, $10 class drop in for current members$35/monthly discounted Parkour add on for current members who want to attend one class per week$60/monthly for Parkour gym membership, unlimited classes, and also includes unlimited Open Gym accessSign up now for our introductory open gym session (Your first visit is just $10) at Springfield Warrior Sports' Parkour Gym today!",
      "c": "rgb(255, 255, 255)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 12,
    "region": "main",
    "x": 26,
    "y": 5233,
@@ -801,9 +854,11 @@
     {
      "t": "More Than Just Physical",
      "c": "rgb(219, 58, 52)",
-     "w": 900
+     "w": 900,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "main",
    "x": 25,
    "y": 6167,
@@ -828,19 +883,23 @@
     {
      "t": "With Parkour classes at Springfield Warrior Sports, you don't just get a physical workout; you also get a mental challenge as well. Working in a non-competitive environment helps create an atmosphere that encourages ",
      "c": "rgba(0, 0, 0, 0.7)",
-     "w": 400
+     "w": 400,
+     "u": false
     },
     {
      "t": "growth for everyone involved",
      "c": "rgb(47, 138, 228)",
-     "w": 400
+     "w": 400,
+     "u": false
     },
     {
      "t": " – no matter their skill level. So come on down and give Parkour a try today – we promise it won't disappoint!",
      "c": "rgba(0, 0, 0, 0.7)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 9,
    "region": "main",
    "x": 26,
    "y": 6242,
@@ -874,9 +933,11 @@
     {
      "t": "Our accomplished and award winning Crew are here to help you find your strength and enjoy your workouts.",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 3,
    "region": "footer",
    "x": 21,
    "y": 6714,
@@ -919,9 +980,11 @@
     {
      "t": "Contact",
      "c": "rgb(40, 82, 118)",
-     "w": 900
+     "w": 900,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 20,
    "y": 6879,
@@ -955,9 +1018,11 @@
     {
      "t": "605 W Farm Rd 182, Springfield,MO, 65810, United States",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "footer",
    "x": 57,
    "y": 6917,
@@ -991,9 +1056,11 @@
     {
      "t": "(417) 894-7319",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 57,
    "y": 6971,
@@ -1017,9 +1084,11 @@
     {
      "t": "(417) 894-7319",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 57,
    "y": 6973,
@@ -1053,9 +1122,11 @@
     {
      "t": "office@swarriorsports.com",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 57,
    "y": 7012,
@@ -1079,9 +1150,11 @@
     {
      "t": "office@swarriorsports.com",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 57,
    "y": 7014,
@@ -1106,9 +1179,11 @@
     {
      "t": "QUICK LInks",
      "c": "rgb(40, 82, 118)",
-     "w": 900
+     "w": 900,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 20,
    "y": 7073,
@@ -1133,9 +1208,11 @@
     {
      "t": "Home",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 21,
    "y": 7112,
@@ -1159,9 +1236,11 @@
     {
      "t": "Home",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 21,
    "y": 7114,
@@ -1186,9 +1265,11 @@
     {
      "t": "About Us",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 21,
    "y": 7138,
@@ -1212,9 +1293,11 @@
     {
      "t": "About Us",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 21,
    "y": 7140,
@@ -1239,9 +1322,11 @@
     {
      "t": "Contact Us",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 21,
    "y": 7164,
@@ -1265,9 +1350,11 @@
     {
      "t": "Contact Us",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 21,
    "y": 7166,
@@ -1292,9 +1379,11 @@
     {
      "t": "Meet the Team",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 21,
    "y": 7190,
@@ -1318,9 +1407,11 @@
     {
      "t": "Meet the Team",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 21,
    "y": 7192,
@@ -1345,9 +1436,11 @@
     {
      "t": "© Copyright 2026",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 20,
    "y": 7271,
@@ -1372,9 +1465,11 @@
     {
      "t": " Springfield Warrior Sports",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 20,
    "y": 7292,
@@ -1399,9 +1494,11 @@
     {
      "t": "All Rights Reserved.",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 20,
    "y": 7312,

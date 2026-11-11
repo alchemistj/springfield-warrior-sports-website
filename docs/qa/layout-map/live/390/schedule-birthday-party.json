@@ -23,9 +23,11 @@
     {
      "t": "Contact",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "header",
    "x": 53,
    "y": 11,
@@ -49,9 +51,11 @@
     {
      "t": "About",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "header",
    "x": 144,
    "y": 11,
@@ -75,9 +79,11 @@
     {
      "t": "Sign Our Waiver",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "header",
    "x": 214,
    "y": 11,
@@ -129,9 +135,11 @@
     {
      "t": "1. Fill out the form to begin the scheduling process and check availability2. We will secure a date and then follow up with a phone call to confirm details and collect the $179 fee3. Look forward to the best birthday ever! ",
      "c": "rgba(0, 0, 0, 0.7)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 6,
    "region": "main",
    "x": 21,
    "y": 660,
@@ -156,19 +164,23 @@
     {
      "t": "\"",
      "c": "rgb(106, 107, 108)",
-     "w": 400
+     "w": 400,
+     "u": false
     },
     {
      "t": "*",
      "c": "rgb(192, 43, 10)",
-     "w": 400
+     "w": 400,
+     "u": false
     },
     {
      "t": "\" indicates required fields",
      "c": "rgb(106, 107, 108)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 21,
    "y": 870,
@@ -192,9 +204,11 @@
     {
      "t": "Client Testimonials",
      "c": "rgb(219, 58, 52)",
-     "w": 900
+     "w": 900,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 20,
    "y": 2328,
@@ -218,9 +232,11 @@
     {
      "t": "What our clients say",
      "c": "rgb(0, 0, 0)",
-     "w": 300
+     "w": 300,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 38,
    "y": 2361,
@@ -254,14 +270,17 @@
     {
      "t": "We had our son’s 10th birthday here. All of the kids had a great time. They set up an obstacle course for the kids. They loved the whole experience. The favorite was the curved wall to run up. That was everyone’s challenge for the night. We will be visiting again for sure.",
      "c": "rgb(0, 0, 0)",
-     "w": 400
+     "w": 400,
+     "u": false
     },
     {
      "t": "- Jennifer L.",
      "c": "rgb(219, 58, 52)",
-     "w": 700
+     "w": 700,
+     "u": false
     }
    ],
+   "lines": 10,
    "region": "main",
    "x": 49,
    "y": 2508,
@@ -286,9 +305,11 @@
     {
      "t": "We had our son’s 10th birthday here. All of the kids had a great time. They set up an obstacle course for the kids. They loved the whole experience. The favorite was the curved wall to run up. That was everyone’s challenge for the night. We will be visiting again for sure.",
      "c": "rgb(0, 0, 0)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 8,
    "region": "main",
    "x": 49,
    "y": 2508,
@@ -313,9 +334,11 @@
     {
      "t": "- Jennifer L.",
      "c": "rgb(219, 58, 52)",
-     "w": 700
+     "w": 700,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 49,
    "y": 2732,
@@ -349,9 +372,11 @@
     {
      "t": "Our accomplished and award winning Crew are here to help you find your strength and enjoy your workouts.",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 3,
    "region": "footer",
    "x": 21,
    "y": 2990,
@@ -394,9 +419,11 @@
     {
      "t": "Contact",
      "c": "rgb(40, 82, 118)",
-     "w": 900
+     "w": 900,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 20,
    "y": 3154,
@@ -430,9 +457,11 @@
     {
      "t": "605 W Farm Rd 182, Springfield,MO, 65810, United States",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "footer",
    "x": 57,
    "y": 3192,
@@ -466,9 +495,11 @@
     {
      "t": "(417) 894-7319",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 57,
    "y": 3247,
@@ -492,9 +523,11 @@
     {
      "t": "(417) 894-7319",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 57,
    "y": 3249,
@@ -528,9 +561,11 @@
     {
      "t": "office@swarriorsports.com",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 57,
    "y": 3288,
@@ -554,9 +589,11 @@
     {
      "t": "office@swarriorsports.com",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 57,
    "y": 3290,
@@ -581,9 +618,11 @@
     {
      "t": "QUICK LInks",
      "c": "rgb(40, 82, 118)",
-     "w": 900
+     "w": 900,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 20,
    "y": 3349,
@@ -608,9 +647,11 @@
     {
      "t": "Home",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 21,
    "y": 3388,
@@ -634,9 +675,11 @@
     {
      "t": "Home",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 21,
    "y": 3390,
@@ -661,9 +704,11 @@
     {
      "t": "About Us",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 21,
    "y": 3414,
@@ -687,9 +732,11 @@
     {
      "t": "About Us",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 21,
    "y": 3416,
@@ -714,9 +761,11 @@
     {
      "t": "Contact Us",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 21,
    "y": 3440,
@@ -740,9 +789,11 @@
     {
      "t": "Contact Us",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 21,
    "y": 3442,
@@ -767,9 +818,11 @@
     {
      "t": "Meet the Team",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 21,
    "y": 3466,
@@ -793,9 +846,11 @@
     {
      "t": "Meet the Team",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 21,
    "y": 3468,
@@ -820,9 +875,11 @@
     {
      "t": "© Copyright 2026",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 20,
    "y": 3547,
@@ -847,9 +904,11 @@
     {
      "t": " Springfield Warrior Sports",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 20,
    "y": 3568,
@@ -874,9 +933,11 @@
     {
      "t": "All Rights Reserved.",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 20,
    "y": 3588,

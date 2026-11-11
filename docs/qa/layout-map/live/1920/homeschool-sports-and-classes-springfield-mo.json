@@ -23,9 +23,11 @@
     {
      "t": "Contact",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "header",
    "x": 1202,
    "y": 6,
@@ -49,9 +51,11 @@
     {
      "t": "About",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "header",
    "x": 1297,
    "y": 6,
@@ -75,9 +79,11 @@
     {
      "t": "Sign Our Waiver",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "header",
    "x": 1372,
    "y": 6,
@@ -110,9 +116,11 @@
     {
      "t": "Adult Classes",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "header",
    "x": 688,
    "y": 73,
@@ -136,9 +144,11 @@
     {
      "t": "Kid Classes",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "header",
    "x": 820,
    "y": 73,
@@ -162,9 +172,11 @@
     {
      "t": "Competitions",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "header",
    "x": 930,
    "y": 73,
@@ -188,9 +200,11 @@
     {
      "t": "Birthday Parties",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "header",
    "x": 1058,
    "y": 73,
@@ -214,9 +228,11 @@
     {
      "t": "Personal Training",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "header",
    "x": 1213,
    "y": 73,
@@ -240,9 +256,11 @@
     {
      "t": "Summer Camps",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "header",
    "x": 1383,
    "y": 73,
@@ -276,9 +294,11 @@
     {
      "t": "Homeschool Kids Sports",
      "c": "rgb(255, 255, 255)",
-     "w": 900
+     "w": 900,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 494,
    "y": 394,
@@ -303,9 +323,11 @@
     {
      "t": "Looking for fun ways to help your homeschooled kids nab their PE credit? Or, to just have some fitness and play time with other like-minded families?!",
      "c": "rgba(0, 0, 0, 0.7)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "main",
    "x": 425,
    "y": 820,
@@ -330,9 +352,11 @@
     {
      "t": "Springfield Warrior Sports has you covered!",
      "c": "rgba(0, 0, 0, 0.7)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 425,
    "y": 893,
@@ -357,9 +381,11 @@
     {
      "t": "We offer opportunities for homeschoolers to stay active, fulfill their PE credit requirements, and most of all, have fun. Kids get to connect with peers, challenge themselves to improve their athletic performance, and gain new experiences.",
      "c": "rgba(0, 0, 0, 0.7)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "main",
    "x": 425,
    "y": 938,
@@ -384,9 +410,11 @@
     {
      "t": "Our homeschool programs in Springfield, MO provide sports opportunities your homeschooler will love. Keep reading for all the details!",
      "c": "rgba(0, 0, 0, 0.7)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 425,
    "y": 1011,
@@ -410,9 +438,11 @@
     {
      "t": "Fun Homeschool Sports for Kids in Springfield, MO",
      "c": "rgb(255, 255, 255)",
-     "w": 900
+     "w": 900,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 405,
    "y": 1255,
@@ -445,9 +475,11 @@
     {
      "t": "HOMESCHOOL CLASSES SPRINGFIELD, MO",
      "c": "rgb(40, 82, 118)",
-     "w": 800
+     "w": 800,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 793,
    "y": 1391,
@@ -471,9 +503,11 @@
     {
      "t": "(AGES 7–15)",
      "c": "rgb(40, 82, 118)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 793,
    "y": 1433,
@@ -498,9 +532,11 @@
     {
      "t": "The Springfield Warrior Sports Junior Warrior Classes are the perfect way to get your homeschoolers active and embracing a healthy lifestyle. Classes incorporate cardio, strength, balance, and agility training while teaching safe and productive ways to conquer the different obstacles in the gym.Kids progress through program Levels 1-9 as they accomplish the skills required in each level. This is a great way to challenge your kids and encourage your children to stay active!Availability: Tuesdays and Thursdays",
      "c": "rgb(0, 0, 0)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 8,
    "region": "main",
    "x": 794,
    "y": 1486,
@@ -534,9 +570,11 @@
     {
      "t": "Availability: Tuesdays and Thursdays",
      "c": "rgb(0, 0, 0)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 832,
    "y": 1811,
@@ -570,9 +608,11 @@
     {
      "t": "Hours: 3–4pm",
      "c": "rgb(0, 0, 0)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 832,
    "y": 1852,
@@ -606,9 +646,11 @@
     {
      "t": "Cost: One class per week, $85 monthly. Two classes per week, $110 monthly.",
      "c": "rgb(0, 0, 0)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "main",
    "x": 832,
    "y": 1894,
@@ -660,9 +702,11 @@
     {
      "t": "Come Join the Fun!",
      "c": "rgb(219, 58, 52)",
-     "w": 900
+     "w": 900,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 713,
    "y": 2271,
@@ -686,9 +730,11 @@
     {
      "t": "Homeschoolers have the unique opportunity to enjoy exciting activities at Springfield Warrior Sports. ",
      "c": "rgb(255, 255, 255)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "main",
    "x": 484,
    "y": 2353,
@@ -712,9 +758,11 @@
     {
      "t": "With time specifically dedicated to helping homeschoolers excel in their athletic goals, embrace an active lifestyle, and connect with other kids their age, this is a chance for homeschool kids to experience the most fun school year ever.",
      "c": "rgb(255, 255, 255)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 3,
    "region": "main",
    "x": 484,
    "y": 2423,
@@ -738,14 +786,17 @@
     {
      "t": "Call (417) 894-7319 for more information, or click here to book a trial ",
      "c": "rgb(255, 255, 255)",
-     "w": 400
+     "w": 400,
+     "u": false
     },
     {
      "t": "class for only $ 5.",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": true
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 499,
    "y": 2521,
@@ -779,9 +830,11 @@
     {
      "t": "Our accomplished and award winning Crew are here to help you find your strength and enjoy your workouts.",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 3,
    "region": "footer",
    "x": 406,
    "y": 2787,
@@ -824,9 +877,11 @@
     {
      "t": "Contact",
      "c": "rgb(40, 82, 118)",
-     "w": 900
+     "w": 900,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 811,
    "y": 2670,
@@ -860,9 +915,11 @@
     {
      "t": "605 W Farm Rd 182, Springfield,MO, 65810, United States",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "footer",
    "x": 848,
    "y": 2723,
@@ -896,9 +953,11 @@
     {
      "t": "(417) 894-7319",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 848,
    "y": 2784,
@@ -922,9 +981,11 @@
     {
      "t": "(417) 894-7319",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 848,
    "y": 2786,
@@ -958,9 +1019,11 @@
     {
      "t": "office@swarriorsports.com",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 848,
    "y": 2831,
@@ -984,9 +1047,11 @@
     {
      "t": "office@swarriorsports.com",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 848,
    "y": 2833,
@@ -1011,9 +1076,11 @@
     {
      "t": "QUICK LInks",
      "c": "rgb(40, 82, 118)",
-     "w": 900
+     "w": 900,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 1214,
    "y": 2670,
@@ -1038,9 +1105,11 @@
     {
      "t": "Home",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 1215,
    "y": 2719,
@@ -1064,9 +1133,11 @@
     {
      "t": "Home",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 1215,
    "y": 2721,
@@ -1091,9 +1162,11 @@
     {
      "t": "About Us",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 1215,
    "y": 2745,
@@ -1117,9 +1190,11 @@
     {
      "t": "About Us",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 1215,
    "y": 2747,
@@ -1144,9 +1219,11 @@
     {
      "t": "Contact Us",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 1215,
    "y": 2771,
@@ -1170,9 +1247,11 @@
     {
      "t": "Contact Us",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 1215,
    "y": 2773,
@@ -1197,9 +1276,11 @@
     {
      "t": "Meet the Team",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 1215,
    "y": 2797,
@@ -1223,9 +1304,11 @@
     {
      "t": "Meet the Team",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 1215,
    "y": 2799,
@@ -1250,9 +1333,11 @@
     {
      "t": "© Copyright 2026 Springfield Warrior Sports All Rights Reserved.",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 405,
    "y": 2983,

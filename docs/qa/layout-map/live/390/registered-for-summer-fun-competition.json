@@ -23,9 +23,11 @@
     {
      "t": "Contact",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "header",
    "x": 53,
    "y": 11,
@@ -49,9 +51,11 @@
     {
      "t": "About",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "header",
    "x": 144,
    "y": 11,
@@ -75,9 +79,11 @@
     {
      "t": "Sign Our Waiver",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "header",
    "x": 214,
    "y": 11,
@@ -119,9 +125,11 @@
     {
      "t": "We received those details, thank you!",
      "c": "rgb(219, 58, 52)",
-     "w": 900
+     "w": 900,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "main",
    "x": 20,
    "y": 219,
@@ -146,14 +154,17 @@
     {
      "t": "Click here to finalize the registration with your payment, ",
      "c": "rgb(0, 0, 0)",
-     "w": 300
+     "w": 300,
+     "u": false
     },
     {
      "t": "https://springfield-warrior-sports.square.site/product/summer-fun-competition-fundraiser-/217",
      "c": "rgb(47, 138, 228)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 4,
    "region": "main",
    "x": 21,
    "y": 304,
@@ -178,19 +189,23 @@
     {
      "t": "If you encounter any problems or have any questions, please call or text us at ",
      "c": "rgb(0, 0, 0)",
-     "w": 300
+     "w": 300,
+     "u": false
     },
     {
      "t": "(417) 894-7319",
      "c": "rgb(219, 58, 52)",
-     "w": 400
+     "w": 400,
+     "u": false
     },
     {
      "t": ".",
      "c": "rgb(0, 0, 0)",
-     "w": 300
+     "w": 300,
+     "u": false
     }
    ],
+   "lines": 3,
    "region": "main",
    "x": 21,
    "y": 416,
@@ -233,9 +248,11 @@
     {
      "t": "Our accomplished and award winning Crew are here to help you find your strength and enjoy your workouts.",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 3,
    "region": "footer",
    "x": 21,
    "y": 1050,
@@ -278,9 +295,11 @@
     {
      "t": "Contact",
      "c": "rgb(40, 82, 118)",
-     "w": 900
+     "w": 900,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 20,
    "y": 1215,
@@ -314,9 +333,11 @@
     {
      "t": "605 W Farm Rd 182, Springfield,MO, 65810, United States",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "footer",
    "x": 57,
    "y": 1253,
@@ -350,9 +371,11 @@
     {
      "t": "(417) 894-7319",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 57,
    "y": 1307,
@@ -376,9 +399,11 @@
     {
      "t": "(417) 894-7319",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 57,
    "y": 1309,
@@ -412,9 +437,11 @@
     {
      "t": "office@swarriorsports.com",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 57,
    "y": 1348,
@@ -438,9 +465,11 @@
     {
      "t": "office@swarriorsports.com",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 57,
    "y": 1350,
@@ -465,9 +494,11 @@
     {
      "t": "QUICK LInks",
      "c": "rgb(40, 82, 118)",
-     "w": 900
+     "w": 900,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 20,
    "y": 1409,
@@ -492,9 +523,11 @@
     {
      "t": "Home",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 21,
    "y": 1448,
@@ -518,9 +551,11 @@
     {
      "t": "Home",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 21,
    "y": 1450,
@@ -545,9 +580,11 @@
     {
      "t": "About Us",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 21,
    "y": 1474,
@@ -571,9 +608,11 @@
     {
      "t": "About Us",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 21,
    "y": 1476,
@@ -598,9 +637,11 @@
     {
      "t": "Contact Us",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 21,
    "y": 1500,
@@ -624,9 +665,11 @@
     {
      "t": "Contact Us",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 21,
    "y": 1502,
@@ -651,9 +694,11 @@
     {
      "t": "Meet the Team",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 21,
    "y": 1526,
@@ -677,9 +722,11 @@
     {
      "t": "Meet the Team",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 21,
    "y": 1528,
@@ -704,9 +751,11 @@
     {
      "t": "© Copyright 2026",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 20,
    "y": 1607,
@@ -731,9 +780,11 @@
     {
      "t": " Springfield Warrior Sports",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 20,
    "y": 1628,
@@ -758,9 +809,11 @@
     {
      "t": "All Rights Reserved.",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 20,
    "y": 1648,

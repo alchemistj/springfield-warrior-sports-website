@@ -4,7 +4,7 @@
  "vw": 390,
  "hiddenText": [],
  "docWidth": 390,
- "docHeight": 4381,
+ "docHeight": 4429,
  "items": [
   {
    "kind": "text",
@@ -23,9 +23,11 @@
     {
      "t": "Contact",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "header",
    "x": 48,
    "y": 11,
@@ -49,9 +51,11 @@
     {
      "t": "About",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "header",
    "x": 139,
    "y": 11,
@@ -75,9 +79,11 @@
     {
      "t": "Sign Our Waiver",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "header",
    "x": 209,
    "y": 11,
@@ -107,7 +113,7 @@
    "src": "hero",
    "region": "main",
    "x": 0,
-   "y": 149,
+   "y": 197,
    "w": 390,
    "h": 450
   },
@@ -128,12 +134,14 @@
     {
      "t": "Our Accomplished, Award Winning Crew is Ready to Help You Reach Your Goals",
      "c": "rgb(219, 58, 52)",
-     "w": 900
+     "w": 900,
+     "u": false
     }
    ],
+   "lines": 5,
    "region": "main",
    "x": 20,
-   "y": 294,
+   "y": 342,
    "w": 350,
    "h": 160
   },
@@ -154,12 +162,14 @@
     {
      "t": "Contact Us",
      "c": "rgb(219, 58, 52)",
-     "w": 900
+     "w": 900,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 25,
-   "y": 694,
+   "y": 742,
    "w": 306,
    "h": 38
   },
@@ -181,12 +191,14 @@
     {
      "t": "We look forward to hearing from you! We are located one block west of Campbell off Plainview Road (Farm Road 182), directly behind the Eagles Lodge next to Marco Automotive. Look for the grey building!",
      "c": "rgba(0, 0, 0, 0.7)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 6,
    "region": "main",
    "x": 26,
-   "y": 743,
+   "y": 791,
    "w": 338,
    "h": 192
   },
@@ -195,7 +207,7 @@
    "color": "rgb(219, 58, 52)",
    "region": "main",
    "x": 35,
-   "y": 960,
+   "y": 1008,
    "w": 12,
    "h": 12
   },
@@ -217,12 +229,14 @@
     {
      "t": "605 W. Plainview Road Springfield, MO 65810",
      "c": "rgba(0, 0, 0, 0.7)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "main",
    "x": 62,
-   "y": 956,
+   "y": 1004,
    "w": 303,
    "h": 38
   },
@@ -231,7 +245,7 @@
    "color": "rgb(219, 58, 52)",
    "region": "main",
    "x": 35,
-   "y": 1014,
+   "y": 1062,
    "w": 12,
    "h": 12
   },
@@ -253,12 +267,14 @@
     {
      "t": "(417)894-7319",
      "c": "rgba(0, 0, 0, 0.7)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 62,
-   "y": 1010,
+   "y": 1058,
    "w": 104,
    "h": 19
   },
@@ -267,7 +283,7 @@
    "color": "rgb(219, 58, 52)",
    "region": "main",
    "x": 35,
-   "y": 1055,
+   "y": 1103,
    "w": 12,
    "h": 12
   },
@@ -289,12 +305,14 @@
     {
      "t": "office@swarriorsports.com",
      "c": "rgba(0, 0, 0, 0.7)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 62,
-   "y": 1051,
+   "y": 1099,
    "w": 218,
    "h": 19
   },
@@ -303,7 +321,7 @@
    "src": "https://www.springfieldwarriorsports.com/wp-content/uploads/2025/12/IMG_2339-768x576.jpeg.webp",
    "region": "main",
    "x": 21,
-   "y": 2261,
+   "y": 2309,
    "w": 348,
    "h": 261
   },
@@ -312,7 +330,7 @@
    "src": "https://www.springfieldwarriorsports.com/wp-content/uploads/2025/12/IMG_2342-768x576.jpeg.webp",
    "region": "main",
    "x": 21,
-   "y": 2537,
+   "y": 2585,
    "w": 348,
    "h": 261
   },
@@ -333,12 +351,14 @@
     {
      "t": "Client Testimonials",
      "c": "rgb(219, 58, 52)",
-     "w": 900
+     "w": 900,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 20,
-   "y": 2968,
+   "y": 3016,
    "w": 350,
    "h": 32
   },
@@ -359,12 +379,14 @@
     {
      "t": "What our clients say",
      "c": "rgb(0, 0, 0)",
-     "w": 300
+     "w": 300,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 38,
-   "y": 3001,
+   "y": 3049,
    "w": 315,
    "h": 28
   },
@@ -373,7 +395,7 @@
    "color": "rgb(148, 163, 176)",
    "region": "main",
    "x": 24,
-   "y": 3291,
+   "y": 3339,
    "w": 20,
    "h": 20
   },
@@ -382,7 +404,7 @@
    "src": "https://www.springfieldwarriorsports.com/wp-content/uploads/2023/03/qoute-icon.png",
    "region": "main",
    "x": 58,
-   "y": 3072,
+   "y": 3120,
    "w": 65,
    "h": 65
   },
@@ -404,17 +426,20 @@
     {
      "t": "We had our son’s 10th birthday here. All of the kids had a great time. They set up an obstacle course for the kids. They loved the whole experience. The favorite was the curved wall to run up. That was everyone’s challenge for the night. We will be visiting again for sure.",
      "c": "rgb(0, 0, 0)",
-     "w": 400
+     "w": 400,
+     "u": false
     },
     {
      "t": "- Jennifer L.",
      "c": "rgb(219, 58, 52)",
-     "w": 700
+     "w": 700,
+     "u": false
     }
    ],
+   "lines": 10,
    "region": "main",
    "x": 59,
-   "y": 3148,
+   "y": 3196,
    "w": 272,
    "h": 270
   },
@@ -436,12 +461,14 @@
     {
      "t": "We had our son’s 10th birthday here. All of the kids had a great time. They set up an obstacle course for the kids. They loved the whole experience. The favorite was the curved wall to run up. That was everyone’s challenge for the night. We will be visiting again for sure.",
      "c": "rgb(0, 0, 0)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 8,
    "region": "main",
    "x": 59,
-   "y": 3148,
+   "y": 3196,
    "w": 272,
    "h": 225
   },
@@ -463,12 +490,14 @@
     {
      "t": "- Jennifer L.",
      "c": "rgb(219, 58, 52)",
-     "w": 700
+     "w": 700,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 59,
-   "y": 3372,
+   "y": 3420,
    "w": 272,
    "h": 46
   },
@@ -477,7 +506,7 @@
    "color": "rgb(148, 163, 176)",
    "region": "main",
    "x": 347,
-   "y": 3291,
+   "y": 3339,
    "w": 20,
    "h": 20
   },
@@ -486,7 +515,7 @@
    "src": "https://www.springfieldwarriorsports.com/wp-content/uploads/2023/03/SWS-logo-footer.png",
    "region": "footer",
    "x": 20,
-   "y": 3645,
+   "y": 3693,
    "w": 266,
    "h": 76
   },
@@ -508,12 +537,14 @@
     {
      "t": "Our accomplished and award winning Crew are here to help you find your strength and enjoy your workouts.",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 3,
    "region": "footer",
    "x": 21,
-   "y": 3742,
+   "y": 3790,
    "w": 348,
    "h": 72
   },
@@ -522,7 +553,7 @@
    "color": "rgb(255, 255, 255)",
    "region": "footer",
    "x": 29,
-   "y": 3848,
+   "y": 3896,
    "w": 17,
    "h": 17
   },
@@ -531,7 +562,7 @@
    "color": "rgb(255, 255, 255)",
    "region": "footer",
    "x": 66,
-   "y": 3848,
+   "y": 3896,
    "w": 17,
    "h": 17
   },
@@ -553,12 +584,14 @@
     {
      "t": "Contact",
      "c": "rgb(40, 82, 118)",
-     "w": 900
+     "w": 900,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 20,
-   "y": 3907,
+   "y": 3955,
    "w": 350,
    "h": 28
   },
@@ -567,7 +600,7 @@
    "color": "rgb(219, 58, 52)",
    "region": "footer",
    "x": 31,
-   "y": 3950,
+   "y": 3998,
    "w": 16,
    "h": 16
   },
@@ -589,12 +622,14 @@
     {
      "t": "605 W Farm Rd 182, Springfield,MO, 65810, United States",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "footer",
    "x": 57,
-   "y": 3945,
+   "y": 3993,
    "w": 212,
    "h": 45
   },
@@ -603,7 +638,7 @@
    "color": "rgb(219, 58, 52)",
    "region": "footer",
    "x": 31,
-   "y": 4005,
+   "y": 4053,
    "w": 16,
    "h": 16
   },
@@ -625,12 +660,14 @@
     {
      "t": "(417) 894-7319",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 57,
-   "y": 4000,
+   "y": 4048,
    "w": 103,
    "h": 22
   },
@@ -651,12 +688,14 @@
     {
      "t": "(417) 894-7319",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 57,
-   "y": 4002,
+   "y": 4050,
    "w": 103,
    "h": 18
   },
@@ -665,7 +704,7 @@
    "color": "rgb(219, 58, 52)",
    "region": "footer",
    "x": 31,
-   "y": 4046,
+   "y": 4094,
    "w": 16,
    "h": 16
   },
@@ -687,12 +726,14 @@
     {
      "t": "office@swarriorsports.com",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 57,
-   "y": 4041,
+   "y": 4089,
    "w": 173,
    "h": 22
   },
@@ -713,12 +754,14 @@
     {
      "t": "office@swarriorsports.com",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 57,
-   "y": 4043,
+   "y": 4091,
    "w": 173,
    "h": 18
   },
@@ -740,12 +783,14 @@
     {
      "t": "QUICK LInks",
      "c": "rgb(40, 82, 118)",
-     "w": 900
+     "w": 900,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 20,
-   "y": 4102,
+   "y": 4150,
    "w": 350,
    "h": 28
   },
@@ -767,12 +812,14 @@
     {
      "t": "Home",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 21,
-   "y": 4141,
+   "y": 4189,
    "w": 348,
    "h": 24
   },
@@ -793,12 +840,14 @@
     {
      "t": "Home",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 21,
-   "y": 4143,
+   "y": 4191,
    "w": 44,
    "h": 20
   },
@@ -820,12 +869,14 @@
     {
      "t": "About Us",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 21,
-   "y": 4167,
+   "y": 4215,
    "w": 348,
    "h": 24
   },
@@ -846,12 +897,14 @@
     {
      "t": "About Us",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 21,
-   "y": 4169,
+   "y": 4217,
    "w": 69,
    "h": 20
   },
@@ -873,12 +926,14 @@
     {
      "t": "Contact Us",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 21,
-   "y": 4193,
+   "y": 4241,
    "w": 348,
    "h": 24
   },
@@ -899,12 +954,14 @@
     {
      "t": "Contact Us",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 21,
-   "y": 4195,
+   "y": 4243,
    "w": 82,
    "h": 20
   },
@@ -926,12 +983,14 @@
     {
      "t": "Meet the Team",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 21,
-   "y": 4219,
+   "y": 4267,
    "w": 348,
    "h": 24
   },
@@ -952,12 +1011,14 @@
     {
      "t": "Meet the Team",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 21,
-   "y": 4221,
+   "y": 4269,
    "w": 109,
    "h": 20
   },
@@ -979,12 +1040,14 @@
     {
      "t": "© Copyright 2026",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 20,
-   "y": 4300,
+   "y": 4348,
    "w": 350,
    "h": 20
   },
@@ -1006,12 +1069,14 @@
     {
      "t": " Springfield Warrior Sports",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 20,
-   "y": 4320,
+   "y": 4368,
    "w": 350,
    "h": 20
   },
@@ -1033,12 +1098,14 @@
     {
      "t": "All Rights Reserved.",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 20,
-   "y": 4341,
+   "y": 4389,
    "w": 350,
    "h": 20
   }
@@ -1054,7 +1121,7 @@
   {
    "bg": "rgb(255, 255, 255)",
    "x": 0,
-   "y": 3595,
+   "y": 3643,
    "w": 390,
    "h": 786
   }

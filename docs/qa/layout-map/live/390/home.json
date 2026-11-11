@@ -26,9 +26,11 @@
     {
      "t": "Contact",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "header",
    "x": 53,
    "y": 11,
@@ -52,9 +54,11 @@
     {
      "t": "About",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "header",
    "x": 144,
    "y": 11,
@@ -78,9 +82,11 @@
     {
      "t": "Sign Our Waiver",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "header",
    "x": 214,
    "y": 11,
@@ -131,9 +137,11 @@
     {
      "t": "Stronger",
      "c": "rgb(219, 58, 52)",
-     "w": 900
+     "w": 900,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 20,
    "y": 237,
@@ -157,9 +165,11 @@
     {
      "t": "one Obstacle at a time!",
      "c": "rgb(255, 255, 255)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "main",
    "x": 21,
    "y": 296,
@@ -184,9 +194,11 @@
     {
      "t": "Springfield Missouri's best indoor obstacle course and training center, including many of the obstacles you see on the popular NBC show American Ninja Warrior.",
      "c": "rgb(255, 255, 255)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 5,
    "region": "main",
    "x": 21,
    "y": 368,
@@ -220,9 +232,11 @@
     {
      "t": "KIDS",
      "c": "rgb(255, 255, 255)",
-     "w": 800
+     "w": 800,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 188,
    "y": 645,
@@ -256,9 +270,11 @@
     {
      "t": "ADULTS",
      "c": "rgb(255, 255, 255)",
-     "w": 800
+     "w": 800,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 174,
    "y": 686,
@@ -292,9 +308,11 @@
     {
      "t": "SUMMER CAMPS",
      "c": "rgb(255, 255, 255)",
-     "w": 800
+     "w": 800,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 135,
    "y": 728,
@@ -328,9 +346,11 @@
     {
      "t": "COMMUNITY",
      "c": "rgb(255, 255, 255)",
-     "w": 800
+     "w": 800,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 154,
    "y": 769,
@@ -364,9 +384,11 @@
     {
      "t": "BIRTHDAY PARTIES",
      "c": "rgb(255, 255, 255)",
-     "w": 800
+     "w": 800,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 123,
    "y": 810,
@@ -399,9 +421,11 @@
     {
      "t": "Get Ready TO",
      "c": "rgb(219, 58, 52)",
-     "w": 900
+     "w": 900,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 20,
    "y": 1481,
@@ -425,9 +449,11 @@
     {
      "t": "Reach Your Fun and FitnessGoals with SpringfieldWarrior Sports",
      "c": "rgb(0, 0, 0)",
-     "w": 300
+     "w": 300,
+     "u": false
     }
    ],
+   "lines": 3,
    "region": "main",
    "x": 21,
    "y": 1514,
@@ -452,9 +478,11 @@
     {
      "t": "We believe in results and that a life of health and fitness shouldn’t be boring. Our indoor obstacle training facility is like a fitness playground for all ages.",
      "c": "rgb(0, 0, 0)",
-     "w": 300
+     "w": 300,
+     "u": false
     }
    ],
+   "lines": 4,
    "region": "main",
    "x": 21,
    "y": 1610,
@@ -479,9 +507,11 @@
     {
      "t": "The best part? ",
      "c": "rgb(40, 82, 118)",
-     "w": 500
+     "w": 500,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 21,
    "y": 1724,
@@ -506,9 +536,11 @@
     {
      "t": "You don’t need any previous experience or knowledge — all you need is the determination to reach your fitness goals!",
      "c": "rgb(0, 0, 0)",
-     "w": 300
+     "w": 300,
+     "u": false
     }
    ],
+   "lines": 3,
    "region": "main",
    "x": 21,
    "y": 1774,
@@ -533,9 +565,11 @@
     {
      "t": "Open Gym Hours",
      "c": "rgb(219, 58, 52)",
-     "w": 800
+     "w": 800,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 21,
    "y": 1880,
@@ -569,14 +603,17 @@
     {
      "t": "Monday:",
      "c": "rgb(106, 107, 108)",
-     "w": 800
+     "w": 800,
+     "u": false
     },
     {
      "t": " 12pm-6pm",
      "c": "rgb(106, 107, 108)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 59,
    "y": 1936,
@@ -610,14 +647,17 @@
     {
      "t": "Tuesday:",
      "c": "rgb(106, 107, 108)",
-     "w": 800
+     "w": 800,
+     "u": false
     },
     {
      "t": " 3pm-5:30pm",
      "c": "rgb(106, 107, 108)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 59,
    "y": 1974,
@@ -651,14 +691,17 @@
     {
      "t": "Wednesday:",
      "c": "rgb(106, 107, 108)",
-     "w": 800
+     "w": 800,
+     "u": false
     },
     {
      "t": " 12pm-5:30pm",
      "c": "rgb(106, 107, 108)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 59,
    "y": 2012,
@@ -692,14 +735,17 @@
     {
      "t": "Thursday:",
      "c": "rgb(106, 107, 108)",
-     "w": 800
+     "w": 800,
+     "u": false
     },
     {
      "t": " 3pm-6pm",
      "c": "rgb(106, 107, 108)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 59,
    "y": 2050,
@@ -733,14 +779,17 @@
     {
      "t": "Friday:",
      "c": "rgb(106, 107, 108)",
-     "w": 800
+     "w": 800,
+     "u": false
     },
     {
      "t": " 12pm-6pm",
      "c": "rgb(106, 107, 108)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 59,
    "y": 2088,
@@ -774,14 +823,17 @@
     {
      "t": "Saturday:",
      "c": "rgb(106, 107, 108)",
-     "w": 800
+     "w": 800,
+     "u": false
     },
     {
      "t": " 2pm-6pm",
      "c": "rgb(106, 107, 108)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 59,
    "y": 2126,
@@ -815,14 +867,17 @@
     {
      "t": "Sunday: ",
      "c": "rgb(106, 107, 108)",
-     "w": 800
+     "w": 800,
+     "u": false
     },
     {
      "t": "Private Parties and Group Events by Appointment",
      "c": "rgb(106, 107, 108)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "main",
    "x": 59,
    "y": 2164,
@@ -856,14 +911,17 @@
     {
      "t": "Preschool hours:",
      "c": "rgb(106, 107, 108)",
-     "w": 800
+     "w": 800,
+     "u": false
     },
     {
      "t": " Tuesday mornings from 9:30am-11:30am",
      "c": "rgb(106, 107, 108)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "main",
    "x": 59,
    "y": 2209,
@@ -888,9 +946,11 @@
     {
      "t": "(see below for our class hours and times, which vary slightly from the open gym hours above.)",
      "c": "rgb(0, 0, 0)",
-     "w": 300
+     "w": 300,
+     "u": false
     }
    ],
+   "lines": 3,
    "region": "main",
    "x": 21,
    "y": 2265,
@@ -914,9 +974,11 @@
     {
      "t": "Springfield's Best ObstacleTraining Gym",
      "c": "rgb(255, 255, 255)",
-     "w": 900
+     "w": 900,
+     "u": false
     }
    ],
+   "lines": 3,
    "region": "main",
    "x": 20,
    "y": 2485,
@@ -949,9 +1011,11 @@
     {
      "t": "Classes and Activities for Kids",
      "c": "rgb(40, 82, 118)",
-     "w": 800
+     "w": 800,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "main",
    "x": 45,
    "y": 2963,
@@ -976,9 +1040,11 @@
     {
      "t": "Springfield Warrior Sports offers kids classes that help build strength, balance, and coordination. With a variety of obstacles and challenges, your child will never get bored. Plus, they can have a lot of fun while working up a sweat! Sign up for a trial class today, your young warrior will thank you!",
      "c": "rgb(0, 0, 0)",
-     "w": 300
+     "w": 300,
+     "u": false
     }
    ],
+   "lines": 9,
    "region": "main",
    "x": 46,
    "y": 3014,
@@ -1030,9 +1096,11 @@
     {
      "t": "Train Like A Ninja Warrior",
      "c": "rgb(40, 82, 118)",
-     "w": 800
+     "w": 800,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 45,
    "y": 3776,
@@ -1057,9 +1125,11 @@
     {
      "t": "Our adult classes are designed for all fitness levels, so whether you are a beginner or an experienced athlete, there is something for you. The obstacles and challenges are constantly changing, so you never get bored. And because the focus is on having fun, you will be encouraged to push yourself further than you ever thought possible. ",
      "c": "rgb(0, 0, 0)",
-     "w": 300
+     "w": 300,
+     "u": false
     }
    ],
+   "lines": 10,
    "region": "main",
    "x": 46,
    "y": 3815,
@@ -1111,9 +1181,11 @@
     {
      "t": "Birthday Parties",
      "c": "rgb(40, 82, 118)",
-     "w": 800
+     "w": 800,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 45,
    "y": 4577,
@@ -1138,9 +1210,11 @@
     {
      "t": "Warrior Sports offers the best party experience in Springfield MO! Whether it’s for your child’s birthday or for a special group event, we take care of all the planning and clean up, so you can relax and enjoy your special day. Parties are 1.5 hours long, and include an hour of gym and party room time and an obstacle course or another chosen activity facilitated by our Crew. ",
      "c": "rgb(0, 0, 0)",
-     "w": 300
+     "w": 300,
+     "u": false
     }
    ],
+   "lines": 11,
    "region": "main",
    "x": 46,
    "y": 4616,
@@ -1192,9 +1266,11 @@
     {
      "t": "Day Camps For School Breaks",
      "c": "rgb(40, 82, 118)",
-     "w": 800
+     "w": 800,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "main",
    "x": 45,
    "y": 5406,
@@ -1219,9 +1295,11 @@
     {
      "t": "Elevate your children's school break with dynamic and thrilling experiences at our engaging day camps! Choose from our flexible half-day or full-day camp options, where kids can enjoy a blend of recreation, games, sports, and the opportunity to forge lasting friendships.",
      "c": "rgb(0, 0, 0)",
-     "w": 300
+     "w": 300,
+     "u": false
     }
    ],
+   "lines": 8,
    "region": "main",
    "x": 46,
    "y": 5473,
@@ -1273,9 +1351,11 @@
     {
      "t": "Parkour",
      "c": "rgb(40, 82, 118)",
-     "w": 800
+     "w": 800,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 45,
    "y": 6117,
@@ -1300,9 +1380,11 @@
     {
      "t": "Springfield Warrior Sports is the premier destination for parkour training! Our expert instructors will guide you through every obstacle course, helping you to improve your physical skills and also boosting your confidence. With a focus on strength, agility, speed, balance, and self-confidence, our open gym time and classes can help you reach your potential both inside and out of the gym.",
      "c": "rgb(0, 0, 0)",
-     "w": 300
+     "w": 300,
+     "u": false
     }
    ],
+   "lines": 12,
    "region": "main",
    "x": 46,
    "y": 6156,
@@ -1327,19 +1409,23 @@
     {
      "t": "Parkour classes are ",
      "c": "rgb(0, 0, 0)",
-     "w": 300
+     "w": 300,
+     "u": false
     },
     {
      "t": "currently unavailable",
      "c": "rgb(0, 0, 0)",
-     "w": 500
+     "w": 500,
+     "u": false
     },
     {
      "t": ", but Open Gym sessions are available now — your first visit is just $10.",
      "c": "rgb(0, 0, 0)",
-     "w": 300
+     "w": 300,
+     "u": false
     }
    ],
+   "lines": 4,
    "region": "main",
    "x": 46,
    "y": 6492,
@@ -1391,9 +1477,11 @@
     {
      "t": "Homeschool Ninja Warrior Classes",
      "c": "rgb(40, 82, 118)",
-     "w": 800
+     "w": 800,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "main",
    "x": 45,
    "y": 6994,
@@ -1418,9 +1506,11 @@
     {
      "t": "Keep your homeschooler active, strong, and having a blast! Our homeschool classes are a high-energy way for kids to build strength and confidence while tackling fun obstacle course challenges. With plenty of movement, excitement, and opportunities to connect with other homeschoolers, this is PE like never before!",
      "c": "rgb(0, 0, 0)",
-     "w": 300
+     "w": 300,
+     "u": false
     }
    ],
+   "lines": 10,
    "region": "main",
    "x": 46,
    "y": 7061,
@@ -1472,9 +1562,11 @@
     {
      "t": "PERSONAL TRAINING",
      "c": "rgb(40, 82, 118)",
-     "w": 800
+     "w": 800,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 45,
    "y": 7729,
@@ -1499,9 +1591,11 @@
     {
      "t": "Personal training for kids, teens, and adults. Find a coach who gets your goals and your lifestyle. Build strength and confidence while progressing in your sport—or just moving better in everyday life. Schedule your free consultation today!",
      "c": "rgb(0, 0, 0)",
-     "w": 300
+     "w": 300,
+     "u": false
     }
    ],
+   "lines": 7,
    "region": "main",
    "x": 46,
    "y": 7768,
@@ -1544,9 +1638,11 @@
     {
      "t": "Be An",
      "c": "rgb(0, 0, 0)",
-     "w": 300
+     "w": 300,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 21,
    "y": 8220,
@@ -1570,9 +1666,11 @@
     {
      "t": "Everyday Warrior!",
      "c": "rgb(219, 58, 52)",
-     "w": 900
+     "w": 900,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 20,
    "y": 8249,
@@ -1597,9 +1695,11 @@
     {
      "t": "At Springfield Warrior Sports, we know that you want to be fit, healthy, and STRONGER to take on every obstacle. Our accomplished and award-winning crew is here to help you find your strength and enjoy your workouts again. If you’re looking for a unique and fun way to get active, you can come in at any time during our open hours and have a great time getting fit! $15 per person ages 5+ during open gym hours. Stay as long as you would like. ",
      "c": "rgb(0, 0, 0)",
-     "w": 300
+     "w": 300,
+     "u": false
     }
    ],
+   "lines": 11,
    "region": "main",
    "x": 21,
    "y": 8302,
@@ -1651,9 +1751,11 @@
     {
      "t": "Client Testimonials",
      "c": "rgb(219, 58, 52)",
-     "w": 900
+     "w": 900,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 20,
    "y": 9155,
@@ -1677,9 +1779,11 @@
     {
      "t": "What our clients say",
      "c": "rgb(0, 0, 0)",
-     "w": 300
+     "w": 300,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 38,
    "y": 9188,
@@ -1713,14 +1817,17 @@
     {
      "t": "We had our son’s 10th birthday here. All of the kids had a great time. They set up an obstacle course for the kids. They loved the whole experience. The favorite was the curved wall to run up. That was everyone’s challenge for the night. We will be visiting again for sure.",
      "c": "rgb(0, 0, 0)",
-     "w": 400
+     "w": 400,
+     "u": false
     },
     {
      "t": "- Jennifer L.",
      "c": "rgb(219, 58, 52)",
-     "w": 700
+     "w": 700,
+     "u": false
     }
    ],
+   "lines": 10,
    "region": "main",
    "x": 49,
    "y": 9335,
@@ -1745,9 +1852,11 @@
     {
      "t": "We had our son’s 10th birthday here. All of the kids had a great time. They set up an obstacle course for the kids. They loved the whole experience. The favorite was the curved wall to run up. That was everyone’s challenge for the night. We will be visiting again for sure.",
      "c": "rgb(0, 0, 0)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 8,
    "region": "main",
    "x": 49,
    "y": 9335,
@@ -1772,9 +1881,11 @@
     {
      "t": "- Jennifer L.",
      "c": "rgb(219, 58, 52)",
-     "w": 700
+     "w": 700,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 49,
    "y": 9560,
@@ -1862,9 +1973,11 @@
     {
      "t": "Our accomplished and award winning Crew are here to help you find your strength and enjoy your workouts.",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 3,
    "region": "footer",
    "x": 21,
    "y": 10598,
@@ -1907,9 +2020,11 @@
     {
      "t": "Contact",
      "c": "rgb(40, 82, 118)",
-     "w": 900
+     "w": 900,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 20,
    "y": 10762,
@@ -1943,9 +2058,11 @@
     {
      "t": "605 W Farm Rd 182, Springfield,MO, 65810, United States",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "footer",
    "x": 57,
    "y": 10800,
@@ -1979,9 +2096,11 @@
     {
      "t": "(417) 894-7319",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 57,
    "y": 10855,
@@ -2005,9 +2124,11 @@
     {
      "t": "(417) 894-7319",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 57,
    "y": 10857,
@@ -2041,9 +2162,11 @@
     {
      "t": "office@swarriorsports.com",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 57,
    "y": 10896,
@@ -2067,9 +2190,11 @@
     {
      "t": "office@swarriorsports.com",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 57,
    "y": 10898,
@@ -2094,9 +2219,11 @@
     {
      "t": "QUICK LInks",
      "c": "rgb(40, 82, 118)",
-     "w": 900
+     "w": 900,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 20,
    "y": 10957,
@@ -2121,9 +2248,11 @@
     {
      "t": "Home",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 21,
    "y": 10996,
@@ -2147,9 +2276,11 @@
     {
      "t": "Home",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 21,
    "y": 10998,
@@ -2174,9 +2305,11 @@
     {
      "t": "About Us",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 21,
    "y": 11022,
@@ -2200,9 +2333,11 @@
     {
      "t": "About Us",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 21,
    "y": 11024,
@@ -2227,9 +2362,11 @@
     {
      "t": "Contact Us",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 21,
    "y": 11048,
@@ -2253,9 +2390,11 @@
     {
      "t": "Contact Us",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 21,
    "y": 11050,
@@ -2280,9 +2419,11 @@
     {
      "t": "Meet the Team",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 21,
    "y": 11074,
@@ -2306,9 +2447,11 @@
     {
      "t": "Meet the Team",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 21,
    "y": 11076,
@@ -2333,9 +2476,11 @@
     {
      "t": "© Copyright 2026",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 20,
    "y": 11155,
@@ -2360,9 +2505,11 @@
     {
      "t": " Springfield Warrior Sports",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 20,
    "y": 11176,
@@ -2387,9 +2534,11 @@
     {
      "t": "All Rights Reserved.",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 20,
    "y": 11196,

@@ -34,6 +34,13 @@ Batch 1 passed gate v1 at 0 differences on home, about and kids-classes. Claude 
 - **Pixels behind each matched heading, text block and photo** must look like live. This catches a wrong photo crop and dark text on a dark photo. Example: home "Be an Everyday Warrior" has the photo zoomed over the text, at pixel difference 117–176 against a limit of 38. The Parkour and Personal Training card crops also differ.
 - **Covered text** (another element on top of it) is flagged.
 - **Hidden text:** text a visitor can't see anywhere on the build page, but that live shows, is flagged. **Never hide words to pass a check.** If the gate looks wrong, report it instead. (Batch 1 hid the About Memorial Day paragraph. The real cause was the gate: live puts that text in the same paragraph as the one before it, and v2 compared only the first 80 characters. Fixed in v2.1.)
+- **v2.6 (11 Nov, after round 5):** round 5 measured 0 on v2.5, but on the preview, at full size, About was visibly shorter, Kids Classes at 390 looked letter-spaced, and paragraph links were underlined. v2.6 adds:
+  - **Rendered line count.** Lines are counted from the text itself, not the box height (padding caused false alarms). Only paragraphs of 30+ characters are checked.
+  - **Letter spacing within ±0.2px** (was ±1). Round 5 had 0.4–1px added to body text and 0.6px to the home card headings, where live is 0, which rewraps lines.
+  - **Left edge on phones within ±4px** (was 24). The build gutter is 20px; live is 25–26px.
+  - **Underline per run of words.** Live paragraph links are not underlined.
+  - **Heading-to-heading gap within max(24px, 10%)** (was max(48px, 25%)), and **page height within 5%** of live. Round 5 About is 7,965px, live 8,525px; home 6,403px, live 6,861px.
+  - Round 5 on v2.6: home 22 / 22 / 39, about 17 / 17 / 41, kids-classes 14 / 14 / 79 (1920 / 1280 / 390).
 - **v2.5 (11 Nov, after round 4):** round 4 passed v2.4 on all three pages, but at full size Kids Classes at 390 was visibly off, and measuring it showed five things the gate couldn't see. v2.5 adds:
   - **Colors with transparency.** Live body text is `rgba(0, 0, 0, 0.7)`, a grey; the build uses solid black. v2.4 ignored the 0.7.
   - **Line height.** Live body text is 28px, the build 25.6px. Headings and menu links differ too. Limit ±2px.

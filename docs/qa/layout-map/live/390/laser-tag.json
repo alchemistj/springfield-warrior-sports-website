@@ -23,9 +23,11 @@
     {
      "t": "Contact",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "header",
    "x": 53,
    "y": 11,
@@ -49,9 +51,11 @@
     {
      "t": "About",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "header",
    "x": 144,
    "y": 11,
@@ -75,9 +79,11 @@
     {
      "t": "Sign Our Waiver",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "header",
    "x": 214,
    "y": 11,
@@ -128,9 +134,11 @@
     {
      "t": "Welcome to the Premier",
      "c": "rgb(219, 58, 52)",
-     "w": 900
+     "w": 900,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "main",
    "x": 38,
    "y": 288,
@@ -154,9 +162,11 @@
     {
      "t": "Laser Tag Gym in Springfield, MO",
      "c": "rgb(248, 248, 248)",
-     "w": 900
+     "w": 900,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "main",
    "x": 38,
    "y": 352,
@@ -181,9 +191,11 @@
     {
      "t": "Great for all ages!",
      "c": "rgb(255, 255, 255)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 90,
    "y": 427,
@@ -208,19 +220,23 @@
     {
      "t": "Whether you are planning a ",
      "c": "rgba(0, 0, 0, 0.7)",
-     "w": 400
+     "w": 400,
+     "u": false
     },
     {
      "t": "birthday party in Springfield",
      "c": "rgb(47, 138, 228)",
-     "w": 400
+     "w": 400,
+     "u": false
     },
     {
      "t": ", a fun youth group outing, or a team-building event, the Warrior Ninja Sports gym is the perfect place to host a full-blown laser tag fun-fest.",
      "c": "rgba(0, 0, 0, 0.7)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 7,
    "region": "main",
    "x": 26,
    "y": 680,
@@ -263,9 +279,11 @@
     {
      "t": "Want to Book a Private Laser Tag Party?",
      "c": "rgb(219, 58, 52)",
-     "w": 900
+     "w": 900,
+     "u": false
     }
    ],
+   "lines": 3,
    "region": "main",
    "x": 25,
    "y": 1155,
@@ -299,9 +317,11 @@
     {
      "t": "Whether you are planning a birthday party, a fun youth group outing, or a team-building event, the Warrior Ninja Sports gym is the perfect place to host a full-blown laser tag fun-fest. ",
      "c": "rgba(0, 0, 0, 0.7)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 5,
    "region": "main",
    "x": 26,
    "y": 1781,
@@ -326,9 +346,11 @@
     {
      "t": "The best part? ",
      "c": "rgba(0, 0, 0, 0.7)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 26,
    "y": 1933,
@@ -353,9 +375,11 @@
     {
      "t": "Our staff will do all the setup and be on standby to offer help and assistance if needed. Our goal is to make every laser tag party the most fun, stress-free, and enjoyable experience ever.",
      "c": "rgba(0, 0, 0, 0.7)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 5,
    "region": "main",
    "x": 26,
    "y": 1973,
@@ -380,19 +404,23 @@
     {
      "t": "Call us today and book our ",
      "c": "rgba(0, 0, 0, 0.7)",
-     "w": 400
+     "w": 400,
+     "u": false
     },
     {
      "t": "entire obstacle course gym",
      "c": "rgba(0, 0, 0, 0.7)",
-     "w": 600
+     "w": 600,
+     "u": false
     },
     {
      "t": " for your very own private laser tag party. We do the rest!",
      "c": "rgba(0, 0, 0, 0.7)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 3,
    "region": "main",
    "x": 26,
    "y": 2125,
@@ -416,9 +444,11 @@
     {
      "t": "Here are the details:",
      "c": "rgb(40, 82, 118)",
-     "w": 900
+     "w": 900,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 25,
    "y": 2225,
@@ -452,14 +482,17 @@
     {
      "t": "Cost:",
      "c": "rgb(0, 0, 0)",
-     "w": 600
+     "w": 600,
+     "u": false
     },
     {
      "t": " For a group of 10, the cost is $240. Each additional participant costs $10.",
      "c": "rgb(0, 0, 0)",
-     "w": 300
+     "w": 300,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "main",
    "x": 51,
    "y": 2275,
@@ -493,9 +526,11 @@
     {
      "t": "We are available for booking on weekends and most weekdays",
      "c": "rgb(0, 0, 0)",
-     "w": 300
+     "w": 300,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "main",
    "x": 51,
    "y": 2331,
@@ -520,9 +555,11 @@
     {
      "t": "We provide a cooler full of Gatorade for all parties. We even customize party invitations for your event, free of charge!",
      "c": "rgba(0, 0, 0, 0.7)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 3,
    "region": "main",
    "x": 26,
    "y": 2394,
@@ -547,9 +584,11 @@
     {
      "t": "Plus, if you have a birthday kiddo in the group, they will receive a Springfield Warrior Sports t-shirt and a free Junior Warrior class voucher!",
      "c": "rgba(0, 0, 0, 0.7)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 4,
    "region": "main",
    "x": 26,
    "y": 2490,
@@ -574,9 +613,11 @@
     {
      "t": "We want kids to have a blast, making memories that last a lifetime.",
      "c": "rgba(0, 0, 0, 0.7)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "main",
    "x": 26,
    "y": 2614,
@@ -609,9 +650,11 @@
     {
      "t": "READY TO BOOK?",
      "c": "rgb(255, 255, 255)",
-     "w": 900
+     "w": 900,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 42,
    "y": 2811,
@@ -636,29 +679,35 @@
     {
      "t": "You can begin the booking process on our website by ",
      "c": "rgb(255, 255, 255)",
-     "w": 400
+     "w": 400,
+     "u": false
     },
     {
      "t": "clicking here",
      "c": "rgb(219, 58, 52)",
-     "w": 400
+     "w": 400,
+     "u": false
     },
     {
      "t": " or calling us today at ",
      "c": "rgb(255, 255, 255)",
-     "w": 400
+     "w": 400,
+     "u": false
     },
     {
      "t": "(417) 894-7319",
      "c": "rgb(219, 58, 52)",
-     "w": 400
+     "w": 400,
+     "u": false
     },
     {
      "t": " to request a time to reserve the gym for your private party.",
      "c": "rgb(255, 255, 255)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 4,
    "region": "main",
    "x": 26,
    "y": 2854,
@@ -682,9 +731,11 @@
     {
      "t": "We look forward to hosting you.",
      "c": "rgb(255, 255, 255)",
-     "w": 300
+     "w": 300,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "main",
    "x": 42,
    "y": 2983,
@@ -708,9 +759,11 @@
     {
      "t": "Come Join the Fun! Don’t Miss Laser Tag Night",
      "c": "rgb(219, 58, 52)",
-     "w": 900
+     "w": 900,
+     "u": false
     }
    ],
+   "lines": 3,
    "region": "main",
    "x": 25,
    "y": 3684,
@@ -734,9 +787,11 @@
     {
      "t": "You’re invited!",
      "c": "rgba(0, 0, 0, 0.7)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 26,
    "y": 3791,
@@ -760,9 +815,11 @@
     {
      "t": "We are hosting Laser Tag Nights right here in Springfield, MO, at Warrior Sports Ninja Gym.",
      "c": "rgba(0, 0, 0, 0.7)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 3,
    "region": "main",
    "x": 26,
    "y": 3829,
@@ -786,9 +843,11 @@
     {
      "t": "This fun, family-friendly night happens once a month. And you can now sign up to get notified of all future events.",
      "c": "rgba(0, 0, 0, 0.7)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 3,
    "region": "main",
    "x": 26,
    "y": 3918,
@@ -812,9 +871,11 @@
     {
      "t": "We are open to all ages and our staff is ready and available to keep the experience fun, enjoyable, and stress-free.",
      "c": "rgba(0, 0, 0, 0.7)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 4,
    "region": "main",
    "x": 26,
    "y": 4007,
@@ -838,9 +899,11 @@
     {
      "t": "So, don’t miss it! Come make memories that will last a lifetime.",
      "c": "rgba(0, 0, 0, 0.7)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "main",
    "x": 26,
    "y": 4121,
@@ -874,14 +937,17 @@
     {
      "t": "Cost: ",
      "c": "rgb(0, 0, 0)",
-     "w": 600
+     "w": 600,
+     "u": false
     },
     {
      "t": "$15 per person (Members of the Warrior Sports gym pay half-price)",
      "c": "rgb(0, 0, 0)",
-     "w": 300
+     "w": 300,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "main",
    "x": 51,
    "y": 4198,
@@ -905,9 +971,11 @@
     {
      "t": "Note: Laser Tag Nights typically happen on Friday evenings. ",
      "c": "rgb(40, 82, 118)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "main",
    "x": 26,
    "y": 4265,
@@ -931,9 +999,11 @@
     {
      "t": "Sign up now to get notified of all future laser tag events! ",
      "c": "rgba(0, 0, 0, 0.7)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "main",
    "x": 26,
    "y": 4329,
@@ -958,19 +1028,23 @@
     {
      "t": "\"",
      "c": "rgb(106, 107, 108)",
-     "w": 400
+     "w": 400,
+     "u": false
     },
     {
      "t": "*",
      "c": "rgb(192, 43, 10)",
-     "w": 400
+     "w": 400,
+     "u": false
     },
     {
      "t": "\" indicates required fields",
      "c": "rgb(106, 107, 108)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 26,
    "y": 4417,
@@ -1013,9 +1087,11 @@
     {
      "t": "Our accomplished and award winning Crew are here to help you find your strength and enjoy your workouts.",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 3,
    "region": "footer",
    "x": 21,
    "y": 5107,
@@ -1058,9 +1134,11 @@
     {
      "t": "Contact",
      "c": "rgb(40, 82, 118)",
-     "w": 900
+     "w": 900,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 20,
    "y": 5272,
@@ -1094,9 +1172,11 @@
     {
      "t": "605 W Farm Rd 182, Springfield,MO, 65810, United States",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "footer",
    "x": 57,
    "y": 5310,
@@ -1130,9 +1210,11 @@
     {
      "t": "(417) 894-7319",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 57,
    "y": 5365,
@@ -1156,9 +1238,11 @@
     {
      "t": "(417) 894-7319",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 57,
    "y": 5367,
@@ -1192,9 +1276,11 @@
     {
      "t": "office@swarriorsports.com",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 57,
    "y": 5406,
@@ -1218,9 +1304,11 @@
     {
      "t": "office@swarriorsports.com",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 57,
    "y": 5408,
@@ -1245,9 +1333,11 @@
     {
      "t": "QUICK LInks",
      "c": "rgb(40, 82, 118)",
-     "w": 900
+     "w": 900,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 20,
    "y": 5467,
@@ -1272,9 +1362,11 @@
     {
      "t": "Home",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 21,
    "y": 5506,
@@ -1298,9 +1390,11 @@
     {
      "t": "Home",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 21,
    "y": 5508,
@@ -1325,9 +1419,11 @@
     {
      "t": "About Us",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 21,
    "y": 5532,
@@ -1351,9 +1447,11 @@
     {
      "t": "About Us",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 21,
    "y": 5534,
@@ -1378,9 +1476,11 @@
     {
      "t": "Contact Us",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 21,
    "y": 5558,
@@ -1404,9 +1504,11 @@
     {
      "t": "Contact Us",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 21,
    "y": 5560,
@@ -1431,9 +1533,11 @@
     {
      "t": "Meet the Team",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 21,
    "y": 5584,
@@ -1457,9 +1561,11 @@
     {
      "t": "Meet the Team",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 21,
    "y": 5586,
@@ -1484,9 +1590,11 @@
     {
      "t": "© Copyright 2026",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 20,
    "y": 5665,
@@ -1511,9 +1619,11 @@
     {
      "t": " Springfield Warrior Sports",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 20,
    "y": 5685,
@@ -1538,9 +1648,11 @@
     {
      "t": "All Rights Reserved.",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 20,
    "y": 5706,

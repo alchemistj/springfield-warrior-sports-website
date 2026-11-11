@@ -102,9 +102,11 @@
     {
      "t": "Contact",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "header",
    "x": 1202,
    "y": 6,
@@ -128,9 +130,11 @@
     {
      "t": "About",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "header",
    "x": 1297,
    "y": 6,
@@ -154,9 +158,11 @@
     {
      "t": "Sign Our Waiver",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "header",
    "x": 1372,
    "y": 6,
@@ -189,9 +195,11 @@
     {
      "t": "Adult Classes",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "header",
    "x": 688,
    "y": 73,
@@ -215,9 +223,11 @@
     {
      "t": "Kid Classes",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "header",
    "x": 820,
    "y": 73,
@@ -241,9 +251,11 @@
     {
      "t": "Competitions",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "header",
    "x": 930,
    "y": 73,
@@ -267,9 +279,11 @@
     {
      "t": "Birthday Parties",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "header",
    "x": 1058,
    "y": 73,
@@ -293,9 +307,11 @@
     {
      "t": "Personal Training",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "header",
    "x": 1213,
    "y": 73,
@@ -319,9 +335,11 @@
     {
      "t": "Summer Camps",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "header",
    "x": 1383,
    "y": 73,
@@ -354,9 +372,11 @@
     {
      "t": "Looking for the Best Gyms in Springfield, MO?",
      "c": "rgb(219, 58, 52)",
-     "w": 900
+     "w": 900,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "main",
    "x": 385,
    "y": 469,
@@ -381,9 +401,11 @@
     {
      "t": "Whether you’re hunting down your next PR, chasing your first unassisted pull-up, or just want to sweat with the best community around, this guide has got you covered. Many of these spots are right around central Springfield, stretching from Downtown to the Battlefield corridor.",
      "c": "rgb(0, 0, 0)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 3,
    "region": "main",
    "x": 425,
    "y": 700,
@@ -408,9 +430,11 @@
     {
      "t": "Offering everything from workout classes and recovery tools to elite coaching and a strong community, these are the real-deal gyms in Springfield, MO. From 24-hour access to fitness centers with pools, childcare, personal training, and more, it’s all here.",
      "c": "rgb(0, 0, 0)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "main",
    "x": 425,
    "y": 801,
@@ -435,9 +459,11 @@
     {
      "t": "Before we get started on our list—can we talk about a gym where you won’t find rows of treadmills or the same old machines? ",
      "c": "rgba(41, 41, 41, 0.99)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 425,
    "y": 974,
@@ -462,9 +488,11 @@
     {
      "t": "Instead, think obstacle courses, warped walls, rock holds, and Ninja Warrior-style challenges. If you're ready to swing, climb,",
      "c": "rgba(41, 41, 41, 0.99)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 425,
    "y": 1019,
@@ -489,19 +517,23 @@
     {
      "t": "and train like never before, check out our ",
      "c": "rgba(41, 41, 41, 0.99)",
-     "w": 400
+     "w": 400,
+     "u": false
     },
     {
      "t": "Adult Fitness Classes",
      "c": "rgb(219, 58, 52)",
-     "w": 400
+     "w": 400,
+     "u": false
     },
     {
      "t": " and see what makes Springfield Warrior Sports ",
      "c": "rgba(41, 41, 41, 0.99)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 425,
    "y": 1047,
@@ -526,14 +558,17 @@
     {
      "t": "one of the most unique gyms around. ",
      "c": "rgba(41, 41, 41, 0.99)",
-     "w": 600
+     "w": 600,
+     "u": false
     },
     {
      "t": "We’re located just south of Sunshine and a quick drive from Republic and southwest Springfield.",
      "c": "rgba(41, 41, 41, 0.99)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 425,
    "y": 1075,
@@ -566,9 +601,11 @@
     {
      "t": "Rage Fitness",
      "c": "rgb(219, 58, 52)",
-     "w": 900
+     "w": 900,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 973,
    "y": 1273,
@@ -602,9 +639,11 @@
     {
      "t": "2321 S Campbell Ave, Springfield, MO",
      "c": "rgb(0, 0, 0)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 1008,
    "y": 1333,
@@ -629,9 +668,11 @@
     {
      "t": "If you want gyms in Springfield that don’t mess around—this is it. Rage Fitness is raw, real, and ridiculously well-equipped. Four locations, 24/7 access, and a no-excuses culture that hits different. The Rage Army doesn’t skip days, make excuses, or settle for mediocrity.",
      "c": "rgb(0, 0, 0)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 4,
    "region": "main",
    "x": 974,
    "y": 1374,
@@ -656,9 +697,11 @@
     {
      "t": "This is where grit meets grind. You’ll find private locker rooms, cold plunges, elite gear, and a staff that trains like they mean it, because at Rage, it’s NO. DAYS. OFF.",
      "c": "rgba(0, 0, 0, 0.99)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 3,
    "region": "main",
    "x": 974,
    "y": 1498,
@@ -683,9 +726,11 @@
     {
      "t": "Highlights:",
      "c": "rgb(40, 82, 118)",
-     "w": 700
+     "w": 700,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 974,
    "y": 1599,
@@ -719,9 +764,11 @@
     {
      "t": "24/7 access — because results don’t clock out",
      "c": "rgb(0, 0, 0)",
-     "w": 300
+     "w": 300,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 1006,
    "y": 1643,
@@ -755,9 +802,11 @@
     {
      "t": "Cold plunges, saunas, compression sleeves, tanning",
      "c": "rgb(0, 0, 0)",
-     "w": 300
+     "w": 300,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 1006,
    "y": 1679,
@@ -791,9 +840,11 @@
     {
      "t": "Locally owned, hardcore ethos",
      "c": "rgb(0, 0, 0)",
-     "w": 300
+     "w": 300,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 1006,
    "y": 1711,
@@ -827,9 +878,11 @@
     {
      "t": "Group classes and personal training",
      "c": "rgb(0, 0, 0)",
-     "w": 300
+     "w": 300,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 1006,
    "y": 1742,
@@ -872,9 +925,11 @@
     {
      "t": "GP Athletics",
      "c": "rgb(219, 58, 52)",
-     "w": 900
+     "w": 900,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 385,
    "y": 1957,
@@ -908,9 +963,11 @@
     {
      "t": "3119 S Scenic Ave Ste B, Springfield, MO",
      "c": "rgb(0, 0, 0)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 420,
    "y": 2017,
@@ -935,9 +992,11 @@
     {
      "t": "Built for lifters, athletes, and real humans who want to move better and get stronger—GP Athletics is a strength-first gym with zero ego and tons of community. Located near Scenic Ave, it’s a convenient stop for anyone coming from South Springfield or the Battlefield neighborhoods.",
      "c": "rgb(0, 0, 0)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 5,
    "region": "main",
    "x": 386,
    "y": 2059,
@@ -962,9 +1021,11 @@
     {
      "t": "From elite coaching to personal training, group classes, and online programs, this place shows up for its people. Clean, welcoming, and serious about progress, it’s where 70-year-olds deadlift next to teens hitting their first squat cycle. You’ll be pushed when you need it, and lifted up if you fall.",
      "c": "rgb(0, 0, 0)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 5,
    "region": "main",
    "x": 386,
    "y": 2211,
@@ -989,9 +1050,11 @@
     {
      "t": "Highlights:",
      "c": "rgb(40, 82, 118)",
-     "w": 700
+     "w": 700,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 386,
    "y": 2363,
@@ -1025,9 +1088,11 @@
     {
      "t": "Expert-led barbell and strength classes",
      "c": "rgb(0, 0, 0)",
-     "w": 300
+     "w": 300,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 418,
    "y": 2407,
@@ -1061,9 +1126,11 @@
     {
      "t": "One-on-one coaching and online programs",
      "c": "rgb(0, 0, 0)",
-     "w": 300
+     "w": 300,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 418,
    "y": 2442,
@@ -1097,9 +1164,11 @@
     {
      "t": "Open gym for lifters who know their way around",
      "c": "rgb(0, 0, 0)",
-     "w": 300
+     "w": 300,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 418,
    "y": 2474,
@@ -1133,9 +1202,11 @@
     {
      "t": "Welcoming community for all ages",
      "c": "rgb(0, 0, 0)",
-     "w": 300
+     "w": 300,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 418,
    "y": 2505,
@@ -1196,9 +1267,11 @@
     {
      "t": "Springfield Warrior Sports",
      "c": "rgb(219, 58, 52)",
-     "w": 900
+     "w": 900,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "main",
    "x": 973,
    "y": 2737,
@@ -1232,9 +1305,11 @@
     {
      "t": "605 W Farm Rd 182, Springfield, MO",
      "c": "rgb(0, 0, 0)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 1008,
    "y": 2847,
@@ -1259,9 +1334,11 @@
     {
      "t": "Ready to ditch the treadmill for something way more exciting? At Springfield Warrior Sports, our indoor obstacle course is packed with Ninja Warrior-style fun for kids, teens, and adults—no experience needed. Whether you're scaling walls or racing your friends through a course, you'll be getting stronger without even realizing it.",
      "c": "rgb(0, 0, 0)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 5,
    "region": "main",
    "x": 974,
    "y": 2888,
@@ -1286,19 +1363,23 @@
     {
      "t": "If you're interested in parkour sessions, open gym time, and challenges that’ll push you in the best way possible, check out our ",
      "c": "rgb(0, 0, 0)",
-     "w": 400
+     "w": 400,
+     "u": false
     },
     {
      "t": "Adult Ninja Fitness class",
      "c": "rgb(219, 58, 52)",
-     "w": 400
+     "w": 400,
+     "u": false
     },
     {
      "t": ". At Springfield’s go-to obstacle training center, climb, leap, laugh, and crush your goals—one obstacle at a time.",
      "c": "rgb(0, 0, 0)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 4,
    "region": "main",
    "x": 974,
    "y": 3040,
@@ -1341,9 +1422,11 @@
     {
      "t": "Springfield Strength & Conditioning",
      "c": "rgb(219, 58, 52)",
-     "w": 900
+     "w": 900,
+     "u": false
     }
    ],
+   "lines": 3,
    "region": "main",
    "x": 385,
    "y": 3363,
@@ -1377,9 +1460,11 @@
     {
      "t": "2026 W Vista St Suite H, Springfield, MO",
      "c": "rgb(0, 0, 0)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 420,
    "y": 3523,
@@ -1404,9 +1489,11 @@
     {
      "t": "Voted Springfield’s #1 Gym two years running, SSC is the go-to spot for athletes, everyday lifters, and anyone chasing better health. Their staff is certified, committed, and focused on proper technique and programming tailored to you.",
      "c": "rgb(0, 0, 0)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 4,
    "region": "main",
    "x": 386,
    "y": 3564,
@@ -1431,9 +1518,11 @@
     {
      "t": "They offer 24-hour access, individualized coaching, online training, and a wide variety of programs to meet you where you are—and help you move forward with confidence.",
      "c": "rgb(0, 0, 0)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 3,
    "region": "main",
    "x": 386,
    "y": 3688,
@@ -1458,9 +1547,11 @@
     {
      "t": "Highlights:",
      "c": "rgb(40, 82, 118)",
-     "w": 700
+     "w": 700,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 386,
    "y": 3784,
@@ -1494,9 +1585,11 @@
     {
      "t": "Customized training & nutrition (online or in-person)",
      "c": "rgb(0, 0, 0)",
-     "w": 300
+     "w": 300,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 418,
    "y": 3828,
@@ -1530,9 +1623,11 @@
     {
      "t": "Strength, performance, and Olympic lifting classes",
      "c": "rgb(0, 0, 0)",
-     "w": 300
+     "w": 300,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 418,
    "y": 3864,
@@ -1566,9 +1661,11 @@
     {
      "t": "24/7 gym access for grinders",
      "c": "rgb(0, 0, 0)",
-     "w": 300
+     "w": 300,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 418,
    "y": 3896,
@@ -1602,9 +1699,11 @@
     {
      "t": "Coaches who correct your form, not just count reps",
      "c": "rgb(0, 0, 0)",
-     "w": 300
+     "w": 300,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 418,
    "y": 3927,
@@ -1665,9 +1764,11 @@
     {
      "t": "Proximal Strength",
      "c": "rgb(219, 58, 52)",
-     "w": 900
+     "w": 900,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 973,
    "y": 4131,
@@ -1701,9 +1802,11 @@
     {
      "t": "1900 W Sunset St #B100, Springfield, MO",
      "c": "rgb(0, 0, 0)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 1008,
    "y": 4191,
@@ -1728,9 +1831,11 @@
     {
      "t": "Proximal isn’t just about fitness—it’s about never quitting, even when life hits hard. From functional fitness to endurance work, this gym runs deep on faith, hustle, and community.",
      "c": "rgb(0, 0, 0)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 3,
    "region": "main",
    "x": 974,
    "y": 4232,
@@ -1755,9 +1860,11 @@
     {
      "t": "You’ll find a welcoming crew, killer programming, and trainers who actually care if you show up tomorrow. Bonus: their onboarding session for new members sets you up for success from day one.",
      "c": "rgb(0, 0, 0)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 3,
    "region": "main",
    "x": 974,
    "y": 4328,
@@ -1782,9 +1889,11 @@
     {
      "t": "Highlights:",
      "c": "rgb(40, 82, 118)",
-     "w": 700
+     "w": 700,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 974,
    "y": 4424,
@@ -1818,9 +1927,11 @@
     {
      "t": "Endurance, rowing, sports performance classes",
      "c": "rgb(0, 0, 0)",
-     "w": 300
+     "w": 300,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 1006,
    "y": 4468,
@@ -1854,9 +1965,11 @@
     {
      "t": "Personal training & private onboarding",
      "c": "rgb(0, 0, 0)",
-     "w": 300
+     "w": 300,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 1006,
    "y": 4504,
@@ -1890,9 +2003,11 @@
     {
      "t": "5-star rated staff with a focus on mindset",
      "c": "rgb(0, 0, 0)",
-     "w": 300
+     "w": 300,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 1006,
    "y": 4536,
@@ -1926,9 +2041,11 @@
     {
      "t": "Built for connection, not comparison",
      "c": "rgb(0, 0, 0)",
-     "w": 300
+     "w": 300,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 1006,
    "y": 4567,
@@ -1971,9 +2088,11 @@
     {
      "t": "10 Fitness Springfield",
      "c": "rgb(219, 58, 52)",
-     "w": 900
+     "w": 900,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "main",
    "x": 385,
    "y": 4786,
@@ -2007,9 +2126,11 @@
     {
      "t": "1444 S Glenstone Ave, Springfield, MO",
      "c": "rgb(0, 0, 0)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 420,
    "y": 4896,
@@ -2034,9 +2155,11 @@
     {
      "t": "Want fitness on your terms? 10 Fitness brings you 24/7 access, guest privileges, recovery perks, and a setup that lets you train how you want—no over-complications, just solid value.",
      "c": "rgb(0, 0, 0)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 3,
    "region": "main",
    "x": 386,
    "y": 4938,
@@ -2061,9 +2184,11 @@
     {
      "t": "Their Level 10 group classes are perfect for accountability and structure, but you can also train solo with great equipment and no fluff.",
      "c": "rgb(0, 0, 0)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 3,
    "region": "main",
    "x": 386,
    "y": 5034,
@@ -2088,9 +2213,11 @@
     {
      "t": "Highlights:",
      "c": "rgb(40, 82, 118)",
-     "w": 700
+     "w": 700,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 386,
    "y": 5130,
@@ -2124,9 +2251,11 @@
     {
      "t": "24/7 gym access, massage chairs, & tanning",
      "c": "rgb(0, 0, 0)",
-     "w": 300
+     "w": 300,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 418,
    "y": 5174,
@@ -2160,9 +2289,11 @@
     {
      "t": "Premium training zones & cardio deck",
      "c": "rgb(0, 0, 0)",
-     "w": 300
+     "w": 300,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 418,
    "y": 5210,
@@ -2196,9 +2327,11 @@
     {
      "t": "Group fitness with knowledgeable coaches",
      "c": "rgb(0, 0, 0)",
-     "w": 300
+     "w": 300,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 418,
    "y": 5241,
@@ -2232,9 +2365,11 @@
     {
      "t": "Affordable, flexible, and great for every schedule",
      "c": "rgb(0, 0, 0)",
-     "w": 300
+     "w": 300,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 418,
    "y": 5273,
@@ -2295,9 +2430,11 @@
     {
      "t": "Genesis Health Clubs – Springfield South",
      "c": "rgb(219, 58, 52)",
-     "w": 900
+     "w": 900,
+     "u": false
     }
    ],
+   "lines": 3,
    "region": "main",
    "x": 973,
    "y": 5476,
@@ -2331,9 +2468,11 @@
     {
      "t": "1249 E Battlefield Rd, Springfield, MO",
      "c": "rgb(0, 0, 0)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 1008,
    "y": 5636,
@@ -2358,9 +2497,11 @@
     {
      "t": "If you're after a fitness center in Springfield, MO with everything under one roof, Genesis is your spot. Lap pool? Check. Steam room? Check. Zumba, yoga, barre, and childcare? Double check.",
      "c": "rgb(0, 0, 0)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 3,
    "region": "main",
    "x": 974,
    "y": 5678,
@@ -2385,9 +2526,11 @@
     {
      "t": "Great for families or anyone who wants spa-day extras without sacrificing training options. Genesis blends upscale with usable—and keeps it accessible for every level.",
      "c": "rgb(0, 0, 0)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 3,
    "region": "main",
    "x": 974,
    "y": 5774,
@@ -2412,9 +2555,11 @@
     {
      "t": "Highlights:",
      "c": "rgb(40, 82, 118)",
-     "w": 700
+     "w": 700,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 974,
    "y": 5870,
@@ -2448,9 +2593,11 @@
     {
      "t": "Indoor pool, hot tub, steam room, smoothie bar",
      "c": "rgb(0, 0, 0)",
-     "w": 300
+     "w": 300,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 1006,
    "y": 5924,
@@ -2484,9 +2631,11 @@
     {
      "t": "Unlimited daily group classes (HIIT, cycle, yoga, barre)",
      "c": "rgb(0, 0, 0)",
-     "w": 300
+     "w": 300,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 1006,
    "y": 5959,
@@ -2520,9 +2669,11 @@
     {
      "t": "CPR-certified childcare",
      "c": "rgb(0, 0, 0)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 1006,
    "y": 5991,
@@ -2556,9 +2707,11 @@
     {
      "t": "Full-service locker rooms & recovery spaces",
      "c": "rgb(0, 0, 0)",
-     "w": 300
+     "w": 300,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 1006,
    "y": 6022,
@@ -2610,9 +2763,11 @@
     {
      "t": "So… Which Gym’s Right for You?",
      "c": "rgb(219, 58, 52)",
-     "w": 900
+     "w": 900,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 535,
    "y": 6368,
@@ -2636,9 +2791,11 @@
     {
      "t": "Southwest Springfield doesn’t mess around when it comes to fitness. Whether you want to lift heavy, join a class, recover in a cold plunge, or chase your first chin-up—you’ve got options.",
      "c": "rgb(255, 255, 255)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "main",
    "x": 386,
    "y": 6444,
@@ -2662,9 +2819,11 @@
     {
      "t": "So, no matter where you are in your fitness journey, take the leap.",
      "c": "rgb(255, 255, 255)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 606,
    "y": 6531,
@@ -2688,9 +2847,11 @@
     {
      "t": "Pick your place, show up like you mean it, and get after it.",
      "c": "rgb(255, 255, 255)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "main",
    "x": 652,
    "y": 6583,
@@ -2724,9 +2885,11 @@
     {
      "t": "Our accomplished and award winning Crew are here to help you find your strength and enjoy your workouts.",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 3,
    "region": "footer",
    "x": 406,
    "y": 6940,
@@ -2769,9 +2932,11 @@
     {
      "t": "Contact",
      "c": "rgb(40, 82, 118)",
-     "w": 900
+     "w": 900,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 811,
    "y": 6823,
@@ -2805,9 +2970,11 @@
     {
      "t": "605 W Farm Rd 182, Springfield,MO, 65810, United States",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 2,
    "region": "footer",
    "x": 848,
    "y": 6876,
@@ -2841,9 +3008,11 @@
     {
      "t": "(417) 894-7319",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 848,
    "y": 6937,
@@ -2867,9 +3036,11 @@
     {
      "t": "(417) 894-7319",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 848,
    "y": 6939,
@@ -2903,9 +3074,11 @@
     {
      "t": "office@swarriorsports.com",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 848,
    "y": 6984,
@@ -2929,9 +3102,11 @@
     {
      "t": "office@swarriorsports.com",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 848,
    "y": 6986,
@@ -2956,9 +3131,11 @@
     {
      "t": "QUICK LInks",
      "c": "rgb(40, 82, 118)",
-     "w": 900
+     "w": 900,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 1214,
    "y": 6823,
@@ -2983,9 +3160,11 @@
     {
      "t": "Home",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 1215,
    "y": 6872,
@@ -3009,9 +3188,11 @@
     {
      "t": "Home",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 1215,
    "y": 6874,
@@ -3036,9 +3217,11 @@
     {
      "t": "About Us",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 1215,
    "y": 6898,
@@ -3062,9 +3245,11 @@
     {
      "t": "About Us",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 1215,
    "y": 6900,
@@ -3089,9 +3274,11 @@
     {
      "t": "Contact Us",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 1215,
    "y": 6924,
@@ -3115,9 +3302,11 @@
     {
      "t": "Contact Us",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 1215,
    "y": 6926,
@@ -3142,9 +3331,11 @@
     {
      "t": "Meet the Team",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 1215,
    "y": 6950,
@@ -3168,9 +3359,11 @@
     {
      "t": "Meet the Team",
      "c": "rgb(51, 51, 51)",
-     "w": 400
+     "w": 400,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 1215,
    "y": 6952,
@@ -3195,9 +3388,11 @@
     {
      "t": "© Copyright 2026 Springfield Warrior Sports All Rights Reserved.",
      "c": "rgb(255, 255, 255)",
-     "w": 600
+     "w": 600,
+     "u": false
     }
    ],
+   "lines": 1,
    "region": "footer",
    "x": 405,
    "y": 7136,

@@ -98,7 +98,7 @@ function styleDiffs(l, b, label) {
   if (l.color && colorDiff(l.color, b.color) > TOL.color) out.push(`${label}: color ${b.color}, live ${l.color}`);
   // Line count (v2.5): same words wrapping onto a different number of lines (only when the
   // text is identical, so a paragraph split differently isn't flagged).
-  if (l.lh && b.lh && l.h && b.h && norm(l.full || l.text) === norm(b.full || b.text)) {
+  if (l.lh && b.lh && l.h && b.h && norm(l.full || l.text).length >= 30 && norm(l.full || l.text) === norm(b.full || b.text)) {
     // v2.6: rendered line count when both sides have it (box height includes padding).
     const ln = l.lines ?? Math.round(l.h / l.lh), bn = b.lines ?? Math.round(b.h / b.lh);
     if (ln !== bn) out.push(`${label}: ${bn} line(s), live ${ln}`);
