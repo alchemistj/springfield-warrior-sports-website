@@ -1,11 +1,11 @@
 # Layout comparison: live vs build
-Total differences: 8031
+Total differences: 8222
 
 ## about @ 1920px: 2 difference(s)
 - text "We had our son’s 10th birthday": 5 line(s), live 4
 - text "My daughter started training h": 7 line(s), live 6
 
-## best-gyms-in-springfield @ 1920px: 376 difference(s)
+## best-gyms-in-springfield @ 1920px: 384 difference(s)
 - page height 6261px, live 7180px
 - heading missing: "SO… WHICH GYM’S RIGHT FOR YOU?"
 - heading missing: "Southwest Springfield doesn’t mess around when it comes to fitness. Whether you want to lift heavy, join a class, recover in a cold plunge, or chase your first chin-up—you’ve got options."
@@ -297,6 +297,14 @@ Total differences: 8031
 - spacing from "GP ATHLETICS" to "SPRINGFIELD WARRIOR SPORTS": 660px, live 780px
 - spacing from "SPRINGFIELD WARRIOR SPORTS" to "SPRINGFIELD STRENGTH & CONDITI": 553px, live 626px
 - spacing from "PROXIMAL STRENGTH" to "10 FITNESS SPRINGFIELD": 557px, live 655px
+- gap between "LOOKING FOR THE BEST GYMS IN S" and "Whether you’re hunting down yo": 262px, live 91px
+- gap between "Offering everything from worko" and "Before we get started on our l": 15px, live 117px
+- gap between "one of the most unique gyms ar" and "RAGE FITNESS": 98px, live 170px
+- gap between "Cold plunges, saunas, compress" and "GP ATHLETICS": 157px, live 252px
+- gap between "Highlights:" and "SPRINGFIELD WARRIOR SPORTS": 247px, live 346px
+- gap between "If you're interested in parkou" and "SPRINGFIELD STRENGTH & CONDITI": 156px, live 211px
+- gap between "Customized training & nutritio" and "Coaches who correct your form,": 14px, live 73px
+- gap between "Endurance, rowing, sports perf" and "10 FITNESS SPRINGFIELD": 156px, live 292px
 - icons: 5 in build, 36 on live
 - icon 1: color rgb(255, 255, 255), live rgb(219, 58, 52)
 - icon 1: size 17px, live 24px
@@ -383,7 +391,7 @@ Total differences: 8031
 - band rgb(255, 255, 255) at y=3127 (698px tall, right margin) is in the build but not on live
 - band rgb(255, 255, 255) at y=4383 (646px tall, right margin) is in the build but not on live
 
-## birthday-parties @ 1920px: 217 difference(s)
+## birthday-parties @ 1920px: 226 difference(s)
 - page height 5443px, live 5742px
 - heading missing: "NINJA WARRIOR COURSES, LASER TAG, NERF BATTLES, AND MORE!"
 - heading missing: "BOOK NOW!"
@@ -545,6 +553,15 @@ Total differences: 8031
 - spacing from "MORE BIRTHDAY PARTY OPTIONS AT" to "HAVE BATTLES IN OUR OBSTACLE C": 585px, live 875px
 - spacing from "HAVE BATTLES IN OUR OBSTACLE C" to "NERF BATTLE PARTIES": 0px, live 174px
 - spacing from "NERF BATTLE PARTIES" to "CREATE AMAZING MEMORIES": 624px, live 776px
+- gap between "KIDS WILL HAVE A BLAST, AND YO" and "Springfield Warrior Sports is ": 1333px, live 11px
+- gap between "Springfield Warrior Sports is " and "This means more than just one ": 131px, live 17px
+- gap between "WARRIOR SPORTS TAKES THE STRES" and "At Springfield Warrior Sports,": 13px, live 130px
+- gap between "At Springfield Warrior Sports," and "Note: free customized party in": 195px, live 28px
+- gap between "Cost: $179 for the first 11 ki" and "* All participants will need t": 14px, live 225px
+- gap between "** To reserve your birthday pa" and "MORE BIRTHDAY PARTY OPTIONS AT": 98px, live 631px
+- gap between "We can help you with that!" and "Our birthday party pizza packa": 54px, live 311px
+- gap between "Our birthday party pizza packa" and "HAVE BATTLES IN OUR OBSTACLE C": 98px, live 317px
+- gap between "The Springfield Warrior Sports" and "CREATE AMAZING MEMORIES": 98px, live 383px
 - button not on live: "LASER TAG PARTIES"
 - icons: 5 in build, 9 on live
 - icon 1: color rgb(255, 255, 255), live rgb(219, 58, 52)
@@ -666,7 +683,7 @@ Total differences: 8031
 - band rgb(255, 255, 255) at y=2808 (left margin): 328px tall, live 461px
 - band rgb(255, 255, 255) at y=2808 (right margin): 328px tall, live 461px
 
-## contact @ 1920px: 80 difference(s)
+## contact @ 1920px: 82 difference(s)
 - page height 3004px, live 3340px
 - heading "CONTACT US": line height 50px, live 60px
 - heading "CLIENT TESTIMONIALS": line height 50px, live 70px
@@ -723,6 +740,8 @@ Total differences: 8031
 - words "- Lee C.": color rgb(51, 51, 51), live rgb(219, 58, 52)
 - words "- Lee C.": weight 300, live 700
 - spacing from "CLIENT TESTIMONIALS" to "WHAT OUR CLIENTS SAY": 0px, live 61px
+- gap between "We look forward to hearing fro" and "(417)894-7319": 1851px, live 62px
+- gap between "WHAT OUR CLIENTS SAY" and "We had our son’s 10th birthday": 66px, live 132px
 - icons: 9 in build, 8 on live
 - icon 4: color rgb(214, 53, 47), live rgb(255, 255, 255)
 - icon 4: left edge 385px, live 414px
@@ -748,7 +767,7 @@ Total differences: 8031
 - band rgb(254, 254, 254) at y=729 (right margin): 1403px tall, live 1564px
 - band rgb(249, 253, 252) at y=2982 (right margin): 328px tall, live 293px
 
-## fitness-classes @ 1920px: 244 difference(s)
+## fitness-classes @ 1920px: 251 difference(s)
 - heading missing: "WHAT IS OCR FITNESS?"
 - heading "FITNESS CLASSES IN SPRINGFIELD, MO": left edge 385px, live 541px
 - heading "FITNESS CLASSES IN SPRINGFIELD, MO": line height 70px, live 59px
@@ -938,6 +957,13 @@ Total differences: 8031
 - spacing from "PRICING AND SCHEDULE" to "OBSTACLE COURSE RACING CLASSES": 491px, live 738px
 - spacing from "OBSTACLE COURSE RACING CLASSES" to "A UNIQUE WORKOUT EXPERIENCE": 0px, live 51px
 - spacing from "A UNIQUE WORKOUT EXPERIENCE" to "OCR FITNESS CLASS BENEFITS": 596px, live 737px
+- gap between "FITNESS CLASSES IN SPRINGFIELD" and "ARE YOU LOOKING FOR A FUN AND ": 421px, live 269px
+- gap between "Sign up now for ADULT O.C.R wo" and "PRICING AND SCHEDULE": 122px, live 167px
+- gap between "Choose the membership option t" and "OBSTACLE COURSE RACING CLASSES": 286px, live 521px
+- gap between "OCR workouts and fitness class" and "OCR fitness classes take the b": 54px, live 112px
+- gap between "OCR fitness classes take the b" and "OCR FITNESS CLASS BENEFITS": 113px, live 354px
+- gap between "Additionally, the group atmosp" and "IMPROVED CONFIDENCE LEVELS AND": 589px, live 213px
+- gap between "IMPROVED CONFIDENCE LEVELS AND" and "Our Obstacle Course Racing (OC": 14px, live 80px
 - icons: 5 in build, 9 on live
 - icon 1: color rgb(255, 255, 255), live rgb(219, 58, 52)
 - icon 1: size 17px, live 26px
@@ -994,12 +1020,14 @@ Total differences: 8031
 - band rgb(254, 254, 254) at y=3377 (right margin): 588px tall, live 1110px
 - band rgb(253, 253, 253) at y=4178 (328px tall, right margin) is in the build but not on live
 
-## home @ 1920px: 3 difference(s)
+## home @ 1920px: 5 difference(s)
 - text "We believe in results and that": 3 line(s), live 2
 - text "We had our son’s 10th birthday": 5 line(s), live 4
 - text "My daughter started training h": 7 line(s), live 6
+- gap between "KIDS ● ADULTS ● SUMMER CAMPS ●" and "GET READY TO": 62px, live 112px
+- gap between "(see below for our class hours" and "SPRINGFIELD'S BEST OBSTACLE TR": 216px, live 166px
 
-## homeschool-sports-and-classes-springfield-mo @ 1920px: 102 difference(s)
+## homeschool-sports-and-classes-springfield-mo @ 1920px: 104 difference(s)
 - page height 2622px, live 3027px
 - heading missing: "COME JOIN THE FUN!"
 - heading missing: "Homeschoolers have the unique opportunity to enjoy exciting activities at Springfield Warrior Sports."
@@ -1083,6 +1111,8 @@ Total differences: 8031
 - words "class for only $ 5.": underline false, live true
 - spacing from "FUN HOMESCHOOL SPORTS FOR KIDS" to "HOMESCHOOL CLASSES SPRINGFIELD": 0px, live 136px
 - spacing from "HOMESCHOOL CLASSES SPRINGFIELD" to "(AGES 7–15)": 0px, live 42px
+- gap between "Our homeschool programs in Spr" and "FUN HOMESCHOOL SPORTS FOR KIDS": 97px, live 216px
+- gap between "The Springfield Warrior Sports" and "Availability: Tuesdays and Thu": 195px, live 17px
 - icons: 5 in build, 8 on live
 - icon 1: color rgb(255, 255, 255), live rgb(40, 82, 118)
 - icon 1: left edge 418px, live 804px
@@ -1103,9 +1133,12 @@ Total differences: 8031
 - photo hero: brightness 100, live 32 (overlay or exposure differs)
 - photo hero: looks different from live (pixel difference 71)
 
-## kids-classes @ 1920px: matches
+## kids-classes @ 1920px: 3 difference(s)
+- gap between "Sign up now and let your kids " and "Note: The last week of the mon": 72px, live 111px
+- gap between "Note: The last week of the mon" and "PRE-SCHOOL WARRIORS": 363px, live 257px
+- gap between "Beginner Warrior Membership $7" and "CLASS TIMES": 152px, live 114px
 
-## laser-tag @ 1920px: 178 difference(s)
+## laser-tag @ 1920px: 184 difference(s)
 - page height 3551px, live 4056px
 - heading missing: "WANT TO BOOK A PRIVATE LASER TAG PARTY?"
 - heading missing: "READY TO BOOK?"
@@ -1237,6 +1270,12 @@ Total differences: 8031
 - words "Sign up now to get notified of all futur": weight 300, live 400
 - spacing from "WELCOME TO THE PREMIER" to "LASER TAG GYM IN SPRINGFIELD, ": 0px, live 50px
 - spacing from "HERE ARE THE DETAILS:" to "COME JOIN THE FUN! DON’T MISS ": 654px, live 929px
+- gap between "LASER TAG GYM IN SPRINGFIELD, " and "Great for all ages!": 466px, live 21px
+- gap between "Great for all ages!" and "Whether you are planning a bir": 14px, live 280px
+- gap between "Whether you are planning a bir" and "Whether you are planning a bir": 111px, live 472px
+- gap between "Call us today and book our ent" and "HERE ARE THE DETAILS:": 148px, live 16px
+- gap between "We want kids to have a blast, " and "You can begin the booking proc": 53px, live 293px
+- gap between "You can begin the booking proc" and "COME JOIN THE FUN! DON’T MISS ": 137px, live 244px
 - icons: 5 in build, 8 on live
 - icon 1: color rgb(255, 255, 255), live rgb(219, 58, 52)
 - icon 1: left edge 418px, live 974px
@@ -1285,7 +1324,7 @@ Total differences: 8031
 - band rgb(247, 251, 250) at y=2500 (right margin): 507px tall, live 1491px
 - band rgb(247, 251, 250) at y=3158 (328px tall, right margin) is in the build but not on live
 
-## meet-the-team @ 1920px: 593 difference(s)
+## meet-the-team @ 1920px: 603 difference(s)
 - page height 10925px, live 7871px
 - heading missing: "YOU'VE MET THE TEAM."
 - heading missing: "NOW TRAIN WITH THEM."
@@ -1780,6 +1819,16 @@ Total differences: 8031
 - spacing from "JACOB" to "LEAD PERSONAL TRAINER": 0px, live 37px
 - spacing from "LEAD PERSONAL TRAINER" to "GRACE": 708px, live 475px
 - spacing from "GRACE" to "BEGINNER NINJA COACH | BIRTHDA": 0px, live 37px
+- gap between "MEET THE SPRINGFIELD WARRIOR S" and "At Springfield Warrior Sports,": 494px, live 186px
+- gap between "Get to know the coaches who ma" and "JONNY": 369px, live 91px
+- gap between "I’m excited to meet you. Come " and "LINCOLN": 147px, live 86px
+- gap between "As a coach, I strive to be the" and "ELLORY": 147px, live 86px
+- gap between "Outside of ninja, I like to tr" and "ELLE": 205px, live 86px
+- gap between "I truly love my job. It's so r" and "CONNOR": 205px, live 86px
+- gap between "I’m all about helping kids hav" and "RUBY": 148px, live 86px
+- gap between "Outside the gym, I’m an artist" and "JOSIAH": 255px, live 86px
+- gap between "Here at Springfield Warrior Sp" and "JACOB": 267px, live 96px
+- gap between "Outside of the gym, I can be f" and "GRACE": 159px, live 86px
 - icons: 5 in build, 6 on live
 - icon 1: left edge 418px, live 1069px
 - icon 2: left edge 455px, live 414px
@@ -1880,7 +1929,7 @@ Total differences: 8031
 - band rgb(253, 253, 253) at y=7466 (770px tall, right margin) is in the build but not on live
 - band rgb(253, 253, 253) at y=9005 (771px tall, right margin) is in the build but not on live
 
-## nerf-wars @ 1920px: 149 difference(s)
+## nerf-wars @ 1920px: 154 difference(s)
 - page height 3632px, live 3982px
 - heading missing: "BOOK NOW!"
 - heading missing: "READY TO LOCK IN THE DATE FOR YOUR CHILD'S EPIC NERF PARTY AT WARRIOR SPORTS?"
@@ -1991,6 +2040,11 @@ Total differences: 8031
 - spacing from "NERF WAR PARTY BREAKDOWN" to "HERE’S WHAT’S INCLUDED": 0px, live 221px
 - spacing from "HERE’S WHAT’S INCLUDED" to "PRICING": 505px, live 436px
 - spacing from "PRICING" to "NERF WAR NIGHTS IN SPRINGFIELD": 583px, live 936px
+- gap between "THE ULTIMATE PARTY EXPERIENCE!" and "Welcome to Warrior Sports, whe": 587px, live 346px
+- gap between "HERE’S WHAT’S INCLUDED" and "Book a Nerf war party at Warri": 79px, live 167px
+- gap between "Need party invitations? We've " and "PRICING": 98px, live 21px
+- gap between "Our Nerf parties start at $220" and "Let our experienced and kid-fr": 53px, live 333px
+- gap between "Or, dial (417) 894-7319 to res" and "NERF WAR NIGHTS IN SPRINGFIELD": 98px, live 186px
 - icons: 5 in build, 11 on live
 - icon 1: color rgb(255, 255, 255), live rgb(219, 58, 52)
 - icon 1: left edge 418px, live 974px
@@ -2031,7 +2085,7 @@ Total differences: 8031
 - band rgb(255, 255, 255) at y=729 (right margin): 610px tall, live 322px
 - band rgb(254, 254, 254) at y=1889 (583px tall, right margin) is in the build but not on live
 
-## parkour @ 1920px: 192 difference(s)
+## parkour @ 1920px: 200 difference(s)
 - page height 5248px, live 5540px
 - heading "PARKOUR GYM IN SPRINGFIELD MO | SPRINGFI": left edge 385px, live 500px
 - heading "PARKOUR GYM IN SPRINGFIELD MO | SPRINGFI": width 1150px, live 920px
@@ -2168,6 +2222,14 @@ Total differences: 8031
 - spacing from "PARKOUR CLASSES" to "TEMPORARILY UNAVAILABLE": 0px, live 50px
 - spacing from "TEMPORARILY UNAVAILABLE" to "OPEN GYM IS OPEN — YOUR FIRST ": 0px, live 51px
 - spacing from "OPEN GYM IS OPEN — YOUR FIRST " to "MORE THAN JUST PHYSICAL": 477px, live 591px
+- gap between "Open Gym sessions remain avail" and "Want to challenge yourself and": 15px, live 127px
+- gap between "Want to challenge yourself and" and "Plus, your first class is only": 181px, live 28px
+- gap between "Parkour can help to improve ov" and "BUILDS SELF-CONFIDENCE:": 428px, live 21px
+- gap between "By learning how to overcome ob" and "MENTAL STIMULATION:": 407px, live 219px
+- gap between "Parkour offers an enjoyable an" and "STRESS RELIEF:": 259px, live 36px
+- gap between "Parkour is a great way to redu" and "COMMUNITY:": 98px, live 363px
+- gap between "Participants in Parkour can ga" and "PARKOUR CLASSES": 99px, live 375px
+- gap between "$20 class drop in, $10 class d" and "MORE THAN JUST PHYSICAL": 156px, live 421px
 - background behind "PARKOUR BENEFITS": rgb(241, 245, 246), live rgb(225, 236, 237)
 - background behind "IMPROVE PHYSICAL FITNESS:": rgb(241, 245, 246), live rgb(226, 235, 238)
 - background behind "BUILDS SELF-CONFIDENCE:": rgb(255, 255, 255), live rgb(226, 235, 238)
@@ -2225,7 +2287,7 @@ Total differences: 8031
 - band rgb(255, 255, 255) at y=3459 (290px tall, right margin) is in the build but not on live
 - band rgb(255, 255, 255) at y=4855 (328px tall, right margin) is in the build but not on live
 
-## personal-training @ 1920px: 326 difference(s)
+## personal-training @ 1920px: 331 difference(s)
 - page height 7446px, live 6053px
 - heading missing: "NOT YOUR TYPICAL GYM. NOT YOUR TYPICAL TRAINER."
 - heading missing: "This isn’t about getting shredded or setting records."
@@ -2491,6 +2553,11 @@ Total differences: 8031
 - spacing from "JONNY WILDER" to "HOW IT WORKS": 293px, live 428px
 - spacing from "HOW IT WORKS" to "WHAT OUR CLIENTS SAY": 1748px, live 507px
 - spacing from "WHAT OUR CLIENTS SAY" to "LET’S TALK STRENGTH…YOUR VERSI": -1452px, live 583px
+- gap between "PERSONAL TRAINING AT WARRIOR S" and "If you’ve ever felt like fitne": 334px, live 446px
+- gap between "We meet you where you are, wit" and "MEET YOUR TRAINERS": 325px, live 191px
+- gap between "“Training should be fun. That’" and "HOW IT WORKS": 98px, live 211px
+- gap between "Contact us and share your stor" and "WHAT OUR CLIENTS SAY": 1607px, live 411px
+- gap between "WHAT OUR CLIENTS SAY" and "After losing some weight on my": 66px, live 131px
 - icons: 5 in build, 9 on live
 - icon 1: color rgb(255, 255, 255), live rgb(219, 58, 52)
 - icon 1: left edge 418px, live 974px
@@ -2634,7 +2701,7 @@ Total differences: 8031
 - photo hero: brightness 110, live 213 (overlay or exposure differs)
 - photo hero: looks different from live (pixel difference 116)
 
-## schedule-birthday-party @ 1920px: 62 difference(s)
+## schedule-birthday-party @ 1920px: 63 difference(s)
 - page height 2995px, live 3345px
 - heading "CLIENT TESTIMONIALS": line height 50px, live 70px
 - heading "WHAT OUR CLIENTS SAY": line height 50px, live 42px
@@ -2678,6 +2745,7 @@ Total differences: 8031
 - words "- Lee C.": color rgb(51, 51, 51), live rgb(219, 58, 52)
 - words "- Lee C.": weight 300, live 700
 - spacing from "CLIENT TESTIMONIALS" to "WHAT OUR CLIENTS SAY": 0px, live 61px
+- gap between "WHAT OUR CLIENTS SAY" and "We had our son’s 10th birthday": 66px, live 132px
 - background behind "CLIENT TESTIMONIALS": rgb(242, 246, 249), live rgb(255, 255, 255)
 - background behind "WHAT OUR CLIENTS SAY": rgb(242, 246, 249), live rgb(255, 255, 255)
 - background behind "1. Fill out the form to begin the schedu": rgb(255, 255, 255), live rgb(227, 235, 237)
@@ -2698,7 +2766,7 @@ Total differences: 8031
 - band rgb(255, 255, 255) at y=774 (236px tall, right margin) is in the build but not on live
 - band rgb(249, 249, 249) at y=2601 (329px tall, right margin) is in the build but not on live
 
-## summer-camps-in-springfield-mo @ 1920px: 399 difference(s)
+## summer-camps-in-springfield-mo @ 1920px: 404 difference(s)
 - page height 5794px, live 6281px
 - heading "KIDS STAY FIT AND HEALTHY": left edge 385px, live 500px
 - heading "AT OUR INCREDIBLE SUMMER CAMPS": left edge 385px, live 500px
@@ -3046,6 +3114,11 @@ Total differences: 8031
 - spacing from "SPRINGFIELD WARRIOR REGISTRATI" to "REGISTRATION FORM": 354px, live 410px
 - spacing from "REGISTRATION FORM" to "CLIENT TESTIMONIALS": 1825px, live 2324px
 - spacing from "CLIENT TESTIMONIALS" to "WHAT OUR CLIENTS SAY": 0px, live 61px
+- gap between "AT OUR INCREDIBLE SUMMER CAMPS" and "Looking for a worthwhile activ": 421px, live 301px
+- gap between "Come join us at our camps, whi" and "SUMMER CAMPS IN SPRINGFIELD — ": 98px, live 180px
+- gap between "12 PM - 3 PM" and "SUMMER CAMP PRICING": 98px, live 23px
+- gap between "Summer camp investment monies " and "SPRINGFIELD WARRIOR REGISTRATI": 98px, live 16px
+- gap between "WHAT OUR CLIENTS SAY" and "We had our son’s 10th birthday": 65px, live 112px
 - background behind "AT OUR INCREDIBLE SUMMER CAMPS": rgb(22, 24, 23), live rgb(254, 254, 255)
 - background behind "SUMMER CAMPS IN SPRINGFIELD — 2026 DATES": rgb(242, 245, 248), live rgb(226, 236, 237)
 - background behind "SUMMER CAMP PRICING": rgb(255, 255, 255), live rgb(226, 236, 237)
@@ -3112,7 +3185,7 @@ Total differences: 8031
 - photo hero: brightness 110, live 207 (overlay or exposure differs)
 - photo hero: looks different from live (pixel difference 113)
 
-## wnl-competitions @ 1920px: 84 difference(s)
+## wnl-competitions @ 1920px: 87 difference(s)
 - page height 2956px, live 3604px
 - heading missing: "10-26-2024 WNL Competition Registration Form"
 - heading "WNL COMPETITIONS IN SPRINGFIELD MISSOURI": left edge 400px, live 500px
@@ -3170,6 +3243,9 @@ Total differences: 8031
 - words "will go up after October 12th!": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
 - words "will go up after October 12th!": weight 300, live 400
 - spacing from "WNL COMPETITIONS IN SPRINGFIEL" to "WNL REGIONAL QUALIFIERS": 653px, live 937px
+- gap between "WNL COMPETITIONS IN SPRINGFIEL" and "WNL REGIONAL QUALIFIERS": 558px, live 837px
+- gap between "October 26, 2024" and "Early bird pricing for these c": 13px, live 382px
+- gap between "Fill out your information usin" and "Don't wait to register - The e": 14px, live 55px
 - icons: 5 in build, 6 on live
 - icon 1: color rgb(255, 255, 255), live rgb(219, 58, 52)
 - icon 2: left edge 455px, live 414px
@@ -3202,7 +3278,7 @@ Total differences: 8031
 - text "We had our son’s 10th birthday": 5 line(s), live 4
 - text "My daughter started training h": 7 line(s), live 6
 
-## best-gyms-in-springfield @ 1280px: 375 difference(s)
+## best-gyms-in-springfield @ 1280px: 383 difference(s)
 - page height 6261px, live 7180px
 - heading missing: "SO… WHICH GYM’S RIGHT FOR YOU?"
 - heading missing: "Southwest Springfield doesn’t mess around when it comes to fitness. Whether you want to lift heavy, join a class, recover in a cold plunge, or chase your first chin-up—you’ve got options."
@@ -3494,6 +3570,14 @@ Total differences: 8031
 - spacing from "GP ATHLETICS" to "SPRINGFIELD WARRIOR SPORTS": 660px, live 780px
 - spacing from "SPRINGFIELD WARRIOR SPORTS" to "SPRINGFIELD STRENGTH & CONDITI": 553px, live 626px
 - spacing from "PROXIMAL STRENGTH" to "10 FITNESS SPRINGFIELD": 557px, live 655px
+- gap between "LOOKING FOR THE BEST GYMS IN S" and "Whether you’re hunting down yo": 262px, live 91px
+- gap between "Offering everything from worko" and "Before we get started on our l": 15px, live 117px
+- gap between "one of the most unique gyms ar" and "RAGE FITNESS": 98px, live 170px
+- gap between "Cold plunges, saunas, compress" and "GP ATHLETICS": 157px, live 252px
+- gap between "Highlights:" and "SPRINGFIELD WARRIOR SPORTS": 247px, live 346px
+- gap between "If you're interested in parkou" and "SPRINGFIELD STRENGTH & CONDITI": 156px, live 211px
+- gap between "Customized training & nutritio" and "Coaches who correct your form,": 14px, live 73px
+- gap between "Endurance, rowing, sports perf" and "10 FITNESS SPRINGFIELD": 156px, live 292px
 - icons: 5 in build, 36 on live
 - icon 1: color rgb(255, 255, 255), live rgb(219, 58, 52)
 - icon 1: size 17px, live 24px
@@ -3579,7 +3663,7 @@ Total differences: 8031
 - band rgb(255, 255, 255) at y=3127 (698px tall, right margin) is in the build but not on live
 - band rgb(255, 255, 255) at y=4383 (646px tall, right margin) is in the build but not on live
 
-## birthday-parties @ 1280px: 218 difference(s)
+## birthday-parties @ 1280px: 227 difference(s)
 - page height 5443px, live 5742px
 - heading missing: "NINJA WARRIOR COURSES, LASER TAG, NERF BATTLES, AND MORE!"
 - heading missing: "BOOK NOW!"
@@ -3741,6 +3825,15 @@ Total differences: 8031
 - spacing from "MORE BIRTHDAY PARTY OPTIONS AT" to "HAVE BATTLES IN OUR OBSTACLE C": 585px, live 875px
 - spacing from "HAVE BATTLES IN OUR OBSTACLE C" to "NERF BATTLE PARTIES": 0px, live 174px
 - spacing from "NERF BATTLE PARTIES" to "CREATE AMAZING MEMORIES": 624px, live 776px
+- gap between "KIDS WILL HAVE A BLAST, AND YO" and "Springfield Warrior Sports is ": 1333px, live 11px
+- gap between "Springfield Warrior Sports is " and "This means more than just one ": 131px, live 17px
+- gap between "WARRIOR SPORTS TAKES THE STRES" and "At Springfield Warrior Sports,": 13px, live 130px
+- gap between "At Springfield Warrior Sports," and "Note: free customized party in": 195px, live 28px
+- gap between "Cost: $179 for the first 11 ki" and "* All participants will need t": 14px, live 225px
+- gap between "** To reserve your birthday pa" and "MORE BIRTHDAY PARTY OPTIONS AT": 98px, live 631px
+- gap between "We can help you with that!" and "Our birthday party pizza packa": 54px, live 311px
+- gap between "Our birthday party pizza packa" and "HAVE BATTLES IN OUR OBSTACLE C": 98px, live 317px
+- gap between "The Springfield Warrior Sports" and "CREATE AMAZING MEMORIES": 98px, live 383px
 - button not on live: "LASER TAG PARTIES"
 - icons: 5 in build, 9 on live
 - icon 1: color rgb(255, 255, 255), live rgb(219, 58, 52)
@@ -3862,7 +3955,7 @@ Total differences: 8031
 - band rgb(254, 254, 254) at y=2833 (left margin): 328px tall, live 461px
 - band rgb(254, 254, 254) at y=2833 (right margin): 328px tall, live 461px
 
-## contact @ 1280px: 79 difference(s)
+## contact @ 1280px: 81 difference(s)
 - page height 3004px, live 3340px
 - heading "CONTACT US": line height 50px, live 60px
 - heading "CLIENT TESTIMONIALS": line height 50px, live 70px
@@ -3919,6 +4012,8 @@ Total differences: 8031
 - words "- Lee C.": color rgb(51, 51, 51), live rgb(219, 58, 52)
 - words "- Lee C.": weight 300, live 700
 - spacing from "CLIENT TESTIMONIALS" to "WHAT OUR CLIENTS SAY": 0px, live 61px
+- gap between "We look forward to hearing fro" and "(417)894-7319": 1851px, live 62px
+- gap between "WHAT OUR CLIENTS SAY" and "We had our son’s 10th birthday": 66px, live 132px
 - icons: 9 in build, 8 on live
 - icon 4: color rgb(214, 53, 47), live rgb(255, 255, 255)
 - icon 4: left edge 65px, live 94px
@@ -3943,7 +4038,7 @@ Total differences: 8031
 - band rgb(255, 255, 255) at y=729 (right margin): 1403px tall, live 1564px
 - band rgb(249, 253, 252) at y=2982 (right margin): 328px tall, live 293px
 
-## fitness-classes @ 1280px: 244 difference(s)
+## fitness-classes @ 1280px: 251 difference(s)
 - heading missing: "WHAT IS OCR FITNESS?"
 - heading "FITNESS CLASSES IN SPRINGFIELD, MO": left edge 65px, live 221px
 - heading "FITNESS CLASSES IN SPRINGFIELD, MO": line height 70px, live 59px
@@ -4133,6 +4228,13 @@ Total differences: 8031
 - spacing from "PRICING AND SCHEDULE" to "OBSTACLE COURSE RACING CLASSES": 491px, live 738px
 - spacing from "OBSTACLE COURSE RACING CLASSES" to "A UNIQUE WORKOUT EXPERIENCE": 0px, live 51px
 - spacing from "A UNIQUE WORKOUT EXPERIENCE" to "OCR FITNESS CLASS BENEFITS": 596px, live 737px
+- gap between "FITNESS CLASSES IN SPRINGFIELD" and "ARE YOU LOOKING FOR A FUN AND ": 421px, live 269px
+- gap between "Sign up now for ADULT O.C.R wo" and "PRICING AND SCHEDULE": 122px, live 167px
+- gap between "Choose the membership option t" and "OBSTACLE COURSE RACING CLASSES": 286px, live 521px
+- gap between "OCR workouts and fitness class" and "OCR fitness classes take the b": 54px, live 112px
+- gap between "OCR fitness classes take the b" and "OCR FITNESS CLASS BENEFITS": 113px, live 354px
+- gap between "Additionally, the group atmosp" and "IMPROVED CONFIDENCE LEVELS AND": 589px, live 213px
+- gap between "IMPROVED CONFIDENCE LEVELS AND" and "Our Obstacle Course Racing (OC": 14px, live 80px
 - icons: 5 in build, 9 on live
 - icon 1: color rgb(255, 255, 255), live rgb(219, 58, 52)
 - icon 1: size 17px, live 26px
@@ -4189,12 +4291,14 @@ Total differences: 8031
 - band rgb(254, 254, 254) at y=3377 (right margin): 588px tall, live 1110px
 - band rgb(253, 253, 253) at y=4178 (328px tall, right margin) is in the build but not on live
 
-## home @ 1280px: 3 difference(s)
+## home @ 1280px: 5 difference(s)
 - text "We believe in results and that": 3 line(s), live 2
 - text "We had our son’s 10th birthday": 5 line(s), live 4
 - text "My daughter started training h": 7 line(s), live 6
+- gap between "KIDS ● ADULTS ● SUMMER CAMPS ●" and "GET READY TO": 62px, live 112px
+- gap between "(see below for our class hours" and "SPRINGFIELD'S BEST OBSTACLE TR": 216px, live 166px
 
-## homeschool-sports-and-classes-springfield-mo @ 1280px: 102 difference(s)
+## homeschool-sports-and-classes-springfield-mo @ 1280px: 104 difference(s)
 - page height 2622px, live 3027px
 - heading missing: "COME JOIN THE FUN!"
 - heading missing: "Homeschoolers have the unique opportunity to enjoy exciting activities at Springfield Warrior Sports."
@@ -4278,6 +4382,8 @@ Total differences: 8031
 - words "class for only $ 5.": underline false, live true
 - spacing from "FUN HOMESCHOOL SPORTS FOR KIDS" to "HOMESCHOOL CLASSES SPRINGFIELD": 0px, live 136px
 - spacing from "HOMESCHOOL CLASSES SPRINGFIELD" to "(AGES 7–15)": 0px, live 42px
+- gap between "Our homeschool programs in Spr" and "FUN HOMESCHOOL SPORTS FOR KIDS": 97px, live 216px
+- gap between "The Springfield Warrior Sports" and "Availability: Tuesdays and Thu": 195px, live 17px
 - icons: 5 in build, 8 on live
 - icon 1: color rgb(255, 255, 255), live rgb(40, 82, 118)
 - icon 1: left edge 98px, live 484px
@@ -4298,9 +4404,12 @@ Total differences: 8031
 - photo hero: brightness 96, live 38 (overlay or exposure differs)
 - photo hero: looks different from live (pixel difference 63)
 
-## kids-classes @ 1280px: matches
+## kids-classes @ 1280px: 3 difference(s)
+- gap between "Sign up now and let your kids " and "Note: The last week of the mon": 72px, live 111px
+- gap between "Note: The last week of the mon" and "PRE-SCHOOL WARRIORS": 363px, live 257px
+- gap between "Beginner Warrior Membership $7" and "CLASS TIMES": 152px, live 114px
 
-## laser-tag @ 1280px: 178 difference(s)
+## laser-tag @ 1280px: 184 difference(s)
 - page height 3551px, live 4056px
 - heading missing: "WANT TO BOOK A PRIVATE LASER TAG PARTY?"
 - heading missing: "READY TO BOOK?"
@@ -4432,6 +4541,12 @@ Total differences: 8031
 - words "Sign up now to get notified of all futur": weight 300, live 400
 - spacing from "WELCOME TO THE PREMIER" to "LASER TAG GYM IN SPRINGFIELD, ": 0px, live 50px
 - spacing from "HERE ARE THE DETAILS:" to "COME JOIN THE FUN! DON’T MISS ": 654px, live 929px
+- gap between "LASER TAG GYM IN SPRINGFIELD, " and "Great for all ages!": 466px, live 21px
+- gap between "Great for all ages!" and "Whether you are planning a bir": 14px, live 280px
+- gap between "Whether you are planning a bir" and "Whether you are planning a bir": 111px, live 472px
+- gap between "Call us today and book our ent" and "HERE ARE THE DETAILS:": 148px, live 16px
+- gap between "We want kids to have a blast, " and "You can begin the booking proc": 53px, live 293px
+- gap between "You can begin the booking proc" and "COME JOIN THE FUN! DON’T MISS ": 137px, live 244px
 - icons: 5 in build, 8 on live
 - icon 1: color rgb(255, 255, 255), live rgb(219, 58, 52)
 - icon 1: left edge 98px, live 654px
@@ -4480,7 +4595,7 @@ Total differences: 8031
 - band rgb(247, 251, 250) at y=2500 (right margin): 507px tall, live 1491px
 - band rgb(247, 251, 250) at y=3158 (328px tall, right margin) is in the build but not on live
 
-## meet-the-team @ 1280px: 594 difference(s)
+## meet-the-team @ 1280px: 604 difference(s)
 - page height 10925px, live 7871px
 - heading missing: "YOU'VE MET THE TEAM."
 - heading missing: "NOW TRAIN WITH THEM."
@@ -4975,6 +5090,16 @@ Total differences: 8031
 - spacing from "JACOB" to "LEAD PERSONAL TRAINER": 0px, live 37px
 - spacing from "LEAD PERSONAL TRAINER" to "GRACE": 708px, live 475px
 - spacing from "GRACE" to "BEGINNER NINJA COACH | BIRTHDA": 0px, live 37px
+- gap between "MEET THE SPRINGFIELD WARRIOR S" and "At Springfield Warrior Sports,": 494px, live 186px
+- gap between "Get to know the coaches who ma" and "JONNY": 369px, live 91px
+- gap between "I’m excited to meet you. Come " and "LINCOLN": 147px, live 86px
+- gap between "As a coach, I strive to be the" and "ELLORY": 147px, live 86px
+- gap between "Outside of ninja, I like to tr" and "ELLE": 205px, live 86px
+- gap between "I truly love my job. It's so r" and "CONNOR": 205px, live 86px
+- gap between "I’m all about helping kids hav" and "RUBY": 148px, live 86px
+- gap between "Outside the gym, I’m an artist" and "JOSIAH": 255px, live 86px
+- gap between "Here at Springfield Warrior Sp" and "JACOB": 267px, live 96px
+- gap between "Outside of the gym, I can be f" and "GRACE": 159px, live 86px
 - icons: 5 in build, 6 on live
 - icon 1: left edge 98px, live 749px
 - icon 2: left edge 135px, live 94px
@@ -5076,7 +5201,7 @@ Total differences: 8031
 - band rgb(253, 253, 253) at y=7466 (770px tall, right margin) is in the build but not on live
 - band rgb(253, 253, 253) at y=9005 (771px tall, right margin) is in the build but not on live
 
-## nerf-wars @ 1280px: 147 difference(s)
+## nerf-wars @ 1280px: 152 difference(s)
 - page height 3632px, live 3982px
 - heading missing: "BOOK NOW!"
 - heading missing: "READY TO LOCK IN THE DATE FOR YOUR CHILD'S EPIC NERF PARTY AT WARRIOR SPORTS?"
@@ -5187,6 +5312,11 @@ Total differences: 8031
 - spacing from "NERF WAR PARTY BREAKDOWN" to "HERE’S WHAT’S INCLUDED": 0px, live 221px
 - spacing from "HERE’S WHAT’S INCLUDED" to "PRICING": 505px, live 436px
 - spacing from "PRICING" to "NERF WAR NIGHTS IN SPRINGFIELD": 583px, live 936px
+- gap between "THE ULTIMATE PARTY EXPERIENCE!" and "Welcome to Warrior Sports, whe": 587px, live 346px
+- gap between "HERE’S WHAT’S INCLUDED" and "Book a Nerf war party at Warri": 79px, live 167px
+- gap between "Need party invitations? We've " and "PRICING": 98px, live 21px
+- gap between "Our Nerf parties start at $220" and "Let our experienced and kid-fr": 53px, live 333px
+- gap between "Or, dial (417) 894-7319 to res" and "NERF WAR NIGHTS IN SPRINGFIELD": 98px, live 186px
 - icons: 5 in build, 11 on live
 - icon 1: color rgb(255, 255, 255), live rgb(219, 58, 52)
 - icon 1: left edge 98px, live 654px
@@ -5225,7 +5355,7 @@ Total differences: 8031
 - band rgb(252, 255, 255) at y=729 (right margin): 610px tall, live 322px
 - band rgb(254, 254, 254) at y=1889 (583px tall, right margin) is in the build but not on live
 
-## parkour @ 1280px: 192 difference(s)
+## parkour @ 1280px: 200 difference(s)
 - page height 5248px, live 5540px
 - heading "PARKOUR GYM IN SPRINGFIELD MO | SPRINGFI": left edge 65px, live 180px
 - heading "PARKOUR GYM IN SPRINGFIELD MO | SPRINGFI": width 1150px, live 920px
@@ -5362,6 +5492,14 @@ Total differences: 8031
 - spacing from "PARKOUR CLASSES" to "TEMPORARILY UNAVAILABLE": 0px, live 50px
 - spacing from "TEMPORARILY UNAVAILABLE" to "OPEN GYM IS OPEN — YOUR FIRST ": 0px, live 51px
 - spacing from "OPEN GYM IS OPEN — YOUR FIRST " to "MORE THAN JUST PHYSICAL": 477px, live 591px
+- gap between "Open Gym sessions remain avail" and "Want to challenge yourself and": 15px, live 127px
+- gap between "Want to challenge yourself and" and "Plus, your first class is only": 181px, live 28px
+- gap between "Parkour can help to improve ov" and "BUILDS SELF-CONFIDENCE:": 428px, live 21px
+- gap between "By learning how to overcome ob" and "MENTAL STIMULATION:": 407px, live 219px
+- gap between "Parkour offers an enjoyable an" and "STRESS RELIEF:": 259px, live 36px
+- gap between "Parkour is a great way to redu" and "COMMUNITY:": 98px, live 363px
+- gap between "Participants in Parkour can ga" and "PARKOUR CLASSES": 99px, live 375px
+- gap between "$20 class drop in, $10 class d" and "MORE THAN JUST PHYSICAL": 156px, live 421px
 - background behind "PARKOUR BENEFITS": rgb(241, 245, 246), live rgb(225, 236, 237)
 - background behind "IMPROVE PHYSICAL FITNESS:": rgb(241, 245, 246), live rgb(226, 235, 238)
 - background behind "BUILDS SELF-CONFIDENCE:": rgb(255, 255, 255), live rgb(226, 235, 238)
@@ -5419,7 +5557,7 @@ Total differences: 8031
 - band rgb(255, 255, 255) at y=3459 (290px tall, right margin) is in the build but not on live
 - band rgb(255, 255, 255) at y=4855 (328px tall, right margin) is in the build but not on live
 
-## personal-training @ 1280px: 328 difference(s)
+## personal-training @ 1280px: 333 difference(s)
 - page height 7446px, live 6053px
 - heading missing: "NOT YOUR TYPICAL GYM. NOT YOUR TYPICAL TRAINER."
 - heading missing: "This isn’t about getting shredded or setting records."
@@ -5685,6 +5823,11 @@ Total differences: 8031
 - spacing from "JONNY WILDER" to "HOW IT WORKS": 293px, live 428px
 - spacing from "HOW IT WORKS" to "WHAT OUR CLIENTS SAY": 1748px, live 507px
 - spacing from "WHAT OUR CLIENTS SAY" to "LET’S TALK STRENGTH…YOUR VERSI": -1452px, live 583px
+- gap between "PERSONAL TRAINING AT WARRIOR S" and "If you’ve ever felt like fitne": 334px, live 446px
+- gap between "We meet you where you are, wit" and "MEET YOUR TRAINERS": 325px, live 191px
+- gap between "“Training should be fun. That’" and "HOW IT WORKS": 98px, live 211px
+- gap between "Contact us and share your stor" and "WHAT OUR CLIENTS SAY": 1607px, live 411px
+- gap between "WHAT OUR CLIENTS SAY" and "After losing some weight on my": 66px, live 131px
 - icons: 5 in build, 9 on live
 - icon 1: color rgb(255, 255, 255), live rgb(219, 58, 52)
 - icon 1: left edge 98px, live 654px
@@ -5830,7 +5973,7 @@ Total differences: 8031
 - photo hero: brightness 114, live 192 (overlay or exposure differs)
 - photo hero: looks different from live (pixel difference 99)
 
-## schedule-birthday-party @ 1280px: 62 difference(s)
+## schedule-birthday-party @ 1280px: 63 difference(s)
 - page height 2995px, live 3345px
 - heading "CLIENT TESTIMONIALS": line height 50px, live 70px
 - heading "WHAT OUR CLIENTS SAY": line height 50px, live 42px
@@ -5874,6 +6017,7 @@ Total differences: 8031
 - words "- Lee C.": color rgb(51, 51, 51), live rgb(219, 58, 52)
 - words "- Lee C.": weight 300, live 700
 - spacing from "CLIENT TESTIMONIALS" to "WHAT OUR CLIENTS SAY": 0px, live 61px
+- gap between "WHAT OUR CLIENTS SAY" and "We had our son’s 10th birthday": 66px, live 132px
 - background behind "CLIENT TESTIMONIALS": rgb(242, 246, 249), live rgb(255, 255, 255)
 - background behind "WHAT OUR CLIENTS SAY": rgb(242, 246, 249), live rgb(255, 255, 255)
 - background behind "1. Fill out the form to begin the schedu": rgb(255, 255, 255), live rgb(227, 235, 237)
@@ -5894,7 +6038,7 @@ Total differences: 8031
 - band rgb(255, 255, 255) at y=774 (236px tall, right margin) is in the build but not on live
 - band rgb(249, 249, 249) at y=2601 (329px tall, right margin) is in the build but not on live
 
-## summer-camps-in-springfield-mo @ 1280px: 398 difference(s)
+## summer-camps-in-springfield-mo @ 1280px: 403 difference(s)
 - page height 5794px, live 6281px
 - heading "KIDS STAY FIT AND HEALTHY": left edge 65px, live 180px
 - heading "AT OUR INCREDIBLE SUMMER CAMPS": left edge 65px, live 180px
@@ -6242,6 +6386,11 @@ Total differences: 8031
 - spacing from "SPRINGFIELD WARRIOR REGISTRATI" to "REGISTRATION FORM": 354px, live 410px
 - spacing from "REGISTRATION FORM" to "CLIENT TESTIMONIALS": 1825px, live 2324px
 - spacing from "CLIENT TESTIMONIALS" to "WHAT OUR CLIENTS SAY": 0px, live 61px
+- gap between "AT OUR INCREDIBLE SUMMER CAMPS" and "Looking for a worthwhile activ": 421px, live 301px
+- gap between "Come join us at our camps, whi" and "SUMMER CAMPS IN SPRINGFIELD — ": 98px, live 180px
+- gap between "12 PM - 3 PM" and "SUMMER CAMP PRICING": 98px, live 23px
+- gap between "Summer camp investment monies " and "SPRINGFIELD WARRIOR REGISTRATI": 98px, live 16px
+- gap between "WHAT OUR CLIENTS SAY" and "We had our son’s 10th birthday": 65px, live 112px
 - background behind "AT OUR INCREDIBLE SUMMER CAMPS": rgb(23, 24, 22), live rgb(254, 254, 255)
 - background behind "SUMMER CAMPS IN SPRINGFIELD — 2026 DATES": rgb(242, 245, 248), live rgb(226, 236, 237)
 - background behind "SUMMER CAMP PRICING": rgb(255, 255, 255), live rgb(226, 236, 237)
@@ -6307,7 +6456,7 @@ Total differences: 8031
 - photo hero: brightness 114, live 184 (overlay or exposure differs)
 - photo hero: looks different from live (pixel difference 92)
 
-## wnl-competitions @ 1280px: 84 difference(s)
+## wnl-competitions @ 1280px: 87 difference(s)
 - page height 2956px, live 3604px
 - heading missing: "10-26-2024 WNL Competition Registration Form"
 - heading "WNL COMPETITIONS IN SPRINGFIELD MISSOURI": left edge 80px, live 180px
@@ -6365,6 +6514,9 @@ Total differences: 8031
 - words "will go up after October 12th!": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
 - words "will go up after October 12th!": weight 300, live 400
 - spacing from "WNL COMPETITIONS IN SPRINGFIEL" to "WNL REGIONAL QUALIFIERS": 653px, live 937px
+- gap between "WNL COMPETITIONS IN SPRINGFIEL" and "WNL REGIONAL QUALIFIERS": 558px, live 837px
+- gap between "October 26, 2024" and "Early bird pricing for these c": 13px, live 382px
+- gap between "Fill out your information usin" and "Don't wait to register - The e": 14px, live 55px
 - icons: 5 in build, 6 on live
 - icon 1: color rgb(255, 255, 255), live rgb(219, 58, 52)
 - icon 2: left edge 135px, live 94px
@@ -6393,10 +6545,13 @@ Total differences: 8031
 - band rgb(251, 255, 254) at y=1671 (1868px tall on live, right margin) not found in build
 - band rgb(252, 252, 252) at y=2563 (328px tall, right margin) is in the build but not on live
 
-## about @ 390px: 1 difference(s)
+## about @ 390px: 4 difference(s)
 - text "In 2016 we had the unique oppo": 19 line(s), live 18
+- gap between "Springfield Warrior Sports was" and "CURIOUS ABOUT THE COLORS OF OU": 276px, live 370px
+- gap between "Springfield Warrior Sports loo" and "CLIENT TESTIMONIALS": 216px, live 161px
+- gap between "We had our son’s 10th birthday" and "- JENNIFER L.": 62px, live 0px
 
-## best-gyms-in-springfield @ 390px: 194 difference(s)
+## best-gyms-in-springfield @ 390px: 197 difference(s)
 - page height 8081px, live 11526px
 - heading missing: "GP ATHLETICS"
 - heading missing: "SPRINGFIELD WARRIOR SPORTS"
@@ -6555,6 +6710,9 @@ Total differences: 8031
 - words "Highlights:": weight 300, live 700
 - words "Highlights:": color rgb(51, 51, 51), live rgb(40, 82, 118)
 - words "Highlights:": weight 300, live 700
+- gap between "LOOKING FOR THE BEST GYMS IN S" and "Whether you’re hunting down yo": 539px, live 111px
+- gap between "Offering everything from worko" and "Before we get started on our l": 14px, live 82px
+- gap between "one of the most unique gyms ar" and "RAGE FITNESS": 98px, live 547px
 - icons: 6 in build, 37 on live
 - icon 2: color rgb(255, 255, 255), live rgb(219, 58, 52)
 - icon 2: size 17px, live 24px
@@ -6592,7 +6750,7 @@ Total differences: 8031
 - band rgb(253, 253, 253) at y=10738 (688px tall on live, left margin) not found in build
 - band rgb(254, 254, 254) at y=2633 (5276px tall, left margin) is in the build but not on live
 
-## birthday-parties @ 390px: 80 difference(s)
+## birthday-parties @ 390px: 82 difference(s)
 - page height 7216px, live 8154px
 - heading missing: "NINJA WARRIOR COURSES, LASER TAG, NERF BATTLES, AND MORE!"
 - heading missing: "WARRIOR SPORTS TAKES THE STRESS OUT OF YOUR BIRTHDAY PARTY PLANNING"
@@ -6655,6 +6813,8 @@ Total differences: 8031
 - words "Nerf Battle": weight 300, live 400
 - words "(417) 894-7319": color rgb(255, 255, 255), live rgb(219, 58, 52)
 - words "(417) 894-7319": weight 700, live 600
+- gap between "KIDS WILL HAVE A BLAST, AND YO" and "Springfield Warrior Sports is ": 1446px, live 11px
+- gap between "Springfield Warrior Sports is " and "This means more than just one ": 207px, live 17px
 - icons: 6 in build, 10 on live
 - icon 2: color rgb(255, 255, 255), live rgb(219, 58, 52)
 - icon 3: color rgb(255, 255, 255), live rgb(219, 58, 52)
@@ -6674,7 +6834,7 @@ Total differences: 8031
 - band rgb(249, 253, 255) at y=7406 (648px tall on live, left margin) not found in build
 - band rgb(251, 251, 251) at y=2462 (4582px tall, left margin) is in the build but not on live
 
-## competitions @ 390px: 57 difference(s)
+## competitions @ 390px: 58 difference(s)
 - page height 3710px, live 4004px
 - heading missing: "2026-9 CSNA September 19th Form"
 - heading "TEST YOUR SKILLS ON OUR FUN AND COMPETIT": left edge 20px, live 29px
@@ -6728,12 +6888,13 @@ Total differences: 8031
 - words "Price per registration:": color rgb(51, 51, 51), live rgba(41, 41, 41, 0.99)
 - words "$60": color rgb(51, 51, 51), live rgba(41, 41, 41, 0.99)
 - words "$60": weight 400, live 900
+- gap between "TEST YOUR SKILLS ON OUR FUN AN" and "Whether you are looking for re": 223px, live 141px
 - heading "TEST YOUR SKILLS ON OUR FUN AND COMPETIT": looks different from live (pixel difference 54)
 - heading "SEPTEMBER 2026 CSNA TEAM COMPETITION": looks different from live (pixel difference 41)
 - band rgb(249, 249, 249) at y=458 (left margin): 354px tall, live 3446px
 - band rgb(252, 255, 255) at y=2871 (667px tall, left margin) is in the build but not on live
 
-## contact @ 390px: 47 difference(s)
+## contact @ 390px: 48 difference(s)
 - heading missing: "CLIENT TESTIMONIALS"
 - heading missing: "WHAT OUR CLIENTS SAY"
 - heading "CONTACT US": left edge 20px, live 25px
@@ -6764,6 +6925,7 @@ Total differences: 8031
 - words "(417)894-7319": color rgb(255, 255, 255), live rgba(0, 0, 0, 0.7)
 - words "(417)894-7319": weight 700, live 400
 - words "(417)894-7319": underline true, live false
+- gap between "We look forward to hearing fro" and "(417)894-7319": 3150px, live 75px
 - icons: 10 in build, 11 on live
 - icon 5: color rgb(214, 53, 47), live rgb(148, 163, 176)
 - icon 6: color rgb(255, 255, 255), live rgb(148, 163, 176)
@@ -6782,7 +6944,7 @@ Total differences: 8031
 - band rgb(255, 255, 255) at y=599 (left margin): 3618px tall, live 2279px
 - band rgb(252, 252, 252) at y=3633 (648px tall on live, left margin) not found in build
 
-## fitness-classes @ 390px: 131 difference(s)
+## fitness-classes @ 390px: 133 difference(s)
 - page height 6446px, live 7377px
 - heading missing: "OBSTACLE COURSE RACING CLASSES:"
 - heading missing: "A UNIQUE WORKOUT EXPERIENCE"
@@ -6884,6 +7046,8 @@ Total differences: 8031
 - words "(18+, access to weight-lifting area only": weight 300, live 600
 - spacing from "THE MOST DIVERSE (LEAST BORING" to "FITNESS CLASSES IN SPRINGFIELD": 0px, live 191px
 - spacing from "FITNESS CLASSES IN SPRINGFIELD" to "PRICING AND SCHEDULE": 2066px, live 1535px
+- gap between "FITNESS CLASSES IN SPRINGFIELD" and "ARE YOU LOOKING FOR A FUN AND ": 530px, live 151px
+- gap between "Sign up now for ADULT O.C.R wo" and "PRICING AND SCHEDULE": 388px, live 167px
 - icons: 6 in build, 10 on live
 - icon 2: color rgb(255, 255, 255), live rgb(219, 58, 52)
 - icon 2: size 17px, live 26px
@@ -6915,9 +7079,11 @@ Total differences: 8031
 - band rgb(250, 254, 253) at y=5341 (1936px tall on live, left margin) not found in build
 - band rgb(254, 254, 254) at y=2753 (3521px tall, left margin) is in the build but not on live
 
-## home @ 390px: matches
+## home @ 390px: 2 difference(s)
+- gap between "(see below for our class hours" and "SPRINGFIELD'S BEST OBSTACLE TR": 238px, live 136px
+- gap between "We had our son’s 10th birthday" and "- JENNIFER L.": 62px, live 0px
 
-## homeschool-sports-and-classes-springfield-mo @ 390px: 99 difference(s)
+## homeschool-sports-and-classes-springfield-mo @ 390px: 101 difference(s)
 - page height 3198px, live 4193px
 - heading missing: "COME JOIN THE FUN!"
 - heading missing: "Homeschoolers have the unique opportunity to enjoy exciting activities at Springfield Warrior Sports."
@@ -6995,6 +7161,8 @@ Total differences: 8031
 - words "class for only $ 5.": underline false, live true
 - spacing from "FUN HOMESCHOOL SPORTS FOR KIDS" to "HOMESCHOOL CLASSES SPRINGFIELD": 0px, live 528px
 - spacing from "HOMESCHOOL CLASSES SPRINGFIELD" to "(AGES 7–15)": 0px, live 40px
+- gap between "Our homeschool programs in Spr" and "FUN HOMESCHOOL SPORTS FOR KIDS": 98px, live 186px
+- gap between "The Springfield Warrior Sports" and "Availability: Tuesdays and Thu": 273px, live 17px
 - icons: 6 in build, 9 on live
 - icon 2: color rgb(255, 255, 255), live rgb(40, 82, 118)
 - icon 2: left edge 33px, live 61px
@@ -7018,12 +7186,14 @@ Total differences: 8031
 - band rgb(254, 254, 254) at y=599 (left margin): 525px tall, live 675px
 - band rgb(255, 255, 255) at y=2359 (667px tall, left margin) is in the build but not on live
 
-## kids-classes @ 390px: 3 difference(s)
+## kids-classes @ 390px: 5 difference(s)
 - text "Our preschool class is geared ": 9 line(s), live 8
 - text "Learn the basics of Parkour |f": 14 line(s), live 13
+- gap between "NINJA WARRIOR CLASSES FOR KIDS" and "KIDS FITNESS CLASSES AT SPRING": 148px, live 213px
+- gap between "Beginner Warrior Membership $7" and "CLASS TIMES": 171px, live 133px
 - background behind "FUN AND CHALLENGING": rgb(20, 20, 24), live rgb(23, 40, 50)
 
-## laser-tag @ 390px: 153 difference(s)
+## laser-tag @ 390px: 159 difference(s)
 - page height 4819px, live 5746px
 - heading missing: "WANT TO BOOK A PRIVATE LASER TAG PARTY?"
 - heading missing: "READY TO BOOK?"
@@ -7139,6 +7309,12 @@ Total differences: 8031
 - words "Cost:": color rgb(51, 51, 51), live rgb(0, 0, 0)
 - words "Cost:": weight 300, live 600
 - spacing from "WELCOME TO THE PREMIER" to "LASER TAG GYM IN SPRINGFIELD, ": 0px, live 64px
+- gap between "LASER TAG GYM IN SPRINGFIELD, " and "Great for all ages!": 842px, live 11px
+- gap between "Great for all ages!" and "Whether you are planning a bir": 14px, live 211px
+- gap between "Whether you are planning a bir" and "Whether you are planning a bir": 111px, live 856px
+- gap between "Call us today and book our ent" and "HERE ARE THE DETAILS:": 97px, live 16px
+- gap between "Cost: For a group of 10, the c" and "We provide a cooler full of Ga": 15px, live 68px
+- gap between "We want kids to have a blast, " and "You can begin the booking proc": 54px, live 184px
 - icons: 6 in build, 9 on live
 - icon 2: color rgb(255, 255, 255), live rgb(219, 58, 52)
 - icon 3: color rgb(255, 255, 255), live rgb(219, 58, 52)
@@ -7178,7 +7354,7 @@ Total differences: 8031
 - band rgb(251, 253, 255) at y=599 (left margin): 1411px tall, live 486px
 - band rgb(3, 3, 3) at y=2978 (48px tall on live, left margin) not found in build
 
-## meet-the-team @ 390px: 196 difference(s)
+## meet-the-team @ 390px: 197 difference(s)
 - page height 16376px, live 17511px
 - heading missing: "SARAH"
 - heading missing: "CO-OWNER | ADULT OCR COACH | PRESCHOOL COACH | WOMEN’S FITNESS TRAINER"
@@ -7348,6 +7524,7 @@ Total differences: 8031
 - words "Sarah": color rgb(51, 51, 51), live rgb(40, 82, 118)
 - words "Sarah": weight 300, live 900
 - spacing from "JONNY" to "CO-OWNER | ADULT OCR COACH | I": 0px, live 42px
+- gap between "Get to know the coaches who ma" and "JONNY": 559px, live 382px
 - icons: 6 in build, 7 on live
 - icon 2: left edge 33px, live 282px
 - icon 3: left edge 70px, live 29px
@@ -7376,7 +7553,7 @@ Total differences: 8031
 - band rgb(1, 1, 1) at y=210 (62px tall, left margin) is in the build but not on live
 - band rgb(255, 255, 255) at y=2840 (13364px tall, left margin) is in the build but not on live
 
-## nerf-wars @ 390px: 127 difference(s)
+## nerf-wars @ 390px: 132 difference(s)
 - page height 4477px, live 5430px
 - heading missing: "BOOK NOW!"
 - heading missing: "READY TO LOCK IN THE DATE FOR YOUR CHILD'S EPIC NERF PARTY AT WARRIOR SPORTS?"
@@ -7472,6 +7649,11 @@ Total differences: 8031
 - spacing from "NERF WAR SPRINGFIELD, MO:" to "THE ULTIMATE PARTY EXPERIENCE!": -783px, live 64px
 - spacing from "THE ULTIMATE PARTY EXPERIENCE!" to "NERF WAR PARTY BREAKDOWN": 1127px, live 737px
 - spacing from "NERF WAR PARTY BREAKDOWN" to "HERE’S WHAT’S INCLUDED": 0px, live 580px
+- gap between "THE ULTIMATE PARTY EXPERIENCE!" and "Welcome to Warrior Sports, whe": 687px, live 242px
+- gap between "Welcome to Warrior Sports, whe" and "NERF WAR PARTY BREAKDOWN": 98px, live 151px
+- gap between "HERE’S WHAT’S INCLUDED" and "Book a Nerf war party at Warri": 130px, live 193px
+- gap between "Need party invitations? We've " and "PRICING": 98px, live 21px
+- gap between "Our Nerf parties start at $220" and "Let our experienced and kid-fr": 53px, live 184px
 - icons: 6 in build, 12 on live
 - icon 2: color rgb(255, 255, 255), live rgb(219, 58, 52)
 - icon 3: color rgb(255, 255, 255), live rgb(219, 58, 52)
@@ -7505,7 +7687,7 @@ Total differences: 8031
 - band rgb(250, 254, 253) at y=599 (left margin): 705px tall, live 442px
 - band rgb(254, 255, 255) at y=2000 (1106px tall, left margin) is in the build but not on live
 
-## parkour @ 390px: 96 difference(s)
+## parkour @ 390px: 100 difference(s)
 - page height 6597px, live 7353px
 - heading missing: "BUILDS SELF-CONFIDENCE:"
 - heading missing: "MENTAL STIMULATION:"
@@ -7588,6 +7770,10 @@ Total differences: 8031
 - spacing from "PARKOUR GYM IN SPRINGFIELD MO " to "⚠️ TEMPORARY UPDATE:": 815px, live 404px
 - spacing from "⚠️ TEMPORARY UPDATE:" to "PARKOUR BENEFITS": 1260px, live 1670px
 - spacing from "PARKOUR BENEFITS" to "IMPROVE PHYSICAL FITNESS:": 0px, live 404px
+- gap between "PARKOUR GYM IN SPRINGFIELD MO " and "⚠️ TEMPORARY UPDATE:": 601px, live 276px
+- gap between "Open Gym sessions remain avail" and "Want to challenge yourself and": 13px, live 560px
+- gap between "Want to challenge yourself and" and "Plus, your first class is only": 285px, live 28px
+- gap between "Plus, your first class is only" and "PARKOUR BENEFITS": 613px, live 255px
 - background behind "PARKOUR BENEFITS": rgb(241, 245, 247), live rgb(226, 235, 237)
 - background behind "IMPROVE PHYSICAL FITNESS:": rgb(242, 245, 247), live rgb(226, 235, 238)
 - background behind "Parkour can help to improve overall phys": rgb(242, 244, 246), live rgb(227, 234, 237)
@@ -7603,7 +7789,7 @@ Total differences: 8031
 - band rgb(251, 255, 255) at y=5741 (1512px tall on live, left margin) not found in build
 - band rgb(253, 253, 253) at y=2658 (3767px tall, left margin) is in the build but not on live
 
-## personal-training @ 390px: 118 difference(s)
+## personal-training @ 390px: 119 difference(s)
 - heading missing: "NOT YOUR TYPICAL GYM. NOT YOUR TYPICAL TRAINER."
 - heading missing: "UNCONVENTIONAL BY DESIGN"
 - heading missing: "STRONGER AND SMARTER"
@@ -7690,6 +7876,7 @@ Total differences: 8031
 - words "- Client": color rgb(51, 51, 51), live rgb(219, 58, 52)
 - words "- Client": weight 300, live 700
 - spacing from "PERSONAL TRAINING AT WARRIOR S" to "WHY WARRIOR SPORTS PERSONAL TR": 1609px, live 1442px
+- gap between "Because when training is roote" and "WHY WARRIOR SPORTS PERSONAL TR": 447px, live 195px
 - icons: 6 in build, 10 on live
 - icon 2: color rgb(255, 255, 255), live rgb(219, 58, 52)
 - icon 3: color rgb(255, 255, 255), live rgb(219, 58, 52)
@@ -7827,7 +8014,7 @@ Total differences: 8031
 - band rgb(255, 255, 253) at y=603 (left margin): 262px tall, live 2925px
 - band rgb(254, 255, 255) at y=2264 (1479px tall, left margin) is in the build but not on live
 
-## summer-camps-in-springfield-mo @ 390px: 248 difference(s)
+## summer-camps-in-springfield-mo @ 390px: 249 difference(s)
 - page height 7038px, live 7568px
 - heading missing: "SUMMER CAMP PRICING"
 - heading missing: "SPRINGFIELD WARRIOR REGISTRATION"
@@ -8051,6 +8238,7 @@ Total differences: 8031
 - words "(417) 894-7319": underline true, live false
 - spacing from "KIDS STAY FIT AND HEALTHY" to "AT OUR INCREDIBLE SUMMER CAMPS": 0px, live 90px
 - spacing from "AT OUR INCREDIBLE SUMMER CAMPS" to "SUMMER CAMPS IN SPRINGFIELD — ": 1284px, live 1584px
+- gap between "Come join us at our camps, whi" and "SUMMER CAMPS IN SPRINGFIELD — ": 98px, live 568px
 - background behind "KIDS STAY FIT AND HEALTHY": rgb(22, 22, 22), live rgb(219, 54, 47)
 - background behind "AT OUR INCREDIBLE SUMMER CAMPS": rgb(22, 22, 22), live rgb(64, 81, 92)
 - background behind "SUMMER CAMPS IN SPRINGFIELD — 2026 DATES": rgb(242, 246, 248), live rgb(226, 236, 237)
@@ -8092,7 +8280,7 @@ Total differences: 8031
 - band rgb(248, 254, 254) at y=159 (left margin): 65px tall, live 1514px
 - band rgb(255, 255, 255) at y=655 (1052px tall, left margin) is in the build but not on live
 
-## wnl-competitions @ 390px: 76 difference(s)
+## wnl-competitions @ 390px: 79 difference(s)
 - page height 3561px, live 4245px
 - heading missing: "10-26-2024 WNL Competition Registration Form"
 - heading "WNL COMPETITIONS IN SPRINGFIELD MISSOURI": left edge 20px, live 29px
@@ -8146,6 +8334,9 @@ Total differences: 8031
 - words "will go up after October 12th!": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
 - words "will go up after October 12th!": weight 300, live 400
 - spacing from "WNL COMPETITIONS IN SPRINGFIEL" to "WNL REGIONAL QUALIFIERS": 724px, live 1114px
+- gap between "WNL COMPETITIONS IN SPRINGFIEL" and "WNL REGIONAL QUALIFIERS": 542px, live 938px
+- gap between "October 26, 2024" and "Early bird pricing for these c": 14px, live 171px
+- gap between "Fill out your information usin" and "Don't wait to register - The e": 13px, live 79px
 - icons: 6 in build, 7 on live
 - icon 2: color rgb(255, 255, 255), live rgb(219, 58, 52)
 - icon 3: left edge 70px, live 29px
@@ -8171,16 +8362,20 @@ Total differences: 8031
 - band rgb(251, 251, 251) at y=2722 (667px tall, left margin) is in the build but not on live
 ## Notes
 
-Gate v2.12, round 11. Model: Grok 4.7. The live map, the scripts, the tolerances, and PIXEL_TOL were not edited. No allow entries were added.
+Gate v2.12, then v2.13, round 11. Model: Grok 4.7. The live map, the scripts, the tolerances, and PIXEL_TOL were not edited. No allow entries were added. Gate v2.13 (`5a5b4e4`) landed on the branch before this could be pushed, so the list above is v2.13.
 
-Before, on gate v2.12, commit 666f552 was 8,038 differences. Home 4/4/0, about 4/4/2, kids-classes 0/0/3. That measurement included the white strips v2.12 added on the round 10 preview: about at 1920 and 1280, `band rgb(250, 254, 255) at y=3677 (138px tall)`, and about at 390, `band rgb(250, 254, 255) at y=4926 (66px tall)`. After the coaches photo, the partner-band spacing, the partnerships join, the phone bullet list, the About intro padding, and the live partnerships gradient, the total is 8,031. Home is 3/3/0, about is 2/2/1, and kids-classes is 0/0/3. No other page rose. Those three strip lines are gone. About's remaining lines are wraps.
+On gate v2.12, commit 666f552 was 8,038 differences. Home 4/4/0, about 4/4/2, kids-classes 0/0/3. That about count included the strips v2.12 added on the round 10 preview: `band rgb(250, 254, 255) at y=3677 (138px tall)` at 1920 and 1280, and `band rgb(250, 254, 255) at y=4926 (66px tall)` at 390. After the coaches photo, the partner-band spacing, the partnerships join, the phone bullet list, the About intro padding, and the live partnerships gradient, the same screenshots on v2.12 are 8,031. Home 3/3/0, about 2/2/1, kids-classes 0/0/3. Those three strip lines are gone. No other page rose on v2.12.
+
+The same screenshots on v2.13 are 8,222. Home 5/5/2, about 2/2/4, kids-classes 3/3/5. The added lines are the new gap check. About at 1920 and 1280 stays at the two testimonial wraps. The partnerships grey is rgb(242, 245, 246) and runs into the Perseverance navy at all three widths.
 
 The "BE AN EVERYDAY WARRIOR!" photo uses live's CSS: `background-size: contain`, `background-position: 100% 0`, `min-height: 632px`, on the 750 by 669 image. The right coach's arm is fully visible at 1920 and 1280. At 390 the full photo is visible, arm included, at 310 by 277. Live's phone image is 350 by 312. Matching that box made the white band at y=8160 1,035px against live's 905px, so the smaller photo stays. `.partner-band` has no box-shadow. It is `background: rgb(40, 82, 118)` with its padding.
 
-The phone bullet list uses live's 41px line height and no gap between items. Live's section padding is 20px. The items step by 42px (live 41px). The black strip is 250px against live's 277px, inside the band limit, and home at 390 matches.
+The phone bullet list uses live's 41px line height and no gap between items. Live's section padding is 20px. The items step by 42px (live 41px). The black strip is 250px against live's 277px, and home at 390 has no band line.
 
-The About intro section uses live's padding. At 800px and up that is 90px above the paragraph and 90px of white before the grey flag band. Below 800px it is 80px and 80px. Live's paragraph margin-bottom is 0. The "CURIOUS ABOUT THE COLORS" heading is at y=1261 against live's 1262. The paragraph itself stays 44px lower than live because the hero ends later.
+The About intro uses live's padding: 90px above the paragraph and 90px of white before the grey flag band from 800px up, and 80px and 80px below that. The paragraph's margin-bottom is 0. The "CURIOUS ABOUT THE COLORS" heading is at y=1261 against live's 1262 on desktop, and at y=1601 against live's 1610 at 390. The paragraph stays lower than live because the trust bar is in the flow under the hero.
 
-The partnerships band uses live's background, `linear-gradient(rgba(229, 234, 237, 0.5), rgba(229, 234, 237, 0.5))`. Over white that is rgb(242, 245, 246). The white between the flag grey and this band is 700px against live's 701px, and the grey runs into the Perseverance navy at 1920, 1280, and 390. That join is padding on the grey block: 138px from 800px up and 70px below. A solid rgb(241, 245, 247) was the same grey by eye, and the gate's quality-55 JPEG pulled it into the white run, reporting one 2,118px band. The live gradient keeps the two runs separate. The grey was not darkened, and nothing was painted outside the box. The phone-width space under the footer for the sticky Call bar is unchanged.
+The partnerships band uses live's background, `linear-gradient(rgba(229, 234, 237, 0.5), rgba(229, 234, 237, 0.5))`, which is rgb(242, 245, 246) over white. The white between the flag grey and this band is 700px against live's 701px. The join into the navy is padding on the grey block, 138px from 800px up and 70px below. A solid rgb(241, 245, 247) was the same grey by eye, and v2.12's quality-55 JPEG pulled it into the white run above, reporting one 2,118px band. The live gradient keeps the runs separate. The grey was not darkened. The phone-width space under the footer for the sticky Call bar is unchanged.
+
+v2.13's new lines, with the CSS left as live has it. Home at 1920 and 1280, the bullet text to "GET READY TO" is 107px against live's 112px. The trust-bar text sits in that span and is 45px tall, so the check reports 62px. About at 390, the intro paragraph to "CURIOUS ABOUT THE COLORS" is 276px against live's 370px because the paragraph starts at y=765 against live's 680, while the heading is already at live's y. The white before the grey flag band is 80px against live's 81px. Kids Classes and the other gap lines are the same kind of section spacing. None of these were closed by moving type or painting a band.
 
 The other open lines are wraps, at live's size, width, and letter-spacing. Kids Classes at 390 also reads the background behind "FUN AND CHALLENGING" as rgb(20, 20, 24) against live rgb(23, 40, 50), on the hero photo, which has no overlay. The Memorial Day sentence stays in the Community Murph paragraph. Paragraph links stay rgb(219, 58, 52) with no underline.
