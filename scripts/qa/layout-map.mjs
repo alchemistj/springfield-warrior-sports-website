@@ -219,6 +219,16 @@ for (const width of widths) {
       const map = await page.evaluate(collect);
       const dir = path.join(outDir, String(width));
       mkdirSync(dir, { recursive: true });
+      // v2.7: hide fixed elements in the bottom half (mobile Call bar, reCAPTCHA badge) so a full-page screenshot
+      // doesn't paint them over whatever content sits at that spot of the first screen.
+      await page.addStyleTag({ content: "[data-qa-fixed]{visibility:hidden !important}" });
+      await page.evaluate(() => {
+        for (const el of document.body.querySelectorAll("*")) {
+          if (getComputedStyle(el).position !== "fixed") continue;
+          const r = el.getBoundingClientRect();
+          if (r.top > window.innerHeight * 0.5) el.setAttribute("data-qa-fixed", ""); // bottom bars and badges only
+        }
+      });
       await page.screenshot({ path: path.join(dir, `${slug}.png`), fullPage: true });
       writeFileSync(path.join(dir, `${slug}.json`), JSON.stringify({ url, width, ...map }, null, 1));
       console.log(`${width} ${slug} items=${map.items.length}`);

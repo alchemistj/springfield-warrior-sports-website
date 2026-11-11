@@ -14,7 +14,7 @@ const [liveDir, buildDir, reportFile] = args;
 const allowIdx = args.indexOf("--allow");
 const allow = allowIdx > -1 ? JSON.parse(readFileSync(args[allowIdx + 1], "utf8")) : [];
 
-const TOL = { x: 24, wPct: 0.12, wAbs: 40, size: 2, weight: 100, color: 6 }; // color 6 (v2.5): live's light grey band is 14 off white
+const TOL = { x: 24, wPct: 0.12, wAbs: 40, size: 0, weight: 100, color: 6 }; // color 6 (v2.5): live's light grey band is 14 off white
 
 const norm = (s) => (s || "").toLowerCase().replace(/[‘’“”'"]/g, "").replace(/[^a-z0-9$]+/g, " ").trim();
 export function imageKey(src) {
