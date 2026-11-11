@@ -1,11 +1,9 @@
 # Layout comparison: live vs build
-Total differences: 8035
+Total differences: 8031
 
-## about @ 1920px: 4 difference(s)
+## about @ 1920px: 2 difference(s)
 - text "We had our son’s 10th birthday": 5 line(s), live 4
 - text "My daughter started training h": 7 line(s), live 6
-- band rgb(254, 255, 255) at y=1616 (left margin): 2118px tall, live 701px
-- band rgb(254, 255, 255) at y=1616 (right margin): 2118px tall, live 701px
 
 ## best-gyms-in-springfield @ 1920px: 376 difference(s)
 - page height 6261px, live 7180px
@@ -3200,11 +3198,9 @@ Total differences: 8035
 - band rgb(251, 255, 254) at y=1671 (1868px tall on live, right margin) not found in build
 - band rgb(252, 252, 252) at y=2563 (328px tall, right margin) is in the build but not on live
 
-## about @ 1280px: 4 difference(s)
+## about @ 1280px: 2 difference(s)
 - text "We had our son’s 10th birthday": 5 line(s), live 4
 - text "My daughter started training h": 7 line(s), live 6
-- band rgb(254, 255, 255) at y=1616 (left margin): 2118px tall, live 701px
-- band rgb(254, 255, 255) at y=1616 (right margin): 2118px tall, live 701px
 
 ## best-gyms-in-springfield @ 1280px: 375 difference(s)
 - page height 6261px, live 7180px
@@ -8173,19 +8169,18 @@ Total differences: 8035
 - band rgb(255, 254, 255) at y=600 (left margin): 318px tall, live 413px
 - band rgb(249, 248, 253) at y=1579 (2566px tall on live, left margin) not found in build
 - band rgb(251, 251, 251) at y=2722 (667px tall, left margin) is in the build but not on live
-
 ## Notes
 
 Gate v2.12, round 11. Model: Grok 4.7. The live map, the scripts, the tolerances, and PIXEL_TOL were not edited. No allow entries were added.
 
-Before, on gate v2.12, commit 666f552 was 8,038 differences. Home 4/4/0, about 4/4/2, kids-classes 0/0/3. After the coaches photo, the partner-band shadow, and the partnerships join, the total was 8,031. Home 3/3/0, about 2/2/1, kids-classes 0/0/3. This addendum changes the phone bullet list and the About intro padding. The total is now 8,035. Home stays 3/3/0, about is 4/4/1, and kids-classes stays 0/0/3. No page outside about changed. The four new about lines are the JPEG reading below. The Vercel preview of 0f0d436 measures the same on the three pages: home 3/3/0, about 4/4/1, kids-classes 0/0/3.
+Before, on gate v2.12, commit 666f552 was 8,038 differences. Home 4/4/0, about 4/4/2, kids-classes 0/0/3. That measurement included the white strips v2.12 added on the round 10 preview: about at 1920 and 1280, `band rgb(250, 254, 255) at y=3677 (138px tall)`, and about at 390, `band rgb(250, 254, 255) at y=4926 (66px tall)`. After the coaches photo, the partner-band spacing, the partnerships join, the phone bullet list, the About intro padding, and the live partnerships gradient, the total is 8,031. Home is 3/3/0, about is 2/2/1, and kids-classes is 0/0/3. No other page rose. Those three strip lines are gone. About's remaining lines are wraps.
 
 The "BE AN EVERYDAY WARRIOR!" photo uses live's CSS: `background-size: contain`, `background-position: 100% 0`, `min-height: 632px`, on the 750 by 669 image. The right coach's arm is fully visible at 1920 and 1280. At 390 the full photo is visible, arm included, at 310 by 277. Live's phone image is 350 by 312. Matching that box made the white band at y=8160 1,035px against live's 905px, so the smaller photo stays. `.partner-band` has no box-shadow. It is `background: rgb(40, 82, 118)` with its padding.
 
 The phone bullet list uses live's 41px line height and no gap between items. Live's section padding is 20px. The items step by 42px (live 41px). The black strip is 250px against live's 277px, inside the band limit, and home at 390 matches.
 
-The About intro section uses live's padding. At 800px and up that is 90px above the paragraph and 90px of white before the grey flag band. Below 800px it is 80px and 80px. Live's paragraph margin-bottom is 0. The "CURIOUS ABOUT THE COLORS" heading is at y=1261 against live's 1262. The paragraph itself stays 44px lower than live because the hero ends later. The partnerships grey still runs into the Perseverance band at 1920, 1280, and 390.
+The About intro section uses live's padding. At 800px and up that is 90px above the paragraph and 90px of white before the grey flag band. Below 800px it is 80px and 80px. Live's paragraph margin-bottom is 0. The "CURIOUS ABOUT THE COLORS" heading is at y=1261 against live's 1262. The paragraph itself stays 44px lower than live because the hero ends later.
 
-On the PNG, the white between the flag grey and the partnerships grey is 700px against live's 701px, and the partnerships grey is rgb(241, 245, 247) through to the navy. The gate compresses the screenshot to quality 55 before it reads bands. That JPEG pulls rgb(241, 245, 247) within 8 of the white run, so it reports one 2,118px white band at 1920 and 1280. The grey was not darkened to split the run.
+The partnerships band uses live's background, `linear-gradient(rgba(229, 234, 237, 0.5), rgba(229, 234, 237, 0.5))`. Over white that is rgb(242, 245, 246). The white between the flag grey and this band is 700px against live's 701px, and the grey runs into the Perseverance navy at 1920, 1280, and 390. That join is padding on the grey block: 138px from 800px up and 70px below. A solid rgb(241, 245, 247) was the same grey by eye, and the gate's quality-55 JPEG pulled it into the white run, reporting one 2,118px band. The live gradient keeps the two runs separate. The grey was not darkened, and nothing was painted outside the box. The phone-width space under the footer for the sticky Call bar is unchanged.
 
 The other open lines are wraps, at live's size, width, and letter-spacing. Kids Classes at 390 also reads the background behind "FUN AND CHALLENGING" as rgb(20, 20, 24) against live rgb(23, 40, 50), on the hero photo, which has no overlay. The Memorial Day sentence stays in the Community Murph paragraph. Paragraph links stay rgb(219, 58, 52) with no underline.
