@@ -719,6 +719,31 @@ Lines left, with live's values. The ruled items from this round are unchanged:
 - Header CONTACT is 53px against 48px, and SIGN OUR WAIVER is 214px against 209px, at 390.
 - Competitions at 390: the ice run at y=410 is not in the build. The white run at y=3058 is 713px against 798px, and a 550px white run at y=544 is in the build only. The hero-to-September spacing is 909px against 813px.
 
+## Layout parity batch 3, gate v2.18
+
+Model: Grok 4.7. Measured locally against `docs/qa/layout-map/live` with `layout-map.mjs` and `compare-layout.mjs`. The live map, the scripts, the tolerances, and `layout-allow.json` were not edited. No allow entries were added. Lighthouse was not re-run. The before column is the gate v2.17 count on the batch 2 preview, from the batch 3 request.
+
+| Page | Before 1920 / 1280 / 390 | After 1920 / 1280 / 390 |
+|---|---|---|
+| fitness-classes | 256 / 256 / 135 | 14 / 15 / 19 |
+| personal-training | 383 / 387 / 169 | 16 / 17 / 36 |
+| parkour | 205 / 204 / 103 | 11 / 11 / 10 |
+| homeschool-sports-and-classes-springfield-mo | 106 / 108 / 102 | 7 / 5 / 19 |
+| laser-tag | 206 / 206 / 177 | 0 / 0 / 15 |
+| nerf-wars | 179 / 176 / 151 | 12 / 10 / 13 |
+
+Total differences: 3509 before, 230 after.
+
+The six pages use dedicated bodies in `src/components/batch3/` and `src/styles/batch3.css`. Shared header, footer, trust bar, and mobile bar were not restyled. Birthday-parties at 1920 is still 2, and contact at 1920 matches, the same as the batch 2 record. Central Forms wiring is unchanged (`data-form-key`, submit path, success message). Personal training fields are 52px with a 1px `rgb(104, 110, 119)` border, empty placeholders except the phone `(999) 999-9999`, and 20px radios on the same row as age. Laser and nerf use `event-waitlist`, a `*` mark, and the visible legend `"*" indicates required fields`.
+
+Lines the gate still reports that disagree with live's CSS or with a full-size look:
+
+- Words "- Client" is grey 400 because the matcher hits "clients" in "We work with clients…". The attribution is already Muli 700, `rgb(219, 58, 52)`.
+- "$20 Drop-In" text-align is left. Live's computed align is center, and the box is 126px at x=602, the same left edge as the left-aligned price lines.
+- "THE ULTIMATE PARTY EXPERIENCE!" samples `rgb(245, 244, 244)` against `rgb(5, 6, 6)`. Both heroes are white type on the dark photo. The left margin beside that line is `rgb(13, 9, 7)` against `rgb(55, 27, 21)`.
+- IMG_2344 brightness 96 against 138 (pixel difference 45). IMG_2347 brightness 76 against 124 (pixel difference 51). IMG_2343 brightness 107 against 148 (pixel difference 43). Pricing-and-schedule brightness 65 against 126 at 1920 (pixel difference 64). These are the live photos re-encoded. Pulling the fitness cards up to the live image box covers the paragraph above them.
+- The homeschool gap from the first Junior Warrior sentence to "Availability" is 241px against 17px because live records that copy as one 308px text node. The page shows the three paragraphs, the plain availability line, and the check list.
+
 ## Open questions
 
 - Where GF18 should live, if it should be a page at all.

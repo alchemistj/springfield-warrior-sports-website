@@ -1,0 +1,80 @@
+---
+import { media } from "../batch2/media";
+import bannerBg from "../../assets/media/2023-03-Birthday-Parties-Banner.jpg";
+
+const intro = media("media/2025-12-IMG_2343-scaled.webp");
+const day = media("media/2023-04-Day1-029.webp");
+const shoots = media("media/2023-04-wsre-shoots.webp");
+const banner = typeof bannerBg === "string" ? bannerBg : bannerBg.src;
+const trial = "https://checkout.square.site/merchant/MLXTPBS97BGYV/checkout/B2M6XBNLKD4ZKFEUAPK4HWCQ";
+const gym = "https://square.link/u/GmmQ7iuL";
+---
+
+<section class="b3 pk-intro">
+  <div class="b3-wrap">
+    <div class="pk-note">
+      <h4>⚠️ Temporary Update:</h4>
+      <p>Parkour classes are currently paused for a short time.</p>
+      <p>Open Gym sessions remain available, and Parkour classes will be returning soon. Thank you for your understanding!</p>
+    </div>
+    <div class="b3-split">
+      <div>
+        <p>Want to challenge yourself and become stronger, faster, and more agile?<br /><br />Come try out parkour at Springfield Warrior Sports! Our Parkour gym in Springfield is the perfect place for people of all ages looking to build strength, agility, speed, balance, and self-confidence with a complete body workout. With our expert instructors guiding you through each obstacle course challenge – you're sure to improve your physical skills as well as boost your confidence in taking on new situations</p>
+        <p>Plus, your first class is only $5 Dollars – so you can see if this is right for you at an affordable price point.<br /><br /><strong class="b3-redlink">When:</strong><br /><strong>Beginner: </strong>Wednesdays 6-7pm<br /><strong>Intermediate: </strong>Wednesdays 7-8pm</p>
+        <a class="b3-btn navy" href={trial}>Try a class for $5</a>
+      </div>
+      {intro.src && <img src={intro.src} alt="" width={intro.width} height={intro.height} loading="lazy" decoding="async" />}
+    </div>
+  </div>
+</section>
+
+<section class="b3 b3-grey pk-benefits">
+  <div class="b3-wrap">
+    <h2>Parkour Benefits</h2>
+    <div class="pk-row">
+      {day.src && <img src={day.src} alt="" width={day.width} height={day.height} loading="lazy" decoding="async" />}
+      <div>
+        <h4>Improve Physical Fitness:</h4>
+        <p>Parkour can help to improve overall physical fitness and develop a greater strength, speed, stamina and balance. The movements involve a variety of exercises that work out several muscles at once, allowing for a complete body workout.</p>
+        <h4>Builds Self-Confidence:</h4>
+        <p>By learning how to overcome obstacles and accomplish difficult tasks such as running, jumping and climbing, Parkour can help build self-confidence as students become more competent in their abilities. As they learn to move freely with the environment around them, they become more confident in their own abilities to adapt and succeed in new situations.</p>
+      </div>
+    </div>
+    <div class="pk-row side">
+      <div>
+        <h4>Mental Stimulation:</h4>
+        <p>Parkour offers an enjoyable and mentally stimulating activity that allows students to practice coordination skills while having fun at the same time. It also encourages problem solving skills as students have to find creative ways of navigating through different obstacle courses and scenarios.</p>
+        <h4>Stress Relief:</h4>
+        <p>Parkour is a great way to reduce stress levels by letting off some steam while using physical activity as an outlet for negative emotions. The mental clarity that comes from focusing on the task at hand helps clear the mind of any distractions or worries that may be plaguing it, allowing for renewed focus and energy afterwards.</p>
+      </div>
+      <img src={"/\u200bStress-Relief.webp".replace("/", "/live/")} alt="" width="501" height="522" loading="lazy" decoding="async" />
+    </div>
+    <div class="pk-row">
+      {shoots.src && <img src={shoots.src} alt="" width={shoots.width} height={shoots.height} loading="lazy" decoding="async" />}
+      <div>
+        <h4>Community:</h4>
+        <p>Participants in Parkour can gain access to a strong supportive community of like-minded individuals who are all striving for personal growth through physical activity with each other's support and encouragement.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="b3 b3-band pk-pause" style={`background-image: linear-gradient(rgba(40, 82, 118, 0.87), rgba(40, 82, 118, 0.87)), url('${banner}')`}>
+  <div class="b3-wrap">
+    <h2 class="w920">parkour classes</h2>
+    <h2 class="w920">temporarily unavailable</h2>
+    <h3>Open Gym Is Open — Your First Visit Is Just $10</h3>
+    <p>$20 class drop in, $10 class drop in for current members<br />$35/monthly discounted Parkour add on for current members who want to attend one class per week<br />$60/monthly for Parkour gym membership, unlimited classes, and also includes unlimited Open Gym access<br />Sign up now for our introductory open gym session (Your first visit is just $10) at Springfield Warrior Sports' Parkour Gym today!</p>
+    <a class="b3-btn" href={gym}>Try open gym for $10</a>
+  </div>
+</section>
+
+<section class="b3 pk-more">
+  <div class="b3-wrap b3-split">
+    <img src="/live/&#8203;More-Than-Just-Physical.webp" alt="" width="520" height="542" loading="lazy" decoding="async" />
+    <div>
+      <h2>More Than Just<br />Physical</h2>
+      <p>With Parkour classes at Springfield Warrior Sports, you don't just get a physical workout; you also get a mental challenge as well. Working in a non-competitive environment helps create an atmosphere that encourages <a class="b3-link" href="/best-gyms-in-springfield/">growth for everyone involved</a> – no matter their skill level. So come on down and give Parkour a try today – we promise it won't disappoint!</p>
+    </div>
+  </div>
+</section>
