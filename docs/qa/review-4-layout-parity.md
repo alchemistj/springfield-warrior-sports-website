@@ -117,3 +117,14 @@ Not pixel-for-pixel exactness, and far from sloppy. A page is done when someone 
 ### Merging (Josh, 11 Nov)
 
 While this repo isn't serving the live site, Claude merges each PR once it's ready, without asking. That covers the batch PRs and, at the end, #1 into `main`. DNS, the live-site cutover and anything touching the live WordPress site still need Josh. Batch 1 (#3) was merged into `cursor/astro-rebuild` on 11 Nov.
+
+## Batch 3 (from 11 Nov, after batch 2 passed and merged)
+
+Batches 1 and 2 are merged into `cursor/astro-rebuild` (#3, #4). Batch 3 covers the program pages: **fitness-classes, personal-training, parkour, homeschool-sports-and-classes-springfield-mo, laser-tag, nerf-wars.** Batch 4 will cover meet-the-team, best-gyms-in-springfield and the thank-you pages.
+
+Starting point on the batch 2 preview, gate v2.17 (1920 / 1280 / 390): fitness-classes 256/256/135, personal-training 383/387/169, parkour 205/204/103, homeschool 106/108/102, laser-tag 206/206/177, nerf-wars 179/176/151.
+
+Done means (Quality bar above):
+- Nobody comparing a page with live at full size, at 1920, 1280 and 390, would notice a difference. The gate (v2.18) finds the differences; it isn't the target.
+- Batch 1 and 2 pages stay where they are, and no other page gets worse.
+- All of batch 1 and 2's lessons apply from the start: live's computed CSS for every value; forms, icons, list markers, shaded boxes and section spacing all taken from live; no paint aimed at the checker; no hidden words; no allow entries; Central Forms wiring unchanged.

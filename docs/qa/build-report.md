@@ -719,6 +719,90 @@ Lines left, with live's values. The ruled items from this round are unchanged:
 - Header CONTACT is 53px against 48px, and SIGN OUR WAIVER is 214px against 209px, at 390.
 - Competitions at 390: the ice run at y=410 is not in the build. The white run at y=3058 is 713px against 798px, and a 550px white run at y=544 is in the build only. The hero-to-September spacing is 909px against 813px.
 
+## Layout parity batch 3, gate v2.18
+
+Model: Grok 4.7. Measured locally against `docs/qa/layout-map/live` with `layout-map.mjs` and `compare-layout.mjs`. The live map, the scripts, the tolerances, and `layout-allow.json` were not edited. No allow entries were added. Lighthouse was not re-run. The before column is the gate v2.17 count on the batch 2 preview, from the batch 3 request.
+
+| Page | Before 1920 / 1280 / 390 | After 1920 / 1280 / 390 |
+|---|---|---|
+| fitness-classes | 256 / 256 / 135 | 14 / 15 / 19 |
+| personal-training | 383 / 387 / 169 | 16 / 17 / 36 |
+| parkour | 205 / 204 / 103 | 11 / 11 / 10 |
+| homeschool-sports-and-classes-springfield-mo | 106 / 108 / 102 | 7 / 5 / 19 |
+| laser-tag | 206 / 206 / 177 | 0 / 0 / 15 |
+| nerf-wars | 179 / 176 / 151 | 12 / 10 / 13 |
+
+Total differences: 3509 before, 230 after.
+
+The six pages use dedicated bodies in `src/components/batch3/` and `src/styles/batch3.css`. Shared header, footer, trust bar, and mobile bar were not restyled. Birthday-parties at 1920 is still 2, and contact at 1920 matches, the same as the batch 2 record. Central Forms wiring is unchanged (`data-form-key`, submit path, success message). Personal training fields are 52px with a 1px `rgb(104, 110, 119)` border, empty placeholders except the phone `(999) 999-9999`, and 20px radios on the same row as age. Laser and nerf use `event-waitlist`, a `*` mark, and the visible legend `"*" indicates required fields`.
+
+Lines the gate still reports that disagree with live's CSS or with a full-size look:
+
+- Words "- Client" is grey 400 because the matcher hits "clients" in "We work with clients…". The attribution is already Muli 700, `rgb(219, 58, 52)`.
+- "$20 Drop-In" text-align is left. Live's computed align is center, and the box is 126px at x=602, the same left edge as the left-aligned price lines.
+- "THE ULTIMATE PARTY EXPERIENCE!" samples `rgb(245, 244, 244)` against `rgb(5, 6, 6)`. Both heroes are white type on the dark photo. The left margin beside that line is `rgb(13, 9, 7)` against `rgb(55, 27, 21)`.
+- IMG_2344 brightness 96 against 138 (pixel difference 45). IMG_2347 brightness 76 against 124 (pixel difference 51). IMG_2343 brightness 107 against 148 (pixel difference 43). Pricing-and-schedule brightness 65 against 126 at 1920 (pixel difference 64). These are the live photos re-encoded. Pulling the fitness cards up to the live image box covers the paragraph above them.
+- The homeschool gap from the first Junior Warrior sentence to "Availability" is 241px against 17px because live records that copy as one 308px text node. The page shows the three paragraphs, the plain availability line, and the check list.
+
+## Layout parity batch 3, round 2, gate v2.18
+
+Model: Grok 4.7. Measured locally against `docs/qa/layout-map/live`. The live map, the scripts, the tolerances, and `layout-allow.json` were not edited. No allow entries were added. The before column is the round 1 count on `d8386fd`.
+
+| Page | Before 1920 / 1280 / 390 | After 1920 / 1280 / 390 |
+|---|---|---|
+| fitness-classes | 14 / 15 / 19 | 10 / 11 / 14 |
+| personal-training | 16 / 17 / 36 | 10 / 12 / 35 |
+| parkour | 11 / 11 / 10 | 5 / 6 / 12 |
+| homeschool-sports-and-classes-springfield-mo | 7 / 5 / 19 | 7 / 5 / 19 |
+| laser-tag | 0 / 0 / 15 | 0 / 0 / 15 |
+| nerf-wars | 12 / 10 / 13 | 12 / 10 / 13 |
+
+Total differences: 230 before, 196 after. Birthday-parties is still 2 / 1 / 13, and contact is still 0 / 0 / 2.
+
+The personal-training form sits in a white card. Live’s `#gform_wrapper_15` is `background #fff`, padding 50px, and padding 30px under 767px. Border-radius is 0 and there is no box-shadow. Labels are `#000`, Epilogue, 18px, left aligned. Fields stay 52px with the `rgb(104, 110, 119)` border, the phone placeholder `(999) 999-9999`, and `data-form-key="personal-training"`.
+
+The fitness price box is 850px wide with `border: 15px solid #285276` (880px including the frame) and the live check icon, 26px, `rgb(219, 58, 52)`. OCR photos are 413px tall at 1024px and up, 251px below that, `object-fit: cover`. No brightness filter was added. The photos are the same files as round 1.
+
+The parkour flags photo is 563×750 on desktop (`margin-top: -32px`, `object-fit: cover`) and 453px tall on smaller screens. A 28px gap sits between “Come try out parkour…” and “Plus, your first class…”. From 1024px up, the benefit rows are 100px apart and the photos are 541px and 522px tall.
+
+Nerf’s book-now phone line and the birthday sentence are two centered lines. The phone stays underlined. Homeschool’s phone is a tel link with no underline and weight 400. “class for only $ 5.” stays underlined, weight 600.
+
+Lines left that disagree with a full-size look, with live’s values:
+
+- “- Client” is still the matcher hitting “clients”. The attribution is Muli 700, `rgb(219, 58, 52)`.
+- “$20 Drop-In” is left-aligned. Live’s computed align is center on a 126px box at the same left edge as the other prices.
+- The fitness price frame is sampled as the background beside “$20 Drop-In” (`rgb(2, 9, 37)` against `rgb(42, 32, 31)` at 390). The frame is live’s 15px `#285276`.
+- OCR heading spacing is 639px against 523px. The photos are 413px tall, and the paragraph above them stays visible (11px gap).
+- Photo brightness is unchanged: IMG_2344 96 against 138, IMG_2347 76 against 124, IMG_2343 106 against 148. Same files, no overlay added.
+- Parkour at 390: the gap from “Plus, your first class…” to “PARKOUR BENEFITS” is 139px against 255px, and “Parkour offers an enjoyable…” is 8 lines against 7. Desktop row spacing matches the live 100px image gap.
+
+## Layout parity batch 3, round 3, gate v2.18
+
+Model: Grok 4.7. Measured locally against `docs/qa/layout-map/live`. The live map, the scripts, the tolerances, and `layout-allow.json` were not edited. No allow entries were added. The before column is the round 2 count on `efbf429`.
+
+| Page | Before 1920 / 1280 / 390 | After 1920 / 1280 / 390 |
+|---|---|---|
+| fitness-classes | 10 / 11 / 14 | 5 / 6 / 14 |
+| personal-training | 10 / 12 / 35 | 10 / 12 / 35 |
+| parkour | 5 / 6 / 12 | 5 / 5 / 12 |
+| homeschool-sports-and-classes-springfield-mo | 7 / 5 / 19 | 7 / 5 / 19 |
+| laser-tag | 0 / 0 / 15 | 0 / 0 / 15 |
+| nerf-wars | 12 / 10 / 13 | 12 / 10 / 13 |
+
+Total differences: 196 before, 185 after. Birthday-parties is still 2 / 1 / 13, and contact is still 0 / 0 / 2.
+
+The OCR card photos use live’s clipped frame, not the image file’s 413px height. `.tve_image_frame` is `height: 288.855px` with `overflow: hidden` from 1024px up. The first photo is shifted `-54px` and the second `-15px`. Measured frames: 288.8×546 at 1920 and 1280. At 390 the frame is `height: 100%`, so the photo is the aspect-ratio box, 249×332. The paragraph above the cards stays visible (11px gap).
+
+The parkour flags photo uses the same pattern. The frame is `height: 600px` from 768px up, and the image inside is shifted `-32px`. Measured frame: 600×563 at 1920 and 1280. At 390 the frame is not clipped; the photo is 451×338, above the copy. Live’s saved map still records the inner `<img>` at 750px, which is the unclipped element inside that 600px frame.
+
+The OCR heading-spacing line at 1920 and 1280 is gone. The parkour 390 wrap is unchanged (8 lines against 7): that photo was already the unclipped aspect height.
+
+Lines left that disagree with the saved map, with live’s values:
+
+- “- Client”, “$20 Drop-In” alignment, the nerf hero sample, and the homeschool Availability gap stay as previously ruled.
+- IMG_2344 pixel difference is 39. Same file, no overlay. The compared region is now the 288.855px frame.
+- Parkour’s gap from “Plus, your first class…” to “PARKOUR BENEFITS” is 252px against the map’s 341px, and the temporary-update heading to “PARKOUR BENEFITS” is 911px against 1041px. The visible frame is live’s 600px. The map’s 341px gap follows the 750px image element inside the frame.
+
 ## Open questions
 
 - Where GF18 should live, if it should be a page at all.

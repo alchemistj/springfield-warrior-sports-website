@@ -1,0 +1,91 @@
+---
+import { media } from "../batch2/media";
+import pricingBg from "../../assets/media/2023-03-Pricing-and-Schedule.webp";
+
+const one = media("media/2025-12-IMG_2344-scaled.webp");
+const two = media("media/2025-12-IMG_2347-scaled.webp");
+const confidence = media("media/2023-03-improve-confidence.webp");
+const pricing = typeof pricingBg === "string" ? pricingBg : pricingBg.src;
+const trial = "https://checkout.square.site/merchant/MLXTPBS97BGYV/checkout/B2M6XBNLKD4ZKFEUAPK4HWCQ";
+const prices = [
+  ["$20 Drop-In", ""],
+  ["$60 Monthly Membership ", "(once per week)"],
+  ["$100 Monthly Membership ", "(twice per week)"],
+  ["$40 Weight Lifting Membership ", "(18+, access to weight-lifting area only)"],
+];
+---
+
+<section class="b3 fit-intro">
+  <div class="b3-wrap">
+    <p class="fit-kicker">Are you looking for a fun and unique way to stay fit?</p>
+    <div class="b3-prose">
+      <p>Look no further! Springfield Warrior Sports offers amazing adult Obstacle Course Race (OCR) fitness classes that combine traditional circuit-style exercises with obstacle courses. You'll have the chance to challenge yourself in new and creative ways, using your own personal goals as motivation.</p>
+      <p>Our experienced instructors will be there every step of the way to help guide you through your fitness journey! If you're looking for more one-on-one support, <a class="b3-navy" href="/personal-training/">personal training</a> is also available.</p>
+      <p>Our OCR classes in Springfield give you an unforgettable workout experience like no other. You’ll push your body beyond what it thought possible — all while having a blast. Every time you come back for another session, you can count on even more challenging obstacles and exercises designed just for you!</p>
+      <p class="fit-sign">Sign up now for ADULT O.C.R workout classes from Springfield Warrior Sports today and start reaching those fitness goals faster than ever before!</p>
+    </div>
+  </div>
+</section>
+
+<section class="b3 b3-band fit-price" style={`background-image: url('${pricing}')`}>
+  <div class="b3-wrap">
+    <h2>Pricing and Schedule</h2>
+    <p class="fit-lead">We now offer two OCR classes each week — <span class="ice">Tuesday and Thursday from 6-7 pm </span><span class="w600">— giving you more flexibility and more opportunities to train.</span></p>
+    <p class="choose">Choose the membership option that fits your goals:</p>
+    <div class="fit-card">
+      <ul class="b3-facts fit-grid">
+        {prices.map(([price, note]) => (
+          <li><svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z" /></svg><span>{price}{note && <span class="navy">{note}</span>}</span></li>
+        ))}
+      </ul>
+    </div>
+    <a class="b3-btn block" href={trial}>Try your first class for just $5 bucks</a>
+  </div>
+</section>
+
+<section class="b3 b3-ice fit-ocr">
+  <div class="b3-wrap">
+    <h2 class="w920">Obstacle Course Racing Classes:</h2>
+    <h2 class="fit-sub wide">A unique workout experience</h2>
+    <p class="lead18">OCR workouts and fitness classes are designed to help you conquer obstacles both mentally and physically, while having fun at the same time! Let’s explore further why obstacle course racing is such an effective form of exercise.</p>
+    <h3 class="fit-what">What is OCR Fitness?</h3>
+    <p class="body16">OCR fitness classes take the <a class="b3-link" href="/best-gyms-in-springfield/">best of the traditional gym</a> experience and add an extra layer of excitement. By incorporating a variety of obstacles into each class, participants are able to get creative with their workouts and challenge themselves in ways they wouldn’t be able to in a regular gym setting. This helps keep motivation levels high and provides an outlet for those looking for something different than the typical exercise bike or treadmill routine.</p>
+    <div class="fit-cards">
+      <article>
+        <div class="fit-shot">
+          {one.src && <img src={one.src} alt="" width={one.width} height={one.height} loading="lazy" decoding="async" />}
+        </div>
+        <div class="pad">
+          <h3>OCR Fitness Class<br />Benefits</h3>
+          <p>The benefits of OCR fitness classes extend far beyond just physical exercise; it also provides many mental health benefits as well. The unique challenges presented by each obstacle help boost confidence levels by teaching participants how to problem-solve on their feet and push their limits further than they thought possible.</p>
+          <p>Additionally, the group atmosphere also encourages camaraderie among participants, which can help build strong connections between members who may not have otherwise interacted with one another in a regular gym setting.</p>
+        </div>
+      </article>
+      <article class="soft">
+        <div class="fit-shot">
+          {two.src && <img src={two.src} alt="" width={two.width} height={two.height} loading="lazy" decoding="async" />}
+        </div>
+        <div class="pad">
+          <h3>Short-Term Goals and<br />Long-Term Gains</h3>
+          <p>OCR training has been proven to improve overall physical health as well as strength, agility, balance, coordination, endurance, and speed - all essential components needed for any type of longevity goal, athletic activity, or sport.</p>
+          <p>The combination of low-impact exercises along with more intense activities helps train the body in ways that cannot be replicated in other forms of exercise, making it an excellent choice for anyone looking to switch up their workout routine or take their athletic performance up a notch.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="b3 fit-conf">
+  <div class="b3-wrap">
+    <h2 class="w920">Improved Confidence Levels<br />and Mental Health</h2>
+    <div class="b3-split">
+      {confidence.src && <img src={confidence.src} alt="" width={confidence.width} height={confidence.height} loading="lazy" decoding="async" />}
+      <div>
+        <p>Our Obstacle Course Racing (OCR) workouts and fitness classes in Springfield, MO provide a unique way to get fit while also having fun! Not only do you get the physical benefits from this type of workout, but you also receive numerous mental health benefits such as improved confidence levels and connection building with other members within the group atmosphere that these classes offer.</p>
+        <p>Additionally, many enjoy pairing these fitness classes with our <a class="b3-link" href="/parkour/">Parkour class options</a> adding even more unique workout sessions each week.</p>
+        <p class="fit-cta">So if you’re ready for a new challenge, sign up for our OCR Fitness Classes today! You won't regret it!</p>
+        <a class="b3-btn navy" href={trial}>Sign-up here!</a>
+      </div>
+    </div>
+  </div>
+</section>

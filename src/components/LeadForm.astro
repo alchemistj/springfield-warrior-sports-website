@@ -13,7 +13,8 @@ const tone = Astro.props.tone ?? (event.id === "contact" ? "card" : "panel");
 const phone = site.phone;
 const camp = event.id === "camp-registration";
 const hideLabels = tone === "card";
-const requiredMark = event.id === "birthday-party" ? " *" : " (Required)";
+const quietPlaceholders = event.id === "personal-training" || event.id === "laser" || event.id === "nerf";
+const requiredMark = event.id === "birthday-party" ? " *" : event.id === "laser" || event.id === "nerf" ? "*" : " (Required)";
 
 function campChoice(choice: string): { date: string; time: string } | null {
   const match = choice.match(/^(.+?) (\d{1,2}(?::\d{2})? [AP]M - .+)$/);
@@ -135,11 +136,11 @@ function isMessage(field: FormField): boolean {
             <span class="label">{field.label}{field.required ? <span class="req">{requiredMark}</span> : ""}</span>
             <div class="name-row">
               <div>
-                <input id={`${event.id}-first`} name="first" type="text" autocomplete="given-name" maxlength="100" required={field.required} placeholder={event.id === "wnl" ? undefined : "First Name"} aria-label="First Name" data-role="first" />
+                <input id={`${event.id}-first`} name="first" type="text" autocomplete="given-name" maxlength="100" required={field.required} placeholder={event.id === "wnl" || quietPlaceholders ? undefined : "First Name"} aria-label="First Name" data-role="first" />
                 <span class="sub">First</span>
               </div>
               <div>
-                <input id={`${event.id}-last`} name="last" type="text" autocomplete="family-name" maxlength="100" required={field.required} placeholder={event.id === "wnl" ? undefined : "Last Name"} aria-label="Last Name" data-role="last" />
+                <input id={`${event.id}-last`} name="last" type="text" autocomplete="family-name" maxlength="100" required={field.required} placeholder={event.id === "wnl" || quietPlaceholders ? undefined : "Last Name"} aria-label="Last Name" data-role="last" />
                 <span class="sub">Last</span>
               </div>
             </div>
@@ -192,7 +193,11 @@ function isMessage(field: FormField): boolean {
           ? field.kind === "phone"
             ? "(999) 999-9999"
             : undefined
-          : fieldPlaceholder(field.label, field.kind);
+          : event.id === "personal-training" && field.kind === "phone"
+            ? "(999) 999-9999"
+            : quietPlaceholders
+              ? undefined
+              : fieldPlaceholder(field.label, field.kind);
       const hide = hideLabels || (camp && (field.label === "First Name" || field.label === "Last Name" || field.label === "Email"));
       return (
         <div>
