@@ -81,18 +81,20 @@ const HERO_FILE: Record<string, string> = {
   "homeschool-sports-and-classes-springfield-mo": "media/2023-03-SWS-Competitions-Banner.webp",
   "laser-tag": "media/2023-11-Laser-Tag-Gym.jpg",
   "nerf-wars": "media/2023-11-Nerf-War-Nights-Springfield-MO.jpg",
+  "meet-the-team": "media/meet-the-springfield-warrior-sports-team-photo.jpg",
+  "best-gyms-in-springfield": "media/2025-06-the-Best-Gyms-in-Springfield-MO.jpg",
 };
 const heroFile = HERO_FILE[page.slug] ?? page.heroFile;
-const fullBleed = page.slug === "about" || BATCH2.has(page.slug) || BATCH3.has(page.slug);
+const fullBleed = page.slug === "about" || BATCH2.has(page.slug) || BATCH3.has(page.slug) || page.slug === "meet-the-team" || page.slug === "best-gyms-in-springfield";
 const batch3 = BATCH3.has(page.slug);
 const batch4 = BATCH4.has(page.slug);
 const hero =
-  !batch4 && page.photoHero && heroFile
+  page.photoHero && heroFile && page.slug !== "registered" && !THANKS.has(page.slug)
     ? await heroImage(
         heroFile,
         fullBleed
-          ? { width: 1920, quality: 55 }
-          : { width: page.slug === "home" ? 960 : 1100, quality: page.slug === "home" ? 28 : 36, cropAspect: page.slug === "home" ? 1.9 : 2.05, cropY: 0.42 },
+          ? { width: 1280, quality: 48 }
+          : { width: 1280, quality: 46, cropAspect: page.slug === "home" ? 1.9 : 2.05, cropY: 0.42 },
       )
     : null;
 
@@ -288,7 +290,7 @@ const h1key = norm(page.h1);
 function matchesH1(lines: string[]): boolean {
   return lines.some((line) => norm(line) === h1key) || norm(lines.join(" ")) === h1key;
 }
-const h1InHero = showHeroText || aboutHero;
+const h1InHero = showHeroText || aboutHero || page.slug === "homeschool-sports-and-classes-springfield-mo";
 const h1InBody = false;
 const h1InSection = !h1InHero && (page.slug === "home" ? matchesH1(["CLIENT TESTIMONIALS"]) : sections.some((section) => matchesH1(section.titles)) || matchesH1(quoteBlocks.filter((block) => block.type === "h2").map((block) => block.text)));
 
@@ -340,29 +342,25 @@ function nextPhoto(): ContentImage | undefined {
       <div slot="hero" class:list={["hero-copy", hero ? `align-${heroAlign}` : "hero-plain", hero ? `tone-${heroTone}` : "", hero ? `hero-size-${heroSize}` : "", { bare: !showHeroText && !batch3, "b2-hero": BATCH2.has(page.slug), "b3-hero": batch3 }]}>
         {hero && (showHeroText || aboutHero || batch3) && <div class:list={["hero-scrim", { "about-scrim": aboutHero, "b2-scrim": BATCH2.has(page.slug) }]} aria-hidden="true"></div>}
         <div class="hero-text">
-      {aboutHero && <h1>SPRINGFIELD WARRIOR SPORTS<br />COMMUNITY</h1>}
+      {aboutHero && <h1>Springfield Warrior Sports<br />Community</h1>}
       {!aboutHero && showHeroText && !BATCH2.has(page.slug) && !batch3 && <h1>{page.h1}</h1>}
       {page.slug === "fitness-classes" && (
-        <>
-          <h1 class="fit-hero-a">The Most Diverse (Least Boring)</h1>
-          <h1 class="fit-hero-b">Fitness Classes in Springfield, MO</h1>
-        </>
+        <h1>
+          <span class="fit-hero-a">The Most Diverse (Least Boring)</span>
+          <span class="fit-hero-b">Fitness Classes in Springfield, MO</span>
+        </h1>
       )}
       {page.slug === "personal-training" && <h1 class="pt-hero">Personal Training at Warrior Sports</h1>}
       {page.slug === "parkour" && <h1 class="pk-hero">Parkour Gym in Springfield MO | Springfield Warrior Sports</h1>}
-      {page.slug === "homeschool-sports-and-classes-springfield-mo" && <p class="hs-hero">Homeschool Kids Sports</p>}
+      {page.slug === "homeschool-sports-and-classes-springfield-mo" && <h1 class="hs-hero">Homeschool Kids Sports</h1>}
       {page.slug === "laser-tag" && (
         <>
-          <h1 class="lt-hero">Welcome to the Premier</h1>
-          <h1 class="lt-hero lt-hero-b">Laser Tag Gym in Springfield, MO</h1>
+          <h1 class="lt-hero">Welcome to the Premier <span class="lt-hero-b">Laser Tag Gym in Springfield, MO</span></h1>
           <p class="lt-ages">Great for all ages!</p>
         </>
       )}
       {page.slug === "nerf-wars" && (
-        <>
-          <h1 class="nf-hero">Nerf War Springfield, MO:</h1>
-          <h1 class="nf-hero nf-hero-b">The Ultimate Party Experience!</h1>
-        </>
+        <h1 class="nf-hero">Nerf War Springfield, MO: <span class="nf-hero-b">The Ultimate Party Experience!</span></h1>
       )}
       {page.slug === "competitions" && <h1>{page.h1}</h1>}
       {page.slug === "wnl-competitions" && <h1>{page.h1}</h1>}
@@ -372,23 +370,30 @@ function nextPhoto(): ContentImage | undefined {
           <p class="bd-kicker">HIGH-ENERGY</p>
           <p class="bd-title">KIDS' BIRTHDAY PARTIES</p>
           <p class="bd-place">IN SPRINGFIELD, MO</p>
-          <h3 class="bd-sub">NINJA WARRIOR COURSES, LASER TAG, NERF BATTLES, AND MORE!</h3>
+          <h3 class="bd-sub">Ninja Warrior Courses, Laser Tag, Nerf Battles, and More!</h3>
         </>
       )}
       {page.slug === "summer-camps-in-springfield-mo" && (
         <>
-          <h1 class="camp-h1">KIDS STAY FIT AND HEALTHY</h1>
-          <h2 class="camp-h1b">AT OUR INCREDIBLE SUMMER CAMPS</h2>
+          <h1 class="camp-h1">Kids Stay Fit and Healthy</h1>
+          <h2 class="camp-h1b">At Our Incredible Summer Camps</h2>
         </>
       )}
       {page.slug === "home" && heroExtra[0] && <h2 class="hero-kicker">{heroExtra[0].text}</h2>}
       {page.slug === "home" && heroExtra[1] && <p class="hero-sub">{heroExtra[1].text}</p>}
-      {page.slug === "kids-classes" && <h2 class="hero-kicker light-300">NINJA WARRIOR CLASSES FOR KIDS AND TEENS</h2>}
+      {page.slug === "kids-classes" && <h2 class="hero-kicker light-300">Ninja Warrior Classes for Kids and Teens</h2>}
       {page.slug !== "home" && page.slug !== "kids-classes" && showHeroText && !BATCH2.has(page.slug) && !batch3 && heroExtra[0] && <p class="hero-sub">{heroExtra[0].text}</p>}
         </div>
       </div>
     )
   }
+
+  <section class="trust" aria-label="Springfield Warrior Sports">
+    <p class="wrap trust-row">
+      <span>{site.name} {site.tagline}{bullet ? "" : " Kids Adults Summer Camps"} </span>
+      <a href={site.phone.tel}><span class="trust-digits">{site.phone.display}</span><span class="trust-call">Call</span></a>
+    </p>
+  </section>
 
   {
     bullet && (
@@ -406,12 +411,6 @@ function nextPhoto(): ContentImage | undefined {
       </section>
     )
   }
-
-  <section class="trust" aria-label="Springfield Warrior Sports">
-    <p class="wrap trust-row">
-      <span>{site.name} {site.tagline}{bullet ? "" : " Kids Adults Summer Camps"} </span><a href={site.phone.tel}>{site.phone.display}</a>
-    </p>
-  </section>
 
   {
     !batch4 && !BATCH2.has(page.slug) && !h1InHero && !h1InSection && !h1InBody && (

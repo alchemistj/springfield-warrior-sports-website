@@ -2,7 +2,7 @@
 import type { EventForm } from "../../data/events";
 import { site } from "../../data/site";
 import LeadForm from "../LeadForm.astro";
-import Quotes from "./Quotes.astro";
+import ReviewBand from "../ReviewBand.astro";
 import { media } from "./media";
 
 interface Props {
@@ -32,10 +32,17 @@ const weeks: { date: string; times: string[] }[] = [
   </div>
 </section>
 
+<ReviewBand
+  title="Client Testimonials"
+  sub="What Our Clients Say"
+  text="We had our son’s 10th birthday here. All of the kids had a great time. They set up an obstacle course for the kids. They loved the whole experience. The favorite was the curved wall to run up. That was everyone’s challenge for the night. We will be visiting again for sure."
+  by="- Jennifer L."
+/>
+
 <section class="b2-block b2-grey">
   <div class="b2-wrap camp-layout">
     <div class="camp-copy">
-      <h2 class="camp-dates-title">SUMMER CAMPS IN SPRINGFIELD — 2026 DATES</h2>
+      <h2 class="camp-dates-title">Summer Camps in Springfield — 2026 Dates</h2>
       <div class="camp-dates">
         {weeks.map((week) => (
           <div class="camp-row">
@@ -46,7 +53,7 @@ const weeks: { date: string; times: string[] }[] = [
           </div>
         ))}
       </div>
-      <h2>SUMMER CAMP PRICING</h2>
+      <h2>Summer Camp Pricing</h2>
       <p class="camp-price">A week of activities and snacks at Springfield Warrior Sports camps are $179, and we have discounts available for members and siblings. (You’ll need to call <a href={site.phone.tel}>{site.phone.display}</a> and register over the phone in order to qualify for those discounts).</p>
       <p class="camp-price">Note:</p>
       <p class="camp-price">Summer camp investment monies can be pro-rated if your child can not attend the entire week.</p>
@@ -54,17 +61,20 @@ const weeks: { date: string; times: string[] }[] = [
     {photo.src && <img class="camp-photo" src={photo.src} alt="" width={photo.width} height={photo.height} />}
   </div>
   <div class="b2-wrap">
-    <h2 class="camp-reg-title">SPRINGFIELD WARRIOR REGISTRATION</h2>
+    <h2 class="camp-reg-title">Springfield Warrior Registration</h2>
     <p class="camp-reg">At our Springfield Warrior Sports camps, your kids won’t just have fun; they'll become physically stronger, learn life-long nutrition habits, and improve their coordination skills — all while making new friends!<br /><br />Sign up by filling out the registration form below to save your kid's spot at our fun-filled summer camps at Springfield Warriors Sports today!</p>
   </div>
 </section>
 
 <section class="b2-block">
   <div class="b2-wrap camp-form">
-    <h2 class="b2-form-title">REGISTRATION FORM</h2>
+    <h2 class="b2-form-title">Registration Form</h2>
     <p class="camp-cost">Cost: $179 per child; member and sibling discounts available (may not be combined). For ages 6-15 years old.</p>
     <p class="camp-call">** call with questions or to register by phone <a href={site.phone.tel}>{site.phone.display}</a>. Please call to take advantage of the member or sibling discounts and get registered.</p>
     <LeadForm event={event} />
   </div>
 </section>
-<Quotes variant="camps" band />
+<ReviewBand
+  text="My daughter started training here 3 years ago at 8, and she still loves it!! Owner and coaching staff are all super encouraging. We live an hour away but make the drive twice a week as often as possible. Training here has not only helped her get stronger physically but increased her confidence in general. Anything that makes kids want to challenge themselves to get better and better is worth it!"
+  by="- Lee C."
+/>

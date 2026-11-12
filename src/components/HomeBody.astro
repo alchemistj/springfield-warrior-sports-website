@@ -1,13 +1,14 @@
 ---
+import { site } from "../data/site";
 import { media } from "../lib/media";
-import QuoteSlider from "./QuoteSlider.astro";
+import ReviewBand from "./ReviewBand.astro";
 
 const obstacle = media("media/2025-12-SpringField-indoor-obstacle.webp");
 const everyday = media("media/2023-03-everyday-warrior.webp");
 const cards = [
   {
     file: "media/2023-03-classes.webp",
-    title: "CLASSES AND ACTIVITIES FOR KIDS",
+    title: "Classes and Activities for Kids",
     body: "Springfield Warrior Sports offers kids classes that help build strength, balance, and coordination. With a variety of obstacles and challenges, your child will never get bored. Plus, they can have a lot of fun while working up a sweat!",
     extra: "Sign up for a trial class today, your young warrior will thank you!",
     href: "/kids-classes/",
@@ -16,7 +17,7 @@ const cards = [
   },
   {
     file: "media/2023-03-train.webp",
-    title: "TRAIN LIKE A NINJA WARRIOR",
+    title: "Train Like a Ninja Warrior",
     body: "Our adult classes are designed for all fitness levels, so whether you are a beginner or an experienced athlete, there is something for you. The obstacles and challenges are constantly changing, so you never get bored. And because the focus is on having fun, you will be encouraged to push yourself further than you ever thought possible.",
     href: "/fitness-classes/",
     label: "CHECK OUT OUR NINJA FITNESS CLASSES HERE",
@@ -24,7 +25,7 @@ const cards = [
   },
   {
     file: "media/2023-03-birthday.webp",
-    title: "BIRTHDAY PARTIES",
+    title: "Birthday Parties",
     body: "Warrior Sports offers the best party experience in Springfield MO! Whether it’s for your child’s birthday or for a special group event, we take care of all the planning and clean up, so you can relax and enjoy your special day. Parties are 1.5 hours long, and include an hour of gym and party room time and an obstacle course or another chosen activity facilitated by our Crew.",
     href: "/birthday-parties/",
     label: "BIRTHDAY PARTIES IN SPRINGFIELD MO DETAILS",
@@ -32,7 +33,7 @@ const cards = [
   },
   {
     file: "media/2023-12-Day-Camps.webp",
-    title: "DAY CAMPS FOR SCHOOL BREAKS",
+    title: "Day Camps for School Breaks",
     body: "Elevate your children's school break with dynamic and thrilling experiences at our engaging day camps! Choose from our flexible half-day or full-day camp options, where kids can enjoy a blend of recreation, games, sports, and the opportunity to forge lasting friendships.",
     href: "/summer-camps-in-springfield-mo/",
     label: "VIEW OUR SCHOOLS OUT DAY CAMPS HERE",
@@ -40,7 +41,7 @@ const cards = [
   },
   {
     file: "media/2023-04-Parkour-Gym-Parkour-Classes-Banner.webp",
-    title: "PARKOUR",
+    title: "Parkour",
     body: "Springfield Warrior Sports is the premier destination for parkour training! Our expert instructors will guide you through every obstacle course, helping you to improve your physical skills and also boosting your confidence. With a focus on strength, agility, speed, balance, and self-confidence, our open gym time and classes can help you reach your potential both inside and out of the gym.",
     extra: "Parkour classes are currently unavailable, but Open Gym sessions are available now — your first visit is just $10.",
     href: "/parkour/",
@@ -50,7 +51,7 @@ const cards = [
   },
   {
     file: "media/2024-02-kids-classes.webp",
-    title: "HOMESCHOOL NINJA WARRIOR CLASSES",
+    title: "Homeschool Ninja Warrior Classes",
     body: "Keep your homeschooler active, strong, and having a blast! Our homeschool classes are a high-energy way for kids to build strength and confidence while tackling fun obstacle course challenges. With plenty of movement, excitement, and opportunities to connect with other homeschoolers, this is PE like never before!",
     href: "/homeschool-sports-and-classes-springfield-mo/",
     label: "HOMESCHOOL CLASSES BY SWS",
@@ -58,7 +59,7 @@ const cards = [
   },
   {
     file: "media/2025-06-the-Best-Gyms-in-Springfield-MO.webp",
-    title: "PERSONAL TRAINING",
+    title: "Personal Training",
     body: "Personal training for kids, teens, and adults. Find a coach who gets your goals and your lifestyle. Build strength and confidence while progressing in your sport—or just moving better in everyday life. Schedule your free consultation today!",
     href: "/personal-training/",
     label: "PERSONAL TRAINING AT WARRIOR SPORTS",
@@ -96,17 +97,27 @@ const quotes = [
   ["It was too hot for my bf and I to let the kids play outside. We had already been to the overcrowded pool. So we took the kids here to run around and burn off energy inside while we got a second workout in ourselves. Amazing staff, great atmosphere, 10/5 would recommend!", "- COURTNEY C."],
   ["My kids love the classes here! The instructors are all very kind and fun. It is such a great way for our kids to get exercise and learn new body skills.", "- NICK P."],
 ].map(([text, by]) => ({ text: text ?? "", by: by ?? "" }));
+const homeReviews = [
+  { after: 1, quote: quotes[1], titled: true },
+  { after: 3, quote: quotes[0], titled: false },
+  { after: 5, quote: quotes[7], titled: false },
+  { after: 6, quote: quotes[8], titled: false },
+];
 ---
 
 <section class="section ready-section" id="open-gym">
-  <div class="wrap ready">
-    <img loading="lazy" decoding="async" src={obstacle.src} alt="Springfield indoor obstacle gym" width={obstacle.width} height={obstacle.height} />
+  <div class="wrap ready-copy">
+    <h2>Get Ready to</h2>
+    <h3 class="reach">Reach Your Fun and Fitness Goals with Springfield Warrior Sports</h3>
+    <p class="believe">We believe in results and that a life of health and fitness shouldn’t be boring. Our indoor obstacle training facility is like a fitness playground for all ages.</p>
+    <p class="aside">The best part?</p>
+    <p>You don’t need any previous experience or knowledge — all you need is the determination to reach your fitness goals!</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap split-photo photo-right">
     <div class="ready-copy">
-      <h2>GET READY TO</h2>
-      <h3 class="reach">REACH YOUR FUN AND FITNESS GOALS WITH SPRINGFIELD WARRIOR SPORTS</h3>
-      <p class="believe">We believe in results and that a life of health and fitness shouldn’t be boring. Our indoor obstacle training facility is like a fitness playground for all ages.</p>
-      <p class="aside">The best part?</p>
-      <p>You don’t need any previous experience or knowledge — all you need is the determination to reach your fitness goals!</p>
       <p class="hours-title">Open Gym Hours</p>
       <ul class="hours">
         {hours.map((line) => {
@@ -123,18 +134,25 @@ const quotes = [
       </ul>
       <p>(see below for our class hours and times, which vary slightly from the open gym hours above.)</p>
     </div>
+    <img loading="lazy" decoding="async" src={obstacle.src} alt="Springfield indoor obstacle gym" width={obstacle.width} height={obstacle.height} />
   </div>
 </section>
 
 <section class="section blue-band">
   <div class="wrap">
-    <h2 class="band-title">SPRINGFIELD'S BEST OBSTACLE<br />TRAINING GYM</h2>
-    <div class="card-stack">
-      {
-        cards.map((card) => {
-          const shot = shots[card.file];
-          return (
-            <article class:list={["program-card", card.shift, { hs: card.file.includes("kids-classes"), "tight-title": card.title.startsWith("CLASSES") }]}>
+    <h2 class="band-title">Springfield's Best Obstacle Training Gym</h2>
+  </div>
+</section>
+
+{
+  cards.map((card, index) => {
+    const shot = shots[card.file];
+    const review = homeReviews.find((item) => item.after === index);
+    return (
+      <>
+        <section class="section blue-band">
+          <div class="wrap">
+            <article class:list={["program-card", card.shift, index % 2 === 0 ? "photo-left" : "photo-right", { hs: card.file.includes("kids-classes"), "tight-title": card.title.startsWith("Classes") }]}>
               {shot && <img loading="lazy" decoding="async" src={shot.src} alt="" width={shot.width} height={shot.height} />}
               <div>
                 <h3>{card.title}</h3>
@@ -145,32 +163,13 @@ const quotes = [
                 <p class="btn-row"><a class="btn" href={card.href}>{card.label}</a></p>
               </div>
             </article>
-          );
-        })
-      }
-    </div>
-  </div>
-</section>
-
-<section class="section everyday" style={`--day:url(${everyday.src})`}>
-  <div class="wrap">
-    <div class="day-copy">
-      <h4>BE AN</h4>
-      <h2>EVERYDAY WARRIOR!</h2>
-      <p>At Springfield Warrior Sports, we know that you want to be fit, healthy, and STRONGER to take on every obstacle. Our accomplished and award-winning crew is here to help you find your strength and enjoy your workouts again. If you’re looking for a unique and fun way to get active, you can come in at any time during our open hours and have a great time getting fit!<br /><br />$15 per person ages 5+ during open gym hours. Stay as long as you would like.</p>
-      <p class="btn-row"><a class="btn day-btn" href="https://square.link/u/GmmQ7iuL">TRY OPEN GYM FOR $10</a></p>
-    </div>
-    <img loading="lazy" decoding="async" class="day-photo" src={everyday.src} alt="" width={everyday.width} height={everyday.height} />
-  </div>
-</section>
-
-<section class="section mist">
-  <div class="wrap">
-    <h2 class="t-title">CLIENT TESTIMONIALS</h2>
-    <h3 class="t-sub">WHAT OUR CLIENTS SAY</h3>
-    <QuoteSlider quotes={quotes} minHeight="401px" minHeightPhone="382px" />
-  </div>
-</section>
+          </div>
+        </section>
+        {review && <ReviewBand title={review.titled ? "Client Testimonials" : undefined} sub={review.titled ? "What Our Clients Say" : undefined} text={review.quote.text} by={review.quote.by} />}
+      </>
+    );
+  })
+}
 
 <section class="partner-band" aria-label="Partners">
   <div class="partner-row">
@@ -180,6 +179,20 @@ const quotes = [
         return <img loading="lazy" decoding="async" class={name} src={img.src} alt="" width={img.width} height={img.height} />;
       })
     }
+  </div>
+</section>
+
+<section class="section everyday final-band">
+  <div class="wrap split-photo photo-right">
+    <div class="day-copy">
+      <h2>Be an Everyday Warrior!</h2>
+      <p>At Springfield Warrior Sports, we know that you want to be fit, healthy, and STRONGER to take on every obstacle. Our accomplished and award-winning crew is here to help you find your strength and enjoy your workouts again. If you’re looking for a unique and fun way to get active, you can come in at any time during our open hours and have a great time getting fit!<br /><br />$15 per person ages 5+ during open gym hours. Stay as long as you would like.</p>
+      <p class="btn-row">
+        <a class="btn day-btn" href="https://square.link/u/GmmQ7iuL">TRY OPEN GYM FOR $10</a>
+        <a class="day-call" href={site.phone.tel}>{site.phone.display}</a>
+      </p>
+    </div>
+    <img loading="lazy" decoding="async" class="day-photo" src={everyday.src} alt="" width={everyday.width} height={everyday.height} />
   </div>
 </section>
 

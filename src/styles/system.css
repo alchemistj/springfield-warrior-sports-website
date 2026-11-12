@@ -1,0 +1,435 @@
+/* Rule 4. One content column. Imported last so it wins over copied live widths. */
+
+:root {
+  --content-max: 900px;
+  --content-pad: 24px;
+  --content: 900px;
+  --gutter: 24px;
+}
+
+.wrap,
+.b2-wrap,
+.b3-wrap,
+.b4-wrap,
+.hero-text,
+.bar,
+.foot,
+.final-inner,
+.review-inner,
+.bullet-line,
+.b4-team-hero .col,
+.b4-gym-hero h1,
+.b4-thanks .col,
+.partner-row {
+  box-sizing: border-box !important;
+  width: min(var(--content-max), calc(100% - var(--content-pad) * 2)) !important;
+  max-width: var(--content-max) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+h1, h2, h3, h4 {
+  text-transform: none !important;
+}
+em, i {
+  font-style: normal !important;
+}
+.fit-hero-a,
+.fit-hero-b,
+.lt-hero-b,
+.nf-hero-b {
+  display: block;
+}
+
+.b4-person em,
+.wnl-form em,
+.b4-cta em,
+.bullet-line .dot {
+  font-style: normal !important;
+}
+
+/* Offsets that pinned copy to the old 1,150px column. */
+.bd-mem-copy:not(.b2-wrap),
+.bd-steps-p,
+.bd-req,
+.b3-prose:not(.b3-wrap),
+.b4-lead p,
+.center-copy,
+.note-line,
+.wide,
+.full {
+  margin-left: 0 !important;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+/* Fixed pixel widths from the old column must shrink to the cell they sit in. */
+.wrap :where(h1, h2, h3, h4, p, li, a, img, div, article, ul, ol),
+.b2-wrap :where(h1, h2, h3, h4, p, li, a, img, div, article, ul, ol),
+.b3-wrap :where(h1, h2, h3, h4, p, li, a, img, div, article, ul, ol),
+.b4-wrap :where(h1, h2, h3, h4, p, li, a, img, div, article, ul, ol) {
+  max-width: 100% !important;
+  min-width: 0 !important;
+}
+.copy,
+.program-card p,
+.program-card .btn,
+.kids h2,
+.levels,
+.day-copy,
+.b4-copy,
+.contact-photos img,
+.wnl-photo,
+.camp-card,
+.fun-grid img {
+  width: auto !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+}
+
+@media (min-width: 800px) {
+  .b3-split,
+  .bd-split,
+  .bd-battles,
+  .pk-row,
+  .pk-row.side,
+  .hs-card,
+  .comp-head,
+  .camp-layout,
+  .contact-grid,
+  .ready,
+  .program-card,
+  .row.photo-left,
+  .row.text-left,
+  .row.img-first,
+  .row.text-first,
+  .row.img-first.wide-photo,
+  .split-photo {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr) !important;
+    column-gap: 28px !important;
+    align-items: stretch !important;
+  }
+  .photo-right,
+  .program-card.photo-right,
+  .pk-row.side,
+  .row.text-left,
+  .row.text-first {
+    grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr) !important;
+  }
+  .photo-left,
+  .program-card.photo-left,
+  .row.photo-left,
+  .row.img-first {
+    grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr) !important;
+  }
+  .program-card.photo-right img,
+  .split-photo.photo-right img,
+  .photo-right > img {
+    order: 2;
+  }
+  .b3-split img,
+  .bd-split img,
+  .bd-battles img,
+  .bd-laser,
+  .pk-row img,
+  .hs-card img,
+  .camp-photo,
+  .ready img,
+  .program-card img,
+  .row img,
+  .split-photo img,
+  .bd-mem-photo {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+  }
+  .name-row,
+  .lead-form .name-row,
+  .grid-2,
+  .pair,
+  .b2-qrow,
+  .quote-grid,
+  .fit-cards {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  .pt-cards,
+  .pt-trainers,
+  .fun-grid,
+  .camps {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    width: 100% !important;
+  }
+}
+
+/* Coach bios: long copy sits on the page, the navy frame stays on the photo.
+   First photo is on the right, then they alternate. */
+.b4-person {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+  column-gap: 24px;
+  row-gap: 8px;
+  align-items: start;
+  border: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  padding: 12px 0 28px !important;
+  float: none !important;
+}
+.b4-person .b4-shot.desk {
+  grid-column: 2;
+  grid-row: 1 / span 8;
+  align-self: stretch;
+}
+.b4-person h2,
+.b4-person h3,
+.b4-person .bio {
+  grid-column: 1;
+}
+.b4-person:nth-of-type(even) {
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+}
+.b4-person:nth-of-type(even) .b4-shot.desk { grid-column: 1; }
+.b4-person:nth-of-type(even) h2,
+.b4-person:nth-of-type(even) h3,
+.b4-person:nth-of-type(even) .bio { grid-column: 2; }
+.b4-shot {
+  float: none !important;
+  width: 100% !important;
+  height: auto !important;
+  max-height: none !important;
+  margin: 0 !important;
+  border: 12px solid #285276;
+  object-fit: cover;
+}
+.b4-shot.mob { display: none; }
+
+.bd-mem {
+  background-image: none !important;
+  min-height: 0 !important;
+  margin-top: 0 !important;
+  padding: 48px 0 !important;
+}
+.bd-mem .b2-wrap {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr) !important;
+  gap: 28px;
+  align-items: stretch;
+}
+.bd-mem-photo {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
+  order: 2;
+}
+
+.everyday {
+  background-image: none !important;
+  min-height: 0 !important;
+}
+.day-photo { display: block !important; }
+.everyday.final-band {
+  background: #d6352f !important;
+  color: #fff;
+  padding: 48px 0 !important;
+}
+.everyday.final-band h2,
+.everyday.final-band p {
+  color: #fff !important;
+}
+.everyday.final-band .btn-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+.everyday.final-band .day-btn {
+  width: auto !important;
+  background: #fff;
+  color: #d6352f !important;
+}
+.everyday.final-band .day-call {
+  display: inline-flex;
+  align-items: center;
+  min-height: 48px;
+  padding: 0 16px;
+  border-radius: 999px;
+  background: #fff;
+  color: #d6352f !important;
+  font-family: Heebo, "Arial Narrow", sans-serif;
+  font-weight: 800;
+  text-decoration: none;
+}
+.b4-cta {
+  background: #285276 !important;
+  background-image: none !important;
+  min-height: 0 !important;
+  padding: 48px 0 !important;
+}
+.b4-cta-copy {
+  box-sizing: border-box;
+  width: min(var(--content-max), calc(100% - var(--content-pad) * 2)) !important;
+  max-width: var(--content-max) !important;
+  margin-inline: auto !important;
+}
+.b4-cta .cta-phone {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  margin: 22px 0 0 12px;
+  padding: 0 16px;
+  border-radius: 100px;
+  background: #fff;
+  color: #285276;
+  font-family: Heebo, "Arial Narrow", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+}
+.hs-book {
+  background: #d6352f !important;
+  background-image: none !important;
+}
+.hs-book h2 { color: #fff !important; }
+.hs-book a:not(.plain) { white-space: nowrap; }
+
+.contact-photos {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) !important;
+  gap: 16px !important;
+  justify-content: stretch !important;
+}
+.contact-photos img {
+  width: 100% !important;
+  height: auto !important;
+}
+.wnl-top {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr) !important;
+  align-items: center !important;
+  gap: 28px !important;
+}
+.wnl-photo {
+  width: 100% !important;
+  height: auto !important;
+  justify-self: stretch !important;
+}
+.b4-gym {
+  position: relative !important;
+  display: grid !important;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr) !important;
+  gap: 28px !important;
+  align-items: start !important;
+  min-height: 0 !important;
+  margin: 0 auto 48px !important;
+  overflow: visible !important;
+}
+.b4-gym.side-left {
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr) !important;
+}
+.b4-gym img {
+  position: static !important;
+  left: auto !important;
+  top: auto !important;
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 220px !important;
+  max-width: 100% !important;
+  clip-path: none !important;
+  object-fit: cover !important;
+}
+.b4-copy,
+.b4-gym.side-right .b4-copy,
+.b4-gym.side-left .b4-copy {
+  width: auto !important;
+  max-width: 100% !important;
+  margin-left: 0 !important;
+  background: transparent !important;
+}
+.b4-close > div {
+  box-sizing: border-box !important;
+  width: min(var(--content-max), calc(100% - var(--content-pad) * 2)) !important;
+  max-width: var(--content-max) !important;
+  margin-inline: auto !important;
+}
+.b4-close h2,
+.b4-close h4 {
+  width: auto !important;
+  max-width: 100% !important;
+}
+.fun-grid {
+  width: 100% !important;
+}
+.fun-grid img {
+  width: 100% !important;
+  height: auto !important;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+.camp-card,
+.camp-card.bday,
+.camp-card.day {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+@media (max-width: 799px) {
+  .b3-split,
+  .bd-split,
+  .bd-battles,
+  .pk-row,
+  .hs-card,
+  .camp-layout,
+  .contact-grid,
+  .ready,
+  .program-card,
+  .row,
+  .split-photo,
+  .bd-mem .b2-wrap,
+  .b4-person,
+  .b4-person:nth-of-type(even),
+  .b4-gym,
+  .b4-gym.side-left,
+  .wnl-top,
+  .contact-photos {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+  .b3-split img,
+  .bd-split img,
+  .program-card img,
+  .row img,
+  .split-photo img,
+  .bd-mem-photo,
+  .camp-photo,
+  .b4-shot.mob {
+    width: 100% !important;
+    height: auto !important;
+    max-height: none !important;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    order: 2;
+  }
+  .b4-shot.desk { display: none !important; }
+  .b4-shot.mob { display: block !important; }
+  .b4-person .b4-shot.desk,
+  .b4-person .b4-shot.mob,
+  .b4-person h2,
+  .b4-person h3,
+  .b4-person .bio {
+    grid-column: 1 !important;
+    grid-row: auto !important;
+  }
+  .b4-person .b4-shot.mob { order: 2 !important; }
+  .bullet-line { width: min(var(--content-max), calc(100% - var(--content-pad) * 2)) !important; white-space: normal !important; }
+}
+
+@media (max-width: 767px) {
+  .trust-row .trust-digits { display: none; }
+  .trust-row .trust-call { display: inline; }
+}
+.trust-row .trust-call { display: none; }

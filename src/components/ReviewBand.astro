@@ -1,0 +1,70 @@
+---
+import quoteIcon from "../assets/media/2023-03-qoute-icon.webp";
+
+interface Props {
+  text: string;
+  by: string;
+  title?: string;
+  sub?: string;
+  as?: "h1" | "h2";
+}
+const { text, by, title, sub, as = "h2" } = Astro.props;
+const Title = as;
+const icon = quoteIcon as { src: string; width: number; height: number };
+---
+
+<section class="review-band">
+  <div class="review-inner">
+    {title && <Title class="review-title">{title}</Title>}
+    {sub && <h3 class="review-sub">{sub}</h3>}
+    <blockquote>
+      <img class="quote-mark" src={icon.src} alt="" width="42" height="42" />
+      <p>{text}</p>
+      <p class="review-by">{by}</p>
+    </blockquote>
+  </div>
+</section>
+
+<style>
+  .review-band {
+    background: #e5eaed;
+    padding: 36px 0;
+  }
+  .review-inner {
+    box-sizing: border-box;
+    width: min(var(--content-max), calc(100% - var(--content-pad) * 2));
+    margin: 0 auto;
+  }
+  .review-title {
+    margin: 0 0 6px;
+    color: #d6352f;
+    font-family: Heebo, "Arial Narrow", sans-serif;
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 1.15;
+    text-align: center;
+    text-transform: none;
+  }
+  .review-sub {
+    margin: 0 0 16px;
+    color: #171716;
+    font-family: Heebo, "Arial Narrow", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+  }
+  blockquote { margin: 0; }
+  .quote-mark { display: block; width: 42px; height: 42px; margin: 0 auto 12px; }
+  p {
+    margin: 0;
+    color: #171716;
+    font-family: Muli, "Segoe UI", sans-serif;
+    font-size: 17px;
+    line-height: 1.55;
+  }
+  .review-by {
+    margin-top: 12px;
+    color: #d6352f;
+    font-weight: 800;
+  }
+</style>

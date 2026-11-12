@@ -59,7 +59,9 @@ export function isFormDumpLine(line) {
 
 function isBoundary(line) {
   const letters = line.replace(/[^A-Za-z]/g, "");
-  const heading = letters.length > 3 && letters === letters.toUpperCase() && line.length <= 120 && !/[.!?]$/.test(line);
+  // All-caps lines are headings. Rule 4 changes their case, so a trailing ! or ? does not
+  // make the line a sentence the built page must repeat in the original capitals.
+  const heading = letters.length > 3 && letters === letters.toUpperCase() && line.length <= 120;
   return heading || /^(submit|notify me)$/i.test(line) || isFormDumpLine(line);
 }
 
