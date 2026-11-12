@@ -77,7 +77,7 @@ const gaId = site.ga4;
     <main id="main">
       <slot />
     </main>
-    <FinalCta />
+    {route.key !== "home" && route.key !== "meet-the-team" && route.key !== "homeschool-sports-and-classes-springfield-mo" && <FinalCta />}
     <Footer />
     <StickyCallBar />
   </body>

@@ -1,4 +1,5 @@
 ---
+import { site } from "../data/site";
 import { media } from "../lib/media";
 import ReviewBand from "./ReviewBand.astro";
 
@@ -96,6 +97,12 @@ const quotes = [
   ["It was too hot for my bf and I to let the kids play outside. We had already been to the overcrowded pool. So we took the kids here to run around and burn off energy inside while we got a second workout in ourselves. Amazing staff, great atmosphere, 10/5 would recommend!", "- COURTNEY C."],
   ["My kids love the classes here! The instructors are all very kind and fun. It is such a great way for our kids to get exercise and learn new body skills.", "- NICK P."],
 ].map(([text, by]) => ({ text: text ?? "", by: by ?? "" }));
+const homeReviews = [
+  { after: 1, quote: quotes[1], titled: true },
+  { after: 3, quote: quotes[0], titled: false },
+  { after: 5, quote: quotes[7], titled: false },
+  { after: 6, quote: quotes[8], titled: false },
+];
 ---
 
 <section class="section ready-section" id="open-gym">
@@ -140,10 +147,9 @@ const quotes = [
 {
   cards.map((card, index) => {
     const shot = shots[card.file];
-    const quote = quotes[index];
+    const review = homeReviews.find((item) => item.after === index);
     return (
       <>
-        {quote && <ReviewBand title={index === 0 ? "Client Testimonials" : undefined} sub={index === 0 ? "What Our Clients Say" : undefined} text={quote.text} by={quote.by} />}
         <section class="section blue-band">
           <div class="wrap">
             <article class:list={["program-card", card.shift, index % 2 === 0 ? "photo-left" : "photo-right", { hs: card.file.includes("kids-classes"), "tight-title": card.title.startsWith("Classes") }]}>
@@ -159,25 +165,11 @@ const quotes = [
             </article>
           </div>
         </section>
+        {review && <ReviewBand title={review.titled ? "Client Testimonials" : undefined} sub={review.titled ? "What Our Clients Say" : undefined} text={review.quote.text} by={review.quote.by} />}
       </>
     );
   })
 }
-
-{quotes[7] && <ReviewBand text={quotes[7].text} by={quotes[7].by} />}
-
-<section class="section everyday">
-  <div class="wrap split-photo photo-right">
-    <div class="day-copy">
-      <h2>Be an Everyday Warrior!</h2>
-      <p>At Springfield Warrior Sports, we know that you want to be fit, healthy, and STRONGER to take on every obstacle. Our accomplished and award-winning crew is here to help you find your strength and enjoy your workouts again. If you’re looking for a unique and fun way to get active, you can come in at any time during our open hours and have a great time getting fit!<br /><br />$15 per person ages 5+ during open gym hours. Stay as long as you would like.</p>
-      <p class="btn-row"><a class="btn day-btn" href="https://square.link/u/GmmQ7iuL">TRY OPEN GYM FOR $10</a></p>
-    </div>
-    <img loading="lazy" decoding="async" class="day-photo" src={everyday.src} alt="" width={everyday.width} height={everyday.height} />
-  </div>
-</section>
-
-{quotes[8] && <ReviewBand text={quotes[8].text} by={quotes[8].by} />}
 
 <section class="partner-band" aria-label="Partners">
   <div class="partner-row">
@@ -187,6 +179,20 @@ const quotes = [
         return <img loading="lazy" decoding="async" class={name} src={img.src} alt="" width={img.width} height={img.height} />;
       })
     }
+  </div>
+</section>
+
+<section class="section everyday final-band">
+  <div class="wrap split-photo photo-right">
+    <div class="day-copy">
+      <h2>Be an Everyday Warrior!</h2>
+      <p>At Springfield Warrior Sports, we know that you want to be fit, healthy, and STRONGER to take on every obstacle. Our accomplished and award-winning crew is here to help you find your strength and enjoy your workouts again. If you’re looking for a unique and fun way to get active, you can come in at any time during our open hours and have a great time getting fit!<br /><br />$15 per person ages 5+ during open gym hours. Stay as long as you would like.</p>
+      <p class="btn-row">
+        <a class="btn day-btn" href="https://square.link/u/GmmQ7iuL">TRY OPEN GYM FOR $10</a>
+        <a class="day-call" href={site.phone.tel}>{site.phone.display}</a>
+      </p>
+    </div>
+    <img loading="lazy" decoding="async" class="day-photo" src={everyday.src} alt="" width={everyday.width} height={everyday.height} />
   </div>
 </section>
 

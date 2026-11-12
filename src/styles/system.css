@@ -232,6 +232,71 @@ em, i {
   min-height: 0 !important;
 }
 .day-photo { display: block !important; }
+.everyday.final-band {
+  background: #d6352f !important;
+  color: #fff;
+  padding: 48px 0 !important;
+}
+.everyday.final-band h2,
+.everyday.final-band p {
+  color: #fff !important;
+}
+.everyday.final-band .btn-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+.everyday.final-band .day-btn {
+  width: auto !important;
+  background: #fff;
+  color: #d6352f !important;
+}
+.everyday.final-band .day-call {
+  display: inline-flex;
+  align-items: center;
+  min-height: 48px;
+  padding: 0 16px;
+  border-radius: 999px;
+  background: #fff;
+  color: #d6352f !important;
+  font-family: Heebo, "Arial Narrow", sans-serif;
+  font-weight: 800;
+  text-decoration: none;
+}
+.b4-cta {
+  background: #285276 !important;
+  background-image: none !important;
+  min-height: 0 !important;
+  padding: 48px 0 !important;
+}
+.b4-cta-copy {
+  box-sizing: border-box;
+  width: min(var(--content-max), calc(100% - var(--content-pad) * 2)) !important;
+  max-width: var(--content-max) !important;
+  margin-inline: auto !important;
+}
+.b4-cta .cta-phone {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  margin: 22px 0 0 12px;
+  padding: 0 16px;
+  border-radius: 100px;
+  background: #fff;
+  color: #285276;
+  font-family: Heebo, "Arial Narrow", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+}
+.hs-book {
+  background: #d6352f !important;
+  background-image: none !important;
+}
+.hs-book h2 { color: #fff !important; }
+.hs-book a:not(.plain) { white-space: nowrap; }
 
 .contact-photos {
   display: grid !important;

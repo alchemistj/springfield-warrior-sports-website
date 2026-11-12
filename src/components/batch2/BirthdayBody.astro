@@ -2,6 +2,7 @@
 import bookBg from "../../assets/media/2023-03-book-now-bg.jpg";
 import memoriesBg from "../../assets/media/2023-03-amazing-memories.webp";
 import { site } from "../../data/site";
+import ReviewBand from "../ReviewBand.astro";
 import FactIcon from "./FactIcon.astro";
 import { media } from "./media";
 
@@ -19,6 +20,13 @@ const memories = typeof memoriesBg === "string" ? memoriesBg : memoriesBg.src;
     <p class="bd-navy">This means more than just one day of fun - there can be lasting memories of their best birthday, making this party extra memorable.</p>
   </div>
 </section>
+
+<ReviewBand
+  title="Client Testimonials"
+  sub="What Our Clients Say"
+  text="100% recommend Springfield Warrior Sports! We had my sons 5th birthday here and it was painless and SO fun! The staff answered all questions I had, gave reminders for upcoming party, and interacted with the kids during the party. It has been weeks since the party and my son is still talking about it. We will absolutely be back!"
+  by="- CHEYENNE M."
+/>
 
 <section class="b2-block b2-grey">
   <div class="b2-wrap">
@@ -48,6 +56,11 @@ const memories = typeof memoriesBg === "string" ? memoriesBg : memoriesBg.src;
     </p>
   </div>
 </section>
+
+<ReviewBand
+  text="We have had several birthday parties here and each time has been wonderful. It’s affordable and does not require a lot of effort on my part. The best part is how much fun the kids have! They never want to leave! The staff were all engaged with the kids and joined in on the nerf battle. I think they were having as much fun as the kids! They made sure we had everything we needed. We also enjoy coming to open gym. It’s the perfect place for kids to burn some energy. We love it here and we highly recommend it!"
+  by="- ADRIENNE E."
+/>
 
 <section class="bd-book" style={`background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url('${book}')`}>
   <div class="b2-wrap">
@@ -81,6 +94,11 @@ const memories = typeof memoriesBg === "string" ? memoriesBg : memoriesBg.src;
     </div>
   </div>
 </section>
+
+<ReviewBand
+  text="Great place to have a birthday party. The laser tag option was really cool. My boys had a blast. Plus my son loves their summer camp program & he looks forward to it every summer!"
+  by="- SUSAN K."
+/>
 
 <section class="bd-mem" style={`background-image: url('${memories}'), linear-gradient(#e5eaed, #e5eaed)`}>
   <div class="b2-wrap bd-mem-copy">

@@ -1,5 +1,6 @@
 ---
 import { pageBySlug } from "../../data/content";
+import { site } from "../../data/site";
 import { media } from "../batch2/media";
 
 const photos = [
@@ -37,7 +38,6 @@ for (let i = 0; i < blocks.length; i++) {
   coaches.push({ name: block.text, role: role.text, paras, h: photo.h, desk: photo.desk, mob: photo.mob, narrow: photo.narrow, tight: photo.tight });
   i = j - 1;
 }
-const cta = media("media/2025-12-IMG_2336-scaled.jpeg");
 const shot = (file: string) => media(file).src;
 ---
 
@@ -82,10 +82,7 @@ const shot = (file: string) => media(file).src;
     ))
   }
 </div>
-<section
-  class="b4-cta"
-  style={`background-image:linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),url('${cta.src}');background-size:auto,cover;background-position:50% 50%,50% 70%`}
->
+<section class="b4-cta">
   <div class="b4-cta-copy">
     <h2>You've met the team.</h2>
     <h2>Now train with them.</h2>
@@ -95,6 +92,7 @@ const shot = (file: string) => media(file).src;
       Try Open Gym for $10
       <svg viewBox="0 0 448 512" aria-hidden="true"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg>
     </a>
+    <a class="cta-phone" href={site.phone.tel}>{site.phone.display}</a>
     <h4 class="note"><em>No experience required.</em></h4>
   </div>
 </section>
