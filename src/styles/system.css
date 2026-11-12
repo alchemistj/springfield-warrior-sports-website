@@ -428,8 +428,3 @@ em, i {
   .bullet-line { width: min(var(--content-max), calc(100% - var(--content-pad) * 2)) !important; white-space: normal !important; }
 }
 
-@media (max-width: 767px) {
-  .trust-row .trust-digits { display: none; }
-  .trust-row .trust-call { display: inline; }
-}
-.trust-row .trust-call { display: none; }

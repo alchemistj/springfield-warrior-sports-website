@@ -388,11 +388,21 @@ function nextPhoto(): ContentImage | undefined {
     )
   }
 
-  <section class="trust" aria-label="Springfield Warrior Sports">
-    <p class="wrap trust-row">
-      <span>{site.name} {site.tagline}{bullet ? "" : " Kids Adults Summer Camps"} </span>
-      <a href={site.phone.tel}><span class="trust-digits">{site.phone.display}</span><span class="trust-call">Call</span></a>
-    </p>
+  <section class="trust trust-bar" aria-label="Credentials and how to reach Springfield Warrior Sports">
+    <div class="wrap trust-row">
+      <p class="trust-line">
+        <span class="trust-item">WNL regional qualifier host</span>
+        <span class="trust-sep" aria-hidden="true">·</span>
+        <span class="trust-item">CSNA competitive youth team</span>
+      </p>
+      <p class="trust-line">
+        <span class="trust-item">Serving Springfield, MO</span>
+        <span class="trust-sep" aria-hidden="true">·</span>
+        <span class="trust-item">Try Open Gym for $10</span>
+        <span class="trust-sep" aria-hidden="true">·</span>
+        <a class="trust-item" href={site.phone.tel}>Call {site.phone.display}</a>
+      </p>
+    </div>
   </section>
 
   {
