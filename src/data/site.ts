@@ -45,12 +45,15 @@ export const mainNav = [
   { label: "Summer Camps", path: "/summer-camps-in-springfield-mo/" },
 ] as const;
 
-/** Header quick links (Rule 5): the four main reasons people come in. */
+/**
+ * Header quick links (Rule 5). Summer Camps is out of season (Josh, 11 Nov 2026);
+ * add { label: "Summer Camps", path: "/summer-camps-in-springfield-mo/" } back in March
+ * for camp registration. It stays in the footer.
+ */
 export const quickNav = [
   { label: "Kid Classes", path: "/kids-classes/" },
   { label: "Adult Classes", path: "/fitness-classes/" },
   { label: "Birthday Parties", path: "/birthday-parties/" },
-  { label: "Summer Camps", path: "/summer-camps-in-springfield-mo/" },
 ] as const;
 
 export const footerClasses = [
