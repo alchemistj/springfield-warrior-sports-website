@@ -803,6 +803,39 @@ Lines left that disagree with the saved map, with live’s values:
 - IMG_2344 pixel difference is 39. Same file, no overlay. The compared region is now the 288.855px frame.
 - Parkour’s gap from “Plus, your first class…” to “PARKOUR BENEFITS” is 252px against the map’s 341px, and the temporary-update heading to “PARKOUR BENEFITS” is 911px against 1041px. The visible frame is live’s 600px. The map’s 341px gap follows the 750px image element inside the frame.
 
+## Layout parity batch 4, gate v2.18
+
+Model: Grok 4.7. Measured locally against `docs/qa/layout-map/live` with `layout-map.mjs` and `compare-layout.mjs`. The live map, the scripts, the tolerances, and `layout-allow.json` were not edited. No allow entries were added. The before column is the gate v2.17 count on the batch 2 preview, from the batch 4 request.
+
+| Page | Before 1920 / 1280 / 390 | After 1920 / 1280 / 390 |
+|---|---|---|
+| meet-the-team | 605 / 605 / 199 | 5 / 5 / 7 |
+| best-gyms-in-springfield | 388 / 388 / 202 | 6 / 5 / 12 |
+| registered | 13 / 13 / 15 | 2 / 4 / 2 |
+| registered-for-csna-competition | 17 / 17 / 15 | 4 / 4 / 3 |
+| registered-for-day-camps | 14 / 14 / 16 | 2 / 6 / 2 |
+| registered-for-summer-fun-competition | 14 / 14 / 16 | 2 / 5 / 2 |
+| registered-for-wnl-competition | 13 / 13 / 15 | 2 / 4 / 2 |
+| thank-you-for-your-feedback | 11 / 11 / 13 | 2 / 4 / 3 |
+
+Total differences: 2641 before, 95 after.
+
+The eight pages use dedicated bodies in `src/components/batch4/` and `src/styles/batch4.css`. Shared header, footer, trust bar, and mobile bar were not restyled. The only shared change is `id="open-gym"` on the home ready section, so the team button stays on this site. Square pay URLs and the link text are the same strings as `content.json`. The thank-you pages are still the pages the forms already redirect to after a confirmed submission. They stay noindex and out of the sitemap.
+
+Best Gyms stays an article. The three files listed in `source/media/skipped.txt` (Springfield Strength and Conditioning, 10 Fitness, Genesis) are local copies in `src/assets/media/`. They are not hotlinked.
+
+Lines the gate still reports that disagree with live's CSS or with a full-size look:
+
+- The trust bar is the spec addition under the hero. It splits one white run into two, so every thank-you page reports a 264px white band that is not on live, and the footer white run is about 70px shorter (264px against 334px). The bar was not removed.
+- Live's section-color list for these pages is only white. The team page background is `rgb(239, 246, 252)` and the gym callout is `rgb(238, 244, 250)`. The left-margin sampler matches those colors. The section list still flags them because the live map did not record the same elements.
+- Meet the team at 390: the section-color list includes `rgb(32, 70, 106)` for the mobile title block. Live's list is only white. The screenshot of that block is the flat navy. "YOU'VE MET THE TEAM." is marked covered. The heading is visible, red, on the photo.
+- GP Athletics at 390: live's image is a lazy `data-uri` placeholder. The page shows `gp12-20-45_websize`. That is the one expected photo-missing line. No allow entry was added.
+- GP Athletics at 1920 and 1280: brightness 48 against 89, pixel difference 44. The live image box is 520×780 and the painted photo inside it starts about 100px down and stops about 64px short of the bottom. Those bands are white. The photo fills its element box here.
+- Grace's photo is pixel difference 45 at every width. Same file, no overlay.
+- Rage Fitness at 390 is brightness 25 against 45. Same file, `object-fit: cover` in the 391×391 box.
+- A few sentences wrap one line off at 390 because the self-hosted Epilogue is slightly wider than live's: Lincoln's bio is 9 lines against 8 at the same 270px width, the gym callout is 4 lines against 3 at 338px, and the feedback paragraph is 7 lines against 8. Desktop feedback is 5 lines, matching live.
+- CSNA at 390 is 1476px tall against 1365px. There is no photo on that page. The extra height is the trust bar plus the footer, which were not restyled.
+
 ## Open questions
 
 - Where GF18 should live, if it should be a page at all.

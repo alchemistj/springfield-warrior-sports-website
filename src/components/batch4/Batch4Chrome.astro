@@ -1,0 +1,38 @@
+---
+import { media } from "../batch2/media";
+import ThanksBody from "./ThanksBody.astro";
+
+interface Props {
+  slug: string;
+}
+const { slug } = Astro.props;
+const teamMobile = media("media/2026-01-meet-the-springfield-warrior-sports-mobile.jpg");
+const thanks = new Set([
+  "registered",
+  "registered-for-csna-competition",
+  "registered-for-day-camps",
+  "registered-for-summer-fun-competition",
+  "registered-for-wnl-competition",
+  "thank-you-for-your-feedback",
+]);
+---
+
+{
+  slug === "meet-the-team" && (
+    <div class="b4-team-hero">
+      <div class="col">
+        <h1>Meet the Springfield Warrior Sports Team</h1>
+      </div>
+      <p class="m-title">Meet the Springfield Warrior Sports Team</p>
+      <img class="m-photo" src={teamMobile.src} alt="" width={teamMobile.width} height={teamMobile.height} />
+    </div>
+  )
+}
+{
+  slug === "best-gyms-in-springfield" && (
+    <div class="b4-gym-hero">
+        <h1>LOOKING FOR THE BEST GYMS IN SPRINGFIELD, MO?</h1>
+    </div>
+  )
+}
+{thanks.has(slug) && <ThanksBody slug={slug} />}

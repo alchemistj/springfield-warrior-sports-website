@@ -1,0 +1,81 @@
+---
+import { pageBySlug } from "../../data/content";
+import { media } from "../batch2/media";
+
+const photos = [
+  { h: 386, desk: "media/2026-02-Johnny-photo.webp", mob: "media/2026-01-Johnny-team-photo.jpg" },
+  { h: 406, desk: "media/2026-02-Sarah-photo.webp", mob: "media/2026-01-Sarah-team-photo.jpg", narrow: true },
+  { h: 376, desk: "media/2026-02-Lincoln-photo.webp", mob: "media/2026-01-Lincoln-team-photo.jpg" },
+  { h: 542, desk: "media/2026-02-Ellroy-photo.webp", mob: "media/2026-01-Ellroy-team-photo.jpg", tight: true },
+  { h: 376, desk: "media/2026-02-Elle-photo.webp", mob: "media/2026-01-Elle-team-photo.jpg" },
+  { h: 490, desk: "media/2026-02-Connor-photo.webp", mob: "media/2026-01-Connor-team-photo.jpg" },
+  { h: 406, desk: "media/2026-02-Caleb-team-01.webp", mob: "media/2026-01-Caleb-team-photo.jpg" },
+  { h: 388, desk: "media/2026-02-Ruby-photo.webp", mob: "media/2026-01-Ruby-team-photo.jpg" },
+  { h: 414, desk: "media/2026-02-Josiah-photo.webp", mob: "media/2026-01-Josiah-team-photo.jpg" },
+  { h: 442, desk: "media/2026-02-Jacob-photo.webp", mob: "media/2026-02-Jacob-photo.webp" },
+  { h: 358, desk: "media/2026-02-Grace-photo.webp", mob: "media/2026-02-Grace-photo.webp" },
+];
+
+const blocks = pageBySlug("meet-the-team").blocks;
+const intro = blocks.filter((block) => block.type === "p").slice(0, 3).map((block) => block.text);
+const coaches: { name: string; role: string; paras: string[]; h: number; desk: string; mob: string; narrow?: boolean; tight?: boolean }[] = [];
+for (let i = 0; i < blocks.length; i++) {
+  const block = blocks[i];
+  if (!block || block.type !== "h2" || coaches.length >= photos.length) continue;
+  const role = blocks[i + 1];
+  if (!role || role.type !== "h2") continue;
+  const paras: string[] = [];
+  let j = i + 2;
+  while (j < blocks.length) {
+    const item = blocks[j];
+    if (!item || item.type !== "p" || item.text.startsWith("YOU")) break;
+    paras.push(item.text);
+    j++;
+  }
+  const photo = photos[coaches.length];
+  if (!photo) break;
+  coaches.push({ name: block.text, role: role.text, paras, h: photo.h, desk: photo.desk, mob: photo.mob, narrow: photo.narrow, tight: photo.tight });
+  i = j - 1;
+}
+const cta = media("media/2025-12-IMG_2336-scaled.jpeg");
+const shot = (file: string) => media(file).src;
+---
+
+<div class="b4">
+  <div class="b4-wrap b4-intro">
+    {intro.map((text, index) => <p class={index === intro.length - 1 ? "mid" : undefined}>{text}</p>)}
+  </div>
+  {
+    coaches.map((coach) => (
+      <article class:list={["b4-wrap", "b4-person", { narrow: coach.narrow, tight: coach.tight }]}>
+        <div class="b4-shot desk" style={`--h:${coach.h}px;background-image:url('${shot(coach.desk)}')`} role="img" aria-label={coach.name}></div>
+        <div class="b4-shot mob" style={`background-image:url('${shot(coach.mob)}')`} role="img" aria-label={coach.name}></div>
+        <h2>{coach.name}</h2>
+        <h3>{coach.role}</h3>
+        <div class="bio">
+          {coach.paras.map((para) => {
+            const mark = "American Ninja Warrior";
+            const at = para.indexOf(mark);
+            return at === -1 ? <p>{para}</p> : <p>{para.slice(0, at)}<em>{mark}</em>{para.slice(at + mark.length)}</p>;
+          })}
+        </div>
+      </article>
+    ))
+  }
+</div>
+<section
+  class="b4-cta"
+  style={`background-image:linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),url('${cta.src}');background-size:auto,cover;background-position:50% 50%,50% 70%`}
+>
+  <div class="b4-cta-copy">
+    <h2>You've met the team.</h2>
+    <h2>Now train with them.</h2>
+    <h4>You’ve met the coaches who make Springfield Warrior Sports what it is.</h4>
+    <h4>Now, come be a part of it and experience it for yourself.</h4>
+    <a class="go" href="/#open-gym">
+      Try Open Gym for $10
+      <svg viewBox="0 0 448 512" aria-hidden="true"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg>
+    </a>
+    <h4 class="note"><em>No experience required.</em></h4>
+  </div>
+</section>
