@@ -1,4 +1,6 @@
 ---
+import quoteIcon from "../assets/media/2023-03-qoute-icon.webp";
+
 interface Props {
   text: string;
   by: string;
@@ -8,13 +10,15 @@ interface Props {
 }
 const { text, by, title, sub, as = "h2" } = Astro.props;
 const Title = as;
+const icon = quoteIcon as { src: string; width: number; height: number };
 ---
 
 <section class="review-band">
   <div class="review-inner">
     {title && <Title class="review-title">{title}</Title>}
-    {sub && <p class="review-sub">{sub}</p>}
+    {sub && <h3 class="review-sub">{sub}</h3>}
     <blockquote>
+      <img class="quote-mark" src={icon.src} alt="" width="42" height="42" />
       <p>{text}</p>
       <p class="review-by">{by}</p>
     </blockquote>
@@ -50,6 +54,7 @@ const Title = as;
     text-align: center;
   }
   blockquote { margin: 0; }
+  .quote-mark { display: block; width: 42px; height: 42px; margin: 0 auto 12px; }
   p {
     margin: 0;
     color: #171716;

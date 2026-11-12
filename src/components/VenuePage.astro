@@ -93,8 +93,8 @@ const hero =
     ? await heroImage(
         heroFile,
         fullBleed
-          ? { width: 1920, quality: 55 }
-          : { width: page.slug === "home" ? 960 : 1100, quality: page.slug === "home" ? 28 : 36, cropAspect: page.slug === "home" ? 1.9 : 2.05, cropY: 0.42 },
+          ? { width: 1280, quality: 48 }
+          : { width: 1280, quality: 46, cropAspect: page.slug === "home" ? 1.9 : 2.05, cropY: 0.42 },
       )
     : null;
 

@@ -165,11 +165,13 @@ em, i {
   }
 }
 
-/* Coach bios: long copy sits on the page, the navy frame stays on the photo. */
+/* Coach bios: long copy sits on the page, the navy frame stays on the photo.
+   First photo is on the right, then they alternate. */
 .b4-person {
   display: grid !important;
   grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
-  gap: 24px;
+  column-gap: 24px;
+  row-gap: 8px;
   align-items: start;
   border: 0 !important;
   background: transparent !important;
@@ -177,10 +179,23 @@ em, i {
   padding: 12px 0 28px !important;
   float: none !important;
 }
+.b4-person .b4-shot.desk {
+  grid-column: 2;
+  grid-row: 1 / span 8;
+  align-self: stretch;
+}
+.b4-person h2,
+.b4-person h3,
+.b4-person .bio {
+  grid-column: 1;
+}
 .b4-person:nth-of-type(even) {
   grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
 }
-.b4-person:nth-of-type(even) .b4-shot.desk { order: 2; }
+.b4-person:nth-of-type(even) .b4-shot.desk { grid-column: 1; }
+.b4-person:nth-of-type(even) h2,
+.b4-person:nth-of-type(even) h3,
+.b4-person:nth-of-type(even) .bio { grid-column: 2; }
 .b4-shot {
   float: none !important;
   width: 100% !important;
@@ -336,6 +351,15 @@ em, i {
   }
   .b4-shot.desk { display: none !important; }
   .b4-shot.mob { display: block !important; }
+  .b4-person .b4-shot.desk,
+  .b4-person .b4-shot.mob,
+  .b4-person h2,
+  .b4-person h3,
+  .b4-person .bio {
+    grid-column: 1 !important;
+    grid-row: auto !important;
+  }
+  .b4-person .b4-shot.mob { order: 2 !important; }
   .bullet-line { width: min(var(--content-max), calc(100% - var(--content-pad) * 2)) !important; white-space: normal !important; }
 }
 
