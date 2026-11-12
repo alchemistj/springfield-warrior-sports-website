@@ -16,6 +16,9 @@ import LaserBody from "./batch3/LaserBody.astro";
 import NerfBody from "./batch3/NerfBody.astro";
 import ParkourBody from "./batch3/ParkourBody.astro";
 import PersonalBody from "./batch3/PersonalBody.astro";
+import Batch4Chrome from "./batch4/Batch4Chrome.astro";
+import GymsBody from "./batch4/GymsBody.astro";
+import TeamBody from "./batch4/TeamBody.astro";
 import HomeBody from "./HomeBody.astro";
 import KidsBody from "./KidsBody.astro";
 import LeadForm from "./LeadForm.astro";
@@ -48,6 +51,24 @@ const BATCH3 = new Set([
   "laser-tag",
   "nerf-wars",
 ]);
+const BATCH4 = new Set([
+  "meet-the-team",
+  "best-gyms-in-springfield",
+  "registered",
+  "registered-for-csna-competition",
+  "registered-for-day-camps",
+  "registered-for-summer-fun-competition",
+  "registered-for-wnl-competition",
+  "thank-you-for-your-feedback",
+]);
+const THANKS = new Set([
+  "registered",
+  "registered-for-csna-competition",
+  "registered-for-day-camps",
+  "registered-for-summer-fun-competition",
+  "registered-for-wnl-competition",
+  "thank-you-for-your-feedback",
+]);
 const HERO_FILE: Record<string, string> = {
   home: "media/2025-12-IMG_2341-scaled.jpeg",
   about: "media/2023-03-About-Banner.jpg",
@@ -64,8 +85,9 @@ const HERO_FILE: Record<string, string> = {
 const heroFile = HERO_FILE[page.slug] ?? page.heroFile;
 const fullBleed = page.slug === "about" || BATCH2.has(page.slug) || BATCH3.has(page.slug);
 const batch3 = BATCH3.has(page.slug);
+const batch4 = BATCH4.has(page.slug);
 const hero =
-  page.photoHero && heroFile
+  !batch4 && page.photoHero && heroFile
     ? await heroImage(
         heroFile,
         fullBleed
@@ -309,9 +331,15 @@ function nextPhoto(): ContentImage | undefined {
       />
     )
   }
-  <div slot="hero" class:list={["hero-copy", hero ? `align-${heroAlign}` : "hero-plain", hero ? `tone-${heroTone}` : "", hero ? `hero-size-${heroSize}` : "", { bare: !showHeroText && !batch3, "b2-hero": BATCH2.has(page.slug), "b3-hero": batch3 }]}>
-    {hero && (showHeroText || aboutHero || batch3) && <div class:list={["hero-scrim", { "about-scrim": aboutHero, "b2-scrim": BATCH2.has(page.slug) }]} aria-hidden="true"></div>}
-    <div class="hero-text">
+  {
+    batch4 ? (
+      <div slot="hero" class="b4-hero">
+        <Batch4Chrome slug={page.slug} />
+      </div>
+    ) : (
+      <div slot="hero" class:list={["hero-copy", hero ? `align-${heroAlign}` : "hero-plain", hero ? `tone-${heroTone}` : "", hero ? `hero-size-${heroSize}` : "", { bare: !showHeroText && !batch3, "b2-hero": BATCH2.has(page.slug), "b3-hero": batch3 }]}>
+        {hero && (showHeroText || aboutHero || batch3) && <div class:list={["hero-scrim", { "about-scrim": aboutHero, "b2-scrim": BATCH2.has(page.slug) }]} aria-hidden="true"></div>}
+        <div class="hero-text">
       {aboutHero && <h1>SPRINGFIELD WARRIOR SPORTS<br />COMMUNITY</h1>}
       {!aboutHero && showHeroText && !BATCH2.has(page.slug) && !batch3 && <h1>{page.h1}</h1>}
       {page.slug === "fitness-classes" && (
@@ -357,8 +385,10 @@ function nextPhoto(): ContentImage | undefined {
       {page.slug === "home" && heroExtra[1] && <p class="hero-sub">{heroExtra[1].text}</p>}
       {page.slug === "kids-classes" && <h2 class="hero-kicker light-300">NINJA WARRIOR CLASSES FOR KIDS AND TEENS</h2>}
       {page.slug !== "home" && page.slug !== "kids-classes" && showHeroText && !BATCH2.has(page.slug) && !batch3 && heroExtra[0] && <p class="hero-sub">{heroExtra[0].text}</p>}
-    </div>
-  </div>
+        </div>
+      </div>
+    )
+  }
 
   {
     bullet && (
@@ -384,10 +414,11 @@ function nextPhoto(): ContentImage | undefined {
   </section>
 
   {
-    !BATCH2.has(page.slug) && !h1InHero && !h1InSection && !h1InBody && (
+    !batch4 && !BATCH2.has(page.slug) && !h1InHero && !h1InSection && !h1InBody && (
       <h1 class="sr-only">{page.h1}</h1>
     )
   }
+  {THANKS.has(page.slug) && <h1 class="sr-only">{page.h1}</h1>}
   {
     batch3 && !h1InHero && (h1InSection || h1InBody) && (
       <h1 class="sr-only">{page.h1}</h1>
@@ -417,9 +448,11 @@ function nextPhoto(): ContentImage | undefined {
   {page.slug === "homeschool-sports-and-classes-springfield-mo" && <HomeschoolBody />}
   {page.slug === "laser-tag" && event && <LaserBody event={event} />}
   {page.slug === "nerf-wars" && event && <NerfBody event={event} />}
+  {page.slug === "meet-the-team" && <TeamBody />}
+  {page.slug === "best-gyms-in-springfield" && <GymsBody />}
 
   {
-    !BATCH2.has(page.slug) && !batch3 && page.slug !== "home" && page.slug !== "about" && page.slug !== "kids-classes" && page.slug !== "contact" &&
+    !batch4 && !BATCH2.has(page.slug) && !batch3 && page.slug !== "home" && page.slug !== "about" && page.slug !== "kids-classes" && page.slug !== "contact" &&
       pageStory.map((section, index) => {
         const title = section.titles.join(" ");
         const kidsKey = Object.keys(KIDS_PHOTO).find((key) => title.toLowerCase().includes(key));
@@ -493,7 +526,7 @@ function nextPhoto(): ContentImage | undefined {
   }
 
   {
-    event && !BATCH2.has(page.slug) && !batch3 && page.slug !== "contact" && (
+    event && !batch4 && !BATCH2.has(page.slug) && !batch3 && page.slug !== "contact" && (
       <section class="form-band">
         <div class="wrap">
           <LeadForm event={event} />
@@ -503,7 +536,7 @@ function nextPhoto(): ContentImage | undefined {
   }
 
   {
-    quotes.length > 0 && !BATCH2.has(page.slug) && !batch3 && page.slug !== "home" && page.slug !== "about" && (
+    quotes.length > 0 && !batch4 && !BATCH2.has(page.slug) && !batch3 && page.slug !== "home" && page.slug !== "about" && (
       <section class="section band">
         <div class="wrap">
           {quoteTitles.length > 0 && (
@@ -524,7 +557,7 @@ function nextPhoto(): ContentImage | undefined {
   }
 
   {
-    page.logos.length > 0 && !BATCH2.has(page.slug) && !batch3 && page.slug !== "home" && page.slug !== "about" && (
+    page.logos.length > 0 && !batch4 && !BATCH2.has(page.slug) && !batch3 && page.slug !== "home" && page.slug !== "about" && (
       <div class="wrap logos">
         {page.logos.filter((logo) => !/qoute-icon|SWS-logo-footer|SpringField-Warrior-Logo/i.test(logo.file)).map((logo) => {
           const img = media(logo.file);

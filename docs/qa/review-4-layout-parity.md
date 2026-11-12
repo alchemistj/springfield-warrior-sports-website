@@ -128,3 +128,11 @@ Done means (Quality bar above):
 - Nobody comparing a page with live at full size, at 1920, 1280 and 390, would notice a difference. The gate (v2.18) finds the differences; it isn't the target.
 - Batch 1 and 2 pages stay where they are, and no other page gets worse.
 - All of batch 1 and 2's lessons apply from the start: live's computed CSS for every value; forms, icons, list markers, shaded boxes and section spacing all taken from live; no paint aimed at the checker; no hidden words; no allow entries; Central Forms wiring unchanged.
+
+## Batch 4 (from 11 Nov, after batch 3 passed and merged)
+
+Batches 1–3 are merged into `cursor/astro-rebuild` (#3, #4, #5). Batch 4 is the last: **meet-the-team, best-gyms-in-springfield** (kept as an article, Josh 2 Nov) and the thank-you pages **registered, registered-for-csna-competition, registered-for-day-camps, registered-for-summer-fun-competition, registered-for-wnl-competition, thank-you-for-your-feedback**.
+
+Starting point on the batch 2 preview, gate v2.17 (1920 / 1280 / 390): meet-the-team 605/605/199, best-gyms 388/388/202, registered 13/13/15, csna 17/17/15, day-camps 14/14/16, summer-fun 14/14/16, wnl 13/13/15, feedback 11/11/13.
+
+The thank-you pages keep their Square pay links exactly (same URLs, same button text) and stay reachable only after Central Forms confirms a submission, as the spec says. Done means the Quality bar above, with batches 1–3 not getting worse; the same rules apply.

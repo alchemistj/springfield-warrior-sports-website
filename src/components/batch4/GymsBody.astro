@@ -1,0 +1,197 @@
+---
+import { pageBySlug } from "../../data/content";
+import { media } from "../batch2/media";
+
+const pin = "M12,2C15.31,2 18,4.66 18,7.95C18,12.41 12,19 12,19C12,19 6,12.41 6,7.95C6,4.66 8.69,2 12,2M12,6A2,2 0 0,0 10,8A2,2 0 0,0 12,10A2,2 0 0,0 14,8A2,2 0 0,0 12,6M20,19C20,21.21 16.42,23 12,23C7.58,23 4,21.21 4,19C4,17.71 5.22,16.56 7.11,15.83L7.75,16.74C6.67,17.19 6,17.81 6,18.5C6,19.88 8.69,21 12,21C15.31,21 18,19.88 18,18.5C18,17.81 17.33,17.19 16.25,16.74L16.89,15.83C18.78,16.56 20,17.71 20,19Z";
+const check = "M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z";
+
+const gyms = [
+  {
+    href: "https://ragearmy.com/",
+    file: "media/colorrage-sw-sq-2.jpg",
+    alt: "Rage Fitness",
+    side: "right",
+    l: -77, t: -19, w: 603, h: 603, mw: 391, mh: 391, mx: 22,
+    highlights: [
+      "24/7 access — because results don’t clock out",
+      "Cold plunges, saunas, compression sleeves, tanning",
+      "Locally owned, hardcore ethos",
+      "Group classes and personal training",
+    ],
+  },
+  {
+    href: "https://www.gpathletics.net/",
+    file: "media/gp12-20-45_websize.jpg",
+    alt: "GP Athletics",
+    side: "left",
+    l: 630, t: -90, w: 520, h: 780, mw: 340, mh: 510, mx: 25,
+    highlights: [
+      "Expert-led barbell and strength classes",
+      "One-on-one coaching and online programs",
+      "Open gym for lifters who know their way around",
+      "Welcoming community for all ages",
+    ],
+  },
+  {
+    href: "/",
+    file: "media/2025-12-IMG_2344-1536x1152.jpeg.webp",
+    alt: "Springfield Warrior Sports",
+    side: "right",
+    l: -51, t: -36, w: 749, h: 562, mw: 490, mh: 367, mx: 25,
+    highlights: [] as string[],
+  },
+  {
+    href: "https://www.springfieldstrengthandconditioning.com/",
+    file: "media/62544e735ced2e7233a47d90_About Us in Springfield Hero.jpg",
+    alt: "Springfield Strength and Conditioning",
+    side: "left",
+    l: 630, t: 4, w: 520, h: 651, mw: 581, mh: 388, mx: 24,
+    highlights: [
+      "Customized training & nutrition (online or in-person)",
+      "Strength, performance, and Olympic lifting classes",
+      "24/7 gym access for grinders",
+      "Coaches who correct your form, not just count reps",
+    ],
+  },
+  {
+    href: "https://www.proximalstrength.com/",
+    file: "media/OurClasses_3-750x500-1200w.jpeg",
+    alt: "Proximal Strength",
+    side: "right",
+    l: -94, t: -8, w: 837, h: 558, mw: 571, mh: 381, mx: 24,
+    highlights: [
+      "Endurance, rowing, sports performance classes",
+      "Personal training & private onboarding",
+      "5-star rated staff with a focus on mindset",
+      "Built for connection, not comparison",
+    ],
+  },
+  {
+    href: "https://10fitness.com/locations/springfield/",
+    file: "media/springfield-1.jpg",
+    alt: "10 Fitness Springfield",
+    side: "left",
+    l: 388, t: -5, w: 1186, h: 593, mw: 738, mh: 369, mx: -90,
+    highlights: [
+      "24/7 gym access, massage chairs, & tanning",
+      "Premium training zones & cardio deck",
+      "Group fitness with knowledgeable coaches",
+      "Affordable, flexible, and great for every schedule",
+    ],
+  },
+  {
+    href: "https://www.genesishealthclubs.com/locations/springfield-south.html",
+    file: "media/genesis_app_background.png",
+    alt: "Genesis Health Clubs Springfield South",
+    side: "right",
+    l: -108, t: -2, w: 962, h: 657, mw: 500, mh: 341, mx: -113,
+    highlights: [
+      "Indoor pool, hot tub, steam room, smoothie bar",
+      "Unlimited daily group classes (HIIT, cycle, yoga, barre)",
+      "CPR-certified childcare",
+      "Full-service locker rooms & recovery spaces",
+    ],
+  },
+];
+
+const blocks = pageBySlug("best-gyms-in-springfield").blocks;
+const paras = blocks.filter((block) => block.type === "p").map((block) => block.text);
+const lead = paras.slice(1, 3);
+const call = paras.slice(3, 7);
+const names = blocks.filter((block) => block.type === "h2").map((block) => block.text);
+const addresses: string[] = [];
+const bodies: string[][] = [];
+for (let i = 0; i < blocks.length; i++) {
+  const block = blocks[i];
+  if (!block || block.type !== "h2") continue;
+  const address = blocks[i + 1];
+  addresses.push(address?.text ?? "");
+  const body: string[] = [];
+  for (let j = i + 2; j < blocks.length; j++) {
+    const item = blocks[j];
+    if (!item || item.type !== "p" || item.text === "Highlights:") break;
+    body.push(item.text);
+  }
+  bodies.push(body);
+}
+const pricing = media("media/2023-03-Pricing-and-Schedule.webp");
+const src = (file: string) => media(file).src;
+const linkClass = "Adult Fitness Classes";
+const ninjaClass = "Adult Ninja Fitness class";
+---
+
+<div class="b4">
+  <div class="b4-wrap b4-lead">
+    {lead.map((text) => <p>{text}</p>)}
+  </div>
+  <div class="b4-band">
+    <div class="b4-wrap b4-call">
+    {
+      call.map((text) => {
+        if (text.includes(linkClass)) {
+          const at = text.indexOf(linkClass);
+          return (
+            <p>
+              {text.slice(0, at)}<a class="red" href="/fitness-classes/">{linkClass}</a>{text.slice(at + linkClass.length)}
+            </p>
+          );
+        }
+        if (text.startsWith("one of the most unique")) {
+          const hot = "one of the most unique gyms around. ";
+          return (
+            <p><span class="hot">{hot}</span>{text.slice(hot.length)}</p>
+          );
+        }
+        return <p>{text}</p>;
+      })
+    }
+    </div>
+  </div>
+  {
+    gyms.map((gym, index) => (
+      <article
+        class={`b4-wrap b4-gym side-${gym.side}`}
+        style={`--l:${gym.l}px;--t:${gym.t}px;--w:${gym.w}px;--h:${gym.h}px;--mw:${gym.mw}px;--mh:${gym.mh}px;--mx:${gym.mx}px`}
+      >
+        {gym.side === "right" && <img src={src(gym.file)} alt={gym.alt} width={gym.w} height={gym.h} />}
+        <div class="b4-copy">
+          <h2>{names[index] ?? ""}</h2>
+          <p class="b4-addr">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d={pin}></path></svg>
+            <span>{addresses[index] ?? ""}</span>
+          </p>
+          {(bodies[index] ?? []).map((text) => {
+            if (!text.includes(ninjaClass)) return <p>{text}</p>;
+            const at = text.indexOf(ninjaClass);
+            return (
+              <p>
+                {text.slice(0, at)}<a class="red" href="/fitness-classes/">{ninjaClass}</a>{text.slice(at + ninjaClass.length)}
+              </p>
+            );
+          })}
+          {gym.highlights.length > 0 && <p class="b4-hl-label">Highlights:</p>}
+          {gym.highlights.length > 0 && (
+            <ul class="b4-hl">
+              {gym.highlights.map((item) => (
+                <li>
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d={check}></path></svg>
+                  <span class={item === "CPR-certified childcare" ? "strong" : undefined}>{item}</span>
+                </li>
+              ))}
+            </ul>
+          )}
+          <a class="b4-visit" href={gym.href} target={gym.href.startsWith("http") ? "_blank" : undefined} rel={gym.href.startsWith("http") ? "nofollow noopener" : undefined}>Visit Website</a>
+        </div>
+        {gym.side === "left" && <img src={src(gym.file)} alt={gym.alt} width={gym.w} height={gym.h} />}
+      </article>
+    ))
+  }
+</div>
+<section class="b4-close" style={`background-image:url('${pricing.src}')`}>
+  <div>
+    <h2>SO… WHICH GYM’S RIGHT FOR YOU?</h2>
+    <h4>Southwest Springfield doesn’t mess around when it comes to fitness. Whether you want to lift heavy, join a class, recover in a cold plunge, or chase your first chin-up—you’ve got options.</h4>
+    <h4>So, no matter where you are in your fitness journey, take the leap.</h4>
+    <h4>Pick your place, show up like you mean it, and get after it.</h4>
+  </div>
+</section>
