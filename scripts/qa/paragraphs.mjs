@@ -126,7 +126,8 @@ for (const slug of slugs) {
     for (const b of byWidth[w]) {
       if (!(b.lines && b.lines > MAX_LINES)) continue;
       // One sentence on its own cannot be split without changing words: report it, do not fail.
-      const oneSentence = !/[.!?]["'”’)]*\s+\S/.test(b.text);
+      // A period before a lowercase word is not a new sentence (the same rule as a split after "Mo.").
+      const oneSentence = !/[.!?]["'”’)]*\s+[A-Z0-9“"'(]/.test(b.text);
       if (w === 1440 && oneSentence) notes.push(`${w}px (one sentence, cannot split): ${b.lines} lines: "${b.text.slice(0, 60)}…"`);
       else if (w === 1440) issues.push(`${w}px: ${b.lines} lines (max ${MAX_LINES}): "${b.text.slice(0, 70)}…"`);
       else notes.push(`${w}px (info only): ${b.lines} lines: "${b.text.slice(0, 60)}…"`);
