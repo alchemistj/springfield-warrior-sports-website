@@ -1,11 +1,13 @@
 // Paragraph checks for a rebuild (Rule 4 typography, Rule 0.4 keeps the human work).
 //
 // 1. Length: every body paragraph renders at most 4 lines at 1440 (Rule 4: paragraphs 3-4 lines max).
+//    A paragraph that is a single sentence is reported but does not fail: it cannot split without changing words.
 //    390 is reported too, for information: 4 lines there is about 30 words, so it does not fail the check.
 // 2. Parity: every paragraph on the live site (from the saved capture in source/pages/<slug>/rendered.html)
 //    is its own paragraph in the build. A live <p> split by a blank line (<br><br>) counts as separate
 //    paragraphs. A live paragraph may be split into consecutive build paragraphs (allowed when it would
-//    break the 4-line max). It must never be merged into a longer paragraph, and never dropped.
+//    break the 4-line max), but only between sentences: each part but the last must end a sentence.
+//    It must never be merged into a longer paragraph, and never dropped.
 //
 // Ignored live text: Gravity Forms' required-fields note (inside the form), the Meet the Team title (a <p> on live,
 // the H1 in the build) and the competitions early-bird sentence live hides with font-size 0.
@@ -97,15 +99,21 @@ for (const slug of slugs) {
   // Parity
   for (const lp of liveParas) {
     if (buildTexts.includes(lp.text)) continue;
-    let split = false;
+    let split = null;
     for (let i = 0; i < buildTexts.length && !split; i++) {
       let acc = buildTexts[i];
       for (let j = i + 1; j < buildTexts.length && acc.length < lp.text.length; j++) {
         acc += " " + buildTexts[j];
-        if (acc === lp.text) split = true;
+        if (acc === lp.text) { split = buildTexts.slice(i, j + 1); break; }
       }
     }
-    if (split) continue;
+    if (split) {
+      // A split must fall between sentences: every part but the last ends with . ! or ? (closing quotes allowed).
+      for (const part of split.slice(0, -1)) {
+        if (!/[.!?]["'”’)]*$/.test(part)) issues.push(`split mid-sentence: "…${part.slice(-50)}" / "${split[split.indexOf(part) + 1].slice(0, 40)}…"`);
+      }
+      continue;
+    }
     const host = buildTexts.find((b) => b.includes(lp.text));
     if (host) issues.push(`merged: "${lp.text.slice(0, 70)}…" is inside a longer build paragraph ("${host.slice(0, 50)}…")`);
     else pending.push([slug, lp.text, issues]);
@@ -114,7 +122,10 @@ for (const slug of slugs) {
   for (const w of [1440, 390]) {
     for (const b of byWidth[w]) {
       if (!(b.lines && b.lines > MAX_LINES)) continue;
-      if (w === 1440) issues.push(`${w}px: ${b.lines} lines (max ${MAX_LINES}): "${b.text.slice(0, 70)}…"`);
+      // One sentence on its own cannot be split without changing words: report it, do not fail.
+      const oneSentence = !/[.!?]["'”’)]*\s+\S/.test(b.text);
+      if (w === 1440 && oneSentence) notes.push(`${w}px (one sentence, cannot split): ${b.lines} lines: "${b.text.slice(0, 60)}…"`);
+      else if (w === 1440) issues.push(`${w}px: ${b.lines} lines (max ${MAX_LINES}): "${b.text.slice(0, 70)}…"`);
       else notes.push(`${w}px (info only): ${b.lines} lines: "${b.text.slice(0, 60)}…"`);
     }
   }
