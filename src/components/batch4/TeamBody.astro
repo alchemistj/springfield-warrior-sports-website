@@ -46,10 +46,29 @@ const shot = (file: string) => media(file).src;
     {intro.map((text, index) => <p class={index === intro.length - 1 ? "mid" : undefined}>{text}</p>)}
   </div>
   {
-    coaches.map((coach) => (
+    coaches.map((coach, index) => (
       <article class:list={["b4-wrap", "b4-person", { narrow: coach.narrow, tight: coach.tight }]}>
-        <div class="b4-shot desk" style={`--h:${coach.h}px;background-image:url('${shot(coach.desk)}')`} role="img" aria-label={coach.name}></div>
-        <div class="b4-shot mob" style={`background-image:url('${shot(coach.mob)}')`} role="img" aria-label={coach.name}></div>
+        <img
+          class="b4-shot desk"
+          src={shot(coach.desk)}
+          alt=""
+          width="371"
+          height={coach.h}
+          loading={index === 0 ? "eager" : "lazy"}
+          decoding={index === 0 ? "sync" : "async"}
+          fetchpriority={index === 0 ? "high" : "auto"}
+          style={`--h:${coach.h}px`}
+        />
+        <img
+          class="b4-shot mob"
+          src={shot(coach.mob)}
+          alt=""
+          width="598"
+          height="260"
+          loading={index === 0 ? "eager" : "lazy"}
+          decoding={index === 0 ? "sync" : "async"}
+          fetchpriority={index === 0 ? "high" : "auto"}
+        />
         <h2>{coach.name}</h2>
         <h3>{coach.role}</h3>
         <div class="bio">
