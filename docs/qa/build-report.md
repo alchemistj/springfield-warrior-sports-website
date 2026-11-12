@@ -867,6 +867,8 @@ Left as they are, with the reason:
 - Grace's photo and the mobile Rage photo differ in exposure. Same files, no overlay added.
 - Jonny's mobile role breaks the pipe one character earlier than live. The card, photo, and copy match.
 
+Round 2, after a full-size look at the `2672c15` preview. Desktop coach cards now use the same frame as the phone cards: 1110px wide, `border: 12px solid #285276`, white inside, 20px apart, on `#eff6fc`. Measured at 1920 the frame is x=405–1514, the same box as live. At 1280 it is x=85–1194, also the same. Jonny's photo is an `<img>` with `loading="eager"`. It paints at 371×386, x=430 at 1920 and x=110 at 1280, matching live's box. All 11 desktop photos loaded. The phone cards are unchanged. Checked full-page at 1920, 1280, and 390 against the saved live screenshots.
+
 ## Open questions
 
 - Where GF18 should live, if it should be a page at all.
