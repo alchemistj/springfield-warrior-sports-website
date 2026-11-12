@@ -392,15 +392,12 @@ function nextPhoto(): ContentImage | undefined {
     <div class="wrap trust-row">
       <p class="trust-line">
         <span>WNL regional qualifier host</span>
-        <span class="trust-sep" aria-hidden="true">·</span>
-        <span>CSNA youth league member</span>
+        <span class="trust-chunk"><span class="trust-sep" aria-hidden="true">·</span>CSNA youth league member</span>
       </p>
       <p class="trust-line">
         <span>Serving Springfield, MO</span>
-        <span class="trust-sep" aria-hidden="true">·</span>
-        <span>Try Open Gym for $10</span>
-        <span class="trust-sep" aria-hidden="true">·</span>
-        <a href={site.phone.tel}>Call {site.phone.display}</a>
+        <span class="trust-chunk"><span class="trust-sep" aria-hidden="true">·</span>Try Open Gym for $10</span>
+        <a class="trust-chunk" href={site.phone.tel}><span class="trust-sep" aria-hidden="true">·</span>Call {site.phone.display}</a>
       </p>
     </div>
   </section>

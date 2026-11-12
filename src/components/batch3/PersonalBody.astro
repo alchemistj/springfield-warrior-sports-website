@@ -12,9 +12,32 @@ interface Props {
 const { event } = Astro.props;
 const heroShot = media("media/2025-08-Warrior-Sports-Personal-Training.webp");
 const cards = [
-  ["media/2025-08-Unconventional-by-Design.webp", "Unconventional by Design", "We use obstacle training, resistance bands, parkour-inspired drills, and reactive movement. These methods naturally demand personalization. Every session is a custom experience."],
-  ["media/2025-08-Stronger-and-Smarter-training.webp", "Stronger and Smarter", "This isn’t just about muscles. It’s about moving with confidence. Our training boosts body awareness, mind-muscle connection, and coordination, helping you move better in daily life."],
-  ["media/2025-08-Emotionally-Intelligent-Coaching.webp", "Emotionally Intelligent Coaching", "We meet you where you are, without shame or performance pressure. Whether you’re just starting or getting unstuck, we help you rediscover joy in movement."],
+  [
+    "media/2025-08-Unconventional-by-Design.webp",
+    "Unconventional by Design",
+    [
+      "We use obstacle training, resistance bands, parkour-inspired drills, and reactive movement.",
+      "These methods naturally demand personalization. Every session is a custom experience.",
+    ],
+  ],
+  [
+    "media/2025-08-Stronger-and-Smarter-training.webp",
+    "Stronger and Smarter",
+    [
+      "This isn’t just about muscles.",
+      "It’s about moving with confidence.",
+      "Our training boosts body awareness, mind-muscle connection, and coordination,",
+      "helping you move better in daily life.",
+    ],
+  ],
+  [
+    "media/2025-08-Emotionally-Intelligent-Coaching.webp",
+    "Emotionally Intelligent Coaching",
+    [
+      "We meet you where you are, without shame or performance pressure.",
+      "Whether you’re just starting or getting unstuck, we help you rediscover joy in movement.",
+    ],
+  ],
 ] as const;
 const trainers = [
   ["media/2025-08-sarah-wilder-img.webp", "Sarah Wilder", "– Women’s Confidence Coach", "Helps women, especially moms, feel strong again in bodies that have carried so much.", "“I focus on helping you feel powerful before you even pick up a weight.”"],
@@ -38,7 +61,7 @@ const steps = [
       <h2>Not Your Typical Gym.<br />Not Your Typical Trainer.</h2>
       <p>If you’ve ever felt like fitness wasn’t made for you, you’re in the right place.</p>
       <p>We don’t (necessarily) do treadmills or machine circuits. We do movement that makes you stronger, sharper, and more confident…your way.</p>
-      <p class="pt-note">Because when training is rooted in curiosity and connection, not comparison, you show up differently. We work with clients from across Springfield. Battlefield to Sunshine and everywhere in between, because personalized training should feel close to home.</p>
+      <p class="pt-note">Because when training is rooted in curiosity and connection, not comparison, you show up differently. We work with clients from across Springfield.</p><p class="pt-note">Battlefield to Sunshine and everywhere in between, because personalized training should feel close to home.</p>
       <a class="b3-btn w800 block" href="#lead-form">Contact our personal trainers</a>
     </div>
     {heroShot.src && <img src={heroShot.src} alt="" width={heroShot.width} height={heroShot.height} loading="lazy" decoding="async" />}
@@ -58,13 +81,13 @@ const steps = [
     <p>It’s a conversation and a challenge all rolled into one.</p>
     <p>Here’s how we’re different:</p>
     <div class="pt-cards">
-      {cards.map(([file, title, body]) => {
+      {cards.map(([file, title, paras]) => {
         const img = media(file);
         return (
           <article>
             {img.src && <img src={img.src} alt="" width={img.width} height={img.height} loading="lazy" decoding="async" />}
             <h4>{title}</h4>
-            <p>{body}</p>
+            {paras.map((para) => <p>{para}</p>)}
           </article>
         );
       })}

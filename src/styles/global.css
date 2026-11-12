@@ -499,17 +499,19 @@ body { position: relative; }
   flex-wrap: wrap;
   justify-content: center;
   align-items: baseline;
-  gap: 0.2em 0.45em;
+  column-gap: 0.55em;
+  row-gap: 0.15em;
   margin: 0;
   max-width: 100%;
 }
+.trust-chunk {
+  white-space: nowrap;
+}
 .trust-sep {
-  color: #fff;
+  margin-right: 0.4em;
 }
 .trust-row a {
-  display: inline;
   color: #fff;
-  white-space: nowrap;
 }
 .trust a {
   color: #fff;
