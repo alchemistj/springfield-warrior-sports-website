@@ -11,12 +11,12 @@ const phone = site.phone.display;
 const tel = site.phone.tel;
 
 const pages: Record<string, { title: string; h: number; wide?: boolean; photo: boolean }> = {
-  registered: { title: "WE RECEIVED THOSE DETAILS, THANK YOU!", h: 477, photo: true },
-  "registered-for-csna-competition": { title: "WE RECEIVED THOSE DETAILS, THANK YOU!", h: 465, wide: true, photo: false },
-  "registered-for-day-camps": { title: "WE RECEIVED THOSE DETAILS, THANK YOU!", h: 545, photo: true },
-  "registered-for-summer-fun-competition": { title: "WE RECEIVED THOSE DETAILS, THANK YOU!", h: 505, photo: true },
-  "registered-for-wnl-competition": { title: "WE RECEIVED THOSE DETAILS, THANK YOU!", h: 477, photo: true },
-  "thank-you-for-your-feedback": { title: "THANK YOU FOR YOUR FEEDBACK!", h: 561, photo: true },
+  registered: { title: "We Received Those Details, Thank You!", h: 477, photo: true },
+  "registered-for-csna-competition": { title: "We Received Those Details, Thank You!", h: 465, wide: true, photo: false },
+  "registered-for-day-camps": { title: "We Received Those Details, Thank You!", h: 545, photo: true },
+  "registered-for-summer-fun-competition": { title: "We Received Those Details, Thank You!", h: 505, photo: true },
+  "registered-for-wnl-competition": { title: "We Received Those Details, Thank You!", h: 477, photo: true },
+  "thank-you-for-your-feedback": { title: "Thank You for Your Feedback!", h: 561, photo: true },
 };
 const page = pages[slug];
 if (!page) throw new Error(`Unknown thank-you page ${slug}`);

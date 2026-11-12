@@ -2,6 +2,7 @@
 import type { EventForm } from "../../data/events";
 import FactIcon from "../batch2/FactIcon.astro";
 import LeadForm from "../LeadForm.astro";
+import ReviewBand from "../ReviewBand.astro";
 import { media } from "../batch2/media";
 import pricingBg from "../../assets/media/2023-03-Pricing-and-Schedule.webp";
 
@@ -44,6 +45,12 @@ const steps = [
   </div>
 </section>
 
+<ReviewBand
+  title="What Our Clients Say"
+  text="After losing some weight on my own, I hit a wall. Warrior Sports changed the game for me. My coach built a program just for me and held me accountable in a way that made me stronger, leaner, and more confident—not just physically, but mentally."
+  by="- Client"
+/>
+
 <section class="b3 b3-grey pt-why">
   <div class="b3-wrap">
     <h2 class="w920"><span>Why Warrior Sports</span> <span>Personal Training Works</span></h2>
@@ -65,6 +72,11 @@ const steps = [
   </div>
 </section>
 
+<ReviewBand
+  text="Over a year, I lost over 50 pounds, gained mobility and confidence, and competed in multiple obstacle races. Warrior Sports is family-friendly, fun, and motivating. My trainer, Jacob, made workouts fast, personal, and sustainable."
+  by="— Michael B."
+/>
+
 <section class="b3 b3-navyband pt-meet">
   <div class="b3-wrap">
     <h2>Meet Your Trainers</h2>
@@ -85,6 +97,11 @@ const steps = [
   </div>
 </section>
 
+<ReviewBand
+  text="Jonny has coached our son for over three years. He’s a mentor, a role model, and a true confidence builder. His dedication helped our son compete at the WNL World Championships two years in a row."
+  by="— Will and Koren Wilson"
+/>
+
 <section class="b3 b3-ice pt-how">
   <div class="b3-wrap b3-split">
     {how.src && <img src={how.src} alt="" width={how.width} height={how.height} loading="lazy" decoding="async" />}
@@ -100,23 +117,10 @@ const steps = [
   </div>
 </section>
 
-<section class="b3 b3-grey pt-say">
-  <div class="b3-wrap">
-    <h2>What Our Clients Say</h2>
-    <div class="pt-quotes">
-      <blockquote>
-        {quote.src && <img src={quote.src} alt="" width="65" height="65" />}
-        <p>After losing some weight on my own, I hit a wall. Warrior Sports changed the game for me. My coach built a program just for me and held me accountable in a way that made me stronger, leaner, and more confident—not just physically, but mentally.</p>
-        <p class="by">- Client</p>
-      </blockquote>
-      <blockquote>
-        {quote.src && <img src={quote.src} alt="" width="65" height="65" />}
-        <p>Over a year, I lost over 50 pounds, gained mobility and confidence, and competed in multiple obstacle races. Warrior Sports is family-friendly, fun, and motivating. My trainer, Jacob, made workouts fast, personal, and sustainable.</p>
-        <p class="by">— Michael B.</p>
-      </blockquote>
-    </div>
-  </div>
-</section>
+<ReviewBand
+  text="My son’s personal training at Warrior Sports has helped him with body image, goal setting, and self-confidence. It’s been so rewarding to watch him grow."
+  by="— Susie K."
+/>
 
 <section class="b3 b3-band pt-form" style={`background-image: url('${pricing}')`}>
   <div class="b3-wrap">

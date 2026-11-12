@@ -64,10 +64,12 @@
 :root {
   --header-h: 149px;
   --hero-h: 450px;
-  /* Live content column is 1150px, centered. At 1920 that starts at x=385; at 1280, x=65. */
-  --content: 1150px;
+  /* Rule 4: one readable column. Full-bleed bands stay full width; the words sit here. */
+  --content-max: 900px;
+  --content-pad: 24px;
+  --content: var(--content-max);
   --callbar-h: 72px;
-  --gutter: 20px;
+  --gutter: var(--content-pad);
 }
 @media (max-width: 799px) {
   .page-about,
@@ -155,6 +157,7 @@ a {
   height: var(--header-h);
 }
 
+body { position: relative; }
 .atf-photo {
   position: absolute;
   left: 0;
@@ -1199,7 +1202,7 @@ a {
   padding-top: 0;
 }
 
-@media (max-width: 1023.98px) {
+@media (max-width: 767px) {
   .site-footer {
     padding-bottom: calc(var(--callbar-h) + env(safe-area-inset-bottom, 0px));
   }

@@ -67,8 +67,7 @@ const included = [
         <li><FactIcon name="arrow" /><span class="strong">Pricing: <span class="rest">It's only $15 per participant. Good news for members – you get 50% off!</span></span></li>
       </ul>
       <h4>Want to be in the loop for our next Nerf War Night? Simply enter your email below and never miss out on the action!</h4>
-      <p class="req-note">"<i>*</i>" indicates required fields</p>
-      <LeadForm event={event} />
+      <LeadForm event={event} note={'"*" indicates required fields'} />
     </div>
     {nights.src && <img src={nights.src} alt="" width={nights.width} height={nights.height} loading="lazy" decoding="async" />}
   </div>

@@ -1,12 +1,14 @@
 ---
-import { mainNav, utilityNav } from "../data/site";
-import { media } from "../lib/media";
+import { quickNav, site, stickyBar, utilityNav } from "../data/site";
+import { logoImage } from "../lib/inline-image";
 
 interface Props {
   current: string;
 }
 const { current } = Astro.props;
-const logo = media("media/2023-03-SpringField-Warrior-Logo.webp");
+const logo = await logoImage("media/2023-03-SpringField-Warrior-Logo.webp", 168);
+const onBookPage = Astro.url.pathname === stickyBar.bookPath;
+const bookHref = onBookPage ? stickyBar.formAnchor : stickyBar.bookPath;
 
 const linkProps = (item: { path: string; external?: boolean }) =>
   item.external ? { target: "_blank", rel: "noopener noreferrer" } : {};
@@ -27,20 +29,33 @@ const linkProps = (item: { path: string; external?: boolean }) =>
   <div class="main-bar">
     <div class="bar main-inner">
       <a class="logo-link" href="/" aria-label="Springfield Warrior Sports, home">
-        <img src={logo.src} alt="" width="203" height="59" />
+        <img src={logo.uri} alt="" width={logo.width} height={logo.height} />
       </a>
+      <a class="bar-call" href={site.phone.tel}>{stickyBar.callLabel}</a>
       <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-menu" data-menu>
         <span class="sr-only">Menu</span>
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z" /></svg>
       </button>
       <nav id="site-menu" class="nav-links" data-nav aria-label="Primary">
         {
-          mainNav.map((item) => (
+          utilityNav.map((item) => (
+            <a class="menu-only" href={item.path} {...linkProps(item)}>
+              {item.label}
+            </a>
+          ))
+        }
+        {
+          quickNav.map((item) => (
             <a href={item.path} aria-current={item.path === current ? "page" : undefined}>
               {item.label}
             </a>
           ))
         }
+        <a class="nav-phone" href={site.phone.tel}>
+          <span class="digits">{site.phone.display}</span>
+          <span class="label">{stickyBar.callLabel}</span>
+        </a>
+        <a class="nav-cta" href={bookHref}>{stickyBar.bookLabel}</a>
       </nav>
     </div>
   </div>
@@ -50,9 +65,12 @@ const linkProps = (item: { path: string; external?: boolean }) =>
   const header = document.querySelector<HTMLElement>("[data-header]");
   const button = header?.querySelector<HTMLButtonElement>("[data-menu]");
   if (header && button) {
+    const motion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (motion) header.classList.add("no-motion");
     button.addEventListener("click", () => {
       const open = header.classList.toggle("is-open");
       button.setAttribute("aria-expanded", open ? "true" : "false");
+      if (open) header.classList.remove("is-hidden");
     });
     header.querySelectorAll("nav a").forEach((link) => {
       link.addEventListener("click", () => {
@@ -61,13 +79,34 @@ const linkProps = (item: { path: string; external?: boolean }) =>
       });
     });
     let last = window.scrollY;
+    let up = 0;
+    let ticking = false;
     window.addEventListener(
       "scroll",
       () => {
-        const y = window.scrollY;
-        if (!header.classList.contains("is-open") && y > last && y > 80) header.classList.add("is-hidden");
-        else header.classList.remove("is-hidden");
-        last = y;
+        if (ticking) return;
+        ticking = true;
+        requestAnimationFrame(() => {
+          const y = window.scrollY;
+          const delta = y - last;
+          const open = header.classList.contains("is-open");
+          const focused = header.contains(document.activeElement);
+          if (open || focused || y <= header.offsetHeight) {
+            header.classList.remove("is-hidden");
+            up = 0;
+          } else if (delta > 0) {
+            up = 0;
+            header.classList.add("is-hidden");
+          } else if (delta < 0) {
+            up += -delta;
+            if (up >= 10) {
+              header.classList.remove("is-hidden");
+              up = 0;
+            }
+          }
+          last = y;
+          ticking = false;
+        });
       },
       { passive: true },
     );
@@ -83,16 +122,12 @@ const linkProps = (item: { path: string; external?: boolean }) =>
     z-index: 50;
     background: #fff;
     transform: translateY(0);
-    transition: transform 0.2s ease;
+    transition: transform 200ms ease;
   }
-  .site-header.is-hidden {
-    transform: translateY(-100%);
-  }
+  .site-header.no-motion { transition: none; }
+  .site-header.is-hidden { transform: translateY(-100%); }
   .util-bar,
-  .main-bar {
-    position: relative;
-    background: transparent;
-  }
+  .main-bar { position: relative; background: transparent; }
   .util-bar::before,
   .main-bar::before {
     content: "";
@@ -102,76 +137,73 @@ const linkProps = (item: { path: string; external?: boolean }) =>
   }
   .util-bar::before { background: #000; }
   .main-bar::before { background: #285276; }
-  .util-links { box-sizing: border-box; }
   .bar {
     position: relative;
     z-index: 1;
-    width: min(1150px, 100%);
+    box-sizing: border-box;
+    width: min(var(--content-max), calc(100% - var(--content-pad) * 2));
     margin: 0 auto;
   }
   .util-links {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 0;
-    padding: 11px 0;
+    justify-content: flex-end;
+    gap: 22px;
+    min-height: 46px;
+    padding: 0;
   }
   .util-links a {
     display: flex;
     align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-    height: 28px;
+    min-height: 48px;
     color: #fff;
     font-family: Heebo, "Arial Narrow", sans-serif;
     font-size: 14px;
     font-weight: 600;
-    line-height: 28px;
-    letter-spacing: 1px;
-    text-align: center;
+    letter-spacing: 0.04em;
     text-decoration: none;
     text-transform: uppercase;
-  }
-  .util-links a:nth-child(1) { width: 70px; margin-right: 20px; }
-  .util-links a:nth-child(2) { width: 51px; margin-right: 20px; }
-  .util-links a:nth-child(3) { width: 133px; }
-  @media (max-width: 799px) {
-    .util-links { transform: translateX(5px); }
   }
   .main-inner {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    box-sizing: border-box;
-    padding: 20px 16px 20px 20px;
+    gap: 12px;
+    min-height: 76px;
   }
-  .logo-link {
-    display: flex;
-    flex: 0 0 auto;
-    line-height: 0;
+  .logo-link { display: flex; flex: 0 0 auto; line-height: 0; }
+  .logo-link img { width: 148px; height: auto; max-width: 100%; }
+  .bar-call,
+  .nav-cta,
+  .nav-phone {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 0 14px;
+    border-radius: 999px;
+    font-family: Heebo, "Arial Narrow", sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    text-decoration: none;
+    white-space: nowrap;
   }
-  .logo-link img {
-    width: 203px;
-    height: 59px;
-    max-width: none;
-    object-fit: contain;
+  .bar-call {
+    margin-left: auto;
+    background: var(--color-ws-red);
+    color: #fff;
   }
   .menu-btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 20px;
-    height: 20px;
+    width: 48px;
+    height: 48px;
     padding: 0;
     border: 0;
     background: transparent;
     color: #fff;
   }
-  .menu-btn svg {
-    width: 20px;
-    height: 20px;
-    fill: #fff;
-  }
+  .menu-btn svg { width: 22px; height: 22px; fill: #fff; }
   .nav-links {
     display: none;
     position: absolute;
@@ -193,54 +225,60 @@ const linkProps = (item: { path: string; external?: boolean }) =>
     font-family: Heebo, "Arial Narrow", sans-serif;
     font-size: 16px;
     font-weight: 600;
-    letter-spacing: 0;
     text-decoration: none;
-    text-transform: uppercase;
   }
+  .nav-phone { background: transparent; color: #fff; padding: 0; border-radius: 0; justify-content: flex-start; }
+  .nav-phone .digits { display: none; }
+  .nav-cta { background: var(--color-ws-red); color: #fff; width: fit-content; margin-top: 6px; }
   .nav-links a[aria-current="page"],
   .util-links a[aria-current="page"] {
     text-decoration: underline;
     text-underline-offset: 4px;
   }
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
 
   @media (min-width: 1024px) {
-    .util-links {
-      justify-content: flex-end;
-      align-items: center;
-      height: 46px;
-      padding: 0 30px;
-    }
-    .util-links a:nth-child(1) { margin-right: 25px; }
-    .util-links a:nth-child(2) { margin-right: 24px; }
-    .main-inner {
-      height: 93px;
-      padding: 0 26px 0 20px;
-    }
+    .main-inner { min-height: 84px; gap: 8px; }
+    .bar-call { display: none; }
     .menu-btn { display: none; }
     .nav-links {
       display: flex;
       position: static;
       flex-direction: row;
       align-items: center;
-      gap: 12px;
+      gap: 6px;
       margin-left: auto;
+      min-width: 0;
       padding: 0;
       background: transparent;
     }
+    .nav-links a.menu-only { display: none; }
     .nav-links a {
-      box-sizing: border-box;
-      height: 32px;
-      min-height: 0;
+      min-height: 48px;
       padding: 0;
-      font-size: 16px;
-      line-height: 32px;
+      font-size: 13px;
       white-space: nowrap;
     }
-    .nav-links a:nth-child(1) { width: 120px; }
-    .nav-links a:nth-child(2) { width: 97px; }
-    .nav-links a:nth-child(3) { width: 116px; }
-    .nav-links a:nth-child(4) { width: 142px; }
-    .nav-links a:nth-child(5) { width: 158px; }
-    .nav-links a:nth-child(6) { width: 126px; }
+    .nav-phone {
+      min-height: 48px;
+      padding: 0 4px;
+      font-weight: 700;
+    }
+    .nav-phone .digits { display: inline; }
+    .nav-phone .label { display: none; }
+    .nav-cta { margin-top: 0; padding: 0 12px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .site-header { transition: none; }
   }
 </style>

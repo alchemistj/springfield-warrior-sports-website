@@ -1,0 +1,65 @@
+---
+interface Props {
+  text: string;
+  by: string;
+  title?: string;
+  sub?: string;
+  as?: "h1" | "h2";
+}
+const { text, by, title, sub, as = "h2" } = Astro.props;
+const Title = as;
+---
+
+<section class="review-band">
+  <div class="review-inner">
+    {title && <Title class="review-title">{title}</Title>}
+    {sub && <p class="review-sub">{sub}</p>}
+    <blockquote>
+      <p>{text}</p>
+      <p class="review-by">{by}</p>
+    </blockquote>
+  </div>
+</section>
+
+<style>
+  .review-band {
+    background: #e5eaed;
+    padding: 36px 0;
+  }
+  .review-inner {
+    box-sizing: border-box;
+    width: min(var(--content-max), calc(100% - var(--content-pad) * 2));
+    margin: 0 auto;
+  }
+  .review-title {
+    margin: 0 0 6px;
+    color: #d6352f;
+    font-family: Heebo, "Arial Narrow", sans-serif;
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 1.15;
+    text-align: center;
+    text-transform: none;
+  }
+  .review-sub {
+    margin: 0 0 16px;
+    color: #171716;
+    font-family: Heebo, "Arial Narrow", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+  }
+  blockquote { margin: 0; }
+  p {
+    margin: 0;
+    color: #171716;
+    font-family: Muli, "Segoe UI", sans-serif;
+    font-size: 17px;
+    line-height: 1.55;
+  }
+  .review-by {
+    margin-top: 12px;
+    color: #d6352f;
+    font-weight: 800;
+  }
+</style>

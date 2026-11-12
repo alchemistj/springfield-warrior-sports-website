@@ -67,8 +67,7 @@ const nights = typeof nightsBg === "string" ? nightsBg : nightsBg.src;
       </ul>
       <h4 class="note">Note: Laser Tag Nights typically happen on Friday evenings.</h4>
       <h4>Sign up now to get notified of all future laser tag events!</h4>
-      <p class="req-note">"<i>*</i>" indicates required fields</p>
-      <LeadForm event={event} />
+      <LeadForm event={event} note={'"*" indicates required fields'} />
     </div>
     {fest.src && <img src={fest.src} alt="" width={fest.width} height={fest.height} loading="lazy" decoding="async" />}
   </div>

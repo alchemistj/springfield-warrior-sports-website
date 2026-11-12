@@ -1,7 +1,7 @@
 ---
 import type { EventForm } from "../../data/events";
 import LeadForm from "../LeadForm.astro";
-import Quotes from "./Quotes.astro";
+import ReviewBand from "../ReviewBand.astro";
 
 interface Props {
   event: EventForm;
@@ -9,6 +9,13 @@ interface Props {
 const { event } = Astro.props;
 ---
 
+<ReviewBand
+  as="h1"
+  title="Client Testimonials"
+  sub="What Our Clients Say"
+  text="We had our son’s 10th birthday here. All of the kids had a great time. They set up an obstacle course for the kids. They loved the whole experience. The favorite was the curved wall to run up. That was everyone’s challenge for the night. We will be visiting again for sure."
+  by="- Jennifer L."
+/>
 <section class="b2-block b2-grey">
   <div class="b2-wrap bd-steps">
     <p class="bd-steps-p">1. &nbsp;Fill out the form to begin the scheduling process and check availability<br />2. &nbsp;We will secure a date and then follow up with a phone call to confirm details and collect the $179 fee<br />3. &nbsp;Look forward to the best birthday ever!</p>
@@ -16,4 +23,7 @@ const { event } = Astro.props;
     <LeadForm event={event} />
   </div>
 </section>
-<Quotes variant="schedule" as="h1" />
+<ReviewBand
+  text="My daughter started training here 3 years ago at 8, and she still loves it!! Owner and coaching staff are all super encouraging. We live an hour away but make the drive twice a week as often as possible. Training here has not only helped her get stronger physically but increased her confidence in general. Anything that makes kids want to challenge themselves to get better and better is worth it!"
+  by="- Lee C."
+/>

@@ -2,8 +2,9 @@
 import type { EventForm } from "../../data/events";
 import { site } from "../../data/site";
 import LeadForm from "../LeadForm.astro";
+import MapFacade from "../MapFacade.astro";
 import FactIcon from "./FactIcon.astro";
-import Quotes from "./Quotes.astro";
+import ReviewBand from "../ReviewBand.astro";
 import { media } from "./media";
 
 interface Props {
@@ -17,7 +18,7 @@ const right = media("media/2025-12-IMG_2342-768x576.jpeg.webp");
 <section class="b2-block">
   <div class="b2-wrap contact-grid">
     <div class="contact-copy">
-      <h2>CONTACT US</h2>
+      <h2>Contact Us</h2>
       <p>We look forward to hearing from you! <br />We are located one block west of Campbell off Plainview Road (Farm Road 182), directly behind the Eagles Lodge next to Marco Automotive. Look for the grey building!</p>
       <p class="b2-fact contact-fact">
         <FactIcon name="pin" />
@@ -34,15 +35,17 @@ const right = media("media/2025-12-IMG_2342-768x576.jpeg.webp");
       <LeadForm event={event} tone="card" />
     </div>
     <div class="contact-map">
-      <iframe
-        title="Google Map"
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-        src="https://www.google.com/maps?q=605%20W%20Plainview%20Road%20Springfield%2C%20MO%2065810&z=14&output=embed"
-      ></iframe>
+      <MapFacade />
     </div>
   </div>
 </section>
+
+<ReviewBand
+  title="Client Testimonials"
+  sub="What Our Clients Say"
+  text="We had our son’s 10th birthday here. All of the kids had a great time. They set up an obstacle course for the kids. They loved the whole experience. The favorite was the curved wall to run up. That was everyone’s challenge for the night. We will be visiting again for sure."
+  by="- Jennifer L."
+/>
 
 <section class="b2-block">
   <div class="b2-wrap contact-photos">
@@ -51,4 +54,7 @@ const right = media("media/2025-12-IMG_2342-768x576.jpeg.webp");
   </div>
 </section>
 
-<Quotes variant="contact" band />
+<ReviewBand
+  text="My daughter started training here 3 years ago at 8, and she still loves it!! Owner and coaching staff are all super encouraging. We live an hour away but make the drive twice a week as often as possible. Training here has not only helped her get stronger physically but increased her confidence in general. Anything that makes kids want to challenge themselves to get better and better is worth it!"
+  by="- Lee C."
+/>

@@ -3,8 +3,10 @@ import "../styles/global.css";
 import "../styles/batch2.css";
 import "../styles/batch3.css";
 import "../styles/batch4.css";
+import "../styles/system.css";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+import FinalCta from "../components/FinalCta.astro";
 import StickyCallBar from "../components/StickyCallBar.astro";
 import { site, SITE_URL } from "../data/site";
 import { canonicalUrl, type Route } from "../lib/routes";
@@ -64,10 +66,10 @@ const gaId = site.ga4;
     </script>
   </head>
   <body class={`page-${route.key}`}>
+    <slot name="hero-photo" />
     <a class="skip-link" href="#main">Skip to content</a>
     <div class="atf">
       <Header current={route.path} />
-      <slot name="hero-photo" />
       <div class="header-spacer"></div>
       <slot name="hero" />
       <span class="atf-ready" hidden></span>
@@ -75,6 +77,7 @@ const gaId = site.ga4;
     <main id="main">
       <slot />
     </main>
+    <FinalCta />
     <Footer />
     <StickyCallBar />
   </body>

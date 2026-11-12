@@ -1,6 +1,9 @@
 // One business record. The NAP phone is the only phone number on the site.
 // Address: Josh, 2 Nov 2026. NAP (JSON-LD, llms.txt, map) is exactly the Google Business Profile.
 // Visitors see the same address with "(Plainview Road at Campbell)", the name locals know.
+// Phone, address and service area live in cityConfig.ts (Rule 0.4, Rule 7).
+
+import { city } from "./cityConfig";
 
 export const SITE_URL = "https://www.springfieldwarriorsports.com";
 
@@ -8,21 +11,9 @@ export const site = {
   name: "Springfield Warrior Sports",
   tagline: "Ninja and Parkour Gym",
   url: SITE_URL,
-  phone: {
-    display: "(417) 894-7319",
-    tel: "tel:+14178947319",
-    e164: "+14178947319",
-  },
+  phone: city.phone,
   email: "office@swarriorsports.com",
-  address: {
-    street: "605 W Farm Rd 182",
-    display: "605 W Farm Rd 182 (Plainview Road at Campbell), Springfield, MO 65810",
-    city: "Springfield",
-    region: "MO",
-    postalCode: "65810",
-    country: "US",
-    oneLine: "605 W Farm Rd 182, Springfield, MO 65810",
-  },
+  address: city.address,
   hours: [
     { days: "Monday", opens: "12:00", closes: "18:00", text: "Monday: 12pm-6pm" },
     { days: "Tuesday", opens: "15:00", closes: "17:30", text: "Tuesday: 3pm-5:30pm" },
@@ -52,6 +43,31 @@ export const mainNav = [
   { label: "Birthday Parties", path: "/birthday-parties/" },
   { label: "Personal Training", path: "/personal-training/" },
   { label: "Summer Camps", path: "/summer-camps-in-springfield-mo/" },
+] as const;
+
+/** Header quick links (Rule 5): the four main reasons people come in. */
+export const quickNav = [
+  { label: "Kid Classes", path: "/kids-classes/" },
+  { label: "Adult Classes", path: "/fitness-classes/" },
+  { label: "Birthday Parties", path: "/birthday-parties/" },
+  { label: "Summer Camps", path: "/summer-camps-in-springfield-mo/" },
+] as const;
+
+export const footerClasses = [
+  { label: "Kid Classes", path: "/kids-classes/" },
+  { label: "Adult Classes", path: "/fitness-classes/" },
+  { label: "Parkour", path: "/parkour/" },
+  { label: "Homeschool Classes", path: "/homeschool-sports-and-classes-springfield-mo/" },
+  { label: "Personal Training", path: "/personal-training/" },
+  { label: "Summer Camps", path: "/summer-camps-in-springfield-mo/" },
+] as const;
+
+export const footerEvents = [
+  { label: "Birthday Parties", path: "/birthday-parties/" },
+  { label: "Laser Tag", path: "/laser-tag/" },
+  { label: "Nerf Wars", path: "/nerf-wars/" },
+  { label: "Competitions", path: "/competitions/" },
+  { label: "WNL Competitions", path: "/wnl-competitions/" },
 ] as const;
 
 export const headerNav = [...utilityNav, ...mainNav] as const;
