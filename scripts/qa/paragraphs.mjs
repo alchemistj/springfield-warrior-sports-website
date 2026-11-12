@@ -108,10 +108,13 @@ for (const slug of slugs) {
       }
     }
     if (split) {
-      // A split must fall between sentences: every part but the last ends with . ! or ? (closing quotes allowed).
-      for (const part of split.slice(0, -1)) {
-        if (!/[.!?]["'”’)]*$/.test(part)) issues.push(`split mid-sentence: "…${part.slice(-50)}" / "${split[split.indexOf(part) + 1].slice(0, 40)}…"`);
-      }
+      // A split must fall between sentences: every part but the last ends with . ! or ? (closing quotes allowed),
+      // and the next part starts a new sentence, not a lowercase word.
+      // A next part that starts in lowercase continues the sentence (e.g. a split after "Mo.").
+      split.slice(0, -1).forEach((part, k) => {
+        const next = split[k + 1];
+        if (!/[.!?]["'”’)]*$/.test(part) || /^[a-z]/.test(next)) issues.push(`split mid-sentence: "…${part.slice(-50)}" / "${next.slice(0, 40)}…"`);
+      });
       continue;
     }
     const host = buildTexts.find((b) => b.includes(lp.text));
