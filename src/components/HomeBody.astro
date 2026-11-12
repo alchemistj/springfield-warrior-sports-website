@@ -156,7 +156,8 @@ const homeReviews = [
               {shot && <img loading="lazy" decoding="async" src={shot.src} alt="" width={shot.width} height={shot.height} />}
               <div>
                 <h3>{card.title}</h3>
-                <p class:list={{ offer: card.body.startsWith("Springfield Warrior Sports offers") }}>{card.shift === "parkour" ? card.body : card.extra ? `${card.body} ${card.extra}` : card.body}</p>
+                <p class:list={{ offer: card.body.startsWith("Springfield Warrior Sports offers") }}>{card.body}</p>
+                {card.extra && card.shift !== "parkour" && <p>{card.extra}</p>}
                 {card.shift === "parkour" && (
                   <p>Parkour classes are <span class="mid">currently unavailable</span>, but Open Gym sessions are available now — your first visit is just $10.</p>
                 )}

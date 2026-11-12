@@ -480,19 +480,36 @@ body { position: relative; }
   color: #fff;
 }
 .trust-row {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
   margin: 0 auto;
-  padding: 12px 0;
+  padding: 14px 0;
   color: #fff;
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 0.06em;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 1.45;
   text-align: center;
-  text-transform: uppercase;
+  text-transform: none;
+}
+.trust-line {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
+  gap: 0.2em 0.45em;
+  margin: 0;
+  max-width: 100%;
+}
+.trust-sep {
+  color: #fff;
 }
 .trust-row a {
   display: inline;
   color: #fff;
+  white-space: nowrap;
 }
 .trust a {
   color: #fff;

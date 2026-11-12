@@ -604,8 +604,8 @@
 .hs-card h3 { width: 100%; margin-inline: 0; color: rgb(40, 82, 118); font-size: 20px; font-weight: 800; line-height: 20px; text-align: left; }
 .hs-card h3.light { font-weight: 400; }
 .hs-card p { margin-top: 12px; color: #000; text-align: left; }
-.hs-card .hs-blurb span { display: block; }
-.hs-card .hs-blurb span + span { margin-top: 28px; }
+.hs-card .hs-blurb p { margin-top: 0; }
+.hs-card .hs-blurb p + p { margin-top: 28px; }
 .hs-facts { list-style: none; margin: 17px 0 0; padding: 0; }
 .hs-facts svg { display: block; fill: rgb(40, 82, 118); }
 .hs-facts li:last-child { max-width: 662px; }
