@@ -9,10 +9,10 @@
   min-height: 490px;
   padding-top: 95px;
   background-color: #050f18;
-  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 40%, #040e16 100%), url("../assets/media/2026-01-springfield-warrior-sports-team.jpg");
+  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 40%, #040e16 100%), url("../assets/media/meet-the-springfield-warrior-sports-team-photo.jpg"), linear-gradient(#050f18, #050f18);
   background-repeat: no-repeat;
-  background-position: 50% 50%, left center;
-  background-size: auto, contain;
+  background-position: 50% 50%, 0px 50%, 50% 50%;
+  background-size: auto, contain, auto;
 }
 .b4-team-hero .col {
   width: min(1150px, calc(100% - 42px));
@@ -369,7 +369,7 @@
   box-sizing: border-box;
   min-height: var(--thanks-h, 477px);
   padding: 100px 0 48px;
-  background: #fff var(--thanks-photo) right 300px center / auto 100% no-repeat;
+  background: #fff var(--thanks-photo) 78.5% center / auto 100% no-repeat;
 }
 .b4-thanks a { overflow-wrap: anywhere; }
 .b4-thanks.plain { background: #fff; min-height: 465px; }
@@ -439,24 +439,28 @@
     line-height: 40px;
   }
 
-  .b4-intro { margin: 31px auto 40px; }
-  .page-meet-the-team .b4 { background: #fff; }
-  .b4-person {
+  .b4-intro {
     width: 100%;
-    margin-inline: 0;
-    padding: 36px max(0px, calc((100% - 270px) / 2)) 30px;
-    background:
-      linear-gradient(#eff6fc, #eff6fc) left / calc((100% - 270px) / 2) 100% no-repeat,
-      linear-gradient(#eff6fc, #eff6fc) right / calc((100% - 270px) / 2) 100% no-repeat,
-      #fff;
+    margin: 0;
+    padding: 31px 26px 40px;
+    background: #fff;
+    box-sizing: border-box;
   }
-  .b4-person:last-of-type { padding-bottom: 123px; }
+  .page-meet-the-team .b4 { background: #eff6fc; }
+  .b4-person {
+    width: min(320px, calc(100% - 36px));
+    margin: 0 auto 20px;
+    padding: 16px 13px 20px;
+    border: 12px solid #285276;
+    background: #fff;
+  }
+  .b4-person:last-of-type { margin-bottom: 70px; }
   .b4-person.narrow h3 { max-width: none; }
   .b4-shot,
   .b4-shot.mob {
     float: none;
     display: block;
-    width: 270px;
+    width: 100%;
     height: 260px;
     margin: 0 0 16px;
   }

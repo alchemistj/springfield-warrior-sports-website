@@ -836,6 +836,37 @@ Lines the gate still reports that disagree with live's CSS or with a full-size l
 - A few sentences wrap one line off at 390 because the self-hosted Epilogue is slightly wider than live's: Lincoln's bio is 9 lines against 8 at the same 270px width, the gym callout is 4 lines against 3 at 338px, and the feedback paragraph is 7 lines against 8. Desktop feedback is 5 lines, matching live.
 - CSNA at 390 is 1476px tall against 1365px. There is no photo on that page. The extra height is the trust bar plus the footer, which were not restyled.
 
+Visual check, full-page screenshots, each page scrolled so lazy images could load. Compared side by side at full size:
+
+| Page | 1920 | 1280 | 390 |
+|---|---|---|---|
+| meet-the-team | yes | yes | yes |
+| best-gyms-in-springfield | yes | yes | yes |
+| registered | yes | yes | yes |
+| registered-for-csna-competition | yes | yes | yes |
+| registered-for-day-camps | yes | yes | yes |
+| registered-for-summer-fun-competition | yes | yes | yes |
+| registered-for-wnl-competition | yes | yes | yes |
+| thank-you-for-your-feedback | yes | yes | yes |
+
+Live was `www.springfieldwarriorsports.com` in headed Chrome after the Cloudflare check. The first pass used the PR 6 Vercel preview of `c0569cb`. The hero and the 1280 thank-you photo were then rebuilt locally and compared again.
+
+Fixes after looking:
+
+- The team hero was `2026-01-springfield-warrior-sports-team.jpg`. Live's computed background is `meet-the-springfield-warrior-sports-team-photo.jpg`, size `auto, contain, auto`, position `50% 50%, 0px 50%, 50% 50%`, with the same 90deg fade. The wrong file put the red title across the coaches. The live file keeps the group on the left. Checked at 1920 and 1280.
+- Mobile coach cards use live's `border: 12px solid #285276` on a 320px white card. The page behind them is `#eff6fc`. Checked at 390.
+- Thank-you photos were `background-position: right 300px center`. That matches live at 1920 (photo right inset about 300px) and covered the copy at 1280 (live inset is about 157px). `78.5% center` matches the painted photo box within 8px on registered, day camps, summer fun, WNL, and feedback, at both 1920 and 1280. Square URLs and the link sentences were not changed.
+
+Left as they are, with the reason:
+
+- The trust bar and the mobile Call / Book a Party bar are spec additions. They cross the bottom of the team hero, the gym hero, and the thank-you photo. They were not removed.
+- The shared footer still says "605 W Farm Rd 182 (Plainview Road at Campbell)". Live's footer says "605 W Farm Rd 182, Springfield, MO, 65810, United States". Shared chrome was not restyled for these pages.
+- Thank-you Square links are the same URLs and the same sentence as live, including `(417)894-7319` with no spaces on the feedback page.
+- GP Athletics at 390 is the real photo. Live's layout map recorded a lazy `data-uri`. A fresh live capture of that external image did not paint. The committed live JPEG shows the same gym interior, ceiling included, in the 520×780 box.
+- The gym callout wraps "corridor." onto its own line. Live is 3 lines at 1070px, Epilogue 16/28, letter-spacing 0. The self-hosted face is slightly wider. Same cause as Lincoln's bio (9 lines against 8) and the feedback paragraph at 390 (7 lines against 8).
+- Grace's photo and the mobile Rage photo differ in exposure. Same files, no overlay added.
+- Jonny's mobile role breaks the pipe one character earlier than live. The card, photo, and copy match.
+
 ## Open questions
 
 - Where GF18 should live, if it should be a page at all.
