@@ -496,22 +496,28 @@ body { position: relative; }
 }
 .trust-line {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: center;
   align-items: baseline;
-  column-gap: 0.55em;
-  row-gap: 0.15em;
+  gap: 0.45em;
   margin: 0;
   max-width: 100%;
 }
-.trust-chunk {
-  white-space: nowrap;
-}
 .trust-sep {
-  margin-right: 0.4em;
+  flex: none;
 }
 .trust-row a {
   color: #fff;
+}
+@media (max-width: 799px) {
+  .trust-line {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.2em;
+  }
+  .trust-sep {
+    display: none;
+  }
 }
 .trust a {
   color: #fff;
