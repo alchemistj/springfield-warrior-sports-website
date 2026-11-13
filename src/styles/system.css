@@ -429,3 +429,27 @@ em, i {
   .bullet-line { width: min(var(--content-max), calc(100% - var(--content-pad) * 2)) !important; white-space: normal !important; }
 }
 
+
+/* Summer camp dates below 1100px: date on its own line, times below, each time on one line.
+   Replaces the live-copied absolute layout, where long dates ("August 17th - August 21st") ran into the times. */
+@media (max-width: 1099px) {
+  .camp-row {
+    position: static !important;
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    box-sizing: border-box;
+    padding: 12px 16px !important;
+    overflow: hidden !important;
+  }
+  .camp-row > div { position: static !important; width: auto !important; }
+  .camp-row .camp-date,
+  .camp-row .camp-time { width: auto !important; max-width: none !important; padding: 0 !important; margin: 0 !important; }
+  .camp-row .camp-time { white-space: nowrap; }
+}
+/* Desktop: each date stays on one line ("June 22nd - June 26th" was wrapping in the 187px column); times line up. */
+@media (min-width: 1100px) {
+  .camp-row { width: min(560px, 100%) !important; grid-template-columns: 240px minmax(0, 1fr) !important; column-gap: 16px; padding-right: 15px !important; }
+  .camp-row .camp-date { width: auto !important; white-space: nowrap; }
+  .camp-row .camp-time { white-space: nowrap; }
+}
