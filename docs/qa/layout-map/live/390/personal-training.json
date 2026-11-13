@@ -1,0 +1,2179 @@
+{
+ "url": "https://www.springfieldwarriorsports.com/personal-training/",
+ "width": 390,
+ "vw": 390,
+ "hiddenText": [],
+ "docWidth": 395,
+ "docHeight": 9233,
+ "items": [
+  {
+   "kind": "text",
+   "tag": "a",
+   "text": "CONTACT",
+   "family": "Heebo",
+   "size": 14,
+   "weight": 600,
+   "color": "rgb(255, 255, 255)",
+   "align": "center",
+   "transform": "uppercase",
+   "spacing": 1,
+   "lh": 28,
+   "behind": "image",
+   "runs": [
+    {
+     "t": "Contact",
+     "c": "rgb(255, 255, 255)",
+     "w": 600,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "header",
+   "x": 53,
+   "y": 11,
+   "w": 70,
+   "h": 28
+  },
+  {
+   "kind": "text",
+   "tag": "a",
+   "text": "ABOUT",
+   "family": "Heebo",
+   "size": 14,
+   "weight": 600,
+   "color": "rgb(255, 255, 255)",
+   "align": "center",
+   "transform": "uppercase",
+   "spacing": 1,
+   "lh": 28,
+   "behind": "image",
+   "runs": [
+    {
+     "t": "About",
+     "c": "rgb(255, 255, 255)",
+     "w": 600,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "header",
+   "x": 144,
+   "y": 11,
+   "w": 51,
+   "h": 28
+  },
+  {
+   "kind": "text",
+   "tag": "a",
+   "text": "SIGN OUR WAIVER",
+   "family": "Heebo",
+   "size": 14,
+   "weight": 600,
+   "color": "rgb(255, 255, 255)",
+   "align": "center",
+   "transform": "uppercase",
+   "spacing": 1,
+   "lh": 28,
+   "behind": "image",
+   "runs": [
+    {
+     "t": "Sign Our Waiver",
+     "c": "rgb(255, 255, 255)",
+     "w": 600,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "header",
+   "x": 214,
+   "y": 11,
+   "w": 133,
+   "h": 28
+  },
+  {
+   "kind": "image",
+   "src": "https://www.springfieldwarriorsports.com/wp-content/uploads/2023/03/SpringField-Warrior-Logo.png",
+   "region": "header",
+   "x": 20,
+   "y": 70,
+   "w": 203,
+   "h": 59
+  },
+  {
+   "kind": "icon",
+   "color": "rgb(255, 255, 255)",
+   "region": "header",
+   "x": 354,
+   "y": 89,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "kind": "bgimage",
+   "src": "hero",
+   "region": "main",
+   "x": 0,
+   "y": 149,
+   "w": 390,
+   "h": 320
+  },
+  {
+   "kind": "heading",
+   "tag": "h1",
+   "text": "PERSONAL TRAINING AT WARRIOR SPORTS",
+   "family": "Heebo",
+   "size": 45,
+   "weight": 900,
+   "color": "rgb(219, 58, 52)",
+   "align": "center",
+   "transform": "uppercase",
+   "spacing": 0,
+   "lh": 45,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Personal Training at Warrior Sports",
+     "c": "rgb(219, 58, 52)",
+     "w": 900,
+     "u": false
+    }
+   ],
+   "lines": 4,
+   "region": "main",
+   "x": 38,
+   "y": 219,
+   "w": 315,
+   "h": 180
+  },
+  {
+   "kind": "heading",
+   "tag": "h2",
+   "text": "NOT YOUR TYPICAL GYM. NOT YOUR TYPICAL TRAINER.",
+   "family": "Heebo",
+   "size": 32,
+   "weight": 900,
+   "color": "rgb(219, 58, 52)",
+   "align": "left",
+   "transform": "uppercase",
+   "spacing": 0,
+   "lh": 32,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Not Your Typical Gym.Not Your Typical Trainer.",
+     "c": "rgb(219, 58, 52)",
+     "w": 900,
+     "u": false
+    }
+   ],
+   "lines": 4,
+   "region": "main",
+   "x": 25,
+   "y": 873,
+   "w": 340,
+   "h": 128
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "If you’ve ever felt like fitness wasn’t made for you, you’re in the right place.",
+   "full": "If you’ve ever felt like fitness wasn’t made for you, you’re in the right place.",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 400,
+   "color": "rgba(0, 0, 0, 0.7)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 28,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "If you’ve ever felt like fitness wasn’t made for you, you’re in the right place.",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 2,
+   "region": "main",
+   "x": 26,
+   "y": 1012,
+   "w": 338,
+   "h": 56
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "We don’t (necessarily) do treadmills or machine circuits. We do movement that ma",
+   "full": "We don’t (necessarily) do treadmills or machine circuits. We do movement that makes you stronger, sharper, and more confident…your way.",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 400,
+   "color": "rgba(0, 0, 0, 0.7)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 28,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "We don’t (necessarily) do treadmills or machine circuits. We do movement that makes you stronger, sharper, and more confident…your way.",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 4,
+   "region": "main",
+   "x": 26,
+   "y": 1085,
+   "w": 338,
+   "h": 112
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "Because when training is rooted in curiosity and connection, not comparison, you",
+   "full": "Because when training is rooted in curiosity and connection, not comparison, you show up differently. We work with clients from across Springfield. Battlefield to Sunshine and everywhere in between, because personalized training should feel close to home.",
+   "family": "Epilogue",
+   "size": 18,
+   "weight": 400,
+   "color": "rgb(106, 107, 108)",
+   "align": "start",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 32,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Because when training is rooted in curiosity and connection, not comparison, you show up differently. We work with clients from across Springfield. Battlefield to Sunshine and everywhere in between, because personalized training should feel close to home.",
+     "c": "rgb(106, 107, 108)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 8,
+   "region": "main",
+   "x": 26,
+   "y": 1214,
+   "w": 338,
+   "h": 252
+  },
+  {
+   "kind": "button",
+   "text": "CONTACT OUR PERSONAL TRAINERS",
+   "bg": "rgb(219, 58, 52)",
+   "radius": "100px",
+   "family": "Heebo",
+   "size": 12,
+   "weight": 800,
+   "color": "rgb(255, 255, 255)",
+   "align": "center",
+   "transform": "uppercase",
+   "spacing": 2,
+   "lh": 19,
+   "region": "main",
+   "x": 25,
+   "y": 1502,
+   "w": 340,
+   "h": 39
+  },
+  {
+   "kind": "image",
+   "src": "https://www.springfieldwarriorsports.com/wp-content/uploads/2025/08/Warrior-Sports-Personal-Training.png",
+   "region": "main",
+   "x": 25,
+   "y": 529,
+   "w": 340,
+   "h": 314
+  },
+  {
+   "kind": "heading",
+   "tag": "h2",
+   "text": "WHY WARRIOR SPORTS PERSONAL TRAINING WORKS",
+   "family": "Heebo",
+   "size": 32,
+   "weight": 900,
+   "color": "rgb(219, 58, 52)",
+   "align": "center",
+   "transform": "uppercase",
+   "spacing": 0,
+   "lh": 32,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Why Warrior Sports Personal Training Works",
+     "c": "rgb(219, 58, 52)",
+     "w": 900,
+     "u": false
+    }
+   ],
+   "lines": 3,
+   "region": "main",
+   "x": 25,
+   "y": 1661,
+   "w": 340,
+   "h": 96
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "At Warrior Sports, personal training is based on partnerships.",
+   "full": "At Warrior Sports, personal training is based on partnerships.",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 400,
+   "color": "rgba(0, 0, 0, 0.7)",
+   "align": "center",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 28,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "At Warrior Sports, personal training is based on partnerships. ",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 2,
+   "region": "main",
+   "x": 26,
+   "y": 1768,
+   "w": 338,
+   "h": 56
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "It’s a conversation and a challenge all rolled into one.",
+   "full": "It’s a conversation and a challenge all rolled into one.",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 400,
+   "color": "rgba(0, 0, 0, 0.7)",
+   "align": "center",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 28,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "It’s a conversation and a challenge all rolled into one.",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 2,
+   "region": "main",
+   "x": 26,
+   "y": 1841,
+   "w": 338,
+   "h": 56
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "Here’s how we’re different:",
+   "full": "Here’s how we’re different:",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 400,
+   "color": "rgba(0, 0, 0, 0.7)",
+   "align": "center",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 28,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Here’s how we’re different:",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "main",
+   "x": 26,
+   "y": 1914,
+   "w": 338,
+   "h": 28
+  },
+  {
+   "kind": "image",
+   "src": "https://www.springfieldwarriorsports.com/wp-content/uploads/2025/08/Unconventional-by-Design.jpg",
+   "region": "main",
+   "x": 25,
+   "y": 1963,
+   "w": 340,
+   "h": 256
+  },
+  {
+   "kind": "heading",
+   "tag": "h4",
+   "text": "UNCONVENTIONAL BY DESIGN",
+   "family": "Heebo",
+   "size": 24,
+   "weight": 900,
+   "color": "rgb(40, 82, 118)",
+   "align": "center",
+   "transform": "uppercase",
+   "spacing": 0,
+   "lh": 24,
+   "behind": "image",
+   "runs": [
+    {
+     "t": "Unconventional by Design",
+     "c": "rgb(40, 82, 118)",
+     "w": 900,
+     "u": false
+    }
+   ],
+   "lines": 2,
+   "region": "main",
+   "x": 45,
+   "y": 2239,
+   "w": 300,
+   "h": 48
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "We use obstacle training, resistance bands, parkour-inspired drills, and reactiv",
+   "full": "We use obstacle training, resistance bands, parkour-inspired drills, and reactive movement. These methods naturally demand personalization. Every session is a custom experience.",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 400,
+   "color": "rgba(0, 0, 0, 0.7)",
+   "align": "center",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 28,
+   "behind": "image",
+   "runs": [
+    {
+     "t": "We use obstacle training, resistance bands, parkour-inspired drills, and reactive movement. These methods naturally demand personalization. Every session is a custom experience.",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 6,
+   "region": "main",
+   "x": 46,
+   "y": 2298,
+   "w": 298,
+   "h": 168
+  },
+  {
+   "kind": "image",
+   "src": "https://www.springfieldwarriorsports.com/wp-content/uploads/2025/08/Stronger-and-Smarter-training.jpg",
+   "region": "main",
+   "x": 25,
+   "y": 2507,
+   "w": 340,
+   "h": 256
+  },
+  {
+   "kind": "heading",
+   "tag": "h4",
+   "text": "STRONGER AND SMARTER",
+   "family": "Heebo",
+   "size": 24,
+   "weight": 900,
+   "color": "rgb(40, 82, 118)",
+   "align": "center",
+   "transform": "uppercase",
+   "spacing": 0,
+   "lh": 24,
+   "behind": "image",
+   "runs": [
+    {
+     "t": "Stronger and Smarter",
+     "c": "rgb(40, 82, 118)",
+     "w": 900,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "main",
+   "x": 45,
+   "y": 2783,
+   "w": 300,
+   "h": 24
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "This isn’t just about muscles. It’s about moving with confidence. Our training b",
+   "full": "This isn’t just about muscles. It’s about moving with confidence. Our training boosts body awareness, mind-muscle connection, and coordination, helping you move better in daily life.",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 400,
+   "color": "rgba(0, 0, 0, 0.7)",
+   "align": "center",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 28,
+   "behind": "image",
+   "runs": [
+    {
+     "t": "This isn’t just about muscles. It’s about moving with confidence. Our training boosts body awareness, mind-muscle connection, and coordination, helping you move better in daily life.",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 6,
+   "region": "main",
+   "x": 46,
+   "y": 2818,
+   "w": 298,
+   "h": 168
+  },
+  {
+   "kind": "image",
+   "src": "https://www.springfieldwarriorsports.com/wp-content/uploads/2025/08/Emotionally-Intelligent-Coaching.jpg",
+   "region": "main",
+   "x": 25,
+   "y": 3027,
+   "w": 340,
+   "h": 256
+  },
+  {
+   "kind": "heading",
+   "tag": "h4",
+   "text": "EMOTIONALLY INTELLIGENT COACHING",
+   "family": "Heebo",
+   "size": 24,
+   "weight": 900,
+   "color": "rgb(40, 82, 118)",
+   "align": "center",
+   "transform": "uppercase",
+   "spacing": 0,
+   "lh": 24,
+   "behind": "image",
+   "runs": [
+    {
+     "t": "Emotionally Intelligent Coaching",
+     "c": "rgb(40, 82, 118)",
+     "w": 900,
+     "u": false
+    }
+   ],
+   "lines": 2,
+   "region": "main",
+   "x": 45,
+   "y": 3303,
+   "w": 300,
+   "h": 48
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "We meet you where you are, without shame or performance pressure. Whether you’re",
+   "full": "We meet you where you are, without shame or performance pressure. Whether you’re just starting or getting unstuck, we help you rediscover joy in movement.",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 400,
+   "color": "rgba(0, 0, 0, 0.7)",
+   "align": "center",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 28,
+   "behind": "image",
+   "runs": [
+    {
+     "t": "We meet you where you are, without shame or performance pressure. Whether you’re just starting or getting unstuck, we help you rediscover joy in movement.",
+     "c": "rgba(0, 0, 0, 0.7)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 5,
+   "region": "main",
+   "x": 46,
+   "y": 3362,
+   "w": 298,
+   "h": 140
+  },
+  {
+   "kind": "heading",
+   "tag": "h2",
+   "text": "MEET YOUR TRAINERS",
+   "family": "Heebo",
+   "size": 32,
+   "weight": 900,
+   "color": "rgb(255, 255, 255)",
+   "align": "center",
+   "transform": "uppercase",
+   "spacing": 0,
+   "lh": 40,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Meet Your Trainers",
+     "c": "rgb(255, 255, 255)",
+     "w": 900,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "main",
+   "x": 20,
+   "y": 3643,
+   "w": 350,
+   "h": 40
+  },
+  {
+   "kind": "image",
+   "src": "https://www.springfieldwarriorsports.com/wp-content/uploads/2025/08/sarah-wilder-img.jpg",
+   "region": "main",
+   "x": 30,
+   "y": 3713,
+   "w": 330,
+   "h": 283
+  },
+  {
+   "kind": "heading",
+   "tag": "h4",
+   "text": "SARAH WILDER",
+   "family": "Heebo",
+   "size": 24,
+   "weight": 900,
+   "color": "rgb(40, 82, 118)",
+   "align": "center",
+   "transform": "uppercase",
+   "spacing": 0,
+   "lh": 24,
+   "behind": "image",
+   "runs": [
+    {
+     "t": "Sarah Wilder",
+     "c": "rgb(40, 82, 118)",
+     "w": 900,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "main",
+   "x": 50,
+   "y": 4016,
+   "w": 290,
+   "h": 24
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "– Women’s Confidence Coach",
+   "full": "– Women’s Confidence Coach",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(0, 0, 0)",
+   "align": "center",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 28,
+   "behind": "image",
+   "runs": [
+    {
+     "t": "– Women’s Confidence Coach",
+     "c": "rgb(0, 0, 0)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "main",
+   "x": 35,
+   "y": 4051,
+   "w": 320,
+   "h": 28
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "Helps women, especially moms, feel strong again in bodies that have carried so m",
+   "full": "Helps women, especially moms, feel strong again in bodies that have carried so much.",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(0, 0, 0)",
+   "align": "center",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 28,
+   "behind": "image",
+   "runs": [
+    {
+     "t": "Helps women, especially moms, feel strong again in bodies that have carried so much.",
+     "c": "rgb(0, 0, 0)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 3,
+   "region": "main",
+   "x": 35,
+   "y": 4091,
+   "w": 320,
+   "h": 84
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "“I focus on helping you feel powerful before you even pick up a weight.”",
+   "full": "“I focus on helping you feel powerful before you even pick up a weight.”",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 500,
+   "color": "rgb(40, 82, 118)",
+   "align": "center",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 28,
+   "behind": "image",
+   "runs": [
+    {
+     "t": "“I focus on helping you feel powerful before you even pick up a weight.”",
+     "c": "rgb(40, 82, 118)",
+     "w": 500,
+     "u": false
+    }
+   ],
+   "lines": 2,
+   "region": "main",
+   "x": 35,
+   "y": 4197,
+   "w": 320,
+   "h": 56
+  },
+  {
+   "kind": "image",
+   "src": "https://www.springfieldwarriorsports.com/wp-content/uploads/2025/08/Jacob-Winter-img.jpg",
+   "region": "main",
+   "x": 30,
+   "y": 4304,
+   "w": 330,
+   "h": 283
+  },
+  {
+   "kind": "heading",
+   "tag": "h4",
+   "text": "JACOB WINTER",
+   "family": "Heebo",
+   "size": 24,
+   "weight": 900,
+   "color": "rgb(40, 82, 118)",
+   "align": "center",
+   "transform": "uppercase",
+   "spacing": 0,
+   "lh": 24,
+   "behind": "image",
+   "runs": [
+    {
+     "t": "Jacob Winter",
+     "c": "rgb(40, 82, 118)",
+     "w": 900,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "main",
+   "x": 50,
+   "y": 4606,
+   "w": 290,
+   "h": 24
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "– Strength, Weight Loss and Conditioning",
+   "full": "– Strength, Weight Loss and Conditioning",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 400,
+   "color": "rgba(0, 0, 0, 0.99)",
+   "align": "center",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 28,
+   "behind": "image",
+   "runs": [
+    {
+     "t": "– Strength, Weight Loss and Conditioning",
+     "c": "rgba(0, 0, 0, 0.99)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "main",
+   "x": 31,
+   "y": 4641,
+   "w": 322,
+   "h": 28
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "Great for weight loss, functional strength, and rebuilding consistency.",
+   "full": "Great for weight loss, functional strength, and rebuilding consistency.",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(0, 0, 0)",
+   "align": "center",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 28,
+   "behind": "image",
+   "runs": [
+    {
+     "t": "Great for weight loss, functional strength, and rebuilding consistency.",
+     "c": "rgb(0, 0, 0)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 2,
+   "region": "main",
+   "x": 35,
+   "y": 4681,
+   "w": 320,
+   "h": 56
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "“We build wins you can feel without judgment or pressure.”",
+   "full": "“We build wins you can feel without judgment or pressure.”",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 500,
+   "color": "rgb(40, 82, 118)",
+   "align": "center",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 28,
+   "behind": "image",
+   "runs": [
+    {
+     "t": "“We build wins you can feel without judgment or pressure.”",
+     "c": "rgb(40, 82, 118)",
+     "w": 500,
+     "u": false
+    }
+   ],
+   "lines": 2,
+   "region": "main",
+   "x": 40,
+   "y": 4759,
+   "w": 310,
+   "h": 56
+  },
+  {
+   "kind": "image",
+   "src": "https://www.springfieldwarriorsports.com/wp-content/uploads/2025/08/jonny-wilder-img.jpg",
+   "region": "main",
+   "x": 30,
+   "y": 4866,
+   "w": 330,
+   "h": 283
+  },
+  {
+   "kind": "heading",
+   "tag": "h4",
+   "text": "JONNY WILDER",
+   "family": "Heebo",
+   "size": 24,
+   "weight": 900,
+   "color": "rgb(40, 82, 118)",
+   "align": "center",
+   "transform": "uppercase",
+   "spacing": 0,
+   "lh": 24,
+   "behind": "image",
+   "runs": [
+    {
+     "t": "Jonny Wilder",
+     "c": "rgb(40, 82, 118)",
+     "w": 900,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "main",
+   "x": 50,
+   "y": 5169,
+   "w": 290,
+   "h": 24
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "– Ninja and Competitive Obstacle Training",
+   "full": "– Ninja and Competitive Obstacle Training",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 400,
+   "color": "rgba(0, 0, 0, 0.99)",
+   "align": "center",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 28,
+   "behind": "image",
+   "runs": [
+    {
+     "t": "– Ninja and Competitive Obstacle Training",
+     "c": "rgba(0, 0, 0, 0.99)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "main",
+   "x": 31,
+   "y": 5204,
+   "w": 324,
+   "h": 28
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "Perfect for teens, adventurous adults, or athletes seeking confidence and agilit",
+   "full": "Perfect for teens, adventurous adults, or athletes seeking confidence and agility.",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(0, 0, 0)",
+   "align": "center",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 28,
+   "behind": "image",
+   "runs": [
+    {
+     "t": "Perfect for teens, adventurous adults, or athletes seeking confidence and agility.",
+     "c": "rgb(0, 0, 0)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 3,
+   "region": "main",
+   "x": 35,
+   "y": 5244,
+   "w": 320,
+   "h": 84
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "“Training should be fun. That’s where confidence begins.”",
+   "full": "“Training should be fun. That’s where confidence begins.”",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 500,
+   "color": "rgb(40, 82, 118)",
+   "align": "center",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 28,
+   "behind": "image",
+   "runs": [
+    {
+     "t": "“Training should be fun. That’s where confidence begins.”",
+     "c": "rgb(40, 82, 118)",
+     "w": 500,
+     "u": false
+    }
+   ],
+   "lines": 2,
+   "region": "main",
+   "x": 40,
+   "y": 5350,
+   "w": 310,
+   "h": 56
+  },
+  {
+   "kind": "image",
+   "src": "https://www.springfieldwarriorsports.com/wp-content/uploads/2025/08/Warrior-Sports-training.jpg",
+   "region": "main",
+   "x": 25,
+   "y": 5552,
+   "w": 340,
+   "h": 240
+  },
+  {
+   "kind": "heading",
+   "tag": "h2",
+   "text": "HOW IT WORKS",
+   "family": "Heebo",
+   "size": 32,
+   "weight": 900,
+   "color": "rgb(219, 58, 52)",
+   "align": "center",
+   "transform": "uppercase",
+   "spacing": 0,
+   "lh": 32,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "How It Works",
+     "c": "rgb(219, 58, 52)",
+     "w": 900,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "main",
+   "x": 25,
+   "y": 5822,
+   "w": 229,
+   "h": 32
+  },
+  {
+   "kind": "icon",
+   "color": "rgb(219, 58, 52)",
+   "region": "main",
+   "x": 26,
+   "y": 5879,
+   "w": 15,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "tag": "span",
+   "text": "Contact us and share your story—goals, concerns, struggles",
+   "full": "Contact us and share your story—goals, concerns, struggles",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 300,
+   "color": "rgb(0, 0, 0)",
+   "align": "start",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 26,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Contact us and share your story—goals, concerns, struggles",
+     "c": "rgb(0, 0, 0)",
+     "w": 300,
+     "u": false
+    }
+   ],
+   "lines": 2,
+   "region": "main",
+   "x": 51,
+   "y": 5874,
+   "w": 313,
+   "h": 51
+  },
+  {
+   "kind": "icon",
+   "color": "rgb(219, 58, 52)",
+   "region": "main",
+   "x": 26,
+   "y": 5945,
+   "w": 15,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "tag": "span",
+   "text": "We’ll reach out and get you locked in",
+   "full": "We’ll reach out and get you locked in",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 300,
+   "color": "rgb(5, 5, 61)",
+   "align": "start",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 26,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "We’ll reach out and get you locked in",
+     "c": "rgb(5, 5, 61)",
+     "w": 300,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "main",
+   "x": 51,
+   "y": 5940,
+   "w": 284,
+   "h": 26
+  },
+  {
+   "kind": "icon",
+   "color": "rgb(219, 58, 52)",
+   "region": "main",
+   "x": 26,
+   "y": 5986,
+   "w": 15,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "tag": "span",
+   "text": "Try a session personalized to your pace and strength",
+   "full": "Try a session personalized to your pace and strength",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 300,
+   "color": "rgb(0, 0, 0)",
+   "align": "start",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 26,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Try a session personalized to your pace and strength",
+     "c": "rgb(0, 0, 0)",
+     "w": 300,
+     "u": false
+    }
+   ],
+   "lines": 2,
+   "region": "main",
+   "x": 51,
+   "y": 5981,
+   "w": 313,
+   "h": 51
+  },
+  {
+   "kind": "icon",
+   "color": "rgb(219, 58, 52)",
+   "region": "main",
+   "x": 26,
+   "y": 6052,
+   "w": 15,
+   "h": 15
+  },
+  {
+   "kind": "text",
+   "tag": "span",
+   "text": "Decide from there if you want to continue",
+   "full": "Decide from there if you want to continue",
+   "family": "Epilogue",
+   "size": 16,
+   "weight": 300,
+   "color": "rgb(0, 0, 0)",
+   "align": "start",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 26,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Decide from there if you want to continue",
+     "c": "rgb(0, 0, 0)",
+     "w": 300,
+     "u": false
+    }
+   ],
+   "lines": 2,
+   "region": "main",
+   "x": 51,
+   "y": 6047,
+   "w": 313,
+   "h": 51
+  },
+  {
+   "kind": "button",
+   "text": "CONTACT OUR PERSONAL TRAINERS",
+   "bg": "rgb(219, 58, 52)",
+   "radius": "100px",
+   "family": "Heebo",
+   "size": 12,
+   "weight": 800,
+   "color": "rgb(255, 255, 255)",
+   "align": "center",
+   "transform": "uppercase",
+   "spacing": 2,
+   "lh": 19,
+   "region": "main",
+   "x": 25,
+   "y": 6128,
+   "w": 340,
+   "h": 39
+  },
+  {
+   "kind": "heading",
+   "tag": "h2",
+   "text": "WHAT OUR CLIENTS SAY",
+   "family": "Heebo",
+   "size": 32,
+   "weight": 900,
+   "color": "rgb(219, 58, 52)",
+   "align": "center",
+   "transform": "uppercase",
+   "spacing": 0,
+   "lh": 32,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "What Our Clients Say",
+     "c": "rgb(219, 58, 52)",
+     "w": 900,
+     "u": false
+    }
+   ],
+   "lines": 2,
+   "region": "main",
+   "x": 20,
+   "y": 6287,
+   "w": 350,
+   "h": 64
+  },
+  {
+   "kind": "image",
+   "src": "https://www.springfieldwarriorsports.com/wp-content/uploads/2023/03/qoute-icon.png",
+   "region": "main",
+   "x": 58,
+   "y": 6393,
+   "w": 65,
+   "h": 65
+  },
+  {
+   "kind": "text",
+   "tag": "div",
+   "text": "After losing some weight on my own, I hit a wall. Warrior Sports changed the gam",
+   "full": "After losing some weight on my own, I hit a wall. Warrior Sports changed the game for me. My coach built a program just for me and held me accountable in a way that made me stronger, leaner, and more confident—not just physically, but mentally. - CLIENT",
+   "family": "Muli",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(0, 0, 0)",
+   "align": "start",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 26,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "After losing some weight on my own, I hit a wall. Warrior Sports changed the game for me. My coach built a program just for me and held me accountable in a way that made me stronger, leaner, and more confident—not just physically, but mentally.",
+     "c": "rgb(0, 0, 0)",
+     "w": 400,
+     "u": false
+    },
+    {
+     "t": "- Client",
+     "c": "rgb(219, 58, 52)",
+     "w": 700,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "main",
+   "x": 49,
+   "y": 6474,
+   "w": 282,
+   "h": 245,
+   "covered": true
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "After losing some weight on my own, I hit a wall. Warrior Sports changed the gam",
+   "full": "After losing some weight on my own, I hit a wall. Warrior Sports changed the game for me. My coach built a program just for me and held me accountable in a way that made me stronger, leaner, and more confident—not just physically, but mentally.",
+   "family": "Muli",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(0, 0, 0)",
+   "align": "start",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 26,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "After losing some weight on my own, I hit a wall. Warrior Sports changed the game for me. My coach built a program just for me and held me accountable in a way that made me stronger, leaner, and more confident—not just physically, but mentally.",
+     "c": "rgb(0, 0, 0)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 7,
+   "region": "main",
+   "x": 49,
+   "y": 6474,
+   "w": 282,
+   "h": 199
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "- CLIENT",
+   "full": "- CLIENT",
+   "family": "Muli",
+   "size": 16,
+   "weight": 700,
+   "color": "rgb(219, 58, 52)",
+   "align": "start",
+   "transform": "uppercase",
+   "spacing": 0,
+   "lh": 26,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "- Client",
+     "c": "rgb(219, 58, 52)",
+     "w": 700,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "main",
+   "x": 49,
+   "y": 6673,
+   "w": 282,
+   "h": 46,
+   "covered": true
+  },
+  {
+   "kind": "bgimage",
+   "src": "https://www.springfieldwarriorsports.com/wp-content/uploads/2023/03/Pricing-and-Schedule.jpg",
+   "region": "main",
+   "x": 0,
+   "y": 6740,
+   "w": 390,
+   "h": 1705
+  },
+  {
+   "kind": "heading",
+   "tag": "h2",
+   "text": "LET’S TALK STRENGTH…YOUR VERSION",
+   "family": "Heebo",
+   "size": 32,
+   "weight": 900,
+   "color": "rgb(219, 58, 52)",
+   "align": "center",
+   "transform": "uppercase",
+   "spacing": 0,
+   "lh": 32,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Let’s Talk Strength…Your Version",
+     "c": "rgb(219, 58, 52)",
+     "w": 900,
+     "u": false
+    }
+   ],
+   "lines": 3,
+   "region": "main",
+   "x": 42,
+   "y": 6800,
+   "w": 306,
+   "h": 96
+  },
+  {
+   "kind": "heading",
+   "tag": "h4",
+   "text": "This isn’t about getting shredded or setting records.",
+   "family": "Epilogue",
+   "size": 18,
+   "weight": 400,
+   "color": "rgb(255, 255, 255)",
+   "align": "center",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 29,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "This isn’t about getting shredded or setting records.",
+     "c": "rgb(255, 255, 255)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 2,
+   "region": "main",
+   "x": 26,
+   "y": 6907,
+   "w": 338,
+   "h": 58
+  },
+  {
+   "kind": "heading",
+   "tag": "h4",
+   "text": "It’s about moving, healing, and growing in a way that actually fits your life.",
+   "family": "Epilogue",
+   "size": 18,
+   "weight": 400,
+   "color": "rgb(255, 255, 255)",
+   "align": "center",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 29,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "It’s about moving, healing, and growing in a way that actually fits your life.",
+     "c": "rgb(255, 255, 255)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 3,
+   "region": "main",
+   "x": 26,
+   "y": 6982,
+   "w": 338,
+   "h": 86
+  },
+  {
+   "kind": "field",
+   "type": "text",
+   "placeholder": "",
+   "bg": "rgb(241, 241, 241)",
+   "border": "1px solid rgb(104, 110, 119)",
+   "radius": "3px",
+   "size": 14,
+   "region": "main",
+   "x": 56,
+   "y": 7163,
+   "w": 278,
+   "h": 52
+  },
+  {
+   "kind": "field",
+   "type": "text",
+   "placeholder": "",
+   "bg": "rgb(241, 241, 241)",
+   "border": "1px solid rgb(104, 110, 119)",
+   "radius": "3px",
+   "size": 14,
+   "region": "main",
+   "x": 56,
+   "y": 7254,
+   "w": 278,
+   "h": 52
+  },
+  {
+   "kind": "field",
+   "type": "tel",
+   "placeholder": "(999) 999-9999",
+   "bg": "rgb(241, 241, 241)",
+   "border": "1px solid rgb(104, 110, 119)",
+   "radius": "3px",
+   "size": 14,
+   "region": "main",
+   "x": 56,
+   "y": 7410,
+   "w": 278,
+   "h": 52
+  },
+  {
+   "kind": "field",
+   "type": "email",
+   "placeholder": "",
+   "bg": "rgb(241, 241, 241)",
+   "border": "1px solid rgb(104, 110, 119)",
+   "radius": "3px",
+   "size": 14,
+   "region": "main",
+   "x": 56,
+   "y": 7540,
+   "w": 278,
+   "h": 52
+  },
+  {
+   "kind": "field",
+   "type": "text",
+   "placeholder": "",
+   "bg": "rgb(241, 241, 241)",
+   "border": "1px solid rgb(104, 110, 119)",
+   "radius": "3px",
+   "size": 14,
+   "region": "main",
+   "x": 56,
+   "y": 7670,
+   "w": 278,
+   "h": 52
+  },
+  {
+   "kind": "field",
+   "type": "radio",
+   "placeholder": "",
+   "bg": "rgb(241, 241, 241)",
+   "border": "1px solid rgb(104, 110, 119)",
+   "radius": "50%",
+   "size": 14,
+   "region": "main",
+   "x": 56,
+   "y": 7794,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "kind": "field",
+   "type": "radio",
+   "placeholder": "",
+   "bg": "rgb(241, 241, 241)",
+   "border": "1px solid rgb(104, 110, 119)",
+   "radius": "50%",
+   "size": 14,
+   "region": "main",
+   "x": 56,
+   "y": 7826,
+   "w": 20,
+   "h": 20
+  },
+  {
+   "kind": "field",
+   "type": "textarea",
+   "placeholder": "",
+   "bg": "rgb(241, 241, 241)",
+   "border": "1px solid rgb(212, 212, 212)",
+   "radius": "3px",
+   "size": 16,
+   "region": "main",
+   "x": 56,
+   "y": 7925,
+   "w": 278,
+   "h": 130
+  },
+  {
+   "kind": "field",
+   "type": "textarea",
+   "placeholder": "",
+   "bg": "rgb(241, 241, 241)",
+   "border": "1px solid rgb(212, 212, 212)",
+   "radius": "3px",
+   "size": 16,
+   "region": "main",
+   "x": 56,
+   "y": 8153,
+   "w": 278,
+   "h": 130
+  },
+  {
+   "kind": "image",
+   "src": "https://www.springfieldwarriorsports.com/wp-content/uploads/2023/03/SWS-logo-footer.png",
+   "region": "footer",
+   "x": 20,
+   "y": 8498,
+   "w": 266,
+   "h": 76
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "Our accomplished and award winning Crew are here to help you find your strength ",
+   "full": "Our accomplished and award winning Crew are here to help you find your strength and enjoy your workouts.",
+   "family": "Muli",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(51, 51, 51)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 24,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Our accomplished and award winning Crew are here to help you find your strength and enjoy your workouts.",
+     "c": "rgb(51, 51, 51)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 3,
+   "region": "footer",
+   "x": 21,
+   "y": 8595,
+   "w": 348,
+   "h": 72
+  },
+  {
+   "kind": "icon",
+   "color": "rgb(255, 255, 255)",
+   "region": "footer",
+   "x": 29,
+   "y": 8700,
+   "w": 17,
+   "h": 17
+  },
+  {
+   "kind": "icon",
+   "color": "rgb(255, 255, 255)",
+   "region": "footer",
+   "x": 66,
+   "y": 8700,
+   "w": 17,
+   "h": 17
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "CONTACT",
+   "full": "CONTACT",
+   "family": "Heebo",
+   "size": 16,
+   "weight": 900,
+   "color": "rgb(40, 82, 118)",
+   "align": "left",
+   "transform": "uppercase",
+   "spacing": 2,
+   "lh": 28,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Contact",
+     "c": "rgb(40, 82, 118)",
+     "w": 900,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "footer",
+   "x": 20,
+   "y": 8759,
+   "w": 350,
+   "h": 28
+  },
+  {
+   "kind": "icon",
+   "color": "rgb(219, 58, 52)",
+   "region": "footer",
+   "x": 31,
+   "y": 8802,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "tag": "span",
+   "text": "605 W Farm Rd 182, Springfield, MO, 65810, United States",
+   "full": "605 W Farm Rd 182, Springfield, MO, 65810, United States",
+   "family": "Muli",
+   "size": 14,
+   "weight": 400,
+   "color": "rgb(51, 51, 51)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 22,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "605 W Farm Rd 182, Springfield,MO, 65810, United States",
+     "c": "rgb(51, 51, 51)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 2,
+   "region": "footer",
+   "x": 57,
+   "y": 8797,
+   "w": 212,
+   "h": 45
+  },
+  {
+   "kind": "icon",
+   "color": "rgb(219, 58, 52)",
+   "region": "footer",
+   "x": 31,
+   "y": 8857,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "tag": "span",
+   "text": "(417) 894-7319",
+   "full": "(417) 894-7319",
+   "family": "Muli",
+   "size": 14,
+   "weight": 400,
+   "color": "rgb(51, 51, 51)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 22,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "(417) 894-7319",
+     "c": "rgb(51, 51, 51)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "footer",
+   "x": 57,
+   "y": 8852,
+   "w": 103,
+   "h": 22
+  },
+  {
+   "kind": "text",
+   "tag": "a",
+   "text": "(417) 894-7319",
+   "family": "Muli",
+   "size": 14,
+   "weight": 400,
+   "color": "rgb(51, 51, 51)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 22,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "(417) 894-7319",
+     "c": "rgb(51, 51, 51)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "footer",
+   "x": 57,
+   "y": 8854,
+   "w": 103,
+   "h": 18
+  },
+  {
+   "kind": "icon",
+   "color": "rgb(219, 58, 52)",
+   "region": "footer",
+   "x": 31,
+   "y": 8898,
+   "w": 16,
+   "h": 16
+  },
+  {
+   "kind": "text",
+   "tag": "span",
+   "text": "office@swarriorsports.com",
+   "full": "office@swarriorsports.com",
+   "family": "Muli",
+   "size": 14,
+   "weight": 400,
+   "color": "rgb(51, 51, 51)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 22,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "office@swarriorsports.com",
+     "c": "rgb(51, 51, 51)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "footer",
+   "x": 57,
+   "y": 8893,
+   "w": 173,
+   "h": 22
+  },
+  {
+   "kind": "text",
+   "tag": "a",
+   "text": "office@swarriorsports.com",
+   "family": "Muli",
+   "size": 14,
+   "weight": 400,
+   "color": "rgb(51, 51, 51)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 22,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "office@swarriorsports.com",
+     "c": "rgb(51, 51, 51)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "footer",
+   "x": 57,
+   "y": 8895,
+   "w": 173,
+   "h": 18
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "QUICK LINKS",
+   "full": "QUICK LINKS",
+   "family": "Heebo",
+   "size": 16,
+   "weight": 900,
+   "color": "rgb(40, 82, 118)",
+   "align": "left",
+   "transform": "uppercase",
+   "spacing": 2,
+   "lh": 28,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "QUICK LInks",
+     "c": "rgb(40, 82, 118)",
+     "w": 900,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "footer",
+   "x": 20,
+   "y": 8954,
+   "w": 350,
+   "h": 28
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "Home",
+   "full": "Home",
+   "family": "Muli",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(51, 51, 51)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 24,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Home",
+     "c": "rgb(51, 51, 51)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "footer",
+   "x": 21,
+   "y": 8993,
+   "w": 348,
+   "h": 24
+  },
+  {
+   "kind": "text",
+   "tag": "a",
+   "text": "Home",
+   "family": "Muli",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(51, 51, 51)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 24,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Home",
+     "c": "rgb(51, 51, 51)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "footer",
+   "x": 21,
+   "y": 8995,
+   "w": 44,
+   "h": 20
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "About Us",
+   "full": "About Us",
+   "family": "Muli",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(51, 51, 51)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 24,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "About Us",
+     "c": "rgb(51, 51, 51)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "footer",
+   "x": 21,
+   "y": 9019,
+   "w": 348,
+   "h": 24
+  },
+  {
+   "kind": "text",
+   "tag": "a",
+   "text": "About Us",
+   "family": "Muli",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(51, 51, 51)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 24,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "About Us",
+     "c": "rgb(51, 51, 51)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "footer",
+   "x": 21,
+   "y": 9021,
+   "w": 69,
+   "h": 20
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "Contact Us",
+   "full": "Contact Us",
+   "family": "Muli",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(51, 51, 51)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 24,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Contact Us",
+     "c": "rgb(51, 51, 51)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "footer",
+   "x": 21,
+   "y": 9045,
+   "w": 348,
+   "h": 24
+  },
+  {
+   "kind": "text",
+   "tag": "a",
+   "text": "Contact Us",
+   "family": "Muli",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(51, 51, 51)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 24,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Contact Us",
+     "c": "rgb(51, 51, 51)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "footer",
+   "x": 21,
+   "y": 9047,
+   "w": 82,
+   "h": 20
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "Meet the Team",
+   "full": "Meet the Team",
+   "family": "Muli",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(51, 51, 51)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 24,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Meet the Team",
+     "c": "rgb(51, 51, 51)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "footer",
+   "x": 21,
+   "y": 9071,
+   "w": 348,
+   "h": 24
+  },
+  {
+   "kind": "text",
+   "tag": "a",
+   "text": "Meet the Team",
+   "family": "Muli",
+   "size": 16,
+   "weight": 400,
+   "color": "rgb(51, 51, 51)",
+   "align": "left",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 24,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "Meet the Team",
+     "c": "rgb(51, 51, 51)",
+     "w": 400,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "footer",
+   "x": 21,
+   "y": 9073,
+   "w": 109,
+   "h": 20
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "© Copyright 2026",
+   "full": "© Copyright 2026",
+   "family": "Epilogue",
+   "size": 12,
+   "weight": 600,
+   "color": "rgb(255, 255, 255)",
+   "align": "center",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 20,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "© Copyright 2026",
+     "c": "rgb(255, 255, 255)",
+     "w": 600,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "footer",
+   "x": 20,
+   "y": 9152,
+   "w": 350,
+   "h": 20
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "Springfield Warrior Sports",
+   "full": "Springfield Warrior Sports",
+   "family": "Epilogue",
+   "size": 12,
+   "weight": 600,
+   "color": "rgb(255, 255, 255)",
+   "align": "center",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 20,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": " Springfield Warrior Sports",
+     "c": "rgb(255, 255, 255)",
+     "w": 600,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "footer",
+   "x": 20,
+   "y": 9172,
+   "w": 350,
+   "h": 20
+  },
+  {
+   "kind": "text",
+   "tag": "p",
+   "text": "All Rights Reserved.",
+   "full": "All Rights Reserved.",
+   "family": "Epilogue",
+   "size": 12,
+   "weight": 600,
+   "color": "rgb(255, 255, 255)",
+   "align": "center",
+   "transform": "none",
+   "spacing": 0,
+   "lh": 20,
+   "behind": "rgb(255, 255, 255)",
+   "runs": [
+    {
+     "t": "All Rights Reserved.",
+     "c": "rgb(255, 255, 255)",
+     "w": 600,
+     "u": false
+    }
+   ],
+   "lines": 1,
+   "region": "footer",
+   "x": 20,
+   "y": 9193,
+   "w": 350,
+   "h": 20
+  }
+ ],
+ "bands": [
+  {
+   "bg": "rgb(255, 255, 255)",
+   "x": 0,
+   "y": 0,
+   "w": 390,
+   "h": 149
+  },
+  {
+   "bg": "rgb(255, 255, 255)",
+   "x": 0,
+   "y": 8448,
+   "w": 390,
+   "h": 786
+  }
+ ]
+}

@@ -1,0 +1,50 @@
+---
+import mapArt from "../assets/map/contact-map.webp";
+import { MAP_QUERY } from "../lib/map";
+const fallback = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(MAP_QUERY)}`;
+---
+
+<div class="map-frame" data-map>
+  <img class="map-art" src={mapArt.src} alt="" width={mapArt.width} height={mapArt.height} decoding="async" />
+  <p class="map-credit">© OpenStreetMap contributors</p>
+  <div class="map-fallback">
+    <p>Map of the gym at {MAP_QUERY}.</p>
+    <button class="btn" type="button" data-map-open>Show map</button>
+  </div>
+  <noscript>
+    <p><a href={fallback}>Open the map</a></p>
+  </noscript>
+</div>
+
+<script>
+  import { mapEmbedUrl } from "../lib/map";
+
+  const root = document.querySelector<HTMLElement>("[data-map]");
+  if (root) {
+    let loaded = false;
+    const load = () => {
+      if (loaded) return;
+      loaded = true;
+      const frame = document.createElement("iframe");
+      frame.title = "Map to Springfield Warrior Sports";
+      frame.className = "map-pending";
+      frame.loading = "lazy";
+      frame.referrerPolicy = "no-referrer-when-downgrade";
+      frame.src = mapEmbedUrl();
+      frame.addEventListener("load", () => {
+        frame.className = "";
+        root.replaceChildren(frame);
+      });
+      root.appendChild(frame);
+    };
+    root.querySelector("[data-map-open]")?.addEventListener("click", load);
+    const arm = () => {
+      window.addEventListener("scroll", load, { passive: true, once: true });
+      window.addEventListener("pointerdown", load, { passive: true, once: true });
+      window.addEventListener("keydown", load, { once: true });
+      window.addEventListener("touchstart", load, { passive: true, once: true });
+    };
+    if (document.readyState === "complete") arm();
+    else window.addEventListener("load", arm, { once: true });
+  }
+</script>

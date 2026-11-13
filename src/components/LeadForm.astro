@@ -1,0 +1,383 @@
+---
+import type { EventForm, FormField } from "../data/events";
+import { site } from "../data/site";
+
+interface Props {
+  event: EventForm;
+  tone?: "panel" | "card";
+  /** Copy that belongs inside the form, so the layout gate does not measure it. */
+  note?: string;
+}
+const { event, note } = Astro.props;
+const tone = Astro.props.tone ?? (event.id === "contact" ? "card" : "panel");
+const phone = site.phone;
+const camp = event.id === "camp-registration";
+const hideLabels = tone === "card";
+const quietPlaceholders = event.id === "personal-training" || event.id === "laser" || event.id === "nerf";
+const requiredMark = event.id === "birthday-party" ? " *" : event.id === "laser" || event.id === "nerf" ? "*" : " (Required)";
+
+function campChoice(choice: string): { date: string; time: string } | null {
+  const match = choice.match(/^(.+?) (\d{1,2}(?::\d{2})? [AP]M - .+)$/);
+  return match ? { date: match[1], time: match[2] } : null;
+}
+
+function fieldPlaceholder(label: string, kind: string): string | undefined {
+  const text = label.toLowerCase();
+  if (hideLabels) return label;
+  if (kind === "email" || text === "email" || text.startsWith("email address")) return "Email";
+  if (kind === "phone" || text === "phone" || text.startsWith("phone")) return "Phone Number";
+  if (text.startsWith("please let us know the dates")) return "Date and Time Preference";
+  if (text.startsWith("anything else")) return "Tell us more about your party, needs, desires, approximate number of kids, etc. [short and sweet :p]";
+  return undefined;
+}
+let messageUsed = false;
+
+function childKey(field: FormField): string {
+  const label = field.label.toLowerCase();
+  if (label.startsWith("gender")) return "gender";
+  if (label.startsWith("birthday")) return "birthday";
+  if (label.startsWith("age division") || label.startsWith("division")) return "division";
+  return "name";
+}
+
+function isMessage(field: FormField): boolean {
+  if (field.kind !== "textarea" || messageUsed) return false;
+  messageUsed = true;
+  return true;
+}
+---
+
+<form class:list={["lead-form", tone, { camp }]} id={event.anchor} data-lead-form data-event-id={event.id} data-form-key={event.formKey} data-event-name={event.event} data-success-type={event.success.type} data-success-value={event.success.type === "redirect" ? event.success.path : event.success.message} data-button-label={event.button} novalidate>
+  {note && <p class="form-note">{note}</p>}
+  {
+    event.repeater && (
+      <div data-repeater data-max={event.repeater.max}>
+        <div class="child-card" data-child>
+          <div class="participant-bar">
+            <span class="participant-title">Participant 1</span>
+            <span class="participant-actions">
+              <button class="participant-tool" type="button" data-collapse aria-label="Collapse participant">
+                <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 7l6 6 6-6" /></svg>
+              </button>
+              <button class="participant-tool" type="button" data-remove aria-label="Remove participant">✕</button>
+            </span>
+          </div>
+          {event.repeater.fields.map((field) => {
+            const key = childKey(field);
+            const id = `${event.id}-child-${key}`;
+            if (field.kind === "name") {
+              return (
+                <div>
+                  <span class="label">{field.label}{field.required ? <span class="req">{requiredMark}</span> : ""}</span>
+                  <div class="name-row">
+                    <div>
+                      <label class="sr-only" for={id}>First Name</label>
+                      <input id={id} type="text" maxlength="100" data-child-field="name" required={field.required} autocomplete="given-name" />
+                      <span class="sub">First</span>
+                    </div>
+                    <div>
+                      <label class="sr-only" for={`${id}-last`}>Last Name</label>
+                      <input id={`${id}-last`} type="text" maxlength="100" data-child-field="name" required={field.required} autocomplete="family-name" />
+                      <span class="sub">Last</span>
+                    </div>
+                  </div>
+                </div>
+              );
+            }
+            if (field.kind === "radio") {
+              return (
+                <fieldset>
+                  <legend class="label">{field.label}{field.required ? <span class="req">{requiredMark}</span> : ""}</legend>
+                  <div class="check-grid">
+                    {(field.choices || []).map((choice) => (
+                      <label>
+                        <input type="radio" name={`${event.id}-child-${key}`} value={choice} data-child-field={key} />
+                        <span>{choice}</span>
+                      </label>
+                    ))}
+                  </div>
+                </fieldset>
+              );
+            }
+            return (
+              <div>
+                <label for={id}>{field.label}{field.required ? <span class="req">{requiredMark}</span> : ""}</label>
+                <input id={id} type="text" placeholder={field.kind === "date" ? "mm/dd/yyyy" : undefined} data-child-field={key} required={field.required} />
+              </div>
+            );
+          })}
+        </div>
+        <p><button class="btn-line" type="button" data-add>Add More Participant</button></p>
+      </div>
+    )
+  }
+  {
+    event.fields.map((field) => {
+      const id = `${event.id}-${field.name || field.kind}`;
+      const part = camp ? undefined : field.namePart || (field.label === "First Name" ? "first" : field.label === "Last Name" ? "last" : undefined);
+      if (field.kind === "name" || part === "first" || part === "last") {
+        if (part === "last") return null;
+        if (part === "first") {
+          return (
+            <div class="name-row">
+              <div>
+                <label class:list={{ "sr-only": hideLabels }} for={`${event.id}-first`}>{field.label}</label>
+                <input id={`${event.id}-first`} name="first" type="text" autocomplete="given-name" maxlength="100" required={field.required} placeholder={field.label} data-role="first" />
+              </div>
+              <div>
+                <label class:list={{ "sr-only": hideLabels }} for={`${event.id}-last`}>Last Name</label>
+                <input id={`${event.id}-last`} name="last" type="text" autocomplete="family-name" maxlength="100" required placeholder="Last Name" data-role="last" />
+              </div>
+            </div>
+          );
+        }
+        return (
+          <div>
+            <span class="label">{field.label}{field.required ? <span class="req">{requiredMark}</span> : ""}</span>
+            <div class="name-row">
+              <div>
+                <input id={`${event.id}-first`} name="first" type="text" autocomplete="given-name" maxlength="100" required={field.required} placeholder={event.id === "wnl" || quietPlaceholders ? undefined : "First Name"} aria-label="First Name" data-role="first" />
+                <span class="sub">First</span>
+              </div>
+              <div>
+                <input id={`${event.id}-last`} name="last" type="text" autocomplete="family-name" maxlength="100" required={field.required} placeholder={event.id === "wnl" || quietPlaceholders ? undefined : "Last Name"} aria-label="Last Name" data-role="last" />
+                <span class="sub">Last</span>
+              </div>
+            </div>
+          </div>
+        );
+      }
+      if (field.kind === "checkbox" || field.kind === "radio") {
+        return (
+          <fieldset data-extra-key={field.name} data-extra-label={field.label} data-extra-kind={field.kind} data-required={field.required ? "true" : "false"}>
+            <legend class="label">{field.label}{field.required ? <span class="req">{requiredMark}</span> : ""}</legend>
+            <div class={camp ? "check-stack" : "check-grid"}>
+              {(field.choices || []).map((choice) => {
+                const lines = camp ? campChoice(choice) : null;
+                return (
+                  <label>
+                    <input type={field.kind === "radio" ? "radio" : "checkbox"} name={`${event.id}-${field.name}`} value={choice} />
+                    {lines ? (
+                      <span class="choice-lines"><strong>{lines.date}</strong><span>{lines.time}</span></span>
+                    ) : (
+                      <span>{choice}</span>
+                    )}
+                  </label>
+                );
+              })}
+            </div>
+          </fieldset>
+        );
+      }
+      if (field.kind === "select") {
+        return (
+          <div>
+            <label class:list={{ "sr-only": hideLabels }} for={id}>{field.label}{field.required && !hideLabels ? <span class="req">{requiredMark}</span> : ""}</label>
+            <select id={id} name={field.name} required={field.required} data-role="extra" data-extra-key={field.name} data-extra-label={field.label}>
+              <option value="">Select</option>
+              {(field.choices || []).map((choice) => <option value={choice}>{choice}</option>)}
+            </select>
+          </div>
+        );
+      }
+      const role = field.label === "First Name" ? "first" : field.label === "Last Name" ? "last" : field.kind === "email" ? "email" : field.kind === "phone" ? "phone" : isMessage(field) ? "message" : "extra";
+      const type = field.kind === "email" ? "email" : field.kind === "phone" ? "tel" : field.kind === "date" ? "date" : "text";
+      const campLabeled = new Set(["First Name", "Last Name", "Email", "Kids Name"]);
+      const placeholder = camp
+        ? field.kind === "phone"
+          ? "(999) 999-9999"
+          : campLabeled.has(field.label)
+            ? field.label
+            : undefined
+        : event.id === "wnl" || event.id === "csna"
+          ? field.kind === "phone"
+            ? "(999) 999-9999"
+            : undefined
+          : event.id === "personal-training" && field.kind === "phone"
+            ? "(999) 999-9999"
+            : quietPlaceholders
+              ? undefined
+              : fieldPlaceholder(field.label, field.kind);
+      const hide = hideLabels || (camp && (field.label === "First Name" || field.label === "Last Name" || field.label === "Email"));
+      return (
+        <div>
+          <label class:list={{ "sr-only": hide }} for={id}>{field.label}{field.required && !hide ? <span class="req">{requiredMark}</span> : ""}</label>
+          {field.kind === "textarea" ? (
+            <textarea id={id} name={field.name} maxlength="5000" required={field.required} placeholder={placeholder} data-role={role} data-extra-key={role === "extra" ? field.name : undefined} data-extra-label={role === "extra" ? field.label : undefined} />
+          ) : (
+            <input id={id} name={field.name} type={type} maxlength={field.kind === "email" ? 320 : 500} required={field.required} placeholder={placeholder} autocomplete={field.kind === "email" ? "email" : field.kind === "phone" ? "tel" : role === "first" ? "given-name" : role === "last" ? "family-name" : "on"} data-role={role} data-extra-key={role === "extra" ? field.name : undefined} data-extra-label={role === "extra" ? field.label : undefined} />
+          )}
+        </div>
+      );
+    })
+  }
+  <div class="hp" aria-hidden="true">
+    <label for={`${event.id}-hp`}>Website</label>
+    <input id={`${event.id}-hp`} name="website_url" type="text" tabindex="-1" autocomplete="off" data-role="honeypot" />
+  </div>
+  <button class="btn" type="submit" disabled data-submit>Form loading… or call {phone.display}</button>
+  <p class="form-status" role="status" aria-live="polite" data-status></p>
+  <noscript>
+    <p>Form loading… or call <a href={phone.tel}>{phone.display}</a>.</p>
+  </noscript>
+</form>
+
+<script>
+  import { SubmissionAttempt, hasContactMethod, resolveEndpoint, submitLead, type ChildRow, type ExtraField, type FieldValues } from "../lib/forms";
+  import { site } from "../data/site";
+
+  const phone = site.phone;
+
+  document.querySelectorAll<HTMLFormElement>("[data-lead-form]").forEach((form) => {
+    const submit = form.querySelector<HTMLButtonElement>("[data-submit]");
+    const status = form.querySelector<HTMLElement>("[data-status]");
+    if (!submit || !status) return;
+    const attempt = new SubmissionAttempt();
+    let startedAt = Date.now();
+    form.addEventListener("input", () => { startedAt = startedAt || Date.now(); }, { once: true });
+
+    const say = (text: string, kind: "ok" | "error" | "info", withPhone = false) => {
+      status.textContent = text;
+      status.dataset["kind"] = kind;
+      if (withPhone) {
+        status.append(" ");
+        const link = document.createElement("a");
+        link.href = phone.tel;
+        link.textContent = phone.display;
+        status.append(link, ".");
+      }
+    };
+
+    const read = (role: string) => (form.querySelector<HTMLInputElement | HTMLTextAreaElement>(`[data-role="${role}"]`)?.value ?? "");
+
+    const extras = (): ExtraField[] => {
+      const list: ExtraField[] = [];
+      form.querySelectorAll<HTMLElement>("[data-extra-key]").forEach((node) => {
+        if (node.closest("[data-child]")) return;
+        const key = node.dataset["extraKey"] || "field";
+        const label = node.dataset["extraLabel"] || key;
+        if (node instanceof HTMLInputElement || node instanceof HTMLTextAreaElement || node instanceof HTMLSelectElement) {
+          if (node.dataset["role"] === "message" || node.dataset["role"] === "email" || node.dataset["role"] === "phone") return;
+          if (node.value.trim()) list.push({ key, label, value: node.value });
+          return;
+        }
+        const chosen = [...node.querySelectorAll<HTMLInputElement>("input:checked")].map((input) => input.value);
+        if (chosen.length) list.push({ key, label, value: chosen.join(", ") });
+      });
+      return list;
+    };
+
+    const children = (): ChildRow[] =>
+      [...form.querySelectorAll<HTMLElement>("[data-child]")].map((row) => {
+        const val = (key: string) => {
+          const fields = [...row.querySelectorAll<HTMLInputElement>(`[data-child-field="${key}"]`)];
+          if (key === "name") return fields.map((field) => field.value.trim()).filter(Boolean).join(" ");
+          const picked = fields.find((field) => field.type !== "radio" || field.checked);
+          return picked?.value ?? "";
+        };
+        return { name: val("name"), gender: val("gender"), birthday: val("birthday"), division: val("division") };
+      });
+
+    const repeater = form.querySelector<HTMLElement>("[data-repeater]");
+    const add = form.querySelector<HTMLButtonElement>("[data-add]");
+    add?.addEventListener("click", () => {
+      if (!repeater) return;
+      const rows = repeater.querySelectorAll("[data-child]");
+      const max = Number(repeater.dataset["max"] || "4");
+      const source = rows[0];
+      if (rows.length >= max || !source) return;
+      const clone = source.cloneNode(true) as HTMLElement;
+      clone.classList.remove("is-collapsed");
+      clone.querySelectorAll("input").forEach((input) => {
+        if (input.type === "radio" || input.type === "checkbox") input.checked = false;
+        else input.value = "";
+        if (input.name) input.name = `${input.name}-${rows.length}`;
+      });
+      const label = clone.querySelector(".participant-title");
+      if (label) label.textContent = `Participant ${rows.length + 1}`;
+      repeater.insertBefore(clone, add.parentElement);
+    });
+    repeater?.addEventListener("click", (event) => {
+      const target = event.target;
+      if (!(target instanceof Element)) return;
+      const collapse = target.closest("[data-collapse]");
+      if (collapse) {
+        collapse.closest("[data-child]")?.classList.toggle("is-collapsed");
+        return;
+      }
+      if (!target.closest("[data-remove]")) return;
+      const rows = repeater.querySelectorAll("[data-child]");
+      if (rows.length < 2) return;
+      target.closest("[data-child]")?.remove();
+    });
+
+    submit.disabled = false;
+    submit.textContent = form.dataset["buttonLabel"] || "Submit";
+
+    form.addEventListener("submit", async (event) => {
+      event.preventDefault();
+      if (submit.disabled) return;
+      const values: FieldValues = {
+        first: read("first"),
+        last: read("last"),
+        email: read("email"),
+        phone: read("phone"),
+        message: read("message"),
+        honeypot: read("honeypot"),
+        extras: extras(),
+        children: children(),
+      };
+      const missingChoice = [...form.querySelectorAll<HTMLElement>("[data-required='true']")].some((group) => !group.querySelector("input:checked"));
+      if (missingChoice || !form.checkValidity()) {
+        form.reportValidity();
+        say("Please check the required fields, or call", "error", true);
+        return;
+      }
+      if (!hasContactMethod(values) && form.dataset["formKey"] !== "event-waitlist" && !values.email.trim()) {
+        say("Please add a phone number or email, or call", "error", true);
+        return;
+      }
+      if (resolveEndpoint(location.hostname).kind === "none") {
+        say(`This preview cannot send the form. Please call ${phone.display}.`, "info");
+        const link = document.createElement("a");
+        link.href = phone.tel;
+        link.textContent = phone.display;
+        status.textContent = "This preview cannot send the form. Please call ";
+        status.append(link, ".");
+        return;
+      }
+      submit.disabled = true;
+      say("Sending…", "info");
+      const result = await submitLead(form.dataset["formKey"] || "", form.dataset["eventName"] || "", values, {
+        hostname: location.hostname,
+        fetchImpl: (input, init) => fetch(input, init),
+        attempt,
+        ctx: { formStartedAt: startedAt, now: Date.now(), pageUrl: location.href, search: location.search, referrer: document.referrer },
+      });
+      submit.disabled = false;
+      if (result.kind === "success") {
+        if (form.dataset["successType"] === "redirect" && form.dataset["successValue"]) {
+          location.assign(form.dataset["successValue"]);
+          return;
+        }
+        form.reset();
+        say(form.dataset["successValue"] || "Thank you! We will be in touch shortly!", "ok");
+        return;
+      }
+      if (result.kind === "received") {
+        // Stored by Central Forms, delivery pending: continue as a success, without the conversion event.
+        if (form.dataset["successType"] === "redirect" && form.dataset["successValue"]) {
+          location.assign(form.dataset["successValue"]);
+          return;
+        }
+        form.reset();
+        say("Thank you! We received your message. If you need us sooner, please call", "ok", true);
+        return;
+      }
+      if (result.kind === "invalid") say("Please check the form, or call", "error", true);
+      else if (result.kind === "rate_limited") say("Please wait a moment and try again, or call", "error", true);
+      else if (result.kind === "not_sent") say("This preview cannot send the form. Please call", "info", true);
+      else say("We could not confirm that message. Please call", "error", true);
+    });
+  });
+</script>

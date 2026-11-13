@@ -1,0 +1,35 @@
+# Review 1: build at 03ed1a4
+
+Reviewer: Claude, 2 Nov 2026. Side-by-side images are in `docs/qa/review-1/<slug>-{desktop,mobile}.jpg`. In each image the **left half is the live site** (`source/pages/<slug>/*.jpg`) and the **right half is this build** (`docs/qa/screens/`).
+
+## Verdict
+
+The checks pass, and these parts are good: forms wiring, redirects, routes, the phone number, Lighthouse, the mobile bar and the hamburger. **The design is not a faithful rebuild.** Josh's brief is "the design is done, rebuild it as it is". Right now the pages use the live words in a new generic template: a white header with no logo, blue headings, plain text lists, a dark footer. That has to change before Josh sees it.
+
+The target is the live screenshots. A visitor flipping between the old and new site should see the same page, plus only the additions the spec lists (the hide-on-scroll behaviour, the hamburger, the mobile Call / Book a Party bar and the trust bar).
+
+## Fix list (every page unless noted)
+
+1. **Header.** Rebuild the live header exactly: the thin black top bar (Contact, About, Sign Our Waiver, right aligned), then the blue bar (`#285276`-ish, sample it from `rendered.html`) with the **white Warrior Sports logo** on the left and the main nav on the right on one line (Adult Classes, Kid Classes, Competitions, Birthday Parties, Personal Training, Summer Camps). The current build has no logo on desktop or mobile, and the nav wraps onto two lines. Mobile: top bar, then the blue bar with the logo and the hamburger, same as live. Keep the hide-on-scroll behaviour and the hamburger.
+2. **Hero images.** Use the same photo as each live page. Home is the dark gym interior with blue rigs, not the cropped kid on a ramp. Check every page against `meta.json` `bgs`/`imgs`. If the only file is small, use it anyway and let it scale. Don't swap in a different photo.
+3. **Hero text.** Match the live typography and colours. For example home is "STRONGER" in red, then "ONE OBSTACLE AT A TIME!" in white thin caps, then the subhead paragraph **inside the hero**, left aligned. Competitions is centred white text. Contact is centred red text. Pages whose live hero has **no text** (schedule-birthday-party and others) must not gain visible hero text. The current build added "CLIENT TESTIMONIALS" as a hero H1 there. Put the page's H1 on the first real heading of the page, or make it visually hidden. Never add visible words that aren't on the live page.
+4. **Home "bullet bar".** Live has a black bar under the hero with red dots (Kids • Adults • Summer Camps • Community • Birthday Parties). Rebuild it there. The trust bar goes directly under it (or merge the two if they would duplicate, and say which you did).
+5. **Section design.** Rebuild each section's real layout from `rendered.html` and the screenshots:
+   - Two-part headings: a red bold first line, then a dark thin caps second line ("GET READY TO" / "REACH YOUR FUN AND FITNESS…"). Not one blue heading.
+   - Icon lists: the clock icons for Open Gym Hours, the calendar, clock and $ icons for competition details, the location, phone and email icons on contact. Not plain paragraphs, and not red pill buttons for the address, phone and email.
+   - Image arrangements: home "Get ready to" has two tall photos side by side on the left. The competitions details have a photo strip on the right.
+   - Home "SPRINGFIELD'S BEST OBSTACLE TRAINING GYM": a **blue full-width band** with a centred white title, then a stack of **white cards**, each with its photo on the left and the title, text and red button on the right. In the build, these cards became plain alternating sections. Some photos are missing, and "Birthday Parties" got merged into "Train Like a Ninja Warrior" with the wrong button. Every card keeps its own photo, title, text and button.
+   - Background tints as live: light grey-blue form areas, white sections. Don't add tints that aren't there.
+6. **Raw form text dumped into the page.** On `/schedule-birthday-party/` and `/competitions/` (and any other form page), the form's field labels are printed as a paragraph above the form ("First and Last Name* First Last Birthday Kids Name* …", "Participant 1 Name(Required) …"). On competitions the "Don't wait to register" line appears twice. Remove all of it. The form component renders the labels. The copy-parity test must exclude text that came from the Gravity Forms markup. It passed only because that text was dumped into the page, so fix the test and the page together.
+7. **Forms look.** Match the live form styling: the light grey panel, field placeholders as live ("First Name", "Phone Number", "Date and Time Preference", "Tell us more about your party…"), the small "First" / "Last" sub-labels, and the red rounded Submit. Contact form: placeholders inside the fields, in a white rounded card, as live. CSNA repeater: the blue "Participant 1" header bar, with Add More Participant as live (keep your numbered customFields).
+8. **Testimonials.** Live: a centred red title "CLIENT TESTIMONIALS" with a dark subtitle "WHAT OUR CLIENTS SAY", then testimonials in **two columns**, each with the red round quote icon, the text, and a red "- NAME". The build merged the title and subtitle into one blue heading and stacked the quotes in a tinted box.
+9. **Footer.** Rebuild the live footer: a white background with the **black logo**, the tagline "Our accomplished and award winning Crew are here to help you find your strength and enjoy your workouts.", the round red social icons, a Contact column with red icons (address, phone, email), a Quick Links column, and the black bottom bar "© Copyright 2026   Springfield Warrior Sports   All Rights Reserved." The build has a different dark footer with a "Social" text column.
+10. **Fonts.** Match the live fonts from `rendered.html`: the body font and the heading font, including the thin caps second lines. If a font is a Google font on the live site, self-host it. Keep `font-display` as SOP allows (no preload).
+11. **Contact page.** The two stacked gym photos below the form on the live site are missing. The red pill buttons for the phone and email should be the icon list (see 5).
+12. **Address.** Keep both addresses exactly where the live site shows them (footer: Farm Rd 182; contact: W. Plainview Road). Josh will confirm the GBP address. Don't pick one.
+
+## How to check your own work
+
+For every page in `source/pages.json`, build side-by-side images like the ones in `docs/qa/review-1/` (`source/pages/<slug>/<viewport>.jpg` left, the new screenshot right, the same width) into `docs/qa/review-2/`. Go through each page **section by section**: header, hero, each section, forms, testimonials, footer. Fix every difference except the spec's listed additions. In `docs/qa/build-report.md`, add a "Review 1 fixes" table: page, section, what changed, any remaining difference and why.
+
+Keep everything that already works: the routes, redirects, forms submit logic, host gate, preview relay, phone test, Lighthouse targets (re-run them: the target is still 95+/100/100/100 on mobile), the first-frame results, the mobile bar and the hamburger.

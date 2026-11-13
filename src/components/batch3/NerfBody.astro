@@ -1,0 +1,76 @@
+---
+import type { EventForm } from "../../data/events";
+import FactIcon from "../batch2/FactIcon.astro";
+import LeadForm from "../LeadForm.astro";
+import { media } from "../batch2/media";
+import bookBg from "../../assets/media/2023-03-book-now-bg.jpg";
+
+interface Props {
+  event: EventForm;
+}
+const { event } = Astro.props;
+const party = media("media/2023-11-Nerf-war-party.webp");
+const nights = media("media/2023-11-Nerf-War-Nights.webp");
+const book = typeof bookBg === "string" ? bookBg : bookBg.src;
+const included = [
+  "Nerf Guns",
+  "Nerf Bullets",
+  "Bring any of your favorite guns!",
+  "Exclusive play in our entire obstacle course gym. (Yes, the entire place is yours!)",
+];
+---
+
+<section class="b3 nf-lead">
+  <div class="b3-wrap">
+    <p>Welcome to Warrior Sports, where Nerf battles are one of our most <a class="b3-link" href="/birthday-parties/">popular birthday party options</a>! We handle everything from setup to gameplay so you can relax, celebrate, and enjoy time with your kids.</p>
+  </div>
+</section>
+
+<section class="b3 b3-grey nf-party">
+  <div class="b3-wrap">
+    <h2>Nerf War Party Breakdown</h2>
+    <div class="b3-split">
+      {party.src && <img src={party.src} alt="" width={party.width} height={party.height} loading="lazy" decoding="async" />}
+      <div>
+        <h4>Here’s What’s Included</h4>
+        <ul class="b3-facts">
+          {included.map((item) => (
+            <li><FactIcon name="arrow" /><span class="strong">{item}</span></li>
+          ))}
+        </ul>
+        <p>Book a Nerf war party at Warrior Sports in Springfield, Mo. and we'll arrange a cooler filled with Gatorade for all your guests, ensuring everyone remains refreshed during the action-packed Nerf battle.</p>
+<p>Plus, the birthday celebrant gets a special Springfield Warrior Sports t-shirt and a complimentary Junior Warrior class voucher from us.</p>
+        <p>Need party invitations? We've got you covered! We offer free customized party invitations to ease your planning process.</p>
+        <h4>Pricing</h4>
+        <p>Our Nerf parties start at <span class="cost">$220</span> for the first 11 kids, and it's just an additional $10 for each extra participant. And guess what?</p>
+<p>The birthday child's parents can join the fun for free!</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="b3 b3-band nf-book" style={`background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('${book}')`}>
+  <div class="b3-wrap">
+    <h2 class="w920">Book Now!</h2>
+    <p>Let our experienced and kid-friendly team set up and orchestrate the Nerf battle, ensuring an unforgettable experience for everyone. Please note that our Nerf parties need to be booked during a private party slot. So, don't delay – spots fill up quickly!</p>
+    <h3>Ready to lock in the date for your child's epic Nerf party at Warrior Sports?</h3>
+    <a class="b3-btn block" href="/schedule-birthday-party/">Start the booking process on our website here</a>
+    <p>Or, dial <a href="tel:+14178947319">{`(417) 894-7319`}</a> to reserve today.<br />Let's make your child's birthday party one to remember with a thrilling Nerf gun battle at Warrior Sports!</p>
+  </div>
+</section>
+
+<section class="b3 b3-ice nf-night">
+  <div class="b3-wrap b3-split">
+    <div class="night-copy">
+      <h2>Nerf War Nights in Springfield MO</h2>
+      <h4>Dive into action-packed fun every other month with our exclusive Nerf War Nights!</h4>
+      <ul class="b3-facts">
+        <li><FactIcon name="arrow" /><span class="strong">When: <span class="rest">Typically on Fridays, from 6-8 PM.</span></span></li>
+        <li><FactIcon name="arrow" /><span class="strong">Pricing: <span class="rest">It's only $15 per participant. Good news for members – you get 50% off!</span></span></li>
+      </ul>
+      <h4>Want to be in the loop for our next Nerf War Night? Simply enter your email below and never miss out on the action!</h4>
+      <LeadForm event={event} note={'"*" indicates required fields'} />
+    </div>
+    {nights.src && <img src={nights.src} alt="" width={nights.width} height={nights.height} loading="lazy" decoding="async" />}
+  </div>
+</section>

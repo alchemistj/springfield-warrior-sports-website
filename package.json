@@ -1,0 +1,38 @@
+{
+  "name": "springfield-warrior-sports-website",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "check": "astro check",
+    "lint": "eslint .",
+    "test": "vitest run && playwright test",
+    "prepare:content": "node scripts/prepare-content.mjs",
+    "qa:screens": "node scripts/qa-screens.mjs"
+  },
+  "dependencies": {
+    "@astrojs/vercel": "^8.2.11",
+    "astro": "^5.18.2",
+    "sharp": "^0.34.5"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.8",
+    "@eslint/js": "^9.39.5",
+    "@playwright/test": "1.63.0",
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/node": "^22.20.5",
+    "eslint": "^9.39.5",
+    "eslint-plugin-astro": "^1.7.0",
+    "jpeg-js": "^0.4.4",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.72.1",
+    "vitest": "^3.2.7"
+  }
+}

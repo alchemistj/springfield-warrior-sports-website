@@ -1,0 +1,44 @@
+---
+import type { EventForm } from "../../data/events";
+import LeadForm from "../LeadForm.astro";
+import FactIcon from "./FactIcon.astro";
+import { media } from "./media";
+
+interface Props {
+  event: EventForm;
+}
+const { event } = Astro.props;
+const banner = media("media/2023-03-SWS-Competitions-Banner.webp");
+---
+
+<section class="b2-block">
+  <div class="b2-wrap comp-intro">
+    <p>Whether you are looking for regional qualifiers or just hoping to join in friendly competition, Springfield Warrior Sports is where you want to be!</p>
+    <p>We host <a href="/wnl-competitions/">regional qualifiers for the WNL</a> (World Ninja League) and are a CSNA (Central States Ninja Association) youth competitive league member. Check the links below for scheduled competitions and information!</p>
+  </div>
+</section>
+<section class="b2-block b2-ice">
+  <div class="b2-wrap comp-intro">
+    <h3>September 2026 CSNA Team Competition</h3>
+    <div class="comp-head">
+      <div>
+        <p class="b2-fact comp-fact">
+          <FactIcon name="calendar" />
+          <span class="b2-fact-text">Date: Saturday, September 19th</span>
+        </p>
+        <p class="b2-fact comp-fact">
+          <FactIcon name="clock" />
+          <span class="b2-fact-text">Start time: TBA</span>
+        </p>
+        <p class="b2-fact comp-fact">
+          <FactIcon name="dollar" />
+          <span class="b2-fact-text">Price per registration: <strong>$60</strong></span>
+        </p>
+      </div>
+      {banner.src && <img class="comp-banner" src={banner.src} alt="" width="568" height="165" />}
+    </div>
+    <a class="comp-btn" href={`#${event.anchor}`}>REGISTER NOW BY FILLING OUT THE FORM BELOW ▼</a>
+    <h2 class="b2-literata">2026-9 CSNA September 19th Form</h2>
+    <LeadForm event={event} />
+  </div>
+</section>

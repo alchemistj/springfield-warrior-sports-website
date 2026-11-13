@@ -1,0 +1,578 @@
+---
+import { eventById } from "../data/events";
+import type { Block, ContentImage, PageContent } from "../data/content";
+import { routeByPath } from "../lib/routes";
+import { heroImage } from "../lib/inline-image";
+import { site } from "../data/site";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import AboutBody from "./AboutBody.astro";
+import BirthdayBody from "./batch2/BirthdayBody.astro";
+import CampsBody from "./batch2/CampsBody.astro";
+import CompetitionsBody from "./batch2/CompetitionsBody.astro";
+import ContactBody from "./batch2/ContactBody.astro";
+import FitnessBody from "./batch3/FitnessBody.astro";
+import HomeschoolBody from "./batch3/HomeschoolBody.astro";
+import LaserBody from "./batch3/LaserBody.astro";
+import NerfBody from "./batch3/NerfBody.astro";
+import ParkourBody from "./batch3/ParkourBody.astro";
+import PersonalBody from "./batch3/PersonalBody.astro";
+import Batch4Chrome from "./batch4/Batch4Chrome.astro";
+import GymsBody from "./batch4/GymsBody.astro";
+import TeamBody from "./batch4/TeamBody.astro";
+import HomeBody from "./HomeBody.astro";
+import KidsBody from "./KidsBody.astro";
+import LeadForm from "./LeadForm.astro";
+import ScheduleBody from "./batch2/ScheduleBody.astro";
+import WnlBody from "./batch2/WnlBody.astro";
+import RichText from "./RichText.astro";
+import SplitTitle from "./SplitTitle.astro";
+
+interface Props {
+  page: PageContent;
+}
+const { page } = Astro.props;
+const route = routeByPath(page.path);
+if (!route) throw new Error(`Missing route ${page.path}`);
+const event = page.formId ? eventById(page.formId) : undefined;
+
+const BATCH2 = new Set([
+  "birthday-parties",
+  "schedule-birthday-party",
+  "summer-camps-in-springfield-mo",
+  "competitions",
+  "wnl-competitions",
+  "contact",
+]);
+const BATCH3 = new Set([
+  "fitness-classes",
+  "personal-training",
+  "parkour",
+  "homeschool-sports-and-classes-springfield-mo",
+  "laser-tag",
+  "nerf-wars",
+]);
+const BATCH4 = new Set([
+  "meet-the-team",
+  "best-gyms-in-springfield",
+  "registered",
+  "registered-for-csna-competition",
+  "registered-for-day-camps",
+  "registered-for-summer-fun-competition",
+  "registered-for-wnl-competition",
+  "thank-you-for-your-feedback",
+]);
+const THANKS = new Set([
+  "registered",
+  "registered-for-csna-competition",
+  "registered-for-day-camps",
+  "registered-for-summer-fun-competition",
+  "registered-for-wnl-competition",
+  "thank-you-for-your-feedback",
+]);
+const HERO_FILE: Record<string, string> = {
+  home: "media/2025-12-IMG_2341-scaled.jpeg",
+  about: "media/2023-03-About-Banner.jpg",
+  "birthday-parties": "media/2023-03-Birthday-Parties-Banner.jpg",
+  "summer-camps-in-springfield-mo": "media/2023-04-Summer-Camp-banner.webp",
+  "wnl-competitions": "media/2023-03-SWS-Competitions-Banner.webp",
+  "fitness-classes": "media/2025-12-IMG_2338-scaled.jpeg",
+  "personal-training": "media/2025-12-IMG_2333-scaled.jpeg",
+  parkour: "media/2023-04-Parkour-Gym-Parkour-Classes-Banner.webp",
+  "homeschool-sports-and-classes-springfield-mo": "media/2023-03-SWS-Competitions-Banner.webp",
+  "laser-tag": "media/2023-11-Laser-Tag-Gym.jpg",
+  "nerf-wars": "media/2023-11-Nerf-War-Nights-Springfield-MO.jpg",
+  "meet-the-team": "media/meet-the-springfield-warrior-sports-team-photo.jpg",
+  "best-gyms-in-springfield": "media/2025-06-the-Best-Gyms-in-Springfield-MO.jpg",
+};
+const heroFile = HERO_FILE[page.slug] ?? page.heroFile;
+const fullBleed = page.slug === "about" || BATCH2.has(page.slug) || BATCH3.has(page.slug) || page.slug === "meet-the-team" || page.slug === "best-gyms-in-springfield";
+const batch3 = BATCH3.has(page.slug);
+const batch4 = BATCH4.has(page.slug);
+const hero =
+  page.photoHero && heroFile && page.slug !== "registered" && !THANKS.has(page.slug)
+    ? await heroImage(
+        heroFile,
+        fullBleed
+          ? { width: 1280, quality: 48 }
+          : { width: 1280, quality: 46, cropAspect: page.slug === "home" ? 1.9 : 2.05, cropY: 0.42 },
+      )
+    : null;
+
+const images = import.meta.glob("../assets/media/*.{webp,jpeg,jpg,png}", { eager: true, import: "default" }) as Record<
+  string,
+  { src: string; width: number; height: number } | string
+>;
+
+function media(file: string): { src: string; width: number; height: number } {
+  const found = images[`../assets/${file}`];
+  if (!found) return { src: "", width: 1200, height: 800 };
+  if (typeof found === "string") return { src: found, width: 1200, height: 800 };
+  return found;
+}
+
+function norm(value: string): string {
+  return value.replace(/\s+/g, " ").trim().toLowerCase();
+}
+
+function isDump(text: string): boolean {
+  const t = text.replace(/\s+/g, " ").trim();
+  if (/indicates required fields/i.test(t)) return true;
+  if (/\(required\)/i.test(t)) return true;
+  if (/first and last name\s*\*/i.test(t)) return true;
+  if (/^name first last email\s*\*$/i.test(t)) return true;
+  if (/^add more participant$/i.test(t)) return true;
+  if (/^submit and continue to payment$/i.test(t)) return true;
+  if (/\b(csna|wnl)\b/i.test(t) && /form$/i.test(t) && t.length < 90) return true;
+  if (/\*\s*$/.test(t)) return true;
+  if (/^would you like to discuss any of these\??$/i.test(t)) return true;
+  if (/^anything else\??$/i.test(t)) return true;
+  if (/^(nerf battle party|laser tag party|private party|pizza party)$/i.test(t)) return true;
+  if (/^(first|last|name|email|phone)$/i.test(t)) return true;
+  return false;
+}
+
+function isSentence(text: string): boolean {
+  const t = text.trim();
+  return t.length >= 24 && /[.!?]$/.test(t);
+}
+
+function stripDump(blocks: Block[]): Block[] {
+  const out: Block[] = [];
+  let skipping = false;
+  let last = "";
+  for (const block of blocks) {
+    const key = block.text.replace(/\s+/g, " ").trim();
+    if (key === last) continue;
+    if (isDump(block.text)) {
+      skipping = true;
+      last = key;
+      continue;
+    }
+    if (skipping) {
+      if (isSentence(block.text) || /testimonial/i.test(block.text)) skipping = false;
+      else continue;
+    }
+    last = key;
+    out.push(block);
+  }
+  return out;
+}
+
+const RED_HERO = new Set([
+  "home",
+  "contact",
+  "kids-classes",
+  "birthday-parties",
+  "fitness-classes",
+  "personal-training",
+  "about",
+  "parkour",
+  "summer-camps-in-springfield-mo",
+  "nerf-wars",
+  "laser-tag",
+  "homeschool-sports-and-classes-springfield-mo",
+]);
+const CENTER_HERO = new Set(["contact", "competitions", "wnl-competitions", "kids-classes", "about", "birthday-parties", "summer-camps-in-springfield-mo"]);
+const RIGHT_HERO = new Set<string>();
+
+let body = stripDump(page.blocks);
+const heroExtra: Block[] = [];
+if (page.slug === "home") {
+  while (body[0]?.type === "p" && !body[0].text.includes("●")) heroExtra.push(body.shift()!);
+}
+const bullet = body[0]?.text.includes("●") ? body.shift()! : undefined;
+const aboutHero = page.slug === "about";
+const showHeroText = Boolean(hero) && page.h1FromSource && !aboutHero;
+const heroAlign = CENTER_HERO.has(page.slug) ? "center" : RIGHT_HERO.has(page.slug) ? "right" : "left";
+const heroTone = RED_HERO.has(page.slug) ? "red" : "white";
+const HERO_SIZE: Record<string, string> = {
+  home: "xl",
+  "best-gyms-in-springfield": "xl",
+  "fitness-classes": "xl",
+  "kids-classes": "xl",
+  "meet-the-team": "xl",
+  "personal-training": "xl",
+  "summer-camps-in-springfield-mo": "xl",
+  "birthday-parties": "lg",
+  competitions: "sm",
+};
+const heroSize = HERO_SIZE[page.slug] ?? "md";
+
+interface Section {
+  titles: string[];
+  body: Block[];
+  quotes: boolean;
+}
+const sections: Section[] = [];
+{
+  let current: Section = { titles: [], body: [], quotes: false };
+  const flush = () => {
+    if (current.titles.length || current.body.length) sections.push(current);
+    current = { titles: [], body: [], quotes: false };
+  };
+  const staysWithSection = (text: string) =>
+    /^(class times|practice times)$/i.test(text) || /^\d{1,2}(:\d{2})?\s*(am|pm)\b/i.test(text);
+  const quoteHeading = (text: string) => /testimonial|what our clients say/i.test(text);
+  for (const block of body) {
+    if (block.type === "h2") {
+      if (current.quotes && /^[-–—]/.test(block.text.trim())) current.body.push(block);
+      else if (current.titles.length && current.body.length === 0 && current.titles.length < 4) {
+        current.titles.push(block.text);
+        if (quoteHeading(block.text)) current.quotes = true;
+      } else if (current.titles.length && staysWithSection(block.text)) current.body.push(block);
+      else {
+        flush();
+        current = { titles: [block.text], body: [], quotes: quoteHeading(block.text) };
+      }
+    } else current.body.push(block);
+  }
+  flush();
+}
+
+const quoteAt = body.findIndex((block) => /client testimonials/i.test(block.text));
+const quoteBlocks = quoteAt >= 0 ? body.slice(quoteAt) : [];
+
+const FUN_FILES = [1, 2, 3, 4, 5, 6].map((n) => `media/2023-03-kid-classes-img0${n}.webp`);
+const KIDS_PHOTO: Record<string, string> = {
+  "pre-school": "media/2023-03-pre-shool-warriors.webp",
+  junior: "media/2023-03-junior-warriors.webp",
+  csna: "media/2023-03-csna-comp.webp",
+  parkour: "media/2023-04-parkour-7-yrs-old.webp",
+  homeschool: "media/2025-02-homeschool-kids-sports.webp",
+};
+const quoteIcon = media("media/2023-03-qoute-icon.webp");
+
+function hrefOf(block: Block): string {
+  const href = block.href || "#";
+  if (/^tel:/i.test(href) || /\(417\)\s*894-7319|\(417\)894-7319/.test(block.text)) return site.phone.tel;
+  if (/^mailto:/i.test(href) || block.text.includes("@")) return href.startsWith("mailto:") ? href : `mailto:${block.text}`;
+  return href;
+}
+
+function isForget(text: string): boolean {
+  return /don.t forget/i.test(text);
+}
+
+function isSchedule(text: string): boolean {
+  return /^(Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday|Preschool hours)\b/.test(text);
+}
+
+function factParts(text: string): string[] | null {
+  if (!/Date:/.test(text) || !/Price/.test(text)) return null;
+  const parts = text.split(/(?=Date:|Start time:|Price per registration:)/).map((part) => part.trim()).filter(Boolean);
+  return parts.length > 1 ? parts : null;
+}
+
+function stepParts(text: string): string[] | null {
+  if (!/^1\.\s/.test(text)) return null;
+  const parts = text.split(/(?=\d+\.\s)/).map((part) => part.trim()).filter(Boolean);
+  return parts.length > 1 ? parts : null;
+}
+
+interface Quote {
+  lines: string[];
+  by?: string;
+}
+function groupQuotes(items: Block[]): Quote[] {
+  const quotes: Quote[] = [];
+  let lines: string[] = [];
+  for (const block of items) {
+    if (/^[-–—]\s*\S/.test(block.text.trim())) {
+      quotes.push({ lines, by: block.text });
+      lines = [];
+    } else if (block.type !== "h2") lines.push(block.text);
+  }
+  if (lines.length) quotes.push({ lines });
+  return quotes.filter((quote) => quote.lines.length || quote.by);
+}
+
+const h1key = norm(page.h1);
+function matchesH1(lines: string[]): boolean {
+  return lines.some((line) => norm(line) === h1key) || norm(lines.join(" ")) === h1key;
+}
+const h1InHero = showHeroText || aboutHero || page.slug === "homeschool-sports-and-classes-springfield-mo";
+const h1InBody = false;
+const h1InSection = !h1InHero && (page.slug === "home" ? matchesH1(["CLIENT TESTIMONIALS"]) : sections.some((section) => matchesH1(section.titles)) || matchesH1(quoteBlocks.filter((block) => block.type === "h2").map((block) => block.text)));
+
+const story = page.slug === "home" ? [] : sections.filter((section) => !section.quotes);
+
+const pageStory = story;
+const quotes = page.slug === "home" ? groupQuotes(quoteBlocks) : sections.filter((section) => section.quotes).flatMap((section) => groupQuotes(section.body));
+const quoteTitles = page.slug === "home"
+  ? quoteBlocks.filter((block) => block.type === "h2").map((block) => block.text)
+  : sections.find((section) => section.quotes)?.titles ?? [];
+
+let photoCursor = 0;
+const pool: ContentImage[] =
+  page.slug === "meet-the-team" && page.heroFile
+    ? [{ file: page.heroFile, alt: page.heroAlt, kind: "photo" }, ...page.images]
+    : page.images.filter((image) => !FUN_FILES.includes(image.file));
+
+function nextPhoto(): ContentImage | undefined {
+  const image = pool[photoCursor];
+  if (image) photoCursor += 1;
+  return image;
+}
+
+---
+
+<BaseLayout route={route}>
+  {
+    hero && (
+      <img
+        slot="hero-photo"
+        class:list={["atf-photo", { "about-hero": page.slug === "about" }]}
+        src={hero.uri}
+        alt={page.heroAlt}
+        width={hero.width}
+        height={hero.height}
+        loading="eager"
+        decoding="sync"
+        fetchpriority="high"
+        data-ff-lcp-hero
+      />
+    )
+  }
+  {
+    batch4 ? (
+      <div slot="hero" class="b4-hero">
+        <Batch4Chrome slug={page.slug} />
+      </div>
+    ) : (
+      <div slot="hero" class:list={["hero-copy", hero ? `align-${heroAlign}` : "hero-plain", hero ? `tone-${heroTone}` : "", hero ? `hero-size-${heroSize}` : "", { bare: !showHeroText && !batch3, "b2-hero": BATCH2.has(page.slug), "b3-hero": batch3 }]}>
+        {hero && (showHeroText || aboutHero || batch3) && <div class:list={["hero-scrim", { "about-scrim": aboutHero, "b2-scrim": BATCH2.has(page.slug) }]} aria-hidden="true"></div>}
+        <div class="hero-text">
+      {aboutHero && <h1>Springfield Warrior Sports<br />Community</h1>}
+      {!aboutHero && showHeroText && !BATCH2.has(page.slug) && !batch3 && <h1>{page.h1}</h1>}
+      {page.slug === "fitness-classes" && (
+        <h1>
+          <span class="fit-hero-a">The Most Diverse (Least Boring)</span>
+          <span class="fit-hero-b">Fitness Classes in Springfield, MO</span>
+        </h1>
+      )}
+      {page.slug === "personal-training" && <h1 class="pt-hero">Personal Training at Warrior Sports</h1>}
+      {page.slug === "parkour" && <h1 class="pk-hero">Parkour Gym in Springfield MO | Springfield Warrior Sports</h1>}
+      {page.slug === "homeschool-sports-and-classes-springfield-mo" && <h1 class="hs-hero">Homeschool Kids Sports</h1>}
+      {page.slug === "laser-tag" && (
+        <>
+          <h1 class="lt-hero">Welcome to the Premier <span class="lt-hero-b">Laser Tag Gym in Springfield, MO</span></h1>
+          <p class="lt-ages">Great for all ages!</p>
+        </>
+      )}
+      {page.slug === "nerf-wars" && (
+        <h1 class="nf-hero">Nerf War Springfield, MO: <span class="nf-hero-b">The Ultimate Party Experience!</span></h1>
+      )}
+      {page.slug === "competitions" && <h1>{page.h1}</h1>}
+      {page.slug === "wnl-competitions" && <h1>{page.h1}</h1>}
+      {page.slug === "contact" && <h1>{page.h1}</h1>}
+      {page.slug === "birthday-parties" && (
+        <>
+          <p class="bd-kicker">HIGH-ENERGY</p>
+          <p class="bd-title">KIDS' BIRTHDAY PARTIES</p>
+          <p class="bd-place">IN SPRINGFIELD, MO</p>
+          <h3 class="bd-sub">Ninja Warrior Courses, Laser Tag, Nerf Battles, and More!</h3>
+        </>
+      )}
+      {page.slug === "summer-camps-in-springfield-mo" && (
+        <>
+          <h1 class="camp-h1">Kids Stay Fit and Healthy</h1>
+          <h2 class="camp-h1b">At Our Incredible Summer Camps</h2>
+        </>
+      )}
+      {page.slug === "home" && heroExtra[0] && <h2 class="hero-kicker">{heroExtra[0].text}</h2>}
+      {page.slug === "home" && heroExtra[1] && <p class="hero-sub">{heroExtra[1].text}</p>}
+      {page.slug === "kids-classes" && <h2 class="hero-kicker light-300">Ninja Warrior Classes for Kids and Teens</h2>}
+      {page.slug !== "home" && page.slug !== "kids-classes" && showHeroText && !BATCH2.has(page.slug) && !batch3 && heroExtra[0] && <p class="hero-sub">{heroExtra[0].text}</p>}
+        </div>
+      </div>
+    )
+  }
+
+  <section class="trust trust-bar" aria-label="Credentials and how to reach Springfield Warrior Sports">
+    <div class="wrap trust-row">
+      <p class="trust-line">
+        <span class="trust-item">WNL regional qualifier host</span>
+        <span class="trust-sep" aria-hidden="true">·</span>
+        <span class="trust-item">CSNA competitive youth team</span>
+      </p>
+      <p class="trust-line">
+        <span class="trust-item">Serving Springfield, MO</span>
+        <span class="trust-sep" aria-hidden="true">·</span>
+        <span class="trust-item">Try Open Gym for $10</span>
+        <span class="trust-sep" aria-hidden="true">·</span>
+        <a class="trust-item" href={site.phone.tel}>Call {site.phone.display}</a>
+      </p>
+    </div>
+  </section>
+
+  {
+    bullet && (
+      <section class="bullet-bar" aria-label="Programs">
+        <div class="bullet-line">
+          <a href="/kids-classes/">KIDS</a><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong><em><strong><span class="dot">●</span></strong></em><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong><a href="/fitness-classes/">ADULTS</a><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong><em><strong><span class="dot">●</span></strong></em><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong><a href="/summer-camps-in-springfield-mo/">SUMMER CAMPS</a><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong><em><strong><span class="dot">●</span></strong></em><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong><a href="/about/">COMMUNITY</a><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong><em><strong><span class="dot">●</span></strong></em><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong><a href="/birthday-parties/">BIRTHDAY PARTIES</a>
+        </div>
+        <div class="bullet-stack">
+          <p><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" /></svg><span><a href="/kids-classes/">KIDS</a></span></p>
+          <p><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" /></svg><span><a href="/fitness-classes/">ADULTS</a></span></p>
+          <p><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" /></svg><span><a href="/summer-camps-in-springfield-mo/">SUMMER CAMPS</a></span></p>
+          <p><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" /></svg><span><a href="/about/">COMMUNITY</a></span></p>
+          <p><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" /></svg><span><a href="/birthday-parties/">BIRTHDAY PARTIES</a></span></p>
+        </div>
+      </section>
+    )
+  }
+
+  {
+    !batch4 && !BATCH2.has(page.slug) && !h1InHero && !h1InSection && !h1InBody && (
+      <h1 class="sr-only">{page.h1}</h1>
+    )
+  }
+  {THANKS.has(page.slug) && <h1 class="sr-only">{page.h1}</h1>}
+  {
+    batch3 && !h1InHero && (h1InSection || h1InBody) && (
+      <h1 class="sr-only">{page.h1}</h1>
+    )
+  }
+
+  {
+    page.slug === "home" && <HomeBody />
+  }
+
+  {
+    page.slug === "about" && <AboutBody />
+  }
+
+  {
+    page.slug === "kids-classes" && <KidsBody />
+  }
+  {page.slug === "birthday-parties" && <BirthdayBody />}
+  {page.slug === "schedule-birthday-party" && event && <ScheduleBody event={event} />}
+  {page.slug === "summer-camps-in-springfield-mo" && event && <CampsBody event={event} />}
+  {page.slug === "competitions" && event && <CompetitionsBody event={event} />}
+  {page.slug === "wnl-competitions" && event && <WnlBody event={event} />}
+  {page.slug === "contact" && event && <ContactBody event={event} />}
+  {page.slug === "fitness-classes" && <FitnessBody />}
+  {page.slug === "personal-training" && event && <PersonalBody event={event} />}
+  {page.slug === "parkour" && <ParkourBody />}
+  {page.slug === "homeschool-sports-and-classes-springfield-mo" && <HomeschoolBody />}
+  {page.slug === "laser-tag" && event && <LaserBody event={event} />}
+  {page.slug === "nerf-wars" && event && <NerfBody event={event} />}
+  {page.slug === "meet-the-team" && <TeamBody />}
+  {page.slug === "best-gyms-in-springfield" && <GymsBody />}
+
+  {
+    !batch4 && !BATCH2.has(page.slug) && !batch3 && page.slug !== "home" && page.slug !== "about" && page.slug !== "kids-classes" && page.slug !== "contact" &&
+      pageStory.map((section, index) => {
+        const title = section.titles.join(" ");
+        const kidsKey = Object.keys(KIDS_PHOTO).find((key) => title.toLowerCase().includes(key));
+        const kidsFile = page.slug === "kids-classes" && kidsKey ? KIDS_PHOTO[kidsKey] : undefined;
+        const fun = /see how much fun/i.test(title);
+        const intro = page.slug === "kids-classes" && /kids fitness classes|ninja warrior classes for kids/i.test(title);
+        const photo = kidsFile
+          ? { file: kidsFile, alt: "", kind: "photo" as const }
+          : fun || intro || page.slug === "kids-classes"
+            ? undefined
+            : nextPhoto();
+        const shot = photo ? media(photo.file) : undefined;
+        const hoursLines = section.body.filter((block) => isSchedule(block.text));
+        const showHours = hoursLines.length >= 3;
+        const as = !h1InHero && matchesH1(section.titles) ? "h1" : "h2";
+        const flip = Boolean(shot) && (page.slug === "kids-classes" ? index % 2 === 0 : index % 2 === 1);
+        return (
+          <section class:list={["section", { band: index % 2 === 1 && !fun && !intro, ink: fun, "kids-intro": intro }]}>
+            <div class="wrap">
+              <div class:list={["split", { flip, "intro-copy": intro }]}>
+                {shot?.src && <img class="frame-img" src={shot.src} alt={photo?.alt || ""} width={shot.width} height={shot.height} loading="lazy" decoding="async" />}
+                <div class="copy">
+                  {section.titles.length > 0 && <SplitTitle lines={section.titles} as={as} />}
+                  {section.body.map((block) => {
+                    if (fun && isForget(block.text)) return null;
+                    if (showHours && isSchedule(block.text)) return null;
+                    if (block.type === "h2") return <p class="subhead">{block.text}</p>;
+                    if (block.type === "a") return <p><a class="btn" href={hrefOf(block)}>{block.text}</a></p>;
+                    const facts = factParts(block.text);
+                    if (facts) {
+                      return (
+                        <ul class="icon-list">
+                          {facts.map((fact) => (
+                            <li>
+                              <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 2h2v2h6V2h2v2h3v18H4V4h3zm12 8H5v10h14z" /></svg></span>
+                              <span>{fact}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      );
+                    }
+                    const steps = stepParts(block.text);
+                    if (steps) return <ol class="steps">{steps.map((step) => <li>{step}</li>)}</ol>;
+                    return <RichText text={block.text} />;
+                  })}
+                  {showHours && (
+                    <ul class="icon-list">
+                      {hoursLines.map((line) => (
+                        <li>
+                          <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 11H7V11h4V6h2z" /></svg></span>
+                          <span>{line.text}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </div>
+              </div>
+              {fun && (
+                <div class="photo-grid">
+                  {FUN_FILES.map((file) => {
+                    const img = media(file);
+                    return img.src ? <img src={img.src} alt="" width={img.width} height={img.height} loading="lazy" decoding="async" /> : null;
+                  })}
+                </div>
+              )}
+              {fun && section.body.filter((block) => isForget(block.text)).map((block) => <p class="fun-note">{block.text}</p>)}
+            </div>
+          </section>
+        );
+      })
+  }
+
+  {
+    event && !batch4 && !BATCH2.has(page.slug) && !batch3 && page.slug !== "contact" && (
+      <section class="form-band">
+        <div class="wrap">
+          <LeadForm event={event} />
+        </div>
+      </section>
+    )
+  }
+
+  {
+    quotes.length > 0 && !batch4 && !BATCH2.has(page.slug) && !batch3 && page.slug !== "home" && page.slug !== "about" && (
+      <section class="section band">
+        <div class="wrap">
+          {quoteTitles.length > 0 && (
+            <SplitTitle lines={quoteTitles} align="center" as={!h1InHero && matchesH1(quoteTitles) ? "h1" : "h2"} />
+          )}
+          <div class="quote-grid">
+            {quotes.map((quote) => (
+              <blockquote class="quote">
+                {quoteIcon.src && <img src={quoteIcon.src} alt="" width="42" height="42" />}
+                {quote.lines.map((line) => <p>{line}</p>)}
+                {quote.by && <p class="q-by">{quote.by}</p>}
+              </blockquote>
+            ))}
+          </div>
+        </div>
+      </section>
+    )
+  }
+
+  {
+    page.logos.length > 0 && !batch4 && !BATCH2.has(page.slug) && !batch3 && page.slug !== "home" && page.slug !== "about" && (
+      <div class="wrap logos">
+        {page.logos.filter((logo) => !/qoute-icon|SWS-logo-footer|SpringField-Warrior-Logo/i.test(logo.file)).map((logo) => {
+          const img = media(logo.file);
+          return img.src ? <img src={img.src} alt={logo.alt} width="140" height="64" loading="lazy" decoding="async" /> : null;
+        })}
+      </div>
+    )
+  }
+</BaseLayout>

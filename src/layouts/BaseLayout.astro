@@ -1,0 +1,88 @@
+---
+import "../styles/global.css";
+import "../styles/batch2.css";
+import "../styles/batch3.css";
+import "../styles/batch4.css";
+import "../styles/system.css";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import FinalCta from "../components/FinalCta.astro";
+import StickyCallBar from "../components/StickyCallBar.astro";
+import { site, SITE_URL } from "../data/site";
+import { canonicalUrl, type Route } from "../lib/routes";
+import { breadcrumbSchema, jsonLd, localBusinessSchema } from "../lib/seo";
+
+interface Props {
+  route: Route;
+}
+const { route } = Astro.props;
+const canonical = canonicalUrl(route.path);
+const gaId = site.ga4;
+---
+
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{route.title}</title>
+    <meta name="description" content={route.description} />
+    <link rel="canonical" href={canonical} />
+    <meta name="robots" content={route.robots} />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={route.title} />
+    <meta property="og:description" content={route.description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:site_name" content={site.name} />
+    <meta property="og:image" content={`${SITE_URL}/og.jpg`} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <script type="application/ld+json" set:html={jsonLd(localBusinessSchema())} />
+    <script type="application/ld+json" set:html={jsonLd(breadcrumbSchema(route))} />
+    <script is:inline define:vars={{ gaId }}>
+      (function () {
+        let fired = false;
+        function go() {
+          if (fired) return;
+          fired = true;
+          const s = document.createElement("script");
+          s.async = true;
+          s.src = "https://www.googletagmanager.com/gtag/js?id=" + gaId;
+          document.head.appendChild(s);
+          window.dataLayer = window.dataLayer || [];
+          function gtag(...args) { window.dataLayer.push(args); }
+          window.gtag = gtag;
+          gtag("js", new Date());
+          gtag("config", gaId);
+        }
+        window.addEventListener("load", function () { setTimeout(go, 3000); }, { once: true });
+        ["pointerdown", "keydown", "touchstart"].forEach(function (name) {
+          window.addEventListener(name, go, { once: true, passive: true });
+        });
+      })();
+    </script>
+  </head>
+  <body class={`page-${route.key}`}>
+    <slot name="hero-photo" />
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="atf">
+      <Header current={route.path} />
+      <div class="header-spacer"></div>
+      <slot name="hero" />
+      <span class="atf-ready" hidden></span>
+    </div>
+    <main id="main">
+      <slot />
+    </main>
+    {route.key !== "home" && route.key !== "meet-the-team" && route.key !== "homeschool-sports-and-classes-springfield-mo" && <FinalCta />}
+    <Footer />
+    <StickyCallBar />
+    <script>
+      import { scheduleJourney } from "../lib/measurement/schedule";
+      scheduleJourney();
+    </script>
+  </body>
+</html>

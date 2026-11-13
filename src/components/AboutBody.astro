@@ -1,0 +1,312 @@
+---
+import { media } from "../lib/media";
+import ReviewBand from "./ReviewBand.astro";
+
+const gym = media("media/2023-03-about-our-gym.webp");
+const cleanup = media("media/2023-03-Clean-up-days.webp");
+const brothers = media("media/2023-03-Big-Brothers.webp");
+const store = media("media/2023-03-Supplement-Superstore.webp");
+const p1 = media("media/2023-03-perseverance-img01.webp");
+const p2 = media("media/2023-03-perseverance-img02.webp");
+const p3 = media("media/2023-03-perseverance-img03.webp");
+const p4 = media("media/2023-03-perseverance-img04.webp");
+const men1 = media("media/2023-03-stronger-men01.webp");
+const men2 = media("media/2023-03-stronger-men02.webp");
+const murph = media("media/2023-03-Community-Murph.webp");
+const quotes = [
+  {
+    text: "We had our son’s 10th birthday here. All of the kids had a great time. They set up an obstacle course for the kids. They loved the whole experience. The favorite was the curved wall to run up. That was everyone’s challenge for the night. We will be visiting again for sure.",
+    by: "- JENNIFER L.",
+  },
+  {
+    text: "My daughter started training here 3 years ago at 8, and she still loves it!! Owner and coaching staff are all super encouraging. We live an hour away but make the drive twice a week as often as possible. Training here has not only helped her get stronger physically but increased her confidence in general. Anything that makes kids want to challenge themselves to get better and better is worth it!",
+    by: "- LEE C.",
+  },
+];
+---
+
+<section class="section about-page intro-block">
+  <div class="wrap">
+    <p class="lead">Springfield Warrior Sports was founded with a love for, and desire to serve our community. Community unites us, and allows us to be a part of something greater than ourselves.</p>
+<p class="lead">It provides an opportunity to connect with people and other local businesses, who when we all work together, make this the awesome community so many of us call home.</p>
+<p class="lead">We strive to provide a safe place and outlet - for youth, and adults, who are looking for a fun and different workout and the freedom to MOVE as they set and achieve their goals on their quest for a healthy lifestyle.</p>
+<p class="lead">We also love going out into the community to serve outside of our walls, through adopt-a-highway, partnering with local events and speaking at school assemblies. We are most certainly, Stronger Together!</p>
+  </div>
+  <div class="mist">
+    <div class="wrap">
+      <div class="row photo-left mist">
+        <img loading="lazy" decoding="async" src={gym.src} alt="About our gym" width={gym.width} height={gym.height} />
+        <div class="copy">
+          <h2 class="red h40 w438">Curious About the Colors of Our Gym?</h2>
+          <p class="p18">Our inspiration is the new Springfield flag which has nods to our culture and history <a class="red-link" href="https://www.ozarksfirst.com/news/springfield-flag-future-council-committee-discusses-what-to-do-about-the-city-flag/">|we’ll let you look that up|</a> but the main goal of the developers was to “come up with an authentic icon that people connected with and could use to express their pride living in Springfield” - John McQueary</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="row text-left cleanup">
+      <div class="copy">
+        <h2 class="red h50 w489">Community Adopt-A-Highway Clean up Days</h2>
+        <p>Springfield Warrior Sports is proud to help keep a little piece of our community, cleaner!</p>
+<p>We have adopted the highway on South Campbell, between Weaver and Plainview, near the gym.</p>
+<p>We love doing our part, and think it’s awesome that the Warrior Sports Crew, members, and friends can come together and be involved. It’s also a good time!!</p>
+<p>Thanks to Thrivent Financial for sponsoring the event and to <a class="red-link" href="https://www.midmobank.com/">Mid-Missouri Bank</a> for allowing us to meet in your community room. We are truly, Stronger Together!</p>
+      </div>
+      <img loading="lazy" decoding="async" src={cleanup.src} alt="Adopt-a-highway clean up" width={cleanup.width} height={cleanup.height} />
+    </div>
+  </div>
+  <div class="wash">
+    <div class="wrap">
+    <h2 class="red h50 center">Community Partnerships</h2>
+
+    <div class="row photo-left brothers">
+      <img loading="lazy" decoding="async" src={brothers.src} alt="Big Brothers Big Sisters" width={brothers.width} height={brothers.height} />
+      <div class="copy">
+        <h2 class="blue h30 w411"><a href="https://bigbro.com/">Big Brothers Big Sisters of the Ozarks</a></h2>
+        <p>"A mentor empowers a person to see a possible future and believe it can be obtained” <a class="red-link" href="https://bigbro.com/">Big Brothers Big Sisters of the Ozarks</a> makes impactful, monitored matches between adult volunteers (“Bigs”) and children (“Littles”), ages 6 through 14.</p>
+<p>Through this program, positive relationships are developed that have a direct and lasting effect on the lives of young people in our community!</p>
+<p>At Springfield Warrior Sports we applaud and want to support their mission. "Bigs" when you drop in for open gym, your "Little" gets in free!</p>
+<p>Come have fun, or maybe challenge each other to something new! Together, we are STRONGER..... one Obstacle at at Time!</p>
+      </div>
+    </div>
+
+    <div class="row text-left">
+      <div class="copy">
+        <h2 class="blue h30 w391"><a href="https://supplementsuperstores.com/pages/springfield-mo-south">Supplement Superstore</a></h2>
+        <p>We want to give a huge shout out to <a class="red-link" href="https://supplementsuperstores.com/pages/springfield-mo-south">Supplement Superstore</a>!</p>
+<p>S2 has been a huge supporter of Springfield Warrior Sports and our athletes over the years, and these guys... are doing it right!</p>
+<p>They have solid fitness nutrition products and considerately share expert advice after listening to your specific goals.</p>
+<p>They can offer personal training, nutrition coaching and meal plans - and they won't leave you hanging... you can expect that they will check in on your progress, as they truly want you to succeed!</p>
+<p>Go check them out now, all ages and athletic backgrounds.</p>
+      </div>
+      <img loading="lazy" decoding="async" src={store.src} alt="Supplement Superstore" width={store.width} height={store.height} />
+    </div>
+    </div>
+  </div>
+</section>
+
+<ReviewBand
+  title="Client Testimonials"
+  sub="What Our Clients Say"
+  text={quotes[0]?.text ?? ""}
+  by={quotes[0]?.by ?? ""}
+/>
+
+<section class="section persevere">
+  <div class="wrap">
+    <h2 class="white h50 center">Perseverance:</h2>
+    <h2 class="white thin center">Persistence in Doing Something Despite Difficulty or Delay in Achieving Success.</h2>
+    <p class="wide">The very nature of this sport involves setting goals for yourself, hard work and determination (perseverance), and supportive friends (community)!</p>
+<p class="wide">At Springfield Warrior Sports we love the opportunity to share our experiences, failures and successes, through the sport and training on and off the course with the youngest of athletes and individuals.</p>
+<p class="wide">We are available to speak, demonstrate, and provide interactive team building for your next school assembly, field day, or youth activity. Each of us are stronger, one Obstacle at a time!</p>
+    <div class="grid-2">
+      <img loading="lazy" decoding="async" src={p1.src} alt="" width={p1.width} height={p1.height} />
+      <img loading="lazy" decoding="async" src={p2.src} alt="" width={p2.width} height={p2.height} />
+      <img loading="lazy" decoding="async" src={p3.src} alt="" width={p3.width} height={p3.height} />
+      <img loading="lazy" decoding="async" src={p4.src} alt="" width={p4.width} height={p4.height} />
+    </div>
+  </div>
+</section>
+
+<section class="section about-page story">
+  <div class="wash">
+  <div class="wrap">
+    <p class="full story-lead">In 2016 we had the unique opportunity to work with <a class="red-link" href="https://jamesriver.church/">James River Church</a> planning their Ninja Warrior course that was a part of their Stronger Men’s Conference.</p>
+<p class="full story-lead">Under Jason Huewe’s direction, Springfield Warrior Sports assisted with design and build of the course, running the West Campus competition, and securing athletes from across the country.</p>
+<p class="full story-lead">We also held a local competition at the gym where the top 5 athletes secured their spot to compete on the course alongside the American Ninja Warriors who attended for their chance to win $5000!</p>
+<p class="full story-lead">What a night, so much fun being a part of this collaboration and display of camaraderie with such inspiring individuals… each modeling that we are Stronger, one Obstacle at a time!</p>
+    <div class="pair">
+      <img loading="lazy" decoding="async" src={men1.src} alt="" width={men1.width} height={men1.height} />
+      <img loading="lazy" decoding="async" src={men2.src} alt="" width={men2.width} height={men2.height} />
+    </div>
+  </div>
+  </div>
+  <div class="wrap">
+    <div class="row photo-left">
+      <img loading="lazy" decoding="async" src={murph.src} alt="Community Murph" width={murph.width} height={murph.height} />
+      <div class="copy">
+        <h2 class="blue h30 w296"><a href="https://www.facebook.com/communitymurph/">Community Murph</a></h2>
+        <p class="murph-copy">Springfield Warrior Sports looks forward each year to bringing a team and participating in the local annual <a class="red-link" href="https://www.facebook.com/communitymurph/">Community Murph</a>! &nbsp;<br><br>Every year on Memorial Day, the Southwest Missouri community comes together to honor our fallen heroes. Funds are raised for local charities so that they can continue to provide support for these families. We are so encouraged to be a part of this event and have watched it continue to grow with this communities engagement - Nationwide, this event has raised millions of dollars for charities including the LT. Michael P. Murphy Memorial Scholarship Foundation (SEAL). It’s a grueling challenge, that brings people together to pay tribute and the tradition helps push us, humble us both mentally and physically and dedicate a bit of pain and sweat to honor a man who gave everything he had. &nbsp; &nbsp; We are… Stronger, together. <br></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<ReviewBand text={quotes[1]?.text ?? ""} by={quotes[1]?.by ?? ""} />
+
+<style>
+  .about-page h1,
+  .about-page h2,
+  .persevere h2 {
+    margin: 0 0 12px;
+    font-family: Heebo, "Arial Narrow", sans-serif;
+    font-weight: 900;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+  .persevere h2.thin { line-height: 1.2; }
+  .about-page h3.thin { line-height: 1.4; letter-spacing: 1px; }
+  .intro-block { padding-top: 90px; padding-bottom: 0; }
+  .intro-block > .wash {
+    padding-bottom: 70px;
+    background-image: linear-gradient(rgba(229, 234, 237, 0.5), rgba(229, 234, 237, 0.5));
+  }
+  .intro-block > .wash .row:last-child { margin-bottom: 0; }
+  .about-page.mist { margin-top: 0; padding: 90px 0 80px; }
+  .red-link { color: rgb(219, 58, 52); font-weight: 400; text-decoration: none; }
+  h1 {
+    width: min(920px, 100%);
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--color-ws-red);
+    font-size: 32px;
+    text-align: center;
+  }
+  .red { color: var(--color-ws-red); }
+  .blue { color: #285276; }
+  .white { color: #fff; }
+  .h50 { font-size: 32px; }
+  .h40 { font-size: 32px; }
+  .h30 { font-size: 30px; }
+  .thin {
+    font-weight: 300;
+    font-size: 20px;
+    text-align: center;
+  }
+  .center { width: fit-content; max-width: 100%; text-align: center; }
+  .about-page h1,
+  .about-page h2.center,
+  .persevere h2.center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .copy h2 { width: fit-content; max-width: 100%; }
+  .block { width: 100%; text-align: center; }
+  h2 a { color: inherit; font: inherit; text-decoration: none; }
+  .lead, .copy p, .full, .wide, .p18 {
+    font-weight: 400;
+    text-align: left;
+  }
+  .lead {
+    width: min(874px, 100%);
+    margin-inline: auto;
+    margin-bottom: 0;
+    text-align: center;
+  }
+  .p18 { font-size: 16px; }
+  .row { display: grid; gap: 22px; margin: 28px 0; }
+  .row img, .grid-2 img, .pair img { width: 100%; height: auto; object-fit: cover; }
+  .persevere {
+    position: relative;
+    color: #fff;
+    background: none;
+  }
+  .persevere::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background: #285276;
+  }
+  .persevere > * { position: relative; z-index: 1; }
+  .wide, .full { font-weight: 400; }
+  .persevere p.wide { text-align: center; color: #fff; }
+  .grid-2, .pair { display: grid; gap: 12px; margin: 18px 0 8px; }
+  .t-sub, h3.thin {
+    width: 315px;
+    margin: 0 auto 18px;
+    color: #000;
+    font-family: Heebo, "Arial Narrow", sans-serif;
+    font-weight: 300;
+  }
+  @media (min-width: 800px) {
+    h1 { width: 920px; font-size: 50px; }
+    .h50 { font-size: 50px; }
+    .h40 { font-size: 40px; }
+    .thin { font-size: 30px; }
+    .persevere h2.center.h50 { width: 920px; }
+    .persevere h2.thin {
+      width: 791px;
+      font-weight: 300;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .about-page.mist h2.h50 { line-height: 70px; }
+    .copy h2.w438 { width: 438px; }
+    .copy h2.w489 { width: 489px; }
+    .copy h2.w411 { width: 411px; }
+    .copy h2.w391 { width: max-content; }
+    .copy h2.w296 { width: 296px; }
+    .p18 { font-size: 18px; }
+    .row.photo-left { grid-template-columns: 520px 561px; column-gap: 68px; align-items: center; }
+    .intro-block > .mist {
+      margin-top: 90px;
+      margin-bottom: 56px;
+      padding: 28px 0 124px;
+    }
+    .intro-block > .wash {
+      margin-top: -87px;
+      padding-top: 87px;
+      padding-bottom: 138px;
+    }
+    .row.photo-left.mist { margin-bottom: 0; }
+    .row.text-left { grid-template-columns: 561px 501px; column-gap: 88px; align-items: center; }
+    .row.cleanup { margin-bottom: 211px; }
+    .about-page.story { margin-top: 0; padding-bottom: 90px; }
+    .about-page.story > .wash {
+      margin-top: 0;
+      padding-top: 849px;
+      background-image: linear-gradient(rgba(229, 234, 237, 0.5), rgba(229, 234, 237, 0.5));
+    }
+    .persevere { margin-top: 0; }
+    .row.brothers { margin-top: 57px; }
+    .wide { width: 1093px; margin-inline: auto; }
+    .full { width: 100%; }
+    .murph-copy { letter-spacing: 0; }
+    .grid-2 { grid-template-columns: 534px 534px; gap: 25px; width: 1093px; margin-inline: auto; }
+    .grid-2 img { width: 534px; height: 455px; }
+    .pair { grid-template-columns: 560px 560px; gap: 30px; }
+    .pair img { width: 560px; height: 430px; }
+    h3.thin, .block.thin { width: 100%; }
+  }
+  @media (max-width: 799px) {
+    h1 { width: 315px; font-size: 32px; }
+    .about-page h2.center { width: 270px; font-size: 32px; }
+    .persevere h2.center.h50 { width: 306px; font-size: 32px; }
+    .persevere h2.thin { width: 306px; font-size: 20px; font-weight: 300; }
+    .copy h2 { width: 306px; }
+    .copy h2.h40 { font-size: 40px; }
+    .copy h2.h50 { font-size: 32px; }
+    .copy h2.h30 { font-size: 30px; }
+    .copy h2.w296 { width: 296px; }
+    .lead, .copy p, .full, .wide { width: min(338px, 100%); }
+    .story-lead { letter-spacing: 0; }
+    .murph-copy { letter-spacing: 0; }
+    .row.photo-left.mist { margin-bottom: 134px; }
+    .row.cleanup { margin-bottom: 133px; }
+    .about-page.story { margin-top: 0; }
+    .about-page.story > .wash {
+      padding-top: 412px;
+      background-image: linear-gradient(rgba(229, 234, 237, 0.5), rgba(229, 234, 237, 0.5));
+    }
+    .about-page.mist { margin-top: 0; }
+    .about-page.mist > .wrap { width: min(1150px, calc(100% - 40px)); }
+    .intro-block { padding-top: 80px; }
+    .intro-block > .mist { margin-top: 80px; padding-top: 70px; }
+    .intro-block > .wash {
+      margin-top: -118px;
+      padding-top: 118px;
+    }
+    .about-page.mist h2.h50 { margin-bottom: 0; }
+    .about-page.mist h3.thin { margin-top: 0; }
+    .lead { margin-inline: auto; }
+    .wide { margin-inline: auto; }
+    .row.text-left { display: flex; flex-direction: column-reverse; }
+    .row img { width: 300px; margin-left: 5px; }
+    .grid-2 { grid-template-columns: 154px 154px; gap: 15px; width: fit-content; margin-inline: auto; }
+    .grid-2 img { width: 154px; height: 131px; }
+    .pair { grid-template-columns: 1fr; }
+    .pair img { width: 340px; margin-inline: auto; }
+    .center.h50 { width: fit-content; }
+  }
+</style>

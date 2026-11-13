@@ -1,0 +1,479 @@
+// Compares layout maps of the live site and the build (from layout-map.mjs) and lists every
+// difference a visitor would notice: missing or extra headings, photos and buttons, wrong order,
+// wrong position or width (content column), wrong font, size, weight or color, wrong band colors,
+// and horizontal scroll.
+//
+// Usage: node scripts/qa/compare-layout.mjs <liveDir> <buildDir> <reportFile> [--allow allow.json]
+// Exit code 1 when any difference remains.
+import { readFileSync, readdirSync, writeFileSync, existsSync } from "node:fs";
+import path from "node:path";
+import sharp from "sharp";
+
+const args = process.argv.slice(2);
+const [liveDir, buildDir, reportFile] = args;
+const allowIdx = args.indexOf("--allow");
+const allow = allowIdx > -1 ? JSON.parse(readFileSync(args[allowIdx + 1], "utf8")) : [];
+
+const TOL = { x: 24, wPct: 0.12, wAbs: 40, size: 0, weight: 100, color: 6 }; // color 6 (v2.5): live's light grey band is 14 off white
+
+const norm = (s) => (s || "").toLowerCase().replace(/[‘’“”'"]/g, "").replace(/[^a-z0-9$]+/g, " ").trim();
+export function imageKey(src) {
+  if (!src || src === "data-uri") return src;
+  let b = decodeURIComponent(src.split("?")[0].split("/").pop() || "");
+  b = b.toLowerCase();
+  for (let i = 0; i < 3; i++) b = b.replace(/\.(webp|jpe?g|png|gif|avif|svg)$/, "");
+  b = b.split(".")[0]; // astro hash
+  b = b.replace(/^\d{4}-\d{2}-/, "").replace(/-\d+x\d+$/, "").replace(/-scaled$/, "").replace(/-\d+x\d+$/, "");
+  return b;
+}
+// rgb values with any alpha blended over white, so rgba(0, 0, 0, 0.7) reads as grey, not black.
+const parseColor = (c) => {
+  const v = (c?.match(/[\d.]+/g) || []).map(Number);
+  const a = v.length >= 4 ? v[3] : 1;
+  return v.slice(0, 3).map((x) => Math.round(x * a + 255 * (1 - a)));
+};
+const colorDiff = (a, b) => {
+  const [x, y] = [parseColor(a), parseColor(b)];
+  if (x.length < 3 || y.length < 3) return a === b ? 0 : 999;
+  return Math.max(...x.map((v, i) => Math.abs(v - y[i])));
+};
+const widthOff = (a, b) => Math.abs(a - b) > Math.max(TOL.wAbs, a * TOL.wPct);
+
+function matchSeq(live, build, keyFn) {
+  // Greedy in-order match by key; returns pairs, missing, extra, outOfOrder.
+  const used = new Set();
+  const pairs = [];
+  const missing = [];
+  let lastIdx = -1;
+  const outOfOrder = [];
+  for (const l of live) {
+    const k = keyFn(l);
+    let idx = build.findIndex((b, i) => !used.has(i) && keyFn(b) === k);
+    if (idx === -1) {
+      missing.push(l);
+      continue;
+    }
+    used.add(idx);
+    if (idx < lastIdx) outOfOrder.push(l);
+    lastIdx = Math.max(lastIdx, idx);
+    pairs.push([l, build[idx]]);
+  }
+  const extra = build.filter((_, i) => !used.has(i));
+  return { pairs, missing, extra, outOfOrder };
+}
+
+function matchHeadings(live, build) {
+  // A live heading matches a build heading with the same text, or one that contains it in order
+  // (a two-tone heading can be two tags on live and one tag with spans in the build).
+  const usedBuild = new Set();
+  const pairs = [], missing = [], outOfOrder = [];
+  let cursor = 0, last = -1;
+  for (const l of live) {
+    const k = norm(l.text);
+    let idx = build.findIndex((b, i) => i >= cursor && norm(b.text) === k);
+    if (idx === -1) idx = build.findIndex((b, i) => i >= cursor && norm(b.text).includes(k));
+    if (idx === -1) idx = build.findIndex((b) => norm(b.text) === k || norm(b.text).includes(k));
+    if (idx === -1) { missing.push(l); continue; }
+    if (idx < last) outOfOrder.push(l);
+    last = Math.max(last, idx);
+    if (norm(build[idx].text) === k) cursor = idx + 1; else cursor = idx;
+    usedBuild.add(idx);
+    if (norm(build[idx].text) === k) pairs.push([l, build[idx]]);
+    else pairs.push([l, { ...build[idx], w: l.w, size: l.size, weight: l.weight, color: l.color }]); // position/font only
+  }
+  const extra = build.filter((b, i) => !usedBuild.has(i) && !live.some((l) => norm(b.text).includes(norm(l.text))));
+  return { pairs, missing, extra, outOfOrder };
+}
+
+let CUR_VW = 9999; // set per page
+function styleDiffs(l, b, label) {
+  const out = [];
+  // v2.6: phone widths get a tighter left-edge limit (a 6px gutter change rewraps text at 390).
+  const xTol = CUR_VW <= 480 ? 4 : TOL.x;
+  if (Math.abs(l.x - b.x) > xTol) out.push(`${label}: left edge ${b.x}px, live ${l.x}px`);
+  if (widthOff(l.w, b.w)) out.push(`${label}: width ${b.w}px, live ${l.w}px`);
+  if (l.family && b.family && l.family.toLowerCase() !== b.family.toLowerCase()) out.push(`${label}: font ${b.family}, live ${l.family}`);
+  if (l.size && Math.abs(l.size - b.size) > TOL.size) out.push(`${label}: size ${b.size}px, live ${l.size}px`);
+  if (l.weight && Math.abs(l.weight - b.weight) >= TOL.weight) out.push(`${label}: weight ${b.weight}, live ${l.weight}`);
+  if (l.color && colorDiff(l.color, b.color) > TOL.color) out.push(`${label}: color ${b.color}, live ${l.color}`);
+  // Line count (v2.5): same words wrapping onto a different number of lines (only when the
+  // text is identical, so a paragraph split differently isn't flagged).
+  if (l.lh && b.lh && l.h && b.h && norm(l.full || l.text).length >= 30 && norm(l.full || l.text) === norm(b.full || b.text)) {
+    // v2.6: rendered line count when both sides have it (box height includes padding).
+    const ln = l.lines ?? Math.round(l.h / l.lh), bn = b.lines ?? Math.round(b.h / b.lh);
+    if (ln !== bn) out.push(`${label}: ${bn} line(s), live ${ln}`);
+  }
+  if (l.lh && b.lh && Math.abs(l.lh - b.lh) > 2) out.push(`${label}: line height ${b.lh}px, live ${l.lh}px`);
+  if (l.spacing !== undefined && b.spacing !== undefined && Math.abs(l.spacing - b.spacing) > 0.2)
+    out.push(`${label}: letter spacing ${b.spacing}px, live ${l.spacing}px`);
+  if (l.align && b.align && l.align !== b.align && !(l.align === "start" && b.align === "left") && !(l.align === "left" && b.align === "start"))
+    out.push(`${label}: align ${b.align}, live ${l.align}`);
+  return out;
+}
+
+// Background and band colors from the screenshot (v2.5: was 40, missed a 14-off light grey band).
+const BG_TOL = 8;
+const PHOTO_BG_TOL = 24; // v2.11: background over a photo (re-encoded images shift dark tones)
+const PIXEL_TOL = 38; // mean absolute difference (0-255) over a 48x16 grayscale thumbnail of the region
+const pngMeta = new Map();
+async function meta(file) {
+  if (!pngMeta.has(file)) pngMeta.set(file, await sharp(file).metadata());
+  return pngMeta.get(file);
+}
+async function thumb(file, r) {
+  const m = await meta(file);
+  const left = Math.max(0, Math.min(m.width - 2, r.x));
+  const top = Math.max(0, Math.min(m.height - 2, r.y));
+  const width = Math.max(1, Math.min(m.width - left, r.w));
+  const height = Math.max(1, Math.min(m.height - top, r.h));
+  if (width < 8 || height < 8) return null;
+  return sharp(file).extract({ left, top, width, height }).resize(48, 16, { fit: "fill" }).grayscale().raw().toBuffer();
+}
+async function brightness(file, r) {
+  const t = await thumb(file, r);
+  if (!t) return null;
+  let sum = 0;
+  for (const v of t) sum += v;
+  return sum / t.length;
+}
+async function dominant(file, r, padding = 12) {
+  const m = await meta(file);
+  const pad = padding;
+  const left = Math.round(Math.max(0, Math.min(m.width - 2, r.x - pad)));
+  const top = Math.round(Math.max(0, Math.min(m.height - 2, r.y - pad)));
+  const width = Math.round(Math.max(1, Math.min(m.width - left, r.w + pad * 2)));
+  const height = Math.round(Math.max(1, Math.min(m.height - top, r.h + pad * 2)));
+  if (width < 2 || height < 2) return null;
+  const buf = await sharp(file).extract({ left, top, width, height }).resize(40, 12, { fit: "fill", kernel: "nearest" }).removeAlpha().raw().toBuffer();
+  // Most common color bucket, then the true average of the pixels in it (v2.5: returning the
+  // bucket itself rounded white to 264 and flipped near-black between 0 and 24).
+  const counts = new Map();
+  for (let i = 0; i < buf.length; i += 3) {
+    const key = [buf[i], buf[i + 1], buf[i + 2]].map((v) => Math.round(v / 24)).join(",");
+    const e = counts.get(key) || { n: 0, sum: [0, 0, 0] };
+    e.n++;
+    for (let k = 0; k < 3; k++) e.sum[k] += buf[i + k];
+    counts.set(key, e);
+  }
+  const [best] = [...counts.values()].sort((a, b) => b.n - a.n);
+  return best.sum.map((v) => Math.round(v / best.n));
+}
+// Runs of one flat color down the left page margin (x = 3px), noise-tolerant.
+async function marginRuns(file, side = "left") {
+  const m = await meta(file);
+  const x = side === "left" ? 3 : m.width - 4;
+  const { data, info } = await sharp(file).extract({ left: x, top: 0, width: 1, height: m.height }).removeAlpha().raw().toBuffer({ resolveWithObject: true });
+  const runs = [];
+  let cur = null;
+  for (let y = 0; y < info.height; y++) {
+    const px = [data[y * 3], data[y * 3 + 1], data[y * 3 + 2]];
+    if (cur && Math.max(...px.map((v, i) => Math.abs(v - cur.c[i]))) <= BG_TOL) { cur.h++; cur.px.push(px); continue; }
+    cur = { y, h: 1, c: px, px: [px] };
+    runs.push(cur);
+  }
+  // v2.13: a run's color is its median pixel, not its first one. A run seeded on a JPEG edge
+  // pixel between white and grey otherwise sits within the limit of both, and the merge below
+  // joined a grey section onto the white above it.
+  for (const r of runs) {
+    r.c = [0, 1, 2].map((k) => r.px.map((p) => p[k]).sort((a, b) => a - b)[Math.floor(r.px.length / 2)]);
+    delete r.px;
+  }
+  // Merge runs of the same color split by a gap of under 6px of noise; anything else ends a band.
+  const out = [];
+  for (const r of runs) {
+    if (r.h < 6) continue;
+    const last = out[out.length - 1];
+    if (last && r.y - (last.y + last.h) < 6 && Math.max(...r.c.map((v, i) => Math.abs(v - last.c[i]))) <= 4) {
+      last.h = r.y + r.h - last.y;
+      continue;
+    }
+    out.push({ ...r });
+  }
+  return out;
+}
+async function regionDiff(liveFile, l, buildFile, b) {
+  const [a, c] = await Promise.all([thumb(liveFile, l), thumb(buildFile, b)]);
+  if (!a || !c) return null;
+  let sum = 0;
+  for (let i = 0; i < a.length; i++) sum += Math.abs(a[i] - c[i]);
+  return sum / a.length;
+}
+
+const allowed = (slug, width, line) =>
+  allow.some((a) => (a.page === "*" || a.page === slug) && (!a.width || a.width === width) && line.includes(a.contains));
+
+const lines = ["# Layout comparison: live vs build", ""];
+let total = 0;
+for (const width of readdirSync(liveDir).sort((a, b) => Number(b) - Number(a))) {
+  for (const file of readdirSync(path.join(liveDir, width)).filter((f) => f.endsWith(".json")).sort()) {
+    const slug = file.replace(/\.json$/, "");
+    const live = JSON.parse(readFileSync(path.join(liveDir, width, file), "utf8"));
+    const bPath = path.join(buildDir, width, file);
+    const issues = [];
+    if (!existsSync(bPath)) issues.push("page missing from build map");
+    else {
+      const build = JSON.parse(readFileSync(bPath, "utf8"));
+      CUR_VW = Number(width) || build.vw || 9999;
+      // v2.6: total page height within 5% of live (catches section padding squeezed everywhere).
+      if (live.docHeight && build.docHeight && Math.abs(build.docHeight - live.docHeight) > live.docHeight * 0.05)
+        issues.push(`page height ${build.docHeight}px, live ${live.docHeight}px`);
+      if (build.docWidth > build.vw + 1) issues.push(`horizontal scroll: page is ${build.docWidth}px wide at ${build.vw}px`);
+      const by = (items, kind) => items.filter((i) => i.kind === kind || (kind === "image" && i.kind === "bgimage"));
+      // Headings
+      const h = matchHeadings(by(live.items, "heading"), by(build.items, "heading"));
+      h.missing.forEach((i) => issues.push(`heading missing: "${i.text}"`));
+      h.extra.forEach((i) => issues.push(`heading not on live: "${i.text}"`));
+      h.outOfOrder.forEach((i) => issues.push(`heading out of order: "${i.text}"`));
+      h.pairs.forEach(([l, b]) => issues.push(...styleDiffs(l, b, `heading "${l.text.slice(0, 40)}"`)));
+      // Images
+      const im = matchSeq(by(live.items, "image"), by(build.items, "image"), (i) => imageKey(i.src));
+      im.missing.forEach((i) => issues.push(`photo missing: ${imageKey(i.src)}`));
+      im.extra.forEach((i) => issues.push(`photo not on live: ${imageKey(i.src)}`));
+      im.outOfOrder.forEach((i) => issues.push(`photo out of order: ${imageKey(i.src)}`));
+      im.pairs.forEach(([l, b]) => {
+        if (Math.abs(l.x - b.x) > TOL.x) issues.push(`photo ${imageKey(l.src)}: left edge ${b.x}px, live ${l.x}px`);
+        if (widthOff(l.w, b.w)) issues.push(`photo ${imageKey(l.src)}: width ${b.w}px, live ${l.w}px`);
+      });
+      // Buttons
+      const bt = matchSeq(by(live.items, "button"), by(build.items, "button"), (i) => norm(i.text));
+      bt.missing.forEach((i) => issues.push(`button missing: "${i.text}"`));
+      bt.pairs.forEach(([l, b]) => {
+        if (colorDiff(l.bg, b.bg) > TOL.color) issues.push(`button "${l.text}": color ${b.bg}, live ${l.bg}`);
+        if (widthOff(l.w, b.w)) issues.push(`button "${l.text}": width ${b.w}px, live ${l.w}px`);
+      });
+      // Body text (by first 40 normalized chars)
+      const tx = matchSeq(by(live.items, "text"), by(build.items, "text"), (i) => norm(i.text).slice(0, 40));
+      // Text split differently (one live paragraph with line breaks vs two build paragraphs) is the
+      // same text: only flag what isn't inside any visible text block on the other side.
+      const fullText = (items) => items.filter((i) => i.kind === "text" || i.kind === "heading").map((i) => norm(i.full || i.text)).join(" | ");
+      const liveAll = fullText(live.items), buildAll = fullText(build.items);
+      tx.missing.filter((i) => !buildAll.includes(norm(i.full || i.text).slice(0, 60))).forEach((i) => issues.push(`text missing: "${i.text.slice(0, 60)}"`));
+      tx.extra.filter((i) => !liveAll.includes(norm(i.full || i.text).slice(0, 60))).forEach((i) => issues.push(`text not on live: "${i.text.slice(0, 60)}"`));
+      (build.hiddenText || [])
+        .filter((t) => norm(t).length > 20 && liveAll.includes(norm(t).slice(0, 60)) && !buildAll.includes(norm(t).slice(0, 60)))
+        .forEach((t) => issues.push(`text hidden in build but visible on live: "${t.slice(0, 60)}"`));
+      tx.pairs.forEach(([l, b]) => issues.push(...styleDiffs(l, b, `text "${l.text.slice(0, 30)}"`)));
+      // Style runs (v2.5): each run of words on live must have the same color and weight in the
+      // build, wherever the build puts those words (works across differently split paragraphs).
+      const charStyles = (items) => {
+        let str = "";
+        const st = [];
+        for (const i of items) {
+          if ((i.kind !== "text" && i.kind !== "heading") || i.region !== "main") continue;
+          for (const r of i.runs || [{ t: i.full || i.text, c: i.color, w: i.weight }]) {
+            const t = norm(r.t);
+            if (!t) continue;
+            str += " " + t;
+            st.push(...Array(t.length + 1).fill(r));
+          }
+        }
+        return { str, st };
+      };
+      const bc = charStyles(build.items);
+      let runCursor = 0;
+      for (const i of live.items) {
+        if ((i.kind !== "text" && i.kind !== "heading") || i.region !== "main" || !i.runs) continue;
+        for (const r of i.runs) {
+          const t = norm(r.t);
+          if (t.length < 3) continue;
+          // In page order: the next occurrence after the previous run, else anywhere.
+          let at = bc.str.indexOf(" " + t, runCursor);
+          if (at === -1) at = bc.str.indexOf(" " + t);
+          if (at === -1) continue; // missing words are reported above
+          runCursor = Math.max(runCursor, at + t.length);
+          const counts = new Map();
+          for (let k = at + 1; k <= at + t.length; k++) {
+            const s = bc.st[k];
+            if (!s) continue;
+            const key = `${s.c}|${s.w}|${s.u}`;
+            counts.set(key, (counts.get(key) || 0) + 1);
+          }
+          const [top] = [...counts.entries()].sort((x, y) => y[1] - x[1]);
+          if (!top) continue;
+          const [bcol, bw, bu] = top[0].split("|");
+          const label = `words "${r.t.trim().slice(0, 40)}"`;
+          if (colorDiff(r.c, bcol) > TOL.color) issues.push(`${label}: color ${bcol}, live ${r.c}`);
+          if (Math.abs(r.w - Number(bw)) >= TOL.weight) issues.push(`${label}: weight ${bw}, live ${r.w}`);
+          if (r.u !== undefined && bu !== "undefined" && String(r.u) !== bu) issues.push(`${label}: underline ${bu}, live ${r.u}`);
+        }
+      }
+      // Vertical rhythm: the gap from each heading to the next must be close to live
+      // (catches squeezed or missing section padding).
+      const hp = h.pairs.filter(([l, b]) => b.text && l.text);
+      for (let i = 1; i < hp.length; i++) {
+        const lg = hp[i][0].y - hp[i - 1][0].y, bg = hp[i][1].y - hp[i - 1][1].y;
+        if (lg > 0 && Math.abs(lg - bg) > Math.max(24, lg * 0.1)) // v2.6: was max(48, 25%)
+          issues.push(`spacing from "${hp[i - 1][0].text.slice(0, 30)}" to "${hp[i][0].text.slice(0, 30)}": ${bg}px, live ${lg}px`);
+      }
+      // v2.13: vertical rhythm between every consecutive heading or text block (not only heading
+      // to heading), so padding moved from below a paragraph to above it still shows.
+      const flow = [...h.pairs, ...tx.pairs].filter(([l, b]) => l.region === "main" && b && b.y !== undefined).sort((a, b) => a[0].y - b[0].y);
+      for (let i = 1; i < flow.length; i++) {
+        const [pl, pb] = flow[i - 1], [cl, cb] = flow[i];
+        const lg = cl.y - (pl.y + pl.h);
+        // The trust bar is a spec addition in the build only; don't count its height.
+        const trust = build.items.filter((t) => /NINJA AND PARKOUR GYM/i.test(t.text || "") && t.y >= pb.y + pb.h && t.y + t.h <= cb.y);
+        const trustH = trust.length ? Math.max(...trust.map((t) => t.y + t.h)) - Math.min(...trust.map((t) => t.y)) : 0;
+        const raw = cb.y - (pb.y + pb.h);
+        const bg = raw - trustH;
+        if (lg < 0 || bg < -4) continue;
+        const tolGap = Math.max(32, lg * 0.25);
+        // v2.14: the trust bar may sit inside live's blank gap; accept the gap with or without it.
+        if (trustH && Math.abs(lg - raw) <= tolGap) continue;
+        if (Math.abs(lg - bg) > tolGap)
+          issues.push(`gap between "${(pl.text || "").slice(0, 30)}" and "${(cl.text || "").slice(0, 30)}": ${Math.round(bg)}px, live ${Math.round(lg)}px`);
+      }
+      // Covered: visible on live, but something sits on top of it in the build.
+      [...h.pairs, ...tx.pairs, ...bt.pairs].forEach(([l, b]) => {
+        if (b.covered && !l.covered) issues.push(`covered by another element: "${(l.text || "").slice(0, 50)}"`);
+      });
+      // v2.8: covered text that exists only in the build (the trust bar, for example) counts too.
+      const pairedBuild = new Set([...h.pairs, ...tx.pairs, ...bt.pairs].map(([, b]) => b));
+      build.items
+        .filter((i) => i.covered && ["heading", "text", "button"].includes(i.kind) && !pairedBuild.has(i))
+        .forEach((i) => issues.push(`covered by another element (build only): "${(i.text || "").slice(0, 50)}"`));
+      bt.extra.forEach((i) => issues.push(`button not on live: "${i.text}"`));
+      // v2.16: form fields, in order: same count and type, size, background, border, placeholder.
+      const lf = live.items.filter((i) => i.kind === "field"), bf = build.items.filter((i) => i.kind === "field");
+      if (lf.length !== bf.length) issues.push(`form fields: ${bf.length} in build, live ${lf.length}`);
+      for (let i = 0; i < Math.min(lf.length, bf.length); i++) {
+        const l = lf[i], b = bf[i], tag = `field ${i + 1} (${l.type}${l.placeholder ? ` "${l.placeholder.slice(0, 20)}"` : ""})`;
+        if (l.type !== b.type) issues.push(`${tag}: type ${b.type}, live ${l.type}`);
+        if (widthOff(l.w, b.w)) issues.push(`${tag}: width ${b.w}px, live ${l.w}px`);
+        if (Math.abs(l.h - b.h) > 4) issues.push(`${tag}: height ${b.h}px, live ${l.h}px`);
+        if (Math.abs(l.x - b.x) > (CUR_VW <= 480 ? 4 : TOL.x)) issues.push(`${tag}: left edge ${b.x}px, live ${l.x}px`);
+        if (colorDiff(l.bg, b.bg) > TOL.color) issues.push(`${tag}: background ${b.bg}, live ${l.bg}`);
+        if (l.border !== b.border) issues.push(`${tag}: border ${b.border}, live ${l.border}`);
+        if (l.placeholder !== b.placeholder) issues.push(`${tag}: placeholder "${b.placeholder}", live "${l.placeholder}"`);
+        if (l.size && b.size && l.size !== b.size) issues.push(`${tag}: font size ${b.size}px, live ${l.size}px`);
+      }
+      // v2.16: shaded boxes (table cells, cards), in order by text: color and size.
+      const lb2 = live.items.filter((i) => i.kind === "box" && i.region === "main"), bb2 = build.items.filter((i) => i.kind === "box" && i.region === "main");
+      const bx = matchSeq(lb2, bb2, (i) => norm(i.text).slice(0, 30) + "|" + parseColor(i.bg).map((v) => Math.round(v / 16)).join(","));
+      bx.missing.forEach((i) => issues.push(`shaded box missing: rgb(${parseColor(i.bg).join(", ")}) around "${(i.text || "").slice(0, 30)}"`));
+      bx.pairs.forEach(([l, b]) => {
+        if (widthOff(l.w, b.w)) issues.push(`shaded box "${(l.text || "").slice(0, 30)}": width ${b.w}px, live ${l.w}px`);
+        if (Math.abs(l.h - b.h) > Math.max(8, l.h * 0.15)) issues.push(`shaded box "${(l.text || "").slice(0, 30)}": height ${b.h}px, live ${l.h}px`);
+      });
+      // Icons (inline SVG, 8-72px): same count, in order, same color and size.
+      const li = by(live.items, "icon"), bi = by(build.items, "icon");
+      if (li.length !== bi.length) issues.push(`icons: ${bi.length} in build, ${li.length} on live`);
+      li.slice(0, Math.min(li.length, bi.length)).forEach((l, i) => {
+        const b = bi[i];
+        if (colorDiff(l.color, b.color) > TOL.color) issues.push(`icon ${i + 1}: color ${b.color}, live ${l.color}`);
+        if (Math.abs(l.w - b.w) > 6) issues.push(`icon ${i + 1}: size ${b.w}px, live ${l.w}px`);
+        if (Math.abs(l.x - b.x) > TOL.x) issues.push(`icon ${i + 1}: left edge ${b.x}px, live ${l.x}px`);
+      });
+      // Pixels: the area behind each matched heading, text block and photo must look like live
+      // (catches a wrong photo crop, a dark photo behind dark text, missing overlays).
+      const shot = (dir) => [".png", ".jpg"].map((ext) => path.join(dir, width, `${slug}${ext}`)).find((f) => existsSync(f)) || "";
+      // Live hero photo area (first full-width photo near the top), used to relax color checks over it.
+      const heroItems = live.items.filter((i) => (i.kind === "image" || i.kind === "bgimage") && i.src === "hero");
+      const inHero = (r) => heroItems.some((hh) => r.y < hh.y + hh.h && r.y + (r.h || 0) > hh.y);
+      const livePng = shot(liveDir);
+      let buildPng = shot(buildDir);
+      // Live screenshots are stored as JPEG (quality 55). Compress the build screenshot the same way
+      // before comparing, so JPEG colour bleed affects both sides equally.
+      if (livePng.endsWith(".jpg") && buildPng.endsWith(".png")) {
+        const jpg = buildPng.replace(/\.png$/, ".cmp.jpg");
+        if (!existsSync(jpg)) await sharp(buildPng).jpeg({ quality: 55 }).toFile(jpg);
+        buildPng = jpg;
+      }
+      if (existsSync(livePng) && existsSync(buildPng)) {
+        const pairsForPixels = [
+          ...h.pairs.map(([l, b]) => [l, b, `heading "${l.text.slice(0, 40)}"`]),
+          ...tx.pairs.filter(([l]) => l.text.length >= 20).map(([l, b]) => [l, b, `text "${l.text.slice(0, 30)}"`]),
+          ...im.pairs.map(([l, b]) => [l, b, `photo ${imageKey(l.src)}`]),
+        ];
+        // Background behind each heading and text block, read from the screenshot: the most
+        // common color around it (catches a missing grey or blue band, or a missing white card).
+        for (const [l, b] of [...h.pairs, ...tx.pairs]) {
+          const [lc, bc] = await Promise.all([dominant(livePng, l), dominant(buildPng, b)]);
+          // v2.11: over a photo, allow PHOTO_BG_TOL. Same photo, crop and overlay still read a few
+          // levels apart once the build re-encodes the image; crop and overlay are checked by the
+          // pixel and brightness checks.
+          const tol = l.behind === "image" || inHero(l) ? PHOTO_BG_TOL : BG_TOL;
+          if (lc && bc && Math.max(...lc.map((v, i) => Math.abs(v - bc[i]))) > tol)
+            issues.push(`background behind "${(l.text || "").slice(0, 40)}": rgb(${bc.join(", ")}), live rgb(${lc.join(", ")})`);
+        }
+        // Full-width band color: sample the left margin, outside the content column, beside each
+        // heading and text block.
+        const seenBand = new Set();
+        for (const [l, b] of [...h.pairs, ...tx.pairs]) {
+          const key = Math.round(l.y / 40);
+          if (seenBand.has(key)) continue;
+          seenBand.add(key);
+          const marginW = Math.max(2, Math.min(16, Math.min(l.x, b.x) - 4));
+          const [lc, bc] = await Promise.all([
+            dominant(livePng, { x: 0, y: l.y + l.h / 2 - 4, w: marginW, h: 8 }, 0),
+            dominant(buildPng, { x: 0, y: b.y + b.h / 2 - 4, w: marginW, h: 8 }, 0),
+          ]);
+          if (lc && bc && Math.max(...lc.map((v, i) => Math.abs(v - bc[i]))) > (inHero(l) ? PHOTO_BG_TOL : BG_TOL))
+            issues.push(`band color beside "${(l.text || "").slice(0, 40)}": rgb(${bc.join(", ")}), live rgb(${lc.join(", ")})`);
+        }
+        for (const [l, b, label] of pairsForPixels) {
+          if (label.startsWith("photo")) {
+            const [la, ba] = await Promise.all([brightness(livePng, l), brightness(buildPng, b)]);
+            if (la !== null && ba !== null && Math.abs(la - ba) > Math.max(12, la * 0.25))
+              issues.push(`${label}: brightness ${ba.toFixed(0)}, live ${la.toFixed(0)} (overlay or exposure differs)`);
+          }
+          const d = await regionDiff(livePng, l, buildPng, b);
+          if (d !== null && d > PIXEL_TOL) issues.push(`${label}: looks different from live (pixel difference ${d.toFixed(0)})`);
+        }
+        // v2.8: full-width band heights. Read the left page margin top to bottom, keep runs of one
+        // flat color at least 40px tall, and match live's runs in order (the build may have extra
+        // runs, such as the trust bar). Each matched band's height must be within max(24px, 10%).
+        // Only runs whose color is a real background color on the page (not a photo that
+        // happens to be flat for a stretch) count as bands.
+        const bgColors = (live.bands || []).map((b) => parseColor(b.bg));
+        const isBg = (c) => [[0, 0, 0], [255, 255, 255], ...bgColors].some((d) => Math.max(...c.map((v, i) => Math.abs(v - d[i]))) <= BG_TOL); // v2.9: pure black/white too (footer copyright bar)
+        // v2.10: read both page margins, so paint added only along one edge can't pass.
+        for (const side of CUR_VW >= 1280 ? ["left", "right"] : ["left"]) { // at phone widths the right column runs through content
+        const [lr0, br] = await Promise.all([marginRuns(livePng, side), marginRuns(buildPng, side)]);
+        // v2.15: also any flat run of 120px or more (bands painted with a background gradient
+        // have no background-color, so they weren't in the page's band colors).
+        const lr = lr0.filter((r) => (isBg(r.c) || r.h >= 120) && !inHero({ y: r.y, h: r.h })); // not inside the hero photo
+        // Match each live band to the build band of the same color (within 12, JPEG chroma) whose
+        // top is nearest where live puts it, scaled by page height, and no more than 300px away.
+        const scale = (build.docHeight || 1) / (live.docHeight || 1);
+        for (const run of lr) {
+          if (run.h < 40) continue;
+          const want = run.y * scale;
+          const cand = br
+            .filter((b) => b.h >= 20 && Math.max(...run.c.map((v, i) => Math.abs(v - b.c[i]))) <= 12)
+            .sort((a, b) => Math.abs(a.y - want) - Math.abs(b.y - want))[0];
+          if (!cand || Math.abs(cand.y - want) > 300) { issues.push(`band rgb(${run.c.join(", ")}) at y=${run.y} (${run.h}px tall on live, ${side} margin) not found in build`); continue; }
+          if (Math.abs(cand.h - run.h) > Math.max(24, run.h * 0.1))
+            issues.push(`band rgb(${run.c.join(", ")}) at y=${run.y} (${side} margin): ${cand.h}px tall, live ${run.h}px`);
+        }
+        // v2.12: the reverse. A flat band in the build (60px+) with no same-colored live band near
+        // the same spot, such as a white strip where live's grey runs straight into the next band.
+        const lrAll = lr0.filter((r) => r.h >= 20);
+        for (const run of br) {
+          if (run.h < 60 || !isBg(run.c) || inHero({ y: run.y / scale, h: run.h / scale })) continue;
+          // The space under the footer that keeps the spec's sticky Call / Book a Party bar from
+          // covering it (phone widths only, at the very bottom of the page).
+          if (CUR_VW < 800 && run.y + run.h >= (build.docHeight || 0) - 2) continue;
+          const want = run.y / scale;
+          const near = lrAll.some((l) => Math.max(...run.c.map((v, i) => Math.abs(v - l.c[i]))) <= 12 && Math.abs(l.y - want) <= 300);
+          if (!near) issues.push(`band rgb(${run.c.join(", ")}) at y=${run.y} (${run.h}px tall, ${side} margin) is in the build but not on live`);
+        }
+        }
+      }
+      // Section band colors (consecutive duplicates removed)
+      const seq = (bands) => bands.map((b) => b.bg).filter((c, i, a) => i === 0 || colorDiff(c, a[i - 1]) > TOL.color);
+      const lb = seq(live.bands), bb = seq(build.bands);
+      if (lb.length !== bb.length || lb.some((c, i) => colorDiff(c, bb[i]) > TOL.color))
+        issues.push(`section colors differ: build [${bb.join(" | ")}], live [${lb.join(" | ")}]`);
+    }
+    const remaining = issues.filter((line) => !allowed(slug, width, line));
+    total += remaining.length;
+    lines.push(`## ${slug} @ ${width}px: ${remaining.length ? `${remaining.length} difference(s)` : "matches"}`);
+    remaining.forEach((l) => lines.push(`- ${l}`));
+    lines.push("");
+  }
+}
+lines.splice(1, 0, `Total differences: ${total}`);
+writeFileSync(reportFile, lines.join("\n") + "\n");
+console.log(`Total differences: ${total}. Report: ${reportFile}`);
+process.exit(total ? 1 : 0);

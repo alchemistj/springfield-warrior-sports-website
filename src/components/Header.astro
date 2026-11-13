@@ -1,0 +1,308 @@
+---
+import { quickNav, site, stickyBar, utilityNav } from "../data/site";
+import { logoImage } from "../lib/inline-image";
+
+interface Props {
+  current: string;
+}
+const { current } = Astro.props;
+const logo = await logoImage("media/2023-03-SpringField-Warrior-Logo.webp", 168);
+const onBookPage = Astro.url.pathname === stickyBar.bookPath;
+const bookHref = onBookPage ? stickyBar.formAnchor : stickyBar.bookPath;
+
+const linkProps = (item: { path: string; external?: boolean }) =>
+  item.external ? { target: "_blank", rel: "noopener noreferrer" } : {};
+---
+
+<header class="site-header" data-header>
+  <div class="util-bar">
+    <nav class="bar util-links" aria-label="Utility">
+      {
+        utilityNav.map((item) => (
+          <a href={item.path} aria-current={item.path === current ? "page" : undefined} {...linkProps(item)}>
+            {item.label}
+          </a>
+        ))
+      }
+    </nav>
+  </div>
+  <div class="main-bar">
+    <div class="bar main-inner">
+      <a class="logo-link" href="/" aria-label="Springfield Warrior Sports, home">
+        <img src={logo.uri} alt="" width={logo.width} height={logo.height} />
+      </a>
+      <a class="bar-call" href={site.phone.tel}>{stickyBar.callLabel}</a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-menu" data-menu>
+        <span class="sr-only">Menu</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z" /></svg>
+      </button>
+      <nav id="site-menu" class="nav-links" data-nav aria-label="Primary">
+        {
+          utilityNav.map((item) => (
+            <a class="menu-only" href={item.path} {...linkProps(item)}>
+              {item.label}
+            </a>
+          ))
+        }
+        {
+          quickNav.map((item) => (
+            <a href={item.path} aria-current={item.path === current ? "page" : undefined}>
+              {item.label}
+            </a>
+          ))
+        }
+        <a class="nav-phone" href={site.phone.tel}>
+          <span class="digits">{site.phone.display}</span>
+          <span class="label">{stickyBar.callLabel}</span>
+        </a>
+        <a class="nav-cta" href={bookHref}>{stickyBar.bookLabel}</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<script>
+  const header = document.querySelector<HTMLElement>("[data-header]");
+  const button = header?.querySelector<HTMLButtonElement>("[data-menu]");
+  if (header && button) {
+    const motion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (motion) header.classList.add("no-motion");
+    button.addEventListener("click", () => {
+      const open = header.classList.toggle("is-open");
+      button.setAttribute("aria-expanded", open ? "true" : "false");
+      if (open) header.classList.remove("is-hidden");
+    });
+    header.querySelectorAll("nav a").forEach((link) => {
+      link.addEventListener("click", () => {
+        header.classList.remove("is-open");
+        button.setAttribute("aria-expanded", "false");
+      });
+    });
+    let last = window.scrollY;
+    let up = 0;
+    let ticking = false;
+    window.addEventListener(
+      "scroll",
+      () => {
+        if (ticking) return;
+        ticking = true;
+        requestAnimationFrame(() => {
+          const y = window.scrollY;
+          const delta = y - last;
+          const open = header.classList.contains("is-open");
+          const focused = header.contains(document.activeElement);
+          if (open || focused || y <= header.offsetHeight) {
+            header.classList.remove("is-hidden");
+            up = 0;
+          } else if (delta > 0) {
+            up = 0;
+            header.classList.add("is-hidden");
+          } else if (delta < 0) {
+            up += -delta;
+            if (up >= 10) {
+              header.classList.remove("is-hidden");
+              up = 0;
+            }
+          }
+          last = y;
+          ticking = false;
+        });
+      },
+      { passive: true },
+    );
+  }
+</script>
+
+<style>
+  .site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    /* Fill exactly the space the page reserves (--header-h), navy below the black bar, so no white strip shows above the hero. */
+    display: flex;
+    flex-direction: column;
+    min-height: var(--header-h);
+    background: #285276;
+    transform: translateY(0);
+    transition: transform 200ms ease;
+  }
+  .site-header.no-motion { transition: none; }
+  .site-header.is-hidden { transform: translateY(-100%); }
+  .util-bar,
+  .main-bar { position: relative; background: transparent; }
+  .main-bar { flex: 1 0 auto; display: flex; flex-direction: column; justify-content: center; }
+  .util-bar::before,
+  .main-bar::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+  }
+  .util-bar::before { background: #000; }
+  .main-bar::before { background: #285276; }
+  .bar {
+    position: relative;
+    z-index: 1;
+    box-sizing: border-box;
+    width: min(var(--content-max), calc(100% - var(--content-pad) * 2));
+    margin: 0 auto;
+  }
+  .util-links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 22px;
+    min-height: 46px;
+    padding: 0;
+  }
+  .util-links a {
+    display: flex;
+    align-items: center;
+    min-height: 48px;
+    color: #fff;
+    font-family: Heebo, "Arial Narrow", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .main-inner {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-height: 76px;
+  }
+  .logo-link { display: flex; flex: 0 0 auto; line-height: 0; }
+  .logo-link img { width: 148px; height: auto; max-width: 100%; }
+  .bar-call,
+  .nav-cta,
+  .nav-phone {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 0 14px;
+    border-radius: 999px;
+    font-family: Heebo, "Arial Narrow", sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  .bar-call {
+    margin-left: auto;
+    background: var(--color-ws-red);
+    color: #fff;
+  }
+  .menu-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: #fff;
+  }
+  .menu-btn svg { width: 22px; height: 22px; fill: #fff; }
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    flex-direction: column;
+    gap: 2px;
+    padding: 8px 12px 16px;
+    background: #285276;
+  }
+  .site-header.is-open .nav-links { display: flex; }
+  .nav-links a {
+    display: flex;
+    align-items: center;
+    min-height: 48px;
+    color: #fff;
+    font-family: Heebo, "Arial Narrow", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .nav-phone { background: transparent; color: #fff; padding: 0; border-radius: 0; justify-content: flex-start; }
+  .nav-phone .digits { display: none; }
+  .nav-cta { background: var(--color-ws-red); color: #fff; width: fit-content; margin-top: 6px; }
+  .nav-links a[aria-current="page"],
+  .util-links a[aria-current="page"] {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  @media (min-width: 1024px) {
+    .main-inner { min-height: 84px; gap: 8px; }
+    .bar-call { display: none; }
+    .menu-btn { display: none; }
+    .nav-links {
+      display: flex;
+      position: static;
+      flex-direction: row;
+      align-items: center;
+      gap: 10px;
+      margin-left: auto;
+      min-width: 0;
+      padding: 0;
+      background: transparent;
+    }
+    .logo-link img { width: 128px; }
+    .nav-links a.menu-only { display: none; }
+    .nav-links a {
+      min-height: 48px;
+      padding: 0;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 600;
+      letter-spacing: 0;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+    .nav-phone {
+      min-height: 48px;
+      padding: 0;
+      background: transparent;
+      border-radius: 0;
+      font-size: 16px;
+      font-weight: 600;
+      letter-spacing: 0;
+      text-transform: none;
+    }
+    .nav-phone .digits { display: inline; }
+    .nav-phone .label { display: none; }
+    .nav-cta {
+      margin-top: 0;
+      min-height: 48px;
+      padding: 0 16px;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: 0;
+      text-transform: uppercase;
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .site-header { transition: none; }
+  }
+</style>

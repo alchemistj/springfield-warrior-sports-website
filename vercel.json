@@ -1,0 +1,509 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "springfieldwarriorsports.com"
+        }
+      ],
+      "destination": "https://www.springfieldwarriorsports.com/:path*",
+      "statusCode": 301
+    },
+    {
+      "source": "/community/",
+      "destination": "/about/",
+      "statusCode": 301
+    },
+    {
+      "source": "/community",
+      "destination": "/about/",
+      "statusCode": 301
+    },
+    {
+      "source": "/warriorsports-birthdayparty/",
+      "destination": "/birthday-parties/",
+      "statusCode": 301
+    },
+    {
+      "source": "/warriorsports-birthdayparty",
+      "destination": "/birthday-parties/",
+      "statusCode": 301
+    },
+    {
+      "source": "/adults/",
+      "destination": "/fitness-classes/",
+      "statusCode": 301
+    },
+    {
+      "source": "/adults",
+      "destination": "/fitness-classes/",
+      "statusCode": 301
+    },
+    {
+      "source": "/kids/",
+      "destination": "/kids-classes/",
+      "statusCode": 301
+    },
+    {
+      "source": "/kids",
+      "destination": "/kids-classes/",
+      "statusCode": 301
+    },
+    {
+      "source": "/summer-camp/",
+      "destination": "/summer-camps-in-springfield-mo/",
+      "statusCode": 301
+    },
+    {
+      "source": "/summer-camp",
+      "destination": "/summer-camps-in-springfield-mo/",
+      "statusCode": 301
+    },
+    {
+      "source": "/contact-warriorsports/",
+      "destination": "/contact/",
+      "statusCode": 301
+    },
+    {
+      "source": "/contact-warriorsports",
+      "destination": "/contact/",
+      "statusCode": 301
+    },
+    {
+      "source": "/csna-registration/",
+      "destination": "/competitions/",
+      "statusCode": 301
+    },
+    {
+      "source": "/csna-registration",
+      "destination": "/competitions/",
+      "statusCode": 301
+    },
+    {
+      "source": "/calendar/",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/calendar",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/warriorsports-classes/",
+      "destination": "/parkour/",
+      "statusCode": 301
+    },
+    {
+      "source": "/warriorsports-classes",
+      "destination": "/parkour/",
+      "statusCode": 301
+    },
+    {
+      "source": "/birthday-party-invitation/",
+      "destination": "/birthday-parties/",
+      "statusCode": 301
+    },
+    {
+      "source": "/birthday-party-invitation",
+      "destination": "/birthday-parties/",
+      "statusCode": 301
+    },
+    {
+      "source": "/csna-team/",
+      "destination": "/competitions/",
+      "statusCode": 301
+    },
+    {
+      "source": "/csna-team",
+      "destination": "/competitions/",
+      "statusCode": 301
+    },
+    {
+      "source": "/new-page-3/",
+      "destination": "/competitions/",
+      "statusCode": 301
+    },
+    {
+      "source": "/new-page-3",
+      "destination": "/competitions/",
+      "statusCode": 301
+    },
+    {
+      "source": "/join-teamwarriorsports/",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/join-teamwarriorsports",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/csna-competition-gallery/",
+      "destination": "/competitions/",
+      "statusCode": 301
+    },
+    {
+      "source": "/csna-competition-gallery",
+      "destination": "/competitions/",
+      "statusCode": 301
+    },
+    {
+      "source": "/new-page/",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/new-page",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/rates-warriorsports/",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/rates-warriorsports",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/class-schedule/2018/12/27/junior-warriors-homeschool-1/",
+      "destination": "/kids-classes/",
+      "statusCode": 301
+    },
+    {
+      "source": "/class-schedule/2018/12/27/junior-warriors-homeschool-1",
+      "destination": "/kids-classes/",
+      "statusCode": 301
+    },
+    {
+      "source": "/class-schedule/2017/5/4/parkour/",
+      "destination": "/parkour/",
+      "statusCode": 301
+    },
+    {
+      "source": "/class-schedule/2017/5/4/parkour",
+      "destination": "/parkour/",
+      "statusCode": 301
+    },
+    {
+      "source": "/class-schedule/2017/5/10/junior-warriors/",
+      "destination": "/kids-classes/",
+      "statusCode": 301
+    },
+    {
+      "source": "/class-schedule/2017/5/10/junior-warriors",
+      "destination": "/kids-classes/",
+      "statusCode": 301
+    },
+    {
+      "source": "/class-schedule/2019/7/24/test-week-junior-warriors/",
+      "destination": "/kids-classes/",
+      "statusCode": 301
+    },
+    {
+      "source": "/class-schedule/2019/7/24/test-week-junior-warriors",
+      "destination": "/kids-classes/",
+      "statusCode": 301
+    },
+    {
+      "source": "/class-schedule/2019/10/7/junior-warriors/",
+      "destination": "/kids-classes/",
+      "statusCode": 301
+    },
+    {
+      "source": "/class-schedule/2019/10/7/junior-warriors",
+      "destination": "/kids-classes/",
+      "statusCode": 301
+    },
+    {
+      "source": "/class-schedule/2019/4/19/junior-warriors-1/",
+      "destination": "/kids-classes/",
+      "statusCode": 301
+    },
+    {
+      "source": "/class-schedule/2019/4/19/junior-warriors-1",
+      "destination": "/kids-classes/",
+      "statusCode": 301
+    },
+    {
+      "source": "/class-schedule/2017/3/29/junior-warriors/",
+      "destination": "/kids-classes/",
+      "statusCode": 301
+    },
+    {
+      "source": "/class-schedule/2017/3/29/junior-warriors",
+      "destination": "/kids-classes/",
+      "statusCode": 301
+    },
+    {
+      "source": "/class-schedule/2017/4/10/high-intensity-core/",
+      "destination": "/fitness-classes/",
+      "statusCode": 301
+    },
+    {
+      "source": "/class-schedule/2017/4/10/high-intensity-core",
+      "destination": "/fitness-classes/",
+      "statusCode": 301
+    },
+    {
+      "source": "/class-schedule/2019/7/3/team-junior-warrior/",
+      "destination": "/kids-classes/",
+      "statusCode": 301
+    },
+    {
+      "source": "/class-schedule/2019/7/3/team-junior-warrior",
+      "destination": "/kids-classes/",
+      "statusCode": 301
+    },
+    {
+      "source": "/class-schedule/2016/12/14/calisthenics/",
+      "destination": "/fitness-classes/",
+      "statusCode": 301
+    },
+    {
+      "source": "/class-schedule/2016/12/14/calisthenics",
+      "destination": "/fitness-classes/",
+      "statusCode": 301
+    },
+    {
+      "source": "/class-schedule/2018/7/9/junior-warriors-girls/",
+      "destination": "/kids-classes/",
+      "statusCode": 301
+    },
+    {
+      "source": "/class-schedule/2018/7/9/junior-warriors-girls",
+      "destination": "/kids-classes/",
+      "statusCode": 301
+    },
+    {
+      "source": "/class-schedule/2019/2/26/nerf-night/",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/class-schedule/2019/2/26/nerf-night",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/school-day-off-solutions/",
+      "destination": "/summer-camps-in-springfield-mo/",
+      "statusCode": 301
+    },
+    {
+      "source": "/school-day-off-solutions",
+      "destination": "/summer-camps-in-springfield-mo/",
+      "statusCode": 301
+    },
+    {
+      "source": "/birthday-parties",
+      "destination": "/birthday-parties/",
+      "statusCode": 301
+    },
+    {
+      "source": "/schedule-birthday-party",
+      "destination": "/schedule-birthday-party/",
+      "statusCode": 301
+    },
+    {
+      "source": "/kids-classes",
+      "destination": "/kids-classes/",
+      "statusCode": 301
+    },
+    {
+      "source": "/parkour",
+      "destination": "/parkour/",
+      "statusCode": 301
+    },
+    {
+      "source": "/fitness-classes",
+      "destination": "/fitness-classes/",
+      "statusCode": 301
+    },
+    {
+      "source": "/personal-training",
+      "destination": "/personal-training/",
+      "statusCode": 301
+    },
+    {
+      "source": "/homeschool-sports-and-classes-springfield-mo",
+      "destination": "/homeschool-sports-and-classes-springfield-mo/",
+      "statusCode": 301
+    },
+    {
+      "source": "/summer-camps-in-springfield-mo",
+      "destination": "/summer-camps-in-springfield-mo/",
+      "statusCode": 301
+    },
+    {
+      "source": "/competitions",
+      "destination": "/competitions/",
+      "statusCode": 301
+    },
+    {
+      "source": "/wnl-competitions",
+      "destination": "/wnl-competitions/",
+      "statusCode": 301
+    },
+    {
+      "source": "/nerf-wars",
+      "destination": "/nerf-wars/",
+      "statusCode": 301
+    },
+    {
+      "source": "/laser-tag",
+      "destination": "/laser-tag/",
+      "statusCode": 301
+    },
+    {
+      "source": "/about",
+      "destination": "/about/",
+      "statusCode": 301
+    },
+    {
+      "source": "/meet-the-team",
+      "destination": "/meet-the-team/",
+      "statusCode": 301
+    },
+    {
+      "source": "/best-gyms-in-springfield",
+      "destination": "/best-gyms-in-springfield/",
+      "statusCode": 301
+    },
+    {
+      "source": "/contact",
+      "destination": "/contact/",
+      "statusCode": 301
+    },
+    {
+      "source": "/registered",
+      "destination": "/registered/",
+      "statusCode": 301
+    },
+    {
+      "source": "/registered-for-wnl-competition",
+      "destination": "/registered-for-wnl-competition/",
+      "statusCode": 301
+    },
+    {
+      "source": "/registered-for-csna-competition",
+      "destination": "/registered-for-csna-competition/",
+      "statusCode": 301
+    },
+    {
+      "source": "/registered-for-day-camps",
+      "destination": "/registered-for-day-camps/",
+      "statusCode": 301
+    },
+    {
+      "source": "/registered-for-summer-fun-competition",
+      "destination": "/registered-for-summer-fun-competition/",
+      "statusCode": 301
+    },
+    {
+      "source": "/thank-you-for-your-feedback",
+      "destination": "/thank-you-for-your-feedback/",
+      "statusCode": 301
+    },
+    {
+      "source": "/feed",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/feed/",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/comments/feed",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/comments/feed/",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/category/(.*)",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/home",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/sitemap_index.xml",
+      "destination": "/sitemap.xml",
+      "statusCode": 301
+    },
+    {
+      "source": "/page-sitemap.xml",
+      "destination": "/sitemap.xml",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-sitemap.xml",
+      "destination": "/sitemap.xml",
+      "statusCode": 301
+    }
+  ],
+  "headers": [
+    {
+      "source": "/_astro/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/((?!_astro/).*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        }
+      ]
+    },
+    {
+      "source": "/(.*)",
+      "missing": [
+        {
+          "type": "host",
+          "value": "www.springfieldwarriorsports.com"
+        }
+      ],
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex"
+        }
+      ]
+    }
+  ]
+}

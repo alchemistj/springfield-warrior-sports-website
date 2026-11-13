@@ -1,0 +1,492 @@
+[
+  {
+    "id": "birthday-party",
+    "formKey": "birthday-party",
+    "event": "Birthday Party Booking",
+    "page": "/schedule-birthday-party/",
+    "anchor": "party-form",
+    "button": "Submit",
+    "open": true,
+    "success": {
+      "type": "message",
+      "message": "Thank you! We will be in touch shortly!"
+    },
+    "fields": [
+      {
+        "kind": "name",
+        "label": "First and Last Name",
+        "required": true
+      },
+      {
+        "kind": "text",
+        "name": "birthdayKidsName",
+        "label": "Birthday Kids Name",
+        "required": true
+      },
+      {
+        "kind": "email",
+        "name": "email",
+        "label": "Email",
+        "required": true
+      },
+      {
+        "kind": "phone",
+        "name": "phone",
+        "label": "Phone",
+        "required": true
+      },
+      {
+        "kind": "textarea",
+        "name": "pleaseLetUsKnowTheDates",
+        "label": "Please let us know the dates and times you would like to schedule your party and we will check the calendar and confirm availability",
+        "required": true
+      },
+      {
+        "kind": "checkbox",
+        "name": "wouldYouLikeToDiscussAny",
+        "label": "Would you like to discuss any of these?",
+        "required": false,
+        "choices": [
+          "Nerf Battle Party",
+          "Laser Tag Party",
+          "Private Party",
+          "Pizza Party"
+        ]
+      },
+      {
+        "kind": "text",
+        "name": "anythingElse",
+        "label": "Anything else?",
+        "required": false
+      }
+    ],
+    "repeater": null
+  },
+  {
+    "id": "camp-registration",
+    "formKey": "camp-registration",
+    "event": "2026 Summer Camp",
+    "page": "/summer-camps-in-springfield-mo/",
+    "anchor": "lead-form",
+    "button": "Submit and Continue to Payment",
+    "open": true,
+    "success": {
+      "type": "redirect",
+      "path": "/registered-for-day-camps/"
+    },
+    "fields": [
+      {
+        "kind": "text",
+        "name": "firstName",
+        "label": "First Name",
+        "required": true
+      },
+      {
+        "kind": "text",
+        "name": "lastName",
+        "label": "Last Name",
+        "required": true
+      },
+      {
+        "kind": "email",
+        "name": "email",
+        "label": "Email",
+        "required": true
+      },
+      {
+        "kind": "phone",
+        "name": "bestContactPhoneNumberToReach",
+        "label": "Best contact phone number to reach you if needed during camp",
+        "required": true
+      },
+      {
+        "kind": "text",
+        "name": "kidsName",
+        "label": "Kids Name",
+        "required": true
+      },
+      {
+        "kind": "select",
+        "name": "ageOfChildAttendingCamp",
+        "label": "Age of child attending camp",
+        "required": true,
+        "choices": [
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11",
+          "12",
+          "13",
+          "14",
+          "15"
+        ]
+      },
+      {
+        "kind": "select",
+        "name": "childSTShirtSize",
+        "label": "Child's T-shirt size",
+        "required": true,
+        "choices": [
+          "Youth Small",
+          "Youth Medium",
+          "Youth Large"
+        ]
+      },
+      {
+        "kind": "checkbox",
+        "name": "whichCampSDoYouPlan",
+        "label": "Which camp(s) do you plan to attend",
+        "required": true,
+        "choices": [
+          "May 25th - May 29th 8:30 AM - 11:30 AM",
+          "June 8th - June 12th 8:30 AM - 11:30 AM",
+          "June 22nd - June 26th 8:30 AM - 11:30 AM",
+          "July 6th - July 10th 8:30 AM - 11:30 AM",
+          "July 6th - July 10th 12 PM - 3 PM",
+          "July 20th - July 24th 8:30 AM - 11:30 AM",
+          "July 20th - July 24th 12 PM - 3 PM",
+          "August 3rd - August 7th 8:30 AM - 11:30 AM",
+          "August 3rd - August 7th 12 PM - 3 PM",
+          "August 17th - August 21st 8:30 AM - 11:30 AM",
+          "August 17th - August 21st 12 PM - 3 PM"
+        ]
+      },
+      {
+        "kind": "text",
+        "name": "pleaseListAnyFoodAllergiesIf",
+        "label": "Please list any food allergies (if none, please write none)",
+        "required": true
+      },
+      {
+        "kind": "textarea",
+        "name": "listAnyAdditionalSiblingsAttendingAnd",
+        "label": "List any additional siblings attending and their ages",
+        "required": false
+      }
+    ],
+    "repeater": null
+  },
+  {
+    "id": "csna",
+    "formKey": "competition-registration",
+    "event": "September 19, 2026 CSNA Competition",
+    "page": "/competitions/",
+    "anchor": "lead-form",
+    "button": "Submit",
+    "open": true,
+    "success": {
+      "type": "redirect",
+      "path": "/registered-for-csna-competition/"
+    },
+    "fields": [
+      {
+        "kind": "text",
+        "name": "homeGymTeamGym",
+        "label": "Home Gym/Team Gym",
+        "required": true
+      },
+      {
+        "kind": "email",
+        "name": "emailAddress",
+        "label": "Email Address",
+        "required": true
+      },
+      {
+        "kind": "phone",
+        "name": "phone",
+        "label": "Phone",
+        "required": true
+      }
+    ],
+    "repeater": {
+      "max": 4,
+      "addLabel": "Add another competitor",
+      "removeLabel": "Remove",
+      "fields": [
+        {
+          "kind": "name",
+          "label": "Name",
+          "required": true
+        },
+        {
+          "kind": "radio",
+          "name": "gender",
+          "label": "Gender",
+          "required": true,
+          "choices": [
+            "Male",
+            "Female"
+          ]
+        },
+        {
+          "kind": "date",
+          "name": "birthday",
+          "label": "Birthday",
+          "required": true
+        },
+        {
+          "kind": "radio",
+          "name": "ageDivisionAgeCutoffDateIs",
+          "label": "Age Division (age cutoff date is January 1st, 2027)",
+          "required": true,
+          "choices": [
+            "6-7 year old boys",
+            "6-7 year old girls",
+            "8-9 year old boys",
+            "8-9 year old girls",
+            "10-11 year old boys",
+            "10-11 year old girls",
+            "12-13 year old boys",
+            "12-13 year old girls",
+            "14-15 year old boys",
+            "14-15 year old girls",
+            "16-18 year old boys",
+            "16-18 year old girls"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "wnl",
+    "formKey": "competition-registration",
+    "event": "WNL Competition",
+    "page": "/wnl-competitions/",
+    "anchor": "lead-form",
+    "button": "Submit",
+    "open": true,
+    "success": {
+      "type": "redirect",
+      "path": "/registered-for-wnl-competition/"
+    },
+    "fields": [
+      {
+        "kind": "name",
+        "label": "Name",
+        "required": true
+      },
+      {
+        "kind": "radio",
+        "name": "gender",
+        "label": "Gender",
+        "required": true,
+        "choices": [
+          "Male",
+          "Female"
+        ]
+      },
+      {
+        "kind": "text",
+        "name": "birthday",
+        "label": "Birthday",
+        "required": true
+      },
+      {
+        "kind": "text",
+        "name": "age",
+        "label": "Age",
+        "required": true
+      },
+      {
+        "kind": "select",
+        "name": "divisionCompetingIn",
+        "label": "Division Competing in",
+        "required": true,
+        "choices": [
+          "Kids- 6-8 years old",
+          "Mature Kids- 9-10 years old",
+          "Preteen- 11-12 years old",
+          "Teen- 13-14 years old",
+          "Young adult- 15-17 years old",
+          "Adult- 18+ years old",
+          "Masters- 40+ years old",
+          "Elite- 15+ years old"
+        ]
+      },
+      {
+        "kind": "text",
+        "name": "ninjaworksNumber",
+        "label": "Ninjaworks number",
+        "required": true
+      },
+      {
+        "kind": "email",
+        "name": "emailAddress",
+        "label": "Email Address",
+        "required": true
+      },
+      {
+        "kind": "phone",
+        "name": "phone",
+        "label": "Phone",
+        "required": true
+      }
+    ],
+    "repeater": null
+  },
+  {
+    "id": "personal-training",
+    "formKey": "personal-training",
+    "event": "Personal Training",
+    "page": "/personal-training/",
+    "anchor": "lead-form",
+    "button": "Submit",
+    "open": true,
+    "success": {
+      "type": "message",
+      "message": "Thank you for reaching out! We will be in touch shortly."
+    },
+    "fields": [
+      {
+        "kind": "name",
+        "label": "Full Name",
+        "required": true
+      },
+      {
+        "kind": "phone",
+        "name": "phone",
+        "label": "Phone",
+        "required": true
+      },
+      {
+        "kind": "email",
+        "name": "emailAddress",
+        "label": "Email Address",
+        "required": true
+      },
+      {
+        "kind": "text",
+        "name": "age",
+        "label": "Age",
+        "required": true
+      },
+      {
+        "kind": "radio",
+        "name": "gender",
+        "label": "Gender",
+        "required": true,
+        "choices": [
+          "Male",
+          "Female"
+        ]
+      },
+      {
+        "kind": "textarea",
+        "name": "whatAreYourFitnessGoals",
+        "label": "What Are Your Fitness Goals?",
+        "required": true
+      },
+      {
+        "kind": "textarea",
+        "name": "whatAreYouLookingForIn",
+        "label": "What Are You Looking for in a Trainer?",
+        "required": true
+      }
+    ],
+    "repeater": null
+  },
+  {
+    "id": "nerf",
+    "formKey": "event-waitlist",
+    "event": "Nerf War Night",
+    "page": "/nerf-wars/",
+    "anchor": "lead-form",
+    "button": "Notify Me",
+    "open": true,
+    "success": {
+      "type": "message",
+      "message": "Thanks for contacting us! We will get in touch with you shortly."
+    },
+    "fields": [
+      {
+        "kind": "name",
+        "label": "Name",
+        "required": false
+      },
+      {
+        "kind": "email",
+        "name": "email",
+        "label": "Email",
+        "required": true
+      }
+    ],
+    "repeater": null
+  },
+  {
+    "id": "laser",
+    "formKey": "event-waitlist",
+    "event": "Laser Tag Night",
+    "page": "/laser-tag/",
+    "anchor": "lead-form",
+    "button": "Notify Me",
+    "open": true,
+    "success": {
+      "type": "message",
+      "message": "Thanks for contacting us! We will get in touch with you shortly."
+    },
+    "fields": [
+      {
+        "kind": "name",
+        "label": "Name",
+        "required": false
+      },
+      {
+        "kind": "email",
+        "name": "email",
+        "label": "Email",
+        "required": true
+      }
+    ],
+    "repeater": null
+  },
+  {
+    "id": "contact",
+    "formKey": "main-contact",
+    "event": "Contact",
+    "page": "/contact/",
+    "anchor": "lead-form",
+    "button": "Submit",
+    "open": true,
+    "success": {
+      "type": "message",
+      "message": "Thank you! We will be in touch shortly!"
+    },
+    "fields": [
+      {
+        "kind": "text",
+        "name": "firstName",
+        "label": "First Name",
+        "required": true,
+        "namePart": "first"
+      },
+      {
+        "kind": "text",
+        "name": "lastName",
+        "label": "Last Name",
+        "required": true,
+        "namePart": "last"
+      },
+      {
+        "kind": "email",
+        "name": "email",
+        "label": "Email",
+        "required": true
+      },
+      {
+        "kind": "text",
+        "name": "subject",
+        "label": "Subject",
+        "required": true
+      },
+      {
+        "kind": "textarea",
+        "name": "message",
+        "label": "Message",
+        "required": true
+      }
+    ],
+    "repeater": null
+  }
+]

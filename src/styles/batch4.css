@@ -1,0 +1,525 @@
+/* Batch 4. Values are live computed styles and rendered boxes. */
+
+.b4-hero { padding: 0; }
+
+.b4-team-hero {
+  display: flex;
+  align-items: flex-start;
+  box-sizing: border-box;
+  min-height: 490px;
+  padding-top: 95px;
+  background-color: transparent;
+  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 40%, #040e16 100%);
+  background-repeat: no-repeat;
+  background-position: 50% 50%, 0px 50%, 50% 50%;
+  background-size: auto, contain, auto;
+}
+.b4-team-hero .col {
+  width: min(1150px, calc(100% - 42px));
+  margin-inline: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+.b4-team-hero h1,
+.b4-team-hero .m-title {
+  margin: 0;
+  color: rgb(219, 58, 52);
+  font-family: Heebo, "Arial Narrow", sans-serif;
+  font-weight: 900;
+  letter-spacing: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+.b4-team-hero h1 {
+  width: 568px;
+  font-size: 70px;
+  line-height: 70px;
+}
+.b4-team-hero .m-title,
+.b4-team-hero .m-photo { display: none; }
+
+.b4-gym-hero {
+  display: flex;
+  align-items: flex-end;
+  box-sizing: border-box;
+  min-height: 490px;
+  padding: 0 0 20px;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+}
+.b4-gym-hero h1 {
+  width: min(1150px, calc(100% - 42px));
+  margin: 0 auto;
+  color: rgb(219, 58, 52);
+  font-family: Heebo, "Arial Narrow", sans-serif;
+  font-size: 70px;
+  font-weight: 900;
+  line-height: 70px;
+  letter-spacing: 0;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.b4 { color: #000; }
+.b4-wrap {
+  width: min(1150px, calc(100% - 42px));
+  margin-inline: auto;
+}
+.b4 :where(h2, h3, h4, p) { margin: 0; letter-spacing: 0; }
+.b4 a { text-decoration: none; }
+
+.b4-intro {
+  margin: 24px auto 50px;
+  text-align: center;
+}
+.b4-intro p {
+  color: #000;
+  font-family: Epilogue, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 32px;
+}
+.b4-intro p + p { margin-top: 11px; }
+.b4-intro .mid { font-weight: 500; }
+
+.page-meet-the-team .b4 { background: #eff6fc; padding-bottom: 50px; }
+.b4-person {
+  display: flow-root;
+  box-sizing: border-box;
+  width: min(1110px, 100%);
+  margin: 0 auto 20px;
+  padding: 13px 23px;
+  border: 12px solid #285276;
+  background: #fff;
+}
+.b4-person.narrow h3 { max-width: 517px; }
+.b4-person.tight h3 { line-height: 28px; }
+.b4-person :is(h2, h3, p) { overflow: hidden; }
+.b4-shot {
+  float: left;
+  width: 371px;
+  height: var(--h);
+  margin: 0 26px 0 -10px;
+  object-fit: cover;
+  object-position: center top;
+}
+.b4-shot.mob { display: none; }
+.b4-person h2 {
+  margin-top: 16px;
+  color: rgb(40, 82, 118);
+  font-family: Heebo, "Arial Narrow", sans-serif;
+  font-size: 35px;
+  font-weight: 900;
+  line-height: 35px;
+  text-align: left;
+  text-transform: uppercase;
+}
+.b4-person h3 {
+  margin-top: 2px;
+  color: rgb(219, 58, 52);
+  font-family: Heebo, "Arial Narrow", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  text-transform: uppercase;
+}
+.b4-person .bio { margin-top: 21px; }
+.b4-person p {
+  color: #000;
+  font-family: Epilogue, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+.b4-person p + p { margin-top: 10px; }
+.b4-person em { font-style: italic; }
+
+.b4-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  min-height: 471px;
+  padding: 70px 20px;
+  background-color: #000;
+  background-position: center 70%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+.b4-cta-copy { position: relative; z-index: 1; }
+.b4-cta h2,
+.b4-cta h4,
+.b4-cta .note {
+  width: fit-content;
+  max-width: 100%;
+  margin-inline: auto;
+}
+.b4-cta h2 {
+  color: rgb(219, 58, 52);
+  font-family: Heebo, "Arial Narrow", sans-serif;
+  font-size: 50px;
+  font-weight: 900;
+  line-height: 50px;
+  text-transform: uppercase;
+}
+.b4-cta h2 + h2 { margin-top: 0; }
+.b4-cta h2 + h4 { margin-top: 26px; }
+.b4-cta h4 {
+  margin-top: 2px;
+  color: #fff;
+  font-family: Epilogue, Arial, sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 35px;
+  text-transform: none;
+}
+.b4-cta .go {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  box-sizing: border-box;
+  width: 290px;
+  height: 49px;
+  margin-top: 22px;
+  border-radius: 100px;
+  background: rgb(219, 58, 52);
+  color: #fff;
+  font-family: Heebo, "Arial Narrow", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 19px;
+  text-transform: uppercase;
+}
+.b4-cta .go svg { display: block; width: 16px; height: 16px; fill: #fff; }
+.b4-cta .note {
+  margin-top: 6px;
+  color: rgb(135, 204, 237);
+  font-family: Epilogue, Arial, sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 35px;
+}
+
+/* Best gyms article */
+.b4-lead { margin: 71px auto 0; text-align: center; }
+.b4-lead p,
+.b4-call p {
+  color: #000;
+  font-family: Epilogue, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+.b4-lead p { width: min(1070px, 100%); margin: 17px auto 0; }
+.b4-lead p:first-child { margin-top: 0; }
+.b4-band {
+  background: rgb(238, 244, 250);
+  margin-top: 77px;
+  margin-bottom: 90px;
+  padding: 40px 0;
+}
+.b4-call {
+  margin: 0 auto;
+  text-align: center;
+  background: none;
+}
+.b4-call p {
+  width: min(1070px, 100%);
+  margin: 17px auto 0;
+  color: rgba(41, 41, 41, 0.99);
+}
+.b4-call p:first-child { margin-top: 0; }
+.b4-call .hot { font-weight: 600; }
+.b4-call a,
+.b4-gym a.red { color: rgb(219, 58, 52); font-weight: 400; }
+
+.b4-gym {
+  position: relative;
+  min-height: 80px;
+  margin: 0 auto 130px;
+}
+.b4-gym img {
+  position: absolute;
+  z-index: 0;
+  left: var(--l);
+  top: var(--t);
+  width: var(--w);
+  height: var(--h);
+  max-width: none;
+  object-fit: cover;
+  /* Live clips each photo to the 1150 column. The element box still overflows, and that
+     overflow is white on the live screenshot. */
+  --clip-l: max(0px, calc(var(--l) * -1));
+  --clip-r: max(0px, calc(var(--l) + var(--w) - 1150px));
+  clip-path: inset(0 var(--clip-r) 0 var(--clip-l));
+}
+.page-best-gyms-in-springfield .b4 { overflow: clip; }
+.b4-copy { position: relative; z-index: 1; width: 561px; background: #fff; }
+.b4-gym.side-right .b4-copy { margin-left: 588px; }
+.b4-gym h2 {
+  width: fit-content;
+  max-width: 100%;
+  color: rgb(219, 58, 52);
+  font-family: Heebo, "Arial Narrow", sans-serif;
+  font-size: 50px;
+  font-weight: 900;
+  line-height: 50px;
+  text-align: left;
+  text-transform: uppercase;
+}
+.b4-addr {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 10px;
+}
+.b4-addr svg,
+.b4-hl svg { display: block; flex: 0 0 auto; fill: rgb(219, 58, 52); }
+.b4-addr svg { width: 24px; height: 24px; }
+.b4-addr span,
+.b4-hl span {
+  display: block;
+  color: #000;
+  font-family: Epilogue, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 26px;
+}
+.b4-copy > p {
+  margin-top: 16px;
+  color: #000;
+  font-family: Epilogue, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+.b4-copy > p.b4-hl-label {
+  margin-top: 12px;
+  color: rgb(40, 82, 118);
+  font-family: Epilogue, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 28px;
+}
+.b4-hl { list-style: none; margin: 16px 0 0; padding: 0; }
+.b4-hl li { display: flex; align-items: flex-start; gap: 10px; margin: 0 0 6px; }
+.b4-hl svg { width: 22px; height: 22px; margin-top: 2px; }
+.b4-hl span { font-weight: 300; }
+.b4-hl .strong { font-weight: 600; }
+.b4-visit {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 176px;
+  height: 49px;
+  margin-top: 20px;
+  border-radius: 100px;
+  background: rgb(40, 82, 118);
+  color: #fff;
+  font-family: Heebo, "Arial Narrow", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 19px;
+  text-transform: uppercase;
+}
+
+.b4-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  min-height: 561px;
+  padding: 80px 20px;
+  background-color: #000;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+.b4-close h2,
+.b4-close h4 {
+  width: fit-content;
+  max-width: min(1148px, 100%);
+  margin-inline: auto;
+}
+.b4-close h2 + h4 { margin-top: 26px; }
+.b4-close h2 {
+  color: rgb(219, 58, 52);
+  font-family: Heebo, "Arial Narrow", sans-serif;
+  font-size: 50px;
+  font-weight: 900;
+  line-height: 50px;
+  text-transform: uppercase;
+}
+.b4-close h4 {
+  margin: 17px auto 0;
+  color: #fff;
+  font-family: Epilogue, Arial, sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 35px;
+  text-transform: none;
+}
+
+/* Thank-you pages */
+.b4-thanks {
+  box-sizing: border-box;
+  min-height: var(--thanks-h, 477px);
+  padding: 100px 0 48px;
+  background: #fff var(--thanks-photo) 78.5% center / auto 100% no-repeat;
+}
+.b4-thanks a { overflow-wrap: anywhere; }
+.b4-thanks.plain { background: #fff; min-height: 465px; }
+.b4-thanks .col { width: min(1150px, calc(100% - 42px)); margin-inline: auto; }
+.b4-thanks h2 {
+  width: min(535px, 100%);
+  margin: 0 0 16px;
+  color: rgb(219, 58, 52);
+  font-family: Heebo, "Arial Narrow", sans-serif;
+  font-size: 50px;
+  font-weight: 900;
+  line-height: 50px;
+  letter-spacing: 0;
+  text-align: left;
+  text-transform: uppercase;
+}
+.b4-thanks.wide h2,
+.b4-thanks.wide p { width: 100%; }
+.b4-thanks.feedback p { width: min(560px, 100%); letter-spacing: -0.12px; }
+.b4-thanks p {
+  width: min(533px, 100%);
+  margin: 0;
+  color: #000;
+  font-family: Epilogue, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 28px;
+}
+.b4-thanks p + p { margin-top: 12px; }
+.b4-thanks a { font-weight: 400; text-decoration: none; }
+.b4-thanks a.red { color: rgb(219, 58, 52); }
+.b4-thanks a.blue { color: rgb(47, 138, 228); }
+.b4-thanks .pay {
+  color: rgb(219, 58, 52);
+  font-weight: 400;
+}
+.b4-thanks .shot { display: none; }
+
+@media (max-width: 799px) {
+  .b4-team-hero {
+    display: block;
+    min-height: 0;
+    padding: 50px 0 0;
+    background: rgb(32, 70, 106);
+  }
+  .b4-team-hero .col { display: block; width: 100%; }
+  .b4-team-hero h1 { display: none; }
+  .b4-team-hero .m-title {
+    display: block;
+    width: 100%;
+    color: #fff;
+    font-size: 45px;
+    line-height: 45px;
+  }
+  .b4-team-hero .m-photo {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+  }
+
+  .b4-gym-hero { min-height: 450px; padding-bottom: 70px; }
+  .b4-gym-hero h1 {
+    width: 315px;
+    margin: 0 0 0 38px;
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .b4-intro {
+    width: 100%;
+    margin: 0;
+    padding: 31px 26px 40px;
+    background: #fff;
+    box-sizing: border-box;
+  }
+  .page-meet-the-team .b4 { background: #eff6fc; padding-bottom: 0; }
+  .b4-person {
+    width: min(320px, calc(100% - 36px));
+    margin: 0 auto 20px;
+    padding: 16px 13px 20px;
+    border: 12px solid #285276;
+    background: #fff;
+  }
+  .b4-person:last-of-type { margin-bottom: 70px; }
+  .b4-person.narrow h3 { max-width: none; }
+  .b4-shot,
+  .b4-shot.mob {
+    float: none;
+    display: block;
+    width: 100%;
+    height: 260px;
+    margin: 0 0 16px;
+    object-fit: cover;
+    object-position: center top;
+  }
+  .b4-shot.desk { display: none; }
+  .b4-person h2 { font-size: 30px; line-height: 30px; }
+  .b4-person h3 { font-size: 18px; line-height: 27px; }
+  .b4-person.tight h3 { line-height: 25px; }
+
+  .b4-cta { min-height: 509px; margin-top: 0; padding: 70px 20px; }
+  .b4-cta h2 { max-width: 350px; font-size: 32px; line-height: 32px; }
+  .b4-cta h4 { max-width: 348px; font-size: 18px; line-height: 29px; }
+  .b4-cta .go { width: 246px; height: 39px; font-size: 12px; }
+  .b4-cta .note { font-size: 16px; line-height: 26px; }
+
+  .b4-lead, .b4-call { width: min(338px, calc(100% - 52px)); }
+  .b4-band { margin: 62px 0 0; padding: 20px 0 0; }
+  .b4-call { margin-top: 0; }
+  .b4-gym { display: flex; flex-direction: column; width: 100%; margin-bottom: 48px; overflow: visible; }
+  .b4-gym img {
+    order: -1;
+    position: relative;
+    left: auto;
+    top: auto;
+    display: block;
+    width: var(--mw);
+    height: var(--mh);
+    margin: 0 0 24px var(--mx);
+    clip-path: none;
+  }
+  /* Live's GP photo is tall enough that the heading sits over its bottom edge. */
+  .b4-gym:nth-of-type(2) img { margin-bottom: -69px; }
+  .b4-copy,
+  .b4-gym.side-right .b4-copy { width: min(340px, calc(100% - 50px)); margin: 0 25px; }
+  .b4-gym h2 { font-size: 32px; line-height: 32px; }
+  .b4-copy > p.b4-hl-label { width: fit-content; }
+  .b4-visit { width: 148px; font-size: 12px; }
+
+  .b4-close { min-height: 553px; padding: 70px 25px; }
+  .b4-close h2 { max-width: 340px; font-size: 32px; line-height: 32px; }
+  .b4-close h4 { max-width: 338px; font-size: 18px; line-height: 29px; }
+
+  .b4-thanks {
+    min-height: 0;
+    padding: 70px 20px 24px;
+    background: #fff;
+  }
+  .b4-thanks .col { width: 100%; }
+  .b4-thanks h2 { width: 100%; font-size: 32px; line-height: 32px; }
+  .b4-thanks p { width: 100%; }
+  .b4-thanks .shot {
+    display: block;
+    width: 350px;
+    height: 312px;
+    max-width: 100%;
+    margin: 28px 0 0;
+    object-fit: cover;
+  }
+}

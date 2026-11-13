@@ -1,0 +1,75 @@
+---
+import type { EventForm } from "../../data/events";
+import FactIcon from "../batch2/FactIcon.astro";
+import LeadForm from "../LeadForm.astro";
+import { media } from "../batch2/media";
+import nightsBg from "../../assets/media/2023-11-laser-tag-war-nights.jpg";
+import { site } from "../../data/site";
+
+interface Props {
+  event: EventForm;
+}
+const { event } = Astro.props;
+const party = media("media/2023-03-laser-tag-party.webp");
+const fest = media("media/2023-11-laser-tag-fun-fest.webp");
+const nights = typeof nightsBg === "string" ? nightsBg : nightsBg.src;
+---
+
+<section class="b3 lt-lead">
+  <div class="b3-wrap">
+    <p>Whether you are planning a <a class="b3-link" href="/birthday-parties/">birthday party in Springfield</a>, a fun youth group outing, or a team-building event, the Warrior Ninja Sports gym is the perfect place to host a full-blown laser tag fun-fest.</p>
+    <a class="b3-btn block" href="#laser-tag-night">Register for laser tag war nights</a>
+  </div>
+</section>
+
+<section class="b3 b3-grey lt-party">
+  <div class="b3-wrap">
+    <h2>Want to Book a Private Laser Tag Party?</h2>
+    <div class="b3-split">
+      {party.src && <img src={party.src} alt="" width={party.width} height={party.height} loading="lazy" decoding="async" />}
+      <div>
+        <p>Whether you are planning a birthday party, a fun youth group outing, or a team-building event, the Warrior Ninja Sports gym is the perfect place to host a full-blown laser tag fun-fest.</p>
+        <p>The best part?</p>
+        <p>Our staff will do all the setup and be on standby to offer help and assistance if needed.</p>
+<p>Our goal is to make every laser tag party the most fun, stress-free, and enjoyable experience ever.</p>
+        <p>Call us today and book our <strong>entire obstacle course gym</strong> for your very own private laser tag party. We do the rest!</p>
+        <h4>Here are the details:</h4>
+        <ul class="b3-facts">
+          <li><FactIcon name="arrow" /><span class="strong">Cost: <span class="thin">For a group of 10, the cost is $240. Each additional participant costs $10.</span></span></li>
+          <li><FactIcon name="arrow" /><span class="thin">We are available for booking on weekends and most weekdays</span></li>
+        </ul>
+        <p>We provide a cooler full of Gatorade for all parties. We even customize party invitations for your event, free of charge!</p>
+        <p>Plus, if you have a birthday kiddo in the group, they will receive a Springfield Warrior Sports t-shirt and a free Junior Warrior class voucher!</p>
+        <p>We want kids to have a blast, making memories that last a lifetime.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="b3 b3-band lt-book" style={`background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('${nights}'); background-position: center 74%`}>
+  <div class="b3-wrap">
+    <h2 class="w920">Ready to Book?</h2>
+    <p>You can begin the booking process on our website by <a class="b3-redlink" href="/schedule-birthday-party/">clicking here</a> or calling us today at <a class="b3-redlink" href={site.phone.tel}>{site.phone.display}</a> to request a time to reserve the gym for your private party.</p>
+    <h3>We look forward to hosting you.</h3>
+  </div>
+</section>
+
+<section class="b3 b3-ice lt-night" id="laser-tag-night">
+  <div class="b3-wrap b3-split">
+    <div class="night-copy">
+      <h2>Come Join the Fun! Don’t Miss Laser Tag Night</h2>
+      <h4>You’re invited!</h4>
+      <h4>We are hosting Laser Tag Nights right here in Springfield, MO, at Warrior Sports Ninja Gym.</h4>
+      <h4>This fun, family-friendly night happens once a month. And you can now sign up to get notified of all future events.</h4>
+      <h4>We are open to all ages and our staff is ready and available to keep the experience fun, enjoyable, and stress-free.</h4>
+      <h4>So, don’t miss it! Come make memories that will last a lifetime.</h4>
+      <ul class="b3-facts">
+        <li><FactIcon name="arrow" /><span class="strong">Cost: <span class="thin">$15 per person (Members of the Warrior Sports gym pay half-price)</span></span></li>
+      </ul>
+      <h4 class="note">Note: Laser Tag Nights typically happen on Friday evenings.</h4>
+      <h4>Sign up now to get notified of all future laser tag events!</h4>
+      <LeadForm event={event} note={'"*" indicates required fields'} />
+    </div>
+    {fest.src && <img src={fest.src} alt="" width={fest.width} height={fest.height} loading="lazy" decoding="async" />}
+  </div>
+</section>
