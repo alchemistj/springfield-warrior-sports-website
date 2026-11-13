@@ -80,5 +80,9 @@ const gaId = site.ga4;
     {route.key !== "home" && route.key !== "meet-the-team" && route.key !== "homeschool-sports-and-classes-springfield-mo" && <FinalCta />}
     <Footer />
     <StickyCallBar />
+    <script>
+      import { scheduleJourney } from "../lib/measurement/schedule";
+      scheduleJourney();
+    </script>
   </body>
 </html>

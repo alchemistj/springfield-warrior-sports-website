@@ -1,6 +1,11 @@
 // Central Forms transport. Pure functions so Vitest can cover them.
 // The literal production endpoint must survive in the shipped bundle.
 
+import { attributionSnapshotForLead } from "./attribution/storage";
+import { buildFormsLeadAttribution, type FormsLeadAttribution } from "./leads/formsAttribution";
+import { pathOnly } from "./measurement/contract";
+import { collectLeadFormSuccess } from "./measurement/collect";
+
 export const LEAD_URL = "https://forms.fluidframemarketing.com/api/lead";
 export const PREVIEW_RELAY_URL = "/api/preview-forms-lead/";
 export const PRODUCTION_HOST = "www.springfieldwarriorsports.com";
@@ -47,6 +52,8 @@ export interface LeadContext {
   pageUrl: string;
   search: string;
   referrer: string;
+  /** document.cookie when the caller has it. Omit to read document.cookie in the browser. */
+  cookie?: string;
 }
 
 export interface CustomField {
@@ -70,6 +77,22 @@ export interface LeadBody {
   referrer: string | null;
   utm: { source: string; medium: string; campaign: string; term: string; content: string };
   customFields: Record<string, CustomField>;
+  attribution: FormsLeadAttribution;
+}
+
+function journeyCookie(ctx: LeadContext): string {
+  if (typeof ctx.cookie === "string") return ctx.cookie;
+  if (typeof document !== "undefined" && typeof document.cookie === "string") return document.cookie;
+  return "";
+}
+
+function recordAcceptedLead(formKey: string, id: string, pageUrl: string): void {
+  if (typeof window === "undefined") return;
+  void collectLeadFormSuccess({
+    submissionId: id,
+    formSource: formKey,
+    currentPath: pathOnly(pageUrl) || "/",
+  }).catch(() => undefined);
 }
 
 const clip = (value: string, max: number) => value.trim().slice(0, max);
@@ -120,6 +143,12 @@ export function buildBody(
     referrer: ctx.referrer ? ctx.referrer.slice(0, 2000) : null,
     utm: { source: utm("source"), medium: utm("medium"), campaign: utm("campaign"), term: utm("term"), content: utm("content") },
     customFields,
+    attribution: buildFormsLeadAttribution(
+      SITE_KEY,
+      attributionSnapshotForLead({ href: ctx.pageUrl, referrer: ctx.referrer, search: ctx.search }),
+      pathOnly(ctx.pageUrl) || "/",
+      journeyCookie(ctx),
+    ),
   };
 }
 
@@ -210,7 +239,11 @@ export async function submitLead(
     if (outcome.kind === "success") {
       if (outcome.conversion) fireConversion(outcome.id);
       deps.attempt.reset();
-    } else if (outcome.kind === "invalid" || outcome.kind === "received") {
+      recordAcceptedLead(formKey, outcome.id, deps.ctx.pageUrl);
+    } else if (outcome.kind === "received") {
+      deps.attempt.reset();
+      recordAcceptedLead(formKey, outcome.id, deps.ctx.pageUrl);
+    } else if (outcome.kind === "invalid") {
       deps.attempt.reset();
     }
     return outcome;
