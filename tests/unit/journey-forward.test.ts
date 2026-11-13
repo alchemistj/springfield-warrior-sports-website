@@ -21,13 +21,24 @@ const sample = {
 };
 
 describe("measurement forwarder", () => {
-  it("forwards the visitor user agent and drops anything outside the allowlist", async () => {
+  it("accepts preview locally and forwards production with the visitor user agent", async () => {
     const fetchImpl = vi.fn(async () => new Response("{}", { status: 202 }));
-    const result = await forwardMeasurementCollect({
+    const preview = await forwardMeasurementCollect({
       body: sample,
       origin: "https://preview.example.vercel.app",
       userAgent: "Mozilla/5.0 Chrome/131.0.0.0",
       vercelEnv: "preview",
+      fetchImpl,
+    });
+    expect(preview.status).toBe(202);
+    expect(JSON.parse(preview.body).skipped).toBe("preview");
+    expect(fetchImpl).not.toHaveBeenCalled();
+
+    const result = await forwardMeasurementCollect({
+      body: sample,
+      origin: "https://www.springfieldwarriorsports.com",
+      userAgent: "Mozilla/5.0 Chrome/131.0.0.0",
+      vercelEnv: "production",
       fetchImpl,
     });
     expect(result.status).toBe(202);
@@ -38,7 +49,7 @@ describe("measurement forwarder", () => {
     expect(headers[CLIENT_USER_AGENT_HEADER]).toBe("Mozilla/5.0 Chrome/131.0.0.0");
     const forwarded = JSON.parse(String(init.body)) as Record<string, unknown>;
     expect(forwarded.siteKey).toBe(MEASUREMENT_SITE_KEY);
-    expect(forwarded.environment).toBe("preview");
+    expect(forwarded.environment).toBe("production");
     expect(forwarded.visitorId).toBe(sample.visitorId);
     expect(forwarded.sessionId).toBe(sample.sessionId);
     expect(forwarded.currentPath).toBe("/contact/");

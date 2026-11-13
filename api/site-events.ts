@@ -11,7 +11,7 @@ import {
  *
  * No credential is read. Reports collect on the reference sites is
  * unauthenticated. `VERCEL_ENV` (set by Vercel) chooses production, preview,
- * or development. Preview events are forwarded; FF Reports ignores them.
+ * or development. Preview events return 202 and are not forwarded.
  */
 export const config = { runtime: "nodejs" };
 

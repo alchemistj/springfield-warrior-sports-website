@@ -106,7 +106,7 @@ export function measurementCollectHealth() {
     canonicalContractVersion: "ff-measure.v1",
     methods: ["POST"],
     originRewrite: "none",
-    preview: "forwarded",
+    preview: "accepted_locally",
   };
 }
 
@@ -147,10 +147,10 @@ export function allowlistMeasurementPayload(input: Record<string, unknown>): Rec
 /**
  * Forward a same-origin measurement POST to Reports collect.
  * Sets `environment` from `VERCEL_ENV` (Vercel sets this; it is not a secret).
- * A production event is forwarded only when that environment is production and
- * the Origin host is www.springfieldwarriorsports.com.
- * Preview and local events are forwarded with their own environment. FF Reports
- * ignores preview events. Origin is forwarded as-is. No ingest token is used.
+ * Production events are forwarded only when the Origin host is
+ * www.springfieldwarriorsports.com. Preview and local events return 202 and
+ * are not forwarded: FF Reports does not know this site yet, and a rejected
+ * preview forward would show as a console error. No ingest token is used.
  */
 export async function forwardMeasurementCollect(input: {
   body: unknown;
@@ -177,9 +177,10 @@ export async function forwardMeasurementCollect(input: {
   const payload = allowlistMeasurementPayload(parsed as Record<string, unknown>);
   const environment = environmentFromVercelEnv(input.vercelEnv);
   const origin = input.origin?.trim() || "";
-  if (environment === "production" && !isProductionSiteOrigin(origin)) {
-    return skipped("non_production_host");
-  }
+  // Preview returns 202 locally. Reports answers 403 "Unknown site" until the
+  // Reports architect registers this siteKey, and that 403 is a console error.
+  if (environment !== "production") return skipped(environment === "preview" ? "preview" : "development");
+  if (!isProductionSiteOrigin(origin)) return skipped("non_production_host");
 
   payload.siteKey = MEASUREMENT_SITE_KEY;
   payload.environment = environment;
