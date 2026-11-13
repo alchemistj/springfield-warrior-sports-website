@@ -103,6 +103,10 @@ describe("responses and retries", () => {
     expect(classifyResponse(200, { ok: true, id: "nope" }).kind).toBe("unconfirmed");
     expect(classifyResponse(400, { ok: false }).kind).toBe("invalid");
     expect(classifyResponse(429, {}).kind).toBe("rate_limited");
+    // Stored, delivery pending (Central Forms 503 with saved:true): received, never a conversion.
+    expect(classifyResponse(503, { ok: false, code: "delivery_reconciliation_required", saved: true, id: uuid })).toEqual({ kind: "received", id: uuid });
+    expect(classifyResponse(503, { ok: false, saved: true, id: "nope" }).kind).toBe("unconfirmed");
+    expect(classifyResponse(503, { ok: false, code: "delivery_failed" }).kind).toBe("unconfirmed");
     const gtag = vi.fn();
     (globalThis as { gtag?: typeof gtag }).gtag = gtag;
     fireConversion(uuid);

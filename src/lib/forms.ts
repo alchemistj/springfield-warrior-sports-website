@@ -131,6 +131,7 @@ export type Outcome =
   | { kind: "success"; id: string; conversion: boolean }
   | { kind: "invalid" }
   | { kind: "rate_limited" }
+  | { kind: "received"; id: string }
   | { kind: "unconfirmed" };
 
 const UUID_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
@@ -142,6 +143,9 @@ export function classifyResponse(status: number, json: unknown): Outcome {
   }
   if (status === 400 && body && body["ok"] === false && !body["saved"]) return { kind: "invalid" };
   if (status === 429) return { kind: "rate_limited" };
+  // Central Forms stored the lead but email delivery is still pending (it retries and alerts an operator).
+  // The visitor's message is in, so show it as received, keep the phone line, and fire no conversion.
+  if (body && body["saved"] === true && typeof body["id"] === "string" && UUID_RE.test(body["id"])) return { kind: "received", id: body["id"] };
   return { kind: "unconfirmed" };
 }
 
@@ -206,7 +210,7 @@ export async function submitLead(
     if (outcome.kind === "success") {
       if (outcome.conversion) fireConversion(outcome.id);
       deps.attempt.reset();
-    } else if (outcome.kind === "invalid") {
+    } else if (outcome.kind === "invalid" || outcome.kind === "received") {
       deps.attempt.reset();
     }
     return outcome;
