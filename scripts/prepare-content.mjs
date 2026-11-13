@@ -240,7 +240,10 @@ async function writeEvents() {
         });
         continue;
       }
-      const kind = field.type === "email" ? "email" : field.type === "phone" ? "phone" : field.type === "textarea" ? "textarea" : field.type === "date" ? "date" : "text";
+      // Live's competition forms collect the email as a text field labelled "Email Address": treat it as the email
+      // so Central Forms gets it as the lead's email (reply-to and the Mailchimp event tag need it).
+      const isEmail = field.type === "email" || /^email( address)?$/i.test(stripTags(field.label || "").trim());
+      const kind = isEmail ? "email" : field.type === "phone" ? "phone" : field.type === "textarea" ? "textarea" : field.type === "date" ? "date" : "text";
       pushField({
         kind,
         name: slugKey(field.label || kind),
