@@ -433,7 +433,7 @@
       "statusCode": 301
     },
     {
-      "source": "/category/:path*",
+      "source": "/category/(.*)",
       "destination": "/",
       "statusCode": 301
     },
