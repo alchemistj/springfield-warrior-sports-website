@@ -19,7 +19,7 @@ Run on the `cursor/astro-rebuild` preview (stable alias `git-26436f`) after #9, 
 
 ## Open items
 
-- **Journey tracking (Rule 14.1) is not built.** No `ff_vid`/`ff_sid` middleware, browser module or `/api/site-events`. Launch is not done without it. Pattern: Window Dudes (`src/lib/attribution/bootstrap.ts`, `api/site-events.ts`).
+- ~~Journey tracking (Rule 14.1) is not built.~~ Built in #13 and verified on the preview on 13 Nov. Cookies are set on pages only, with a bot marker; events carry the IDs; a real support@ lead's attribution matched the cookies; no env vars needed; home mobile performance 100. Remaining: FF Reports registration (ff-reports-analytics #218).
 - Registration forms are open for past dates (CSNA 19 Sep 2026, WNL 26 Oct 2024, 2026 Summer Camp), as on live. The `open` flag in `events.json` is not wired to anything yet.
 - Accessibility contrast: brand red `#db3a34` on white is 4.49:1 (needs 4.5), live link blue `#2f8ae4` is 3.57:1, reviewer names `#d6352f` on `#e5eaed` are 3.92:1. Live's colours, kept.
 - `astro check` reports 7 type errors that predate launch QA (HomeBody, LeadForm line 21, PersonalBody). The build and tests pass.
