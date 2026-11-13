@@ -2,11 +2,11 @@
 import { footerClasses, footerEvents, footerLinks, site } from "../data/site";
 import { city } from "../data/cityConfig";
 
-const images = import.meta.glob("../assets/media/2023-03-SWS-logo-footer.webp", {
+const images = import.meta.glob("../assets/media/2023-03-SpringField-Warrior-Logo.webp", {
   eager: true,
   import: "default",
 }) as Record<string, { src: string; width: number; height: number } | string>;
-const logo = images["../assets/media/2023-03-SWS-logo-footer.webp"];
+const logo = images["../assets/media/2023-03-SpringField-Warrior-Logo.webp"];
 const logoSrc = typeof logo === "string" ? logo : logo?.src;
 const hourLines = [...site.hours.map((row) => row.text), site.sundayNote, site.preschoolNote];
 ---

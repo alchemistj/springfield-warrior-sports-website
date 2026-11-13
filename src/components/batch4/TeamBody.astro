@@ -38,6 +38,7 @@ for (let i = 0; i < blocks.length; i++) {
   coaches.push({ name: block.text, role: role.text, paras, h: photo.h, desk: photo.desk, mob: photo.mob, narrow: photo.narrow, tight: photo.tight });
   i = j - 1;
 }
+const cta = media("media/2025-12-IMG_2336-scaled.jpeg");
 const shot = (file: string) => media(file).src;
 ---
 
@@ -82,7 +83,10 @@ const shot = (file: string) => media(file).src;
     ))
   }
 </div>
-<section class="b4-cta">
+<section
+  class="b4-cta"
+  style={`background-image:linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),url('${cta.src}');background-size:auto,cover;background-position:50% 50%,50% 70%`}
+>
   <div class="b4-cta-copy">
     <h2>You've met the team.</h2>
     <h2>Now train with them.</h2>

@@ -43,4 +43,10 @@ describe("vercel redirects", () => {
       expect(row?.statusCode).toBe(301);
     }
   });
+
+  it("sends the old WordPress feeds, archives and sitemaps somewhere useful (no 404s after launch)", () => {
+    const dest = (source: string) => vercel.redirects.find((rule) => rule.source === source && !rule.has)?.destination;
+    for (const source of ["/feed", "/feed/", "/comments/feed", "/comments/feed/", "/category/(.*)", "/home", "/home/"]) expect(dest(source)).toBe("/");
+    for (const source of ["/sitemap_index.xml", "/page-sitemap.xml", "/wp-sitemap.xml"]) expect(dest(source)).toBe("/sitemap.xml");
+  });
 });

@@ -364,6 +364,16 @@ function isMessage(field: FormField): boolean {
         say(form.dataset["successValue"] || "Thank you! We will be in touch shortly!", "ok");
         return;
       }
+      if (result.kind === "received") {
+        // Stored by Central Forms, delivery pending: continue as a success, without the conversion event.
+        if (form.dataset["successType"] === "redirect" && form.dataset["successValue"]) {
+          location.assign(form.dataset["successValue"]);
+          return;
+        }
+        form.reset();
+        say("Thank you! We received your message. If you need us sooner, please call", "ok", true);
+        return;
+      }
       if (result.kind === "invalid") say("Please check the form, or call", "error", true);
       else if (result.kind === "rate_limited") say("Please wait a moment and try again, or call", "error", true);
       else if (result.kind === "not_sent") say("This preview cannot send the form. Please call", "info", true);

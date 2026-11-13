@@ -265,10 +265,11 @@ em, i {
   text-decoration: none;
 }
 .b4-cta {
-  background: #285276 !important;
-  background-image: none !important;
+  /* Closing band keeps live's gym photo under a dark overlay (Rule 4.3: a dark band; Rule 0.4: keep the photos). */
+  background-color: #000 !important;
+  background-size: auto, cover !important;
   min-height: 0 !important;
-  padding: 48px 0 !important;
+  padding: 64px 0 !important;
 }
 .b4-cta-copy {
   box-sizing: border-box;
@@ -292,10 +293,10 @@ em, i {
   text-decoration: none;
 }
 .hs-book {
-  background: #d6352f !important;
-  background-image: none !important;
+  /* Closing band keeps live's photo under a dark overlay (Rule 4.3: a dark band; Rule 0.4: keep the photos). */
+  background-color: #000 !important;
+  background-size: cover !important;
 }
-.hs-book h2 { color: #fff !important; }
 .hs-book a:not(.plain) { white-space: nowrap; }
 
 .contact-photos {

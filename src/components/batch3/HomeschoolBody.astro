@@ -1,8 +1,10 @@
 ---
 import climbBg from "../../assets/media/2024-02-rock-climbing.webp";
+import bookBg from "../../assets/media/2023-03-book-now-bg.jpg";
 import { site } from "../../data/site";
 
 const climb = typeof climbBg === "string" ? climbBg : climbBg.src;
+const book = typeof bookBg === "string" ? bookBg : bookBg.src;
 const trial = "https://checkout.square.site/merchant/MLXTPBS97BGYV/checkout/B2M6XBNLKD4ZKFEUAPK4HWCQ";
 ---
 
@@ -41,7 +43,7 @@ const trial = "https://checkout.square.site/merchant/MLXTPBS97BGYV/checkout/B2M6
   </div>
 </section>
 
-<section class="b3 b3-band hs-book">
+<section class="b3 b3-band hs-book" style={`background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('${book}'); background-position: 35% 50%`}>
   <div class="b3-wrap">
     <h2>Come Join the Fun!</h2>
     <h4>Homeschoolers have the unique opportunity to enjoy exciting activities at Springfield Warrior Sports.</h4>

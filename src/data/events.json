@@ -188,7 +188,7 @@
         "required": true
       },
       {
-        "kind": "text",
+        "kind": "email",
         "name": "emailAddress",
         "label": "Email Address",
         "required": true
@@ -312,7 +312,7 @@
         "required": true
       },
       {
-        "kind": "text",
+        "kind": "email",
         "name": "emailAddress",
         "label": "Email Address",
         "required": true
