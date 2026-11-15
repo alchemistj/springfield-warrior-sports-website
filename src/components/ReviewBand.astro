@@ -7,13 +7,14 @@ interface Props {
   title?: string;
   sub?: string;
   as?: "h1" | "h2";
+  continued?: boolean;
 }
-const { text, by, title, sub, as = "h2" } = Astro.props;
+const { text, by, title, sub, as = "h2", continued = false } = Astro.props;
 const Title = as;
 const icon = quoteIcon as { src: string; width: number; height: number };
 ---
 
-<section class="review-band">
+<section class:list={["review-band", { continued }]}>
   <div class="review-inner">
     {title && <Title class="review-title">{title}</Title>}
     {sub && <h3 class="review-sub">{sub}</h3>}
@@ -30,6 +31,7 @@ const icon = quoteIcon as { src: string; width: number; height: number };
     background: #e5eaed;
     padding: 36px 0;
   }
+  .review-band.continued { padding-top: 8px; }
   .review-inner {
     box-sizing: border-box;
     width: min(var(--content-max), calc(100% - var(--content-pad) * 2));

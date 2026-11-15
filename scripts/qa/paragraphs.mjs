@@ -64,6 +64,14 @@ function collect({ maxLines, withReviews }) {
       if (t.length >= 25) out.push({ text: t, lines: parts.length > 1 ? null : lines });
     }
   }
+  // The booking page shows the same three steps as a list. The words still count as that one paragraph.
+  for (const list of document.querySelectorAll("ol.book-steps")) {
+    if (list.closest(SKIP)) continue;
+    const cs = getComputedStyle(list);
+    if (cs.display === "none" || cs.visibility === "hidden") continue;
+    const text = norm([...list.querySelectorAll("li")].map((li) => li.textContent || "").join(" "));
+    if (text.length >= 25) out.push({ text, lines: list.querySelectorAll("li").length });
+  }
   return out;
 }
 

@@ -37,11 +37,9 @@ const pay: Record<string, { href: string; tone: string }> = {
 const link = pay[slug] ?? { href: "", tone: "red" };
 ---
 
-<section
-  class:list={["b4-thanks", { plain: !page.photo, wide: page.wide, feedback: slug === "thank-you-for-your-feedback" }]}
-  style={page.photo ? `--thanks-h:${page.h}px;--thanks-photo:url('${photo.src}')` : undefined}
->
+<section class:list={["b4-thanks", { plain: !page.photo, wide: page.wide, feedback: slug === "thank-you-for-your-feedback" }]}>
   <div class="col">
+    <div class="thanks-copy">
     <h2>{page.title}</h2>
     {
       slug === "registered-for-day-camps" ? (
@@ -75,6 +73,7 @@ const link = pay[slug] ?? { href: "", tone: "red" };
         </p>
       )
     }
-    {page.photo && <img class="shot" src={photo.src} alt="" width="350" height="312" />}
+    </div>
+    {page.photo && <img class="shot" src={photo.src} alt="" width={photo.width} height={photo.height} />}
   </div>
 </section>

@@ -1158,8 +1158,12 @@ body { position: relative; }
   height: 70vh;
   min-height: 280px;
   overflow: hidden;
-  background: #f2efe9;
+  background-color: #e7e2d8;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
+.contact-map .map-frame { height: 100%; }
 .map-art {
   position: absolute;
   inset: 0;
@@ -1213,6 +1217,10 @@ body { position: relative; }
 .map-frame iframe.map-pending {
   opacity: 0;
   pointer-events: none;
+}
+.map-frame iframe.map-live {
+  z-index: 2;
+  background: #fff;
 }
 
 .steps {
