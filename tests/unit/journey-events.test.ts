@@ -225,6 +225,7 @@ describe("journey events", () => {
     expect(isContactHref("tel:+14170000000")).toBe(false);
     expect(isContactHref("sms:+14170000000")).toBe(false);
 
+    // The trust bar is gone from every page (Josh, 15 Nov 2026; Rule 9 waived). A leftover .trust-bar still counts as hero.
     const trust = fakeEl("a", { href: "tel:+14170000000" }, fakeEl("div", { class: "trust trust-bar" }));
     const menu = fakeEl(
       "a",

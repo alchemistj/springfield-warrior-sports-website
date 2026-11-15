@@ -14,6 +14,9 @@ test("desktop and mobile layout", async ({ page }) => {
   expect(desktopScroll).toBeLessThanOrEqual(1);
   await expect(page.locator(".call-bar")).toBeHidden();
   await expect(page.locator("[data-menu]")).toBeHidden();
+  // Josh, 15 Nov 2026: no trust bar, and no red Book a Party button in the menu.
+  await expect(page.locator(".trust-bar")).toHaveCount(0);
+  await expect(page.locator(".nav-cta")).toHaveCount(0);
 
   await page.evaluate(() => window.scrollTo(0, 900));
   await page.waitForTimeout(100);
@@ -29,20 +32,25 @@ test("desktop and mobile layout", async ({ page }) => {
   await expect(page.locator(".call-bar")).toBeVisible();
   const bar = page.locator(".call-bar");
   await expect(bar.locator("a").nth(0)).toHaveAttribute("href", "tel:+14178947319");
-  await expect(bar.locator("a").nth(1)).toHaveAttribute("href", "/schedule-birthday-party/");
+  // Josh, 15 Nov 2026: the second button is Contact Us, not Book a Party.
+  await expect(bar.locator("a").nth(1)).toHaveAttribute("href", "/contact/");
+  await expect(bar.locator("a").nth(1)).toHaveText("Contact Us");
   const desktopLinks = await page.locator("#site-menu a").evaluateAll((nodes) => nodes.map((node) => (node.textContent || "").trim()));
   await page.locator("[data-menu]").click();
   await expect(page.locator("#site-menu")).toBeVisible();
   const openLinks = await page.locator("#site-menu a").evaluateAll((nodes) => nodes.map((node) => (node.textContent || "").trim()));
   expect(openLinks).toEqual(desktopLinks);
+  expect(openLinks).not.toContain("Book a Party");
   expect(openLinks.length).toBeGreaterThan(5);
 });
 
-test("party page call bar jumps to the form", async ({ page }) => {
+test("booking page call bar stays on Contact Us", async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto("/schedule-birthday-party/");
-  await expect(page.locator(".call-bar a").nth(1)).toHaveAttribute("href", "#party-form");
+  // Josh, 15 Nov 2026: Contact Us replaces the old jump-to-form Book a Party button.
+  await expect(page.locator(".call-bar a").nth(1)).toHaveAttribute("href", "/contact/");
   await expect(page.locator("#party-form")).toBeVisible();
+  await expect(page.locator("h1")).toHaveText("Book a Birthday Party");
 });
 
 test("contact map does not request Google on load", async ({ page }) => {
