@@ -85,7 +85,11 @@ for (const slug of slugs) {
   const live = await browser.newPage();
   await live.route("**/*", (r) => r.abort());
   await live.setContent(readFileSync(path.join("source/pages", slug, "rendered.html"), "utf8"), { waitUntil: "domcontentloaded" }).catch(() => {});
-  const IGNORE = [/indicates required fields/i, /^Meet The Springfield Warrior Sports Team$/i, /early bird price for the January 13th/i];
+  const IGNORE = [/indicates required fields/i, /^Meet The Springfield Warrior Sports Team$/i, /early bird price for the January 13th/i,
+    // Josh, 15 Nov 2026: the day-camps-for-school-breaks offer is removed until the client confirms it still runs.
+    /^Elevate your children's school break/i,
+    // Live breaks one best-gyms sentence across three lines; the build joins it back into one sentence (same words).
+    /^Instead, think obstacle courses, warped walls/i, /^and train like never before, check out our Adult Fitness/i, /^one of the most unique gyms around\. We/i];
   const liveParas = (await live.evaluate(collect, { maxLines: 0, withReviews: true })).filter((l) => !IGNORE.some((re) => re.test(l.text)));
   await live.close();
 
