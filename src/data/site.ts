@@ -82,9 +82,9 @@ export const footerLinks = [
   { label: "Meet the Team", path: "/meet-the-team/" },
 ] as const;
 
+// Josh, 15 Nov 2026: the sticky bar is Call and Contact Us. No Book a Party.
 export const stickyBar = {
   callLabel: "Call",
-  bookLabel: "Book a Party",
-  bookPath: "/schedule-birthday-party/",
-  formAnchor: "#party-form",
+  contactLabel: "Contact Us",
+  contactPath: "/contact/",
 } as const;

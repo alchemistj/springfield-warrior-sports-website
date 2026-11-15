@@ -39,6 +39,7 @@ For a single-location venue:
 * **Keep the URLs it already has** (`/birthday-parties/`, not `/springfield/birthday-parties/`). Rebuild every page at its current address. Redirects (Rule 15) carry over the old site's existing redirects and add only what changed.
 * **Doesn't apply:** Rule 2 (city-first URLs, city sections, per-city contact and FAQ, the city switcher), the city parts of Rule 3 and Rule 12, the service-page section order in Rule 11, and the "Serving \[City\]" line in Rule 9.
 * **Still applies:** one `cityConfig.ts` entry holds the NAP, address and service area, with no switcher. Everything else in this file applies as usual: the header with hide-on-scroll and hamburger (Rule 5, minus the switcher), the sticky mobile bottom bar (Rule 6), phone and NAP rules (Rule 7), the hero and first frame (Rule 8), a trust bar under the hero (Rule 9), embeds (Rule 10), SEO files (Rule 13), Central Forms (Rule 14), the performance gate (Rule 16) and the tests (Rule 17).
+* **Rule 9 is waived for Springfield Warrior Sports** (Josh, 15 Nov 2026). This site has no trust bar on any page. The home page keeps the dark program-links strip (Kids, Adults, Summer Camps, Community, Birthday Parties) under the hero. Do not add the trust bar back.
 * **Thank-you pages are allowed** when the business uses them for a next step, such as a payment link after an event registration. The form posts to Central Forms first and sends the visitor to that page only after a confirmed success (Central Forms SOP §4d). Keep thank-you pages out of the sitemap.
 * **A rebuild keeps the human work and replaces the code. The Astro system always wins over the old site's code.** The old site's design and copy were made and checked by people Josh trusts. Keep them: the words, photos, brand colours and fonts, the look and feel of each section, page order and URLs. Its code was written to the standards of its day, which are usually years behind this system (even Springfield Warrior Sports, built in 2023 to Josh's framework then, is behind it now).
   * Everything structural comes from these rules, never from the old code: layout and widths (Rule 4, the 900px column), header and menu (Rule 5), mobile bar (6), phone numbers (7), hero (8), trust bar (9), CTAs and embeds (10), page templates (11), the footer (Rule 4.4), forms (14), SEO files (13) and performance (16).
@@ -231,6 +232,7 @@ The full how-to and the proof are in `docs/sop/astro-first-frame-and-pagespeed.m
 
 # **RULE 9 — TRUST BAR**
 
+* **Waived for Springfield Warrior Sports** (Josh, 15 Nov 2026). This site does not show a trust bar. The note under Rule 0.4 is the site decision. The bullets below still apply to other sites.
 * Directly under the hero on every page: the business's confirmed credentials (certifications, BBB rating if confirmed, owner-on-every-job type claims from the brief).
 * Second line: "Serving \[City\] & \[Area\]" · the primary offer · "Call \[Owner\]: \[phone\]" as click-to-call.
 * The same trust bar design on every city. Only the serving line changes.

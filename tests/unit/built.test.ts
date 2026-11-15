@@ -50,6 +50,33 @@ describe("built site", () => {
     }
   });
 
+  it("follows the 15 Nov decisions: no trust bar, no day-camps card, booking page unindexed", () => {
+    // Josh, 15 Nov 2026. Rule 9 is waived, so no page prints a trust bar.
+    // The day-camps card left home; its paragraph lives on summer camps, where the old URL redirects.
+    // Courtney C. and Nick P. moved to kids classes so home keeps Jennifer L. and Lee C.
+    const home = distHtml("/");
+    expect(home).not.toContain("trust-bar");
+    expect(home).not.toContain("Day Camps for School Breaks");
+    expect(home).not.toContain("Courtney C.");
+    expect(home).not.toContain("Nick P.");
+    expect(home).toContain("Jennifer L.");
+    expect(home).toContain("Lee C.");
+    const kids = distHtml("/kids-classes/");
+    expect(kids).toContain("Courtney C.");
+    expect(kids).toContain("Nick P.");
+    const camps = distHtml("/summer-camps-in-springfield-mo/");
+    expect(camps).toContain("Elevate your children's school break");
+    const book = distHtml("/schedule-birthday-party/");
+    expect(book).toContain("noindex, nofollow");
+    expect(book).toContain("Book a Birthday Party");
+    expect(book).not.toContain("trust-bar");
+    expect(book).not.toContain('class="atf-photo');
+    const about = distHtml("/about/");
+    expect(about).not.toContain("trust-bar");
+    const sitemap = readFileSync("dist/sitemap.xml", "utf8");
+    expect(sitemap).not.toContain("/schedule-birthday-party/");
+  });
+
   it("shows the agreed address and keeps the NAP exact in JSON-LD", () => {
     for (const urlPath of ["/", "/contact/"]) {
       const html = decodeHtml(distHtml(urlPath));

@@ -1,14 +1,11 @@
 ---
 import { site, stickyBar } from "../data/site";
-
-const onPartyPage = Astro.url.pathname === stickyBar.bookPath;
-const bookHref = onPartyPage ? stickyBar.formAnchor : stickyBar.bookPath;
 ---
 
-<div class="call-bar" role="region" aria-label="Call or book a party">
+<div class="call-bar" role="region" aria-label="Call or contact Springfield Warrior Sports">
   <div class="call-bar-row">
     <a class="cb-btn" href={site.phone.tel}>{stickyBar.callLabel}</a>
-    <a class="cb-btn" href={bookHref}>{stickyBar.bookLabel}</a>
+    <a class="cb-btn" href={stickyBar.contactPath}>{stickyBar.contactLabel}</a>
   </div>
 </div>
 

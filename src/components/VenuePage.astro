@@ -318,7 +318,7 @@ function nextPhoto(): ContentImage | undefined {
 
 <BaseLayout route={route}>
   {
-    hero && (
+    hero && page.slug !== "schedule-birthday-party" && (
       <img
         slot="hero-photo"
         class:list={["atf-photo", { "about-hero": page.slug === "about" }]}
@@ -334,7 +334,7 @@ function nextPhoto(): ContentImage | undefined {
     )
   }
   {
-    batch4 ? (
+    page.slug === "schedule-birthday-party" ? null : batch4 ? (
       <div slot="hero" class="b4-hero">
         <Batch4Chrome slug={page.slug} />
       </div>
@@ -387,23 +387,6 @@ function nextPhoto(): ContentImage | undefined {
       </div>
     )
   }
-
-  <section class="trust trust-bar" aria-label="Credentials and how to reach Springfield Warrior Sports">
-    <div class="wrap trust-row">
-      <p class="trust-line">
-        <span class="trust-item">WNL regional qualifier host</span>
-        <span class="trust-sep" aria-hidden="true">·</span>
-        <span class="trust-item">CSNA competitive youth team</span>
-      </p>
-      <p class="trust-line">
-        <span class="trust-item">Serving Springfield, MO</span>
-        <span class="trust-sep" aria-hidden="true">·</span>
-        <span class="trust-item">Try Open Gym for $10</span>
-        <span class="trust-sep" aria-hidden="true">·</span>
-        <a class="trust-item" href={site.phone.tel}>Call {site.phone.display}</a>
-      </p>
-    </div>
-  </section>
 
   {
     bullet && (
