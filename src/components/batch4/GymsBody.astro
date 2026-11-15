@@ -127,12 +127,17 @@ const ninjaClass = "Adult Ninja Fitness class";
   <div class="b4-band">
     <div class="b4-wrap b4-call">
     {
-      call.map((text) => {
+      /* Live breaks one sentence across three lines ("swing, climb, / and train … Springfield Warrior Sports / one of the most unique gyms around.").
+         Join it back into one sentence; the last line's own second sentence stays its own paragraph. */
+      [call[0], `${call[1]} ${call[2]} one of the most unique gyms around.`, call[3].replace(/^one of the most unique gyms around\.\s*/, "")].map((text) => {
         if (text.includes(linkClass)) {
           const at = text.indexOf(linkClass);
+          const hot = "one of the most unique gyms around.";
+          const after = text.slice(at + linkClass.length);
+          const h = after.indexOf(hot);
           return (
             <p>
-              {text.slice(0, at)}<a class="red" href="/fitness-classes/">{linkClass}</a>{text.slice(at + linkClass.length)}
+              {text.slice(0, at)}<a class="red" href="/fitness-classes/">{linkClass}</a>{h > -1 ? <>{after.slice(0, h)}<span class="hot">{hot}</span>{after.slice(h + hot.length)}</> : after}
             </p>
           );
         }

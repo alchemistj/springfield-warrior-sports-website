@@ -37,6 +37,8 @@ describe("built site", () => {
       // A review may move to the page it talks about. It still has to be visible somewhere.
       const missing = sentences(mainContent(source))
         .filter((sentence) => !sentence.includes("January 13th competitions will go up"))
+        // Josh, 15 Nov 2026: the day-camps-for-school-breaks card and its text are removed until the client confirms the offer.
+        .filter((sentence) => !/school break with dynamic and thrilling|flexible half-day or full-day camp options/.test(sentence))
         .filter((sentence) => !text.includes(sentence))
         .filter((sentence) => ![...visible.values()].some((other) => other.includes(sentence)));
       expect(missing, page.slug).toEqual([]);
@@ -52,7 +54,7 @@ describe("built site", () => {
 
   it("follows the 15 Nov decisions: no trust bar, no day-camps card, booking page unindexed", () => {
     // Josh, 15 Nov 2026. Rule 9 is waived, so no page prints a trust bar.
-    // The day-camps card left home; its paragraph lives on summer camps, where the old URL redirects.
+    // The day-camps card and its text are gone from the site until the client confirms the offer still runs.
     // Courtney C. and Nick P. moved to kids classes so home keeps Jennifer L. and Lee C.
     const home = distHtml("/");
     expect(home).not.toContain("trust-bar");
@@ -65,7 +67,7 @@ describe("built site", () => {
     expect(kids).toContain("Courtney C.");
     expect(kids).toContain("Nick P.");
     const camps = distHtml("/summer-camps-in-springfield-mo/");
-    expect(camps).toContain("Elevate your children's school break");
+    expect(camps).not.toContain("Elevate your children's school break");
     const book = distHtml("/schedule-birthday-party/");
     expect(book).toContain("noindex, nofollow");
     expect(book).toContain("Book a Birthday Party");

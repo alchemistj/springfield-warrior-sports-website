@@ -53,15 +53,19 @@ test("booking page call bar stays on Contact Us", async ({ page }) => {
   await expect(page.locator("h1")).toHaveText("Book a Birthday Party");
 });
 
-test("contact map does not request Google on load", async ({ page }) => {
+test("contact map shows the picture, then the Google map when it is in view", async ({ page }) => {
+  await page.setViewportSize({ width: 1440, height: 900 });
   const hits: string[] = [];
   page.on("request", (request) => {
     const url = request.url();
-    if (/maps\.google|maps\.googleapis|googletagmanager/.test(url)) hits.push(url);
+    if (/maps\.google|maps\.googleapis/.test(url)) hits.push(url);
   });
   await page.goto("/contact/");
-  await page.waitForTimeout(500);
-  expect(hits).toEqual([]);
+  const frame = page.locator("[data-map]");
+  await expect(frame.locator("img.map-art")).toBeAttached();
+  await frame.scrollIntoViewIfNeeded();
+  await expect(frame.locator("iframe")).toBeAttached({ timeout: 8000 });
+  expect(hits.length).toBeGreaterThan(0);
 });
 
 test("screenshots of every page", async ({ browser }) => {

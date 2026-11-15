@@ -29,17 +29,8 @@ const weeks: { date: string; times: string[] }[] = [
     <p>Kids will get the chance to work with our Ninja Warrior trainers, and participate in physical activities designed to enhance their balance, core, and overall strength. We provide healthy snacks each day as we educate children on <strong>making good nutritional choices</strong> that lead to improved health and wellness.</p>
     <p>Plus, there’s a <strong class="camp-heavy">competition at every camp</strong> that awards the top place-getters a spot in the final championship at the end of summer – how cool is that?!</p>
     <p>Come join us at our camps, which are perfect for children approximately aged 6 to 15.</p>
-    <!-- The home "Day Camps for School Breaks" card is gone (Josh, 15 Nov 2026). These words stay here, where that deleted page redirects. -->
-    <p>Elevate your children's school break with dynamic and thrilling experiences at our engaging day camps! Choose from our flexible half-day or full-day camp options, where kids can enjoy a blend of recreation, games, sports, and the opportunity to forge lasting friendships.</p>
   </div>
 </section>
-
-<ReviewBand
-  title="Client Testimonials"
-  sub="What Our Clients Say"
-  text="We had our son’s 10th birthday here. All of the kids had a great time. They set up an obstacle course for the kids. They loved the whole experience. The favorite was the curved wall to run up. That was everyone’s challenge for the night. We will be visiting again for sure."
-  by="- Jennifer L."
-/>
 
 <section class="b2-block b2-grey">
   <div class="b2-wrap camp-layout">
@@ -61,7 +52,9 @@ const weeks: { date: string; times: string[] }[] = [
       <p class="camp-price">Note:</p>
       <p class="camp-price">Summer camp investment monies can be pro-rated if your child can not attend the entire week.</p>
     </div>
-    {photo.src && <img class="camp-photo" src={photo.src} alt="" width={photo.width} height={photo.height} />}
+    <div class="camp-photo-frame">
+      {photo.src && <img class="camp-photo" src={photo.src} alt="" width={photo.width} height={photo.height} />}
+    </div>
   </div>
   <div class="b2-wrap">
     <h2 class="camp-reg-title">Springfield Warrior Registration</h2>
@@ -78,6 +71,13 @@ const weeks: { date: string; times: string[] }[] = [
   </div>
 </section>
 <ReviewBand
+  title="Client Testimonials"
+  sub="What Our Clients Say"
+  text="We had our son’s 10th birthday here. All of the kids had a great time. They set up an obstacle course for the kids. They loved the whole experience. The favorite was the curved wall to run up. That was everyone’s challenge for the night. We will be visiting again for sure."
+  by="- Jennifer L."
+/>
+<ReviewBand
+  continued
   text="My daughter started training here 3 years ago at 8, and she still loves it!! Owner and coaching staff are all super encouraging. We live an hour away but make the drive twice a week as often as possible. Training here has not only helped her get stronger physically but increased her confidence in general. Anything that makes kids want to challenge themselves to get better and better is worth it!"
   by="- Lee C."
 />

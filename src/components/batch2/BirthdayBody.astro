@@ -22,18 +22,11 @@ const memories = typeof memoriesBg === "string" ? memoriesBg : memoriesBg.src;
   </div>
 </section>
 
-<ReviewBand
-  title="Client Testimonials"
-  sub="What Our Clients Say"
-  text="100% recommend Springfield Warrior Sports! We had my sons 5th birthday here and it was painless and SO fun! The staff answered all questions I had, gave reminders for upcoming party, and interacted with the kids during the party. It has been weeks since the party and my son is still talking about it. We will absolutely be back!"
-  by="- CHEYENNE M."
-/>
-
 <section class="b2-block b2-grey">
   <div class="b2-wrap">
     <h2 class="bd-stress-title">Warrior Sports Takes the Stress Out of Your Birthday Party Planning</h2>
     <div class="bd-split">
-      {invitation.src && <img src={invitation.src} alt="" width={invitation.width} height={invitation.height} />}
+      {invitation.src && <img class="flyer" src={invitation.src} alt="" width={invitation.width} height={invitation.height} />}
       <div>
         <p>At Springfield Warrior Sports, we want to take the stress out of your party planning - schedule your birthday party with us, and let us do the rest — including cleanup! <br /><br />Each party lasts for a total of 1.5 hours. Included in the party is one hour of gym time, featuring open play and an obstacle course set up and facilitated by our Crew. Approximately 30 minutes can be used for cake, presents, and pizza! (optional). <br /><br />The birthday child will receive a Springfield Warrior Sports T-shirt, and the week after their party, they get to try a ninja class for free.</p>
         <p class="bd-note">Note: free customized party invitations are available upon request.</p>
@@ -58,11 +51,6 @@ const memories = typeof memoriesBg === "string" ? memoriesBg : memoriesBg.src;
   </div>
 </section>
 
-<ReviewBand
-  text="We have had several birthday parties here and each time has been wonderful. It’s affordable and does not require a lot of effort on my part. The best part is how much fun the kids have! They never want to leave! The staff were all engaged with the kids and joined in on the nerf battle. I think they were having as much fun as the kids! They made sure we had everything we needed. We also enjoy coming to open gym. It’s the perfect place for kids to burn some energy. We love it here and we highly recommend it!"
-  by="- ADRIENNE E."
-/>
-
 <section class="bd-book" style={`background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url('${book}')`}>
   <div class="b2-wrap">
     <h2>Book Now!</h2>
@@ -71,7 +59,7 @@ const memories = typeof memoriesBg === "string" ? memoriesBg : memoriesBg.src;
   </div>
 </section>
 
-<section class="b2-block">
+<section class="b2-block bd-options">
   <div class="b2-wrap">
     <h2 class="bd-more">More Birthday Party Options at Springfield Warrior Sports</h2>
     <p class="bd-center">Want to feed the birthday party or have birthday battles instead of an obstacle course race?</p>
@@ -86,7 +74,7 @@ const memories = typeof memoriesBg === "string" ? memoriesBg : memoriesBg.src;
       </div>
     </div>
     <div class="bd-battles">
-      {laser.src && <img class="bd-laser" src={laser.src} alt="" width={laser.width} height={laser.height} />}
+      {laser.src && <img class="bd-laser face" src={laser.src} alt="" width={laser.width} height={laser.height} />}
       <div>
         <h3>Have Battles in Our Obstacle Course Gym</h3>
         <h4>Nerf Battle Parties</h4>
@@ -101,15 +89,29 @@ const memories = typeof memoriesBg === "string" ? memoriesBg : memoriesBg.src;
   </div>
 </section>
 
-<ReviewBand
-  text="Great place to have a birthday party. The laser tag option was really cool. My boys had a blast. Plus my son loves their summer camp program & he looks forward to it every summer!"
-  by="- SUSAN K."
-/>
-
-<section class="bd-mem" style={`background-image: url('${memories}'), linear-gradient(#e5eaed, #e5eaed)`}>
-  <div class="b2-wrap bd-mem-copy">
-    <h2>Create Amazing Memories</h2>
-    <p>Create unforgettable memories with your kids and their friends in an uber-kid-friendly atmosphere. Your child will have the time of their life playing in our obstacle course gym while you sit back and relax without having to stress out about setting up or cleaning up afterward. <br /><br />Plus, our cooler of Gatorade keeps everyone well-hydrated during all that physical activity!<br /><br />Shoot us a <a href="/schedule-birthday-party/">message here with your desired birthday party dates</a>, or call <a href={site.phone.tel}>{site.phone.display}</a> to book your birthday experience at Springfield Warrior Sports!</p>
+<section class="bd-mem">
+  <div class="b2-wrap bd-mem-grid">
+    <div class="bd-mem-copy">
+      <h2>Create Amazing Memories</h2>
+      <p>Create unforgettable memories with your kids and their friends in an uber-kid-friendly atmosphere. Your child will have the time of their life playing in our obstacle course gym while you sit back and relax without having to stress out about setting up or cleaning up afterward. <br /><br />Plus, our cooler of Gatorade keeps everyone well-hydrated during all that physical activity!<br /><br />Shoot us a <a href="/schedule-birthday-party/">message here with your desired birthday party dates</a>, or call <a href={site.phone.tel}>{site.phone.display}</a> to book your birthday experience at Springfield Warrior Sports!</p>
+    </div>
     <img class="bd-mem-photo" src={memories} alt="" width="350" height="260" />
   </div>
 </section>
+
+<ReviewBand
+  title="Client Testimonials"
+  sub="What Our Clients Say"
+  text="100% recommend Springfield Warrior Sports! We had my sons 5th birthday here and it was painless and SO fun! The staff answered all questions I had, gave reminders for upcoming party, and interacted with the kids during the party. It has been weeks since the party and my son is still talking about it. We will absolutely be back!"
+  by="- CHEYENNE M."
+/>
+<ReviewBand
+  continued
+  text="We have had several birthday parties here and each time has been wonderful. It’s affordable and does not require a lot of effort on my part. The best part is how much fun the kids have! They never want to leave! The staff were all engaged with the kids and joined in on the nerf battle. I think they were having as much fun as the kids! They made sure we had everything we needed. We also enjoy coming to open gym. It’s the perfect place for kids to burn some energy. We love it here and we highly recommend it!"
+  by="- ADRIENNE E."
+/>
+<ReviewBand
+  continued
+  text="Great place to have a birthday party. The laser tag option was really cool. My boys had a blast. Plus my son loves their summer camp program & he looks forward to it every summer!"
+  by="- SUSAN K."
+/>

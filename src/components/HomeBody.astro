@@ -116,7 +116,7 @@ const lee = {
       <p>We believe in results and that a life of health and fitness shouldn’t be boring. Our indoor obstacle training facility is like a fitness playground for all ages.</p>
       <p class="aside">The best part?</p>
       <p>You don’t need any previous experience or knowledge — all you need is the determination to reach your fitness goals!</p>
-      <p class="hours-title">Open Gym Hours</p>
+      <h3 class="hours-title">Open Gym Hours</h3>
       <ul class="hours">
         {hours.map((line) => {
           const split = line.indexOf(": ");
@@ -235,10 +235,14 @@ const lee = {
     color: rgb(40, 82, 118);
     font-weight: 600;
   }
-  .hours-title {
-    margin: 8px 0 8px;
+  .home-ready-copy h3.hours-title {
+    margin: 16px 0 10px;
     color: rgb(219, 58, 52);
+    font-family: Heebo, "Arial Narrow", sans-serif;
+    font-size: 22px;
     font-weight: 800;
+    line-height: 1.15;
+    text-transform: none;
   }
   .hours {
     margin: 0 0 12px;
@@ -380,6 +384,7 @@ const lee = {
     .home-ready-copy,
     .home-ready-photos { order: 0; }
     .home-ready-copy h2 { font-size: 40px; }
+    .home-ready-copy h3.hours-title { font-size: 30px; font-weight: 800; color: rgb(219, 58, 52); }
     .home-ready-copy h3 { font-size: 24px; }
     .offers-title { font-size: 36px; margin-bottom: 18px; }
     .offer-copy h3 { font-size: 24px; }
@@ -387,7 +392,7 @@ const lee = {
     .warrior-actions .btn { width: auto; }
     .warrior { padding: 48px 0 20px; }
     .warrior-grid {
-      grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+      grid-template-columns: minmax(0, 0.82fr) minmax(0, 1.18fr);
       column-gap: 28px;
       align-items: center;
     }
