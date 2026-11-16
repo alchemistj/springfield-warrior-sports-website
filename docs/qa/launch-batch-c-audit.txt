@@ -1,0 +1,164 @@
+
+######## 390px ########
+
+390 / scroll=390 OK
+  H1
+    L24 R187 "Stronger"
+
+390 /birthday-parties/ scroll=390 OK
+  H1
+    L42 R42 "Kids Will Have a Blast, and You Can Relax"
+
+390 /schedule-birthday-party/ scroll=390 OK
+  H1
+    L24 R24 "Book a Birthday Party"
+
+390 /kids-classes/ scroll=390 OK
+  H1
+    L38 R38 "Fun and Challenging"
+
+390 /parkour/ scroll=390 OK
+  H1
+    L24 R24 "Parkour Gym in Springfield MO | Springfield Warrior Sports"
+
+390 /fitness-classes/ scroll=390 OK
+  H1
+    L24 R24 "The Most Diverse (Least Boring) Fitness Classes in Springfield, "
+
+390 /personal-training/ scroll=390 OK
+  H1
+    L24 R24 "Personal Training at Warrior Sports"
+
+390 /homeschool-sports-and-classes-springfield-mo/ scroll=390 OK
+  H1
+    L55 R55 "Homeschool Kids Sports"
+
+390 /summer-camps-in-springfield-mo/ scroll=390 OK
+  H1
+    L38 R38 "Kids Stay Fit and Healthy"
+
+390 /competitions/ scroll=390 OK
+  H1
+    L29 R29 "Test Your Skills on Our Fun and Competitive Courses"
+
+390 /wnl-competitions/ scroll=390 OK
+  H1
+    L29 R29 "WNL Competitions in Springfield Missouri"
+
+390 /nerf-wars/ scroll=390 OK
+  H1
+    L24 R24 "Nerf War Springfield, MO: The Ultimate Party Experience!"
+
+390 /laser-tag/ scroll=390 OK
+  H1
+    L24 R24 "Welcome to the Premier Laser Tag Gym in Springfield, MO"
+
+390 /about/ scroll=390 OK
+  H1
+    L38 R38 "Springfield Warrior Sports Community"
+
+390 /meet-the-team/ scroll=390 OK
+
+390 /best-gyms-in-springfield/ scroll=390 OK
+  H1
+    L24 R24 "Looking for the Best Gyms in Springfield, MO?"
+
+390 /contact/ scroll=390 OK
+  H1
+    L24 R24 "Our Accomplished, Award Winning Crew Is Ready to Help You Reach "
+
+390 /registered/ scroll=390 OK
+
+390 /registered-for-wnl-competition/ scroll=390 OK
+
+390 /registered-for-csna-competition/ scroll=390 OK
+
+390 /registered-for-day-camps/ scroll=390 OK
+
+390 /registered-for-summer-fun-competition/ scroll=390 OK
+
+390 /thank-you-for-your-feedback/ scroll=390 OK
+
+######## 1440px ########
+
+1440 / scroll=1440 OK
+  H1
+    L270 R891 "Stronger"
+
+1440 /birthday-parties/ scroll=1440 OK
+  H1
+    L270 R270 "Kids Will Have a Blast, and You Can Relax"
+
+1440 /schedule-birthday-party/ scroll=1440 OK
+  H1
+    L270 R270 "Book a Birthday Party"
+
+1440 /kids-classes/ scroll=1440 OK
+  H1
+    L396 R396 "Fun and Challenging"
+
+1440 /parkour/ scroll=1440 OK
+  H1
+    L270 R270 "Parkour Gym in Springfield MO | Springfield Warrior Sports"
+
+1440 /fitness-classes/ scroll=1440 OK
+  H1
+    L270 R270 "The Most Diverse (Least Boring) Fitness Classes in Springfield, "
+
+1440 /personal-training/ scroll=1440 OK
+  H1
+    L270 R270 "Personal Training at Warrior Sports"
+
+1440 /homeschool-sports-and-classes-springfield-mo/ scroll=1440 OK
+  H1
+    L270 R270 "Homeschool Kids Sports"
+
+1440 /summer-camps-in-springfield-mo/ scroll=1440 OK
+  H1
+    L270 R270 "Kids Stay Fit and Healthy"
+
+1440 /competitions/ scroll=1440 OK
+  H1
+    L270 R270 "Test Your Skills on Our Fun and Competitive Courses"
+
+1440 /wnl-competitions/ scroll=1440 OK
+  H1
+    L270 R270 "WNL Competitions in Springfield Missouri"
+
+1440 /nerf-wars/ scroll=1440 OK
+  H1
+    L303 R303 "Nerf War Springfield, MO: The Ultimate Party Experience!"
+
+1440 /laser-tag/ scroll=1440 OK
+  H1
+    L282 R282 "Welcome to the Premier Laser Tag Gym in Springfield, MO"
+
+1440 /about/ scroll=1440 OK
+  H1
+    L270 R270 "Springfield Warrior Sports Community"
+
+1440 /meet-the-team/ scroll=1440 OK
+  H1
+    L1060 R40 "Meet the Springfield Warrior Sports Team"
+
+1440 /best-gyms-in-springfield/ scroll=1440 OK
+  H1
+    L270 R270 "Looking for the Best Gyms in Springfield, MO?"
+
+1440 /contact/ scroll=1440 OK
+  H1
+    L270 R270 "Our Accomplished, Award Winning Crew Is Ready to Help You Reach "
+
+1440 /registered/ scroll=1440 OK
+
+1440 /registered-for-wnl-competition/ scroll=1440 OK
+
+1440 /registered-for-csna-competition/ scroll=1440 OK
+
+1440 /registered-for-day-camps/ scroll=1440 OK
+
+1440 /registered-for-summer-fun-competition/ scroll=1440 OK
+
+1440 /thank-you-for-your-feedback/ scroll=1440 OK
+
+0 page-widths with problems

@@ -351,7 +351,9 @@ function nextPhoto(): ContentImage | undefined {
         </h1>
       )}
       {page.slug === "personal-training" && <h1 class="pt-hero">Personal Training at Warrior Sports</h1>}
-      {page.slug === "parkour" && <h1 class="pk-hero">Parkour Gym in Springfield MO | Springfield Warrior Sports</h1>}
+      {page.slug === "parkour" && (
+        <h1 class="pk-hero"><span class="pk-keep">Parkour Gym in</span> <span class="pk-keep">Springfield MO |</span> <span class="pk-long">Springfield Warrior Sports</span></h1>
+      )}
       {page.slug === "homeschool-sports-and-classes-springfield-mo" && <h1 class="hs-hero">Homeschool Kids Sports</h1>}
       {page.slug === "laser-tag" && (
         <>

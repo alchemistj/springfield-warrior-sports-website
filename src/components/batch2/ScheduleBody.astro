@@ -29,7 +29,10 @@ const { event } = Astro.props;
 
 <style>
   .book-plain {
-    padding: 12px 0 8px;
+    padding: 48px 0 8px;
+  }
+  @media (max-width: 799px) {
+    .book-plain { padding-top: 32px; }
   }
   .book-wrap {
     box-sizing: border-box;
