@@ -11,10 +11,10 @@ interface Props {
 const { event, note } = Astro.props;
 const tone = Astro.props.tone ?? (event.id === "contact" ? "card" : "panel");
 const phone = site.phone;
-const camp = event.id === "camp-registration";
+const camp = event.id === "camp-registration" && event.formKey !== "event-waitlist";
 const hideLabels = tone === "card";
-const quietPlaceholders = event.id === "personal-training" || event.id === "laser" || event.id === "nerf";
-const requiredMark = event.id === "birthday-party" ? " *" : event.id === "laser" || event.id === "nerf" ? "*" : " (Required)";
+const quietPlaceholders = event.id === "personal-training" || event.formKey === "event-waitlist";
+const requiredMark = event.id === "birthday-party" ? " *" : event.formKey === "event-waitlist" ? "*" : " (Required)";
 
 function campChoice(choice: string): { date: string; time: string } | null {
   const match = choice.match(/^(.+?) (\d{1,2}(?::\d{2})? [AP]M - .+)$/);

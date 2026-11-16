@@ -14,7 +14,6 @@ const pages: Record<string, { title: string; h: number; wide?: boolean; photo: b
   registered: { title: "We Received Those Details, Thank You!", h: 477, photo: true },
   "registered-for-csna-competition": { title: "We Received Those Details, Thank You!", h: 465, wide: true, photo: false },
   "registered-for-day-camps": { title: "We Received Those Details, Thank You!", h: 545, photo: true },
-  "registered-for-summer-fun-competition": { title: "We Received Those Details, Thank You!", h: 505, photo: true },
   "registered-for-wnl-competition": { title: "We Received Those Details, Thank You!", h: 477, photo: true },
   "thank-you-for-your-feedback": { title: "Thank You for Your Feedback!", h: 561, photo: true },
 };
@@ -26,10 +25,6 @@ const pay: Record<string, { href: string; tone: string }> = {
   "registered-for-wnl-competition": { href: "https://springfield-warrior-sports.square.site/", tone: "red" },
   "registered-for-csna-competition": {
     href: "https://checkout.square.site/merchant/MLXTPBS97BGYV/checkout/4AIX4JFZMCKCVNT35N7AHFV7",
-    tone: "blue",
-  },
-  "registered-for-summer-fun-competition": {
-    href: "https://springfield-warrior-sports.square.site/product/summer-fun-competition-fundraiser-/217",
     tone: "blue",
   },
   "registered-for-day-camps": { href: "https://springfield-warrior-sports-102788.square.site/", tone: "red" },
@@ -46,15 +41,6 @@ const link = pay[slug] ?? { href: "", tone: "red" };
         <>
           <p class="pay"><a href={link.href}>{`Click here to finalize the registration with your payment.`}</a></p>
           <p>The link above has a few "product" options, simply select the appropriate camp you are attending, enter your payment information, and done!</p>
-          <p>
-            If you encounter any problems or have any questions, please call or text us at <a class="red" href={tel}>{phone}</a>.
-          </p>
-        </>
-      ) : slug === "registered-for-summer-fun-competition" ? (
-        <>
-          <p>
-            Click here to finalize the registration with your payment, <a class={link.tone} href={link.href}>{link.href}</a>
-          </p>
           <p>
             If you encounter any problems or have any questions, please call or text us at <a class="red" href={tel}>{phone}</a>.
           </p>

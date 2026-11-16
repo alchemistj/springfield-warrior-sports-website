@@ -203,7 +203,11 @@ export const redirects: readonly RedirectRule[] = [
   },
   {
     "source": "/registered-for-summer-fun-competition",
-    "destination": "/registered-for-summer-fun-competition/"
+    "destination": "/competitions/"
+  },
+  {
+    "source": "/registered-for-summer-fun-competition/",
+    "destination": "/competitions/"
   },
   {
     "source": "/thank-you-for-your-feedback",

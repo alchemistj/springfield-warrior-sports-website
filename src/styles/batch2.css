@@ -812,6 +812,33 @@
 .wnl-form em { font-style: italic; }
 .wnl-wait strong { font-weight: 600; }
 .wnl-form .b2-literata { width: min(898px, 100%); }
+.event-soon {
+  width: min(640px, 100%);
+  max-width: 100%;
+  margin: 0 0 16px;
+  color: rgb(12, 17, 21);
+  font-family: Literata, Georgia, serif;
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+.wnl-soon,
+.comp-soon,
+.camp-soon {
+  max-width: 100%;
+  margin: 12px 0 0;
+  color: rgba(0, 0, 0, 0.7);
+  font-family: Epilogue, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+.wnl-soon a,
+.camp-soon a { color: rgb(219, 58, 52); font-weight: 600; text-decoration: underline; }
+.comp-soon { width: min(720px, 100%); margin-inline: auto; text-align: center; }
+.comp-banner-soon { display: block; width: min(568px, 100%); height: auto; margin: 8px auto 20px; }
+.page-competitions .event-soon { margin-inline: auto; text-align: center; }
+.page-competitions .lead-form { width: min(640px, 100%); margin-inline: auto; text-align: left; }
 
 /* Contact */
 .contact-grid { padding-top: 56px; padding-bottom: 180px; }
@@ -962,8 +989,9 @@
   }
   .camp-row:has(.camp-time + .camp-time) { height: 106px; }
   .camp-row > div { position: absolute; left: 202px; top: 0; width: 136px; }
-  .page-summer-camps-in-springfield-mo .lead-form { margin-left: -5px; }
-  .page-wnl-competitions .lead-form { margin-left: -4px; max-width: none; width: calc(100% + 8px); }
+  .page-summer-camps-in-springfield-mo .lead-form,
+  .page-wnl-competitions .lead-form,
+  .page-competitions .lead-form { margin-left: 0; max-width: 100%; width: 100%; }
   .page-competitions [data-repeater] { padding: 0 15px; }
   .camp-row > div .camp-time:not(:last-child) { margin-bottom: -9px; }
   .page-contact .lead-form { width: 100%; max-width: none; margin-left: 0; }

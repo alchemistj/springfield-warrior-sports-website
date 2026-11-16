@@ -267,6 +267,30 @@ async function writeEvents() {
     });
   }
 
+  // Josh, 16 Nov 2026: past WNL, CSNA, and summer camp registration stay waitlists until new dates are set.
+  const waitlist = {
+    "camp-registration": "Summer Camp 2027 – dates",
+    csna: "CSNA Competition – next dates",
+    wnl: "WNL Competition – next dates",
+  };
+  const notify = {
+    type: "message",
+    message: "Thanks for contacting us! We will get in touch with you shortly.",
+  };
+  const nameEmail = [
+    { kind: "name", label: "Name", required: false },
+    { kind: "email", name: "email", label: "Email", required: true },
+  ];
+  for (const event of events) {
+    if (!waitlist[event.id]) continue;
+    event.formKey = "event-waitlist";
+    event.event = waitlist[event.id];
+    event.button = "Notify Me";
+    event.success = notify;
+    event.fields = nameEmail;
+    event.repeater = null;
+  }
+
   events.push({
     id: "contact",
     formKey: "main-contact",

@@ -39,6 +39,13 @@ describe("built site", () => {
         .filter((sentence) => !sentence.includes("January 13th competitions will go up"))
         // Josh, 15 Nov 2026: the day-camps-for-school-breaks card and its text are removed until the client confirms the offer.
         .filter((sentence) => !/school break with dynamic and thrilling|flexible half-day or full-day camp options/.test(sentence))
+        // Josh, 16 Nov 2026: past WNL, CSNA, and 2026 summer-camp registration copy is off until new dates are set.
+        .filter((sentence) => !/early bird pricing for these competitions is \$55/i.test(sentence))
+        .filter((sentence) => !/October 26th competition/i.test(sentence))
+        .filter((sentence) => !/filling out the registration form below to save your kid's spot/i.test(sentence))
+        .filter((sentence) => !/active, exciting days during school break at our fun day camps/i.test(sentence))
+        .filter((sentence) => !/half-day and full-days camp options/i.test(sentence))
+        .filter((sentence) => !/call with questions or to register by phone|discounts and get registered/i.test(sentence))
         .filter((sentence) => !text.includes(sentence))
         .filter((sentence) => ![...visible.values()].some((other) => other.includes(sentence)));
       expect(missing, page.slug).toEqual([]);

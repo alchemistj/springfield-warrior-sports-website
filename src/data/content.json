@@ -1658,7 +1658,7 @@
     {
       "slug": "summer-camps-in-springfield-mo",
       "path": "/summer-camps-in-springfield-mo/",
-      "title": "2026 Summer Camps in Springfield MO: Springfield Warrior Sports",
+      "title": "Summer Camps in Springfield MO: Springfield Warrior Sports",
       "description": "Our incredible Summer Camps in Springfield, MO are packed with fun and educational activities for 6-14-year-old kids.",
       "h1": "Kids Stay Fit and Healthy at Our Incredible Summer Camps",
       "h1FromSource": true,
@@ -3537,47 +3537,6 @@
         {
           "type": "p",
           "text": "The link above has a few \"product\" options, simply select the appropriate camp you are attending, enter your payment information, and done!"
-        },
-        {
-          "type": "p",
-          "text": "If you encounter any problems or have any questions, please call or text us at (417) 894-7319."
-        }
-      ]
-    },
-    {
-      "slug": "registered-for-summer-fun-competition",
-      "path": "/registered-for-summer-fun-competition/",
-      "title": "Registered for Summer Fun Competition - Springfield Warrior Sports",
-      "description": "WE RECEIVED THOSE DETAILS, THANK YOU!",
-      "h1": "Registered for Summer Fun Competition - Springfield Warrior Sports",
-      "h1FromSource": false,
-      "index": false,
-      "robots": "noindex, nofollow",
-      "photoHero": true,
-      "heroFile": "media/2023-03-everyday-warrior.webp",
-      "heroAlt": "Registered for Summer Fun Competition - Springfield Warrior Sports",
-      "images": [],
-      "logos": [
-        {
-          "file": "media/2023-03-SpringField-Warrior-Logo.webp",
-          "alt": "",
-          "kind": "logo"
-        },
-        {
-          "file": "media/2023-03-SWS-logo-footer.webp",
-          "alt": "",
-          "kind": "logo"
-        }
-      ],
-      "formId": null,
-      "blocks": [
-        {
-          "type": "p",
-          "text": "WE RECEIVED THOSE DETAILS, THANK YOU!"
-        },
-        {
-          "type": "p",
-          "text": "Click here to finalize the registration with your payment, https://springfield-warrior-sports.square.site/product/summer-fun-competition-fundraiser-/217"
         },
         {
           "type": "p",
