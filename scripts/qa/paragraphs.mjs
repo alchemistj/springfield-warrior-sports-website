@@ -91,6 +91,8 @@ for (const slug of slugs) {
   const IGNORE = [/indicates required fields/i, /^Meet The Springfield Warrior Sports Team$/i, /early bird price for the January 13th/i,
     // Josh, 15 Nov 2026: the day-camps-for-school-breaks offer is removed until the client confirms it still runs.
     /^Elevate your children's school break/i,
+    // Summer camp dates are not set, so the "register by phone and get registered" line became a questions line.
+    /^\*\* call with questions or to register by phone/i,
     // Live breaks one best-gyms sentence across three lines; the build joins it back into one sentence (same words).
     /^Instead, think obstacle courses, warped walls/i, /^and train like never before, check out our Adult Fitness/i, /^one of the most unique gyms around\. We/i,
     // Josh, 16 Nov 2026: the 26 Oct 2024 WNL qualifier (price, deadline, and dated form) is off until the next dates are set.

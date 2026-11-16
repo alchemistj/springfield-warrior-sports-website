@@ -45,6 +45,7 @@ describe("built site", () => {
         .filter((sentence) => !/filling out the registration form below to save your kid's spot/i.test(sentence))
         .filter((sentence) => !/active, exciting days during school break at our fun day camps/i.test(sentence))
         .filter((sentence) => !/half-day and full-days camp options/i.test(sentence))
+        .filter((sentence) => !/call with questions or to register by phone|discounts and get registered/i.test(sentence))
         .filter((sentence) => !text.includes(sentence))
         .filter((sentence) => ![...visible.values()].some((other) => other.includes(sentence)));
       expect(missing, page.slug).toEqual([]);
