@@ -1,0 +1,241 @@
+/* Launch batch C. Imported last so these win. */
+
+/* Buttons never clip. A short label stays on one line; a long one wraps
+   to centred lines instead of being cut off. */
+a.btn,
+button.btn,
+.b3-btn,
+.go,
+.b4-visit,
+.comp-btn,
+.b4-cta .go,
+.b4-cta .cta-phone,
+.final-cta a,
+.btn-line,
+[data-add] {
+  height: auto !important;
+  max-width: 100%;
+  white-space: normal !important;
+  line-height: 1.25;
+  text-align: center;
+  overflow: visible;
+  box-sizing: border-box;
+}
+.b3-btn,
+.comp-btn {
+  min-height: 44px;
+  padding: 12px 18px !important;
+}
+@media (max-width: 799px) {
+  .comp-btn {
+    width: min(340px, 100%) !important;
+    min-height: 0;
+    padding: 12px 16px !important;
+    letter-spacing: 0.04em;
+    line-height: 1.3 !important;
+  }
+  .b3-btn { letter-spacing: 0.03em; }
+}
+
+/* 1. Summer camps form stays inside the 24px gutters. */
+@media (max-width: 799px) {
+  .page-summer-camps-in-springfield-mo .camp-form {
+    width: min(900px, calc(100% - 48px)) !important;
+    max-width: calc(100% - 48px) !important;
+    margin-inline: auto !important;
+  }
+  .page-summer-camps-in-springfield-mo .b2-form-title,
+  .page-summer-camps-in-springfield-mo .camp-cost,
+  .page-summer-camps-in-springfield-mo .camp-call {
+    width: auto !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  .page-summer-camps-in-springfield-mo .lead-form,
+  .page-summer-camps-in-springfield-mo .lead-form.camp {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  .page-summer-camps-in-springfield-mo .lead-form > *,
+  .page-summer-camps-in-springfield-mo .lead-form input,
+  .page-summer-camps-in-springfield-mo .lead-form select,
+  .page-summer-camps-in-springfield-mo .lead-form textarea,
+  .page-summer-camps-in-springfield-mo .lead-form .btn {
+    min-width: 0 !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
+  }
+  .page-summer-camps-in-springfield-mo .lead-form .btn {
+    width: 100% !important;
+    justify-self: stretch;
+    letter-spacing: 0.06em;
+    line-height: 1.3;
+    padding: 14px 16px !important;
+  }
+}
+
+/* 3. Homeschool trial button shows its full label inside the card. */
+@media (min-width: 800px) {
+  .hs-card {
+    grid-template-columns: minmax(220px, 340px) minmax(320px, 1fr) !important;
+  }
+  .hs-card .copy { min-width: 0; }
+  .hs-card .b3-btn {
+    width: max-content !important;
+    max-width: 100% !important;
+    height: auto !important;
+    padding: 12px 22px !important;
+  }
+}
+
+/* 4. Meet the team title gutters, and the desktop title stays off faces. */
+@media (max-width: 799px) {
+  .b4-team-hero .m-title {
+    box-sizing: border-box;
+    width: min(900px, calc(100% - 48px));
+    margin-inline: auto;
+    padding-inline: 0;
+  }
+}
+@media (min-width: 1024px) {
+  .page-meet-the-team .atf-photo { object-position: 18% center; }
+  .b4-team-hero {
+    justify-content: flex-end;
+    padding-right: 40px;
+  }
+  .b4-team-hero .col {
+    width: 340px !important;
+    max-width: 340px !important;
+    margin-left: auto !important;
+    margin-right: 0 !important;
+  }
+  .b4-team-hero h1 {
+    width: 340px !important;
+    max-width: 340px !important;
+    font-size: 54px;
+    line-height: 1.02;
+    text-align: right;
+  }
+}
+
+/* 5. Booking page: room under the header, and a gap above Submit. */
+.page-schedule-birthday-party .book-plain { padding-top: 40px; }
+.page-schedule-birthday-party .lead-form > .btn { margin-top: 20px !important; }
+
+/* 6. About partnership photos keep faces in frame on phones. */
+@media (max-width: 799px) {
+  .page-about .brothers img,
+  .page-about .row.text-left img {
+    aspect-ratio: 4 / 3 !important;
+    height: auto !important;
+    object-fit: cover !important;
+    object-position: center 12% !important;
+  }
+  .page-about .row.text-left img[alt="Supplement Superstore"] { object-position: center top !important; }
+}
+
+/* 7. Kids classes cards, gaps, and the space after the note. */
+.page-kids-classes .camp-card,
+.page-kids-classes .camp-card.bday,
+.page-kids-classes .camp-card.day {
+  min-height: 0 !important;
+  height: auto !important;
+  background-size: cover !important;
+  background-position: center 22% !important;
+}
+.page-kids-classes .camp-card.day {
+  background-size: 100% auto !important;
+  background-position: center top !important;
+  background-repeat: no-repeat !important;
+}
+.page-kids-classes .camp-card.day .camp-panel { margin-top: 112px !important; }
+.page-kids-classes .camp-panel {
+  flex: 0 0 auto !important;
+  margin-top: 188px !important;
+}
+.page-kids-classes .camp-panel .btn-center {
+  margin-top: 14px !important;
+}
+@media (max-width: 799px) {
+  .page-kids-classes .intro-block {
+    padding-top: 36px !important;
+    padding-bottom: 28px !important;
+  }
+  .page-kids-classes .fun-grid { margin-bottom: 28px !important; }
+  .page-kids-classes .forget-block,
+  .page-kids-classes .camp-block {
+    background-color: #e5eaed;
+    background-image: linear-gradient(#e5eaed, #e5eaed);
+  }
+}
+
+/* 8. Birthday stress heading uses a normal size, without the big gaps. */
+.page-birthday-parties .bd-intro { padding-bottom: 36px !important; }
+.page-birthday-parties .b2-block.b2-grey { padding-top: 28px !important; }
+.bd-stress-title {
+  margin: 0 auto 20px !important;
+  font-size: 32px !important;
+  line-height: 1.15 !important;
+}
+@media (min-width: 800px) {
+  .bd-stress-title { font-size: 40px !important; line-height: 1.15 !important; }
+}
+.page-birthday-parties img.flyer { margin-bottom: 24px !important; }
+
+/* 9. Contact map picture stays visible on phones. */
+@media (max-width: 799px) {
+  .page-contact .contact-map {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 280px;
+    margin-top: 24px !important;
+  }
+  .page-contact .contact-map .map-frame {
+    height: 320px !important;
+    min-height: 280px;
+  }
+  .page-contact .map-art {
+    display: block !important;
+    opacity: 1 !important;
+  }
+}
+
+/* 10. Headings and photos that were touching. */
+@media (max-width: 799px) {
+  .pt-intro { padding-top: 28px !important; }
+  .pt-intro img { margin-bottom: 24px !important; }
+  .page-best-gyms-in-springfield .b4-gym:first-of-type { margin-top: 28px !important; }
+}
+.page-personal-training .review-title { margin-bottom: 20px !important; }
+.nf-party h2 { margin-bottom: 28px !important; }
+.pk-more h2 { margin: 0 0 18px !important; }
+.pk-hero .pk-keep,
+.pk-hero .pk-long { white-space: nowrap; }
+@media (max-width: 799px) {
+  .pk-hero {
+    font-size: 27px !important;
+    line-height: 1.2 !important;
+  }
+}
+.camp-copy > h2:not(.camp-dates-title) { margin-top: 40px !important; }
+.camp-reg-title { margin-top: 36px !important; }
+.page-about .about-page.story .pair { margin-bottom: 8px; }
+.page-about .about-page.story .row.photo-left { margin-top: 36px !important; }
+
+/* 11. Home bullet stack was shifted 6px past the screen. */
+@media (max-width: 799px) {
+  .bullet-stack {
+    transform: none !important;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding-inline: 16px;
+  }
+}
