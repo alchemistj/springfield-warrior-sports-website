@@ -84,8 +84,7 @@
 .page-registered,
 .page-registered-for-wnl-competition,
 .page-registered-for-csna-competition,
-.page-registered-for-day-camps,
-.page-registered-for-summer-fun-competition { --hero-h: 420px; }
+.page-registered-for-day-camps { --hero-h: 420px; }
 
 @media (min-width: 1024px) {
   :root {
@@ -102,8 +101,7 @@
   .page-registered,
   .page-registered-for-wnl-competition,
   .page-registered-for-csna-competition,
-  .page-registered-for-day-camps,
-  .page-registered-for-summer-fun-competition { --hero-h: 520px; }
+  .page-registered-for-day-camps { --hero-h: 520px; }
 }
 
 html {

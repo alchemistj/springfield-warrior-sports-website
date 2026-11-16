@@ -142,18 +142,18 @@ button.btn,
 
 /* 7. Kids classes cards, gaps, and the space after the note. */
 .page-kids-classes .camp-card,
-.page-kids-classes .camp-card.bday,
-.page-kids-classes .camp-card.day {
+.page-kids-classes .camp-card.bday {
   min-height: 0 !important;
   height: auto !important;
   background-size: cover !important;
   background-position: center 22% !important;
 }
-/* All three cards match: same photo crop and the same panel offset (the day card was a short strip). */
-.page-kids-classes .camp-card.day {
-  background-size: cover !important;
-  background-position: center 4% !important;
-  background-repeat: no-repeat !important;
+@media (min-width: 800px) {
+  .page-kids-classes .camps {
+    grid-template-columns: repeat(2, minmax(0, 420px)) !important;
+    justify-content: center;
+    width: 100% !important;
+  }
 }
 .page-kids-classes .camp-panel {
   flex: 0 0 auto !important;
@@ -224,7 +224,7 @@ button.btn,
     line-height: 1.2 !important;
   }
 }
-.camp-copy > h2:not(.camp-dates-title) { margin-top: 40px !important; }
+.camp-copy > h2:not(.camp-dates-title):not(:first-child) { margin-top: 40px !important; }
 .camp-reg-title { margin-top: 36px !important; }
 .page-about .about-page.story .pair { margin-bottom: 8px; }
 .page-about .about-page.story .row.photo-left { margin-top: 36px !important; }

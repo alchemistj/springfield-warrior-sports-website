@@ -6,7 +6,8 @@ import { redirects } from "../../src/data/redirects";
 
 describe("route registry", () => {
   it("lists every captured page once, with one H1 and a unique title", () => {
-    expect(routes).toHaveLength(23);
+    // 22: the 2024 Summer Fun thank-you page was removed (16 Nov 2026) and 301s to /competitions/.
+    expect(routes).toHaveLength(22);
     expect(new Set(routes.map((route) => route.path)).size).toBe(routes.length);
     expect(new Set(routes.map((route) => route.title)).size).toBe(routes.length);
     for (const route of routes) {

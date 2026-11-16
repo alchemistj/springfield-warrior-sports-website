@@ -11,7 +11,6 @@ const homeSchool = media("media/2025-02-homeschool-kids-sports.webp");
 const fun = [1, 2, 3, 4, 5, 6].map((n) => media(`media/2023-03-kid-classes-img0${n}.webp`));
 const youth = media("media/2023-03-youth-camp.jpg");
 const party = media("media/2023-03-birthday-parties-img.jpg");
-const day = media("media/2023-04-Summer-Camp-banner.webp");
 const trial = "https://checkout.square.site/merchant/MLXTPBS97BGYV/checkout/B2M6XBNLKD4ZKFEUAPK4HWCQ";
 ---
 
@@ -169,16 +168,6 @@ const trial = "https://checkout.square.site/merchant/MLXTPBS97BGYV/checkout/B2M6
           <p>Parties are an hour and a half long and include open play and an obstacle course set up and facilitated by our Crew.</p>
         </div>
         <p class="btn-center"><a class="btn camp bday" href="/birthday-parties/">BIRTHDAY PARTY</a></p>
-      </div>
-    </article>
-    <article class="camp-card day" style={`background-image:url(${day.src})`}>
-      <div class="camp-panel">
-        <h2>No-School Day Camp</h2>
-        <div class="camp-blurb">
-          <p>Give your kids active, exciting days during school break at our fun day camps!</p>
-          <p>We provide both half-day and full-days camp options for kids to hang out, play games, do sports, and make friends.</p>
-        </div>
-        <p class="btn-center"><a class="btn camp day" href="/summer-camps-in-springfield-mo/">DAY CAMP</a></p>
       </div>
     </article>
   </div>
@@ -360,10 +349,9 @@ const trial = "https://checkout.square.site/merchant/MLXTPBS97BGYV/checkout/B2M6
     .fun-grid { grid-template-columns: repeat(3, 369px); gap: 21px; margin-left: 1px; }
     .fun-grid img { width: 369px; height: 344px; }
     h2.forget { width: 759px; margin-left: auto; margin-right: auto; }
-    .camps { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+    .camps { grid-template-columns: repeat(2, minmax(0, 420px)); justify-content: center; gap: 24px; }
     .camp-card,
-    .camp-card.bday,
-    .camp-card.day { width: 100%; height: auto; min-height: 560px; }
+    .camp-card.bday { width: 100%; height: auto; min-height: 560px; }
     .camp-panel { margin: 140px 14px 14px; }
     .camps h2 { width: auto; max-width: 100%; margin-inline: auto; font-size: 28px; }
   }
@@ -384,10 +372,6 @@ const trial = "https://checkout.square.site/merchant/MLXTPBS97BGYV/checkout/B2M6
     .forget-block { margin-top: 0; padding-top: 70px; }
     .levels { width: 320px; max-width: 100%; font-size: 16px; letter-spacing: 0; }
     .row.text-first { display: flex; flex-direction: column-reverse; }
-    .camp-card.day {
-      background-size: auto 150%;
-      background-position: center 10%;
-    }
     .as-text { width: fit-content; max-width: 320px; }
     .fun h2.fun-title { width: 340px; line-height: 1; }
     .camps h2 { width: 274px; margin-left: auto; margin-right: auto; }

@@ -80,12 +80,26 @@ describe("lead body", () => {
     const keys = new Set(events.map((event) => event.formKey));
     expect([...keys].sort()).toEqual([
       "birthday-party",
-      "camp-registration",
-      "competition-registration",
       "event-waitlist",
       "main-contact",
       "personal-training",
     ]);
+    // Josh, 16 Nov 2026: past WNL, CSNA, and summer camp registration forms are waitlists until new dates are set.
+    expect(events.find((event) => event.id === "wnl")).toMatchObject({
+      formKey: "event-waitlist",
+      event: "WNL Competition – next dates",
+      success: { type: "message" },
+    });
+    expect(events.find((event) => event.id === "csna")).toMatchObject({
+      formKey: "event-waitlist",
+      event: "CSNA Competition – next dates",
+      success: { type: "message" },
+    });
+    expect(events.find((event) => event.id === "camp-registration")).toMatchObject({
+      formKey: "event-waitlist",
+      event: "Summer Camp 2027 – dates",
+      success: { type: "message" },
+    });
     for (const event of events) {
       const body = buildBody(event.formKey, event.event, baseValues(), ctx);
       expect(body.customFields.event?.value).toBe(event.event);

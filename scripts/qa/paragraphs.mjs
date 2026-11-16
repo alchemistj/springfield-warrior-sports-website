@@ -21,7 +21,10 @@ import path from "node:path";
 const [base, outFile = "paragraph-report.md"] = process.argv.slice(2);
 if (!base) { console.error("usage: node scripts/qa/paragraphs.mjs <build-base-url> [out.md]"); process.exit(2); }
 const only = (process.env.PAGES || "").split(",").filter(Boolean);
-const slugs = readdirSync("source/pages").filter((s) => existsSync(path.join("source/pages", s, "rendered.html")) && (!only.length || only.includes(s)));
+// Josh, 16 Nov 2026: the 2024 Summer Fun thank-you page is removed. Both slash forms
+// 301 to /competitions/. Dropped from source/pages.json so page-driven checks do not request it.
+const RETIRED = new Set(["registered-for-summer-fun-competition"]);
+const slugs = readdirSync("source/pages").filter((s) => !RETIRED.has(s) && existsSync(path.join("source/pages", s, "rendered.html")) && (!only.length || only.includes(s)));
 const MAX_LINES = 4;
 const MIN_CHARS = 25; // shorter fragments are labels, not paragraphs
 
@@ -89,7 +92,32 @@ for (const slug of slugs) {
     // Josh, 15 Nov 2026: the day-camps-for-school-breaks offer is removed until the client confirms it still runs.
     /^Elevate your children's school break/i,
     // Live breaks one best-gyms sentence across three lines; the build joins it back into one sentence (same words).
-    /^Instead, think obstacle courses, warped walls/i, /^and train like never before, check out our Adult Fitness/i, /^one of the most unique gyms around\. We/i];
+    /^Instead, think obstacle courses, warped walls/i, /^and train like never before, check out our Adult Fitness/i, /^one of the most unique gyms around\. We/i,
+    // Josh, 16 Nov 2026: the 26 Oct 2024 WNL qualifier (price, deadline, and dated form) is off until the next dates are set.
+    /^Early bird pricing for these competitions is \$55/i,
+    /^Don't wait to register - The early bird price for the October 26th/i,
+    /^Registration is easy and happens in two steps/i,
+    /^Fill out your information using the form below then/i,
+    /^Pay your registration fee using the pay link/i,
+    // Josh, 16 Nov 2026: the 19 Sep 2026 CSNA block, its price, and its registration form are off until the next dates are set.
+    /^Date: Saturday, September 19th/i,
+    /^Start time: TBA/i,
+    /^Price per registration/i,
+    /^September 2026 CSNA/i,
+    // Josh, 16 Nov 2026: the 2026 summer camp week list and registration form are off. Summer 2027 dates come in the spring.
+    /^May 25th - May 29th/i,
+    /^June 8th - June 12th/i,
+    /^June 22nd - June 26th/i,
+    /^July 6th - July 10th/i,
+    /^July 20th - July 24th/i,
+    /^August 3rd - August 7th/i,
+    /^August 17th - August 21st/i,
+    /^8:30 AM - 11:30 AM$/i,
+    /^12 PM - 3 PM$/i,
+    /^Sign up by filling out the registration form below/i,
+    // Josh, 16 Nov 2026: the No-School Day Camp card is off kids classes until the client confirms that offer.
+    /^Give your kids active, exciting days during school break at our fun day camps/i,
+    /^We provide both half-day and full-days camp options/i];
   const liveParas = (await live.evaluate(collect, { maxLines: 0, withReviews: true })).filter((l) => !IGNORE.some((re) => re.test(l.text)));
   await live.close();
 
