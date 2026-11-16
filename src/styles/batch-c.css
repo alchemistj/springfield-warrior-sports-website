@@ -225,6 +225,22 @@ button.btn,
   }
 }
 .camp-copy > h2:not(.camp-dates-title):not(:first-child) { margin-top: 40px !important; }
+/* The dates list used to make this column tall. Show the whole camp photo now that the list is gone. */
+.page-summer-camps-in-springfield-mo .camp-photo-frame {
+  position: static !important;
+  height: auto !important;
+  min-height: 0 !important;
+  overflow: visible !important;
+}
+.page-summer-camps-in-springfield-mo .camp-photo {
+  position: static !important;
+  inset: auto !important;
+  width: 100% !important;
+  height: auto !important;
+  max-height: none !important;
+  object-fit: contain !important;
+  object-position: center top !important;
+}
 .camp-reg-title { margin-top: 36px !important; }
 .page-about .about-page.story .pair { margin-bottom: 8px; }
 .page-about .about-page.story .row.photo-left { margin-top: 36px !important; }
