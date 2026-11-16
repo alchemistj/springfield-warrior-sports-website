@@ -309,6 +309,11 @@ const lee = {
     min-width: 0;
     padding: 20px 22px 16px;
   }
+  /* Phones: photo on top, copy below (as live). Side by side, the photo became a sliver and cut off faces. */
+  @media (max-width: 640px) {
+    .offer-card { grid-template-columns: 1fr; }
+    .offer-card img { height: 220px; min-height: 0; object-position: center 30%; }
+  }
   .offer-copy h3 {
     margin: 0 0 8px;
     color: #285276;

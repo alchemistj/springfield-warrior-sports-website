@@ -149,12 +149,12 @@ button.btn,
   background-size: cover !important;
   background-position: center 22% !important;
 }
+/* All three cards match: same photo crop and the same panel offset (the day card was a short strip). */
 .page-kids-classes .camp-card.day {
-  background-size: 100% auto !important;
-  background-position: center top !important;
+  background-size: cover !important;
+  background-position: center 4% !important;
   background-repeat: no-repeat !important;
 }
-.page-kids-classes .camp-card.day .camp-panel { margin-top: 112px !important; }
 .page-kids-classes .camp-panel {
   flex: 0 0 auto !important;
   margin-top: 188px !important;
@@ -239,3 +239,17 @@ button.btn,
     padding-inline: 16px;
   }
 }
+
+/* Buttons that relied on a fixed height (best-gyms "Visit Website", team "Try Open Gym") keep a real button size
+   now that heights are auto: centred label, 44px minimum, padding. */
+.go,
+.b4-cta .go,
+.b4-visit {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 10px 22px !important;
+}
+.b4-visit { width: auto !important; white-space: nowrap !important; }
