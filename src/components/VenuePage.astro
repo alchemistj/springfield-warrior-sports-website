@@ -340,7 +340,7 @@ function nextPhoto(): ContentImage | undefined {
       <div slot="hero" class:list={["hero-copy", hero ? `align-${heroAlign}` : "hero-plain", hero ? `tone-${heroTone}` : "", hero ? `hero-size-${heroSize}` : "", { bare: !showHeroText && !batch3, "b2-hero": BATCH2.has(page.slug), "b3-hero": batch3 }]}>
         {hero && (showHeroText || aboutHero || batch3) && <div class:list={["hero-scrim", { "about-scrim": aboutHero, "b2-scrim": BATCH2.has(page.slug) }]} aria-hidden="true"></div>}
         <div class="hero-text">
-      {aboutHero && <h1>Springfield Warrior Sports<br />Community</h1>}
+      {aboutHero && <h1>Springfield Warrior Sports Community</h1>}
       {!aboutHero && showHeroText && !BATCH2.has(page.slug) && !batch3 && <h1>{page.h1}</h1>}
       {page.slug === "fitness-classes" && (
         <h1>

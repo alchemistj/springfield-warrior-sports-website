@@ -5,6 +5,7 @@ import "../styles/batch3.css";
 import "../styles/batch4.css";
 import "../styles/system.css";
 import "../styles/batch-c.css";
+import "../styles/polish.css";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import FinalCta from "../components/FinalCta.astro";
@@ -81,6 +82,26 @@ const gaId = site.ga4;
     {route.key !== "home" && route.key !== "meet-the-team" && route.key !== "homeschool-sports-and-classes-springfield-mo" && route.key !== "schedule-birthday-party" && <FinalCta />}
     <Footer />
     <StickyCallBar />
+    <script is:inline>
+      // No single word alone on the last line: keep the last two words of each heading, paragraph or
+      // form label together. CSS text-wrap handles long paragraphs; this covers short headings and cards.
+      // If the joined pair would not fit its box, the normal space is put back.
+      (function () {
+        document.querySelectorAll(".atf, main, .final-cta").forEach(function (r) {
+          r.querySelectorAll("h1,h2,h3,h4,h5,p,li,figcaption,blockquote,label").forEach(function (el) {
+            if (el.closest("nav")) return;
+            var walk = document.createTreeWalker(el, NodeFilter.SHOW_TEXT), node, last = null;
+            while ((node = walk.nextNode())) if (node.data.trim()) last = node;
+            if (!last) return;
+            var m = last.data.match(/^([\s\S]*\S)[ \t\n]+(\S+)(\s*)$/);
+            if (!m) return;
+            var before = last.data;
+            last.data = m[1] + "\u00a0" + m[2] + m[3];
+            if (el.scrollWidth > el.clientWidth + 1) last.data = before;
+          });
+        });
+      })();
+    </script>
     <script>
       import { scheduleJourney } from "../lib/measurement/schedule";
       scheduleJourney();

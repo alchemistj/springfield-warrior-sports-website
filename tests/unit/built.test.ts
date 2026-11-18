@@ -31,7 +31,9 @@ describe("built site", () => {
       if (!page.index) expect(html).toContain("noindex");
       // Josh's address decision (2 Nov 2026) replaces the old contact-page address line.
       const source = readFileSync(`source/pages/${page.slug}/text.txt`, "utf8")
-        .replace("605 W. Plainview Road Springfield, MO 65810", site.address.display);
+        .replace("605 W. Plainview Road Springfield, MO 65810", site.address.display)
+        // Launch polish, 18 Nov 2026: every phone number uses the one site format, "(417) 894-7319".
+        .replace(/\(417\)894-7319/g, site.phone.display);
       const text = visible.get(page.slug) ?? "";
       // Live renders this competitions sentence at font-size 0. It is removed, not hidden.
       // A review may move to the page it talks about. It still has to be visible somewhere.

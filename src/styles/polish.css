@@ -1,0 +1,187 @@
+/* Launch polish (18 Nov 2026). Imported last so these win. */
+
+/* No single word left alone on a last line. Headings are already balanced. */
+p, li, blockquote, figcaption, dd, dt, label { text-wrap: pretty; }
+
+/* One button style for the whole site: the same shape, type size, weight and red.
+   Navy stays the secondary colour, and the white phone pill stays the outline style. */
+a.btn,
+button.btn,
+.b3-btn,
+.go,
+.call,
+.b4-visit,
+.comp-btn,
+.b4-cta .go,
+.b4-cta .cta-phone,
+.final-cta a {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 48px;
+  padding: 12px 28px !important;
+  border-radius: 999px !important;
+  font-family: var(--font-heading) !important;
+  font-size: 15px !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.04em !important;
+  text-transform: uppercase !important;
+  line-height: 1.25 !important;
+  text-align: center;
+  text-wrap: balance;
+}
+a.btn:not(.navy):not(.btn-line),
+button.btn,
+.b3-btn:not(.navy),
+.go,
+.b4-cta .go,
+.comp-btn {
+  background-color: var(--color-ws-red) !important;
+  color: #fff !important;
+}
+a.btn.navy,
+.b3-btn.navy,
+.b4-visit {
+  background-color: var(--color-ws-blue-dark) !important;
+  color: #fff !important;
+}
+@media (max-width: 799px) {
+  a.btn,
+  button.btn,
+  .b3-btn,
+  .go,
+  .call,
+  .b4-visit,
+  .comp-btn,
+  .b4-cta .go,
+  .b4-cta .cta-phone,
+  .final-cta a {
+    font-size: 14px !important;
+    padding: 12px 22px !important;
+  }
+}
+
+/* Phone numbers never break across two lines. */
+a[href^="tel:"] { white-space: nowrap; }
+
+/* Reviewer names: one style on every page (some were typed in capitals, some not). */
+.review-by, .t-by, .b2-qn, .q-by, .pt-quotes .by {
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+/* Red hero headings stay readable on busy photos. */
+.hero-copy h1, .hero-copy h2, .hero-copy .hero-kicker, .b3-hero h1, .b3-hero h2,
+.b4-team-hero h1, .b4-cta h2, .b4-hero h1 {
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.55), 0 1px 3px rgba(0, 0, 0, 0.45);
+}
+
+/* Lead forms line up with their heading instead of sitting 40px in. */
+.lead-form.panel { margin-left: 0 !important; margin-right: 0 !important; }
+
+/* "Get notified" form headings match the site's red heading style on every page. */
+.event-soon, .b2-form-title {
+  font-family: var(--font-heading) !important;
+  font-weight: 800 !important;
+  color: var(--color-ws-red) !important;
+  font-size: 40px !important;
+  line-height: 1.1 !important;
+  margin: 0 0 16px !important;
+}
+@media (max-width: 799px) {
+  .event-soon, .b2-form-title { font-size: 32px !important; }
+}
+
+/* Links on dark photo bands are white, not red on black. */
+.b3-band a, .b3-band a.b3-redlink { color: #fff !important; text-decoration: underline; }
+
+/* Section headings in the venue pages had 70px line spacing on 50px type. */
+.b3 h2 { line-height: 1.15 !important; }
+
+/* Empty logo strip left a white band above the final call to action. */
+.wrap.logos:not(:has(img)) { display: none; }
+
+/* Home: offer cards are as tall as their words; the photo fills the card instead of stretching it. */
+@media (min-width: 641px) {
+  .offer-card img { contain: size; aspect-ratio: auto !important; height: 100% !important; min-height: 220px !important; }
+}
+/* Home: the phone button is the white outline style used everywhere else. */
+.warrior-actions a.btn.warrior-phone {
+  background-color: #fff !important;
+  color: var(--color-ws-blue-dark) !important;
+  box-shadow: inset 0 0 0 2px var(--color-ws-blue-dark);
+}
+.warrior-actions { flex-direction: row !important; flex-wrap: wrap; gap: 12px !important; align-items: center; }
+.warrior-actions .btn { width: auto !important; }
+/* Home phone: hero subtitle keeps the same 24px gutter on both sides, and no stretched letter spacing. */
+@media (max-width: 799px) {
+  .page-home .hero-kicker { letter-spacing: 1px !important; }
+  .page-home .hero-sub, .page-home .hero-kicker { width: auto !important; max-width: 100% !important; }
+  /* Partner logos: three per row instead of one tall column. */
+  .partner-row { display: grid !important; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px 16px !important; align-items: center; justify-items: center; }
+  .partner-row img { max-width: 100% !important; height: auto !important; max-height: 72px; object-fit: contain; }
+}
+
+/* About: the James River photos no longer touch the bottom of their grey panel. */
+.page-about .story .wash { padding-bottom: 48px !important; }
+
+/* Best gyms (phone): every gym photo is the same shape. */
+@media (max-width: 799px) {
+  .b4-gym > img { aspect-ratio: 4 / 3; height: auto !important; object-fit: cover; }
+}
+
+/* Birthday: smaller gap between the options intro and the pizza section. */
+.page-birthday-parties .bd-pizza { margin-top: 64px !important; }
+
+/* Competitions (phone): no white strip above the hero, normal paragraph spacing. */
+@media (max-width: 799px) {
+  .page-competitions .hero-copy { margin-top: 0 !important; }
+  .page-competitions .comp-intro p, .page-competitions .comp-soon { line-height: 1.6 !important; }
+}
+
+/* Contact: map runs the full height of the copy and form column, and less empty space below. */
+@media (min-width: 900px) {
+  .page-contact .contact-grid { align-items: stretch !important; padding-bottom: 72px !important; }
+  .page-contact .contact-map { height: auto !important; margin-top: 0 !important; align-self: stretch; }
+  .page-contact .contact-map .map-frame, .page-contact .contact-map iframe { height: 100% !important; min-height: 0 !important; }
+}
+
+/* Homeschool: checklist lines are evenly spaced; the photo band text is not cramped. */
+.hs-facts li { line-height: 1.5 !important; margin-bottom: 8px; }
+.hs-book h4 { line-height: 1.45 !important; }
+
+/* Kids: the two "Don't forget" cards are equal and their buttons line up; button labels stay on one line. */
+.page-kids-classes .camp-panel { flex: 1 1 auto !important; }
+.page-kids-classes .camp-panel .btn-center { margin-top: auto !important; padding-top: 16px; }
+.page-kids-classes .btn.camp { white-space: nowrap !important; }
+
+/* Team: no white strip under the hero; a little air above "No experience required"; one button icon style. */
+.b4 { padding-top: 40px !important; }
+.b4-intro { margin-top: 0 !important; }
+.b4-cta .note { margin-top: 18px !important; }
+.b4-cta .go svg { display: none !important; }
+
+/* Parkour: space between the class times and the button. */
+.pk-intro .b3-btn { margin-top: 20px !important; }
+
+/* Personal training: all intro paragraphs are the same size and colour. */
+.pt-intro .pt-note { font-size: 16px !important; line-height: 28px !important; color: rgba(0, 0, 0, 0.7) !important; }
+
+/* Summer camps: the "dates will be posted" line now uses the same camp-price style as the pricing text around it (CampsBody). */
+
+/* Phone: "Be an Everyday Warrior!" breaks as "Be an / Everyday Warrior!" instead of leaving "Warrior!" alone. */
+@media (max-width: 420px) {
+  .final-cta h2 { font-size: 34px !important; line-height: 1.12 !important; }
+}
+
+/* Kids: room between the photo grid and the "Schedule a $5 trial class" button. */
+.page-kids-classes .fun-grid { margin-bottom: 28px !important; }
+
+/* Competitions: the intro is centred, so the "Get notified" heading and form sit centred under it, the same width. */
+.comp-intro .event-soon,
+.comp-intro .lead-form.panel { width: min(640px, 100%); margin-left: auto !important; margin-right: auto !important; }
+.comp-intro .event-soon { text-align: center; }
+
+/* Laser tag / Nerf nights: body text used 1px letter spacing, unlike every other paragraph on the site. */
+.night-copy h4, .night-copy p { letter-spacing: 0 !important; }
