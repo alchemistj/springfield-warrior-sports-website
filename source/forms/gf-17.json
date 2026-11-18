@@ -1,0 +1,316 @@
+{
+  "gf_id": 17,
+  "title": "Summer Camps Registration 2026",
+  "description": "",
+  "button": "Submit and Continue to Payment",
+  "fields": [
+    {
+      "id": 1,
+      "type": "text",
+      "label": "First Name",
+      "isRequired": true,
+      "placeholder": "First Name",
+      "inputType": "text"
+    },
+    {
+      "id": 3,
+      "type": "text",
+      "label": "Last Name",
+      "isRequired": true,
+      "placeholder": "Last Name",
+      "inputType": "text"
+    },
+    {
+      "id": 4,
+      "type": "email",
+      "label": "Email",
+      "isRequired": true,
+      "placeholder": "Email",
+      "inputType": "email"
+    },
+    {
+      "id": 11,
+      "type": "phone",
+      "label": "Best contact phone number to reach you if needed during camp",
+      "isRequired": true,
+      "inputType": "phone"
+    },
+    {
+      "id": 6,
+      "type": "text",
+      "label": "Kids Name",
+      "isRequired": true,
+      "placeholder": "Kids Name",
+      "inputType": "text"
+    },
+    {
+      "id": 7,
+      "type": "select",
+      "label": "Age of child attending camp",
+      "isRequired": true,
+      "choices": [
+        {
+          "text": "6",
+          "value": "6",
+          "isSelected": false,
+          "price": ""
+        },
+        {
+          "text": "7",
+          "value": "7",
+          "isSelected": false,
+          "price": ""
+        },
+        {
+          "text": "8",
+          "value": "8",
+          "isSelected": false,
+          "price": ""
+        },
+        {
+          "text": "9",
+          "value": "9",
+          "isSelected": false,
+          "price": ""
+        },
+        {
+          "text": "10",
+          "value": "10",
+          "isSelected": false,
+          "price": ""
+        },
+        {
+          "text": "11",
+          "value": "11",
+          "isSelected": false,
+          "price": ""
+        },
+        {
+          "text": "12",
+          "value": "12",
+          "isSelected": false,
+          "price": ""
+        },
+        {
+          "text": "13",
+          "value": "13",
+          "isSelected": false,
+          "price": ""
+        },
+        {
+          "text": "14",
+          "value": "14",
+          "isSelected": false,
+          "price": ""
+        },
+        {
+          "text": "15",
+          "value": "15",
+          "isSelected": false,
+          "price": ""
+        }
+      ],
+      "inputType": "select"
+    },
+    {
+      "id": 13,
+      "type": "select",
+      "label": "Child's T-shirt size",
+      "isRequired": true,
+      "choices": [
+        {
+          "text": "Youth Small",
+          "value": "Youth Small",
+          "isSelected": false,
+          "price": ""
+        },
+        {
+          "text": "Youth Medium",
+          "value": "Youth Medium",
+          "isSelected": false,
+          "price": ""
+        },
+        {
+          "text": "Youth Large",
+          "value": "Youth Large",
+          "isSelected": false,
+          "price": ""
+        }
+      ],
+      "inputType": "select"
+    },
+    {
+      "id": 8,
+      "type": "checkbox",
+      "label": "Which camp(s) do you plan to attend",
+      "isRequired": true,
+      "choices": [
+        {
+          "text": "<strong>May 25th - May 29th<\\/strong> <div>8:30 AM - 11:30 AM<\\/div>",
+          "value": "<strong>May 25th - May 29th<\\/strong> <div>8:30 AM - 11:30 AM<\\/div>",
+          "isSelected": false,
+          "price": ""
+        },
+        {
+          "text": "<strong>June 8th - June 12th<\\/strong> <div>8:30 AM - 11:30 AM<\\/div>",
+          "value": "<strong>June 8th - June 12th<\\/strong> <div>8:30 AM - 11:30 AM<\\/div>",
+          "isSelected": false,
+          "price": ""
+        },
+        {
+          "text": "<strong>June 22nd - June 26th<\\/strong> <div>8:30 AM - 11:30 AM<\\/div>",
+          "value": "<strong>June 22nd - June 26th<\\/strong> <div>8:30 AM - 11:30 AM<\\/div>",
+          "isSelected": false,
+          "price": ""
+        },
+        {
+          "text": "<strong>July 6th - July 10th<\\/strong> <div>8:30 AM - 11:30 AM<\\/div>",
+          "value": "<strong>July 6th - July 10th<\\/strong> <div>8:30 AM - 11:30 AM<\\/div>",
+          "isSelected": false,
+          "price": ""
+        },
+        {
+          "text": "<strong>July 6th - July 10th<\\/strong> <div>12 PM - 3 PM<\\/div>",
+          "value": "<strong>July 6th - July 10th<\\/strong> <div>12 PM - 3 PM<\\/div>",
+          "isSelected": false,
+          "price": ""
+        },
+        {
+          "text": "<strong>July 20th - July 24th<\\/strong> <div>8:30 AM - 11:30 AM<\\/div>",
+          "value": "<strong>July 20th - July 24th<\\/strong> <div>8:30 AM - 11:30 AM<\\/div>",
+          "isSelected": false,
+          "price": ""
+        },
+        {
+          "text": "<strong>July 20th - July 24th<\\/strong> <div>12 PM - 3 PM<\\/div>",
+          "value": "<strong>July 20th - July 24th<\\/strong> <div>12 PM - 3 PM<\\/div>",
+          "isSelected": false,
+          "price": ""
+        },
+        {
+          "text": "<strong>August 3rd - August 7th<\\/strong> <div>8:30 AM - 11:30 AM<\\/div>",
+          "value": "<strong>August 3rd - August 7th<\\/strong> <div>8:30 AM - 11:30 AM<\\/div>",
+          "isSelected": false,
+          "price": ""
+        },
+        {
+          "text": "<strong>August 3rd - August 7th<\\/strong> <div>12 PM - 3 PM<\\/div>",
+          "value": "<strong>August 3rd - August 7th<\\/strong> <div>12 PM - 3 PM<\\/div>",
+          "isSelected": false,
+          "price": ""
+        },
+        {
+          "text": "<strong>August 17th - August 21st<\\/strong> <div>8:30 AM - 11:30 AM<\\/div>",
+          "value": "<strong>August 17th - August 21st<\\/strong> <div>8:30 AM - 11:30 AM<\\/div>",
+          "isSelected": false,
+          "price": ""
+        },
+        {
+          "text": "<strong>August 17th - August 21st<\\/strong> <div>12 PM - 3 PM<\\/div>",
+          "value": "<strong>August 17th - August 21st<\\/strong> <div>12 PM - 3 PM<\\/div>",
+          "isSelected": false,
+          "price": ""
+        }
+      ],
+      "inputs": [
+        {
+          "id": "8.1",
+          "label": "<strong>May 25th - May 29th<\\/strong> <div>8:30 AM - 11:30 AM<\\/div>",
+          "name": ""
+        },
+        {
+          "id": "8.2",
+          "label": "<strong>June 8th - June 26th<\\/strong> <div>8:30 AM - 11:30 AM<\\/div>",
+          "name": ""
+        },
+        {
+          "id": "8.3",
+          "label": "<strong>June 22nd - June 26th<\\/strong> <div>8:30 AM - 11:30 AM<\\/div>",
+          "name": ""
+        },
+        {
+          "id": "8.4",
+          "label": "<strong>July 6th - July 10th<\\/strong> <div>8:30 AM - 11:30 AM<\\/div>",
+          "name": ""
+        },
+        {
+          "id": "8.5",
+          "label": "<strong>July 6th - July 10th<\\/strong> <div>12 PM - 3 PM<\\/div>",
+          "name": ""
+        },
+        {
+          "id": "8.6",
+          "label": "<strong>July 20th - July 24th<\\/strong> <div>8:30 AM - 11:30 AM<\\/div>",
+          "name": ""
+        },
+        {
+          "id": "8.7",
+          "label": "<strong>July 20th - July 24th<\\/strong> <div>12 PM - 3 PM<\\/div>",
+          "name": ""
+        },
+        {
+          "id": "8.8",
+          "label": "<strong>August 3rd - August 7th<\\/strong> <div>8:30 AM - 11:30 AM<\\/div>",
+          "name": ""
+        },
+        {
+          "id": "8.9",
+          "label": "<strong>August 3rd - August 7th<\\/strong> <div>12 PM - 3 PM<\\/div>",
+          "name": ""
+        },
+        {
+          "id": "8.11",
+          "label": "<strong>August 17th - August 21st<\\/strong> <div>8:30 AM - 11:30 AM<\\/div>",
+          "name": ""
+        },
+        {
+          "id": "8.12",
+          "label": "<strong>August 17th - August 21st<\\/strong> <div>12 PM - 3 PM<\\/div>",
+          "name": ""
+        }
+      ],
+      "inputType": "checkbox"
+    },
+    {
+      "id": 12,
+      "type": "text",
+      "label": "Please list any food allergies (if none, please write none)",
+      "isRequired": true,
+      "inputType": "text"
+    },
+    {
+      "id": 9,
+      "type": "textarea",
+      "label": "List any additional siblings attending and their ages",
+      "isRequired": false,
+      "inputType": "textarea"
+    }
+  ],
+  "notifications": [
+    {
+      "name": "Admin Notification",
+      "isActive": true,
+      "to": "office@swarriorsports.com",
+      "subject": "New {form_title} submission",
+      "replyTo": "{Email:4}",
+      "message": "{all_fields}"
+    },
+    {
+      "name": "test admin notification",
+      "isActive": false,
+      "to": "techbloganil@gmail.com",
+      "subject": "New {form_title} submission",
+      "replyTo": "{Email:4}",
+      "message": "{all_fields}"
+    }
+  ],
+  "confirmations": [
+    {
+      "name": "Default Confirmation",
+      "type": "redirect",
+      "message": "Thanks for contacting us! We will get in touch with you shortly.",
+      "pageId": "",
+      "url": "https:\\/\\/www.springfieldwarriorsports.com\\/registered-for-day-camps\\/"
+    }
+  ]
+}

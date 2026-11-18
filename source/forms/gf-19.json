@@ -1,0 +1,246 @@
+{
+  "gf_id": 19,
+  "title": "2026-9 CSNA September 19th Form",
+  "description": "",
+  "button": "Submit",
+  "fields": [
+    {
+      "id": 17,
+      "type": "repeater_start",
+      "isRequired": false,
+      "inputType": "repeater_start"
+    },
+    {
+      "id": 1,
+      "type": "name",
+      "label": "Name",
+      "isRequired": true,
+      "inputs": [
+        {
+          "id": "1.2",
+          "label": "Prefix",
+          "name": "",
+          "autocompleteAttribute": "honorific-prefix",
+          "choices": [
+            {
+              "text": "Dr.",
+              "value": "Dr."
+            },
+            {
+              "text": "Miss",
+              "value": "Miss"
+            },
+            {
+              "text": "Mr.",
+              "value": "Mr."
+            },
+            {
+              "text": "Mrs.",
+              "value": "Mrs."
+            },
+            {
+              "text": "Ms.",
+              "value": "Ms."
+            },
+            {
+              "text": "Mx.",
+              "value": "Mx."
+            },
+            {
+              "text": "Prof.",
+              "value": "Prof."
+            },
+            {
+              "text": "Rev.",
+              "value": "Rev."
+            }
+          ],
+          "isHidden": true,
+          "inputType": "radio"
+        },
+        {
+          "id": "1.3",
+          "label": "First",
+          "name": "",
+          "autocompleteAttribute": "given-name"
+        },
+        {
+          "id": "1.4",
+          "label": "Middle",
+          "name": "",
+          "autocompleteAttribute": "additional-name",
+          "isHidden": true
+        },
+        {
+          "id": "1.6",
+          "label": "Last",
+          "name": "",
+          "autocompleteAttribute": "family-name"
+        },
+        {
+          "id": "1.8",
+          "label": "Suffix",
+          "name": "",
+          "autocompleteAttribute": "honorific-suffix",
+          "isHidden": true
+        }
+      ],
+      "inputType": "name"
+    },
+    {
+      "id": 3,
+      "type": "radio",
+      "label": "Gender",
+      "isRequired": true,
+      "choices": [
+        {
+          "text": "Male",
+          "value": "Male",
+          "isSelected": false,
+          "price": ""
+        },
+        {
+          "text": "Female",
+          "value": "Female",
+          "isSelected": false,
+          "price": ""
+        }
+      ],
+      "inputType": "radio"
+    },
+    {
+      "id": 14,
+      "type": "date",
+      "label": "Birthday",
+      "isRequired": true,
+      "inputType": "date"
+    },
+    {
+      "id": 16,
+      "type": "radio",
+      "label": "Age Division (age cutoff date is January 1st, 2027)",
+      "isRequired": true,
+      "choices": [
+        {
+          "text": "6-7 year old boys",
+          "value": "6-7 year old boys",
+          "isSelected": false,
+          "price": ""
+        },
+        {
+          "text": "6-7 year old girls",
+          "value": "6-7 year old girls",
+          "isSelected": false,
+          "price": ""
+        },
+        {
+          "text": "8-9 year old boys",
+          "value": "8-9 year old boys",
+          "isSelected": false,
+          "price": ""
+        },
+        {
+          "text": "8-9 year old girls",
+          "value": "8-9 year old girls",
+          "isSelected": false,
+          "price": ""
+        },
+        {
+          "text": "10-11 year old boys",
+          "value": "10-11 year old boys",
+          "isSelected": false,
+          "price": ""
+        },
+        {
+          "text": "10-11 year old girls",
+          "value": "10-11 year old girls",
+          "isSelected": false,
+          "price": ""
+        },
+        {
+          "text": "12-13 year old boys",
+          "value": "12-13 year old boys",
+          "isSelected": false,
+          "price": ""
+        },
+        {
+          "text": "12-13 year old girls",
+          "value": "12-13 year old girls",
+          "isSelected": false,
+          "price": ""
+        },
+        {
+          "text": "14-15 year old boys",
+          "value": "14-15 year old boys",
+          "isSelected": false,
+          "price": ""
+        },
+        {
+          "text": "14-15 year old girls",
+          "value": "14-15 year old girls",
+          "isSelected": false,
+          "price": ""
+        },
+        {
+          "text": "16-18 year old boys",
+          "value": "16-18 year old boys",
+          "isSelected": false,
+          "price": ""
+        },
+        {
+          "text": "16-18 year old girls",
+          "value": "16-18 year old girls",
+          "isSelected": false,
+          "price": ""
+        }
+      ],
+      "inputType": "radio"
+    },
+    {
+      "id": 18,
+      "type": "repeater_end",
+      "isRequired": false,
+      "inputType": "repeater_end"
+    },
+    {
+      "id": 15,
+      "type": "text",
+      "label": "Home Gym\\/Team Gym",
+      "isRequired": true,
+      "inputType": "text"
+    },
+    {
+      "id": 10,
+      "type": "text",
+      "label": "Email Address",
+      "isRequired": true,
+      "inputType": "text"
+    },
+    {
+      "id": 12,
+      "type": "phone",
+      "label": "Phone",
+      "isRequired": true,
+      "inputType": "phone"
+    }
+  ],
+  "notifications": [
+    {
+      "name": "Admin Notification",
+      "isActive": true,
+      "to": "office@swarriorsports.com",
+      "subject": "New registration for {form_title}",
+      "replyTo": "",
+      "message": "{all_fields}"
+    }
+  ],
+  "confirmations": [
+    {
+      "name": "Default Confirmation",
+      "type": "page",
+      "message": "Thanks for contacting us! We will get in touch with you shortly.",
+      "pageId": "1237",
+      "url": "https:\\/\\/www.springfieldwarriorsports.com\\/registered-for-csna-competition\\/"
+    }
+  ]
+}

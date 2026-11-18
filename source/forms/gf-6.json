@@ -1,0 +1,109 @@
+{
+  "gf_id": 6,
+  "title": "Laser Tag Night Waitlist",
+  "description": "",
+  "button": "Notify Me",
+  "fields": [
+    {
+      "id": 2,
+      "type": "name",
+      "label": "Name",
+      "isRequired": false,
+      "inputs": [
+        {
+          "id": "2.2",
+          "label": "Prefix",
+          "name": "",
+          "autocompleteAttribute": "honorific-prefix",
+          "choices": [
+            {
+              "text": "Dr.",
+              "value": "Dr."
+            },
+            {
+              "text": "Miss",
+              "value": "Miss"
+            },
+            {
+              "text": "Mr.",
+              "value": "Mr."
+            },
+            {
+              "text": "Mrs.",
+              "value": "Mrs."
+            },
+            {
+              "text": "Ms.",
+              "value": "Ms."
+            },
+            {
+              "text": "Mx.",
+              "value": "Mx."
+            },
+            {
+              "text": "Prof.",
+              "value": "Prof."
+            },
+            {
+              "text": "Rev.",
+              "value": "Rev."
+            }
+          ],
+          "isHidden": true,
+          "inputType": "radio"
+        },
+        {
+          "id": "2.3",
+          "label": "First",
+          "name": "",
+          "autocompleteAttribute": "given-name"
+        },
+        {
+          "id": "2.4",
+          "label": "Middle",
+          "name": "",
+          "autocompleteAttribute": "additional-name",
+          "isHidden": true
+        },
+        {
+          "id": "2.6",
+          "label": "Last",
+          "name": "",
+          "autocompleteAttribute": "family-name"
+        },
+        {
+          "id": "2.8",
+          "label": "Suffix",
+          "name": "",
+          "autocompleteAttribute": "honorific-suffix",
+          "isHidden": true
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "type": "email",
+      "label": "Email",
+      "isRequired": true
+    }
+  ],
+  "notifications": [
+    {
+      "name": "Admin Notification",
+      "isActive": true,
+      "to": "office@swarriorsports.com",
+      "subject": "Someone filled out your form {form_title}",
+      "replyTo": "",
+      "message": "Someone filled out your form with the following details:\\r\\n{all_fields}"
+    }
+  ],
+  "confirmations": [
+    {
+      "name": "Default Confirmation",
+      "type": "message",
+      "message": "Thanks for contacting us! We will get in touch with you shortly.",
+      "pageId": "",
+      "url": ""
+    }
+  ]
+}

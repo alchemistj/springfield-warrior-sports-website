@@ -1,0 +1,102 @@
+import { readFileSync } from "node:fs";
+import { expect, test } from "@playwright/test";
+
+const pages = JSON.parse(readFileSync(new URL("../../src/data/content.json", import.meta.url), "utf8")).pages as {
+  slug: string;
+  path: string;
+}[];
+
+test("desktop and mobile layout", async ({ page }) => {
+  await page.setViewportSize({ width: 1440, height: 900 });
+  await page.goto("/");
+  await expect(page.locator("h1")).toHaveCount(1);
+  const desktopScroll = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
+  expect(desktopScroll).toBeLessThanOrEqual(1);
+  await expect(page.locator(".call-bar")).toBeHidden();
+  await expect(page.locator("[data-menu]")).toBeHidden();
+  // Josh, 15 Nov 2026: no trust bar, and no red Book a Party button in the menu.
+  await expect(page.locator(".trust-bar")).toHaveCount(0);
+  await expect(page.locator(".nav-cta")).toHaveCount(0);
+
+  await page.evaluate(() => window.scrollTo(0, 900));
+  await page.waitForTimeout(100);
+  await expect(page.locator("[data-header]")).toHaveClass(/is-hidden/);
+  await page.evaluate(() => window.scrollTo(0, 0));
+  await page.waitForTimeout(100);
+  await expect(page.locator("[data-header]")).not.toHaveClass(/is-hidden/);
+
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto("/birthday-parties/");
+  const mobileScroll = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
+  expect(mobileScroll).toBeLessThanOrEqual(1);
+  await expect(page.locator(".call-bar")).toBeVisible();
+  const bar = page.locator(".call-bar");
+  await expect(bar.locator("a").nth(0)).toHaveAttribute("href", "tel:+14178947319");
+  // Josh, 15 Nov 2026: the second button is Contact Us, not Book a Party.
+  await expect(bar.locator("a").nth(1)).toHaveAttribute("href", "/contact/");
+  await expect(bar.locator("a").nth(1)).toHaveText("Contact Us");
+  const desktopLinks = await page.locator("#site-menu a").evaluateAll((nodes) => nodes.map((node) => (node.textContent || "").trim()));
+  await page.locator("[data-menu]").click();
+  await expect(page.locator("#site-menu")).toBeVisible();
+  const openLinks = await page.locator("#site-menu a").evaluateAll((nodes) => nodes.map((node) => (node.textContent || "").trim()));
+  expect(openLinks).toEqual(desktopLinks);
+  expect(openLinks).not.toContain("Book a Party");
+  expect(openLinks.length).toBeGreaterThan(5);
+});
+
+test("booking page call bar stays on Contact Us", async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto("/schedule-birthday-party/");
+  // Josh, 15 Nov 2026: Contact Us replaces the old jump-to-form Book a Party button.
+  await expect(page.locator(".call-bar a").nth(1)).toHaveAttribute("href", "/contact/");
+  await expect(page.locator("#party-form")).toBeVisible();
+  await expect(page.locator("h1")).toHaveText("Book a Birthday Party");
+});
+
+test("contact map shows the picture, then the Google map when it is in view", async ({ page }) => {
+  await page.setViewportSize({ width: 1440, height: 900 });
+  const hits: string[] = [];
+  page.on("request", (request) => {
+    const url = request.url();
+    if (/maps\.google|maps\.googleapis/.test(url)) hits.push(url);
+  });
+  await page.goto("/contact/");
+  const frame = page.locator("[data-map]");
+  await expect(frame.locator("img.map-art")).toBeAttached();
+  await frame.scrollIntoViewIfNeeded();
+  await expect(frame.locator("iframe")).toBeAttached({ timeout: 8000 });
+  expect(hits.length).toBeGreaterThan(0);
+});
+
+test("screenshots of every page", async ({ browser }) => {
+  test.setTimeout(600_000);
+  const sharp = (await import("sharp")).default;
+  const { mkdir } = await import("node:fs/promises");
+  await mkdir("docs/qa/screens", { recursive: true });
+  for (const item of pages) {
+    for (const [name, width, height] of [
+      ["desktop", 1440, 900],
+      ["mobile", 390, 844],
+    ] as const) {
+      let png: Buffer | undefined;
+      let lastError: unknown;
+      for (let attempt = 0; attempt < 2 && !png; attempt += 1) {
+        const context = await browser.newContext({ viewport: { width, height } });
+        const page = await context.newPage();
+        try {
+          await page.goto(item.path, { waitUntil: "load" });
+          await page.addStyleTag({
+            content: ".section{content-visibility:visible!important;contain-intrinsic-size:none!important}",
+          });
+          png = await page.screenshot({ fullPage: true, animations: "disabled" });
+        } catch (error) {
+          lastError = error;
+        } finally {
+          await context.close();
+        }
+      }
+      if (!png) throw lastError;
+      await sharp(png).resize({ width: 1200, withoutEnlargement: true }).jpeg({ quality: 60 }).toFile(`docs/qa/screens/${item.slug}-${name}.jpg`);
+    }
+  }
+});

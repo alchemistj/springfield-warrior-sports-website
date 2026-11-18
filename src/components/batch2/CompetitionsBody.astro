@@ -1,0 +1,26 @@
+---
+import type { EventForm } from "../../data/events";
+import LeadForm from "../LeadForm.astro";
+import { media } from "./media";
+
+interface Props {
+  event: EventForm;
+}
+const { event } = Astro.props;
+const banner = media("media/2023-03-SWS-Competitions-Banner.webp");
+---
+
+<section class="b2-block">
+  <div class="b2-wrap comp-intro">
+    <p>Whether you are looking for regional qualifiers or just hoping to join in friendly competition, Springfield Warrior Sports is where you want to be!</p>
+    <p>We host <a href="/wnl-competitions/">regional qualifiers for the WNL</a> (World Ninja League) and are a CSNA (Central States Ninja Association) youth competitive league member. Check the links below for scheduled competitions and information!</p>
+  </div>
+</section>
+<section class="b2-block b2-ice">
+  <div class="b2-wrap comp-intro">
+    {banner.src && <img class="comp-banner comp-banner-soon" src={banner.src} alt="" width="568" height="165" />}
+    <p class="comp-soon">The next CSNA team competition dates are coming soon.</p>
+    <h2 class="event-soon">Get notified when dates are set</h2>
+    <LeadForm event={event} note={'"*" indicates required fields'} />
+  </div>
+</section>

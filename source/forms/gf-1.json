@@ -1,0 +1,200 @@
+{
+  "gf_id": 1,
+  "title": "Schedule Birthday Parties Form",
+  "description": "",
+  "button": "Submit",
+  "fields": [
+    {
+      "id": 1,
+      "type": "name",
+      "label": "First and Last Name",
+      "isRequired": true,
+      "inputs": [
+        {
+          "id": "1.2",
+          "label": "Prefix",
+          "name": "",
+          "autocompleteAttribute": "honorific-prefix",
+          "choices": [
+            {
+              "text": "Dr.",
+              "value": "Dr."
+            },
+            {
+              "text": "Miss",
+              "value": "Miss"
+            },
+            {
+              "text": "Mr.",
+              "value": "Mr."
+            },
+            {
+              "text": "Mrs.",
+              "value": "Mrs."
+            },
+            {
+              "text": "Ms.",
+              "value": "Ms."
+            },
+            {
+              "text": "Mx.",
+              "value": "Mx."
+            },
+            {
+              "text": "Prof.",
+              "value": "Prof."
+            },
+            {
+              "text": "Rev.",
+              "value": "Rev."
+            }
+          ],
+          "isHidden": true,
+          "inputType": "radio"
+        },
+        {
+          "id": "1.3",
+          "label": "First",
+          "name": "",
+          "autocompleteAttribute": "given-name",
+          "placeholder": "First Name",
+          "isHidden": false
+        },
+        {
+          "id": "1.4",
+          "label": "Middle",
+          "name": "",
+          "autocompleteAttribute": "additional-name",
+          "isHidden": true
+        },
+        {
+          "id": "1.6",
+          "label": "Last",
+          "name": "",
+          "autocompleteAttribute": "family-name",
+          "placeholder": "Last Name"
+        },
+        {
+          "id": "1.8",
+          "label": "Suffix",
+          "name": "",
+          "autocompleteAttribute": "honorific-suffix",
+          "isHidden": true
+        }
+      ],
+      "cssClass": "birthday-party-field-title"
+    },
+    {
+      "id": 3,
+      "type": "text",
+      "label": "Birthday Kids Name",
+      "isRequired": true,
+      "cssClass": "birthday-party-field-title"
+    },
+    {
+      "id": 4,
+      "type": "email",
+      "label": "Email",
+      "isRequired": true,
+      "placeholder": "Email",
+      "cssClass": "birthday-party-field-title"
+    },
+    {
+      "id": 5,
+      "type": "phone",
+      "label": "Phone",
+      "isRequired": true,
+      "placeholder": "Phone Number",
+      "cssClass": "birthday-party-field-title"
+    },
+    {
+      "id": 11,
+      "type": "textarea",
+      "label": "Please let us know the dates and times you would like to schedule your party and we will check the calendar and confirm availability",
+      "isRequired": true,
+      "placeholder": "Date and Time Preference"
+    },
+    {
+      "id": 9,
+      "type": "checkbox",
+      "label": "Would you like to discuss any of these?",
+      "isRequired": false,
+      "choices": [
+        {
+          "text": "Nerf Battle Party",
+          "value": "Nerf Battle Party",
+          "isSelected": false,
+          "price": ""
+        },
+        {
+          "text": "Laser Tag Party",
+          "value": "Laser Tag Party",
+          "isSelected": false,
+          "price": ""
+        },
+        {
+          "text": "Private Party",
+          "value": "Private Party",
+          "isSelected": false,
+          "price": ""
+        },
+        {
+          "text": "Pizza Party",
+          "value": "Pizza Party",
+          "isSelected": false,
+          "price": ""
+        }
+      ],
+      "inputs": [
+        {
+          "id": "9.1",
+          "label": "Nerf Battle Party",
+          "name": ""
+        },
+        {
+          "id": "9.2",
+          "label": "Laser Tag Party",
+          "name": ""
+        },
+        {
+          "id": "9.3",
+          "label": "Private Party",
+          "name": ""
+        },
+        {
+          "id": "9.4",
+          "label": "Pizza Party",
+          "name": ""
+        }
+      ],
+      "cssClass": "birthday-party-field-title"
+    },
+    {
+      "id": 10,
+      "type": "text",
+      "label": "Anything else?",
+      "isRequired": false,
+      "placeholder": "Tell us more about your party, needs, desires, approximate number of kids, etc. [short and sweet :p]",
+      "cssClass": ".birthday-party-field-title"
+    }
+  ],
+  "notifications": [
+    {
+      "name": "Admin Notification",
+      "isActive": true,
+      "to": "office@swarriorsports.com",
+      "subject": "By {First and Last Name (First):1.3} {First and Last Name (Last):1.6}, Birthday Party Form Fill",
+      "replyTo": "{Email:4}",
+      "message": "{all_fields}\\r\\n\\r\\nSent via form submission from Springfield Warrior Sports"
+    }
+  ],
+  "confirmations": [
+    {
+      "name": "Default Confirmation",
+      "type": "message",
+      "message": "Thank you! We will be in touch shortly!",
+      "pageId": "",
+      "url": ""
+    }
+  ]
+}

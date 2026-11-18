@@ -1,0 +1,309 @@
+[
+  {
+    "id": "birthday-party",
+    "formKey": "birthday-party",
+    "event": "Birthday Party Booking",
+    "page": "/schedule-birthday-party/",
+    "anchor": "party-form",
+    "button": "Submit",
+    "open": true,
+    "success": {
+      "type": "message",
+      "message": "Thank you! We will be in touch shortly!"
+    },
+    "fields": [
+      {
+        "kind": "name",
+        "label": "First and Last Name",
+        "required": true
+      },
+      {
+        "kind": "text",
+        "name": "birthdayKidsName",
+        "label": "Birthday Kids Name",
+        "required": true
+      },
+      {
+        "kind": "email",
+        "name": "email",
+        "label": "Email",
+        "required": true
+      },
+      {
+        "kind": "phone",
+        "name": "phone",
+        "label": "Phone",
+        "required": true
+      },
+      {
+        "kind": "textarea",
+        "name": "pleaseLetUsKnowTheDates",
+        "label": "Please let us know the dates and times you would like to schedule your party and we will check the calendar and confirm availability",
+        "required": true
+      },
+      {
+        "kind": "checkbox",
+        "name": "wouldYouLikeToDiscussAny",
+        "label": "Would you like to discuss any of these?",
+        "required": false,
+        "choices": [
+          "Nerf Battle Party",
+          "Laser Tag Party",
+          "Private Party",
+          "Pizza Party"
+        ]
+      },
+      {
+        "kind": "text",
+        "name": "anythingElse",
+        "label": "Anything else?",
+        "required": false
+      }
+    ],
+    "repeater": null
+  },
+  {
+    "id": "camp-registration",
+    "formKey": "event-waitlist",
+    "event": "Summer Camp 2027 – dates",
+    "page": "/summer-camps-in-springfield-mo/",
+    "anchor": "lead-form",
+    "button": "Notify Me",
+    "open": true,
+    "success": {
+      "type": "message",
+      "message": "Thanks for contacting us! We will get in touch with you shortly."
+    },
+    "fields": [
+      {
+        "kind": "name",
+        "label": "Name",
+        "required": false
+      },
+      {
+        "kind": "email",
+        "name": "email",
+        "label": "Email",
+        "required": true
+      }
+    ],
+    "repeater": null
+  },
+  {
+    "id": "csna",
+    "formKey": "event-waitlist",
+    "event": "CSNA Competition – next dates",
+    "page": "/competitions/",
+    "anchor": "lead-form",
+    "button": "Notify Me",
+    "open": true,
+    "success": {
+      "type": "message",
+      "message": "Thanks for contacting us! We will get in touch with you shortly."
+    },
+    "fields": [
+      {
+        "kind": "name",
+        "label": "Name",
+        "required": false
+      },
+      {
+        "kind": "email",
+        "name": "email",
+        "label": "Email",
+        "required": true
+      }
+    ],
+    "repeater": null
+  },
+  {
+    "id": "wnl",
+    "formKey": "event-waitlist",
+    "event": "WNL Competition – next dates",
+    "page": "/wnl-competitions/",
+    "anchor": "lead-form",
+    "button": "Notify Me",
+    "open": true,
+    "success": {
+      "type": "message",
+      "message": "Thanks for contacting us! We will get in touch with you shortly."
+    },
+    "fields": [
+      {
+        "kind": "name",
+        "label": "Name",
+        "required": false
+      },
+      {
+        "kind": "email",
+        "name": "email",
+        "label": "Email",
+        "required": true
+      }
+    ],
+    "repeater": null
+  },
+  {
+    "id": "personal-training",
+    "formKey": "personal-training",
+    "event": "Personal Training",
+    "page": "/personal-training/",
+    "anchor": "lead-form",
+    "button": "Submit",
+    "open": true,
+    "success": {
+      "type": "message",
+      "message": "Thank you for reaching out! We will be in touch shortly."
+    },
+    "fields": [
+      {
+        "kind": "name",
+        "label": "Full Name",
+        "required": true
+      },
+      {
+        "kind": "phone",
+        "name": "phone",
+        "label": "Phone",
+        "required": true
+      },
+      {
+        "kind": "email",
+        "name": "emailAddress",
+        "label": "Email Address",
+        "required": true
+      },
+      {
+        "kind": "text",
+        "name": "age",
+        "label": "Age",
+        "required": true
+      },
+      {
+        "kind": "radio",
+        "name": "gender",
+        "label": "Gender",
+        "required": true,
+        "choices": [
+          "Male",
+          "Female"
+        ]
+      },
+      {
+        "kind": "textarea",
+        "name": "whatAreYourFitnessGoals",
+        "label": "What Are Your Fitness Goals?",
+        "required": true
+      },
+      {
+        "kind": "textarea",
+        "name": "whatAreYouLookingForIn",
+        "label": "What Are You Looking for in a Trainer?",
+        "required": true
+      }
+    ],
+    "repeater": null
+  },
+  {
+    "id": "nerf",
+    "formKey": "event-waitlist",
+    "event": "Nerf War Night",
+    "page": "/nerf-wars/",
+    "anchor": "lead-form",
+    "button": "Notify Me",
+    "open": true,
+    "success": {
+      "type": "message",
+      "message": "Thanks for contacting us! We will get in touch with you shortly."
+    },
+    "fields": [
+      {
+        "kind": "name",
+        "label": "Name",
+        "required": false
+      },
+      {
+        "kind": "email",
+        "name": "email",
+        "label": "Email",
+        "required": true
+      }
+    ],
+    "repeater": null
+  },
+  {
+    "id": "laser",
+    "formKey": "event-waitlist",
+    "event": "Laser Tag Night",
+    "page": "/laser-tag/",
+    "anchor": "lead-form",
+    "button": "Notify Me",
+    "open": true,
+    "success": {
+      "type": "message",
+      "message": "Thanks for contacting us! We will get in touch with you shortly."
+    },
+    "fields": [
+      {
+        "kind": "name",
+        "label": "Name",
+        "required": false
+      },
+      {
+        "kind": "email",
+        "name": "email",
+        "label": "Email",
+        "required": true
+      }
+    ],
+    "repeater": null
+  },
+  {
+    "id": "contact",
+    "formKey": "main-contact",
+    "event": "Contact",
+    "page": "/contact/",
+    "anchor": "lead-form",
+    "button": "Submit",
+    "open": true,
+    "success": {
+      "type": "message",
+      "message": "Thank you! We will be in touch shortly!"
+    },
+    "fields": [
+      {
+        "kind": "text",
+        "name": "firstName",
+        "label": "First Name",
+        "required": true,
+        "namePart": "first"
+      },
+      {
+        "kind": "text",
+        "name": "lastName",
+        "label": "Last Name",
+        "required": true,
+        "namePart": "last"
+      },
+      {
+        "kind": "email",
+        "name": "email",
+        "label": "Email",
+        "required": true
+      },
+      {
+        "kind": "text",
+        "name": "subject",
+        "label": "Subject",
+        "required": true
+      },
+      {
+        "kind": "textarea",
+        "name": "message",
+        "label": "Message",
+        "required": true
+      }
+    ],
+    "repeater": null
+  }
+]

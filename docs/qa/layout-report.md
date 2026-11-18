@@ -1,0 +1,8511 @@
+# Layout comparison: live vs build
+Total differences: 8357
+
+## about @ 1920px: 2 difference(s)
+- text "We had our son’s 10th birthday": 5 line(s), live 4
+- text "My daughter started training h": 7 line(s), live 6
+
+## best-gyms-in-springfield @ 1920px: 387 difference(s)
+- page height 6261px, live 7180px
+- heading missing: "SO… WHICH GYM’S RIGHT FOR YOU?"
+- heading missing: "Southwest Springfield doesn’t mess around when it comes to fitness. Whether you want to lift heavy, join a class, recover in a cold plunge, or chase your first chin-up—you’ve got options."
+- heading missing: "So, no matter where you are in your fitness journey, take the leap."
+- heading missing: "Pick your place, show up like you mean it, and get after it."
+- heading "LOOKING FOR THE BEST GYMS IN SPRINGFIELD": color rgb(255, 255, 255), live rgb(219, 58, 52)
+- heading "LOOKING FOR THE BEST GYMS IN SPRINGFIELD": align center, live left
+- heading "RAGE FITNESS": left edge 385px, live 973px
+- heading "RAGE FITNESS": width 555px, live 342px
+- heading "GP ATHLETICS": width 555px, live 344px
+- heading "SPRINGFIELD WARRIOR SPORTS": left edge 385px, live 973px
+- heading "SPRINGFIELD STRENGTH & CONDITIONING": 4 line(s), live 3
+- heading "PROXIMAL STRENGTH": left edge 385px, live 973px
+- heading "GENESIS HEALTH CLUBS – SPRINGFIELD SOUTH": left edge 385px, live 973px
+- heading "GENESIS HEALTH CLUBS – SPRINGFIELD SOUTH": 4 line(s), live 3
+- photo missing: colorrage-sw-sq-2
+- photo missing: gp12-20-45_websize
+- photo missing: 62544e735ced2e7233a47d90_about us in springfield hero
+- photo missing: ourclasses_3-750x500-1200w
+- photo missing: springfield-1
+- photo missing: genesis_app_background
+- photo missing: pricing-and-schedule
+- photo img_2344: left edge 385px, live 334px
+- photo img_2344: width 555px, live 749px
+- button "VISIT WEBSITE": color rgb(214, 53, 47), live rgb(40, 82, 118)
+- button "VISIT WEBSITE": width 132px, live 176px
+- button "VISIT WEBSITE": color rgb(214, 53, 47), live rgb(40, 82, 118)
+- button "VISIT WEBSITE": width 132px, live 176px
+- button "VISIT WEBSITE": color rgb(214, 53, 47), live rgb(40, 82, 118)
+- button "VISIT WEBSITE": width 132px, live 176px
+- button "VISIT WEBSITE": color rgb(214, 53, 47), live rgb(40, 82, 118)
+- button "VISIT WEBSITE": width 132px, live 176px
+- button "VISIT WEBSITE": color rgb(214, 53, 47), live rgb(40, 82, 118)
+- button "VISIT WEBSITE": width 132px, live 176px
+- button "VISIT WEBSITE": color rgb(214, 53, 47), live rgb(40, 82, 118)
+- button "VISIT WEBSITE": width 132px, live 176px
+- button "VISIT WEBSITE": color rgb(214, 53, 47), live rgb(40, 82, 118)
+- button "VISIT WEBSITE": width 132px, live 176px
+- text not on live: "Expert-led barbell and strength classes One-on-one coaching "
+- text not on live: "Premium training zones & cardio deck Group fitness with know"
+- text "Whether you’re hunting down yo": left edge 980px, live 425px
+- text "Whether you’re hunting down yo": width 555px, live 1070px
+- text "Whether you’re hunting down yo": weight 300, live 400
+- text "Whether you’re hunting down yo": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Whether you’re hunting down yo": 5 line(s), live 3
+- text "Whether you’re hunting down yo": align start, live center
+- text "Offering everything from worko": left edge 980px, live 425px
+- text "Offering everything from worko": width 555px, live 1070px
+- text "Offering everything from worko": weight 300, live 400
+- text "Offering everything from worko": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Offering everything from worko": 4 line(s), live 2
+- text "Offering everything from worko": align start, live center
+- text "Before we get started on our l": left edge 980px, live 425px
+- text "Before we get started on our l": width 555px, live 1070px
+- text "Before we get started on our l": weight 300, live 400
+- text "Before we get started on our l": color rgb(51, 51, 51), live rgba(41, 41, 41, 0.99)
+- text "Before we get started on our l": 2 line(s), live 1
+- text "Before we get started on our l": align start, live center
+- text "Instead, think obstacle course": left edge 980px, live 425px
+- text "Instead, think obstacle course": width 555px, live 1070px
+- text "Instead, think obstacle course": weight 300, live 400
+- text "Instead, think obstacle course": color rgb(51, 51, 51), live rgba(41, 41, 41, 0.99)
+- text "Instead, think obstacle course": 2 line(s), live 1
+- text "Instead, think obstacle course": align start, live center
+- text "and train like never before, c": left edge 980px, live 425px
+- text "and train like never before, c": width 555px, live 1070px
+- text "and train like never before, c": weight 300, live 400
+- text "and train like never before, c": color rgb(51, 51, 51), live rgba(41, 41, 41, 0.99)
+- text "and train like never before, c": 2 line(s), live 1
+- text "and train like never before, c": align start, live center
+- text "one of the most unique gyms ar": left edge 980px, live 425px
+- text "one of the most unique gyms ar": width 555px, live 1070px
+- text "one of the most unique gyms ar": weight 300, live 600
+- text "one of the most unique gyms ar": color rgb(51, 51, 51), live rgba(41, 41, 41, 0.99)
+- text "one of the most unique gyms ar": 2 line(s), live 1
+- text "one of the most unique gyms ar": align start, live center
+- text "2321 S Campbell Ave, Springfie": left edge 385px, live 1008px
+- text "2321 S Campbell Ave, Springfie": width 555px, live 292px
+- text "2321 S Campbell Ave, Springfie": weight 300, live 600
+- text "2321 S Campbell Ave, Springfie": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "If you want gyms in Springfiel": left edge 385px, live 974px
+- text "If you want gyms in Springfiel": weight 300, live 400
+- text "If you want gyms in Springfiel": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "This is where grit meets grind": left edge 385px, live 974px
+- text "This is where grit meets grind": weight 300, live 400
+- text "This is where grit meets grind": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.99)
+- text "Highlights:": left edge 385px, live 974px
+- text "Highlights:": weight 300, live 700
+- text "Highlights:": color rgb(51, 51, 51), live rgb(40, 82, 118)
+- text "24/7 access — because results ": left edge 385px, live 1006px
+- text "24/7 access — because results ": width 555px, live 360px
+- text "24/7 access — because results ": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Cold plunges, saunas, compress": left edge 385px, live 1006px
+- text "Cold plunges, saunas, compress": width 555px, live 406px
+- text "Cold plunges, saunas, compress": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "3119 S Scenic Ave Ste B, Sprin": left edge 385px, live 420px
+- text "3119 S Scenic Ave Ste B, Sprin": width 555px, live 314px
+- text "3119 S Scenic Ave Ste B, Sprin": weight 300, live 600
+- text "3119 S Scenic Ave Ste B, Sprin": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Built for lifters, athletes, a": weight 300, live 400
+- text "Built for lifters, athletes, a": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "From elite coaching to persona": weight 300, live 400
+- text "From elite coaching to persona": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Highlights:": weight 300, live 700
+- text "Highlights:": color rgb(51, 51, 51), live rgb(40, 82, 118)
+- text "605 W Farm Rd 182, Springfield": left edge 385px, live 1008px
+- text "605 W Farm Rd 182, Springfield": width 555px, live 277px
+- text "605 W Farm Rd 182, Springfield": weight 300, live 600
+- text "605 W Farm Rd 182, Springfield": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Ready to ditch the treadmill f": left edge 385px, live 974px
+- text "Ready to ditch the treadmill f": weight 300, live 400
+- text "Ready to ditch the treadmill f": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "If you're interested in parkou": left edge 385px, live 974px
+- text "If you're interested in parkou": weight 300, live 400
+- text "If you're interested in parkou": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "2026 W Vista St Suite H, Sprin": left edge 385px, live 420px
+- text "2026 W Vista St Suite H, Sprin": width 555px, live 314px
+- text "2026 W Vista St Suite H, Sprin": weight 300, live 600
+- text "2026 W Vista St Suite H, Sprin": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Voted Springfield’s #1 Gym two": weight 300, live 400
+- text "Voted Springfield’s #1 Gym two": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "They offer 24-hour access, ind": weight 300, live 400
+- text "They offer 24-hour access, ind": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Highlights:": weight 300, live 700
+- text "Highlights:": color rgb(51, 51, 51), live rgb(40, 82, 118)
+- text "Customized training & nutritio": left edge 385px, live 418px
+- text "Customized training & nutritio": width 555px, live 405px
+- text "Customized training & nutritio": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Coaches who correct your form,": left edge 385px, live 418px
+- text "Coaches who correct your form,": width 555px, live 405px
+- text "Coaches who correct your form,": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "1900 W Sunset St #B100, Spring": left edge 385px, live 1008px
+- text "1900 W Sunset St #B100, Spring": width 555px, live 320px
+- text "1900 W Sunset St #B100, Spring": weight 300, live 600
+- text "1900 W Sunset St #B100, Spring": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Proximal isn’t just about fitn": left edge 385px, live 974px
+- text "Proximal isn’t just about fitn": weight 300, live 400
+- text "Proximal isn’t just about fitn": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "You’ll find a welcoming crew, ": left edge 385px, live 974px
+- text "You’ll find a welcoming crew, ": weight 300, live 400
+- text "You’ll find a welcoming crew, ": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Highlights:": left edge 385px, live 974px
+- text "Highlights:": weight 300, live 700
+- text "Highlights:": color rgb(51, 51, 51), live rgb(40, 82, 118)
+- text "Endurance, rowing, sports perf": left edge 385px, live 1006px
+- text "Endurance, rowing, sports perf": width 555px, live 374px
+- text "Endurance, rowing, sports perf": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "1444 S Glenstone Ave, Springfi": left edge 385px, live 420px
+- text "1444 S Glenstone Ave, Springfi": width 555px, live 299px
+- text "1444 S Glenstone Ave, Springfi": weight 300, live 600
+- text "1444 S Glenstone Ave, Springfi": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Want fitness on your terms? 10": weight 300, live 400
+- text "Want fitness on your terms? 10": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Their Level 10 group classes a": weight 300, live 400
+- text "Their Level 10 group classes a": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Highlights:": weight 300, live 700
+- text "Highlights:": color rgb(51, 51, 51), live rgb(40, 82, 118)
+- text "24/7 gym access, massage chair": left edge 385px, live 418px
+- text "24/7 gym access, massage chair": width 555px, live 343px
+- text "24/7 gym access, massage chair": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "1249 E Battlefield Rd, Springf": left edge 385px, live 1008px
+- text "1249 E Battlefield Rd, Springf": width 555px, live 292px
+- text "1249 E Battlefield Rd, Springf": weight 300, live 600
+- text "1249 E Battlefield Rd, Springf": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "If you're after a fitness cent": left edge 385px, live 974px
+- text "If you're after a fitness cent": weight 300, live 400
+- text "If you're after a fitness cent": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Great for families or anyone w": left edge 385px, live 974px
+- text "Great for families or anyone w": weight 300, live 400
+- text "Great for families or anyone w": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Highlights:": left edge 385px, live 974px
+- text "Highlights:": weight 300, live 700
+- text "Highlights:": color rgb(51, 51, 51), live rgb(40, 82, 118)
+- text "Indoor pool, hot tub, steam ro": left edge 385px, live 1006px
+- text "Indoor pool, hot tub, steam ro": width 555px, live 369px
+- text "Indoor pool, hot tub, steam ro": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Looking for the Best Gyms in Springfield": color rgb(255, 255, 255), live rgb(219, 58, 52)
+- words "Whether you’re hunting down your next PR": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Whether you’re hunting down your next PR": weight 300, live 400
+- words "Offering everything from workout classes": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Offering everything from workout classes": weight 300, live 400
+- words "Before we get started on our list—can we": color rgb(51, 51, 51), live rgba(41, 41, 41, 0.99)
+- words "Before we get started on our list—can we": weight 300, live 400
+- words "Instead, think obstacle courses, warped ": color rgb(51, 51, 51), live rgba(41, 41, 41, 0.99)
+- words "Instead, think obstacle courses, warped ": weight 300, live 400
+- words "and train like never before, check out o": color rgb(51, 51, 51), live rgba(41, 41, 41, 0.99)
+- words "and train like never before, check out o": weight 300, live 400
+- words "Adult Fitness Classes": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "Adult Fitness Classes": weight 300, live 400
+- words "and see what makes Springfield Warrior S": color rgb(51, 51, 51), live rgba(41, 41, 41, 0.99)
+- words "and see what makes Springfield Warrior S": weight 300, live 400
+- words "one of the most unique gyms around.": color rgb(51, 51, 51), live rgba(41, 41, 41, 0.99)
+- words "one of the most unique gyms around.": weight 300, live 600
+- words "We’re located just south of Sunshine and": color rgb(51, 51, 51), live rgba(41, 41, 41, 0.99)
+- words "We’re located just south of Sunshine and": weight 300, live 400
+- words "2321 S Campbell Ave, Springfield, MO": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "2321 S Campbell Ave, Springfield, MO": weight 300, live 600
+- words "If you want gyms in Springfield that don": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "If you want gyms in Springfield that don": weight 300, live 400
+- words "This is where grit meets grind. You’ll f": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.99)
+- words "This is where grit meets grind. You’ll f": weight 300, live 400
+- words "Highlights:": color rgb(51, 51, 51), live rgb(40, 82, 118)
+- words "Highlights:": weight 300, live 700
+- words "24/7 access — because results don’t cloc": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Cold plunges, saunas, compression sleeve": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Locally owned, hardcore ethos": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Group classes and personal training": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "3119 S Scenic Ave Ste B, Springfield, MO": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "3119 S Scenic Ave Ste B, Springfield, MO": weight 300, live 600
+- words "Built for lifters, athletes, and real hu": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Built for lifters, athletes, and real hu": weight 300, live 400
+- words "From elite coaching to personal training": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "From elite coaching to personal training": weight 300, live 400
+- words "Highlights:": color rgb(51, 51, 51), live rgb(40, 82, 118)
+- words "Highlights:": weight 300, live 700
+- words "Expert-led barbell and strength classes": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "One-on-one coaching and online programs": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Open gym for lifters who know their way ": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Welcoming community for all ages": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "605 W Farm Rd 182, Springfield, MO": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "605 W Farm Rd 182, Springfield, MO": weight 300, live 600
+- words "Ready to ditch the treadmill for somethi": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Ready to ditch the treadmill for somethi": weight 300, live 400
+- words "If you're interested in parkour sessions": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "If you're interested in parkour sessions": weight 300, live 400
+- words "Adult Ninja Fitness class": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "Adult Ninja Fitness class": weight 300, live 400
+- words ". At Springfield’s go-to obstacle traini": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words ". At Springfield’s go-to obstacle traini": weight 300, live 400
+- words "2026 W Vista St Suite H, Springfield, MO": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "2026 W Vista St Suite H, Springfield, MO": weight 300, live 600
+- words "Voted Springfield’s #1 Gym two years run": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Voted Springfield’s #1 Gym two years run": weight 300, live 400
+- words "They offer 24-hour access, individualize": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "They offer 24-hour access, individualize": weight 300, live 400
+- words "Highlights:": color rgb(51, 51, 51), live rgb(40, 82, 118)
+- words "Highlights:": weight 300, live 700
+- words "Customized training & nutrition (online ": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Strength, performance, and Olympic lifti": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "24/7 gym access for grinders": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Coaches who correct your form, not just ": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "1900 W Sunset St #B100, Springfield, MO": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "1900 W Sunset St #B100, Springfield, MO": weight 300, live 600
+- words "Proximal isn’t just about fitness—it’s a": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Proximal isn’t just about fitness—it’s a": weight 300, live 400
+- words "You’ll find a welcoming crew, killer pro": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "You’ll find a welcoming crew, killer pro": weight 300, live 400
+- words "Highlights:": color rgb(51, 51, 51), live rgb(40, 82, 118)
+- words "Highlights:": weight 300, live 700
+- words "Endurance, rowing, sports performance cl": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Personal training & private onboarding": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "5-star rated staff with a focus on minds": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Built for connection, not comparison": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "1444 S Glenstone Ave, Springfield, MO": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "1444 S Glenstone Ave, Springfield, MO": weight 300, live 600
+- words "Want fitness on your terms? 10 Fitness b": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Want fitness on your terms? 10 Fitness b": weight 300, live 400
+- words "Their Level 10 group classes are perfect": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Their Level 10 group classes are perfect": weight 300, live 400
+- words "Highlights:": color rgb(51, 51, 51), live rgb(40, 82, 118)
+- words "Highlights:": weight 300, live 700
+- words "24/7 gym access, massage chairs, & tanni": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Premium training zones & cardio deck": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Group fitness with knowledgeable coaches": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Affordable, flexible, and great for ever": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "1249 E Battlefield Rd, Springfield, MO": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "1249 E Battlefield Rd, Springfield, MO": weight 300, live 600
+- words "If you're after a fitness center in Spri": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "If you're after a fitness center in Spri": weight 300, live 400
+- words "Great for families or anyone who wants s": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Great for families or anyone who wants s": weight 300, live 400
+- words "Highlights:": color rgb(51, 51, 51), live rgb(40, 82, 118)
+- words "Highlights:": weight 300, live 700
+- words "Indoor pool, hot tub, steam room, smooth": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Unlimited daily group classes (HIIT, cyc": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "CPR-certified childcare": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "CPR-certified childcare": weight 300, live 600
+- words "Full-service locker rooms & recovery spa": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "So… Which Gym’s Right for You?": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "So… Which Gym’s Right for You?": weight 300, live 900
+- words "Southwest Springfield doesn’t mess aroun": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- words "Southwest Springfield doesn’t mess aroun": weight 300, live 400
+- words "So, no matter where you are in your fitn": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- words "So, no matter where you are in your fitn": weight 300, live 400
+- words "Pick your place, show up like you mean i": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- words "Pick your place, show up like you mean i": weight 300, live 400
+- spacing from "LOOKING FOR THE BEST GYMS IN S" to "RAGE FITNESS": 1050px, live 804px
+- spacing from "RAGE FITNESS" to "GP ATHLETICS": 598px, live 684px
+- spacing from "GP ATHLETICS" to "SPRINGFIELD WARRIOR SPORTS": 660px, live 780px
+- spacing from "SPRINGFIELD WARRIOR SPORTS" to "SPRINGFIELD STRENGTH & CONDITI": 553px, live 626px
+- spacing from "PROXIMAL STRENGTH" to "10 FITNESS SPRINGFIELD": 557px, live 655px
+- gap between "LOOKING FOR THE BEST GYMS IN S" and "Whether you’re hunting down yo": 262px, live 91px
+- gap between "Offering everything from worko" and "Before we get started on our l": 15px, live 117px
+- gap between "one of the most unique gyms ar" and "RAGE FITNESS": 98px, live 170px
+- gap between "Cold plunges, saunas, compress" and "GP ATHLETICS": 157px, live 252px
+- gap between "Highlights:" and "SPRINGFIELD WARRIOR SPORTS": 247px, live 346px
+- gap between "If you're interested in parkou" and "SPRINGFIELD STRENGTH & CONDITI": 156px, live 211px
+- gap between "Customized training & nutritio" and "Coaches who correct your form,": 14px, live 73px
+- gap between "Endurance, rowing, sports perf" and "10 FITNESS SPRINGFIELD": 156px, live 292px
+- icons: 5 in build, 36 on live
+- icon 1: color rgb(255, 255, 255), live rgb(219, 58, 52)
+- icon 1: size 17px, live 24px
+- icon 1: left edge 418px, live 974px
+- icon 2: color rgb(255, 255, 255), live rgb(219, 58, 52)
+- icon 2: left edge 455px, live 974px
+- icon 3: left edge 821px, live 974px
+- icon 4: left edge 821px, live 974px
+- icon 5: left edge 821px, live 974px
+- background behind "RAGE FITNESS": rgb(242, 246, 249), live rgb(255, 255, 255)
+- background behind "SPRINGFIELD WARRIOR SPORTS": rgb(242, 246, 247), live rgb(255, 255, 255)
+- background behind "PROXIMAL STRENGTH": rgb(242, 246, 247), live rgb(255, 255, 255)
+- background behind "GENESIS HEALTH CLUBS – SPRINGFIELD SOUTH": rgb(242, 246, 248), live rgb(255, 255, 255)
+- background behind "Before we get started on our list—can we": rgb(255, 255, 255), live rgb(238, 244, 250)
+- background behind "Instead, think obstacle courses, warped ": rgb(255, 255, 255), live rgb(238, 244, 250)
+- background behind "and train like never before, check out o": rgb(255, 255, 255), live rgb(238, 244, 250)
+- background behind "one of the most unique gyms around. We’r": rgb(255, 255, 255), live rgb(238, 244, 250)
+- background behind "2321 S Campbell Ave, Springfield, MO": rgb(242, 246, 248), live rgb(255, 255, 255)
+- background behind "If you want gyms in Springfield that don": rgb(242, 244, 246), live rgb(255, 255, 255)
+- background behind "This is where grit meets grind. You’ll f": rgb(242, 245, 247), live rgb(255, 255, 255)
+- background behind "Highlights:": rgb(242, 246, 249), live rgb(255, 255, 255)
+- background behind "24/7 access — because results don’t cloc": rgb(242, 246, 248), live rgb(255, 255, 255)
+- background behind "Cold plunges, saunas, compression sleeve": rgb(242, 245, 247), live rgb(255, 255, 255)
+- background behind "605 W Farm Rd 182, Springfield, MO": rgb(242, 245, 248), live rgb(255, 255, 255)
+- background behind "Ready to ditch the treadmill for somethi": rgb(242, 245, 247), live rgb(255, 255, 255)
+- background behind "If you're interested in parkour sessions": rgb(242, 244, 246), live rgb(255, 255, 255)
+- background behind "1900 W Sunset St #B100, Springfield, MO": rgb(242, 246, 248), live rgb(255, 255, 255)
+- background behind "Proximal isn’t just about fitness—it’s a": rgb(242, 245, 247), live rgb(255, 255, 255)
+- background behind "You’ll find a welcoming crew, killer pro": rgb(242, 245, 247), live rgb(255, 255, 255)
+- background behind "Highlights:": rgb(242, 246, 249), live rgb(255, 255, 255)
+- background behind "Endurance, rowing, sports performance cl": rgb(242, 245, 247), live rgb(255, 255, 255)
+- background behind "1249 E Battlefield Rd, Springfield, MO": rgb(242, 246, 248), live rgb(255, 255, 255)
+- background behind "If you're after a fitness center in Spri": rgb(242, 244, 247), live rgb(255, 255, 255)
+- background behind "Great for families or anyone who wants s": rgb(242, 245, 248), live rgb(255, 255, 255)
+- background behind "Highlights:": rgb(242, 246, 249), live rgb(255, 255, 255)
+- background behind "Indoor pool, hot tub, steam room, smooth": rgb(242, 245, 247), live rgb(255, 255, 255)
+- band color beside "LOOKING FOR THE BEST GYMS IN SPRINGFIELD": rgb(6, 6, 6), live rgb(3, 21, 41)
+- band color beside "RAGE FITNESS": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band color beside "SPRINGFIELD WARRIOR SPORTS": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band color beside "PROXIMAL STRENGTH": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band color beside "GENESIS HEALTH CLUBS – SPRINGFIELD SOUTH": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band color beside "Before we get started on our list—can we": rgb(255, 255, 255), live rgb(238, 245, 251)
+- band color beside "Instead, think obstacle courses, warped ": rgb(255, 255, 255), live rgb(238, 245, 251)
+- band color beside "and train like never before, check out o": rgb(255, 255, 255), live rgb(238, 245, 251)
+- band color beside "one of the most unique gyms around. We’r": rgb(255, 255, 255), live rgb(238, 245, 251)
+- band color beside "2321 S Campbell Ave, Springfield, MO": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band color beside "If you want gyms in Springfield that don": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band color beside "This is where grit meets grind. You’ll f": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band color beside "Highlights:": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band color beside "24/7 access — because results don’t cloc": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band color beside "Cold plunges, saunas, compression sleeve": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band color beside "605 W Farm Rd 182, Springfield, MO": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band color beside "Ready to ditch the treadmill for somethi": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band color beside "If you're interested in parkour sessions": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band color beside "1900 W Sunset St #B100, Springfield, MO": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band color beside "Proximal isn’t just about fitness—it’s a": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band color beside "You’ll find a welcoming crew, killer pro": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band color beside "Highlights:": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band color beside "Endurance, rowing, sports performance cl": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band color beside "1249 E Battlefield Rd, Springfield, MO": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band color beside "If you're after a fitness center in Spri": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band color beside "Great for families or anyone who wants s": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band color beside "Highlights:": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band color beside "Indoor pool, hot tub, steam room, smooth": rgb(242, 246, 249), live rgb(255, 255, 255)
+- heading "LOOKING FOR THE BEST GYMS IN SPRINGFIELD": looks different from live (pixel difference 55)
+- heading "RAGE FITNESS": looks different from live (pixel difference 47)
+- heading "GP ATHLETICS": looks different from live (pixel difference 48)
+- text "one of the most unique gyms ar": looks different from live (pixel difference 38)
+- text "2321 S Campbell Ave, Springfie": looks different from live (pixel difference 38)
+- text "605 W Farm Rd 182, Springfield": looks different from live (pixel difference 39)
+- text "1249 E Battlefield Rd, Springf": looks different from live (pixel difference 39)
+- photo hero: brightness 21, live 37 (overlay or exposure differs)
+- photo img_2344: brightness 96, live 139 (overlay or exposure differs)
+- photo img_2344: looks different from live (pixel difference 45)
+- band rgb(255, 255, 255) at y=629 (left margin): 643px tall, live 284px
+- band rgb(238, 245, 251) at y=913 (251px tall on live, left margin) not found in build
+- band rgb(255, 255, 255) at y=1164 (5056px tall on live, left margin) not found in build
+- band rgb(0, 0, 0) at y=6220 (97px tall on live, left margin) not found in build
+- band rgb(255, 255, 255) at y=1915 (660px tall, left margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=3127 (698px tall, left margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=4383 (646px tall, left margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=629 (right margin): 643px tall, live 284px
+- band rgb(238, 245, 251) at y=913 (251px tall on live, right margin) not found in build
+- band rgb(255, 255, 255) at y=1164 (5056px tall on live, right margin) not found in build
+- band rgb(29, 37, 55) at y=6328 (292px tall on live, right margin) not found in build
+- band rgb(255, 255, 255) at y=1915 (660px tall, right margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=3127 (698px tall, right margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=4383 (646px tall, right margin) is in the build but not on live
+
+## birthday-parties @ 1920px: 232 difference(s)
+- page height 5443px, live 5742px
+- heading missing: "NINJA WARRIOR COURSES, LASER TAG, NERF BATTLES, AND MORE!"
+- heading missing: "BOOK NOW!"
+- heading missing: "You can begin the birthday party scheduling process on our website by clicking here, or call us today at (417) 894-7319 to reserve your birthday party spot at Warrior Sports!"
+- heading missing: "Cancellation & Rescheduling Policy: To help us staff and prepare properly, any cancellations or reschedules made starting the weekend immediately before your party date and at any point thereafter will incur a $60 fee."
+- heading missing: "PIZZA BIRTHDAY PARTY WITH NO CLEAN UP!"
+- heading missing: "LASER TAG PARTIES"
+- heading not on live: "HIGH-ENERGY KIDS' BIRTHDAY PARTIES IN SPRINGFIELD, MO"
+- heading "KIDS WILL HAVE A BLAST, AND YOU CAN RELA": left edge 385px, live 500px
+- heading "KIDS WILL HAVE A BLAST, AND YOU CAN RELA": width 1150px, live 920px
+- heading "KIDS WILL HAVE A BLAST, AND YOU CAN RELA": size 60px, live 26px
+- heading "KIDS WILL HAVE A BLAST, AND YOU CAN RELA": color rgb(214, 53, 47), live rgb(0, 0, 0)
+- heading "KIDS WILL HAVE A BLAST, AND YOU CAN RELA": 2 line(s), live 1
+- heading "KIDS WILL HAVE A BLAST, AND YOU CAN RELA": line height 60px, live 26px
+- heading "WARRIOR SPORTS TAKES THE STRESS OUT OF Y": left edge 980px, live 405px
+- heading "WARRIOR SPORTS TAKES THE STRESS OUT OF Y": width 555px, live 1110px
+- heading "WARRIOR SPORTS TAKES THE STRESS OUT OF Y": size 50px, live 40px
+- heading "WARRIOR SPORTS TAKES THE STRESS OUT OF Y": color rgb(214, 53, 47), live rgb(12, 17, 21)
+- heading "WARRIOR SPORTS TAKES THE STRESS OUT OF Y": 6 line(s), live 2
+- heading "WARRIOR SPORTS TAKES THE STRESS OUT OF Y": line height 50px, live 40px
+- heading "WARRIOR SPORTS TAKES THE STRESS OUT OF Y": align start, live center
+- heading "MORE BIRTHDAY PARTY OPTIONS AT SPRINGFIE": width 555px, live 1148px
+- heading "MORE BIRTHDAY PARTY OPTIONS AT SPRINGFIE": size 50px, live 30px
+- heading "MORE BIRTHDAY PARTY OPTIONS AT SPRINGFIE": weight 900, live 300
+- heading "MORE BIRTHDAY PARTY OPTIONS AT SPRINGFIE": color rgb(214, 53, 47), live rgb(0, 0, 0)
+- heading "MORE BIRTHDAY PARTY OPTIONS AT SPRINGFIE": 5 line(s), live 1
+- heading "MORE BIRTHDAY PARTY OPTIONS AT SPRINGFIE": line height 50px, live 42px
+- heading "MORE BIRTHDAY PARTY OPTIONS AT SPRINGFIE": align start, live center
+- heading "HAVE BATTLES IN OUR OBSTACLE COURSE GYM": line height 50px, live 40px
+- heading "NERF BATTLE PARTIES": line height 50px, live 30px
+- heading "CREATE AMAZING MEMORIES": line height 50px, live 55px
+- photo missing: book-now-bg
+- photo missing: amazing-memories
+- photo pizza-birthday-party: left edge 980px, live 385px
+- photo laser-tag-party: left edge 385px, live 1034px
+- text "Springfield Warrior Sports is ": left edge 385px, live 425px
+- text "Springfield Warrior Sports is ": width 555px, live 1070px
+- text "Springfield Warrior Sports is ": weight 300, live 400
+- text "Springfield Warrior Sports is ": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Springfield Warrior Sports is ": align start, live center
+- text "This means more than just one ": left edge 385px, live 489px
+- text "This means more than just one ": width 555px, live 943px
+- text "This means more than just one ": weight 300, live 600
+- text "This means more than just one ": color rgb(51, 51, 51), live rgb(40, 82, 118)
+- text "This means more than just one ": align start, live center
+- text "At Springfield Warrior Sports,": weight 300, live 400
+- text "At Springfield Warrior Sports,": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Note: free customized party in": weight 300, live 400
+- text "Note: free customized party in": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Cost: $179 for the first 11 ki": weight 300, live 600
+- text "Cost: $179 for the first 11 ki": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "* All participants will need t": left edge 980px, live 411px
+- text "* All participants will need t": width 555px, live 1123px
+- text "* All participants will need t": weight 300, live 600
+- text "* All participants will need t": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- text "* All participants will need t": 3 line(s), live 2
+- text "** To reserve your birthday pa": left edge 980px, live 411px
+- text "** To reserve your birthday pa": width 555px, live 1123px
+- text "** To reserve your birthday pa": weight 300, live 600
+- text "** To reserve your birthday pa": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- text "Want to feed the birthday part": width 555px, live 1148px
+- text "Want to feed the birthday part": weight 300, live 400
+- text "Want to feed the birthday part": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Want to feed the birthday part": 2 line(s), live 1
+- text "Want to feed the birthday part": align start, live center
+- text "We can help you with that!": width 555px, live 1148px
+- text "We can help you with that!": weight 300, live 600
+- text "We can help you with that!": color rgb(51, 51, 51), live rgb(40, 82, 118)
+- text "We can help you with that!": align start, live center
+- text "Our birthday party pizza packa": left edge 385px, live 974px
+- text "Our birthday party pizza packa": weight 300, live 400
+- text "Our birthday party pizza packa": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Our crew will set up and facil": weight 300, live 400
+- text "Our crew will set up and facil": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "The Springfield Warrior Sports": weight 300, live 400
+- text "The Springfield Warrior Sports": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Create unforgettable memories ": weight 300, live 400
+- text "Create unforgettable memories ": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "High-Energy": color rgb(214, 53, 47), live rgb(255, 255, 255)
+- words "Kids' birthday parties": color rgb(0, 0, 0), live rgb(219, 58, 52)
+- words "Kids' birthday parties": weight 400, live 900
+- words "in Springfield, MO": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- words "in Springfield, MO": weight 300, live 400
+- words "Ninja Warrior Courses, Laser Tag, Nerf B": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- words "Ninja Warrior Courses, Laser Tag, Nerf B": weight 300, live 400
+- words "Kids will have a Blast, and You can Rela": color rgb(214, 53, 47), live rgb(0, 0, 0)
+- words "Springfield Warrior Sports is the ideal ": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Springfield Warrior Sports is the ideal ": weight 300, live 400
+- words "This means more than just one day of fun": color rgb(51, 51, 51), live rgb(40, 82, 118)
+- words "This means more than just one day of fun": weight 300, live 600
+- words "At Springfield Warrior Sports, we want t": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "At Springfield Warrior Sports, we want t": weight 300, live 400
+- words "Note: free customized party invitations ": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Note: free customized party invitations ": weight 300, live 400
+- words "Cost:": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Cost:": weight 300, live 600
+- words "$179 for the first 11 kids and $10 for e": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "All other guests (siblings, other parent": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "All participants will need to sign a wai": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "To reserve your birthday party time slot": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Book Now!": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "Book Now!": weight 300, live 900
+- words "You can begin the birthday party schedul": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- words "You can begin the birthday party schedul": weight 300, live 400
+- words "clicking here": color rgb(51, 51, 51), live rgb(135, 204, 237)
+- words "clicking here": weight 300, live 600
+- words "clicking here": underline false, live true
+- words ", or call us today at": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- words ", or call us today at": weight 300, live 400
+- words "(417) 894-7319": color rgb(51, 51, 51), live rgb(135, 204, 237)
+- words "(417) 894-7319": weight 300, live 600
+- words "(417) 894-7319": underline false, live true
+- words "to reserve your birthday party spot at W": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- words "to reserve your birthday party spot at W": weight 300, live 400
+- words "Cancellation & Rescheduling Policy:": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- words "Cancellation & Rescheduling Policy:": weight 300, live 900
+- words "To help us staff and prepare properly, a": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- words "To help us staff and prepare properly, a": weight 300, live 600
+- words "More Birthday Party Options at Springfie": color rgb(214, 53, 47), live rgb(0, 0, 0)
+- words "More Birthday Party Options at Springfie": weight 900, live 300
+- words "Want to feed the birthday party or have ": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Want to feed the birthday party or have ": weight 300, live 400
+- words "We can help you with that!": color rgb(51, 51, 51), live rgb(40, 82, 118)
+- words "We can help you with that!": weight 300, live 600
+- words "Pizza Birthday Party with No Clean Up!": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "Pizza Birthday Party with No Clean Up!": weight 300, live 900
+- words "Our birthday party pizza package include": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Our birthday party pizza package include": weight 300, live 400
+- words "Nerf Battle Parties": color rgb(0, 0, 0), live rgb(40, 82, 118)
+- words "Nerf Battle Parties": weight 400, live 900
+- words "Our crew will set up and facilitate a": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Our crew will set up and facilitate a": weight 300, live 400
+- words "Nerf Battle": color rgb(51, 51, 51), live rgb(47, 138, 228)
+- words "Nerf Battle": weight 300, live 400
+- words "for your party rather than an obstacle c": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "for your party rather than an obstacle c": weight 300, live 400
+- words "Laser Tag Parties": color rgb(51, 51, 51), live rgb(40, 82, 118)
+- words "Laser Tag Parties": weight 300, live 900
+- words "The Springfield Warrior Sports team will": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "The Springfield Warrior Sports team will": weight 300, live 400
+- words "Laser tag parties": color rgb(51, 51, 51), live rgb(47, 138, 228)
+- words "Laser tag parties": weight 300, live 400
+- words "must be scheduled during a private party": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "must be scheduled during a private party": weight 300, live 400
+- words "Create unforgettable memories with your ": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Create unforgettable memories with your ": weight 300, live 400
+- words "message here with your desired birthday ": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "message here with your desired birthday ": weight 300, live 600
+- words "message here with your desired birthday ": underline false, live true
+- words ", or call": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words ", or call": weight 300, live 400
+- words "(417) 894-7319": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "(417) 894-7319": weight 300, live 600
+- words "(417) 894-7319": underline false, live true
+- words "to book your birthday experience at Spri": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "to book your birthday experience at Spri": weight 300, live 400
+- spacing from "KIDS WILL HAVE A BLAST, AND YO" to "WARRIOR SPORTS TAKES THE STRES": 1938px, live 451px
+- spacing from "WARRIOR SPORTS TAKES THE STRES" to "MORE BIRTHDAY PARTY OPTIONS AT": 1122px, live 1716px
+- spacing from "MORE BIRTHDAY PARTY OPTIONS AT" to "HAVE BATTLES IN OUR OBSTACLE C": 585px, live 875px
+- spacing from "HAVE BATTLES IN OUR OBSTACLE C" to "NERF BATTLE PARTIES": 0px, live 174px
+- spacing from "NERF BATTLE PARTIES" to "CREATE AMAZING MEMORIES": 624px, live 776px
+- gap between "KIDS WILL HAVE A BLAST, AND YO" and "Springfield Warrior Sports is ": 1333px, live 11px
+- gap between "Springfield Warrior Sports is " and "This means more than just one ": 131px, live 17px
+- gap between "WARRIOR SPORTS TAKES THE STRES" and "At Springfield Warrior Sports,": 13px, live 130px
+- gap between "At Springfield Warrior Sports," and "Note: free customized party in": 195px, live 28px
+- gap between "Cost: $179 for the first 11 ki" and "* All participants will need t": 14px, live 225px
+- gap between "** To reserve your birthday pa" and "MORE BIRTHDAY PARTY OPTIONS AT": 98px, live 631px
+- gap between "We can help you with that!" and "Our birthday party pizza packa": 54px, live 311px
+- gap between "Our birthday party pizza packa" and "HAVE BATTLES IN OUR OBSTACLE C": 98px, live 317px
+- gap between "The Springfield Warrior Sports" and "CREATE AMAZING MEMORIES": 98px, live 383px
+- button not on live: "LASER TAG PARTIES"
+- icons: 5 in build, 9 on live
+- icon 1: color rgb(255, 255, 255), live rgb(219, 58, 52)
+- icon 1: left edge 418px, live 974px
+- icon 2: color rgb(255, 255, 255), live rgb(219, 58, 52)
+- icon 2: left edge 455px, live 386px
+- icon 3: left edge 821px, live 386px
+- icon 4: left edge 821px, live 386px
+- icon 5: color rgb(219, 58, 52), live rgb(255, 255, 255)
+- icon 5: left edge 821px, live 414px
+- background behind "KIDS WILL HAVE A BLAST, AND YOU CAN RELA": rgb(39, 39, 40), live rgb(255, 255, 255)
+- background behind "WARRIOR SPORTS TAKES THE STRESS OUT OF Y": rgb(255, 255, 255), live rgb(227, 235, 237)
+- background behind "MORE BIRTHDAY PARTY OPTIONS AT SPRINGFIE": rgb(242, 246, 248), live rgb(255, 255, 255)
+- background behind "CREATE AMAZING MEMORIES": rgb(242, 246, 248), live rgb(226, 235, 237)
+- background behind "Springfield Warrior Sports is the ideal ": rgb(242, 245, 247), live rgb(255, 255, 255)
+- background behind "This means more than just one day of fun": rgb(242, 245, 248), live rgb(255, 255, 255)
+- background behind "At Springfield Warrior Sports, we want t": rgb(255, 255, 255), live rgb(227, 235, 237)
+- background behind "Note: free customized party invitations ": rgb(255, 255, 255), live rgb(227, 235, 237)
+- background behind "Cost: $179 for the first 11 kids and $10": rgb(255, 255, 255), live rgb(227, 234, 236)
+- background behind "* All participants will need to sign a w": rgb(255, 255, 255), live rgb(227, 235, 237)
+- background behind "** To reserve your birthday party time s": rgb(255, 255, 255), live rgb(227, 235, 237)
+- background behind "Want to feed the birthday party or have ": rgb(241, 245, 248), live rgb(255, 255, 255)
+- background behind "We can help you with that!": rgb(242, 246, 249), live rgb(255, 255, 255)
+- background behind "Our birthday party pizza package include": rgb(241, 244, 246), live rgb(255, 255, 255)
+- background behind "Create unforgettable memories with your ": rgb(242, 244, 246), live rgb(227, 235, 237)
+- band color beside "KIDS WILL HAVE A BLAST, AND YOU CAN RELA": rgb(39, 39, 39), live rgb(255, 255, 255)
+- band color beside "WARRIOR SPORTS TAKES THE STRESS OUT OF Y": rgb(255, 255, 255), live rgb(227, 235, 237)
+- band color beside "MORE BIRTHDAY PARTY OPTIONS AT SPRINGFIE": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band color beside "CREATE AMAZING MEMORIES": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "Springfield Warrior Sports is the ideal ": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band color beside "This means more than just one day of fun": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band color beside "At Springfield Warrior Sports, we want t": rgb(255, 255, 255), live rgb(227, 235, 237)
+- band color beside "Note: free customized party invitations ": rgb(255, 255, 255), live rgb(227, 235, 237)
+- band color beside "Cost: $179 for the first 11 kids and $10": rgb(255, 255, 255), live rgb(227, 235, 237)
+- band color beside "* All participants will need to sign a w": rgb(255, 255, 255), live rgb(227, 235, 237)
+- band color beside "** To reserve your birthday party time s": rgb(255, 255, 255), live rgb(227, 235, 237)
+- band color beside "Want to feed the birthday party or have ": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band color beside "We can help you with that!": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band color beside "Our birthday party pizza package include": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band color beside "Create unforgettable memories with your ": rgb(242, 246, 249), live rgb(227, 235, 237)
+- heading "KIDS WILL HAVE A BLAST, AND YOU CAN RELA": looks different from live (pixel difference 138)
+- heading "WARRIOR SPORTS TAKES THE STRESS OUT OF Y": looks different from live (pixel difference 55)
+- heading "MORE BIRTHDAY PARTY OPTIONS AT SPRINGFIE": looks different from live (pixel difference 40)
+- heading "NERF BATTLE PARTIES": looks different from live (pixel difference 67)
+- photo hero: brightness 61, live 38 (overlay or exposure differs)
+- photo hero: looks different from live (pixel difference 40)
+- band rgb(255, 255, 255) at y=729 (left margin): 828px tall, live 431px
+- band rgb(227, 235, 237) at y=1160 (1315px tall on live, left margin) not found in build
+- band rgb(14, 12, 7) at y=2475 (232px tall on live, left margin) not found in build
+- band rgb(14, 10, 7) at y=2759 (136px tall on live, left margin) not found in build
+- band rgb(255, 255, 255) at y=2895 (1716px tall on live, left margin) not found in build
+- band rgb(230, 234, 237) at y=4611 (left margin): 456px tall, live 773px
+- band rgb(255, 255, 255) at y=5384 (left margin): 327px tall, live 293px
+- band rgb(255, 255, 255) at y=2264 (1122px tall, left margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=3972 (623px tall, left margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=729 (right margin): 828px tall, live 431px
+- band rgb(227, 235, 237) at y=1160 (1315px tall on live, right margin) not found in build
+- band rgb(255, 255, 255) at y=2895 (1716px tall on live, right margin) not found in build
+- band rgb(230, 234, 237) at y=4611 (right margin): 456px tall, live 701px
+- band rgb(255, 255, 255) at y=5384 (right margin): 327px tall, live 293px
+- band rgb(255, 255, 255) at y=2264 (1122px tall, right margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=3972 (623px tall, right margin) is in the build but not on live
+
+## competitions @ 1920px: 64 difference(s)
+- heading missing: "2026-9 CSNA September 19th Form"
+- heading "TEST YOUR SKILLS ON OUR FUN AND COMPETIT": left edge 385px, live 500px
+- heading "TEST YOUR SKILLS ON OUR FUN AND COMPETIT": width 1150px, live 920px
+- heading "TEST YOUR SKILLS ON OUR FUN AND COMPETIT": color rgb(255, 255, 255), live rgb(248, 248, 248)
+- heading "TEST YOUR SKILLS ON OUR FUN AND COMPETIT": line height 50px, live 60px
+- heading "SEPTEMBER 2026 CSNA TEAM COMPETITION": width 555px, live 1150px
+- heading "SEPTEMBER 2026 CSNA TEAM COMPETITION": size 50px, live 40px
+- heading "SEPTEMBER 2026 CSNA TEAM COMPETITION": 4 line(s), live 1
+- heading "SEPTEMBER 2026 CSNA TEAM COMPETITION": line height 50px, live 44px
+- heading "SEPTEMBER 2026 CSNA TEAM COMPETITION": align start, live center
+- photo missing: sws-competitions-banner
+- button "REGISTER NOW BY FILLING OUT THE FORM BELOW ▼": width 373px, live 520px
+- text not on live: "Don't wait to register - The early bird price for the Januar"
+- text "Whether you are looking for re": left edge 385px, live 510px
+- text "Whether you are looking for re": width 555px, live 900px
+- text "Whether you are looking for re": size 16px, live 18px
+- text "Whether you are looking for re": weight 300, live 400
+- text "Whether you are looking for re": color rgb(51, 51, 51), live rgba(41, 41, 41, 0.99)
+- text "Whether you are looking for re": 3 line(s), live 2
+- text "Whether you are looking for re": line height 26px, live 37px
+- text "Whether you are looking for re": align start, live center
+- text "We host regional qualifiers fo": left edge 385px, live 510px
+- text "We host regional qualifiers fo": width 555px, live 900px
+- text "We host regional qualifiers fo": size 16px, live 18px
+- text "We host regional qualifiers fo": weight 300, live 400
+- text "We host regional qualifiers fo": color rgb(51, 51, 51), live rgba(41, 41, 41, 0.99)
+- text "We host regional qualifiers fo": 4 line(s), live 3
+- text "We host regional qualifiers fo": line height 26px, live 37px
+- text "We host regional qualifiers fo": align start, live center
+- text "Date: Saturday, September 19th": font Muli, live Epilogue
+- text "Date: Saturday, September 19th": size 16px, live 18px
+- text "Date: Saturday, September 19th": color rgb(51, 51, 51), live rgba(41, 41, 41, 0.99)
+- text "Date: Saturday, September 19th": line height 26px, live 29px
+- text "Start time: TBA": font Muli, live Epilogue
+- text "Start time: TBA": size 16px, live 18px
+- text "Start time: TBA": color rgb(51, 51, 51), live rgba(41, 41, 41, 0.99)
+- text "Start time: TBA": line height 26px, live 29px
+- text "Price per registration: $60": font Muli, live Epilogue
+- text "Price per registration: $60": size 16px, live 18px
+- text "Price per registration: $60": color rgb(51, 51, 51), live rgba(41, 41, 41, 0.99)
+- text "Price per registration: $60": line height 26px, live 29px
+- words "Test your skills on our Fun and Competit": color rgb(255, 255, 255), live rgb(248, 248, 248)
+- words "Whether you are looking for regional qua": color rgb(51, 51, 51), live rgba(41, 41, 41, 0.99)
+- words "Whether you are looking for regional qua": weight 300, live 400
+- words "We host": color rgb(51, 51, 51), live rgba(41, 41, 41, 0.99)
+- words "We host": weight 300, live 400
+- words "regional qualifiers for the WNL": color rgb(51, 51, 51), live rgb(47, 138, 228)
+- words "regional qualifiers for the WNL": weight 300, live 400
+- words "(World Ninja League) and are a CSNA (Cen": color rgb(51, 51, 51), live rgba(41, 41, 41, 0.99)
+- words "(World Ninja League) and are a CSNA (Cen": weight 300, live 400
+- words "Date: Saturday, September 19th": color rgb(51, 51, 51), live rgba(41, 41, 41, 0.99)
+- words "Start time: TBA": color rgb(51, 51, 51), live rgba(41, 41, 41, 0.99)
+- words "Price per registration:": color rgb(51, 51, 51), live rgba(41, 41, 41, 0.99)
+- words "$60": color rgb(51, 51, 51), live rgba(41, 41, 41, 0.99)
+- words "$60": weight 400, live 900
+- background behind "TEST YOUR SKILLS ON OUR FUN AND COMPETIT": rgb(118, 119, 117), live rgb(24, 22, 22)
+- band color beside "TEST YOUR SKILLS ON OUR FUN AND COMPETIT": rgb(94, 95, 90), live rgb(69, 69, 69)
+- heading "TEST YOUR SKILLS ON OUR FUN AND COMPETIT": looks different from live (pixel difference 42)
+- heading "SEPTEMBER 2026 CSNA TEAM COMPETITION": looks different from live (pixel difference 46)
+- photo hero: brightness 62, live 41 (overlay or exposure differs)
+- band rgb(241, 245, 248) at y=1052 (left margin): 471px tall, live 1756px
+- band rgb(255, 255, 255) at y=2808 (left margin): 328px tall, live 461px
+- band rgb(241, 245, 248) at y=1053 (right margin): 471px tall, live 1755px
+- band rgb(255, 255, 255) at y=2808 (right margin): 328px tall, live 461px
+
+## contact @ 1920px: 84 difference(s)
+- page height 3004px, live 3340px
+- heading "CONTACT US": line height 50px, live 60px
+- heading "CLIENT TESTIMONIALS": line height 50px, live 70px
+- heading "WHAT OUR CLIENTS SAY": line height 50px, live 42px
+- heading "WHAT OUR CLIENTS SAY": letter spacing 0px, live 1px
+- photo qoute-icon: left edge 385px, live 425px
+- text missing: "605 W. Plainview Road Springfield, MO 65810"
+- text "We look forward to hearing fro": left edge 413px, live 386px
+- text "We look forward to hearing fro": font Muli, live Epilogue
+- text "We look forward to hearing fro": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "We look forward to hearing fro": 3 line(s), live 4
+- text "(417)894-7319": left edge 847px, live 422px
+- text "(417)894-7319": font Muli, live Epilogue
+- text "(417)894-7319": size 14px, live 16px
+- text "(417)894-7319": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "office@swarriorsports.com": left edge 847px, live 422px
+- text "office@swarriorsports.com": width 173px, live 218px
+- text "office@swarriorsports.com": font Muli, live Epilogue
+- text "office@swarriorsports.com": size 14px, live 16px
+- text "office@swarriorsports.com": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "We had our son’s 10th birthday": left edge 385px, live 426px
+- text "We had our son’s 10th birthday": font Epilogue, live Muli
+- text "We had our son’s 10th birthday": weight 300, live 400
+- text "We had our son’s 10th birthday": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "- JENNIFER L.": left edge 385px, live 426px
+- text "- JENNIFER L.": font Epilogue, live Muli
+- text "- JENNIFER L.": weight 300, live 700
+- text "- JENNIFER L.": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- text "My daughter started training h": font Epilogue, live Muli
+- text "My daughter started training h": weight 300, live 400
+- text "My daughter started training h": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "- LEE C.": font Epilogue, live Muli
+- text "- LEE C.": weight 300, live 700
+- text "- LEE C.": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "We look forward to hearing from you! We ": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "(417)894-7319": color rgb(255, 255, 255), live rgba(0, 0, 0, 0.7)
+- words "(417)894-7319": weight 700, live 400
+- words "(417)894-7319": underline true, live false
+- words "What our clients say": weight 400, live 300
+- words "We had our son’s 10th birthday here. All": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "We had our son’s 10th birthday here. All": weight 300, live 400
+- words "- Jennifer L.": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "- Jennifer L.": weight 300, live 700
+- words "We had our son’s 10th birthday here. All": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "We had our son’s 10th birthday here. All": weight 300, live 400
+- words "- Jennifer L.": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "- Jennifer L.": weight 300, live 700
+- words "My daughter started training here 3 year": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "My daughter started training here 3 year": weight 300, live 400
+- words "- Lee C.": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "- Lee C.": weight 300, live 700
+- words "My daughter started training here 3 year": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "My daughter started training here 3 year": weight 300, live 400
+- words "- Lee C.": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "- Lee C.": weight 300, live 700
+- spacing from "CLIENT TESTIMONIALS" to "WHAT OUR CLIENTS SAY": 0px, live 61px
+- gap between "We look forward to hearing fro" and "(417)894-7319": 1851px, live 62px
+- gap between "WHAT OUR CLIENTS SAY" and "We had our son’s 10th birthday": 66px, live 132px
+- icons: 9 in build, 8 on live
+- icon 4: color rgb(214, 53, 47), live rgb(255, 255, 255)
+- icon 4: left edge 385px, live 414px
+- icon 5: left edge 418px, live 451px
+- icon 6: color rgb(255, 255, 255), live rgb(219, 58, 52)
+- icon 6: left edge 455px, live 822px
+- background behind "OUR ACCOMPLISHED, AWARD WINNING CREW IS ": rgb(214, 52, 47), live rgb(5, 6, 6)
+- background behind "CLIENT TESTIMONIALS": rgb(242, 246, 248), live rgb(227, 235, 237)
+- background behind "WHAT OUR CLIENTS SAY": rgb(242, 246, 248), live rgb(227, 235, 237)
+- background behind "We had our son’s 10th birthday here. All": rgb(242, 245, 247), live rgb(227, 235, 237)
+- background behind "- JENNIFER L.": rgb(242, 246, 249), live rgb(227, 235, 237)
+- background behind "My daughter started training here 3 year": rgb(242, 244, 246), live rgb(227, 235, 237)
+- background behind "- LEE C.": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "OUR ACCOMPLISHED, AWARD WINNING CREW IS ": rgb(48, 49, 44), live rgb(23, 23, 23)
+- band color beside "CLIENT TESTIMONIALS": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "WHAT OUR CLIENTS SAY": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "We had our son’s 10th birthday here. All": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "- JENNIFER L.": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "- LEE C.": rgb(242, 246, 249), live rgb(227, 235, 237)
+- photo hero: brightness 54, live 36 (overlay or exposure differs)
+- band rgb(255, 255, 255) at y=729 (left margin): 1403px tall, live 1564px
+- band rgb(230, 234, 237) at y=2293 (left margin): 434px tall, live 689px
+- band rgb(255, 255, 255) at y=2982 (left margin): 328px tall, live 293px
+- band rgb(255, 255, 255) at y=729 (right margin): 1403px tall, live 1564px
+- band rgb(230, 234, 237) at y=2293 (right margin): 434px tall, live 689px
+- band rgb(255, 255, 255) at y=2982 (right margin): 328px tall, live 293px
+
+## fitness-classes @ 1920px: 257 difference(s)
+- heading missing: "WHAT IS OCR FITNESS?"
+- heading "FITNESS CLASSES IN SPRINGFIELD, MO": left edge 385px, live 541px
+- heading "FITNESS CLASSES IN SPRINGFIELD, MO": line height 70px, live 59px
+- heading "FITNESS CLASSES IN SPRINGFIELD, MO": letter spacing 0px, live 1px
+- heading "PRICING AND SCHEDULE": left edge 385px, live 674px
+- heading "PRICING AND SCHEDULE": align start, live center
+- heading "OBSTACLE COURSE RACING CLASSES:": left edge 980px, live 500px
+- heading "OBSTACLE COURSE RACING CLASSES:": align start, live center
+- heading "A UNIQUE WORKOUT EXPERIENCE": left edge 980px, live 386px
+- heading "A UNIQUE WORKOUT EXPERIENCE": line height 50px, live 42px
+- heading "A UNIQUE WORKOUT EXPERIENCE": align start, live center
+- heading "OCR FITNESS CLASS BENEFITS": left edge 385px, live 419px
+- heading "OCR FITNESS CLASS BENEFITS": width 555px, live 487px
+- heading "OCR FITNESS CLASS BENEFITS": size 50px, live 30px
+- heading "OCR FITNESS CLASS BENEFITS": color rgb(214, 53, 47), live rgb(40, 82, 118)
+- heading "OCR FITNESS CLASS BENEFITS": line height 50px, live 30px
+- heading "OCR FITNESS CLASS BENEFITS": align start, live center
+- heading "SHORT-TERM GOALS AND LONG-TERM GAINS": left edge 385px, live 1014px
+- heading "SHORT-TERM GOALS AND LONG-TERM GAINS": width 555px, live 487px
+- heading "SHORT-TERM GOALS AND LONG-TERM GAINS": size 50px, live 30px
+- heading "SHORT-TERM GOALS AND LONG-TERM GAINS": color rgb(214, 53, 47), live rgb(40, 82, 118)
+- heading "SHORT-TERM GOALS AND LONG-TERM GAINS": 5 line(s), live 2
+- heading "SHORT-TERM GOALS AND LONG-TERM GAINS": line height 50px, live 30px
+- heading "SHORT-TERM GOALS AND LONG-TERM GAINS": align start, live center
+- heading "IMPROVED CONFIDENCE LEVELS AND MENTAL HE": left edge 385px, live 500px
+- heading "IMPROVED CONFIDENCE LEVELS AND MENTAL HE": width 555px, live 920px
+- heading "IMPROVED CONFIDENCE LEVELS AND MENTAL HE": 5 line(s), live 2
+- heading "IMPROVED CONFIDENCE LEVELS AND MENTAL HE": align start, live center
+- photo missing: pricing-and-schedule
+- button "TRY YOUR FIRST CLASS FOR JUST $5 BUCKS": width 324px, live 446px
+- button "SIGN-UP HERE!": color rgb(214, 53, 47), live rgb(40, 82, 118)
+- button "SIGN-UP HERE!": width 134px, live 178px
+- text not on live: "$20 Drop-In $60 Monthly Membership (once per week) $100 Mont"
+- text "ARE YOU LOOKING FOR A FUN AND ": left edge 980px, live 386px
+- text "ARE YOU LOOKING FOR A FUN AND ": width 555px, live 1148px
+- text "ARE YOU LOOKING FOR A FUN AND ": font Epilogue, live Heebo
+- text "ARE YOU LOOKING FOR A FUN AND ": size 16px, live 30px
+- text "ARE YOU LOOKING FOR A FUN AND ": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "ARE YOU LOOKING FOR A FUN AND ": line height 26px, live 45px
+- text "ARE YOU LOOKING FOR A FUN AND ": align start, live center
+- text "Look no further! Springfield W": left edge 980px, live 425px
+- text "Look no further! Springfield W": width 555px, live 1070px
+- text "Look no further! Springfield W": weight 300, live 400
+- text "Look no further! Springfield W": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Look no further! Springfield W": 5 line(s), live 3
+- text "Look no further! Springfield W": align start, live center
+- text "Our experienced instructors wi": left edge 980px, live 425px
+- text "Our experienced instructors wi": width 555px, live 1070px
+- text "Our experienced instructors wi": weight 300, live 400
+- text "Our experienced instructors wi": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Our experienced instructors wi": 3 line(s), live 2
+- text "Our experienced instructors wi": align start, live center
+- text "Our OCR classes in Springfield": left edge 980px, live 421px
+- text "Our OCR classes in Springfield": width 555px, live 1079px
+- text "Our OCR classes in Springfield": weight 300, live 400
+- text "Our OCR classes in Springfield": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Our OCR classes in Springfield": 5 line(s), live 3
+- text "Our OCR classes in Springfield": align start, live center
+- text "Sign up now for ADULT O.C.R wo": left edge 980px, live 425px
+- text "Sign up now for ADULT O.C.R wo": width 555px, live 1070px
+- text "Sign up now for ADULT O.C.R wo": weight 300, live 600
+- text "Sign up now for ADULT O.C.R wo": color rgb(51, 51, 51), live rgb(40, 82, 118)
+- text "Sign up now for ADULT O.C.R wo": 3 line(s), live 2
+- text "Sign up now for ADULT O.C.R wo": align start, live center
+- text "We now offer two OCR classes e": left edge 385px, live 528px
+- text "We now offer two OCR classes e": width 555px, live 865px
+- text "We now offer two OCR classes e": size 16px, live 22px
+- text "We now offer two OCR classes e": weight 300, live 400
+- text "We now offer two OCR classes e": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- text "We now offer two OCR classes e": line height 26px, live 39px
+- text "We now offer two OCR classes e": align start, live center
+- text "Choose the membership option t": left edge 385px, live 681px
+- text "Choose the membership option t": size 16px, live 22px
+- text "Choose the membership option t": weight 300, live 400
+- text "Choose the membership option t": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- text "Choose the membership option t": line height 26px, live 39px
+- text "Choose the membership option t": align start, live center
+- text "OCR workouts and fitness class": left edge 980px, live 477px
+- text "OCR workouts and fitness class": width 555px, live 966px
+- text "OCR workouts and fitness class": size 16px, live 18px
+- text "OCR workouts and fitness class": weight 300, live 400
+- text "OCR workouts and fitness class": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "OCR workouts and fitness class": 4 line(s), live 3
+- text "OCR workouts and fitness class": line height 26px, live 32px
+- text "OCR workouts and fitness class": align start, live center
+- text "OCR fitness classes take the b": left edge 980px, live 386px
+- text "OCR fitness classes take the b": width 555px, live 1148px
+- text "OCR fitness classes take the b": weight 300, live 400
+- text "OCR fitness classes take the b": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "OCR fitness classes take the b": 7 line(s), live 4
+- text "The benefits of OCR fitness cl": left edge 385px, live 419px
+- text "The benefits of OCR fitness cl": width 555px, live 487px
+- text "The benefits of OCR fitness cl": font Epilogue, live Muli
+- text "The benefits of OCR fitness cl": weight 300, live 400
+- text "The benefits of OCR fitness cl": color rgb(51, 51, 51), live rgb(106, 107, 108)
+- text "The benefits of OCR fitness cl": 5 line(s), live 6
+- text "The benefits of OCR fitness cl": line height 26px, live 22px
+- text "The benefits of OCR fitness cl": align start, live center
+- text "Additionally, the group atmosp": left edge 385px, live 419px
+- text "Additionally, the group atmosp": width 555px, live 487px
+- text "Additionally, the group atmosp": font Epilogue, live Muli
+- text "Additionally, the group atmosp": weight 300, live 400
+- text "Additionally, the group atmosp": color rgb(51, 51, 51), live rgb(106, 107, 108)
+- text "Additionally, the group atmosp": line height 26px, live 22px
+- text "Additionally, the group atmosp": align start, live center
+- text "OCR training has been proven t": left edge 385px, live 1014px
+- text "OCR training has been proven t": width 555px, live 487px
+- text "OCR training has been proven t": font Epilogue, live Muli
+- text "OCR training has been proven t": weight 300, live 400
+- text "OCR training has been proven t": color rgb(51, 51, 51), live rgb(106, 107, 108)
+- text "OCR training has been proven t": line height 26px, live 22px
+- text "OCR training has been proven t": align start, live center
+- text "Our Obstacle Course Racing (OC": left edge 385px, live 974px
+- text "Our Obstacle Course Racing (OC": weight 300, live 400
+- text "Our Obstacle Course Racing (OC": color rgb(51, 51, 51), live rgb(106, 107, 108)
+- text "Additionally, many enjoy pairi": left edge 385px, live 974px
+- text "Additionally, many enjoy pairi": weight 300, live 400
+- text "Additionally, many enjoy pairi": color rgb(51, 51, 51), live rgb(106, 107, 108)
+- text "So if you’re ready for a new c": left edge 385px, live 974px
+- text "So if you’re ready for a new c": font Epilogue, live Muli
+- text "So if you’re ready for a new c": weight 300, live 800
+- text "So if you’re ready for a new c": color rgb(51, 51, 51), live rgb(40, 82, 118)
+- words "Fitness Classes in Springfield, MO": color rgb(214, 53, 47), live rgb(255, 255, 255)
+- words "Fitness Classes in Springfield, MO": weight 900, live 300
+- words "Are you looking for a fun and unique way": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Look no further! Springfield Warrior Spo": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Look no further! Springfield Warrior Spo": weight 300, live 400
+- words "Our experienced instructors will be ther": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Our experienced instructors will be ther": weight 300, live 400
+- words "personal training": color rgb(51, 51, 51), live rgb(40, 82, 118)
+- words "personal training": weight 300, live 400
+- words "is also available.": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "is also available.": weight 300, live 400
+- words "Our OCR classes in Springfield give you ": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Our OCR classes in Springfield give you ": weight 300, live 400
+- words "Sign up now for ADULT O.C.R workout clas": color rgb(51, 51, 51), live rgb(40, 82, 118)
+- words "Sign up now for ADULT O.C.R workout clas": weight 300, live 600
+- words "We now offer two OCR classes each week —": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- words "We now offer two OCR classes each week —": weight 300, live 400
+- words "Tuesday and Thursday from 6-7 pm": color rgb(51, 51, 51), live rgb(135, 204, 237)
+- words "Tuesday and Thursday from 6-7 pm": weight 300, live 600
+- words "— giving you more flexibility and more o": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- words "— giving you more flexibility and more o": weight 300, live 600
+- words "Choose the membership option that fits y": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- words "Choose the membership option that fits y": weight 300, live 400
+- words "$20 Drop-In": color rgb(51, 51, 51), live rgba(41, 41, 41, 0.99)
+- words "$20 Drop-In": weight 300, live 600
+- words "$60 Monthly Membership": color rgb(51, 51, 51), live rgba(41, 41, 41, 0.99)
+- words "$60 Monthly Membership": weight 300, live 600
+- words "(once per week)": color rgb(51, 51, 51), live rgb(40, 82, 118)
+- words "(once per week)": weight 300, live 600
+- words "$100 Monthly Membership": color rgb(51, 51, 51), live rgba(41, 41, 41, 0.99)
+- words "$100 Monthly Membership": weight 300, live 600
+- words "(twice per week)": color rgb(51, 51, 51), live rgb(40, 82, 118)
+- words "(twice per week)": weight 300, live 600
+- words "$40 Weight Lifting Membership": color rgb(51, 51, 51), live rgba(41, 41, 41, 0.99)
+- words "$40 Weight Lifting Membership": weight 300, live 600
+- words "(18+, access to weight-lifting area only": color rgb(51, 51, 51), live rgb(40, 82, 118)
+- words "(18+, access to weight-lifting area only": weight 300, live 600
+- words "A Unique Workout Experience": weight 400, live 300
+- words "OCR workouts and fitness classes are des": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "OCR workouts and fitness classes are des": weight 300, live 400
+- words "What is OCR Fitness?": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "What is OCR Fitness?": weight 300, live 900
+- words "OCR fitness classes take the": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "OCR fitness classes take the": weight 300, live 400
+- words "best of the traditional gym": color rgb(51, 51, 51), live rgb(47, 138, 228)
+- words "best of the traditional gym": weight 300, live 400
+- words "experience and add an extra layer of exc": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "experience and add an extra layer of exc": weight 300, live 400
+- words "The benefits of OCR fitness classes exte": color rgb(51, 51, 51), live rgb(106, 107, 108)
+- words "The benefits of OCR fitness classes exte": weight 300, live 400
+- words "Additionally, the group atmosphere also ": color rgb(51, 51, 51), live rgb(106, 107, 108)
+- words "Additionally, the group atmosphere also ": weight 300, live 400
+- words "OCR training has been proven to improve ": color rgb(51, 51, 51), live rgb(106, 107, 108)
+- words "OCR training has been proven to improve ": weight 300, live 400
+- words "Our Obstacle Course Racing (OCR) workout": color rgb(51, 51, 51), live rgb(106, 107, 108)
+- words "Our Obstacle Course Racing (OCR) workout": weight 300, live 400
+- words "Additionally, many enjoy pairing these f": color rgb(51, 51, 51), live rgb(106, 107, 108)
+- words "Additionally, many enjoy pairing these f": weight 300, live 400
+- words "Parkour class options": color rgb(51, 51, 51), live rgb(47, 138, 228)
+- words "Parkour class options": weight 300, live 400
+- words "adding even more unique workout sessions": color rgb(51, 51, 51), live rgb(106, 107, 108)
+- words "adding even more unique workout sessions": weight 300, live 400
+- spacing from "THE MOST DIVERSE (LEAST BORING" to "FITNESS CLASSES IN SPRINGFIELD": 0px, live 151px
+- spacing from "FITNESS CLASSES IN SPRINGFIELD" to "PRICING AND SCHEDULE": 1289px, live 941px
+- spacing from "PRICING AND SCHEDULE" to "OBSTACLE COURSE RACING CLASSES": 491px, live 738px
+- spacing from "OBSTACLE COURSE RACING CLASSES" to "A UNIQUE WORKOUT EXPERIENCE": 0px, live 51px
+- spacing from "A UNIQUE WORKOUT EXPERIENCE" to "OCR FITNESS CLASS BENEFITS": 596px, live 737px
+- gap between "FITNESS CLASSES IN SPRINGFIELD" and "ARE YOU LOOKING FOR A FUN AND ": 421px, live 269px
+- gap between "Sign up now for ADULT O.C.R wo" and "PRICING AND SCHEDULE": 122px, live 167px
+- gap between "Choose the membership option t" and "OBSTACLE COURSE RACING CLASSES": 286px, live 521px
+- gap between "OCR workouts and fitness class" and "OCR fitness classes take the b": 54px, live 112px
+- gap between "OCR fitness classes take the b" and "OCR FITNESS CLASS BENEFITS": 113px, live 354px
+- gap between "Additionally, the group atmosp" and "IMPROVED CONFIDENCE LEVELS AND": 589px, live 213px
+- gap between "IMPROVED CONFIDENCE LEVELS AND" and "Our Obstacle Course Racing (OC": 14px, live 80px
+- icons: 5 in build, 9 on live
+- icon 1: color rgb(255, 255, 255), live rgb(219, 58, 52)
+- icon 1: size 17px, live 26px
+- icon 1: left edge 418px, live 561px
+- icon 2: color rgb(255, 255, 255), live rgb(219, 58, 52)
+- icon 2: size 17px, live 26px
+- icon 2: left edge 455px, live 561px
+- icon 3: size 16px, live 26px
+- icon 3: left edge 821px, live 976px
+- icon 4: size 16px, live 26px
+- icon 4: left edge 821px, live 976px
+- icon 5: color rgb(219, 58, 52), live rgb(255, 255, 255)
+- icon 5: left edge 821px, live 414px
+- background behind "PRICING AND SCHEDULE": rgb(242, 246, 249), live rgb(45, 42, 42)
+- background behind "OBSTACLE COURSE RACING CLASSES:": rgb(255, 255, 255), live rgb(241, 244, 247)
+- background behind "A UNIQUE WORKOUT EXPERIENCE": rgb(255, 255, 255), live rgb(241, 245, 247)
+- background behind "IMPROVED CONFIDENCE LEVELS AND MENTAL HE": rgb(242, 246, 248), live rgb(255, 255, 255)
+- background behind "We now offer two OCR classes each week —": rgb(242, 245, 247), live rgb(29, 26, 27)
+- background behind "Choose the membership option that fits y": rgb(242, 245, 247), live rgb(48, 44, 43)
+- background behind "OCR workouts and fitness classes are des": rgb(255, 255, 255), live rgb(241, 245, 248)
+- background behind "OCR fitness classes take the best of the": rgb(255, 255, 255), live rgb(240, 244, 247)
+- background behind "Our Obstacle Course Racing (OCR) workout": rgb(242, 245, 247), live rgb(255, 255, 255)
+- background behind "Additionally, many enjoy pairing these f": rgb(242, 245, 247), live rgb(255, 255, 255)
+- background behind "So if you’re ready for a new challenge, ": rgb(242, 246, 248), live rgb(255, 255, 255)
+- band color beside "PRICING AND SCHEDULE": rgb(242, 246, 249), live rgb(0, 16, 32)
+- band color beside "OBSTACLE COURSE RACING CLASSES:": rgb(255, 255, 255), live rgb(241, 245, 248)
+- band color beside "A UNIQUE WORKOUT EXPERIENCE": rgb(255, 255, 255), live rgb(241, 245, 248)
+- band color beside "IMPROVED CONFIDENCE LEVELS AND MENTAL HE": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band color beside "We now offer two OCR classes each week —": rgb(242, 246, 249), live rgb(28, 26, 26)
+- band color beside "Choose the membership option that fits y": rgb(242, 246, 249), live rgb(22, 23, 27)
+- band color beside "OCR workouts and fitness classes are des": rgb(255, 255, 255), live rgb(241, 245, 248)
+- band color beside "OCR fitness classes take the best of the": rgb(255, 255, 255), live rgb(241, 245, 248)
+- band color beside "Our Obstacle Course Racing (OCR) workout": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band color beside "Additionally, many enjoy pairing these f": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band color beside "So if you’re ready for a new challenge, ": rgb(242, 246, 249), live rgb(255, 255, 255)
+- heading "PRICING AND SCHEDULE": looks different from live (pixel difference 151)
+- heading "OBSTACLE COURSE RACING CLASSES:": looks different from live (pixel difference 50)
+- heading "OCR FITNESS CLASS BENEFITS": looks different from live (pixel difference 42)
+- heading "SHORT-TERM GOALS AND LONG-TERM GAINS": looks different from live (pixel difference 45)
+- heading "IMPROVED CONFIDENCE LEVELS AND MENTAL HE": looks different from live (pixel difference 46)
+- text "We now offer two OCR classes e": looks different from live (pixel difference 176)
+- text "Choose the membership option t": looks different from live (pixel difference 177)
+- photo hero: brightness 15, live 34 (overlay or exposure differs)
+- photo img_2344: brightness 96, live 138 (overlay or exposure differs)
+- photo img_2344: looks different from live (pixel difference 44)
+- photo img_2347: brightness 76, live 124 (overlay or exposure differs)
+- photo img_2347: looks different from live (pixel difference 50)
+- band rgb(255, 255, 255) at y=729 (left margin): 772px tall, live 604px
+- band rgb(0, 0, 0) at y=1333 (81px tall on live, left margin) not found in build
+- band rgb(22, 34, 50) at y=1695 (362px tall on live, left margin) not found in build
+- band rgb(241, 245, 248) at y=2060 (1317px tall on live, left margin) not found in build
+- band rgb(255, 255, 255) at y=3377 (left margin): 492px tall, live 1110px
+- band rgb(255, 255, 255) at y=2047 (610px tall, left margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=4178 (328px tall, left margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=729 (right margin): 772px tall, live 604px
+- band rgb(35, 42, 57) at y=1333 (334px tall on live, right margin) not found in build
+- band rgb(25, 27, 35) at y=1830 (134px tall on live, right margin) not found in build
+- band rgb(241, 245, 248) at y=2057 (1320px tall on live, right margin) not found in build
+- band rgb(255, 255, 255) at y=3377 (right margin): 492px tall, live 1110px
+- band rgb(255, 255, 255) at y=2047 (610px tall, right margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=4178 (328px tall, right margin) is in the build but not on live
+
+## home @ 1920px: 3 difference(s)
+- text "We believe in results and that": 3 line(s), live 2
+- text "We had our son’s 10th birthday": 5 line(s), live 4
+- text "My daughter started training h": 7 line(s), live 6
+
+## homeschool-sports-and-classes-springfield-mo @ 1920px: 106 difference(s)
+- page height 2622px, live 3027px
+- heading missing: "COME JOIN THE FUN!"
+- heading missing: "Homeschoolers have the unique opportunity to enjoy exciting activities at Springfield Warrior Sports."
+- heading missing: "With time specifically dedicated to helping homeschoolers excel in their athletic goals, embrace an active lifestyle, and connect with other kids their age, this is a chance for homeschool kids to experience the most fun school year ever."
+- heading missing: "Call (417) 894-7319 for more information, or click here to book a trial class for only $ 5."
+- heading "FUN HOMESCHOOL SPORTS FOR KIDS IN SPRING": line height 50px, live 32px
+- heading "FUN HOMESCHOOL SPORTS FOR KIDS IN SPRING": align start, live center
+- heading "HOMESCHOOL CLASSES SPRINGFIELD, MO": left edge 385px, live 793px
+- heading "HOMESCHOOL CLASSES SPRINGFIELD, MO": line height 50px, live 42px
+- heading "(AGES 7–15)": left edge 385px, live 793px
+- heading "(AGES 7–15)": line height 50px, live 42px
+- photo missing: rock-climbing
+- photo missing: book-now-bg
+- button "TRY YOUR FIRST CLASS FOR JUST $5!": width 280px, live 491px
+- text missing: "HOMESCHOOL KIDS SPORTS"
+- text not on live: "Availability: Tuesdays and Thursdays Hours: 3–4pm Cost: One "
+- text not on live: "COME JOIN THE FUN! Homeschoolers have the unique opportunity"
+- text "Looking for fun ways to help y": left edge 385px, live 425px
+- text "Looking for fun ways to help y": width 555px, live 1070px
+- text "Looking for fun ways to help y": weight 300, live 400
+- text "Looking for fun ways to help y": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Looking for fun ways to help y": 3 line(s), live 2
+- text "Looking for fun ways to help y": align start, live center
+- text "Springfield Warrior Sports has": left edge 385px, live 425px
+- text "Springfield Warrior Sports has": width 555px, live 1070px
+- text "Springfield Warrior Sports has": weight 300, live 400
+- text "Springfield Warrior Sports has": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Springfield Warrior Sports has": align start, live center
+- text "We offer opportunities for hom": left edge 385px, live 425px
+- text "We offer opportunities for hom": width 555px, live 1070px
+- text "We offer opportunities for hom": weight 300, live 400
+- text "We offer opportunities for hom": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "We offer opportunities for hom": 4 line(s), live 2
+- text "We offer opportunities for hom": align start, live center
+- text "Our homeschool programs in Spr": left edge 385px, live 425px
+- text "Our homeschool programs in Spr": width 555px, live 1070px
+- text "Our homeschool programs in Spr": weight 300, live 400
+- text "Our homeschool programs in Spr": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Our homeschool programs in Spr": 3 line(s), live 1
+- text "Our homeschool programs in Spr": align start, live center
+- text "The Springfield Warrior Sports": left edge 385px, live 794px
+- text "The Springfield Warrior Sports": width 555px, live 700px
+- text "The Springfield Warrior Sports": weight 300, live 400
+- text "The Springfield Warrior Sports": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Availability: Tuesdays and Thu": left edge 385px, live 832px
+- text "Availability: Tuesdays and Thu": width 555px, live 314px
+- text "Availability: Tuesdays and Thu": size 16px, live 18px
+- text "Availability: Tuesdays and Thu": weight 300, live 400
+- text "Availability: Tuesdays and Thu": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Availability: Tuesdays and Thu": line height 26px, live 41px
+- words "Looking for fun ways to help your homesc": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Looking for fun ways to help your homesc": weight 300, live 400
+- words "Springfield Warrior Sports has you cover": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Springfield Warrior Sports has you cover": weight 300, live 400
+- words "We offer opportunities for homeschoolers": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "We offer opportunities for homeschoolers": weight 300, live 400
+- words "Our homeschool programs in Springfield, ": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Our homeschool programs in Springfield, ": weight 300, live 400
+- words "Fun Homeschool Sports for Kids in Spring": color rgb(214, 53, 47), live rgb(255, 255, 255)
+- words "HOMESCHOOL CLASSES SPRINGFIELD, MO": color rgb(0, 0, 0), live rgb(40, 82, 118)
+- words "HOMESCHOOL CLASSES SPRINGFIELD, MO": weight 400, live 800
+- words "(AGES 7–15)": color rgb(0, 0, 0), live rgb(40, 82, 118)
+- words "The Springfield Warrior Sports Junior Wa": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "The Springfield Warrior Sports Junior Wa": weight 300, live 400
+- words "Availability: Tuesdays and Thursdays": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Availability: Tuesdays and Thursdays": weight 300, live 400
+- words "Hours: 3–4pm": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Hours: 3–4pm": weight 300, live 400
+- words "Cost: One class per week, $85 monthly. T": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Cost: One class per week, $85 monthly. T": weight 300, live 400
+- words "Come Join the Fun!": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "Come Join the Fun!": weight 300, live 900
+- words "Homeschoolers have the unique opportunit": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- words "Homeschoolers have the unique opportunit": weight 300, live 400
+- words "With time specifically dedicated to help": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- words "With time specifically dedicated to help": weight 300, live 400
+- words "Call (417) 894-7319 for more information": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- words "Call (417) 894-7319 for more information": weight 300, live 400
+- words "class for only $ 5.": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- words "class for only $ 5.": weight 300, live 600
+- words "class for only $ 5.": underline false, live true
+- spacing from "FUN HOMESCHOOL SPORTS FOR KIDS" to "HOMESCHOOL CLASSES SPRINGFIELD": 0px, live 136px
+- spacing from "HOMESCHOOL CLASSES SPRINGFIELD" to "(AGES 7–15)": 0px, live 42px
+- gap between "Our homeschool programs in Spr" and "FUN HOMESCHOOL SPORTS FOR KIDS": 97px, live 216px
+- gap between "The Springfield Warrior Sports" and "Availability: Tuesdays and Thu": 195px, live 17px
+- icons: 5 in build, 8 on live
+- icon 1: color rgb(255, 255, 255), live rgb(40, 82, 118)
+- icon 1: left edge 418px, live 804px
+- icon 2: color rgb(255, 255, 255), live rgb(40, 82, 118)
+- icon 2: left edge 455px, live 804px
+- icon 3: color rgb(219, 58, 52), live rgb(40, 82, 118)
+- icon 4: color rgb(219, 58, 52), live rgb(255, 255, 255)
+- icon 4: left edge 821px, live 414px
+- icon 5: color rgb(219, 58, 52), live rgb(255, 255, 255)
+- icon 5: left edge 821px, live 451px
+- background behind "FUN HOMESCHOOL SPORTS FOR KIDS IN SPRING": rgb(242, 246, 248), live rgb(40, 83, 117)
+- band color beside "FUN HOMESCHOOL SPORTS FOR KIDS IN SPRING": rgb(242, 246, 249), live rgb(40, 83, 117)
+- band color beside "HOMESCHOOL CLASSES SPRINGFIELD, MO": rgb(242, 246, 249), live rgb(40, 83, 117)
+- band color beside "(AGES 7–15)": rgb(242, 246, 249), live rgb(40, 83, 117)
+- band color beside "The Springfield Warrior Sports Junior Wa": rgb(242, 246, 249), live rgb(40, 83, 117)
+- band color beside "Availability: Tuesdays and Thursdays": rgb(242, 246, 249), live rgb(40, 83, 117)
+- heading "FUN HOMESCHOOL SPORTS FOR KIDS IN SPRING": looks different from live (pixel difference 121)
+- photo hero: brightness 100, live 32 (overlay or exposure differs)
+- photo hero: looks different from live (pixel difference 71)
+- band rgb(40, 83, 117) at y=1149 (1038px tall on live, left margin) not found in build
+- band rgb(40, 83, 117) at y=1149 (1038px tall on live, right margin) not found in build
+
+## kids-classes @ 1920px: matches
+
+## laser-tag @ 1920px: 188 difference(s)
+- page height 3551px, live 4056px
+- heading missing: "WANT TO BOOK A PRIVATE LASER TAG PARTY?"
+- heading missing: "READY TO BOOK?"
+- heading missing: "WE LOOK FORWARD TO HOSTING YOU."
+- heading missing: "You’re invited!"
+- heading missing: "We are hosting Laser Tag Nights right here in Springfield, MO, at Warrior Sports Ninja Gym."
+- heading missing: "This fun, family-friendly night happens once a month. And you can now sign up to get notified of all future events."
+- heading missing: "We are open to all ages and our staff is ready and available to keep the experience fun, enjoyable, and stress-free."
+- heading missing: "So, don’t miss it! Come make memories that will last a lifetime."
+- heading missing: "Note: Laser Tag Nights typically happen on Friday evenings."
+- heading missing: "Sign up now to get notified of all future laser tag events!"
+- heading "WELCOME TO THE PREMIER": left edge 385px, live 522px
+- heading "LASER TAG GYM IN SPRINGFIELD, MO": left edge 385px, live 522px
+- heading "HERE ARE THE DETAILS:": left edge 385px, live 973px
+- heading "HERE ARE THE DETAILS:": width 555px, live 338px
+- heading "HERE ARE THE DETAILS:": size 50px, live 30px
+- heading "HERE ARE THE DETAILS:": color rgb(214, 53, 47), live rgb(40, 82, 118)
+- heading "HERE ARE THE DETAILS:": line height 50px, live 30px
+- heading "COME JOIN THE FUN! DON’T MISS LASER TAG ": 4 line(s), live 3
+- photo missing: laser-tag-party
+- photo missing: laser-tag-war-nights
+- photo laser-tag-fun-fest: left edge 385px, live 1034px
+- button "REGISTER FOR LASER TAG WAR NIGHTS": width 289px, live 401px
+- text missing: ""*" indicates required fields"
+- text not on live: "You’re invited! We are hosting Laser Tag Nights right here i"
+- text "Great for all ages!": left edge 980px, live 855px
+- text "Great for all ages!": width 555px, live 210px
+- text "Great for all ages!": size 16px, live 24px
+- text "Great for all ages!": weight 300, live 400
+- text "Great for all ages!": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- text "Great for all ages!": line height 26px, live 42px
+- text "Great for all ages!": align start, live center
+- text "Whether you are planning a bir": left edge 980px, live 523px
+- text "Whether you are planning a bir": width 555px, live 874px
+- text "Whether you are planning a bir": size 16px, live 20px
+- text "Whether you are planning a bir": weight 300, live 400
+- text "Whether you are planning a bir": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Whether you are planning a bir": line height 26px, live 35px
+- text "Whether you are planning a bir": align start, live center
+- text "Whether you are planning a bir": weight 300, live 400
+- text "Whether you are planning a bir": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "The best part?": weight 300, live 400
+- text "The best part?": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Our staff will do all the setu": weight 300, live 400
+- text "Our staff will do all the setu": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Call us today and book our ent": weight 300, live 400
+- text "Call us today and book our ent": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Cost: For a group of 10, the c": left edge 385px, live 999px
+- text "Cost: For a group of 10, the c": weight 300, live 600
+- text "Cost: For a group of 10, the c": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "We provide a cooler full of Ga": left edge 385px, live 974px
+- text "We provide a cooler full of Ga": weight 300, live 400
+- text "We provide a cooler full of Ga": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Plus, if you have a birthday k": left edge 385px, live 974px
+- text "Plus, if you have a birthday k": weight 300, live 400
+- text "Plus, if you have a birthday k": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "We want kids to have a blast, ": left edge 385px, live 974px
+- text "We want kids to have a blast, ": weight 300, live 400
+- text "We want kids to have a blast, ": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "You can begin the booking proc": left edge 385px, live 414px
+- text "You can begin the booking proc": width 555px, live 1093px
+- text "You can begin the booking proc": weight 300, live 400
+- text "You can begin the booking proc": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- text "You can begin the booking proc": 3 line(s), live 2
+- text "You can begin the booking proc": align start, live center
+- words "Laser Tag Gym in Springfield, MO": color rgb(214, 53, 47), live rgb(248, 248, 248)
+- words "Great for all ages!": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- words "Great for all ages!": weight 300, live 400
+- words "Whether you are planning a": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Whether you are planning a": weight 300, live 400
+- words "birthday party in Springfield": color rgb(51, 51, 51), live rgb(47, 138, 228)
+- words "birthday party in Springfield": weight 300, live 400
+- words ", a fun youth group outing, or a team-bu": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words ", a fun youth group outing, or a team-bu": weight 300, live 400
+- words "Want to Book a Private Laser Tag Party?": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "Want to Book a Private Laser Tag Party?": weight 300, live 900
+- words "Whether you are planning a birthday part": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Whether you are planning a birthday part": weight 300, live 400
+- words "The best part?": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "The best part?": weight 300, live 400
+- words "Our staff will do all the setup and be o": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Our staff will do all the setup and be o": weight 300, live 400
+- words "Call us today and book our": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Call us today and book our": weight 300, live 400
+- words "entire obstacle course gym": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "entire obstacle course gym": weight 300, live 600
+- words "for your very own private laser tag part": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "for your very own private laser tag part": weight 300, live 400
+- words "Here are the details:": color rgb(214, 53, 47), live rgb(40, 82, 118)
+- words "Cost:": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Cost:": weight 300, live 600
+- words "For a group of 10, the cost is $240. Eac": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "We are available for booking on weekends": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "We provide a cooler full of Gatorade for": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "We provide a cooler full of Gatorade for": weight 300, live 400
+- words "Plus, if you have a birthday kiddo in th": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Plus, if you have a birthday kiddo in th": weight 300, live 400
+- words "We want kids to have a blast, making mem": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "We want kids to have a blast, making mem": weight 300, live 400
+- words "READY TO BOOK?": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- words "READY TO BOOK?": weight 300, live 900
+- words "You can begin the booking process on our": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- words "You can begin the booking process on our": weight 300, live 400
+- words "clicking here": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "clicking here": weight 300, live 400
+- words "or calling us today at": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- words "or calling us today at": weight 300, live 400
+- words "(417) 894-7319": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "(417) 894-7319": weight 300, live 400
+- words "to request a time to reserve the gym for": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- words "to request a time to reserve the gym for": weight 300, live 400
+- words "We look forward to hosting you.": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- words "You’re invited!": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "You’re invited!": weight 300, live 400
+- words "We are hosting Laser Tag Nights right he": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "We are hosting Laser Tag Nights right he": weight 300, live 400
+- words "This fun, family-friendly night happens ": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "This fun, family-friendly night happens ": weight 300, live 400
+- words "We are open to all ages and our staff is": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "We are open to all ages and our staff is": weight 300, live 400
+- words "So, don’t miss it! Come make memories th": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "So, don’t miss it! Come make memories th": weight 300, live 400
+- words "Cost:": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Cost:": weight 300, live 600
+- words "$15 per person (Members of the Warrior S": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Note: Laser Tag Nights typically happen ": color rgb(51, 51, 51), live rgb(40, 82, 118)
+- words "Note: Laser Tag Nights typically happen ": weight 300, live 400
+- words "Sign up now to get notified of all futur": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Sign up now to get notified of all futur": weight 300, live 400
+- spacing from "WELCOME TO THE PREMIER" to "LASER TAG GYM IN SPRINGFIELD, ": 0px, live 50px
+- spacing from "HERE ARE THE DETAILS:" to "COME JOIN THE FUN! DON’T MISS ": 654px, live 929px
+- gap between "LASER TAG GYM IN SPRINGFIELD, " and "Great for all ages!": 466px, live 21px
+- gap between "Great for all ages!" and "Whether you are planning a bir": 14px, live 280px
+- gap between "Whether you are planning a bir" and "Whether you are planning a bir": 111px, live 472px
+- gap between "Call us today and book our ent" and "HERE ARE THE DETAILS:": 148px, live 16px
+- gap between "We want kids to have a blast, " and "You can begin the booking proc": 53px, live 293px
+- gap between "You can begin the booking proc" and "COME JOIN THE FUN! DON’T MISS ": 137px, live 244px
+- icons: 5 in build, 8 on live
+- icon 1: color rgb(255, 255, 255), live rgb(219, 58, 52)
+- icon 1: left edge 418px, live 974px
+- icon 2: color rgb(255, 255, 255), live rgb(219, 58, 52)
+- icon 2: left edge 455px, live 974px
+- icon 3: left edge 821px, live 386px
+- icon 4: color rgb(219, 58, 52), live rgb(255, 255, 255)
+- icon 4: left edge 821px, live 414px
+- icon 5: color rgb(219, 58, 52), live rgb(255, 255, 255)
+- icon 5: left edge 821px, live 451px
+- background behind "WELCOME TO THE PREMIER": rgb(6, 6, 10), live rgb(3, 19, 47)
+- background behind "LASER TAG GYM IN SPRINGFIELD, MO": rgb(6, 6, 10), live rgb(3, 17, 45)
+- background behind "HERE ARE THE DETAILS:": rgb(242, 246, 249), live rgb(226, 235, 237)
+- background behind "COME JOIN THE FUN! DON’T MISS LASER TAG ": rgb(255, 255, 255), live rgb(241, 245, 247)
+- background behind "Great for all ages!": rgb(255, 255, 255), live rgb(2, 15, 46)
+- background behind "Whether you are planning a birthday part": rgb(255, 255, 255), live rgb(227, 234, 236)
+- background behind "The best part?": rgb(255, 255, 255), live rgb(227, 235, 237)
+- background behind "Our staff will do all the setup and be o": rgb(255, 255, 255), live rgb(227, 235, 237)
+- background behind "Call us today and book our entire obstac": rgb(255, 255, 255), live rgb(227, 235, 237)
+- background behind "Cost: For a group of 10, the cost is $24": rgb(242, 245, 248), live rgb(227, 235, 237)
+- background behind "We provide a cooler full of Gatorade for": rgb(242, 245, 247), live rgb(227, 235, 237)
+- background behind "Plus, if you have a birthday kiddo in th": rgb(242, 245, 248), live rgb(227, 235, 237)
+- background behind "We want kids to have a blast, making mem": rgb(242, 245, 247), live rgb(227, 235, 237)
+- background behind "You can begin the booking process on our": rgb(242, 245, 247), live rgb(5, 5, 5)
+- band color beside "HERE ARE THE DETAILS:": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "COME JOIN THE FUN! DON’T MISS LASER TAG ": rgb(255, 255, 255), live rgb(241, 245, 248)
+- band color beside "Great for all ages!": rgb(255, 255, 255), live rgb(1, 2, 20)
+- band color beside "Whether you are planning a birthday part": rgb(255, 255, 255), live rgb(227, 235, 237)
+- band color beside "The best part?": rgb(255, 255, 255), live rgb(227, 235, 237)
+- band color beside "Our staff will do all the setup and be o": rgb(255, 255, 255), live rgb(227, 235, 237)
+- band color beside "Call us today and book our entire obstac": rgb(255, 255, 255), live rgb(227, 235, 237)
+- band color beside "Cost: For a group of 10, the cost is $24": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "We provide a cooler full of Gatorade for": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "Plus, if you have a birthday kiddo in th": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "We want kids to have a blast, making mem": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "You can begin the booking process on our": rgb(242, 246, 249), live rgb(0, 0, 0)
+- heading "LASER TAG GYM IN SPRINGFIELD, MO": looks different from live (pixel difference 76)
+- heading "HERE ARE THE DETAILS:": looks different from live (pixel difference 59)
+- text "You can begin the booking proc": looks different from live (pixel difference 203)
+- band rgb(255, 255, 255) at y=679 (left margin): 846px tall, live 376px
+- band rgb(227, 235, 237) at y=1055 (1084px tall on live, left margin) not found in build
+- band rgb(0, 0, 0) at y=2144 (356px tall on live, left margin) not found in build
+- band rgb(241, 245, 248) at y=2500 (1491px tall on live, left margin) not found in build
+- band rgb(255, 255, 255) at y=2224 (507px tall, left margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=3158 (328px tall, left margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=679 (right margin): 846px tall, live 376px
+- band rgb(227, 235, 237) at y=1055 (1084px tall on live, right margin) not found in build
+- band rgb(1, 0, 4) at y=2139 (361px tall on live, right margin) not found in build
+- band rgb(241, 245, 248) at y=2500 (1491px tall on live, right margin) not found in build
+- band rgb(255, 255, 255) at y=2224 (507px tall, right margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=3158 (328px tall, right margin) is in the build but not on live
+
+## meet-the-team @ 1920px: 606 difference(s)
+- page height 10925px, live 7871px
+- heading missing: "YOU'VE MET THE TEAM."
+- heading missing: "NOW TRAIN WITH THEM."
+- heading missing: "You’ve met the coaches who make Springfield Warrior Sports what it is."
+- heading missing: "Now, come be a part of it and experience it for yourself."
+- heading missing: "No experience required."
+- heading "MEET THE SPRINGFIELD WARRIOR SPORTS TEAM": left edge 385px, live 968px
+- heading "MEET THE SPRINGFIELD WARRIOR SPORTS TEAM": width 1150px, live 568px
+- heading "MEET THE SPRINGFIELD WARRIOR SPORTS TEAM": color rgb(255, 255, 255), live rgb(219, 58, 52)
+- heading "MEET THE SPRINGFIELD WARRIOR SPORTS TEAM": 2 line(s), live 4
+- heading "JONNY": left edge 385px, live 827px
+- heading "JONNY": letter spacing 1px, live 0px
+- heading "CO-OWNER | ADULT OCR COACH | INTERMEDIAT": left edge 385px, live 827px
+- heading "CO-OWNER | ADULT OCR COACH | INTERMEDIAT": line height 35px, live 30px
+- heading "CO-OWNER | ADULT OCR COACH | INTERMEDIAT": letter spacing 1px, live 0px
+- heading "SARAH": left edge 980px, live 827px
+- heading "SARAH": letter spacing 1px, live 0px
+- heading "CO-OWNER | ADULT OCR COACH | PRESCHOOL C": left edge 980px, live 827px
+- heading "CO-OWNER | ADULT OCR COACH | PRESCHOOL C": line height 35px, live 30px
+- heading "CO-OWNER | ADULT OCR COACH | PRESCHOOL C": letter spacing 1px, live 0px
+- heading "LINCOLN": left edge 385px, live 827px
+- heading "LINCOLN": letter spacing 1px, live 0px
+- heading "BEGINNER NINJA COACH | BIRTHDAY PARTY HO": left edge 385px, live 827px
+- heading "BEGINNER NINJA COACH | BIRTHDAY PARTY HO": line height 35px, live 30px
+- heading "BEGINNER NINJA COACH | BIRTHDAY PARTY HO": letter spacing 1px, live 0px
+- heading "ELLORY": left edge 980px, live 827px
+- heading "ELLORY": letter spacing 1px, live 0px
+- heading "ADVANCED TEAM HEAD COACH | PRESCHOOL COA": left edge 980px, live 827px
+- heading "ADVANCED TEAM HEAD COACH | PRESCHOOL COA": line height 35px, live 28px
+- heading "ADVANCED TEAM HEAD COACH | PRESCHOOL COA": letter spacing 1px, live 0px
+- heading "ELLE": left edge 385px, live 827px
+- heading "ELLE": letter spacing 1px, live 0px
+- heading "PRESCHOOL COACH | BIRTHDAY PARTY HOST": left edge 385px, live 827px
+- heading "PRESCHOOL COACH | BIRTHDAY PARTY HOST": line height 35px, live 30px
+- heading "PRESCHOOL COACH | BIRTHDAY PARTY HOST": letter spacing 1px, live 0px
+- heading "CONNOR": left edge 980px, live 827px
+- heading "CONNOR": letter spacing 1px, live 0px
+- heading "ADVANCED TEAM ASSISTANT | BEGINNER NINJA": left edge 980px, live 827px
+- heading "ADVANCED TEAM ASSISTANT | BEGINNER NINJA": line height 35px, live 30px
+- heading "ADVANCED TEAM ASSISTANT | BEGINNER NINJA": letter spacing 1px, live 0px
+- heading "CALEB": left edge 385px, live 827px
+- heading "CALEB": letter spacing 1px, live 0px
+- heading "BEGINNER NINJA COACH | PRESCHOOL COACH |": left edge 385px, live 827px
+- heading "BEGINNER NINJA COACH | PRESCHOOL COACH |": line height 35px, live 30px
+- heading "BEGINNER NINJA COACH | PRESCHOOL COACH |": letter spacing 1px, live 0px
+- heading "RUBY": left edge 980px, live 827px
+- heading "RUBY": letter spacing 1px, live 0px
+- heading "ALL-LEVELS NINJA COACH | PRIVATE TRAININ": left edge 980px, live 827px
+- heading "ALL-LEVELS NINJA COACH | PRIVATE TRAININ": line height 35px, live 30px
+- heading "ALL-LEVELS NINJA COACH | PRIVATE TRAININ": letter spacing 1px, live 0px
+- heading "JOSIAH": left edge 385px, live 827px
+- heading "JOSIAH": letter spacing 1px, live 0px
+- heading "BIRTHDAY PARTY HOST": left edge 385px, live 827px
+- heading "BIRTHDAY PARTY HOST": line height 35px, live 30px
+- heading "BIRTHDAY PARTY HOST": letter spacing 1px, live 0px
+- heading "JACOB": left edge 980px, live 827px
+- heading "JACOB": letter spacing 1px, live 0px
+- heading "LEAD PERSONAL TRAINER": left edge 980px, live 827px
+- heading "LEAD PERSONAL TRAINER": line height 35px, live 30px
+- heading "LEAD PERSONAL TRAINER": letter spacing 1px, live 0px
+- heading "GRACE": left edge 385px, live 827px
+- heading "GRACE": letter spacing 1px, live 0px
+- heading "BEGINNER NINJA COACH | BIRTHDAY PARTY HO": left edge 385px, live 827px
+- heading "BEGINNER NINJA COACH | BIRTHDAY PARTY HO": line height 35px, live 30px
+- heading "BEGINNER NINJA COACH | BIRTHDAY PARTY HO": letter spacing 1px, live 0px
+- photo missing: img_2336
+- photo johnny-photo: left edge 385px, live 430px
+- photo johnny-photo: width 555px, live 371px
+- photo sarah-photo: left edge 980px, live 430px
+- photo sarah-photo: width 555px, live 371px
+- photo lincoln-photo: left edge 385px, live 430px
+- photo lincoln-photo: width 555px, live 371px
+- photo ellroy-photo: left edge 980px, live 430px
+- photo ellroy-photo: width 555px, live 371px
+- photo elle-photo: left edge 385px, live 430px
+- photo elle-photo: width 555px, live 371px
+- photo connor-photo: left edge 980px, live 430px
+- photo connor-photo: width 555px, live 371px
+- photo caleb-team-01: left edge 385px, live 430px
+- photo caleb-team-01: width 555px, live 371px
+- photo ruby-photo: left edge 980px, live 430px
+- photo ruby-photo: width 555px, live 371px
+- photo josiah-photo: left edge 385px, live 430px
+- photo josiah-photo: width 555px, live 371px
+- photo jacob-photo: left edge 980px, live 430px
+- photo jacob-photo: width 555px, live 371px
+- photo grace-photo: left edge 385px, live 430px
+- photo grace-photo: width 555px, live 371px
+- button "TRY OPEN GYM FOR $10": width 190px, live 290px
+- text not on live: "YOU'VE MET THE TEAM. NOW TRAIN WITH THEM. You’ve met the coa"
+- text "At Springfield Warrior Sports,": left edge 980px, live 386px
+- text "At Springfield Warrior Sports,": width 555px, live 1148px
+- text "At Springfield Warrior Sports,": size 16px, live 18px
+- text "At Springfield Warrior Sports,": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "At Springfield Warrior Sports,": line height 26px, live 32px
+- text "At Springfield Warrior Sports,": align start, live center
+- text "They’re mentors, competitors, ": left edge 980px, live 386px
+- text "They’re mentors, competitors, ": width 555px, live 1148px
+- text "They’re mentors, competitors, ": size 16px, live 18px
+- text "They’re mentors, competitors, ": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "They’re mentors, competitors, ": 2 line(s), live 1
+- text "They’re mentors, competitors, ": line height 26px, live 32px
+- text "They’re mentors, competitors, ": align start, live center
+- text "Get to know the coaches who ma": left edge 980px, live 386px
+- text "Get to know the coaches who ma": width 555px, live 1148px
+- text "Get to know the coaches who ma": size 16px, live 18px
+- text "Get to know the coaches who ma": weight 300, live 500
+- text "Get to know the coaches who ma": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Get to know the coaches who ma": line height 26px, live 32px
+- text "Get to know the coaches who ma": align start, live center
+- text "Hey there! I’m Jonny.": left edge 385px, live 826px
+- text "Hey there! I’m Jonny.": width 555px, live 639px
+- text "Hey there! I’m Jonny.": weight 300, live 400
+- text "Hey there! I’m Jonny.": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "I’ve been part of Springfield ": left edge 385px, live 826px
+- text "I’ve been part of Springfield ": width 555px, live 639px
+- text "I’ve been part of Springfield ": weight 300, live 400
+- text "I’ve been part of Springfield ": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "I’ve been part of Springfield ": 3 line(s), live 2
+- text "Almost nothing in the whole wo": left edge 385px, live 826px
+- text "Almost nothing in the whole wo": width 555px, live 639px
+- text "Almost nothing in the whole wo": weight 300, live 400
+- text "Almost nothing in the whole wo": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "My ninja journey includes winn": left edge 385px, live 826px
+- text "My ninja journey includes winn": width 555px, live 639px
+- text "My ninja journey includes winn": weight 300, live 400
+- text "My ninja journey includes winn": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "My ninja journey includes winn": 4 line(s), live 3
+- text "At the gym, I primarily teach ": left edge 385px, live 440px
+- text "At the gym, I primarily teach ": width 555px, live 1040px
+- text "At the gym, I primarily teach ": weight 300, live 400
+- text "At the gym, I primarily teach ": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "At the gym, I primarily teach ": 2 line(s), live 1
+- text "Outside the gym, I love my wif": left edge 385px, live 440px
+- text "Outside the gym, I love my wif": width 555px, live 1040px
+- text "Outside the gym, I love my wif": weight 300, live 400
+- text "Outside the gym, I love my wif": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Outside the gym, I love my wif": 6 line(s), live 3
+- text "I love meeting new people and ": left edge 385px, live 440px
+- text "I love meeting new people and ": width 555px, live 1040px
+- text "I love meeting new people and ": weight 300, live 400
+- text "I love meeting new people and ": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "I love meeting new people and ": 2 line(s), live 1
+- text "Hey guys! I’m Sarah.": left edge 980px, live 826px
+- text "Hey guys! I’m Sarah.": width 555px, live 649px
+- text "Hey guys! I’m Sarah.": weight 300, live 400
+- text "Hey guys! I’m Sarah.": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "I’m a co-owner of Springfield ": left edge 980px, live 826px
+- text "I’m a co-owner of Springfield ": width 555px, live 649px
+- text "I’m a co-owner of Springfield ": weight 300, live 400
+- text "I’m a co-owner of Springfield ": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "I teach preschool classes and ": left edge 980px, live 826px
+- text "I teach preschool classes and ": width 555px, live 649px
+- text "I teach preschool classes and ": weight 300, live 400
+- text "I teach preschool classes and ": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "I teach preschool classes and ": 5 line(s), live 4
+- text "Outside the gym, I enjoy readi": left edge 980px, live 440px
+- text "Outside the gym, I enjoy readi": width 555px, live 1040px
+- text "Outside the gym, I enjoy readi": weight 300, live 400
+- text "Outside the gym, I enjoy readi": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Outside the gym, I enjoy readi": 4 line(s), live 2
+- text "I’m excited to meet you. Come ": left edge 980px, live 440px
+- text "I’m excited to meet you. Come ": width 555px, live 1040px
+- text "I’m excited to meet you. Come ": weight 300, live 400
+- text "I’m excited to meet you. Come ": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Hello! I'm Lincoln.": left edge 385px, live 826px
+- text "Hello! I'm Lincoln.": width 555px, live 649px
+- text "Hello! I'm Lincoln.": weight 300, live 400
+- text "Hello! I'm Lincoln.": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "I’ve been working at Springfie": left edge 385px, live 826px
+- text "I’ve been working at Springfie": width 555px, live 649px
+- text "I’ve been working at Springfie": weight 300, live 400
+- text "I’ve been working at Springfie": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "I'm an active and sporty perso": left edge 385px, live 826px
+- text "I'm an active and sporty perso": width 555px, live 649px
+- text "I'm an active and sporty perso": weight 300, live 400
+- text "I'm an active and sporty perso": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "I'm an active and sporty perso": 5 line(s), live 4
+- text "As a coach, I strive to be the": left edge 385px, live 440px
+- text "As a coach, I strive to be the": width 555px, live 1040px
+- text "As a coach, I strive to be the": weight 300, live 400
+- text "As a coach, I strive to be the": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "As a coach, I strive to be the": 3 line(s), live 2
+- text "I first got into ninja by watc": left edge 980px, live 826px
+- text "I first got into ninja by watc": width 555px, live 649px
+- text "I first got into ninja by watc": weight 300, live 400
+- text "I first got into ninja by watc": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "When my parents surprised us b": left edge 980px, live 826px
+- text "When my parents surprised us b": width 555px, live 649px
+- text "When my parents surprised us b": weight 300, live 400
+- text "When my parents surprised us b": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "When my parents surprised us b": 6 line(s), live 5
+- text "I joined the staff here in May": left edge 980px, live 826px
+- text "I joined the staff here in May": width 555px, live 649px
+- text "I joined the staff here in May": weight 300, live 400
+- text "I joined the staff here in May": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "I joined the staff here in May": 7 line(s), live 6
+- text "Outside of ninja, I like to tr": left edge 980px, live 440px
+- text "Outside of ninja, I like to tr": width 555px, live 1040px
+- text "Outside of ninja, I like to tr": weight 300, live 400
+- text "Outside of ninja, I like to tr": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Outside of ninja, I like to tr": 6 line(s), live 4
+- text "Hi! My name is Elle, and I’ve ": left edge 385px, live 826px
+- text "Hi! My name is Elle, and I’ve ": width 555px, live 649px
+- text "Hi! My name is Elle, and I’ve ": weight 300, live 400
+- text "Hi! My name is Elle, and I’ve ": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "I teach preschool classes and ": left edge 385px, live 826px
+- text "I teach preschool classes and ": width 555px, live 649px
+- text "I teach preschool classes and ": weight 300, live 400
+- text "I teach preschool classes and ": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "I truly love my job. It's so r": left edge 385px, live 826px
+- text "I truly love my job. It's so r": width 555px, live 649px
+- text "I truly love my job. It's so r": weight 300, live 400
+- text "I truly love my job. It's so r": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Hello, I’m Connor!": left edge 980px, live 826px
+- text "Hello, I’m Connor!": width 555px, live 649px
+- text "Hello, I’m Connor!": weight 300, live 400
+- text "Hello, I’m Connor!": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "I’ve been part of the Springfi": left edge 980px, live 826px
+- text "I’ve been part of the Springfi": width 555px, live 649px
+- text "I’ve been part of the Springfi": weight 300, live 400
+- text "I’ve been part of the Springfi": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Over time, I’ve competed in sm": left edge 980px, live 826px
+- text "Over time, I’ve competed in sm": width 555px, live 649px
+- text "Over time, I’ve competed in sm": weight 300, live 400
+- text "Over time, I’ve competed in sm": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Over time, I’ve competed in sm": 8 line(s), live 7
+- text "I also run Birthday Parties an": left edge 980px, live 440px
+- text "I also run Birthday Parties an": width 555px, live 1040px
+- text "I also run Birthday Parties an": weight 300, live 400
+- text "I also run Birthday Parties an": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "I also run Birthday Parties an": 4 line(s), live 2
+- text "Outside of ninja, I like to we": left edge 980px, live 440px
+- text "Outside of ninja, I like to we": width 555px, live 1040px
+- text "Outside of ninja, I like to we": weight 300, live 400
+- text "Outside of ninja, I like to we": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Outside of ninja, I like to we": 3 line(s), live 2
+- text "Hey everyone! I’m Coach Caleb.": left edge 385px, live 826px
+- text "Hey everyone! I’m Coach Caleb.": width 555px, live 649px
+- text "Hey everyone! I’m Coach Caleb.": weight 300, live 400
+- text "Hey everyone! I’m Coach Caleb.": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "I’ve been part of the Warrior ": left edge 385px, live 826px
+- text "I’ve been part of the Warrior ": width 555px, live 649px
+- text "I’ve been part of the Warrior ": weight 300, live 400
+- text "I’ve been part of the Warrior ": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Here at W.S., I teach our Begi": left edge 385px, live 826px
+- text "Here at W.S., I teach our Begi": width 555px, live 649px
+- text "Here at W.S., I teach our Begi": weight 300, live 400
+- text "Here at W.S., I teach our Begi": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Here at W.S., I teach our Begi": 5 line(s), live 4
+- text "Outside the gym, I’m into rock": left edge 385px, live 440px
+- text "Outside the gym, I’m into rock": width 555px, live 1040px
+- text "Outside the gym, I’m into rock": weight 300, live 400
+- text "Outside the gym, I’m into rock": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Outside the gym, I’m into rock": 4 line(s), live 2
+- text "I’m all about helping kids hav": left edge 385px, live 440px
+- text "I’m all about helping kids hav": width 555px, live 1040px
+- text "I’m all about helping kids hav": weight 300, live 400
+- text "I’m all about helping kids hav": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "I’m all about helping kids hav": 2 line(s), live 1
+- text "I’m Ruby Wilder, and I’ve been": left edge 980px, live 826px
+- text "I’m Ruby Wilder, and I’ve been": width 555px, live 649px
+- text "I’m Ruby Wilder, and I’ve been": weight 300, live 400
+- text "I’m Ruby Wilder, and I’ve been": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "I’m Ruby Wilder, and I’ve been": 2 line(s), live 1
+- text "I competed from ages 8 to 11 a": left edge 980px, live 826px
+- text "I competed from ages 8 to 11 a": width 555px, live 649px
+- text "I competed from ages 8 to 11 a": weight 300, live 400
+- text "I competed from ages 8 to 11 a": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "I also work birthday parties, ": left edge 980px, live 826px
+- text "I also work birthday parties, ": width 555px, live 649px
+- text "I also work birthday parties, ": weight 300, live 400
+- text "I also work birthday parties, ": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "I also work birthday parties, ": 2 line(s), live 1
+- text "Outside the gym, I’m an artist": left edge 980px, live 826px
+- text "Outside the gym, I’m an artist": width 555px, live 649px
+- text "Outside the gym, I’m an artist": weight 300, live 400
+- text "Outside the gym, I’m an artist": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Outside the gym, I’m an artist": 4 line(s), live 3
+- text "My name is Josiah, and I’ve tr": left edge 385px, live 826px
+- text "My name is Josiah, and I’ve tr": width 555px, live 649px
+- text "My name is Josiah, and I’ve tr": weight 300, live 400
+- text "My name is Josiah, and I’ve tr": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "After placing top 100 in the w": left edge 385px, live 826px
+- text "After placing top 100 in the w": width 555px, live 649px
+- text "After placing top 100 in the w": weight 300, live 400
+- text "After placing top 100 in the w": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "After placing top 100 in the w": 5 line(s), live 4
+- text "Here at Springfield Warrior Sp": left edge 385px, live 826px
+- text "Here at Springfield Warrior Sp": width 555px, live 649px
+- text "Here at Springfield Warrior Sp": weight 300, live 400
+- text "Here at Springfield Warrior Sp": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Hi! I’m Jacob Winter.": left edge 980px, live 826px
+- text "Hi! I’m Jacob Winter.": width 555px, live 649px
+- text "Hi! I’m Jacob Winter.": weight 300, live 400
+- text "Hi! I’m Jacob Winter.": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "I’ve been an employee of Sprin": left edge 980px, live 826px
+- text "I’ve been an employee of Sprin": width 555px, live 649px
+- text "I’ve been an employee of Sprin": weight 300, live 400
+- text "I’ve been an employee of Sprin": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "I’ve been an employee of Sprin": 6 line(s), live 5
+- text "My main job is to head up the ": left edge 980px, live 826px
+- text "My main job is to head up the ": width 555px, live 649px
+- text "My main job is to head up the ": weight 300, live 400
+- text "My main job is to head up the ": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "My main job is to head up the ": 4 line(s), live 3
+- text "Outside of the gym, I can be f": left edge 980px, live 826px
+- text "Outside of the gym, I can be f": width 555px, live 649px
+- text "Outside of the gym, I can be f": weight 300, live 400
+- text "Outside of the gym, I can be f": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Outside of the gym, I can be f": 3 line(s), live 2
+- text "Hi, I’m Grace.": left edge 385px, live 826px
+- text "Hi, I’m Grace.": width 555px, live 649px
+- text "Hi, I’m Grace.": weight 300, live 400
+- text "Hi, I’m Grace.": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "I’ve been training at Warrior ": left edge 385px, live 826px
+- text "I’ve been training at Warrior ": width 555px, live 649px
+- text "I’ve been training at Warrior ": weight 300, live 400
+- text "I’ve been training at Warrior ": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "I’ve been competing since 2018": left edge 385px, live 826px
+- text "I’ve been competing since 2018": width 555px, live 649px
+- text "I’ve been competing since 2018": weight 300, live 400
+- text "I’ve been competing since 2018": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Outside of ninja, I play softb": left edge 385px, live 826px
+- text "Outside of ninja, I play softb": width 555px, live 649px
+- text "Outside of ninja, I play softb": weight 300, live 400
+- text "Outside of ninja, I play softb": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Outside of ninja, I play softb": 2 line(s), live 1
+- words "Meet The Springfield Warrior Sports Team": color rgb(255, 255, 255), live rgb(219, 58, 52)
+- words "At Springfield Warrior Sports, our coach": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "They’re mentors, competitors, and people": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Get to know the coaches who make this co": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Get to know the coaches who make this co": weight 300, live 500
+- words "Jonny": color rgb(0, 0, 0), live rgb(40, 82, 118)
+- words "Jonny": weight 400, live 900
+- words "Co-Owner | ADult ocr coach | intermediat": weight 900, live 400
+- words "Hey there! I’m Jonny.": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Hey there! I’m Jonny.": weight 300, live 400
+- words "I’ve been part of Springfield Warrior Sp": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "I’ve been part of Springfield Warrior Sp": weight 300, live 400
+- words "Almost nothing in the whole world brings": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Almost nothing in the whole world brings": weight 300, live 400
+- words "My ninja journey includes winning the 20": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "My ninja journey includes winning the 20": weight 300, live 400
+- words "At the gym, I primarily teach the Interm": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "At the gym, I primarily teach the Interm": weight 300, live 400
+- words "Outside the gym, I love my wife, Nintend": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Outside the gym, I love my wife, Nintend": weight 300, live 400
+- words "I love meeting new people and growing ou": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "I love meeting new people and growing ou": weight 300, live 400
+- words "Sarah": color rgb(0, 0, 0), live rgb(40, 82, 118)
+- words "Sarah": weight 400, live 900
+- words "Co-Owner | Adult OCR Coach | Preschool c": weight 900, live 400
+- words "Hey guys! I’m Sarah.": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Hey guys! I’m Sarah.": weight 300, live 400
+- words "I’m a co-owner of Springfield Warrior Sp": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "I’m a co-owner of Springfield Warrior Sp": weight 300, live 400
+- words "I teach preschool classes and the Adult ": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "I teach preschool classes and the Adult ": weight 300, live 400
+- words "Outside the gym, I enjoy reading, crafts": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Outside the gym, I enjoy reading, crafts": weight 300, live 400
+- words "I’m excited to meet you. Come hang out w": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "I’m excited to meet you. Come hang out w": weight 300, live 400
+- words "Lincoln": color rgb(0, 0, 0), live rgb(40, 82, 118)
+- words "Lincoln": weight 400, live 900
+- words "Beginner Ninja Coach | Birthday party ho": weight 900, live 400
+- words "Hello! I'm Lincoln.": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Hello! I'm Lincoln.": weight 300, live 400
+- words "I’ve been working at Springfield Warrior": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "I’ve been working at Springfield Warrior": weight 300, live 400
+- words "I'm an active and sporty person, and I e": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "I'm an active and sporty person, and I e": weight 300, live 400
+- words "As a coach, I strive to be the best teac": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "As a coach, I strive to be the best teac": weight 300, live 400
+- words "Ellory": color rgb(0, 0, 0), live rgb(40, 82, 118)
+- words "Ellory": weight 400, live 900
+- words "Advanced Team Head Coach | Preschool Coa": weight 900, live 400
+- words "I first got into ninja by watching Ameri": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "I first got into ninja by watching Ameri": weight 300, live 400
+- words "When my parents surprised us by signing ": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "When my parents surprised us by signing ": weight 300, live 400
+- words "I joined the staff here in May 2023, and": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "I joined the staff here in May 2023, and": weight 300, live 400
+- words "Outside of ninja, I like to try out all ": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Outside of ninja, I like to try out all ": weight 300, live 400
+- words "Elle": color rgb(0, 0, 0), live rgb(40, 82, 118)
+- words "Elle": weight 400, live 900
+- words "Preschool Coach | Birthday Party Host": weight 900, live 400
+- words "Hi! My name is Elle, and I’ve been worki": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Hi! My name is Elle, and I’ve been worki": weight 300, live 400
+- words "I teach preschool classes and assist wit": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "I teach preschool classes and assist wit": weight 300, live 400
+- words "I truly love my job. It's so rewarding t": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "I truly love my job. It's so rewarding t": weight 300, live 400
+- words "Connor": color rgb(0, 0, 0), live rgb(40, 82, 118)
+- words "Connor": weight 400, live 900
+- words "Advanced Team Assistant | Beginner NINJA": weight 900, live 400
+- words "Hello, I’m Connor!": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Hello, I’m Connor!": weight 300, live 400
+- words "I’ve been part of the Springfield Warrio": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "I’ve been part of the Springfield Warrio": weight 300, live 400
+- words "Over time, I’ve competed in small and la": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Over time, I’ve competed in small and la": weight 300, live 400
+- words "I also run Birthday Parties and currentl": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "I also run Birthday Parties and currentl": weight 300, live 400
+- words "Outside of ninja, I like to weight lift ": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Outside of ninja, I like to weight lift ": weight 300, live 400
+- words "Caleb": color rgb(0, 0, 0), live rgb(40, 82, 118)
+- words "Caleb": weight 400, live 900
+- words "Beginner Ninja COACH | Preschool Coach |": weight 900, live 400
+- words "Hey everyone! I’m Coach Caleb.": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Hey everyone! I’m Coach Caleb.": weight 300, live 400
+- words "I’ve been part of the Warrior Sports tea": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "I’ve been part of the Warrior Sports tea": weight 300, live 400
+- words "Here at W.S., I teach our Beginner Ninja": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Here at W.S., I teach our Beginner Ninja": weight 300, live 400
+- words "Outside the gym, I’m into rock climbing,": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Outside the gym, I’m into rock climbing,": weight 300, live 400
+- words "I’m all about helping kids have fun, get": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "I’m all about helping kids have fun, get": weight 300, live 400
+- words "Ruby": color rgb(0, 0, 0), live rgb(40, 82, 118)
+- words "Ruby": weight 400, live 900
+- words "All-Levels ninja Coach | private Trainin": weight 900, live 400
+- words "I’m Ruby Wilder, and I’ve been involved ": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "I’m Ruby Wilder, and I’ve been involved ": weight 300, live 400
+- words "I competed from ages 8 to 11 and officia": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "I competed from ages 8 to 11 and officia": weight 300, live 400
+- words "I also work birthday parties, logins, la": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "I also work birthday parties, logins, la": weight 300, live 400
+- words "Outside the gym, I’m an artist in all ca": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Outside the gym, I’m an artist in all ca": weight 300, live 400
+- words "Josiah": color rgb(0, 0, 0), live rgb(40, 82, 118)
+- words "Josiah": weight 400, live 900
+- words "birthday Party Host": weight 900, live 400
+- words "My name is Josiah, and I’ve trained and ": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "My name is Josiah, and I’ve trained and ": weight 300, live 400
+- words "After placing top 100 in the world in th": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "After placing top 100 in the world in th": weight 300, live 400
+- words "Here at Springfield Warrior Sports, I wa": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Here at Springfield Warrior Sports, I wa": weight 300, live 400
+- words "Jacob": color rgb(0, 0, 0), live rgb(40, 82, 118)
+- words "Jacob": weight 400, live 900
+- words "lead Personal trainer": weight 900, live 400
+- words "Hi! I’m Jacob Winter.": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Hi! I’m Jacob Winter.": weight 300, live 400
+- words "I’ve been an employee of Springfield War": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "I’ve been an employee of Springfield War": weight 300, live 400
+- words "My main job is to head up the personal t": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "My main job is to head up the personal t": weight 300, live 400
+- words "Outside of the gym, I can be found perfo": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Outside of the gym, I can be found perfo": weight 300, live 400
+- words "Grace": color rgb(0, 0, 0), live rgb(40, 82, 118)
+- words "Grace": weight 400, live 900
+- words "Beginner Ninja Coach | birthday Party Ho": weight 900, live 400
+- words "Hi, I’m Grace.": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Hi, I’m Grace.": weight 300, live 400
+- words "I’ve been training at Warrior Sports sin": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "I’ve been training at Warrior Sports sin": weight 300, live 400
+- words "I’ve been competing since 2018, travelin": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "I’ve been competing since 2018, travelin": weight 300, live 400
+- words "Outside of ninja, I play softball and ru": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Outside of ninja, I play softball and ru": weight 300, live 400
+- words "you've met the Team.": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "you've met the Team.": weight 300, live 900
+- words "Now Train With Them.": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "Now Train With Them.": weight 300, live 900
+- words "You’ve met the coaches who make Springfi": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- words "You’ve met the coaches who make Springfi": weight 300, live 400
+- words "Now, come be a part of it and experience": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- words "Now, come be a part of it and experience": weight 300, live 400
+- words "No experience required.": color rgb(51, 51, 51), live rgb(135, 204, 237)
+- words "No experience required.": weight 300, live 400
+- spacing from "MEET THE SPRINGFIELD WARRIOR S" to "JONNY": 1178px, live 676px
+- spacing from "JONNY" to "CO-OWNER | ADULT OCR COACH | I": 0px, live 37px
+- spacing from "CO-OWNER | ADULT OCR COACH | I" to "SARAH": 918px, live 594px
+- spacing from "SARAH" to "CO-OWNER | ADULT OCR COACH | P": 0px, live 37px
+- spacing from "CO-OWNER | ADULT OCR COACH | P" to "LINCOLN": 885px, live 548px
+- spacing from "LINCOLN" to "BEGINNER NINJA COACH | BIRTHDA": 0px, live 37px
+- spacing from "BEGINNER NINJA COACH | BIRTHDA" to "ELLORY": 721px, live 480px
+- spacing from "ELLORY" to "ADVANCED TEAM HEAD COACH | PRE": 0px, live 37px
+- spacing from "ADVANCED TEAM HEAD COACH | PRE" to "ELLE": 1059px, live 702px
+- spacing from "ELLE" to "PRESCHOOL COACH | BIRTHDAY PAR": 0px, live 37px
+- spacing from "PRESCHOOL COACH | BIRTHDAY PAR" to "CONNOR": 662px, live 409px
+- spacing from "CONNOR" to "ADVANCED TEAM ASSISTANT | BEGI": 0px, live 37px
+- spacing from "ADVANCED TEAM ASSISTANT | BEGI" to "CALEB": 965px, live 660px
+- spacing from "CALEB" to "BEGINNER NINJA COACH | PRESCHO": 0px, live 37px
+- spacing from "BEGINNER NINJA COACH | PRESCHO" to "RUBY": 861px, live 548px
+- spacing from "RUBY" to "ALL-LEVELS NINJA COACH | PRIVA": 0px, live 37px
+- spacing from "ALL-LEVELS NINJA COACH | PRIVA" to "JOSIAH": 827px, live 421px
+- spacing from "JOSIAH" to "BIRTHDAY PARTY HOST": 0px, live 37px
+- spacing from "BIRTHDAY PARTY HOST" to "JACOB": 725px, live 447px
+- spacing from "JACOB" to "LEAD PERSONAL TRAINER": 0px, live 37px
+- spacing from "LEAD PERSONAL TRAINER" to "GRACE": 708px, live 475px
+- spacing from "GRACE" to "BEGINNER NINJA COACH | BIRTHDA": 0px, live 37px
+- gap between "MEET THE SPRINGFIELD WARRIOR S" and "At Springfield Warrior Sports,": 494px, live 186px
+- gap between "Get to know the coaches who ma" and "JONNY": 369px, live 91px
+- gap between "I’m excited to meet you. Come " and "LINCOLN": 147px, live 86px
+- gap between "As a coach, I strive to be the" and "ELLORY": 147px, live 86px
+- gap between "Outside of ninja, I like to tr" and "ELLE": 205px, live 86px
+- gap between "I truly love my job. It's so r" and "CONNOR": 205px, live 86px
+- gap between "I’m all about helping kids hav" and "RUBY": 148px, live 86px
+- gap between "Outside the gym, I’m an artist" and "JOSIAH": 255px, live 86px
+- gap between "Here at Springfield Warrior Sp" and "JACOB": 267px, live 96px
+- gap between "Outside of the gym, I can be f" and "GRACE": 159px, live 86px
+- icons: 5 in build, 6 on live
+- icon 1: left edge 418px, live 1069px
+- icon 2: left edge 455px, live 414px
+- icon 3: color rgb(219, 58, 52), live rgb(255, 255, 255)
+- icon 3: left edge 821px, live 451px
+- background behind "JONNY": rgb(242, 246, 248), live rgb(255, 255, 255)
+- background behind "CO-OWNER | ADULT OCR COACH | INTERMEDIAT": rgb(242, 246, 248), live rgb(255, 255, 255)
+- background behind "LINCOLN": rgb(242, 246, 248), live rgb(255, 255, 255)
+- background behind "BEGINNER NINJA COACH | BIRTHDAY PARTY HO": rgb(242, 246, 248), live rgb(255, 255, 255)
+- background behind "ELLE": rgb(242, 245, 248), live rgb(255, 255, 255)
+- background behind "PRESCHOOL COACH | BIRTHDAY PARTY HOST": rgb(242, 245, 248), live rgb(255, 255, 255)
+- background behind "CALEB": rgb(242, 246, 248), live rgb(255, 255, 255)
+- background behind "BEGINNER NINJA COACH | PRESCHOOL COACH |": rgb(242, 246, 248), live rgb(255, 255, 255)
+- background behind "JOSIAH": rgb(242, 246, 249), live rgb(255, 255, 255)
+- background behind "BIRTHDAY PARTY HOST": rgb(242, 246, 249), live rgb(255, 255, 255)
+- background behind "GRACE": rgb(242, 246, 248), live rgb(255, 255, 255)
+- background behind "BEGINNER NINJA COACH | BIRTHDAY PARTY HO": rgb(242, 246, 248), live rgb(255, 255, 255)
+- background behind "At Springfield Warrior Sports, our coach": rgb(255, 255, 255), live rgb(239, 246, 252)
+- background behind "They’re mentors, competitors, and people": rgb(255, 255, 255), live rgb(239, 246, 252)
+- background behind "Get to know the coaches who make this co": rgb(255, 255, 255), live rgb(239, 246, 252)
+- background behind "Hey there! I’m Jonny.": rgb(242, 246, 249), live rgb(255, 255, 255)
+- background behind "I’ve been part of Springfield Warrior Sp": rgb(242, 245, 248), live rgb(255, 255, 255)
+- background behind "Almost nothing in the whole world brings": rgb(242, 245, 247), live rgb(255, 255, 255)
+- background behind "My ninja journey includes winning the 20": rgb(242, 245, 247), live rgb(255, 255, 255)
+- background behind "At the gym, I primarily teach the Interm": rgb(242, 245, 247), live rgb(255, 255, 255)
+- background behind "Outside the gym, I love my wife, Nintend": rgb(242, 245, 247), live rgb(255, 255, 255)
+- background behind "I love meeting new people and growing ou": rgb(242, 245, 248), live rgb(255, 255, 255)
+- background behind "Hello! I'm Lincoln.": rgb(242, 246, 249), live rgb(255, 255, 255)
+- background behind "I’ve been working at Springfield Warrior": rgb(242, 244, 246), live rgb(255, 255, 255)
+- background behind "I'm an active and sporty person, and I e": rgb(242, 245, 247), live rgb(255, 255, 255)
+- background behind "As a coach, I strive to be the best teac": rgb(242, 245, 247), live rgb(255, 255, 255)
+- background behind "Hi! My name is Elle, and I’ve been worki": rgb(243, 246, 248), live rgb(255, 255, 255)
+- background behind "I teach preschool classes and assist wit": rgb(242, 244, 247), live rgb(255, 255, 255)
+- background behind "I truly love my job. It's so rewarding t": rgb(242, 245, 247), live rgb(255, 255, 255)
+- background behind "Hey everyone! I’m Coach Caleb.": rgb(242, 245, 248), live rgb(255, 255, 255)
+- background behind "I’ve been part of the Warrior Sports tea": rgb(241, 244, 247), live rgb(255, 255, 255)
+- background behind "Here at W.S., I teach our Beginner Ninja": rgb(242, 245, 247), live rgb(255, 255, 255)
+- background behind "Outside the gym, I’m into rock climbing,": rgb(242, 245, 247), live rgb(255, 255, 255)
+- background behind "I’m all about helping kids have fun, get": rgb(242, 245, 248), live rgb(255, 255, 255)
+- background behind "My name is Josiah, and I’ve trained and ": rgb(242, 245, 247), live rgb(255, 255, 255)
+- background behind "After placing top 100 in the world in th": rgb(242, 245, 247), live rgb(255, 255, 255)
+- background behind "Here at Springfield Warrior Sports, I wa": rgb(242, 245, 247), live rgb(255, 255, 255)
+- background behind "Hi, I’m Grace.": rgb(242, 246, 249), live rgb(255, 255, 255)
+- background behind "I’ve been training at Warrior Sports sin": rgb(242, 245, 247), live rgb(255, 255, 255)
+- background behind "I’ve been competing since 2018, travelin": rgb(242, 245, 247), live rgb(255, 255, 255)
+- background behind "Outside of ninja, I play softball and ru": rgb(242, 246, 248), live rgb(255, 255, 255)
+- band color beside "MEET THE SPRINGFIELD WARRIOR SPORTS TEAM": rgb(35, 36, 31), live rgb(4, 16, 28)
+- band color beside "SARAH": rgb(255, 255, 255), live rgb(239, 246, 252)
+- band color beside "ELLORY": rgb(255, 255, 255), live rgb(239, 246, 252)
+- band color beside "ADVANCED TEAM HEAD COACH | PRESCHOOL COA": rgb(255, 255, 255), live rgb(239, 246, 252)
+- band color beside "CONNOR": rgb(255, 255, 255), live rgb(239, 246, 252)
+- band color beside "ADVANCED TEAM ASSISTANT | BEGINNER NINJA": rgb(255, 255, 255), live rgb(239, 246, 252)
+- band color beside "RUBY": rgb(255, 255, 255), live rgb(239, 246, 252)
+- band color beside "ALL-LEVELS NINJA COACH | PRIVATE TRAININ": rgb(255, 255, 255), live rgb(239, 246, 252)
+- band color beside "JACOB": rgb(255, 255, 255), live rgb(239, 246, 252)
+- band color beside "LEAD PERSONAL TRAINER": rgb(255, 255, 255), live rgb(239, 246, 252)
+- band color beside "At Springfield Warrior Sports, our coach": rgb(255, 255, 255), live rgb(239, 246, 252)
+- band color beside "They’re mentors, competitors, and people": rgb(255, 255, 255), live rgb(239, 246, 252)
+- band color beside "Get to know the coaches who make this co": rgb(255, 255, 255), live rgb(239, 246, 252)
+- band color beside "Hey guys! I’m Sarah.": rgb(255, 255, 255), live rgb(239, 246, 252)
+- band color beside "I’m a co-owner of Springfield Warrior Sp": rgb(255, 255, 255), live rgb(239, 246, 252)
+- band color beside "I teach preschool classes and the Adult ": rgb(255, 255, 255), live rgb(239, 246, 252)
+- band color beside "Outside the gym, I enjoy reading, crafts": rgb(255, 255, 255), live rgb(239, 246, 252)
+- band color beside "I’m excited to meet you. Come hang out w": rgb(255, 255, 255), live rgb(239, 246, 252)
+- band color beside "I first got into ninja by watching Ameri": rgb(255, 255, 255), live rgb(239, 246, 252)
+- band color beside "When my parents surprised us by signing ": rgb(255, 255, 255), live rgb(239, 246, 252)
+- band color beside "I joined the staff here in May 2023, and": rgb(255, 255, 255), live rgb(239, 246, 252)
+- band color beside "Outside of ninja, I like to try out all ": rgb(255, 255, 255), live rgb(239, 246, 252)
+- band color beside "Hello, I’m Connor!": rgb(255, 255, 255), live rgb(239, 246, 252)
+- band color beside "I’ve been part of the Springfield Warrio": rgb(255, 255, 255), live rgb(239, 246, 252)
+- band color beside "Over time, I’ve competed in small and la": rgb(255, 255, 255), live rgb(239, 246, 252)
+- band color beside "I also run Birthday Parties and currentl": rgb(255, 255, 255), live rgb(239, 246, 252)
+- band color beside "Outside of ninja, I like to weight lift ": rgb(255, 255, 255), live rgb(239, 246, 252)
+- band color beside "I’m Ruby Wilder, and I’ve been involved ": rgb(255, 255, 255), live rgb(239, 246, 252)
+- band color beside "I competed from ages 8 to 11 and officia": rgb(255, 255, 255), live rgb(239, 246, 252)
+- band color beside "I also work birthday parties, logins, la": rgb(255, 255, 255), live rgb(239, 246, 252)
+- band color beside "Outside the gym, I’m an artist in all ca": rgb(255, 255, 255), live rgb(239, 246, 252)
+- band color beside "Hi! I’m Jacob Winter.": rgb(255, 255, 255), live rgb(239, 246, 252)
+- band color beside "My main job is to head up the personal t": rgb(255, 255, 255), live rgb(239, 246, 252)
+- band color beside "Outside of the gym, I can be found perfo": rgb(255, 255, 255), live rgb(239, 246, 252)
+- heading "MEET THE SPRINGFIELD WARRIOR SPORTS TEAM": looks different from live (pixel difference 61)
+- heading "JONNY": looks different from live (pixel difference 45)
+- heading "CO-OWNER | ADULT OCR COACH | INTERMEDIAT": looks different from live (pixel difference 39)
+- heading "LINCOLN": looks different from live (pixel difference 53)
+- heading "BEGINNER NINJA COACH | BIRTHDAY PARTY HO": looks different from live (pixel difference 45)
+- heading "CALEB": looks different from live (pixel difference 50)
+- heading "BEGINNER NINJA COACH | PRESCHOOL COACH |": looks different from live (pixel difference 48)
+- photo hero: brightness 28, live 49 (overlay or exposure differs)
+- photo hero: looks different from live (pixel difference 42)
+- band rgb(239, 246, 252) at y=636 (6365px tall on live, left margin) not found in build
+- band rgb(255, 255, 255) at y=2363 (836px tall, left margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=3968 (951px tall, left margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=5690 (965px tall, left margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=7466 (770px tall, left margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=9005 (771px tall, left margin) is in the build but not on live
+- band rgb(239, 246, 252) at y=629 (6371px tall on live, right margin) not found in build
+- band rgb(6, 6, 6) at y=7235 (110px tall on live, right margin) not found in build
+- band rgb(255, 255, 255) at y=2363 (836px tall, right margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=3968 (951px tall, right margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=5690 (965px tall, right margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=7466 (770px tall, right margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=9005 (771px tall, right margin) is in the build but not on live
+
+## nerf-wars @ 1920px: 161 difference(s)
+- page height 3632px, live 3982px
+- heading missing: "BOOK NOW!"
+- heading missing: "READY TO LOCK IN THE DATE FOR YOUR CHILD'S EPIC NERF PARTY AT WARRIOR SPORTS?"
+- heading missing: "Dive into action-packed fun every other month with our exclusive Nerf War Nights!"
+- heading missing: "Want to be in the loop for our next Nerf War Night? Simply enter your email below and never miss out on the action!"
+- heading out of order: "THE ULTIMATE PARTY EXPERIENCE!"
+- heading "NERF WAR SPRINGFIELD, MO:": left edge 980px, live 543px
+- heading "NERF WAR SPRINGFIELD, MO:": width 555px, live 835px
+- heading "NERF WAR SPRINGFIELD, MO:": align start, live center
+- heading "THE ULTIMATE PARTY EXPERIENCE!": left edge 385px, live 543px
+- heading "NERF WAR PARTY BREAKDOWN": left edge 385px, live 594px
+- heading "NERF WAR PARTY BREAKDOWN": line height 50px, live 70px
+- heading "HERE’S WHAT’S INCLUDED": left edge 385px, live 973px
+- heading "HERE’S WHAT’S INCLUDED": line height 50px, live 30px
+- heading "PRICING": left edge 385px, live 973px
+- heading "PRICING": width 555px, live 119px
+- heading "PRICING": size 50px, live 30px
+- heading "PRICING": color rgb(214, 53, 47), live rgb(40, 82, 118)
+- heading "PRICING": line height 50px, live 30px
+- heading "NERF WAR NIGHTS IN SPRINGFIELD MO": 3 line(s), live 2
+- photo missing: nerf-war-party
+- photo missing: book-now-bg
+- photo nerf-war-nights: left edge 385px, live 1034px
+- button "START THE BOOKING PROCESS ON OUR WEBSITE HERE": width 385px, live 537px
+- text missing: ""*" indicates required fields"
+- text not on live: "Nerf Guns Nerf Bullets Bring any of your favorite guns! Excl"
+- text "Welcome to Warrior Sports, whe": left edge 980px, live 523px
+- text "Welcome to Warrior Sports, whe": width 555px, live 874px
+- text "Welcome to Warrior Sports, whe": size 16px, live 20px
+- text "Welcome to Warrior Sports, whe": weight 300, live 400
+- text "Welcome to Warrior Sports, whe": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Welcome to Warrior Sports, whe": line height 26px, live 35px
+- text "Welcome to Warrior Sports, whe": align start, live center
+- text "Book a Nerf war party at Warri": left edge 385px, live 974px
+- text "Book a Nerf war party at Warri": weight 300, live 400
+- text "Book a Nerf war party at Warri": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Need party invitations? We've ": left edge 385px, live 974px
+- text "Need party invitations? We've ": weight 300, live 400
+- text "Need party invitations? We've ": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Our Nerf parties start at $220": left edge 385px, live 974px
+- text "Our Nerf parties start at $220": weight 300, live 400
+- text "Our Nerf parties start at $220": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Let our experienced and kid-fr": left edge 385px, live 414px
+- text "Let our experienced and kid-fr": width 555px, live 1093px
+- text "Let our experienced and kid-fr": weight 300, live 400
+- text "Let our experienced and kid-fr": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- text "Let our experienced and kid-fr": 4 line(s), live 2
+- text "Let our experienced and kid-fr": align start, live center
+- text "Or, dial (417) 894-7319 to res": left edge 385px, live 414px
+- text "Or, dial (417) 894-7319 to res": width 555px, live 1093px
+- text "Or, dial (417) 894-7319 to res": weight 300, live 400
+- text "Or, dial (417) 894-7319 to res": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- text "Or, dial (417) 894-7319 to res": align start, live center
+- words "The Ultimate Party Experience!": color rgb(214, 53, 47), live rgb(248, 248, 248)
+- words "Welcome to Warrior Sports, where Nerf ba": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Welcome to Warrior Sports, where Nerf ba": weight 300, live 400
+- words "popular birthday party options": color rgb(51, 51, 51), live rgb(47, 138, 228)
+- words "popular birthday party options": weight 300, live 400
+- words "! We handle everything from setup to gam": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "! We handle everything from setup to gam": weight 300, live 400
+- words "Here’s What’s Included": color rgb(0, 0, 0), live rgb(40, 82, 118)
+- words "Here’s What’s Included": weight 400, live 900
+- words "Nerf Guns": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Nerf Guns": weight 300, live 600
+- words "Nerf Bullets": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Nerf Bullets": weight 300, live 600
+- words "Bring any of your favorite guns!": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Bring any of your favorite guns!": weight 300, live 600
+- words "Exclusive play in our entire obstacle co": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Exclusive play in our entire obstacle co": weight 300, live 600
+- words "Book a Nerf war party at Warrior Sports ": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Book a Nerf war party at Warrior Sports ": weight 300, live 400
+- words "Need party invitations? We've got you co": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Need party invitations? We've got you co": weight 300, live 400
+- words "Pricing": color rgb(214, 53, 47), live rgb(40, 82, 118)
+- words "Our Nerf parties start at": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Our Nerf parties start at": weight 300, live 400
+- words "$220": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "$220": weight 300, live 900
+- words "for the first 11 kids, and it's just an ": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "for the first 11 kids, and it's just an ": weight 300, live 400
+- words "Book Now!": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- words "Book Now!": weight 300, live 900
+- words "Let our experienced and kid-friendly tea": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- words "Let our experienced and kid-friendly tea": weight 300, live 400
+- words "Ready to lock in the date for your child": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- words "Or, dial": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- words "Or, dial": weight 300, live 400
+- words "(417) 894-7319": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- words "(417) 894-7319": weight 300, live 400
+- words "(417) 894-7319": underline false, live true
+- words "to reserve today.Let's make your child's": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- words "to reserve today.Let's make your child's": weight 300, live 400
+- words "Dive into action-packed fun every other ": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Dive into action-packed fun every other ": weight 300, live 400
+- words "When:": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "When:": weight 300, live 600
+- words "Typically on Fridays, from 6-8 PM.": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Typically on Fridays, from 6-8 PM.": weight 300, live 400
+- words "Pricing:": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Pricing:": weight 300, live 600
+- words "It's only $15 per participant. Good news": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "It's only $15 per participant. Good news": weight 300, live 400
+- words "Want to be in the loop for our next Nerf": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Want to be in the loop for our next Nerf": weight 300, live 400
+- spacing from "NERF WAR SPRINGFIELD, MO:" to "THE ULTIMATE PARTY EXPERIENCE!": -579px, live 50px
+- spacing from "THE ULTIMATE PARTY EXPERIENCE!" to "NERF WAR PARTY BREAKDOWN": 1048px, live 737px
+- spacing from "NERF WAR PARTY BREAKDOWN" to "HERE’S WHAT’S INCLUDED": 0px, live 221px
+- spacing from "HERE’S WHAT’S INCLUDED" to "PRICING": 505px, live 436px
+- spacing from "PRICING" to "NERF WAR NIGHTS IN SPRINGFIELD": 583px, live 936px
+- gap between "THE ULTIMATE PARTY EXPERIENCE!" and "Welcome to Warrior Sports, whe": 587px, live 346px
+- gap between "HERE’S WHAT’S INCLUDED" and "Book a Nerf war party at Warri": 79px, live 167px
+- gap between "Need party invitations? We've " and "PRICING": 98px, live 21px
+- gap between "Our Nerf parties start at $220" and "Let our experienced and kid-fr": 53px, live 333px
+- gap between "Or, dial (417) 894-7319 to res" and "NERF WAR NIGHTS IN SPRINGFIELD": 98px, live 186px
+- icons: 5 in build, 11 on live
+- icon 1: color rgb(255, 255, 255), live rgb(219, 58, 52)
+- icon 1: left edge 418px, live 974px
+- icon 2: color rgb(255, 255, 255), live rgb(219, 58, 52)
+- icon 2: left edge 455px, live 974px
+- icon 3: left edge 821px, live 974px
+- icon 4: left edge 821px, live 974px
+- icon 5: left edge 821px, live 386px
+- background behind "NERF WAR SPRINGFIELD, MO:": rgb(255, 255, 255), live rgb(71, 69, 65)
+- background behind "NERF WAR PARTY BREAKDOWN": rgb(242, 246, 248), live rgb(226, 236, 237)
+- background behind "HERE’S WHAT’S INCLUDED": rgb(242, 245, 246), live rgb(226, 235, 238)
+- background behind "PRICING": rgb(255, 255, 255), live rgb(225, 235, 239)
+- background behind "Book a Nerf war party at Warrior Sports ": rgb(242, 245, 247), live rgb(227, 234, 236)
+- background behind "Need party invitations? We've got you co": rgb(242, 245, 247), live rgb(227, 235, 237)
+- background behind "Our Nerf parties start at $220 for the f": rgb(255, 255, 255), live rgb(227, 235, 236)
+- background behind "Let our experienced and kid-friendly tea": rgb(255, 255, 255), live rgb(42, 29, 21)
+- background behind "Or, dial (417) 894-7319 to reserve today": rgb(255, 255, 255), live rgb(41, 28, 22)
+- band color beside "NERF WAR SPRINGFIELD, MO:": rgb(255, 255, 255), live rgb(53, 27, 23)
+- band color beside "THE ULTIMATE PARTY EXPERIENCE!": rgb(7, 8, 3), live rgb(55, 27, 21)
+- band color beside "NERF WAR PARTY BREAKDOWN": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "HERE’S WHAT’S INCLUDED": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "PRICING": rgb(255, 255, 255), live rgb(227, 235, 237)
+- band color beside "Book a Nerf war party at Warrior Sports ": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "Need party invitations? We've got you co": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "Our Nerf parties start at $220 for the f": rgb(255, 255, 255), live rgb(227, 235, 237)
+- band color beside "Let our experienced and kid-friendly tea": rgb(255, 255, 255), live rgb(10, 6, 3)
+- band color beside "Or, dial (417) 894-7319 to reserve today": rgb(255, 255, 255), live rgb(13, 9, 6)
+- heading "NERF WAR SPRINGFIELD, MO:": looks different from live (pixel difference 153)
+- heading "THE ULTIMATE PARTY EXPERIENCE!": looks different from live (pixel difference 77)
+- heading "NERF WAR PARTY BREAKDOWN": looks different from live (pixel difference 47)
+- heading "HERE’S WHAT’S INCLUDED": looks different from live (pixel difference 57)
+- heading "PRICING": looks different from live (pixel difference 75)
+- text "Let our experienced and kid-fr": looks different from live (pixel difference 189)
+- text "Or, dial (417) 894-7319 to res": looks different from live (pixel difference 188)
+- band rgb(255, 255, 255) at y=729 (left margin): 610px tall, live 322px
+- band rgb(227, 235, 237) at y=1052 (1083px tall on live, left margin) not found in build
+- band rgb(9, 8, 5) at y=2157 (395px tall on live, left margin) not found in build
+- band rgb(6, 6, 5) at y=2608 (66px tall on live, left margin) not found in build
+- band rgb(241, 245, 248) at y=2674 (left margin): 340px tall, live 909px
+- band rgb(255, 255, 255) at y=1889 (583px tall, left margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=729 (right margin): 610px tall, live 322px
+- band rgb(227, 235, 237) at y=1052 (1078px tall on live, right margin) not found in build
+- band rgb(49, 45, 42) at y=2135 (131px tall on live, right margin) not found in build
+- band rgb(7, 6, 6) at y=2552 (70px tall on live, right margin) not found in build
+- band rgb(241, 245, 248) at y=2675 (right margin): 340px tall, live 908px
+- band rgb(255, 255, 255) at y=1889 (583px tall, right margin) is in the build but not on live
+
+## parkour @ 1920px: 205 difference(s)
+- page height 5248px, live 5540px
+- heading "PARKOUR GYM IN SPRINGFIELD MO | SPRINGFI": left edge 385px, live 500px
+- heading "PARKOUR GYM IN SPRINGFIELD MO | SPRINGFI": width 1150px, live 920px
+- heading "⚠️ TEMPORARY UPDATE:": left edge 980px, live 783px
+- heading "⚠️ TEMPORARY UPDATE:": width 555px, live 355px
+- heading "⚠️ TEMPORARY UPDATE:": size 50px, live 30px
+- heading "⚠️ TEMPORARY UPDATE:": color rgb(214, 53, 47), live rgb(40, 82, 118)
+- heading "⚠️ TEMPORARY UPDATE:": line height 50px, live 30px
+- heading "⚠️ TEMPORARY UPDATE:": align start, live center
+- heading "PARKOUR BENEFITS": left edge 385px, live 726px
+- heading "PARKOUR BENEFITS": align start, live center
+- heading "IMPROVE PHYSICAL FITNESS:": left edge 385px, live 973px
+- heading "IMPROVE PHYSICAL FITNESS:": line height 50px, live 30px
+- heading "BUILDS SELF-CONFIDENCE:": width 555px, live 383px
+- heading "BUILDS SELF-CONFIDENCE:": size 50px, live 30px
+- heading "BUILDS SELF-CONFIDENCE:": color rgb(214, 53, 47), live rgb(40, 82, 118)
+- heading "BUILDS SELF-CONFIDENCE:": line height 50px, live 30px
+- heading "MENTAL STIMULATION:": width 555px, live 333px
+- heading "MENTAL STIMULATION:": size 50px, live 30px
+- heading "MENTAL STIMULATION:": color rgb(214, 53, 47), live rgb(40, 82, 118)
+- heading "MENTAL STIMULATION:": line height 50px, live 30px
+- heading "STRESS RELIEF:": width 555px, live 224px
+- heading "STRESS RELIEF:": size 50px, live 30px
+- heading "STRESS RELIEF:": color rgb(214, 53, 47), live rgb(40, 82, 118)
+- heading "STRESS RELIEF:": line height 50px, live 30px
+- heading "COMMUNITY:": left edge 385px, live 973px
+- heading "COMMUNITY:": width 555px, live 191px
+- heading "COMMUNITY:": size 50px, live 30px
+- heading "COMMUNITY:": color rgb(214, 53, 47), live rgb(40, 82, 118)
+- heading "COMMUNITY:": line height 50px, live 30px
+- heading "PARKOUR CLASSES": left edge 385px, live 500px
+- heading "PARKOUR CLASSES": align start, live center
+- heading "TEMPORARILY UNAVAILABLE": left edge 385px, live 500px
+- heading "TEMPORARILY UNAVAILABLE": align start, live center
+- heading "OPEN GYM IS OPEN — YOUR FIRST VISIT IS J": left edge 385px, live 564px
+- heading "OPEN GYM IS OPEN — YOUR FIRST VISIT IS J": line height 50px, live 36px
+- heading "OPEN GYM IS OPEN — YOUR FIRST VISIT IS J": align start, live center
+- heading "MORE THAN JUST PHYSICAL": left edge 385px, live 973px
+- photo missing: img_2343
+- photo missing: ​stress-relief
+- photo missing: birthday-parties-banner
+- photo missing: ​more-than-just-physical
+- photo not on live: -e2-80-8bstress-relief
+- photo not on live: -e2-80-8bmore-than-just-physical
+- button "TRY A CLASS FOR $5": color rgb(214, 53, 47), live rgb(40, 82, 118)
+- button "TRY A CLASS FOR $5": width 170px, live 230px
+- button "TRY OPEN GYM FOR $10": width 190px, live 259px
+- text "Parkour classes are currently ": left edge 980px, live 646px
+- text "Parkour classes are currently ": weight 300, live 400
+- text "Parkour classes are currently ": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Parkour classes are currently ": align start, live center
+- text "Open Gym sessions remain avail": left edge 980px, live 646px
+- text "Open Gym sessions remain avail": weight 300, live 400
+- text "Open Gym sessions remain avail": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Open Gym sessions remain avail": align start, live center
+- text "Want to challenge yourself and": left edge 980px, live 386px
+- text "Want to challenge yourself and": weight 300, live 400
+- text "Want to challenge yourself and": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Plus, your first class is only": left edge 980px, live 386px
+- text "Plus, your first class is only": weight 300, live 400
+- text "Plus, your first class is only": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Parkour can help to improve ov": left edge 385px, live 974px
+- text "Parkour can help to improve ov": weight 300, live 400
+- text "Parkour can help to improve ov": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "By learning how to overcome ob": weight 300, live 400
+- text "By learning how to overcome ob": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Parkour offers an enjoyable an": weight 300, live 400
+- text "Parkour offers an enjoyable an": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Parkour is a great way to redu": weight 300, live 400
+- text "Parkour is a great way to redu": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Participants in Parkour can ga": left edge 385px, live 974px
+- text "Participants in Parkour can ga": weight 300, live 400
+- text "Participants in Parkour can ga": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "$20 class drop in, $10 class d": left edge 385px, live 414px
+- text "$20 class drop in, $10 class d": width 555px, live 1093px
+- text "$20 class drop in, $10 class d": weight 300, live 400
+- text "$20 class drop in, $10 class d": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- text "$20 class drop in, $10 class d": 6 line(s), live 4
+- text "$20 class drop in, $10 class d": align start, live center
+- text "With Parkour classes at Spring": left edge 385px, live 974px
+- text "With Parkour classes at Spring": weight 300, live 400
+- text "With Parkour classes at Spring": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "⚠️ Temporary Update:": color rgb(214, 53, 47), live rgb(40, 82, 118)
+- words "Parkour classes are currently paused for": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Parkour classes are currently paused for": weight 300, live 400
+- words "Open Gym sessions remain available, and ": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Open Gym sessions remain available, and ": weight 300, live 400
+- words "Want to challenge yourself and become st": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Want to challenge yourself and become st": weight 300, live 400
+- words "Plus, your first class is only $5 Dollar": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Plus, your first class is only $5 Dollar": weight 300, live 400
+- words "When:": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "When:": weight 300, live 600
+- words "Beginner:": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Beginner:": weight 300, live 600
+- words "Wednesdays 6-7pm": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Wednesdays 6-7pm": weight 300, live 400
+- words "Intermediate:": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Intermediate:": weight 300, live 600
+- words "Wednesdays 7-8pm": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Wednesdays 7-8pm": weight 300, live 400
+- words "Improve Physical Fitness:": color rgb(0, 0, 0), live rgb(40, 82, 118)
+- words "Improve Physical Fitness:": weight 400, live 900
+- words "Parkour can help to improve overall phys": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Parkour can help to improve overall phys": weight 300, live 400
+- words "Builds Self-Confidence:": color rgb(214, 53, 47), live rgb(40, 82, 118)
+- words "By learning how to overcome obstacles an": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "By learning how to overcome obstacles an": weight 300, live 400
+- words "Mental Stimulation:": color rgb(214, 53, 47), live rgb(40, 82, 118)
+- words "Parkour offers an enjoyable and mentally": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Parkour offers an enjoyable and mentally": weight 300, live 400
+- words "Stress Relief:": color rgb(214, 53, 47), live rgb(40, 82, 118)
+- words "Parkour is a great way to reduce stress ": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Parkour is a great way to reduce stress ": weight 300, live 400
+- words "Community:": color rgb(214, 53, 47), live rgb(40, 82, 118)
+- words "Participants in Parkour can gain access ": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Participants in Parkour can gain access ": weight 300, live 400
+- words "parkour classes": color rgb(214, 53, 47), live rgb(255, 255, 255)
+- words "temporarily unavailable": color rgb(0, 0, 0), live rgb(255, 255, 255)
+- words "temporarily unavailable": weight 400, live 900
+- words "With Parkour classes at Springfield Warr": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "With Parkour classes at Springfield Warr": weight 300, live 400
+- words "growth for everyone involved": color rgb(51, 51, 51), live rgb(47, 138, 228)
+- words "growth for everyone involved": weight 300, live 400
+- words "– no matter their skill level. So come o": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "– no matter their skill level. So come o": weight 300, live 400
+- spacing from "⚠️ TEMPORARY UPDATE:" to "PARKOUR BENEFITS": 880px, live 1041px
+- spacing from "PARKOUR BENEFITS" to "IMPROVE PHYSICAL FITNESS:": 0px, live 163px
+- spacing from "IMPROVE PHYSICAL FITNESS:" to "BUILDS SELF-CONFIDENCE:": 628px, live 204px
+- spacing from "BUILDS SELF-CONFIDENCE:" to "MENTAL STIMULATION:": 675px, live 428px
+- spacing from "MENTAL STIMULATION:" to "STRESS RELIEF:": 501px, live 217px
+- spacing from "STRESS RELIEF:" to "COMMUNITY:": 290px, live 544px
+- spacing from "COMMUNITY:" to "PARKOUR CLASSES": 265px, live 528px
+- spacing from "PARKOUR CLASSES" to "TEMPORARILY UNAVAILABLE": 0px, live 50px
+- spacing from "TEMPORARILY UNAVAILABLE" to "OPEN GYM IS OPEN — YOUR FIRST ": 0px, live 51px
+- spacing from "OPEN GYM IS OPEN — YOUR FIRST " to "MORE THAN JUST PHYSICAL": 477px, live 591px
+- gap between "Open Gym sessions remain avail" and "Want to challenge yourself and": 15px, live 127px
+- gap between "Want to challenge yourself and" and "Plus, your first class is only": 181px, live 28px
+- gap between "Parkour can help to improve ov" and "BUILDS SELF-CONFIDENCE:": 428px, live 21px
+- gap between "By learning how to overcome ob" and "MENTAL STIMULATION:": 407px, live 219px
+- gap between "Parkour offers an enjoyable an" and "STRESS RELIEF:": 259px, live 36px
+- gap between "Parkour is a great way to redu" and "COMMUNITY:": 98px, live 363px
+- gap between "Participants in Parkour can ga" and "PARKOUR CLASSES": 99px, live 375px
+- gap between "$20 class drop in, $10 class d" and "MORE THAN JUST PHYSICAL": 156px, live 421px
+- background behind "PARKOUR BENEFITS": rgb(241, 245, 246), live rgb(225, 236, 237)
+- background behind "IMPROVE PHYSICAL FITNESS:": rgb(241, 245, 246), live rgb(226, 235, 238)
+- background behind "BUILDS SELF-CONFIDENCE:": rgb(255, 255, 255), live rgb(226, 235, 238)
+- background behind "MENTAL STIMULATION:": rgb(242, 246, 248), live rgb(226, 235, 238)
+- background behind "STRESS RELIEF:": rgb(255, 255, 255), live rgb(226, 235, 238)
+- background behind "COMMUNITY:": rgb(242, 246, 249), live rgb(226, 235, 238)
+- background behind "PARKOUR CLASSES": rgb(255, 255, 255), live rgb(43, 78, 112)
+- background behind "TEMPORARILY UNAVAILABLE": rgb(255, 255, 255), live rgb(42, 77, 111)
+- background behind "OPEN GYM IS OPEN — YOUR FIRST VISIT IS J": rgb(255, 255, 255), live rgb(45, 77, 111)
+- background behind "MORE THAN JUST PHYSICAL": rgb(242, 246, 248), live rgb(255, 255, 255)
+- background behind "Parkour can help to improve overall phys": rgb(242, 244, 247), live rgb(227, 235, 237)
+- background behind "By learning how to overcome obstacles an": rgb(255, 255, 255), live rgb(227, 235, 237)
+- background behind "Parkour offers an enjoyable and mentally": rgb(242, 245, 247), live rgb(226, 234, 236)
+- background behind "Parkour is a great way to reduce stress ": rgb(255, 255, 255), live rgb(226, 234, 236)
+- background behind "Participants in Parkour can gain access ": rgb(241, 245, 247), live rgb(226, 234, 236)
+- background behind "$20 class drop in, $10 class drop in for": rgb(255, 255, 255), live rgb(53, 90, 123)
+- background behind "With Parkour classes at Springfield Warr": rgb(242, 244, 247), live rgb(255, 255, 255)
+- band color beside "PARKOUR GYM IN SPRINGFIELD MO | SPRINGFI": rgb(25, 25, 25), live rgb(46, 66, 75)
+- band color beside "PARKOUR BENEFITS": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "IMPROVE PHYSICAL FITNESS:": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "BUILDS SELF-CONFIDENCE:": rgb(255, 255, 255), live rgb(227, 235, 237)
+- band color beside "MENTAL STIMULATION:": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "STRESS RELIEF:": rgb(255, 255, 255), live rgb(227, 235, 237)
+- band color beside "COMMUNITY:": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "PARKOUR CLASSES": rgb(255, 255, 255), live rgb(63, 99, 133)
+- band color beside "TEMPORARILY UNAVAILABLE": rgb(255, 255, 255), live rgb(64, 100, 134)
+- band color beside "OPEN GYM IS OPEN — YOUR FIRST VISIT IS J": rgb(255, 255, 255), live rgb(65, 101, 135)
+- band color beside "MORE THAN JUST PHYSICAL": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band color beside "Parkour can help to improve overall phys": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "By learning how to overcome obstacles an": rgb(255, 255, 255), live rgb(227, 235, 237)
+- band color beside "Parkour offers an enjoyable and mentally": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "Parkour is a great way to reduce stress ": rgb(255, 255, 255), live rgb(227, 235, 237)
+- band color beside "Participants in Parkour can gain access ": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "$20 class drop in, $10 class drop in for": rgb(255, 255, 255), live rgb(44, 80, 114)
+- band color beside "With Parkour classes at Springfield Warr": rgb(242, 246, 249), live rgb(255, 255, 255)
+- heading "⚠️ TEMPORARY UPDATE:": looks different from live (pixel difference 57)
+- heading "PARKOUR BENEFITS": looks different from live (pixel difference 40)
+- heading "IMPROVE PHYSICAL FITNESS:": looks different from live (pixel difference 44)
+- heading "BUILDS SELF-CONFIDENCE:": looks different from live (pixel difference 67)
+- heading "MENTAL STIMULATION:": looks different from live (pixel difference 61)
+- heading "STRESS RELIEF:": looks different from live (pixel difference 56)
+- heading "COMMUNITY:": looks different from live (pixel difference 54)
+- heading "PARKOUR CLASSES": looks different from live (pixel difference 120)
+- heading "TEMPORARILY UNAVAILABLE": looks different from live (pixel difference 106)
+- heading "OPEN GYM IS OPEN — YOUR FIRST VISIT IS J": looks different from live (pixel difference 125)
+- text "$20 class drop in, $10 class d": looks different from live (pixel difference 138)
+- band rgb(255, 255, 255) at y=729 (left margin): 698px tall, live 1026px
+- band rgb(227, 235, 237) at y=1756 (2100px tall on live, left margin) not found in build
+- band rgb(62, 98, 132) at y=3912 (229px tall on live, left margin) not found in build
+- band rgb(47, 83, 117) at y=4141 (278px tall on live, left margin) not found in build
+- band rgb(255, 255, 255) at y=4422 (left margin): 476px tall, live 1053px
+- band rgb(255, 255, 255) at y=2135 (662px tall, left margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=3459 (290px tall, left margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=4855 (328px tall, left margin) is in the build but not on live
+- band rgb(255, 253, 251) at y=729 (right margin): 698px tall, live 1026px
+- band rgb(227, 235, 237) at y=1756 (2100px tall on live, right margin) not found in build
+- band rgb(61, 87, 117) at y=3962 (454px tall on live, right margin) not found in build
+- band rgb(255, 255, 255) at y=4420 (right margin): 476px tall, live 1055px
+- band rgb(255, 255, 255) at y=2135 (662px tall, right margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=3459 (290px tall, right margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=4855 (328px tall, right margin) is in the build but not on live
+
+## personal-training @ 1920px: 343 difference(s)
+- page height 7446px, live 6053px
+- heading missing: "NOT YOUR TYPICAL GYM. NOT YOUR TYPICAL TRAINER."
+- heading missing: "This isn’t about getting shredded or setting records."
+- heading missing: "It’s about moving, healing, and growing in a way that actually fits your life."
+- heading out of order: "LET’S TALK STRENGTH…YOUR VERSION"
+- heading "PERSONAL TRAINING AT WARRIOR SPORTS": left edge 385px, live 460px
+- heading "PERSONAL TRAINING AT WARRIOR SPORTS": width 1150px, live 1000px
+- heading "WHY WARRIOR SPORTS PERSONAL TRAINING WOR": left edge 385px, live 500px
+- heading "WHY WARRIOR SPORTS PERSONAL TRAINING WOR": width 555px, live 920px
+- heading "WHY WARRIOR SPORTS PERSONAL TRAINING WOR": 4 line(s), live 2
+- heading "WHY WARRIOR SPORTS PERSONAL TRAINING WOR": align start, live center
+- heading "UNCONVENTIONAL BY DESIGN": left edge 980px, live 405px
+- heading "UNCONVENTIONAL BY DESIGN": width 555px, live 333px
+- heading "UNCONVENTIONAL BY DESIGN": size 50px, live 24px
+- heading "UNCONVENTIONAL BY DESIGN": color rgb(214, 53, 47), live rgb(40, 82, 118)
+- heading "UNCONVENTIONAL BY DESIGN": line height 50px, live 24px
+- heading "UNCONVENTIONAL BY DESIGN": align start, live center
+- heading "STRONGER AND SMARTER": left edge 385px, live 793px
+- heading "STRONGER AND SMARTER": width 555px, live 333px
+- heading "STRONGER AND SMARTER": size 50px, live 24px
+- heading "STRONGER AND SMARTER": color rgb(214, 53, 47), live rgb(40, 82, 118)
+- heading "STRONGER AND SMARTER": line height 50px, live 24px
+- heading "STRONGER AND SMARTER": align start, live center
+- heading "EMOTIONALLY INTELLIGENT COACHING": left edge 980px, live 1202px
+- heading "EMOTIONALLY INTELLIGENT COACHING": width 555px, live 313px
+- heading "EMOTIONALLY INTELLIGENT COACHING": size 50px, live 24px
+- heading "EMOTIONALLY INTELLIGENT COACHING": color rgb(214, 53, 47), live rgb(40, 82, 118)
+- heading "EMOTIONALLY INTELLIGENT COACHING": 4 line(s), live 2
+- heading "EMOTIONALLY INTELLIGENT COACHING": line height 50px, live 24px
+- heading "EMOTIONALLY INTELLIGENT COACHING": align start, live center
+- heading "MEET YOUR TRAINERS": line height 50px, live 63px
+- heading "MEET YOUR TRAINERS": align start, live center
+- heading "SARAH WILDER": left edge 385px, live 415px
+- heading "SARAH WILDER": line height 50px, live 24px
+- heading "SARAH WILDER": align start, live center
+- heading "JACOB WINTER": left edge 980px, live 803px
+- heading "JACOB WINTER": width 555px, live 313px
+- heading "JACOB WINTER": size 50px, live 24px
+- heading "JACOB WINTER": color rgb(214, 53, 47), live rgb(40, 82, 118)
+- heading "JACOB WINTER": line height 50px, live 24px
+- heading "JACOB WINTER": align start, live center
+- heading "JONNY WILDER": left edge 385px, live 1192px
+- heading "JONNY WILDER": width 555px, live 313px
+- heading "JONNY WILDER": size 50px, live 24px
+- heading "JONNY WILDER": color rgb(214, 53, 47), live rgb(40, 82, 118)
+- heading "JONNY WILDER": line height 50px, live 24px
+- heading "JONNY WILDER": align start, live center
+- heading "HOW IT WORKS": left edge 385px, live 973px
+- heading "HOW IT WORKS": width 555px, live 358px
+- heading "HOW IT WORKS": align start, live center
+- heading "WHAT OUR CLIENTS SAY": line height 50px, live 70px
+- heading "LET’S TALK STRENGTH…YOUR VERSION": left edge 385px, live 495px
+- heading "LET’S TALK STRENGTH…YOUR VERSION": width 555px, live 931px
+- heading "LET’S TALK STRENGTH…YOUR VERSION": 4 line(s), live 1
+- heading "LET’S TALK STRENGTH…YOUR VERSION": align start, live center
+- photo missing: warrior-sports-training
+- photo missing: pricing-and-schedule
+- photo not on live: qoute-icon
+- photo not on live: qoute-icon
+- photo warrior-sports-personal-training: left edge 385px, live 1014px
+- photo unconventional-by-design: left edge 980px, live 385px
+- photo unconventional-by-design: width 555px, live 373px
+- photo stronger-and-smarter-training: left edge 385px, live 773px
+- photo stronger-and-smarter-training: width 555px, live 373px
+- photo emotionally-intelligent-coaching: left edge 980px, live 1162px
+- photo emotionally-intelligent-coaching: width 555px, live 373px
+- photo sarah-wilder-img: width 555px, live 353px
+- photo jacob-winter-img: left edge 980px, live 783px
+- photo jacob-winter-img: width 555px, live 353px
+- photo jonny-wilder-img: left edge 385px, live 1172px
+- photo jonny-wilder-img: width 555px, live 353px
+- photo qoute-icon: left edge 385px, live 425px
+- button "CONTACT OUR PERSONAL TRAINERS": width 272px, live 423px
+- button "CONTACT OUR PERSONAL TRAINERS": width 272px, live 394px
+- text not on live: "This isn’t about getting shredded or setting records. It’s a"
+- text not on live: "Jonny has coached our son for over three years. He’s a mento"
+- text not on live: "— WILL AND KOREN WILSON"
+- text not on live: "My son’s personal training at Warrior Sports has helped him "
+- text not on live: "— SUSIE K."
+- text "If you’ve ever felt like fitne": left edge 980px, live 386px
+- text "If you’ve ever felt like fitne": weight 300, live 400
+- text "If you’ve ever felt like fitne": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "If you’ve ever felt like fitne": 2 line(s), live 1
+- text "We don’t (necessarily) do trea": left edge 980px, live 386px
+- text "We don’t (necessarily) do trea": weight 300, live 400
+- text "We don’t (necessarily) do trea": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "We don’t (necessarily) do trea": 3 line(s), live 2
+- text "Because when training is roote": left edge 980px, live 386px
+- text "Because when training is roote": size 16px, live 18px
+- text "Because when training is roote": weight 300, live 400
+- text "Because when training is roote": color rgb(51, 51, 51), live rgb(106, 107, 108)
+- text "Because when training is roote": line height 26px, live 32px
+- text "At Warrior Sports, personal tr": left edge 385px, live 425px
+- text "At Warrior Sports, personal tr": width 555px, live 1070px
+- text "At Warrior Sports, personal tr": weight 300, live 400
+- text "At Warrior Sports, personal tr": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "At Warrior Sports, personal tr": align start, live center
+- text "It’s a conversation and a chal": left edge 385px, live 425px
+- text "It’s a conversation and a chal": width 555px, live 1070px
+- text "It’s a conversation and a chal": weight 300, live 400
+- text "It’s a conversation and a chal": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "It’s a conversation and a chal": align start, live center
+- text "Here’s how we’re different:": left edge 385px, live 425px
+- text "Here’s how we’re different:": width 555px, live 1070px
+- text "Here’s how we’re different:": weight 300, live 400
+- text "Here’s how we’re different:": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Here’s how we’re different:": align start, live center
+- text "We use obstacle training, resi": left edge 980px, live 406px
+- text "We use obstacle training, resi": width 555px, live 331px
+- text "We use obstacle training, resi": weight 300, live 400
+- text "We use obstacle training, resi": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "We use obstacle training, resi": 3 line(s), live 5
+- text "We use obstacle training, resi": align start, live center
+- text "This isn’t just about muscles.": left edge 385px, live 794px
+- text "This isn’t just about muscles.": width 555px, live 331px
+- text "This isn’t just about muscles.": weight 300, live 400
+- text "This isn’t just about muscles.": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "This isn’t just about muscles.": 3 line(s), live 5
+- text "This isn’t just about muscles.": align start, live center
+- text "We meet you where you are, wit": left edge 980px, live 1183px
+- text "We meet you where you are, wit": width 555px, live 331px
+- text "We meet you where you are, wit": weight 300, live 400
+- text "We meet you where you are, wit": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "We meet you where you are, wit": 3 line(s), live 5
+- text "We meet you where you are, wit": align start, live center
+- text "– Women’s Confidence Coach": width 555px, live 343px
+- text "– Women’s Confidence Coach": weight 300, live 400
+- text "– Women’s Confidence Coach": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "– Women’s Confidence Coach": align start, live center
+- text "Helps women, especially moms, ": width 555px, live 343px
+- text "Helps women, especially moms, ": weight 300, live 400
+- text "Helps women, especially moms, ": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Helps women, especially moms, ": align start, live center
+- text "“I focus on helping you feel p": width 555px, live 343px
+- text "“I focus on helping you feel p": weight 300, live 500
+- text "“I focus on helping you feel p": color rgb(51, 51, 51), live rgb(40, 82, 118)
+- text "“I focus on helping you feel p": 1 line(s), live 2
+- text "“I focus on helping you feel p": align start, live center
+- text "– Strength, Weight Loss and Co": left edge 980px, live 804px
+- text "– Strength, Weight Loss and Co": width 555px, live 311px
+- text "– Strength, Weight Loss and Co": weight 300, live 400
+- text "– Strength, Weight Loss and Co": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.99)
+- text "– Strength, Weight Loss and Co": 1 line(s), live 2
+- text "– Strength, Weight Loss and Co": align start, live center
+- text "Great for weight loss, functio": left edge 980px, live 788px
+- text "Great for weight loss, functio": width 555px, live 343px
+- text "Great for weight loss, functio": weight 300, live 400
+- text "Great for weight loss, functio": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Great for weight loss, functio": 1 line(s), live 2
+- text "Great for weight loss, functio": align start, live center
+- text "“We build wins you can feel wi": left edge 980px, live 793px
+- text "“We build wins you can feel wi": width 555px, live 333px
+- text "“We build wins you can feel wi": weight 300, live 500
+- text "“We build wins you can feel wi": color rgb(51, 51, 51), live rgb(40, 82, 118)
+- text "“We build wins you can feel wi": 1 line(s), live 2
+- text "“We build wins you can feel wi": align start, live center
+- text "– Ninja and Competitive Obstac": left edge 385px, live 1193px
+- text "– Ninja and Competitive Obstac": width 555px, live 311px
+- text "– Ninja and Competitive Obstac": weight 300, live 400
+- text "– Ninja and Competitive Obstac": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.99)
+- text "– Ninja and Competitive Obstac": 1 line(s), live 2
+- text "– Ninja and Competitive Obstac": align start, live center
+- text "Perfect for teens, adventurous": left edge 385px, live 1177px
+- text "Perfect for teens, adventurous": width 555px, live 343px
+- text "Perfect for teens, adventurous": weight 300, live 400
+- text "Perfect for teens, adventurous": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Perfect for teens, adventurous": align start, live center
+- text "“Training should be fun. That’": left edge 385px, live 1182px
+- text "“Training should be fun. That’": width 555px, live 333px
+- text "“Training should be fun. That’": weight 300, live 500
+- text "“Training should be fun. That’": color rgb(51, 51, 51), live rgb(40, 82, 118)
+- text "“Training should be fun. That’": 1 line(s), live 2
+- text "“Training should be fun. That’": align start, live center
+- text "Contact us and share your stor": left edge 385px, live 999px
+- text "Contact us and share your stor": width 555px, live 467px
+- text "Contact us and share your stor": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "After losing some weight on my": left edge 385px, live 416px
+- text "After losing some weight on my": font Epilogue, live Muli
+- text "After losing some weight on my": weight 300, live 400
+- text "After losing some weight on my": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "- CLIENT": left edge 385px, live 416px
+- text "- CLIENT": font Epilogue, live Muli
+- text "- CLIENT": weight 300, live 700
+- text "- CLIENT": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- text "Over a year, I lost over 50 po": font Epilogue, live Muli
+- text "Over a year, I lost over 50 po": weight 300, live 400
+- text "Over a year, I lost over 50 po": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "— MICHAEL B.": font Epilogue, live Muli
+- text "— MICHAEL B.": weight 300, live 700
+- text "— MICHAEL B.": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "Not Your Typical Gym.Not Your Typical Tr": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "Not Your Typical Gym.Not Your Typical Tr": weight 300, live 900
+- words "If you’ve ever felt like fitness wasn’t ": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "If you’ve ever felt like fitness wasn’t ": weight 300, live 400
+- words "We don’t (necessarily) do treadmills or ": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "We don’t (necessarily) do treadmills or ": weight 300, live 400
+- words "Because when training is rooted in curio": color rgb(51, 51, 51), live rgb(106, 107, 108)
+- words "Because when training is rooted in curio": weight 300, live 400
+- words "At Warrior Sports, personal training is ": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "At Warrior Sports, personal training is ": weight 300, live 400
+- words "It’s a conversation and a challenge all ": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "It’s a conversation and a challenge all ": weight 300, live 400
+- words "Here’s how we’re different:": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Here’s how we’re different:": weight 300, live 400
+- words "Unconventional by Design": color rgb(214, 53, 47), live rgb(40, 82, 118)
+- words "We use obstacle training, resistance ban": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "We use obstacle training, resistance ban": weight 300, live 400
+- words "Stronger and Smarter": color rgb(214, 53, 47), live rgb(40, 82, 118)
+- words "This isn’t just about muscles. It’s abou": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "This isn’t just about muscles. It’s abou": weight 300, live 400
+- words "Emotionally Intelligent Coaching": color rgb(214, 53, 47), live rgb(40, 82, 118)
+- words "We meet you where you are, without shame": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "We meet you where you are, without shame": weight 300, live 400
+- words "Meet Your Trainers": color rgb(214, 53, 47), live rgb(255, 255, 255)
+- words "Sarah Wilder": color rgb(0, 0, 0), live rgb(40, 82, 118)
+- words "Sarah Wilder": weight 400, live 900
+- words "– Women’s Confidence Coach": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "– Women’s Confidence Coach": weight 300, live 400
+- words "Helps women, especially moms, feel stron": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Helps women, especially moms, feel stron": weight 300, live 400
+- words "“I focus on helping you feel powerful be": color rgb(51, 51, 51), live rgb(40, 82, 118)
+- words "“I focus on helping you feel powerful be": weight 300, live 500
+- words "Jacob Winter": color rgb(214, 53, 47), live rgb(40, 82, 118)
+- words "– Strength, Weight Loss and Conditioning": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.99)
+- words "– Strength, Weight Loss and Conditioning": weight 300, live 400
+- words "Great for weight loss, functional streng": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Great for weight loss, functional streng": weight 300, live 400
+- words "“We build wins you can feel without judg": color rgb(51, 51, 51), live rgb(40, 82, 118)
+- words "“We build wins you can feel without judg": weight 300, live 500
+- words "Jonny Wilder": color rgb(214, 53, 47), live rgb(40, 82, 118)
+- words "– Ninja and Competitive Obstacle Trainin": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.99)
+- words "– Ninja and Competitive Obstacle Trainin": weight 300, live 400
+- words "Perfect for teens, adventurous adults, o": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Perfect for teens, adventurous adults, o": weight 300, live 400
+- words "“Training should be fun. That’s where co": color rgb(51, 51, 51), live rgb(40, 82, 118)
+- words "“Training should be fun. That’s where co": weight 300, live 500
+- words "Contact us and share your story—goals, c": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "We’ll reach out and get you locked in": color rgb(51, 51, 51), live rgb(5, 5, 61)
+- words "Try a session personalized to your pace ": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Decide from there if you want to continu": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "After losing some weight on my own, I hi": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "After losing some weight on my own, I hi": weight 300, live 400
+- words "- Client": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "- Client": weight 300, live 700
+- words "After losing some weight on my own, I hi": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "After losing some weight on my own, I hi": weight 300, live 400
+- words "- Client": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "- Client": weight 300, live 700
+- words "Over a year, I lost over 50 pounds, gain": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Over a year, I lost over 50 pounds, gain": weight 300, live 400
+- words "— Michael B.": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "— Michael B.": weight 300, live 700
+- words "Over a year, I lost over 50 pounds, gain": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Over a year, I lost over 50 pounds, gain": weight 300, live 400
+- words "— Michael B.": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "— Michael B.": weight 300, live 700
+- words "This isn’t about getting shredded or set": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- words "This isn’t about getting shredded or set": weight 300, live 400
+- words "It’s about moving, healing, and growing ": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- words "It’s about moving, healing, and growing ": weight 300, live 400
+- spacing from "EMOTIONALLY INTELLIGENT COACHI" to "MEET YOUR TRAINERS": 566px, live 390px
+- spacing from "MEET YOUR TRAINERS" to "SARAH WILDER": 0px, live 425px
+- spacing from "JONNY WILDER" to "HOW IT WORKS": 293px, live 428px
+- spacing from "HOW IT WORKS" to "WHAT OUR CLIENTS SAY": 1748px, live 507px
+- spacing from "WHAT OUR CLIENTS SAY" to "LET’S TALK STRENGTH…YOUR VERSI": -1452px, live 583px
+- gap between "We meet you where you are, wit" and "MEET YOUR TRAINERS": 325px, live 191px
+- gap between "“Training should be fun. That’" and "HOW IT WORKS": 98px, live 211px
+- gap between "Contact us and share your stor" and "WHAT OUR CLIENTS SAY": 1607px, live 411px
+- gap between "WHAT OUR CLIENTS SAY" and "After losing some weight on my": 66px, live 131px
+- icons: 5 in build, 9 on live
+- icon 1: color rgb(255, 255, 255), live rgb(219, 58, 52)
+- icon 1: left edge 418px, live 974px
+- icon 2: color rgb(255, 255, 255), live rgb(219, 58, 52)
+- icon 2: left edge 455px, live 974px
+- icon 3: left edge 821px, live 974px
+- icon 4: left edge 821px, live 974px
+- icon 5: color rgb(219, 58, 52), live rgb(255, 255, 255)
+- icon 5: left edge 821px, live 414px
+- background behind "WHY WARRIOR SPORTS PERSONAL TRAINING WOR": rgb(242, 246, 248), live rgb(226, 235, 237)
+- background behind "MEET YOUR TRAINERS": rgb(242, 246, 248), live rgb(40, 83, 117)
+- background behind "HOW IT WORKS": rgb(255, 255, 255), live rgb(241, 245, 247)
+- background behind "WHAT OUR CLIENTS SAY": rgb(242, 246, 248), live rgb(227, 235, 237)
+- background behind "LET’S TALK STRENGTH…YOUR VERSION": rgb(242, 246, 248), live rgb(46, 43, 42)
+- background behind "At Warrior Sports, personal training is ": rgb(242, 245, 248), live rgb(227, 235, 237)
+- background behind "It’s a conversation and a challenge all ": rgb(242, 245, 248), live rgb(227, 235, 237)
+- background behind "Here’s how we’re different:": rgb(242, 246, 248), live rgb(227, 235, 237)
+- background behind "Contact us and share your story—goals, c": rgb(255, 255, 255), live rgb(240, 244, 247)
+- background behind "After losing some weight on my own, I hi": rgb(242, 244, 246), live rgb(227, 235, 237)
+- background behind "- CLIENT": rgb(242, 246, 249), live rgb(227, 235, 237)
+- background behind "Over a year, I lost over 50 pounds, gain": rgb(242, 245, 247), live rgb(227, 235, 237)
+- background behind "— MICHAEL B.": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "WHY WARRIOR SPORTS PERSONAL TRAINING WOR": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "UNCONVENTIONAL BY DESIGN": rgb(255, 255, 255), live rgb(227, 235, 237)
+- band color beside "MEET YOUR TRAINERS": rgb(242, 246, 249), live rgb(40, 83, 117)
+- band color beside "SARAH WILDER": rgb(242, 246, 249), live rgb(40, 83, 117)
+- band color beside "HOW IT WORKS": rgb(255, 255, 255), live rgb(241, 245, 248)
+- band color beside "WHAT OUR CLIENTS SAY": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "LET’S TALK STRENGTH…YOUR VERSION": rgb(242, 246, 249), live rgb(26, 22, 23)
+- band color beside "At Warrior Sports, personal training is ": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "It’s a conversation and a challenge all ": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "Here’s how we’re different:": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "We use obstacle training, resistance ban": rgb(255, 255, 255), live rgb(227, 235, 237)
+- band color beside "– Women’s Confidence Coach": rgb(242, 246, 249), live rgb(40, 83, 117)
+- band color beside "Helps women, especially moms, feel stron": rgb(242, 246, 249), live rgb(40, 83, 117)
+- band color beside "“I focus on helping you feel powerful be": rgb(242, 246, 249), live rgb(40, 83, 117)
+- band color beside "Great for weight loss, functional streng": rgb(255, 255, 255), live rgb(40, 83, 117)
+- band color beside "Contact us and share your story—goals, c": rgb(255, 255, 255), live rgb(241, 245, 248)
+- band color beside "After losing some weight on my own, I hi": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "- CLIENT": rgb(242, 246, 249), live rgb(227, 235, 237)
+- heading "WHY WARRIOR SPORTS PERSONAL TRAINING WOR": looks different from live (pixel difference 46)
+- heading "UNCONVENTIONAL BY DESIGN": looks different from live (pixel difference 39)
+- heading "STRONGER AND SMARTER": looks different from live (pixel difference 56)
+- heading "EMOTIONALLY INTELLIGENT COACHING": looks different from live (pixel difference 51)
+- heading "MEET YOUR TRAINERS": looks different from live (pixel difference 81)
+- heading "SARAH WILDER": looks different from live (pixel difference 56)
+- heading "JONNY WILDER": looks different from live (pixel difference 42)
+- heading "HOW IT WORKS": looks different from live (pixel difference 48)
+- heading "LET’S TALK STRENGTH…YOUR VERSION": looks different from live (pixel difference 154)
+- photo hero: brightness 13, live 38 (overlay or exposure differs)
+- band rgb(255, 255, 255) at y=629 (left margin): 597px tall, live 685px
+- band rgb(227, 235, 237) at y=1314 (949px tall on live, left margin) not found in build
+- band rgb(40, 83, 117) at y=2272 (815px tall on live, left margin) not found in build
+- band rgb(241, 245, 248) at y=3088 (527px tall on live, left margin) not found in build
+- band rgb(227, 235, 237) at y=3615 (593px tall on live, left margin) not found in build
+- band rgb(26, 22, 23) at y=4208 (588px tall on live, left margin) not found in build
+- band rgb(41, 41, 41) at y=4896 (529px tall on live, left margin) not found in build
+- band rgb(4, 6, 18) at y=5448 (201px tall on live, left margin) not found in build
+- band rgb(255, 255, 255) at y=1774 (500px tall, left margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=2776 (559px tall, left margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=3895 (560px tall, left margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=4747 (297px tall, left margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=629 (right margin): 597px tall, live 685px
+- band rgb(227, 235, 237) at y=1314 (949px tall on live, right margin) not found in build
+- band rgb(40, 83, 117) at y=2272 (815px tall on live, right margin) not found in build
+- band rgb(241, 245, 248) at y=3088 (527px tall on live, right margin) not found in build
+- band rgb(227, 235, 237) at y=3615 (593px tall on live, right margin) not found in build
+- band rgb(42, 41, 44) at y=4348 (400px tall on live, right margin) not found in build
+- band rgb(1, 11, 30) at y=5003 (191px tall on live, right margin) not found in build
+- band rgb(22, 25, 32) at y=5440 (214px tall on live, right margin) not found in build
+- band rgb(255, 255, 255) at y=1774 (500px tall, right margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=2776 (559px tall, right margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=3895 (560px tall, right margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=4747 (297px tall, right margin) is in the build but not on live
+
+## registered-for-csna-competition @ 1920px: 17 difference(s)
+- page height 1325px, live 1000px
+- heading missing: "WE RECEIVED THOSE DETAILS, THANK YOU!"
+- text "Click here to finalize the reg": width 746px, live 1148px
+- text "Click here to finalize the reg": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "We received those details, thank you!": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "We received those details, thank you!": weight 300, live 900
+- words "Click here to finalize the registration ": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "https://checkout.square.site/merchant/ML": color rgb(51, 51, 51), live rgb(47, 138, 228)
+- words "https://checkout.square.site/merchant/ML": weight 300, live 400
+- words "If you encounter any problems or have an": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "(417) 894-7319": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "(417) 894-7319": weight 300, live 400
+- band rgb(255, 255, 255) at y=142 (793px tall on live, left margin) not found in build
+- band rgb(255, 255, 255) at y=704 (556px tall, left margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=145 (790px tall on live, right margin) not found in build
+- band rgb(255, 255, 255) at y=704 (556px tall, right margin) is in the build but not on live
+- section colors differ: build [rgb(255, 255, 255) | rgb(40, 82, 118) | rgb(255, 255, 255)], live [rgb(255, 255, 255)]
+
+## registered-for-day-camps @ 1920px: 14 difference(s)
+- page height 1434px, live 1082px
+- heading missing: "WE RECEIVED THOSE DETAILS, THANK YOU!"
+- text missing: "Click here to finalize the registration with your payment."
+- text "The link above has a few "prod": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "If you encounter any problems ": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "We received those details, thank you!": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "We received those details, thank you!": weight 300, live 900
+- words "The link above has a few "product" optio": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "If you encounter any problems or have an": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "(417) 894-7319": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "(417) 894-7319": weight 300, live 400
+- button not on live: "CLICK HERE TO FINALIZE THE REGISTRATION WITH YOUR PAYMENT."
+- photo hero: brightness 110, live 208 (overlay or exposure differs)
+- photo hero: looks different from live (pixel difference 113)
+
+## registered-for-summer-fun-competition @ 1920px: 14 difference(s)
+- page height 1376px, live 1042px
+- heading missing: "WE RECEIVED THOSE DETAILS, THANK YOU!"
+- text "Click here to finalize the reg": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "If you encounter any problems ": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "We received those details, thank you!": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "We received those details, thank you!": weight 300, live 900
+- words "Click here to finalize the registration ": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "https://springfield-warrior-sports.squar": color rgb(51, 51, 51), live rgb(47, 138, 228)
+- words "https://springfield-warrior-sports.squar": weight 300, live 400
+- words "If you encounter any problems or have an": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "(417) 894-7319": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "(417) 894-7319": weight 300, live 400
+- photo hero: brightness 110, live 211 (overlay or exposure differs)
+- photo hero: looks different from live (pixel difference 115)
+
+## registered-for-wnl-competition @ 1920px: 13 difference(s)
+- page height 1351px, live 1014px
+- heading missing: "WE RECEIVED THOSE DETAILS, THANK YOU!"
+- text "Click here to finalize the reg": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "We received those details, thank you!": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "We received those details, thank you!": weight 300, live 900
+- words "Click here to finalize the registration ": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "https://springfield-warrior-sports.squar": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "https://springfield-warrior-sports.squar": weight 300, live 400
+- words "If you encounter any problems or have an": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "(417) 894-7319": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "(417) 894-7319": weight 300, live 400
+- photo hero: brightness 110, live 213 (overlay or exposure differs)
+- photo hero: looks different from live (pixel difference 116)
+
+## registered @ 1920px: 13 difference(s)
+- page height 1351px, live 1014px
+- heading missing: "WE RECEIVED THOSE DETAILS, THANK YOU!"
+- text "Click here to finalize the reg": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "We received those details, thank you!": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "We received those details, thank you!": weight 300, live 900
+- words "Click here to finalize the registration ": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "https://springfield-warrior-sports.squar": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "https://springfield-warrior-sports.squar": weight 300, live 400
+- words "If you encounter any problems or have an": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "(417) 894-7319": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "(417) 894-7319": weight 300, live 400
+- photo hero: brightness 110, live 213 (overlay or exposure differs)
+- photo hero: looks different from live (pixel difference 116)
+
+## schedule-birthday-party @ 1920px: 65 difference(s)
+- page height 2995px, live 3345px
+- heading "CLIENT TESTIMONIALS": line height 50px, live 70px
+- heading "WHAT OUR CLIENTS SAY": line height 50px, live 42px
+- heading "WHAT OUR CLIENTS SAY": letter spacing 0px, live 1px
+- photo qoute-icon: left edge 385px, live 425px
+- text missing: ""*" indicates required fields"
+- text "1. Fill out the form to begin ": left edge 404px, live 511px
+- text "1. Fill out the form to begin ": width 536px, live 862px
+- text "1. Fill out the form to begin ": size 16px, live 18px
+- text "1. Fill out the form to begin ": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "1. Fill out the form to begin ": line height 26px, live 32px
+- text "We had our son’s 10th birthday": left edge 385px, live 416px
+- text "We had our son’s 10th birthday": font Epilogue, live Muli
+- text "We had our son’s 10th birthday": weight 300, live 400
+- text "We had our son’s 10th birthday": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "- JENNIFER L.": left edge 385px, live 416px
+- text "- JENNIFER L.": font Epilogue, live Muli
+- text "- JENNIFER L.": weight 300, live 700
+- text "- JENNIFER L.": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- text "My daughter started training h": font Epilogue, live Muli
+- text "My daughter started training h": weight 300, live 400
+- text "My daughter started training h": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "- LEE C.": font Epilogue, live Muli
+- text "- LEE C.": weight 300, live 700
+- text "- LEE C.": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "What our clients say": weight 400, live 300
+- words "We had our son’s 10th birthday here. All": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "We had our son’s 10th birthday here. All": weight 300, live 400
+- words "- Jennifer L.": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "- Jennifer L.": weight 300, live 700
+- words "We had our son’s 10th birthday here. All": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "We had our son’s 10th birthday here. All": weight 300, live 400
+- words "- Jennifer L.": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "- Jennifer L.": weight 300, live 700
+- words "My daughter started training here 3 year": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "My daughter started training here 3 year": weight 300, live 400
+- words "- Lee C.": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "- Lee C.": weight 300, live 700
+- words "My daughter started training here 3 year": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "My daughter started training here 3 year": weight 300, live 400
+- words "- Lee C.": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "- Lee C.": weight 300, live 700
+- spacing from "CLIENT TESTIMONIALS" to "WHAT OUR CLIENTS SAY": 0px, live 61px
+- gap between "WHAT OUR CLIENTS SAY" and "We had our son’s 10th birthday": 66px, live 132px
+- background behind "CLIENT TESTIMONIALS": rgb(242, 246, 249), live rgb(255, 255, 255)
+- background behind "WHAT OUR CLIENTS SAY": rgb(242, 246, 249), live rgb(255, 255, 255)
+- background behind "1. Fill out the form to begin the schedu": rgb(255, 255, 255), live rgb(227, 235, 237)
+- background behind "We had our son’s 10th birthday here. All": rgb(242, 244, 246), live rgb(255, 255, 255)
+- background behind "- JENNIFER L.": rgb(242, 246, 249), live rgb(255, 255, 255)
+- background behind "My daughter started training here 3 year": rgb(242, 244, 247), live rgb(255, 255, 255)
+- background behind "- LEE C.": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band color beside "CLIENT TESTIMONIALS": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band color beside "WHAT OUR CLIENTS SAY": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band color beside "1. Fill out the form to begin the schedu": rgb(255, 255, 255), live rgb(227, 235, 237)
+- band color beside "We had our son’s 10th birthday here. All": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band color beside "- JENNIFER L.": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band color beside "- LEE C.": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band rgb(227, 235, 237) at y=735 (1523px tall on live, left margin) not found in build
+- band rgb(255, 255, 255) at y=2258 (1022px tall on live, left margin) not found in build
+- band rgb(255, 255, 255) at y=774 (236px tall, left margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=2601 (329px tall, left margin) is in the build but not on live
+- band rgb(227, 235, 237) at y=732 (1526px tall on live, right margin) not found in build
+- band rgb(255, 255, 255) at y=2258 (1022px tall on live, right margin) not found in build
+- band rgb(255, 255, 255) at y=774 (236px tall, right margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=2601 (329px tall, right margin) is in the build but not on live
+
+## summer-camps-in-springfield-mo @ 1920px: 408 difference(s)
+- page height 5794px, live 6281px
+- heading "KIDS STAY FIT AND HEALTHY": left edge 385px, live 500px
+- heading "AT OUR INCREDIBLE SUMMER CAMPS": left edge 385px, live 500px
+- heading "AT OUR INCREDIBLE SUMMER CAMPS": line height 70px, live 50px
+- heading "SUMMER CAMPS IN SPRINGFIELD — 2026 DATES": width 555px, live 438px
+- heading "SUMMER CAMPS IN SPRINGFIELD — 2026 DATES": size 50px, live 40px
+- heading "SUMMER CAMPS IN SPRINGFIELD — 2026 DATES": 4 line(s), live 3
+- heading "SUMMER CAMPS IN SPRINGFIELD — 2026 DATES": line height 50px, live 40px
+- heading "SUMMER CAMP PRICING": width 555px, live 464px
+- heading "SUMMER CAMP PRICING": size 50px, live 40px
+- heading "SUMMER CAMP PRICING": line height 50px, live 40px
+- heading "SPRINGFIELD WARRIOR REGISTRATION": size 50px, live 34px
+- heading "SPRINGFIELD WARRIOR REGISTRATION": 3 line(s), live 1
+- heading "SPRINGFIELD WARRIOR REGISTRATION": line height 50px, live 34px
+- heading "REGISTRATION FORM": left edge 385px, live 510px
+- heading "REGISTRATION FORM": width 555px, live 900px
+- heading "REGISTRATION FORM": line height 50px, live 70px
+- heading "CLIENT TESTIMONIALS": line height 50px, live 70px
+- heading "WHAT OUR CLIENTS SAY": line height 50px, live 42px
+- heading "WHAT OUR CLIENTS SAY": letter spacing 0px, live 1px
+- photo missing: spring-break
+- text "Looking for a worthwhile activ": left edge 385px, live 523px
+- text "Looking for a worthwhile activ": width 555px, live 874px
+- text "Looking for a worthwhile activ": font Epilogue, live Muli
+- text "Looking for a worthwhile activ": size 16px, live 18px
+- text "Looking for a worthwhile activ": weight 300, live 400
+- text "Looking for a worthwhile activ": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Looking for a worthwhile activ": line height 26px, live 32px
+- text "Looking for a worthwhile activ": align start, live center
+- text "Look no further! Our incredibl": left edge 385px, live 523px
+- text "Look no further! Our incredibl": width 555px, live 874px
+- text "Look no further! Our incredibl": font Epilogue, live Muli
+- text "Look no further! Our incredibl": size 16px, live 18px
+- text "Look no further! Our incredibl": weight 300, live 400
+- text "Look no further! Our incredibl": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Look no further! Our incredibl": line height 26px, live 32px
+- text "Look no further! Our incredibl": align start, live center
+- text "Kids will get the chance to wo": left edge 385px, live 523px
+- text "Kids will get the chance to wo": width 555px, live 874px
+- text "Kids will get the chance to wo": font Epilogue, live Muli
+- text "Kids will get the chance to wo": size 16px, live 18px
+- text "Kids will get the chance to wo": weight 300, live 400
+- text "Kids will get the chance to wo": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Kids will get the chance to wo": 5 line(s), live 3
+- text "Kids will get the chance to wo": line height 26px, live 32px
+- text "Kids will get the chance to wo": align start, live center
+- text "Plus, there’s a competition at": left edge 385px, live 523px
+- text "Plus, there’s a competition at": width 555px, live 874px
+- text "Plus, there’s a competition at": font Epilogue, live Muli
+- text "Plus, there’s a competition at": size 16px, live 18px
+- text "Plus, there’s a competition at": weight 300, live 400
+- text "Plus, there’s a competition at": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Plus, there’s a competition at": 3 line(s), live 2
+- text "Plus, there’s a competition at": line height 26px, live 32px
+- text "Plus, there’s a competition at": align start, live center
+- text "Come join us at our camps, whi": left edge 385px, live 523px
+- text "Come join us at our camps, whi": width 555px, live 874px
+- text "Come join us at our camps, whi": font Epilogue, live Muli
+- text "Come join us at our camps, whi": size 16px, live 18px
+- text "Come join us at our camps, whi": weight 300, live 400
+- text "Come join us at our camps, whi": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Come join us at our camps, whi": 2 line(s), live 1
+- text "Come join us at our camps, whi": line height 26px, live 32px
+- text "Come join us at our camps, whi": align start, live center
+- text "May 25th - May 29th": width 555px, live 187px
+- text "May 25th - May 29th": font Epilogue, live Muli
+- text "May 25th - May 29th": size 16px, live 18px
+- text "May 25th - May 29th": weight 300, live 800
+- text "May 25th - May 29th": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "May 25th - May 29th": line height 26px, live 32px
+- text "8:30 AM - 11:30 AM": left edge 385px, live 604px
+- text "8:30 AM - 11:30 AM": width 555px, live 221px
+- text "8:30 AM - 11:30 AM": font Epilogue, live Muli
+- text "8:30 AM - 11:30 AM": size 16px, live 18px
+- text "8:30 AM - 11:30 AM": weight 300, live 400
+- text "8:30 AM - 11:30 AM": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "8:30 AM - 11:30 AM": line height 26px, live 32px
+- text "8:30 AM - 11:30 AM": letter spacing 0.6px, live 0px
+- text "June 8th - June 12th": width 555px, live 186px
+- text "June 8th - June 12th": font Epilogue, live Muli
+- text "June 8th - June 12th": size 16px, live 18px
+- text "June 8th - June 12th": weight 300, live 800
+- text "June 8th - June 12th": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "June 8th - June 12th": line height 26px, live 32px
+- text "8:30 AM - 11:30 AM": left edge 385px, live 604px
+- text "8:30 AM - 11:30 AM": width 555px, live 221px
+- text "8:30 AM - 11:30 AM": font Epilogue, live Muli
+- text "8:30 AM - 11:30 AM": size 16px, live 18px
+- text "8:30 AM - 11:30 AM": weight 300, live 400
+- text "8:30 AM - 11:30 AM": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "8:30 AM - 11:30 AM": line height 26px, live 32px
+- text "8:30 AM - 11:30 AM": letter spacing 0.6px, live 0px
+- text "June 22nd - June 26th": width 555px, live 187px
+- text "June 22nd - June 26th": font Epilogue, live Muli
+- text "June 22nd - June 26th": size 16px, live 18px
+- text "June 22nd - June 26th": weight 300, live 800
+- text "June 22nd - June 26th": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "June 22nd - June 26th": line height 26px, live 32px
+- text "8:30 AM - 11:30 AM": left edge 385px, live 604px
+- text "8:30 AM - 11:30 AM": width 555px, live 221px
+- text "8:30 AM - 11:30 AM": font Epilogue, live Muli
+- text "8:30 AM - 11:30 AM": size 16px, live 18px
+- text "8:30 AM - 11:30 AM": weight 300, live 400
+- text "8:30 AM - 11:30 AM": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "8:30 AM - 11:30 AM": line height 26px, live 32px
+- text "8:30 AM - 11:30 AM": letter spacing 0.6px, live 0px
+- text "July 6th - July 10th": width 555px, live 187px
+- text "July 6th - July 10th": font Epilogue, live Muli
+- text "July 6th - July 10th": size 16px, live 18px
+- text "July 6th - July 10th": weight 300, live 800
+- text "July 6th - July 10th": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "July 6th - July 10th": line height 26px, live 32px
+- text "8:30 AM - 11:30 AM": left edge 385px, live 604px
+- text "8:30 AM - 11:30 AM": width 555px, live 221px
+- text "8:30 AM - 11:30 AM": font Epilogue, live Muli
+- text "8:30 AM - 11:30 AM": size 16px, live 18px
+- text "8:30 AM - 11:30 AM": weight 300, live 400
+- text "8:30 AM - 11:30 AM": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "8:30 AM - 11:30 AM": line height 26px, live 32px
+- text "8:30 AM - 11:30 AM": letter spacing 0.6px, live 0px
+- text "12 PM - 3 PM": left edge 385px, live 604px
+- text "12 PM - 3 PM": width 555px, live 221px
+- text "12 PM - 3 PM": font Epilogue, live Muli
+- text "12 PM - 3 PM": size 16px, live 18px
+- text "12 PM - 3 PM": weight 300, live 400
+- text "12 PM - 3 PM": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "12 PM - 3 PM": line height 26px, live 32px
+- text "12 PM - 3 PM": letter spacing 0.6px, live 0px
+- text "July 20th - July 24th": width 555px, live 187px
+- text "July 20th - July 24th": font Epilogue, live Muli
+- text "July 20th - July 24th": size 16px, live 18px
+- text "July 20th - July 24th": weight 300, live 800
+- text "July 20th - July 24th": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "July 20th - July 24th": line height 26px, live 32px
+- text "8:30 AM - 11:30 AM": left edge 385px, live 604px
+- text "8:30 AM - 11:30 AM": width 555px, live 221px
+- text "8:30 AM - 11:30 AM": font Epilogue, live Muli
+- text "8:30 AM - 11:30 AM": size 16px, live 18px
+- text "8:30 AM - 11:30 AM": weight 300, live 400
+- text "8:30 AM - 11:30 AM": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "8:30 AM - 11:30 AM": line height 26px, live 32px
+- text "8:30 AM - 11:30 AM": letter spacing 0.6px, live 0px
+- text "12 PM - 3 PM": left edge 385px, live 604px
+- text "12 PM - 3 PM": width 555px, live 221px
+- text "12 PM - 3 PM": font Epilogue, live Muli
+- text "12 PM - 3 PM": size 16px, live 18px
+- text "12 PM - 3 PM": weight 300, live 400
+- text "12 PM - 3 PM": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "12 PM - 3 PM": line height 26px, live 32px
+- text "12 PM - 3 PM": letter spacing 0.6px, live 0px
+- text "August 3rd - August 7th": width 555px, live 187px
+- text "August 3rd - August 7th": font Epilogue, live Muli
+- text "August 3rd - August 7th": size 16px, live 18px
+- text "August 3rd - August 7th": weight 300, live 800
+- text "August 3rd - August 7th": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "August 3rd - August 7th": line height 26px, live 32px
+- text "8:30 AM - 11:30 AM": left edge 385px, live 604px
+- text "8:30 AM - 11:30 AM": width 555px, live 221px
+- text "8:30 AM - 11:30 AM": font Epilogue, live Muli
+- text "8:30 AM - 11:30 AM": size 16px, live 18px
+- text "8:30 AM - 11:30 AM": weight 300, live 400
+- text "8:30 AM - 11:30 AM": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "8:30 AM - 11:30 AM": line height 26px, live 32px
+- text "8:30 AM - 11:30 AM": letter spacing 0.6px, live 0px
+- text "12 PM - 3 PM": left edge 385px, live 604px
+- text "12 PM - 3 PM": width 555px, live 221px
+- text "12 PM - 3 PM": font Epilogue, live Muli
+- text "12 PM - 3 PM": size 16px, live 18px
+- text "12 PM - 3 PM": weight 300, live 400
+- text "12 PM - 3 PM": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "12 PM - 3 PM": line height 26px, live 32px
+- text "12 PM - 3 PM": letter spacing 0.6px, live 0px
+- text "August 17th - August 21st": width 555px, live 187px
+- text "August 17th - August 21st": font Epilogue, live Muli
+- text "August 17th - August 21st": size 16px, live 18px
+- text "August 17th - August 21st": weight 300, live 800
+- text "August 17th - August 21st": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "August 17th - August 21st": line height 26px, live 32px
+- text "8:30 AM - 11:30 AM": left edge 385px, live 604px
+- text "8:30 AM - 11:30 AM": width 555px, live 221px
+- text "8:30 AM - 11:30 AM": font Epilogue, live Muli
+- text "8:30 AM - 11:30 AM": size 16px, live 18px
+- text "8:30 AM - 11:30 AM": weight 300, live 400
+- text "8:30 AM - 11:30 AM": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "8:30 AM - 11:30 AM": line height 26px, live 32px
+- text "8:30 AM - 11:30 AM": letter spacing 0.6px, live 0px
+- text "12 PM - 3 PM": left edge 385px, live 604px
+- text "12 PM - 3 PM": width 555px, live 221px
+- text "12 PM - 3 PM": font Epilogue, live Muli
+- text "12 PM - 3 PM": size 16px, live 18px
+- text "12 PM - 3 PM": weight 300, live 400
+- text "12 PM - 3 PM": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "12 PM - 3 PM": line height 26px, live 32px
+- text "12 PM - 3 PM": letter spacing 0.6px, live 0px
+- text "A week of activities and snack": font Epilogue, live Muli
+- text "A week of activities and snack": size 16px, live 18px
+- text "A week of activities and snack": weight 300, live 400
+- text "A week of activities and snack": color rgb(51, 51, 51), live rgb(106, 107, 108)
+- text "A week of activities and snack": line height 26px, live 32px
+- text "Note:": font Epilogue, live Muli
+- text "Note:": size 16px, live 18px
+- text "Note:": weight 300, live 400
+- text "Note:": color rgb(51, 51, 51), live rgb(106, 107, 108)
+- text "Note:": line height 26px, live 32px
+- text "Summer camp investment monies ": font Epilogue, live Muli
+- text "Summer camp investment monies ": size 16px, live 18px
+- text "Summer camp investment monies ": weight 300, live 400
+- text "Summer camp investment monies ": color rgb(51, 51, 51), live rgb(106, 107, 108)
+- text "Summer camp investment monies ": line height 26px, live 32px
+- text "At our Springfield Warrior Spo": width 555px, live 1148px
+- text "At our Springfield Warrior Spo": size 16px, live 18px
+- text "At our Springfield Warrior Spo": weight 300, live 400
+- text "At our Springfield Warrior Spo": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "At our Springfield Warrior Spo": line height 26px, live 32px
+- text "Cost: $179 per child; member a": left edge 385px, live 511px
+- text "Cost: $179 per child; member a": width 555px, live 898px
+- text "Cost: $179 per child; member a": size 16px, live 18px
+- text "Cost: $179 per child; member a": weight 300, live 400
+- text "Cost: $179 per child; member a": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Cost: $179 per child; member a": line height 26px, live 32px
+- text "** call with questions or to r": left edge 385px, live 511px
+- text "** call with questions or to r": width 555px, live 898px
+- text "** call with questions or to r": size 16px, live 18px
+- text "** call with questions or to r": weight 300, live 400
+- text "** call with questions or to r": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "** call with questions or to r": 3 line(s), live 2
+- text "** call with questions or to r": line height 26px, live 32px
+- text "We had our son’s 10th birthday": font Epilogue, live Muli
+- text "We had our son’s 10th birthday": size 16px, live 18px
+- text "We had our son’s 10th birthday": weight 300, live 400
+- text "We had our son’s 10th birthday": color rgb(51, 51, 51), live rgb(106, 107, 108)
+- text "We had our son’s 10th birthday": line height 26px, live 32px
+- text "- JENNIFER L.": font Epilogue, live Muli
+- text "- JENNIFER L.": size 16px, live 18px
+- text "- JENNIFER L.": weight 300, live 700
+- text "- JENNIFER L.": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- text "- JENNIFER L.": line height 26px, live 32px
+- text "My daughter started training h": font Epilogue, live Muli
+- text "My daughter started training h": size 16px, live 18px
+- text "My daughter started training h": weight 300, live 400
+- text "My daughter started training h": color rgb(51, 51, 51), live rgb(106, 107, 108)
+- text "My daughter started training h": line height 26px, live 32px
+- text "- LEE C.": font Epilogue, live Muli
+- text "- LEE C.": size 16px, live 18px
+- text "- LEE C.": weight 300, live 700
+- text "- LEE C.": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- text "- LEE C.": line height 26px, live 32px
+- words "at our incredible summer camps": color rgb(214, 53, 47), live rgb(255, 255, 255)
+- words "Looking for a worthwhile activity for yo": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Looking for a worthwhile activity for yo": weight 300, live 400
+- words "Look no further! Our incredible Summer C": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Look no further! Our incredible Summer C": weight 300, live 400
+- words "Kids will get the chance to work with ou": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Kids will get the chance to work with ou": weight 300, live 400
+- words "making good nutritional choices": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "making good nutritional choices": weight 300, live 700
+- words "that lead to improved health and wellnes": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "that lead to improved health and wellnes": weight 300, live 400
+- words "Plus, there’s a": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Plus, there’s a": weight 300, live 400
+- words "competition at every camp": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "competition at every camp": weight 300, live 800
+- words "that awards the top place-getters a spot": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "that awards the top place-getters a spot": weight 300, live 400
+- words "Come join us at our camps, which are per": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Come join us at our camps, which are per": weight 300, live 400
+- words "May 25th - May 29th": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "May 25th - May 29th": weight 300, live 800
+- words "8:30 AM - 11:30 AM": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "8:30 AM - 11:30 AM": weight 300, live 400
+- words "June 8th - June 12th": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "June 8th - June 12th": weight 300, live 800
+- words "8:30 AM - 11:30 AM": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "8:30 AM - 11:30 AM": weight 300, live 400
+- words "June 22nd - June 26th": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "June 22nd - June 26th": weight 300, live 800
+- words "8:30 AM - 11:30 AM": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "8:30 AM - 11:30 AM": weight 300, live 400
+- words "July 6th - July 10th": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "July 6th - July 10th": weight 300, live 800
+- words "8:30 AM - 11:30 AM": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "8:30 AM - 11:30 AM": weight 300, live 400
+- words "12 PM - 3 PM": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "12 PM - 3 PM": weight 300, live 400
+- words "July 20th - July 24th": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "July 20th - July 24th": weight 300, live 800
+- words "8:30 AM - 11:30 AM": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "8:30 AM - 11:30 AM": weight 300, live 400
+- words "12 PM - 3 PM": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "12 PM - 3 PM": weight 300, live 400
+- words "August 3rd - August 7th": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "August 3rd - August 7th": weight 300, live 800
+- words "8:30 AM - 11:30 AM": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "8:30 AM - 11:30 AM": weight 300, live 400
+- words "12 PM - 3 PM": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "12 PM - 3 PM": weight 300, live 400
+- words "August 17th - August 21st": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "August 17th - August 21st": weight 300, live 800
+- words "8:30 AM - 11:30 AM": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "8:30 AM - 11:30 AM": weight 300, live 400
+- words "12 PM - 3 PM": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "12 PM - 3 PM": weight 300, live 400
+- words "A week of activities and snacks at Sprin": color rgb(51, 51, 51), live rgb(106, 107, 108)
+- words "A week of activities and snacks at Sprin": weight 300, live 400
+- words "(417) 894-7319": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "(417) 894-7319": weight 300, live 600
+- words "(417) 894-7319": underline false, live true
+- words "and register over the phone in order to ": color rgb(51, 51, 51), live rgb(106, 107, 108)
+- words "and register over the phone in order to ": weight 300, live 400
+- words "Note:": color rgb(51, 51, 51), live rgb(106, 107, 108)
+- words "Note:": weight 300, live 400
+- words "Summer camp investment monies can be pro": color rgb(51, 51, 51), live rgb(106, 107, 108)
+- words "Summer camp investment monies can be pro": weight 300, live 400
+- words "At our Springfield Warrior Sports camps,": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "At our Springfield Warrior Sports camps,": weight 300, live 400
+- words "Cost: $179 per child; member and sibling": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Cost: $179 per child; member and sibling": weight 300, live 400
+- words "** call with questions or to register by": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "** call with questions or to register by": weight 300, live 400
+- words "(417) 894-7319": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "(417) 894-7319": weight 300, live 400
+- words ". Please call to take advantage of the m": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words ". Please call to take advantage of the m": weight 300, live 400
+- words "What our clients say": weight 400, live 300
+- words "We had our son’s 10th birthday here. All": color rgb(51, 51, 51), live rgb(106, 107, 108)
+- words "We had our son’s 10th birthday here. All": weight 300, live 400
+- words "- Jennifer L.": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "- Jennifer L.": weight 300, live 700
+- words "We had our son’s 10th birthday here. All": color rgb(51, 51, 51), live rgb(106, 107, 108)
+- words "We had our son’s 10th birthday here. All": weight 300, live 400
+- words "- Jennifer L.": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "- Jennifer L.": weight 300, live 700
+- words "My daughter started training here 3 year": color rgb(51, 51, 51), live rgb(106, 107, 108)
+- words "My daughter started training here 3 year": weight 300, live 400
+- words "- Lee C.": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "- Lee C.": weight 300, live 700
+- words "My daughter started training here 3 year": color rgb(51, 51, 51), live rgb(106, 107, 108)
+- words "My daughter started training here 3 year": weight 300, live 400
+- words "- Lee C.": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "- Lee C.": weight 300, live 700
+- spacing from "KIDS STAY FIT AND HEALTHY" to "AT OUR INCREDIBLE SUMMER CAMPS": 0px, live 140px
+- spacing from "AT OUR INCREDIBLE SUMMER CAMPS" to "SUMMER CAMPS IN SPRINGFIELD — ": 1093px, live 935px
+- spacing from "SUMMER CAMPS IN SPRINGFIELD — " to "SUMMER CAMP PRICING": 961px, live 804px
+- spacing from "SUMMER CAMP PRICING" to "SPRINGFIELD WARRIOR REGISTRATI": 419px, live 360px
+- spacing from "SPRINGFIELD WARRIOR REGISTRATI" to "REGISTRATION FORM": 354px, live 410px
+- spacing from "REGISTRATION FORM" to "CLIENT TESTIMONIALS": 1825px, live 2324px
+- spacing from "CLIENT TESTIMONIALS" to "WHAT OUR CLIENTS SAY": 0px, live 61px
+- gap between "AT OUR INCREDIBLE SUMMER CAMPS" and "Looking for a worthwhile activ": 421px, live 301px
+- gap between "Come join us at our camps, whi" and "SUMMER CAMPS IN SPRINGFIELD — ": 98px, live 180px
+- gap between "12 PM - 3 PM" and "SUMMER CAMP PRICING": 98px, live 23px
+- gap between "Summer camp investment monies " and "SPRINGFIELD WARRIOR REGISTRATI": 98px, live 16px
+- gap between "WHAT OUR CLIENTS SAY" and "We had our son’s 10th birthday": 65px, live 112px
+- background behind "AT OUR INCREDIBLE SUMMER CAMPS": rgb(22, 24, 23), live rgb(254, 254, 255)
+- background behind "SUMMER CAMPS IN SPRINGFIELD — 2026 DATES": rgb(242, 245, 248), live rgb(226, 236, 237)
+- background behind "SUMMER CAMP PRICING": rgb(255, 255, 255), live rgb(226, 236, 237)
+- background behind "SPRINGFIELD WARRIOR REGISTRATION": rgb(242, 246, 248), live rgb(225, 236, 237)
+- background behind "CLIENT TESTIMONIALS": rgb(242, 246, 249), live rgb(227, 235, 237)
+- background behind "WHAT OUR CLIENTS SAY": rgb(242, 246, 249), live rgb(227, 235, 237)
+- background behind "A week of activities and snacks at Sprin": rgb(255, 255, 255), live rgb(227, 235, 237)
+- background behind "Note:": rgb(255, 255, 255), live rgb(227, 235, 237)
+- background behind "Summer camp investment monies can be pro": rgb(255, 255, 255), live rgb(227, 235, 237)
+- background behind "At our Springfield Warrior Sports camps,": rgb(242, 244, 246), live rgb(227, 235, 237)
+- background behind "We had our son’s 10th birthday here. All": rgb(241, 244, 246), live rgb(227, 235, 237)
+- background behind "- JENNIFER L.": rgb(242, 246, 249), live rgb(227, 235, 237)
+- background behind "My daughter started training here 3 year": rgb(242, 245, 247), live rgb(227, 235, 237)
+- background behind "- LEE C.": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "KIDS STAY FIT AND HEALTHY": rgb(16, 20, 23), live rgb(52, 69, 80)
+- band color beside "AT OUR INCREDIBLE SUMMER CAMPS": rgb(16, 20, 23), live rgb(62, 81, 96)
+- band color beside "SUMMER CAMPS IN SPRINGFIELD — 2026 DATES": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "SUMMER CAMP PRICING": rgb(255, 255, 255), live rgb(227, 235, 237)
+- band color beside "SPRINGFIELD WARRIOR REGISTRATION": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "CLIENT TESTIMONIALS": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "WHAT OUR CLIENTS SAY": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "May 25th - May 29th": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "June 8th - June 12th": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "June 22nd - June 26th": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "July 6th - July 10th": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "12 PM - 3 PM": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "July 20th - July 24th": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "12 PM - 3 PM": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "August 3rd - August 7th": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "12 PM - 3 PM": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "August 17th - August 21st": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "12 PM - 3 PM": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "A week of activities and snacks at Sprin": rgb(255, 255, 255), live rgb(227, 235, 237)
+- band color beside "Note:": rgb(255, 255, 255), live rgb(227, 235, 237)
+- band color beside "Summer camp investment monies can be pro": rgb(255, 255, 255), live rgb(227, 235, 237)
+- band color beside "At our Springfield Warrior Sports camps,": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "We had our son’s 10th birthday here. All": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "- JENNIFER L.": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "- LEE C.": rgb(242, 246, 249), live rgb(227, 235, 237)
+- heading "AT OUR INCREDIBLE SUMMER CAMPS": looks different from live (pixel difference 81)
+- heading "SUMMER CAMP PRICING": looks different from live (pixel difference 54)
+- heading "SPRINGFIELD WARRIOR REGISTRATION": looks different from live (pixel difference 44)
+- heading "REGISTRATION FORM": looks different from live (pixel difference 43)
+- photo hero: brightness 41, live 55 (overlay or exposure differs)
+- band rgb(227, 235, 237) at y=1314 (1564px tall on live, left margin) not found in build
+- band rgb(255, 255, 255) at y=2878 (left margin): 420px tall, live 2334px
+- band rgb(227, 235, 237) at y=5212 (711px tall on live, left margin) not found in build
+- band rgb(255, 255, 255) at y=5923 (left margin): 328px tall, live 293px
+- band rgb(255, 255, 255) at y=2370 (420px tall, left margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=3143 (304px tall, left margin) is in the build but not on live
+- band rgb(227, 235, 237) at y=1314 (1564px tall on live, right margin) not found in build
+- band rgb(255, 255, 255) at y=2878 (right margin): 420px tall, live 2334px
+- band rgb(227, 235, 237) at y=5212 (711px tall on live, right margin) not found in build
+- band rgb(255, 255, 255) at y=5923 (right margin): 328px tall, live 293px
+- band rgb(255, 255, 255) at y=2370 (420px tall, right margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=3143 (304px tall, right margin) is in the build but not on live
+
+## thank-you-for-your-feedback @ 1920px: 11 difference(s)
+- page height 1404px, live 1098px
+- heading missing: "THANK YOU FOR YOUR FEEDBACK!"
+- text "Thank you for your feedback! W": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Thank you for your feedback!": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "Thank you for your feedback!": weight 300, live 900
+- words "Thank you for your feedback! We read and": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "(417)894-7319": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "(417)894-7319": weight 300, live 400
+- words ".Thanks,Andy and the Warrior Sports Team": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- photo hero: brightness 110, live 207 (overlay or exposure differs)
+- photo hero: looks different from live (pixel difference 113)
+
+## wnl-competitions @ 1920px: 89 difference(s)
+- page height 2956px, live 3604px
+- heading missing: "10-26-2024 WNL Competition Registration Form"
+- heading "WNL COMPETITIONS IN SPRINGFIELD MISSOURI": left edge 400px, live 500px
+- heading "WNL COMPETITIONS IN SPRINGFIELD MISSOURI": width 1121px, live 920px
+- heading "WNL COMPETITIONS IN SPRINGFIELD MISSOURI": 1 line(s), live 2
+- heading "WNL REGIONAL QUALIFIERS": width 555px, live 389px
+- heading "WNL REGIONAL QUALIFIERS": size 50px, live 30px
+- heading "WNL REGIONAL QUALIFIERS": color rgb(214, 53, 47), live rgb(40, 82, 118)
+- heading "WNL REGIONAL QUALIFIERS": line height 50px, live 30px
+- photo missing: everyday-warrior
+- text missing: "Calling all Ninjas! Warrior Sports in Springfield Missouri i"
+- text "October 26, 2024": left edge 385px, live 424px
+- text "October 26, 2024": width 555px, live 148px
+- text "October 26, 2024": size 16px, live 18px
+- text "October 26, 2024": weight 300, live 400
+- text "October 26, 2024": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "October 26, 2024": line height 26px, live 29px
+- text "Early bird pricing for these c": left edge 385px, live 523px
+- text "Early bird pricing for these c": width 555px, live 874px
+- text "Early bird pricing for these c": weight 300, live 400
+- text "Early bird pricing for these c": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Early bird pricing for these c": 2 line(s), live 1
+- text "Registration is easy and happe": left edge 385px, live 523px
+- text "Registration is easy and happe": width 555px, live 874px
+- text "Registration is easy and happe": weight 300, live 400
+- text "Registration is easy and happe": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Fill out your information usin": left edge 385px, live 570px
+- text "Fill out your information usin": width 555px, live 827px
+- text "Fill out your information usin": font Epilogue, live Muli
+- text "Fill out your information usin": size 16px, live 18px
+- text "Fill out your information usin": weight 300, live 400
+- text "Fill out your information usin": color rgb(51, 51, 51), live rgb(106, 107, 108)
+- text "Don't wait to register - The e": left edge 385px, live 523px
+- text "Don't wait to register - The e": width 555px, live 874px
+- text "Don't wait to register - The e": weight 300, live 400
+- text "Don't wait to register - The e": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Don't wait to register - The e": 2 line(s), live 1
+- words "Calling all Ninjas! Warrior Sports in Sp": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Calling all Ninjas! Warrior Sports in Sp": weight 300, live 400
+- words "WNL Regional Qualifiers": color rgb(214, 53, 47), live rgb(40, 82, 118)
+- words "October 26, 2024": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "October 26, 2024": weight 300, live 400
+- words "Early bird pricing for these competition": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Early bird pricing for these competition": weight 300, live 400
+- words "Registration is easy and happens in two ": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Registration is easy and happens in two ": weight 300, live 400
+- words "Fill out your information using the form": color rgb(51, 51, 51), live rgb(106, 107, 108)
+- words "Fill out your information using the form": weight 300, live 400
+- words "Pay your registration fee using the pay ": color rgb(51, 51, 51), live rgb(106, 107, 108)
+- words "Pay your registration fee using the pay ": weight 300, live 400
+- words "Don't wait to register - The early bird ": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Don't wait to register - The early bird ": weight 300, live 400
+- words "the October 26th competition": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "the October 26th competition": weight 300, live 600
+- words "will go up after October 12th!": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "will go up after October 12th!": weight 300, live 400
+- spacing from "WNL COMPETITIONS IN SPRINGFIEL" to "WNL REGIONAL QUALIFIERS": 653px, live 937px
+- gap between "WNL COMPETITIONS IN SPRINGFIEL" and "WNL REGIONAL QUALIFIERS": 558px, live 837px
+- gap between "October 26, 2024" and "Early bird pricing for these c": 13px, live 382px
+- gap between "Fill out your information usin" and "Don't wait to register - The e": 14px, live 55px
+- icons: 5 in build, 6 on live
+- icon 1: color rgb(255, 255, 255), live rgb(219, 58, 52)
+- icon 2: left edge 455px, live 414px
+- icon 3: color rgb(219, 58, 52), live rgb(255, 255, 255)
+- icon 3: left edge 821px, live 451px
+- background behind "WNL REGIONAL QUALIFIERS": rgb(242, 246, 248), live rgb(226, 235, 238)
+- background behind "October 26, 2024": rgb(242, 246, 249), live rgb(227, 235, 237)
+- background behind "Early bird pricing for these competition": rgb(242, 245, 248), live rgb(255, 255, 255)
+- background behind "Registration is easy and happens in two ": rgb(242, 245, 248), live rgb(255, 255, 255)
+- background behind "Fill out your information using the form": rgb(242, 245, 247), live rgb(255, 255, 255)
+- background behind "Don't wait to register - The early bird ": rgb(242, 245, 248), live rgb(255, 255, 255)
+- band color beside "WNL COMPETITIONS IN SPRINGFIELD MISSOURI": rgb(154, 154, 154), live rgb(69, 69, 69)
+- band color beside "WNL REGIONAL QUALIFIERS": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "October 26, 2024": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "Early bird pricing for these competition": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band color beside "Registration is easy and happens in two ": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band color beside "Don't wait to register - The early bird ": rgb(242, 246, 249), live rgb(255, 255, 255)
+- heading "WNL COMPETITIONS IN SPRINGFIELD MISSOURI": looks different from live (pixel difference 74)
+- heading "WNL REGIONAL QUALIFIERS": looks different from live (pixel difference 60)
+- photo hero: brightness 75, live 41 (overlay or exposure differs)
+- photo hero: looks different from live (pixel difference 51)
+- band rgb(255, 255, 255) at y=729 (left margin): 241px tall, live 322px
+- band rgb(227, 235, 237) at y=1052 (619px tall on live, left margin) not found in build
+- band rgb(255, 255, 255) at y=1671 (1868px tall on live, left margin) not found in build
+- band rgb(255, 255, 255) at y=2563 (328px tall, left margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=729 (right margin): 241px tall, live 322px
+- band rgb(227, 235, 237) at y=1052 (619px tall on live, right margin) not found in build
+- band rgb(255, 255, 255) at y=1671 (1868px tall on live, right margin) not found in build
+- band rgb(255, 255, 255) at y=2563 (328px tall, right margin) is in the build but not on live
+
+## about @ 1280px: 2 difference(s)
+- text "We had our son’s 10th birthday": 5 line(s), live 4
+- text "My daughter started training h": 7 line(s), live 6
+
+## best-gyms-in-springfield @ 1280px: 387 difference(s)
+- page height 6261px, live 7180px
+- heading missing: "SO… WHICH GYM’S RIGHT FOR YOU?"
+- heading missing: "Southwest Springfield doesn’t mess around when it comes to fitness. Whether you want to lift heavy, join a class, recover in a cold plunge, or chase your first chin-up—you’ve got options."
+- heading missing: "So, no matter where you are in your fitness journey, take the leap."
+- heading missing: "Pick your place, show up like you mean it, and get after it."
+- heading "LOOKING FOR THE BEST GYMS IN SPRINGFIELD": color rgb(255, 255, 255), live rgb(219, 58, 52)
+- heading "LOOKING FOR THE BEST GYMS IN SPRINGFIELD": align center, live left
+- heading "RAGE FITNESS": left edge 65px, live 653px
+- heading "RAGE FITNESS": width 555px, live 342px
+- heading "GP ATHLETICS": width 555px, live 344px
+- heading "SPRINGFIELD WARRIOR SPORTS": left edge 65px, live 653px
+- heading "SPRINGFIELD STRENGTH & CONDITIONING": 4 line(s), live 3
+- heading "PROXIMAL STRENGTH": left edge 65px, live 653px
+- heading "GENESIS HEALTH CLUBS – SPRINGFIELD SOUTH": left edge 65px, live 653px
+- heading "GENESIS HEALTH CLUBS – SPRINGFIELD SOUTH": 4 line(s), live 3
+- photo missing: colorrage-sw-sq-2
+- photo missing: gp12-20-45_websize
+- photo missing: 62544e735ced2e7233a47d90_about us in springfield hero
+- photo missing: ourclasses_3-750x500-1200w
+- photo missing: springfield-1
+- photo missing: genesis_app_background
+- photo missing: pricing-and-schedule
+- photo img_2344: left edge 65px, live 14px
+- photo img_2344: width 555px, live 749px
+- button "VISIT WEBSITE": color rgb(214, 53, 47), live rgb(40, 82, 118)
+- button "VISIT WEBSITE": width 132px, live 176px
+- button "VISIT WEBSITE": color rgb(214, 53, 47), live rgb(40, 82, 118)
+- button "VISIT WEBSITE": width 132px, live 176px
+- button "VISIT WEBSITE": color rgb(214, 53, 47), live rgb(40, 82, 118)
+- button "VISIT WEBSITE": width 132px, live 176px
+- button "VISIT WEBSITE": color rgb(214, 53, 47), live rgb(40, 82, 118)
+- button "VISIT WEBSITE": width 132px, live 176px
+- button "VISIT WEBSITE": color rgb(214, 53, 47), live rgb(40, 82, 118)
+- button "VISIT WEBSITE": width 132px, live 176px
+- button "VISIT WEBSITE": color rgb(214, 53, 47), live rgb(40, 82, 118)
+- button "VISIT WEBSITE": width 132px, live 176px
+- button "VISIT WEBSITE": color rgb(214, 53, 47), live rgb(40, 82, 118)
+- button "VISIT WEBSITE": width 132px, live 176px
+- text not on live: "Expert-led barbell and strength classes One-on-one coaching "
+- text not on live: "Premium training zones & cardio deck Group fitness with know"
+- text "Whether you’re hunting down yo": left edge 660px, live 105px
+- text "Whether you’re hunting down yo": width 555px, live 1070px
+- text "Whether you’re hunting down yo": weight 300, live 400
+- text "Whether you’re hunting down yo": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Whether you’re hunting down yo": 5 line(s), live 3
+- text "Whether you’re hunting down yo": align start, live center
+- text "Offering everything from worko": left edge 660px, live 105px
+- text "Offering everything from worko": width 555px, live 1070px
+- text "Offering everything from worko": weight 300, live 400
+- text "Offering everything from worko": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Offering everything from worko": 4 line(s), live 2
+- text "Offering everything from worko": align start, live center
+- text "Before we get started on our l": left edge 660px, live 105px
+- text "Before we get started on our l": width 555px, live 1070px
+- text "Before we get started on our l": weight 300, live 400
+- text "Before we get started on our l": color rgb(51, 51, 51), live rgba(41, 41, 41, 0.99)
+- text "Before we get started on our l": 2 line(s), live 1
+- text "Before we get started on our l": align start, live center
+- text "Instead, think obstacle course": left edge 660px, live 105px
+- text "Instead, think obstacle course": width 555px, live 1070px
+- text "Instead, think obstacle course": weight 300, live 400
+- text "Instead, think obstacle course": color rgb(51, 51, 51), live rgba(41, 41, 41, 0.99)
+- text "Instead, think obstacle course": 2 line(s), live 1
+- text "Instead, think obstacle course": align start, live center
+- text "and train like never before, c": left edge 660px, live 105px
+- text "and train like never before, c": width 555px, live 1070px
+- text "and train like never before, c": weight 300, live 400
+- text "and train like never before, c": color rgb(51, 51, 51), live rgba(41, 41, 41, 0.99)
+- text "and train like never before, c": 2 line(s), live 1
+- text "and train like never before, c": align start, live center
+- text "one of the most unique gyms ar": left edge 660px, live 105px
+- text "one of the most unique gyms ar": width 555px, live 1070px
+- text "one of the most unique gyms ar": weight 300, live 600
+- text "one of the most unique gyms ar": color rgb(51, 51, 51), live rgba(41, 41, 41, 0.99)
+- text "one of the most unique gyms ar": 2 line(s), live 1
+- text "one of the most unique gyms ar": align start, live center
+- text "2321 S Campbell Ave, Springfie": left edge 65px, live 688px
+- text "2321 S Campbell Ave, Springfie": width 555px, live 292px
+- text "2321 S Campbell Ave, Springfie": weight 300, live 600
+- text "2321 S Campbell Ave, Springfie": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "If you want gyms in Springfiel": left edge 65px, live 654px
+- text "If you want gyms in Springfiel": weight 300, live 400
+- text "If you want gyms in Springfiel": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "This is where grit meets grind": left edge 65px, live 654px
+- text "This is where grit meets grind": weight 300, live 400
+- text "This is where grit meets grind": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.99)
+- text "Highlights:": left edge 65px, live 654px
+- text "Highlights:": weight 300, live 700
+- text "Highlights:": color rgb(51, 51, 51), live rgb(40, 82, 118)
+- text "24/7 access — because results ": left edge 65px, live 686px
+- text "24/7 access — because results ": width 555px, live 360px
+- text "24/7 access — because results ": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Cold plunges, saunas, compress": left edge 65px, live 686px
+- text "Cold plunges, saunas, compress": width 555px, live 406px
+- text "Cold plunges, saunas, compress": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "3119 S Scenic Ave Ste B, Sprin": left edge 65px, live 100px
+- text "3119 S Scenic Ave Ste B, Sprin": width 555px, live 314px
+- text "3119 S Scenic Ave Ste B, Sprin": weight 300, live 600
+- text "3119 S Scenic Ave Ste B, Sprin": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Built for lifters, athletes, a": weight 300, live 400
+- text "Built for lifters, athletes, a": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "From elite coaching to persona": weight 300, live 400
+- text "From elite coaching to persona": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Highlights:": weight 300, live 700
+- text "Highlights:": color rgb(51, 51, 51), live rgb(40, 82, 118)
+- text "605 W Farm Rd 182, Springfield": left edge 65px, live 688px
+- text "605 W Farm Rd 182, Springfield": width 555px, live 277px
+- text "605 W Farm Rd 182, Springfield": weight 300, live 600
+- text "605 W Farm Rd 182, Springfield": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Ready to ditch the treadmill f": left edge 65px, live 654px
+- text "Ready to ditch the treadmill f": weight 300, live 400
+- text "Ready to ditch the treadmill f": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "If you're interested in parkou": left edge 65px, live 654px
+- text "If you're interested in parkou": weight 300, live 400
+- text "If you're interested in parkou": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "2026 W Vista St Suite H, Sprin": left edge 65px, live 100px
+- text "2026 W Vista St Suite H, Sprin": width 555px, live 314px
+- text "2026 W Vista St Suite H, Sprin": weight 300, live 600
+- text "2026 W Vista St Suite H, Sprin": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Voted Springfield’s #1 Gym two": weight 300, live 400
+- text "Voted Springfield’s #1 Gym two": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "They offer 24-hour access, ind": weight 300, live 400
+- text "They offer 24-hour access, ind": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Highlights:": weight 300, live 700
+- text "Highlights:": color rgb(51, 51, 51), live rgb(40, 82, 118)
+- text "Customized training & nutritio": left edge 65px, live 98px
+- text "Customized training & nutritio": width 555px, live 405px
+- text "Customized training & nutritio": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Coaches who correct your form,": left edge 65px, live 98px
+- text "Coaches who correct your form,": width 555px, live 405px
+- text "Coaches who correct your form,": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "1900 W Sunset St #B100, Spring": left edge 65px, live 688px
+- text "1900 W Sunset St #B100, Spring": width 555px, live 320px
+- text "1900 W Sunset St #B100, Spring": weight 300, live 600
+- text "1900 W Sunset St #B100, Spring": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Proximal isn’t just about fitn": left edge 65px, live 654px
+- text "Proximal isn’t just about fitn": weight 300, live 400
+- text "Proximal isn’t just about fitn": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "You’ll find a welcoming crew, ": left edge 65px, live 654px
+- text "You’ll find a welcoming crew, ": weight 300, live 400
+- text "You’ll find a welcoming crew, ": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Highlights:": left edge 65px, live 654px
+- text "Highlights:": weight 300, live 700
+- text "Highlights:": color rgb(51, 51, 51), live rgb(40, 82, 118)
+- text "Endurance, rowing, sports perf": left edge 65px, live 686px
+- text "Endurance, rowing, sports perf": width 555px, live 374px
+- text "Endurance, rowing, sports perf": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "1444 S Glenstone Ave, Springfi": left edge 65px, live 100px
+- text "1444 S Glenstone Ave, Springfi": width 555px, live 299px
+- text "1444 S Glenstone Ave, Springfi": weight 300, live 600
+- text "1444 S Glenstone Ave, Springfi": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Want fitness on your terms? 10": weight 300, live 400
+- text "Want fitness on your terms? 10": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Their Level 10 group classes a": weight 300, live 400
+- text "Their Level 10 group classes a": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Highlights:": weight 300, live 700
+- text "Highlights:": color rgb(51, 51, 51), live rgb(40, 82, 118)
+- text "24/7 gym access, massage chair": left edge 65px, live 98px
+- text "24/7 gym access, massage chair": width 555px, live 343px
+- text "24/7 gym access, massage chair": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "1249 E Battlefield Rd, Springf": left edge 65px, live 688px
+- text "1249 E Battlefield Rd, Springf": width 555px, live 292px
+- text "1249 E Battlefield Rd, Springf": weight 300, live 600
+- text "1249 E Battlefield Rd, Springf": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "If you're after a fitness cent": left edge 65px, live 654px
+- text "If you're after a fitness cent": weight 300, live 400
+- text "If you're after a fitness cent": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Great for families or anyone w": left edge 65px, live 654px
+- text "Great for families or anyone w": weight 300, live 400
+- text "Great for families or anyone w": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Highlights:": left edge 65px, live 654px
+- text "Highlights:": weight 300, live 700
+- text "Highlights:": color rgb(51, 51, 51), live rgb(40, 82, 118)
+- text "Indoor pool, hot tub, steam ro": left edge 65px, live 686px
+- text "Indoor pool, hot tub, steam ro": width 555px, live 369px
+- text "Indoor pool, hot tub, steam ro": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Looking for the Best Gyms in Springfield": color rgb(255, 255, 255), live rgb(219, 58, 52)
+- words "Whether you’re hunting down your next PR": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Whether you’re hunting down your next PR": weight 300, live 400
+- words "Offering everything from workout classes": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Offering everything from workout classes": weight 300, live 400
+- words "Before we get started on our list—can we": color rgb(51, 51, 51), live rgba(41, 41, 41, 0.99)
+- words "Before we get started on our list—can we": weight 300, live 400
+- words "Instead, think obstacle courses, warped ": color rgb(51, 51, 51), live rgba(41, 41, 41, 0.99)
+- words "Instead, think obstacle courses, warped ": weight 300, live 400
+- words "and train like never before, check out o": color rgb(51, 51, 51), live rgba(41, 41, 41, 0.99)
+- words "and train like never before, check out o": weight 300, live 400
+- words "Adult Fitness Classes": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "Adult Fitness Classes": weight 300, live 400
+- words "and see what makes Springfield Warrior S": color rgb(51, 51, 51), live rgba(41, 41, 41, 0.99)
+- words "and see what makes Springfield Warrior S": weight 300, live 400
+- words "one of the most unique gyms around.": color rgb(51, 51, 51), live rgba(41, 41, 41, 0.99)
+- words "one of the most unique gyms around.": weight 300, live 600
+- words "We’re located just south of Sunshine and": color rgb(51, 51, 51), live rgba(41, 41, 41, 0.99)
+- words "We’re located just south of Sunshine and": weight 300, live 400
+- words "2321 S Campbell Ave, Springfield, MO": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "2321 S Campbell Ave, Springfield, MO": weight 300, live 600
+- words "If you want gyms in Springfield that don": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "If you want gyms in Springfield that don": weight 300, live 400
+- words "This is where grit meets grind. You’ll f": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.99)
+- words "This is where grit meets grind. You’ll f": weight 300, live 400
+- words "Highlights:": color rgb(51, 51, 51), live rgb(40, 82, 118)
+- words "Highlights:": weight 300, live 700
+- words "24/7 access — because results don’t cloc": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Cold plunges, saunas, compression sleeve": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Locally owned, hardcore ethos": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Group classes and personal training": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "3119 S Scenic Ave Ste B, Springfield, MO": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "3119 S Scenic Ave Ste B, Springfield, MO": weight 300, live 600
+- words "Built for lifters, athletes, and real hu": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Built for lifters, athletes, and real hu": weight 300, live 400
+- words "From elite coaching to personal training": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "From elite coaching to personal training": weight 300, live 400
+- words "Highlights:": color rgb(51, 51, 51), live rgb(40, 82, 118)
+- words "Highlights:": weight 300, live 700
+- words "Expert-led barbell and strength classes": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "One-on-one coaching and online programs": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Open gym for lifters who know their way ": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Welcoming community for all ages": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "605 W Farm Rd 182, Springfield, MO": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "605 W Farm Rd 182, Springfield, MO": weight 300, live 600
+- words "Ready to ditch the treadmill for somethi": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Ready to ditch the treadmill for somethi": weight 300, live 400
+- words "If you're interested in parkour sessions": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "If you're interested in parkour sessions": weight 300, live 400
+- words "Adult Ninja Fitness class": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "Adult Ninja Fitness class": weight 300, live 400
+- words ". At Springfield’s go-to obstacle traini": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words ". At Springfield’s go-to obstacle traini": weight 300, live 400
+- words "2026 W Vista St Suite H, Springfield, MO": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "2026 W Vista St Suite H, Springfield, MO": weight 300, live 600
+- words "Voted Springfield’s #1 Gym two years run": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Voted Springfield’s #1 Gym two years run": weight 300, live 400
+- words "They offer 24-hour access, individualize": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "They offer 24-hour access, individualize": weight 300, live 400
+- words "Highlights:": color rgb(51, 51, 51), live rgb(40, 82, 118)
+- words "Highlights:": weight 300, live 700
+- words "Customized training & nutrition (online ": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Strength, performance, and Olympic lifti": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "24/7 gym access for grinders": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Coaches who correct your form, not just ": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "1900 W Sunset St #B100, Springfield, MO": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "1900 W Sunset St #B100, Springfield, MO": weight 300, live 600
+- words "Proximal isn’t just about fitness—it’s a": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Proximal isn’t just about fitness—it’s a": weight 300, live 400
+- words "You’ll find a welcoming crew, killer pro": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "You’ll find a welcoming crew, killer pro": weight 300, live 400
+- words "Highlights:": color rgb(51, 51, 51), live rgb(40, 82, 118)
+- words "Highlights:": weight 300, live 700
+- words "Endurance, rowing, sports performance cl": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Personal training & private onboarding": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "5-star rated staff with a focus on minds": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Built for connection, not comparison": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "1444 S Glenstone Ave, Springfield, MO": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "1444 S Glenstone Ave, Springfield, MO": weight 300, live 600
+- words "Want fitness on your terms? 10 Fitness b": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Want fitness on your terms? 10 Fitness b": weight 300, live 400
+- words "Their Level 10 group classes are perfect": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Their Level 10 group classes are perfect": weight 300, live 400
+- words "Highlights:": color rgb(51, 51, 51), live rgb(40, 82, 118)
+- words "Highlights:": weight 300, live 700
+- words "24/7 gym access, massage chairs, & tanni": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Premium training zones & cardio deck": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Group fitness with knowledgeable coaches": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Affordable, flexible, and great for ever": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "1249 E Battlefield Rd, Springfield, MO": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "1249 E Battlefield Rd, Springfield, MO": weight 300, live 600
+- words "If you're after a fitness center in Spri": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "If you're after a fitness center in Spri": weight 300, live 400
+- words "Great for families or anyone who wants s": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Great for families or anyone who wants s": weight 300, live 400
+- words "Highlights:": color rgb(51, 51, 51), live rgb(40, 82, 118)
+- words "Highlights:": weight 300, live 700
+- words "Indoor pool, hot tub, steam room, smooth": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Unlimited daily group classes (HIIT, cyc": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "CPR-certified childcare": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "CPR-certified childcare": weight 300, live 600
+- words "Full-service locker rooms & recovery spa": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "So… Which Gym’s Right for You?": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "So… Which Gym’s Right for You?": weight 300, live 900
+- words "Southwest Springfield doesn’t mess aroun": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- words "Southwest Springfield doesn’t mess aroun": weight 300, live 400
+- words "So, no matter where you are in your fitn": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- words "So, no matter where you are in your fitn": weight 300, live 400
+- words "Pick your place, show up like you mean i": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- words "Pick your place, show up like you mean i": weight 300, live 400
+- spacing from "LOOKING FOR THE BEST GYMS IN S" to "RAGE FITNESS": 1050px, live 804px
+- spacing from "RAGE FITNESS" to "GP ATHLETICS": 598px, live 684px
+- spacing from "GP ATHLETICS" to "SPRINGFIELD WARRIOR SPORTS": 660px, live 780px
+- spacing from "SPRINGFIELD WARRIOR SPORTS" to "SPRINGFIELD STRENGTH & CONDITI": 553px, live 626px
+- spacing from "PROXIMAL STRENGTH" to "10 FITNESS SPRINGFIELD": 557px, live 655px
+- gap between "LOOKING FOR THE BEST GYMS IN S" and "Whether you’re hunting down yo": 262px, live 91px
+- gap between "Offering everything from worko" and "Before we get started on our l": 15px, live 117px
+- gap between "one of the most unique gyms ar" and "RAGE FITNESS": 98px, live 170px
+- gap between "Cold plunges, saunas, compress" and "GP ATHLETICS": 157px, live 252px
+- gap between "Highlights:" and "SPRINGFIELD WARRIOR SPORTS": 247px, live 346px
+- gap between "If you're interested in parkou" and "SPRINGFIELD STRENGTH & CONDITI": 156px, live 211px
+- gap between "Customized training & nutritio" and "Coaches who correct your form,": 14px, live 73px
+- gap between "Endurance, rowing, sports perf" and "10 FITNESS SPRINGFIELD": 156px, live 292px
+- icons: 5 in build, 36 on live
+- icon 1: color rgb(255, 255, 255), live rgb(219, 58, 52)
+- icon 1: size 17px, live 24px
+- icon 1: left edge 98px, live 654px
+- icon 2: color rgb(255, 255, 255), live rgb(219, 58, 52)
+- icon 2: left edge 135px, live 654px
+- icon 3: left edge 501px, live 654px
+- icon 4: left edge 501px, live 654px
+- icon 5: left edge 501px, live 654px
+- background behind "RAGE FITNESS": rgb(242, 246, 249), live rgb(255, 255, 255)
+- background behind "SPRINGFIELD WARRIOR SPORTS": rgb(242, 246, 247), live rgb(255, 255, 255)
+- background behind "PROXIMAL STRENGTH": rgb(242, 246, 247), live rgb(255, 255, 255)
+- background behind "GENESIS HEALTH CLUBS – SPRINGFIELD SOUTH": rgb(242, 246, 248), live rgb(255, 255, 255)
+- background behind "Before we get started on our list—can we": rgb(255, 255, 255), live rgb(238, 244, 250)
+- background behind "Instead, think obstacle courses, warped ": rgb(255, 255, 255), live rgb(238, 244, 250)
+- background behind "and train like never before, check out o": rgb(255, 255, 255), live rgb(238, 244, 250)
+- background behind "one of the most unique gyms around. We’r": rgb(255, 255, 255), live rgb(238, 244, 250)
+- background behind "2321 S Campbell Ave, Springfield, MO": rgb(242, 246, 248), live rgb(255, 255, 255)
+- background behind "If you want gyms in Springfield that don": rgb(242, 244, 246), live rgb(255, 255, 255)
+- background behind "This is where grit meets grind. You’ll f": rgb(242, 245, 247), live rgb(255, 255, 255)
+- background behind "Highlights:": rgb(242, 246, 249), live rgb(255, 255, 255)
+- background behind "24/7 access — because results don’t cloc": rgb(242, 246, 248), live rgb(255, 255, 255)
+- background behind "Cold plunges, saunas, compression sleeve": rgb(242, 245, 247), live rgb(255, 255, 255)
+- background behind "605 W Farm Rd 182, Springfield, MO": rgb(242, 245, 248), live rgb(255, 255, 255)
+- background behind "Ready to ditch the treadmill for somethi": rgb(242, 245, 247), live rgb(255, 255, 255)
+- background behind "If you're interested in parkour sessions": rgb(242, 244, 246), live rgb(255, 255, 255)
+- background behind "1900 W Sunset St #B100, Springfield, MO": rgb(242, 246, 248), live rgb(255, 255, 255)
+- background behind "Proximal isn’t just about fitness—it’s a": rgb(242, 245, 247), live rgb(255, 255, 255)
+- background behind "You’ll find a welcoming crew, killer pro": rgb(242, 245, 247), live rgb(255, 255, 255)
+- background behind "Highlights:": rgb(242, 246, 249), live rgb(255, 255, 255)
+- background behind "Endurance, rowing, sports performance cl": rgb(242, 245, 247), live rgb(255, 255, 255)
+- background behind "1249 E Battlefield Rd, Springfield, MO": rgb(242, 246, 248), live rgb(255, 255, 255)
+- background behind "If you're after a fitness center in Spri": rgb(242, 244, 247), live rgb(255, 255, 255)
+- background behind "Great for families or anyone who wants s": rgb(242, 245, 248), live rgb(255, 255, 255)
+- background behind "Highlights:": rgb(242, 246, 249), live rgb(255, 255, 255)
+- background behind "Indoor pool, hot tub, steam room, smooth": rgb(242, 245, 247), live rgb(255, 255, 255)
+- band color beside "RAGE FITNESS": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band color beside "SPRINGFIELD WARRIOR SPORTS": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band color beside "PROXIMAL STRENGTH": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band color beside "GENESIS HEALTH CLUBS – SPRINGFIELD SOUTH": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band color beside "Before we get started on our list—can we": rgb(255, 255, 255), live rgb(238, 245, 251)
+- band color beside "Instead, think obstacle courses, warped ": rgb(255, 255, 255), live rgb(238, 245, 251)
+- band color beside "and train like never before, check out o": rgb(255, 255, 255), live rgb(238, 245, 251)
+- band color beside "one of the most unique gyms around. We’r": rgb(255, 255, 255), live rgb(238, 245, 251)
+- band color beside "2321 S Campbell Ave, Springfield, MO": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band color beside "If you want gyms in Springfield that don": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band color beside "This is where grit meets grind. You’ll f": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band color beside "Highlights:": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band color beside "24/7 access — because results don’t cloc": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band color beside "Cold plunges, saunas, compression sleeve": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band color beside "605 W Farm Rd 182, Springfield, MO": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band color beside "Ready to ditch the treadmill for somethi": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band color beside "If you're interested in parkour sessions": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band color beside "1900 W Sunset St #B100, Springfield, MO": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band color beside "Proximal isn’t just about fitness—it’s a": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band color beside "You’ll find a welcoming crew, killer pro": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band color beside "Highlights:": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band color beside "Endurance, rowing, sports performance cl": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band color beside "1249 E Battlefield Rd, Springfield, MO": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band color beside "If you're after a fitness center in Spri": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band color beside "Great for families or anyone who wants s": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band color beside "Highlights:": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band color beside "Indoor pool, hot tub, steam room, smooth": rgb(242, 246, 249), live rgb(255, 255, 255)
+- heading "LOOKING FOR THE BEST GYMS IN SPRINGFIELD": looks different from live (pixel difference 55)
+- heading "RAGE FITNESS": looks different from live (pixel difference 47)
+- heading "GP ATHLETICS": looks different from live (pixel difference 48)
+- text "one of the most unique gyms ar": looks different from live (pixel difference 38)
+- text "2321 S Campbell Ave, Springfie": looks different from live (pixel difference 38)
+- text "605 W Farm Rd 182, Springfield": looks different from live (pixel difference 39)
+- text "1249 E Battlefield Rd, Springf": looks different from live (pixel difference 39)
+- photo hero: brightness 27, live 41 (overlay or exposure differs)
+- photo hero: looks different from live (pixel difference 39)
+- photo img_2344: brightness 96, live 139 (overlay or exposure differs)
+- photo img_2344: looks different from live (pixel difference 45)
+- band rgb(255, 255, 255) at y=629 (left margin): 643px tall, live 284px
+- band rgb(238, 245, 251) at y=913 (251px tall on live, left margin) not found in build
+- band rgb(255, 255, 255) at y=1164 (5056px tall on live, left margin) not found in build
+- band rgb(24, 35, 50) at y=6222 (556px tall on live, left margin) not found in build
+- band rgb(255, 255, 255) at y=1915 (660px tall, left margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=3127 (698px tall, left margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=4383 (646px tall, left margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=629 (right margin): 643px tall, live 285px
+- band rgb(238, 245, 251) at y=914 (250px tall on live, right margin) not found in build
+- band rgb(255, 255, 255) at y=1164 (5056px tall on live, right margin) not found in build
+- band rgb(38, 44, 58) at y=6220 (189px tall on live, right margin) not found in build
+- band rgb(255, 255, 255) at y=1915 (660px tall, right margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=3127 (698px tall, right margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=4383 (646px tall, right margin) is in the build but not on live
+
+## birthday-parties @ 1280px: 232 difference(s)
+- page height 5443px, live 5742px
+- heading missing: "NINJA WARRIOR COURSES, LASER TAG, NERF BATTLES, AND MORE!"
+- heading missing: "BOOK NOW!"
+- heading missing: "You can begin the birthday party scheduling process on our website by clicking here, or call us today at (417) 894-7319 to reserve your birthday party spot at Warrior Sports!"
+- heading missing: "Cancellation & Rescheduling Policy: To help us staff and prepare properly, any cancellations or reschedules made starting the weekend immediately before your party date and at any point thereafter will incur a $60 fee."
+- heading missing: "PIZZA BIRTHDAY PARTY WITH NO CLEAN UP!"
+- heading missing: "LASER TAG PARTIES"
+- heading not on live: "HIGH-ENERGY KIDS' BIRTHDAY PARTIES IN SPRINGFIELD, MO"
+- heading "KIDS WILL HAVE A BLAST, AND YOU CAN RELA": left edge 65px, live 180px
+- heading "KIDS WILL HAVE A BLAST, AND YOU CAN RELA": width 1150px, live 920px
+- heading "KIDS WILL HAVE A BLAST, AND YOU CAN RELA": size 60px, live 26px
+- heading "KIDS WILL HAVE A BLAST, AND YOU CAN RELA": color rgb(214, 53, 47), live rgb(0, 0, 0)
+- heading "KIDS WILL HAVE A BLAST, AND YOU CAN RELA": 2 line(s), live 1
+- heading "KIDS WILL HAVE A BLAST, AND YOU CAN RELA": line height 60px, live 26px
+- heading "WARRIOR SPORTS TAKES THE STRESS OUT OF Y": left edge 660px, live 85px
+- heading "WARRIOR SPORTS TAKES THE STRESS OUT OF Y": width 555px, live 1110px
+- heading "WARRIOR SPORTS TAKES THE STRESS OUT OF Y": size 50px, live 40px
+- heading "WARRIOR SPORTS TAKES THE STRESS OUT OF Y": color rgb(214, 53, 47), live rgb(12, 17, 21)
+- heading "WARRIOR SPORTS TAKES THE STRESS OUT OF Y": 6 line(s), live 2
+- heading "WARRIOR SPORTS TAKES THE STRESS OUT OF Y": line height 50px, live 40px
+- heading "WARRIOR SPORTS TAKES THE STRESS OUT OF Y": align start, live center
+- heading "MORE BIRTHDAY PARTY OPTIONS AT SPRINGFIE": width 555px, live 1148px
+- heading "MORE BIRTHDAY PARTY OPTIONS AT SPRINGFIE": size 50px, live 30px
+- heading "MORE BIRTHDAY PARTY OPTIONS AT SPRINGFIE": weight 900, live 300
+- heading "MORE BIRTHDAY PARTY OPTIONS AT SPRINGFIE": color rgb(214, 53, 47), live rgb(0, 0, 0)
+- heading "MORE BIRTHDAY PARTY OPTIONS AT SPRINGFIE": 5 line(s), live 1
+- heading "MORE BIRTHDAY PARTY OPTIONS AT SPRINGFIE": line height 50px, live 42px
+- heading "MORE BIRTHDAY PARTY OPTIONS AT SPRINGFIE": align start, live center
+- heading "HAVE BATTLES IN OUR OBSTACLE COURSE GYM": line height 50px, live 40px
+- heading "NERF BATTLE PARTIES": line height 50px, live 30px
+- heading "CREATE AMAZING MEMORIES": line height 50px, live 55px
+- photo missing: book-now-bg
+- photo missing: amazing-memories
+- photo pizza-birthday-party: left edge 660px, live 65px
+- photo laser-tag-party: left edge 65px, live 714px
+- text "Springfield Warrior Sports is ": left edge 65px, live 105px
+- text "Springfield Warrior Sports is ": width 555px, live 1070px
+- text "Springfield Warrior Sports is ": weight 300, live 400
+- text "Springfield Warrior Sports is ": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Springfield Warrior Sports is ": align start, live center
+- text "This means more than just one ": left edge 65px, live 169px
+- text "This means more than just one ": width 555px, live 943px
+- text "This means more than just one ": weight 300, live 600
+- text "This means more than just one ": color rgb(51, 51, 51), live rgb(40, 82, 118)
+- text "This means more than just one ": align start, live center
+- text "At Springfield Warrior Sports,": weight 300, live 400
+- text "At Springfield Warrior Sports,": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Note: free customized party in": weight 300, live 400
+- text "Note: free customized party in": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Cost: $179 for the first 11 ki": weight 300, live 600
+- text "Cost: $179 for the first 11 ki": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "* All participants will need t": left edge 660px, live 91px
+- text "* All participants will need t": width 555px, live 1123px
+- text "* All participants will need t": weight 300, live 600
+- text "* All participants will need t": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- text "* All participants will need t": 3 line(s), live 2
+- text "** To reserve your birthday pa": left edge 660px, live 91px
+- text "** To reserve your birthday pa": width 555px, live 1123px
+- text "** To reserve your birthday pa": weight 300, live 600
+- text "** To reserve your birthday pa": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- text "Want to feed the birthday part": width 555px, live 1148px
+- text "Want to feed the birthday part": weight 300, live 400
+- text "Want to feed the birthday part": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Want to feed the birthday part": 2 line(s), live 1
+- text "Want to feed the birthday part": align start, live center
+- text "We can help you with that!": width 555px, live 1148px
+- text "We can help you with that!": weight 300, live 600
+- text "We can help you with that!": color rgb(51, 51, 51), live rgb(40, 82, 118)
+- text "We can help you with that!": align start, live center
+- text "Our birthday party pizza packa": left edge 65px, live 654px
+- text "Our birthday party pizza packa": weight 300, live 400
+- text "Our birthday party pizza packa": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Our crew will set up and facil": weight 300, live 400
+- text "Our crew will set up and facil": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "The Springfield Warrior Sports": weight 300, live 400
+- text "The Springfield Warrior Sports": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Create unforgettable memories ": weight 300, live 400
+- text "Create unforgettable memories ": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "High-Energy": color rgb(214, 53, 47), live rgb(255, 255, 255)
+- words "Kids' birthday parties": color rgb(0, 0, 0), live rgb(219, 58, 52)
+- words "Kids' birthday parties": weight 400, live 900
+- words "in Springfield, MO": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- words "in Springfield, MO": weight 300, live 400
+- words "Ninja Warrior Courses, Laser Tag, Nerf B": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- words "Ninja Warrior Courses, Laser Tag, Nerf B": weight 300, live 400
+- words "Kids will have a Blast, and You can Rela": color rgb(214, 53, 47), live rgb(0, 0, 0)
+- words "Springfield Warrior Sports is the ideal ": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Springfield Warrior Sports is the ideal ": weight 300, live 400
+- words "This means more than just one day of fun": color rgb(51, 51, 51), live rgb(40, 82, 118)
+- words "This means more than just one day of fun": weight 300, live 600
+- words "At Springfield Warrior Sports, we want t": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "At Springfield Warrior Sports, we want t": weight 300, live 400
+- words "Note: free customized party invitations ": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Note: free customized party invitations ": weight 300, live 400
+- words "Cost:": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Cost:": weight 300, live 600
+- words "$179 for the first 11 kids and $10 for e": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "All other guests (siblings, other parent": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "All participants will need to sign a wai": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "To reserve your birthday party time slot": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Book Now!": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "Book Now!": weight 300, live 900
+- words "You can begin the birthday party schedul": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- words "You can begin the birthday party schedul": weight 300, live 400
+- words "clicking here": color rgb(51, 51, 51), live rgb(135, 204, 237)
+- words "clicking here": weight 300, live 600
+- words "clicking here": underline false, live true
+- words ", or call us today at": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- words ", or call us today at": weight 300, live 400
+- words "(417) 894-7319": color rgb(51, 51, 51), live rgb(135, 204, 237)
+- words "(417) 894-7319": weight 300, live 600
+- words "(417) 894-7319": underline false, live true
+- words "to reserve your birthday party spot at W": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- words "to reserve your birthday party spot at W": weight 300, live 400
+- words "Cancellation & Rescheduling Policy:": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- words "Cancellation & Rescheduling Policy:": weight 300, live 900
+- words "To help us staff and prepare properly, a": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- words "To help us staff and prepare properly, a": weight 300, live 600
+- words "More Birthday Party Options at Springfie": color rgb(214, 53, 47), live rgb(0, 0, 0)
+- words "More Birthday Party Options at Springfie": weight 900, live 300
+- words "Want to feed the birthday party or have ": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Want to feed the birthday party or have ": weight 300, live 400
+- words "We can help you with that!": color rgb(51, 51, 51), live rgb(40, 82, 118)
+- words "We can help you with that!": weight 300, live 600
+- words "Pizza Birthday Party with No Clean Up!": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "Pizza Birthday Party with No Clean Up!": weight 300, live 900
+- words "Our birthday party pizza package include": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Our birthday party pizza package include": weight 300, live 400
+- words "Nerf Battle Parties": color rgb(0, 0, 0), live rgb(40, 82, 118)
+- words "Nerf Battle Parties": weight 400, live 900
+- words "Our crew will set up and facilitate a": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Our crew will set up and facilitate a": weight 300, live 400
+- words "Nerf Battle": color rgb(51, 51, 51), live rgb(47, 138, 228)
+- words "Nerf Battle": weight 300, live 400
+- words "for your party rather than an obstacle c": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "for your party rather than an obstacle c": weight 300, live 400
+- words "Laser Tag Parties": color rgb(51, 51, 51), live rgb(40, 82, 118)
+- words "Laser Tag Parties": weight 300, live 900
+- words "The Springfield Warrior Sports team will": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "The Springfield Warrior Sports team will": weight 300, live 400
+- words "Laser tag parties": color rgb(51, 51, 51), live rgb(47, 138, 228)
+- words "Laser tag parties": weight 300, live 400
+- words "must be scheduled during a private party": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "must be scheduled during a private party": weight 300, live 400
+- words "Create unforgettable memories with your ": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Create unforgettable memories with your ": weight 300, live 400
+- words "message here with your desired birthday ": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "message here with your desired birthday ": weight 300, live 600
+- words "message here with your desired birthday ": underline false, live true
+- words ", or call": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words ", or call": weight 300, live 400
+- words "(417) 894-7319": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "(417) 894-7319": weight 300, live 600
+- words "(417) 894-7319": underline false, live true
+- words "to book your birthday experience at Spri": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "to book your birthday experience at Spri": weight 300, live 400
+- spacing from "KIDS WILL HAVE A BLAST, AND YO" to "WARRIOR SPORTS TAKES THE STRES": 1938px, live 451px
+- spacing from "WARRIOR SPORTS TAKES THE STRES" to "MORE BIRTHDAY PARTY OPTIONS AT": 1122px, live 1716px
+- spacing from "MORE BIRTHDAY PARTY OPTIONS AT" to "HAVE BATTLES IN OUR OBSTACLE C": 585px, live 875px
+- spacing from "HAVE BATTLES IN OUR OBSTACLE C" to "NERF BATTLE PARTIES": 0px, live 174px
+- spacing from "NERF BATTLE PARTIES" to "CREATE AMAZING MEMORIES": 624px, live 776px
+- gap between "KIDS WILL HAVE A BLAST, AND YO" and "Springfield Warrior Sports is ": 1333px, live 11px
+- gap between "Springfield Warrior Sports is " and "This means more than just one ": 131px, live 17px
+- gap between "WARRIOR SPORTS TAKES THE STRES" and "At Springfield Warrior Sports,": 13px, live 130px
+- gap between "At Springfield Warrior Sports," and "Note: free customized party in": 195px, live 28px
+- gap between "Cost: $179 for the first 11 ki" and "* All participants will need t": 14px, live 225px
+- gap between "** To reserve your birthday pa" and "MORE BIRTHDAY PARTY OPTIONS AT": 98px, live 631px
+- gap between "We can help you with that!" and "Our birthday party pizza packa": 54px, live 311px
+- gap between "Our birthday party pizza packa" and "HAVE BATTLES IN OUR OBSTACLE C": 98px, live 317px
+- gap between "The Springfield Warrior Sports" and "CREATE AMAZING MEMORIES": 98px, live 383px
+- button not on live: "LASER TAG PARTIES"
+- icons: 5 in build, 9 on live
+- icon 1: color rgb(255, 255, 255), live rgb(219, 58, 52)
+- icon 1: left edge 98px, live 654px
+- icon 2: color rgb(255, 255, 255), live rgb(219, 58, 52)
+- icon 2: left edge 135px, live 66px
+- icon 3: left edge 501px, live 66px
+- icon 4: left edge 501px, live 66px
+- icon 5: color rgb(219, 58, 52), live rgb(255, 255, 255)
+- icon 5: left edge 501px, live 94px
+- background behind "KIDS WILL HAVE A BLAST, AND YOU CAN RELA": rgb(39, 39, 40), live rgb(255, 255, 255)
+- background behind "WARRIOR SPORTS TAKES THE STRESS OUT OF Y": rgb(255, 255, 255), live rgb(227, 235, 237)
+- background behind "MORE BIRTHDAY PARTY OPTIONS AT SPRINGFIE": rgb(242, 246, 248), live rgb(255, 255, 255)
+- background behind "CREATE AMAZING MEMORIES": rgb(242, 246, 248), live rgb(226, 235, 237)
+- background behind "Springfield Warrior Sports is the ideal ": rgb(242, 245, 247), live rgb(255, 255, 255)
+- background behind "This means more than just one day of fun": rgb(242, 245, 248), live rgb(255, 255, 255)
+- background behind "At Springfield Warrior Sports, we want t": rgb(255, 255, 255), live rgb(227, 235, 237)
+- background behind "Note: free customized party invitations ": rgb(255, 255, 255), live rgb(227, 235, 237)
+- background behind "Cost: $179 for the first 11 kids and $10": rgb(255, 255, 255), live rgb(227, 234, 236)
+- background behind "* All participants will need to sign a w": rgb(255, 255, 255), live rgb(227, 235, 237)
+- background behind "** To reserve your birthday party time s": rgb(255, 255, 255), live rgb(227, 235, 237)
+- background behind "Want to feed the birthday party or have ": rgb(241, 245, 248), live rgb(255, 255, 255)
+- background behind "We can help you with that!": rgb(242, 246, 249), live rgb(255, 255, 255)
+- background behind "Our birthday party pizza package include": rgb(241, 244, 246), live rgb(255, 255, 255)
+- background behind "Create unforgettable memories with your ": rgb(242, 244, 246), live rgb(226, 235, 236)
+- band color beside "KIDS WILL HAVE A BLAST, AND YOU CAN RELA": rgb(39, 39, 39), live rgb(255, 255, 255)
+- band color beside "WARRIOR SPORTS TAKES THE STRESS OUT OF Y": rgb(255, 255, 255), live rgb(227, 235, 237)
+- band color beside "MORE BIRTHDAY PARTY OPTIONS AT SPRINGFIE": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band color beside "CREATE AMAZING MEMORIES": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "Springfield Warrior Sports is the ideal ": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band color beside "This means more than just one day of fun": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band color beside "At Springfield Warrior Sports, we want t": rgb(255, 255, 255), live rgb(227, 235, 237)
+- band color beside "Note: free customized party invitations ": rgb(255, 255, 255), live rgb(227, 235, 237)
+- band color beside "Cost: $179 for the first 11 kids and $10": rgb(255, 255, 255), live rgb(227, 235, 237)
+- band color beside "* All participants will need to sign a w": rgb(255, 255, 255), live rgb(227, 235, 237)
+- band color beside "** To reserve your birthday party time s": rgb(255, 255, 255), live rgb(227, 235, 237)
+- band color beside "Want to feed the birthday party or have ": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band color beside "We can help you with that!": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band color beside "Our birthday party pizza package include": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band color beside "Create unforgettable memories with your ": rgb(242, 246, 249), live rgb(227, 235, 237)
+- heading "KIDS WILL HAVE A BLAST, AND YOU CAN RELA": looks different from live (pixel difference 130)
+- heading "WARRIOR SPORTS TAKES THE STRESS OUT OF Y": looks different from live (pixel difference 55)
+- heading "MORE BIRTHDAY PARTY OPTIONS AT SPRINGFIE": looks different from live (pixel difference 40)
+- heading "NERF BATTLE PARTIES": looks different from live (pixel difference 67)
+- heading "CREATE AMAZING MEMORIES": looks different from live (pixel difference 39)
+- photo hero: brightness 62, live 42 (overlay or exposure differs)
+- photo hero: looks different from live (pixel difference 38)
+- band rgb(255, 255, 255) at y=729 (left margin): 828px tall, live 431px
+- band rgb(227, 235, 237) at y=1160 (1313px tall on live, left margin) not found in build
+- band rgb(13, 10, 7) at y=2494 (310px tall on live, left margin) not found in build
+- band rgb(255, 255, 255) at y=2896 (1715px tall on live, left margin) not found in build
+- band rgb(230, 234, 237) at y=4611 (left margin): 456px tall, live 773px
+- band rgb(255, 255, 255) at y=5384 (left margin): 327px tall, live 293px
+- band rgb(255, 255, 255) at y=2264 (1122px tall, left margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=3972 (623px tall, left margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=729 (right margin): 828px tall, live 431px
+- band rgb(227, 235, 237) at y=1160 (1315px tall on live, right margin) not found in build
+- band rgb(255, 255, 255) at y=2895 (1716px tall on live, right margin) not found in build
+- band rgb(230, 234, 237) at y=4611 (right margin): 456px tall, live 701px
+- band rgb(255, 255, 255) at y=5384 (right margin): 327px tall, live 293px
+- band rgb(255, 255, 255) at y=2264 (1122px tall, right margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=3972 (623px tall, right margin) is in the build but not on live
+
+## competitions @ 1280px: 63 difference(s)
+- heading missing: "2026-9 CSNA September 19th Form"
+- heading "TEST YOUR SKILLS ON OUR FUN AND COMPETIT": left edge 65px, live 180px
+- heading "TEST YOUR SKILLS ON OUR FUN AND COMPETIT": width 1150px, live 920px
+- heading "TEST YOUR SKILLS ON OUR FUN AND COMPETIT": color rgb(255, 255, 255), live rgb(248, 248, 248)
+- heading "TEST YOUR SKILLS ON OUR FUN AND COMPETIT": line height 50px, live 60px
+- heading "SEPTEMBER 2026 CSNA TEAM COMPETITION": width 555px, live 1150px
+- heading "SEPTEMBER 2026 CSNA TEAM COMPETITION": size 50px, live 40px
+- heading "SEPTEMBER 2026 CSNA TEAM COMPETITION": 4 line(s), live 1
+- heading "SEPTEMBER 2026 CSNA TEAM COMPETITION": line height 50px, live 44px
+- heading "SEPTEMBER 2026 CSNA TEAM COMPETITION": align start, live center
+- photo missing: sws-competitions-banner
+- button "REGISTER NOW BY FILLING OUT THE FORM BELOW ▼": width 373px, live 520px
+- text not on live: "Don't wait to register - The early bird price for the Januar"
+- text "Whether you are looking for re": left edge 65px, live 190px
+- text "Whether you are looking for re": width 555px, live 900px
+- text "Whether you are looking for re": size 16px, live 18px
+- text "Whether you are looking for re": weight 300, live 400
+- text "Whether you are looking for re": color rgb(51, 51, 51), live rgba(41, 41, 41, 0.99)
+- text "Whether you are looking for re": 3 line(s), live 2
+- text "Whether you are looking for re": line height 26px, live 37px
+- text "Whether you are looking for re": align start, live center
+- text "We host regional qualifiers fo": left edge 65px, live 190px
+- text "We host regional qualifiers fo": width 555px, live 900px
+- text "We host regional qualifiers fo": size 16px, live 18px
+- text "We host regional qualifiers fo": weight 300, live 400
+- text "We host regional qualifiers fo": color rgb(51, 51, 51), live rgba(41, 41, 41, 0.99)
+- text "We host regional qualifiers fo": 4 line(s), live 3
+- text "We host regional qualifiers fo": line height 26px, live 37px
+- text "We host regional qualifiers fo": align start, live center
+- text "Date: Saturday, September 19th": font Muli, live Epilogue
+- text "Date: Saturday, September 19th": size 16px, live 18px
+- text "Date: Saturday, September 19th": color rgb(51, 51, 51), live rgba(41, 41, 41, 0.99)
+- text "Date: Saturday, September 19th": line height 26px, live 29px
+- text "Start time: TBA": font Muli, live Epilogue
+- text "Start time: TBA": size 16px, live 18px
+- text "Start time: TBA": color rgb(51, 51, 51), live rgba(41, 41, 41, 0.99)
+- text "Start time: TBA": line height 26px, live 29px
+- text "Price per registration: $60": font Muli, live Epilogue
+- text "Price per registration: $60": size 16px, live 18px
+- text "Price per registration: $60": color rgb(51, 51, 51), live rgba(41, 41, 41, 0.99)
+- text "Price per registration: $60": line height 26px, live 29px
+- words "Test your skills on our Fun and Competit": color rgb(255, 255, 255), live rgb(248, 248, 248)
+- words "Whether you are looking for regional qua": color rgb(51, 51, 51), live rgba(41, 41, 41, 0.99)
+- words "Whether you are looking for regional qua": weight 300, live 400
+- words "We host": color rgb(51, 51, 51), live rgba(41, 41, 41, 0.99)
+- words "We host": weight 300, live 400
+- words "regional qualifiers for the WNL": color rgb(51, 51, 51), live rgb(47, 138, 228)
+- words "regional qualifiers for the WNL": weight 300, live 400
+- words "(World Ninja League) and are a CSNA (Cen": color rgb(51, 51, 51), live rgba(41, 41, 41, 0.99)
+- words "(World Ninja League) and are a CSNA (Cen": weight 300, live 400
+- words "Date: Saturday, September 19th": color rgb(51, 51, 51), live rgba(41, 41, 41, 0.99)
+- words "Start time: TBA": color rgb(51, 51, 51), live rgba(41, 41, 41, 0.99)
+- words "Price per registration:": color rgb(51, 51, 51), live rgba(41, 41, 41, 0.99)
+- words "$60": color rgb(51, 51, 51), live rgba(41, 41, 41, 0.99)
+- words "$60": weight 400, live 900
+- background behind "TEST YOUR SKILLS ON OUR FUN AND COMPETIT": rgb(119, 119, 117), live rgb(24, 22, 22)
+- heading "TEST YOUR SKILLS ON OUR FUN AND COMPETIT": looks different from live (pixel difference 43)
+- heading "SEPTEMBER 2026 CSNA TEAM COMPETITION": looks different from live (pixel difference 46)
+- photo hero: brightness 70, live 48 (overlay or exposure differs)
+- band rgb(241, 245, 248) at y=1078 (left margin): 471px tall, live 1755px
+- band rgb(255, 255, 255) at y=2833 (left margin): 328px tall, live 461px
+- band rgb(241, 245, 248) at y=1078 (right margin): 471px tall, live 1755px
+- band rgb(255, 255, 255) at y=2833 (right margin): 328px tall, live 461px
+
+## contact @ 1280px: 83 difference(s)
+- page height 3004px, live 3340px
+- heading "CONTACT US": line height 50px, live 60px
+- heading "CLIENT TESTIMONIALS": line height 50px, live 70px
+- heading "WHAT OUR CLIENTS SAY": line height 50px, live 42px
+- heading "WHAT OUR CLIENTS SAY": letter spacing 0px, live 1px
+- photo qoute-icon: left edge 65px, live 105px
+- text missing: "605 W. Plainview Road Springfield, MO 65810"
+- text "We look forward to hearing fro": left edge 93px, live 66px
+- text "We look forward to hearing fro": font Muli, live Epilogue
+- text "We look forward to hearing fro": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "We look forward to hearing fro": 3 line(s), live 4
+- text "(417)894-7319": left edge 527px, live 102px
+- text "(417)894-7319": font Muli, live Epilogue
+- text "(417)894-7319": size 14px, live 16px
+- text "(417)894-7319": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "office@swarriorsports.com": left edge 527px, live 102px
+- text "office@swarriorsports.com": width 173px, live 218px
+- text "office@swarriorsports.com": font Muli, live Epilogue
+- text "office@swarriorsports.com": size 14px, live 16px
+- text "office@swarriorsports.com": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "We had our son’s 10th birthday": left edge 65px, live 106px
+- text "We had our son’s 10th birthday": font Epilogue, live Muli
+- text "We had our son’s 10th birthday": weight 300, live 400
+- text "We had our son’s 10th birthday": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "- JENNIFER L.": left edge 65px, live 106px
+- text "- JENNIFER L.": font Epilogue, live Muli
+- text "- JENNIFER L.": weight 300, live 700
+- text "- JENNIFER L.": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- text "My daughter started training h": font Epilogue, live Muli
+- text "My daughter started training h": weight 300, live 400
+- text "My daughter started training h": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "- LEE C.": font Epilogue, live Muli
+- text "- LEE C.": weight 300, live 700
+- text "- LEE C.": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "We look forward to hearing from you! We ": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "(417)894-7319": color rgb(255, 255, 255), live rgba(0, 0, 0, 0.7)
+- words "(417)894-7319": weight 700, live 400
+- words "(417)894-7319": underline true, live false
+- words "What our clients say": weight 400, live 300
+- words "We had our son’s 10th birthday here. All": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "We had our son’s 10th birthday here. All": weight 300, live 400
+- words "- Jennifer L.": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "- Jennifer L.": weight 300, live 700
+- words "We had our son’s 10th birthday here. All": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "We had our son’s 10th birthday here. All": weight 300, live 400
+- words "- Jennifer L.": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "- Jennifer L.": weight 300, live 700
+- words "My daughter started training here 3 year": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "My daughter started training here 3 year": weight 300, live 400
+- words "- Lee C.": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "- Lee C.": weight 300, live 700
+- words "My daughter started training here 3 year": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "My daughter started training here 3 year": weight 300, live 400
+- words "- Lee C.": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "- Lee C.": weight 300, live 700
+- spacing from "CLIENT TESTIMONIALS" to "WHAT OUR CLIENTS SAY": 0px, live 61px
+- gap between "We look forward to hearing fro" and "(417)894-7319": 1851px, live 62px
+- gap between "WHAT OUR CLIENTS SAY" and "We had our son’s 10th birthday": 66px, live 132px
+- icons: 9 in build, 8 on live
+- icon 4: color rgb(214, 53, 47), live rgb(255, 255, 255)
+- icon 4: left edge 65px, live 94px
+- icon 5: left edge 98px, live 131px
+- icon 6: color rgb(255, 255, 255), live rgb(219, 58, 52)
+- icon 6: left edge 135px, live 502px
+- background behind "CLIENT TESTIMONIALS": rgb(242, 246, 248), live rgb(227, 235, 237)
+- background behind "WHAT OUR CLIENTS SAY": rgb(242, 246, 248), live rgb(227, 235, 237)
+- background behind "We had our son’s 10th birthday here. All": rgb(242, 245, 247), live rgb(227, 235, 237)
+- background behind "- JENNIFER L.": rgb(242, 246, 249), live rgb(227, 235, 237)
+- background behind "My daughter started training here 3 year": rgb(242, 244, 246), live rgb(227, 235, 237)
+- background behind "- LEE C.": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "OUR ACCOMPLISHED, AWARD WINNING CREW IS ": rgb(48, 49, 44), live rgb(26, 22, 21)
+- band color beside "CLIENT TESTIMONIALS": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "WHAT OUR CLIENTS SAY": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "We had our son’s 10th birthday here. All": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "- JENNIFER L.": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "- LEE C.": rgb(242, 246, 249), live rgb(227, 235, 237)
+- photo hero: brightness 54, live 37 (overlay or exposure differs)
+- band rgb(255, 255, 255) at y=729 (left margin): 1403px tall, live 1564px
+- band rgb(230, 234, 237) at y=2293 (left margin): 434px tall, live 689px
+- band rgb(255, 255, 255) at y=2982 (left margin): 328px tall, live 293px
+- band rgb(255, 255, 255) at y=729 (right margin): 1403px tall, live 1564px
+- band rgb(230, 234, 237) at y=2293 (right margin): 434px tall, live 689px
+- band rgb(255, 255, 255) at y=2982 (right margin): 328px tall, live 293px
+
+## fitness-classes @ 1280px: 257 difference(s)
+- heading missing: "WHAT IS OCR FITNESS?"
+- heading "FITNESS CLASSES IN SPRINGFIELD, MO": left edge 65px, live 221px
+- heading "FITNESS CLASSES IN SPRINGFIELD, MO": line height 70px, live 59px
+- heading "FITNESS CLASSES IN SPRINGFIELD, MO": letter spacing 0px, live 1px
+- heading "PRICING AND SCHEDULE": left edge 65px, live 354px
+- heading "PRICING AND SCHEDULE": align start, live center
+- heading "OBSTACLE COURSE RACING CLASSES:": left edge 660px, live 180px
+- heading "OBSTACLE COURSE RACING CLASSES:": align start, live center
+- heading "A UNIQUE WORKOUT EXPERIENCE": left edge 660px, live 66px
+- heading "A UNIQUE WORKOUT EXPERIENCE": line height 50px, live 42px
+- heading "A UNIQUE WORKOUT EXPERIENCE": align start, live center
+- heading "OCR FITNESS CLASS BENEFITS": left edge 65px, live 99px
+- heading "OCR FITNESS CLASS BENEFITS": width 555px, live 487px
+- heading "OCR FITNESS CLASS BENEFITS": size 50px, live 30px
+- heading "OCR FITNESS CLASS BENEFITS": color rgb(214, 53, 47), live rgb(40, 82, 118)
+- heading "OCR FITNESS CLASS BENEFITS": line height 50px, live 30px
+- heading "OCR FITNESS CLASS BENEFITS": align start, live center
+- heading "SHORT-TERM GOALS AND LONG-TERM GAINS": left edge 65px, live 694px
+- heading "SHORT-TERM GOALS AND LONG-TERM GAINS": width 555px, live 487px
+- heading "SHORT-TERM GOALS AND LONG-TERM GAINS": size 50px, live 30px
+- heading "SHORT-TERM GOALS AND LONG-TERM GAINS": color rgb(214, 53, 47), live rgb(40, 82, 118)
+- heading "SHORT-TERM GOALS AND LONG-TERM GAINS": 5 line(s), live 2
+- heading "SHORT-TERM GOALS AND LONG-TERM GAINS": line height 50px, live 30px
+- heading "SHORT-TERM GOALS AND LONG-TERM GAINS": align start, live center
+- heading "IMPROVED CONFIDENCE LEVELS AND MENTAL HE": left edge 65px, live 180px
+- heading "IMPROVED CONFIDENCE LEVELS AND MENTAL HE": width 555px, live 920px
+- heading "IMPROVED CONFIDENCE LEVELS AND MENTAL HE": 5 line(s), live 2
+- heading "IMPROVED CONFIDENCE LEVELS AND MENTAL HE": align start, live center
+- photo missing: pricing-and-schedule
+- button "TRY YOUR FIRST CLASS FOR JUST $5 BUCKS": width 324px, live 446px
+- button "SIGN-UP HERE!": color rgb(214, 53, 47), live rgb(40, 82, 118)
+- button "SIGN-UP HERE!": width 134px, live 178px
+- text not on live: "$20 Drop-In $60 Monthly Membership (once per week) $100 Mont"
+- text "ARE YOU LOOKING FOR A FUN AND ": left edge 660px, live 66px
+- text "ARE YOU LOOKING FOR A FUN AND ": width 555px, live 1148px
+- text "ARE YOU LOOKING FOR A FUN AND ": font Epilogue, live Heebo
+- text "ARE YOU LOOKING FOR A FUN AND ": size 16px, live 30px
+- text "ARE YOU LOOKING FOR A FUN AND ": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "ARE YOU LOOKING FOR A FUN AND ": line height 26px, live 45px
+- text "ARE YOU LOOKING FOR A FUN AND ": align start, live center
+- text "Look no further! Springfield W": left edge 660px, live 105px
+- text "Look no further! Springfield W": width 555px, live 1070px
+- text "Look no further! Springfield W": weight 300, live 400
+- text "Look no further! Springfield W": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Look no further! Springfield W": 5 line(s), live 3
+- text "Look no further! Springfield W": align start, live center
+- text "Our experienced instructors wi": left edge 660px, live 105px
+- text "Our experienced instructors wi": width 555px, live 1070px
+- text "Our experienced instructors wi": weight 300, live 400
+- text "Our experienced instructors wi": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Our experienced instructors wi": 3 line(s), live 2
+- text "Our experienced instructors wi": align start, live center
+- text "Our OCR classes in Springfield": left edge 660px, live 101px
+- text "Our OCR classes in Springfield": width 555px, live 1079px
+- text "Our OCR classes in Springfield": weight 300, live 400
+- text "Our OCR classes in Springfield": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Our OCR classes in Springfield": 5 line(s), live 3
+- text "Our OCR classes in Springfield": align start, live center
+- text "Sign up now for ADULT O.C.R wo": left edge 660px, live 105px
+- text "Sign up now for ADULT O.C.R wo": width 555px, live 1070px
+- text "Sign up now for ADULT O.C.R wo": weight 300, live 600
+- text "Sign up now for ADULT O.C.R wo": color rgb(51, 51, 51), live rgb(40, 82, 118)
+- text "Sign up now for ADULT O.C.R wo": 3 line(s), live 2
+- text "Sign up now for ADULT O.C.R wo": align start, live center
+- text "We now offer two OCR classes e": left edge 65px, live 208px
+- text "We now offer two OCR classes e": width 555px, live 865px
+- text "We now offer two OCR classes e": size 16px, live 22px
+- text "We now offer two OCR classes e": weight 300, live 400
+- text "We now offer two OCR classes e": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- text "We now offer two OCR classes e": line height 26px, live 39px
+- text "We now offer two OCR classes e": align start, live center
+- text "Choose the membership option t": left edge 65px, live 361px
+- text "Choose the membership option t": size 16px, live 22px
+- text "Choose the membership option t": weight 300, live 400
+- text "Choose the membership option t": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- text "Choose the membership option t": line height 26px, live 39px
+- text "Choose the membership option t": align start, live center
+- text "OCR workouts and fitness class": left edge 660px, live 157px
+- text "OCR workouts and fitness class": width 555px, live 966px
+- text "OCR workouts and fitness class": size 16px, live 18px
+- text "OCR workouts and fitness class": weight 300, live 400
+- text "OCR workouts and fitness class": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "OCR workouts and fitness class": 4 line(s), live 3
+- text "OCR workouts and fitness class": line height 26px, live 32px
+- text "OCR workouts and fitness class": align start, live center
+- text "OCR fitness classes take the b": left edge 660px, live 66px
+- text "OCR fitness classes take the b": width 555px, live 1148px
+- text "OCR fitness classes take the b": weight 300, live 400
+- text "OCR fitness classes take the b": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "OCR fitness classes take the b": 7 line(s), live 4
+- text "The benefits of OCR fitness cl": left edge 65px, live 99px
+- text "The benefits of OCR fitness cl": width 555px, live 487px
+- text "The benefits of OCR fitness cl": font Epilogue, live Muli
+- text "The benefits of OCR fitness cl": weight 300, live 400
+- text "The benefits of OCR fitness cl": color rgb(51, 51, 51), live rgb(106, 107, 108)
+- text "The benefits of OCR fitness cl": 5 line(s), live 6
+- text "The benefits of OCR fitness cl": line height 26px, live 22px
+- text "The benefits of OCR fitness cl": align start, live center
+- text "Additionally, the group atmosp": left edge 65px, live 99px
+- text "Additionally, the group atmosp": width 555px, live 487px
+- text "Additionally, the group atmosp": font Epilogue, live Muli
+- text "Additionally, the group atmosp": weight 300, live 400
+- text "Additionally, the group atmosp": color rgb(51, 51, 51), live rgb(106, 107, 108)
+- text "Additionally, the group atmosp": line height 26px, live 22px
+- text "Additionally, the group atmosp": align start, live center
+- text "OCR training has been proven t": left edge 65px, live 694px
+- text "OCR training has been proven t": width 555px, live 487px
+- text "OCR training has been proven t": font Epilogue, live Muli
+- text "OCR training has been proven t": weight 300, live 400
+- text "OCR training has been proven t": color rgb(51, 51, 51), live rgb(106, 107, 108)
+- text "OCR training has been proven t": line height 26px, live 22px
+- text "OCR training has been proven t": align start, live center
+- text "Our Obstacle Course Racing (OC": left edge 65px, live 654px
+- text "Our Obstacle Course Racing (OC": weight 300, live 400
+- text "Our Obstacle Course Racing (OC": color rgb(51, 51, 51), live rgb(106, 107, 108)
+- text "Additionally, many enjoy pairi": left edge 65px, live 654px
+- text "Additionally, many enjoy pairi": weight 300, live 400
+- text "Additionally, many enjoy pairi": color rgb(51, 51, 51), live rgb(106, 107, 108)
+- text "So if you’re ready for a new c": left edge 65px, live 654px
+- text "So if you’re ready for a new c": font Epilogue, live Muli
+- text "So if you’re ready for a new c": weight 300, live 800
+- text "So if you’re ready for a new c": color rgb(51, 51, 51), live rgb(40, 82, 118)
+- words "Fitness Classes in Springfield, MO": color rgb(214, 53, 47), live rgb(255, 255, 255)
+- words "Fitness Classes in Springfield, MO": weight 900, live 300
+- words "Are you looking for a fun and unique way": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Look no further! Springfield Warrior Spo": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Look no further! Springfield Warrior Spo": weight 300, live 400
+- words "Our experienced instructors will be ther": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Our experienced instructors will be ther": weight 300, live 400
+- words "personal training": color rgb(51, 51, 51), live rgb(40, 82, 118)
+- words "personal training": weight 300, live 400
+- words "is also available.": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "is also available.": weight 300, live 400
+- words "Our OCR classes in Springfield give you ": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Our OCR classes in Springfield give you ": weight 300, live 400
+- words "Sign up now for ADULT O.C.R workout clas": color rgb(51, 51, 51), live rgb(40, 82, 118)
+- words "Sign up now for ADULT O.C.R workout clas": weight 300, live 600
+- words "We now offer two OCR classes each week —": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- words "We now offer two OCR classes each week —": weight 300, live 400
+- words "Tuesday and Thursday from 6-7 pm": color rgb(51, 51, 51), live rgb(135, 204, 237)
+- words "Tuesday and Thursday from 6-7 pm": weight 300, live 600
+- words "— giving you more flexibility and more o": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- words "— giving you more flexibility and more o": weight 300, live 600
+- words "Choose the membership option that fits y": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- words "Choose the membership option that fits y": weight 300, live 400
+- words "$20 Drop-In": color rgb(51, 51, 51), live rgba(41, 41, 41, 0.99)
+- words "$20 Drop-In": weight 300, live 600
+- words "$60 Monthly Membership": color rgb(51, 51, 51), live rgba(41, 41, 41, 0.99)
+- words "$60 Monthly Membership": weight 300, live 600
+- words "(once per week)": color rgb(51, 51, 51), live rgb(40, 82, 118)
+- words "(once per week)": weight 300, live 600
+- words "$100 Monthly Membership": color rgb(51, 51, 51), live rgba(41, 41, 41, 0.99)
+- words "$100 Monthly Membership": weight 300, live 600
+- words "(twice per week)": color rgb(51, 51, 51), live rgb(40, 82, 118)
+- words "(twice per week)": weight 300, live 600
+- words "$40 Weight Lifting Membership": color rgb(51, 51, 51), live rgba(41, 41, 41, 0.99)
+- words "$40 Weight Lifting Membership": weight 300, live 600
+- words "(18+, access to weight-lifting area only": color rgb(51, 51, 51), live rgb(40, 82, 118)
+- words "(18+, access to weight-lifting area only": weight 300, live 600
+- words "A Unique Workout Experience": weight 400, live 300
+- words "OCR workouts and fitness classes are des": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "OCR workouts and fitness classes are des": weight 300, live 400
+- words "What is OCR Fitness?": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "What is OCR Fitness?": weight 300, live 900
+- words "OCR fitness classes take the": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "OCR fitness classes take the": weight 300, live 400
+- words "best of the traditional gym": color rgb(51, 51, 51), live rgb(47, 138, 228)
+- words "best of the traditional gym": weight 300, live 400
+- words "experience and add an extra layer of exc": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "experience and add an extra layer of exc": weight 300, live 400
+- words "The benefits of OCR fitness classes exte": color rgb(51, 51, 51), live rgb(106, 107, 108)
+- words "The benefits of OCR fitness classes exte": weight 300, live 400
+- words "Additionally, the group atmosphere also ": color rgb(51, 51, 51), live rgb(106, 107, 108)
+- words "Additionally, the group atmosphere also ": weight 300, live 400
+- words "OCR training has been proven to improve ": color rgb(51, 51, 51), live rgb(106, 107, 108)
+- words "OCR training has been proven to improve ": weight 300, live 400
+- words "Our Obstacle Course Racing (OCR) workout": color rgb(51, 51, 51), live rgb(106, 107, 108)
+- words "Our Obstacle Course Racing (OCR) workout": weight 300, live 400
+- words "Additionally, many enjoy pairing these f": color rgb(51, 51, 51), live rgb(106, 107, 108)
+- words "Additionally, many enjoy pairing these f": weight 300, live 400
+- words "Parkour class options": color rgb(51, 51, 51), live rgb(47, 138, 228)
+- words "Parkour class options": weight 300, live 400
+- words "adding even more unique workout sessions": color rgb(51, 51, 51), live rgb(106, 107, 108)
+- words "adding even more unique workout sessions": weight 300, live 400
+- spacing from "THE MOST DIVERSE (LEAST BORING" to "FITNESS CLASSES IN SPRINGFIELD": 0px, live 151px
+- spacing from "FITNESS CLASSES IN SPRINGFIELD" to "PRICING AND SCHEDULE": 1289px, live 941px
+- spacing from "PRICING AND SCHEDULE" to "OBSTACLE COURSE RACING CLASSES": 491px, live 738px
+- spacing from "OBSTACLE COURSE RACING CLASSES" to "A UNIQUE WORKOUT EXPERIENCE": 0px, live 51px
+- spacing from "A UNIQUE WORKOUT EXPERIENCE" to "OCR FITNESS CLASS BENEFITS": 596px, live 737px
+- gap between "FITNESS CLASSES IN SPRINGFIELD" and "ARE YOU LOOKING FOR A FUN AND ": 421px, live 269px
+- gap between "Sign up now for ADULT O.C.R wo" and "PRICING AND SCHEDULE": 122px, live 167px
+- gap between "Choose the membership option t" and "OBSTACLE COURSE RACING CLASSES": 286px, live 521px
+- gap between "OCR workouts and fitness class" and "OCR fitness classes take the b": 54px, live 112px
+- gap between "OCR fitness classes take the b" and "OCR FITNESS CLASS BENEFITS": 113px, live 354px
+- gap between "Additionally, the group atmosp" and "IMPROVED CONFIDENCE LEVELS AND": 589px, live 213px
+- gap between "IMPROVED CONFIDENCE LEVELS AND" and "Our Obstacle Course Racing (OC": 14px, live 80px
+- icons: 5 in build, 9 on live
+- icon 1: color rgb(255, 255, 255), live rgb(219, 58, 52)
+- icon 1: size 17px, live 26px
+- icon 1: left edge 98px, live 241px
+- icon 2: color rgb(255, 255, 255), live rgb(219, 58, 52)
+- icon 2: size 17px, live 26px
+- icon 2: left edge 135px, live 241px
+- icon 3: size 16px, live 26px
+- icon 3: left edge 501px, live 656px
+- icon 4: size 16px, live 26px
+- icon 4: left edge 501px, live 656px
+- icon 5: color rgb(219, 58, 52), live rgb(255, 255, 255)
+- icon 5: left edge 501px, live 94px
+- background behind "PRICING AND SCHEDULE": rgb(242, 246, 249), live rgb(45, 42, 42)
+- background behind "OBSTACLE COURSE RACING CLASSES:": rgb(255, 255, 255), live rgb(241, 245, 247)
+- background behind "A UNIQUE WORKOUT EXPERIENCE": rgb(255, 255, 255), live rgb(241, 245, 247)
+- background behind "IMPROVED CONFIDENCE LEVELS AND MENTAL HE": rgb(242, 246, 248), live rgb(255, 255, 255)
+- background behind "We now offer two OCR classes each week —": rgb(242, 245, 247), live rgb(29, 26, 27)
+- background behind "Choose the membership option that fits y": rgb(242, 245, 247), live rgb(48, 44, 43)
+- background behind "OCR workouts and fitness classes are des": rgb(255, 255, 255), live rgb(241, 245, 248)
+- background behind "OCR fitness classes take the best of the": rgb(255, 255, 255), live rgb(240, 244, 247)
+- background behind "Our Obstacle Course Racing (OCR) workout": rgb(242, 245, 247), live rgb(255, 255, 255)
+- background behind "Additionally, many enjoy pairing these f": rgb(242, 245, 247), live rgb(255, 255, 255)
+- background behind "So if you’re ready for a new challenge, ": rgb(242, 246, 248), live rgb(255, 255, 255)
+- band color beside "PRICING AND SCHEDULE": rgb(242, 246, 249), live rgb(8, 4, 5)
+- band color beside "OBSTACLE COURSE RACING CLASSES:": rgb(255, 255, 255), live rgb(241, 245, 248)
+- band color beside "A UNIQUE WORKOUT EXPERIENCE": rgb(255, 255, 255), live rgb(241, 245, 248)
+- band color beside "IMPROVED CONFIDENCE LEVELS AND MENTAL HE": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band color beside "We now offer two OCR classes each week —": rgb(242, 246, 249), live rgb(31, 31, 31)
+- band color beside "Choose the membership option that fits y": rgb(242, 246, 249), live rgb(25, 25, 25)
+- band color beside "OCR workouts and fitness classes are des": rgb(255, 255, 255), live rgb(241, 245, 248)
+- band color beside "OCR fitness classes take the best of the": rgb(255, 255, 255), live rgb(241, 245, 248)
+- band color beside "Our Obstacle Course Racing (OCR) workout": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band color beside "Additionally, many enjoy pairing these f": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band color beside "So if you’re ready for a new challenge, ": rgb(242, 246, 249), live rgb(255, 255, 255)
+- heading "PRICING AND SCHEDULE": looks different from live (pixel difference 151)
+- heading "OBSTACLE COURSE RACING CLASSES:": looks different from live (pixel difference 48)
+- heading "OCR FITNESS CLASS BENEFITS": looks different from live (pixel difference 42)
+- heading "SHORT-TERM GOALS AND LONG-TERM GAINS": looks different from live (pixel difference 45)
+- heading "IMPROVED CONFIDENCE LEVELS AND MENTAL HE": looks different from live (pixel difference 46)
+- text "We now offer two OCR classes e": looks different from live (pixel difference 176)
+- text "Choose the membership option t": looks different from live (pixel difference 177)
+- photo hero: brightness 18, live 38 (overlay or exposure differs)
+- photo img_2344: brightness 96, live 138 (overlay or exposure differs)
+- photo img_2344: looks different from live (pixel difference 44)
+- photo img_2347: brightness 76, live 124 (overlay or exposure differs)
+- photo img_2347: looks different from live (pixel difference 50)
+- band rgb(255, 255, 255) at y=729 (left margin): 772px tall, live 604px
+- band rgb(29, 29, 29) at y=1472 (250px tall on live, left margin) not found in build
+- band rgb(41, 41, 41) at y=1747 (215px tall on live, left margin) not found in build
+- band rgb(241, 245, 248) at y=2057 (1320px tall on live, left margin) not found in build
+- band rgb(255, 255, 255) at y=3377 (left margin): 492px tall, live 1110px
+- band rgb(255, 255, 255) at y=2047 (610px tall, left margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=4178 (328px tall, left margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=729 (right margin): 772px tall, live 604px
+- band rgb(55, 55, 55) at y=1505 (149px tall on live, right margin) not found in build
+- band rgb(29, 37, 53) at y=1745 (215px tall on live, right margin) not found in build
+- band rgb(241, 245, 248) at y=2057 (1320px tall on live, right margin) not found in build
+- band rgb(255, 255, 255) at y=3377 (right margin): 492px tall, live 1110px
+- band rgb(255, 255, 255) at y=2047 (610px tall, right margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=4178 (328px tall, right margin) is in the build but not on live
+
+## home @ 1280px: 3 difference(s)
+- text "We believe in results and that": 3 line(s), live 2
+- text "We had our son’s 10th birthday": 5 line(s), live 4
+- text "My daughter started training h": 7 line(s), live 6
+
+## homeschool-sports-and-classes-springfield-mo @ 1280px: 108 difference(s)
+- page height 2622px, live 3027px
+- heading missing: "COME JOIN THE FUN!"
+- heading missing: "Homeschoolers have the unique opportunity to enjoy exciting activities at Springfield Warrior Sports."
+- heading missing: "With time specifically dedicated to helping homeschoolers excel in their athletic goals, embrace an active lifestyle, and connect with other kids their age, this is a chance for homeschool kids to experience the most fun school year ever."
+- heading missing: "Call (417) 894-7319 for more information, or click here to book a trial class for only $ 5."
+- heading "FUN HOMESCHOOL SPORTS FOR KIDS IN SPRING": line height 50px, live 32px
+- heading "FUN HOMESCHOOL SPORTS FOR KIDS IN SPRING": align start, live center
+- heading "HOMESCHOOL CLASSES SPRINGFIELD, MO": left edge 65px, live 473px
+- heading "HOMESCHOOL CLASSES SPRINGFIELD, MO": line height 50px, live 42px
+- heading "(AGES 7–15)": left edge 65px, live 473px
+- heading "(AGES 7–15)": line height 50px, live 42px
+- photo missing: rock-climbing
+- photo missing: book-now-bg
+- button "TRY YOUR FIRST CLASS FOR JUST $5!": width 280px, live 491px
+- text missing: "HOMESCHOOL KIDS SPORTS"
+- text not on live: "Availability: Tuesdays and Thursdays Hours: 3–4pm Cost: One "
+- text not on live: "COME JOIN THE FUN! Homeschoolers have the unique opportunity"
+- text "Looking for fun ways to help y": left edge 65px, live 105px
+- text "Looking for fun ways to help y": width 555px, live 1070px
+- text "Looking for fun ways to help y": weight 300, live 400
+- text "Looking for fun ways to help y": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Looking for fun ways to help y": 3 line(s), live 2
+- text "Looking for fun ways to help y": align start, live center
+- text "Springfield Warrior Sports has": left edge 65px, live 105px
+- text "Springfield Warrior Sports has": width 555px, live 1070px
+- text "Springfield Warrior Sports has": weight 300, live 400
+- text "Springfield Warrior Sports has": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Springfield Warrior Sports has": align start, live center
+- text "We offer opportunities for hom": left edge 65px, live 105px
+- text "We offer opportunities for hom": width 555px, live 1070px
+- text "We offer opportunities for hom": weight 300, live 400
+- text "We offer opportunities for hom": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "We offer opportunities for hom": 4 line(s), live 2
+- text "We offer opportunities for hom": align start, live center
+- text "Our homeschool programs in Spr": left edge 65px, live 105px
+- text "Our homeschool programs in Spr": width 555px, live 1070px
+- text "Our homeschool programs in Spr": weight 300, live 400
+- text "Our homeschool programs in Spr": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Our homeschool programs in Spr": 3 line(s), live 1
+- text "Our homeschool programs in Spr": align start, live center
+- text "The Springfield Warrior Sports": left edge 65px, live 474px
+- text "The Springfield Warrior Sports": width 555px, live 700px
+- text "The Springfield Warrior Sports": weight 300, live 400
+- text "The Springfield Warrior Sports": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Availability: Tuesdays and Thu": left edge 65px, live 512px
+- text "Availability: Tuesdays and Thu": width 555px, live 314px
+- text "Availability: Tuesdays and Thu": size 16px, live 18px
+- text "Availability: Tuesdays and Thu": weight 300, live 400
+- text "Availability: Tuesdays and Thu": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Availability: Tuesdays and Thu": line height 26px, live 41px
+- words "Looking for fun ways to help your homesc": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Looking for fun ways to help your homesc": weight 300, live 400
+- words "Springfield Warrior Sports has you cover": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Springfield Warrior Sports has you cover": weight 300, live 400
+- words "We offer opportunities for homeschoolers": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "We offer opportunities for homeschoolers": weight 300, live 400
+- words "Our homeschool programs in Springfield, ": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Our homeschool programs in Springfield, ": weight 300, live 400
+- words "Fun Homeschool Sports for Kids in Spring": color rgb(214, 53, 47), live rgb(255, 255, 255)
+- words "HOMESCHOOL CLASSES SPRINGFIELD, MO": color rgb(0, 0, 0), live rgb(40, 82, 118)
+- words "HOMESCHOOL CLASSES SPRINGFIELD, MO": weight 400, live 800
+- words "(AGES 7–15)": color rgb(0, 0, 0), live rgb(40, 82, 118)
+- words "The Springfield Warrior Sports Junior Wa": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "The Springfield Warrior Sports Junior Wa": weight 300, live 400
+- words "Availability: Tuesdays and Thursdays": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Availability: Tuesdays and Thursdays": weight 300, live 400
+- words "Hours: 3–4pm": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Hours: 3–4pm": weight 300, live 400
+- words "Cost: One class per week, $85 monthly. T": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Cost: One class per week, $85 monthly. T": weight 300, live 400
+- words "Come Join the Fun!": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "Come Join the Fun!": weight 300, live 900
+- words "Homeschoolers have the unique opportunit": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- words "Homeschoolers have the unique opportunit": weight 300, live 400
+- words "With time specifically dedicated to help": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- words "With time specifically dedicated to help": weight 300, live 400
+- words "Call (417) 894-7319 for more information": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- words "Call (417) 894-7319 for more information": weight 300, live 400
+- words "class for only $ 5.": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- words "class for only $ 5.": weight 300, live 600
+- words "class for only $ 5.": underline false, live true
+- spacing from "FUN HOMESCHOOL SPORTS FOR KIDS" to "HOMESCHOOL CLASSES SPRINGFIELD": 0px, live 136px
+- spacing from "HOMESCHOOL CLASSES SPRINGFIELD" to "(AGES 7–15)": 0px, live 42px
+- gap between "Our homeschool programs in Spr" and "FUN HOMESCHOOL SPORTS FOR KIDS": 97px, live 216px
+- gap between "The Springfield Warrior Sports" and "Availability: Tuesdays and Thu": 195px, live 17px
+- icons: 5 in build, 8 on live
+- icon 1: color rgb(255, 255, 255), live rgb(40, 82, 118)
+- icon 1: left edge 98px, live 484px
+- icon 2: color rgb(255, 255, 255), live rgb(40, 82, 118)
+- icon 2: left edge 135px, live 484px
+- icon 3: color rgb(219, 58, 52), live rgb(40, 82, 118)
+- icon 4: color rgb(219, 58, 52), live rgb(255, 255, 255)
+- icon 4: left edge 501px, live 94px
+- icon 5: color rgb(219, 58, 52), live rgb(255, 255, 255)
+- icon 5: left edge 501px, live 131px
+- background behind "FUN HOMESCHOOL SPORTS FOR KIDS IN SPRING": rgb(242, 246, 248), live rgb(40, 83, 117)
+- band color beside "FUN HOMESCHOOL SPORTS FOR KIDS IN SPRING": rgb(242, 246, 249), live rgb(40, 83, 117)
+- band color beside "HOMESCHOOL CLASSES SPRINGFIELD, MO": rgb(242, 246, 249), live rgb(40, 83, 117)
+- band color beside "(AGES 7–15)": rgb(242, 246, 249), live rgb(40, 83, 117)
+- band color beside "The Springfield Warrior Sports Junior Wa": rgb(242, 246, 249), live rgb(40, 83, 117)
+- band color beside "Availability: Tuesdays and Thursdays": rgb(242, 246, 249), live rgb(40, 83, 117)
+- heading "FUN HOMESCHOOL SPORTS FOR KIDS IN SPRING": looks different from live (pixel difference 121)
+- photo hero: brightness 96, live 38 (overlay or exposure differs)
+- photo hero: looks different from live (pixel difference 63)
+- band rgb(40, 83, 117) at y=1149 (1038px tall on live, left margin) not found in build
+- band rgb(10, 11, 6) at y=2208 (208px tall on live, left margin) not found in build
+- band rgb(10, 6, 7) at y=2416 (209px tall on live, left margin) not found in build
+- band rgb(40, 83, 117) at y=1149 (1038px tall on live, right margin) not found in build
+
+## kids-classes @ 1280px: matches
+
+## laser-tag @ 1280px: 188 difference(s)
+- page height 3551px, live 4056px
+- heading missing: "WANT TO BOOK A PRIVATE LASER TAG PARTY?"
+- heading missing: "READY TO BOOK?"
+- heading missing: "WE LOOK FORWARD TO HOSTING YOU."
+- heading missing: "You’re invited!"
+- heading missing: "We are hosting Laser Tag Nights right here in Springfield, MO, at Warrior Sports Ninja Gym."
+- heading missing: "This fun, family-friendly night happens once a month. And you can now sign up to get notified of all future events."
+- heading missing: "We are open to all ages and our staff is ready and available to keep the experience fun, enjoyable, and stress-free."
+- heading missing: "So, don’t miss it! Come make memories that will last a lifetime."
+- heading missing: "Note: Laser Tag Nights typically happen on Friday evenings."
+- heading missing: "Sign up now to get notified of all future laser tag events!"
+- heading "WELCOME TO THE PREMIER": left edge 65px, live 202px
+- heading "LASER TAG GYM IN SPRINGFIELD, MO": left edge 65px, live 202px
+- heading "HERE ARE THE DETAILS:": left edge 65px, live 653px
+- heading "HERE ARE THE DETAILS:": width 555px, live 338px
+- heading "HERE ARE THE DETAILS:": size 50px, live 30px
+- heading "HERE ARE THE DETAILS:": color rgb(214, 53, 47), live rgb(40, 82, 118)
+- heading "HERE ARE THE DETAILS:": line height 50px, live 30px
+- heading "COME JOIN THE FUN! DON’T MISS LASER TAG ": 4 line(s), live 3
+- photo missing: laser-tag-party
+- photo missing: laser-tag-war-nights
+- photo laser-tag-fun-fest: left edge 65px, live 714px
+- button "REGISTER FOR LASER TAG WAR NIGHTS": width 289px, live 401px
+- text missing: ""*" indicates required fields"
+- text not on live: "You’re invited! We are hosting Laser Tag Nights right here i"
+- text "Great for all ages!": left edge 660px, live 535px
+- text "Great for all ages!": width 555px, live 210px
+- text "Great for all ages!": size 16px, live 24px
+- text "Great for all ages!": weight 300, live 400
+- text "Great for all ages!": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- text "Great for all ages!": line height 26px, live 42px
+- text "Great for all ages!": align start, live center
+- text "Whether you are planning a bir": left edge 660px, live 203px
+- text "Whether you are planning a bir": width 555px, live 874px
+- text "Whether you are planning a bir": size 16px, live 20px
+- text "Whether you are planning a bir": weight 300, live 400
+- text "Whether you are planning a bir": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Whether you are planning a bir": line height 26px, live 35px
+- text "Whether you are planning a bir": align start, live center
+- text "Whether you are planning a bir": weight 300, live 400
+- text "Whether you are planning a bir": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "The best part?": weight 300, live 400
+- text "The best part?": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Our staff will do all the setu": weight 300, live 400
+- text "Our staff will do all the setu": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Call us today and book our ent": weight 300, live 400
+- text "Call us today and book our ent": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Cost: For a group of 10, the c": left edge 65px, live 679px
+- text "Cost: For a group of 10, the c": weight 300, live 600
+- text "Cost: For a group of 10, the c": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "We provide a cooler full of Ga": left edge 65px, live 654px
+- text "We provide a cooler full of Ga": weight 300, live 400
+- text "We provide a cooler full of Ga": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Plus, if you have a birthday k": left edge 65px, live 654px
+- text "Plus, if you have a birthday k": weight 300, live 400
+- text "Plus, if you have a birthday k": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "We want kids to have a blast, ": left edge 65px, live 654px
+- text "We want kids to have a blast, ": weight 300, live 400
+- text "We want kids to have a blast, ": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "You can begin the booking proc": left edge 65px, live 94px
+- text "You can begin the booking proc": width 555px, live 1093px
+- text "You can begin the booking proc": weight 300, live 400
+- text "You can begin the booking proc": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- text "You can begin the booking proc": 3 line(s), live 2
+- text "You can begin the booking proc": align start, live center
+- words "Laser Tag Gym in Springfield, MO": color rgb(214, 53, 47), live rgb(248, 248, 248)
+- words "Great for all ages!": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- words "Great for all ages!": weight 300, live 400
+- words "Whether you are planning a": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Whether you are planning a": weight 300, live 400
+- words "birthday party in Springfield": color rgb(51, 51, 51), live rgb(47, 138, 228)
+- words "birthday party in Springfield": weight 300, live 400
+- words ", a fun youth group outing, or a team-bu": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words ", a fun youth group outing, or a team-bu": weight 300, live 400
+- words "Want to Book a Private Laser Tag Party?": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "Want to Book a Private Laser Tag Party?": weight 300, live 900
+- words "Whether you are planning a birthday part": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Whether you are planning a birthday part": weight 300, live 400
+- words "The best part?": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "The best part?": weight 300, live 400
+- words "Our staff will do all the setup and be o": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Our staff will do all the setup and be o": weight 300, live 400
+- words "Call us today and book our": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Call us today and book our": weight 300, live 400
+- words "entire obstacle course gym": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "entire obstacle course gym": weight 300, live 600
+- words "for your very own private laser tag part": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "for your very own private laser tag part": weight 300, live 400
+- words "Here are the details:": color rgb(214, 53, 47), live rgb(40, 82, 118)
+- words "Cost:": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Cost:": weight 300, live 600
+- words "For a group of 10, the cost is $240. Eac": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "We are available for booking on weekends": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "We provide a cooler full of Gatorade for": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "We provide a cooler full of Gatorade for": weight 300, live 400
+- words "Plus, if you have a birthday kiddo in th": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Plus, if you have a birthday kiddo in th": weight 300, live 400
+- words "We want kids to have a blast, making mem": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "We want kids to have a blast, making mem": weight 300, live 400
+- words "READY TO BOOK?": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- words "READY TO BOOK?": weight 300, live 900
+- words "You can begin the booking process on our": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- words "You can begin the booking process on our": weight 300, live 400
+- words "clicking here": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "clicking here": weight 300, live 400
+- words "or calling us today at": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- words "or calling us today at": weight 300, live 400
+- words "(417) 894-7319": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "(417) 894-7319": weight 300, live 400
+- words "to request a time to reserve the gym for": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- words "to request a time to reserve the gym for": weight 300, live 400
+- words "We look forward to hosting you.": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- words "You’re invited!": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "You’re invited!": weight 300, live 400
+- words "We are hosting Laser Tag Nights right he": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "We are hosting Laser Tag Nights right he": weight 300, live 400
+- words "This fun, family-friendly night happens ": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "This fun, family-friendly night happens ": weight 300, live 400
+- words "We are open to all ages and our staff is": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "We are open to all ages and our staff is": weight 300, live 400
+- words "So, don’t miss it! Come make memories th": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "So, don’t miss it! Come make memories th": weight 300, live 400
+- words "Cost:": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Cost:": weight 300, live 600
+- words "$15 per person (Members of the Warrior S": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Note: Laser Tag Nights typically happen ": color rgb(51, 51, 51), live rgb(40, 82, 118)
+- words "Note: Laser Tag Nights typically happen ": weight 300, live 400
+- words "Sign up now to get notified of all futur": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Sign up now to get notified of all futur": weight 300, live 400
+- spacing from "WELCOME TO THE PREMIER" to "LASER TAG GYM IN SPRINGFIELD, ": 0px, live 50px
+- spacing from "HERE ARE THE DETAILS:" to "COME JOIN THE FUN! DON’T MISS ": 654px, live 929px
+- gap between "LASER TAG GYM IN SPRINGFIELD, " and "Great for all ages!": 466px, live 21px
+- gap between "Great for all ages!" and "Whether you are planning a bir": 14px, live 280px
+- gap between "Whether you are planning a bir" and "Whether you are planning a bir": 111px, live 472px
+- gap between "Call us today and book our ent" and "HERE ARE THE DETAILS:": 148px, live 16px
+- gap between "We want kids to have a blast, " and "You can begin the booking proc": 53px, live 293px
+- gap between "You can begin the booking proc" and "COME JOIN THE FUN! DON’T MISS ": 137px, live 244px
+- icons: 5 in build, 8 on live
+- icon 1: color rgb(255, 255, 255), live rgb(219, 58, 52)
+- icon 1: left edge 98px, live 654px
+- icon 2: color rgb(255, 255, 255), live rgb(219, 58, 52)
+- icon 2: left edge 135px, live 654px
+- icon 3: left edge 501px, live 66px
+- icon 4: color rgb(219, 58, 52), live rgb(255, 255, 255)
+- icon 4: left edge 501px, live 94px
+- icon 5: color rgb(219, 58, 52), live rgb(255, 255, 255)
+- icon 5: left edge 501px, live 131px
+- background behind "WELCOME TO THE PREMIER": rgb(5, 5, 10), live rgb(2, 19, 47)
+- background behind "LASER TAG GYM IN SPRINGFIELD, MO": rgb(5, 5, 10), live rgb(3, 17, 44)
+- background behind "HERE ARE THE DETAILS:": rgb(242, 246, 249), live rgb(226, 235, 237)
+- background behind "COME JOIN THE FUN! DON’T MISS LASER TAG ": rgb(255, 255, 255), live rgb(241, 245, 247)
+- background behind "Great for all ages!": rgb(255, 255, 255), live rgb(2, 15, 46)
+- background behind "Whether you are planning a birthday part": rgb(255, 255, 255), live rgb(227, 234, 236)
+- background behind "The best part?": rgb(255, 255, 255), live rgb(227, 235, 237)
+- background behind "Our staff will do all the setup and be o": rgb(255, 255, 255), live rgb(227, 235, 237)
+- background behind "Call us today and book our entire obstac": rgb(255, 255, 255), live rgb(227, 235, 237)
+- background behind "Cost: For a group of 10, the cost is $24": rgb(242, 245, 248), live rgb(227, 235, 237)
+- background behind "We provide a cooler full of Gatorade for": rgb(242, 245, 247), live rgb(227, 235, 237)
+- background behind "Plus, if you have a birthday kiddo in th": rgb(242, 245, 248), live rgb(227, 235, 237)
+- background behind "We want kids to have a blast, making mem": rgb(242, 245, 247), live rgb(227, 235, 237)
+- background behind "You can begin the booking process on our": rgb(242, 245, 247), live rgb(5, 5, 5)
+- band color beside "HERE ARE THE DETAILS:": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "COME JOIN THE FUN! DON’T MISS LASER TAG ": rgb(255, 255, 255), live rgb(241, 245, 248)
+- band color beside "Great for all ages!": rgb(255, 255, 255), live rgb(0, 6, 34)
+- band color beside "Whether you are planning a birthday part": rgb(255, 255, 255), live rgb(227, 235, 237)
+- band color beside "The best part?": rgb(255, 255, 255), live rgb(227, 235, 237)
+- band color beside "Our staff will do all the setup and be o": rgb(255, 255, 255), live rgb(227, 235, 237)
+- band color beside "Call us today and book our entire obstac": rgb(255, 255, 255), live rgb(227, 235, 237)
+- band color beside "Cost: For a group of 10, the cost is $24": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "We provide a cooler full of Gatorade for": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "Plus, if you have a birthday kiddo in th": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "We want kids to have a blast, making mem": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "You can begin the booking process on our": rgb(242, 246, 249), live rgb(0, 0, 0)
+- heading "LASER TAG GYM IN SPRINGFIELD, MO": looks different from live (pixel difference 75)
+- heading "HERE ARE THE DETAILS:": looks different from live (pixel difference 59)
+- text "You can begin the booking proc": looks different from live (pixel difference 201)
+- band rgb(255, 255, 255) at y=679 (left margin): 846px tall, live 376px
+- band rgb(227, 235, 237) at y=1055 (1084px tall on live, left margin) not found in build
+- band rgb(0, 0, 0) at y=2144 (356px tall on live, left margin) not found in build
+- band rgb(241, 245, 248) at y=2500 (1491px tall on live, left margin) not found in build
+- band rgb(255, 255, 255) at y=2224 (507px tall, left margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=3158 (328px tall, left margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=679 (right margin): 846px tall, live 376px
+- band rgb(227, 235, 237) at y=1055 (1084px tall on live, right margin) not found in build
+- band rgb(1, 0, 4) at y=2139 (361px tall on live, right margin) not found in build
+- band rgb(241, 245, 248) at y=2500 (1491px tall on live, right margin) not found in build
+- band rgb(255, 255, 255) at y=2224 (507px tall, right margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=3158 (328px tall, right margin) is in the build but not on live
+
+## meet-the-team @ 1280px: 606 difference(s)
+- page height 10925px, live 7871px
+- heading missing: "YOU'VE MET THE TEAM."
+- heading missing: "NOW TRAIN WITH THEM."
+- heading missing: "You’ve met the coaches who make Springfield Warrior Sports what it is."
+- heading missing: "Now, come be a part of it and experience it for yourself."
+- heading missing: "No experience required."
+- heading "MEET THE SPRINGFIELD WARRIOR SPORTS TEAM": left edge 65px, live 648px
+- heading "MEET THE SPRINGFIELD WARRIOR SPORTS TEAM": width 1150px, live 568px
+- heading "MEET THE SPRINGFIELD WARRIOR SPORTS TEAM": color rgb(255, 255, 255), live rgb(219, 58, 52)
+- heading "MEET THE SPRINGFIELD WARRIOR SPORTS TEAM": 2 line(s), live 4
+- heading "JONNY": left edge 65px, live 507px
+- heading "JONNY": letter spacing 1px, live 0px
+- heading "CO-OWNER | ADULT OCR COACH | INTERMEDIAT": left edge 65px, live 507px
+- heading "CO-OWNER | ADULT OCR COACH | INTERMEDIAT": line height 35px, live 30px
+- heading "CO-OWNER | ADULT OCR COACH | INTERMEDIAT": letter spacing 1px, live 0px
+- heading "SARAH": left edge 660px, live 507px
+- heading "SARAH": letter spacing 1px, live 0px
+- heading "CO-OWNER | ADULT OCR COACH | PRESCHOOL C": left edge 660px, live 507px
+- heading "CO-OWNER | ADULT OCR COACH | PRESCHOOL C": line height 35px, live 30px
+- heading "CO-OWNER | ADULT OCR COACH | PRESCHOOL C": letter spacing 1px, live 0px
+- heading "LINCOLN": left edge 65px, live 507px
+- heading "LINCOLN": letter spacing 1px, live 0px
+- heading "BEGINNER NINJA COACH | BIRTHDAY PARTY HO": left edge 65px, live 507px
+- heading "BEGINNER NINJA COACH | BIRTHDAY PARTY HO": line height 35px, live 30px
+- heading "BEGINNER NINJA COACH | BIRTHDAY PARTY HO": letter spacing 1px, live 0px
+- heading "ELLORY": left edge 660px, live 507px
+- heading "ELLORY": letter spacing 1px, live 0px
+- heading "ADVANCED TEAM HEAD COACH | PRESCHOOL COA": left edge 660px, live 507px
+- heading "ADVANCED TEAM HEAD COACH | PRESCHOOL COA": line height 35px, live 28px
+- heading "ADVANCED TEAM HEAD COACH | PRESCHOOL COA": letter spacing 1px, live 0px
+- heading "ELLE": left edge 65px, live 507px
+- heading "ELLE": letter spacing 1px, live 0px
+- heading "PRESCHOOL COACH | BIRTHDAY PARTY HOST": left edge 65px, live 507px
+- heading "PRESCHOOL COACH | BIRTHDAY PARTY HOST": line height 35px, live 30px
+- heading "PRESCHOOL COACH | BIRTHDAY PARTY HOST": letter spacing 1px, live 0px
+- heading "CONNOR": left edge 660px, live 507px
+- heading "CONNOR": letter spacing 1px, live 0px
+- heading "ADVANCED TEAM ASSISTANT | BEGINNER NINJA": left edge 660px, live 507px
+- heading "ADVANCED TEAM ASSISTANT | BEGINNER NINJA": line height 35px, live 30px
+- heading "ADVANCED TEAM ASSISTANT | BEGINNER NINJA": letter spacing 1px, live 0px
+- heading "CALEB": left edge 65px, live 507px
+- heading "CALEB": letter spacing 1px, live 0px
+- heading "BEGINNER NINJA COACH | PRESCHOOL COACH |": left edge 65px, live 507px
+- heading "BEGINNER NINJA COACH | PRESCHOOL COACH |": line height 35px, live 30px
+- heading "BEGINNER NINJA COACH | PRESCHOOL COACH |": letter spacing 1px, live 0px
+- heading "RUBY": left edge 660px, live 507px
+- heading "RUBY": letter spacing 1px, live 0px
+- heading "ALL-LEVELS NINJA COACH | PRIVATE TRAININ": left edge 660px, live 507px
+- heading "ALL-LEVELS NINJA COACH | PRIVATE TRAININ": line height 35px, live 30px
+- heading "ALL-LEVELS NINJA COACH | PRIVATE TRAININ": letter spacing 1px, live 0px
+- heading "JOSIAH": left edge 65px, live 507px
+- heading "JOSIAH": letter spacing 1px, live 0px
+- heading "BIRTHDAY PARTY HOST": left edge 65px, live 507px
+- heading "BIRTHDAY PARTY HOST": line height 35px, live 30px
+- heading "BIRTHDAY PARTY HOST": letter spacing 1px, live 0px
+- heading "JACOB": left edge 660px, live 507px
+- heading "JACOB": letter spacing 1px, live 0px
+- heading "LEAD PERSONAL TRAINER": left edge 660px, live 507px
+- heading "LEAD PERSONAL TRAINER": line height 35px, live 30px
+- heading "LEAD PERSONAL TRAINER": letter spacing 1px, live 0px
+- heading "GRACE": left edge 65px, live 507px
+- heading "GRACE": letter spacing 1px, live 0px
+- heading "BEGINNER NINJA COACH | BIRTHDAY PARTY HO": left edge 65px, live 507px
+- heading "BEGINNER NINJA COACH | BIRTHDAY PARTY HO": line height 35px, live 30px
+- heading "BEGINNER NINJA COACH | BIRTHDAY PARTY HO": letter spacing 1px, live 0px
+- photo missing: img_2336
+- photo johnny-photo: left edge 65px, live 110px
+- photo johnny-photo: width 555px, live 371px
+- photo sarah-photo: left edge 660px, live 110px
+- photo sarah-photo: width 555px, live 371px
+- photo lincoln-photo: left edge 65px, live 110px
+- photo lincoln-photo: width 555px, live 371px
+- photo ellroy-photo: left edge 660px, live 110px
+- photo ellroy-photo: width 555px, live 371px
+- photo elle-photo: left edge 65px, live 110px
+- photo elle-photo: width 555px, live 371px
+- photo connor-photo: left edge 660px, live 110px
+- photo connor-photo: width 555px, live 371px
+- photo caleb-team-01: left edge 65px, live 110px
+- photo caleb-team-01: width 555px, live 371px
+- photo ruby-photo: left edge 660px, live 110px
+- photo ruby-photo: width 555px, live 371px
+- photo josiah-photo: left edge 65px, live 110px
+- photo josiah-photo: width 555px, live 371px
+- photo jacob-photo: left edge 660px, live 110px
+- photo jacob-photo: width 555px, live 371px
+- photo grace-photo: left edge 65px, live 110px
+- photo grace-photo: width 555px, live 371px
+- button "TRY OPEN GYM FOR $10": width 190px, live 290px
+- text not on live: "YOU'VE MET THE TEAM. NOW TRAIN WITH THEM. You’ve met the coa"
+- text "At Springfield Warrior Sports,": left edge 660px, live 66px
+- text "At Springfield Warrior Sports,": width 555px, live 1148px
+- text "At Springfield Warrior Sports,": size 16px, live 18px
+- text "At Springfield Warrior Sports,": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "At Springfield Warrior Sports,": line height 26px, live 32px
+- text "At Springfield Warrior Sports,": align start, live center
+- text "They’re mentors, competitors, ": left edge 660px, live 66px
+- text "They’re mentors, competitors, ": width 555px, live 1148px
+- text "They’re mentors, competitors, ": size 16px, live 18px
+- text "They’re mentors, competitors, ": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "They’re mentors, competitors, ": 2 line(s), live 1
+- text "They’re mentors, competitors, ": line height 26px, live 32px
+- text "They’re mentors, competitors, ": align start, live center
+- text "Get to know the coaches who ma": left edge 660px, live 66px
+- text "Get to know the coaches who ma": width 555px, live 1148px
+- text "Get to know the coaches who ma": size 16px, live 18px
+- text "Get to know the coaches who ma": weight 300, live 500
+- text "Get to know the coaches who ma": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Get to know the coaches who ma": line height 26px, live 32px
+- text "Get to know the coaches who ma": align start, live center
+- text "Hey there! I’m Jonny.": left edge 65px, live 506px
+- text "Hey there! I’m Jonny.": width 555px, live 639px
+- text "Hey there! I’m Jonny.": weight 300, live 400
+- text "Hey there! I’m Jonny.": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "I’ve been part of Springfield ": left edge 65px, live 506px
+- text "I’ve been part of Springfield ": width 555px, live 639px
+- text "I’ve been part of Springfield ": weight 300, live 400
+- text "I’ve been part of Springfield ": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "I’ve been part of Springfield ": 3 line(s), live 2
+- text "Almost nothing in the whole wo": left edge 65px, live 506px
+- text "Almost nothing in the whole wo": width 555px, live 639px
+- text "Almost nothing in the whole wo": weight 300, live 400
+- text "Almost nothing in the whole wo": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "My ninja journey includes winn": left edge 65px, live 506px
+- text "My ninja journey includes winn": width 555px, live 639px
+- text "My ninja journey includes winn": weight 300, live 400
+- text "My ninja journey includes winn": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "My ninja journey includes winn": 4 line(s), live 3
+- text "At the gym, I primarily teach ": left edge 65px, live 120px
+- text "At the gym, I primarily teach ": width 555px, live 1040px
+- text "At the gym, I primarily teach ": weight 300, live 400
+- text "At the gym, I primarily teach ": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "At the gym, I primarily teach ": 2 line(s), live 1
+- text "Outside the gym, I love my wif": left edge 65px, live 120px
+- text "Outside the gym, I love my wif": width 555px, live 1040px
+- text "Outside the gym, I love my wif": weight 300, live 400
+- text "Outside the gym, I love my wif": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Outside the gym, I love my wif": 6 line(s), live 3
+- text "I love meeting new people and ": left edge 65px, live 120px
+- text "I love meeting new people and ": width 555px, live 1040px
+- text "I love meeting new people and ": weight 300, live 400
+- text "I love meeting new people and ": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "I love meeting new people and ": 2 line(s), live 1
+- text "Hey guys! I’m Sarah.": left edge 660px, live 506px
+- text "Hey guys! I’m Sarah.": width 555px, live 649px
+- text "Hey guys! I’m Sarah.": weight 300, live 400
+- text "Hey guys! I’m Sarah.": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "I’m a co-owner of Springfield ": left edge 660px, live 506px
+- text "I’m a co-owner of Springfield ": width 555px, live 649px
+- text "I’m a co-owner of Springfield ": weight 300, live 400
+- text "I’m a co-owner of Springfield ": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "I teach preschool classes and ": left edge 660px, live 506px
+- text "I teach preschool classes and ": width 555px, live 649px
+- text "I teach preschool classes and ": weight 300, live 400
+- text "I teach preschool classes and ": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "I teach preschool classes and ": 5 line(s), live 4
+- text "Outside the gym, I enjoy readi": left edge 660px, live 120px
+- text "Outside the gym, I enjoy readi": width 555px, live 1040px
+- text "Outside the gym, I enjoy readi": weight 300, live 400
+- text "Outside the gym, I enjoy readi": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Outside the gym, I enjoy readi": 4 line(s), live 2
+- text "I’m excited to meet you. Come ": left edge 660px, live 120px
+- text "I’m excited to meet you. Come ": width 555px, live 1040px
+- text "I’m excited to meet you. Come ": weight 300, live 400
+- text "I’m excited to meet you. Come ": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Hello! I'm Lincoln.": left edge 65px, live 506px
+- text "Hello! I'm Lincoln.": width 555px, live 649px
+- text "Hello! I'm Lincoln.": weight 300, live 400
+- text "Hello! I'm Lincoln.": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "I’ve been working at Springfie": left edge 65px, live 506px
+- text "I’ve been working at Springfie": width 555px, live 649px
+- text "I’ve been working at Springfie": weight 300, live 400
+- text "I’ve been working at Springfie": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "I'm an active and sporty perso": left edge 65px, live 506px
+- text "I'm an active and sporty perso": width 555px, live 649px
+- text "I'm an active and sporty perso": weight 300, live 400
+- text "I'm an active and sporty perso": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "I'm an active and sporty perso": 5 line(s), live 4
+- text "As a coach, I strive to be the": left edge 65px, live 120px
+- text "As a coach, I strive to be the": width 555px, live 1040px
+- text "As a coach, I strive to be the": weight 300, live 400
+- text "As a coach, I strive to be the": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "As a coach, I strive to be the": 3 line(s), live 2
+- text "I first got into ninja by watc": left edge 660px, live 506px
+- text "I first got into ninja by watc": width 555px, live 649px
+- text "I first got into ninja by watc": weight 300, live 400
+- text "I first got into ninja by watc": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "When my parents surprised us b": left edge 660px, live 506px
+- text "When my parents surprised us b": width 555px, live 649px
+- text "When my parents surprised us b": weight 300, live 400
+- text "When my parents surprised us b": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "When my parents surprised us b": 6 line(s), live 5
+- text "I joined the staff here in May": left edge 660px, live 506px
+- text "I joined the staff here in May": width 555px, live 649px
+- text "I joined the staff here in May": weight 300, live 400
+- text "I joined the staff here in May": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "I joined the staff here in May": 7 line(s), live 6
+- text "Outside of ninja, I like to tr": left edge 660px, live 120px
+- text "Outside of ninja, I like to tr": width 555px, live 1040px
+- text "Outside of ninja, I like to tr": weight 300, live 400
+- text "Outside of ninja, I like to tr": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Outside of ninja, I like to tr": 6 line(s), live 4
+- text "Hi! My name is Elle, and I’ve ": left edge 65px, live 506px
+- text "Hi! My name is Elle, and I’ve ": width 555px, live 649px
+- text "Hi! My name is Elle, and I’ve ": weight 300, live 400
+- text "Hi! My name is Elle, and I’ve ": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "I teach preschool classes and ": left edge 65px, live 506px
+- text "I teach preschool classes and ": width 555px, live 649px
+- text "I teach preschool classes and ": weight 300, live 400
+- text "I teach preschool classes and ": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "I truly love my job. It's so r": left edge 65px, live 506px
+- text "I truly love my job. It's so r": width 555px, live 649px
+- text "I truly love my job. It's so r": weight 300, live 400
+- text "I truly love my job. It's so r": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Hello, I’m Connor!": left edge 660px, live 506px
+- text "Hello, I’m Connor!": width 555px, live 649px
+- text "Hello, I’m Connor!": weight 300, live 400
+- text "Hello, I’m Connor!": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "I’ve been part of the Springfi": left edge 660px, live 506px
+- text "I’ve been part of the Springfi": width 555px, live 649px
+- text "I’ve been part of the Springfi": weight 300, live 400
+- text "I’ve been part of the Springfi": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Over time, I’ve competed in sm": left edge 660px, live 506px
+- text "Over time, I’ve competed in sm": width 555px, live 649px
+- text "Over time, I’ve competed in sm": weight 300, live 400
+- text "Over time, I’ve competed in sm": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Over time, I’ve competed in sm": 8 line(s), live 7
+- text "I also run Birthday Parties an": left edge 660px, live 120px
+- text "I also run Birthday Parties an": width 555px, live 1040px
+- text "I also run Birthday Parties an": weight 300, live 400
+- text "I also run Birthday Parties an": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "I also run Birthday Parties an": 4 line(s), live 2
+- text "Outside of ninja, I like to we": left edge 660px, live 120px
+- text "Outside of ninja, I like to we": width 555px, live 1040px
+- text "Outside of ninja, I like to we": weight 300, live 400
+- text "Outside of ninja, I like to we": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Outside of ninja, I like to we": 3 line(s), live 2
+- text "Hey everyone! I’m Coach Caleb.": left edge 65px, live 506px
+- text "Hey everyone! I’m Coach Caleb.": width 555px, live 649px
+- text "Hey everyone! I’m Coach Caleb.": weight 300, live 400
+- text "Hey everyone! I’m Coach Caleb.": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "I’ve been part of the Warrior ": left edge 65px, live 506px
+- text "I’ve been part of the Warrior ": width 555px, live 649px
+- text "I’ve been part of the Warrior ": weight 300, live 400
+- text "I’ve been part of the Warrior ": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Here at W.S., I teach our Begi": left edge 65px, live 506px
+- text "Here at W.S., I teach our Begi": width 555px, live 649px
+- text "Here at W.S., I teach our Begi": weight 300, live 400
+- text "Here at W.S., I teach our Begi": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Here at W.S., I teach our Begi": 5 line(s), live 4
+- text "Outside the gym, I’m into rock": left edge 65px, live 120px
+- text "Outside the gym, I’m into rock": width 555px, live 1040px
+- text "Outside the gym, I’m into rock": weight 300, live 400
+- text "Outside the gym, I’m into rock": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Outside the gym, I’m into rock": 4 line(s), live 2
+- text "I’m all about helping kids hav": left edge 65px, live 120px
+- text "I’m all about helping kids hav": width 555px, live 1040px
+- text "I’m all about helping kids hav": weight 300, live 400
+- text "I’m all about helping kids hav": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "I’m all about helping kids hav": 2 line(s), live 1
+- text "I’m Ruby Wilder, and I’ve been": left edge 660px, live 506px
+- text "I’m Ruby Wilder, and I’ve been": width 555px, live 649px
+- text "I’m Ruby Wilder, and I’ve been": weight 300, live 400
+- text "I’m Ruby Wilder, and I’ve been": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "I’m Ruby Wilder, and I’ve been": 2 line(s), live 1
+- text "I competed from ages 8 to 11 a": left edge 660px, live 506px
+- text "I competed from ages 8 to 11 a": width 555px, live 649px
+- text "I competed from ages 8 to 11 a": weight 300, live 400
+- text "I competed from ages 8 to 11 a": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "I also work birthday parties, ": left edge 660px, live 506px
+- text "I also work birthday parties, ": width 555px, live 649px
+- text "I also work birthday parties, ": weight 300, live 400
+- text "I also work birthday parties, ": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "I also work birthday parties, ": 2 line(s), live 1
+- text "Outside the gym, I’m an artist": left edge 660px, live 506px
+- text "Outside the gym, I’m an artist": width 555px, live 649px
+- text "Outside the gym, I’m an artist": weight 300, live 400
+- text "Outside the gym, I’m an artist": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Outside the gym, I’m an artist": 4 line(s), live 3
+- text "My name is Josiah, and I’ve tr": left edge 65px, live 506px
+- text "My name is Josiah, and I’ve tr": width 555px, live 649px
+- text "My name is Josiah, and I’ve tr": weight 300, live 400
+- text "My name is Josiah, and I’ve tr": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "After placing top 100 in the w": left edge 65px, live 506px
+- text "After placing top 100 in the w": width 555px, live 649px
+- text "After placing top 100 in the w": weight 300, live 400
+- text "After placing top 100 in the w": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "After placing top 100 in the w": 5 line(s), live 4
+- text "Here at Springfield Warrior Sp": left edge 65px, live 506px
+- text "Here at Springfield Warrior Sp": width 555px, live 649px
+- text "Here at Springfield Warrior Sp": weight 300, live 400
+- text "Here at Springfield Warrior Sp": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Hi! I’m Jacob Winter.": left edge 660px, live 506px
+- text "Hi! I’m Jacob Winter.": width 555px, live 649px
+- text "Hi! I’m Jacob Winter.": weight 300, live 400
+- text "Hi! I’m Jacob Winter.": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "I’ve been an employee of Sprin": left edge 660px, live 506px
+- text "I’ve been an employee of Sprin": width 555px, live 649px
+- text "I’ve been an employee of Sprin": weight 300, live 400
+- text "I’ve been an employee of Sprin": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "I’ve been an employee of Sprin": 6 line(s), live 5
+- text "My main job is to head up the ": left edge 660px, live 506px
+- text "My main job is to head up the ": width 555px, live 649px
+- text "My main job is to head up the ": weight 300, live 400
+- text "My main job is to head up the ": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "My main job is to head up the ": 4 line(s), live 3
+- text "Outside of the gym, I can be f": left edge 660px, live 506px
+- text "Outside of the gym, I can be f": width 555px, live 649px
+- text "Outside of the gym, I can be f": weight 300, live 400
+- text "Outside of the gym, I can be f": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Outside of the gym, I can be f": 3 line(s), live 2
+- text "Hi, I’m Grace.": left edge 65px, live 506px
+- text "Hi, I’m Grace.": width 555px, live 649px
+- text "Hi, I’m Grace.": weight 300, live 400
+- text "Hi, I’m Grace.": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "I’ve been training at Warrior ": left edge 65px, live 506px
+- text "I’ve been training at Warrior ": width 555px, live 649px
+- text "I’ve been training at Warrior ": weight 300, live 400
+- text "I’ve been training at Warrior ": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "I’ve been competing since 2018": left edge 65px, live 506px
+- text "I’ve been competing since 2018": width 555px, live 649px
+- text "I’ve been competing since 2018": weight 300, live 400
+- text "I’ve been competing since 2018": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Outside of ninja, I play softb": left edge 65px, live 506px
+- text "Outside of ninja, I play softb": width 555px, live 649px
+- text "Outside of ninja, I play softb": weight 300, live 400
+- text "Outside of ninja, I play softb": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Outside of ninja, I play softb": 2 line(s), live 1
+- words "Meet The Springfield Warrior Sports Team": color rgb(255, 255, 255), live rgb(219, 58, 52)
+- words "At Springfield Warrior Sports, our coach": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "They’re mentors, competitors, and people": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Get to know the coaches who make this co": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Get to know the coaches who make this co": weight 300, live 500
+- words "Jonny": color rgb(0, 0, 0), live rgb(40, 82, 118)
+- words "Jonny": weight 400, live 900
+- words "Co-Owner | ADult ocr coach | intermediat": weight 900, live 400
+- words "Hey there! I’m Jonny.": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Hey there! I’m Jonny.": weight 300, live 400
+- words "I’ve been part of Springfield Warrior Sp": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "I’ve been part of Springfield Warrior Sp": weight 300, live 400
+- words "Almost nothing in the whole world brings": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Almost nothing in the whole world brings": weight 300, live 400
+- words "My ninja journey includes winning the 20": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "My ninja journey includes winning the 20": weight 300, live 400
+- words "At the gym, I primarily teach the Interm": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "At the gym, I primarily teach the Interm": weight 300, live 400
+- words "Outside the gym, I love my wife, Nintend": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Outside the gym, I love my wife, Nintend": weight 300, live 400
+- words "I love meeting new people and growing ou": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "I love meeting new people and growing ou": weight 300, live 400
+- words "Sarah": color rgb(0, 0, 0), live rgb(40, 82, 118)
+- words "Sarah": weight 400, live 900
+- words "Co-Owner | Adult OCR Coach | Preschool c": weight 900, live 400
+- words "Hey guys! I’m Sarah.": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Hey guys! I’m Sarah.": weight 300, live 400
+- words "I’m a co-owner of Springfield Warrior Sp": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "I’m a co-owner of Springfield Warrior Sp": weight 300, live 400
+- words "I teach preschool classes and the Adult ": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "I teach preschool classes and the Adult ": weight 300, live 400
+- words "Outside the gym, I enjoy reading, crafts": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Outside the gym, I enjoy reading, crafts": weight 300, live 400
+- words "I’m excited to meet you. Come hang out w": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "I’m excited to meet you. Come hang out w": weight 300, live 400
+- words "Lincoln": color rgb(0, 0, 0), live rgb(40, 82, 118)
+- words "Lincoln": weight 400, live 900
+- words "Beginner Ninja Coach | Birthday party ho": weight 900, live 400
+- words "Hello! I'm Lincoln.": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Hello! I'm Lincoln.": weight 300, live 400
+- words "I’ve been working at Springfield Warrior": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "I’ve been working at Springfield Warrior": weight 300, live 400
+- words "I'm an active and sporty person, and I e": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "I'm an active and sporty person, and I e": weight 300, live 400
+- words "As a coach, I strive to be the best teac": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "As a coach, I strive to be the best teac": weight 300, live 400
+- words "Ellory": color rgb(0, 0, 0), live rgb(40, 82, 118)
+- words "Ellory": weight 400, live 900
+- words "Advanced Team Head Coach | Preschool Coa": weight 900, live 400
+- words "I first got into ninja by watching Ameri": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "I first got into ninja by watching Ameri": weight 300, live 400
+- words "When my parents surprised us by signing ": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "When my parents surprised us by signing ": weight 300, live 400
+- words "I joined the staff here in May 2023, and": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "I joined the staff here in May 2023, and": weight 300, live 400
+- words "Outside of ninja, I like to try out all ": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Outside of ninja, I like to try out all ": weight 300, live 400
+- words "Elle": color rgb(0, 0, 0), live rgb(40, 82, 118)
+- words "Elle": weight 400, live 900
+- words "Preschool Coach | Birthday Party Host": weight 900, live 400
+- words "Hi! My name is Elle, and I’ve been worki": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Hi! My name is Elle, and I’ve been worki": weight 300, live 400
+- words "I teach preschool classes and assist wit": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "I teach preschool classes and assist wit": weight 300, live 400
+- words "I truly love my job. It's so rewarding t": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "I truly love my job. It's so rewarding t": weight 300, live 400
+- words "Connor": color rgb(0, 0, 0), live rgb(40, 82, 118)
+- words "Connor": weight 400, live 900
+- words "Advanced Team Assistant | Beginner NINJA": weight 900, live 400
+- words "Hello, I’m Connor!": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Hello, I’m Connor!": weight 300, live 400
+- words "I’ve been part of the Springfield Warrio": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "I’ve been part of the Springfield Warrio": weight 300, live 400
+- words "Over time, I’ve competed in small and la": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Over time, I’ve competed in small and la": weight 300, live 400
+- words "I also run Birthday Parties and currentl": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "I also run Birthday Parties and currentl": weight 300, live 400
+- words "Outside of ninja, I like to weight lift ": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Outside of ninja, I like to weight lift ": weight 300, live 400
+- words "Caleb": color rgb(0, 0, 0), live rgb(40, 82, 118)
+- words "Caleb": weight 400, live 900
+- words "Beginner Ninja COACH | Preschool Coach |": weight 900, live 400
+- words "Hey everyone! I’m Coach Caleb.": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Hey everyone! I’m Coach Caleb.": weight 300, live 400
+- words "I’ve been part of the Warrior Sports tea": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "I’ve been part of the Warrior Sports tea": weight 300, live 400
+- words "Here at W.S., I teach our Beginner Ninja": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Here at W.S., I teach our Beginner Ninja": weight 300, live 400
+- words "Outside the gym, I’m into rock climbing,": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Outside the gym, I’m into rock climbing,": weight 300, live 400
+- words "I’m all about helping kids have fun, get": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "I’m all about helping kids have fun, get": weight 300, live 400
+- words "Ruby": color rgb(0, 0, 0), live rgb(40, 82, 118)
+- words "Ruby": weight 400, live 900
+- words "All-Levels ninja Coach | private Trainin": weight 900, live 400
+- words "I’m Ruby Wilder, and I’ve been involved ": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "I’m Ruby Wilder, and I’ve been involved ": weight 300, live 400
+- words "I competed from ages 8 to 11 and officia": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "I competed from ages 8 to 11 and officia": weight 300, live 400
+- words "I also work birthday parties, logins, la": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "I also work birthday parties, logins, la": weight 300, live 400
+- words "Outside the gym, I’m an artist in all ca": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Outside the gym, I’m an artist in all ca": weight 300, live 400
+- words "Josiah": color rgb(0, 0, 0), live rgb(40, 82, 118)
+- words "Josiah": weight 400, live 900
+- words "birthday Party Host": weight 900, live 400
+- words "My name is Josiah, and I’ve trained and ": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "My name is Josiah, and I’ve trained and ": weight 300, live 400
+- words "After placing top 100 in the world in th": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "After placing top 100 in the world in th": weight 300, live 400
+- words "Here at Springfield Warrior Sports, I wa": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Here at Springfield Warrior Sports, I wa": weight 300, live 400
+- words "Jacob": color rgb(0, 0, 0), live rgb(40, 82, 118)
+- words "Jacob": weight 400, live 900
+- words "lead Personal trainer": weight 900, live 400
+- words "Hi! I’m Jacob Winter.": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Hi! I’m Jacob Winter.": weight 300, live 400
+- words "I’ve been an employee of Springfield War": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "I’ve been an employee of Springfield War": weight 300, live 400
+- words "My main job is to head up the personal t": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "My main job is to head up the personal t": weight 300, live 400
+- words "Outside of the gym, I can be found perfo": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Outside of the gym, I can be found perfo": weight 300, live 400
+- words "Grace": color rgb(0, 0, 0), live rgb(40, 82, 118)
+- words "Grace": weight 400, live 900
+- words "Beginner Ninja Coach | birthday Party Ho": weight 900, live 400
+- words "Hi, I’m Grace.": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Hi, I’m Grace.": weight 300, live 400
+- words "I’ve been training at Warrior Sports sin": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "I’ve been training at Warrior Sports sin": weight 300, live 400
+- words "I’ve been competing since 2018, travelin": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "I’ve been competing since 2018, travelin": weight 300, live 400
+- words "Outside of ninja, I play softball and ru": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Outside of ninja, I play softball and ru": weight 300, live 400
+- words "you've met the Team.": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "you've met the Team.": weight 300, live 900
+- words "Now Train With Them.": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "Now Train With Them.": weight 300, live 900
+- words "You’ve met the coaches who make Springfi": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- words "You’ve met the coaches who make Springfi": weight 300, live 400
+- words "Now, come be a part of it and experience": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- words "Now, come be a part of it and experience": weight 300, live 400
+- words "No experience required.": color rgb(51, 51, 51), live rgb(135, 204, 237)
+- words "No experience required.": weight 300, live 400
+- spacing from "MEET THE SPRINGFIELD WARRIOR S" to "JONNY": 1178px, live 676px
+- spacing from "JONNY" to "CO-OWNER | ADULT OCR COACH | I": 0px, live 37px
+- spacing from "CO-OWNER | ADULT OCR COACH | I" to "SARAH": 918px, live 594px
+- spacing from "SARAH" to "CO-OWNER | ADULT OCR COACH | P": 0px, live 37px
+- spacing from "CO-OWNER | ADULT OCR COACH | P" to "LINCOLN": 885px, live 548px
+- spacing from "LINCOLN" to "BEGINNER NINJA COACH | BIRTHDA": 0px, live 37px
+- spacing from "BEGINNER NINJA COACH | BIRTHDA" to "ELLORY": 721px, live 480px
+- spacing from "ELLORY" to "ADVANCED TEAM HEAD COACH | PRE": 0px, live 37px
+- spacing from "ADVANCED TEAM HEAD COACH | PRE" to "ELLE": 1059px, live 702px
+- spacing from "ELLE" to "PRESCHOOL COACH | BIRTHDAY PAR": 0px, live 37px
+- spacing from "PRESCHOOL COACH | BIRTHDAY PAR" to "CONNOR": 662px, live 409px
+- spacing from "CONNOR" to "ADVANCED TEAM ASSISTANT | BEGI": 0px, live 37px
+- spacing from "ADVANCED TEAM ASSISTANT | BEGI" to "CALEB": 965px, live 660px
+- spacing from "CALEB" to "BEGINNER NINJA COACH | PRESCHO": 0px, live 37px
+- spacing from "BEGINNER NINJA COACH | PRESCHO" to "RUBY": 861px, live 548px
+- spacing from "RUBY" to "ALL-LEVELS NINJA COACH | PRIVA": 0px, live 37px
+- spacing from "ALL-LEVELS NINJA COACH | PRIVA" to "JOSIAH": 827px, live 421px
+- spacing from "JOSIAH" to "BIRTHDAY PARTY HOST": 0px, live 37px
+- spacing from "BIRTHDAY PARTY HOST" to "JACOB": 725px, live 447px
+- spacing from "JACOB" to "LEAD PERSONAL TRAINER": 0px, live 37px
+- spacing from "LEAD PERSONAL TRAINER" to "GRACE": 708px, live 475px
+- spacing from "GRACE" to "BEGINNER NINJA COACH | BIRTHDA": 0px, live 37px
+- gap between "MEET THE SPRINGFIELD WARRIOR S" and "At Springfield Warrior Sports,": 494px, live 186px
+- gap between "Get to know the coaches who ma" and "JONNY": 369px, live 91px
+- gap between "I’m excited to meet you. Come " and "LINCOLN": 147px, live 86px
+- gap between "As a coach, I strive to be the" and "ELLORY": 147px, live 86px
+- gap between "Outside of ninja, I like to tr" and "ELLE": 205px, live 86px
+- gap between "I truly love my job. It's so r" and "CONNOR": 205px, live 86px
+- gap between "I’m all about helping kids hav" and "RUBY": 148px, live 86px
+- gap between "Outside the gym, I’m an artist" and "JOSIAH": 255px, live 86px
+- gap between "Here at Springfield Warrior Sp" and "JACOB": 267px, live 96px
+- gap between "Outside of the gym, I can be f" and "GRACE": 159px, live 86px
+- icons: 5 in build, 6 on live
+- icon 1: left edge 98px, live 749px
+- icon 2: left edge 135px, live 94px
+- icon 3: color rgb(219, 58, 52), live rgb(255, 255, 255)
+- icon 3: left edge 501px, live 131px
+- background behind "JONNY": rgb(242, 246, 248), live rgb(255, 255, 255)
+- background behind "CO-OWNER | ADULT OCR COACH | INTERMEDIAT": rgb(242, 246, 248), live rgb(255, 255, 255)
+- background behind "LINCOLN": rgb(242, 246, 248), live rgb(255, 255, 255)
+- background behind "BEGINNER NINJA COACH | BIRTHDAY PARTY HO": rgb(242, 246, 248), live rgb(255, 255, 255)
+- background behind "ELLE": rgb(242, 245, 248), live rgb(255, 255, 255)
+- background behind "PRESCHOOL COACH | BIRTHDAY PARTY HOST": rgb(242, 245, 248), live rgb(255, 255, 255)
+- background behind "CALEB": rgb(242, 246, 248), live rgb(255, 255, 255)
+- background behind "BEGINNER NINJA COACH | PRESCHOOL COACH |": rgb(242, 246, 248), live rgb(255, 255, 255)
+- background behind "JOSIAH": rgb(242, 246, 249), live rgb(255, 255, 255)
+- background behind "BIRTHDAY PARTY HOST": rgb(242, 246, 249), live rgb(255, 255, 255)
+- background behind "GRACE": rgb(242, 246, 248), live rgb(255, 255, 255)
+- background behind "BEGINNER NINJA COACH | BIRTHDAY PARTY HO": rgb(242, 246, 248), live rgb(255, 255, 255)
+- background behind "At Springfield Warrior Sports, our coach": rgb(255, 255, 255), live rgb(239, 246, 252)
+- background behind "They’re mentors, competitors, and people": rgb(255, 255, 255), live rgb(239, 246, 252)
+- background behind "Get to know the coaches who make this co": rgb(255, 255, 255), live rgb(239, 246, 252)
+- background behind "Hey there! I’m Jonny.": rgb(242, 246, 249), live rgb(255, 255, 255)
+- background behind "I’ve been part of Springfield Warrior Sp": rgb(242, 245, 248), live rgb(255, 255, 255)
+- background behind "Almost nothing in the whole world brings": rgb(242, 245, 247), live rgb(255, 255, 255)
+- background behind "My ninja journey includes winning the 20": rgb(242, 245, 247), live rgb(255, 255, 255)
+- background behind "At the gym, I primarily teach the Interm": rgb(242, 245, 247), live rgb(255, 255, 255)
+- background behind "Outside the gym, I love my wife, Nintend": rgb(242, 245, 247), live rgb(255, 255, 255)
+- background behind "I love meeting new people and growing ou": rgb(242, 245, 248), live rgb(255, 255, 255)
+- background behind "Hello! I'm Lincoln.": rgb(242, 246, 249), live rgb(255, 255, 255)
+- background behind "I’ve been working at Springfield Warrior": rgb(242, 244, 246), live rgb(255, 255, 255)
+- background behind "I'm an active and sporty person, and I e": rgb(242, 245, 247), live rgb(255, 255, 255)
+- background behind "As a coach, I strive to be the best teac": rgb(242, 245, 247), live rgb(255, 255, 255)
+- background behind "Hi! My name is Elle, and I’ve been worki": rgb(243, 246, 248), live rgb(255, 255, 255)
+- background behind "I teach preschool classes and assist wit": rgb(242, 244, 247), live rgb(255, 255, 255)
+- background behind "I truly love my job. It's so rewarding t": rgb(242, 245, 247), live rgb(255, 255, 255)
+- background behind "Hey everyone! I’m Coach Caleb.": rgb(242, 245, 248), live rgb(255, 255, 255)
+- background behind "I’ve been part of the Warrior Sports tea": rgb(241, 244, 247), live rgb(255, 255, 255)
+- background behind "Here at W.S., I teach our Beginner Ninja": rgb(242, 245, 247), live rgb(255, 255, 255)
+- background behind "Outside the gym, I’m into rock climbing,": rgb(242, 245, 247), live rgb(255, 255, 255)
+- background behind "I’m all about helping kids have fun, get": rgb(242, 245, 248), live rgb(255, 255, 255)
+- background behind "My name is Josiah, and I’ve trained and ": rgb(242, 245, 247), live rgb(255, 255, 255)
+- background behind "After placing top 100 in the world in th": rgb(242, 245, 247), live rgb(255, 255, 255)
+- background behind "Here at Springfield Warrior Sports, I wa": rgb(242, 245, 247), live rgb(255, 255, 255)
+- background behind "Hi, I’m Grace.": rgb(242, 246, 249), live rgb(255, 255, 255)
+- background behind "I’ve been training at Warrior Sports sin": rgb(242, 245, 247), live rgb(255, 255, 255)
+- background behind "I’ve been competing since 2018, travelin": rgb(242, 245, 247), live rgb(255, 255, 255)
+- background behind "Outside of ninja, I play softball and ru": rgb(242, 246, 248), live rgb(255, 255, 255)
+- band color beside "MEET THE SPRINGFIELD WARRIOR SPORTS TEAM": rgb(35, 36, 31), live rgb(4, 16, 28)
+- band color beside "SARAH": rgb(255, 255, 255), live rgb(239, 246, 252)
+- band color beside "ELLORY": rgb(255, 255, 255), live rgb(239, 246, 252)
+- band color beside "ADVANCED TEAM HEAD COACH | PRESCHOOL COA": rgb(255, 255, 255), live rgb(239, 246, 252)
+- band color beside "CONNOR": rgb(255, 255, 255), live rgb(239, 246, 252)
+- band color beside "ADVANCED TEAM ASSISTANT | BEGINNER NINJA": rgb(255, 255, 255), live rgb(239, 246, 252)
+- band color beside "RUBY": rgb(255, 255, 255), live rgb(239, 246, 252)
+- band color beside "ALL-LEVELS NINJA COACH | PRIVATE TRAININ": rgb(255, 255, 255), live rgb(239, 246, 252)
+- band color beside "JACOB": rgb(255, 255, 255), live rgb(239, 246, 252)
+- band color beside "LEAD PERSONAL TRAINER": rgb(255, 255, 255), live rgb(239, 246, 252)
+- band color beside "At Springfield Warrior Sports, our coach": rgb(255, 255, 255), live rgb(239, 246, 252)
+- band color beside "They’re mentors, competitors, and people": rgb(255, 255, 255), live rgb(239, 246, 252)
+- band color beside "Get to know the coaches who make this co": rgb(255, 255, 255), live rgb(239, 246, 252)
+- band color beside "Hey guys! I’m Sarah.": rgb(255, 255, 255), live rgb(239, 246, 252)
+- band color beside "I’m a co-owner of Springfield Warrior Sp": rgb(255, 255, 255), live rgb(239, 246, 252)
+- band color beside "I teach preschool classes and the Adult ": rgb(255, 255, 255), live rgb(239, 246, 252)
+- band color beside "Outside the gym, I enjoy reading, crafts": rgb(255, 255, 255), live rgb(239, 246, 252)
+- band color beside "I’m excited to meet you. Come hang out w": rgb(255, 255, 255), live rgb(239, 246, 252)
+- band color beside "I first got into ninja by watching Ameri": rgb(255, 255, 255), live rgb(239, 246, 252)
+- band color beside "When my parents surprised us by signing ": rgb(255, 255, 255), live rgb(239, 246, 252)
+- band color beside "I joined the staff here in May 2023, and": rgb(255, 255, 255), live rgb(239, 246, 252)
+- band color beside "Outside of ninja, I like to try out all ": rgb(255, 255, 255), live rgb(239, 246, 252)
+- band color beside "Hello, I’m Connor!": rgb(255, 255, 255), live rgb(239, 246, 252)
+- band color beside "I’ve been part of the Springfield Warrio": rgb(255, 255, 255), live rgb(239, 246, 252)
+- band color beside "Over time, I’ve competed in small and la": rgb(255, 255, 255), live rgb(239, 246, 252)
+- band color beside "I also run Birthday Parties and currentl": rgb(255, 255, 255), live rgb(239, 246, 252)
+- band color beside "Outside of ninja, I like to weight lift ": rgb(255, 255, 255), live rgb(239, 246, 252)
+- band color beside "I’m Ruby Wilder, and I’ve been involved ": rgb(255, 255, 255), live rgb(239, 246, 252)
+- band color beside "I competed from ages 8 to 11 and officia": rgb(255, 255, 255), live rgb(239, 246, 252)
+- band color beside "I also work birthday parties, logins, la": rgb(255, 255, 255), live rgb(239, 246, 252)
+- band color beside "Outside the gym, I’m an artist in all ca": rgb(255, 255, 255), live rgb(239, 246, 252)
+- band color beside "Hi! I’m Jacob Winter.": rgb(255, 255, 255), live rgb(239, 246, 252)
+- band color beside "My main job is to head up the personal t": rgb(255, 255, 255), live rgb(239, 246, 252)
+- band color beside "Outside of the gym, I can be found perfo": rgb(255, 255, 255), live rgb(239, 246, 252)
+- heading "MEET THE SPRINGFIELD WARRIOR SPORTS TEAM": looks different from live (pixel difference 62)
+- heading "JONNY": looks different from live (pixel difference 45)
+- heading "CO-OWNER | ADULT OCR COACH | INTERMEDIAT": looks different from live (pixel difference 39)
+- heading "LINCOLN": looks different from live (pixel difference 53)
+- heading "BEGINNER NINJA COACH | BIRTHDAY PARTY HO": looks different from live (pixel difference 45)
+- heading "CALEB": looks different from live (pixel difference 50)
+- heading "BEGINNER NINJA COACH | PRESCHOOL COACH |": looks different from live (pixel difference 48)
+- photo hero: brightness 34, live 54 (overlay or exposure differs)
+- photo hero: looks different from live (pixel difference 41)
+- band rgb(239, 246, 252) at y=629 (6372px tall on live, left margin) not found in build
+- band rgb(255, 255, 255) at y=2363 (836px tall, left margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=3968 (951px tall, left margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=5690 (965px tall, left margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=7466 (770px tall, left margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=9005 (771px tall, left margin) is in the build but not on live
+- band rgb(239, 246, 252) at y=629 (6372px tall on live, right margin) not found in build
+- band rgb(6, 6, 6) at y=7267 (73px tall on live, right margin) not found in build
+- band rgb(255, 255, 255) at y=2363 (836px tall, right margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=3968 (951px tall, right margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=5690 (965px tall, right margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=7466 (770px tall, right margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=9005 (771px tall, right margin) is in the build but not on live
+
+## nerf-wars @ 1280px: 158 difference(s)
+- page height 3632px, live 3982px
+- heading missing: "BOOK NOW!"
+- heading missing: "READY TO LOCK IN THE DATE FOR YOUR CHILD'S EPIC NERF PARTY AT WARRIOR SPORTS?"
+- heading missing: "Dive into action-packed fun every other month with our exclusive Nerf War Nights!"
+- heading missing: "Want to be in the loop for our next Nerf War Night? Simply enter your email below and never miss out on the action!"
+- heading out of order: "THE ULTIMATE PARTY EXPERIENCE!"
+- heading "NERF WAR SPRINGFIELD, MO:": left edge 660px, live 223px
+- heading "NERF WAR SPRINGFIELD, MO:": width 555px, live 835px
+- heading "NERF WAR SPRINGFIELD, MO:": align start, live center
+- heading "THE ULTIMATE PARTY EXPERIENCE!": left edge 65px, live 223px
+- heading "NERF WAR PARTY BREAKDOWN": left edge 65px, live 274px
+- heading "NERF WAR PARTY BREAKDOWN": line height 50px, live 70px
+- heading "HERE’S WHAT’S INCLUDED": left edge 65px, live 653px
+- heading "HERE’S WHAT’S INCLUDED": line height 50px, live 30px
+- heading "PRICING": left edge 65px, live 653px
+- heading "PRICING": width 555px, live 119px
+- heading "PRICING": size 50px, live 30px
+- heading "PRICING": color rgb(214, 53, 47), live rgb(40, 82, 118)
+- heading "PRICING": line height 50px, live 30px
+- heading "NERF WAR NIGHTS IN SPRINGFIELD MO": 3 line(s), live 2
+- photo missing: nerf-war-party
+- photo missing: book-now-bg
+- photo nerf-war-nights: left edge 65px, live 714px
+- button "START THE BOOKING PROCESS ON OUR WEBSITE HERE": width 385px, live 537px
+- text missing: ""*" indicates required fields"
+- text not on live: "Nerf Guns Nerf Bullets Bring any of your favorite guns! Excl"
+- text "Welcome to Warrior Sports, whe": left edge 660px, live 203px
+- text "Welcome to Warrior Sports, whe": width 555px, live 874px
+- text "Welcome to Warrior Sports, whe": size 16px, live 20px
+- text "Welcome to Warrior Sports, whe": weight 300, live 400
+- text "Welcome to Warrior Sports, whe": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Welcome to Warrior Sports, whe": line height 26px, live 35px
+- text "Welcome to Warrior Sports, whe": align start, live center
+- text "Book a Nerf war party at Warri": left edge 65px, live 654px
+- text "Book a Nerf war party at Warri": weight 300, live 400
+- text "Book a Nerf war party at Warri": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Need party invitations? We've ": left edge 65px, live 654px
+- text "Need party invitations? We've ": weight 300, live 400
+- text "Need party invitations? We've ": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Our Nerf parties start at $220": left edge 65px, live 654px
+- text "Our Nerf parties start at $220": weight 300, live 400
+- text "Our Nerf parties start at $220": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Let our experienced and kid-fr": left edge 65px, live 94px
+- text "Let our experienced and kid-fr": width 555px, live 1093px
+- text "Let our experienced and kid-fr": weight 300, live 400
+- text "Let our experienced and kid-fr": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- text "Let our experienced and kid-fr": 4 line(s), live 2
+- text "Let our experienced and kid-fr": align start, live center
+- text "Or, dial (417) 894-7319 to res": left edge 65px, live 94px
+- text "Or, dial (417) 894-7319 to res": width 555px, live 1093px
+- text "Or, dial (417) 894-7319 to res": weight 300, live 400
+- text "Or, dial (417) 894-7319 to res": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- text "Or, dial (417) 894-7319 to res": align start, live center
+- words "The Ultimate Party Experience!": color rgb(214, 53, 47), live rgb(248, 248, 248)
+- words "Welcome to Warrior Sports, where Nerf ba": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Welcome to Warrior Sports, where Nerf ba": weight 300, live 400
+- words "popular birthday party options": color rgb(51, 51, 51), live rgb(47, 138, 228)
+- words "popular birthday party options": weight 300, live 400
+- words "! We handle everything from setup to gam": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "! We handle everything from setup to gam": weight 300, live 400
+- words "Here’s What’s Included": color rgb(0, 0, 0), live rgb(40, 82, 118)
+- words "Here’s What’s Included": weight 400, live 900
+- words "Nerf Guns": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Nerf Guns": weight 300, live 600
+- words "Nerf Bullets": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Nerf Bullets": weight 300, live 600
+- words "Bring any of your favorite guns!": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Bring any of your favorite guns!": weight 300, live 600
+- words "Exclusive play in our entire obstacle co": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Exclusive play in our entire obstacle co": weight 300, live 600
+- words "Book a Nerf war party at Warrior Sports ": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Book a Nerf war party at Warrior Sports ": weight 300, live 400
+- words "Need party invitations? We've got you co": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Need party invitations? We've got you co": weight 300, live 400
+- words "Pricing": color rgb(214, 53, 47), live rgb(40, 82, 118)
+- words "Our Nerf parties start at": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Our Nerf parties start at": weight 300, live 400
+- words "$220": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "$220": weight 300, live 900
+- words "for the first 11 kids, and it's just an ": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "for the first 11 kids, and it's just an ": weight 300, live 400
+- words "Book Now!": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- words "Book Now!": weight 300, live 900
+- words "Let our experienced and kid-friendly tea": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- words "Let our experienced and kid-friendly tea": weight 300, live 400
+- words "Ready to lock in the date for your child": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- words "Or, dial": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- words "Or, dial": weight 300, live 400
+- words "(417) 894-7319": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- words "(417) 894-7319": weight 300, live 400
+- words "(417) 894-7319": underline false, live true
+- words "to reserve today.Let's make your child's": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- words "to reserve today.Let's make your child's": weight 300, live 400
+- words "Dive into action-packed fun every other ": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Dive into action-packed fun every other ": weight 300, live 400
+- words "When:": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "When:": weight 300, live 600
+- words "Typically on Fridays, from 6-8 PM.": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Typically on Fridays, from 6-8 PM.": weight 300, live 400
+- words "Pricing:": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Pricing:": weight 300, live 600
+- words "It's only $15 per participant. Good news": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "It's only $15 per participant. Good news": weight 300, live 400
+- words "Want to be in the loop for our next Nerf": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Want to be in the loop for our next Nerf": weight 300, live 400
+- spacing from "NERF WAR SPRINGFIELD, MO:" to "THE ULTIMATE PARTY EXPERIENCE!": -579px, live 50px
+- spacing from "THE ULTIMATE PARTY EXPERIENCE!" to "NERF WAR PARTY BREAKDOWN": 1048px, live 737px
+- spacing from "NERF WAR PARTY BREAKDOWN" to "HERE’S WHAT’S INCLUDED": 0px, live 221px
+- spacing from "HERE’S WHAT’S INCLUDED" to "PRICING": 505px, live 436px
+- spacing from "PRICING" to "NERF WAR NIGHTS IN SPRINGFIELD": 583px, live 936px
+- gap between "THE ULTIMATE PARTY EXPERIENCE!" and "Welcome to Warrior Sports, whe": 587px, live 346px
+- gap between "HERE’S WHAT’S INCLUDED" and "Book a Nerf war party at Warri": 79px, live 167px
+- gap between "Need party invitations? We've " and "PRICING": 98px, live 21px
+- gap between "Our Nerf parties start at $220" and "Let our experienced and kid-fr": 53px, live 333px
+- gap between "Or, dial (417) 894-7319 to res" and "NERF WAR NIGHTS IN SPRINGFIELD": 98px, live 186px
+- icons: 5 in build, 11 on live
+- icon 1: color rgb(255, 255, 255), live rgb(219, 58, 52)
+- icon 1: left edge 98px, live 654px
+- icon 2: color rgb(255, 255, 255), live rgb(219, 58, 52)
+- icon 2: left edge 135px, live 654px
+- icon 3: left edge 501px, live 654px
+- icon 4: left edge 501px, live 654px
+- icon 5: left edge 501px, live 66px
+- background behind "NERF WAR SPRINGFIELD, MO:": rgb(255, 255, 255), live rgb(71, 68, 65)
+- background behind "NERF WAR PARTY BREAKDOWN": rgb(242, 246, 248), live rgb(226, 236, 237)
+- background behind "HERE’S WHAT’S INCLUDED": rgb(242, 245, 246), live rgb(226, 235, 238)
+- background behind "PRICING": rgb(255, 255, 255), live rgb(225, 235, 239)
+- background behind "Book a Nerf war party at Warrior Sports ": rgb(242, 245, 247), live rgb(227, 234, 236)
+- background behind "Need party invitations? We've got you co": rgb(242, 245, 247), live rgb(227, 235, 237)
+- background behind "Our Nerf parties start at $220 for the f": rgb(255, 255, 255), live rgb(227, 235, 236)
+- background behind "Let our experienced and kid-friendly tea": rgb(255, 255, 255), live rgb(42, 29, 21)
+- background behind "Or, dial (417) 894-7319 to reserve today": rgb(255, 255, 255), live rgb(42, 28, 22)
+- band color beside "NERF WAR SPRINGFIELD, MO:": rgb(255, 255, 255), live rgb(56, 34, 29)
+- band color beside "NERF WAR PARTY BREAKDOWN": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "HERE’S WHAT’S INCLUDED": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "PRICING": rgb(255, 255, 255), live rgb(227, 235, 237)
+- band color beside "Book a Nerf war party at Warrior Sports ": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "Need party invitations? We've got you co": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "Our Nerf parties start at $220 for the f": rgb(255, 255, 255), live rgb(227, 235, 237)
+- band color beside "Let our experienced and kid-friendly tea": rgb(255, 255, 255), live rgb(27, 19, 9)
+- band color beside "Or, dial (417) 894-7319 to reserve today": rgb(255, 255, 255), live rgb(51, 52, 47)
+- heading "NERF WAR SPRINGFIELD, MO:": looks different from live (pixel difference 153)
+- heading "THE ULTIMATE PARTY EXPERIENCE!": looks different from live (pixel difference 78)
+- heading "NERF WAR PARTY BREAKDOWN": looks different from live (pixel difference 47)
+- heading "HERE’S WHAT’S INCLUDED": looks different from live (pixel difference 57)
+- heading "PRICING": looks different from live (pixel difference 75)
+- text "Let our experienced and kid-fr": looks different from live (pixel difference 189)
+- text "Or, dial (417) 894-7319 to res": looks different from live (pixel difference 188)
+- band rgb(255, 255, 255) at y=729 (left margin): 610px tall, live 322px
+- band rgb(227, 235, 237) at y=1052 (1083px tall on live, left margin) not found in build
+- band rgb(51, 47, 44) at y=2490 (144px tall on live, left margin) not found in build
+- band rgb(241, 245, 248) at y=2676 (left margin): 340px tall, live 908px
+- band rgb(255, 255, 255) at y=1889 (583px tall, left margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=729 (right margin): 610px tall, live 322px
+- band rgb(227, 235, 237) at y=1052 (1083px tall on live, right margin) not found in build
+- band rgb(14, 15, 10) at y=2135 (127px tall on live, right margin) not found in build
+- band rgb(241, 245, 248) at y=2682 (right margin): 340px tall, live 901px
+- band rgb(255, 255, 255) at y=1889 (583px tall, right margin) is in the build but not on live
+
+## parkour @ 1280px: 204 difference(s)
+- page height 5248px, live 5540px
+- heading "PARKOUR GYM IN SPRINGFIELD MO | SPRINGFI": left edge 65px, live 180px
+- heading "PARKOUR GYM IN SPRINGFIELD MO | SPRINGFI": width 1150px, live 920px
+- heading "⚠️ TEMPORARY UPDATE:": left edge 660px, live 463px
+- heading "⚠️ TEMPORARY UPDATE:": width 555px, live 355px
+- heading "⚠️ TEMPORARY UPDATE:": size 50px, live 30px
+- heading "⚠️ TEMPORARY UPDATE:": color rgb(214, 53, 47), live rgb(40, 82, 118)
+- heading "⚠️ TEMPORARY UPDATE:": line height 50px, live 30px
+- heading "⚠️ TEMPORARY UPDATE:": align start, live center
+- heading "PARKOUR BENEFITS": left edge 65px, live 406px
+- heading "PARKOUR BENEFITS": align start, live center
+- heading "IMPROVE PHYSICAL FITNESS:": left edge 65px, live 653px
+- heading "IMPROVE PHYSICAL FITNESS:": line height 50px, live 30px
+- heading "BUILDS SELF-CONFIDENCE:": width 555px, live 383px
+- heading "BUILDS SELF-CONFIDENCE:": size 50px, live 30px
+- heading "BUILDS SELF-CONFIDENCE:": color rgb(214, 53, 47), live rgb(40, 82, 118)
+- heading "BUILDS SELF-CONFIDENCE:": line height 50px, live 30px
+- heading "MENTAL STIMULATION:": width 555px, live 333px
+- heading "MENTAL STIMULATION:": size 50px, live 30px
+- heading "MENTAL STIMULATION:": color rgb(214, 53, 47), live rgb(40, 82, 118)
+- heading "MENTAL STIMULATION:": line height 50px, live 30px
+- heading "STRESS RELIEF:": width 555px, live 224px
+- heading "STRESS RELIEF:": size 50px, live 30px
+- heading "STRESS RELIEF:": color rgb(214, 53, 47), live rgb(40, 82, 118)
+- heading "STRESS RELIEF:": line height 50px, live 30px
+- heading "COMMUNITY:": left edge 65px, live 653px
+- heading "COMMUNITY:": width 555px, live 191px
+- heading "COMMUNITY:": size 50px, live 30px
+- heading "COMMUNITY:": color rgb(214, 53, 47), live rgb(40, 82, 118)
+- heading "COMMUNITY:": line height 50px, live 30px
+- heading "PARKOUR CLASSES": left edge 65px, live 180px
+- heading "PARKOUR CLASSES": align start, live center
+- heading "TEMPORARILY UNAVAILABLE": left edge 65px, live 180px
+- heading "TEMPORARILY UNAVAILABLE": align start, live center
+- heading "OPEN GYM IS OPEN — YOUR FIRST VISIT IS J": left edge 65px, live 244px
+- heading "OPEN GYM IS OPEN — YOUR FIRST VISIT IS J": line height 50px, live 36px
+- heading "OPEN GYM IS OPEN — YOUR FIRST VISIT IS J": align start, live center
+- heading "MORE THAN JUST PHYSICAL": left edge 65px, live 653px
+- photo missing: img_2343
+- photo missing: ​stress-relief
+- photo missing: birthday-parties-banner
+- photo missing: ​more-than-just-physical
+- photo not on live: -e2-80-8bstress-relief
+- photo not on live: -e2-80-8bmore-than-just-physical
+- button "TRY A CLASS FOR $5": color rgb(214, 53, 47), live rgb(40, 82, 118)
+- button "TRY A CLASS FOR $5": width 170px, live 230px
+- button "TRY OPEN GYM FOR $10": width 190px, live 259px
+- text "Parkour classes are currently ": left edge 660px, live 326px
+- text "Parkour classes are currently ": weight 300, live 400
+- text "Parkour classes are currently ": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Parkour classes are currently ": align start, live center
+- text "Open Gym sessions remain avail": left edge 660px, live 326px
+- text "Open Gym sessions remain avail": weight 300, live 400
+- text "Open Gym sessions remain avail": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Open Gym sessions remain avail": align start, live center
+- text "Want to challenge yourself and": left edge 660px, live 66px
+- text "Want to challenge yourself and": weight 300, live 400
+- text "Want to challenge yourself and": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Plus, your first class is only": left edge 660px, live 66px
+- text "Plus, your first class is only": weight 300, live 400
+- text "Plus, your first class is only": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Parkour can help to improve ov": left edge 65px, live 654px
+- text "Parkour can help to improve ov": weight 300, live 400
+- text "Parkour can help to improve ov": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "By learning how to overcome ob": weight 300, live 400
+- text "By learning how to overcome ob": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Parkour offers an enjoyable an": weight 300, live 400
+- text "Parkour offers an enjoyable an": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Parkour is a great way to redu": weight 300, live 400
+- text "Parkour is a great way to redu": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Participants in Parkour can ga": left edge 65px, live 654px
+- text "Participants in Parkour can ga": weight 300, live 400
+- text "Participants in Parkour can ga": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "$20 class drop in, $10 class d": left edge 65px, live 94px
+- text "$20 class drop in, $10 class d": width 555px, live 1093px
+- text "$20 class drop in, $10 class d": weight 300, live 400
+- text "$20 class drop in, $10 class d": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- text "$20 class drop in, $10 class d": 6 line(s), live 4
+- text "$20 class drop in, $10 class d": align start, live center
+- text "With Parkour classes at Spring": left edge 65px, live 654px
+- text "With Parkour classes at Spring": weight 300, live 400
+- text "With Parkour classes at Spring": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "⚠️ Temporary Update:": color rgb(214, 53, 47), live rgb(40, 82, 118)
+- words "Parkour classes are currently paused for": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Parkour classes are currently paused for": weight 300, live 400
+- words "Open Gym sessions remain available, and ": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Open Gym sessions remain available, and ": weight 300, live 400
+- words "Want to challenge yourself and become st": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Want to challenge yourself and become st": weight 300, live 400
+- words "Plus, your first class is only $5 Dollar": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Plus, your first class is only $5 Dollar": weight 300, live 400
+- words "When:": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "When:": weight 300, live 600
+- words "Beginner:": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Beginner:": weight 300, live 600
+- words "Wednesdays 6-7pm": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Wednesdays 6-7pm": weight 300, live 400
+- words "Intermediate:": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Intermediate:": weight 300, live 600
+- words "Wednesdays 7-8pm": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Wednesdays 7-8pm": weight 300, live 400
+- words "Improve Physical Fitness:": color rgb(0, 0, 0), live rgb(40, 82, 118)
+- words "Improve Physical Fitness:": weight 400, live 900
+- words "Parkour can help to improve overall phys": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Parkour can help to improve overall phys": weight 300, live 400
+- words "Builds Self-Confidence:": color rgb(214, 53, 47), live rgb(40, 82, 118)
+- words "By learning how to overcome obstacles an": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "By learning how to overcome obstacles an": weight 300, live 400
+- words "Mental Stimulation:": color rgb(214, 53, 47), live rgb(40, 82, 118)
+- words "Parkour offers an enjoyable and mentally": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Parkour offers an enjoyable and mentally": weight 300, live 400
+- words "Stress Relief:": color rgb(214, 53, 47), live rgb(40, 82, 118)
+- words "Parkour is a great way to reduce stress ": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Parkour is a great way to reduce stress ": weight 300, live 400
+- words "Community:": color rgb(214, 53, 47), live rgb(40, 82, 118)
+- words "Participants in Parkour can gain access ": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Participants in Parkour can gain access ": weight 300, live 400
+- words "parkour classes": color rgb(214, 53, 47), live rgb(255, 255, 255)
+- words "temporarily unavailable": color rgb(0, 0, 0), live rgb(255, 255, 255)
+- words "temporarily unavailable": weight 400, live 900
+- words "With Parkour classes at Springfield Warr": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "With Parkour classes at Springfield Warr": weight 300, live 400
+- words "growth for everyone involved": color rgb(51, 51, 51), live rgb(47, 138, 228)
+- words "growth for everyone involved": weight 300, live 400
+- words "– no matter their skill level. So come o": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "– no matter their skill level. So come o": weight 300, live 400
+- spacing from "⚠️ TEMPORARY UPDATE:" to "PARKOUR BENEFITS": 880px, live 1041px
+- spacing from "PARKOUR BENEFITS" to "IMPROVE PHYSICAL FITNESS:": 0px, live 163px
+- spacing from "IMPROVE PHYSICAL FITNESS:" to "BUILDS SELF-CONFIDENCE:": 628px, live 204px
+- spacing from "BUILDS SELF-CONFIDENCE:" to "MENTAL STIMULATION:": 675px, live 428px
+- spacing from "MENTAL STIMULATION:" to "STRESS RELIEF:": 501px, live 217px
+- spacing from "STRESS RELIEF:" to "COMMUNITY:": 290px, live 544px
+- spacing from "COMMUNITY:" to "PARKOUR CLASSES": 265px, live 528px
+- spacing from "PARKOUR CLASSES" to "TEMPORARILY UNAVAILABLE": 0px, live 50px
+- spacing from "TEMPORARILY UNAVAILABLE" to "OPEN GYM IS OPEN — YOUR FIRST ": 0px, live 51px
+- spacing from "OPEN GYM IS OPEN — YOUR FIRST " to "MORE THAN JUST PHYSICAL": 477px, live 591px
+- gap between "Open Gym sessions remain avail" and "Want to challenge yourself and": 15px, live 127px
+- gap between "Want to challenge yourself and" and "Plus, your first class is only": 181px, live 28px
+- gap between "Parkour can help to improve ov" and "BUILDS SELF-CONFIDENCE:": 428px, live 21px
+- gap between "By learning how to overcome ob" and "MENTAL STIMULATION:": 407px, live 219px
+- gap between "Parkour offers an enjoyable an" and "STRESS RELIEF:": 259px, live 36px
+- gap between "Parkour is a great way to redu" and "COMMUNITY:": 98px, live 363px
+- gap between "Participants in Parkour can ga" and "PARKOUR CLASSES": 99px, live 375px
+- gap between "$20 class drop in, $10 class d" and "MORE THAN JUST PHYSICAL": 156px, live 421px
+- background behind "PARKOUR BENEFITS": rgb(241, 245, 246), live rgb(225, 236, 237)
+- background behind "IMPROVE PHYSICAL FITNESS:": rgb(241, 245, 246), live rgb(226, 235, 238)
+- background behind "BUILDS SELF-CONFIDENCE:": rgb(255, 255, 255), live rgb(226, 235, 238)
+- background behind "MENTAL STIMULATION:": rgb(242, 246, 248), live rgb(226, 235, 238)
+- background behind "STRESS RELIEF:": rgb(255, 255, 255), live rgb(226, 235, 238)
+- background behind "COMMUNITY:": rgb(242, 246, 249), live rgb(226, 235, 238)
+- background behind "PARKOUR CLASSES": rgb(255, 255, 255), live rgb(44, 78, 112)
+- background behind "TEMPORARILY UNAVAILABLE": rgb(255, 255, 255), live rgb(42, 77, 111)
+- background behind "OPEN GYM IS OPEN — YOUR FIRST VISIT IS J": rgb(255, 255, 255), live rgb(45, 77, 111)
+- background behind "MORE THAN JUST PHYSICAL": rgb(242, 246, 248), live rgb(255, 255, 255)
+- background behind "Parkour can help to improve overall phys": rgb(242, 244, 247), live rgb(227, 235, 237)
+- background behind "By learning how to overcome obstacles an": rgb(255, 255, 255), live rgb(227, 235, 237)
+- background behind "Parkour offers an enjoyable and mentally": rgb(242, 245, 247), live rgb(226, 234, 236)
+- background behind "Parkour is a great way to reduce stress ": rgb(255, 255, 255), live rgb(226, 234, 236)
+- background behind "Participants in Parkour can gain access ": rgb(241, 245, 247), live rgb(226, 234, 236)
+- background behind "$20 class drop in, $10 class drop in for": rgb(255, 255, 255), live rgb(53, 90, 123)
+- background behind "With Parkour classes at Springfield Warr": rgb(242, 244, 247), live rgb(255, 255, 255)
+- band color beside "PARKOUR GYM IN SPRINGFIELD MO | SPRINGFI": rgb(25, 25, 25), live rgb(74, 63, 53)
+- band color beside "PARKOUR BENEFITS": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "IMPROVE PHYSICAL FITNESS:": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "BUILDS SELF-CONFIDENCE:": rgb(255, 255, 255), live rgb(227, 235, 237)
+- band color beside "MENTAL STIMULATION:": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "STRESS RELIEF:": rgb(255, 255, 255), live rgb(227, 235, 237)
+- band color beside "COMMUNITY:": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "PARKOUR CLASSES": rgb(255, 255, 255), live rgb(54, 90, 124)
+- band color beside "TEMPORARILY UNAVAILABLE": rgb(255, 255, 255), live rgb(54, 90, 124)
+- band color beside "OPEN GYM IS OPEN — YOUR FIRST VISIT IS J": rgb(255, 255, 255), live rgb(54, 90, 124)
+- band color beside "MORE THAN JUST PHYSICAL": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band color beside "Parkour can help to improve overall phys": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "By learning how to overcome obstacles an": rgb(255, 255, 255), live rgb(227, 235, 237)
+- band color beside "Parkour offers an enjoyable and mentally": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "Parkour is a great way to reduce stress ": rgb(255, 255, 255), live rgb(227, 235, 237)
+- band color beside "Participants in Parkour can gain access ": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "$20 class drop in, $10 class drop in for": rgb(255, 255, 255), live rgb(51, 87, 121)
+- band color beside "With Parkour classes at Springfield Warr": rgb(242, 246, 249), live rgb(255, 255, 255)
+- heading "⚠️ TEMPORARY UPDATE:": looks different from live (pixel difference 57)
+- heading "PARKOUR BENEFITS": looks different from live (pixel difference 40)
+- heading "IMPROVE PHYSICAL FITNESS:": looks different from live (pixel difference 44)
+- heading "BUILDS SELF-CONFIDENCE:": looks different from live (pixel difference 67)
+- heading "MENTAL STIMULATION:": looks different from live (pixel difference 61)
+- heading "STRESS RELIEF:": looks different from live (pixel difference 56)
+- heading "COMMUNITY:": looks different from live (pixel difference 54)
+- heading "PARKOUR CLASSES": looks different from live (pixel difference 120)
+- heading "TEMPORARILY UNAVAILABLE": looks different from live (pixel difference 106)
+- heading "OPEN GYM IS OPEN — YOUR FIRST VISIT IS J": looks different from live (pixel difference 125)
+- text "$20 class drop in, $10 class d": looks different from live (pixel difference 138)
+- band rgb(255, 255, 255) at y=729 (left margin): 698px tall, live 1026px
+- band rgb(227, 235, 237) at y=1756 (2101px tall on live, left margin) not found in build
+- band rgb(54, 90, 124) at y=3865 (431px tall on live, left margin) not found in build
+- band rgb(255, 255, 255) at y=4422 (left margin): 476px tall, live 1053px
+- band rgb(255, 255, 255) at y=2135 (662px tall, left margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=3459 (290px tall, left margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=4855 (328px tall, left margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=729 (right margin): 698px tall, live 1026px
+- band rgb(227, 235, 237) at y=1756 (2100px tall on live, right margin) not found in build
+- band rgb(63, 97, 124) at y=4175 (243px tall on live, right margin) not found in build
+- band rgb(255, 255, 255) at y=4422 (right margin): 476px tall, live 1053px
+- band rgb(255, 255, 255) at y=2135 (662px tall, right margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=3459 (290px tall, right margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=4855 (328px tall, right margin) is in the build but not on live
+
+## personal-training @ 1280px: 347 difference(s)
+- page height 7446px, live 6053px
+- heading missing: "NOT YOUR TYPICAL GYM. NOT YOUR TYPICAL TRAINER."
+- heading missing: "This isn’t about getting shredded or setting records."
+- heading missing: "It’s about moving, healing, and growing in a way that actually fits your life."
+- heading out of order: "LET’S TALK STRENGTH…YOUR VERSION"
+- heading "PERSONAL TRAINING AT WARRIOR SPORTS": left edge 65px, live 140px
+- heading "PERSONAL TRAINING AT WARRIOR SPORTS": width 1150px, live 1000px
+- heading "WHY WARRIOR SPORTS PERSONAL TRAINING WOR": left edge 65px, live 180px
+- heading "WHY WARRIOR SPORTS PERSONAL TRAINING WOR": width 555px, live 920px
+- heading "WHY WARRIOR SPORTS PERSONAL TRAINING WOR": 4 line(s), live 2
+- heading "WHY WARRIOR SPORTS PERSONAL TRAINING WOR": align start, live center
+- heading "UNCONVENTIONAL BY DESIGN": left edge 660px, live 85px
+- heading "UNCONVENTIONAL BY DESIGN": width 555px, live 333px
+- heading "UNCONVENTIONAL BY DESIGN": size 50px, live 24px
+- heading "UNCONVENTIONAL BY DESIGN": color rgb(214, 53, 47), live rgb(40, 82, 118)
+- heading "UNCONVENTIONAL BY DESIGN": line height 50px, live 24px
+- heading "UNCONVENTIONAL BY DESIGN": align start, live center
+- heading "STRONGER AND SMARTER": left edge 65px, live 473px
+- heading "STRONGER AND SMARTER": width 555px, live 333px
+- heading "STRONGER AND SMARTER": size 50px, live 24px
+- heading "STRONGER AND SMARTER": color rgb(214, 53, 47), live rgb(40, 82, 118)
+- heading "STRONGER AND SMARTER": line height 50px, live 24px
+- heading "STRONGER AND SMARTER": align start, live center
+- heading "EMOTIONALLY INTELLIGENT COACHING": left edge 660px, live 882px
+- heading "EMOTIONALLY INTELLIGENT COACHING": width 555px, live 313px
+- heading "EMOTIONALLY INTELLIGENT COACHING": size 50px, live 24px
+- heading "EMOTIONALLY INTELLIGENT COACHING": color rgb(214, 53, 47), live rgb(40, 82, 118)
+- heading "EMOTIONALLY INTELLIGENT COACHING": 4 line(s), live 2
+- heading "EMOTIONALLY INTELLIGENT COACHING": line height 50px, live 24px
+- heading "EMOTIONALLY INTELLIGENT COACHING": align start, live center
+- heading "MEET YOUR TRAINERS": line height 50px, live 63px
+- heading "MEET YOUR TRAINERS": align start, live center
+- heading "SARAH WILDER": left edge 65px, live 95px
+- heading "SARAH WILDER": line height 50px, live 24px
+- heading "SARAH WILDER": align start, live center
+- heading "JACOB WINTER": left edge 660px, live 483px
+- heading "JACOB WINTER": width 555px, live 313px
+- heading "JACOB WINTER": size 50px, live 24px
+- heading "JACOB WINTER": color rgb(214, 53, 47), live rgb(40, 82, 118)
+- heading "JACOB WINTER": line height 50px, live 24px
+- heading "JACOB WINTER": align start, live center
+- heading "JONNY WILDER": left edge 65px, live 872px
+- heading "JONNY WILDER": width 555px, live 313px
+- heading "JONNY WILDER": size 50px, live 24px
+- heading "JONNY WILDER": color rgb(214, 53, 47), live rgb(40, 82, 118)
+- heading "JONNY WILDER": line height 50px, live 24px
+- heading "JONNY WILDER": align start, live center
+- heading "HOW IT WORKS": left edge 65px, live 653px
+- heading "HOW IT WORKS": width 555px, live 358px
+- heading "HOW IT WORKS": align start, live center
+- heading "WHAT OUR CLIENTS SAY": line height 50px, live 70px
+- heading "LET’S TALK STRENGTH…YOUR VERSION": left edge 65px, live 175px
+- heading "LET’S TALK STRENGTH…YOUR VERSION": width 555px, live 931px
+- heading "LET’S TALK STRENGTH…YOUR VERSION": 4 line(s), live 1
+- heading "LET’S TALK STRENGTH…YOUR VERSION": align start, live center
+- photo missing: warrior-sports-training
+- photo missing: pricing-and-schedule
+- photo not on live: qoute-icon
+- photo not on live: qoute-icon
+- photo warrior-sports-personal-training: left edge 65px, live 694px
+- photo unconventional-by-design: left edge 660px, live 65px
+- photo unconventional-by-design: width 555px, live 373px
+- photo stronger-and-smarter-training: left edge 65px, live 453px
+- photo stronger-and-smarter-training: width 555px, live 373px
+- photo emotionally-intelligent-coaching: left edge 660px, live 842px
+- photo emotionally-intelligent-coaching: width 555px, live 373px
+- photo sarah-wilder-img: width 555px, live 353px
+- photo jacob-winter-img: left edge 660px, live 463px
+- photo jacob-winter-img: width 555px, live 353px
+- photo jonny-wilder-img: left edge 65px, live 852px
+- photo jonny-wilder-img: width 555px, live 353px
+- photo qoute-icon: left edge 65px, live 105px
+- button "CONTACT OUR PERSONAL TRAINERS": width 272px, live 423px
+- button "CONTACT OUR PERSONAL TRAINERS": width 272px, live 394px
+- text not on live: "This isn’t about getting shredded or setting records. It’s a"
+- text not on live: "Jonny has coached our son for over three years. He’s a mento"
+- text not on live: "— WILL AND KOREN WILSON"
+- text not on live: "My son’s personal training at Warrior Sports has helped him "
+- text not on live: "— SUSIE K."
+- text "If you’ve ever felt like fitne": left edge 660px, live 66px
+- text "If you’ve ever felt like fitne": weight 300, live 400
+- text "If you’ve ever felt like fitne": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "If you’ve ever felt like fitne": 2 line(s), live 1
+- text "We don’t (necessarily) do trea": left edge 660px, live 66px
+- text "We don’t (necessarily) do trea": weight 300, live 400
+- text "We don’t (necessarily) do trea": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "We don’t (necessarily) do trea": 3 line(s), live 2
+- text "Because when training is roote": left edge 660px, live 66px
+- text "Because when training is roote": size 16px, live 18px
+- text "Because when training is roote": weight 300, live 400
+- text "Because when training is roote": color rgb(51, 51, 51), live rgb(106, 107, 108)
+- text "Because when training is roote": line height 26px, live 32px
+- text "At Warrior Sports, personal tr": left edge 65px, live 105px
+- text "At Warrior Sports, personal tr": width 555px, live 1070px
+- text "At Warrior Sports, personal tr": weight 300, live 400
+- text "At Warrior Sports, personal tr": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "At Warrior Sports, personal tr": align start, live center
+- text "It’s a conversation and a chal": left edge 65px, live 105px
+- text "It’s a conversation and a chal": width 555px, live 1070px
+- text "It’s a conversation and a chal": weight 300, live 400
+- text "It’s a conversation and a chal": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "It’s a conversation and a chal": align start, live center
+- text "Here’s how we’re different:": left edge 65px, live 105px
+- text "Here’s how we’re different:": width 555px, live 1070px
+- text "Here’s how we’re different:": weight 300, live 400
+- text "Here’s how we’re different:": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Here’s how we’re different:": align start, live center
+- text "We use obstacle training, resi": left edge 660px, live 86px
+- text "We use obstacle training, resi": width 555px, live 331px
+- text "We use obstacle training, resi": weight 300, live 400
+- text "We use obstacle training, resi": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "We use obstacle training, resi": 3 line(s), live 5
+- text "We use obstacle training, resi": align start, live center
+- text "This isn’t just about muscles.": left edge 65px, live 474px
+- text "This isn’t just about muscles.": width 555px, live 331px
+- text "This isn’t just about muscles.": weight 300, live 400
+- text "This isn’t just about muscles.": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "This isn’t just about muscles.": 3 line(s), live 5
+- text "This isn’t just about muscles.": align start, live center
+- text "We meet you where you are, wit": left edge 660px, live 863px
+- text "We meet you where you are, wit": width 555px, live 331px
+- text "We meet you where you are, wit": weight 300, live 400
+- text "We meet you where you are, wit": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "We meet you where you are, wit": 3 line(s), live 5
+- text "We meet you where you are, wit": align start, live center
+- text "– Women’s Confidence Coach": width 555px, live 343px
+- text "– Women’s Confidence Coach": weight 300, live 400
+- text "– Women’s Confidence Coach": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "– Women’s Confidence Coach": align start, live center
+- text "Helps women, especially moms, ": width 555px, live 343px
+- text "Helps women, especially moms, ": weight 300, live 400
+- text "Helps women, especially moms, ": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Helps women, especially moms, ": align start, live center
+- text "“I focus on helping you feel p": width 555px, live 343px
+- text "“I focus on helping you feel p": weight 300, live 500
+- text "“I focus on helping you feel p": color rgb(51, 51, 51), live rgb(40, 82, 118)
+- text "“I focus on helping you feel p": 1 line(s), live 2
+- text "“I focus on helping you feel p": align start, live center
+- text "– Strength, Weight Loss and Co": left edge 660px, live 484px
+- text "– Strength, Weight Loss and Co": width 555px, live 311px
+- text "– Strength, Weight Loss and Co": weight 300, live 400
+- text "– Strength, Weight Loss and Co": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.99)
+- text "– Strength, Weight Loss and Co": 1 line(s), live 2
+- text "– Strength, Weight Loss and Co": align start, live center
+- text "Great for weight loss, functio": left edge 660px, live 468px
+- text "Great for weight loss, functio": width 555px, live 343px
+- text "Great for weight loss, functio": weight 300, live 400
+- text "Great for weight loss, functio": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Great for weight loss, functio": 1 line(s), live 2
+- text "Great for weight loss, functio": align start, live center
+- text "“We build wins you can feel wi": left edge 660px, live 473px
+- text "“We build wins you can feel wi": width 555px, live 333px
+- text "“We build wins you can feel wi": weight 300, live 500
+- text "“We build wins you can feel wi": color rgb(51, 51, 51), live rgb(40, 82, 118)
+- text "“We build wins you can feel wi": 1 line(s), live 2
+- text "“We build wins you can feel wi": align start, live center
+- text "– Ninja and Competitive Obstac": left edge 65px, live 873px
+- text "– Ninja and Competitive Obstac": width 555px, live 311px
+- text "– Ninja and Competitive Obstac": weight 300, live 400
+- text "– Ninja and Competitive Obstac": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.99)
+- text "– Ninja and Competitive Obstac": 1 line(s), live 2
+- text "– Ninja and Competitive Obstac": align start, live center
+- text "Perfect for teens, adventurous": left edge 65px, live 857px
+- text "Perfect for teens, adventurous": width 555px, live 343px
+- text "Perfect for teens, adventurous": weight 300, live 400
+- text "Perfect for teens, adventurous": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Perfect for teens, adventurous": align start, live center
+- text "“Training should be fun. That’": left edge 65px, live 862px
+- text "“Training should be fun. That’": width 555px, live 333px
+- text "“Training should be fun. That’": weight 300, live 500
+- text "“Training should be fun. That’": color rgb(51, 51, 51), live rgb(40, 82, 118)
+- text "“Training should be fun. That’": 1 line(s), live 2
+- text "“Training should be fun. That’": align start, live center
+- text "Contact us and share your stor": left edge 65px, live 679px
+- text "Contact us and share your stor": width 555px, live 467px
+- text "Contact us and share your stor": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "After losing some weight on my": left edge 65px, live 96px
+- text "After losing some weight on my": font Epilogue, live Muli
+- text "After losing some weight on my": weight 300, live 400
+- text "After losing some weight on my": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "- CLIENT": left edge 65px, live 96px
+- text "- CLIENT": font Epilogue, live Muli
+- text "- CLIENT": weight 300, live 700
+- text "- CLIENT": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- text "Over a year, I lost over 50 po": font Epilogue, live Muli
+- text "Over a year, I lost over 50 po": weight 300, live 400
+- text "Over a year, I lost over 50 po": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "— MICHAEL B.": font Epilogue, live Muli
+- text "— MICHAEL B.": weight 300, live 700
+- text "— MICHAEL B.": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "Not Your Typical Gym.Not Your Typical Tr": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "Not Your Typical Gym.Not Your Typical Tr": weight 300, live 900
+- words "If you’ve ever felt like fitness wasn’t ": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "If you’ve ever felt like fitness wasn’t ": weight 300, live 400
+- words "We don’t (necessarily) do treadmills or ": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "We don’t (necessarily) do treadmills or ": weight 300, live 400
+- words "Because when training is rooted in curio": color rgb(51, 51, 51), live rgb(106, 107, 108)
+- words "Because when training is rooted in curio": weight 300, live 400
+- words "At Warrior Sports, personal training is ": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "At Warrior Sports, personal training is ": weight 300, live 400
+- words "It’s a conversation and a challenge all ": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "It’s a conversation and a challenge all ": weight 300, live 400
+- words "Here’s how we’re different:": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Here’s how we’re different:": weight 300, live 400
+- words "Unconventional by Design": color rgb(214, 53, 47), live rgb(40, 82, 118)
+- words "We use obstacle training, resistance ban": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "We use obstacle training, resistance ban": weight 300, live 400
+- words "Stronger and Smarter": color rgb(214, 53, 47), live rgb(40, 82, 118)
+- words "This isn’t just about muscles. It’s abou": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "This isn’t just about muscles. It’s abou": weight 300, live 400
+- words "Emotionally Intelligent Coaching": color rgb(214, 53, 47), live rgb(40, 82, 118)
+- words "We meet you where you are, without shame": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "We meet you where you are, without shame": weight 300, live 400
+- words "Meet Your Trainers": color rgb(214, 53, 47), live rgb(255, 255, 255)
+- words "Sarah Wilder": color rgb(0, 0, 0), live rgb(40, 82, 118)
+- words "Sarah Wilder": weight 400, live 900
+- words "– Women’s Confidence Coach": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "– Women’s Confidence Coach": weight 300, live 400
+- words "Helps women, especially moms, feel stron": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Helps women, especially moms, feel stron": weight 300, live 400
+- words "“I focus on helping you feel powerful be": color rgb(51, 51, 51), live rgb(40, 82, 118)
+- words "“I focus on helping you feel powerful be": weight 300, live 500
+- words "Jacob Winter": color rgb(214, 53, 47), live rgb(40, 82, 118)
+- words "– Strength, Weight Loss and Conditioning": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.99)
+- words "– Strength, Weight Loss and Conditioning": weight 300, live 400
+- words "Great for weight loss, functional streng": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Great for weight loss, functional streng": weight 300, live 400
+- words "“We build wins you can feel without judg": color rgb(51, 51, 51), live rgb(40, 82, 118)
+- words "“We build wins you can feel without judg": weight 300, live 500
+- words "Jonny Wilder": color rgb(214, 53, 47), live rgb(40, 82, 118)
+- words "– Ninja and Competitive Obstacle Trainin": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.99)
+- words "– Ninja and Competitive Obstacle Trainin": weight 300, live 400
+- words "Perfect for teens, adventurous adults, o": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Perfect for teens, adventurous adults, o": weight 300, live 400
+- words "“Training should be fun. That’s where co": color rgb(51, 51, 51), live rgb(40, 82, 118)
+- words "“Training should be fun. That’s where co": weight 300, live 500
+- words "Contact us and share your story—goals, c": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "We’ll reach out and get you locked in": color rgb(51, 51, 51), live rgb(5, 5, 61)
+- words "Try a session personalized to your pace ": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Decide from there if you want to continu": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "After losing some weight on my own, I hi": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "After losing some weight on my own, I hi": weight 300, live 400
+- words "- Client": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "- Client": weight 300, live 700
+- words "After losing some weight on my own, I hi": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "After losing some weight on my own, I hi": weight 300, live 400
+- words "- Client": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "- Client": weight 300, live 700
+- words "Over a year, I lost over 50 pounds, gain": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Over a year, I lost over 50 pounds, gain": weight 300, live 400
+- words "— Michael B.": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "— Michael B.": weight 300, live 700
+- words "Over a year, I lost over 50 pounds, gain": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Over a year, I lost over 50 pounds, gain": weight 300, live 400
+- words "— Michael B.": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "— Michael B.": weight 300, live 700
+- words "This isn’t about getting shredded or set": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- words "This isn’t about getting shredded or set": weight 300, live 400
+- words "It’s about moving, healing, and growing ": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- words "It’s about moving, healing, and growing ": weight 300, live 400
+- spacing from "EMOTIONALLY INTELLIGENT COACHI" to "MEET YOUR TRAINERS": 566px, live 390px
+- spacing from "MEET YOUR TRAINERS" to "SARAH WILDER": 0px, live 425px
+- spacing from "JONNY WILDER" to "HOW IT WORKS": 293px, live 428px
+- spacing from "HOW IT WORKS" to "WHAT OUR CLIENTS SAY": 1748px, live 507px
+- spacing from "WHAT OUR CLIENTS SAY" to "LET’S TALK STRENGTH…YOUR VERSI": -1452px, live 583px
+- gap between "We meet you where you are, wit" and "MEET YOUR TRAINERS": 325px, live 191px
+- gap between "“Training should be fun. That’" and "HOW IT WORKS": 98px, live 211px
+- gap between "Contact us and share your stor" and "WHAT OUR CLIENTS SAY": 1607px, live 411px
+- gap between "WHAT OUR CLIENTS SAY" and "After losing some weight on my": 66px, live 131px
+- icons: 5 in build, 9 on live
+- icon 1: color rgb(255, 255, 255), live rgb(219, 58, 52)
+- icon 1: left edge 98px, live 654px
+- icon 2: color rgb(255, 255, 255), live rgb(219, 58, 52)
+- icon 2: left edge 135px, live 654px
+- icon 3: left edge 501px, live 654px
+- icon 4: left edge 501px, live 654px
+- icon 5: color rgb(219, 58, 52), live rgb(255, 255, 255)
+- icon 5: left edge 501px, live 94px
+- background behind "WHY WARRIOR SPORTS PERSONAL TRAINING WOR": rgb(242, 246, 248), live rgb(226, 235, 237)
+- background behind "MEET YOUR TRAINERS": rgb(242, 246, 248), live rgb(40, 83, 117)
+- background behind "HOW IT WORKS": rgb(255, 255, 255), live rgb(241, 245, 247)
+- background behind "WHAT OUR CLIENTS SAY": rgb(242, 246, 248), live rgb(227, 235, 237)
+- background behind "LET’S TALK STRENGTH…YOUR VERSION": rgb(242, 246, 248), live rgb(46, 43, 42)
+- background behind "At Warrior Sports, personal training is ": rgb(242, 245, 248), live rgb(227, 235, 237)
+- background behind "It’s a conversation and a challenge all ": rgb(242, 245, 248), live rgb(227, 235, 237)
+- background behind "Here’s how we’re different:": rgb(242, 246, 248), live rgb(227, 235, 237)
+- background behind "Contact us and share your story—goals, c": rgb(255, 255, 255), live rgb(240, 244, 247)
+- background behind "After losing some weight on my own, I hi": rgb(242, 244, 246), live rgb(227, 235, 237)
+- background behind "- CLIENT": rgb(242, 246, 249), live rgb(227, 235, 237)
+- background behind "Over a year, I lost over 50 pounds, gain": rgb(242, 245, 247), live rgb(227, 235, 237)
+- background behind "— MICHAEL B.": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "WHY WARRIOR SPORTS PERSONAL TRAINING WOR": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "UNCONVENTIONAL BY DESIGN": rgb(255, 255, 255), live rgb(227, 235, 237)
+- band color beside "MEET YOUR TRAINERS": rgb(242, 246, 249), live rgb(40, 83, 117)
+- band color beside "SARAH WILDER": rgb(242, 246, 249), live rgb(40, 83, 117)
+- band color beside "HOW IT WORKS": rgb(255, 255, 255), live rgb(241, 245, 248)
+- band color beside "WHAT OUR CLIENTS SAY": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "LET’S TALK STRENGTH…YOUR VERSION": rgb(242, 246, 249), live rgb(38, 34, 35)
+- band color beside "At Warrior Sports, personal training is ": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "It’s a conversation and a challenge all ": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "Here’s how we’re different:": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "We use obstacle training, resistance ban": rgb(255, 255, 255), live rgb(227, 235, 237)
+- band color beside "– Women’s Confidence Coach": rgb(242, 246, 249), live rgb(40, 83, 117)
+- band color beside "Helps women, especially moms, feel stron": rgb(242, 246, 249), live rgb(40, 83, 117)
+- band color beside "“I focus on helping you feel powerful be": rgb(242, 246, 249), live rgb(40, 83, 117)
+- band color beside "Great for weight loss, functional streng": rgb(255, 255, 255), live rgb(40, 83, 117)
+- band color beside "Contact us and share your story—goals, c": rgb(255, 255, 255), live rgb(241, 245, 248)
+- band color beside "After losing some weight on my own, I hi": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "- CLIENT": rgb(242, 246, 249), live rgb(227, 235, 237)
+- heading "WHY WARRIOR SPORTS PERSONAL TRAINING WOR": looks different from live (pixel difference 46)
+- heading "UNCONVENTIONAL BY DESIGN": looks different from live (pixel difference 39)
+- heading "STRONGER AND SMARTER": looks different from live (pixel difference 56)
+- heading "EMOTIONALLY INTELLIGENT COACHING": looks different from live (pixel difference 51)
+- heading "MEET YOUR TRAINERS": looks different from live (pixel difference 81)
+- heading "SARAH WILDER": looks different from live (pixel difference 56)
+- heading "JONNY WILDER": looks different from live (pixel difference 42)
+- heading "HOW IT WORKS": looks different from live (pixel difference 48)
+- heading "LET’S TALK STRENGTH…YOUR VERSION": looks different from live (pixel difference 154)
+- photo hero: brightness 15, live 42 (overlay or exposure differs)
+- band rgb(255, 255, 255) at y=629 (left margin): 597px tall, live 685px
+- band rgb(227, 235, 237) at y=1314 (949px tall on live, left margin) not found in build
+- band rgb(40, 83, 117) at y=2272 (815px tall on live, left margin) not found in build
+- band rgb(241, 245, 248) at y=3088 (527px tall on live, left margin) not found in build
+- band rgb(227, 235, 237) at y=3615 (593px tall on live, left margin) not found in build
+- band rgb(37, 33, 34) at y=4208 (464px tall on live, left margin) not found in build
+- band rgb(26, 22, 23) at y=4672 (238px tall on live, left margin) not found in build
+- band rgb(3, 3, 6) at y=4915 (403px tall on live, left margin) not found in build
+- band rgb(0, 3, 6) at y=5419 (235px tall on live, left margin) not found in build
+- band rgb(255, 255, 255) at y=1774 (500px tall, left margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=2776 (559px tall, left margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=3895 (560px tall, left margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=4747 (297px tall, left margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=633 (right margin): 597px tall, live 681px
+- band rgb(227, 235, 237) at y=1314 (949px tall on live, right margin) not found in build
+- band rgb(40, 83, 117) at y=2272 (815px tall on live, right margin) not found in build
+- band rgb(241, 245, 248) at y=3088 (527px tall on live, right margin) not found in build
+- band rgb(227, 235, 237) at y=3615 (593px tall on live, right margin) not found in build
+- band rgb(28, 24, 25) at y=4218 (155px tall on live, right margin) not found in build
+- band rgb(40, 36, 37) at y=4373 (268px tall on live, right margin) not found in build
+- band rgb(33, 29, 34) at y=4641 (133px tall on live, right margin) not found in build
+- band rgb(41, 32, 30) at y=4929 (159px tall on live, right margin) not found in build
+- band rgb(47, 36, 32) at y=5088 (233px tall on live, right margin) not found in build
+- band rgb(0, 2, 6) at y=5352 (302px tall on live, right margin) not found in build
+- band rgb(255, 255, 255) at y=1774 (500px tall, right margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=2776 (559px tall, right margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=3895 (560px tall, right margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=4747 (297px tall, right margin) is in the build but not on live
+
+## registered-for-csna-competition @ 1280px: 17 difference(s)
+- page height 1325px, live 1000px
+- heading missing: "WE RECEIVED THOSE DETAILS, THANK YOU!"
+- text "Click here to finalize the reg": width 746px, live 1148px
+- text "Click here to finalize the reg": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "We received those details, thank you!": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "We received those details, thank you!": weight 300, live 900
+- words "Click here to finalize the registration ": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "https://checkout.square.site/merchant/ML": color rgb(51, 51, 51), live rgb(47, 138, 228)
+- words "https://checkout.square.site/merchant/ML": weight 300, live 400
+- words "If you encounter any problems or have an": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "(417) 894-7319": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "(417) 894-7319": weight 300, live 400
+- band rgb(255, 255, 255) at y=142 (793px tall on live, left margin) not found in build
+- band rgb(255, 255, 255) at y=704 (556px tall, left margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=145 (790px tall on live, right margin) not found in build
+- band rgb(255, 255, 255) at y=704 (556px tall, right margin) is in the build but not on live
+- section colors differ: build [rgb(255, 255, 255) | rgb(40, 82, 118) | rgb(255, 255, 255)], live [rgb(255, 255, 255)]
+
+## registered-for-day-camps @ 1280px: 14 difference(s)
+- page height 1434px, live 1082px
+- heading missing: "WE RECEIVED THOSE DETAILS, THANK YOU!"
+- text missing: "Click here to finalize the registration with your payment."
+- text "The link above has a few "prod": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "If you encounter any problems ": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "We received those details, thank you!": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "We received those details, thank you!": weight 300, live 900
+- words "The link above has a few "product" optio": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "If you encounter any problems or have an": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "(417) 894-7319": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "(417) 894-7319": weight 300, live 400
+- button not on live: "CLICK HERE TO FINALIZE THE REGISTRATION WITH YOUR PAYMENT."
+- photo hero: brightness 114, live 184 (overlay or exposure differs)
+- photo hero: looks different from live (pixel difference 93)
+
+## registered-for-summer-fun-competition @ 1280px: 14 difference(s)
+- page height 1376px, live 1042px
+- heading missing: "WE RECEIVED THOSE DETAILS, THANK YOU!"
+- text "Click here to finalize the reg": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "If you encounter any problems ": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "We received those details, thank you!": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "We received those details, thank you!": weight 300, live 900
+- words "Click here to finalize the registration ": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "https://springfield-warrior-sports.squar": color rgb(51, 51, 51), live rgb(47, 138, 228)
+- words "https://springfield-warrior-sports.squar": weight 300, live 400
+- words "If you encounter any problems or have an": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "(417) 894-7319": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "(417) 894-7319": weight 300, live 400
+- photo hero: brightness 114, live 189 (overlay or exposure differs)
+- photo hero: looks different from live (pixel difference 97)
+
+## registered-for-wnl-competition @ 1280px: 13 difference(s)
+- page height 1351px, live 1014px
+- heading missing: "WE RECEIVED THOSE DETAILS, THANK YOU!"
+- text "Click here to finalize the reg": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "We received those details, thank you!": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "We received those details, thank you!": weight 300, live 900
+- words "Click here to finalize the registration ": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "https://springfield-warrior-sports.squar": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "https://springfield-warrior-sports.squar": weight 300, live 400
+- words "If you encounter any problems or have an": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "(417) 894-7319": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "(417) 894-7319": weight 300, live 400
+- photo hero: brightness 114, live 192 (overlay or exposure differs)
+- photo hero: looks different from live (pixel difference 99)
+
+## registered @ 1280px: 13 difference(s)
+- page height 1351px, live 1014px
+- heading missing: "WE RECEIVED THOSE DETAILS, THANK YOU!"
+- text "Click here to finalize the reg": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "We received those details, thank you!": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "We received those details, thank you!": weight 300, live 900
+- words "Click here to finalize the registration ": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "https://springfield-warrior-sports.squar": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "https://springfield-warrior-sports.squar": weight 300, live 400
+- words "If you encounter any problems or have an": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "(417) 894-7319": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "(417) 894-7319": weight 300, live 400
+- photo hero: brightness 114, live 192 (overlay or exposure differs)
+- photo hero: looks different from live (pixel difference 99)
+
+## schedule-birthday-party @ 1280px: 65 difference(s)
+- page height 2995px, live 3345px
+- heading "CLIENT TESTIMONIALS": line height 50px, live 70px
+- heading "WHAT OUR CLIENTS SAY": line height 50px, live 42px
+- heading "WHAT OUR CLIENTS SAY": letter spacing 0px, live 1px
+- photo qoute-icon: left edge 65px, live 105px
+- text missing: ""*" indicates required fields"
+- text "1. Fill out the form to begin ": left edge 84px, live 191px
+- text "1. Fill out the form to begin ": width 536px, live 862px
+- text "1. Fill out the form to begin ": size 16px, live 18px
+- text "1. Fill out the form to begin ": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "1. Fill out the form to begin ": line height 26px, live 32px
+- text "We had our son’s 10th birthday": left edge 65px, live 96px
+- text "We had our son’s 10th birthday": font Epilogue, live Muli
+- text "We had our son’s 10th birthday": weight 300, live 400
+- text "We had our son’s 10th birthday": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "- JENNIFER L.": left edge 65px, live 96px
+- text "- JENNIFER L.": font Epilogue, live Muli
+- text "- JENNIFER L.": weight 300, live 700
+- text "- JENNIFER L.": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- text "My daughter started training h": font Epilogue, live Muli
+- text "My daughter started training h": weight 300, live 400
+- text "My daughter started training h": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "- LEE C.": font Epilogue, live Muli
+- text "- LEE C.": weight 300, live 700
+- text "- LEE C.": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "What our clients say": weight 400, live 300
+- words "We had our son’s 10th birthday here. All": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "We had our son’s 10th birthday here. All": weight 300, live 400
+- words "- Jennifer L.": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "- Jennifer L.": weight 300, live 700
+- words "We had our son’s 10th birthday here. All": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "We had our son’s 10th birthday here. All": weight 300, live 400
+- words "- Jennifer L.": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "- Jennifer L.": weight 300, live 700
+- words "My daughter started training here 3 year": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "My daughter started training here 3 year": weight 300, live 400
+- words "- Lee C.": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "- Lee C.": weight 300, live 700
+- words "My daughter started training here 3 year": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "My daughter started training here 3 year": weight 300, live 400
+- words "- Lee C.": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "- Lee C.": weight 300, live 700
+- spacing from "CLIENT TESTIMONIALS" to "WHAT OUR CLIENTS SAY": 0px, live 61px
+- gap between "WHAT OUR CLIENTS SAY" and "We had our son’s 10th birthday": 66px, live 132px
+- background behind "CLIENT TESTIMONIALS": rgb(242, 246, 249), live rgb(255, 255, 255)
+- background behind "WHAT OUR CLIENTS SAY": rgb(242, 246, 249), live rgb(255, 255, 255)
+- background behind "1. Fill out the form to begin the schedu": rgb(255, 255, 255), live rgb(227, 235, 237)
+- background behind "We had our son’s 10th birthday here. All": rgb(242, 244, 246), live rgb(255, 255, 255)
+- background behind "- JENNIFER L.": rgb(242, 246, 249), live rgb(255, 255, 255)
+- background behind "My daughter started training here 3 year": rgb(242, 244, 247), live rgb(255, 255, 255)
+- background behind "- LEE C.": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band color beside "CLIENT TESTIMONIALS": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band color beside "WHAT OUR CLIENTS SAY": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band color beside "1. Fill out the form to begin the schedu": rgb(255, 255, 255), live rgb(227, 235, 237)
+- band color beside "We had our son’s 10th birthday here. All": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band color beside "- JENNIFER L.": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band color beside "- LEE C.": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band rgb(227, 235, 237) at y=733 (1524px tall on live, left margin) not found in build
+- band rgb(255, 255, 255) at y=2258 (1022px tall on live, left margin) not found in build
+- band rgb(255, 255, 255) at y=774 (236px tall, left margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=2601 (329px tall, left margin) is in the build but not on live
+- band rgb(227, 235, 237) at y=732 (1526px tall on live, right margin) not found in build
+- band rgb(255, 255, 255) at y=2258 (1022px tall on live, right margin) not found in build
+- band rgb(255, 255, 255) at y=774 (236px tall, right margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=2601 (329px tall, right margin) is in the build but not on live
+
+## summer-camps-in-springfield-mo @ 1280px: 407 difference(s)
+- page height 5794px, live 6281px
+- heading "KIDS STAY FIT AND HEALTHY": left edge 65px, live 180px
+- heading "AT OUR INCREDIBLE SUMMER CAMPS": left edge 65px, live 180px
+- heading "AT OUR INCREDIBLE SUMMER CAMPS": line height 70px, live 50px
+- heading "SUMMER CAMPS IN SPRINGFIELD — 2026 DATES": width 555px, live 438px
+- heading "SUMMER CAMPS IN SPRINGFIELD — 2026 DATES": size 50px, live 40px
+- heading "SUMMER CAMPS IN SPRINGFIELD — 2026 DATES": 4 line(s), live 3
+- heading "SUMMER CAMPS IN SPRINGFIELD — 2026 DATES": line height 50px, live 40px
+- heading "SUMMER CAMP PRICING": width 555px, live 464px
+- heading "SUMMER CAMP PRICING": size 50px, live 40px
+- heading "SUMMER CAMP PRICING": line height 50px, live 40px
+- heading "SPRINGFIELD WARRIOR REGISTRATION": size 50px, live 34px
+- heading "SPRINGFIELD WARRIOR REGISTRATION": 3 line(s), live 1
+- heading "SPRINGFIELD WARRIOR REGISTRATION": line height 50px, live 34px
+- heading "REGISTRATION FORM": left edge 65px, live 190px
+- heading "REGISTRATION FORM": width 555px, live 900px
+- heading "REGISTRATION FORM": line height 50px, live 70px
+- heading "CLIENT TESTIMONIALS": line height 50px, live 70px
+- heading "WHAT OUR CLIENTS SAY": line height 50px, live 42px
+- heading "WHAT OUR CLIENTS SAY": letter spacing 0px, live 1px
+- photo missing: spring-break
+- text "Looking for a worthwhile activ": left edge 65px, live 203px
+- text "Looking for a worthwhile activ": width 555px, live 874px
+- text "Looking for a worthwhile activ": font Epilogue, live Muli
+- text "Looking for a worthwhile activ": size 16px, live 18px
+- text "Looking for a worthwhile activ": weight 300, live 400
+- text "Looking for a worthwhile activ": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Looking for a worthwhile activ": line height 26px, live 32px
+- text "Looking for a worthwhile activ": align start, live center
+- text "Look no further! Our incredibl": left edge 65px, live 203px
+- text "Look no further! Our incredibl": width 555px, live 874px
+- text "Look no further! Our incredibl": font Epilogue, live Muli
+- text "Look no further! Our incredibl": size 16px, live 18px
+- text "Look no further! Our incredibl": weight 300, live 400
+- text "Look no further! Our incredibl": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Look no further! Our incredibl": line height 26px, live 32px
+- text "Look no further! Our incredibl": align start, live center
+- text "Kids will get the chance to wo": left edge 65px, live 203px
+- text "Kids will get the chance to wo": width 555px, live 874px
+- text "Kids will get the chance to wo": font Epilogue, live Muli
+- text "Kids will get the chance to wo": size 16px, live 18px
+- text "Kids will get the chance to wo": weight 300, live 400
+- text "Kids will get the chance to wo": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Kids will get the chance to wo": 5 line(s), live 3
+- text "Kids will get the chance to wo": line height 26px, live 32px
+- text "Kids will get the chance to wo": align start, live center
+- text "Plus, there’s a competition at": left edge 65px, live 203px
+- text "Plus, there’s a competition at": width 555px, live 874px
+- text "Plus, there’s a competition at": font Epilogue, live Muli
+- text "Plus, there’s a competition at": size 16px, live 18px
+- text "Plus, there’s a competition at": weight 300, live 400
+- text "Plus, there’s a competition at": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Plus, there’s a competition at": 3 line(s), live 2
+- text "Plus, there’s a competition at": line height 26px, live 32px
+- text "Plus, there’s a competition at": align start, live center
+- text "Come join us at our camps, whi": left edge 65px, live 203px
+- text "Come join us at our camps, whi": width 555px, live 874px
+- text "Come join us at our camps, whi": font Epilogue, live Muli
+- text "Come join us at our camps, whi": size 16px, live 18px
+- text "Come join us at our camps, whi": weight 300, live 400
+- text "Come join us at our camps, whi": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Come join us at our camps, whi": 2 line(s), live 1
+- text "Come join us at our camps, whi": line height 26px, live 32px
+- text "Come join us at our camps, whi": align start, live center
+- text "May 25th - May 29th": width 555px, live 187px
+- text "May 25th - May 29th": font Epilogue, live Muli
+- text "May 25th - May 29th": size 16px, live 18px
+- text "May 25th - May 29th": weight 300, live 800
+- text "May 25th - May 29th": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "May 25th - May 29th": line height 26px, live 32px
+- text "8:30 AM - 11:30 AM": left edge 65px, live 284px
+- text "8:30 AM - 11:30 AM": width 555px, live 221px
+- text "8:30 AM - 11:30 AM": font Epilogue, live Muli
+- text "8:30 AM - 11:30 AM": size 16px, live 18px
+- text "8:30 AM - 11:30 AM": weight 300, live 400
+- text "8:30 AM - 11:30 AM": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "8:30 AM - 11:30 AM": line height 26px, live 32px
+- text "8:30 AM - 11:30 AM": letter spacing 0.6px, live 0px
+- text "June 8th - June 12th": width 555px, live 186px
+- text "June 8th - June 12th": font Epilogue, live Muli
+- text "June 8th - June 12th": size 16px, live 18px
+- text "June 8th - June 12th": weight 300, live 800
+- text "June 8th - June 12th": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "June 8th - June 12th": line height 26px, live 32px
+- text "8:30 AM - 11:30 AM": left edge 65px, live 284px
+- text "8:30 AM - 11:30 AM": width 555px, live 221px
+- text "8:30 AM - 11:30 AM": font Epilogue, live Muli
+- text "8:30 AM - 11:30 AM": size 16px, live 18px
+- text "8:30 AM - 11:30 AM": weight 300, live 400
+- text "8:30 AM - 11:30 AM": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "8:30 AM - 11:30 AM": line height 26px, live 32px
+- text "8:30 AM - 11:30 AM": letter spacing 0.6px, live 0px
+- text "June 22nd - June 26th": width 555px, live 187px
+- text "June 22nd - June 26th": font Epilogue, live Muli
+- text "June 22nd - June 26th": size 16px, live 18px
+- text "June 22nd - June 26th": weight 300, live 800
+- text "June 22nd - June 26th": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "June 22nd - June 26th": line height 26px, live 32px
+- text "8:30 AM - 11:30 AM": left edge 65px, live 284px
+- text "8:30 AM - 11:30 AM": width 555px, live 221px
+- text "8:30 AM - 11:30 AM": font Epilogue, live Muli
+- text "8:30 AM - 11:30 AM": size 16px, live 18px
+- text "8:30 AM - 11:30 AM": weight 300, live 400
+- text "8:30 AM - 11:30 AM": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "8:30 AM - 11:30 AM": line height 26px, live 32px
+- text "8:30 AM - 11:30 AM": letter spacing 0.6px, live 0px
+- text "July 6th - July 10th": width 555px, live 187px
+- text "July 6th - July 10th": font Epilogue, live Muli
+- text "July 6th - July 10th": size 16px, live 18px
+- text "July 6th - July 10th": weight 300, live 800
+- text "July 6th - July 10th": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "July 6th - July 10th": line height 26px, live 32px
+- text "8:30 AM - 11:30 AM": left edge 65px, live 284px
+- text "8:30 AM - 11:30 AM": width 555px, live 221px
+- text "8:30 AM - 11:30 AM": font Epilogue, live Muli
+- text "8:30 AM - 11:30 AM": size 16px, live 18px
+- text "8:30 AM - 11:30 AM": weight 300, live 400
+- text "8:30 AM - 11:30 AM": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "8:30 AM - 11:30 AM": line height 26px, live 32px
+- text "8:30 AM - 11:30 AM": letter spacing 0.6px, live 0px
+- text "12 PM - 3 PM": left edge 65px, live 284px
+- text "12 PM - 3 PM": width 555px, live 221px
+- text "12 PM - 3 PM": font Epilogue, live Muli
+- text "12 PM - 3 PM": size 16px, live 18px
+- text "12 PM - 3 PM": weight 300, live 400
+- text "12 PM - 3 PM": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "12 PM - 3 PM": line height 26px, live 32px
+- text "12 PM - 3 PM": letter spacing 0.6px, live 0px
+- text "July 20th - July 24th": width 555px, live 187px
+- text "July 20th - July 24th": font Epilogue, live Muli
+- text "July 20th - July 24th": size 16px, live 18px
+- text "July 20th - July 24th": weight 300, live 800
+- text "July 20th - July 24th": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "July 20th - July 24th": line height 26px, live 32px
+- text "8:30 AM - 11:30 AM": left edge 65px, live 284px
+- text "8:30 AM - 11:30 AM": width 555px, live 221px
+- text "8:30 AM - 11:30 AM": font Epilogue, live Muli
+- text "8:30 AM - 11:30 AM": size 16px, live 18px
+- text "8:30 AM - 11:30 AM": weight 300, live 400
+- text "8:30 AM - 11:30 AM": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "8:30 AM - 11:30 AM": line height 26px, live 32px
+- text "8:30 AM - 11:30 AM": letter spacing 0.6px, live 0px
+- text "12 PM - 3 PM": left edge 65px, live 284px
+- text "12 PM - 3 PM": width 555px, live 221px
+- text "12 PM - 3 PM": font Epilogue, live Muli
+- text "12 PM - 3 PM": size 16px, live 18px
+- text "12 PM - 3 PM": weight 300, live 400
+- text "12 PM - 3 PM": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "12 PM - 3 PM": line height 26px, live 32px
+- text "12 PM - 3 PM": letter spacing 0.6px, live 0px
+- text "August 3rd - August 7th": width 555px, live 187px
+- text "August 3rd - August 7th": font Epilogue, live Muli
+- text "August 3rd - August 7th": size 16px, live 18px
+- text "August 3rd - August 7th": weight 300, live 800
+- text "August 3rd - August 7th": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "August 3rd - August 7th": line height 26px, live 32px
+- text "8:30 AM - 11:30 AM": left edge 65px, live 284px
+- text "8:30 AM - 11:30 AM": width 555px, live 221px
+- text "8:30 AM - 11:30 AM": font Epilogue, live Muli
+- text "8:30 AM - 11:30 AM": size 16px, live 18px
+- text "8:30 AM - 11:30 AM": weight 300, live 400
+- text "8:30 AM - 11:30 AM": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "8:30 AM - 11:30 AM": line height 26px, live 32px
+- text "8:30 AM - 11:30 AM": letter spacing 0.6px, live 0px
+- text "12 PM - 3 PM": left edge 65px, live 284px
+- text "12 PM - 3 PM": width 555px, live 221px
+- text "12 PM - 3 PM": font Epilogue, live Muli
+- text "12 PM - 3 PM": size 16px, live 18px
+- text "12 PM - 3 PM": weight 300, live 400
+- text "12 PM - 3 PM": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "12 PM - 3 PM": line height 26px, live 32px
+- text "12 PM - 3 PM": letter spacing 0.6px, live 0px
+- text "August 17th - August 21st": width 555px, live 187px
+- text "August 17th - August 21st": font Epilogue, live Muli
+- text "August 17th - August 21st": size 16px, live 18px
+- text "August 17th - August 21st": weight 300, live 800
+- text "August 17th - August 21st": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "August 17th - August 21st": line height 26px, live 32px
+- text "8:30 AM - 11:30 AM": left edge 65px, live 284px
+- text "8:30 AM - 11:30 AM": width 555px, live 221px
+- text "8:30 AM - 11:30 AM": font Epilogue, live Muli
+- text "8:30 AM - 11:30 AM": size 16px, live 18px
+- text "8:30 AM - 11:30 AM": weight 300, live 400
+- text "8:30 AM - 11:30 AM": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "8:30 AM - 11:30 AM": line height 26px, live 32px
+- text "8:30 AM - 11:30 AM": letter spacing 0.6px, live 0px
+- text "12 PM - 3 PM": left edge 65px, live 284px
+- text "12 PM - 3 PM": width 555px, live 221px
+- text "12 PM - 3 PM": font Epilogue, live Muli
+- text "12 PM - 3 PM": size 16px, live 18px
+- text "12 PM - 3 PM": weight 300, live 400
+- text "12 PM - 3 PM": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "12 PM - 3 PM": line height 26px, live 32px
+- text "12 PM - 3 PM": letter spacing 0.6px, live 0px
+- text "A week of activities and snack": font Epilogue, live Muli
+- text "A week of activities and snack": size 16px, live 18px
+- text "A week of activities and snack": weight 300, live 400
+- text "A week of activities and snack": color rgb(51, 51, 51), live rgb(106, 107, 108)
+- text "A week of activities and snack": line height 26px, live 32px
+- text "Note:": font Epilogue, live Muli
+- text "Note:": size 16px, live 18px
+- text "Note:": weight 300, live 400
+- text "Note:": color rgb(51, 51, 51), live rgb(106, 107, 108)
+- text "Note:": line height 26px, live 32px
+- text "Summer camp investment monies ": font Epilogue, live Muli
+- text "Summer camp investment monies ": size 16px, live 18px
+- text "Summer camp investment monies ": weight 300, live 400
+- text "Summer camp investment monies ": color rgb(51, 51, 51), live rgb(106, 107, 108)
+- text "Summer camp investment monies ": line height 26px, live 32px
+- text "At our Springfield Warrior Spo": width 555px, live 1148px
+- text "At our Springfield Warrior Spo": size 16px, live 18px
+- text "At our Springfield Warrior Spo": weight 300, live 400
+- text "At our Springfield Warrior Spo": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "At our Springfield Warrior Spo": line height 26px, live 32px
+- text "Cost: $179 per child; member a": left edge 65px, live 191px
+- text "Cost: $179 per child; member a": width 555px, live 898px
+- text "Cost: $179 per child; member a": size 16px, live 18px
+- text "Cost: $179 per child; member a": weight 300, live 400
+- text "Cost: $179 per child; member a": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Cost: $179 per child; member a": line height 26px, live 32px
+- text "** call with questions or to r": left edge 65px, live 191px
+- text "** call with questions or to r": width 555px, live 898px
+- text "** call with questions or to r": size 16px, live 18px
+- text "** call with questions or to r": weight 300, live 400
+- text "** call with questions or to r": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "** call with questions or to r": 3 line(s), live 2
+- text "** call with questions or to r": line height 26px, live 32px
+- text "We had our son’s 10th birthday": font Epilogue, live Muli
+- text "We had our son’s 10th birthday": size 16px, live 18px
+- text "We had our son’s 10th birthday": weight 300, live 400
+- text "We had our son’s 10th birthday": color rgb(51, 51, 51), live rgb(106, 107, 108)
+- text "We had our son’s 10th birthday": line height 26px, live 32px
+- text "- JENNIFER L.": font Epilogue, live Muli
+- text "- JENNIFER L.": size 16px, live 18px
+- text "- JENNIFER L.": weight 300, live 700
+- text "- JENNIFER L.": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- text "- JENNIFER L.": line height 26px, live 32px
+- text "My daughter started training h": font Epilogue, live Muli
+- text "My daughter started training h": size 16px, live 18px
+- text "My daughter started training h": weight 300, live 400
+- text "My daughter started training h": color rgb(51, 51, 51), live rgb(106, 107, 108)
+- text "My daughter started training h": line height 26px, live 32px
+- text "- LEE C.": font Epilogue, live Muli
+- text "- LEE C.": size 16px, live 18px
+- text "- LEE C.": weight 300, live 700
+- text "- LEE C.": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- text "- LEE C.": line height 26px, live 32px
+- words "at our incredible summer camps": color rgb(214, 53, 47), live rgb(255, 255, 255)
+- words "Looking for a worthwhile activity for yo": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Looking for a worthwhile activity for yo": weight 300, live 400
+- words "Look no further! Our incredible Summer C": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Look no further! Our incredible Summer C": weight 300, live 400
+- words "Kids will get the chance to work with ou": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Kids will get the chance to work with ou": weight 300, live 400
+- words "making good nutritional choices": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "making good nutritional choices": weight 300, live 700
+- words "that lead to improved health and wellnes": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "that lead to improved health and wellnes": weight 300, live 400
+- words "Plus, there’s a": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Plus, there’s a": weight 300, live 400
+- words "competition at every camp": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "competition at every camp": weight 300, live 800
+- words "that awards the top place-getters a spot": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "that awards the top place-getters a spot": weight 300, live 400
+- words "Come join us at our camps, which are per": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Come join us at our camps, which are per": weight 300, live 400
+- words "May 25th - May 29th": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "May 25th - May 29th": weight 300, live 800
+- words "8:30 AM - 11:30 AM": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "8:30 AM - 11:30 AM": weight 300, live 400
+- words "June 8th - June 12th": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "June 8th - June 12th": weight 300, live 800
+- words "8:30 AM - 11:30 AM": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "8:30 AM - 11:30 AM": weight 300, live 400
+- words "June 22nd - June 26th": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "June 22nd - June 26th": weight 300, live 800
+- words "8:30 AM - 11:30 AM": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "8:30 AM - 11:30 AM": weight 300, live 400
+- words "July 6th - July 10th": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "July 6th - July 10th": weight 300, live 800
+- words "8:30 AM - 11:30 AM": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "8:30 AM - 11:30 AM": weight 300, live 400
+- words "12 PM - 3 PM": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "12 PM - 3 PM": weight 300, live 400
+- words "July 20th - July 24th": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "July 20th - July 24th": weight 300, live 800
+- words "8:30 AM - 11:30 AM": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "8:30 AM - 11:30 AM": weight 300, live 400
+- words "12 PM - 3 PM": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "12 PM - 3 PM": weight 300, live 400
+- words "August 3rd - August 7th": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "August 3rd - August 7th": weight 300, live 800
+- words "8:30 AM - 11:30 AM": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "8:30 AM - 11:30 AM": weight 300, live 400
+- words "12 PM - 3 PM": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "12 PM - 3 PM": weight 300, live 400
+- words "August 17th - August 21st": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "August 17th - August 21st": weight 300, live 800
+- words "8:30 AM - 11:30 AM": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "8:30 AM - 11:30 AM": weight 300, live 400
+- words "12 PM - 3 PM": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "12 PM - 3 PM": weight 300, live 400
+- words "A week of activities and snacks at Sprin": color rgb(51, 51, 51), live rgb(106, 107, 108)
+- words "A week of activities and snacks at Sprin": weight 300, live 400
+- words "(417) 894-7319": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "(417) 894-7319": weight 300, live 600
+- words "(417) 894-7319": underline false, live true
+- words "and register over the phone in order to ": color rgb(51, 51, 51), live rgb(106, 107, 108)
+- words "and register over the phone in order to ": weight 300, live 400
+- words "Note:": color rgb(51, 51, 51), live rgb(106, 107, 108)
+- words "Note:": weight 300, live 400
+- words "Summer camp investment monies can be pro": color rgb(51, 51, 51), live rgb(106, 107, 108)
+- words "Summer camp investment monies can be pro": weight 300, live 400
+- words "At our Springfield Warrior Sports camps,": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "At our Springfield Warrior Sports camps,": weight 300, live 400
+- words "Cost: $179 per child; member and sibling": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Cost: $179 per child; member and sibling": weight 300, live 400
+- words "** call with questions or to register by": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "** call with questions or to register by": weight 300, live 400
+- words "(417) 894-7319": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "(417) 894-7319": weight 300, live 400
+- words ". Please call to take advantage of the m": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words ". Please call to take advantage of the m": weight 300, live 400
+- words "What our clients say": weight 400, live 300
+- words "We had our son’s 10th birthday here. All": color rgb(51, 51, 51), live rgb(106, 107, 108)
+- words "We had our son’s 10th birthday here. All": weight 300, live 400
+- words "- Jennifer L.": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "- Jennifer L.": weight 300, live 700
+- words "We had our son’s 10th birthday here. All": color rgb(51, 51, 51), live rgb(106, 107, 108)
+- words "We had our son’s 10th birthday here. All": weight 300, live 400
+- words "- Jennifer L.": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "- Jennifer L.": weight 300, live 700
+- words "My daughter started training here 3 year": color rgb(51, 51, 51), live rgb(106, 107, 108)
+- words "My daughter started training here 3 year": weight 300, live 400
+- words "- Lee C.": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "- Lee C.": weight 300, live 700
+- words "My daughter started training here 3 year": color rgb(51, 51, 51), live rgb(106, 107, 108)
+- words "My daughter started training here 3 year": weight 300, live 400
+- words "- Lee C.": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "- Lee C.": weight 300, live 700
+- spacing from "KIDS STAY FIT AND HEALTHY" to "AT OUR INCREDIBLE SUMMER CAMPS": 0px, live 140px
+- spacing from "AT OUR INCREDIBLE SUMMER CAMPS" to "SUMMER CAMPS IN SPRINGFIELD — ": 1093px, live 935px
+- spacing from "SUMMER CAMPS IN SPRINGFIELD — " to "SUMMER CAMP PRICING": 961px, live 804px
+- spacing from "SUMMER CAMP PRICING" to "SPRINGFIELD WARRIOR REGISTRATI": 419px, live 360px
+- spacing from "SPRINGFIELD WARRIOR REGISTRATI" to "REGISTRATION FORM": 354px, live 410px
+- spacing from "REGISTRATION FORM" to "CLIENT TESTIMONIALS": 1825px, live 2324px
+- spacing from "CLIENT TESTIMONIALS" to "WHAT OUR CLIENTS SAY": 0px, live 61px
+- gap between "AT OUR INCREDIBLE SUMMER CAMPS" and "Looking for a worthwhile activ": 421px, live 301px
+- gap between "Come join us at our camps, whi" and "SUMMER CAMPS IN SPRINGFIELD — ": 98px, live 180px
+- gap between "12 PM - 3 PM" and "SUMMER CAMP PRICING": 98px, live 23px
+- gap between "Summer camp investment monies " and "SPRINGFIELD WARRIOR REGISTRATI": 98px, live 16px
+- gap between "WHAT OUR CLIENTS SAY" and "We had our son’s 10th birthday": 65px, live 112px
+- background behind "AT OUR INCREDIBLE SUMMER CAMPS": rgb(23, 24, 22), live rgb(254, 254, 255)
+- background behind "SUMMER CAMPS IN SPRINGFIELD — 2026 DATES": rgb(242, 245, 248), live rgb(226, 236, 237)
+- background behind "SUMMER CAMP PRICING": rgb(255, 255, 255), live rgb(226, 236, 237)
+- background behind "SPRINGFIELD WARRIOR REGISTRATION": rgb(242, 246, 248), live rgb(225, 236, 237)
+- background behind "CLIENT TESTIMONIALS": rgb(242, 246, 249), live rgb(227, 235, 237)
+- background behind "WHAT OUR CLIENTS SAY": rgb(242, 246, 249), live rgb(227, 235, 237)
+- background behind "A week of activities and snacks at Sprin": rgb(255, 255, 255), live rgb(227, 235, 237)
+- background behind "Note:": rgb(255, 255, 255), live rgb(227, 235, 237)
+- background behind "Summer camp investment monies can be pro": rgb(255, 255, 255), live rgb(227, 235, 237)
+- background behind "At our Springfield Warrior Sports camps,": rgb(242, 244, 246), live rgb(227, 235, 237)
+- background behind "We had our son’s 10th birthday here. All": rgb(241, 244, 246), live rgb(227, 235, 237)
+- background behind "- JENNIFER L.": rgb(242, 246, 249), live rgb(227, 235, 237)
+- background behind "My daughter started training here 3 year": rgb(242, 245, 247), live rgb(227, 235, 237)
+- background behind "- LEE C.": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "KIDS STAY FIT AND HEALTHY": rgb(16, 20, 23), live rgb(27, 46, 47)
+- band color beside "SUMMER CAMPS IN SPRINGFIELD — 2026 DATES": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "SUMMER CAMP PRICING": rgb(255, 255, 255), live rgb(227, 235, 237)
+- band color beside "SPRINGFIELD WARRIOR REGISTRATION": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "CLIENT TESTIMONIALS": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "WHAT OUR CLIENTS SAY": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "May 25th - May 29th": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "June 8th - June 12th": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "June 22nd - June 26th": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "July 6th - July 10th": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "12 PM - 3 PM": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "July 20th - July 24th": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "12 PM - 3 PM": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "August 3rd - August 7th": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "12 PM - 3 PM": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "August 17th - August 21st": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "12 PM - 3 PM": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "A week of activities and snacks at Sprin": rgb(255, 255, 255), live rgb(227, 235, 237)
+- band color beside "Note:": rgb(255, 255, 255), live rgb(227, 235, 237)
+- band color beside "Summer camp investment monies can be pro": rgb(255, 255, 255), live rgb(227, 235, 237)
+- band color beside "At our Springfield Warrior Sports camps,": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "We had our son’s 10th birthday here. All": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "- JENNIFER L.": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "- LEE C.": rgb(242, 246, 249), live rgb(227, 235, 237)
+- heading "AT OUR INCREDIBLE SUMMER CAMPS": looks different from live (pixel difference 82)
+- heading "SUMMER CAMP PRICING": looks different from live (pixel difference 54)
+- heading "SPRINGFIELD WARRIOR REGISTRATION": looks different from live (pixel difference 44)
+- heading "REGISTRATION FORM": looks different from live (pixel difference 43)
+- photo hero: brightness 43, live 57 (overlay or exposure differs)
+- band rgb(227, 235, 237) at y=1314 (1564px tall on live, left margin) not found in build
+- band rgb(255, 255, 255) at y=2878 (left margin): 420px tall, live 2334px
+- band rgb(227, 235, 237) at y=5212 (711px tall on live, left margin) not found in build
+- band rgb(255, 255, 255) at y=5923 (left margin): 328px tall, live 293px
+- band rgb(255, 255, 255) at y=2370 (420px tall, left margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=3143 (304px tall, left margin) is in the build but not on live
+- band rgb(227, 235, 237) at y=1314 (1564px tall on live, right margin) not found in build
+- band rgb(255, 255, 255) at y=2878 (right margin): 420px tall, live 2334px
+- band rgb(227, 235, 237) at y=5212 (711px tall on live, right margin) not found in build
+- band rgb(255, 255, 255) at y=5923 (right margin): 328px tall, live 293px
+- band rgb(255, 255, 255) at y=2370 (420px tall, right margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=3143 (304px tall, right margin) is in the build but not on live
+
+## thank-you-for-your-feedback @ 1280px: 11 difference(s)
+- page height 1404px, live 1098px
+- heading missing: "THANK YOU FOR YOUR FEEDBACK!"
+- text "Thank you for your feedback! W": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Thank you for your feedback!": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "Thank you for your feedback!": weight 300, live 900
+- words "Thank you for your feedback! We read and": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "(417)894-7319": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "(417)894-7319": weight 300, live 400
+- words ".Thanks,Andy and the Warrior Sports Team": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- photo hero: brightness 114, live 184 (overlay or exposure differs)
+- photo hero: looks different from live (pixel difference 92)
+
+## wnl-competitions @ 1280px: 89 difference(s)
+- page height 2956px, live 3604px
+- heading missing: "10-26-2024 WNL Competition Registration Form"
+- heading "WNL COMPETITIONS IN SPRINGFIELD MISSOURI": left edge 80px, live 180px
+- heading "WNL COMPETITIONS IN SPRINGFIELD MISSOURI": width 1121px, live 920px
+- heading "WNL COMPETITIONS IN SPRINGFIELD MISSOURI": 1 line(s), live 2
+- heading "WNL REGIONAL QUALIFIERS": width 555px, live 389px
+- heading "WNL REGIONAL QUALIFIERS": size 50px, live 30px
+- heading "WNL REGIONAL QUALIFIERS": color rgb(214, 53, 47), live rgb(40, 82, 118)
+- heading "WNL REGIONAL QUALIFIERS": line height 50px, live 30px
+- photo missing: everyday-warrior
+- text missing: "Calling all Ninjas! Warrior Sports in Springfield Missouri i"
+- text "October 26, 2024": left edge 65px, live 104px
+- text "October 26, 2024": width 555px, live 148px
+- text "October 26, 2024": size 16px, live 18px
+- text "October 26, 2024": weight 300, live 400
+- text "October 26, 2024": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "October 26, 2024": line height 26px, live 29px
+- text "Early bird pricing for these c": left edge 65px, live 203px
+- text "Early bird pricing for these c": width 555px, live 874px
+- text "Early bird pricing for these c": weight 300, live 400
+- text "Early bird pricing for these c": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Early bird pricing for these c": 2 line(s), live 1
+- text "Registration is easy and happe": left edge 65px, live 203px
+- text "Registration is easy and happe": width 555px, live 874px
+- text "Registration is easy and happe": weight 300, live 400
+- text "Registration is easy and happe": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Fill out your information usin": left edge 65px, live 250px
+- text "Fill out your information usin": width 555px, live 827px
+- text "Fill out your information usin": font Epilogue, live Muli
+- text "Fill out your information usin": size 16px, live 18px
+- text "Fill out your information usin": weight 300, live 400
+- text "Fill out your information usin": color rgb(51, 51, 51), live rgb(106, 107, 108)
+- text "Don't wait to register - The e": left edge 65px, live 203px
+- text "Don't wait to register - The e": width 555px, live 874px
+- text "Don't wait to register - The e": weight 300, live 400
+- text "Don't wait to register - The e": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Don't wait to register - The e": 2 line(s), live 1
+- words "Calling all Ninjas! Warrior Sports in Sp": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Calling all Ninjas! Warrior Sports in Sp": weight 300, live 400
+- words "WNL Regional Qualifiers": color rgb(214, 53, 47), live rgb(40, 82, 118)
+- words "October 26, 2024": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "October 26, 2024": weight 300, live 400
+- words "Early bird pricing for these competition": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Early bird pricing for these competition": weight 300, live 400
+- words "Registration is easy and happens in two ": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Registration is easy and happens in two ": weight 300, live 400
+- words "Fill out your information using the form": color rgb(51, 51, 51), live rgb(106, 107, 108)
+- words "Fill out your information using the form": weight 300, live 400
+- words "Pay your registration fee using the pay ": color rgb(51, 51, 51), live rgb(106, 107, 108)
+- words "Pay your registration fee using the pay ": weight 300, live 400
+- words "Don't wait to register - The early bird ": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Don't wait to register - The early bird ": weight 300, live 400
+- words "the October 26th competition": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "the October 26th competition": weight 300, live 600
+- words "will go up after October 12th!": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "will go up after October 12th!": weight 300, live 400
+- spacing from "WNL COMPETITIONS IN SPRINGFIEL" to "WNL REGIONAL QUALIFIERS": 653px, live 937px
+- gap between "WNL COMPETITIONS IN SPRINGFIEL" and "WNL REGIONAL QUALIFIERS": 558px, live 837px
+- gap between "October 26, 2024" and "Early bird pricing for these c": 13px, live 382px
+- gap between "Fill out your information usin" and "Don't wait to register - The e": 14px, live 55px
+- icons: 5 in build, 6 on live
+- icon 1: color rgb(255, 255, 255), live rgb(219, 58, 52)
+- icon 2: left edge 135px, live 94px
+- icon 3: color rgb(219, 58, 52), live rgb(255, 255, 255)
+- icon 3: left edge 501px, live 131px
+- background behind "WNL REGIONAL QUALIFIERS": rgb(242, 246, 248), live rgb(226, 235, 238)
+- background behind "October 26, 2024": rgb(242, 246, 249), live rgb(227, 235, 237)
+- background behind "Early bird pricing for these competition": rgb(242, 245, 248), live rgb(255, 255, 255)
+- background behind "Registration is easy and happens in two ": rgb(242, 245, 248), live rgb(255, 255, 255)
+- background behind "Fill out your information using the form": rgb(242, 245, 247), live rgb(255, 255, 255)
+- background behind "Don't wait to register - The early bird ": rgb(242, 245, 248), live rgb(255, 255, 255)
+- band color beside "WNL COMPETITIONS IN SPRINGFIELD MISSOURI": rgb(154, 154, 154), live rgb(22, 21, 26)
+- band color beside "WNL REGIONAL QUALIFIERS": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "October 26, 2024": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "Early bird pricing for these competition": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band color beside "Registration is easy and happens in two ": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band color beside "Don't wait to register - The early bird ": rgb(242, 246, 249), live rgb(255, 255, 255)
+- heading "WNL COMPETITIONS IN SPRINGFIELD MISSOURI": looks different from live (pixel difference 74)
+- heading "WNL REGIONAL QUALIFIERS": looks different from live (pixel difference 60)
+- photo hero: brightness 81, live 47 (overlay or exposure differs)
+- photo hero: looks different from live (pixel difference 53)
+- band rgb(255, 255, 255) at y=729 (left margin): 241px tall, live 322px
+- band rgb(227, 235, 237) at y=1052 (619px tall on live, left margin) not found in build
+- band rgb(255, 255, 255) at y=1671 (1868px tall on live, left margin) not found in build
+- band rgb(255, 255, 255) at y=2563 (328px tall, left margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=729 (right margin): 241px tall, live 322px
+- band rgb(227, 235, 237) at y=1052 (619px tall on live, right margin) not found in build
+- band rgb(255, 255, 255) at y=1671 (1868px tall on live, right margin) not found in build
+- band rgb(255, 255, 255) at y=2563 (328px tall, right margin) is in the build but not on live
+
+## about @ 390px: 1 difference(s)
+- text "In 2016 we had the unique oppo": 19 line(s), live 18
+
+## best-gyms-in-springfield @ 390px: 201 difference(s)
+- page height 8081px, live 11526px
+- heading missing: "GP ATHLETICS"
+- heading missing: "SPRINGFIELD WARRIOR SPORTS"
+- heading missing: "SPRINGFIELD STRENGTH & CONDITIONING"
+- heading missing: "PROXIMAL STRENGTH"
+- heading missing: "10 FITNESS SPRINGFIELD"
+- heading missing: "GENESIS HEALTH CLUBS – SPRINGFIELD SOUTH"
+- heading missing: "SO… WHICH GYM’S RIGHT FOR YOU?"
+- heading missing: "Southwest Springfield doesn’t mess around when it comes to fitness. Whether you want to lift heavy, join a class, recover in a cold plunge, or chase your first chin-up—you’ve got options."
+- heading missing: "So, no matter where you are in your fitness journey, take the leap."
+- heading missing: "Pick your place, show up like you mean it, and get after it."
+- heading "LOOKING FOR THE BEST GYMS IN SPRINGFIELD": left edge 20px, live 38px
+- heading "LOOKING FOR THE BEST GYMS IN SPRINGFIELD": size 45px, live 40px
+- heading "LOOKING FOR THE BEST GYMS IN SPRINGFIELD": color rgb(255, 255, 255), live rgb(219, 58, 52)
+- heading "LOOKING FOR THE BEST GYMS IN SPRINGFIELD": line height 45px, live 40px
+- heading "LOOKING FOR THE BEST GYMS IN SPRINGFIELD": align center, live left
+- heading "RAGE FITNESS": left edge 20px, live 25px
+- heading "RAGE FITNESS": width 350px, live 219px
+- photo missing: colorrage-sw-sq-2
+- photo missing: gp12-20-45_websize
+- photo missing: 62544e735ced2e7233a47d90_about us in springfield hero
+- photo missing: ourclasses_3-750x500-1200w
+- photo missing: springfield-1
+- photo missing: genesis_app_background
+- photo missing: pricing-and-schedule
+- photo img_2344: width 350px, live 490px
+- button missing: "VISIT WEBSITE"
+- button missing: "VISIT WEBSITE"
+- button missing: "VISIT WEBSITE"
+- button missing: "VISIT WEBSITE"
+- button missing: "VISIT WEBSITE"
+- button missing: "VISIT WEBSITE"
+- button "VISIT WEBSITE": color rgb(214, 53, 47), live rgb(40, 82, 118)
+- text missing: "3119 S Scenic Ave Ste B, Springfield, MO"
+- text missing: "Built for lifters, athletes, and real humans who want to mov"
+- text missing: "From elite coaching to personal training, group classes, and"
+- text missing: "Expert-led barbell and strength classes"
+- text missing: "One-on-one coaching and online programs"
+- text missing: "Open gym for lifters who know their way around"
+- text missing: "Welcoming community for all ages"
+- text missing: "605 W Farm Rd 182, Springfield, MO"
+- text missing: "Ready to ditch the treadmill for something way more exciting"
+- text missing: "If you're interested in parkour sessions, open gym time, and"
+- text missing: "2026 W Vista St Suite H, Springfield, MO"
+- text missing: "Voted Springfield’s #1 Gym two years running, SSC is the go-"
+- text missing: "They offer 24-hour access, individualized coaching, online t"
+- text missing: "Customized training & nutrition (online or in-person)"
+- text missing: "Strength, performance, and Olympic lifting classes"
+- text missing: "24/7 gym access for grinders"
+- text missing: "Coaches who correct your form, not just count reps"
+- text missing: "1900 W Sunset St #B100, Springfield, MO"
+- text missing: "Proximal isn’t just about fitness—it’s about never quitting,"
+- text missing: "You’ll find a welcoming crew, killer programming, and traine"
+- text missing: "Endurance, rowing, sports performance classes"
+- text missing: "Personal training & private onboarding"
+- text missing: "5-star rated staff with a focus on mindset"
+- text missing: "Built for connection, not comparison"
+- text missing: "1444 S Glenstone Ave, Springfield, MO"
+- text missing: "Want fitness on your terms? 10 Fitness brings you 24/7 acces"
+- text missing: "Their Level 10 group classes are perfect for accountability "
+- text missing: "24/7 gym access, massage chairs, & tanning"
+- text missing: "Premium training zones & cardio deck"
+- text missing: "Group fitness with knowledgeable coaches"
+- text missing: "Affordable, flexible, and great for every schedule"
+- text missing: "1249 E Battlefield Rd, Springfield, MO"
+- text missing: "If you're after a fitness center in Springfield, MO with eve"
+- text missing: "Great for families or anyone who wants spa-day extras withou"
+- text missing: "Indoor pool, hot tub, steam room, smoothie bar"
+- text missing: "Unlimited daily group classes (HIIT, cycle, yoga, barre)"
+- text missing: "CPR-certified childcare"
+- text missing: "Full-service locker rooms & recovery spaces"
+- text "Whether you’re hunting down yo": left edge 20px, live 26px
+- text "Whether you’re hunting down yo": weight 300, live 400
+- text "Whether you’re hunting down yo": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Whether you’re hunting down yo": align start, live center
+- text "Offering everything from worko": left edge 20px, live 26px
+- text "Offering everything from worko": weight 300, live 400
+- text "Offering everything from worko": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Offering everything from worko": align start, live center
+- text "Before we get started on our l": left edge 20px, live 26px
+- text "Before we get started on our l": weight 300, live 400
+- text "Before we get started on our l": color rgb(51, 51, 51), live rgba(41, 41, 41, 0.99)
+- text "Before we get started on our l": align start, live center
+- text "Instead, think obstacle course": left edge 20px, live 26px
+- text "Instead, think obstacle course": weight 300, live 400
+- text "Instead, think obstacle course": color rgb(51, 51, 51), live rgba(41, 41, 41, 0.99)
+- text "Instead, think obstacle course": align start, live center
+- text "and train like never before, c": left edge 20px, live 26px
+- text "and train like never before, c": weight 300, live 400
+- text "and train like never before, c": color rgb(51, 51, 51), live rgba(41, 41, 41, 0.99)
+- text "and train like never before, c": align start, live center
+- text "one of the most unique gyms ar": left edge 20px, live 26px
+- text "one of the most unique gyms ar": weight 300, live 600
+- text "one of the most unique gyms ar": color rgb(51, 51, 51), live rgba(41, 41, 41, 0.99)
+- text "one of the most unique gyms ar": align start, live center
+- text "2321 S Campbell Ave, Springfie": left edge 20px, live 60px
+- text "2321 S Campbell Ave, Springfie": width 350px, live 292px
+- text "2321 S Campbell Ave, Springfie": weight 300, live 600
+- text "2321 S Campbell Ave, Springfie": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "If you want gyms in Springfiel": left edge 20px, live 26px
+- text "If you want gyms in Springfiel": weight 300, live 400
+- text "If you want gyms in Springfiel": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "This is where grit meets grind": left edge 20px, live 26px
+- text "This is where grit meets grind": weight 300, live 400
+- text "This is where grit meets grind": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.99)
+- text "Highlights:": left edge 20px, live 26px
+- text "Highlights:": width 350px, live 86px
+- text "Highlights:": weight 300, live 700
+- text "Highlights:": color rgb(51, 51, 51), live rgb(40, 82, 118)
+- text "24/7 access — because results ": left edge 20px, live 58px
+- text "24/7 access — because results ": width 350px, live 306px
+- text "24/7 access — because results ": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Cold plunges, saunas, compress": left edge 20px, live 58px
+- text "Cold plunges, saunas, compress": width 350px, live 306px
+- text "Cold plunges, saunas, compress": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Looking for the Best Gyms in Springfield": color rgb(255, 255, 255), live rgb(219, 58, 52)
+- words "Whether you’re hunting down your next PR": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Whether you’re hunting down your next PR": weight 300, live 400
+- words "Offering everything from workout classes": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Offering everything from workout classes": weight 300, live 400
+- words "Before we get started on our list—can we": color rgb(51, 51, 51), live rgba(41, 41, 41, 0.99)
+- words "Before we get started on our list—can we": weight 300, live 400
+- words "Instead, think obstacle courses, warped ": color rgb(51, 51, 51), live rgba(41, 41, 41, 0.99)
+- words "Instead, think obstacle courses, warped ": weight 300, live 400
+- words "and train like never before, check out o": color rgb(51, 51, 51), live rgba(41, 41, 41, 0.99)
+- words "and train like never before, check out o": weight 300, live 400
+- words "Adult Fitness Classes": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "Adult Fitness Classes": weight 300, live 400
+- words "and see what makes Springfield Warrior S": color rgb(51, 51, 51), live rgba(41, 41, 41, 0.99)
+- words "and see what makes Springfield Warrior S": weight 300, live 400
+- words "one of the most unique gyms around.": color rgb(51, 51, 51), live rgba(41, 41, 41, 0.99)
+- words "one of the most unique gyms around.": weight 300, live 600
+- words "We’re located just south of Sunshine and": color rgb(51, 51, 51), live rgba(41, 41, 41, 0.99)
+- words "We’re located just south of Sunshine and": weight 300, live 400
+- words "2321 S Campbell Ave, Springfield, MO": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "2321 S Campbell Ave, Springfield, MO": weight 300, live 600
+- words "If you want gyms in Springfield that don": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "If you want gyms in Springfield that don": weight 300, live 400
+- words "This is where grit meets grind. You’ll f": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.99)
+- words "This is where grit meets grind. You’ll f": weight 300, live 400
+- words "Highlights:": color rgb(51, 51, 51), live rgb(40, 82, 118)
+- words "Highlights:": weight 300, live 700
+- words "24/7 access — because results don’t cloc": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Cold plunges, saunas, compression sleeve": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Locally owned, hardcore ethos": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Group classes and personal training": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Highlights:": color rgb(51, 51, 51), live rgb(40, 82, 118)
+- words "Highlights:": weight 300, live 700
+- words "Springfield Warrior Sports": color rgb(255, 255, 255), live rgb(219, 58, 52)
+- words "Springfield Warrior Sports": weight 700, live 900
+- words "Highlights:": color rgb(51, 51, 51), live rgb(40, 82, 118)
+- words "Highlights:": weight 300, live 700
+- words "Highlights:": color rgb(51, 51, 51), live rgb(40, 82, 118)
+- words "Highlights:": weight 300, live 700
+- words "Highlights:": color rgb(51, 51, 51), live rgb(40, 82, 118)
+- words "Highlights:": weight 300, live 700
+- words "Highlights:": color rgb(51, 51, 51), live rgb(40, 82, 118)
+- words "Highlights:": weight 300, live 700
+- gap between "LOOKING FOR THE BEST GYMS IN S" and "Whether you’re hunting down yo": 539px, live 111px
+- gap between "Offering everything from worko" and "Before we get started on our l": 14px, live 82px
+- gap between "one of the most unique gyms ar" and "RAGE FITNESS": 98px, live 547px
+- icons: 6 in build, 37 on live
+- icon 2: color rgb(255, 255, 255), live rgb(219, 58, 52)
+- icon 2: size 17px, live 24px
+- icon 3: color rgb(255, 255, 255), live rgb(219, 58, 52)
+- icon 3: left edge 70px, live 26px
+- background behind "RAGE FITNESS": rgb(242, 246, 249), live rgb(255, 255, 255)
+- background behind "Before we get started on our list—can we": rgb(255, 255, 255), live rgb(237, 244, 250)
+- background behind "Instead, think obstacle courses, warped ": rgb(255, 255, 255), live rgb(237, 243, 250)
+- background behind "and train like never before, check out o": rgb(255, 255, 255), live rgb(238, 244, 250)
+- background behind "one of the most unique gyms around. We’r": rgb(255, 255, 255), live rgb(238, 244, 250)
+- background behind "2321 S Campbell Ave, Springfield, MO": rgb(243, 245, 248), live rgb(255, 255, 255)
+- background behind "If you want gyms in Springfield that don": rgb(242, 244, 247), live rgb(255, 255, 255)
+- background behind "This is where grit meets grind. You’ll f": rgb(242, 244, 246), live rgb(255, 255, 255)
+- background behind "Highlights:": rgb(242, 246, 249), live rgb(255, 255, 255)
+- background behind "24/7 access — because results don’t cloc": rgb(242, 245, 248), live rgb(255, 255, 255)
+- background behind "Cold plunges, saunas, compression sleeve": rgb(242, 245, 248), live rgb(255, 255, 255)
+- band color beside "LOOKING FOR THE BEST GYMS IN SPRINGFIELD": rgb(2, 2, 2), live rgb(9, 24, 45)
+- band color beside "RAGE FITNESS": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band color beside "Before we get started on our list—can we": rgb(255, 255, 255), live rgb(238, 245, 251)
+- band color beside "Instead, think obstacle courses, warped ": rgb(255, 255, 255), live rgb(238, 245, 251)
+- band color beside "and train like never before, check out o": rgb(255, 255, 255), live rgb(238, 245, 251)
+- band color beside "one of the most unique gyms around. We’r": rgb(255, 255, 255), live rgb(238, 245, 251)
+- band color beside "2321 S Campbell Ave, Springfield, MO": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band color beside "If you want gyms in Springfield that don": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band color beside "This is where grit meets grind. You’ll f": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band color beside "Highlights:": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band color beside "24/7 access — because results don’t cloc": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band color beside "Cold plunges, saunas, compression sleeve": rgb(242, 246, 249), live rgb(255, 255, 255)
+- heading "LOOKING FOR THE BEST GYMS IN SPRINGFIELD": looks different from live (pixel difference 55)
+- heading "RAGE FITNESS": looks different from live (pixel difference 48)
+- photo img_2344: looks different from live (pixel difference 43)
+- band rgb(255, 255, 255) at y=599 (left margin): 1219px tall, live 491px
+- band rgb(238, 245, 251) at y=1090 (471px tall on live, left margin) not found in build
+- band rgb(255, 255, 255) at y=1561 (8624px tall on live, left margin) not found in build
+- band rgb(37, 37, 37) at y=10212 (164px tall on live, left margin) not found in build
+- band rgb(0, 0, 0) at y=10558 (55px tall on live, left margin) not found in build
+- band rgb(0, 1, 4) at y=10643 (92px tall on live, left margin) not found in build
+- band rgb(255, 255, 255) at y=10738 (688px tall on live, left margin) not found in build
+- band rgb(255, 255, 255) at y=685 (1219px tall, left margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=2633 (5276px tall, left margin) is in the build but not on live
+
+## birthday-parties @ 390px: 84 difference(s)
+- page height 7216px, live 8154px
+- heading missing: "NINJA WARRIOR COURSES, LASER TAG, NERF BATTLES, AND MORE!"
+- heading missing: "WARRIOR SPORTS TAKES THE STRESS OUT OF YOUR BIRTHDAY PARTY PLANNING"
+- heading missing: "BOOK NOW!"
+- heading missing: "You can begin the birthday party scheduling process on our website by clicking here, or call us today at (417) 894-7319 to reserve your birthday party spot at Warrior Sports!"
+- heading missing: "Cancellation & Rescheduling Policy: To help us staff and prepare properly, any cancellations or reschedules made starting the weekend immediately before your party date and at any point thereafter will incur a $60 fee."
+- heading missing: "MORE BIRTHDAY PARTY OPTIONS AT SPRINGFIELD WARRIOR SPORTS"
+- heading missing: "PIZZA BIRTHDAY PARTY WITH NO CLEAN UP!"
+- heading missing: "HAVE BATTLES IN OUR OBSTACLE COURSE GYM"
+- heading missing: "NERF BATTLE PARTIES"
+- heading missing: "LASER TAG PARTIES"
+- heading missing: "CREATE AMAZING MEMORIES"
+- heading not on live: "HIGH-ENERGY KIDS' BIRTHDAY PARTIES IN SPRINGFIELD, MO"
+- heading "KIDS WILL HAVE A BLAST, AND YOU CAN RELA": left edge 20px, live 42px
+- heading "KIDS WILL HAVE A BLAST, AND YOU CAN RELA": width 350px, live 306px
+- heading "KIDS WILL HAVE A BLAST, AND YOU CAN RELA": size 45px, live 26px
+- heading "KIDS WILL HAVE A BLAST, AND YOU CAN RELA": color rgb(214, 53, 47), live rgb(0, 0, 0)
+- heading "KIDS WILL HAVE A BLAST, AND YOU CAN RELA": line height 45px, live 26px
+- photo missing: book-now-bg
+- photo missing: amazing-memories
+- photo downloadable-party-invitation: width 350px, live 300px
+- photo pizza-birthday-party: width 350px, live 300px
+- photo laser-tag-party: width 350px, live 300px
+- text missing: "At Springfield Warrior Sports, we want to take the stress ou"
+- text missing: "Note: free customized party invitations are available upon r"
+- text missing: "Cost: $179 for the first 11 kids and $10 for each additional"
+- text missing: "All other guests (siblings, other parents, etc.) who wish to"
+- text missing: "* All participants will need to sign a waiver before playing"
+- text missing: "** To reserve your birthday party time slot, a $40 deposit i"
+- text missing: "Want to feed the birthday party or have birthday battles ins"
+- text missing: "We can help you with that!"
+- text missing: "Our birthday party pizza package includes plates, napkins, u"
+- text missing: "Our crew will set up and facilitate a Nerf Battle for your p"
+- text missing: "The Springfield Warrior Sports team will set your birthday p"
+- text missing: "Create unforgettable memories with your kids and their frien"
+- text "Springfield Warrior Sports is ": left edge 20px, live 26px
+- text "Springfield Warrior Sports is ": weight 300, live 400
+- text "Springfield Warrior Sports is ": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Springfield Warrior Sports is ": align start, live center
+- text "This means more than just one ": left edge 20px, live 26px
+- text "This means more than just one ": weight 300, live 600
+- text "This means more than just one ": color rgb(51, 51, 51), live rgb(40, 82, 118)
+- text "This means more than just one ": 3 line(s), live 4
+- text "This means more than just one ": align start, live center
+- words "High-Energy": color rgb(214, 53, 47), live rgb(255, 255, 255)
+- words "Kids' birthday parties": color rgb(0, 0, 0), live rgb(219, 58, 52)
+- words "Kids' birthday parties": weight 400, live 900
+- words "in Springfield, MO": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- words "in Springfield, MO": weight 300, live 400
+- words "Ninja Warrior Courses, Laser Tag, Nerf B": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- words "Ninja Warrior Courses, Laser Tag, Nerf B": weight 300, live 400
+- words "Kids will have a Blast, and You can Rela": color rgb(214, 53, 47), live rgb(0, 0, 0)
+- words "Springfield Warrior Sports is the ideal ": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Springfield Warrior Sports is the ideal ": weight 300, live 400
+- words "This means more than just one day of fun": color rgb(51, 51, 51), live rgb(40, 82, 118)
+- words "This means more than just one day of fun": weight 300, live 600
+- words "(417) 894-7319": color rgb(255, 255, 255), live rgb(135, 204, 237)
+- words "(417) 894-7319": weight 700, live 600
+- words "Nerf Battle": color rgb(51, 51, 51), live rgb(47, 138, 228)
+- words "Nerf Battle": weight 300, live 400
+- words "(417) 894-7319": color rgb(255, 255, 255), live rgb(219, 58, 52)
+- words "(417) 894-7319": weight 700, live 600
+- gap between "KIDS WILL HAVE A BLAST, AND YO" and "Springfield Warrior Sports is ": 1446px, live 11px
+- gap between "Springfield Warrior Sports is " and "This means more than just one ": 207px, live 17px
+- icons: 6 in build, 10 on live
+- icon 2: color rgb(255, 255, 255), live rgb(219, 58, 52)
+- icon 3: color rgb(255, 255, 255), live rgb(219, 58, 52)
+- icon 3: left edge 70px, live 26px
+- icon 6: color rgb(219, 58, 52), live rgb(255, 255, 255)
+- background behind "KIDS WILL HAVE A BLAST, AND YOU CAN RELA": rgb(217, 51, 47), live rgb(255, 255, 255)
+- background behind "Springfield Warrior Sports is the ideal ": rgb(242, 244, 247), live rgb(255, 255, 255)
+- background behind "This means more than just one day of fun": rgb(242, 244, 247), live rgb(255, 255, 255)
+- band color beside "KIDS WILL HAVE A BLAST, AND YOU CAN RELA": rgb(39, 39, 39), live rgb(255, 255, 255)
+- band color beside "Springfield Warrior Sports is the ideal ": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band color beside "This means more than just one day of fun": rgb(242, 246, 249), live rgb(255, 255, 255)
+- heading "KIDS WILL HAVE A BLAST, AND YOU CAN RELA": looks different from live (pixel difference 132)
+- photo hero: looks different from live (pixel difference 41)
+- photo laser-tag-party: brightness 255, live 85 (overlay or exposure differs)
+- photo laser-tag-party: looks different from live (pixel difference 170)
+- band rgb(227, 235, 237) at y=1422 (2109px tall on live, left margin) not found in build
+- band rgb(255, 255, 255) at y=3981 (2436px tall on live, left margin) not found in build
+- band rgb(227, 235, 237) at y=6417 (989px tall on live, left margin) not found in build
+- band rgb(255, 255, 255) at y=7406 (648px tall on live, left margin) not found in build
+- band rgb(255, 255, 255) at y=2462 (4582px tall, left margin) is in the build but not on live
+
+## competitions @ 390px: 59 difference(s)
+- page height 3710px, live 4004px
+- heading missing: "2026-9 CSNA September 19th Form"
+- heading "TEST YOUR SKILLS ON OUR FUN AND COMPETIT": left edge 20px, live 29px
+- heading "TEST YOUR SKILLS ON OUR FUN AND COMPETIT": color rgb(255, 255, 255), live rgb(248, 248, 248)
+- heading "SEPTEMBER 2026 CSNA TEAM COMPETITION": left edge 20px, live 25px
+- heading "SEPTEMBER 2026 CSNA TEAM COMPETITION": size 32px, live 40px
+- heading "SEPTEMBER 2026 CSNA TEAM COMPETITION": 4 line(s), live 3
+- heading "SEPTEMBER 2026 CSNA TEAM COMPETITION": line height 32px, live 44px
+- heading "SEPTEMBER 2026 CSNA TEAM COMPETITION": align start, live center
+- photo missing: sws-competitions-banner
+- text not on live: "Don't wait to register - The early bird price for the Januar"
+- text "CONTACT": left edge 53px, live 48px
+- text "SIGN OUR WAIVER": left edge 214px, live 209px
+- text "Whether you are looking for re": left edge 20px, live 26px
+- text "Whether you are looking for re": size 16px, live 18px
+- text "Whether you are looking for re": weight 300, live 400
+- text "Whether you are looking for re": color rgb(51, 51, 51), live rgba(41, 41, 41, 0.99)
+- text "Whether you are looking for re": 4 line(s), live 5
+- text "Whether you are looking for re": line height 26px, live 37px
+- text "Whether you are looking for re": align start, live center
+- text "We host regional qualifiers fo": left edge 20px, live 26px
+- text "We host regional qualifiers fo": size 16px, live 18px
+- text "We host regional qualifiers fo": weight 300, live 400
+- text "We host regional qualifiers fo": color rgb(51, 51, 51), live rgba(41, 41, 41, 0.99)
+- text "We host regional qualifiers fo": 5 line(s), live 7
+- text "We host regional qualifiers fo": line height 26px, live 37px
+- text "We host regional qualifiers fo": align start, live center
+- text "Date: Saturday, September 19th": left edge 48px, live 68px
+- text "Date: Saturday, September 19th": font Muli, live Epilogue
+- text "Date: Saturday, September 19th": size 16px, live 17px
+- text "Date: Saturday, September 19th": color rgb(51, 51, 51), live rgba(41, 41, 41, 0.99)
+- text "Start time: TBA": left edge 48px, live 68px
+- text "Start time: TBA": font Muli, live Epilogue
+- text "Start time: TBA": size 16px, live 17px
+- text "Start time: TBA": color rgb(51, 51, 51), live rgba(41, 41, 41, 0.99)
+- text "Price per registration: $60": left edge 48px, live 68px
+- text "Price per registration: $60": font Muli, live Epilogue
+- text "Price per registration: $60": size 16px, live 17px
+- text "Price per registration: $60": color rgb(51, 51, 51), live rgba(41, 41, 41, 0.99)
+- words "Test your skills on our Fun and Competit": color rgb(255, 255, 255), live rgb(248, 248, 248)
+- words "Whether you are looking for regional qua": color rgb(51, 51, 51), live rgba(41, 41, 41, 0.99)
+- words "Whether you are looking for regional qua": weight 300, live 400
+- words "We host": color rgb(51, 51, 51), live rgba(41, 41, 41, 0.99)
+- words "We host": weight 300, live 400
+- words "regional qualifiers for the WNL": color rgb(51, 51, 51), live rgb(47, 138, 228)
+- words "regional qualifiers for the WNL": weight 300, live 400
+- words "(World Ninja League) and are a CSNA (Cen": color rgb(51, 51, 51), live rgba(41, 41, 41, 0.99)
+- words "(World Ninja League) and are a CSNA (Cen": weight 300, live 400
+- words "Date: Saturday, September 19th": color rgb(51, 51, 51), live rgba(41, 41, 41, 0.99)
+- words "Start time: TBA": color rgb(51, 51, 51), live rgba(41, 41, 41, 0.99)
+- words "Price per registration:": color rgb(51, 51, 51), live rgba(41, 41, 41, 0.99)
+- words "$60": color rgb(51, 51, 51), live rgba(41, 41, 41, 0.99)
+- words "$60": weight 400, live 900
+- gap between "TEST YOUR SKILLS ON OUR FUN AN" and "Whether you are looking for re": 223px, live 141px
+- heading "TEST YOUR SKILLS ON OUR FUN AND COMPETIT": looks different from live (pixel difference 54)
+- heading "SEPTEMBER 2026 CSNA TEAM COMPETITION": looks different from live (pixel difference 41)
+- band rgb(241, 245, 248) at y=458 (2646px tall on live, left margin) not found in build
+- band rgb(255, 255, 255) at y=3106 (left margin): 667px tall, live 798px
+- band rgb(255, 255, 255) at y=685 (354px tall, left margin) is in the build but not on live
+
+## contact @ 390px: 49 difference(s)
+- heading missing: "CLIENT TESTIMONIALS"
+- heading missing: "WHAT OUR CLIENTS SAY"
+- heading "CONTACT US": left edge 20px, live 25px
+- heading "CONTACT US": width 350px, live 306px
+- heading "CONTACT US": line height 32px, live 38px
+- photo not on live: qoute-icon
+- photo qoute-icon: left edge 20px, live 58px
+- text missing: "605 W. Plainview Road Springfield, MO 65810"
+- text missing: "We had our son’s 10th birthday here. All of the kids had a g"
+- text missing: "We had our son’s 10th birthday here. All of the kids had a g"
+- text missing: "- JENNIFER L."
+- text "CONTACT": left edge 53px, live 48px
+- text "SIGN OUR WAIVER": left edge 214px, live 209px
+- text "We look forward to hearing fro": left edge 48px, live 26px
+- text "We look forward to hearing fro": font Muli, live Epilogue
+- text "We look forward to hearing fro": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "We look forward to hearing fro": 5 line(s), live 6
+- text "(417)894-7319": left edge 57px, live 62px
+- text "(417)894-7319": font Muli, live Epilogue
+- text "(417)894-7319": size 14px, live 16px
+- text "(417)894-7319": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "office@swarriorsports.com": left edge 57px, live 62px
+- text "office@swarriorsports.com": width 173px, live 218px
+- text "office@swarriorsports.com": font Muli, live Epilogue
+- text "office@swarriorsports.com": size 14px, live 16px
+- text "office@swarriorsports.com": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "We look forward to hearing from you! We ": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "(417)894-7319": color rgb(255, 255, 255), live rgba(0, 0, 0, 0.7)
+- words "(417)894-7319": weight 700, live 400
+- words "(417)894-7319": underline true, live false
+- gap between "We look forward to hearing fro" and "(417)894-7319": 3150px, live 75px
+- icons: 10 in build, 11 on live
+- icon 5: color rgb(214, 53, 47), live rgb(148, 163, 176)
+- icon 6: color rgb(255, 255, 255), live rgb(148, 163, 176)
+- icon 6: left edge 33px, live 347px
+- icon 7: left edge 70px, live 29px
+- icon 8: color rgb(219, 58, 52), live rgb(255, 255, 255)
+- icon 8: left edge 31px, live 66px
+- band color beside "OUR ACCOMPLISHED, AWARD WINNING CREW IS ": rgb(66, 67, 68), live rgb(8, 8, 8)
+- photo hero: brightness 58, live 38 (overlay or exposure differs)
+- photo img_2339: brightness 255, live 107 (overlay or exposure differs)
+- photo img_2339: looks different from live (pixel difference 148)
+- photo img_2342: brightness 255, live 109 (overlay or exposure differs)
+- photo img_2342: looks different from live (pixel difference 146)
+- photo qoute-icon: brightness 255, live 156 (overlay or exposure differs)
+- photo qoute-icon: looks different from live (pixel difference 99)
+- band rgb(255, 255, 255) at y=599 (left margin): 3618px tall, live 2279px
+- band rgb(227, 235, 237) at y=2878 (755px tall on live, left margin) not found in build
+- band rgb(255, 255, 255) at y=3633 (648px tall on live, left margin) not found in build
+
+## fitness-classes @ 390px: 134 difference(s)
+- page height 6446px, live 7377px
+- heading missing: "OBSTACLE COURSE RACING CLASSES:"
+- heading missing: "A UNIQUE WORKOUT EXPERIENCE"
+- heading missing: "WHAT IS OCR FITNESS?"
+- heading missing: "OCR FITNESS CLASS BENEFITS"
+- heading missing: "SHORT-TERM GOALS AND LONG-TERM GAINS"
+- heading missing: "IMPROVED CONFIDENCE LEVELS AND MENTAL HEALTH"
+- heading "THE MOST DIVERSE (LEAST BORING)": left edge 20px, live 38px
+- heading "FITNESS CLASSES IN SPRINGFIELD, MO": left edge 20px, live 38px
+- heading "FITNESS CLASSES IN SPRINGFIELD, MO": line height 45px, live 56px
+- heading "FITNESS CLASSES IN SPRINGFIELD, MO": letter spacing 0px, live 1px
+- heading "PRICING AND SCHEDULE": left edge 20px, live 42px
+- heading "PRICING AND SCHEDULE": width 350px, live 306px
+- heading "PRICING AND SCHEDULE": align start, live center
+- photo missing: pricing-and-schedule
+- button missing: "SIGN-UP HERE!"
+- text missing: "OCR workouts and fitness classes are designed to help you co"
+- text missing: "OCR fitness classes take the best of the traditional gym exp"
+- text missing: "The benefits of OCR fitness classes extend far beyond just p"
+- text missing: "Additionally, the group atmosphere also encourages camarader"
+- text missing: "OCR training has been proven to improve overall physical hea"
+- text missing: "Our Obstacle Course Racing (OCR) workouts and fitness classe"
+- text missing: "Additionally, many enjoy pairing these fitness classes with "
+- text missing: "So if you’re ready for a new challenge, sign up for our OCR "
+- text not on live: "$20 Drop-In $60 Monthly Membership (once per week) $100 Mont"
+- text "ARE YOU LOOKING FOR A FUN AND ": left edge 20px, live 42px
+- text "ARE YOU LOOKING FOR A FUN AND ": width 350px, live 306px
+- text "ARE YOU LOOKING FOR A FUN AND ": font Epilogue, live Heebo
+- text "ARE YOU LOOKING FOR A FUN AND ": size 16px, live 30px
+- text "ARE YOU LOOKING FOR A FUN AND ": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "ARE YOU LOOKING FOR A FUN AND ": 2 line(s), live 4
+- text "ARE YOU LOOKING FOR A FUN AND ": line height 26px, live 45px
+- text "ARE YOU LOOKING FOR A FUN AND ": align start, live center
+- text "Look no further! Springfield W": left edge 20px, live 26px
+- text "Look no further! Springfield W": weight 300, live 400
+- text "Look no further! Springfield W": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Look no further! Springfield W": align start, live center
+- text "Our experienced instructors wi": left edge 20px, live 26px
+- text "Our experienced instructors wi": weight 300, live 400
+- text "Our experienced instructors wi": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Our experienced instructors wi": align start, live center
+- text "Our OCR classes in Springfield": left edge 20px, live 26px
+- text "Our OCR classes in Springfield": weight 300, live 400
+- text "Our OCR classes in Springfield": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Our OCR classes in Springfield": align start, live center
+- text "Sign up now for ADULT O.C.R wo": left edge 20px, live 26px
+- text "Sign up now for ADULT O.C.R wo": weight 300, live 600
+- text "Sign up now for ADULT O.C.R wo": color rgb(51, 51, 51), live rgb(40, 82, 118)
+- text "Sign up now for ADULT O.C.R wo": align start, live center
+- text "We now offer two OCR classes e": left edge 20px, live 26px
+- text "We now offer two OCR classes e": size 16px, live 18px
+- text "We now offer two OCR classes e": weight 300, live 400
+- text "We now offer two OCR classes e": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- text "We now offer two OCR classes e": 4 line(s), live 5
+- text "We now offer two OCR classes e": line height 26px, live 29px
+- text "We now offer two OCR classes e": align start, live center
+- text "Choose the membership option t": left edge 20px, live 26px
+- text "Choose the membership option t": size 16px, live 18px
+- text "Choose the membership option t": weight 300, live 400
+- text "Choose the membership option t": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- text "Choose the membership option t": line height 26px, live 29px
+- text "Choose the membership option t": align start, live center
+- words "Fitness Classes in Springfield, MO": color rgb(214, 53, 47), live rgb(255, 255, 255)
+- words "Fitness Classes in Springfield, MO": weight 900, live 300
+- words "Are you looking for a fun and unique way": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Look no further! Springfield Warrior Spo": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Look no further! Springfield Warrior Spo": weight 300, live 400
+- words "Our experienced instructors will be ther": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Our experienced instructors will be ther": weight 300, live 400
+- words "personal training": color rgb(51, 51, 51), live rgb(40, 82, 118)
+- words "personal training": weight 300, live 400
+- words "is also available.": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "is also available.": weight 300, live 400
+- words "Our OCR classes in Springfield give you ": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Our OCR classes in Springfield give you ": weight 300, live 400
+- words "Sign up now for ADULT O.C.R workout clas": color rgb(51, 51, 51), live rgb(40, 82, 118)
+- words "Sign up now for ADULT O.C.R workout clas": weight 300, live 600
+- words "We now offer two OCR classes each week —": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- words "We now offer two OCR classes each week —": weight 300, live 400
+- words "Tuesday and Thursday from 6-7 pm": color rgb(51, 51, 51), live rgb(135, 204, 237)
+- words "Tuesday and Thursday from 6-7 pm": weight 300, live 600
+- words "— giving you more flexibility and more o": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- words "— giving you more flexibility and more o": weight 300, live 600
+- words "Choose the membership option that fits y": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- words "Choose the membership option that fits y": weight 300, live 400
+- words "$20 Drop-In": color rgb(51, 51, 51), live rgba(41, 41, 41, 0.99)
+- words "$20 Drop-In": weight 300, live 600
+- words "$60 Monthly Membership": color rgb(51, 51, 51), live rgba(41, 41, 41, 0.99)
+- words "$60 Monthly Membership": weight 300, live 600
+- words "(once per week)": color rgb(51, 51, 51), live rgb(40, 82, 118)
+- words "(once per week)": weight 300, live 600
+- words "$100 Monthly Membership": color rgb(51, 51, 51), live rgba(41, 41, 41, 0.99)
+- words "$100 Monthly Membership": weight 300, live 600
+- words "(twice per week)": color rgb(51, 51, 51), live rgb(40, 82, 118)
+- words "(twice per week)": weight 300, live 600
+- words "$40 Weight Lifting Membership": color rgb(51, 51, 51), live rgba(41, 41, 41, 0.99)
+- words "$40 Weight Lifting Membership": weight 300, live 600
+- words "(18+, access to weight-lifting area only": color rgb(51, 51, 51), live rgb(40, 82, 118)
+- words "(18+, access to weight-lifting area only": weight 300, live 600
+- spacing from "THE MOST DIVERSE (LEAST BORING" to "FITNESS CLASSES IN SPRINGFIELD": 0px, live 191px
+- spacing from "FITNESS CLASSES IN SPRINGFIELD" to "PRICING AND SCHEDULE": 2066px, live 1535px
+- gap between "FITNESS CLASSES IN SPRINGFIELD" and "ARE YOU LOOKING FOR A FUN AND ": 530px, live 151px
+- gap between "Sign up now for ADULT O.C.R wo" and "PRICING AND SCHEDULE": 388px, live 167px
+- icons: 6 in build, 10 on live
+- icon 2: color rgb(255, 255, 255), live rgb(219, 58, 52)
+- icon 2: size 17px, live 26px
+- icon 2: left edge 33px, live 58px
+- icon 3: color rgb(255, 255, 255), live rgb(219, 58, 52)
+- icon 3: size 17px, live 26px
+- icon 4: size 16px, live 26px
+- icon 4: left edge 31px, live 58px
+- icon 5: size 16px, live 26px
+- icon 5: left edge 31px, live 58px
+- icon 6: color rgb(219, 58, 52), live rgb(255, 255, 255)
+- background behind "FITNESS CLASSES IN SPRINGFIELD, MO": rgb(3, 4, 4), live rgb(28, 67, 69)
+- background behind "PRICING AND SCHEDULE": rgb(242, 246, 248), live rgb(30, 24, 23)
+- background behind "We now offer two OCR classes each week —": rgb(242, 245, 247), live rgb(54, 46, 42)
+- background behind "Choose the membership option that fits y": rgb(242, 245, 248), live rgb(52, 46, 44)
+- band color beside "FITNESS CLASSES IN SPRINGFIELD, MO": rgb(2, 2, 2), live rgb(41, 15, 16)
+- band color beside "PRICING AND SCHEDULE": rgb(242, 246, 249), live rgb(1, 6, 20)
+- band color beside "We now offer two OCR classes each week —": rgb(242, 246, 249), live rgb(42, 42, 41)
+- band color beside "Choose the membership option that fits y": rgb(242, 246, 249), live rgb(55, 44, 40)
+- heading "THE MOST DIVERSE (LEAST BORING)": looks different from live (pixel difference 38)
+- heading "FITNESS CLASSES IN SPRINGFIELD, MO": looks different from live (pixel difference 38)
+- heading "PRICING AND SCHEDULE": looks different from live (pixel difference 161)
+- text "We now offer two OCR classes e": looks different from live (pixel difference 172)
+- text "Choose the membership option t": looks different from live (pixel difference 182)
+- photo hero: brightness 25, live 51 (overlay or exposure differs)
+- photo improve-confidence: brightness 255, live 116 (overlay or exposure differs)
+- photo improve-confidence: looks different from live (pixel difference 139)
+- band rgb(0, 2, 6) at y=2680 (208px tall on live, left margin) not found in build
+- band rgb(241, 245, 248) at y=2888 (2453px tall on live, left margin) not found in build
+- band rgb(255, 255, 255) at y=5341 (1936px tall on live, left margin) not found in build
+- band rgb(255, 255, 255) at y=2753 (3521px tall, left margin) is in the build but not on live
+
+## home @ 390px: matches
+
+## homeschool-sports-and-classes-springfield-mo @ 390px: 102 difference(s)
+- page height 3198px, live 4193px
+- heading missing: "COME JOIN THE FUN!"
+- heading missing: "Homeschoolers have the unique opportunity to enjoy exciting activities at Springfield Warrior Sports."
+- heading missing: "With time specifically dedicated to helping homeschoolers excel in their athletic goals, embrace an active lifestyle, and connect with other kids their age, this is a chance for homeschool kids to experience the most fun school year ever."
+- heading missing: "Call (417) 894-7319 for more information, or click here to book a trial class for only $ 5."
+- heading "FUN HOMESCHOOL SPORTS FOR KIDS IN SPRING": left edge 20px, live 45px
+- heading "FUN HOMESCHOOL SPORTS FOR KIDS IN SPRING": align start, live center
+- heading "HOMESCHOOL CLASSES SPRINGFIELD, MO": left edge 20px, live 50px
+- heading "HOMESCHOOL CLASSES SPRINGFIELD, MO": line height 32px, live 20px
+- heading "(AGES 7–15)": left edge 20px, live 50px
+- heading "(AGES 7–15)": line height 32px, live 20px
+- photo missing: rock-climbing
+- photo missing: book-now-bg
+- text missing: "HOMESCHOOL KIDS SPORTS"
+- text not on live: "Availability: Tuesdays and Thursdays Hours: 3–4pm Cost: One "
+- text not on live: "COME JOIN THE FUN! Homeschoolers have the unique opportunity"
+- text "Looking for fun ways to help y": left edge 20px, live 26px
+- text "Looking for fun ways to help y": weight 300, live 400
+- text "Looking for fun ways to help y": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Looking for fun ways to help y": align start, live center
+- text "Springfield Warrior Sports has": left edge 20px, live 26px
+- text "Springfield Warrior Sports has": weight 300, live 400
+- text "Springfield Warrior Sports has": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Springfield Warrior Sports has": 1 line(s), live 2
+- text "Springfield Warrior Sports has": align start, live center
+- text "We offer opportunities for hom": left edge 20px, live 26px
+- text "We offer opportunities for hom": weight 300, live 400
+- text "We offer opportunities for hom": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "We offer opportunities for hom": align start, live center
+- text "Our homeschool programs in Spr": left edge 20px, live 26px
+- text "Our homeschool programs in Spr": weight 300, live 400
+- text "Our homeschool programs in Spr": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Our homeschool programs in Spr": align start, live center
+- text "The Springfield Warrior Sports": left edge 20px, live 51px
+- text "The Springfield Warrior Sports": width 350px, live 288px
+- text "The Springfield Warrior Sports": weight 300, live 400
+- text "The Springfield Warrior Sports": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Availability: Tuesdays and Thu": left edge 20px, live 89px
+- text "Availability: Tuesdays and Thu": width 350px, live 250px
+- text "Availability: Tuesdays and Thu": size 16px, live 18px
+- text "Availability: Tuesdays and Thu": weight 300, live 400
+- text "Availability: Tuesdays and Thu": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Availability: Tuesdays and Thu": 1 line(s), live 2
+- text "Availability: Tuesdays and Thu": line height 26px, live 41px
+- words "Looking for fun ways to help your homesc": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Looking for fun ways to help your homesc": weight 300, live 400
+- words "Springfield Warrior Sports has you cover": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Springfield Warrior Sports has you cover": weight 300, live 400
+- words "We offer opportunities for homeschoolers": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "We offer opportunities for homeschoolers": weight 300, live 400
+- words "Our homeschool programs in Springfield, ": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Our homeschool programs in Springfield, ": weight 300, live 400
+- words "Fun Homeschool Sports for Kids in Spring": color rgb(214, 53, 47), live rgb(255, 255, 255)
+- words "HOMESCHOOL CLASSES SPRINGFIELD, MO": color rgb(0, 0, 0), live rgb(40, 82, 118)
+- words "HOMESCHOOL CLASSES SPRINGFIELD, MO": weight 400, live 800
+- words "(AGES 7–15)": color rgb(0, 0, 0), live rgb(40, 82, 118)
+- words "The Springfield Warrior Sports Junior Wa": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "The Springfield Warrior Sports Junior Wa": weight 300, live 400
+- words "Availability: Tuesdays and Thursdays": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Availability: Tuesdays and Thursdays": weight 300, live 400
+- words "Hours: 3–4pm": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Hours: 3–4pm": weight 300, live 400
+- words "Cost: One class per week, $85 monthly. T": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Cost: One class per week, $85 monthly. T": weight 300, live 400
+- words "Come Join the Fun!": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "Come Join the Fun!": weight 300, live 900
+- words "Homeschoolers have the unique opportunit": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- words "Homeschoolers have the unique opportunit": weight 300, live 400
+- words "With time specifically dedicated to help": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- words "With time specifically dedicated to help": weight 300, live 400
+- words "Call (417) 894-7319 for more information": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- words "Call (417) 894-7319 for more information": weight 300, live 400
+- words "class for only $ 5.": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- words "class for only $ 5.": weight 300, live 600
+- words "class for only $ 5.": underline false, live true
+- spacing from "FUN HOMESCHOOL SPORTS FOR KIDS" to "HOMESCHOOL CLASSES SPRINGFIELD": 0px, live 528px
+- spacing from "HOMESCHOOL CLASSES SPRINGFIELD" to "(AGES 7–15)": 0px, live 40px
+- gap between "Our homeschool programs in Spr" and "FUN HOMESCHOOL SPORTS FOR KIDS": 98px, live 186px
+- gap between "The Springfield Warrior Sports" and "Availability: Tuesdays and Thu": 273px, live 17px
+- icons: 6 in build, 9 on live
+- icon 2: color rgb(255, 255, 255), live rgb(40, 82, 118)
+- icon 2: left edge 33px, live 61px
+- icon 3: color rgb(255, 255, 255), live rgb(40, 82, 118)
+- icon 4: color rgb(219, 58, 52), live rgb(40, 82, 118)
+- icon 4: left edge 31px, live 61px
+- icon 5: color rgb(219, 58, 52), live rgb(255, 255, 255)
+- icon 6: color rgb(219, 58, 52), live rgb(255, 255, 255)
+- icon 6: left edge 31px, live 66px
+- background behind "FUN HOMESCHOOL SPORTS FOR KIDS IN SPRING": rgb(242, 245, 247), live rgb(40, 83, 117)
+- band color beside "FUN HOMESCHOOL SPORTS FOR KIDS IN SPRING": rgb(242, 246, 249), live rgb(40, 83, 117)
+- band color beside "HOMESCHOOL CLASSES SPRINGFIELD, MO": rgb(242, 246, 249), live rgb(40, 83, 117)
+- band color beside "(AGES 7–15)": rgb(242, 246, 249), live rgb(40, 83, 117)
+- band color beside "The Springfield Warrior Sports Junior Wa": rgb(242, 246, 249), live rgb(40, 83, 117)
+- band color beside "Availability: Tuesdays and Thursdays": rgb(242, 246, 249), live rgb(40, 83, 117)
+- heading "FUN HOMESCHOOL SPORTS FOR KIDS IN SPRING": looks different from live (pixel difference 92)
+- heading "HOMESCHOOL CLASSES SPRINGFIELD, MO": looks different from live (pixel difference 45)
+- heading "(AGES 7–15)": looks different from live (pixel difference 45)
+- photo hero: brightness 89, live 33 (overlay or exposure differs)
+- photo hero: looks different from live (pixel difference 57)
+- band rgb(255, 255, 255) at y=599 (left margin): 525px tall, live 675px
+- band rgb(40, 83, 117) at y=1278 (1652px tall on live, left margin) not found in build
+- band rgb(255, 255, 255) at y=2359 (667px tall, left margin) is in the build but not on live
+
+## kids-classes @ 390px: 3 difference(s)
+- text "Our preschool class is geared ": 9 line(s), live 8
+- text "Learn the basics of Parkour |f": 14 line(s), live 13
+- background behind "FUN AND CHALLENGING": rgb(20, 20, 24), live rgb(23, 40, 50)
+
+## laser-tag @ 390px: 162 difference(s)
+- page height 4819px, live 5746px
+- heading missing: "WANT TO BOOK A PRIVATE LASER TAG PARTY?"
+- heading missing: "READY TO BOOK?"
+- heading missing: "WE LOOK FORWARD TO HOSTING YOU."
+- heading missing: "COME JOIN THE FUN! DON’T MISS LASER TAG NIGHT"
+- heading missing: "You’re invited!"
+- heading missing: "We are hosting Laser Tag Nights right here in Springfield, MO, at Warrior Sports Ninja Gym."
+- heading missing: "This fun, family-friendly night happens once a month. And you can now sign up to get notified of all future events."
+- heading missing: "We are open to all ages and our staff is ready and available to keep the experience fun, enjoyable, and stress-free."
+- heading missing: "So, don’t miss it! Come make memories that will last a lifetime."
+- heading missing: "Note: Laser Tag Nights typically happen on Friday evenings."
+- heading missing: "Sign up now to get notified of all future laser tag events!"
+- heading "WELCOME TO THE PREMIER": left edge 20px, live 38px
+- heading "LASER TAG GYM IN SPRINGFIELD, MO": left edge 20px, live 38px
+- heading "HERE ARE THE DETAILS:": left edge 20px, live 25px
+- heading "HERE ARE THE DETAILS:": size 32px, live 30px
+- heading "HERE ARE THE DETAILS:": color rgb(214, 53, 47), live rgb(40, 82, 118)
+- photo missing: laser-tag-party
+- photo missing: laser-tag-war-nights
+- photo laser-tag-fun-fest: width 350px, live 300px
+- text missing: "Cost: $15 per person (Members of the Warrior Sports gym pay "
+- text missing: ""*" indicates required fields"
+- text "Great for all ages!": left edge 20px, live 90px
+- text "Great for all ages!": width 350px, live 210px
+- text "Great for all ages!": size 16px, live 24px
+- text "Great for all ages!": weight 300, live 400
+- text "Great for all ages!": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- text "Great for all ages!": line height 26px, live 42px
+- text "Great for all ages!": align start, live center
+- text "Whether you are planning a bir": left edge 20px, live 26px
+- text "Whether you are planning a bir": size 16px, live 20px
+- text "Whether you are planning a bir": weight 300, live 400
+- text "Whether you are planning a bir": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Whether you are planning a bir": 5 line(s), live 7
+- text "Whether you are planning a bir": line height 26px, live 35px
+- text "Whether you are planning a bir": align start, live center
+- text "Whether you are planning a bir": left edge 20px, live 26px
+- text "Whether you are planning a bir": weight 300, live 400
+- text "Whether you are planning a bir": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "The best part?": left edge 20px, live 26px
+- text "The best part?": width 350px, live 115px
+- text "The best part?": weight 300, live 400
+- text "The best part?": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Our staff will do all the setu": left edge 20px, live 26px
+- text "Our staff will do all the setu": weight 300, live 400
+- text "Our staff will do all the setu": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Call us today and book our ent": left edge 20px, live 26px
+- text "Call us today and book our ent": weight 300, live 400
+- text "Call us today and book our ent": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Cost: For a group of 10, the c": left edge 20px, live 51px
+- text "Cost: For a group of 10, the c": weight 300, live 600
+- text "Cost: For a group of 10, the c": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "We provide a cooler full of Ga": left edge 20px, live 26px
+- text "We provide a cooler full of Ga": weight 300, live 400
+- text "We provide a cooler full of Ga": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Plus, if you have a birthday k": left edge 20px, live 26px
+- text "Plus, if you have a birthday k": weight 300, live 400
+- text "Plus, if you have a birthday k": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "We want kids to have a blast, ": left edge 20px, live 26px
+- text "We want kids to have a blast, ": weight 300, live 400
+- text "We want kids to have a blast, ": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "You can begin the booking proc": left edge 20px, live 26px
+- text "You can begin the booking proc": weight 300, live 400
+- text "You can begin the booking proc": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- text "You can begin the booking proc": align start, live center
+- words "Laser Tag Gym in Springfield, MO": color rgb(214, 53, 47), live rgb(248, 248, 248)
+- words "Great for all ages!": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- words "Great for all ages!": weight 300, live 400
+- words "Whether you are planning a": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Whether you are planning a": weight 300, live 400
+- words "birthday party in Springfield": color rgb(51, 51, 51), live rgb(47, 138, 228)
+- words "birthday party in Springfield": weight 300, live 400
+- words ", a fun youth group outing, or a team-bu": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words ", a fun youth group outing, or a team-bu": weight 300, live 400
+- words "Want to Book a Private Laser Tag Party?": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "Want to Book a Private Laser Tag Party?": weight 300, live 900
+- words "Whether you are planning a birthday part": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Whether you are planning a birthday part": weight 300, live 400
+- words "The best part?": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "The best part?": weight 300, live 400
+- words "Our staff will do all the setup and be o": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Our staff will do all the setup and be o": weight 300, live 400
+- words "Call us today and book our": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Call us today and book our": weight 300, live 400
+- words "entire obstacle course gym": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "entire obstacle course gym": weight 300, live 600
+- words "for your very own private laser tag part": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "for your very own private laser tag part": weight 300, live 400
+- words "Here are the details:": color rgb(214, 53, 47), live rgb(40, 82, 118)
+- words "Cost:": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Cost:": weight 300, live 600
+- words "For a group of 10, the cost is $240. Eac": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "We are available for booking on weekends": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "We provide a cooler full of Gatorade for": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "We provide a cooler full of Gatorade for": weight 300, live 400
+- words "Plus, if you have a birthday kiddo in th": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Plus, if you have a birthday kiddo in th": weight 300, live 400
+- words "We want kids to have a blast, making mem": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "We want kids to have a blast, making mem": weight 300, live 400
+- words "READY TO BOOK?": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- words "READY TO BOOK?": weight 300, live 900
+- words "You can begin the booking process on our": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- words "You can begin the booking process on our": weight 300, live 400
+- words "clicking here": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "clicking here": weight 300, live 400
+- words "or calling us today at": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- words "or calling us today at": weight 300, live 400
+- words "(417) 894-7319": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "(417) 894-7319": weight 300, live 400
+- words "to request a time to reserve the gym for": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- words "to request a time to reserve the gym for": weight 300, live 400
+- words "We look forward to hosting you.": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- words "Cost:": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Cost:": weight 300, live 600
+- spacing from "WELCOME TO THE PREMIER" to "LASER TAG GYM IN SPRINGFIELD, ": 0px, live 64px
+- gap between "LASER TAG GYM IN SPRINGFIELD, " and "Great for all ages!": 842px, live 11px
+- gap between "Great for all ages!" and "Whether you are planning a bir": 14px, live 211px
+- gap between "Whether you are planning a bir" and "Whether you are planning a bir": 111px, live 856px
+- gap between "Call us today and book our ent" and "HERE ARE THE DETAILS:": 97px, live 16px
+- gap between "Cost: For a group of 10, the c" and "We provide a cooler full of Ga": 15px, live 68px
+- gap between "We want kids to have a blast, " and "You can begin the booking proc": 54px, live 184px
+- icons: 6 in build, 9 on live
+- icon 2: color rgb(255, 255, 255), live rgb(219, 58, 52)
+- icon 3: color rgb(255, 255, 255), live rgb(219, 58, 52)
+- icon 3: left edge 70px, live 26px
+- icon 5: color rgb(219, 58, 52), live rgb(255, 255, 255)
+- icon 6: color rgb(219, 58, 52), live rgb(255, 255, 255)
+- icon 6: left edge 31px, live 66px
+- background behind "WELCOME TO THE PREMIER": rgb(6, 5, 8), live rgb(3, 17, 47)
+- background behind "LASER TAG GYM IN SPRINGFIELD, MO": rgb(6, 5, 8), live rgb(3, 17, 45)
+- background behind "HERE ARE THE DETAILS:": rgb(242, 246, 248), live rgb(226, 235, 237)
+- background behind "Great for all ages!": rgb(255, 255, 255), live rgb(1, 8, 29)
+- background behind "Whether you are planning a birthday part": rgb(255, 255, 255), live rgb(227, 235, 237)
+- background behind "The best part?": rgb(255, 255, 255), live rgb(227, 235, 237)
+- background behind "Our staff will do all the setup and be o": rgb(255, 255, 255), live rgb(227, 234, 236)
+- background behind "Call us today and book our entire obstac": rgb(255, 255, 255), live rgb(227, 235, 237)
+- background behind "Cost: For a group of 10, the cost is $24": rgb(242, 245, 247), live rgb(227, 235, 237)
+- background behind "We provide a cooler full of Gatorade for": rgb(242, 245, 247), live rgb(227, 234, 236)
+- background behind "Plus, if you have a birthday kiddo in th": rgb(242, 244, 247), live rgb(227, 235, 237)
+- background behind "We want kids to have a blast, making mem": rgb(242, 246, 248), live rgb(227, 235, 237)
+- background behind "You can begin the booking process on our": rgb(242, 245, 247), live rgb(21, 21, 20)
+- band color beside "WELCOME TO THE PREMIER": rgb(7, 6, 11), live rgb(2, 10, 40)
+- band color beside "LASER TAG GYM IN SPRINGFIELD, MO": rgb(7, 6, 11), live rgb(1, 16, 48)
+- band color beside "HERE ARE THE DETAILS:": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "Great for all ages!": rgb(255, 255, 255), live rgb(1, 8, 36)
+- band color beside "Whether you are planning a birthday part": rgb(255, 255, 255), live rgb(227, 235, 237)
+- band color beside "The best part?": rgb(255, 255, 255), live rgb(227, 235, 237)
+- band color beside "Our staff will do all the setup and be o": rgb(255, 255, 255), live rgb(227, 235, 237)
+- band color beside "Call us today and book our entire obstac": rgb(255, 255, 255), live rgb(227, 235, 237)
+- band color beside "Cost: For a group of 10, the cost is $24": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "We provide a cooler full of Gatorade for": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "Plus, if you have a birthday kiddo in th": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "We want kids to have a blast, making mem": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "You can begin the booking process on our": rgb(242, 246, 249), live rgb(8, 4, 2)
+- heading "LASER TAG GYM IN SPRINGFIELD, MO": looks different from live (pixel difference 70)
+- heading "HERE ARE THE DETAILS:": looks different from live (pixel difference 59)
+- text "You can begin the booking proc": looks different from live (pixel difference 185)
+- band rgb(255, 255, 255) at y=599 (left margin): 1411px tall, live 486px
+- band rgb(227, 235, 237) at y=1089 (1652px tall on live, left margin) not found in build
+- band rgb(3, 3, 3) at y=2978 (48px tall on live, left margin) not found in build
+- band rgb(241, 245, 248) at y=3122 (1837px tall on live, left margin) not found in build
+- band rgb(255, 255, 255) at y=2841 (607px tall, left margin) is in the build but not on live
+
+## meet-the-team @ 390px: 199 difference(s)
+- page height 16376px, live 17511px
+- heading missing: "SARAH"
+- heading missing: "CO-OWNER | ADULT OCR COACH | PRESCHOOL COACH | WOMEN’S FITNESS TRAINER"
+- heading missing: "LINCOLN"
+- heading missing: "BEGINNER NINJA COACH | BIRTHDAY PARTY HOST"
+- heading missing: "ELLORY"
+- heading missing: "ADVANCED TEAM HEAD COACH | PRESCHOOL COACH | BIRTHDAY PARTY HOST"
+- heading missing: "ELLE"
+- heading missing: "PRESCHOOL COACH | BIRTHDAY PARTY HOST"
+- heading missing: "CONNOR"
+- heading missing: "ADVANCED TEAM ASSISTANT | BEGINNER NINJA COACH | BIRTHDAY PARTY HOST"
+- heading missing: "CALEB"
+- heading missing: "BEGINNER NINJA COACH | PRESCHOOL COACH | BIRTHDAY PARTY HOST"
+- heading missing: "RUBY"
+- heading missing: "ALL-LEVELS NINJA COACH | PRIVATE TRAINING | BIRTHDAY PARTY HOST"
+- heading missing: "JOSIAH"
+- heading missing: "BIRTHDAY PARTY HOST"
+- heading missing: "JACOB"
+- heading missing: "LEAD PERSONAL TRAINER"
+- heading missing: "GRACE"
+- heading missing: "BEGINNER NINJA COACH | BIRTHDAY PARTY HOST"
+- heading missing: "YOU'VE MET THE TEAM."
+- heading missing: "NOW TRAIN WITH THEM."
+- heading missing: "You’ve met the coaches who make Springfield Warrior Sports what it is."
+- heading missing: "Now, come be a part of it and experience it for yourself."
+- heading missing: "No experience required."
+- heading not on live: "MEET THE SPRINGFIELD WARRIOR SPORTS TEAM"
+- heading "JONNY": left edge 20px, live 61px
+- heading "JONNY": line height 23px, live 30px
+- heading "JONNY": letter spacing 1px, live 0px
+- heading "CO-OWNER | ADULT OCR COACH | INTERMEDIAT": left edge 20px, live 61px
+- heading "CO-OWNER | ADULT OCR COACH | INTERMEDIAT": line height 23px, live 27px
+- heading "CO-OWNER | ADULT OCR COACH | INTERMEDIAT": letter spacing 1px, live 0px
+- photo missing: johnny-team-photo
+- photo missing: sarah-team-photo
+- photo missing: lincoln-team-photo
+- photo missing: ellroy-team-photo
+- photo missing: elle-team-photo
+- photo missing: connor-team-photo
+- photo missing: caleb-team-photo
+- photo missing: ruby-team-photo
+- photo missing: josiah-team-photo
+- photo missing: img_2336
+- photo not on live: johnny-photo
+- photo not on live: sarah-photo
+- photo not on live: lincoln-photo
+- photo not on live: ellroy-photo
+- photo not on live: elle-photo
+- photo not on live: connor-photo
+- photo not on live: caleb-team-01
+- photo not on live: ruby-photo
+- photo not on live: josiah-photo
+- photo jacob-photo: left edge 20px, live 60px
+- photo jacob-photo: width 350px, live 270px
+- photo grace-photo: left edge 20px, live 60px
+- photo grace-photo: width 350px, live 270px
+- button missing: "TRY OPEN GYM FOR $10"
+- text missing: "Hey guys! I’m Sarah."
+- text missing: "I’m a co-owner of Springfield Warrior Sports alongside my am"
+- text missing: "I teach preschool classes and the Adult O.C.R. Class on Thur"
+- text missing: "Outside the gym, I enjoy reading, crafts, being outdoors, ha"
+- text missing: "I’m excited to meet you. Come hang out with the fam!"
+- text missing: "Hello! I'm Lincoln."
+- text missing: "I’ve been working at Springfield Warrior Sports for three ye"
+- text missing: "I'm an active and sporty person, and I enjoy playing recreat"
+- text missing: "As a coach, I strive to be the best teacher I can be, creati"
+- text missing: "I first got into ninja by watching American Ninja Warrior an"
+- text missing: "When my parents surprised us by signing us up at Springfield"
+- text missing: "I joined the staff here in May 2023, and since then, I’ve be"
+- text missing: "Outside of ninja, I like to try out all different kinds of s"
+- text missing: "Hi! My name is Elle, and I’ve been working at Warrior Sports"
+- text missing: "I teach preschool classes and assist with running birthday p"
+- text missing: "I truly love my job. It's so rewarding to see the kids grow "
+- text missing: "Hello, I’m Connor!"
+- text missing: "I’ve been part of the Springfield Warrior Sports team since "
+- text missing: "Over time, I’ve competed in small and large ninja competitio"
+- text missing: "I also run Birthday Parties and currently teach the beginner"
+- text missing: "Outside of ninja, I like to weight lift and train flips, and"
+- text missing: "Hey everyone! I’m Coach Caleb."
+- text missing: "I’ve been part of the Warrior Sports team since May 31, 2025"
+- text missing: "Here at W.S., I teach our Beginner Ninja classes and Prescho"
+- text missing: "Outside the gym, I’m into rock climbing, caving, and weight "
+- text missing: "I’m all about helping kids have fun, get fit, and feel like "
+- text missing: "I’m Ruby Wilder, and I’ve been involved in Warrior Sports si"
+- text missing: "I competed from ages 8 to 11 and officially started working "
+- text missing: "I also work birthday parties, logins, laser/nerf nights, and"
+- text missing: "Outside the gym, I’m an artist in all categories. I am a mus"
+- text missing: "My name is Josiah, and I’ve trained and competed in ninja fo"
+- text missing: "After placing top 100 in the world in the World Ninja League"
+- text missing: "Here at Springfield Warrior Sports, I was the head coach of "
+- text missing: "Hi! I’m Jacob Winter."
+- text missing: "I’ve been an employee of Springfield Warrior Sports since 20"
+- text missing: "My main job is to head up the personal training side of the "
+- text missing: "Outside of the gym, I can be found performing at our local c"
+- text missing: "Hi, I’m Grace."
+- text missing: "I’ve been training at Warrior Sports since I was 8 years old"
+- text missing: "I’ve been competing since 2018, traveling across the country"
+- text missing: "Outside of ninja, I play softball and run track for Reeds Sp"
+- text "At Springfield Warrior Sports,": size 16px, live 18px
+- text "At Springfield Warrior Sports,": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "At Springfield Warrior Sports,": line height 26px, live 32px
+- text "At Springfield Warrior Sports,": align start, live center
+- text "They’re mentors, competitors, ": size 16px, live 18px
+- text "They’re mentors, competitors, ": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "They’re mentors, competitors, ": 3 line(s), live 4
+- text "They’re mentors, competitors, ": line height 26px, live 32px
+- text "They’re mentors, competitors, ": align start, live center
+- text "Get to know the coaches who ma": size 16px, live 18px
+- text "Get to know the coaches who ma": weight 300, live 500
+- text "Get to know the coaches who ma": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Get to know the coaches who ma": line height 26px, live 32px
+- text "Get to know the coaches who ma": align start, live center
+- text "Hey there! I’m Jonny.": left edge 20px, live 60px
+- text "Hey there! I’m Jonny.": width 350px, live 270px
+- text "Hey there! I’m Jonny.": weight 300, live 400
+- text "Hey there! I’m Jonny.": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "I’ve been part of Springfield ": left edge 20px, live 60px
+- text "I’ve been part of Springfield ": width 350px, live 270px
+- text "I’ve been part of Springfield ": weight 300, live 400
+- text "I’ve been part of Springfield ": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "I’ve been part of Springfield ": 4 line(s), live 5
+- text "Almost nothing in the whole wo": left edge 20px, live 60px
+- text "Almost nothing in the whole wo": width 350px, live 270px
+- text "Almost nothing in the whole wo": weight 300, live 400
+- text "Almost nothing in the whole wo": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Almost nothing in the whole wo": 5 line(s), live 7
+- text "My ninja journey includes winn": left edge 20px, live 60px
+- text "My ninja journey includes winn": width 350px, live 270px
+- text "My ninja journey includes winn": weight 300, live 400
+- text "My ninja journey includes winn": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "My ninja journey includes winn": 6 line(s), live 8
+- text "At the gym, I primarily teach ": left edge 20px, live 60px
+- text "At the gym, I primarily teach ": width 350px, live 270px
+- text "At the gym, I primarily teach ": weight 300, live 400
+- text "At the gym, I primarily teach ": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Outside the gym, I love my wif": left edge 20px, live 60px
+- text "Outside the gym, I love my wif": width 350px, live 270px
+- text "Outside the gym, I love my wif": weight 300, live 400
+- text "Outside the gym, I love my wif": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "Outside the gym, I love my wif": 9 line(s), live 11
+- text "I love meeting new people and ": left edge 20px, live 60px
+- text "I love meeting new people and ": width 350px, live 270px
+- text "I love meeting new people and ": weight 300, live 400
+- text "I love meeting new people and ": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "I love meeting new people and ": 3 line(s), live 4
+- words "At Springfield Warrior Sports, our coach": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "They’re mentors, competitors, and people": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Get to know the coaches who make this co": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Get to know the coaches who make this co": weight 300, live 500
+- words "Jonny": color rgb(0, 0, 0), live rgb(40, 82, 118)
+- words "Jonny": weight 400, live 900
+- words "Co-Owner | ADult ocr coach | intermediat": weight 900, live 400
+- words "Hey there! I’m Jonny.": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Hey there! I’m Jonny.": weight 300, live 400
+- words "I’ve been part of Springfield Warrior Sp": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "I’ve been part of Springfield Warrior Sp": weight 300, live 400
+- words "Almost nothing in the whole world brings": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Almost nothing in the whole world brings": weight 300, live 400
+- words "My ninja journey includes winning the 20": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "My ninja journey includes winning the 20": weight 300, live 400
+- words "At the gym, I primarily teach the Interm": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "At the gym, I primarily teach the Interm": weight 300, live 400
+- words "Outside the gym, I love my wife, Nintend": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Outside the gym, I love my wife, Nintend": weight 300, live 400
+- words "I love meeting new people and growing ou": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "I love meeting new people and growing ou": weight 300, live 400
+- words "Sarah": color rgb(51, 51, 51), live rgb(40, 82, 118)
+- words "Sarah": weight 300, live 900
+- spacing from "JONNY" to "CO-OWNER | ADULT OCR COACH | I": 0px, live 42px
+- gap between "Get to know the coaches who ma" and "JONNY": 559px, live 382px
+- icons: 6 in build, 7 on live
+- icon 2: left edge 33px, live 282px
+- icon 3: left edge 70px, live 29px
+- icon 4: color rgb(219, 58, 52), live rgb(255, 255, 255)
+- icon 4: left edge 31px, live 66px
+- background behind "JONNY": rgb(242, 246, 247), live rgb(255, 255, 255)
+- background behind "CO-OWNER | ADULT OCR COACH | INTERMEDIAT": rgb(242, 246, 247), live rgb(255, 255, 255)
+- background behind "Hey there! I’m Jonny.": rgb(242, 246, 248), live rgb(255, 255, 255)
+- background behind "I’ve been part of Springfield Warrior Sp": rgb(242, 245, 247), live rgb(255, 255, 255)
+- background behind "Almost nothing in the whole world brings": rgb(242, 245, 248), live rgb(255, 255, 255)
+- background behind "My ninja journey includes winning the 20": rgb(242, 245, 247), live rgb(255, 255, 255)
+- background behind "At the gym, I primarily teach the Interm": rgb(242, 245, 248), live rgb(255, 255, 255)
+- background behind "Outside the gym, I love my wife, Nintend": rgb(242, 245, 247), live rgb(255, 255, 255)
+- background behind "I love meeting new people and growing ou": rgb(242, 244, 247), live rgb(255, 255, 255)
+- heading "JONNY": looks different from live (pixel difference 54)
+- heading "CO-OWNER | ADULT OCR COACH | INTERMEDIAT": looks different from live (pixel difference 43)
+- photo hero: brightness 61, live 93 (overlay or exposure differs)
+- photo hero: looks different from live (pixel difference 61)
+- photo jacob-photo: brightness 255, live 100 (overlay or exposure differs)
+- photo jacob-photo: looks different from live (pixel difference 155)
+- photo grace-photo: brightness 255, live 96 (overlay or exposure differs)
+- photo grace-photo: looks different from live (pixel difference 159)
+- band rgb(32, 70, 106) at y=149 (142px tall on live, left margin) not found in build
+- band rgb(255, 255, 255) at y=625 (left margin): 766px tall, live 353px
+- band rgb(239, 246, 252) at y=978 (15236px tall on live, left margin) not found in build
+- band rgb(5, 5, 5) at y=16335 (44px tall on live, left margin) not found in build
+- band rgb(255, 255, 255) at y=16723 (688px tall on live, left margin) not found in build
+- band rgb(6, 6, 6) at y=154 (164px tall, left margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=2840 (13364px tall, left margin) is in the build but not on live
+
+## nerf-wars @ 390px: 136 difference(s)
+- page height 4477px, live 5430px
+- heading missing: "BOOK NOW!"
+- heading missing: "READY TO LOCK IN THE DATE FOR YOUR CHILD'S EPIC NERF PARTY AT WARRIOR SPORTS?"
+- heading missing: "NERF WAR NIGHTS IN SPRINGFIELD MO"
+- heading missing: "Dive into action-packed fun every other month with our exclusive Nerf War Nights!"
+- heading missing: "Want to be in the loop for our next Nerf War Night? Simply enter your email below and never miss out on the action!"
+- heading out of order: "THE ULTIMATE PARTY EXPERIENCE!"
+- heading "NERF WAR SPRINGFIELD, MO:": left edge 20px, live 38px
+- heading "NERF WAR SPRINGFIELD, MO:": align start, live center
+- heading "THE ULTIMATE PARTY EXPERIENCE!": left edge 20px, live 38px
+- heading "NERF WAR PARTY BREAKDOWN": left edge 20px, live 25px
+- heading "NERF WAR PARTY BREAKDOWN": line height 32px, live 45px
+- heading "HERE’S WHAT’S INCLUDED": left edge 20px, live 25px
+- heading "PRICING": left edge 20px, live 25px
+- heading "PRICING": width 350px, live 119px
+- heading "PRICING": size 32px, live 30px
+- heading "PRICING": color rgb(214, 53, 47), live rgb(40, 82, 118)
+- photo missing: nerf-war-party
+- photo missing: book-now-bg
+- photo nerf-war-nights: width 350px, live 300px
+- text missing: "When: Typically on Fridays, from 6-8 PM."
+- text missing: "Pricing: It's only $15 per participant. Good news for member"
+- text missing: ""*" indicates required fields"
+- text not on live: "Nerf Guns Nerf Bullets Bring any of your favorite guns! Excl"
+- text "Welcome to Warrior Sports, whe": left edge 20px, live 26px
+- text "Welcome to Warrior Sports, whe": size 16px, live 20px
+- text "Welcome to Warrior Sports, whe": weight 300, live 400
+- text "Welcome to Warrior Sports, whe": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Welcome to Warrior Sports, whe": 5 line(s), live 7
+- text "Welcome to Warrior Sports, whe": line height 26px, live 35px
+- text "Welcome to Warrior Sports, whe": align start, live center
+- text "Book a Nerf war party at Warri": left edge 20px, live 26px
+- text "Book a Nerf war party at Warri": weight 300, live 400
+- text "Book a Nerf war party at Warri": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Book a Nerf war party at Warri": 8 line(s), live 9
+- text "Need party invitations? We've ": left edge 20px, live 26px
+- text "Need party invitations? We've ": weight 300, live 400
+- text "Need party invitations? We've ": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Our Nerf parties start at $220": left edge 20px, live 26px
+- text "Our Nerf parties start at $220": weight 300, live 400
+- text "Our Nerf parties start at $220": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Let our experienced and kid-fr": left edge 20px, live 26px
+- text "Let our experienced and kid-fr": weight 300, live 400
+- text "Let our experienced and kid-fr": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- text "Let our experienced and kid-fr": 6 line(s), live 7
+- text "Let our experienced and kid-fr": align start, live center
+- text "Or, dial (417) 894-7319 to res": left edge 20px, live 26px
+- text "Or, dial (417) 894-7319 to res": weight 300, live 400
+- text "Or, dial (417) 894-7319 to res": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- text "Or, dial (417) 894-7319 to res": align start, live center
+- words "The Ultimate Party Experience!": color rgb(214, 53, 47), live rgb(248, 248, 248)
+- words "Welcome to Warrior Sports, where Nerf ba": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Welcome to Warrior Sports, where Nerf ba": weight 300, live 400
+- words "popular birthday party options": color rgb(51, 51, 51), live rgb(47, 138, 228)
+- words "popular birthday party options": weight 300, live 400
+- words "! We handle everything from setup to gam": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "! We handle everything from setup to gam": weight 300, live 400
+- words "Here’s What’s Included": color rgb(0, 0, 0), live rgb(40, 82, 118)
+- words "Here’s What’s Included": weight 400, live 900
+- words "Nerf Guns": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Nerf Guns": weight 300, live 600
+- words "Nerf Bullets": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Nerf Bullets": weight 300, live 600
+- words "Bring any of your favorite guns!": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Bring any of your favorite guns!": weight 300, live 600
+- words "Exclusive play in our entire obstacle co": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Exclusive play in our entire obstacle co": weight 300, live 600
+- words "Book a Nerf war party at Warrior Sports ": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Book a Nerf war party at Warrior Sports ": weight 300, live 400
+- words "Need party invitations? We've got you co": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Need party invitations? We've got you co": weight 300, live 400
+- words "Pricing": color rgb(214, 53, 47), live rgb(40, 82, 118)
+- words "Our Nerf parties start at": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Our Nerf parties start at": weight 300, live 400
+- words "$220": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "$220": weight 300, live 900
+- words "for the first 11 kids, and it's just an ": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "for the first 11 kids, and it's just an ": weight 300, live 400
+- words "Book Now!": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- words "Book Now!": weight 300, live 900
+- words "Let our experienced and kid-friendly tea": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- words "Let our experienced and kid-friendly tea": weight 300, live 400
+- words "Ready to lock in the date for your child": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- words "Or, dial": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- words "Or, dial": weight 300, live 400
+- words "(417) 894-7319": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- words "(417) 894-7319": weight 300, live 400
+- words "(417) 894-7319": underline false, live true
+- words "to reserve today.Let's make your child's": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- words "to reserve today.Let's make your child's": weight 300, live 400
+- words "Pricing:": color rgb(214, 53, 47), live rgb(0, 0, 0)
+- words "Pricing:": weight 900, live 600
+- spacing from "NERF WAR SPRINGFIELD, MO:" to "THE ULTIMATE PARTY EXPERIENCE!": -783px, live 64px
+- spacing from "THE ULTIMATE PARTY EXPERIENCE!" to "NERF WAR PARTY BREAKDOWN": 1127px, live 737px
+- spacing from "NERF WAR PARTY BREAKDOWN" to "HERE’S WHAT’S INCLUDED": 0px, live 580px
+- gap between "THE ULTIMATE PARTY EXPERIENCE!" and "Welcome to Warrior Sports, whe": 687px, live 242px
+- gap between "Welcome to Warrior Sports, whe" and "NERF WAR PARTY BREAKDOWN": 98px, live 151px
+- gap between "HERE’S WHAT’S INCLUDED" and "Book a Nerf war party at Warri": 130px, live 193px
+- gap between "Need party invitations? We've " and "PRICING": 98px, live 21px
+- gap between "Our Nerf parties start at $220" and "Let our experienced and kid-fr": 53px, live 184px
+- icons: 6 in build, 12 on live
+- icon 2: color rgb(255, 255, 255), live rgb(219, 58, 52)
+- icon 3: color rgb(255, 255, 255), live rgb(219, 58, 52)
+- icon 3: left edge 70px, live 26px
+- background behind "NERF WAR SPRINGFIELD, MO:": rgb(255, 255, 255), live rgb(72, 68, 64)
+- background behind "THE ULTIMATE PARTY EXPERIENCE!": rgb(27, 23, 18), live rgb(67, 63, 55)
+- background behind "NERF WAR PARTY BREAKDOWN": rgb(242, 245, 247), live rgb(226, 236, 237)
+- background behind "HERE’S WHAT’S INCLUDED": rgb(242, 245, 247), live rgb(226, 235, 238)
+- background behind "PRICING": rgb(255, 255, 255), live rgb(226, 235, 238)
+- background behind "Book a Nerf war party at Warrior Sports ": rgb(242, 244, 246), live rgb(227, 234, 237)
+- background behind "Need party invitations? We've got you co": rgb(242, 245, 247), live rgb(226, 234, 236)
+- background behind "Our Nerf parties start at $220 for the f": rgb(255, 255, 255), live rgb(227, 235, 237)
+- background behind "Let our experienced and kid-friendly tea": rgb(255, 255, 255), live rgb(7, 6, 4)
+- background behind "Or, dial (417) 894-7319 to reserve today": rgb(255, 255, 255), live rgb(44, 27, 22)
+- band color beside "NERF WAR SPRINGFIELD, MO:": rgb(255, 255, 255), live rgb(19, 20, 15)
+- band color beside "NERF WAR PARTY BREAKDOWN": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "HERE’S WHAT’S INCLUDED": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "PRICING": rgb(255, 255, 255), live rgb(227, 235, 237)
+- band color beside "Book a Nerf war party at Warrior Sports ": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "Need party invitations? We've got you co": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "Our Nerf parties start at $220 for the f": rgb(255, 255, 255), live rgb(227, 235, 237)
+- band color beside "Let our experienced and kid-friendly tea": rgb(255, 255, 255), live rgb(11, 12, 7)
+- band color beside "Or, dial (417) 894-7319 to reserve today": rgb(255, 255, 255), live rgb(48, 44, 41)
+- heading "NERF WAR SPRINGFIELD, MO:": looks different from live (pixel difference 146)
+- heading "THE ULTIMATE PARTY EXPERIENCE!": looks different from live (pixel difference 71)
+- heading "HERE’S WHAT’S INCLUDED": looks different from live (pixel difference 38)
+- heading "PRICING": looks different from live (pixel difference 75)
+- text "Let our experienced and kid-fr": looks different from live (pixel difference 189)
+- text "Or, dial (417) 894-7319 to res": looks different from live (pixel difference 184)
+- photo hero: brightness 35, live 50 (overlay or exposure differs)
+- band rgb(255, 255, 255) at y=599 (left margin): 705px tall, live 442px
+- band rgb(227, 235, 237) at y=1041 (1512px tall on live, left margin) not found in build
+- band rgb(14, 15, 10) at y=2555 (275px tall on live, left margin) not found in build
+- band rgb(45, 42, 35) at y=2832 (132px tall on live, left margin) not found in build
+- band rgb(240, 245, 249) at y=3254 (1388px tall on live, left margin) not found in build
+- band rgb(255, 255, 255) at y=2000 (1106px tall, left margin) is in the build but not on live
+
+## parkour @ 390px: 103 difference(s)
+- page height 6597px, live 7353px
+- heading missing: "BUILDS SELF-CONFIDENCE:"
+- heading missing: "MENTAL STIMULATION:"
+- heading missing: "STRESS RELIEF:"
+- heading missing: "COMMUNITY:"
+- heading missing: "PARKOUR CLASSES"
+- heading missing: "TEMPORARILY UNAVAILABLE"
+- heading missing: "OPEN GYM IS OPEN — YOUR FIRST VISIT IS JUST $10"
+- heading missing: "MORE THAN JUST PHYSICAL"
+- heading "PARKOUR GYM IN SPRINGFIELD MO | SPRINGFI": left edge 20px, live 38px
+- heading "⚠️ TEMPORARY UPDATE:": left edge 20px, live 60px
+- heading "⚠️ TEMPORARY UPDATE:": width 350px, live 270px
+- heading "⚠️ TEMPORARY UPDATE:": size 32px, live 30px
+- heading "⚠️ TEMPORARY UPDATE:": color rgb(214, 53, 47), live rgb(40, 82, 118)
+- heading "⚠️ TEMPORARY UPDATE:": align start, live center
+- heading "PARKOUR BENEFITS": left edge 20px, live 45px
+- heading "PARKOUR BENEFITS": align start, live center
+- heading "IMPROVE PHYSICAL FITNESS:": left edge 20px, live 25px
+- photo missing: img_2343
+- photo missing: ​stress-relief
+- photo missing: birthday-parties-banner
+- photo missing: ​more-than-just-physical
+- photo not on live: -e2-80-8bstress-relief
+- photo not on live: -e2-80-8bmore-than-just-physical
+- photo day1-029: width 350px, live 300px
+- photo wsre-shoots: width 350px, live 300px
+- button missing: "TRY OPEN GYM FOR $10"
+- button "TRY A CLASS FOR $5": color rgb(214, 53, 47), live rgb(40, 82, 118)
+- text missing: "By learning how to overcome obstacles and accomplish difficu"
+- text missing: "Parkour offers an enjoyable and mentally stimulating activit"
+- text missing: "Parkour is a great way to reduce stress levels by letting of"
+- text missing: "Participants in Parkour can gain access to a strong supporti"
+- text missing: "$20 class drop in, $10 class drop in for current members $35"
+- text missing: "With Parkour classes at Springfield Warrior Sports, you don'"
+- text "Parkour classes are currently ": left edge 20px, live 61px
+- text "Parkour classes are currently ": width 350px, live 268px
+- text "Parkour classes are currently ": weight 300, live 400
+- text "Parkour classes are currently ": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Parkour classes are currently ": align start, live center
+- text "Open Gym sessions remain avail": left edge 20px, live 61px
+- text "Open Gym sessions remain avail": width 350px, live 268px
+- text "Open Gym sessions remain avail": weight 300, live 400
+- text "Open Gym sessions remain avail": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Open Gym sessions remain avail": 3 line(s), live 4
+- text "Open Gym sessions remain avail": align start, live center
+- text "Want to challenge yourself and": left edge 20px, live 26px
+- text "Want to challenge yourself and": weight 300, live 400
+- text "Want to challenge yourself and": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Plus, your first class is only": left edge 20px, live 26px
+- text "Plus, your first class is only": weight 300, live 400
+- text "Plus, your first class is only": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Parkour can help to improve ov": left edge 20px, live 26px
+- text "Parkour can help to improve ov": weight 300, live 400
+- text "Parkour can help to improve ov": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "⚠️ Temporary Update:": color rgb(214, 53, 47), live rgb(40, 82, 118)
+- words "Parkour classes are currently paused for": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Parkour classes are currently paused for": weight 300, live 400
+- words "Open Gym sessions remain available, and ": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Open Gym sessions remain available, and ": weight 300, live 400
+- words "Want to challenge yourself and become st": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Want to challenge yourself and become st": weight 300, live 400
+- words "Plus, your first class is only $5 Dollar": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Plus, your first class is only $5 Dollar": weight 300, live 400
+- words "When:": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "When:": weight 300, live 600
+- words "Beginner:": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Beginner:": weight 300, live 600
+- words "Wednesdays 6-7pm": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Wednesdays 6-7pm": weight 300, live 400
+- words "Intermediate:": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Intermediate:": weight 300, live 600
+- words "Wednesdays 7-8pm": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Wednesdays 7-8pm": weight 300, live 400
+- words "Improve Physical Fitness:": color rgb(0, 0, 0), live rgb(40, 82, 118)
+- words "Improve Physical Fitness:": weight 400, live 900
+- words "Parkour can help to improve overall phys": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Parkour can help to improve overall phys": weight 300, live 400
+- words "parkour classes": color rgb(51, 51, 51), live rgb(255, 255, 255)
+- words "parkour classes": weight 300, live 900
+- spacing from "PARKOUR GYM IN SPRINGFIELD MO " to "⚠️ TEMPORARY UPDATE:": 815px, live 404px
+- spacing from "⚠️ TEMPORARY UPDATE:" to "PARKOUR BENEFITS": 1260px, live 1670px
+- spacing from "PARKOUR BENEFITS" to "IMPROVE PHYSICAL FITNESS:": 0px, live 404px
+- gap between "PARKOUR GYM IN SPRINGFIELD MO " and "⚠️ TEMPORARY UPDATE:": 601px, live 276px
+- gap between "Open Gym sessions remain avail" and "Want to challenge yourself and": 13px, live 560px
+- gap between "Want to challenge yourself and" and "Plus, your first class is only": 285px, live 28px
+- gap between "Plus, your first class is only" and "PARKOUR BENEFITS": 613px, live 255px
+- background behind "PARKOUR BENEFITS": rgb(241, 245, 247), live rgb(226, 235, 237)
+- background behind "IMPROVE PHYSICAL FITNESS:": rgb(242, 245, 247), live rgb(226, 235, 238)
+- background behind "Parkour can help to improve overall phys": rgb(242, 244, 246), live rgb(227, 234, 237)
+- band color beside "PARKOUR BENEFITS": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "IMPROVE PHYSICAL FITNESS:": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "Parkour can help to improve overall phys": rgb(242, 246, 249), live rgb(227, 235, 237)
+- heading "⚠️ TEMPORARY UPDATE:": looks different from live (pixel difference 46)
+- heading "PARKOUR BENEFITS": looks different from live (pixel difference 41)
+- heading "IMPROVE PHYSICAL FITNESS:": looks different from live (pixel difference 41)
+- photo wsre-shoots: brightness 255, live 104 (overlay or exposure differs)
+- photo wsre-shoots: looks different from live (pixel difference 151)
+- band rgb(255, 255, 255) at y=604 (left margin): 1261px tall, live 1710px
+- band rgb(227, 235, 237) at y=2318 (2666px tall on live, left margin) not found in build
+- band rgb(53, 90, 123) at y=5425 (151px tall on live, left margin) not found in build
+- band rgb(49, 101, 122) at y=5590 (147px tall on live, left margin) not found in build
+- band rgb(255, 255, 255) at y=5741 (1512px tall on live, left margin) not found in build
+- band rgb(255, 255, 255) at y=2658 (3767px tall, left margin) is in the build but not on live
+
+## personal-training @ 390px: 126 difference(s)
+- heading missing: "NOT YOUR TYPICAL GYM. NOT YOUR TYPICAL TRAINER."
+- heading missing: "UNCONVENTIONAL BY DESIGN"
+- heading missing: "STRONGER AND SMARTER"
+- heading missing: "EMOTIONALLY INTELLIGENT COACHING"
+- heading missing: "MEET YOUR TRAINERS"
+- heading missing: "SARAH WILDER"
+- heading missing: "JACOB WINTER"
+- heading missing: "JONNY WILDER"
+- heading missing: "HOW IT WORKS"
+- heading missing: "WHAT OUR CLIENTS SAY"
+- heading missing: "LET’S TALK STRENGTH…YOUR VERSION"
+- heading missing: "This isn’t about getting shredded or setting records."
+- heading missing: "It’s about moving, healing, and growing in a way that actually fits your life."
+- heading "PERSONAL TRAINING AT WARRIOR SPORTS": left edge 20px, live 38px
+- heading "WHY WARRIOR SPORTS PERSONAL TRAINING WOR": left edge 20px, live 25px
+- heading "WHY WARRIOR SPORTS PERSONAL TRAINING WOR": 4 line(s), live 3
+- heading "WHY WARRIOR SPORTS PERSONAL TRAINING WOR": align start, live center
+- photo missing: warrior-sports-training
+- photo missing: pricing-and-schedule
+- photo not on live: qoute-icon
+- photo not on live: qoute-icon
+- photo not on live: qoute-icon
+- photo qoute-icon: left edge 20px, live 58px
+- button missing: "CONTACT OUR PERSONAL TRAINERS"
+- button "CONTACT OUR PERSONAL TRAINERS": width 272px, live 340px
+- text missing: "We use obstacle training, resistance bands, parkour-inspired"
+- text missing: "This isn’t just about muscles. It’s about moving with confid"
+- text missing: "We meet you where you are, without shame or performance pres"
+- text missing: "– Women’s Confidence Coach"
+- text missing: "Helps women, especially moms, feel strong again in bodies th"
+- text missing: "“I focus on helping you feel powerful before you even pick u"
+- text missing: "– Strength, Weight Loss and Conditioning"
+- text missing: "Great for weight loss, functional strength, and rebuilding c"
+- text missing: "“We build wins you can feel without judgment or pressure.”"
+- text missing: "– Ninja and Competitive Obstacle Training"
+- text missing: "Perfect for teens, adventurous adults, or athletes seeking c"
+- text missing: "“Training should be fun. That’s where confidence begins.”"
+- text missing: "Contact us and share your story—goals, concerns, struggles"
+- text missing: "We’ll reach out and get you locked in"
+- text missing: "Try a session personalized to your pace and strength"
+- text missing: "Decide from there if you want to continue"
+- text missing: "After losing some weight on my own, I hit a wall. Warrior Sp"
+- text missing: "After losing some weight on my own, I hit a wall. Warrior Sp"
+- text "If you’ve ever felt like fitne": left edge 20px, live 26px
+- text "If you’ve ever felt like fitne": weight 300, live 400
+- text "If you’ve ever felt like fitne": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "We don’t (necessarily) do trea": left edge 20px, live 26px
+- text "We don’t (necessarily) do trea": weight 300, live 400
+- text "We don’t (necessarily) do trea": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Because when training is roote": left edge 20px, live 26px
+- text "Because when training is roote": size 16px, live 18px
+- text "Because when training is roote": weight 300, live 400
+- text "Because when training is roote": color rgb(51, 51, 51), live rgb(106, 107, 108)
+- text "Because when training is roote": 7 line(s), live 8
+- text "Because when training is roote": line height 26px, live 32px
+- text "At Warrior Sports, personal tr": left edge 20px, live 26px
+- text "At Warrior Sports, personal tr": weight 300, live 400
+- text "At Warrior Sports, personal tr": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "At Warrior Sports, personal tr": align start, live center
+- text "It’s a conversation and a chal": left edge 20px, live 26px
+- text "It’s a conversation and a chal": weight 300, live 400
+- text "It’s a conversation and a chal": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "It’s a conversation and a chal": align start, live center
+- text "Here’s how we’re different:": left edge 20px, live 26px
+- text "Here’s how we’re different:": weight 300, live 400
+- text "Here’s how we’re different:": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Here’s how we’re different:": align start, live center
+- words "Not Your Typical Gym.Not Your Typical Tr": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "Not Your Typical Gym.Not Your Typical Tr": weight 300, live 900
+- words "If you’ve ever felt like fitness wasn’t ": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "If you’ve ever felt like fitness wasn’t ": weight 300, live 400
+- words "We don’t (necessarily) do treadmills or ": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "We don’t (necessarily) do treadmills or ": weight 300, live 400
+- words "Because when training is rooted in curio": color rgb(51, 51, 51), live rgb(106, 107, 108)
+- words "Because when training is rooted in curio": weight 300, live 400
+- words "At Warrior Sports, personal training is ": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "At Warrior Sports, personal training is ": weight 300, live 400
+- words "It’s a conversation and a challenge all ": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "It’s a conversation and a challenge all ": weight 300, live 400
+- words "Here’s how we’re different:": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Here’s how we’re different:": weight 300, live 400
+- words "- Client": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "- Client": weight 300, live 700
+- words "- Client": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "- Client": weight 300, live 700
+- spacing from "PERSONAL TRAINING AT WARRIOR S" to "WHY WARRIOR SPORTS PERSONAL TR": 1609px, live 1442px
+- gap between "Because when training is roote" and "WHY WARRIOR SPORTS PERSONAL TR": 447px, live 195px
+- icons: 6 in build, 10 on live
+- icon 2: color rgb(255, 255, 255), live rgb(219, 58, 52)
+- icon 3: color rgb(255, 255, 255), live rgb(219, 58, 52)
+- icon 3: left edge 70px, live 26px
+- icon 6: color rgb(219, 58, 52), live rgb(255, 255, 255)
+- background behind "PERSONAL TRAINING AT WARRIOR SPORTS": rgb(4, 4, 4), live rgb(67, 69, 68)
+- background behind "WHY WARRIOR SPORTS PERSONAL TRAINING WOR": rgb(242, 246, 248), live rgb(226, 236, 237)
+- background behind "At Warrior Sports, personal training is ": rgb(242, 246, 248), live rgb(227, 235, 237)
+- background behind "It’s a conversation and a challenge all ": rgb(242, 245, 248), live rgb(227, 235, 237)
+- background behind "Here’s how we’re different:": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "WHY WARRIOR SPORTS PERSONAL TRAINING WOR": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "At Warrior Sports, personal training is ": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "It’s a conversation and a challenge all ": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "Here’s how we’re different:": rgb(242, 246, 249), live rgb(227, 235, 237)
+- photo hero: brightness 22, live 51 (overlay or exposure differs)
+- photo stronger-and-smarter-training: brightness 255, live 66 (overlay or exposure differs)
+- photo stronger-and-smarter-training: looks different from live (pixel difference 189)
+- photo emotionally-intelligent-coaching: brightness 255, live 60 (overlay or exposure differs)
+- photo emotionally-intelligent-coaching: looks different from live (pixel difference 195)
+- photo sarah-wilder-img: brightness 255, live 85 (overlay or exposure differs)
+- photo sarah-wilder-img: looks different from live (pixel difference 170)
+- photo jacob-winter-img: brightness 255, live 96 (overlay or exposure differs)
+- photo jacob-winter-img: looks different from live (pixel difference 159)
+- photo jonny-wilder-img: brightness 255, live 44 (overlay or exposure differs)
+- photo jonny-wilder-img: looks different from live (pixel difference 211)
+- photo qoute-icon: brightness 255, live 156 (overlay or exposure differs)
+- photo qoute-icon: looks different from live (pixel difference 99)
+- band rgb(255, 255, 255) at y=469 (left margin): 935px tall, live 1132px
+- band rgb(227, 235, 237) at y=1601 (1979px tall on live, left margin) not found in build
+- band rgb(40, 83, 117) at y=3584 (1887px tall on live, left margin) not found in build
+- band rgb(241, 245, 248) at y=5479 (748px tall on live, left margin) not found in build
+- band rgb(227, 235, 237) at y=6227 (left margin): 1242px tall, live 513px
+- band rgb(55, 44, 40) at y=6748 (340px tall on live, left margin) not found in build
+- band rgb(61, 50, 44) at y=7088 (256px tall on live, left margin) not found in build
+- band rgb(1, 2, 20) at y=7919 (281px tall on live, left margin) not found in build
+- band rgb(0, 1, 4) at y=8200 (185px tall on live, left margin) not found in build
+- band rgb(255, 255, 255) at y=8446 (687px tall on live, left margin) not found in build
+- band rgb(255, 255, 255) at y=2144 (4023px tall, left margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=7409 (1841px tall, left margin) is in the build but not on live
+
+## registered-for-csna-competition @ 390px: 15 difference(s)
+- page height 1723px, live 1365px
+- heading missing: "WE RECEIVED THOSE DETAILS, THANK YOU!"
+- text "Click here to finalize the reg": width 746px, live 348px
+- text "Click here to finalize the reg": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "We received those details, thank you!": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "We received those details, thank you!": weight 300, live 900
+- words "Click here to finalize the registration ": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "https://checkout.square.site/merchant/ML": color rgb(51, 51, 51), live rgb(47, 138, 228)
+- words "https://checkout.square.site/merchant/ML": weight 300, live 400
+- words "If you encounter any problems or have an": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "(417) 894-7319": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "(417) 894-7319": weight 300, live 400
+- band rgb(255, 255, 255) at y=159 (1106px tall on live, left margin) not found in build
+- band rgb(255, 255, 255) at y=655 (896px tall, left margin) is in the build but not on live
+- section colors differ: build [rgb(255, 255, 255) | rgb(40, 82, 118) | rgb(255, 255, 255)], live [rgb(255, 255, 255)]
+
+## registered-for-day-camps @ 390px: 16 difference(s)
+- page height 1891px, live 1767px
+- heading missing: "WE RECEIVED THOSE DETAILS, THANK YOU!"
+- photo missing: everyday-warrior
+- photo not on live: hero
+- text missing: "Click here to finalize the registration with your payment."
+- text "The link above has a few "prod": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "If you encounter any problems ": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "We received those details, thank you!": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "We received those details, thank you!": weight 300, live 900
+- words "The link above has a few "product" optio": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "If you encounter any problems or have an": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "(417) 894-7319": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "(417) 894-7319": weight 300, live 400
+- button not on live: "CLICK HERE TO FINALIZE THE REGISTRATION WITH YOUR PAYMENT."
+- band rgb(255, 255, 255) at y=159 (left margin): 65px tall, live 1508px
+- band rgb(255, 255, 255) at y=655 (1064px tall, left margin) is in the build but not on live
+
+## registered-for-summer-fun-competition @ 390px: 16 difference(s)
+- page height 1825px, live 1689px
+- heading missing: "WE RECEIVED THOSE DETAILS, THANK YOU!"
+- photo missing: everyday-warrior
+- photo not on live: hero
+- text "Click here to finalize the reg": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- text "If you encounter any problems ": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "We received those details, thank you!": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "We received those details, thank you!": weight 300, live 900
+- words "Click here to finalize the registration ": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "https://springfield-warrior-sports.squar": color rgb(51, 51, 51), live rgb(47, 138, 228)
+- words "https://springfield-warrior-sports.squar": weight 300, live 400
+- words "If you encounter any problems or have an": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "(417) 894-7319": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "(417) 894-7319": weight 300, live 400
+- band rgb(255, 255, 255) at y=159 (left margin): 65px tall, live 1430px
+- band rgb(255, 255, 255) at y=655 (998px tall, left margin) is in the build but not on live
+
+## registered-for-wnl-competition @ 390px: 15 difference(s)
+- page height 1800px, live 1661px
+- heading missing: "WE RECEIVED THOSE DETAILS, THANK YOU!"
+- photo missing: everyday-warrior
+- photo not on live: hero
+- text "Click here to finalize the reg": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "We received those details, thank you!": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "We received those details, thank you!": weight 300, live 900
+- words "Click here to finalize the registration ": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "https://springfield-warrior-sports.squar": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "https://springfield-warrior-sports.squar": weight 300, live 400
+- words "If you encounter any problems or have an": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "(417) 894-7319": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "(417) 894-7319": weight 300, live 400
+- band rgb(255, 255, 255) at y=159 (left margin): 65px tall, live 1402px
+- band rgb(255, 255, 255) at y=655 (973px tall, left margin) is in the build but not on live
+
+## registered @ 390px: 15 difference(s)
+- page height 1800px, live 1661px
+- heading missing: "WE RECEIVED THOSE DETAILS, THANK YOU!"
+- photo missing: everyday-warrior
+- photo not on live: hero
+- text "Click here to finalize the reg": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "We received those details, thank you!": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "We received those details, thank you!": weight 300, live 900
+- words "Click here to finalize the registration ": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "https://springfield-warrior-sports.squar": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "https://springfield-warrior-sports.squar": weight 300, live 400
+- words "If you encounter any problems or have an": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "(417) 894-7319": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "(417) 894-7319": weight 300, live 400
+- band rgb(255, 255, 255) at y=159 (left margin): 65px tall, live 1402px
+- band rgb(255, 255, 255) at y=655 (973px tall, left margin) is in the build but not on live
+
+## schedule-birthday-party @ 390px: 15 difference(s)
+- page height 3915px, live 3628px
+- heading missing: "CLIENT TESTIMONIALS"
+- heading missing: "WHAT OUR CLIENTS SAY"
+- photo not on live: qoute-icon
+- photo qoute-icon: left edge 20px, live 58px
+- text missing: ""*" indicates required fields"
+- text missing: "We had our son’s 10th birthday here. All of the kids had a g"
+- text missing: "We had our son’s 10th birthday here. All of the kids had a g"
+- text missing: "- JENNIFER L."
+- text "1. Fill out the form to begin ": left edge 39px, live 21px
+- text "1. Fill out the form to begin ": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- photo qoute-icon: brightness 255, live 160 (overlay or exposure differs)
+- photo qoute-icon: looks different from live (pixel difference 95)
+- band rgb(255, 255, 255) at y=603 (left margin): 262px tall, live 2925px
+- band rgb(255, 255, 255) at y=2264 (1479px tall, left margin) is in the build but not on live
+
+## summer-camps-in-springfield-mo @ 390px: 251 difference(s)
+- page height 7038px, live 7568px
+- heading missing: "SUMMER CAMP PRICING"
+- heading missing: "SPRINGFIELD WARRIOR REGISTRATION"
+- heading missing: "REGISTRATION FORM"
+- heading missing: "CLIENT TESTIMONIALS"
+- heading missing: "WHAT OUR CLIENTS SAY"
+- heading "KIDS STAY FIT AND HEALTHY": left edge 20px, live 38px
+- heading "AT OUR INCREDIBLE SUMMER CAMPS": left edge 20px, live 38px
+- heading "AT OUR INCREDIBLE SUMMER CAMPS": line height 45px, live 25px
+- heading "SUMMER CAMPS IN SPRINGFIELD — 2026 DATES": left edge 20px, live 25px
+- heading "SUMMER CAMPS IN SPRINGFIELD — 2026 DATES": width 350px, live 306px
+- heading "SUMMER CAMPS IN SPRINGFIELD — 2026 DATES": size 32px, live 40px
+- heading "SUMMER CAMPS IN SPRINGFIELD — 2026 DATES": line height 32px, live 40px
+- photo missing: spring-break
+- photo not on live: qoute-icon
+- photo qoute-icon: left edge 20px, live 46px
+- text missing: "A week of activities and snacks at Springfield Warrior Sport"
+- text missing: "Note:"
+- text missing: "Summer camp investment monies can be pro-rated if your child"
+- text missing: "At our Springfield Warrior Sports camps, your kids won’t jus"
+- text missing: "Cost: $179 per child; member and sibling discounts available"
+- text missing: "** call with questions or to register by phone (417) 894-731"
+- text missing: "We had our son’s 10th birthday here. All of the kids had a g"
+- text missing: "We had our son’s 10th birthday here. All of the kids had a g"
+- text missing: "- JENNIFER L."
+- text "Looking for a worthwhile activ": left edge 20px, live 26px
+- text "Looking for a worthwhile activ": font Epilogue, live Muli
+- text "Looking for a worthwhile activ": size 16px, live 18px
+- text "Looking for a worthwhile activ": weight 300, live 400
+- text "Looking for a worthwhile activ": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Looking for a worthwhile activ": line height 26px, live 32px
+- text "Looking for a worthwhile activ": align start, live center
+- text "Look no further! Our incredibl": left edge 20px, live 26px
+- text "Look no further! Our incredibl": font Epilogue, live Muli
+- text "Look no further! Our incredibl": size 16px, live 18px
+- text "Look no further! Our incredibl": weight 300, live 400
+- text "Look no further! Our incredibl": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Look no further! Our incredibl": line height 26px, live 32px
+- text "Look no further! Our incredibl": align start, live center
+- text "Kids will get the chance to wo": left edge 20px, live 26px
+- text "Kids will get the chance to wo": font Epilogue, live Muli
+- text "Kids will get the chance to wo": size 16px, live 18px
+- text "Kids will get the chance to wo": weight 300, live 400
+- text "Kids will get the chance to wo": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Kids will get the chance to wo": line height 26px, live 32px
+- text "Kids will get the chance to wo": align start, live center
+- text "Plus, there’s a competition at": left edge 20px, live 26px
+- text "Plus, there’s a competition at": font Epilogue, live Muli
+- text "Plus, there’s a competition at": size 16px, live 18px
+- text "Plus, there’s a competition at": weight 300, live 400
+- text "Plus, there’s a competition at": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Plus, there’s a competition at": line height 26px, live 32px
+- text "Plus, there’s a competition at": align start, live center
+- text "Come join us at our camps, whi": left edge 20px, live 26px
+- text "Come join us at our camps, whi": font Epilogue, live Muli
+- text "Come join us at our camps, whi": size 16px, live 18px
+- text "Come join us at our camps, whi": weight 300, live 400
+- text "Come join us at our camps, whi": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Come join us at our camps, whi": line height 26px, live 32px
+- text "Come join us at our camps, whi": align start, live center
+- text "May 25th - May 29th": left edge 20px, live 40px
+- text "May 25th - May 29th": width 350px, live 161px
+- text "May 25th - May 29th": font Epilogue, live Muli
+- text "May 25th - May 29th": weight 300, live 800
+- text "May 25th - May 29th": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "8:30 AM - 11:30 AM": left edge 20px, live 228px
+- text "8:30 AM - 11:30 AM": width 350px, live 136px
+- text "8:30 AM - 11:30 AM": font Epilogue, live Muli
+- text "8:30 AM - 11:30 AM": weight 300, live 400
+- text "8:30 AM - 11:30 AM": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "8:30 AM - 11:30 AM": letter spacing 0.6px, live 0px
+- text "June 8th - June 12th": left edge 20px, live 40px
+- text "June 8th - June 12th": width 350px, live 155px
+- text "June 8th - June 12th": font Epilogue, live Muli
+- text "June 8th - June 12th": weight 300, live 800
+- text "June 8th - June 12th": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "8:30 AM - 11:30 AM": left edge 20px, live 228px
+- text "8:30 AM - 11:30 AM": width 350px, live 136px
+- text "8:30 AM - 11:30 AM": font Epilogue, live Muli
+- text "8:30 AM - 11:30 AM": weight 300, live 400
+- text "8:30 AM - 11:30 AM": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "8:30 AM - 11:30 AM": letter spacing 0.6px, live 0px
+- text "June 22nd - June 26th": left edge 20px, live 40px
+- text "June 22nd - June 26th": width 350px, live 168px
+- text "June 22nd - June 26th": font Epilogue, live Muli
+- text "June 22nd - June 26th": weight 300, live 800
+- text "June 22nd - June 26th": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "8:30 AM - 11:30 AM": left edge 20px, live 228px
+- text "8:30 AM - 11:30 AM": width 350px, live 136px
+- text "8:30 AM - 11:30 AM": font Epilogue, live Muli
+- text "8:30 AM - 11:30 AM": weight 300, live 400
+- text "8:30 AM - 11:30 AM": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "8:30 AM - 11:30 AM": letter spacing 0.6px, live 0px
+- text "July 6th - July 10th": left edge 20px, live 40px
+- text "July 6th - July 10th": width 350px, live 144px
+- text "July 6th - July 10th": font Epilogue, live Muli
+- text "July 6th - July 10th": weight 300, live 800
+- text "July 6th - July 10th": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "8:30 AM - 11:30 AM": left edge 20px, live 228px
+- text "8:30 AM - 11:30 AM": width 350px, live 136px
+- text "8:30 AM - 11:30 AM": font Epilogue, live Muli
+- text "8:30 AM - 11:30 AM": weight 300, live 400
+- text "8:30 AM - 11:30 AM": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "8:30 AM - 11:30 AM": letter spacing 0.6px, live 0px
+- text "12 PM - 3 PM": left edge 20px, live 228px
+- text "12 PM - 3 PM": width 350px, live 100px
+- text "12 PM - 3 PM": font Epilogue, live Muli
+- text "12 PM - 3 PM": weight 300, live 400
+- text "12 PM - 3 PM": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "12 PM - 3 PM": letter spacing 0.6px, live 0px
+- text "July 20th - July 24th": left edge 20px, live 40px
+- text "July 20th - July 24th": width 350px, live 154px
+- text "July 20th - July 24th": font Epilogue, live Muli
+- text "July 20th - July 24th": weight 300, live 800
+- text "July 20th - July 24th": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "8:30 AM - 11:30 AM": left edge 20px, live 228px
+- text "8:30 AM - 11:30 AM": width 350px, live 136px
+- text "8:30 AM - 11:30 AM": font Epilogue, live Muli
+- text "8:30 AM - 11:30 AM": weight 300, live 400
+- text "8:30 AM - 11:30 AM": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "8:30 AM - 11:30 AM": letter spacing 0.6px, live 0px
+- text "12 PM - 3 PM": left edge 20px, live 228px
+- text "12 PM - 3 PM": width 350px, live 100px
+- text "12 PM - 3 PM": font Epilogue, live Muli
+- text "12 PM - 3 PM": weight 300, live 400
+- text "12 PM - 3 PM": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "12 PM - 3 PM": letter spacing 0.6px, live 0px
+- text "August 3rd - August 7th": left edge 20px, live 40px
+- text "August 3rd - August 7th": width 350px, live 171px
+- text "August 3rd - August 7th": font Epilogue, live Muli
+- text "August 3rd - August 7th": weight 300, live 800
+- text "August 3rd - August 7th": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "8:30 AM - 11:30 AM": left edge 20px, live 228px
+- text "8:30 AM - 11:30 AM": width 350px, live 136px
+- text "8:30 AM - 11:30 AM": font Epilogue, live Muli
+- text "8:30 AM - 11:30 AM": weight 300, live 400
+- text "8:30 AM - 11:30 AM": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "8:30 AM - 11:30 AM": letter spacing 0.6px, live 0px
+- text "12 PM - 3 PM": left edge 20px, live 228px
+- text "12 PM - 3 PM": width 350px, live 100px
+- text "12 PM - 3 PM": font Epilogue, live Muli
+- text "12 PM - 3 PM": weight 300, live 400
+- text "12 PM - 3 PM": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "12 PM - 3 PM": letter spacing 0.6px, live 0px
+- text "August 17th - August 21st": left edge 20px, live 40px
+- text "August 17th - August 21st": width 350px, live 171px
+- text "August 17th - August 21st": font Epilogue, live Muli
+- text "August 17th - August 21st": weight 300, live 800
+- text "August 17th - August 21st": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "8:30 AM - 11:30 AM": left edge 20px, live 228px
+- text "8:30 AM - 11:30 AM": width 350px, live 136px
+- text "8:30 AM - 11:30 AM": font Epilogue, live Muli
+- text "8:30 AM - 11:30 AM": weight 300, live 400
+- text "8:30 AM - 11:30 AM": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "8:30 AM - 11:30 AM": letter spacing 0.6px, live 0px
+- text "12 PM - 3 PM": left edge 20px, live 228px
+- text "12 PM - 3 PM": width 350px, live 100px
+- text "12 PM - 3 PM": font Epilogue, live Muli
+- text "12 PM - 3 PM": weight 300, live 400
+- text "12 PM - 3 PM": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "12 PM - 3 PM": letter spacing 0.6px, live 0px
+- words "at our incredible summer camps": color rgb(214, 53, 47), live rgb(255, 255, 255)
+- words "Looking for a worthwhile activity for yo": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Looking for a worthwhile activity for yo": weight 300, live 400
+- words "Look no further! Our incredible Summer C": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Look no further! Our incredible Summer C": weight 300, live 400
+- words "Kids will get the chance to work with ou": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Kids will get the chance to work with ou": weight 300, live 400
+- words "making good nutritional choices": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "making good nutritional choices": weight 300, live 700
+- words "that lead to improved health and wellnes": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "that lead to improved health and wellnes": weight 300, live 400
+- words "Plus, there’s a": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Plus, there’s a": weight 300, live 400
+- words "competition at every camp": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "competition at every camp": weight 300, live 800
+- words "that awards the top place-getters a spot": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "that awards the top place-getters a spot": weight 300, live 400
+- words "Come join us at our camps, which are per": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Come join us at our camps, which are per": weight 300, live 400
+- words "May 25th - May 29th": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "May 25th - May 29th": weight 300, live 800
+- words "8:30 AM - 11:30 AM": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "8:30 AM - 11:30 AM": weight 300, live 400
+- words "June 8th - June 12th": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "June 8th - June 12th": weight 300, live 800
+- words "8:30 AM - 11:30 AM": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "8:30 AM - 11:30 AM": weight 300, live 400
+- words "June 22nd - June 26th": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "June 22nd - June 26th": weight 300, live 800
+- words "8:30 AM - 11:30 AM": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "8:30 AM - 11:30 AM": weight 300, live 400
+- words "July 6th - July 10th": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "July 6th - July 10th": weight 300, live 800
+- words "8:30 AM - 11:30 AM": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "8:30 AM - 11:30 AM": weight 300, live 400
+- words "12 PM - 3 PM": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "12 PM - 3 PM": weight 300, live 400
+- words "July 20th - July 24th": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "July 20th - July 24th": weight 300, live 800
+- words "8:30 AM - 11:30 AM": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "8:30 AM - 11:30 AM": weight 300, live 400
+- words "12 PM - 3 PM": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "12 PM - 3 PM": weight 300, live 400
+- words "August 3rd - August 7th": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "August 3rd - August 7th": weight 300, live 800
+- words "8:30 AM - 11:30 AM": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "8:30 AM - 11:30 AM": weight 300, live 400
+- words "12 PM - 3 PM": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "12 PM - 3 PM": weight 300, live 400
+- words "August 17th - August 21st": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "August 17th - August 21st": weight 300, live 800
+- words "8:30 AM - 11:30 AM": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "8:30 AM - 11:30 AM": weight 300, live 400
+- words "12 PM - 3 PM": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "12 PM - 3 PM": weight 300, live 400
+- words "(417) 894-7319": color rgb(255, 255, 255), live rgb(219, 58, 52)
+- words "(417) 894-7319": weight 700, live 600
+- words "(417) 894-7319": color rgb(255, 255, 255), live rgb(219, 58, 52)
+- words "(417) 894-7319": weight 700, live 400
+- words "(417) 894-7319": underline true, live false
+- spacing from "KIDS STAY FIT AND HEALTHY" to "AT OUR INCREDIBLE SUMMER CAMPS": 0px, live 90px
+- spacing from "AT OUR INCREDIBLE SUMMER CAMPS" to "SUMMER CAMPS IN SPRINGFIELD — ": 1284px, live 1584px
+- gap between "Come join us at our camps, whi" and "SUMMER CAMPS IN SPRINGFIELD — ": 98px, live 568px
+- background behind "KIDS STAY FIT AND HEALTHY": rgb(22, 22, 22), live rgb(219, 54, 47)
+- background behind "AT OUR INCREDIBLE SUMMER CAMPS": rgb(22, 22, 22), live rgb(64, 81, 92)
+- background behind "SUMMER CAMPS IN SPRINGFIELD — 2026 DATES": rgb(242, 246, 248), live rgb(226, 236, 237)
+- band color beside "AT OUR INCREDIBLE SUMMER CAMPS": rgb(19, 19, 20), live rgb(125, 116, 91)
+- band color beside "SUMMER CAMPS IN SPRINGFIELD — 2026 DATES": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "May 25th - May 29th": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "June 8th - June 12th": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "June 22nd - June 26th": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "July 6th - July 10th": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "12 PM - 3 PM": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "July 20th - July 24th": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "12 PM - 3 PM": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "August 3rd - August 7th": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "12 PM - 3 PM": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "August 17th - August 21st": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "12 PM - 3 PM": rgb(242, 246, 249), live rgb(227, 235, 237)
+- heading "AT OUR INCREDIBLE SUMMER CAMPS": looks different from live (pixel difference 70)
+- heading "SUMMER CAMPS IN SPRINGFIELD — 2026 DATES": looks different from live (pixel difference 43)
+- photo qoute-icon: brightness 255, live 156 (overlay or exposure differs)
+- photo qoute-icon: looks different from live (pixel difference 99)
+- band rgb(255, 255, 255) at y=599 (left margin): 791px tall, live 892px
+- band rgb(230, 234, 237) at y=1491 (left margin): 907px tall, live 2356px
+- band rgb(255, 255, 255) at y=3847 (2312px tall on live, left margin) not found in build
+- band rgb(227, 235, 237) at y=6159 (661px tall on live, left margin) not found in build
+- band rgb(255, 255, 255) at y=6820 (648px tall on live, left margin) not found in build
+- band rgb(255, 255, 255) at y=2383 (1248px tall, left margin) is in the build but not on live
+- band rgb(255, 255, 255) at y=5387 (1479px tall, left margin) is in the build but not on live
+
+## thank-you-for-your-feedback @ 390px: 13 difference(s)
+- page height 1879px, live 1773px
+- heading missing: "THANK YOU FOR YOUR FEEDBACK!"
+- photo missing: everyday-warrior
+- photo not on live: hero
+- text "Thank you for your feedback! W": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "Thank you for your feedback!": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "Thank you for your feedback!": weight 300, live 900
+- words "Thank you for your feedback! We read and": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- words "(417)894-7319": color rgb(51, 51, 51), live rgb(219, 58, 52)
+- words "(417)894-7319": weight 300, live 400
+- words ".Thanks,Andy and the Warrior Sports Team": color rgb(51, 51, 51), live rgb(0, 0, 0)
+- band rgb(255, 255, 255) at y=159 (left margin): 65px tall, live 1514px
+- band rgb(255, 255, 255) at y=655 (1052px tall, left margin) is in the build but not on live
+
+## wnl-competitions @ 390px: 79 difference(s)
+- page height 3561px, live 4245px
+- heading missing: "10-26-2024 WNL Competition Registration Form"
+- heading "WNL COMPETITIONS IN SPRINGFIELD MISSOURI": left edge 20px, live 29px
+- heading "WNL COMPETITIONS IN SPRINGFIELD MISSOURI": size 32px, live 44px
+- heading "WNL COMPETITIONS IN SPRINGFIELD MISSOURI": 3 line(s), live 4
+- heading "WNL COMPETITIONS IN SPRINGFIELD MISSOURI": line height 32px, live 44px
+- heading "WNL REGIONAL QUALIFIERS": left edge 20px, live 25px
+- heading "WNL REGIONAL QUALIFIERS": width 350px, live 306px
+- heading "WNL REGIONAL QUALIFIERS": size 32px, live 30px
+- heading "WNL REGIONAL QUALIFIERS": color rgb(214, 53, 47), live rgb(40, 82, 118)
+- photo missing: everyday-warrior
+- text missing: "Calling all Ninjas! Warrior Sports in Springfield Missouri i"
+- text "October 26, 2024": left edge 20px, live 64px
+- text "October 26, 2024": width 350px, live 132px
+- text "October 26, 2024": weight 300, live 400
+- text "October 26, 2024": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "October 26, 2024": line height 26px, live 19px
+- text "Early bird pricing for these c": left edge 20px, live 26px
+- text "Early bird pricing for these c": weight 300, live 400
+- text "Early bird pricing for these c": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Registration is easy and happe": left edge 20px, live 26px
+- text "Registration is easy and happe": weight 300, live 400
+- text "Registration is easy and happe": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- text "Fill out your information usin": left edge 20px, live 73px
+- text "Fill out your information usin": width 350px, live 291px
+- text "Fill out your information usin": font Epilogue, live Muli
+- text "Fill out your information usin": size 16px, live 18px
+- text "Fill out your information usin": weight 300, live 400
+- text "Fill out your information usin": color rgb(51, 51, 51), live rgb(106, 107, 108)
+- text "Fill out your information usin": line height 26px, live 32px
+- text "Don't wait to register - The e": left edge 20px, live 26px
+- text "Don't wait to register - The e": weight 300, live 400
+- text "Don't wait to register - The e": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Calling all Ninjas! Warrior Sports in Sp": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Calling all Ninjas! Warrior Sports in Sp": weight 300, live 400
+- words "WNL Regional Qualifiers": color rgb(214, 53, 47), live rgb(40, 82, 118)
+- words "October 26, 2024": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "October 26, 2024": weight 300, live 400
+- words "Early bird pricing for these competition": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Early bird pricing for these competition": weight 300, live 400
+- words "Registration is easy and happens in two ": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Registration is easy and happens in two ": weight 300, live 400
+- words "Fill out your information using the form": color rgb(51, 51, 51), live rgb(106, 107, 108)
+- words "Fill out your information using the form": weight 300, live 400
+- words "Pay your registration fee using the pay ": color rgb(51, 51, 51), live rgb(106, 107, 108)
+- words "Pay your registration fee using the pay ": weight 300, live 400
+- words "Don't wait to register - The early bird ": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "Don't wait to register - The early bird ": weight 300, live 400
+- words "the October 26th competition": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "the October 26th competition": weight 300, live 600
+- words "will go up after October 12th!": color rgb(51, 51, 51), live rgba(0, 0, 0, 0.7)
+- words "will go up after October 12th!": weight 300, live 400
+- spacing from "WNL COMPETITIONS IN SPRINGFIEL" to "WNL REGIONAL QUALIFIERS": 724px, live 1114px
+- gap between "WNL COMPETITIONS IN SPRINGFIEL" and "WNL REGIONAL QUALIFIERS": 542px, live 938px
+- gap between "October 26, 2024" and "Early bird pricing for these c": 14px, live 171px
+- gap between "Fill out your information usin" and "Don't wait to register - The e": 13px, live 79px
+- icons: 6 in build, 7 on live
+- icon 2: color rgb(255, 255, 255), live rgb(219, 58, 52)
+- icon 3: left edge 70px, live 29px
+- icon 4: color rgb(219, 58, 52), live rgb(255, 255, 255)
+- icon 4: left edge 31px, live 66px
+- background behind "WNL REGIONAL QUALIFIERS": rgb(242, 246, 248), live rgb(226, 235, 238)
+- background behind "October 26, 2024": rgb(242, 245, 248), live rgb(227, 235, 237)
+- background behind "Early bird pricing for these competition": rgb(242, 245, 247), live rgb(255, 255, 255)
+- background behind "Registration is easy and happens in two ": rgb(242, 245, 248), live rgb(255, 255, 255)
+- background behind "Fill out your information using the form": rgb(242, 245, 247), live rgb(255, 255, 255)
+- background behind "Don't wait to register - The early bird ": rgb(242, 245, 247), live rgb(255, 255, 255)
+- band color beside "WNL REGIONAL QUALIFIERS": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "October 26, 2024": rgb(242, 246, 249), live rgb(227, 235, 237)
+- band color beside "Early bird pricing for these competition": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band color beside "Registration is easy and happens in two ": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band color beside "Fill out your information using the form": rgb(242, 246, 249), live rgb(255, 255, 255)
+- band color beside "Don't wait to register - The early bird ": rgb(242, 246, 249), live rgb(255, 255, 255)
+- heading "WNL COMPETITIONS IN SPRINGFIELD MISSOURI": looks different from live (pixel difference 79)
+- photo hero: brightness 83, live 60 (overlay or exposure differs)
+- photo hero: looks different from live (pixel difference 60)
+- band rgb(255, 255, 255) at y=600 (left margin): 318px tall, live 413px
+- band rgb(255, 255, 255) at y=1579 (2566px tall on live, left margin) not found in build
+- band rgb(255, 255, 255) at y=2722 (667px tall, left margin) is in the build but not on live
+
+## Notes
+
+Gate v2.15, round 15. Model: Grok 4.7. The live map, the scripts, the tolerances, and PIXEL_TOL were not edited. No allow entries were added. v2.15 counts any flat run of 120px or more.
+
+On v2.15, home is 3/3/0, about is 2/2/1, and kids-classes is 0/0/3 (1920/1280/390). The site total stays 8,357. No other page rose. The lines still open are the same wraps as round 13.
+
+The desktop ● is `font-family: Muli` (no fallback list), weight 800, italic, 18px. Muli has no ● glyph, so Chromium uses its own fallback, the same as live. Each dot's box is 10.9px wide at 1920 and 1280. The bullet line stays 835px wide against live's 827px. The Vercel preview of `2dc5d0a` measures the same, and the dots there are 10.9px wide too.
+
+The desktop home bullet line uses live's separators. `--tcb-color-0` computes to rgb(219, 58, 52), and each ● is that color. Six non-breaking spaces sit on each side of every ●, inside strong. The line is not justified. It measures 835px wide against live's 827px, one line, at x=543 against live's 546 at 1920 and x=223 against 226 at 1280. The phone list is unchanged, and home at 390 matches.
+
+About's testimonials margin is 0, which is live's. From 800px up, the Community Murph section's padding-bottom is live's 90px, so the white above the grey is the section's own padding. On the PNG that white run is 762px against live's 795px. The band limit is 80px, and the gate does not flag it. "CLIENT TESTIMONIALS" is at y=7444 against live's 7528. The gap from the Murph paragraph is 306px against live's 272px. Below 800px the margin was already 0. Live's phone padding-bottom is 70px against the build's 42px. Adding that 28px would put the Murph-to-testimonials gap at 202px against live's 161px, past the 40px limit, so the phone padding stays.
+
+The Memorial Day sentence stays in the Community Murph paragraph. Paragraph links stay rgb(219, 58, 52) with no underline.

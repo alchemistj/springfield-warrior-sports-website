@@ -1,0 +1,130 @@
+{
+  "url": "https://www.springfieldwarriorsports.com/competitions/",
+  "title": "Ninja Competitions at Springfield Warrior Sports",
+  "description": "Whether you are looking for regional qualifiers or just hoping to join in a friendly competition, Springfield Warrior Sports is where you want to be!",
+  "canonical": "https://www.springfieldwarriorsports.com/competitions/",
+  "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+  "h1": [
+    "TEST YOUR SKILLS ON OUR FUN AND COMPETITIVE COURSES"
+  ],
+  "links": [
+    {
+      "text": "",
+      "href": "https://www.springfieldwarriorsports.com/competitions/#"
+    },
+    {
+      "text": "CONTACT",
+      "href": "https://www.springfieldwarriorsports.com/contact/"
+    },
+    {
+      "text": "ABOUT",
+      "href": "https://www.springfieldwarriorsports.com/about/"
+    },
+    {
+      "text": "SIGN OUR WAIVER",
+      "href": "https://waiver.smartwaiver.com/w/573a0ba38a114/web/"
+    },
+    {
+      "text": "",
+      "href": "https://www.springfieldwarriorsports.com/"
+    },
+    {
+      "text": "",
+      "href": "https://www.springfieldwarriorsports.com/competitions/#"
+    },
+    {
+      "text": "ADULT CLASSES",
+      "href": "https://www.springfieldwarriorsports.com/fitness-classes/"
+    },
+    {
+      "text": "KID CLASSES",
+      "href": "https://www.springfieldwarriorsports.com/kids-classes/"
+    },
+    {
+      "text": "COMPETITIONS",
+      "href": "https://www.springfieldwarriorsports.com/competitions/"
+    },
+    {
+      "text": "BIRTHDAY PARTIES",
+      "href": "https://www.springfieldwarriorsports.com/birthday-parties/"
+    },
+    {
+      "text": "PERSONAL TRAINING",
+      "href": "https://www.springfieldwarriorsports.com/personal-training/"
+    },
+    {
+      "text": "SUMMER CAMPS",
+      "href": "https://www.springfieldwarriorsports.com/summer-camps-in-springfield-mo/"
+    },
+    {
+      "text": "Item 7",
+      "href": "https://www.springfieldwarriorsports.com/competitions/"
+    },
+    {
+      "text": "regional qualifiers for the WNL",
+      "href": "https://www.springfieldwarriorsports.com/wnl-competitions/"
+    },
+    {
+      "text": "REGISTER NOW BY FILLING OUT THE FORM BELOW ▼",
+      "href": "https://www.springfieldwarriorsports.com/competitions/"
+    },
+    {
+      "text": "Add More Participant",
+      "href": "https://www.springfieldwarriorsports.com/competitions/#"
+    },
+    {
+      "text": "",
+      "href": "https://www.springfieldwarriorsports.com/"
+    },
+    {
+      "text": "",
+      "href": "https://www.facebook.com/springfieldwarriorsports/"
+    },
+    {
+      "text": "",
+      "href": "https://www.instagram.com/springfield_warrior_sports/"
+    },
+    {
+      "text": "(417) 894-7319",
+      "href": "tel:4178947319"
+    },
+    {
+      "text": "office@swarriorsports.com",
+      "href": "mailto:office@swarriorsports.com"
+    },
+    {
+      "text": "Home",
+      "href": "https://www.springfieldwarriorsports.com/"
+    },
+    {
+      "text": "About Us",
+      "href": "https://www.springfieldwarriorsports.com/about/"
+    },
+    {
+      "text": "Contact Us",
+      "href": "https://www.springfieldwarriorsports.com/contact/"
+    },
+    {
+      "text": "Meet the Team",
+      "href": "https://www.springfieldwarriorsports.com/meet-the-team/"
+    }
+  ],
+  "imgs": [
+    {
+      "src": "https://www.springfieldwarriorsports.com/wp-content/uploads/2023/03/SpringField-Warrior-Logo.png",
+      "alt": ""
+    },
+    {
+      "src": "https://www.springfieldwarriorsports.com/wp-content/uploads/2023/03/SWS-Competitions-Banner.jpg",
+      "alt": ""
+    },
+    {
+      "src": "https://www.springfieldwarriorsports.com/wp-content/uploads/2023/03/SWS-logo-footer.png",
+      "alt": ""
+    }
+  ],
+  "bgs": [],
+  "jsonld": [
+    "{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/www.springfieldwarriorsports.com\\/competitions\\/\",\"url\":\"https:\\/\\/www.springfieldwarriorsports.com\\/competitions\\/\",\"name\":\"Ninja Competitions at Springfield Warrior Sports\",\"isPartOf\":{\"@id\":\"https:\\/\\/www.springfieldwarriorsports.com\\/#website\"},\"primaryImageOfPage\":{\"@id\":\"https:\\/\\/www.springfieldwarriorsports.com\\/competitions\\/#primaryimage\"},\"image\":{\"@id\":\"https:\\/\\/www.springfieldwarriorsports.com\\/competitions\\/#primaryimage\"},\"thumbnailUrl\":\"https:\\/\\/www.springfieldwarriorsports.com\\/wp-content\\/uploads\\/2023\\/03\\/SWS-Competitions-Banner.jpg\",\"datePublished\":\"2023-03-22T07:30:07+00:00\",\"dateModified\":\"2026-08-31T19:19:33+00:00\",\"description\":\"Whether you are looking for regional qualifiers or just hoping to join in a friendly competition, Springfield Warrior Sports is where you want to be!\",\"breadcrumb\":{\"@id\":\"https:\\/\\/www.springfieldwarriorsports.com\\/competitions\\/#breadcrumb\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/www.springfieldwarriorsports.com\\/competitions\\/\"]}]},{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/www.springfieldwarriorsports.com\\/competitions\\/#primaryimage\",\"url\":\"https:\\/\\/www.springfieldwarriorsports.com\\/wp-content\\/uploads\\/2023\\/03\\/SWS-Competitions-Banner.jpg\",\"contentUrl\":\"https:\\/\\/www.springfieldwarriorsports.com\\/wp-content\\/uploads\\/2023\\/03\\/SWS-Competitions-Banner.jpg\",\"width\":1920,\"height\":558},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/www.springfieldwarriorsports.com\\/competitions\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/www.springfieldwarriorsports.com\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Competitions\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/www.springfieldwarriorsports.com\\/#website\",\"url\":\"https:\\/\\/www.springfieldwarriorsports.com\\/\",\"name\":\"Springfield Warrior Sports\",\"description\":\"Ninja and Parkour Gym\",\"publisher\":{\"@id\":\"https:\\/\\/www.springfieldwarriorsports.com\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/www.springfieldwarriorsports.com\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/www.springfieldwarriorsports.com\\/#organization\",\"name\":\"Springfield Warrior Sports\",\"url\":\"https:\\/\\/www.springfieldwarriorsports.com\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/www.springfieldwarriorsports.com\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/www.springfieldwarriorsports.com\\/wp-content\\/uploads\\/2023\\/03\\/SWS-logo-footer.png\",\"contentUrl\":\"https:\\/\\/www.springfieldwarriorsports.com\\/wp-content\\/uploads\\/2023\\/03\\/SWS-logo-footer.png\",\"width\":266,\"height\":76,\"caption\":\"Springfield Warrior Sports\"},\"image\":{\"@id\":\"https:\\/\\/www.springfieldwarriorsports.com\\/#\\/schema\\/logo\\/image\\/\"}}]}"
+  ]
+}
