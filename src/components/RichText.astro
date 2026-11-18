@@ -30,7 +30,7 @@ const parts = pieces(text);
   {
     parts.map((part) =>
       part.kind === "phone" ? (
-        <a href={site.phone.tel}>{part.value}</a>
+        <a href={site.phone.tel}>{site.phone.display}</a>
       ) : part.kind === "mail" ? (
         <a href={`mailto:${part.value}`}>{part.value}</a>
       ) : part.kind === "url" ? (

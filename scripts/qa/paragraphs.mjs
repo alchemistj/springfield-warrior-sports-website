@@ -33,7 +33,8 @@ function collect({ maxLines, withReviews }) {
   const CHROME = "header, footer, nav, form, [data-region=header], [data-region=footer], #tve_header_wrapper, #tve_footer_wrapper, .thrv_header, .thrv_footer, .site-header, .site-footer, .trust-bar, [data-skip-paragraphs]";
   // Reviews are customers' words: they count for parity (not dropped or merged) but not for the length rule.
   const SKIP = withReviews ? CHROME : CHROME + ", .review-band, .b2-quotes, .quote, blockquote, [class*=review], [class*=testimonial]";
-  const norm = (t) => t.replace(/[‘’]/g, "'").replace(/[“”]/g, '"').replace(/[–—]/g, "-").replace(/ /g, " ").replace(/\s+/g, " ").trim();
+  // Launch polish, 18 Nov 2026: every phone number uses the one site format, "(417) 894-7319".
+  const norm = (t) => t.replace(/\(417\)894-7319/g, "(417) 894-7319").replace(/[‘’]/g, "'").replace(/[“”]/g, '"').replace(/[–—]/g, "-").replace(/ /g, " ").replace(/\s+/g, " ").trim();
   const out = [];
   for (const p of document.querySelectorAll("p")) {
     if (p.closest(SKIP)) continue;
