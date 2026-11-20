@@ -3,8 +3,10 @@ import { media } from "../batch2/media";
 import bannerBg from "../../assets/media/2023-03-Birthday-Parties-Banner.jpg";
 
 const intro = media("media/2025-12-IMG_2343-scaled.webp");
-const day = media("media/2023-04-Day1-029.webp");
-const shoots = media("media/2023-04-wsre-shoots.webp");
+const day = media("media/2023-04-Day1-029.pair.webp");
+const shoots = media("media/2023-04-wsre-shoots.pair.webp");
+const stress = media("media/2023-04--E2-80-8BStress-Relief.pair.webp");
+const more = media("media/2023-04--E2-80-8BMore-Than-Just-Physical.pair.webp");
 const banner = typeof bannerBg === "string" ? bannerBg : bannerBg.src;
 const trial = "https://checkout.square.site/merchant/MLXTPBS97BGYV/checkout/B2M6XBNLKD4ZKFEUAPK4HWCQ";
 const gym = "https://square.link/u/GmmQ7iuL";
@@ -57,7 +59,7 @@ const gym = "https://square.link/u/GmmQ7iuL";
         <p>Parkour is a great way to reduce stress levels by letting off some steam while using physical activity as an outlet for negative emotions.</p>
         <p>The mental clarity that comes from focusing on the task at hand helps clear the mind of any distractions or worries that may be plaguing it, allowing for renewed focus and energy afterwards.</p>
       </div>
-      <img src={"/\u200bStress-Relief.webp".replace("/", "/live/")} alt="" width="501" height="522" loading="lazy" decoding="async" />
+      {stress.src && <img src={stress.src} alt="" width={stress.width} height={stress.height} loading="lazy" decoding="async" />}
     </div>
     <div class="pk-row">
       {shoots.src && <img src={shoots.src} alt="" width={shoots.width} height={shoots.height} loading="lazy" decoding="async" />}
@@ -81,7 +83,7 @@ const gym = "https://square.link/u/GmmQ7iuL";
 
 <section class="b3 pk-more">
   <div class="b3-wrap b3-split">
-    <img src="/live/&#8203;More-Than-Just-Physical.webp" alt="" width="520" height="542" loading="lazy" decoding="async" />
+    {more.src && <img src={more.src} alt="" width={more.width} height={more.height} loading="lazy" decoding="async" />}
     <div>
       <h2>More Than Just Physical</h2>
       <p>With Parkour classes at Springfield Warrior Sports, you don't just get a physical workout; you also get a mental challenge as well.</p>

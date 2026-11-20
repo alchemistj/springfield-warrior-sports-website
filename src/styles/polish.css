@@ -62,12 +62,12 @@ a.call,
   color: #285276 !important;
   box-shadow: inset 0 0 0 2px #285276 !important;
 }
-.final-cta .call,
-.b4-cta .cta-phone,
+.bd-close a.btn.btn-secondary,
+.final-cta a.call,
+.b3-band a.btn.btn-secondary,
+.b3-band a.b3-btn.navy,
 .b3-band a.call,
-.b3-band .b3-btn.navy,
-.b3-band a.btn-secondary,
-.bd-close .btn-secondary {
+.b4-cta a.cta-phone {
   color: #fff !important;
   box-shadow: inset 0 0 0 2px #fff !important;
   background-color: transparent !important;
@@ -78,7 +78,7 @@ a[href^="tel:"] { white-space: nowrap; }
 
 /* Reviewer names keep the typed case. One hyphen form, no CSS uppercase. */
 .review-by, .t-by, .b2-qn, .q-by, .pt-quotes .by {
-  text-transform: none;
+  text-transform: none !important;
   letter-spacing: 0;
 }
 
@@ -216,15 +216,23 @@ a[href^="tel:"] { white-space: nowrap; }
   .bd-split > img,
   .pk-row > img,
   .camp-layout img,
+  .page-summer-camps-in-springfield-mo .camp-photo,
   .wnl-top > img,
   .bd-mem-grid > img,
   .warrior-photo,
-  .row > img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  .home-ready-photos img,
+  .row > img,
+  .page-kids-classes img.face,
+  .page-birthday-parties .bd-laser,
+  .page-about .row > img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
   }
-  .page-kids-classes .csna-block img { object-position: center 20%; }
+  .home-ready-grid { align-items: stretch !important; }
+  .home-ready-photos { height: 100%; }
+  .page-kids-classes .csna-block img { object-position: center 20% !important; }
+  .lt-night img { object-position: center 72% !important; }
 }
 @media (max-width: 799px) {
   .b3-split > img,
@@ -233,12 +241,26 @@ a[href^="tel:"] { white-space: nowrap; }
   .lt-night img,
   .nf-night img,
   .row > img,
-  .bd-mem-photo {
-    width: 100%;
-    aspect-ratio: 4 / 3;
-    height: auto;
-    object-fit: cover;
+  .bd-mem-photo,
+  .page-kids-classes img.face,
+  .page-birthday-parties .bd-laser,
+  .page-summer-camps-in-springfield-mo .camp-photo,
+  .home-ready-photos img,
+  .page-about .row > img {
+    width: 100% !important;
+    aspect-ratio: 4 / 3 !important;
+    height: auto !important;
+    object-fit: cover !important;
+    object-position: center 28% !important;
   }
+  .page-kids-classes .row.text-first,
+  .page-kids-classes .row.img-first {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .page-kids-classes .row > img { order: 2 !important; }
+  .page-kids-classes .row > .copy { order: 1 !important; }
+  .lt-night img { object-position: center 72% !important; }
   .lt-night .b3-split img,
   .nf-night .b3-split img { order: 2; }
   .lt-night h2,
@@ -274,16 +296,37 @@ a[href^="tel:"] { white-space: nowrap; }
   width: min(16em, 100%);
   margin-inline: auto;
 }
+.page-birthday-parties .bd-sub {
+  text-align: center !important;
+  width: min(18em, 100%) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
 .page-birthday-parties .bd-intro h2,
 .page-birthday-parties .bd-stress-title,
 .page-birthday-parties .bd-more,
 .page-birthday-parties .bd-mem h2,
+.page-birthday-parties .bd-book h2,
 .page-birthday-parties .bd-close h2 {
-  font-family: Heebo, "Arial Narrow", sans-serif;
-  font-weight: 900;
-  font-size: 40px;
-  line-height: 1.15;
-  text-transform: uppercase;
+  font-family: Heebo, "Arial Narrow", sans-serif !important;
+  font-weight: 900 !important;
+  font-size: 40px !important;
+  line-height: 1.15 !important;
+  text-transform: uppercase !important;
+}
+.page-birthday-parties .bd-intro h2,
+.page-birthday-parties .bd-stress-title,
+.page-birthday-parties .bd-more,
+.page-birthday-parties .bd-mem h2 {
+  color: #d6352f !important;
+}
+.page-birthday-parties .bd-book h2,
+.page-birthday-parties .bd-close h2 {
+  color: #fff !important;
+}
+.page-birthday-parties .b2-fact,
+.page-birthday-parties .b2-fact-wide {
+  margin-top: 16px !important;
 }
 .page-birthday-parties .bd-pizza h3 {
   width: auto;
@@ -306,7 +349,24 @@ a[href^="tel:"] { white-space: nowrap; }
   line-height: 1.5;
 }
 .page-birthday-parties .bd-policy strong { font-weight: 700; }
-.page-birthday-parties main a:not(.btn):not(.go) { color: #d6352f; text-decoration: underline; text-underline-offset: 2px; }
+main :where(a:not(.btn):not(.b3-btn):not(.go):not(.comp-btn):not(.cta-phone):not(.call):not(.b4-visit)) {
+  color: #d6352f !important;
+  font-weight: 600 !important;
+  text-decoration: underline !important;
+  text-underline-offset: 2px;
+}
+.bd-book a,
+.bd-close a:not(.btn),
+.b3-band a:not(.b3-btn):not(.btn),
+.final-cta a:not(.btn):not(.go):not(.call),
+.fun a:not(.btn),
+.persevere a,
+.hs-book a:not(.b3-btn):not(.btn) {
+  color: #fff !important;
+  font-weight: 600 !important;
+  text-decoration: underline !important;
+  text-underline-offset: 2px;
+}
 .page-birthday-parties .atf-photo { object-position: center 30%; }
 
 /* Fitness heading is real title case. Benefit cards are article copy. */
@@ -432,7 +492,25 @@ a[href^="tel:"] { white-space: nowrap; }
 .camp-form .form-note { margin-top: 20px; }
 
 /* Ranges stay on one line. */
-.range { white-space: nowrap; }
+.range { white-space: nowrap !important; }
+
+/* Body paragraphs keep a gap. The last one in its group does not. */
+@media (max-width: 799px) {
+  .page-birthday-parties .bd-split p:not(.b2-fact),
+  .page-birthday-parties .bd-battles p:not(.b2-fact),
+  .page-nerf-wars .nf-party .b3-split p,
+  .page-laser-tag .lt-party .b3-split p {
+    margin-bottom: 16px !important;
+  }
+  .page-birthday-parties .bd-split p:last-child,
+  .page-birthday-parties .bd-battles div > p:last-of-type,
+  .page-nerf-wars .nf-party .b3-split > div > p:last-of-type,
+  .page-laser-tag .lt-party .b3-split > div > p:last-of-type {
+    margin-bottom: 0 !important;
+  }
+}
+.night-copy > p { margin: 0 0 16px !important; }
+.night-copy > p:last-child { margin-bottom: 0 !important; }
 
 /* Heading space stays inside the section so it does not open a white strip above it. */
 .bd-options { padding-top: 100px; }

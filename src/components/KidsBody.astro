@@ -3,11 +3,11 @@ import { media } from "../lib/media";
 import FactLine from "./FactLine.astro";
 import ReviewBand from "./ReviewBand.astro";
 
-const pre = media("media/2023-03-pre-shool-warriors.webp");
-const junior = media("media/2023-03-junior-warriors.webp");
-const csna = media("media/2023-03-csna-comp.webp");
-const parkour = media("media/2023-04-parkour-7-yrs-old.webp");
-const homeSchool = media("media/2025-02-homeschool-kids-sports.webp");
+const pre = media("media/2023-03-pre-shool-warriors.pair.webp");
+const junior = media("media/2023-03-junior-warriors.pair.webp");
+const csna = media("media/2023-03-csna-comp.pair.webp");
+const parkour = media("media/2023-04-parkour-7-yrs-old.pair.webp");
+const homeSchool = media("media/2025-02-homeschool-kids-sports.pair.webp");
 const fun = [1, 2, 3, 4, 5, 6].map((n) => media(`media/2023-03-kid-classes-img0${n}.webp`));
 const youth = media("media/2023-03-youth-camp.jpg");
 const party = media("media/2023-03-birthday-parties-img.jpg");
@@ -31,7 +31,7 @@ const trial = "https://checkout.square.site/merchant/MLXTPBS97BGYV/checkout/B2M6
     <img class="face" loading="lazy" decoding="async" src={pre.src} alt="Pre-school warriors" width={pre.width} height={pre.height} />
     <div class="copy">
       <h2 class="red h50">Pre-School Warriors <span class="range">(3-6 Year-Olds)</span></h2>
-      <p class="pre-copy">Our preschool class is geared for your 3-6 year olds.</p>
+      <p class="pre-copy">Our preschool class is geared for your <span class="range">3-6</span> year olds.</p>
 <p class="pre-copy">This interactive class will include a warm-up, balance and agility work, and a mini course, along with learning to take turns and follow instructions - all in a FUN and safe environment!</p>
 <p class="pre-copy">Bring your little ninjas by to climb up our walls (and wear them out before rest time). See you soon!</p>
       <FactLine text="Ages: 3-6 years old" />
@@ -40,9 +40,9 @@ const trial = "https://checkout.square.site/merchant/MLXTPBS97BGYV/checkout/B2M6
       <FactLine text="Tuesday mornings 9:30am-11:30am" />
       <h3 class="red h20">Class Times</h3>
       <FactLine text="3&4 Years Old" />
-      <h3 class="as-text">Tuesday and Wednesday 5:30-6:00pm</h3>
+      <h3 class="as-text">Tuesday and Wednesday <span class="range">5:30-6:00pm</span></h3>
       <FactLine text="5&6 Years Old" />
-      <h3 class="as-text">Tuesday and Wednesday 6:00pm-6:45pm</h3>
+      <h3 class="as-text">Tuesday and Wednesday <span class="range">6:00pm-6:45pm</span></h3>
     </div>
   </div></div>
 </section>
@@ -50,12 +50,11 @@ const trial = "https://checkout.square.site/merchant/MLXTPBS97BGYV/checkout/B2M6
 <section class="section kids wash">
   <div class="wrap"><div class="row text-first">
     <div class="copy">
-      <h2 class="red h50 w446">Junior Warriors</h2>
-      <h2 class="thin left">(Ages 7-18)</h2>
-      <p>The Springfield Warrior Sports Junior Warrior Classes are the perfect way to get your 7-18 year olds active and teach them the importance of a healthy lifestyle.</p>
+      <h2 class="red h50">Junior Warriors <span class="range">(Ages 7-18)</span></h2>
+      <p>The Springfield Warrior Sports Junior Warrior Classes are the perfect way to get your <span class="range">7-18</span> year olds active and teach them the importance of a healthy lifestyle.</p>
 <p>These classes incorporate cardio, strength, balance, and agility training while teaching safe and productive ways to conquer the different obstacles in the gym.</p>
 <p>For kids who need a little extra one-on-one coaching, we also offer <a class="blue-link" href="/personal-training/">personal training</a> tailored to their goals.</p>
-      <p class="levels">Your kids will progress through Levels 1-9 (like white, blue, black, etc., belts) as they accomplish the skills required in each level. This is a great way to challenge your kids and encourage your children to stay active!</p>
+      <p class="levels">Your kids will progress through Levels <span class="range">1-9</span> (like white, blue, black, etc., belts) as they accomplish the skills required in each level. This is a great way to challenge your kids and encourage your children to stay active!</p>
       <FactLine text="Cost:" />
       <FactLine text="Intermediate classes: One class per week $85 monthly. Two classes per week $110 monthly. Up to three classes per week, $135 monthly." />
       <FactLine text="Beginner Warrior Membership $70." />
@@ -65,9 +64,9 @@ const trial = "https://checkout.square.site/merchant/MLXTPBS97BGYV/checkout/B2M6
       <p class="as-text times"><span class="range">Mon-Fri 4-4:30pm or 4:30-5pm</span></p>
       <p class="as-text times"><span class="range">Mon, Thur, &amp; Fri 5-5:30pm or 5:30-6pm</span></p>
       <FactLine text="Level 3+ Junior Warriors" />
-      <h3 class="as-text">Monday-Friday 5-6pm</h3>
+      <h3 class="as-text"><span class="range">Monday-Friday 5-6pm</span></h3>
       <FactLine text="Level 3+ Homeschool Junior Warrior Class" />
-      <h3 class="as-text">Tuesdays and Thursdays 3-4pm</h3>
+      <h3 class="as-text">Tuesdays and Thursdays <span class="range">3-4pm</span></h3>
     </div>
     <img class="face" loading="lazy" decoding="async" src={junior.src} alt="Junior warriors" width={junior.width} height={junior.height} />
   </div></div>
@@ -77,15 +76,14 @@ const trial = "https://checkout.square.site/merchant/MLXTPBS97BGYV/checkout/B2M6
   title="Client Testimonials"
   sub="What Our Clients Say"
   text="Staff was friendly, knowledgeable, and quick to help out. They were great with assisting my son(who can be a bit difficult at times). We signed up for the Beginner classes today and my son LOVED his first day!"
-  by="- KEVIN P."
+  by="- Kevin P."
 />
 
 <section class="section kids wash csna-block">
   <div class="wrap"><div class="row img-first">
     <img loading="lazy" decoding="async" src={csna.src} alt="CSNA competitive team" width={csna.width} height={csna.height} />
     <div class="copy">
-      <h2 class="red h50">CSNA Competitive Ninja Team</h2>
-      <h2 class="thin left">(7-18 Years Old)</h2>
+      <h2 class="red h50">CSNA Competitive Ninja Team <span class="range">(7-18 Years Old)</span></h2>
       <p>The Central States Ninja Association is a competitive youth team for Junior Warriors who are ready to take it to the next level and put their skills to the test!</p>
 <p>Junior Warriors are eligible to apply for the CSNA team upon completing Level 4. The team works with Coach Adam Arnold who holds 90-minute practices 2 days a week.</p>
 <p>The season runs September - May with competitions scheduled throughout the region hosted by other participating CSNA gyms |MO, KS, NE, AR|.</p>
@@ -99,8 +97,7 @@ const trial = "https://checkout.square.site/merchant/MLXTPBS97BGYV/checkout/B2M6
 <section class="section kids wash parkour-block">
   <div class="wrap"><div class="row text-first">
     <div class="copy">
-      <h2 class="red h50 w226">Parkour</h2>
-      <h2 class="thin left">(7+ Years Old)</h2>
+      <h2 class="red h50">Parkour <span class="range">(7+ Years Old)</span></h2>
       <p>⚠️ Parkour Classes are currently unavailable.⚠️</p>
       <p>Open Gym is still available for Parkour training.</p>
       <p class="pk-copy">Learn the basics of Parkour |free running| in this group class. Students will gain the ability to move freely with and without obstacles using the abilities of their bodies.</p>
@@ -125,13 +122,12 @@ const trial = "https://checkout.square.site/merchant/MLXTPBS97BGYV/checkout/B2M6
   <div class="wrap"><div class="row img-first">
     <img loading="lazy" decoding="async" src={homeSchool.src} alt="Homeschool warriors" width={homeSchool.width} height={homeSchool.height} />
     <div class="copy">
-      <h2 class="red h50">Homeschool Warriors</h2>
-      <h2 class="thin left">(7-15 Years Old)</h2>
+      <h2 class="red h50">Homeschool Warriors <span class="range">(7-15 Years Old)</span></h2>
       <p>Looking for a fun and engaging way to keep your homeschoolers active? Springfield Warrior Sports has just what you need!</p>
 <p>Our homeschool program offers structured classes designed to help kids build strength, agility, and confidence—all while making friends and having a blast.</p>
 <p>Whether your child wants to challenge themselves on obstacles, improve their coordination, or just burn off some energy, we provide a safe and supportive environment to do it all.</p>
 <p>Sign up for our exciting classes—we can’t wait to see your homeschool warriors in action!</p>
-      <h2 class="red h20 hs-times">Homeschool Classes (Ages 7–15)</h2>
+      <h2 class="red h20 hs-times">Homeschool Classes <span class="range">(Ages 7–15)</span></h2>
       <FactLine text="Tuesdays & Thursdays : 3–4pm" />
       <FactLine text="$85/month for one class per week" />
       <FactLine text="$110/month for two classes per week" />
@@ -152,7 +148,7 @@ const trial = "https://checkout.square.site/merchant/MLXTPBS97BGYV/checkout/B2M6
 
 <ReviewBand
   text="We have been going to the gym for classes for a while and my kids really enjoy it. I see huge improvements in their strength and flexibility. We recently did a birthday party for my 8 year old and it was amazing! They had staff members engaged with the kids the entire time ensuring safety and that everyone was having fun. Definitely recommend for parties, and their flexible schedule for classes and open gym make it easy to fit in."
-  by="- LIZ S."
+  by="- Liz S."
 />
 
 <section class="section kids mist forget-block">

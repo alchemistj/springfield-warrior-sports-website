@@ -3,7 +3,7 @@ import { site } from "../data/site";
 import { media } from "../lib/media";
 import ReviewBand from "./ReviewBand.astro";
 
-const obstacle = media("media/2025-12-SpringField-indoor-obstacle.webp");
+const obstacle = media("media/2025-12-SpringField-indoor-obstacle.pair.webp");
 const everyday = media("media/2023-03-everyday-warrior.webp");
 const cards = [
   {
@@ -77,6 +77,19 @@ const cards = [
   },
 ];
 const shots = Object.fromEntries(cards.map((card) => [card.file, media(card.file)]));
+const rangeRe = /(\d{1,2}(?::\d{2})?(?:am|pm)?)\s*[-–]\s*(\d{1,2}(?::\d{2})?(?:am|pm)?)/gi;
+function rangeParts(text: string) {
+  const bits: { range: boolean; text: string }[] = [];
+  let cursor = 0;
+  for (const match of text.matchAll(rangeRe)) {
+    const index = match.index ?? 0;
+    if (index > cursor) bits.push({ range: false, text: text.slice(cursor, index) });
+    bits.push({ range: true, text: match[0] });
+    cursor = index + match[0].length;
+  }
+  if (cursor < text.length || bits.length === 0) bits.push({ range: false, text: text.slice(cursor) });
+  return bits;
+}
 const hours = [
   "Monday: 12pm-6pm",
   "Tuesday: 3pm-5:30pm",
@@ -125,7 +138,7 @@ const lee = {
           return (
             <li>
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 5h-2v6l5 3 1-1.7-4-2.3z" /></svg>
-              <span class="slot"><span class="label">{label}</span>{when && <span class="when"> {when}</span>}</span>
+              <span class="slot"><span class="label">{label}</span>{when && <span class="when"> {rangeParts(when).map((bit) => bit.range ? <span class="range">{bit.text}</span> : bit.text)}</span>}</span>
             </li>
           );
         })}

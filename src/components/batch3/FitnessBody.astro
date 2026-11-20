@@ -4,7 +4,7 @@ import pricingBg from "../../assets/media/2023-03-Pricing-and-Schedule.webp";
 
 const one = media("media/2025-12-IMG_2344-scaled.webp");
 const two = media("media/2025-12-IMG_2347-scaled.webp");
-const confidence = media("media/2023-03-improve-confidence.webp");
+const confidence = media("media/2023-03-improve-confidence.pair.webp");
 const pricing = typeof pricingBg === "string" ? pricingBg : pricingBg.src;
 const trial = "https://checkout.square.site/merchant/MLXTPBS97BGYV/checkout/B2M6XBNLKD4ZKFEUAPK4HWCQ";
 const prices = [
@@ -30,7 +30,7 @@ const prices = [
 <section class="b3 b3-band fit-price" style={`background-image: url('${pricing}')`}>
   <div class="b3-wrap">
     <h2>Pricing and Schedule</h2>
-    <p class="fit-lead">We now offer two OCR classes each week — <span class="ice">Tuesday and Thursday from 6-7 pm </span><span class="w600">— giving you more flexibility and more opportunities to train.</span></p>
+    <p class="fit-lead">We now offer two OCR classes each week — <span class="ice">Tuesday and Thursday from <span class="range">6-7</span> pm </span><span class="w600">— giving you more flexibility and more opportunities to train.</span></p>
     <p class="choose">Choose the membership option that fits your goals:</p>
     <div class="fit-card">
       <ul class="b3-facts fit-grid">

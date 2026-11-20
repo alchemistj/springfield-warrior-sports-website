@@ -1059,8 +1059,19 @@
   }
   .camp-time { width: 136px; max-width: 136px; }
   .camp-intro p,
-  .camp-price { width: min(338px, 100%); font-size: 18px; line-height: 32px; padding-bottom: 0; }
-  .camp-reg { padding-bottom: 0; }
+  .camp-price,
+  .camp-reg {
+    width: min(338px, 100%);
+    margin: 0 0 16px;
+    padding-bottom: 0;
+    color: rgba(0, 0, 0, 0.7);
+    font-family: Epilogue, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .camp-intro p:last-child,
+  .camp-copy > .camp-price:last-child,
+  .camp-reg:last-child { margin-bottom: 0; }
   .camp-photo { order: -1; margin: 0 0 16px; }
   .camp-layout { display: flex; flex-direction: column; }
   .camp-reg,

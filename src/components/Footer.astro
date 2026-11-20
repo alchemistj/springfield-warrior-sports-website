@@ -57,7 +57,7 @@ const preschoolWhen = "Tuesday mornings from 9:30am-11:30am";
       <p><span class="lab">Hours</span></p>
       <ul class="hours">
         {hourLines.map((line) => <li>{line}</li>)}
-        <li class="preschool"><span class="pre-label">{preschoolLabel}</span> <span class="pre-when">{preschoolWhen}</span></li>
+        <li class="preschool"><span class="pre-label">{preschoolLabel}</span> <span class="pre-when range">{preschoolWhen}</span></li>
       </ul>
       <p><span class="lab">Service area</span> {city.serviceArea.join(", ")}</p>
     </div>
