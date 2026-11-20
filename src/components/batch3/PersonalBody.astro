@@ -17,12 +17,11 @@ const cards = [
   ["media/2025-08-Emotionally-Intelligent-Coaching.webp", "Emotionally Intelligent Coaching", ["We meet you where you are, without shame or performance pressure.", "Whether you’re just starting or getting unstuck, we help you rediscover joy in movement."]],
 ] as const;
 const trainers = [
-  ["media/2025-08-sarah-wilder-img.webp", "Sarah Wilder", "– Women’s Confidence Coach", "Helps women, especially moms, feel strong again in bodies that have carried so much.", "“I focus on helping you feel powerful before you even pick up a weight.”"],
-  ["media/2025-08-Jacob-Winter-img.webp", "Jacob Winter", "– Strength, Weight Loss and Conditioning", "Great for weight loss, functional strength, and rebuilding consistency.", "“We build wins you can feel without judgment or pressure.”"],
-  ["media/2025-08-jonny-wilder-img.webp", "Jonny Wilder", "– Ninja and Competitive Obstacle Training", "Perfect for teens, adventurous adults, or athletes seeking confidence and agility.", "“Training should be fun. That’s where confidence begins.”"],
+  ["media/2025-08-sarah-wilder-img.webp", "Sarah Wilder", "Women’s Confidence Coach", "Helps women, especially moms, feel strong again in bodies that have carried so much.", "“I focus on helping you feel powerful before you even pick up a weight.”"],
+  ["media/2025-08-Jacob-Winter-img.webp", "Jacob Winter", "Strength, Weight Loss and Conditioning", "Great for weight loss, functional strength, and rebuilding consistency.", "“We build wins you can feel without judgment or pressure.”"],
+  ["media/2025-08-jonny-wilder-img.webp", "Jonny Wilder", "Ninja and Competitive Obstacle Training", "Perfect for teens, adventurous adults, or athletes seeking confidence and agility.", "“Training should be fun. That’s where confidence begins.”"],
 ] as const;
 const how = media("media/2025-08-Warrior-Sports-training.jpg");
-const quote = media("media/2023-03-qoute-icon.webp");
 const pricing = typeof pricingBg === "string" ? pricingBg : pricingBg.src;
 const steps = [
   "Contact us and share your story—goals, concerns, struggles",
@@ -35,7 +34,7 @@ const steps = [
 <section class="b3 pt-intro">
   <div class="b3-wrap b3-split">
     <div>
-      <h2>Not Your Typical Gym.<br />Not Your Typical Trainer.</h2>
+      <h2>Not Your Typical Gym. Not Your Typical Trainer.</h2>
       <p>If you’ve ever felt like fitness wasn’t made for you, you’re in the right place.</p>
       <p>We don’t (necessarily) do treadmills or machine circuits. We do movement that makes you stronger, sharper, and more confident…your way.</p>
       <p class="pt-note">Because when training is rooted in curiosity and connection, not comparison, you show up differently. We work with clients from across Springfield.</p>
@@ -45,6 +44,12 @@ const steps = [
     {heroShot.src && <img src={heroShot.src} alt="" width={heroShot.width} height={heroShot.height} loading="lazy" decoding="async" />}
   </div>
 </section>
+
+<ReviewBand
+  title="What Our Clients Say"
+  text="After losing some weight on my own, I hit a wall. Warrior Sports changed the game for me. My coach built a program just for me and held me accountable in a way that made me stronger, leaner, and more confident—not just physically, but mentally."
+  by="- Client"
+/>
 
 <section class="b3 b3-grey pt-why">
   <div class="b3-wrap">
@@ -59,7 +64,7 @@ const steps = [
           <article>
             {img.src && <img src={img.src} alt="" width={img.width} height={img.height} loading="lazy" decoding="async" />}
             <h4>{title}</h4>
-            {(Array.isArray(body) ? body : [body]).map((para) => (
+            {(body as readonly string[]).map((para) => (
               <p>{para}</p>
             ))}
           </article>
@@ -68,6 +73,11 @@ const steps = [
     </div>
   </div>
 </section>
+
+<ReviewBand
+  text="Over a year, I lost over 50 pounds, gained mobility and confidence, and competed in multiple obstacle races. Warrior Sports is family-friendly, fun, and motivating. My trainer, Jacob, made workouts fast, personal, and sustainable."
+  by="- Michael B."
+/>
 
 <section class="b3 b3-navyband pt-meet">
   <div class="b3-wrap">
@@ -89,20 +99,30 @@ const steps = [
   </div>
 </section>
 
+<ReviewBand
+  text="Jonny has coached our son for over three years. He’s a mentor, a role model, and a true confidence builder. His dedication helped our son compete at the WNL World Championships two years in a row."
+  by="- Will and Koren W."
+/>
+
 <section class="b3 b3-ice pt-how">
   <div class="b3-wrap b3-split">
     {how.src && <img src={how.src} alt="" width={how.width} height={how.height} loading="lazy" decoding="async" />}
     <div>
       <h2>How It Works</h2>
       <ul class="b3-facts">
-        {steps.map((step, index) => (
-          <li><FactIcon name="arrow" /><span class={index === 1 ? "ink" : undefined}>{step}</span></li>
+        {steps.map((step) => (
+          <li><FactIcon name="arrow" /><span>{step}</span></li>
         ))}
       </ul>
       <a class="b3-btn w800 block" href="#lead-form">Contact our personal trainers</a>
     </div>
   </div>
 </section>
+
+<ReviewBand
+  text="My son’s personal training at Warrior Sports has helped him with body image, goal setting, and self-confidence. It’s been so rewarding to watch him grow."
+  by="- Susie K."
+/>
 
 <section class="b3 b3-band pt-form" style={`background-image: url('${pricing}')`}>
   <div class="b3-wrap">
@@ -114,24 +134,3 @@ const steps = [
     </div>
   </div>
 </section>
-
-<ReviewBand
-  title="What Our Clients Say"
-  text="After losing some weight on my own, I hit a wall. Warrior Sports changed the game for me. My coach built a program just for me and held me accountable in a way that made me stronger, leaner, and more confident—not just physically, but mentally."
-  by="- Client"
-/>
-<ReviewBand
-  continued
-  text="Over a year, I lost over 50 pounds, gained mobility and confidence, and competed in multiple obstacle races. Warrior Sports is family-friendly, fun, and motivating. My trainer, Jacob, made workouts fast, personal, and sustainable."
-  by="— Michael B."
-/>
-<ReviewBand
-  continued
-  text="Jonny has coached our son for over three years. He’s a mentor, a role model, and a true confidence builder. His dedication helped our son compete at the WNL World Championships two years in a row."
-  by="— Will and Koren Wilson"
-/>
-<ReviewBand
-  continued
-  text="My son’s personal training at Warrior Sports has helped him with body image, goal setting, and self-confidence. It’s been so rewarding to watch him grow."
-  by="— Susie K."
-/>

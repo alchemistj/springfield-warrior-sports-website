@@ -23,7 +23,7 @@
 .b4-team-hero h1,
 .b4-team-hero .m-title {
   margin: 0;
-  color: rgb(219, 58, 52);
+  color: #d6352f;
   font-family: Heebo, "Arial Narrow", sans-serif;
   font-weight: 900;
   letter-spacing: 0;
@@ -49,7 +49,7 @@
 .b4-gym-hero h1 {
   width: min(1150px, calc(100% - 42px));
   margin: 0 auto;
-  color: rgb(219, 58, 52);
+  color: #d6352f;
   font-family: Heebo, "Arial Narrow", sans-serif;
   font-size: 70px;
   font-weight: 900;
@@ -115,7 +115,7 @@
 }
 .b4-person h3 {
   margin-top: 2px;
-  color: rgb(219, 58, 52);
+  color: #d6352f;
   font-family: Heebo, "Arial Narrow", sans-serif;
   font-size: 20px;
   font-weight: 400;
@@ -156,7 +156,7 @@
   margin-inline: auto;
 }
 .b4-cta h2 {
-  color: rgb(219, 58, 52);
+  color: #d6352f;
   font-family: Heebo, "Arial Narrow", sans-serif;
   font-size: 50px;
   font-weight: 900;
@@ -184,7 +184,7 @@
   height: 49px;
   margin-top: 22px;
   border-radius: 100px;
-  background: rgb(219, 58, 52);
+  background: #d6352f;
   color: #fff;
   font-family: Heebo, "Arial Narrow", sans-serif;
   font-size: 16px;
@@ -234,7 +234,7 @@
 .b4-call p:first-child { margin-top: 0; }
 .b4-call .hot { font-weight: 600; }
 .b4-call a,
-.b4-gym a.red { color: rgb(219, 58, 52); font-weight: 400; }
+.b4-gym a.red { color: #d6352f; font-weight: 400; }
 
 .b4-gym {
   position: relative;
@@ -262,7 +262,7 @@
 .b4-gym h2 {
   width: fit-content;
   max-width: 100%;
-  color: rgb(219, 58, 52);
+  color: #d6352f;
   font-family: Heebo, "Arial Narrow", sans-serif;
   font-size: 50px;
   font-weight: 900;
@@ -277,7 +277,7 @@
   margin-top: 10px;
 }
 .b4-addr svg,
-.b4-hl svg { display: block; flex: 0 0 auto; fill: rgb(219, 58, 52); }
+.b4-hl svg { display: block; flex: 0 0 auto; fill: #d6352f; }
 .b4-addr svg { width: 24px; height: 24px; }
 .b4-addr span,
 .b4-hl span {
@@ -349,7 +349,7 @@
 }
 .b4-close h2 + h4 { margin-top: 26px; }
 .b4-close h2 {
-  color: rgb(219, 58, 52);
+  color: #d6352f;
   font-family: Heebo, "Arial Narrow", sans-serif;
   font-size: 50px;
   font-weight: 900;
@@ -375,11 +375,11 @@
 }
 .b4-thanks a { overflow-wrap: anywhere; }
 .b4-thanks.plain { background: #fff; min-height: 465px; }
-.b4-thanks .col { width: min(1150px, calc(100% - 42px)); margin-inline: auto; }
-.b4-thanks h2 {
+.b4-thanks .col { width: min(900px, calc(100% - 42px)); margin-inline: auto; }
+.b4-thanks h1 {
   width: min(535px, 100%);
   margin: 0 0 16px;
-  color: rgb(219, 58, 52);
+  color: #d6352f;
   font-family: Heebo, "Arial Narrow", sans-serif;
   font-size: 50px;
   font-weight: 900;
@@ -388,7 +388,7 @@
   text-align: left;
   text-transform: uppercase;
 }
-.b4-thanks.wide h2,
+.b4-thanks.wide h1,
 .b4-thanks.wide p { width: 100%; }
 .b4-thanks.feedback p { width: min(560px, 100%); letter-spacing: -0.12px; }
 .b4-thanks p {
@@ -402,10 +402,10 @@
 }
 .b4-thanks p + p { margin-top: 12px; }
 .b4-thanks a { font-weight: 400; text-decoration: none; }
-.b4-thanks a.red { color: rgb(219, 58, 52); }
+.b4-thanks a.red { color: #d6352f; }
 .b4-thanks a.blue { color: rgb(47, 138, 228); }
 .b4-thanks .pay {
-  color: rgb(219, 58, 52);
+  color: #d6352f;
   font-weight: 400;
 }
 .b4-thanks .shot { display: none; }
@@ -512,7 +512,7 @@
     background: #fff;
   }
   .b4-thanks .col { width: 100%; }
-  .b4-thanks h2 { width: 100%; font-size: 32px; line-height: 32px; }
+  .b4-thanks h1 { width: 100%; font-size: 32px; line-height: 32px; }
   .b4-thanks p { width: 100%; }
   .b4-thanks .shot {
     display: block;

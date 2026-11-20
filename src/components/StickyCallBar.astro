@@ -1,11 +1,14 @@
 ---
 import { site, stickyBar } from "../data/site";
+
+const path = Astro.url.pathname.replace(/\/$/, "") || "/";
+const onContact = path === "/contact";
 ---
 
 <div class="call-bar" role="region" aria-label="Call or contact Springfield Warrior Sports">
   <div class="call-bar-row">
-    <a class="cb-btn" href={site.phone.tel}>{stickyBar.callLabel}</a>
-    <a class="cb-btn" href={stickyBar.contactPath}>{stickyBar.contactLabel}</a>
+    <a class="cb-btn cb-primary" href={site.phone.tel}>{stickyBar.callLabel}</a>
+    {!onContact && <a class="cb-btn cb-secondary" href={stickyBar.contactPath}>{stickyBar.contactLabel}</a>}
   </div>
 </div>
 
@@ -29,16 +32,30 @@ import { site, stickyBar } from "../data/site";
     display: flex;
     align-items: center;
     justify-content: center;
+    box-sizing: border-box;
     min-height: 48px;
+    padding: 12px 22px;
     border-radius: 999px;
-    background: var(--color-ws-red);
-    color: #fff;
-    font-weight: 700;
+    font-family: Heebo, "Arial Narrow", sans-serif;
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    line-height: 1.25;
+    text-align: center;
     text-decoration: none;
+    text-transform: uppercase;
+    white-space: normal;
+  }
+  .cb-primary {
+    background: #d6352f;
+    color: #fff;
+  }
+  .cb-secondary {
+    background: transparent;
+    color: #285276;
+    box-shadow: inset 0 0 0 2px #285276;
   }
   @media (min-width: 768px) {
-    .call-bar {
-      display: none;
-    }
+    .call-bar { display: none; }
   }
 </style>

@@ -43,7 +43,7 @@ describe("measurement forwarder", () => {
     });
     expect(result.status).toBe(202);
     expect(fetchImpl).toHaveBeenCalledTimes(1);
-    const [url, init] = fetchImpl.mock.calls[0] as [string, RequestInit];
+    const [url, init] = fetchImpl.mock.calls[0] as unknown as [string, RequestInit];
     expect(url).toBe(REPORTS_MEASUREMENT_COLLECT_URL);
     const headers = init.headers as Record<string, string>;
     expect(headers[CLIENT_USER_AGENT_HEADER]).toBe("Mozilla/5.0 Chrome/131.0.0.0");
@@ -92,7 +92,8 @@ describe("measurement forwarder", () => {
       fetchImpl,
     });
     expect(result.status).toBe(202);
-    const headers = (fetchImpl.mock.calls[0]?.[1] as RequestInit).headers as Record<string, string>;
+    const call = fetchImpl.mock.calls[0] as unknown as [string, RequestInit] | undefined;
+    const headers = call?.[1].headers as Record<string, string>;
     expect(headers[CLIENT_USER_AGENT_HEADER]).toBe("Mozilla/5.0 Journey");
   });
 });

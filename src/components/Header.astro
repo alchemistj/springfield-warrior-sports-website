@@ -1,5 +1,5 @@
 ---
-import { quickNav, site, stickyBar, utilityNav } from "../data/site";
+import { quickNav, site, utilityNav } from "../data/site";
 import { logoImage } from "../lib/inline-image";
 
 interface Props {
@@ -29,7 +29,6 @@ const linkProps = (item: { path: string; external?: boolean }) =>
       <a class="logo-link" href="/" aria-label="Springfield Warrior Sports, home">
         <img src={logo.uri} alt="" width={logo.width} height={logo.height} />
       </a>
-      <a class="bar-call" href={site.phone.tel}>{stickyBar.callLabel}</a>
       <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-menu" data-menu>
         <span class="sr-only">Menu</span>
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z" /></svg>
@@ -49,10 +48,7 @@ const linkProps = (item: { path: string; external?: boolean }) =>
             </a>
           ))
         }
-        <a class="nav-phone" href={site.phone.tel}>
-          <span class="digits">{site.phone.display}</span>
-          <span class="label">{stickyBar.callLabel}</span>
-        </a>
+        <a class="nav-phone" href={site.phone.tel}>{site.phone.display}</a>
       </nav>
     </div>
   </div>
@@ -143,9 +139,10 @@ const linkProps = (item: { path: string; external?: boolean }) =>
     position: relative;
     z-index: 1;
     box-sizing: border-box;
-    width: min(var(--content-max), calc(100% - var(--content-pad) * 2));
+    width: min(1180px, calc(100% - 32px));
     margin: 0 auto;
   }
+  .util-bar { display: none; }
   .util-links {
     display: flex;
     align-items: center;
@@ -170,30 +167,26 @@ const linkProps = (item: { path: string; external?: boolean }) =>
     display: flex;
     align-items: center;
     gap: 12px;
-    min-height: 76px;
+    min-height: 72px;
   }
   .logo-link { display: flex; flex: 0 0 auto; line-height: 0; }
-  .logo-link img { width: 148px; height: auto; max-width: 100%; }
-  .bar-call,
+  .logo-link img { width: 132px; height: auto; max-width: 100%; }
   .nav-phone {
-    display: inline-flex;
+    display: flex;
     align-items: center;
-    justify-content: center;
     min-height: 48px;
-    padding: 0 14px;
-    border-radius: 999px;
+    padding: 0;
+    border-radius: 0;
+    background: transparent;
+    color: #fff;
     font-family: Heebo, "Arial Narrow", sans-serif;
-    font-size: 14px;
-    font-weight: 800;
+    font-size: 16px;
+    font-weight: 600;
     text-decoration: none;
     white-space: nowrap;
   }
-  .bar-call {
-    margin-left: auto;
-    background: var(--color-ws-red);
-    color: #fff;
-  }
   .menu-btn {
+    margin-left: auto;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -229,7 +222,6 @@ const linkProps = (item: { path: string; external?: boolean }) =>
     text-decoration: none;
   }
   .nav-phone { background: transparent; color: #fff; padding: 0; border-radius: 0; justify-content: flex-start; }
-  .nav-phone .digits { display: none; }
   .nav-links a[aria-current="page"],
   .util-links a[aria-current="page"] {
     text-decoration: underline;
@@ -248,8 +240,8 @@ const linkProps = (item: { path: string; external?: boolean }) =>
   }
 
   @media (min-width: 1024px) {
+    .util-bar { display: block; }
     .main-inner { min-height: 84px; gap: 8px; }
-    .bar-call { display: none; }
     .menu-btn { display: none; }
     .nav-links {
       display: flex;
@@ -284,8 +276,6 @@ const linkProps = (item: { path: string; external?: boolean }) =>
       letter-spacing: 0;
       text-transform: none;
     }
-    .nav-phone .digits { display: inline; }
-    .nav-phone .label { display: none; }
   }
   @media (prefers-reduced-motion: reduce) {
     .site-header { transition: none; }

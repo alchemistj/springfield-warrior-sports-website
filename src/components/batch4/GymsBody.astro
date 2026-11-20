@@ -129,7 +129,11 @@ const ninjaClass = "Adult Ninja Fitness class";
     {
       /* Live breaks one sentence across three lines ("swing, climb, / and train … Springfield Warrior Sports / one of the most unique gyms around.").
          Join it back into one sentence; the last line's own second sentence stays its own paragraph. */
-      [call[0], `${call[1]} ${call[2]} one of the most unique gyms around.`, call[3].replace(/^one of the most unique gyms around\.\s*/, "")].map((text) => {
+      [
+        call[0] ?? "",
+        `${call[1] ?? ""} ${call[2] ?? ""} one of the most unique gyms around.`,
+        (call[3] ?? "").replace(/^one of the most unique gyms around\.\s*/, ""),
+      ].map((text) => {
         if (text.includes(linkClass)) {
           const at = text.indexOf(linkClass);
           const hot = "one of the most unique gyms around.";

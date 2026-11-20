@@ -160,6 +160,8 @@ const lee = {
   </div>
 </section>
 
+<ReviewBand title="Client Testimonials" sub="What Our Clients Say" text={jennifer.text} by={jennifer.by} />
+
 <section class="warrior">
   <div class="wrap warrior-grid">
     <h2>Be an Everyday Warrior!</h2>
@@ -177,7 +179,6 @@ const lee = {
   </div>
 </section>
 
-<ReviewBand title="Client Testimonials" sub="What Our Clients Say" text={jennifer.text} by={jennifer.by} />
 <ReviewBand text={lee.text} by={lee.by} />
 
 <section class="partner-band" aria-label="Partners">
@@ -237,7 +238,7 @@ const lee = {
   }
   .home-ready-copy h3.hours-title {
     margin: 16px 0 10px;
-    color: rgb(219, 58, 52);
+    color: #d6352f;
     font-family: Heebo, "Arial Narrow", sans-serif;
     font-size: 22px;
     font-weight: 800;
@@ -260,7 +261,7 @@ const lee = {
     width: 18px;
     height: 18px;
     margin-top: 2px;
-    fill: rgb(219, 58, 52);
+    fill: #d6352f;
   }
   .hours .slot {
     color: #6a6b6c;
@@ -350,7 +351,7 @@ const lee = {
     display: block;
     width: 100%;
     height: auto;
-    object-fit: contain;
+    object-fit: cover;
     background: #fff;
   }
   .warrior-copy { order: 3; }
@@ -389,7 +390,7 @@ const lee = {
     .home-ready-copy,
     .home-ready-photos { order: 0; }
     .home-ready-copy h2 { font-size: 40px; }
-    .home-ready-copy h3.hours-title { font-size: 30px; font-weight: 800; color: rgb(219, 58, 52); }
+    .home-ready-copy h3.hours-title { font-size: 30px; font-weight: 800; color: #d6352f; }
     .home-ready-copy h3 { font-size: 24px; }
     .offers-title { font-size: 36px; margin-bottom: 18px; }
     .offer-copy h3 { font-size: 24px; }
@@ -412,8 +413,11 @@ const lee = {
       grid-column: 2;
       grid-row: 1 / span 2;
       order: 0;
-      align-self: center;
+      align-self: stretch;
+      height: 100%;
+      object-fit: cover;
     }
+    .home-ready-photos img { height: 100%; object-fit: cover; }
     .partner-row {
       flex-direction: row;
       justify-content: space-between;

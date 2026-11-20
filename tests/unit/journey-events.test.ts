@@ -115,7 +115,7 @@ afterEach(() => {
 describe("journey events", () => {
   it("sends each event once with the visitor id, session id, and path", async () => {
     const browser = installBrowser("/kids-classes/");
-    const init = initFor(browser.fetchImpl);
+    const init = initFor(browser.fetchImpl as typeof fetch);
     beginPageEngagement("/kids-classes/");
     const view = await collectPageView(init);
     const call = await collectClickToCall({ ctaLocation: "header" }, init);
@@ -148,14 +148,14 @@ describe("journey events", () => {
 
   it("reuses the page view event id for the engaged follow-up", async () => {
     const browser = installBrowser("/parkour/");
-    const init = initFor(browser.fetchImpl);
+    const init = initFor(browser.fetchImpl as typeof fetch);
     const token = beginPageEngagement("/parkour/");
     await collectPageView(init);
     expect(signalPageEngaged(token)).toBe("follow-up");
     const eventId = pageViewEventIdFor(token);
     expect(eventId).toBe(browser.sent[0]?.eventId);
     await collectMeasurementEvent(
-      buildMeasurementEvent("page_view", { currentPath: "/parkour/", engaged: true, eventId }, init),
+      buildMeasurementEvent("page_view", { currentPath: "/parkour/", engaged: true, eventId: eventId ?? undefined }, init),
       init,
     );
     expect(browser.sent[1]).toMatchObject({ event: "page_view", eventId, engaged: true, currentPath: "/parkour/" });
@@ -164,7 +164,7 @@ describe("journey events", () => {
 
   it("keeps the first channel and never treats this site as a referral", async () => {
     const browser = installBrowser("/");
-    const init = initFor(browser.fetchImpl);
+    const init = initFor(browser.fetchImpl as typeof fetch);
     await collectMeasurementEvent(
       buildMeasurementEvent(
         "page_view",
@@ -206,12 +206,12 @@ describe("journey events", () => {
     browser.fetchImpl.mockClear();
     const nav = (globalThis as { window: { navigator: { webdriver: boolean } } }).window.navigator;
     nav.webdriver = true;
-    const flagged = buildMeasurementEvent("page_view", { currentPath: "/" }, initFor(browser.fetchImpl));
+    const flagged = buildMeasurementEvent("page_view", { currentPath: "/" }, initFor(browser.fetchImpl as typeof fetch));
     expect(flagged.automation).toBe(true);
     const bot = buildMeasurementEvent(
       "page_view",
       { currentPath: "/" },
-      { ...initFor(browser.fetchImpl), cookieHeader: "ff_bot=1" },
+      { ...initFor(browser.fetchImpl as typeof fetch), cookieHeader: "ff_bot=1" },
     );
     expect(bot.automation).toBe(true);
     expect(bot.visitorId).toBeNull();
@@ -356,7 +356,7 @@ function fakeEl(tag: string, attrs: Record<string, string>, parent: FakeEl | nul
     const parts = selector.split(",").map((part) => part.trim());
     let current: FakeEl | null = node;
     while (current) {
-      const here = current;
+      const here: FakeEl = current;
       if (parts.some((part) => (part.startsWith(".") ? here.classList.contains(part.slice(1)) : here.tag === part))) {
         return here;
       }

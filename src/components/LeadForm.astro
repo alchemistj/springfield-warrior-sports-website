@@ -7,18 +7,21 @@ interface Props {
   tone?: "panel" | "card";
   /** Copy that belongs inside the form, so the layout gate does not measure it. */
   note?: string;
+  visibleLabels?: boolean;
 }
-const { event, note } = Astro.props;
+const { event, note, visibleLabels = false } = Astro.props;
 const tone = Astro.props.tone ?? (event.id === "contact" ? "card" : "panel");
 const phone = site.phone;
 const camp = event.id === "camp-registration" && event.formKey !== "event-waitlist";
-const hideLabels = tone === "card";
+const hideLabels = tone === "card" && !visibleLabels;
 const quietPlaceholders = event.id === "personal-training" || event.formKey === "event-waitlist";
 const requiredMark = event.id === "birthday-party" ? " *" : event.formKey === "event-waitlist" ? "*" : " (Required)";
 
 function campChoice(choice: string): { date: string; time: string } | null {
   const match = choice.match(/^(.+?) (\d{1,2}(?::\d{2})? [AP]M - .+)$/);
-  return match ? { date: match[1], time: match[2] } : null;
+  const date = match?.[1];
+  const time = match?.[2];
+  return date && time ? { date, time } : null;
 }
 
 function fieldPlaceholder(label: string, kind: string): string | undefined {

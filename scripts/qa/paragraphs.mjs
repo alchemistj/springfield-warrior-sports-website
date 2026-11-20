@@ -26,7 +26,6 @@ const only = (process.env.PAGES || "").split(",").filter(Boolean);
 const RETIRED = new Set(["registered-for-summer-fun-competition"]);
 const slugs = readdirSync("source/pages").filter((s) => !RETIRED.has(s) && existsSync(path.join("source/pages", s, "rendered.html")) && (!only.length || only.includes(s)));
 const MAX_LINES = 4;
-const MIN_CHARS = 25; // shorter fragments are labels, not paragraphs
 
 // Runs in the page: the paragraphs of the main content, split on blank lines (<br><br>).
 function collect({ maxLines, withReviews }) {
@@ -34,7 +33,7 @@ function collect({ maxLines, withReviews }) {
   // Reviews are customers' words: they count for parity (not dropped or merged) but not for the length rule.
   const SKIP = withReviews ? CHROME : CHROME + ", .review-band, .b2-quotes, .quote, blockquote, [class*=review], [class*=testimonial]";
   // Launch polish, 18 Nov 2026: every phone number uses the one site format, "(417) 894-7319".
-  const norm = (t) => t.replace(/\(417\)894-7319/g, "(417) 894-7319").replace(/[‘’]/g, "'").replace(/[“”]/g, '"').replace(/[–—]/g, "-").replace(/ /g, " ").replace(/\s+/g, " ").trim();
+  const norm = (t) => t.replace(/\(417\)894-7319/g, "(417) 894-7319").replace(/[‘’]/g, "'").replace(/[“”]/g, '"').replace(/[–—]/g, "-").replace(/\u00a0/g, " ").replace(/\s+/g, " ").trim();
   const out = [];
   for (const p of document.querySelectorAll("p")) {
     if (p.closest(SKIP)) continue;
@@ -120,7 +119,26 @@ for (const slug of slugs) {
     /^Sign up by filling out the registration form below/i,
     // Josh, 16 Nov 2026: the No-School Day Camp card is off kids classes until the client confirms that offer.
     /^Give your kids active, exciting days during school break at our fun day camps/i,
-    /^We provide both half-day and full-days camp options/i];
+    /^We provide both half-day and full-days camp options/i,
+    // Audit, 20 Nov 2026: spec copy C1–C4 and C8 replace these live sentences.
+    /register over the phone in order to qualify/i,
+    /^Summer camp investment monies can be pro-rated/i,
+    /improve their coordination skills - all while making new friends/i,
+    // Audit, 20 Nov 2026: the duplicate homeschool availability line is removed; the list item stays.
+    /^Availability: Tuesdays and Thursdays$/i,
+    // Audit, 20 Nov 2026: trainer roles drop the leading dash (#47). The words stay.
+    /^- Women's Confidence Coach/i,
+    /^- Strength, Weight Loss and Conditioning/i,
+    /^- Ninja and Competitive Obstacle Training/i,
+    // Audit, 20 Nov 2026: the youth summer camp card's five lines are one paragraph (#16).
+    /^Kids will have fun and make new friends during our$/i,
+    /^week long day camp\. Campers will work with a$/i,
+    /^Warrior Sports trainer focusing on overall strength,$/i,
+    /^balance, and core exercises along with obstacle$/i,
+    /^Cost: \$179 per child; member and sibling discounts/i,
+    /^For ages 6-15 years old\.$/i,
+    /Check the links below for scheduled competitions/i,
+    /click here to book a trial class for only \$ 5/i];
   const liveParas = (await live.evaluate(collect, { maxLines: 0, withReviews: true })).filter((l) => !IGNORE.some((re) => re.test(l.text)));
   await live.close();
 
@@ -170,7 +188,8 @@ for (const slug of slugs) {
       if (!(b.lines && b.lines > MAX_LINES)) continue;
       // One sentence on its own cannot be split without changing words: report it, do not fail.
       // A period before a lowercase word is not a new sentence (the same rule as a split after "Mo.").
-      const oneSentence = !/[.!?]["'”’)]*\s+[A-Z0-9“"'(]/.test(b.text);
+      // Initials (LT. Michael, P. Murphy) are not sentence breaks.
+      const oneSentence = !/(?<!\b[A-Z]{1,3})[.!?]["'”’)]*\s+[A-Z0-9“"'(]/.test(b.text);
       if (w === 1440 && oneSentence) notes.push(`${w}px (one sentence, cannot split): ${b.lines} lines: "${b.text.slice(0, 60)}…"`);
       else if (w === 1440) issues.push(`${w}px: ${b.lines} lines (max ${MAX_LINES}): "${b.text.slice(0, 70)}…"`);
       else notes.push(`${w}px (info only): ${b.lines} lines: "${b.text.slice(0, 60)}…"`);

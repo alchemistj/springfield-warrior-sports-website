@@ -22,8 +22,7 @@ const trial = "https://checkout.square.site/merchant/MLXTPBS97BGYV/checkout/B2M6
 <p class="center-copy lead-copy">Our <a class="red-link" href="/meet-the-team/">experienced coaches</a> lead weekly classes full of obstacle courses, strength-building exercises, and more that will help boost physical fitness and encourage an active lifestyle. Plus, our competitive youth team offers an opportunity for young athletes who want to take their game up a notch!</p>
     <p class="center-copy accent">Sign up now and let your kids experience the best of what Springfield Warrior Sports has to offer –and try out their very first class today for just $5!</p>
     <p class="btn-center"><a class="btn navy reserve" href={trial}>RESERVE YOUR KID’S SPOT</a></p>
-    <p class="center-copy note-line"><span class="note">Note: </span><span class="note-rest">The last week of the month (Sunday–Saturday) is our 'Test Week,' where kids challenge themselves using a checklist of obstacles to advance to the next level!</span></p>
-<p class="center-copy note-line"><span class="note-rest">Trial classes are still available during this time, but the structure will be less guided and more focused on the checklists. For the best experience, we recommend scheduling a trial class one of the other weeks!</span></p>
+    <p class="center-copy note-line"><span class="note">Note: </span><span class="note-rest">The last week of the month (Sunday–Saturday) is our 'Test Week,' where kids challenge themselves using a checklist of obstacles to advance to the next level! Trial classes are still available during this time, but the structure will be less guided and more focused on the checklists. For the best experience, we recommend scheduling a trial class one of the other weeks!</span></p>
   </div>
 </section>
 
@@ -31,8 +30,7 @@ const trial = "https://checkout.square.site/merchant/MLXTPBS97BGYV/checkout/B2M6
   <div class="wrap"><div class="row img-first wide-photo">
     <img class="face" loading="lazy" decoding="async" src={pre.src} alt="Pre-school warriors" width={pre.width} height={pre.height} />
     <div class="copy">
-      <h2 class="red h50 w306">Pre-School Warriors</h2>
-      <h2 class="thin left">(3-6 Year-Olds)</h2>
+      <h2 class="red h50">Pre-School Warriors <span class="range">(3-6 Year-Olds)</span></h2>
       <p class="pre-copy">Our preschool class is geared for your 3-6 year olds.</p>
 <p class="pre-copy">This interactive class will include a warm-up, balance and agility work, and a mini course, along with learning to take turns and follow instructions - all in a FUN and safe environment!</p>
 <p class="pre-copy">Bring your little ninjas by to climb up our walls (and wear them out before rest time). See you soon!</p>
@@ -40,7 +38,7 @@ const trial = "https://checkout.square.site/merchant/MLXTPBS97BGYV/checkout/B2M6
       <FactLine text="Cost: $10 per class. $40 monthly." />
       <h2 class="red h20">Preschool Open Gym Times</h2>
       <FactLine text="Tuesday mornings 9:30am-11:30am" />
-      <h2 class="red h20">Class Times</h2>
+      <h3 class="red h20">Class Times</h3>
       <FactLine text="3&4 Years Old" />
       <h3 class="as-text">Tuesday and Wednesday 5:30-6:00pm</h3>
       <FactLine text="5&6 Years Old" />
@@ -62,9 +60,10 @@ const trial = "https://checkout.square.site/merchant/MLXTPBS97BGYV/checkout/B2M6
       <FactLine text="Intermediate classes: One class per week $85 monthly. Two classes per week $110 monthly. Up to three classes per week, $135 monthly." />
       <FactLine text="Beginner Warrior Membership $70." />
       <p class="btn-left"><a class="btn navy junior" href={trial}>TRY YOUR FIRST JUNIOR WARRIOR CLASS FOR $5</a></p>
-      <h2 class="red h20 junior-times">Class Times</h2>
+      <h3 class="red h20 junior-times">Class Times</h3>
       <FactLine text="Beginner Level and Trial Class Drop Ins" />
-      <h3 class="as-text times">Mon-Fri 4-4:30pm or 4:30-5pm Mon, Thur, &amp; Fri 5-5:30pm or 5:30-6pm</h3>
+      <p class="as-text times"><span class="range">Mon-Fri 4-4:30pm or 4:30-5pm</span></p>
+      <p class="as-text times"><span class="range">Mon, Thur, &amp; Fri 5-5:30pm or 5:30-6pm</span></p>
       <FactLine text="Level 3+ Junior Warriors" />
       <h3 class="as-text">Monday-Friday 5-6pm</h3>
       <FactLine text="Level 3+ Homeschool Junior Warrior Class" />
@@ -73,6 +72,13 @@ const trial = "https://checkout.square.site/merchant/MLXTPBS97BGYV/checkout/B2M6
     <img class="face" loading="lazy" decoding="async" src={junior.src} alt="Junior warriors" width={junior.width} height={junior.height} />
   </div></div>
 </section>
+
+<ReviewBand
+  title="Client Testimonials"
+  sub="What Our Clients Say"
+  text="Staff was friendly, knowledgeable, and quick to help out. They were great with assisting my son(who can be a bit difficult at times). We signed up for the Beginner classes today and my son LOVED his first day!"
+  by="- KEVIN P."
+/>
 
 <section class="section kids wash csna-block">
   <div class="wrap"><div class="row img-first">
@@ -84,7 +90,7 @@ const trial = "https://checkout.square.site/merchant/MLXTPBS97BGYV/checkout/B2M6
 <p>Junior Warriors are eligible to apply for the CSNA team upon completing Level 4. The team works with Coach Adam Arnold who holds 90-minute practices 2 days a week.</p>
 <p>The season runs September - May with competitions scheduled throughout the region hosted by other participating CSNA gyms |MO, KS, NE, AR|.</p>
       <FactLine text="Cost: $145 for two practices a week. Includes an open gym membership." />
-      <h2 class="red h20 csna-times">Practice Times</h2>
+      <h3 class="red h20 csna-times">Practice Times</h3>
       <FactLine text="Monday and Thursday: 6-7:30pm" />
     </div>
   </div></div>
@@ -109,6 +115,11 @@ const trial = "https://checkout.square.site/merchant/MLXTPBS97BGYV/checkout/B2M6
     <img class="face" loading="lazy" decoding="async" src={parkour.src} alt="Parkour class" width={parkour.width} height={parkour.height} />
   </div></div>
 </section>
+
+<ReviewBand
+  text="My kids love the classes here! The instructors are all very kind and fun. It is such a great way for our kids to get exercise and learn new body skills."
+  by="- Nick P."
+/>
 
 <section class="section kids wash before-fun">
   <div class="wrap"><div class="row img-first">
@@ -139,9 +150,14 @@ const trial = "https://checkout.square.site/merchant/MLXTPBS97BGYV/checkout/B2M6
   </div>
 </section>
 
+<ReviewBand
+  text="We have been going to the gym for classes for a while and my kids really enjoy it. I see huge improvements in their strength and flexibility. We recently did a birthday party for my 8 year old and it was amazing! They had staff members engaged with the kids the entire time ensuring safety and that everyone was having fun. Definitely recommend for parties, and their flexible schedule for classes and open gym make it easy to fit in."
+  by="- LIZ S."
+/>
+
 <section class="section kids mist forget-block">
   <div class="wrap">
-    <h2 class="red h50 center forget">And …. Don’t Forget About Summer Camps, Open Gym, and Birthday Parties!</h2>
+    <h2 class="red h50 center forget">Don’t Forget About Summer Camps and Birthday Parties!</h2>
   </div>
 </section>
 
@@ -151,11 +167,7 @@ const trial = "https://checkout.square.site/merchant/MLXTPBS97BGYV/checkout/B2M6
       <div class="camp-panel">
         <h2>Youth Summer Camp</h2>
         <div class="camp-blurb">
-          <p>Kids will have fun and make new friends during our</p>
-          <p>week long day camp. Campers will work with a</p>
-          <p>Warrior Sports trainer focusing on overall strength,</p>
-          <p>balance, and core exercises along with obstacle</p>
-          <p>training.</p>
+          <p>Kids will have fun and make new friends during our week long day camp. Campers will work with a Warrior Sports trainer focusing on overall strength, balance, and core exercises along with obstacle training.</p>
         </div>
         <p class="btn-center"><a class="btn camp summer" href="/summer-camps-in-springfield-mo/">SUMMER CAMP</a></p>
       </div>
@@ -173,25 +185,7 @@ const trial = "https://checkout.square.site/merchant/MLXTPBS97BGYV/checkout/B2M6
   </div>
 </section>
 
-<!-- Reviews stay with the kids classes. Kevin, Nick, Liz, and Courtney are grouped here, before the closing band. -->
 <ReviewBand
-  title="Client Testimonials"
-  sub="What Our Clients Say"
-  text="Staff was friendly, knowledgeable, and quick to help out. They were great with assisting my son(who can be a bit difficult at times). We signed up for the Beginner classes today and my son LOVED his first day!"
-  by="- KEVIN P."
-/>
-<ReviewBand
-  continued
-  text="My kids love the classes here! The instructors are all very kind and fun. It is such a great way for our kids to get exercise and learn new body skills."
-  by="- Nick P."
-/>
-<ReviewBand
-  continued
-  text="We have been going to the gym for classes for a while and my kids really enjoy it. I see huge improvements in their strength and flexibility. We recently did a birthday party for my 8 year old and it was amazing! They had staff members engaged with the kids the entire time ensuring safety and that everyone was having fun. Definitely recommend for parties, and their flexible schedule for classes and open gym make it easy to fit in."
-  by="- LIZ S."
-/>
-<ReviewBand
-  continued
   text="It was too hot for my bf and I to let the kids play outside. We had already been to the overcrowded pool. So we took the kids here to run around and burn off energy inside while we got a second workout in ourselves. Amazing staff, great atmosphere, 10/5 would recommend!"
   by="- Courtney C."
 />
@@ -213,7 +207,7 @@ const trial = "https://checkout.square.site/merchant/MLXTPBS97BGYV/checkout/B2M6
   .red { color: var(--color-ws-red); }
   .white { color: #fff; }
   .h50 { font-size: 32px; }
-  .h20 { font-size: 20px; margin-top: 14px; }
+  .h20, h3.h20 { font-size: 20px; margin-top: 14px; color: #d6352f; font-family: Heebo, "Arial Narrow", sans-serif; font-weight: 800; }
   .thin {
     color: #000;
     font-weight: 300;
@@ -224,7 +218,7 @@ const trial = "https://checkout.square.site/merchant/MLXTPBS97BGYV/checkout/B2M6
   .left { text-align: left; }
   .intro p, .copy p, .camps p { font-weight: 400; }
   .accent, .left-accent { font-weight: 600; }
-  .red-link { color: rgb(219, 58, 52); font-weight: 400; text-decoration: none; }
+  .red-link { color: #d6352f; font-weight: 400; text-decoration: none; }
   .blue-link { color: rgb(47, 138, 228); font-weight: 400; text-decoration: none; }
   .note { color: #285276; font-weight: 600; }
   .note-rest { color: rgba(41, 41, 41, 0.99); font-weight: 400; }
@@ -299,9 +293,11 @@ const trial = "https://checkout.square.site/merchant/MLXTPBS97BGYV/checkout/B2M6
     text-align: center;
   }
   .camp-blurb p {
-    display: inline;
+    display: block;
     width: auto;
     margin: 0;
+    font-size: 15px;
+    line-height: 1.35;
   }
   .camps h2 { color: #285276; font-size: 20px; text-align: center; }
   .camps p { width: auto; max-width: 100%; margin-inline: auto; text-align: center; }
@@ -349,10 +345,10 @@ const trial = "https://checkout.square.site/merchant/MLXTPBS97BGYV/checkout/B2M6
     .fun-grid { grid-template-columns: repeat(3, 369px); gap: 21px; margin-left: 1px; }
     .fun-grid img { width: 369px; height: 344px; }
     h2.forget { width: 759px; margin-left: auto; margin-right: auto; }
-    .camps { grid-template-columns: repeat(2, minmax(0, 420px)); justify-content: center; gap: 24px; }
+    .camps { grid-template-columns: repeat(2, minmax(0, 1fr)); justify-content: center; gap: 24px; }
     .camp-card,
     .camp-card.bday { width: 100%; height: auto; min-height: 560px; }
-    .camp-panel { margin: 140px 14px 14px; }
+    .camp-panel { margin: 140px 8px 14px; padding-inline: 10px; }
     .camps h2 { width: auto; max-width: 100%; margin-inline: auto; font-size: 28px; }
   }
   @media (max-width: 799px) {

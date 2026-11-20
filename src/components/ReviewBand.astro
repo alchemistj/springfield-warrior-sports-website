@@ -6,18 +6,20 @@ interface Props {
   by: string;
   title?: string;
   sub?: string;
-  as?: "h1" | "h2";
   continued?: boolean;
 }
-const { text, by, title, sub, as = "h2", continued = false } = Astro.props;
-const Title = as;
+const { text, by, title, sub, continued = false } = Astro.props;
 const icon = quoteIcon as { src: string; width: number; height: number };
 ---
 
 <section class:list={["review-band", { continued }]}>
   <div class="review-inner">
-    {title && <Title class="review-title">{title}</Title>}
-    {sub && <h3 class="review-sub">{sub}</h3>}
+    {(title || sub) && (
+      <p class="review-label">
+        {title}
+        {sub && <span>{sub}</span>}
+      </p>
+    )}
     <blockquote>
       <img class="quote-mark" src={icon.src} alt="" width="42" height="42" />
       <p>{text}</p>
@@ -37,26 +39,19 @@ const icon = quoteIcon as { src: string; width: number; height: number };
     width: min(var(--content-max), calc(100% - var(--content-pad) * 2));
     margin: 0 auto;
   }
-  .review-title {
-    margin: 0 0 6px;
-    color: #d6352f;
+  .review-label {
+    margin: 0 0 12px;
+    color: #5c6570;
     font-family: Heebo, "Arial Narrow", sans-serif;
-    font-size: 32px;
-    font-weight: 900;
-    line-height: 1.15;
-    text-align: center;
-    text-transform: none;
-  }
-  .review-sub {
-    margin: 0 0 16px;
-    color: #171716;
-    font-family: Heebo, "Arial Narrow", sans-serif;
-    font-size: 18px;
-    font-weight: 400;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    line-height: 1.35;
     text-align: center;
   }
+  .review-label span { display: block; font-weight: 600; }
   blockquote { margin: 0; }
-  .quote-mark { display: block; width: 42px; height: 42px; margin: 0 auto 12px; }
+  .quote-mark { display: block; width: 42px; height: 42px; margin: 0 0 12px; }
   p {
     margin: 0;
     color: #171716;

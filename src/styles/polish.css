@@ -3,8 +3,7 @@
 /* No single word left alone on a last line. Headings are already balanced. */
 p, li, blockquote, figcaption, dd, dt, label { text-wrap: pretty; }
 
-/* One button style for the whole site: the same shape, type size, weight and red.
-   Navy stays the secondary colour, and the white phone pill stays the outline style. */
+/* Two button styles, same type. Primary is a filled red pill. Secondary is an outline pill. */
 a.btn,
 button.btn,
 .b3-btn,
@@ -12,15 +11,21 @@ button.btn,
 .call,
 .b4-visit,
 .comp-btn,
+.cb-btn,
 .b4-cta .go,
 .b4-cta .cta-phone,
 .final-cta a {
   display: inline-flex !important;
   align-items: center;
   justify-content: center;
+  box-sizing: border-box;
   gap: 8px;
+  width: auto !important;
+  max-width: 100%;
+  height: auto !important;
   min-height: 48px;
   padding: 12px 28px !important;
+  border: 0 !important;
   border-radius: 999px !important;
   font-family: var(--font-heading) !important;
   font-size: 15px !important;
@@ -29,46 +34,52 @@ button.btn,
   text-transform: uppercase !important;
   line-height: 1.25 !important;
   text-align: center;
+  text-decoration: none !important;
   text-wrap: balance;
+  white-space: normal !important;
 }
-a.btn:not(.navy):not(.btn-line),
+a.btn:not(.warrior-phone):not(.btn-secondary),
 button.btn,
-.b3-btn:not(.navy),
+.b3-btn:not(.btn-secondary),
 .go,
+.comp-btn,
+.cb-primary,
 .b4-cta .go,
-.comp-btn {
-  background-color: var(--color-ws-red) !important;
+.final-cta .go {
+  background-color: #d6352f !important;
   color: #fff !important;
+  box-shadow: none !important;
 }
-a.btn.navy,
-.b3-btn.navy,
-.b4-visit {
-  background-color: var(--color-ws-blue-dark) !important;
+a.btn.warrior-phone,
+a.btn.btn-secondary,
+a.call,
+.b4-visit,
+.cb-secondary,
+.b4-cta .cta-phone,
+.final-cta .call,
+.b3-btn.navy {
+  background-color: transparent !important;
+  color: #285276 !important;
+  box-shadow: inset 0 0 0 2px #285276 !important;
+}
+.final-cta .call,
+.b4-cta .cta-phone,
+.b3-band a.call,
+.b3-band .b3-btn.navy,
+.b3-band a.btn-secondary,
+.bd-close .btn-secondary {
   color: #fff !important;
-}
-@media (max-width: 799px) {
-  a.btn,
-  button.btn,
-  .b3-btn,
-  .go,
-  .call,
-  .b4-visit,
-  .comp-btn,
-  .b4-cta .go,
-  .b4-cta .cta-phone,
-  .final-cta a {
-    font-size: 14px !important;
-    padding: 12px 22px !important;
-  }
+  box-shadow: inset 0 0 0 2px #fff !important;
+  background-color: transparent !important;
 }
 
 /* Phone numbers never break across two lines. */
 a[href^="tel:"] { white-space: nowrap; }
 
-/* Reviewer names: one style on every page (some were typed in capitals, some not). */
+/* Reviewer names keep the typed case. One hyphen form, no CSS uppercase. */
 .review-by, .t-by, .b2-qn, .q-by, .pt-quotes .by {
-  text-transform: uppercase;
-  letter-spacing: 0.02em;
+  text-transform: none;
+  letter-spacing: 0;
 }
 
 /* Red hero headings stay readable on busy photos. */
@@ -106,11 +117,11 @@ a[href^="tel:"] { white-space: nowrap; }
 @media (min-width: 641px) {
   .offer-card img { contain: size; aspect-ratio: auto !important; height: 100% !important; min-height: 220px !important; }
 }
-/* Home: the phone button is the white outline style used everywhere else. */
+/* Home: the phone button is the navy outline style. */
 .warrior-actions a.btn.warrior-phone {
-  background-color: #fff !important;
-  color: var(--color-ws-blue-dark) !important;
-  box-shadow: inset 0 0 0 2px var(--color-ws-blue-dark);
+  background-color: transparent !important;
+  color: #285276 !important;
+  box-shadow: inset 0 0 0 2px #285276 !important;
 }
 .warrior-actions { flex-direction: row !important; flex-wrap: wrap; gap: 12px !important; align-items: center; }
 .warrior-actions .btn { width: auto !important; }
@@ -134,9 +145,12 @@ a[href^="tel:"] { white-space: nowrap; }
 /* Birthday: smaller gap between the options intro and the pizza section. */
 .page-birthday-parties .bd-pizza { margin-top: 64px !important; }
 
-/* Competitions (phone): no white strip above the hero, normal paragraph spacing. */
+/* Competitions (phone): hero starts at the header, one even overlay, intro padding matches WNL. */
 @media (max-width: 799px) {
+  .page-competitions .atf-photo { top: var(--header-h) !important; }
   .page-competitions .hero-copy { margin-top: 0 !important; }
+  .page-competitions .hero-scrim { background: rgba(0, 0, 0, 0.6) !important; }
+  .page-competitions .b2-block:not(.b2-ice) .comp-intro { padding-top: 80px !important; }
   .page-competitions .comp-intro p, .page-competitions .comp-soon { line-height: 1.6 !important; }
 }
 
@@ -151,10 +165,10 @@ a[href^="tel:"] { white-space: nowrap; }
 .hs-facts li { line-height: 1.5 !important; margin-bottom: 8px; }
 .hs-book h4 { line-height: 1.45 !important; }
 
-/* Kids: the two "Don't forget" cards are equal and their buttons line up; button labels stay on one line. */
+/* Kids: the two "Don't forget" cards are equal and their buttons line up. Labels may wrap. */
 .page-kids-classes .camp-panel { flex: 1 1 auto !important; }
 .page-kids-classes .camp-panel .btn-center { margin-top: auto !important; padding-top: 16px; }
-.page-kids-classes .btn.camp { white-space: nowrap !important; }
+.page-kids-classes .btn.camp { white-space: normal !important; }
 
 /* Team: no white strip under the hero; a little air above "No experience required"; one button icon style. */
 .b4 { padding-top: 40px !important; }
@@ -185,3 +199,245 @@ a[href^="tel:"] { white-space: nowrap; }
 
 /* Laser tag / Nerf nights: body text used 1px letter spacing, unlike every other paragraph on the site. */
 .night-copy h4, .night-copy p { letter-spacing: 0 !important; }
+
+/* Photo pairs: equal tops, the photo column matches the text, faces stay in frame. Phones are 4:3. */
+@media (min-width: 800px) {
+  .b3-split,
+  .bd-split,
+  .pk-row,
+  .camp-layout,
+  .wnl-top,
+  .bd-mem-grid,
+  .warrior-grid,
+  .row {
+    align-items: stretch !important;
+  }
+  .b3-split > img,
+  .bd-split > img,
+  .pk-row > img,
+  .camp-layout img,
+  .wnl-top > img,
+  .bd-mem-grid > img,
+  .warrior-photo,
+  .row > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .page-kids-classes .csna-block img { object-position: center 20%; }
+}
+@media (max-width: 799px) {
+  .b3-split > img,
+  .bd-split > img,
+  .pk-row > img,
+  .lt-night img,
+  .nf-night img,
+  .row > img,
+  .bd-mem-photo {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    height: auto;
+    object-fit: cover;
+  }
+  .lt-night .b3-split img,
+  .nf-night .b3-split img { order: 2; }
+  .lt-night h2,
+  .nf-night h2 { margin-bottom: 20px; }
+}
+
+/* Home programs strip stays short on a phone. */
+@media (max-width: 799px) {
+  .bullet-stack {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    gap: 4px 12px !important;
+    padding: 10px 12px !important;
+  }
+  .bullet-stack a,
+  .bullet-stack span { line-height: 1.3 !important; }
+}
+
+/* Birthday flyer crops to the text column. H2s share the heavy style. Policy is body copy. */
+.page-birthday-parties .flyer {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center center;
+}
+.page-birthday-parties .bd-hero-title {
+  text-transform: none !important;
+  color: #fff;
+  font-size: clamp(32px, 4.6vw, 56px);
+  line-height: 1.12;
+  width: min(16em, 100%);
+  margin-inline: auto;
+}
+.page-birthday-parties .bd-intro h2,
+.page-birthday-parties .bd-stress-title,
+.page-birthday-parties .bd-more,
+.page-birthday-parties .bd-mem h2,
+.page-birthday-parties .bd-close h2 {
+  font-family: Heebo, "Arial Narrow", sans-serif;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 1.15;
+  text-transform: uppercase;
+}
+.page-birthday-parties .bd-pizza h3 {
+  width: auto;
+  max-width: 100%;
+  text-transform: none;
+  color: #285276;
+}
+.page-birthday-parties .bd-battles h3,
+.page-birthday-parties .bd-battles h4,
+.page-birthday-parties .bd-split h3 {
+  color: #285276;
+}
+.page-birthday-parties .bd-policy {
+  margin: 16px auto 0;
+  max-width: 62ch;
+  color: #fff;
+  font-family: Muli, "Segoe UI", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.page-birthday-parties .bd-policy strong { font-weight: 700; }
+.page-birthday-parties main a:not(.btn):not(.go) { color: #d6352f; text-decoration: underline; text-underline-offset: 2px; }
+.page-birthday-parties .atf-photo { object-position: center 30%; }
+
+/* Fitness heading is real title case. Benefit cards are article copy. */
+.page-fitness-classes .fit-kicker { text-transform: none !important; font-weight: 800; }
+.page-fitness-classes .fit-cards article { border: 0 !important; background: none !important; }
+
+/* Nerf price is body emphasis. Included lines match paragraphs. */
+.page-nerf-wars .cost { color: inherit !important; font-weight: 700 !important; }
+.page-nerf-wars .nf-party .b3-facts .strong { font-weight: 400; color: inherit; }
+
+/* Laser note matches body copy. The closing line uses the normal H3 weight. */
+.page-laser-tag .night-copy .note { color: rgba(0, 0, 0, 0.7) !important; font-weight: 400; }
+.page-laser-tag .lt-book h3 { font-weight: 900 !important; }
+
+/* Personal training form heading stays readable on the photo. */
+.page-personal-training .pt-form { position: relative; }
+.page-personal-training .pt-form::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+.page-personal-training .pt-form .b3-wrap { position: relative; z-index: 1; }
+.page-personal-training .pt-form h2,
+.page-personal-training .pt-form h4 { color: #fff !important; }
+
+/* Contact heading contrast, and the map can match the form. */
+.page-contact .hero-scrim { background: rgba(0, 0, 0, 0.55) !important; }
+.page-contact .hero-copy h1 { text-shadow: 0 2px 14px rgba(0, 0, 0, 0.7); }
+
+/* Confirmation links share one red. */
+.b4-thanks a,
+.b4-thanks a.red,
+.b4-thanks a.blue,
+.b4-thanks .pay { color: #d6352f !important; }
+
+/* Parkour heading stays readable on the photo. Prices sit on their own lines. */
+.page-parkour .hero-scrim { background: rgba(0, 0, 0, 0.5) !important; }
+.page-parkour .pk-hero { text-shadow: 0 2px 14px rgba(0, 0, 0, 0.7); text-transform: none !important; }
+.pk-pause p br { display: block; margin-top: 12px; }
+.pk-benefits p { margin-bottom: 16px; }
+
+/* Homeschool card paragraphs sit closer together. Closing copy matches other bands. */
+.hs-card .hs-blurb p + p { margin-top: 12px !important; }
+.hs-book p {
+  color: #fff;
+  font-family: Muli, "Segoe UI", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 12px auto;
+  max-width: 68ch;
+}
+.hs-book .b3-btn { margin-top: 16px; }
+
+/* About: no white band between the navy perseverance band and the grey story. */
+.page-about .about-page.story { padding-top: 0 !important; margin-top: 0 !important; }
+@media (max-width: 799px) {
+  .page-about .row.photo-left.mist { margin-bottom: 48px !important; }
+  .page-about .intro-block > .wash { margin-top: 0 !important; padding-top: 48px !important; }
+}
+
+/* Kids gallery fills the column on a phone. Less empty space under the test-week note. */
+@media (max-width: 799px) {
+  .page-kids-classes .fun-grid {
+    grid-template-columns: 1fr 1fr !important;
+    width: 100% !important;
+  }
+  .page-kids-classes .fun-grid img { width: 100% !important; height: auto !important; aspect-ratio: 1; }
+  .page-kids-classes .intro-block { padding-bottom: 48px !important; }
+}
+
+/* Booking steps and form line up with the heading. */
+.page-schedule-birthday-party .book-steps { margin-top: 20px !important; }
+.page-schedule-birthday-party .book-steps li + li { margin-top: 12px; }
+.page-schedule-birthday-party .lead-form { width: min(640px, 100%) !important; max-width: 640px; margin-left: 0 !important; }
+.page-schedule-birthday-party .lead-form.panel { gap: 16px !important; }
+
+/* Competitions waitlist block stays centred, banner at one width. */
+.page-competitions .comp-intro,
+.page-wnl-competitions .wnl-form,
+.page-competitions .b2-ice .comp-intro { text-align: center; }
+.comp-banner,
+.comp-banner-soon { margin-left: auto !important; margin-right: auto !important; }
+
+/* Team photos fill the bio height. The H1 stays in the reading column. */
+@media (min-width: 800px) {
+  .b4-person {
+    display: grid;
+    grid-template-columns: 280px minmax(0, 1fr);
+    column-gap: 28px;
+    align-items: stretch;
+    width: min(900px, calc(100% - 32px));
+  }
+  .b4-shot.desk {
+    grid-column: 1;
+    grid-row: 1 / span 3;
+    float: none;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    object-fit: cover;
+    object-position: center 18%;
+  }
+  .b4-person h2 { grid-column: 2; grid-row: 1; margin-top: 0; }
+  .b4-person h3 { grid-column: 2; grid-row: 2; }
+  .b4-person .bio { grid-column: 2; grid-row: 3; }
+}
+.b4-team-hero .col { width: min(900px, calc(100% - 32px)); }
+@media (max-width: 799px) {
+  .b4-team-hero h1 {
+    display: block !important;
+    width: min(900px, calc(100% - 32px));
+    margin: 0 auto 16px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1.15;
+  }
+  .b4-team-hero .m-title { display: none !important; }
+}
+
+/* Camp form note is not part of the sentence above it. */
+.camp-form .form-note { margin-top: 20px; }
+
+/* Ranges stay on one line. */
+.range { white-space: nowrap; }
+
+/* Heading space stays inside the section so it does not open a white strip above it. */
+.bd-options { padding-top: 100px; }
+.bd-more { margin-top: 0 !important; }
+@media (max-width: 799px) {
+  .bd-options { padding-top: 44px; }
+}
+.page-best-gyms-in-springfield .b4-gym:last-of-type { margin-bottom: 0 !important; }

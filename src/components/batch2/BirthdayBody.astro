@@ -15,7 +15,7 @@ const memories = typeof memoriesBg === "string" ? memoriesBg : memoriesBg.src;
 
 <section class="b2-block">
   <div class="b2-wrap bd-intro">
-    <h1>Kids Will Have a Blast, and You Can Relax</h1>
+    <h2>Kids Will Have a Blast, and You Can Relax</h2>
     <p>Springfield Warrior Sports is the ideal venue for a birthday party in Springfield, MO. With a variety of party options facilitated by our crew and a full hour of gym time, adults can relax knowing everything is taken care of while the kids have fun!</p>
     <p>Parties here are extraordinary - not only do we promise that kids will love it, but we also make sure the birthday boy or girl has something special too; the week after their party, the birthday kid gets to come to a ninja class for free and their very own Ninja t-shirt!</p>
     <p class="bd-navy">This means more than just one day of fun - there can be lasting memories of their best birthday, making this party extra memorable.</p>
@@ -28,7 +28,11 @@ const memories = typeof memoriesBg === "string" ? memoriesBg : memoriesBg.src;
     <div class="bd-split">
       {invitation.src && <img class="flyer" src={invitation.src} alt="" width={invitation.width} height={invitation.height} />}
       <div>
-        <p>At Springfield Warrior Sports, we want to take the stress out of your party planning - schedule your birthday party with us, and let us do the rest — including cleanup! <br /><br />Each party lasts for a total of 1.5 hours. Included in the party is one hour of gym time, featuring open play and an obstacle course set up and facilitated by our Crew. Approximately 30 minutes can be used for cake, presents, and pizza! (optional). <br /><br />The birthday child will receive a Springfield Warrior Sports T-shirt, and the week after their party, they get to try a ninja class for free.</p>
+        <p>At Springfield Warrior Sports, we want to take the stress out of your party planning - schedule your birthday party with us, and let us do the rest — including cleanup!</p>
+        <p>Each party lasts for a total of 1.5 hours.</p>
+        <p>Included in the party is one hour of gym time, featuring open play and an obstacle course set up and facilitated by our Crew.</p>
+        <p>Approximately 30 minutes can be used for cake, presents, and pizza! (optional).</p>
+        <p>The birthday child will receive a Springfield Warrior Sports T-shirt, and the week after their party, they get to try a ninja class for free.</p>
         <p class="bd-note">Note: free customized party invitations are available upon request.</p>
         <p class="b2-fact"><FactIcon name="arrow" />
           <span class="b2-fact-text"><strong class="bd-lab">Cost: </strong><span class="bd-rest">$179 for the first 11 kids and $10 for each additional participant (plus $40 if you prefer to rent the gym for a private party).</span></span></p>
@@ -51,11 +55,18 @@ const memories = typeof memoriesBg === "string" ? memoriesBg : memoriesBg.src;
   </div>
 </section>
 
+<ReviewBand
+  title="Client Testimonials"
+  sub="What Our Clients Say"
+  text="100% recommend Springfield Warrior Sports! We had my sons 5th birthday here and it was painless and SO fun! The staff answered all questions I had, gave reminders for upcoming party, and interacted with the kids during the party. It has been weeks since the party and my son is still talking about it. We will absolutely be back!"
+  by="- CHEYENNE M."
+/>
+
 <section class="bd-book" style={`background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url('${book}')`}>
   <div class="b2-wrap">
     <h2>Book Now!</h2>
     <h4>You can begin the birthday party scheduling process on our website by <a href="/schedule-birthday-party/">clicking here</a>, or call us today at <a href={site.phone.tel}>{site.phone.display}</a> to reserve your birthday party spot at Warrior Sports!</h4>
-    <h4 class="bd-policy"><strong>Cancellation &amp; Rescheduling Policy:</strong><br /><span class="bd-policy-rest">To help us staff and prepare properly, any cancellations or reschedules made starting the weekend immediately before your party date and at any point thereafter will incur a $60 fee.</span></h4>
+    <p class="bd-policy"><strong>Cancellation &amp; Rescheduling Policy:</strong> To help us staff and prepare properly, any cancellations or reschedules made starting the weekend immediately before your party date and at any point thereafter will incur a $60 fee.</p>
   </div>
 </section>
 
@@ -67,7 +78,7 @@ const memories = typeof memoriesBg === "string" ? memoriesBg : memoriesBg.src;
     <div class="bd-split bd-pizza">
       {pizza.src && <img src={pizza.src} alt="" width={pizza.width} height={pizza.height} />}
       <div>
-        <h3>Pizza Birthday Party With No Clean Up!</h3>
+        <h3>Pizza Birthday Party with No Clean Up!</h3>
         <p>Our birthday party pizza package includes plates, napkins, utensils, and pizza from Godfather's Pizza.</p>
 <p>Two pizzas will be ordered for a party of 10 kids, but we will adjust and order more if there are more kids attending.</p>
 <p>The pizza party add-on is $50, and extra pizzas can be requested for family members or adults for $12 each.</p>
@@ -89,29 +100,55 @@ const memories = typeof memoriesBg === "string" ? memoriesBg : memoriesBg.src;
   </div>
 </section>
 
+<ReviewBand
+  text="We have had several birthday parties here and each time has been wonderful. It’s affordable and does not require a lot of effort on my part. The best part is how much fun the kids have! They never want to leave! The staff were all engaged with the kids and joined in on the nerf battle. I think they were having as much fun as the kids! They made sure we had everything we needed. We also enjoy coming to open gym. It’s the perfect place for kids to burn some energy. We love it here and we highly recommend it!"
+  by="- ADRIENNE E."
+/>
+
 <section class="bd-mem">
   <div class="b2-wrap bd-mem-grid">
     <div class="bd-mem-copy">
       <h2>Create Amazing Memories</h2>
-      <p>Create unforgettable memories with your kids and their friends in an uber-kid-friendly atmosphere. Your child will have the time of their life playing in our obstacle course gym while you sit back and relax without having to stress out about setting up or cleaning up afterward. <br /><br />Plus, our cooler of Gatorade keeps everyone well-hydrated during all that physical activity!<br /><br />Shoot us a <a href="/schedule-birthday-party/">message here with your desired birthday party dates</a>, or call <a href={site.phone.tel}>{site.phone.display}</a> to book your birthday experience at Springfield Warrior Sports!</p>
+      <p>Create unforgettable memories with your kids and their friends in an uber-kid-friendly atmosphere.</p>
+      <p>Your child will have the time of their life playing in our obstacle course gym while you sit back and relax without having to stress out about setting up or cleaning up afterward.</p>
+      <p>Plus, our cooler of Gatorade keeps everyone well-hydrated during all that physical activity!</p>
+      <p>Shoot us a <a href="/schedule-birthday-party/">message here with your desired birthday party dates</a>, or call <a href={site.phone.tel}>{site.phone.display}</a> to book your birthday experience at Springfield Warrior Sports!</p>
     </div>
     <img class="bd-mem-photo" src={memories} alt="" width="350" height="260" />
   </div>
 </section>
 
 <ReviewBand
-  title="Client Testimonials"
-  sub="What Our Clients Say"
-  text="100% recommend Springfield Warrior Sports! We had my sons 5th birthday here and it was painless and SO fun! The staff answered all questions I had, gave reminders for upcoming party, and interacted with the kids during the party. It has been weeks since the party and my son is still talking about it. We will absolutely be back!"
-  by="- CHEYENNE M."
-/>
-<ReviewBand
-  continued
-  text="We have had several birthday parties here and each time has been wonderful. It’s affordable and does not require a lot of effort on my part. The best part is how much fun the kids have! They never want to leave! The staff were all engaged with the kids and joined in on the nerf battle. I think they were having as much fun as the kids! They made sure we had everything we needed. We also enjoy coming to open gym. It’s the perfect place for kids to burn some energy. We love it here and we highly recommend it!"
-  by="- ADRIENNE E."
-/>
-<ReviewBand
-  continued
   text="Great place to have a birthday party. The laser tag option was really cool. My boys had a blast. Plus my son loves their summer camp program & he looks forward to it every summer!"
   by="- SUSAN K."
 />
+
+<section class="bd-close">
+  <div class="b2-wrap">
+    <h2>Ready to Book Your Party?</h2>
+    <p>Parties run an hour and a half and include open play and an obstacle course set up and run by our crew. Take the stress out of your party planning. Schedule your party with us, and let us do the rest.</p>
+    <div class="bd-close-actions">
+      <a class="btn" href="/schedule-birthday-party/">Book Your Party</a>
+      <a class="btn btn-secondary" href={site.phone.tel}>{site.phone.display}</a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .bd-close {
+    background: #285276;
+    color: #fff;
+    padding: 48px 0;
+    text-align: center;
+  }
+  .bd-close h2 { color: #fff; margin: 0 0 12px; }
+  .bd-close p {
+    margin: 0 auto 20px;
+    max-width: 62ch;
+    color: #fff;
+    font-family: Muli, "Segoe UI", sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  .bd-close-actions { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+</style>

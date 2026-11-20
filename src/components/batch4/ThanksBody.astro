@@ -12,7 +12,7 @@ const tel = site.phone.tel;
 
 const pages: Record<string, { title: string; h: number; wide?: boolean; photo: boolean }> = {
   registered: { title: "We Received Those Details, Thank You!", h: 477, photo: true },
-  "registered-for-csna-competition": { title: "We Received Those Details, Thank You!", h: 465, wide: true, photo: false },
+  "registered-for-csna-competition": { title: "We Received Those Details, Thank You!", h: 465, photo: true },
   "registered-for-day-camps": { title: "We Received Those Details, Thank You!", h: 545, photo: true },
   "registered-for-wnl-competition": { title: "We Received Those Details, Thank You!", h: 477, photo: true },
   "thank-you-for-your-feedback": { title: "Thank You for Your Feedback!", h: 561, photo: true },
@@ -25,7 +25,7 @@ const pay: Record<string, { href: string; tone: string }> = {
   "registered-for-wnl-competition": { href: "https://springfield-warrior-sports.square.site/", tone: "red" },
   "registered-for-csna-competition": {
     href: "https://checkout.square.site/merchant/MLXTPBS97BGYV/checkout/4AIX4JFZMCKCVNT35N7AHFV7",
-    tone: "blue",
+    tone: "red",
   },
   "registered-for-day-camps": { href: "https://springfield-warrior-sports-102788.square.site/", tone: "red" },
 };
@@ -35,7 +35,7 @@ const link = pay[slug] ?? { href: "", tone: "red" };
 <section class:list={["b4-thanks", { plain: !page.photo, wide: page.wide, feedback: slug === "thank-you-for-your-feedback" }]}>
   <div class="col">
     <div class="thanks-copy">
-    <h2>{page.title}</h2>
+    <h1>{page.title}</h1>
     {
       slug === "registered-for-day-camps" ? (
         <>
