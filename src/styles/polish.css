@@ -891,6 +891,7 @@ main :where(a:not(.btn):not(.b3-btn):not(.go):not(.comp-btn):not(.cta-phone):not
   justify-self: center !important;
   margin-inline: auto !important;
 }
+.page-wnl-competitions .lead-form > .btn { margin-top: 19px; }
 @media (max-width: 799px) {
   .page-competitions .event-soon { font-size: 32px !important; margin-top: 24px !important; }
   .page-competitions .b2-block:first-of-type { padding-top: 0 !important; margin-top: 0 !important; }
@@ -1047,6 +1048,10 @@ main :where(a:not(.btn):not(.b3-btn):not(.go):not(.comp-btn):not(.cta-phone):not
     object-fit: contain !important;
     object-position: center center !important;
     margin: 0 0 12px 28px;
+  }
+  .page-kids-classes .wide-photo .copy > h3.h20,
+  .page-kids-classes .text-first .copy > h3.junior-times {
+    clear: both;
   }
 }
 .page-birthday-parties .bd-battles p:not(.b2-fact) {

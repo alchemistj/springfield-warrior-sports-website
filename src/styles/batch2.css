@@ -559,8 +559,7 @@
 .page-wnl-competitions .lead-form { max-width: 898px; }
 .page-schedule-birthday-party .lead-form.panel,
 .page-wnl-competitions .lead-form.panel { gap: 40px; }
-.page-schedule-birthday-party .lead-form > .btn,
-.page-wnl-competitions .lead-form > .btn { margin-top: -16px; }
+.page-schedule-birthday-party .lead-form > .btn { margin-top: -16px; }
 .page-schedule-birthday-party .lead-form > div:not(.hp),
 .page-wnl-competitions .lead-form > div:not(.hp) { display: flow-root; }
 .page-schedule-birthday-party .lead-form .label,
