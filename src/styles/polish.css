@@ -24,14 +24,12 @@ button.btn,
 .b3-btn,
 .comp-btn {
   min-height: 44px;
-  padding: 12px 18px !important;
 }
 @media (max-width: 799px) {
   .comp-btn {
     width: 100% !important;
     max-width: 100% !important;
     min-height: 0;
-    padding: 12px 16px !important;
     letter-spacing: 0.04em;
     line-height: 1.3 !important;
   }
@@ -135,16 +133,11 @@ button.btn,
   }
 }
 .page-kids-classes .camp-panel {
-  flex: 0 0 auto !important;
   margin-top: 188px !important;
-}
-.page-kids-classes .camp-panel .btn-center {
-  margin-top: 14px !important;
 }
 @media (max-width: 799px) {
   .page-kids-classes .intro-block {
     padding-top: 36px !important;
-    padding-bottom: 28px !important;
   }
   .page-kids-classes .fun-grid { margin-bottom: 28px !important; }
   .page-kids-classes .forget-block,
@@ -229,14 +222,10 @@ button.btn,
   justify-content: center;
   gap: 8px;
   min-height: 44px;
-  padding: 10px 22px !important;
 }
-.b4-visit { width: auto !important; white-space: nowrap !important; }
+.b4-visit { width: auto !important; }
 
 /* Launch polish (18 Nov 2026). Imported last so these win. */
-
-/* No single word left alone on a last line. Headings are already balanced. */
-p, li, blockquote, figcaption, dd, dt, label { text-wrap: pretty; }
 
 /* Two button styles, same type. Primary is a filled red pill. Secondary is an outline pill. */
 a.btn,
@@ -473,13 +462,11 @@ a[href^="tel:"] { white-space: nowrap; }
   .b3-split > img,
   .bd-split > img,
   .pk-row > img,
-  .lt-night img,
   .nf-night img,
   .row > img,
   .bd-mem-photo,
   .page-kids-classes img.face,
   .page-birthday-parties .bd-laser,
-  .page-summer-camps-in-springfield-mo .camp-photo,
   .home-ready-photos img,
   .page-about .row > img {
     width: 100% !important;
@@ -487,6 +474,12 @@ a[href^="tel:"] { white-space: nowrap; }
     height: auto !important;
     object-fit: cover !important;
     object-position: center 28% !important;
+  }
+  .lt-night img {
+    width: 100% !important;
+    aspect-ratio: 4 / 3 !important;
+    height: auto !important;
+    object-fit: cover !important;
   }
   .page-kids-classes .row.text-first,
   .page-kids-classes .row.img-first {
@@ -833,8 +826,7 @@ main :where(a:not(.btn):not(.b3-btn):not(.go):not(.comp-btn):not(.cta-phone):not
 .pk-more .b3-split p { margin: 0 0 16px !important; }
 .pk-more .b3-split p:last-child { margin-bottom: 0 !important; }
 
-.page-birthday-parties .bd-split p:not(.b2-fact),
-.page-about .lead + .lead {
+.page-birthday-parties .bd-split p:not(.b2-fact) {
   margin-top: 0 !important;
   margin-bottom: 16px !important;
 }
@@ -842,9 +834,6 @@ main :where(a:not(.btn):not(.b3-btn):not(.go):not(.comp-btn):not(.cta-phone):not
 .page-birthday-parties .bd-split .b2-fact { margin-top: 16px !important; }
 
 @media (min-width: 800px) {
-  .page-birthday-parties .b2-grey .bd-split {
-    grid-template-columns: minmax(280px, 340px) minmax(0, 1fr) !important;
-  }
   .page-birthday-parties .bd-pizza {
     grid-template-columns: minmax(220px, 0.7fr) minmax(0, 1.3fr) !important;
   }
@@ -1024,3 +1013,96 @@ main :where(a:not(.btn):not(.b3-btn):not(.go):not(.comp-btn):not(.cta-phone):not
   .b3.pt-form .pt-line { font-size: 22px; line-height: 35px; }
   .b3 .pk-row h3 { max-width: 400px; }
 }
+
+/* Round 6. */
+@media (min-width: 1024px) {
+  .page-kids-classes .row.img-first,
+  .page-kids-classes .row.img-first.wide-photo,
+  .page-kids-classes .row.text-first {
+    display: flow-root !important;
+    grid-template-columns: none !important;
+  }
+  .page-kids-classes .row > .copy {
+    display: block !important;
+    overflow: visible !important;
+    min-width: 0;
+  }
+  .page-kids-classes .row.img-first > img,
+  .page-kids-classes .row.img-first.wide-photo > img {
+    float: left;
+    width: min(520px, 54%) !important;
+    height: auto !important;
+    max-height: none !important;
+    aspect-ratio: auto !important;
+    object-fit: contain !important;
+    object-position: center center !important;
+    margin: 0 28px 12px 0;
+  }
+  .page-kids-classes .row.text-first > img {
+    float: right;
+    width: min(520px, 54%) !important;
+    height: auto !important;
+    max-height: none !important;
+    aspect-ratio: auto !important;
+    object-fit: contain !important;
+    object-position: center center !important;
+    margin: 0 0 12px 28px;
+  }
+}
+.page-birthday-parties .bd-battles p:not(.b2-fact) {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 0 16px !important;
+  margin-inline: 0 !important;
+  padding: 0 !important;
+  text-indent: 0 !important;
+}
+.page-birthday-parties .bd-battles div > p:last-of-type { margin-bottom: 0 !important; }
+@media (max-width: 799px) {
+  .page-about .row.brothers,
+  .page-about .row.text-left {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .page-about .row.brothers > .copy,
+  .page-about .row.text-left > .copy { order: 1 !important; }
+  .page-about .row.brothers > img,
+  .page-about .row.text-left > img { order: 2 !important; }
+}
+@media (min-width: 800px) {
+  .page-birthday-parties .b2-grey .bd-split {
+    display: flow-root !important;
+    grid-template-columns: none !important;
+  }
+  .page-birthday-parties .b2-grey .bd-split > div {
+    display: block !important;
+  }
+  .page-birthday-parties .b2-grey .bd-split > img.flyer {
+    float: left;
+    width: 380px !important;
+    height: auto !important;
+    max-height: none !important;
+    object-fit: contain !important;
+    margin: 0 28px 12px 0;
+  }
+}
+.page-wnl-competitions .wnl-top h2 { color: #d6352f !important; }
+.page-wnl-competitions .lead-form.panel { gap: 8px !important; }
+.page-wnl-competitions .lead-form .label,
+.page-wnl-competitions .lead-form > div > label {
+  margin: 0 0 4px !important;
+  line-height: 1.2;
+}
+.page-wnl-competitions .lead-form .sub { margin-top: 2px !important; line-height: 1.15; }
+.page-laser-tag .lt-party .b3-facts svg,
+.page-laser-tag .lt-cost svg {
+  width: 8px !important;
+  height: 8px !important;
+  max-height: 8px !important;
+  flex: 0 0 8px !important;
+  margin-top: 9px !important;
+  border-radius: 50%;
+  background: #d6352f;
+}
+.page-laser-tag .lt-party .b3-facts svg path,
+.page-laser-tag .lt-cost svg path { display: none; }

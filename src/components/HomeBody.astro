@@ -155,7 +155,7 @@ const lee = {
       {cards.map((card) => {
         const shot = shots[card.file];
         return (
-          <article class="offer-card">
+          <article class:list={["offer-card", card.file.includes("birthday") && "offer-bday"]}>
             {shot && <img loading="lazy" decoding="async" src={shot.src} alt="" width={shot.width} height={shot.height} />}
             <div class="offer-copy">
               <h3>{card.title}</h3>
@@ -164,8 +164,8 @@ const lee = {
                 <p>Parkour classes are <span class="mid">currently unavailable</span>, but Open Gym sessions are available now — your first visit is just $10.</p>
               )}
               {card.extra && card.extra !== "parkour" && <p>{card.extra}</p>}
-              <p class="btn-row"><a class="btn" href={card.href}>{card.label}</a></p>
             </div>
+            <p class="btn-row"><a class="btn" href={card.href}>{card.label}</a></p>
           </article>
         );
       })}
@@ -304,7 +304,8 @@ const lee = {
   }
   .offer-card {
     display: grid;
-    grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+    grid-template-columns: minmax(112px, 0.38fr) minmax(0, 1fr);
+    grid-template-rows: auto auto;
     gap: 0;
     align-items: stretch;
     background: #fff;
@@ -313,23 +314,24 @@ const lee = {
   }
   .offer-card img {
     display: block;
+    grid-column: 1;
+    grid-row: 1;
     width: 100%;
     height: 100%;
-    min-height: 140px;
-    object-fit: cover;
-    object-position: center;
+    min-height: 160px;
+    object-fit: contain;
+    object-position: center center;
+    background: #fff;
   }
+  .offer-card.offer-bday img { object-position: center 42%; }
   .offer-copy {
     display: flex;
     flex-direction: column;
+    grid-column: 2;
+    grid-row: 1;
     min-width: 0;
-    height: 100%;
-    padding: 20px 22px 16px;
-  }
-  /* Phones: photo on top, copy below (as live). Side by side, the photo became a sliver and cut off faces. */
-  @media (max-width: 640px) {
-    .offer-card { grid-template-columns: 1fr; }
-    .offer-card img { height: 220px; min-height: 0; object-position: center 30%; }
+    height: auto;
+    padding: 16px 16px 8px;
   }
   .offer-copy h3 {
     margin: 0 0 8px;
@@ -341,7 +343,7 @@ const lee = {
   }
   .offer-copy p { color: #000; font-size: 16px; line-height: 1.45; }
   .offer-copy .mid { font-weight: 600; }
-  .offer-copy .btn,
+  .offer-card .btn,
   .warrior-actions .btn {
     width: 100%;
     max-width: 100%;
@@ -351,7 +353,12 @@ const lee = {
     border-radius: 28px;
     line-height: 1.25;
   }
-  .btn-row { margin: 4px 0 0; }
+  .btn-row {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    margin: 0;
+    padding: 4px 16px 16px;
+  }
 
   .warrior {
     background: #fff;
@@ -408,14 +415,17 @@ const lee = {
     .home-ready-copy h2 { font-size: 40px; }
     .home-ready-copy h3.hours-title { font-size: 30px; font-weight: 800; color: #d6352f; }
     .home-ready-copy h3 { font-size: 24px; }
-    .offer-list {
-      grid-template-columns: 1fr 1fr;
-      align-items: stretch;
+    .offer-list { grid-template-columns: 1fr; }
+    .offer-card {
+      grid-template-columns: minmax(260px, 0.4fr) minmax(0, 1fr);
+      grid-template-rows: 1fr auto;
     }
-    .offer-copy .btn-row { margin-top: auto; }
+    .offer-card img { grid-row: 1 / span 2; min-height: 0; }
+    .offer-copy { padding: 20px 22px 8px; }
+    .btn-row { grid-column: 2; padding: 0 22px 16px; }
     .offers-title { font-size: 36px; margin-bottom: 18px; }
     .offer-copy h3 { font-size: 24px; }
-    .offer-copy .btn,
+    .offer-card .btn,
     .warrior-actions .btn { width: auto; }
     .warrior { padding: 48px 0 20px; }
     .warrior-grid {

@@ -77,12 +77,15 @@ em, i {
 .kids h2,
 .levels,
 .day-copy,
-.b4-copy,
+.b4-copy {
+  width: auto !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+}
 .contact-photos img,
 .wnl-photo,
 .camp-card,
 .fun-grid img {
-  width: auto !important;
   max-width: 100% !important;
   min-width: 0 !important;
 }
@@ -93,20 +96,24 @@ em, i {
   .bd-battles,
   .pk-row,
   .pk-row.side,
-  .hs-card,
   .comp-head,
   .camp-layout,
   .contact-grid,
   .ready,
   .program-card,
-  .row.photo-left,
   .row.text-left,
-  .row.img-first,
   .row.text-first,
   .row.img-first.wide-photo,
   .split-photo {
     display: grid !important;
     grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr) !important;
+    column-gap: 28px !important;
+    align-items: stretch !important;
+  }
+  .hs-card,
+  .row.photo-left,
+  .row.img-first {
+    display: grid !important;
     column-gap: 28px !important;
     align-items: stretch !important;
   }
@@ -211,7 +218,6 @@ em, i {
   background-image: none !important;
   min-height: 0 !important;
   margin-top: 0 !important;
-  padding: 48px 0 !important;
 }
 .bd-mem .b2-wrap {
   display: grid !important;
@@ -222,7 +228,6 @@ em, i {
 .bd-mem-photo {
   display: block !important;
   width: 100% !important;
-  height: 100% !important;
   object-fit: cover;
   order: 2;
 }
@@ -417,7 +422,6 @@ em, i {
     order: 2;
   }
   .b4-shot.desk { display: none !important; }
-  .b4-shot.mob { display: block !important; }
   .b4-person .b4-shot.desk,
   .b4-person .b4-shot.mob,
   .b4-person h2,
