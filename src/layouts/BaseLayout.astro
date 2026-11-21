@@ -4,7 +4,6 @@ import "../styles/batch2.css";
 import "../styles/batch3.css";
 import "../styles/batch4.css";
 import "../styles/system.css";
-import "../styles/batch-c.css";
 import "../styles/polish.css";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
@@ -79,7 +78,7 @@ const gaId = site.ga4;
     <main id="main">
       <slot />
     </main>
-    {route.key !== "home" && route.key !== "meet-the-team" && route.key !== "homeschool-sports-and-classes-springfield-mo" && route.key !== "schedule-birthday-party" && <FinalCta />}
+    {route.key !== "home" && route.key !== "meet-the-team" && route.key !== "homeschool-sports-and-classes-springfield-mo" && route.key !== "schedule-birthday-party" && route.key !== "birthday-parties" && <FinalCta />}
     <Footer />
     <StickyCallBar />
     <script is:inline>
@@ -90,13 +89,15 @@ const gaId = site.ga4;
         document.querySelectorAll(".atf, main, .final-cta").forEach(function (r) {
           r.querySelectorAll("h1,h2,h3,h4,h5,p,li,figcaption,blockquote,label").forEach(function (el) {
             if (el.closest("nav")) return;
-            var walk = document.createTreeWalker(el, NodeFilter.SHOW_TEXT), node, last = null;
+            const walk = document.createTreeWalker(el, NodeFilter.SHOW_TEXT);
+            let node;
+            let last = null;
             while ((node = walk.nextNode())) if (node.data.trim()) last = node;
             if (!last) return;
-            var m = last.data.match(/^([\s\S]*\S)[ \t\n]+(\S+)(\s*)$/);
-            if (!m) return;
-            var before = last.data;
-            last.data = m[1] + "\u00a0" + m[2] + m[3];
+            const matched = last.data.match(/^([\s\S]*\S)[ \t\n]+(\S+)(\s*)$/);
+            if (!matched) return;
+            const before = last.data;
+            last.data = matched[1] + "\u00a0" + matched[2] + matched[3];
             if (el.scrollWidth > el.clientWidth + 1) last.data = before;
           });
         });

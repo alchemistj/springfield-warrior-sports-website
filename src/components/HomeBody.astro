@@ -3,10 +3,11 @@ import { site } from "../data/site";
 import { media } from "../lib/media";
 import ReviewBand from "./ReviewBand.astro";
 
-const obstacle = media("media/2025-12-SpringField-indoor-obstacle.webp");
+const obstacle = media("media/2025-12-SpringField-indoor-obstacle.pair.webp");
 const everyday = media("media/2023-03-everyday-warrior.webp");
 const cards = [
   {
+    slot: "classes",
     file: "media/2023-03-classes.webp",
     title: "Classes and Activities for Kids",
     body: [
@@ -19,6 +20,7 @@ const cards = [
     label: "VIEW OUR KIDS CLASSES AND ACTIVITIES HERE",
   },
   {
+    slot: "train",
     file: "media/2023-03-train.webp",
     title: "Train Like a Ninja Warrior",
     body: [
@@ -30,6 +32,7 @@ const cards = [
     label: "CHECK OUT OUR NINJA FITNESS CLASSES HERE",
   },
   {
+    slot: "bday",
     file: "media/2023-03-birthday.webp",
     title: "Birthday Parties",
     body: [
@@ -41,6 +44,7 @@ const cards = [
     label: "BIRTHDAY PARTIES IN SPRINGFIELD MO DETAILS",
   },
   {
+    slot: "parkour",
     file: "media/2023-04-Parkour-Gym-Parkour-Classes-Banner.webp",
     title: "Parkour",
     body: [
@@ -53,6 +57,7 @@ const cards = [
     label: "CHECK OUT OUR PARKOUR OFFERINGS HERE",
   },
   {
+    slot: "home",
     file: "media/2024-02-kids-classes.webp",
     title: "Homeschool Ninja Warrior Classes",
     body: [
@@ -64,6 +69,7 @@ const cards = [
     label: "HOMESCHOOL CLASSES BY SWS",
   },
   {
+    slot: "pt",
     file: "media/2025-06-the-Best-Gyms-in-Springfield-MO.webp",
     title: "Personal Training",
     body: [
@@ -77,6 +83,19 @@ const cards = [
   },
 ];
 const shots = Object.fromEntries(cards.map((card) => [card.file, media(card.file)]));
+const rangeRe = /(\d{1,2}(?::\d{2})?(?:am|pm)?)\s*[-–]\s*(\d{1,2}(?::\d{2})?(?:am|pm)?)/gi;
+function rangeParts(text: string) {
+  const bits: { range: boolean; text: string }[] = [];
+  let cursor = 0;
+  for (const match of text.matchAll(rangeRe)) {
+    const index = match.index ?? 0;
+    if (index > cursor) bits.push({ range: false, text: text.slice(cursor, index) });
+    bits.push({ range: true, text: match[0] });
+    cursor = index + match[0].length;
+  }
+  if (cursor < text.length || bits.length === 0) bits.push({ range: false, text: text.slice(cursor) });
+  return bits;
+}
 const hours = [
   "Monday: 12pm-6pm",
   "Tuesday: 3pm-5:30pm",
@@ -125,7 +144,7 @@ const lee = {
           return (
             <li>
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 5h-2v6l5 3 1-1.7-4-2.3z" /></svg>
-              <span class="slot"><span class="label">{label}</span>{when && <span class="when"> {when}</span>}</span>
+              <span class="slot"><span class="label">{label}</span>{when && <span class="when"> {rangeParts(when).map((bit) => bit.range ? <span class="range">{bit.text}</span> : bit.text)}</span>}</span>
             </li>
           );
         })}
@@ -142,7 +161,7 @@ const lee = {
       {cards.map((card) => {
         const shot = shots[card.file];
         return (
-          <article class="offer-card">
+          <article class:list={["offer-card", `offer-${card.slot}`]}>
             {shot && <img loading="lazy" decoding="async" src={shot.src} alt="" width={shot.width} height={shot.height} />}
             <div class="offer-copy">
               <h3>{card.title}</h3>
@@ -151,14 +170,16 @@ const lee = {
                 <p>Parkour classes are <span class="mid">currently unavailable</span>, but Open Gym sessions are available now — your first visit is just $10.</p>
               )}
               {card.extra && card.extra !== "parkour" && <p>{card.extra}</p>}
-              <p class="btn-row"><a class="btn" href={card.href}>{card.label}</a></p>
             </div>
+            <p class="btn-row"><a class="btn" href={card.href}>{card.label}</a></p>
           </article>
         );
       })}
     </div>
   </div>
 </section>
+
+<ReviewBand title="Client Testimonials" sub="What Our Clients Say" text={jennifer.text} by={jennifer.by} />
 
 <section class="warrior">
   <div class="wrap warrior-grid">
@@ -177,7 +198,6 @@ const lee = {
   </div>
 </section>
 
-<ReviewBand title="Client Testimonials" sub="What Our Clients Say" text={jennifer.text} by={jennifer.by} />
 <ReviewBand text={lee.text} by={lee.by} />
 
 <section class="partner-band" aria-label="Partners">
@@ -237,7 +257,7 @@ const lee = {
   }
   .home-ready-copy h3.hours-title {
     margin: 16px 0 10px;
-    color: rgb(219, 58, 52);
+    color: #d6352f;
     font-family: Heebo, "Arial Narrow", sans-serif;
     font-size: 22px;
     font-weight: 800;
@@ -260,7 +280,7 @@ const lee = {
     width: 18px;
     height: 18px;
     margin-top: 2px;
-    fill: rgb(219, 58, 52);
+    fill: #d6352f;
   }
   .hours .slot {
     color: #6a6b6c;
@@ -286,11 +306,13 @@ const lee = {
   }
   .offer-list {
     display: grid;
+    grid-template-columns: 1fr;
     gap: 18px;
   }
   .offer-card {
     display: grid;
-    grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+    grid-template-columns: 1fr;
+    grid-template-rows: 220px auto auto;
     gap: 0;
     align-items: stretch;
     background: #fff;
@@ -299,20 +321,29 @@ const lee = {
   }
   .offer-card img {
     display: block;
+    grid-column: 1;
+    grid-row: 1;
     width: 100%;
-    height: 100%;
-    min-height: 140px;
+    height: 220px;
+    min-height: 0;
     object-fit: cover;
-    object-position: center;
+    object-position: center 30%;
+    background: #fff;
   }
+  .offer-card.offer-classes img { object-position: center 26%; }
+  .offer-card.offer-train img { object-position: center 16%; }
+  .offer-card.offer-bday img { object-position: center 6%; }
+  .offer-card.offer-parkour img { object-position: left 40%; }
+  .offer-card.offer-home img { object-position: center 42%; }
+  .offer-card.offer-pt img { object-position: 20% 26%; }
   .offer-copy {
+    display: flex;
+    flex-direction: column;
+    grid-column: 1;
+    grid-row: 2;
     min-width: 0;
-    padding: 20px 22px 16px;
-  }
-  /* Phones: photo on top, copy below (as live). Side by side, the photo became a sliver and cut off faces. */
-  @media (max-width: 640px) {
-    .offer-card { grid-template-columns: 1fr; }
-    .offer-card img { height: 220px; min-height: 0; object-position: center 30%; }
+    height: auto;
+    padding: 16px 16px 8px;
   }
   .offer-copy h3 {
     margin: 0 0 8px;
@@ -324,7 +355,7 @@ const lee = {
   }
   .offer-copy p { color: #000; font-size: 16px; line-height: 1.45; }
   .offer-copy .mid { font-weight: 600; }
-  .offer-copy .btn,
+  .offer-card .btn,
   .warrior-actions .btn {
     width: 100%;
     max-width: 100%;
@@ -334,7 +365,41 @@ const lee = {
     border-radius: 28px;
     line-height: 1.25;
   }
-  .btn-row { margin: 4px 0 0; }
+  .btn-row {
+    grid-column: 1;
+    grid-row: 3;
+    margin: 0;
+    padding: 4px 16px 16px;
+  }
+  @media (min-width: 641px) {
+    .offer-card {
+      grid-template-columns: 360px minmax(0, 1fr);
+      grid-template-rows: 1fr auto;
+      min-height: 409px;
+    }
+    .offer-card img {
+      grid-row: 1 / -1;
+      height: 100%;
+      min-height: 0;
+    }
+    .offer-copy {
+      grid-column: 2;
+      grid-row: 1;
+      padding: 20px 22px 8px;
+    }
+    .btn-row {
+      grid-column: 2;
+      grid-row: 2;
+      padding: 0 22px 16px;
+    }
+    .offer-card .btn { width: auto; }
+    .offer-card.offer-parkour img { object-position: 12% 40%; }
+    .offer-card.offer-pt img { object-position: 55% 14%; }
+    .offer-card.offer-train img { object-position: center 18%; }
+    .offer-card.offer-classes img { object-position: center 24%; }
+    .offer-card.offer-bday img { object-position: 78% 38%; }
+    .offer-card.offer-home img { object-position: center 46%; }
+  }
 
   .warrior {
     background: #fff;
@@ -350,7 +415,7 @@ const lee = {
     display: block;
     width: 100%;
     height: auto;
-    object-fit: contain;
+    object-fit: cover;
     background: #fff;
   }
   .warrior-copy { order: 3; }
@@ -389,18 +454,18 @@ const lee = {
     .home-ready-copy,
     .home-ready-photos { order: 0; }
     .home-ready-copy h2 { font-size: 40px; }
-    .home-ready-copy h3.hours-title { font-size: 30px; font-weight: 800; color: rgb(219, 58, 52); }
+    .home-ready-copy h3.hours-title { font-size: 30px; font-weight: 800; color: #d6352f; }
     .home-ready-copy h3 { font-size: 24px; }
     .offers-title { font-size: 36px; margin-bottom: 18px; }
     .offer-copy h3 { font-size: 24px; }
-    .offer-copy .btn,
     .warrior-actions .btn { width: auto; }
     .warrior { padding: 48px 0 20px; }
     .warrior-grid {
-      grid-template-columns: minmax(0, 0.82fr) minmax(0, 1.18fr);
+      grid-template-columns: minmax(0, 1.2fr) minmax(240px, 0.8fr);
       column-gap: 28px;
       align-items: center;
     }
+    .warrior-actions { flex-wrap: nowrap; }
     .warrior h2 {
       grid-column: 1;
       grid-row: 1;
@@ -412,8 +477,11 @@ const lee = {
       grid-column: 2;
       grid-row: 1 / span 2;
       order: 0;
-      align-self: center;
+      align-self: stretch;
+      height: 100%;
+      object-fit: cover;
     }
+    .home-ready-photos img { height: 100%; object-fit: cover; }
     .partner-row {
       flex-direction: row;
       justify-content: space-between;

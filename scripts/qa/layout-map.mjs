@@ -180,8 +180,10 @@ function collect() {
       // behind the box. Kept only when it differs from the background around it.
       const r = el.getBoundingClientRect();
       const shade = boxShade(el);
-      if (shade && r.width >= 60 && r.width < vw * 0.9 && r.height >= 20 && r.height <= 400 && (el.innerText || "").trim() && shown(el))
-        items.push({ kind: "box", bg: shade, text: (el.innerText || "").trim().slice(0, 40), region: region(el), ...box(el) }), els.push(el);
+      if (shade && r.width >= 60 && r.width < vw * 0.9 && r.height >= 20 && r.height <= 400 && (el.innerText || "").trim() && shown(el)) {
+        items.push({ kind: "box", bg: shade, text: (el.innerText || "").trim().slice(0, 40), region: region(el), ...box(el) });
+        els.push(el);
+      }
     }
     if (item) {
       // (fall through to the shared push below)

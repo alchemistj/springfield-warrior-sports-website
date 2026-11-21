@@ -49,7 +49,7 @@
           "kind": "photo"
         },
         {
-          "file": "media/2025-12-SpringField-indoor-obstacle.webp",
+          "file": "media/2025-12-SpringField-indoor-obstacle.pair.webp",
           "alt": "SpringField-indoor-obstacle",
           "kind": "photo"
         }
@@ -414,12 +414,12 @@
           "kind": "photo"
         },
         {
-          "file": "media/2023-03-pizza-birthday-party.webp",
+          "file": "media/2023-03-pizza-birthday-party.pair.webp",
           "alt": "",
           "kind": "photo"
         },
         {
-          "file": "media/2023-03-laser-tag-party.webp",
+          "file": "media/2023-03-laser-tag-party.pair.webp",
           "alt": "",
           "kind": "photo"
         }
@@ -573,7 +573,7 @@
       "slug": "schedule-birthday-party",
       "path": "/schedule-birthday-party/",
       "title": "Schedule Birthday Parties at Warrior Sports",
-      "description": "Our incredible Summer Camps in Springfield, MO are packed with fun and educational activities for 6-14-year-old kids.",
+      "description": "Book a kids’ birthday party at Springfield Warrior Sports in Springfield, MO. Pick your date and send the form, and we’ll take it from there.",
       "h1": "Book a Birthday Party",
       "h1FromSource": false,
       "index": false,
@@ -658,27 +658,27 @@
           "kind": "photo"
         },
         {
-          "file": "media/2023-03-pre-shool-warriors.webp",
+          "file": "media/2023-03-pre-shool-warriors.pair.webp",
           "alt": "",
           "kind": "photo"
         },
         {
-          "file": "media/2023-03-junior-warriors.webp",
+          "file": "media/2023-03-junior-warriors.pair.webp",
           "alt": "",
           "kind": "photo"
         },
         {
-          "file": "media/2023-03-csna-comp.webp",
+          "file": "media/2023-03-csna-comp.pair.webp",
           "alt": "",
           "kind": "photo"
         },
         {
-          "file": "media/2023-04-parkour-7-yrs-old.webp",
+          "file": "media/2023-04-parkour-7-yrs-old.pair.webp",
           "alt": "",
           "kind": "photo"
         },
         {
-          "file": "media/2025-02-homeschool-kids-sports.webp",
+          "file": "media/2025-02-homeschool-kids-sports.pair.webp",
           "alt": "homeschool kids sports",
           "kind": "photo"
         },
@@ -1004,22 +1004,22 @@
       "heroAlt": "PARKOUR GYM IN SPRINGFIELD MO | SPRINGFIELD WARRIOR SPORTS",
       "images": [
         {
-          "file": "media/2023-04-Day1-029.webp",
+          "file": "media/2023-04-Day1-029.pair.webp",
           "alt": "",
           "kind": "photo"
         },
         {
-          "file": "media/2023-04--E2-80-8BStress-Relief.webp",
+          "file": "media/2023-04--E2-80-8BStress-Relief.pair.webp",
           "alt": "",
           "kind": "photo"
         },
         {
-          "file": "media/2023-04-wsre-shoots.webp",
+          "file": "media/2023-04-wsre-shoots.pair.webp",
           "alt": "",
           "kind": "photo"
         },
         {
-          "file": "media/2023-04--E2-80-8BMore-Than-Just-Physical.webp",
+          "file": "media/2023-04--E2-80-8BMore-Than-Just-Physical.pair.webp",
           "alt": "",
           "kind": "photo"
         }
@@ -1170,7 +1170,7 @@
           "kind": "photo"
         },
         {
-          "file": "media/2023-03-improve-confidence.webp",
+          "file": "media/2023-03-improve-confidence.pair.webp",
           "alt": "",
           "kind": "photo"
         }
@@ -1331,7 +1331,7 @@
       "heroAlt": "PERSONAL TRAINING AT WARRIOR SPORTS",
       "images": [
         {
-          "file": "media/2025-08-Warrior-Sports-Personal-Training.webp",
+          "file": "media/2025-08-Warrior-Sports-Personal-Training.pair.webp",
           "alt": "",
           "kind": "photo"
         },
@@ -1665,7 +1665,7 @@
       "index": true,
       "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
       "photoHero": true,
-      "heroFile": "media/2023-03-spring-break.webp",
+      "heroFile": "media/2023-03-spring-break.pair.webp",
       "heroAlt": "KIDS STAY FIT AND HEALTHY AT OUR INCREDIBLE SUMMER CAMPS",
       "images": [],
       "logos": [
@@ -2107,7 +2107,7 @@
       "index": true,
       "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
       "photoHero": true,
-      "heroFile": "media/2023-11-Nerf-war-party.webp",
+      "heroFile": "media/2023-11-Nerf-war-party.pair.webp",
       "heroAlt": "NERF WAR SPRINGFIELD, MO: THE ULTIMATE PARTY EXPERIENCE!",
       "images": [
         {
@@ -2219,7 +2219,7 @@
       "index": true,
       "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
       "photoHero": true,
-      "heroFile": "media/2023-03-laser-tag-party.webp",
+      "heroFile": "media/2023-03-laser-tag-party.pair.webp",
       "heroAlt": "WELCOME TO THE PREMIER LASER TAG GYM IN SPRINGFIELD, MO",
       "images": [
         {
@@ -2351,12 +2351,12 @@
       "heroAlt": "SPRINGFIELD WARRIOR SPORTS COMMUNITY",
       "images": [
         {
-          "file": "media/2023-03-Clean-up-days.webp",
+          "file": "media/2023-03-Clean-up-days.pair.webp",
           "alt": "",
           "kind": "photo"
         },
         {
-          "file": "media/2023-03-Big-Brothers.webp",
+          "file": "media/2023-03-Big-Brothers.pair.webp",
           "alt": "",
           "kind": "photo"
         },
@@ -2391,7 +2391,7 @@
           "kind": "photo"
         },
         {
-          "file": "media/2023-03-Community-Murph.webp",
+          "file": "media/2023-03-Community-Murph.pair.webp",
           "alt": "",
           "kind": "photo"
         }
@@ -2403,7 +2403,7 @@
           "kind": "logo"
         },
         {
-          "file": "media/2023-03-Supplement-Superstore.webp",
+          "file": "media/2023-03-Supplement-Superstore.pair.webp",
           "alt": "",
           "kind": "logo"
         },

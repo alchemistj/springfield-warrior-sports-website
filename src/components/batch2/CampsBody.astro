@@ -9,7 +9,7 @@ interface Props {
   event: EventForm;
 }
 const { event } = Astro.props;
-const photo = media("media/2023-03-spring-break.webp");
+const photo = media("media/2023-03-spring-break.pair.webp");
 ---
 
 <section class="b2-block">
@@ -26,38 +26,36 @@ const photo = media("media/2023-03-spring-break.webp");
   <div class="b2-wrap camp-layout">
     <div class="camp-copy">
       <h2>Summer Camp Pricing</h2>
-      <p class="camp-price">A week of activities and snacks at Springfield Warrior Sports camps are $179, and we have discounts available for members and siblings.</p>
-      <p class="camp-price">(You’ll need to call <a href={site.phone.tel}>{site.phone.display}</a> and register over the phone in order to qualify for those discounts).</p>
-      <p class="camp-price">Note:</p>
-      <p class="camp-price">Summer camp investment monies can be pro-rated if your child can not attend the entire week.</p>
-      <p class="camp-price">Summer 2027 camp dates will be posted in the spring. Get notified below or call <a href={site.phone.tel}>{site.phone.display}</a>.</p>
+      <p class="camp-price">A week of activities and snacks at Springfield Warrior Sports camps costs $179 per child.</p>
+      <p class="camp-price">We offer discounts for members and siblings. They apply once registration opens, and they may not be combined.</p>
+      <p class="camp-price">Summer 2027 camp dates have not been set yet. They will be posted in the spring, so sign up below to get notified, or call <a href={site.phone.tel}>{site.phone.display}</a> with questions.</p>
+      <p class="camp-price">If your child can’t attend the entire week, camp fees can be pro-rated.</p>
     </div>
     <div class="camp-photo-frame">
       {photo.src && <img class="camp-photo" src={photo.src} alt="" width={photo.width} height={photo.height} />}
     </div>
   </div>
   <div class="b2-wrap">
-    <h2 class="camp-reg-title">Springfield Warrior Registration</h2>
-    <p class="camp-reg">At our Springfield Warrior Sports camps, your kids won’t just have fun; they'll become physically stronger, learn life-long nutrition habits, and improve their coordination skills — all while making new friends!</p>
+    <h2 class="camp-reg-title">What Kids Get at Camp</h2>
+    <p class="camp-reg">At our Springfield Warrior Sports camps, your kids won’t just have fun; they’ll become physically stronger, learn life-long nutrition habits, and improve their coordination skills, all while making new friends!</p>
   </div>
 </section>
+
+<ReviewBand
+  title="Client Testimonials"
+  sub="What Our Clients Say"
+  text="My daughter started training here 3 years ago at 8, and she still loves it!! Owner and coaching staff are all super encouraging. We live an hour away but make the drive twice a week as often as possible. Training here has not only helped her get stronger physically but increased her confidence in general. Anything that makes kids want to challenge themselves to get better and better is worth it!"
+  by="- Lee C."
+/>
 
 <section class="b2-block">
   <div class="b2-wrap camp-form">
     <h2 class="b2-form-title">Get notified when dates are set</h2>
-    <p class="camp-cost">Cost: $179 per child; member and sibling discounts available (may not be combined). For ages 6-15 years old.</p>
-    <p class="camp-call">Questions? Call <a href={site.phone.tel}>{site.phone.display}</a>. Members and siblings get discounts once registration opens.</p>
+    <p class="camp-call">Ages <span class="range">6-15</span>. Questions? Call <a href={site.phone.tel}>{site.phone.display}</a>.</p>
     <LeadForm event={event} note={'"*" indicates required fields'} />
   </div>
 </section>
 <ReviewBand
-  title="Client Testimonials"
-  sub="What Our Clients Say"
   text="We had our son’s 10th birthday here. All of the kids had a great time. They set up an obstacle course for the kids. They loved the whole experience. The favorite was the curved wall to run up. That was everyone’s challenge for the night. We will be visiting again for sure."
   by="- Jennifer L."
-/>
-<ReviewBand
-  continued
-  text="My daughter started training here 3 years ago at 8, and she still loves it!! Owner and coaching staff are all super encouraging. We live an hour away but make the drive twice a week as often as possible. Training here has not only helped her get stronger physically but increased her confidence in general. Anything that makes kids want to challenge themselves to get better and better is worth it!"
-  by="- Lee C."
 />

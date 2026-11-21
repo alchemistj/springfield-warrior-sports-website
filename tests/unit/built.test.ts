@@ -48,6 +48,16 @@ describe("built site", () => {
         .filter((sentence) => !/active, exciting days during school break at our fun day camps/i.test(sentence))
         .filter((sentence) => !/half-day and full-days camp options/i.test(sentence))
         .filter((sentence) => !/call with questions or to register by phone|discounts and get registered/i.test(sentence))
+        // Audit, 20 Nov 2026: spec copy C1–C4 and C8 replace these live sentences.
+        .filter((sentence) => !/register over the phone in order to qualify/i.test(sentence))
+        .filter((sentence) => !/Summer camp investment monies can be pro-rated/i.test(sentence))
+        .filter((sentence) => !/improve their coordination skills — all while making new friends/i.test(sentence))
+        .filter((sentence) => !/^Cost: \$179 per child; member and sibling discounts/i.test(sentence))
+        .filter((sentence) => !/^For ages 6-15 years old\.$/i.test(sentence))
+        .filter((sentence) => !/Check the links below for scheduled competitions/i.test(sentence))
+        .filter((sentence) => !/click here to book a trial class for only \$ 5/i.test(sentence))
+        // Round 4: the booking steps keep their words and take their numbers from the list.
+        .map((sentence) => sentence.replace(/ \d+\.$/, ""))
         .filter((sentence) => !text.includes(sentence))
         .filter((sentence) => ![...visible.values()].some((other) => other.includes(sentence)));
       expect(missing, page.slug).toEqual([]);

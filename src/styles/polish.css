@@ -1,10 +1,233 @@
+/* Former batch-c.css. Folded into polish.css so one file loads last. */
+
+/* Buttons never clip. A short label stays on one line; a long one wraps
+   to centred lines instead of being cut off. */
+a.btn,
+button.btn,
+.b3-btn,
+.go,
+.b4-visit,
+.comp-btn,
+.b4-cta .go,
+.b4-cta .cta-phone,
+.final-cta a,
+.btn-line,
+[data-add] {
+  height: auto !important;
+  max-width: 100%;
+  white-space: normal !important;
+  line-height: 1.25;
+  text-align: center;
+  overflow: visible;
+  box-sizing: border-box;
+}
+.b3-btn,
+.comp-btn {
+  min-height: 44px;
+}
+@media (max-width: 799px) {
+  .comp-btn {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-height: 0;
+    letter-spacing: 0.04em;
+    line-height: 1.3 !important;
+  }
+  .b3-btn { letter-spacing: 0.03em; }
+}
+
+/* 1. Summer camps form stays inside the 24px gutters. */
+@media (max-width: 799px) {
+  .page-summer-camps-in-springfield-mo .camp-form {
+    width: min(900px, calc(100% - 48px)) !important;
+    max-width: calc(100% - 48px) !important;
+    margin-inline: auto !important;
+  }
+  .page-summer-camps-in-springfield-mo .b2-form-title,
+  .page-summer-camps-in-springfield-mo .camp-cost,
+  .page-summer-camps-in-springfield-mo .camp-call {
+    width: auto !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  .page-summer-camps-in-springfield-mo .lead-form,
+  .page-summer-camps-in-springfield-mo .lead-form.camp {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  .page-summer-camps-in-springfield-mo .lead-form > *,
+  .page-summer-camps-in-springfield-mo .lead-form input,
+  .page-summer-camps-in-springfield-mo .lead-form select,
+  .page-summer-camps-in-springfield-mo .lead-form textarea,
+  .page-summer-camps-in-springfield-mo .lead-form .btn {
+    min-width: 0 !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
+  }
+  .page-summer-camps-in-springfield-mo .lead-form .btn {
+    width: 100% !important;
+    justify-self: stretch;
+    letter-spacing: 0.04em;
+    line-height: 1.3;
+  }
+}
+
+/* 3. Homeschool trial button shows its full label inside the card. */
+@media (min-width: 800px) {
+  .hs-card {
+    grid-template-columns: minmax(220px, 340px) minmax(320px, 1fr) !important;
+  }
+  .hs-card .copy { min-width: 0; }
+  .hs-card .b3-btn {
+    width: max-content !important;
+    max-width: 100% !important;
+    height: auto !important;
+    padding: 12px 22px !important;
+  }
+}
+
+/* 4. Meet the team title gutters, and the desktop title stays off faces. */
+@media (max-width: 799px) {
+  .b4-team-hero .m-title {
+    box-sizing: border-box;
+    width: min(900px, calc(100% - 48px));
+    margin-inline: auto;
+    padding-inline: 0;
+  }
+}
+/* 5. Booking page: room under the header, and a gap above Submit. */
+.page-schedule-birthday-party .book-plain { padding-top: 40px; }
+.page-schedule-birthday-party .lead-form > .btn { margin-top: 20px !important; }
+
+/* 6. About partnership photos keep faces in frame on phones. */
+@media (max-width: 799px) {
+  .page-about .brothers img,
+  .page-about .row.text-left img {
+    aspect-ratio: 4 / 3 !important;
+    height: auto !important;
+    object-fit: cover !important;
+    object-position: center 12% !important;
+  }
+  .page-about .row.text-left img[alt="Supplement Superstore"] { object-position: center top !important; }
+}
+
+/* 7. Kids classes cards, gaps, and the space after the note. */
+.page-kids-classes .camp-card,
+.page-kids-classes .camp-card.bday {
+  min-height: 0 !important;
+  height: auto !important;
+  background-size: cover !important;
+  background-position: center 22% !important;
+}
+@media (min-width: 800px) {
+  .page-kids-classes .camps {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    justify-content: center;
+    width: 100% !important;
+  }
+}
+.page-kids-classes .camp-panel {
+  margin-top: 188px !important;
+}
+@media (max-width: 799px) {
+  .page-kids-classes .intro-block {
+    padding-top: 36px !important;
+  }
+  .page-kids-classes .fun-grid { margin-bottom: 28px !important; }
+  .page-kids-classes .forget-block,
+  .page-kids-classes .camp-block {
+    background-color: #e5eaed;
+    background-image: linear-gradient(#e5eaed, #e5eaed);
+  }
+}
+
+/* 8. Birthday stress heading uses a normal size, without the big gaps. */
+.page-birthday-parties .bd-intro { padding-bottom: 36px !important; }
+.page-birthday-parties .b2-block.b2-grey { padding-top: 28px !important; }
+.bd-stress-title {
+  margin: 0 auto 20px !important;
+  font-size: 32px !important;
+  line-height: 1.15 !important;
+}
+@media (min-width: 800px) {
+  .bd-stress-title { font-size: 40px !important; line-height: 1.15 !important; }
+}
+.page-birthday-parties img.flyer { margin-bottom: 24px !important; }
+
+/* 9. Contact map picture stays visible on phones. */
+@media (max-width: 799px) {
+  .page-contact .contact-map {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 280px;
+    margin-top: 24px !important;
+  }
+  .page-contact .contact-map .map-frame {
+    height: 320px !important;
+    min-height: 280px;
+  }
+  .page-contact .map-art {
+    display: block !important;
+    opacity: 1 !important;
+  }
+}
+
+/* 10. Headings and photos that were touching. */
+@media (max-width: 799px) {
+  .pt-intro { padding-top: 28px !important; }
+  .pt-intro img { margin-bottom: 24px !important; }
+  .page-best-gyms-in-springfield .b4-gym:first-of-type { margin-top: 28px !important; }
+}
+.page-personal-training .review-title { margin-bottom: 20px !important; }
+.nf-party h2 { margin-bottom: 28px !important; }
+.pk-more h2 { margin: 0 0 18px !important; }
+.pk-hero .pk-keep,
+.pk-hero .pk-long { white-space: nowrap; }
+@media (max-width: 799px) {
+  .pk-hero {
+    font-size: 27px !important;
+    line-height: 1.2 !important;
+  }
+}
+.camp-copy > h2:not(.camp-dates-title):not(:first-child) { margin-top: 40px !important; }
+.camp-reg-title { margin-top: 36px !important; }
+.page-about .about-page.story .pair { margin-bottom: 8px; }
+.page-about .about-page.story .row.photo-left { margin-top: 36px !important; }
+
+/* 11. Home bullet stack was shifted 6px past the screen. */
+@media (max-width: 799px) {
+  .bullet-stack {
+    transform: none !important;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding-inline: 16px;
+  }
+}
+
+/* Buttons that relied on a fixed height (best-gyms "Visit Website", team "Try Open Gym") keep a real button size
+   now that heights are auto: centred label, 44px minimum, padding. */
+.go,
+.b4-cta .go,
+.b4-visit {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 44px;
+}
+.b4-visit { width: auto !important; }
+
 /* Launch polish (18 Nov 2026). Imported last so these win. */
 
-/* No single word left alone on a last line. Headings are already balanced. */
-p, li, blockquote, figcaption, dd, dt, label { text-wrap: pretty; }
-
-/* One button style for the whole site: the same shape, type size, weight and red.
-   Navy stays the secondary colour, and the white phone pill stays the outline style. */
+/* Two button styles, same type. Primary is a filled red pill. Secondary is an outline pill. */
 a.btn,
 button.btn,
 .b3-btn,
@@ -12,15 +235,21 @@ button.btn,
 .call,
 .b4-visit,
 .comp-btn,
+.cb-btn,
 .b4-cta .go,
 .b4-cta .cta-phone,
 .final-cta a {
   display: inline-flex !important;
   align-items: center;
   justify-content: center;
+  box-sizing: border-box;
   gap: 8px;
+  width: auto !important;
+  max-width: 100%;
+  height: auto !important;
   min-height: 48px;
   padding: 12px 28px !important;
+  border: 0 !important;
   border-radius: 999px !important;
   font-family: var(--font-heading) !important;
   font-size: 15px !important;
@@ -29,46 +258,52 @@ button.btn,
   text-transform: uppercase !important;
   line-height: 1.25 !important;
   text-align: center;
+  text-decoration: none !important;
   text-wrap: balance;
+  white-space: normal !important;
 }
-a.btn:not(.navy):not(.btn-line),
+a.btn:not(.warrior-phone):not(.btn-secondary),
 button.btn,
-.b3-btn:not(.navy),
+.b3-btn:not(.btn-secondary),
 .go,
+.comp-btn,
+.cb-primary,
 .b4-cta .go,
-.comp-btn {
-  background-color: var(--color-ws-red) !important;
+.final-cta .go {
+  background-color: #d6352f !important;
   color: #fff !important;
+  box-shadow: none !important;
 }
-a.btn.navy,
-.b3-btn.navy,
-.b4-visit {
-  background-color: var(--color-ws-blue-dark) !important;
+a.btn.warrior-phone,
+a.btn.btn-secondary,
+a.call,
+.b4-visit,
+.cb-secondary,
+.b4-cta .cta-phone,
+.final-cta .call,
+.b3-btn.navy {
+  background-color: transparent !important;
+  color: #285276 !important;
+  box-shadow: inset 0 0 0 2px #285276 !important;
+}
+.bd-close a.btn.btn-secondary,
+.final-cta a.call,
+.b3-band a.btn.btn-secondary,
+.b3-band a.b3-btn.navy,
+.b3-band a.call,
+.b4-cta a.cta-phone {
   color: #fff !important;
-}
-@media (max-width: 799px) {
-  a.btn,
-  button.btn,
-  .b3-btn,
-  .go,
-  .call,
-  .b4-visit,
-  .comp-btn,
-  .b4-cta .go,
-  .b4-cta .cta-phone,
-  .final-cta a {
-    font-size: 14px !important;
-    padding: 12px 22px !important;
-  }
+  box-shadow: inset 0 0 0 2px #fff !important;
+  background-color: transparent !important;
 }
 
 /* Phone numbers never break across two lines. */
 a[href^="tel:"] { white-space: nowrap; }
 
-/* Reviewer names: one style on every page (some were typed in capitals, some not). */
+/* Reviewer names keep the typed case. One hyphen form, no CSS uppercase. */
 .review-by, .t-by, .b2-qn, .q-by, .pt-quotes .by {
-  text-transform: uppercase;
-  letter-spacing: 0.02em;
+  text-transform: none !important;
+  letter-spacing: 0;
 }
 
 /* Red hero headings stay readable on busy photos. */
@@ -106,11 +341,11 @@ a[href^="tel:"] { white-space: nowrap; }
 @media (min-width: 641px) {
   .offer-card img { contain: size; aspect-ratio: auto !important; height: 100% !important; min-height: 220px !important; }
 }
-/* Home: the phone button is the white outline style used everywhere else. */
+/* Home: the phone button is the navy outline style. */
 .warrior-actions a.btn.warrior-phone {
-  background-color: #fff !important;
-  color: var(--color-ws-blue-dark) !important;
-  box-shadow: inset 0 0 0 2px var(--color-ws-blue-dark);
+  background-color: transparent !important;
+  color: #285276 !important;
+  box-shadow: inset 0 0 0 2px #285276 !important;
 }
 .warrior-actions { flex-direction: row !important; flex-wrap: wrap; gap: 12px !important; align-items: center; }
 .warrior-actions .btn { width: auto !important; }
@@ -134,9 +369,12 @@ a[href^="tel:"] { white-space: nowrap; }
 /* Birthday: smaller gap between the options intro and the pizza section. */
 .page-birthday-parties .bd-pizza { margin-top: 64px !important; }
 
-/* Competitions (phone): no white strip above the hero, normal paragraph spacing. */
+/* Competitions (phone): hero starts at the header, one even overlay, intro padding matches WNL. */
 @media (max-width: 799px) {
+  .page-competitions .atf-photo { top: var(--header-h) !important; }
   .page-competitions .hero-copy { margin-top: 0 !important; }
+  .page-competitions .hero-scrim { background: rgba(0, 0, 0, 0.6) !important; }
+  .page-competitions .b2-block:not(.b2-ice) .comp-intro { padding-top: 80px !important; }
   .page-competitions .comp-intro p, .page-competitions .comp-soon { line-height: 1.6 !important; }
 }
 
@@ -151,10 +389,10 @@ a[href^="tel:"] { white-space: nowrap; }
 .hs-facts li { line-height: 1.5 !important; margin-bottom: 8px; }
 .hs-book h4 { line-height: 1.45 !important; }
 
-/* Kids: the two "Don't forget" cards are equal and their buttons line up; button labels stay on one line. */
+/* Kids: the two "Don't forget" cards are equal and their buttons line up. Labels may wrap. */
 .page-kids-classes .camp-panel { flex: 1 1 auto !important; }
 .page-kids-classes .camp-panel .btn-center { margin-top: auto !important; padding-top: 16px; }
-.page-kids-classes .btn.camp { white-space: nowrap !important; }
+.page-kids-classes .btn.camp { white-space: normal !important; }
 
 /* Team: no white strip under the hero; a little air above "No experience required"; one button icon style. */
 .b4 { padding-top: 40px !important; }
@@ -185,3 +423,694 @@ a[href^="tel:"] { white-space: nowrap; }
 
 /* Laser tag / Nerf nights: body text used 1px letter spacing, unlike every other paragraph on the site. */
 .night-copy h4, .night-copy p { letter-spacing: 0 !important; }
+
+/* Photo pairs: equal tops, the photo column matches the text, faces stay in frame. Phones are 4:3. */
+@media (min-width: 800px) {
+  .b3-split,
+  .bd-split,
+  .pk-row,
+  .camp-layout,
+  .wnl-top,
+  .bd-mem-grid,
+  .warrior-grid,
+  .row {
+    align-items: stretch !important;
+  }
+  .b3-split > img,
+  .bd-split > img,
+  .pk-row > img,
+  .camp-layout img,
+  .page-summer-camps-in-springfield-mo .camp-photo,
+  .wnl-top > img,
+  .bd-mem-grid > img,
+  .warrior-photo,
+  .home-ready-photos img,
+  .row > img,
+  .page-kids-classes img.face,
+  .page-birthday-parties .bd-laser,
+  .page-about .row > img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+  }
+  .home-ready-grid { align-items: stretch !important; }
+  .home-ready-photos { height: 100%; }
+  .page-kids-classes .csna-block img { object-position: center 20% !important; }
+  .lt-night img { object-position: center 72% !important; }
+}
+@media (max-width: 799px) {
+  .b3-split > img,
+  .bd-split > img,
+  .pk-row > img,
+  .nf-night img,
+  .row > img,
+  .bd-mem-photo,
+  .page-kids-classes img.face,
+  .page-birthday-parties .bd-laser,
+  .home-ready-photos img,
+  .page-about .row > img {
+    width: 100% !important;
+    aspect-ratio: 4 / 3 !important;
+    height: auto !important;
+    object-fit: cover !important;
+    object-position: center 28% !important;
+  }
+  .lt-night img {
+    width: 100% !important;
+    aspect-ratio: 4 / 3 !important;
+    height: auto !important;
+    object-fit: cover !important;
+  }
+  .page-kids-classes .row.text-first,
+  .page-kids-classes .row.img-first {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .page-kids-classes .row > img { order: 2 !important; }
+  .page-kids-classes .row > .copy { order: 1 !important; }
+  .lt-night img { object-position: center 72% !important; }
+  .lt-night .b3-split img,
+  .nf-night .b3-split img { order: 2; }
+  .lt-night h2,
+  .nf-night h2 { margin-bottom: 20px; }
+}
+
+/* Home programs strip stays short on a phone. */
+@media (max-width: 799px) {
+  .bullet-stack {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    gap: 4px 12px !important;
+    padding: 10px 12px !important;
+  }
+  .bullet-stack a,
+  .bullet-stack span { line-height: 1.3 !important; }
+}
+
+/* Birthday flyer crops to the text column. H2s share the heavy style. Policy is body copy. */
+.page-birthday-parties img.flyer {
+  width: 100% !important;
+  height: auto !important;
+  max-height: none !important;
+  aspect-ratio: auto !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+  align-self: start;
+}
+.page-birthday-parties .bd-hero-title {
+  text-transform: none !important;
+  color: #fff;
+  font-size: clamp(32px, 4.6vw, 56px);
+  line-height: 1.12;
+  width: min(16em, 100%);
+  margin-inline: auto;
+}
+.page-birthday-parties .bd-sub {
+  text-align: center !important;
+  width: min(18em, 100%) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+.page-birthday-parties .bd-intro h2,
+.page-birthday-parties .bd-stress-title,
+.page-birthday-parties .bd-more,
+.page-birthday-parties .bd-mem h2,
+.page-birthday-parties .bd-book h2,
+.page-birthday-parties .bd-close h2 {
+  font-family: Heebo, "Arial Narrow", sans-serif !important;
+  font-weight: 900 !important;
+  font-size: 40px !important;
+  line-height: 1.15 !important;
+  text-transform: uppercase !important;
+}
+.page-birthday-parties .bd-intro h2,
+.page-birthday-parties .bd-stress-title,
+.page-birthday-parties .bd-more,
+.page-birthday-parties .bd-mem h2 {
+  color: #d6352f !important;
+}
+.page-birthday-parties .bd-book h2,
+.page-birthday-parties .bd-close h2 {
+  color: #fff !important;
+}
+.page-birthday-parties .b2-fact,
+.page-birthday-parties .b2-fact-wide {
+  margin-top: 16px !important;
+}
+.page-birthday-parties .bd-pizza h3 {
+  width: auto;
+  max-width: 100%;
+  text-transform: none;
+  color: #285276;
+}
+.page-birthday-parties .bd-battles h3,
+.page-birthday-parties .bd-split h3 {
+  color: #285276;
+}
+.page-birthday-parties .bd-policy {
+  margin: 16px auto 0;
+  max-width: 62ch;
+  color: #fff;
+  font-family: Muli, "Segoe UI", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.page-birthday-parties .bd-policy strong { font-weight: 700; }
+main :where(a:not(.btn):not(.b3-btn):not(.go):not(.comp-btn):not(.cta-phone):not(.call):not(.b4-visit)) {
+  color: #d6352f !important;
+  font-weight: 600 !important;
+  text-decoration: underline !important;
+  text-underline-offset: 2px;
+}
+.bd-book a,
+.bd-close a:not(.btn),
+.b3-band a:not(.b3-btn):not(.btn),
+.final-cta a:not(.btn):not(.go):not(.call),
+.fun a:not(.btn),
+.persevere a,
+.hs-book a:not(.b3-btn):not(.btn) {
+  color: #fff !important;
+  font-weight: 600 !important;
+  text-decoration: underline !important;
+  text-underline-offset: 2px;
+}
+.page-birthday-parties .atf-photo { object-position: center 30%; }
+
+/* Fitness heading is real title case. Benefit cards are article copy. */
+.page-fitness-classes .fit-kicker { text-transform: none !important; font-weight: 800; }
+.page-fitness-classes .fit-cards article { border: 0 !important; background: none !important; }
+
+/* Nerf price is body emphasis. Included lines match paragraphs. */
+.page-nerf-wars .cost { color: inherit !important; font-weight: 400 !important; }
+.page-nerf-wars .nf-party .b3-facts .strong { font-weight: 400; color: inherit; }
+
+/* Laser note matches body copy. The closing line uses the normal H3 weight. */
+.page-laser-tag .night-copy .note { color: rgba(0, 0, 0, 0.7) !important; font-weight: 400; }
+.page-laser-tag .lt-book h3 { font-weight: 900 !important; }
+
+/* Personal training form heading stays readable on the photo. */
+.page-personal-training .pt-form { position: relative; }
+.page-personal-training .pt-form::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+.page-personal-training .pt-form .b3-wrap { position: relative; z-index: 1; }
+.page-personal-training .pt-form h2,
+.page-personal-training .pt-form h4,
+.page-personal-training .pt-form .pt-line { color: #fff !important; }
+
+/* Contact heading contrast, and the map can match the form. */
+.page-contact .hero-scrim { background: rgba(0, 0, 0, 0.55) !important; }
+.page-contact .hero-copy h1 { text-shadow: 0 2px 14px rgba(0, 0, 0, 0.7); }
+
+/* Confirmation links share one red. */
+.b4-thanks a,
+.b4-thanks a.red,
+.b4-thanks a.blue,
+.b4-thanks .pay { color: #d6352f !important; }
+
+/* Parkour heading stays readable on the photo. Prices sit on their own lines. */
+.page-parkour .hero-scrim { background: rgba(0, 0, 0, 0.5) !important; }
+.page-parkour .pk-hero { text-shadow: 0 2px 14px rgba(0, 0, 0, 0.7); text-transform: none !important; }
+.pk-pause p br { display: block; margin-top: 12px; }
+.pk-benefits p { margin-bottom: 16px; }
+
+/* Homeschool card paragraphs sit closer together. Closing copy matches other bands. */
+.hs-card .hs-blurb p + p { margin-top: 12px !important; }
+.hs-book p {
+  color: #fff;
+  font-family: Muli, "Segoe UI", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 12px auto;
+  max-width: 68ch;
+}
+.hs-book .b3-btn { margin-top: 16px; }
+
+/* About: no white band between the navy perseverance band and the grey story. */
+.page-about .about-page.story { padding-top: 0 !important; margin-top: 0 !important; }
+@media (max-width: 799px) {
+  .page-about .intro-block { padding-top: 28px !important; }
+  .page-about .intro-block > .mist { margin-top: 28px !important; padding-top: 24px !important; padding-bottom: 0 !important; }
+  .page-about .row.photo-left.mist { margin-bottom: 0 !important; }
+  .page-about .row.cleanup { margin-top: 28px !important; margin-bottom: 0 !important; }
+  .page-about .intro-block > .wash { margin-top: 0 !important; padding-top: 28px !important; }
+}
+
+/* Kids gallery fills the column on a phone. Less empty space under the test-week note. */
+@media (max-width: 799px) {
+  .page-kids-classes .fun-grid {
+    grid-template-columns: 1fr 1fr !important;
+    width: 100% !important;
+  }
+  .page-kids-classes .fun-grid img { width: 100% !important; height: auto !important; aspect-ratio: 1; }
+  .page-kids-classes .intro-block { padding-bottom: 48px !important; }
+}
+
+/* Booking steps and form line up with the heading. */
+.page-schedule-birthday-party .book-steps { margin-top: 20px !important; }
+.page-schedule-birthday-party .book-steps li + li { margin-top: 12px; }
+.page-schedule-birthday-party .lead-form { width: min(720px, 100%) !important; max-width: 720px; margin-left: 0 !important; }
+.page-schedule-birthday-party .lead-form.panel { gap: 16px !important; }
+
+/* Competitions waitlist block stays centred, banner at one width. */
+.page-competitions .comp-intro,
+.page-wnl-competitions .wnl-form,
+.page-competitions .b2-ice .comp-intro { text-align: center; }
+.comp-banner,
+.comp-banner-soon { margin-left: auto !important; margin-right: auto !important; }
+
+/* Team photos fill the bio height. The H1 stays in the reading column. */
+@media (min-width: 800px) {
+  .b4-person {
+    display: grid;
+    grid-template-columns: 280px minmax(0, 1fr);
+    column-gap: 28px;
+    align-items: stretch;
+    width: min(900px, calc(100% - 32px));
+  }
+  .b4-shot.desk {
+    grid-column: 1;
+    grid-row: 1 / span 3;
+    float: none;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    object-fit: cover;
+    object-position: center 18%;
+  }
+  .b4-person h2 { grid-column: 2; grid-row: 1; margin-top: 0; }
+  .b4-person h3 { grid-column: 2; grid-row: 2; }
+  .b4-person .bio { grid-column: 2; grid-row: 3; }
+}
+.b4-team-hero .col { width: min(900px, calc(100% - 32px)); }
+@media (max-width: 799px) {
+  .b4-team-hero h1 {
+    display: block !important;
+    width: min(900px, calc(100% - 32px));
+    margin: 0 auto 16px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1.15;
+  }
+  .b4-team-hero .m-title { display: none !important; }
+}
+
+/* Camp form note is not part of the sentence above it. */
+.camp-form .form-note { margin-top: 20px; }
+
+/* Ranges stay on one line. */
+.range { white-space: nowrap !important; }
+
+/* Body paragraphs keep a gap. The last one in its group does not. */
+@media (max-width: 799px) {
+  .page-birthday-parties .bd-split p:not(.b2-fact),
+  .page-birthday-parties .bd-battles p:not(.b2-fact),
+  .page-nerf-wars .nf-party .b3-split p,
+  .page-laser-tag .lt-party .b3-split p {
+    margin-bottom: 16px !important;
+  }
+  .page-birthday-parties .bd-split p:last-child,
+  .page-birthday-parties .bd-battles div > p:last-of-type,
+  .page-nerf-wars .nf-party .b3-split > div > p:last-of-type,
+  .page-laser-tag .lt-party .b3-split > div > p:last-of-type {
+    margin-bottom: 0 !important;
+  }
+}
+.night-copy > p { margin: 0 0 16px !important; }
+.night-copy > p:last-child { margin-bottom: 0 !important; }
+
+/* Heading space stays inside the section so it does not open a white strip above it. */
+.bd-options { padding-top: 100px; }
+.bd-more { margin-top: 0 !important; }
+@media (max-width: 799px) {
+  .bd-options { padding-top: 44px; }
+}
+.page-best-gyms-in-springfield .b4-gym:last-of-type { margin-bottom: 0 !important; }
+
+/* Round 4. These follow every earlier sheet, including the folded batch-c rules. */
+
+@media (min-width: 1024px) {
+  .lt-night .b3-split > img {
+    min-height: 0 !important;
+    height: 100% !important;
+    max-height: 100% !important;
+    align-self: stretch;
+    object-fit: cover !important;
+    object-position: center 72% !important;
+  }
+  .lt-night .night-copy { padding-bottom: 0; }
+  .lt-night .lead-form { margin-bottom: 0 !important; padding-bottom: 0 !important; }
+  .lt-night .lead-form > .btn { margin-bottom: 0 !important; }
+  .lt-night .form-status:not([data-kind]) { display: none !important; }
+}
+
+.page-kids-classes .row > img {
+  width: 100% !important;
+  height: auto !important;
+  max-height: none !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+  align-self: start;
+}
+.page-personal-training .b3-split > img,
+.page-personal-training .pt-cards img,
+.page-personal-training .pt-trainers img {
+  width: 100% !important;
+  height: auto !important;
+  max-height: none !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+  align-self: start;
+}
+@media (max-width: 799px) {
+  .page-summer-camps-in-springfield-mo .camp-photo-frame {
+    position: relative !important;
+    width: 100% !important;
+    aspect-ratio: 4 / 3 !important;
+    height: auto !important;
+    overflow: hidden !important;
+  }
+  .page-summer-camps-in-springfield-mo .camp-photo {
+    position: absolute !important;
+    inset: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    max-height: none !important;
+    aspect-ratio: auto !important;
+    object-fit: cover !important;
+    object-position: center 32% !important;
+  }
+}
+
+@media (min-width: 600px) {
+  .warrior-actions {
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    gap: 12px !important;
+  }
+  .warrior-actions .btn { width: auto !important; flex: 0 0 auto; }
+}
+@media (max-width: 599px) {
+  .warrior-actions { flex-direction: column !important; align-items: stretch; }
+  .warrior-actions .btn { width: 100% !important; }
+}
+
+.pk-pause p br { display: block !important; margin-top: 16px !important; }
+.pk-more .b3-split p { margin: 0 0 16px !important; }
+.pk-more .b3-split p:last-child { margin-bottom: 0 !important; }
+
+.page-birthday-parties .bd-split p:not(.b2-fact) {
+  margin-top: 0 !important;
+  margin-bottom: 16px !important;
+}
+.page-about .lead + .lead { margin-top: 16px !important; margin-bottom: 0 !important; }
+.page-birthday-parties .bd-split .b2-fact { margin-top: 16px !important; }
+
+@media (min-width: 800px) {
+  .page-birthday-parties .bd-pizza {
+    grid-template-columns: minmax(220px, 0.7fr) minmax(0, 1.3fr) !important;
+  }
+  .page-birthday-parties .bd-pizza h3 {
+    font-size: 30px !important;
+    line-height: 1.15 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
+
+.page-schedule-birthday-party .book-steps { list-style: decimal !important; }
+@media (min-width: 800px) {
+  .page-schedule-birthday-party .lead-form,
+  .page-schedule-birthday-party .lead-form.panel {
+    width: min(720px, 100%) !important;
+    max-width: 720px !important;
+  }
+  .page-schedule-birthday-party .lead-form input:not([type="checkbox"]):not([type="radio"]),
+  .page-schedule-birthday-party .lead-form textarea,
+  .page-schedule-birthday-party .lead-form select {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
+
+.page-laser-tag .lt-night .note { display: block; margin-top: 16px !important; }
+.page-laser-tag .lt-party h2 { margin-bottom: 20px !important; }
+.page-laser-tag .lt-party .b3-split { margin-top: 20px !important; }
+
+.page-competitions .event-soon {
+  margin-top: 32px !important;
+  font-size: 40px !important;
+}
+.page-competitions .comp-intro .lead-form,
+.page-wnl-competitions .comp-intro .lead-form,
+.page-competitions .form-note,
+.page-wnl-competitions .form-note {
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+.page-competitions .lead-form .label,
+.page-competitions .lead-form legend,
+.page-competitions .lead-form label,
+.page-wnl-competitions .lead-form .label,
+.page-wnl-competitions .lead-form legend,
+.page-wnl-competitions .lead-form label,
+.page-competitions .form-note,
+.page-wnl-competitions .form-note {
+  text-align: center !important;
+}
+.page-competitions .lead-form > .btn,
+.page-wnl-competitions .lead-form > .btn {
+  justify-self: center !important;
+  margin-inline: auto !important;
+}
+.page-wnl-competitions .lead-form > .btn { margin-top: 19px; }
+@media (max-width: 799px) {
+  .page-competitions .event-soon { font-size: 32px !important; margin-top: 24px !important; }
+  .page-competitions .b2-block:first-of-type { padding-top: 0 !important; margin-top: 0 !important; }
+  .page-competitions .b2-block:first-of-type .comp-intro { padding-top: 24px !important; }
+  .camp-intro p,
+  .camp-copy,
+  .camp-copy > h2,
+  .night-copy,
+  .night-copy h2,
+  .night-copy p,
+  .page-about .lead,
+  .page-about .copy,
+  .page-about .copy h2,
+  .page-about .copy p,
+  .page-about .p18,
+  .b3.pt-why h2,
+  .b2-form-title,
+  .comp-banner {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+  }
+}
+
+@media (max-width: 1023px) {
+  .b4-team-hero { justify-content: center !important; padding-right: 0 !important; }
+  .b4-team-hero .col { justify-content: center !important; }
+  .b4-team-hero h1 {
+    width: min(16em, 100%) !important;
+    max-width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center !important;
+  }
+}
+@media (min-width: 1024px) {
+  .b4-team-hero { justify-content: flex-start !important; padding-right: 0 !important; }
+  .b4-team-hero .col {
+    justify-content: flex-end !important;
+    width: min(900px, calc(100% - 48px)) !important;
+    max-width: 900px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .b4-team-hero h1 {
+    width: max-content !important;
+    max-width: 420px !important;
+    margin-left: auto !important;
+    margin-right: 0 !important;
+    text-align: right !important;
+  }
+}
+@media (min-width: 800px) {
+  .page-meet-the-team .b4-person .b4-shot.desk {
+    height: 100% !important;
+    min-height: 100% !important;
+    object-fit: cover !important;
+    object-position: center 12% !important;
+  }
+}
+
+.b4-thanks a,
+.b4-thanks .thanks-copy {
+  overflow-wrap: anywhere !important;
+  word-break: break-word;
+}
+.b4-thanks .thanks-copy { min-width: 0; max-width: 100%; }
+
+/* Round 5. */
+@media (max-width: 799px) {
+  .page-summer-camps-in-springfield-mo .camp-intro { padding-bottom: 28px !important; }
+}
+.lt-night h2 { margin-bottom: 20px !important; }
+.pk-pause p + p { margin-top: 16px !important; }
+.b4-cta p + p:not(.note) { margin-top: 16px !important; }
+.b3 .pk-note h3,
+.b3 .pk-row h3,
+.b3.lt-party h3,
+.b3.nf-party h3,
+.page-birthday-parties .bd-battles h3.bd-kind {
+  width: fit-content;
+  max-width: 100%;
+  color: rgb(40, 82, 118);
+  font-family: Heebo, "Arial Narrow", sans-serif;
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 30px;
+  text-align: left;
+}
+.b3 .pk-note h3 { margin-inline: auto; text-align: center; }
+.b3 .pk-row h3 + p,
+.b3 .pk-row p + h3 { margin-top: 16px; }
+.b3.lt-party h3,
+.b3.nf-party h3 { margin: 20px 0 12px; }
+.b3 .pt-cards h3,
+.b3 .pt-trainers h3 {
+  width: 100%;
+  max-width: 100%;
+  margin: 20px auto 0;
+  color: rgb(40, 82, 118);
+  font-family: Heebo, "Arial Narrow", sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 24px;
+  text-align: center;
+}
+.b3.pt-form .pt-line {
+  width: fit-content;
+  max-width: 100%;
+  margin: 18px auto 0;
+  color: #fff;
+  font-family: Epilogue, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 29px;
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  .b3 .pt-cards h3 { width: min(313px, 100%); }
+  .b3.pt-form .pt-line { font-size: 22px; line-height: 35px; }
+  .b3 .pk-row h3 { max-width: 400px; }
+}
+
+/* Round 6. */
+@media (min-width: 1024px) {
+  .page-kids-classes .row.img-first,
+  .page-kids-classes .row.img-first.wide-photo,
+  .page-kids-classes .row.text-first {
+    display: flow-root !important;
+    grid-template-columns: none !important;
+  }
+  .page-kids-classes .row > .copy {
+    display: block !important;
+    overflow: visible !important;
+    min-width: 0;
+  }
+  .page-kids-classes .row.img-first > img,
+  .page-kids-classes .row.img-first.wide-photo > img {
+    float: left;
+    width: min(520px, 54%) !important;
+    height: auto !important;
+    max-height: none !important;
+    aspect-ratio: auto !important;
+    object-fit: contain !important;
+    object-position: center center !important;
+    margin: 0 28px 12px 0;
+  }
+  .page-kids-classes .row.text-first > img {
+    float: right;
+    width: min(520px, 54%) !important;
+    height: auto !important;
+    max-height: none !important;
+    aspect-ratio: auto !important;
+    object-fit: contain !important;
+    object-position: center center !important;
+    margin: 0 0 12px 28px;
+  }
+  .page-kids-classes .wide-photo .copy > h3.h20,
+  .page-kids-classes .text-first .copy > h3.junior-times {
+    clear: both;
+  }
+}
+.page-birthday-parties .bd-battles p:not(.b2-fact) {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 0 16px !important;
+  margin-inline: 0 !important;
+  padding: 0 !important;
+  text-indent: 0 !important;
+}
+.page-birthday-parties .bd-battles div > p:last-of-type { margin-bottom: 0 !important; }
+@media (max-width: 799px) {
+  .page-about .row.brothers,
+  .page-about .row.text-left {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .page-about .row.brothers > .copy,
+  .page-about .row.text-left > .copy { order: 1 !important; }
+  .page-about .row.brothers > img,
+  .page-about .row.text-left > img { order: 2 !important; }
+}
+@media (min-width: 800px) {
+  .page-birthday-parties .b2-grey .bd-split {
+    display: flow-root !important;
+    grid-template-columns: none !important;
+  }
+  .page-birthday-parties .b2-grey .bd-split > div {
+    display: block !important;
+  }
+  .page-birthday-parties .b2-grey .bd-split > img.flyer {
+    float: left;
+    width: 380px !important;
+    height: auto !important;
+    max-height: none !important;
+    object-fit: contain !important;
+    margin: 0 28px 12px 0;
+  }
+  .page-birthday-parties .b2-grey .bd-split > div > .b2-fact:nth-child(1 of .b2-fact) {
+    clear: left;
+  }
+}
+.page-wnl-competitions .wnl-top h2 { color: #d6352f !important; }
+.page-wnl-competitions .lead-form.panel { gap: 8px !important; }
+.page-wnl-competitions .lead-form .label,
+.page-wnl-competitions .lead-form > div > label {
+  margin: 0 0 4px !important;
+  line-height: 1.2;
+}
+.page-wnl-competitions .lead-form .sub { margin-top: 2px !important; line-height: 1.15; }
+.page-laser-tag .lt-party .b3-facts svg,
+.page-laser-tag .lt-cost svg {
+  width: 8px !important;
+  height: 8px !important;
+  max-height: 8px !important;
+  flex: 0 0 8px !important;
+  margin-top: 9px !important;
+  border-radius: 50%;
+  background: #d6352f;
+}
+.page-laser-tag .lt-party .b3-facts svg path,
+.page-laser-tag .lt-cost svg path { display: none; }

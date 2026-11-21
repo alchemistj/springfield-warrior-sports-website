@@ -22,9 +22,9 @@ type NodeRequest = {
   body?: unknown;
 } & Partial<AsyncIterable<Uint8Array | string>>;
 type NodeResponse = {
-  statusCode?: number;
-  setHeader?(name: string, value: string): unknown;
-  end?(body?: string): unknown;
+  statusCode: number;
+  setHeader(name: string, value: string): unknown;
+  end(body?: string): unknown;
 };
 
 function isNodeResponse(value: unknown): value is NodeResponse {
@@ -114,7 +114,7 @@ export default async function handler(
     vercelEnv: process.env.VERCEL_ENV,
   });
 
-  if (res && isNodeResponse(res)) {
+  if (isNodeResponse(res)) {
     res.statusCode = result.status;
     res.setHeader("Content-Type", result.contentType);
     res.setHeader("Cache-Control", "no-store");

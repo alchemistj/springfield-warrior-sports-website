@@ -54,6 +54,7 @@ export const quickNav = [
   { label: "Kid Classes", path: "/kids-classes/" },
   { label: "Adult Classes", path: "/fitness-classes/" },
   { label: "Birthday Parties", path: "/birthday-parties/" },
+  { label: "Personal Training", path: "/personal-training/" },
 ] as const;
 
 export const footerClasses = [

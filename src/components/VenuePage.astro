@@ -19,6 +19,7 @@ import PersonalBody from "./batch3/PersonalBody.astro";
 import Batch4Chrome from "./batch4/Batch4Chrome.astro";
 import GymsBody from "./batch4/GymsBody.astro";
 import TeamBody from "./batch4/TeamBody.astro";
+import ThanksBody from "./batch4/ThanksBody.astro";
 import HomeBody from "./HomeBody.astro";
 import KidsBody from "./KidsBody.astro";
 import LeadForm from "./LeadForm.astro";
@@ -232,11 +233,11 @@ const quoteBlocks = quoteAt >= 0 ? body.slice(quoteAt) : [];
 
 const FUN_FILES = [1, 2, 3, 4, 5, 6].map((n) => `media/2023-03-kid-classes-img0${n}.webp`);
 const KIDS_PHOTO: Record<string, string> = {
-  "pre-school": "media/2023-03-pre-shool-warriors.webp",
-  junior: "media/2023-03-junior-warriors.webp",
-  csna: "media/2023-03-csna-comp.webp",
-  parkour: "media/2023-04-parkour-7-yrs-old.webp",
-  homeschool: "media/2025-02-homeschool-kids-sports.webp",
+  "pre-school": "media/2023-03-pre-shool-warriors.pair.webp",
+  junior: "media/2023-03-junior-warriors.pair.webp",
+  csna: "media/2023-03-csna-comp.pair.webp",
+  parkour: "media/2023-04-parkour-7-yrs-old.pair.webp",
+  homeschool: "media/2025-02-homeschool-kids-sports.pair.webp",
 };
 const quoteIcon = media("media/2023-03-qoute-icon.webp");
 
@@ -332,7 +333,7 @@ function nextPhoto(): ContentImage | undefined {
     )
   }
   {
-    page.slug === "schedule-birthday-party" ? null : batch4 ? (
+    page.slug === "schedule-birthday-party" || THANKS.has(page.slug) ? null : batch4 ? (
       <div slot="hero" class="b4-hero">
         <Batch4Chrome slug={page.slug} />
       </div>
@@ -350,7 +351,7 @@ function nextPhoto(): ContentImage | undefined {
       )}
       {page.slug === "personal-training" && <h1 class="pt-hero">Personal Training at Warrior Sports</h1>}
       {page.slug === "parkour" && (
-        <h1 class="pk-hero"><span class="pk-keep">Parkour Gym in</span> <span class="pk-keep">Springfield MO |</span> <span class="pk-long">Springfield Warrior Sports</span></h1>
+        <h1 class="pk-hero">Parkour Gym in Springfield, MO</h1>
       )}
       {page.slug === "homeschool-sports-and-classes-springfield-mo" && <h1 class="hs-hero">Homeschool Kids Sports</h1>}
       {page.slug === "laser-tag" && (
@@ -367,9 +368,7 @@ function nextPhoto(): ContentImage | undefined {
       {page.slug === "contact" && <h1>{page.h1}</h1>}
       {page.slug === "birthday-parties" && (
         <>
-          <p class="bd-kicker">HIGH-ENERGY</p>
-          <p class="bd-title">KIDS' BIRTHDAY PARTIES</p>
-          <p class="bd-place">IN SPRINGFIELD, MO</p>
+          <h1 class="bd-hero-title">High-Energy Kids’ Birthday Parties in Springfield, MO</h1>
           <h3 class="bd-sub">Ninja Warrior Courses, Laser Tag, Nerf Battles, and More!</h3>
         </>
       )}
@@ -410,7 +409,7 @@ function nextPhoto(): ContentImage | undefined {
       <h1 class="sr-only">{page.h1}</h1>
     )
   }
-  {THANKS.has(page.slug) && <h1 class="sr-only">{page.h1}</h1>}
+  {THANKS.has(page.slug) && <ThanksBody slug={page.slug} />}
   {
     batch3 && !h1InHero && (h1InSection || h1InBody) && (
       <h1 class="sr-only">{page.h1}</h1>

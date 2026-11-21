@@ -8,7 +8,9 @@ const images = import.meta.glob("../assets/media/2023-03-SpringField-Warrior-Log
 }) as Record<string, { src: string; width: number; height: number } | string>;
 const logo = images["../assets/media/2023-03-SpringField-Warrior-Logo.webp"];
 const logoSrc = typeof logo === "string" ? logo : logo?.src;
-const hourLines = [...site.hours.map((row) => row.text), site.sundayNote, site.preschoolNote];
+const hourLines = [...site.hours.map((row) => row.text), site.sundayNote];
+const preschoolLabel = "Preschool hours:";
+const preschoolWhen = "Tuesday mornings from 9:30am-11:30am";
 ---
 
 <footer class="site-footer">
@@ -55,6 +57,7 @@ const hourLines = [...site.hours.map((row) => row.text), site.sundayNote, site.p
       <p><span class="lab">Hours</span></p>
       <ul class="hours">
         {hourLines.map((line) => <li>{line}</li>)}
+        <li class="preschool"><span class="pre-label">{preschoolLabel}</span> <span class="pre-when range">{preschoolWhen}</span></li>
       </ul>
       <p><span class="lab">Service area</span> {city.serviceArea.join(", ")}</p>
     </div>
@@ -120,7 +123,7 @@ const hourLines = [...site.hours.map((row) => row.text), site.sundayNote, site.p
     width: 32px;
     height: 32px;
     border-radius: 50%;
-    background: #db3a34;
+    background: #d6352f;
   }
   .soc svg { width: 16px; height: 16px; fill: #fff; }
   .foot-links, .hours {
@@ -129,6 +132,9 @@ const hourLines = [...site.hours.map((row) => row.text), site.sundayNote, site.p
     list-style: none;
   }
   .foot-links li, .hours li { margin: 0 0 6px; }
+  .hours li { white-space: nowrap; }
+  .preschool { white-space: normal; }
+  .pre-when { white-space: nowrap; }
   .pages { margin-top: 4px; }
   .copy-bar {
     background: #000;
@@ -144,12 +150,15 @@ const hourLines = [...site.hours.map((row) => row.text), site.sundayNote, site.p
   }
   @media (min-width: 900px) {
     .foot {
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-      column-gap: 20px;
+      width: min(1200px, calc(100% - var(--content-pad) * 2));
+      grid-template-columns: 1fr 1fr 1fr 1.7fr;
+      column-gap: 24px;
       align-items: start;
     }
   }
   @media (max-width: 767px) {
+    .preschool { display: flex; flex-direction: column; align-items: flex-start; gap: 2px; }
+    .hours li:not(.preschool) { white-space: normal; }
     .site-footer {
       padding-bottom: calc(var(--callbar-h) + env(safe-area-inset-bottom, 0px));
     }

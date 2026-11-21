@@ -4,11 +4,23 @@ interface Props {
   tall?: boolean;
 }
 const { text, tall = false } = Astro.props;
+const rangeRe = /(\d{1,2}(?::\d{2})?(?:am|pm)?)\s*[-–]\s*(\d{1,2}(?::\d{2})?(?:am|pm)?)/gi;
+const bits: { range: boolean; text: string }[] = [];
+let last = 0;
+for (const match of text.matchAll(rangeRe)) {
+  const index = match.index ?? 0;
+  if (index > last) bits.push({ range: false, text: text.slice(last, index) });
+  bits.push({ range: true, text: match[0] });
+  last = index + match[0].length;
+}
+if (last < text.length || bits.length === 0) bits.push({ range: false, text: text.slice(last) });
 ---
 
 <p class="fact">
   <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" /></svg>
-  <span class:list={[{ tall }]}>{text}</span>
+  <span class:list={[{ tall }]}>
+    {bits.map((bit) => bit.range ? <span class="range">{bit.text}</span> : bit.text)}
+  </span>
 </p>
 
 <style>
@@ -25,7 +37,7 @@ const { text, tall = false } = Astro.props;
     width: 15px;
     height: 15px;
     margin-top: 3px;
-    fill: rgb(219, 58, 52);
+    fill: #d6352f;
   }
   .fact span {
     display: inline-block;

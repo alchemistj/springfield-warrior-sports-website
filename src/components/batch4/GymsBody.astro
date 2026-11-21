@@ -129,7 +129,11 @@ const ninjaClass = "Adult Ninja Fitness class";
     {
       /* Live breaks one sentence across three lines ("swing, climb, / and train … Springfield Warrior Sports / one of the most unique gyms around.").
          Join it back into one sentence; the last line's own second sentence stays its own paragraph. */
-      [call[0], `${call[1]} ${call[2]} one of the most unique gyms around.`, call[3].replace(/^one of the most unique gyms around\.\s*/, "")].map((text) => {
+      [
+        call[0] ?? "",
+        `${call[1] ?? ""} ${call[2] ?? ""} one of the most unique gyms around.`,
+        (call[3] ?? "").replace(/^one of the most unique gyms around\.\s*/, ""),
+      ].map((text) => {
         if (text.includes(linkClass)) {
           const at = text.indexOf(linkClass);
           const hot = "one of the most unique gyms around.";
@@ -195,8 +199,8 @@ const ninjaClass = "Adult Ninja Fitness class";
 <section class="b4-close" style={`background-image:url('${pricing.src}')`}>
   <div>
     <h2>So… Which Gym’s Right for You?</h2>
-    <h4>Southwest Springfield doesn’t mess around when it comes to fitness. Whether you want to lift heavy, join a class, recover in a cold plunge, or chase your first chin-up—you’ve got options.</h4>
-    <h4>So, no matter where you are in your fitness journey, take the leap.</h4>
-    <h4>Pick your place, show up like you mean it, and get after it.</h4>
+    <p>Southwest Springfield doesn’t mess around when it comes to fitness. Whether you want to lift heavy, join a class, recover in a cold plunge, or chase your first chin-up—you’ve got options.</p>
+    <p>So, no matter where you are in your fitness journey, take the leap.</p>
+    <p>Pick your place, show up like you mean it, and get after it.</p>
   </div>
 </section>

@@ -57,7 +57,7 @@
   line-height: 70px;
 }
 .page-birthday-parties .bd-kicker { color: #fff; }
-.page-birthday-parties .bd-title { color: rgb(219, 58, 52); padding-bottom: 8px; }
+.page-birthday-parties .bd-title { color: #d6352f; padding-bottom: 8px; }
 .page-birthday-parties .bd-place {
   color: #fff;
   font-family: Heebo, "Arial Narrow", sans-serif;
@@ -79,7 +79,7 @@
 .page-summer-camps-in-springfield-mo .camp-h1b {
   width: min(920px, 100%);
   margin: 0 auto;
-  color: rgb(219, 58, 52);
+  color: #d6352f;
   font-family: Heebo, "Arial Narrow", sans-serif;
   font-size: 70px;
   font-weight: 900;
@@ -115,7 +115,7 @@
 .page-contact .hero-copy h1 {
   width: 100%;
   margin: 0 auto;
-  color: rgb(219, 58, 52);
+  color: #d6352f;
   font-family: Heebo, "Arial Narrow", sans-serif;
   font-size: 50px;
   font-weight: 900;
@@ -125,8 +125,8 @@
 }
 
 @media (max-width: 799px) {
-  .page-competitions .atf-photo { top: calc(var(--header-h) + 48px); }
-  .page-competitions .hero-copy { margin-top: 48px; }
+  .page-competitions .atf-photo { top: var(--header-h); }
+  .page-competitions .hero-copy { margin-top: 0; }
 
   .page-birthday-parties .bd-kicker,
   .page-birthday-parties .bd-title { font-size: 45px; line-height: 45px; }
@@ -183,7 +183,7 @@
   width: 15px;
   height: 15px;
   margin-top: 6px;
-  fill: rgb(219, 58, 52);
+  fill: #d6352f;
 }
 .b2-fact-text { display: block; min-width: 0; }
 
@@ -246,7 +246,7 @@
 .b2-fact-wide .b2-fact-text { flex: 1; }
 .bd-lab { font-weight: 600; color: #000; }
 .bd-rest { font-weight: 300; color: #000; }
-.bd-star { font-weight: 600; color: rgb(219, 58, 52); }
+.bd-star { font-weight: 600; color: #d6352f; }
 .b2-fact-text,
 .bd-split .b2-fact-text,
 .b2-fact-wide .b2-fact-text {
@@ -270,14 +270,15 @@
 .bd-book h2 {
   width: fit-content;
   margin: 0 auto 16px;
-  color: rgb(219, 58, 52);
+  color: #d6352f;
   font-family: Heebo, "Arial Narrow", sans-serif;
   font-size: 50px;
   font-weight: 900;
   line-height: 50px;
   text-transform: uppercase;
 }
-.bd-book h4 {
+.bd-book h4,
+.bd-book .bd-book-line {
   width: min(952px, 100%);
   margin: 16px auto 0;
   color: #fff;
@@ -287,7 +288,8 @@
   line-height: 35px;
   text-transform: none;
 }
-.bd-book h4 a {
+.bd-book h4 a,
+.bd-book .bd-book-line a {
   color: rgb(135, 204, 237);
   font-weight: 600;
   text-decoration: underline;
@@ -313,7 +315,7 @@
 .bd-split h3,
 .bd-battles h3 {
   margin: 24px 0 12px;
-  color: rgb(219, 58, 52);
+  color: #d6352f;
   font-family: Heebo, "Arial Narrow", sans-serif;
   font-size: 40px;
   font-weight: 900;
@@ -322,8 +324,8 @@
   text-transform: uppercase;
 }
 .bd-pizza { margin-top: 167px; }
-.bd-battles h3 + h4 { margin-top: 54px; }
-.bd-battles h4 {
+.bd-battles h3 + h3.bd-kind { margin-top: 54px; }
+.bd-battles h3.bd-kind {
   margin: 18px 0 8px;
   color: rgb(40, 82, 118);
   font-family: Heebo, "Arial Narrow", sans-serif;
@@ -355,7 +357,7 @@
 .bd-mem-copy { width: min(535px, calc(100% - 40px)); margin-left: max(20px, calc((100% - 1150px) / 2)); }
 .bd-mem h2 {
   width: min(535px, 100%);
-  color: rgb(219, 58, 52);
+  color: #d6352f;
   font-family: Heebo, "Arial Narrow", sans-serif;
   font-size: 50px;
   font-weight: 900;
@@ -364,7 +366,7 @@
   text-transform: uppercase;
 }
 .bd-mem p { width: min(533px, 100%); margin-top: 16px; text-align: left; }
-.bd-mem a { color: rgb(219, 58, 52); font-weight: 600; text-decoration: underline; }
+.bd-mem a { color: #d6352f; font-weight: 600; text-decoration: underline; }
 .bd-mem-photo { display: none; }
 
 /* Schedule */
@@ -417,7 +419,7 @@
 .camp-copy > h2,
 .camp-reg-title,
 .b2-form-title {
-  color: rgb(219, 58, 52);
+  color: #d6352f;
   font-family: Heebo, "Arial Narrow", sans-serif;
   font-weight: 900;
   text-align: left;
@@ -452,7 +454,7 @@
   font-weight: 400;
   line-height: 32px;
 }
-.camp-price a { color: rgb(219, 58, 52); font-weight: 600; text-decoration: underline; }
+.camp-price a { color: #d6352f; font-weight: 600; text-decoration: underline; }
 .camp-photo { width: 563px; height: auto; margin-top: 228px; }
 .camp-reg-title { font-size: 34px; line-height: 34px; }
 .camp-reg,
@@ -557,8 +559,7 @@
 .page-wnl-competitions .lead-form { max-width: 898px; }
 .page-schedule-birthday-party .lead-form.panel,
 .page-wnl-competitions .lead-form.panel { gap: 40px; }
-.page-schedule-birthday-party .lead-form > .btn,
-.page-wnl-competitions .lead-form > .btn { margin-top: -16px; }
+.page-schedule-birthday-party .lead-form > .btn { margin-top: -16px; }
 .page-schedule-birthday-party .lead-form > div:not(.hp),
 .page-wnl-competitions .lead-form > div:not(.hp) { display: flow-root; }
 .page-schedule-birthday-party .lead-form .label,
@@ -667,7 +668,7 @@
 .lead-form.camp > .btn {
   justify-self: start;
   border-radius: 100px;
-  background: #db3a34;
+  background: #d6352f;
   padding: 15px 22px;
   font-family: Heebo, "Arial Narrow", sans-serif;
   font-size: 16px;
@@ -678,7 +679,7 @@
 .b2-form-title { font-size: 50px; line-height: 70px; }
 .camp-cost,
 .camp-call { margin-top: 8px; }
-.camp-call a { color: rgb(219, 58, 52); font-weight: 400; text-decoration: none; }
+.camp-call a { color: #d6352f; font-weight: 400; text-decoration: none; }
 
 /* Competitions */
 .comp-intro { padding: 56px 0 24px; text-align: center; }
@@ -696,7 +697,7 @@
 .comp-intro h3 {
   width: min(1150px, 100%);
   margin: 36px auto 16px;
-  color: rgb(219, 58, 52);
+  color: #d6352f;
   font-family: Heebo, "Arial Narrow", sans-serif;
   font-size: 40px;
   font-weight: 900;
@@ -728,7 +729,7 @@
   min-height: 49px;
   margin: 18px auto;
   padding: 12px 16px;
-  background: rgb(219, 58, 52);
+  background: #d6352f;
   color: #fff;
   font-family: Heebo, "Arial Narrow", sans-serif;
   font-size: 16px;
@@ -760,14 +761,25 @@
   align-items: center;
 }
 .wnl-intro {
-  width: min(874px, 100%);
-  margin-inline: auto;
-  color: rgba(0, 0, 0, 0.7);
+  width: min(900px, 100%);
+  margin: 18px auto 0;
+  color: rgba(41, 41, 41, 0.99);
   font-family: Epilogue, Arial, sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
-  line-height: 28px;
+  line-height: 37px;
   text-align: center;
+}
+.wnl-top h2 {
+  width: fit-content;
+  max-width: 100%;
+  margin: 0 0 16px;
+  color: #285276;
+  font-family: Heebo, "Arial Narrow", sans-serif;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 1.15;
+  text-transform: none;
 }
 .wnl-top h4 {
   width: fit-content;
@@ -834,7 +846,7 @@
   line-height: 1.6;
 }
 .wnl-soon a,
-.camp-soon a { color: rgb(219, 58, 52); font-weight: 600; text-decoration: underline; }
+.camp-soon a { color: #d6352f; font-weight: 600; text-decoration: underline; }
 .comp-soon { width: min(720px, 100%); margin-inline: auto; text-align: center; }
 .comp-banner-soon { display: block; width: min(568px, 100%); height: auto; margin: 8px auto 20px; }
 .page-competitions .event-soon { margin-inline: auto; text-align: center; }
@@ -844,7 +856,7 @@
 .contact-grid { padding-top: 56px; padding-bottom: 180px; }
 .contact-copy { width: min(568px, 100%); }
 .contact-copy h2 {
-  color: rgb(219, 58, 52);
+  color: #d6352f;
   font-family: Heebo, "Arial Narrow", sans-serif;
   font-size: 50px;
   font-weight: 900;
@@ -902,7 +914,7 @@
 .b2-quotes.camps { padding-bottom: 194px; }
 .b2-quote-title {
   margin: 0;
-  color: rgb(219, 58, 52);
+  color: #d6352f;
   font-family: Heebo, "Arial Narrow", sans-serif;
   font-size: 50px;
   font-weight: 900;
@@ -943,14 +955,14 @@
 .b2-quotes.camps .b2-qt,
 .b2-quotes.camps .b2-qn { font-size: 18px; line-height: 32px; color: rgb(106, 107, 108); }
 .b2-qn { min-height: 50px; text-transform: uppercase; }
-.b2-qn strong { color: rgb(219, 58, 52); font-weight: 700; }
+.b2-qn strong { color: #d6352f; font-weight: 700; }
 .b2-arrows { display: none; }
 
 @media (max-width: 799px) {
   .bd-intro { padding: 48px 0 80px; }
   .bd-more { margin-top: 44px; }
   .bd-pizza { margin-top: 62px; }
-  .bd-battles h3 + h4 { margin-top: 10px; }
+  .bd-battles h3 + h3.bd-kind { margin-top: 10px; }
   .wnl-form ol { margin-left: 26px; }
   .page-birthday-parties .b2-block.b2-grey { padding-bottom: 24px; }
   .bd-steps { padding: 72px 0 24px; }
@@ -1001,7 +1013,7 @@
   .bd-split > div { margin-top: 0; }
   .camp-reg-title { margin-top: 16px; }
   .wnl-top h4 { margin-top: 28px; margin-bottom: 12px; }
-  .bd-intro h1 { width: 306px; }
+  .bd-intro h1 { width: 100%; max-width: 100%; }
   .bd-intro p,
   .bd-intro .bd-navy { width: 100%; }
   .bd-stress-title { font-size: 40px; line-height: 40px; }
@@ -1017,7 +1029,8 @@
   .bd-laser { margin: 16px 0; }
   .bd-book { min-height: 447px; }
   .bd-book h2 { font-size: 32px; line-height: 32px; }
-  .bd-book h4 { font-size: 18px; line-height: 29px; }
+  .bd-book h4,
+  .bd-book .bd-book-line { font-size: 18px; line-height: 29px; width: 100%; max-width: 100%; }
   .bd-more { font-size: 20px; line-height: 24px; }
   .bd-mem {
     min-height: 0;
@@ -1028,8 +1041,8 @@
   .page-birthday-parties .bd-mem-copy { width: calc(100% - 40px); margin-inline: auto; }
   .page-birthday-parties .bd-split h3,
   .page-birthday-parties .bd-battles h3,
-  .page-birthday-parties .bd-battles h4 { width: 306px; max-width: 100%; }
-  .bd-mem h2 { width: 350px; max-width: 100%; font-size: 32px; line-height: 32px; }
+  .page-birthday-parties .bd-battles h3.bd-kind { width: 100%; max-width: 100%; }
+  .bd-mem h2 { width: 100%; max-width: 100%; font-size: 32px; line-height: 32px; }
   .bd-mem-photo { display: block; width: 350px; height: auto; margin-top: 16px; }
 
   .bd-steps-p { font-size: 16px; line-height: 28px; }
@@ -1037,7 +1050,7 @@
 
   .camp-copy { min-width: 0; max-width: 100%; }
   .camp-copy > h2.camp-dates-title,
-  .camp-copy > h2 { width: 306px; max-width: 100%; font-size: 40px; }
+  .camp-copy > h2 { width: 100%; max-width: 100%; font-size: 40px; }
   .camp-date,
   .camp-time {
     width: auto;
@@ -1048,8 +1061,20 @@
   }
   .camp-time { width: 136px; max-width: 136px; }
   .camp-intro p,
-  .camp-price { width: min(338px, 100%); font-size: 18px; line-height: 32px; padding-bottom: 0; }
-  .camp-reg { padding-bottom: 0; }
+  .camp-price,
+  .camp-reg {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 0 16px;
+    padding-bottom: 0;
+    color: rgba(0, 0, 0, 0.7);
+    font-family: Epilogue, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .camp-intro p:last-child,
+  .camp-copy > .camp-price:last-child,
+  .camp-reg:last-child { margin-bottom: 0; }
   .camp-photo { order: -1; margin: 0 0 16px; }
   .camp-layout { display: flex; flex-direction: column; }
   .camp-reg,
@@ -1058,14 +1083,14 @@
   .b2-form-title { font-size: 32px; line-height: 32px; }
   .page-summer-camps-in-springfield-mo .b2-form-title,
   .page-summer-camps-in-springfield-mo .b2-quote-title,
-  .page-contact .b2-quote-title { width: 350px; max-width: none; margin-left: -6px; }
+  .page-contact .b2-quote-title { width: 100%; max-width: 100%; margin-left: 0; }
   .camp-cost,
   .camp-call { margin-left: -5px; }
   .camp-dates { padding-left: 0; }
 
   .comp-head { display: block; }
-  .comp-btn { width: 340px; min-height: 58px; margin-left: 0; }
-  .comp-banner { width: 340px; height: auto; margin: 16px 0; }
+  .comp-btn { width: 100%; max-width: 100%; min-height: 58px; margin-left: 0; }
+  .comp-banner { width: 100%; max-width: 100%; height: auto; margin: 16px auto; }
   .comp-fact svg { width: 18px; }
   .comp-fact .b2-fact-text { font-size: 17px; line-height: 26px; }
   .b2-literata { font-size: 24px; line-height: 34px; }
