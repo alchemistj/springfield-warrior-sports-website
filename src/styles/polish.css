@@ -517,11 +517,14 @@ a[href^="tel:"] { white-space: nowrap; }
 }
 
 /* Birthday flyer crops to the text column. H2s share the heavy style. Policy is body copy. */
-.page-birthday-parties .flyer {
+.page-birthday-parties img.flyer {
   width: 100% !important;
-  height: 100% !important;
-  object-fit: cover !important;
-  object-position: center center;
+  height: auto !important;
+  max-height: none !important;
+  aspect-ratio: auto !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+  align-self: start;
 }
 .page-birthday-parties .bd-hero-title {
   text-transform: none !important;
@@ -570,7 +573,6 @@ a[href^="tel:"] { white-space: nowrap; }
   color: #285276;
 }
 .page-birthday-parties .bd-battles h3,
-.page-birthday-parties .bd-battles h4,
 .page-birthday-parties .bd-split h3 {
   color: #285276;
 }
@@ -626,7 +628,8 @@ main :where(a:not(.btn):not(.b3-btn):not(.go):not(.comp-btn):not(.cta-phone):not
 }
 .page-personal-training .pt-form .b3-wrap { position: relative; z-index: 1; }
 .page-personal-training .pt-form h2,
-.page-personal-training .pt-form h4 { color: #fff !important; }
+.page-personal-training .pt-form h4,
+.page-personal-training .pt-form .pt-line { color: #fff !important; }
 
 /* Contact heading contrast, and the map can match the form. */
 .page-contact .hero-scrim { background: rgba(0, 0, 0, 0.55) !important; }
@@ -923,14 +926,33 @@ main :where(a:not(.btn):not(.b3-btn):not(.go):not(.comp-btn):not(.cta-phone):not
   }
 }
 
-.b4-team-hero { justify-content: center !important; padding-right: 0 !important; }
-.b4-team-hero .col { justify-content: center !important; }
-.b4-team-hero h1 {
-  width: min(16em, 100%) !important;
-  max-width: 100% !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  text-align: center !important;
+@media (max-width: 1023px) {
+  .b4-team-hero { justify-content: center !important; padding-right: 0 !important; }
+  .b4-team-hero .col { justify-content: center !important; }
+  .b4-team-hero h1 {
+    width: min(16em, 100%) !important;
+    max-width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center !important;
+  }
+}
+@media (min-width: 1024px) {
+  .b4-team-hero { justify-content: flex-start !important; padding-right: 0 !important; }
+  .b4-team-hero .col {
+    justify-content: flex-end !important;
+    width: min(900px, calc(100% - 48px)) !important;
+    max-width: 900px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .b4-team-hero h1 {
+    width: max-content !important;
+    max-width: 420px !important;
+    margin-left: auto !important;
+    margin-right: 0 !important;
+    text-align: right !important;
+  }
 }
 @media (min-width: 800px) {
   .page-meet-the-team .b4-person .b4-shot.desk {
@@ -947,3 +969,58 @@ main :where(a:not(.btn):not(.b3-btn):not(.go):not(.comp-btn):not(.cta-phone):not
   word-break: break-word;
 }
 .b4-thanks .thanks-copy { min-width: 0; max-width: 100%; }
+
+/* Round 5. */
+@media (max-width: 799px) {
+  .page-summer-camps-in-springfield-mo .camp-intro { padding-bottom: 28px !important; }
+}
+.lt-night h2 { margin-bottom: 20px !important; }
+.pk-pause p + p { margin-top: 16px !important; }
+.b4-cta p + p:not(.note) { margin-top: 16px !important; }
+.b3 .pk-note h3,
+.b3 .pk-row h3,
+.b3.lt-party h3,
+.b3.nf-party h3,
+.page-birthday-parties .bd-battles h3.bd-kind {
+  width: fit-content;
+  max-width: 100%;
+  color: rgb(40, 82, 118);
+  font-family: Heebo, "Arial Narrow", sans-serif;
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 30px;
+  text-align: left;
+}
+.b3 .pk-note h3 { margin-inline: auto; text-align: center; }
+.b3 .pk-row h3 + p,
+.b3 .pk-row p + h3 { margin-top: 16px; }
+.b3.lt-party h3,
+.b3.nf-party h3 { margin: 20px 0 12px; }
+.b3 .pt-cards h3,
+.b3 .pt-trainers h3 {
+  width: 100%;
+  max-width: 100%;
+  margin: 20px auto 0;
+  color: rgb(40, 82, 118);
+  font-family: Heebo, "Arial Narrow", sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 24px;
+  text-align: center;
+}
+.b3.pt-form .pt-line {
+  width: fit-content;
+  max-width: 100%;
+  margin: 18px auto 0;
+  color: #fff;
+  font-family: Epilogue, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 29px;
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  .b3 .pt-cards h3 { width: min(313px, 100%); }
+  .b3.pt-form .pt-line { font-size: 22px; line-height: 35px; }
+  .b3 .pk-row h3 { max-width: 400px; }
+}

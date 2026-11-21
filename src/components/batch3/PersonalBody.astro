@@ -63,7 +63,7 @@ const steps = [
         return (
           <article>
             {img.src && <img src={img.src} alt="" width={img.width} height={img.height} loading="lazy" decoding="async" />}
-            <h4>{title}</h4>
+            <h3>{title}</h3>
             {(body as readonly string[]).map((para) => (
               <p>{para}</p>
             ))}
@@ -88,7 +88,7 @@ const steps = [
         return (
           <article>
             {img.src && <img src={img.src} alt="" width={img.width} height={img.height} loading="lazy" decoding="async" />}
-            <h4>{name}</h4>
+            <h3>{name}</h3>
             <p class="role">{role}</p>
             <p>{body}</p>
             <p class="quote">{line}</p>
@@ -127,8 +127,8 @@ const steps = [
 <section class="b3 b3-band pt-form" style={`background-image: url('${pricing}')`}>
   <div class="b3-wrap">
     <h2>Let’s Talk Strength…Your Version</h2>
-    <h4>This isn’t about getting shredded or setting records.</h4>
-    <h4>It’s about moving, healing, and growing in a way that actually fits your life.</h4>
+    <p class="pt-line">This isn’t about getting shredded or setting records.</p>
+    <p class="pt-line">It’s about moving, healing, and growing in a way that actually fits your life.</p>
     <div class="pt-form-card">
       <LeadForm event={event} />
     </div>
