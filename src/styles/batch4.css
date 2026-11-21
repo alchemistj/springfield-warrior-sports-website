@@ -150,6 +150,7 @@
 .b4-cta-copy { position: relative; z-index: 1; }
 .b4-cta h2,
 .b4-cta h4,
+.b4-cta p,
 .b4-cta .note {
   width: fit-content;
   max-width: 100%;
@@ -164,8 +165,10 @@
   text-transform: uppercase;
 }
 .b4-cta h2 + h2 { margin-top: 0; }
-.b4-cta h2 + h4 { margin-top: 26px; }
-.b4-cta h4 {
+.b4-cta h2 + h4,
+.b4-cta h2 + p { margin-top: 26px; }
+.b4-cta h4,
+.b4-cta p {
   margin-top: 2px;
   color: #fff;
   font-family: Epilogue, Arial, sans-serif;
@@ -342,12 +345,14 @@
   text-align: center;
 }
 .b4-close h2,
-.b4-close h4 {
+.b4-close h4,
+.b4-close p {
   width: fit-content;
   max-width: min(1148px, 100%);
   margin-inline: auto;
 }
-.b4-close h2 + h4 { margin-top: 26px; }
+.b4-close h2 + h4,
+.b4-close h2 + p { margin-top: 26px; }
 .b4-close h2 {
   color: #d6352f;
   font-family: Heebo, "Arial Narrow", sans-serif;
@@ -356,7 +361,8 @@
   line-height: 50px;
   text-transform: uppercase;
 }
-.b4-close h4 {
+.b4-close h4,
+.b4-close p {
   margin: 17px auto 0;
   color: #fff;
   font-family: Epilogue, Arial, sans-serif;
@@ -475,7 +481,8 @@
 
   .b4-cta { min-height: 509px; margin-top: 0; padding: 70px 20px; }
   .b4-cta h2 { max-width: 350px; font-size: 32px; line-height: 32px; }
-  .b4-cta h4 { max-width: 348px; font-size: 18px; line-height: 29px; }
+  .b4-cta h4,
+  .b4-cta p { max-width: 100%; font-size: 18px; line-height: 29px; }
   .b4-cta .go { width: 246px; height: 39px; font-size: 12px; }
   .b4-cta .note { font-size: 16px; line-height: 26px; }
 
@@ -497,14 +504,15 @@
   /* Live's GP photo is tall enough that the heading sits over its bottom edge. */
   .b4-gym:nth-of-type(2) img { margin-bottom: -69px; }
   .b4-copy,
-  .b4-gym.side-right .b4-copy { width: min(340px, calc(100% - 50px)); margin: 0 25px; }
+  .b4-gym.side-right .b4-copy { width: calc(100% - 48px); max-width: 100%; margin: 0 auto; }
   .b4-gym h2 { font-size: 32px; line-height: 32px; }
   .b4-copy > p.b4-hl-label { width: fit-content; }
   .b4-visit { width: 148px; font-size: 12px; }
 
   .b4-close { min-height: 553px; padding: 70px 25px; }
-  .b4-close h2 { max-width: 340px; font-size: 32px; line-height: 32px; }
-  .b4-close h4 { max-width: 338px; font-size: 18px; line-height: 29px; }
+  .b4-close h2 { max-width: 100%; font-size: 32px; line-height: 32px; }
+  .b4-close h4,
+  .b4-close p { max-width: 100%; font-size: 18px; line-height: 29px; }
 
   .b4-thanks {
     min-height: 0;

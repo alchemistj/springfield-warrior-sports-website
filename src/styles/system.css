@@ -359,7 +359,8 @@ em, i {
   margin-inline: auto !important;
 }
 .b4-close h2,
-.b4-close h4 {
+.b4-close h4,
+.b4-close p {
   width: auto !important;
   max-width: 100% !important;
 }

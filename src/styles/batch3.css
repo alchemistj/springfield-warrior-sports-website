@@ -570,7 +570,7 @@
 }
 @media (max-width: 799px) {
   .pt-intro { padding: 0 0 40px; }
-  .b3.pt-why h2 { width: 340px; max-width: 340px; }
+  .b3.pt-why h2 { width: 100%; max-width: 100%; }
   .pt-say { padding-bottom: 20px; }
   .pt-say h2 { line-height: 32px; }
   .pt-form { padding: 60px 0 100px; }
@@ -663,7 +663,8 @@
 .lt-night, .nf-night { padding: 100px 0 140px; }
 .lt-night h2, .nf-night h2 { margin-inline: 0; text-align: left; }
 .lt-night img, .nf-night img { width: 100%; height: auto; }
-.night-copy h4 {
+.night-copy h4,
+.night-copy .night-line {
   width: 100%;
   margin-top: 12px;
   color: rgba(0, 0, 0, 0.7);
@@ -696,7 +697,8 @@
   .b3.lt-book h3, .b3.nf-book h3, .b3.pk-pause h3 { font-size: 30px; line-height: 36px; }
   .lt-night .b3-split, .nf-night .b3-split { grid-template-columns: minmax(0, 1fr) 501px; column-gap: 86px; align-items: stretch; }
   .lt-night .b3-split > img, .nf-night .b3-split > img, .lt-party .b3-split > img, .nf-party .b3-split > img { height: 100%; object-fit: cover; }
-  .night-copy h4 { letter-spacing: 1px; }
+  .night-copy h4,
+  .night-copy .night-line { letter-spacing: 1px; }
   .lt-lead .b3-btn.block, .nf-book .b3-btn.block { width: fit-content; }
 }
 @media (max-width: 1023px) {

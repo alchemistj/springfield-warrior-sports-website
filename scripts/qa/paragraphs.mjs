@@ -138,7 +138,9 @@ for (const slug of slugs) {
     /^Cost: \$179 per child; member and sibling discounts/i,
     /^For ages 6-15 years old\.$/i,
     /Check the links below for scheduled competitions/i,
-    /click here to book a trial class for only \$ 5/i];
+    /click here to book a trial class for only \$ 5/i,
+    // Round 4: the booking steps are a real numbered list. The typed "1." "2." "3." are gone.
+    /^1\. Fill out the form to begin the scheduling process/i];
   const liveParas = (await live.evaluate(collect, { maxLines: 0, withReviews: true })).filter((l) => !IGNORE.some((re) => re.test(l.text)));
   await live.close();
 

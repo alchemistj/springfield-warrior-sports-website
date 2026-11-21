@@ -56,6 +56,8 @@ describe("built site", () => {
         .filter((sentence) => !/^For ages 6-15 years old\.$/i.test(sentence))
         .filter((sentence) => !/Check the links below for scheduled competitions/i.test(sentence))
         .filter((sentence) => !/click here to book a trial class for only \$ 5/i.test(sentence))
+        // Round 4: the booking steps keep their words and take their numbers from the list.
+        .map((sentence) => sentence.replace(/ \d+\.$/, ""))
         .filter((sentence) => !text.includes(sentence))
         .filter((sentence) => ![...visible.values()].some((other) => other.includes(sentence)));
       expect(missing, page.slug).toEqual([]);

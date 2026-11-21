@@ -277,7 +277,8 @@
   line-height: 50px;
   text-transform: uppercase;
 }
-.bd-book h4 {
+.bd-book h4,
+.bd-book .bd-book-line {
   width: min(952px, 100%);
   margin: 16px auto 0;
   color: #fff;
@@ -287,7 +288,8 @@
   line-height: 35px;
   text-transform: none;
 }
-.bd-book h4 a {
+.bd-book h4 a,
+.bd-book .bd-book-line a {
   color: rgb(135, 204, 237);
   font-weight: 600;
   text-decoration: underline;
@@ -1012,7 +1014,7 @@
   .bd-split > div { margin-top: 0; }
   .camp-reg-title { margin-top: 16px; }
   .wnl-top h4 { margin-top: 28px; margin-bottom: 12px; }
-  .bd-intro h1 { width: 306px; }
+  .bd-intro h1 { width: 100%; max-width: 100%; }
   .bd-intro p,
   .bd-intro .bd-navy { width: 100%; }
   .bd-stress-title { font-size: 40px; line-height: 40px; }
@@ -1028,7 +1030,8 @@
   .bd-laser { margin: 16px 0; }
   .bd-book { min-height: 447px; }
   .bd-book h2 { font-size: 32px; line-height: 32px; }
-  .bd-book h4 { font-size: 18px; line-height: 29px; }
+  .bd-book h4,
+  .bd-book .bd-book-line { font-size: 18px; line-height: 29px; width: 100%; max-width: 100%; }
   .bd-more { font-size: 20px; line-height: 24px; }
   .bd-mem {
     min-height: 0;
@@ -1039,8 +1042,8 @@
   .page-birthday-parties .bd-mem-copy { width: calc(100% - 40px); margin-inline: auto; }
   .page-birthday-parties .bd-split h3,
   .page-birthday-parties .bd-battles h3,
-  .page-birthday-parties .bd-battles h4 { width: 306px; max-width: 100%; }
-  .bd-mem h2 { width: 350px; max-width: 100%; font-size: 32px; line-height: 32px; }
+  .page-birthday-parties .bd-battles h4 { width: 100%; max-width: 100%; }
+  .bd-mem h2 { width: 100%; max-width: 100%; font-size: 32px; line-height: 32px; }
   .bd-mem-photo { display: block; width: 350px; height: auto; margin-top: 16px; }
 
   .bd-steps-p { font-size: 16px; line-height: 28px; }
@@ -1048,7 +1051,7 @@
 
   .camp-copy { min-width: 0; max-width: 100%; }
   .camp-copy > h2.camp-dates-title,
-  .camp-copy > h2 { width: 306px; max-width: 100%; font-size: 40px; }
+  .camp-copy > h2 { width: 100%; max-width: 100%; font-size: 40px; }
   .camp-date,
   .camp-time {
     width: auto;
@@ -1061,7 +1064,8 @@
   .camp-intro p,
   .camp-price,
   .camp-reg {
-    width: min(338px, 100%);
+    width: 100%;
+    max-width: 100%;
     margin: 0 0 16px;
     padding-bottom: 0;
     color: rgba(0, 0, 0, 0.7);
@@ -1080,14 +1084,14 @@
   .b2-form-title { font-size: 32px; line-height: 32px; }
   .page-summer-camps-in-springfield-mo .b2-form-title,
   .page-summer-camps-in-springfield-mo .b2-quote-title,
-  .page-contact .b2-quote-title { width: 350px; max-width: none; margin-left: -6px; }
+  .page-contact .b2-quote-title { width: 100%; max-width: 100%; margin-left: 0; }
   .camp-cost,
   .camp-call { margin-left: -5px; }
   .camp-dates { padding-left: 0; }
 
   .comp-head { display: block; }
-  .comp-btn { width: 340px; min-height: 58px; margin-left: 0; }
-  .comp-banner { width: 340px; height: auto; margin: 16px 0; }
+  .comp-btn { width: 100%; max-width: 100%; min-height: 58px; margin-left: 0; }
+  .comp-banner { width: 100%; max-width: 100%; height: auto; margin: 16px auto; }
   .comp-fact svg { width: 18px; }
   .comp-fact .b2-fact-text { font-size: 17px; line-height: 26px; }
   .b2-literata { font-size: 24px; line-height: 34px; }
