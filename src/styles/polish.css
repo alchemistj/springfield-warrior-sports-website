@@ -1085,6 +1085,9 @@ main :where(a:not(.btn):not(.b3-btn):not(.go):not(.comp-btn):not(.cta-phone):not
     object-fit: contain !important;
     margin: 0 28px 12px 0;
   }
+  .page-birthday-parties .b2-grey .bd-split > div > .b2-fact:nth-child(1 of .b2-fact) {
+    clear: left;
+  }
 }
 .page-wnl-competitions .wnl-top h2 { color: #d6352f !important; }
 .page-wnl-competitions .lead-form.panel { gap: 8px !important; }
